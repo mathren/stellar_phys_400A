@@ -1,10 +1,9 @@
-#+title: 400A Theoretical Astrophysics - Stellar Evolution
-#+author: Mathieu Renzo
-#+email: mrenzo@arizona.edu
-
 * Syllabus
 
 ** Where and when
+
+ Steward Observatory room 204
+ Tuesday and Thursday 12:30-1:45pm
 
 ** Instructors
 
@@ -17,14 +16,14 @@
 - Email: hbowden@arizona.edu
 - Office hours: by appointment
 
-** Description of the course
+** TODO Description of the course
 
 
 
-** Course format and teaching methods
+** TODO Course format and teaching methods
 
-** Expected learning outcomes
 
+** TODO Expected learning outcomes
 
 
 ** Resources
@@ -46,7 +45,6 @@
    book.
 
 ** Accessibility and accommodations
-
 At the University of Arizona, we strive to make learning
 experiences as accessible as possible. If you anticipate or
 experience barriers based on disability or pregnancy, please
@@ -54,7 +52,6 @@ contact the Disability Resource Center (520-621-3268,
 https://drc.arizona.edu/) to establish reasonable accommodations.
 
 ** Academic Integrity
-
 According to the Arizona Code of Academic Integrity, “Integrity is
 expected of every student in all academic work. The guiding principle
 of academic integrity is that a student’s submitted work must be the
@@ -78,7 +75,6 @@ http://deanofstudents.arizona.edu/policies‐and‐codes/code‐academic‐integ
 
 
 ** TODO Attendance Policy
-
 It is important to attend all classes, as what is discussed in class is pertinent to
 adequate performance on assignments and exams. If you must be absent, it is your
 responsibility to obtain and review the information you missed.
@@ -94,7 +90,6 @@ http://policy.web.arizona.edu/threatening‐behavior‐students
 
 
 ** Subject to change statement
-
 The information contained in this syllabus, other than the grade and absence
 policies, may be subject to change with reasonable advance notice, as deemed
 appropriate by the instructor.
@@ -102,6 +97,6 @@ appropriate by the instructor.
 
 * Schedule for the lectures
 
-** Hertzsprung-Russel diagram
+** Hertzsprung-Russel diagram visualization
 
  HRD video: https://www.youtube.com/watch?v=PsS80huL47c
