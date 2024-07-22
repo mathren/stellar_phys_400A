@@ -2,16 +2,35 @@
 
 ** Lecture 1: Intro & orders of magnitude
 
-  - Introduce the course
-  - Introduce relevant scales
+*** Introduction to the course
 
-   \odot = Sun
+  - introduce yourself
+  - Discuss [[./syllabus.org][syllabus]] and learning outcomes specifically
 
-   R_{\odot} = 6.957\times 10^{10} cm \simeq 10^{11} cm
-   M_{\odot} = 2\times10^{33} g
-   L_{\odot} = 3.82\times10^{33}^{}^{} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
 
-   Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
+*** Relevant physical scales
+
+  The star we can observe best is the closest one, the Sun (\odot), so a
+  lot of quantities are scaled to those of the Sun in stellar physics
+  and in astronomy more generally.
+
+**** Solar radius
+     R_{\odot} = 6.957\times 10^{10} cm \simeq 10^{11} cm
+
+**** Solar mass
+     M_{\odot} = 2\times10^{33} g
+
+**** Solar luminosity
+     L_{\odot} = 3.82\times10^{33}^{}^{} erg s^{-1} \simeq 2\times M_{\odot} in =cgs units=!
+
+     This may be one of the reasons why we still use =cgs= in astronomy,
+     the other one being that the constants in electromagnetism are a
+     bit simpler.
+
+**** Lifetime
+     Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
+
+     How old is the Sun? How long will it live?
 
 ** Lecture 2: Color-magnitude and Hertzsprung-Russell diagram
 

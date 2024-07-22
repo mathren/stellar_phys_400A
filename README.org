@@ -2,4 +2,4 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-[[./Stellar_physics_400A.org][Syllabus]]
+[[./syllabus.org][Syllabus]]
