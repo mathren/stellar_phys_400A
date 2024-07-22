@@ -1,0 +1,23 @@
+* Lectures topic-by-topic
+
+** Lecture 1: Intro & orders of magnitude
+
+  - Introduce the course
+  - Introduce relevant scales
+
+   \odot = Sun
+
+   R_{\odot} = 6.957\times 10^{10} cm \simeq 10^{11} cm
+   M_{\odot} = 2\times10^{33} g
+   L_{\odot} = 3.82\times10^{33}^{}^{} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
+
+   Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
+
+** Lecture 2: Color-magnitude and Hertzsprung-Russell diagram
+
+  How can we study things that evolve too slow for us to see?
+
+
+*** Hertzsprung-Russel diagram visualization
+
+   HRD video: https://www.youtube.com/watch?v=PsS80huL47c

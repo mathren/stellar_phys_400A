@@ -19,7 +19,6 @@
 ** TODO Description of the course
 
 
-
 ** TODO Course format and teaching methods
 
 
@@ -93,10 +92,3 @@ http://policy.web.arizona.edu/threatening‐behavior‐students
 The information contained in this syllabus, other than the grade and absence
 policies, may be subject to change with reasonable advance notice, as deemed
 appropriate by the instructor.
-
-
-* Schedule for the lectures
-
-** Hertzsprung-Russel diagram visualization
-
- HRD video: https://www.youtube.com/watch?v=PsS80huL47c
