@@ -2,11 +2,106 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-[[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
+* Syllabus
+
+** Where and when
+
+** Instructors
+
+*** Professor: Mathieu Renzo
+- Office: N506
+- Email: mrenzo@arizona.edu
+- Office hours: by appointment
+
+*** TA: Hailey Bowden
+- Email: hbowden@arizona.edu
+- Office hours: by appointment
+
+** Description of the course
 
 
 
+** Course format and teaching methods
 
-HRD video:
+** Expected learning outcomes
 
-https://www.youtube.com/watch?v=PsS80huL47c
+
+
+** Resources
+
+  [[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
+
+*** Recommended textbooks
+
+  Most stellar physics text books will contain most of the information
+  covered in this course. I recommend the following:
+
+ - [[https://www.astro.ru.nl/~onnop/][Onno Pols notes]]. These lecture notes are freely available,
+   accessible, and thorough, making them an excellent starting point.
+   I recommend downloading a copy for yourself early in the course.
+ - [[https://link.springer.com/book/10.1007/978-3-642-30304-3][Kippenhahn, Weigert, & Weiss 2012]]. This is a classic textbook that
+   you may continue to consult even as a seasoned researcher with
+   emphasis on the physical processes in stars. Students enrolled
+   in the class should come talk to me if you have issues getting this
+   book.
+
+** Accessibility and accommodations
+
+At the University of Arizona, we strive to make learning
+experiences as accessible as possible. If you anticipate or
+experience barriers based on disability or pregnancy, please
+contact the Disability Resource Center (520-621-3268,
+https://drc.arizona.edu/) to establish reasonable accommodations.
+
+** Academic Integrity
+
+According to the Arizona Code of Academic Integrity, “Integrity is
+expected of every student in all academic work. The guiding principle
+of academic integrity is that a student’s submitted work must be the
+student’s own.” Students are encouraged to share intellectual views
+and discuss freely the principles and applications of course
+materials. However, *graded work/exercises must be the product of
+independent effort unless otherwise instructed*. Students are expected
+to adhere to the UA Code of Academic Integrity as described in the UA
+General Catalog. See:
+https://deanofstudents.arizona.edu/student-rights-responsibilities/
+academic-integrity
+
+Misappropriation of exams before or after they are given will be
+considered academics misconduct. Misconduct of any kind will be
+prosecuted and may result in any or all of the following:
+- Reduction of grade
+- Failing grade
+- Referral to the Dean of Students for consideration of additional penalty, i.e.
+notation on a student’s transcript re. academic integrity violation, etc.
+http://deanofstudents.arizona.edu/policies‐and‐codes/code‐academic‐integrity
+
+
+** TODO Attendance Policy
+
+It is important to attend all classes, as what is discussed in class is pertinent to
+adequate performance on assignments and exams. If you must be absent, it is your
+responsibility to obtain and review the information you missed.
+“All holidays or special events observed by organized religions will be honored
+for those students who show affiliation with that particular religion. Absences
+pre‐approved by the UA Dean of Students (or Dean's designee) will be honored.”
+
+** Classroom Behavior
+The Arizona Board of Regents’ Student Code of Conduct, ABOR Policy 5‐308,
+prohibits threats of physical harm to any member of the University community,
+including to one’s self. See:
+http://policy.web.arizona.edu/threatening‐behavior‐students
+
+
+** Subject to change statement
+
+The information contained in this syllabus, other than the grade and absence
+policies, may be subject to change with reasonable advance notice, as deemed
+appropriate by the instructor.
+
+
+* Schedule for the lectures
+
+** Hertzsprung-Russel diagram
+
+ HRD video: https://www.youtube.com/watch?v=PsS80huL47c
