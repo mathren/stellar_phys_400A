@@ -66,15 +66,25 @@ something that can be improved!
 ** Evaluation rubric
 
 *** Written summary
-
-  |                               | Exceptional | Very good | Adequate | Poor |
-  | ------------------------------+-------------+-----------+----------+------|
-  | Structure and formatting      |             |           |          |      |
-  | ------------------------------+-------------+-----------+----------+------|
-  | Content logic and readability |             |           |          |      |
-  | ------------------------------+-------------+-----------+----------+------|
-  | Scientific depth              |             |           |          |      |
-  | ------------------------------+-------------+-----------+----------+------|
+  |-------------------------------+-------------------------------------------------+--------------------------------+----------+------|
+  |                               | Exceptional                                     | Very good                      | Adequate | Poor |
+  |-------------------------------+-------------------------------------------------+--------------------------------+----------+------|
+  | Structure and formatting      | Clear, logical, engaging, and easy to follow.   | Clear and easy to follow.      |          |      |
+  |                               | Figures are useful, have captions and are       | Figures are provided with      |          |      |
+  |                               | and well integrated with text. All references   | useful caption. All references |          |      |
+  |                               | are provided                                    | are listed                     |          |      |
+  |-------------------------------+-------------------------------------------------+--------------------------------+----------+------|
+  | Content logic and readability | The scope of the presentation is clearly        |                                |          |      |
+  |                               | stated. The presentation builds up clearly and  |                                |          |      |
+  |                               | progressively, in an easy to follow and logical |                                |          |      |
+  |                               | way. By the end, the reader has is left with    |                                |          |      |
+  |                               | a clear understanding.                          |                                |          |      |
+  |-------------------------------+-------------------------------------------------+--------------------------------+----------+------|
+  | Scientific depth              | The (astro)physics is clearly explained in a    |                                |          |      |
+  |                               | concise but insightful way. The topic is        |                                |          |      |
+  |                               | appropriately unwrapped and connected to        |                                |          |      |
+  |                               | content covered in class .                      |                                |          |      |
+  |-------------------------------+-------------------------------------------------+--------------------------------+----------+------|
 
 *** Oral presentation
 
