@@ -45,14 +45,6 @@ computational nature.
 This is also a class with "writing emphasis", which will be included
 as part of the in class activities and homework.
 
-** TODO Exams and grading
-
-
-
-
-# how to verify
-# classwork and homework go here too
-
 ** Recommended textbooks and resources
 Most stellar physics text books will contain most of the information
 covered in this course, although order and presentation can vary
@@ -72,6 +64,30 @@ and will mostly follow these:
 We will also use [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESAweb]], a cloud-computing resource to run stellar
 evolution simulations with a research-grade code and analyze them. The
 =MESAweb= interface simplifies the access to this state-of-the-art tool.
+
+** TODO Exams and grading
+The course grade will be based on:
+
+ - In class participation: 10%
+ - Homework: 40%
+ - Project/Presentation: 30%
+ - Final exam: 20%
+
+The class will not be curved. The correspondence between final
+percentages and letter grades will be:
+ - A: 85-100%
+ - B: 70-85%
+ - C: 50-70%
+ - D: 30-50%
+ - E: 0-30%
+
+*** Incomplete (I) or Withdrawal (W):
+Requests for incomplete (I) or withdrawal (W) must be made in
+accordance with University policies, which are available at
+http://catalog.arizona.edu/policy/grades-and-grading-system#incomplete
+and
+http://catalog.arizona.edu/policy/grades-and-grading-system#Withdrawal
+respectively.
 
 ** Classroom Behavior
 To foster a positive learning environment, students and instructors
@@ -192,7 +208,6 @@ resources available within the local community for support.
 - Email: [[mailto:survivoradvocacy@email.arizona.edu][survivoradvocacy@email.arizona.edu]]
 - Phone: 520-621-5767
 
-
 ** Confidentiality of Student Records
 http://www.registrar.arizona.edu/ferpa
 
@@ -202,7 +217,6 @@ Incident Response Team (CIRT): https://cirt.arizona.edu/case-emergency/overview
 
 Also watch the video available at
 https://arizona.sabacloud.com/Saba/Web_spf/NA7P1PRD161/common/learningeventdetail/crtfy000000000003560
-
 
 ** Subject to change statement
 The information contained in this syllabus, other than the grade and absence
