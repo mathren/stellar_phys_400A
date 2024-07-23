@@ -14,7 +14,7 @@ Steward Observatory room *204*, Tuesday and Thursday 12:30-1:45pm
 - Email: [[mailto:mrenzo@arizona.edu][mrenzo@arizona.edu]]
 - Office hours: by appointment
 
-*** Teaching Assistant: Hailey Bowden
+*** Teaching Assistant: Haley Bowden
 - Email: [[mailto:hbowden@arizona.edu][hbowden@arizona.edu]]
 - Office hours: TBD/by appointment
 
@@ -68,10 +68,9 @@ evolution simulations with a research-grade code and analyze them. The
 ** TODO Exams and grading
 The course grade will be based on:
 
- - In class participation: 10%
- - Homework: 40%
- - Project/Presentation: 30%
- - Final exam: 20%
+ - In class participation: 20%
+ - Homework: 30%
+ - Project/Presentation: 50%
 
 The class will not be curved. The correspondence between final
 percentages and letter grades will be:
