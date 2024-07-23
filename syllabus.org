@@ -1,12 +1,10 @@
 * Syllabus
 
 ** Where and when
-
- Steward Observatory room 204
- Tuesday and Thursday 12:30-1:45pm
+Steward Observatory room 204
+Tuesday and Thursday 12:30-1:45pm
 
 ** Instructors
-
 *** Professor: Mathieu Renzo
 - Office: N506
 - Email: mrenzo@arizona.edu
@@ -16,23 +14,49 @@
 - Email: hbowden@arizona.edu
 - Office hours: by appointment
 
-** TODO Description of the course
-
+** Description of the course
+The main topic of the course is stellar structure, a field of
+astronomy that brings many different branches of physics to understand
+the fundamental objects of astronomical study: stars. Toward the end
+of the semester, we may discuss several other related topics as well,
+including planet formation and stellar explosions.
 
 ** TODO Course format and teaching methods
+This class relies heavily on in-class problem solving activities, and
+work in small groups. Some of these will be of computational nature.
+
+This is also a class with "writing emphasis", which will be included
+as part of the in class activities and homework.
+
+** Expected learning outcomes
+
+By the end of the course, students will:
+
+ - Apply a theoretical framework to stellar structure and derive from first
+   principles stellar properties that match observations.
+ - Develop an understanding of fundamental theoretical astrophysics,
+   that can be applied to a broad range of specific problems.
+ - Use mathematical and computational skills to solve astrophysical problems.
+ - Develop proficiency with communicating, translating, and
+   interpreting fundamental astronomical concepts and research results
+   in oral and/or written formats.
+ - Gain knowledge of the physical scales, masses, sizes, lifetimes and
+   other properties associated with a wide variety of astronomical
+   objects and phenomena
+
+These learning outcomes will be met through attendance of lectures,
+homework and writing assignments, in-class activities, and in-class
+exams.
 
 
-** TODO Expected learning outcomes
+** TODO Exams
 
+** TODO Grading
 
-** Resources
-
-  [[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
-
-*** Recommended textbooks
-
-  Most stellar physics text books will contain most of the information
-  covered in this course. I recommend the following:
+** Recommended textbooks
+Most stellar physics text books will contain most of the information
+covered in this course, although order and presentation can vary
+widely. I recommend the following:
 
  - [[https://www.astro.ru.nl/~onnop/][Onno Pols notes]]. These lecture notes are freely available,
    accessible, and thorough, making them an excellent starting point.
@@ -42,6 +66,8 @@
    emphasis on the physical processes in stars. Students enrolled
    in the class should come talk to me if you have issues getting this
    book.
+
+** TODO Classwork and homework
 
 ** Accessibility and accommodations
 At the University of Arizona, we strive to make learning
@@ -72,14 +98,14 @@ prosecuted and may result in any or all of the following:
 notation on a student’s transcript re. academic integrity violation, etc.
 http://deanofstudents.arizona.edu/policies‐and‐codes/code‐academic‐integrity
 
-
-** TODO Attendance Policy
+** Attendance Policy
 It is important to attend all classes, as what is discussed in class is pertinent to
 adequate performance on assignments and exams. If you must be absent, it is your
 responsibility to obtain and review the information you missed.
-“All holidays or special events observed by organized religions will be honored
+
+All holidays or special events observed by organized religions will be honored
 for those students who show affiliation with that particular religion. Absences
-pre‐approved by the UA Dean of Students (or Dean's designee) will be honored.”
+pre‐approved by the UA Dean of Students (or Dean's designee) will be honored.
 
 ** Classroom Behavior
 The Arizona Board of Regents’ Student Code of Conduct, ABOR Policy 5‐308,

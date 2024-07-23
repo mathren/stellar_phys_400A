@@ -3,3 +3,5 @@
 #+email: mrenzo@arizona.edu
 
 [[./syllabus.org][Syllabus]]
+
+For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
