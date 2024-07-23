@@ -2,6 +2,13 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
+#+begin_export html
+ <div class="banner_container">
+   <img width="900vw" src="./images/Gaia_DR2_HRD_GAIA.jpg" />
+ </div>
+#+end_export
+
+
 Material developed for the course "400A Theoretical Astrophysics -
 Stellar Evolution" at the Department of Astronomy and Steward
 Observatory of the University of Arizona.

@@ -3,6 +3,6 @@ build.sh
 build-site.el
 css/*
 html-templates/*
-*.html
+html-content/*
 *~
 .packages/*
