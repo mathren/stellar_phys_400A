@@ -1,12 +1,41 @@
-* List of possible projects/presentations
+* Project/presentation
+
+*This part is worth 50% of your final grade, so you want to do it well!*
+
+** Instructions
+Each student will pick a topic to research based on textbooks, journal
+articles, etc. from the list below and provide a short written summary
+(\le 3 pages) and an oral presentation to the classroom. This will allow
+each student to dig a bit deeper into a topic we cannot spend too much
+time in class, and at the same time everyone can learn from each
+other.
+
+*The text has to be submitted one lecture before the presentation is
+scheduled*, and the *presentation is 10min+5min questions*.
+
+Both text and presentations will be evaluated by the instructors and
+your peers according to a rubric outlined below.
+
+Specifically, the text will be evaluated by a selected subgroup of
+students, while the presentation and handling of the questions will be
+evaluated by all the students present.
+
+The way you provide evaluation and feedback to your peers will also be
+considered for your final grading. Remember to appreciate the time and
+effort others have put in their work and be kind and constructive in
+providing feedback. The aim is to learn and improve, not to crush
+other's work. And also, nothing is ever perfect, there is always
+something that can be improved!
+
+** List of possible projects/presentations
 
 1. *Why do stars shine?*
-2.
-3.
-4.
-5.
-6.
-7.
+2. *Astrometry*
+3. *Thermonuclear explosion in WDs*
+4. *Common envelope evolution*
+5. *Globular clusters: CMD*
+6. *Globular clusters: dynamics*
+7. *Formation of stars*
 8.
 9.
 10.
@@ -32,3 +61,35 @@
 30.
 31.
 32.
+
+
+** Evaluation rubric
+
+*** Written summary
+
+  |                               | Exceptional | Very good | Adequate | Poor |
+  | ------------------------------+-------------+-----------+----------+------|
+  | Structure and formatting      |             |           |          |      |
+  | ------------------------------+-------------+-----------+----------+------|
+  | Content logic and readability |             |           |          |      |
+  | ------------------------------+-------------+-----------+----------+------|
+  | Scientific depth              |             |           |          |      |
+  | ------------------------------+-------------+-----------+----------+------|
+
+*** Oral presentation
+
+  |                              | Exceptional | Very good | Adequate | Poor |
+  | -----------------------------+-------------+-----------+----------+------|
+  | Slides quality and structure |             |           |          |      |
+  | -----------------------------+-------------+-----------+----------+------|
+  | Content and QA handling      |             |           |          |      |
+  | -----------------------------+-------------+-----------+----------+------|
+  | Scientific depth             |             |           |          |      |
+  | -----------------------------+-------------+-----------+----------+------|
+
+*** Providing feedback
+
+  |          | Exceptional | Very good | Adequate | Poor |
+  | ---------+-------------+-----------+----------+------|
+  | Feedback |             |           |          |      |
+  | ---------+-------------+-----------+----------+------|
