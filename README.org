@@ -2,6 +2,10 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
+This repository contains material developed for the course "400A
+Theoretical Astrophysics - Stellar Evolution" at the Department of
+Astronomy and Steward Observatory of the University of Arizona.
+
 [[./syllabus.org][Syllabus]]
 
 For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
