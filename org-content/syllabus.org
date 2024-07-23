@@ -72,6 +72,8 @@ The course grade will be based on:
  - Homework: 30%
  - Project/Presentation: 50%
 
+For more information on the project/presentation, see [[./org-content/projects.org][here]].
+
 The class will not be curved. The correspondence between final
 percentages and letter grades will be:
  - A: 85-100%
