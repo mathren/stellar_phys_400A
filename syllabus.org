@@ -1,59 +1,62 @@
 * Syllabus
 
-** Where and when
-Steward Observatory room 204
-Tuesday and Thursday 12:30-1:45pm
-
-** Instructors
-*** Professor: Mathieu Renzo
-- Office: N506
-- Email: mrenzo@arizona.edu
-- Office hours: by appointment
-
-*** TA: Hailey Bowden
-- Email: hbowden@arizona.edu
-- Office hours: by appointment
-
 ** Description of the course
 The main topic of the course is stellar structure, a field of
 astronomy that brings many different branches of physics to understand
 the fundamental objects of astronomical study: stars. Toward the end
 of the semester, we may discuss several other related topics as well,
-including planet formation and stellar explosions.
+including planet formation and/or stellar explosions.
 
-** TODO Course format and teaching methods
-This class relies heavily on in-class problem solving activities, and
-work in small groups. Some of these will be of computational nature.
+** Where and when
+Steward Observatory room *204*
+Tuesday and Thursday 12:30-1:45pm
 
-This is also a class with "writing emphasis", which will be included
-as part of the in class activities and homework.
+** Instructors
+*** Professor: Mathieu Renzo
+- Office: N506
+- Email: [[mailto:mrenzo@arizona.edu][mrenzo@arizona.edu]]
+- Office hours: by appointment
+
+*** TA: Hailey Bowden
+- Email: [[mailto:hbowden@arizona.edu][hbowden@arizona.edu]]
+- Office hours: TBD/by appointment
 
 ** Expected learning outcomes
+By the end of the course, students will be able to:
 
-By the end of the course, students will:
-
- - Apply a theoretical framework to stellar structure and derive from first
-   principles stellar properties that match observations.
- - Develop an understanding of fundamental theoretical astrophysics,
-   that can be applied to a broad range of specific problems.
- - Use mathematical and computational skills to solve astrophysical problems.
- - Develop proficiency with communicating, translating, and
-   interpreting fundamental astronomical concepts and research results
-   in oral and/or written formats.
- - Gain knowledge of the physical scales, masses, sizes, lifetimes and
+ - Understand the physical scales, masses, sizes, lifetimes and
    other properties associated with a wide variety of astronomical
    objects and phenomena
+ - Apply a physically motivated theoretical framework to
+   stellar structure to derive stellar properties and compare to
+   observations.
+ - Use mathematical and computational skills to solve astrophysical
+   problems related to stellar and astrophysical problems.
+ - Communicating, translating, and interpreting fundamental
+   astronomical concepts and research results in oral and/or written
+   formats.
 
 These learning outcomes will be met through attendance of lectures,
 homework and writing assignments, in-class activities, and in-class
 exams.
 
 
+** TODO Course format and teaching methods
+This course relies on frontal lectures, homework, and in-class problem
+solving activities (individual and in group) and student
+presentations. Some problem solving activities will be of
+computational nature.
+
+This is also a class with "writing emphasis", which will be included
+as part of the in class activities and homework.
+
 ** TODO Exams
+#how to verify
+
 
 ** TODO Grading
 
-** Recommended textbooks
+** Recommended textbooks and resources
 Most stellar physics text books will contain most of the information
 covered in this course, although order and presentation can vary
 widely. I recommend the following:
@@ -63,11 +66,60 @@ widely. I recommend the following:
    I recommend downloading a copy for yourself early in the course.
  - [[https://link.springer.com/book/10.1007/978-3-642-30304-3][Kippenhahn, Weigert, & Weiss 2012]]. This is a classic textbook that
    you may continue to consult even as a seasoned researcher with
-   emphasis on the physical processes in stars. Students enrolled
-   in the class should come talk to me if you have issues getting this
-   book.
+   emphasis on the physical processes in stars. If you are an enrolled
+   student and have troubles accessing this book, please come talk to
+   me.
+
+We will also use [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESAweb]], a cloud-computing resource to run small
+stellar evolution simulations and analyze them.
 
 ** TODO Classwork and homework
+
+** Classroom Behavior
+To foster a positive learning environment, students and instructors
+have a shared responsibility. We want a safe, welcoming, and inclusive
+environment where all of us feel comfortable with each other and where
+we can challenge ourselves to succeed. To that end, our focus is on
+the tasks at hand and not on extraneous activities (e.g., texting,
+chatting, reading a newspaper, making phone calls, web surfing, etc.).
+Students are asked to refrain from disruptive conversations with
+people sitting around them during lecture. Students observed engaging
+in disruptive activity will be asked to cease this behavior. Those who
+continue to disrupt the class will be asked to leave lecture or
+discussion and may be reported to the Dean of Students.
+
+The Arizona Board of Regents’ Student Code of Conduct, ABOR Policy
+5‐308, prohibits threats of physical harm to any member of the
+University community, including to one’s self. See:
+http://policy.web.arizona.edu/threatening‐behavior‐students
+
+Social Media / External Discussion Forums: The astronomy department
+supports the use of social media tools such as Discord or Slack to
+facilitate learning and collaboration outside of the classroom. Please
+remember that any social media groups generated using
+university-sponsored tools (e.g. D2L class lists) should be treated as
+an extension of the classroom space. This means that they will need to
+abide by the University’s student code of conduct policies, and be
+respectful, inclusive environments.
+
+** Attendance Policy
+All holidays or special events observed by organized religions will be honored
+for those students who show affiliation with that particular religion. Absences
+pre‐approved by the UA Dean of Students (or Dean's designee) will be honored.
+
+It is important to attend all classes, as what is discussed in class is pertinent to
+adequate performance on assignments and exams. If you must be absent, it is your
+responsibility to obtain and review the information you missed.
+
+** Nondiscrimination and Anti-harassment Policy
+The University of Arizona is committed to creating and maintaining an
+environment free of discrimination. In support of this commitment, the
+University prohibits discrimination, including harassment and
+retaliation, based on a protected classification, including race,
+color, religion, sex, national origin, age, disability, veteran
+status, sexual orientation, gender identity, or genetic information.
+For more information, including how to report a concern, please see
+http://policy.arizona.edu/human-resources/nondiscrimination-and-anti-harassment-policy
 
 ** Accessibility and accommodations
 At the University of Arizona, we strive to make learning
@@ -75,6 +127,44 @@ experiences as accessible as possible. If you anticipate or
 experience barriers based on disability or pregnancy, please
 contact the Disability Resource Center (520-621-3268,
 https://drc.arizona.edu/) to establish reasonable accommodations.
+
+** Preferred Name and Pronoun
+This course affirms people of all gender expressions and gender
+identities. If you prefer to be called a different name than what is
+on the class roster, please let me know. Feel free to correct
+instructors on your preferred gender pronoun.
+
+** Additional resources for students
+UA Academic policies and procedures are available at http://catalog.arizona.edu/policies
+
+*** Campus Health
+http://www.health.arizona.edu/
+Campus Health provides quality medical and mental health care services through virtual and in-person
+care.
+Phone: 520-621-9202
+
+*** Counseling and Psych Services (CAPS)
+https://health.arizona.edu/counseling-psych-services
+CAPS provides mental health care, including short-term counseling services.
+Phone: 520-621-3334
+
+*** The Dean of Students Office’s Student Assistance Program
+http://deanofstudents.arizona.edu/student-assistance/students/student-assistance
+Student Assistance helps students manage crises, life traumas, and other barriers that impede success.
+The staff addresses the needs of students who experience issues related to social adjustment, academic
+challenges, psychological health, physical health, victimization, and relationship issues, through a variety
+of interventions, referrals, and follow up services.
+Email: [[mailto:DOS-deanofstudents@email.arizona.edu][DOS-deanofstudents@email.arizona.edu]]
+Phone: 520-621-7057
+
+*** Survivor Advocacy Program
+https://survivoradvocacy.arizona.edu/
+The Survivor Advocacy Program provides confidential support and advocacy services to student survivors
+of sexual and gender-based violence. The Program can also advise students about relevant non-UA
+resources available within the local community for support.
+Email: [[mailto:survivoradvocacy@email.arizona.edu][survivoradvocacy@email.arizona.edu]]
+Phone: 520-621-5767
+
 
 ** Academic Integrity
 According to the Arizona Code of Academic Integrity, “Integrity is
@@ -98,20 +188,15 @@ prosecuted and may result in any or all of the following:
 notation on a student’s transcript re. academic integrity violation, etc.
 http://deanofstudents.arizona.edu/policies‐and‐codes/code‐academic‐integrity
 
-** Attendance Policy
-It is important to attend all classes, as what is discussed in class is pertinent to
-adequate performance on assignments and exams. If you must be absent, it is your
-responsibility to obtain and review the information you missed.
+** Confidentiality of Student Records
+http://www.registrar.arizona.edu/ferpa
 
-All holidays or special events observed by organized religions will be honored
-for those students who show affiliation with that particular religion. Absences
-pre‐approved by the UA Dean of Students (or Dean's designee) will be honored.
+** Safety on Campus and in the Classroom
+For a list of emergency procedures for all types of incidents, please visit the website of the Critical
+Incident Response Team (CIRT): https://cirt.arizona.edu/case-emergency/overview
 
-** Classroom Behavior
-The Arizona Board of Regents’ Student Code of Conduct, ABOR Policy 5‐308,
-prohibits threats of physical harm to any member of the University community,
-including to one’s self. See:
-http://policy.web.arizona.edu/threatening‐behavior‐students
+Also watch the video available at
+https://arizona.sabacloud.com/Saba/Web_spf/NA7P1PRD161/common/learningeventdetail/crtfy000000000003560
 
 
 ** Subject to change statement
