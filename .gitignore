@@ -1,1 +1,8 @@
 others_materials/*
+build.sh
+build-site.el
+css/*
+html-templates/*
+*.html
+*~
+.packages/*
