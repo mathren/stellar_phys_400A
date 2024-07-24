@@ -128,10 +128,10 @@ as we may be able to accommodate it.
 10. *Mechanical feedback*
 11. *s-process*
 12. *r-process*
-13.
-14.
-15.
-16.
+13. *X-ray binaries*
+14. *Asteroseismology*
+15. *The Eddington limit*
+16. *Nuclear reaction chains* ?
 17.
 18.
 19.

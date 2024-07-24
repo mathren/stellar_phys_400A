@@ -1,6 +1,9 @@
 * Lectures topic-by-topic
 
-** Lecture 1: Intro & orders of magnitude
+The order roughly follows the presentation in [[https://www.astro.ru.nl/~onnop/][Onno Pols notes]].
+(Leave 8 lectures for presentations by students.)
+
+** Intro & orders of magnitude
 
 *** Introduction to the course
 
@@ -15,27 +18,27 @@
   and in astronomy more generally.
 
 **** Solar radius
-     R_{\odot} = 6.957\times 10^{10} cm \simeq 10^{11} cm
+     R_{\odot} = 6.957\times 10^{10} cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
 
 **** Solar mass
-     M_{\odot} = 2\times10^{33} g
+     M_{\odot} = 1.98\times10^{33} g\simeq 2\times10^{33} g
 
 **** Solar luminosity
      L_{\odot} = 3.82\times10^{33}^{}^{} erg s^{-1} \simeq 2\times M_{\odot} in =cgs units=!
 
-     This may be one of the reasons why we still use =cgs= in astronomy,
+     (This may be one of the reasons why we still use =cgs= in astronomy,
      the other one being that the constants in electromagnetism are a
-     bit simpler.
+     bit simpler).
 
 **** Lifetime
      Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
 
      How old is the Sun? How long will it live?
 
-** Lecture 2: Color-magnitude and Hertzsprung-Russell diagram
+
+** Color-magnitude and Hertzsprung-Russell diagram
 
   How can we study things that evolve too slow for us to see?
-
 
 *** Hertzsprung-Russel diagram visualization
 
@@ -46,13 +49,44 @@
   - download and plot a bunch of Gaia data. Make the visualization as
     clear as possible
 
-** Lecture 3: Hydrostatic equilibrium
 
-** Lecture 4: Virial theorem, pressure, estimates
+** Hydrostatic equilibrium
 
-** Lecture 5: Nuclear energy generation
+** Virial theorem, pressure, estimates
+ - discuss stability
+
+
+** Equation of state 1
+- Polytropic Equation of state
+- Ideal gas
+
+** Equation of state 2
+- Degenerate and non-relativistic gas
+- Degenerate and relativistic gas
+- Radiation-dominated
+
+*** Homework idea
+ - derive the Chandrasekhar mass?
+
+
+** Radiative energy transport & conduction
+- opacity
+
+
+** Convection
+
+** Nuclear energy generation
 
 *** Homework idea
 
   - run MESA web and compare lifetimes without nuclear energy
     generation and with it
+
+
+** Evolution: low mass stars
+
+** Evolution: high mass stars
+
+** Eclipsing binaries
+
+** Supernovae
