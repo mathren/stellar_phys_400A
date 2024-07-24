@@ -1,9 +1,11 @@
+#+Title: Lectures topic-by-topic
+#+options: title:nil
+
 * Lectures topic-by-topic
-This is a rough schedule of topics. However, we may not get to all
+This is a rough schedule of the topics we will cover. However, we may not get to all
 topics, depending on progress throughout the semester and student
 interest. The order roughly follows the presentation in [[https://www.astro.ru.nl/~onnop/][Onno Pols
 notes]].
-
 
 ** Intro & orders of magnitude
 

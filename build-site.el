@@ -30,13 +30,13 @@
   (with-temp-buffer (insert-file-contents file) (buffer-string)))
 
 (defconst mr/site-html-head
-  (mr/read-file "html-templates/html_head.html"))
+  (mr/read-file "html-content/html-templates/html_head.html"))
 
 (defconst mr/site-html-preamble
-  (mr/read-file "html-templates/preamble.html"))
+  (mr/read-file "html-content/html-templates/preamble.html"))
 
 (defconst mr/html-postamble
-  (format (mr/read-file "html-templates/postamble.html")
+  (format (mr/read-file "html-content/html-templates/postamble.html")
 	  (format-time-string "%-d %B %Y")
 	  emacs-version
 	  org-version
@@ -52,7 +52,7 @@
       org-html-postamble mr/html-postamble
       )
 
-;; Define the publishing project
+;; define the publishing project
 (setq org-publish-project-alist
       (list
        (list "org-site:main"
@@ -70,10 +70,9 @@
 	     :with-title nil
 	     :with-latex t
 	     :with-sub-superscript t
-	     :html-head-include-default-style nil
 	     :with-tags t
 	     :with-tasks t
-	     :html-self-link-headlines t
+	     :html-self-link-headlines nil
              :with-timestamps t					;; Include time stamp in file
              :with-toc nil					;; Don't include a table of contents
              :section-numbers nil				;; Don't include section numbers

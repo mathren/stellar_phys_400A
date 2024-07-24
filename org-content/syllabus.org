@@ -5,6 +5,8 @@ The main topic of the course is stellar structure, a field of
 astronomy that brings together many different branches of physics to understand
 the fundamental objects of astronomical study: stars.
 
+See also [[./lectures.org][here]] for a breakdown of the main topics covered and [[file:projects.org::*List of possible projects/presentations][here]] for
+a tentative list of topics covered by student presentations.
 ** Where and when
 Steward Observatory room *204*, Tuesday and Thursday 12:30-1:45pm
 
@@ -84,7 +86,8 @@ percentages and letter grades will be:
 Your engagement, quality of contributions, and interactions with the
 instructors and with your peers will contribute to your final grade.
 Quality and frequency of your contributions will be evaluated
-throughout the course, with emphasis on growth and improvement.
+throughout the course, rewarding specifically your growth and
+improvement throughout.
 
 *** Homework
 There will be regular homework assignments, including
@@ -185,9 +188,9 @@ considered academics misconduct. Misconduct of any kind will be
 prosecuted and may result in any or all of the following:
 - Reduction of grade
 - Failing grade
-- Referral to the Dean of Students for consideration of additional penalty, i.e.
-notation on a student’s transcript re. academic integrity violation, etc.
-http://deanofstudents.arizona.edu/policies‐and‐codes/code‐academic‐integrity
+- Referral to the Dean of Students for consideration of additional
+  penalty, i.e. notation on a student’s transcript re. academic
+  integrity violation, etc. http://deanofstudents.arizona.edu/policies‐and‐codes/code‐academic‐integrity
 
 ** Additional resources for students
 UA Academic policies and procedures are available at http://catalog.arizona.edu/policies

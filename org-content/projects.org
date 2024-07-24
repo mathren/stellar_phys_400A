@@ -119,7 +119,7 @@ as we may be able to accommodate it.
 1. *Stellar rotation and angular momentum transport*
 2. *Stellar rotation: observational evidence*
 3. *Tidal theory*
-4. *Astrometry*
+4. *Astrometry & the /Gaia/ mission*
 5. *Asteroseismology*
 6. *Roche model and mass transfer*
 7. *Common envelope evolution*
@@ -141,8 +141,8 @@ as we may be able to accommodate it.
 23. *Stellar winds: Parker model*
 24. *Stellar winds: radiatively driven*
 25. *Analytic stellar models: Lane-Emden equation*
-26. *Novae*
-27.
+26. *Analytic stellar models: Eddington standard model*
+27. *Novae*
 28.
 29.
 30.

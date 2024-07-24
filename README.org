@@ -2,19 +2,19 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
+* 400A Theoretical Astrophysics - Stellar Evolution
+
+Material developed for this at the Department of Astronomy and Steward
+Observatory of the University of Arizona in the Fall semester 2024.
+
 #+begin_export html
  <div class="banner_container">
-   <img width="900vw" src="./images/Gaia_DR2_HRD_GAIA.jpg" />
+   <a href="https://sci.esa.int/web/gaia/-/60198-gaia-hertzsprung-russell-diagram"><img width="900vw" alt="Gaia DR2 Hertzsprung-Russel diagram" src="./images/Gaia_DR2_HRD_Gaia.png"/></a>
  </div>
 #+end_export
 
-
-Material developed for the course "400A Theoretical Astrophysics -
-Stellar Evolution" at the Department of Astronomy and Steward
-Observatory of the University of Arizona.
-
- - [[./org-content/syllabus.org][Syllabus]]
- - [[./org-content/lectures.org][Lectures topic-by-topic]]
- - [[./org-content/projects.org][Projects and presentations]]
+ - [[./syllabus.org][Syllabus]]
+ - [[./lectures.org][Lectures topic-by-topic]]
+ - [[./projects.org][Projects and presentations]]
 
 For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
