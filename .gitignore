@@ -1,5 +1,14 @@
-others_materials/*
 build.sh
 *~
 .packages/*
+
+
+# ignore materials from other courses
+
+others_materials/*
+
+# ignore products for now
+
 html-content/*.html
+*.tex
+*.pdf

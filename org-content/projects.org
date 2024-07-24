@@ -1,3 +1,6 @@
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
 * Project/presentation
 Each student will pick a topic to research based on textbooks, journal
 articles, etc. from the list below and provide a short written summary
@@ -9,14 +12,52 @@ all learn from each other.
 *The text has to be submitted one week before the presentation is
 scheduled*, and the *presentation is 10min+5min questions*.
 
+** TODO List of possible projects/presentations
+
+If you have some other topic in mind, please come talk to me early on,
+as we may be able to accommodate it.
+
+1. *Stellar rotation and angular momentum transport*
+2. *Stellar rotation: observational evidence*
+3. *Tidal theory*
+4. *Astrometry & the /Gaia/ mission*
+5. *Asteroseismology*
+6. *Roche model and mass transfer*
+7. *Common envelope evolution*
+8. *Globular clusters: CMD*
+9. *Globular clusters: dynamics*
+10. *Formation of stars*
+11. *Stars in galaxies: Chemical evolution*
+12. *Stars in galaxies: Mechanical feedback*
+13. *Stars in galaxies: Radiative feedback*
+14. *s-process*
+15. *r-process*
+16. *X-ray binaries*
+17. *Thermonuclear explosion in WDs*
+18. *Neutron star structure*
+19. *The Eddington limit*
+20. *Convective boundary mixing*
+21. *Gravitational waves*
+22. *Nuclear reaction chains*
+23. *Stellar winds: Parker model*
+24. *Stellar winds: radiatively driven*
+25. *Analytic stellar models: Lane-Emden equation*
+26. *Analytic stellar models: Eddington standard model*
+27. *Novae*
+28.
+29.
+30.
+31.
+32.
+
 ** Grading
 *This part is worth 40% of your final grade -- as much as all the
 homework combined, so you want to do it well!*
 
-Both text and presentations will be evaluated by the instructors *and*
+Both text and presentations will be evaluated by the instructors /and/
 your peers according to the evaluation rubric outlined below.
 
-More specifically, the text will be evaluated by two other students
+More specifically, the text will be evaluated by one other students
 selected randomly, while the oral presentation and handling of the
 questions will be evaluated by all the students present.
 
@@ -110,41 +151,3 @@ This counts for 10% of this assignment, corresponding to 4% of total grade
   |          | improved. The tone is supportive and comments  |                                        | seem only marginally relevant | the receiving end of it, they would feel       |
   |          | are fair and useful (as opposed to nitpicky).  |                                        |                               | discouraged instead of helped.                 |
   |----------+------------------------------------------------+----------------------------------------+-------------------------------+------------------------------------------------|
-
-** TODO List of possible projects/presentations
-
-If you have some other topic in mind, please come talk to me early on,
-as we may be able to accommodate it.
-
-1. *Stellar rotation and angular momentum transport*
-2. *Stellar rotation: observational evidence*
-3. *Tidal theory*
-4. *Astrometry & the /Gaia/ mission*
-5. *Asteroseismology*
-6. *Roche model and mass transfer*
-7. *Common envelope evolution*
-8. *Globular clusters: CMD*
-9. *Globular clusters: dynamics*
-10. *Formation of stars*
-11. *Stars in galaxies: Chemical evolution*
-12. *Stars in galaxies: Mechanical feedback*
-13. *Stars in galaxies: Radiative feedback*
-14. *s-process*
-15. *r-process*
-16. *X-ray binaries*
-17. *Thermonuclear explosion in WDs*
-18. *Neutron star structure*
-19. *The Eddington limit*
-20. *Convective boundary mixing*
-21. *Gravitational waves*
-22. *Nuclear reaction chains*
-23. *Stellar winds: Parker model*
-24. *Stellar winds: radiatively driven*
-25. *Analytic stellar models: Lane-Emden equation*
-26. *Analytic stellar models: Eddington standard model*
-27. *Novae*
-28.
-29.
-30.
-31.
-32.

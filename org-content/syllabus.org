@@ -1,3 +1,11 @@
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+#+options: toc:nil
+#+options: num:0
+#+LaTeX_HEADER: \usepackage[margin=0.8in]{geometry}
+#+LaTeX_HEADER: \usepackage[colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
+
+
 * Syllabus
 
 ** Description of the course
@@ -131,14 +139,13 @@ discussion and may be reported to the Dean of Students.
 The Arizona Board of Regents’ Student Code of Conduct, ABOR Policy
 5‐308, prohibits threats of physical harm to any member of the
 University community, including to one’s self. See:
-http://policy.web.arizona.edu/threatening‐behavior‐students
+[[http://policy.web.arizona.edu/threatening‐behavior‐students]]
 
 Any social media groups generated using university-sponsored tools
 (e.g., D2L class lists, slack workspaces) should be treated as an
 extension of the classroom. This means that they will need to abide by
 the University’s student code of conduct policies, and be respectful,
 inclusive environments.
-
 
 *** Nondiscrimination and Anti-harassment Policy
 The University of Arizona is committed to creating and maintaining an
@@ -181,7 +188,7 @@ of course materials. However, *graded work/exercises must be the
 product of independent effort unless otherwise instructed*. Students
 are expected to adhere to the UA Code of Academic Integrity as
 described in the UA General Catalog. See:
-https://deanofstudents.arizona.edu/student-rights-responsibilities/academic-integrity
+[[https://deanofstudents.arizona.edu/student-rights-responsibilities/academic-integrity]]
 
 Misappropriation of exams before or after they are given will be
 considered academics misconduct. Misconduct of any kind will be
@@ -190,7 +197,7 @@ prosecuted and may result in any or all of the following:
 - Failing grade
 - Referral to the Dean of Students for consideration of additional
   penalty, i.e. notation on a student’s transcript re. academic
-  integrity violation, etc. http://deanofstudents.arizona.edu/policies‐and‐codes/code‐academic‐integrity
+  integrity violation, etc. [[http://deanofstudents.arizona.edu/policies‐and‐codes/code‐academic‐integrity]]
 
 ** Additional resources for students
 UA Academic policies and procedures are available at http://catalog.arizona.edu/policies
