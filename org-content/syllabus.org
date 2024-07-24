@@ -80,9 +80,18 @@ percentages and letter grades will be:
  - D: 30-50%
  - E: 0-30%
 
+*** Participation
+Your engagement, quality of contributions, and interactions with the
+instructors and with your peers will contribute to your final grade.
+Quality and frequency of your contributions will be evaluated
+throughout the course, with emphasis on growth and improvement.
+
 *** Homework
-Please feel free to use resources outside of the textbook. You can
-also collaborate, but please indicate with whom if you do. You *must*
+There will be regular homework assignments, including
+order-of-magnitude, quantitative, computational and/or more
+qualitative exercises depending on the week and topic. Please feel
+free to use resources outside of the textbook. You can also
+collaborate, but please each time you do, indicate with whom. You *must*
 show your work to receive full credit. Assignments should be uploaded
 via D2L and must be turned in *before the start of class on the due
 date.* Timely feedback will be provided for you to assess your
@@ -92,8 +101,8 @@ understanding and progress.
 This will consist of a written text plus an oral presentation. The
 written text will be evaluated both by the instructor and a randomly
 selected peer, the oral presentation will be evaluated by all the
-student present. For more information on the project/presentation, see
-[[./projects.org][here]].
+student present. For more information on the project/presentation and
+how it will be graded, see [[./projects.org][here]].
 
 *** Incomplete (I) or Withdrawal (W):
 Requests for incomplete (I) or withdrawal (W) must be made in
@@ -207,8 +216,9 @@ other barriers that impede success. The staff addresses the needs of
 students who experience issues related to social adjustment, academic
 challenges, psychological health, physical health, victimization, and
 relationship issues, through a variety of interventions, referrals,
-and follow up services. Email: [[mailto:DOS-deanofstudents@email.arizona.edu][DOS-deanofstudents@email.arizona.edu]]
+and follow up services.
 
+- Email: [[mailto:DOS-deanofstudents@email.arizona.edu][DOS-deanofstudents@email.arizona.edu]]
 - Phone: 520-621-7057
 
 *** Survivor Advocacy Program

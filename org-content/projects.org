@@ -116,36 +116,35 @@ This counts for 10% of this assignment, corresponding to 4% of total grade
 If you have some other topic in mind, please come talk to me early on,
 as we may be able to accommodate it.
 
-1. *Why do stars shine?*
-2. *Astrometry*
-3. *Thermonuclear explosion in WDs*
-4. *Roche model and mass transfer*
-5. *Common envelope evolution*
-6. *Globular clusters: CMD*
-7. *Globular clusters: dynamics*
-8. *Formation of stars*
-9. *Galactic Chemical evolution*
-10. *Mechanical feedback*
-11. *s-process*
-12. *r-process*
-13. *X-ray binaries*
-14. *Asteroseismology*
-15. *The Eddington limit*
-16. *Nuclear reaction chains* ?
-17.
-18.
-19.
-20.
-21.
-22.
-23.
-24.
-25.
-26.
+1. *Stellar rotation and angular momentum transport*
+2. *Stellar rotation: observational evidence*
+3. *Tidal theory*
+4. *Astrometry*
+5. *Asteroseismology*
+6. *Roche model and mass transfer*
+7. *Common envelope evolution*
+8. *Globular clusters: CMD*
+9. *Globular clusters: dynamics*
+10. *Formation of stars*
+11. *Stars in galaxies: Chemical evolution*
+12. *Stars in galaxies: Mechanical feedback*
+13. *Stars in galaxies: Radiative feedback*
+14. *s-process*
+15. *r-process*
+16. *X-ray binaries*
+17. *Thermonuclear explosion in WDs*
+18. *Neutron star structure*
+19. *The Eddington limit*
+20. *Convective boundary mixing*
+21. *Gravitational waves*
+22. *Nuclear reaction chains*
+23. *Stellar winds: Parker model*
+24. *Stellar winds: radiatively driven*
+25. *Analytic stellar models: Lane-Emden equation*
+26. *Novae*
 27.
 28.
 29.
 30.
 31.
 32.
-33.
