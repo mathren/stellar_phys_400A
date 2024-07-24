@@ -15,6 +15,6 @@ Observatory of the University of Arizona.
 
  - [[./org-content/syllabus.org][Syllabus]]
  - [[./org-content/lectures.org][Lectures topic-by-topic]]
- - [[./projects.org][Projects and presentations]]
+ - [[./org-content/projects.org][Projects and presentations]]
 
 For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
