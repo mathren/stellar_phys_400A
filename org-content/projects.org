@@ -1,46 +1,133 @@
 * Project/presentation
-
-*This part is worth 50% of your final grade, so you want to do it well!*
-
-** Instructions
 Each student will pick a topic to research based on textbooks, journal
 articles, etc. from the list below and provide a short written summary
-(\le 3 pages) and an oral presentation to the classroom. This will allow
-each student to dig a bit deeper into a topic we cannot spend too much
-time in class, and at the same time everyone can learn from each
-other.
+(\le 5 pages including figures and/or tables) and an oral presentation
+to the classroom. This will allow each student to dig deeper into a
+topic we cannot spend too much time in class, and at the same we can
+all learn from each other.
 
-*The text has to be submitted one lecture before the presentation is
+*The text has to be submitted one week before the presentation is
 scheduled*, and the *presentation is 10min+5min questions*.
 
-Both text and presentations will be evaluated by the instructors and
-your peers according to a rubric outlined below.
+** Grading
+*This part is worth 40% of your final grade -- as much as all the
+homework combined, so you want to do it well!*
 
-Specifically, the text will be evaluated by a selected subgroup of
-students, while the presentation and handling of the questions will be
-evaluated by all the students present.
+Both text and presentations will be evaluated by the instructors *and*
+your peers according to the evaluation rubric outlined below.
 
-The way you provide evaluation and feedback to your peers will also be
-considered for your final grading. Remember to appreciate the time and
-effort others have put in their work and be kind and constructive in
-providing feedback. The aim is to learn and improve, not to crush
-other's work. And also, nothing is ever perfect, there is always
+More specifically, the text will be evaluated by two other students
+selected randomly, while the oral presentation and handling of the
+questions will be evaluated by all the students present.
+
+All students will be encouraged to ask questions during the
+presentations. The questions and the way you provide your evaluations
+and feedback to your peers will also be considered for your final
+grading.
+
+Of the project/presentation grade, 50% will come from the oral
+presentation and QA (corresponding to 20% of the total final grade),
+40% from the written report (corresponding to 16% of the total final
+grade), and 10% from how you provide feedback to others (corresponding
+to 4% of the total final grade).
+
+*** Evaluation rubric
+
+Remember to appreciate the time and effort others have put in their
+work and be kind and constructive in providing feedback. The aim is to
+learn and improve, not to crush other people's work. And also, nothing
+is ever perfect, there is always something to be asked and/or
 something that can be improved!
 
-** List of possible projects/presentations
+
+**** Written summary
+This counts for 40% of this assignment, corresponding to 16% of the
+total grade.
+
+  |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
+  |                               | Exceptional                                       | Very good                                  | Adequate                                     | Poor                                |
+  |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
+  | Structure and formatting      | Clear, logical, engaging, and easy to follow.     | Clear and easy to follow.                  | The text is sufficiently clear.              | The text is hard to follow.         |
+  |                               | All figures are useful, have captions, and are    | Figures are provided with                  | When present, Figures are useful             | Figures and/or captions are missing |
+  |                               | and well integrated with text. All references     | useful caption and integrated              | but could be better integrated,              | or not useful. References are       |
+  |                               | are provided and relevant.                        | in the tex. All references are listed.     | captions could be improved for clarity.      | incomplete or missing.              |
+  |                               |                                                   |                                            | References are provided but seem incomplete. |                                     |
+  |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
+  | Content logic and readability | The scope of the presentation is clearly          | The scope is stated clearly stated.        | The scope could have been clarified more     | The presentation does not proceed   |
+  |                               | stated. The presentation builds up clearly and    | The presentation logically builds to it,   | explicitly but is in the end achieved. The   | orderly and it is hard to follow.   |
+  |                               | progressively, in an easy to follow and logical   | and the reader can follow it. The (astro)  | (astro)physical aspects are explained in an  | The (astro)physical context is left |
+  |                               | way. By the end, the reader has is left with      | physics is clearly explained and the       | appropriate way that the reader can follow.  | implicit and not enough pointers    |
+  |                               | a clear understanding of the topic and of where   | reader is given sufficient pointers to     | The reader is given a starting point for     | for further investigation           |
+  |                               | further information can be searched for.          | dig deeper.                                | further investigation.                       | are provided                        |
+  |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
+  | Scientific depth              | The (astro)physics is clearly explained in a      | The (astro)physics is explained in a clear | The (astro)physics is explained but the      | The (astro)physics is not explained |
+  |                               | concise but insightful way. The topic is          | way and context is provided. Quantitative  | presentation could be clearer. Small gaps in | or the explanation is incorrect.    |
+  |                               | appropriately unwrapped and connected to          | and qualitative aspects are discussed in   | the quantitative and/or qualitative aspects  | Quantitative and/or qualitative.    |
+  |                               | the broader context. Qualitative and quantitative | an understandable fashion.                 | can be identified.                           | errors are present,                 |
+  |                               | aspects are clearly addressed and put in context. |                                            |                                              |                                     |
+  |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
+
+**** Oral presentation
+This counts for 50% of this assignment, corresponding to 20% of the
+total grade.
+
+  |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
+  |                              | Exceptional                                       | Very good                              | Adequate                         | Poor                        |
+  |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
+  | Slides quality and delivery  | Informative and exciting slides that              | Clear and relevant slides that         | Slides contain the relevant      | Slides are cluttered        |
+  |                              | effectively corroborate the presentation          | corroborate the presentation.          | information. The tone is         | or incomplete and do        |
+  |                              | by the speaker. No information is missing         | The tone is clear and well paced,      | clear and the timing is          | not effectively support     |
+  |                              | or unclear. The tone is engaging and well         | the timing is right. The speaker       | right. The speaker's engagement  | the speaker's presentation. |
+  |                              | paced. The speaker shows mastery of the           | shows mastery of the topic,            | with the audience could be       | Information is missing or   |
+  |                              | topic, talk to the audience, and their            | engages with the audience              | smoother. The speaker answers    | unclear. The speaker does   |
+  |                              | timing is perfect.                                |                                        | most questions clearly.          | not talk to the audience    |
+  |                              |                                                   |                                        |                                  | but rather to themselves.   |
+  |                              |                                                   |                                        |                                  | The speaker is overtime.    |
+  |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
+  | Content and Scientific depth | The presentation is logical, thorough, and clear. | The presentation is logical and clear. | The presentation is logical,     | The presentation is         |
+  |                              | Topics are appropriately unwrapped within the     | The speaker's line of argument is easy | the speaker makes their argument | incomplete or unclear. The  |
+  |                              | available time. The speaker provides the audience | to follow and provides the audience    | clear and the audience can       | line of argument is hard to |
+  |                              | with insight and understanding and is thought     | with new insight and knowledge.        | effectively learn from the       | follow or contains          |
+  |                              | provoking.                                        |                                        | presentation.                    | factual errors.             |
+  |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
+  | QA handling                  | The speaker repeats the questions to make         | The speaker answers questions clearly  | The speaker answers clearly      | The speaker answers in      |
+  |                              | sure everyone can follow and handles them         | and concisely.                         | with insightful answers, but     | a confused/confusing manner |
+  |                              | honestly and clearly. Answers are clear, concise, | Answers are insightful and help the    | the answers could be shortened   | or with factually incorrect |
+  |                              | and useful (remember: the speaker is not          | audience.                              | without loss of content.         | information.                |
+  |                              | required to know everything!)                     |                                        |                                  |                             |
+  |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
+
+
+**** Providing feedback
+This counts for 10% of this assignment, corresponding to 4% of total grade
+
+  |----------+------------------------------------------------+----------------------------------------+-------------------------------+------------------------------------------------|
+  |          | Exceptional                                    | Very good                              | Adequate                      | Poor                                           |
+  |----------+------------------------------------------------+----------------------------------------+-------------------------------+------------------------------------------------|
+  | Feedback | Positive aspects are highlighted before        | Positive aspects are noted, suggestion | Actionable suggestions        | No relevant actionable suggestion is provided. |
+  |          | suggesting clear, constructive, and actionable | are clear, actionable, and relevant.   | are provided, but could       | The tone is dismissive, and/or unclear.        |
+  |          | suggestions on the things that could be        |                                        | be clearer. Some suggestions  | If the provider of this feedback would be at   |
+  |          | improved. The tone is supportive and comments  |                                        | seem only marginally relevant | the receiving end of it, they would feel       |
+  |          | are fair and useful (as opposed to nitpicky).  |                                        |                               | discouraged instead of helped.                 |
+  |----------+------------------------------------------------+----------------------------------------+-------------------------------+------------------------------------------------|
+
+** TODO List of possible projects/presentations
+
+If you have some other topic in mind, please come talk to me early on,
+as we may be able to accommodate it.
 
 1. *Why do stars shine?*
 2. *Astrometry*
 3. *Thermonuclear explosion in WDs*
-4. *Common envelope evolution*
-5. *Globular clusters: CMD*
-6. *Globular clusters: dynamics*
-7. *Formation of stars*
-8.
-9.
-10.
-11.
-12.
+4. *Roche model and mass transfer*
+5. *Common envelope evolution*
+6. *Globular clusters: CMD*
+7. *Globular clusters: dynamics*
+8. *Formation of stars*
+9. *Galactic Chemical evolution*
+10. *Mechanical feedback*
+11. *s-process*
+12. *r-process*
 13.
 14.
 15.
@@ -61,45 +148,4 @@ something that can be improved!
 30.
 31.
 32.
-
-
-** Evaluation rubric
-
-*** Written summary
-  |-------------------------------+-------------------------------------------------+--------------------------------+----------+------|
-  |                               | Exceptional                                     | Very good                      | Adequate | Poor |
-  |-------------------------------+-------------------------------------------------+--------------------------------+----------+------|
-  | Structure and formatting      | Clear, logical, engaging, and easy to follow.   | Clear and easy to follow.      |          |      |
-  |                               | Figures are useful, have captions and are       | Figures are provided with      |          |      |
-  |                               | and well integrated with text. All references   | useful caption. All references |          |      |
-  |                               | are provided                                    | are listed                     |          |      |
-  |-------------------------------+-------------------------------------------------+--------------------------------+----------+------|
-  | Content logic and readability | The scope of the presentation is clearly        |                                |          |      |
-  |                               | stated. The presentation builds up clearly and  |                                |          |      |
-  |                               | progressively, in an easy to follow and logical |                                |          |      |
-  |                               | way. By the end, the reader has is left with    |                                |          |      |
-  |                               | a clear understanding.                          |                                |          |      |
-  |-------------------------------+-------------------------------------------------+--------------------------------+----------+------|
-  | Scientific depth              | The (astro)physics is clearly explained in a    |                                |          |      |
-  |                               | concise but insightful way. The topic is        |                                |          |      |
-  |                               | appropriately unwrapped and connected to        |                                |          |      |
-  |                               | content covered in class .                      |                                |          |      |
-  |-------------------------------+-------------------------------------------------+--------------------------------+----------+------|
-
-*** Oral presentation
-
-  |                              | Exceptional | Very good | Adequate | Poor |
-  | -----------------------------+-------------+-----------+----------+------|
-  | Slides quality and structure |             |           |          |      |
-  | -----------------------------+-------------+-----------+----------+------|
-  | Content and QA handling      |             |           |          |      |
-  | -----------------------------+-------------+-----------+----------+------|
-  | Scientific depth             |             |           |          |      |
-  | -----------------------------+-------------+-----------+----------+------|
-
-*** Providing feedback
-
-  |          | Exceptional | Very good | Adequate | Poor |
-  | ---------+-------------+-----------+----------+------|
-  | Feedback |             |           |          |      |
-  | ---------+-------------+-----------+----------+------|
+33.

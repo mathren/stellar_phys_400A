@@ -40,3 +40,19 @@
 *** Hertzsprung-Russel diagram visualization
 
    HRD video: https://www.youtube.com/watch?v=PsS80huL47c
+
+*** Homework idea
+
+  - download and plot a bunch of Gaia data. Make the visualization as
+    clear as possible
+
+** Lecture 3: Hydrostatic equilibrium
+
+** Lecture 4: Virial theorem, pressure, estimates
+
+** Lecture 5: Nuclear energy generation
+
+*** Homework idea
+
+  - run MESA web and compare lifetimes without nuclear energy
+    generation and with it

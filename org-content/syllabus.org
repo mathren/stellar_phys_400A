@@ -69,10 +69,10 @@ evolution simulations with a research-grade code and analyze them. The
 The course grade will be based on:
 
  - In class participation: 20%
- - Homework: 30%
- - Project/Presentation: 50%
+ - Homework: 40%
+ - Project/Presentation: 40%
 
-For more information on the project/presentation, see [[./org-content/projects.org][here]].
+For more information on the project/presentation, see [[./projects.org][here]].
 
 The class will not be curved. The correspondence between final
 percentages and letter grades will be:
