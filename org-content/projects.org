@@ -1,3 +1,4 @@
+#+title: 400A Projects
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
@@ -12,7 +13,7 @@ all learn from each other.
 *The text has to be submitted one week before the presentation is
 scheduled*, and the *presentation is 10min+5min questions*.
 
-** TODO List of possible projects/presentations
+** List of possible projects/presentations
 
 If you have some other topic in mind, please come talk to me early on,
 as we may be able to accommodate it.
@@ -51,8 +52,8 @@ as we may be able to accommodate it.
 32.
 
 ** Grading
-*This part is worth 40% of your final grade -- as much as all the
-homework combined, so you want to do it well!*
+/This part is worth 40% of your final grade -- as much as all the
+homework combined, so you want to do it well!/
 
 Both text and presentations will be evaluated by the instructors /and/
 your peers according to the evaluation rubric outlined below.
