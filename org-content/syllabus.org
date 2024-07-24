@@ -3,10 +3,8 @@
 #+options: toc:nil
 #+options: num:0
 #+LaTeX_HEADER: \usepackage[margin=0.8in]{geometry}
-#+LaTeX_HEADER: \usepackage[colorlinks,citecolor=blue,linkcolor=blue,urlcolor=blue]{hyperref}
 
-
-* Syllabus
+* 400A - Syllabus
 
 ** Description of the course
 The main topic of the course is stellar structure, a field of
