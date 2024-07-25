@@ -1,5 +1,4 @@
-#+title: 400A Theoretical Astrophysics - Stellar Evolution
-#+option: title:nil
+#+title: 400A Stellar Evolution
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
