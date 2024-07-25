@@ -1,4 +1,6 @@
 #+Title: 400A Lectures topic-by-topic
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
 #+options: title:nil
 #+OPTIONS:  p:with-planning
 
@@ -10,106 +12,30 @@ and student interest. The order roughly follows the presentation in
 
 ** Intro & orders of magnitude
 <2024-08-27 Tue>
-*** Introduction to the course
 
-- Discuss [[./syllabus.org][syllabus]] and learning outcomes
-- Discuss project, show list
-- Discuss expectations and grading rubrics for course and project
-
-*** What is a star?
-- Historical definition: /flickering light source in the sky with no
-  intrinsic motion/ (where flickering excludes planets, and no
-  intrinsic motion excludes planets /and/ other solar system objects
-  such as comets and asteroids).
-- More modern definition: /self-gravitating amount of gas that at some
-  point is sufficiently hot for nuclear fusion/.
-
-Note that the requirement of nuclear fusion is *extremely new*: only
-about 100 years old! A lot can be learned about stars without knowing
-anything about nuclear fusion, which we will treat, but much later in
-the course.
-
-*** What determines the properties of a (single) star?
-- *Mass*
-- Chemical composition (what is a star made of? Can you think of a
-  star made of something else?)
-- Rotation
-
-*** Observations
-- Photometry
-- Spectroscopy (SB1 and SB2 binaries)
-- Asteroseismology
-- Neutrinos
-
-*** Relevant physical scales
-The star we can observe best is the closest one, the Sun (\odot), so a
-lot of quantities are scaled to those of the Sun in stellar physics
-and in astronomy more generally.
-
-**** Solar radius: R_{\odot} = 6.957\times 10^{10} cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
-**** Solar mass: M_{\odot} = 1.98\times10^{33} g\simeq 2\times10^{33} g
-**** Solar luminosity: L_{\odot} = 3.82\times10^{33}^{}^{} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
-This may be one of the reasons why we still use =cgs= in astronomy,
-the other one being that the constants in electromagnetism are a
-bit simpler.
-**** Solar metallicity: Z_{\odot} = 0.0146 \simeq 0.02 (older but still widely used value)
-The "metallicity" is the fraction by mass of gas that is /not/ hydrogen
-nor helium. This includes many elements (e.g., C, N, O, Si) that a
-chemist would not call "metals".
-**** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
-How old is the Sun? How long will it live?
-
-*** Homework
-DEADLINE: <2024-09-03 Tue>
-
-Look over the project list, and come up with a ranked list of 5
-projects you are interested in. Feel free to search the web/literature
-to decide. Based on this list, we will try to assign projects, but it
-may not be possible to satisfy everyone.
-
-If you want, feel free to come up with different subjects related to
-stellar physics as well to propose. It may be best to come talk to me
-before filling your list with new proposals.
+[[./notes-lecture1.org][Notes]]
 
 ** Color-magnitude and Hertzsprung-Russell diagram
+<2024-08-29 Thu>
 
-  How can we study things that evolve too slow for us to see?
-
-*** Hertzsprung-Russel diagram visualization
-
-   HRD video: https://www.youtube.com/watch?v=PsS80huL47c
-
-*** Homework
-
-**** Aim
-Make your own color-magnitude diagram of a selected group of stars.
-This is a data-visualization exercise, so try to make your diagram as
-informative and useful as possible. Think of a publication-quality
-plot, you want it to be good looking for people to want to use it in
-their slides, dense in information, and the info should possibly be
-layered.
-
-**** Instructions
-We will use the latest data release from ESA's /Gaia/ mission, you will
-be using a bleeding-edge dataset! These are publicly available in the
-[[https://gea.esac.esa.int/archive/][Gaia archive]] or any of the [[https://www.cosmos.esa.int/web/gaia/data-access#PartnerDataCentres][partner data centers]]. To prepare
-this exercise I have downloaded the data from [[https://vizier.cds.unistra.fr/viz-bin/VizieR-2?-source=gaia-dr3][Vizier]], which is one of
-the partner data centers.
-
-
-
-
-  - download and plot a bunch of Gaia data. Make the visualization as
-    clear as possible
-
+[[notes-lecture2.org][Notes]]
 
 ** Hydrostatic equilibrium
+<2024-09-03 Tue>
+
+[[./notes-lecture3.org][Notes]]
 
 ** Virial theorem, pressure, estimates
  - discuss stability
 
+<2024-09-05 Thu>
+
+[[./notes-lecture4.org][Notes]]
 
 ** Equation of state 1
+
+[[./notes-lecture5.org][Notes]]
+
 - Polytropic Equation of state
 - Ideal gas
 
