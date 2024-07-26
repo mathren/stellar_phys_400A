@@ -9,7 +9,7 @@ others_materials/*
 
 # ignore lecture notes for now
 
-org-content/notes-lecture*
+org-content/private-content/*
 
 # ignore products for now
 

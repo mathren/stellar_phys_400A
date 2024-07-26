@@ -10,62 +10,187 @@ not get to all topics, depending on progress throughout the semester
 and student interest. The order roughly follows the presentation in
 [[https://www.astro.ru.nl/~onnop/][Onno Pols notes]].
 
-** Intro & orders of magnitude
-<2024-08-27 Tue>
+** <2024-08-27 Tue> Intro & orders of magnitude
 
-[[./notes-lecture1.org][Notes]]
+** <2024-08-29 Thu> Color-magnitude and Hertzsprung-Russell diagram
 
-** Color-magnitude and Hertzsprung-Russell diagram
-<2024-08-29 Thu>
+** <2024-09-03 Tue> Eclipsing binaries
 
-[[notes-lecture2.org][Notes]]
+** <2024-09-05 Thu> Hydrostatic equilibrium
 
-** Hydrostatic equilibrium
-<2024-09-03 Tue>
+** <2024-09-10 Tue> Virial theorem, pressure, estimates
 
-[[./notes-lecture3.org][Notes]]
+** <2024-09-12 Thu> Equation of state 1
 
-** Virial theorem, pressure, estimates
- - discuss stability
-
-<2024-09-05 Thu>
-
-[[./notes-lecture4.org][Notes]]
-
-** Equation of state 1
-
-[[./notes-lecture5.org][Notes]]
 
 - Polytropic Equation of state
 - Ideal gas
 
-** Equation of state 2
+** <2024-09-17 Tue> Equation of state 2
+
+
 - Degenerate and non-relativistic gas
 - Degenerate and relativistic gas
 - Radiation-dominated
 
-*** Homework idea
- - derive the Chandrasekhar mass?
+** <2024-09-19 Thu> Opacities
 
 
-** Radiative energy transport & conduction
 - opacity
 
+** <2024-09-24 Tue> Radiative energy transport & conduction
 
-** Convection
 
-** Nuclear energy generation
+** <2024-09-26 Thu> Convection
 
-*** Homework idea
+
+** <2024-10-01 Thu> Nuclear energy generation*** Homework idea
+
 
   - run MESA web and compare lifetimes without nuclear energy
     generation and with it
 
+** <2024-10-03 Tue> Evolution: low mass stars
 
-** Evolution: low mass stars
 
-** Evolution: high mass stars
+** <2024-10-08 Thu> Evolution: high mass stars
 
-** Eclipsing binaries
 
-** Supernovae
+** <2024-10-10 Tue> Supernovae
+
+
+** <2024-10-15 Thu> Presentation expectations
+ - Discuss what is expected for the presentations, how they will be
+   graded, etc.
+
+** TODO <2024-10-22 Tue> Four student presentations
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+** TODO <2024-10-24 Thu> Four student presentations
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+
+** TODO <2024-10-29 Tue> Four student presentations
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+
+** TODO <2024-10-31 Thu> Four student presentations
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+** TODO <2024-11-05 Tue> Four student presentations
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+
+** TODO <2024-11-07 Thu> Four student presentations
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+
+** TODO <2024-11-12 Tue> Four student presentations
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+** TODO <2024-11-14 Thu> Four student presentations
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+** TODO <2024-11-19 Tue> One student presentation
+ Extra time can be used as backup
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+
+** TODO <2024-11-21 Thu> Extra
+
+** TODO <2024-11-26 Tue> Extra
+
+** TODO <2024-12-03 Tue> Extra
+
+** TODO <2024-12-05 Thu> Extra
+
+** TODO <2024-12-10 Tue> Extra
