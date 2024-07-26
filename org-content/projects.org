@@ -13,42 +13,41 @@ all learn from each other.
 *The text has to be submitted one week before the presentation is
 scheduled*, and the *presentation is 10min+5min questions*.
 
-** List of possible projects/presentationses
-
+** List of possible projects/presentations
 
 If you have some other topic in mind, please come talk to me early on,
 as we may be able to accommodate it.
 
-1. *Stellar rotation and angular momentum transport*
-2. *Stellar rotation: observational evidence*
-3. *Tidal theory*
-4. *Astrometry & the /Gaia/ mission*
-5. *Asteroseismology*
-6. *Roche model and mass transfer*
-7. *Common envelope evolution*
-8. *Globular clusters: CMD*
-9. *Globular clusters: dynamics*
-10. *Formation of stars*
-11. *Stars in galaxies: Chemical evolution*
-12. *Stars in galaxies: Mechanical feedback*
-13. *Stars in galaxies: Radiative feedback*
-14. *s-process*
-15. *r-process*
-16. *X-ray binaries*
-17. *Thermonuclear explosion in WDs*
-18. *Neutron star structure*
-19. *The Eddington limit*
-20. *Convective boundary mixing*
-21. *Gravitational waves*
-22. *Nuclear reaction chains*
-23. *Stellar winds: Parker model*
-24. *Stellar winds: radiatively driven*
-25. *Analytic stellar models: Lane-Emden equation*
-26. *Analytic stellar models: Eddington standard model*
-27. *Novae*
-28. *Supermassive stars*
-29. *Stellar neutrinos*
-30.
+1. Stellar rotation: observational evidence
+2. Stellar rotation: angular momentum transport processes
+3. Asteroseismology
+4. Tidal theory
+5. Astrometry & the /Gaia/ mission
+6. Roche model and mass transfer
+7. Common envelope evolution
+8. Globular clusters: CMD
+9. Globular clusters: dynamics
+10. Formation of stars
+11. Stars in galaxies: Chemical evolution
+12. Stars in galaxies: Mechanical feedback
+13. Stars in galaxies: Radiative feedback
+14. s-process
+15. r-process
+16. X-ray binaries
+17. Thermonuclear explosion in WDs
+18. Neutron star structure
+19. The Eddington limit
+20. Convective boundary mixing
+21. Gravitational waves
+22. Nuclear reaction chains
+23. Stellar winds: Parker model
+24. Stellar winds: radiatively driven
+25. Analytic stellar models: Lane-Emden equation
+26. Analytic stellar models: Eddington standard model
+27. Novae
+28. Supermassive stars
+29. Stellar neutrinos
+30. From T_{eff} to color: bolometric corrections and extinction
 31.
 32.
 33.

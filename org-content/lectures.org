@@ -12,6 +12,7 @@ and student interest. The order roughly follows the presentation in
 
 ** <2024-08-27 Tue> Intro & orders of magnitude
 
+[[./private-content/notes-lecture1.org][Notes]]
 ** <2024-08-29 Thu> Color-magnitude and Hertzsprung-Russell diagram
 
 ** <2024-09-03 Tue> Eclipsing binaries
@@ -44,11 +45,8 @@ and student interest. The order roughly follows the presentation in
 ** <2024-09-26 Thu> Convection
 
 
-** <2024-10-01 Thu> Nuclear energy generation*** Homework idea
+** <2024-10-01 Thu> Nuclear energy generation
 
-
-  - run MESA web and compare lifetimes without nuclear energy
-    generation and with it
 
 ** <2024-10-03 Tue> Evolution: low mass stars
 
