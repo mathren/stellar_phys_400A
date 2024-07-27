@@ -58,7 +58,7 @@
        (list "org-site:main"
              :base-directory "./org-content"
 	     :publishing-directory "./html-content"
-	     :recursive nil
+	     :recursive t
 	     :exclude "LICENSE\\|\\.gitignore"
              :publishing-function 'org-html-publish-to-html
 	     :html-doctype "html5"
