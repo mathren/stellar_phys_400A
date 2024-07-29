@@ -12,10 +12,10 @@ and student interest. The order roughly follows the presentation in
 
 ** <2024-08-27 Tue> Intro & orders of magnitude
 
-[[./notes-lecture1.org][Notes]]
+[[./notes-lecture-Intro.org][Notes]]
 ** <2024-08-29 Thu> Color-magnitude and Hertzsprung-Russell diagram
 
-[[./notes-lecture2.org][Notes]]
+[[./notes-lecture-CMD-HRD.org][Notes]]
 
 ** <2024-09-03 Tue> Eclipsing binaries
 
