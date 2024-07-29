@@ -1,0 +1,72 @@
+#+title: Lecture 1: Introduction
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* Introduction to the course
+*Materials*: chapter 1 of Onno Pols' lecture notes.
+
+- Discuss [[./syllabus.org][syllabus]] and learning outcomes
+- Discuss project, show list
+- Discuss expectations and grading rubrics for course and project
+
+** Aim of the course
+
+*To understand the structure and evolution of stars and their
+observational properties using known laws of physics.*
+
+** What is a star?
+- Historical definition: /flickering light source in the sky with no
+  intrinsic motion/ (where flickering excludes planets, and no
+  intrinsic motion excludes planets /and/ other solar system objects
+  such as comets and asteroids).
+- More modern definition: /self-gravitating amount of gas that at some
+  point is sufficiently hot for nuclear fusion/.
+
+Note that the requirement of nuclear fusion is *extremely new*: only
+about 100 years old! A lot can be learned about stars without knowing
+anything about nuclear fusion, which we will treat, but much later in
+the course.
+
+** What determines the properties of a (single) star?
+- *Mass*
+- Chemical composition (what is a star made of? Can you think of a
+  star made of something else?)
+- Rotation
+
+** Observations
+- Photometry
+- Spectroscopy (SB1 and SB2 binaries)
+- Asteroseismology
+- Neutrinos
+
+** Relevant physical scales
+The star we can observe best is the closest one, the Sun (\odot), so a
+lot of quantities are scaled to those of the Sun in stellar physics
+and in astronomy more generally.
+
+*** Solar radius: R_{\odot} = 6.957\times 10^{10} cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
+*** Solar mass: M_{\odot} = 1.98\times10^{33} g\simeq 2\times10^{33} g
+*** Solar luminosity: L_{\odot} = 3.82\times10^{33}^{} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
+This may be one of the reasons why we still use =cgs= in astronomy,
+the other one being that the constants in electromagnetism are a
+bit simpler.
+*** Solar metallicity: Z_{\odot} = 0.0146 \simeq 0.02 (older but still widely used value)
+The "metallicity" is the fraction by mass of gas that is /not/ hydrogen
+nor helium. This includes many elements (e.g., C, N, O, Si) that a
+chemist would not call "metals".
+*** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
+How old is the Sun? How long will it live?
+** Discuss projects
+
+
+* Homework
+DEADLINE: <2024-09-03 Tue>
+
+Look over the project list, and come up with a ranked list of 5
+projects you are interested in. Feel free to search the web/literature
+to decide. Based on this list, we will try to assign projects, but it
+may not be possible to satisfy everyone.
+
+If you want, feel free to come up with different subjects related to
+stellar physics as well to propose. It may be best to come talk to me
+before filling your list with new proposals.

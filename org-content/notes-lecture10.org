@@ -1,0 +1,3 @@
+#+title: Lecture 9: Nuclear fusion
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu

@@ -11,7 +11,10 @@ topic we cannot spend too much time in class, and at the same we can
 all learn from each other.
 
 *The text has to be submitted one week before the presentation is
-scheduled*, and the *presentation is 10min+5min questions*.
+scheduled*, and the *presentation is 10min+5min questions*. I strongly
+recommend talking to me and/or Hailey at least 2 weeks before your
+written presentation is due to discuss materials that you found and
+structure of the presentation.
 
 ** List of possible projects/presentations
 
@@ -48,7 +51,7 @@ as we may be able to accommodate it.
 28. Supermassive stars
 29. Stellar neutrinos
 30. From T_{eff} to color: bolometric corrections and extinction
-31.
+31. Pair instability supernovae
 32.
 33.
 
@@ -139,7 +142,6 @@ total grade.
   |                              | and useful (remember: the speaker is not          | audience.                              | without loss of content.         | information.                |
   |                              | required to know everything!)                     |                                        |                                  |                             |
   |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
-
 
 **** Providing feedback
 This counts for 10% of this assignment, corresponding to 4% of total grade

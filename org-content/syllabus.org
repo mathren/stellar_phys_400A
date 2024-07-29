@@ -12,6 +12,7 @@ understand the fundamental objects of astronomical study: stars.
 
 See also [[./lectures.org][here]] for a breakdown of the main topics covered and [[file:projects.org::*List of possible projects/presentations][here]] for
 a tentative list of topics covered by student presentations.
+
 * Where and when
 Steward Observatory room *204*, Tuesday and Thursday 12:30-1:45pm
 
@@ -28,11 +29,11 @@ Steward Observatory room *204*, Tuesday and Thursday 12:30-1:45pm
 * Expected learning outcomes
 By the end of the course, students will be able to:
 
- - *Understand the physical scales, masses, sizes, lifetimes and other properties associated with a wide variety of astronomical objects and phenomena.*
+ - *Understand the physical scales, masses, sizes, lifetimes, and other properties associated with a wide variety of astronomical objects and phenomena.*
  - *Apply a physically motivated theoretical framework to stellar structure to derive stellar properties and compare to observations.*
  - *Use mathematical and computational skills to solve astrophysical problems related to stellar and astrophysical problems.*
- - *Distinguish and assess observationally confirmed elements of stellar physics from numerical results.*
  - *Communicating, translating, and interpreting fundamental astronomical concepts and research results in oral and written formats.*
+ - *Distinguish observationally confirmed elements of stellar physics from numerical results.*
 
 These learning outcomes will be met through attendance at lectures,
 in-class activities, homework and writing assignments, and a final
@@ -54,7 +55,7 @@ covered in this course, although order and presentation can vary
 widely. You can use any textbook you like or already have. I recommend
 and will mostly follow these:
 
- - [[https://www.astro.ru.nl/~onnop/][Onno Pols notes]]. These lecture notes are freely available,
+ - [[https://www.astro.ru.nl/~onnop/][Prof. Onno Pols notes]]. These lecture notes are freely available,
    accessible, and thorough, making them an excellent starting point.
    I strongly suggest downloading a copy for yourself early in the
    course.
@@ -64,9 +65,11 @@ and will mostly follow these:
    student and have troubles accessing this book, please come talk to
    me.
 
-We will also use [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]], a cloud-computing resource to run stellar
-evolution simulations with a research-grade code and analyze them. The
-=MESA-web= interface simplifies the access to this state-of-the-art tool.
+Another freely available useful resource are the [handout notes] by
+Prof. Rich Townsend. We will also use [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]], a cloud-computing
+resource to run stellar evolution simulations with a research-grade
+code and analyze them. The =MESA-web= interface simplifies the access to
+this state-of-the-art tool.
 
 * Exams and grading
 The course grade will be based on:
@@ -87,7 +90,8 @@ percentages and letter grades will be:
 Your engagement, quality of contributions, and interactions with the
 instructors and with your peers will contribute to your final grade.
 Quality and frequency of your contributions will be evaluated
-throughout the course, rewarding specifically growth and improvement.
+throughout the course, rewarding specifically _growth_ and _improvement_
+throughout the course.
 
 ** Homework
 There will be regular homework assignments, including

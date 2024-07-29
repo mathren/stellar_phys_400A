@@ -1,0 +1,3 @@
+#+title: Lecture 8: Radiative and conductive energy transport
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu

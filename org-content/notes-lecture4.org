@@ -1,0 +1,10 @@
+#+title: Lecture 4: Hydrostatic equilibrium
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* Homework
+
+Estimate and compare the dynamical timescale using multiple methods:
+
+ - Kepler's third law at the surface of the star
+ -

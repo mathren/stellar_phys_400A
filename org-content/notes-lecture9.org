@@ -1,0 +1,3 @@
+#+title: Lecture 9: Convection
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
