@@ -115,13 +115,23 @@ nothing forbids one to make isochrones on other planes.
 #+ATTR_HTML: :alt /HST/ observations of NGC1818 with isochrone fitting
 [[./images/Wang_NGC1818.png]]
 
-*** Example: 30 Doradus
+
+Clearly there is a strong correlation between magnitude and color (or
+L and T_{eff}) within a co-eval population: most stars are scattered
+around a line. This means there is *one single parameter* dominating the
+position of stars on the CMD/HRD at least for the longest lived phase
+of the evolution. That parameter is *mass* -- and we will see next time
+how masses can be measured only in some special cases.
+
+*** Example: 30 Doradus region
 
 #+CAPTION: Color-magnitude diagram of the 30 Doradus region in the LMC overlayed with theoretical stellar tracks (solid black lines), and isochrones (dashed black lines) from [[https://www.aanda.org/10.1051/0004-6361/201833433][Schneider et al. 2018]]
 #+ATTR_HTML: :width 100%
 #+ATTR_HTML: :alt  VLT/FLAMES observations of 30 Doradus with theoretical stellar evolution tracks and isochrones
 [[./images/30Dor_Schneider30_HRD.png]]
 
+This is not a region where all the stars have the same age
+necessarily, hence the wider distribution of stars on the HRD.
 
 * Homework
 

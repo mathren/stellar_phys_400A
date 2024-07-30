@@ -17,7 +17,7 @@ and student interest. The order roughly follows the presentation in
 
 [[./notes-lecture-CMD-HRD.org][Notes]]
 
-** <2024-09-03 Tue> Eclipsing binaries
+** <2024-09-03 Tue> Eclipsing binaries and mass measurements
 
 ** <2024-09-05 Thu> Hydrostatic equilibrium
 
