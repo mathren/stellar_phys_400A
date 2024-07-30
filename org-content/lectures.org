@@ -18,6 +18,7 @@ and student interest. The order roughly follows the presentation in
 
 [[./notes-lecture-CMD-HRD.org][Notes]]
 
+
 ** <2024-09-03 Tue> Eclipsing binaries and mass measurements
 
 [[./notes-lecture-EB.org][Notes]]
@@ -27,7 +28,6 @@ and student interest. The order roughly follows the presentation in
 ** <2024-09-10 Tue> Virial theorem, pressure, estimates
 
 ** <2024-09-12 Thu> Equation of state 1
-
 
 - Polytropic Equation of state
 - Ideal gas
@@ -62,16 +62,21 @@ and student interest. The order roughly follows the presentation in
  - Discuss structure: introduce problem, show state-of-the-art
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
 
-** <2024-10-08 Thu> Evolution: low mass stars
+** <2024-10-08 Thu> Radiative transfer, stellar atmospheres, and spectral lines
+
+- line formation region
+- line broadening mechanisms
+
+** <2024-10-10 Tue> Evolution: low mass stars
 
 
-** <2024-10-10 Tue> Evolution: high mass stars
+** <2024-10-15 Thu> Evolution: high mass stars
 
 
-** <2024-10-15 Thu> Supernovae
+** <2024-10-22 Tue> Supernovae
 
 
-** TODO <2024-10-22 Tue> Four student presentations
+** <2024-10-24 Thu> Four student presentations
 *** Presenter 1:
 - reviewer 1:
 - reviewer 2:
@@ -84,51 +89,7 @@ and student interest. The order roughly follows the presentation in
 *** Presenter 4:
 - reviewer 1:
 - reviewer 2:
-** TODO <2024-10-24 Thu> Four student presentations
-
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
-
-** TODO <2024-10-29 Tue> Four student presentations
-
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
-
-** TODO <2024-10-31 Thu> Four student presentations
-
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
-** TODO <2024-11-05 Tue> Four student presentations
+** <2024-10-29 Tue> Four student presentations
 
 *** Presenter 1:
 - reviewer 1:
@@ -143,7 +104,7 @@ and student interest. The order roughly follows the presentation in
 - reviewer 1:
 - reviewer 2:
 
-** TODO <2024-11-07 Thu> Four student presentations
+**  <2024-10-31 Thu> Four student presentations
 
 *** Presenter 1:
 - reviewer 1:
@@ -158,7 +119,7 @@ and student interest. The order roughly follows the presentation in
 - reviewer 1:
 - reviewer 2:
 
-** TODO <2024-11-12 Tue> Four student presentations
+**  <2024-11-05 Tue> Four student presentations
 
 *** Presenter 1:
 - reviewer 1:
@@ -172,7 +133,7 @@ and student interest. The order roughly follows the presentation in
 *** Presenter 4:
 - reviewer 1:
 - reviewer 2:
-** TODO <2024-11-14 Thu> Four student presentations
+**  <2024-11-07 Thu> Four student presentations
 
 *** Presenter 1:
 - reviewer 1:
@@ -186,19 +147,61 @@ and student interest. The order roughly follows the presentation in
 *** Presenter 4:
 - reviewer 1:
 - reviewer 2:
-** TODO <2024-11-19 Tue> One student presentation
+
+**  <2024-11-12 Tue> Four student presentations
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+
+**  <2024-11-14 Thu> Four student presentations
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+**  <2024-11-19 Tue> Four student presentations
+
+*** Presenter 1:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 2:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 3:
+- reviewer 1:
+- reviewer 2:
+*** Presenter 4:
+- reviewer 1:
+- reviewer 2:
+** <2024-11-21 Thu> One student presentation
  Extra time can be used as backup
 
 *** Presenter 1:
 - reviewer 1:
 - reviewer 2:
 
-** TODO <2024-11-21 Thu> Extra
+**  <2024-11-26 Tue> Extra
 
-** TODO <2024-11-26 Tue> Extra
+**  <2024-12-03 Tue> Extra
 
-** TODO <2024-12-03 Tue> Extra
+**  <2024-12-05 Thu> Extra
 
-** TODO <2024-12-05 Thu> Extra
-
-** TODO <2024-12-10 Tue> Extra
+**  <2024-12-10 Tue> Extra

@@ -13,8 +13,12 @@ diagram. However, how do we determine what this parameter is, having
 only these observational data? It is generally not possible without
 relying on models.
 
-However, binaries can help
+However, binaries can help!
 
 ** Binaries are common
+
+
+
+** Spectroscopic binaries
 
 **

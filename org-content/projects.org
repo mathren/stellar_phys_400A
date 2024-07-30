@@ -11,10 +11,10 @@ topic we cannot spend too much time in class, and at the same we can
 all learn from each other.
 
 *The text has to be submitted one week before the presentation is
-scheduled*, and the *presentation is 10min+5min questions*. I strongly
-recommend talking to me and/or Hailey at least 2 weeks before your
-written presentation is due to discuss materials that you found and
-structure of the presentation.
+scheduled*, and the *presentation is 10min+5min questions*. I _strongly_
+recommend talking to me and/or Hailey at least 2 weeks (the earlier
+the better!) before your written presentation is due to discuss
+materials that you found and structure of the presentation.
 
 ** List of possible projects/presentations
 
@@ -24,10 +24,10 @@ as we may be able to accommodate it.
 1. Stellar rotation: observational evidence
 2. Stellar rotation: angular momentum transport processes
 3. Asteroseismology
-4. Tidal theory
-5. Astrometry & the /Gaia/ mission
-6. Roche model and mass transfer
-7. Common envelope evolution
+4. Astrometry & the /Gaia/ mission
+5. Tides in stars
+6. Common envelope evolution
+7. Roche model and mass transfer
 8. Globular clusters: CMD
 9. Globular clusters: dynamics
 10. Formation of stars
@@ -52,8 +52,8 @@ as we may be able to accommodate it.
 29. Stellar neutrinos
 30. From T_{eff} to color: bolometric corrections and extinction
 31. Pair instability supernovae
-32.
-33.
+32. Triple systems: Kozai-Lidov-von Zeipel oscillations
+34.
 
 ** Grading
 /This part is worth 40% of your final grade -- as much as all the

@@ -60,16 +60,22 @@ billion stars in the Galaxy. This is a very "classical" astrophysics
 task, but the precision and size of the datasets from this mission are
 unprecedented and are revolutionizing this field.
 
+The y-axis is the magnitude in the =G= band of the telescope. This is a
+measure of how many photons in each band (think of it as a "photon
+bucket") arrive at the telescope. It is "absolute" because it is
+rescaled to what the flux would be if the star were at a distance of
+10 parsec.
+
+*Q*: what is a parsec? (1pc \simeq 3\times 10^{18} cm \simeq 2\times10^{5} AU \simeq 3 light years)
+
 The x-axis is the color, obtained as the difference in flux between
 two filters of the /Gaia/ telescope =Bp-Rp=.
 
-The y-axis is the magnitude in the =G= band of the telescope.
-
-Each dot is a different star, but there are so many, that in the most
-crowded region what is plotted is the density of stars (per unit
-"pixel" on this plot). So what we are looking at is a group picture of
-many different stars, varying in age, composition, position in the
-galaxy, etc.
+Each dot is a different star, but there are so many (~1.5 billions in
+/Gaia/ DR2), that in the most crowded region what is plotted is the
+density of stars (per unit "pixel" on this plot). So what we are
+looking at is a group picture of many different stars, varying in age,
+composition, position in the galaxy, etc.
 
 *** Questions:
  - where are the cool stars?
@@ -77,6 +83,121 @@ galaxy, etc.
  - where do you think the Sun would be on this diagram? (*N.B.:* /Gaia/
    does /not/ look at the Sun, so it is actually not in this plot!)
  - Focusing on where most stars are, can you spot any trend?
+
+
+** Spectral types: OBAFGKM(LT)
+
+This is one of the many nonsense names in astronomy that exist only
+for historical reason. Astronomy is a very ancient science (it's
+needed to follow the passage of time and decide when planting things,
+and to navigate), but it remained separated from physics (i.e., trying
+to understand the functioning of the natural world) for a very long
+time, with the Aristotelian idea that the "sub-lunar" world and the
+super-lunar world were fundamentally different. This idea was
+progressively eroded with the "scientific revolution" of the 16^{th}-17^{th
+century, and finally astronomy and physics converged into
+*astrophysics* with two major breakthroughs:
+
+1. Newton's gravitational law which unified the motion of free falling
+   things on Earth with the motion of satellites (Moon around the
+   Earth) and Planets
+2. The spectroscopic observations of the Sun (and later other stars)
+   by Kirchhoff, Bunsen, and Fraunhofer which demonstrated that stars
+   are made "of the same stuff" that we find on Earth
+
+Here I want to focus on 2. A spectrum is what one obtains by taking a
+source of light and decomposing it in its various frequencies (e.g.,
+with a prism, or grating -- think [[https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon#/media/File:Dark_Side_of_the_Moon.png][Pink Floyd's Dark side of the moon
+cover]]).
+
+This can be done in any wavelength range, for example, X-ray
+spectroscopy is an important tool to study binaries with compact
+objects such as neutron stars and black holes. However, for most
+stars, since we observe them from ground-based observatories, what is
+available is the "optical" spectrum, that is a spectrum in the
+wavelength rage that can penetrate the Earth's atmosphere, roughly
+between ~300-900 nm.
+
+Kirchhof and Bunsen realized that filtering (white) light through a
+rarefied gas before taking its spectrum would produce "absorption
+lines", i.e. there would be regions of wavelength where light was
+missing, and these could be used to identify which gas was filtering
+the light.
+
+#+CAPTION: Spectrum of the Sun from the /Fourier Transform Spectrometer at McMath-Pierce Solar Facility at the National Solar Observatory on Kitt Peak
+#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :alt Solar spectrum
+[[./images/solar-spectrum.jpg]]
+
+Fraunhofer had already taken spectra of the Sun, and it was also
+exhibiting "absorption lines". This is because the light filtering out
+of the stellar atmosphere is blocked by something (typically these are
+ionic/atomic quantum mechanical transition, but this was /not/ known
+when they were first observed). This demonstrated that the Sun was
+made of the same elements that are visible on Earth.
+
+At this point, people started to classify stars based on the
+qualitative morphology of their spectra (which lines are present,
+which are more dominant, etc.), and defining qualitative classes A, B,
+C,... As the number of observations increased, the classes were often
+merged, leaving the current ones listed above.
+
+However, it was not yet known why different stars had different
+spectra and belong to a certain class. Only with the construction of
+the color-magnitude diagram it was realized that these qualitative
+classes were mostly determined by temperature from O for the hottest
+stars to M for the coolest (L and T are classes introduced later for
+Brown Dwarves). This is because the temperature of the gas determine
+the electron populations in each ion/atom in the stellar atmosphere
+and thus how many and which lines can be seen. This is how this
+OBAFGKMLT order came to be.
+
+*** A modern view on spectra
+The image above of the solar spectrum is pretty, but that is not how
+most astrophysicists look at spectra nowadays.
+
+At zeroth-order approximation a star is a black-body with the
+characteristic spectrum, that is flux F_{\lambda} as a function of the
+wavelength \lambda (or equivalently F_{\nu}\equiv F_{\nu}(\nu) with \nu =
+c/\lambda frequency), given by Planck's function:
+
+#+being latex label:Planck
+F_{\lambda} d\lambda = \frac{2\pi hc^{2}}{\lambda^{5}}\frac{d\lambda}{e^{hc/\lambda k_{B} T} -1} \ \ .
+#+end latex
+
+Note that this only depends on the temperature of the interior T. This
+produces the "continuum" of the spectrum, and can be thought of the
+spectrum of light coming from the stellar interior:
+
+#+CAPTION: Example of black-body spectrum. Credits: Rich Townsend
+#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :alt
+[[./images/Blackbody.png]]
+
+Before this reaches the telescope though, it has to filter through the
+stellar atmosphere, which is by definition the region of the star
+where there is a net radial flux of photons (as opposed to the
+optically thick interior where the distribution of photons direction
+is isotropic). It is in this region that absorption lines can form.
+There is another filter that matters: the Earth atmosphere. This can
+also introduce absorption lines (or even "bands" when the absorbers
+are molecules that have many roto-vibration levels close to each other
+in energy/frequency/wavelength).
+
+#+CAPTION: Schematic representation of the Sun spectral energy distribution on the ground.
+#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :alt
+
+
+Typically, data reduction pipelines are used to remove the "slope" due
+to the underlying continuum and focus only on the absorption lines. An
+example of the final product for a Sun-like star is
+
+#+CAPTION:
+#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :alt
+
+
 
 ** Theoretical Hertzsprung-Russel diagram
 
