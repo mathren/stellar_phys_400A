@@ -50,6 +50,7 @@
       org-html-head mr/site-html-head
       org-html-preamble mr/site-html-preamble
       org-html-postamble mr/html-postamble
+      org-export-html-date-format-string "%Y-%m-%d"
       )
 
 ;; define the publishing project
@@ -80,11 +81,11 @@
 	     )))
 
 ;; Generate the site output
-(org-publish-all t) ;; publish all
+; (org-publish-all t) ;; publish all
 
-;; (let ((modified-files (get-modified-org-files)))
-;;   (if modified-files
-;;       (org-publish-project "org-site:main")
-;;     (message "No modified Org files found.")))
+(let ((modified-files (get-modified-org-files)))
+  (if modified-files
+      (org-publish-project "org-site:main")
+    (message "No modified Org files found.")))
 
 (message "Build complete!")
