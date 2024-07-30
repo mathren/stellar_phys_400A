@@ -85,7 +85,7 @@ composition, position in the galaxy, etc.
  - Focusing on where most stars are, can you spot any trend?
 
 
-** Spectral types: OBAFGKM(LT)
+** Digression: Spectral types and the letters OBAFGKM(LT)
 
 This is one of the many nonsense names in astronomy that exist only
 for historical reason. Astronomy is a very ancient science (it's
@@ -161,13 +161,18 @@ characteristic spectrum, that is flux F_{\lambda} as a function of the
 wavelength \lambda (or equivalently F_{\nu}\equiv F_{\nu}(\nu) with \nu =
 c/\lambda frequency), given by Planck's function:
 
-#+being latex label:Planck
-F_{\lambda} d\lambda = \frac{2\pi hc^{2}}{\lambda^{5}}\frac{d\lambda}{e^{hc/\lambda k_{B} T} -1} \ \ .
-#+end latex
+#+being tex
+F_{\lambda} d\lambda = \frac{2\pi hc^{2}}{\lambda^{5}}\frac{d\lambda}{e^{hc/\lambda k_{B} T} -1}
+#+end tex
 
-Note that this only depends on the temperature of the interior T. This
-produces the "continuum" of the spectrum, and can be thought of the
-spectrum of light coming from the stellar interior:
+Note that this only depends on the temperature of the interior T.
+Integrating it across all wavelengths one obtain the total flux F \equiv \int
+F_{\lambda} d\lambda = \sigma T_{}^{4}, which is the so called /Stefan-Boltzmann
+law/.
+
+The black body spectrum produces the "continuum" of an observed
+spectrum, and can be thought of the spectrum of light coming
+from the stellar interior:
 
 #+CAPTION: Example of black-body spectrum. Credits: Rich Townsend
 #+ATTR_HTML: :width 50%
@@ -185,7 +190,7 @@ are molecules that have many roto-vibration levels close to each other
 in energy/frequency/wavelength).
 
 #+CAPTION: Schematic representation of the Sun spectral energy distribution from [[https://www.sciencedirect.com/science/article/pii/B9780443187865000020?via%3Dihub][Wang et al. 2023]].
-#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :width 100%
 #+ATTR_HTML: :alt
 [[./images/sun-SED.jpg]]
 
@@ -196,7 +201,7 @@ of the final product for the Sun, with some of the ions responsible
 for the visible absorption lines annotated is
 
 #+CAPTION: Example of reduced (portion of the) solar spectrum modified from [[https://ui.adsabs.harvard.edu/abs/2021ApJ...919..100V/abstract][Vejar et al. 2021]]
-#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :width 100%
 #+ATTR_HTML: :alt
 [[./images/sun-normalized.png]]
 
@@ -222,9 +227,11 @@ is neutral iron, FeII is once ionized iron, etc.
 
 ** Theoretical Hertzsprung-Russel diagram
 
-The figure above shows on the right y-axis and top x-axis the
-quantities that typically stellar modelers use, effective temperature
-(T_{eff}) on the x-axis and luminosity L on the y-axis.
+Let's get back to the main topic of the lecture, color-magnitude and
+Hertzsprung-Russel diagrams. The /Gaia/ color-magnitude diagram on the
+top shows on the right y-axis and top x-axis the quantities that
+typically stellar modelers use, effective temperature (T_{eff}) on the
+x-axis and luminosity L on the y-axis.
 
 The effective temperature is defined as the temperature of a
 black-body with the same energy flux as the surface of the star, such
