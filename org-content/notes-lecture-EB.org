@@ -4,3 +4,17 @@
 
 * Measuring masses
 *Materials*:
+
+This is typically a very hard problem: as we have seen, on the HRD/CMD
+there is a tight correlation between a star's magnitude and color at
+least during the longest phase of its evolution, and there is one
+single parameter that determines the position on a star on this
+diagram. However, how do we determine what this parameter is, having
+only these observational data? It is generally not possible without
+relying on models.
+
+However, binaries can help
+
+** Binaries are common
+
+**
