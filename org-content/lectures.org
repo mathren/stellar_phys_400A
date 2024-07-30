@@ -13,6 +13,7 @@ and student interest. The order roughly follows the presentation in
 ** <2024-08-27 Tue> Intro & orders of magnitude
 
 [[./notes-lecture-Intro.org][Notes]]
+
 ** <2024-08-29 Thu> Color-magnitude and Hertzsprung-Russell diagram
 
 [[./notes-lecture-CMD-HRD.org][Notes]]
@@ -51,6 +52,9 @@ and student interest. The order roughly follows the presentation in
 
 ** <2024-10-01 Thu> Nuclear energy generation
 
+*** Homework idea
+ - compare structure of a star going through pp chain, CNO cycle, and
+   a massive pop III star.
 
 ** <2024-10-03 Tue> Presentation expectations
  - Discuss what is expected for the presentations, how they will be

@@ -3,6 +3,48 @@
 #+email: mrenzo@arizona.edu
 
 * How can we study things that evolve too slow for us to see?
+*Materials*: chapter 1 of Onno Pols' lecture notes, Sec. 30.2 of
+Kippehahn book, Sec. 8.2 of Ostie & Carroll book.
+
+** Population studies
+We can look at large samples and try to infer lifetimes from how many
+individual stars we find in each subset of the population.
+
+Classically, we divide stars in populations based on their chemical
+composition and dynamical status (w.r.t. the Galactic potential)
+
+ - *Population I*: these are relatively high metallicity (\simeq Z_{\odot}\simeq
+   0.0146) stars in the galactic disk. They are all dynamically cold
+   (meaning their orbital velocity follows closely the Keplerian
+   rotation curve around the Galactic center, with very small
+   deviations from this). These are forming form gas enriched in
+   metals by processing in previous generations of stars.
+ - *Population II*: these are typically stars in the Galactic halo with
+   lower metallicity, but higher dynamical temperature, meaning their
+   orbit are not following the Galactic disk Keplerian motion. In
+   fact, they are not in the Galactic disk by definition, but rather
+   form a quasi-spherical halo in the Galaxy.
+
+The distinction between these two population is however a bit outdated
+and not very used in research anymore (in favor of \alpha-rich and \alpha-poor
+stars, which depend on more specific criteria in their composition
+that correlate with the dynamical properties as well). One term that
+instead is still widely present in the literature is
+
+ - *Population III*: these are _hypothetical_ stars that have not yet been
+   observed, formed by metal-free primordial gas composed only of
+   hydrogen and helium (and maybe traces of Li and Be) formed at the
+   Big Bang. These stars should exist, but they are so far out of
+   reach for our telescopes. /JWST/ may be able to see the integrated
+   light of populations of these primordial stars in some very high
+   redshift young galaxy, or maybe their explosions. Because of the
+   quasi-complete lack of metals, Pop III stars are expected to
+   possibly be more massive on average (so called top-heavy initial
+   mass function). Although they have not been observed, these are
+   still receiving much theoretical attention because of their
+   potential role during the epoch of reionization, as parents of the
+   super-massive black holes in the center of Galaxies, and as the
+   stars that kick started the production of chemical elements.
 
 ** Observational color-magnitude diagram
 

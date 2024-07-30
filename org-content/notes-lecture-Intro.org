@@ -46,7 +46,7 @@ and in astronomy more generally.
 
 *** Solar radius: R_{\odot} = 6.957\times 10^{10} cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
 *** Solar mass: M_{\odot} = 1.98\times10^{33} g\simeq 2\times10^{33} g
-*** Solar luminosity: L_{\odot} = 3.82\times10^{33}^{} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
+*** Solar luminosity: L_{\odot} = 3.82\times10^{33} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
 This may be one of the reasons why we still use =cgs= in astronomy,
 the other one being that the constants in electromagnetism are a
 bit simpler.

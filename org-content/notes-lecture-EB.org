@@ -1,3 +1,6 @@
 #+title: Lecture 3: Eclipsing binaries
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+
+* Measuring masses
+*Materials*:
