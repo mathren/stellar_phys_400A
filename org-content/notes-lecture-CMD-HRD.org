@@ -1,0 +1,171 @@
+#+title:Lecture 2 - CMD & HRD
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* How can we study things that evolve too slow for us to see?
+
+** Observational color-magnitude diagram
+
+#+CAPTION: /Gaia/ DR2 color magnitude diagram
+#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :alt [[https://sci.esa.int/web/gaia/-/60198-gaia-hertzsprung-russell-diagram][Gaia DR2 CMD]]
+[[./images/Gaia_DR2_HRD_Gaia.png]]
+
+This is an example of an observational color-magnitude diagram from
+the second /Gaia/ data release, /Gaia/ DR2 in 2018. /Gaia/ is an ESA space
+mission to detect with great accuracy parallax and proper motion of >1
+billion stars in the Galaxy. This is a very "classical" astrophysics
+task, but the precision and size of the datasets from this mission are
+unprecedented and are revolutionizing this field.
+
+The x-axis is the color, obtained as the difference in flux between
+two filters of the /Gaia/ telescope =Bp-Rp=.
+
+The y-axis is the magnitude in the =G= band of the telescope.
+
+Each dot is a different star, but there are so many, that in the most
+crowded region what is plotted is the density of stars (per unit
+"pixel" on this plot). So what we are looking at is a group picture of
+many different stars, varying in age, composition, position in the
+galaxy, etc.
+
+*** Questions:
+ - where are the cool stars?
+ - where are the bright stars?
+ - where do you think the Sun would be on this diagram? (*N.B.:* /Gaia/
+   does /not/ look at the Sun, so it is actually not in this plot!)
+ - Focusing on where most stars are, can you spot any trend?
+
+** Theoretical Hertzsprung-Russel diagram
+
+The figure above shows on the right y-axis and top x-axis the
+quantities that typically stellar modelers use, effective temperature
+(T_{eff}) on the x-axis and luminosity L on the y-axis.
+
+The effective temperature is defined as the temperature of a
+black-body with the same energy flux as the surface of the star, such
+that L=4\pi R^{2} \sigma T_{eff}^{4}, with R the radius of the star, \sigma=2\pi^{5} k_{B}^{4}/15c^{2}h^{3}
+Stefan-Boltzmann constant (k_{B} is the Boltzmann constant, c the speed
+of light, and h is Planck's constant). Therefore, T_{eff} is an
+idealization: the stellar surface actually does not have a sharp
+cutoff with a well defined radius R and temperature T_{eff}. Instead, as
+one moves outward in the stellar atmosphere, progressively the gas
+becomes transparent to different wavelength \lambda of light: in reality
+there is a different radius for each wavelength at which one can
+observe a star: R \equiv R(\lambda). This is the topic of the stellar atmosphere,
+which determines the outer-boundary conditions we need to study the
+interior. Throughout the atmosphere, there will be a location where T
+= T_{eff}, but there is nothing physically special occurring there!
+However, from the interior point-of-view, it is useful to determine at
+this idealized location the outer boundary. We can then specify there
+the outer boundary condition to solve the stellar structure equations,
+which you don't know yet -- but we will derive and write down during
+this course.
+
+We can then use these same axes to plot not a collection of different
+stars at a given point in time, like in the plot from /Gaia/ above, but
+instead if we have a model of how a star evolves (which is what we
+want to develop in this course), then we can plot one star as a
+function of time! This is necessarily a "theoretical" plot: stellar
+timescales are typically so long, that one human life is not
+sufficient to observe a star moving through such a plot.
+
+The following is an example of HR diagram for a 15M_{\odot} star from
+zero age main sequence (roughly when most of its luminosity is
+provided by Hydrogen burning in the core) to the onset of
+core-collapse and thus the point where it will go supernova
+
+#+CAPTION: Hertzsprung-Russell diagram of a 15M_{\odot} stellar model from [[https://www.as.arizona.edu/~mrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]
+#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :alt 15M_{\odot} single stellar evolution track
+[[./images/15Msun_thesis.png]]
+
+** Putting the two together
+
+One can also overplot theoretical tracks from computer-simulated
+stellar models and observed samples to infer physical properties of
+the observed stars.
+
+*** Example: cluster with isochrone
+
+[[https://www.youtube.com/watch?v=PsS80huL47c][This video]] shows how /HST/ observations of the Globular cluster \Omega
+Centauri can be sorted in color and magnitude to create...a
+color-magnitude diagram, where all the stars end up along an
+isochrone.
+
+An *isochrone* (from iso = "same" + chronos = "time") is the locus of
+points occupied by a population of different stars at a given time.
+Typically these are used in analyzing clusters, which are in first
+approximation co-eval population of stars with the same composition.
+Fitting theoretical isochrones (obtained combining many stellar
+models of individual stars) is one of the ways in which one can
+determine the age of a cluster.
+
+Note that in the first color-magnitude diagram shown above from /Gaia/
+DR2 there are no isochrones: that diagram represents all stars
+observed across the Galaxy in /Gaia/ DR2, they have very different ages
+from each other, and that's why isochrones there would not be very
+informative.
+
+Typically isochrones are used on the color-magnitude diagram, but
+nothing forbids one to make isochrones on other planes.
+
+#+CAPTION: Example of isochrone fitting with different stellar models for /HST/ observations of the cluster NGC1818 from [[https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..43W/abstract][Wang et al. 2023]]
+#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :alt /HST/ observations of NGC1818 with isochrone fitting
+[[./images/Wang_NGC1818.png]]
+
+*** Example: 30 Doradus
+
+#+CAPTION: Color-magnitude diagram of the 30 Doradus region in the LMC overlayed with theoretical stellar tracks (solid black lines), and isochrones (dashed black lines) from [[https://www.aanda.org/10.1051/0004-6361/201833433][Schneider et al. 2018]]
+#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :alt  VLT/FLAMES observations of 30 Doradus with theoretical stellar evolution tracks and isochrones
+[[./images/30Dor_Schneider30_HRD.png]]
+
+
+* Homework
+
+** Aim
+Make your own color-magnitude diagram of a selected group of stars.
+This is a data-visualization exercise, so try to make your diagram as
+informative and useful as possible. Think of a publication-quality
+plot, you want it to be good looking for people to want to use it in
+their slides, dense in information, and the info should possibly be
+layered. You will also need to write a brief paragraph of description
+of what is plotted, including the source of data.
+
+*** Deliverables
+  - Color-magnitude diagram/Hertzsprung-Russell diagram
+  - Paragraph of description including the source of the data and what
+    we see
+  - Script to reproduce the plot.
+
+** Instructions
+We will use the latest data release from ESA's /Gaia/ mission, you will
+be using a bleeding-edge dataset! These are publicly available in the
+[[https://gea.esac.esa.int/archive/][Gaia archive]] or any of the [[https://www.cosmos.esa.int/web/gaia/data-access#PartnerDataCentres][partner data centers]].
+
+  - Go to [[https://gea.esac.esa.int/archive/]] and select the "Search tab"
+  - Select the /Gaia/ query you want to make. Feel free to experiment,
+    but keep in mind that you will need to briefly explain what it is
+    you plot. *Hint 1*: if you are having troubles selecting stars to
+    plot based on some (astro)-physical criterion, you can rely on the
+    /Gaia/ Catalog of Nearby Stars to plot all the stars within 100pc
+    from the Sun described in [[https://www.aanda.org/articles/aa/full_html/2021/05/aa39498-20/aa39498-20.html][this paper]]. The catalog is available for
+    download from [[https://cdsarc.cds.unistra.fr/ftp/J/A+A/649/A6/][here]] (see the [[https://cdsarc.cds.unistra.fr/ftp/J/A+A/649/A6/ReadMe][ReadMe]] for the column headers, you
+    probably want to download and plot [[https://cdsarc.cds.unistra.fr/ftp/J/A+A/649/A6/table1c.csv][table1c.csv]]). *Hint 2*: you can
+    find in papers the queries of the /Gaia/ database for specific
+    clusters! For example the cluster NGC6231 can be found using the
+    appendix A of [[https://ui.adsabs.harvard.edu/abs/2021A%26A...655A..31V/abstract][this paper]].
+  - Download and, if needed, clean the data. Make sure you start with
+    a manageable amount. If you want to select a cluster, you may need
+    to do parallax cuts.
+  - Plot the color-magnitude diagram (suggestion: G-band magnitude on
+    the y-axis, BP-RP color on the x-axis)
+  - download and plot a bunch of Gaia data. Make the visualization as
+    clear as possible
+  - *Optional*: use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot isochrones on
+    your plot. Note that the file you can download has extension
+    =*.iso=, but it is /not/ and =iso= image file, just plain text!
+  - *Optional*: use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot evolutionary
+    tracks.
