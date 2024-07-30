@@ -19,6 +19,8 @@ and student interest. The order roughly follows the presentation in
 
 ** <2024-09-03 Tue> Eclipsing binaries and mass measurements
 
+[[./notes-lecture-EB.org][Notes]]
+
 ** <2024-09-05 Thu> Hydrostatic equilibrium
 
 ** <2024-09-10 Tue> Virial theorem, pressure, estimates
