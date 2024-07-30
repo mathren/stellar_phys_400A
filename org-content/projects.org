@@ -3,12 +3,11 @@
 #+email: mrenzo@arizona.edu
 
 * Project/presentation
-Each student will pick a topic to research based on textbooks, journal
-articles, etc. from the list below and provide a short written summary
-(\le 5 pages including figures and/or tables) and an oral presentation
-to the classroom. This will allow each student to dig deeper into a
-topic we cannot spend too much time in class, and at the same we can
-all learn from each other.
+Each student will pick a topic to research  from the list below and
+provide a short written summary (\le 5 pages including figures and/or
+tables) and an oral presentation to the classroom. This will allow
+each student to dig deeper into a topic we cannot spend too much time
+in class, and at the same we can all learn from each other!
 
 *The text has to be submitted one week before the presentation is
 scheduled*, and the *presentation is 10min+5min questions*. I _strongly_
@@ -54,6 +53,15 @@ as we may be able to accommodate it.
 31. Pair instability supernovae
 32. Triple systems: Kozai-Lidov-von Zeipel oscillations
 33.
+
+** Recommended sources
+You are free to do your own research, but in the final manuscript (and
+when appropriate in the oral presentation) you need to cite the
+relevant sources. These can be textbooks and/or journal articles. You
+can use online available resources (e.g., Wikipedia) as a starting
+point, but should go find /primary/ sources (e.g., what Wikipedia itself
+cites, if not the references cited by the source from Wikipedia and so
+on down the rabbit hole).
 
 ** Grading
 /This part is worth 40% of your final grade -- as much as all the
