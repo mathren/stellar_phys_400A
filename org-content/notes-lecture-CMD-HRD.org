@@ -85,7 +85,7 @@ composition, position in the galaxy, etc.
  - Focusing on where most stars are, can you spot any trend?
 
 
-** Digression: Spectral types and the letters OBAFGKM(LT)
+** Digression: Spectral types and the letters OBAFGKM(LTY)
 
 This is one of the many nonsense names in astronomy that exist only
 for historical reason. Astronomy is a very ancient science (it's
@@ -118,35 +118,7 @@ available is the "optical" spectrum, that is a spectrum in the
 wavelength rage that can penetrate the Earth's atmosphere, roughly
 between ~300-900 nm.
 
-Kirchhof and Bunsen realized that filtering (white) light through a
-rarefied gas before taking its spectrum would produce "absorption
-lines", i.e. there would be regions of wavelength where light was
-missing, and these could be used to identify which gas was filtering
-the light.
-
-#+CAPTION: Spectrum of the Sun from the /Fourier Transform Spectrometer at McMath-Pierce Solar Facility at the National Solar Observatory on Kitt Peak
-#+ATTR_HTML: :width 100%
-#+ATTR_HTML: :alt Solar spectrum
-[[./images/solar-spectrum.jpg]]
-
-Fraunhofer had already taken spectra of the Sun, and it was also
-exhibiting "absorption lines". This is because the light filtering out
-of the stellar atmosphere is blocked by something (typically these are
-ionic/atomic quantum mechanical transition, but this was /not/ known
-when they were first observed). This demonstrated that the Sun was
-made of the same elements that are visible on Earth.
-
-At this point, people started to classify stars based on the
-qualitative morphology of their spectra (which lines are present,
-which are more dominant, etc.), and defining qualitative classes A, B,
-C,... As the number of observations increased, the classes were often
-merged, leaving the current ones listed above.
-
-However, it was not yet known why different stars had different
-spectra and belong to a certain class. Only with the construction of
-the color-magnitude diagram it was realized that these qualitative
-classes were mostly determined by temperature from O for the hottest
-stars to M for the coolest (L and T are classes introduced later for
+ are classes introduced later for
 Brown Dwarves). This is because the temperature of the gas determine
 the electron populations in each ion/atom in the stellar atmosphere
 and thus how many and which lines can be seen. This is how this

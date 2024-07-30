@@ -17,8 +17,52 @@ However, binaries can help!
 
 ** Binaries are common
 
+The Sun is clearly not in a binary system. However, it is *not* uncommon
+for stars to have gravitationally bound companions orbiting around
+them, which can be of great help to determine their properties.
+
+In fact, in this case we have two stars presumably born at roughly the
+same time, presumably with the same initial composition, and we can
+derive physical properties comparing them to each other.
+
+#+CAPTION: Fraction of binaries and higher multiplicity as a function of mass (bottom x-axis) or spectral type (top x-axis), modified from [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]].
+#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :alt
+[[./images/bin-frac.png]]
+
+Let's review some types of binaries
+
+** Visual binaries
+
+These are binaries that can be seen by naked eye. Typically this means astrophysically
+very wide binaries that are unlikely to interact beyond orbiting each
+other, but they have an important historical role, since Hershel
+observation of their motion of the sky over decades proved that
+Kepler's law are valid beyond the Solar system.
+
+Mitchell 1768 also used statistical argument that all the visual
+binaries visible at the time could not be just chance alignment, and
+instead had to be somehow physically related to each other.
+
+A classic example are Mizar & Alcor in the Big Dipper: the ability of
+finding the "double star" in this asterism was used as an eyesight
+test to become an astronomer in Hellenistic times. The name Alcor
+comes from the arabic for "hard to see"! Nowadays with modern
+telescopes we can see that Mizar and Alcor are actually at least a
+triple system, and there have been claims that it may be a quintuplet
+even
+
+#+CAPTION: Zoom in on Mizar & Alcor from [[http://hdl.handle.net/11245.1/ee92e82a-13e8-4add-a4ce-f2d3613e42c3][Renzo 2019]]
+#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :alt
+[[./images/zoom2.pdf]]
+
 
 
 ** Spectroscopic binaries
 
-**
+*** SB1
+In a spectrum, one star of the binary dominates, but we can see its
+orbital motion as Doppler shifting of the spectral lines. Even if
+
+*** SB2
