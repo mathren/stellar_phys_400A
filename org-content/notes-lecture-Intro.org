@@ -57,8 +57,17 @@ chemist would not call "metals".
 *** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
 How old is the Sun? How long will it live?
 ** TODO Parallax and magnitudes
+
 ** Discuss projects
 
+- Projects will cover topics that are important and or timely, but
+  hard to fit in the main body of the course
+- Occasion for you to dig deeper and teach to your peers
+- You should look over the [[file:projects.org::*List of possible projects/presentations][proposed project]], and within a week give us
+  a ranked list of 5 projects you'd like to do.
+- Look over also [[file:projects.org::*Grading][how the grading will work]].
+- We will assign to each a project trying to maximize happiness, and
+  for each project we will assign two peer referees.
 
 * Homework
 DEADLINE: <2024-09-03 Tue>

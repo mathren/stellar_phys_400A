@@ -184,20 +184,41 @@ also introduce absorption lines (or even "bands" when the absorbers
 are molecules that have many roto-vibration levels close to each other
 in energy/frequency/wavelength).
 
-#+CAPTION: Schematic representation of the Sun spectral energy distribution on the ground.
+#+CAPTION: Schematic representation of the Sun spectral energy distribution from [[https://www.sciencedirect.com/science/article/pii/B9780443187865000020?via%3Dihub][Wang et al. 2023]].
 #+ATTR_HTML: :width 50%
 #+ATTR_HTML: :alt
-
+[[./images/sun-SED.jpg]]
 
 Typically, data reduction pipelines are used to remove the "slope" due
-to the underlying continuum and focus only on the absorption lines. An
-example of the final product for a Sun-like star is
+to the underlying continuum and focus only on the absorption lines.
+This is usually referred to as "continuum normalization". An example
+of the final product for the Sun, with some of the ions responsible
+for the visible absorption lines annotated is
 
-#+CAPTION:
+#+CAPTION: Example of reduced (portion of the) solar spectrum modified from [[https://ui.adsabs.harvard.edu/abs/2021ApJ...919..100V/abstract][Vejar et al. 2021]]
 #+ATTR_HTML: :width 50%
 #+ATTR_HTML: :alt
+[[./images/sun-normalized.png]]
 
 
+Note the wavelength ranges, they are varying widely from plot to plot.
+This is partly because different wavelength regions require different
+instruments and data reduction techniques (from \gamma rays to radio even
+the typical units use vary depending on historic and/or engineering
+choices).
+
+*N.B.:* for an element =X= (e.g., H, He, Li, ...,C, N, Si, Fe, F, ...) the
+neutral ion is usually indicated with =XI= (so HI is hydrogen with one
+electron bound, HeI is a helium atom with its two electrons), the
+first ionization stage - meaning one electron is missing -  is
+indicated with =XII= (e.g., HII is hydrogen once ionized, that is a
+proton without an electron, HeII is a helium ion with two protons, two
+neutrons and one electron only, etc...), and so forth. This is the
+convention used in the figure above, where SiI is neutral silicon, FeI
+is neutral iron, FeII is once ionized iron, etc.
+
+*** Questions
+- Do the units in all these plots match?
 
 ** Theoretical Hertzsprung-Russel diagram
 

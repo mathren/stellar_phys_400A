@@ -53,7 +53,7 @@ as we may be able to accommodate it.
 30. From T_{eff} to color: bolometric corrections and extinction
 31. Pair instability supernovae
 32. Triple systems: Kozai-Lidov-von Zeipel oscillations
-34.
+33.
 
 ** Grading
 /This part is worth 40% of your final grade -- as much as all the
