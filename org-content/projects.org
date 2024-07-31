@@ -54,6 +54,7 @@ as we may be able to accommodate it.
 32. Triple systems: Kozai-Lidov-von Zeipel oscillations
 33. Formation of gravitational wave progenitors: isolated binary evolution
 34. Formation of gravitational wave progenitors: dynamical channels
+35. Orbital architectures of (star+star) binaries in the Universe
 
 ** Recommended sources
 You are free to do your own research, but in the final manuscript (and

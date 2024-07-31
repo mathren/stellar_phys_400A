@@ -234,8 +234,15 @@ which using Kepler's second law
 \end{equation}
 #+end_latex
 where P is the orbital period, a and b are semi-major and semi-minor
-axes, and e = \sqrt{1-b^{2}/a^{2}} is the eccentricity, and the relation
-between r\equiv r(\nu) for an ellipse:
+axes, and
+
+#+begin_latex
+\begin{equation}
+e = \sqrt{1-b^{2}/a^{2}} \ \ ,
+\end{equation}
+#+end_latex
+
+is the eccentricity, and the relation between r\equiv r(\nu) for an ellipse:
 
 #+begin_latex
 \begin{equation}
@@ -309,11 +316,11 @@ can write
 
 #+begin_latex
 \begin{equation}
-a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{2}}{M_{1}}) = a_{1} \frac{(M_{2} + M_{1})}{M_{2}} \ \.
+a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{2}}{M_{1}}) = a_{1} \frac{(M_{2} + M_{1})}{M_{2}} \ \ .
 \end{equation}
 #+end_latex
 
-Thus we can rewrite Eq. \ref{Kepler3} \times sin^{3}^{}(i) as
+Thus we can rewrite Eq. \ref{eq:Kepler3} \times sin^{3}^{}(i) as
 
 #+begin_latex
 \begin{equation}
@@ -326,7 +333,7 @@ to derive observationally the mass function
 
 #+begin_latex
 \begin{equation}
-f(M_{1}, M_{2}) = \frac{M_{2}^{3} sin^{3}(i)}{(M_{1} + M_{2})^{2}} \ \ ,
+f(M_{1}, M_{2}) = \frac{M_{2}^{3 }\sin^{3}(i)}{(M_{1} + M_{2})^{2}} \ \ ,
 \end{equation}
 #+end_latex
 
