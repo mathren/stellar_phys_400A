@@ -212,7 +212,7 @@ The one can calculate: z= rsin(i) sin(\nu+\omega) with r radius of the orbit
 factor projects it on the plane of the sky and the sin(\nu+\omega) projects
 on the line of sight. The radial velocity is therefore:
 
-#+being_latex
+#+begin_latex
 \begin{equation}\label{dzdt}
 \frac{dz}{dt} = \left(r \cos(\nu+\omega)\frac{d\nu}{dt}+\frac{dr}{dt}sin(\nu+\omega)\right)\sin(i)
 \end{equation}
@@ -239,7 +239,7 @@ r = \frac{a(1-e^{2})}{1+e\cos(\nu)} \ \ ,
 one can finally rewrite the radial velocity from Eq. \ref{dzdt} as
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:vrad}
 v_{rad} = \frac{dz}{dt} = K (ecos(\omega)+cos(\omega+\nu)) \ \
 \end{equation}
 #+end_latex
@@ -251,7 +251,26 @@ where
 \end{equation}
 #+end_latex
 is the so-called /semi-amplitude/ of the radial velocity, which apart
-from the sin(i) factor depends only on observable quantities!
+from the sin(i) factor depends only on observable quantities if one
+can get spectra of many epochs (i.e., return to take spectra of the
+same binary at many times, typically at least 7 spectra are required
+for a decent fit to all these parameters):
+
+ - P \rightarrow from the time interval between repeating identical spectra
+ - e \rightarrow from the shape of the measured radial velocities as a function
+   of time (i.e., radial velocity curve)
+ - \omega \rightarrow similarly as e, it influences the shape of the radial velocity
+   curve and can be deduced from it
+ - asin(i) \rightarrow if the binary is SB2, then we can measure K_{1}\equiv K_{1}(a_{1})
+   and K_{2}\equiv K_{2} (a_{2}) and use the relation between a_{1}+a_{2} = a to work
+   out asin(i)
+ - \nu \rightarrow this is less directly obtained by performing an orbital fit
+   using other orbital parameters (mean anomaly and eccentric anomaly)
+
+*N.B.:* In a real observation, one also needs to remove the component
+along the line of site due to the motion of the Earth around the Sun,
+and the peculiar motion of the Sun (i.e., v_{rad} from Eq. \ref{eq:vrad}
+\rightarrow v_{rad}_{}-\gamma with \gamma peculiar velocity of the observer).
 
 We can take Eq. \ref{eq:Kepler3} and multiply it by sin^{3}(i) to make
 the projection of the semi-major axis of the orbit on the line of
