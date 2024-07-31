@@ -3,8 +3,9 @@
 #+email: mrenzo@arizona.edu
 
 * Measuring masses
-*Materials*: Verbunt lecture notes (part 1), Sections 2.1-2.4 in Tauris
-& Van den Heuvel 2023 book, Chapter 7 of Carroll & Ostie's book.
+*Materials*: Verbunt lecture notes (part 1), Sections 2.1-2.4 and 3.2 in
+Tauris & Van den Heuvel 2023 book, Chapter 7 of Carroll & Ostie's
+book, Chapter 3 in Prsa's book.
 
 This is typically a very hard problem: as we have seen, on the HRD/CMD
 there is a tight correlation between a star's magnitude and color at
@@ -135,6 +136,13 @@ eclipse will be total if
 \end{equation*}
 #+end_latex
 
+
+
+
+
+
+
+
 ** Dynamical mass determination
 
 *** Visual binaries
@@ -173,7 +181,7 @@ size of the ellipse that each stars traces on the orbit of the sky is
 \alpha_{j} = a_{j}/d for j=1,2. In reality, the orbit is typically not on the
 plane of the sky, but it has an inclination! This means what we can
 see is not a_{j} but the projection of it on the plane of the sky a_{j}
-cos(i). We can then solve these two equations for the individual
+sin(i). We can then solve these two equations for the individual
 stellar masses (just having observations long enough to trace the
 semi-major axes of wide visual binaries and knowing their distances,
 for example because we have parallax measurements).
@@ -193,7 +201,6 @@ along the line of sight), this is why the terminology is "radial
 velocities": it's velocities along the radii of the celestial sphere
 centered on the observer!
 
-**** Radial velocity measurement
 Following standard nomenclature, let's call z the direction of the
 line of sight, using xy for the plane of the sky. By definition the
 radial velocity of each star is dz/dt. \nu here is the true anomaly
@@ -203,7 +210,7 @@ assumed to contain the focus of the ellipse, and the plane of the
 orbit intersect) and the direction of periastron.
 
 #+CAPTION: Geometry of a binary orbit. This is Fig. 3.3 in Tauris & van den Heuvel 2023 book.
-#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :width 100%
 [[./images/bin_orbit.png]]
 
 
@@ -255,7 +262,6 @@ from the sin(i) factor depends only on observable quantities if one
 can get spectra of many epochs (i.e., return to take spectra of the
 same binary at many times, typically at least 7 spectra are required
 for a decent fit to all these parameters):
-
  - P \rightarrow from the time interval between repeating identical spectra
  - e \rightarrow from the shape of the measured radial velocities as a function
    of time (i.e., radial velocity curve)
@@ -272,9 +278,10 @@ along the line of site due to the motion of the Earth around the Sun,
 and the peculiar motion of the Sun (i.e., v_{rad} from Eq. \ref{eq:vrad}
 \rightarrow v_{rad}_{}-\gamma with \gamma peculiar velocity of the observer).
 
-We can take Eq. \ref{eq:Kepler3} and multiply it by sin^{3}(i) to make
-the projection of the semi-major axis of the orbit on the line of
-sight, a \times sin(i), appear:
+Therefore, for an SB2 binary we can observe dz_{j}/dt = v_{rad, j} for
+each j=1,2 star, and we can determine K_{1} and K_{2}. using Eq.
+\ref{eq:Kepler3} multiplied by sin^{3}(i) to make the projection of
+the semi-major axis of the orbit on the line of sight, a \times sin(i):
 
 #+begin_latex
 \begin{equation}
@@ -282,5 +289,99 @@ sight, a \times sin(i), appear:
 \end{equation}
 #+end_latex
 
+and using \ref{eq:semimajor_axes} rewritten as
+
+#+begin_latex
+\begin{equation}
+  \frac{a_{1} \sin(i)}{a_{2} \sin(i)} = \frac{M_{2}}{M_{1}} \ \ ,
+\end{equation}
+#+end_latex
+
+we can solve for M_{j}sin^{3}(i), where except for the inclination angle of
+the orbit, we have the masses! In the case of an /eclipsing SB2 binary/,
+from the eclipses we can measure the inclination angle and obtain a
+direct measurement of the masses. These are the most precise mass
+measurements, which are only possible thanks to the occurrence in
+nature of stellar binaries!
+
+In the case of an SB1 binary, when only one spectrum is visible, we
+can write
+
+#+begin_latex
+\begin{equation}
+a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{2}}{M_{1}}) = a_{1} \frac{(M_{2} + M_{1})}{M_{2}} \ \.
+\end{equation}
+#+end_latex
+
+Thus we can rewrite Eq. \ref{Kepler3} \times sin^{3}^{}(i) as
+
+#+begin_latex
+\begin{equation}
+ (M_{1} +M_{2}) sin^{3}(i) \frac{M_{2}^{3}}{(M_{1} +M_{2})^{3}} = \frac{n^{2}}{G}a_{1}^{3} sin^{3}(i) \ \,
+\end{equation}
+#+end_latex
+
+where the r.h.s. depends only on observables, and thus this allow us
+to derive observationally the mass function
+
+#+begin_latex
+\begin{equation}
+f(M_{1}, M_{2}) = \frac{M_{2}^{3} sin^{3}(i)}{(M_{1} + M_{2})^{2}} \ \ ,
+\end{equation}
+#+end_latex
+
+which together with an estimate of the mass-ratio provides a limit on M_{2}.
+
+
+** Mass-luminosity relation
+Using systems for which this mass measurements are possible, we can
+derive an empirical mass-luminosity relation. In the best astronomical
+tradition, this was initially fit with a powerlaw, but as the range of
+stellar masses explored grew, this became a broken powerlaw:
+
+#+begin_latex
+\begin{equation}
+ L \propto M^{x}
+\end{equation}
+#+end_latex
+
+with x=4 for M\le0.8M_{\odot}, x=3 for 0.8M_{\odot} <M<50M_{\odot}, x=1 for M\geq
+50M_{\odot}. These thresholds are extremely approximated, probably
+metallicity dependent, as we will possibly see later in the course.
 
 * Homework
+
+** Exercise 7.4 on Carrol & Ostie
+
+ Sirius is a visual binary with a period of 49.94 yr. Its measured
+ trigonometric parallax is 0.37921" \pm 0.00158" and, assuming that the
+ plane of the orbit is in the plane of the sky, the true angular
+ extent of the semimajor axis of the reduced mass is 7.61". The ratio
+ of the distances of Sirius A and Sirius B from the center of mass is
+ a a_{A} /a_{B} = 0.466.
+
+  1. Find the mass of each member of the system.
+  2. The absolute bolometric magnitude of Sirius A is 1.36, and Sirius B
+     has an absolute bolometric magnitude of 8.79. Determine their
+     luminosities. Express your answers in terms of the luminosity of
+     the luminosity of the Sun
+  3. The effective temperature of Sirius B is approximately 24790 K \pm
+     100 K. Estimate its radius, and compare your answer to the radii
+     of the Sun and Earth. What kind of star is that hot with that radius?
+
+** Exercise 7.6 on Carrol& Ostie
+ From the light and velocity curves of an eclipsing, spectroscopic
+ binary star system, it is determined that the orbital period is 6.31
+ yr, and the maximum radial velocities of Stars A and B are 5.4 km s^{-1}
+ and 22.4 km s^{−1}, respectively. Furthermore, the time period between
+ first contact and minimum light (t_{b} − t_{a}) is 0.58 d, the length
+ of the primary minimum (t_{c}− t_{b}) is 0.64 d, and the apparent
+ bolometric magnitudes of maximum, primary minimum, and secondary
+ minimum are 5.40 magnitudes, 9.20 magnitudes, and 5.44 magnitudes,
+ respectively. From this information, and assuming circular orbits,
+ find:
+ 1. Ratio of stellar masses
+ 2. Sum of the masses (assume i = 90 degrees)
+ 3. Individual masses
+ 4. Individual radii (assume that the orbits are circular)
+ 5. Ratio of the effective temperatures of the two stars

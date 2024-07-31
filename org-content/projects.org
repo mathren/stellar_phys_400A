@@ -25,34 +25,35 @@ as we may be able to accommodate it.
 3. From T_{eff} to color: bolometric corrections and extinction
 4. Asteroseismology
 5. Astrometry & the /Gaia/ mission
-6. Tides in stars
-7. Common envelope evolution
-8. Roche model and mass transfer
-9. Globular clusters: CMD
-10. Globular clusters: dynamics
-11. Formation of stars
-12. Stars in galaxies: Chemical evolution
-13. Stars in galaxies: Mechanical feedback
-14. Stars in galaxies: Radiative feedback
-15. Nucleosynthesis: s-process
-16. Nucleosynthesis: r-process
-17. X-ray binaries
-18. Thermonuclear explosion in WDs
-19. Neutron star structure
-20. The Eddington limit
-21. Convective boundary mixing
-22. Nuclear reaction chains
-23. Stellar winds: Parker model and its updates
-24. Stellar winds: radiatively driven
-25. Analytic stellar models: Lane-Emden equation
-26. Analytic stellar models: Eddington standard model
-27. Novae
-28. Supermassive stars
-29. Stellar neutrinos
-30. Pair instability supernovae
-31. Triple systems: Kozai-Lidov-von Zeipel oscillations
-32. Formation of gravitational wave progenitors: isolated binary evolution
-33. Formation of gravitational wave progenitors: dynamical channels
+6. Astrometric detection of /Gaia/ BH1, BH2, BH3, and NS1
+7. Tides in stars
+8. Common envelope evolution
+9. Roche model and mass transfer
+10. Globular clusters: CMD
+11. Globular clusters: dynamics
+12. Formation of stars
+13. Stars in galaxies: Chemical evolution
+14. Stars in galaxies: Mechanical feedback
+15. Stars in galaxies: Radiative feedback
+16. Nucleosynthesis: s-process
+17. Nucleosynthesis: r-process
+18. X-ray binaries
+19. Thermonuclear explosion in WDs
+20. Neutron star structure
+21. The Eddington limit
+22. Convective boundary mixing
+23. Nuclear reaction chains
+24. Stellar winds: Parker model and its updates
+25. Stellar winds: radiatively driven
+26. Analytic stellar models: Lane-Emden equation
+27. Analytic stellar models: Eddington standard model
+28. Novae
+29. Supermassive stars
+30. Stellar neutrinos
+31. Pair instability supernovae
+32. Triple systems: Kozai-Lidov-von Zeipel oscillations
+33. Formation of gravitational wave progenitors: isolated binary evolution
+34. Formation of gravitational wave progenitors: dynamical channels
 
 ** Recommended sources
 You are free to do your own research, but in the final manuscript (and
