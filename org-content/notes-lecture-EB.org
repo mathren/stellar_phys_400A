@@ -1,4 +1,4 @@
-#+title: Lecture 3: Eclipsing binaries
+#+title: Lecture 3: Binaries and dynamical masses
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
@@ -90,7 +90,7 @@ astrometric measurements by /Gaia/ (see recent review by [[https://www.sciencedi
 *** Spectroscopic binaries
 
 #+CAPTION: Schematic representation of the Doppler shift of spectral lines in binaries from which one can calculate radial velocities. Fig. 7.3 in Carrol & Ostie or 2.3 in Tauris & van den Heuvel's books.
-#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :width 50%
 [[./images/RV_scheme.png]]
 
 **** SB1
@@ -123,7 +123,7 @@ the plane of the sky by definition of plane of the sky) has an angle \varphi
 #+begin_latex
 \begin{equation*}
 \sin(\varphi) \leq \frac{R_{1} + R_{2}}{a}
-\end{equation}
+\end{equation*}
 #+end_latex
 
 with R_{1}, R_{2} radii of the stars, and a their orbital separation. The
@@ -132,7 +132,7 @@ eclipse will be total if
 #+begin_latex
 \begin{equation*}
 \sin(\varphi) \leq \frac{R_{1} - R_{2}}{a}
-\end{equation}
+\end{equation*}
 #+end_latex
 
 ** Dynamical mass determination
@@ -161,7 +161,7 @@ axes a_{i} of both stars around the center of mass, we also have another
 equation that follows from the definition of center of mass:
 
 #+begin_latex
-\end{equation*}
+\begin{equation*}
  M_{1} a_{1} = M_{2} a_{2}
 \end{equation*}
 #+end_latex
@@ -185,13 +185,12 @@ centered on the observer!
 Following standard nomenclature, let's call z the direction of the
 line of sight, and
 
-We can take #+begin_latex Eq.~\ref{Kepler3} #+end_latex and multiply
+We can take Eq. \ref{eq:Kepler3} and multiply
 it by sin^{3}(i) to make the projection of the semi-major axis of the
 orbit on the line of sight, a \times sin(i), appear:
 
 #+begin_latex
 \begin{equation}
-\label{eq:Kepler3}
    G(M_{1}+M_{2})\sin^{3}(i) = n^{2} a^{3} \sin^{3}(i) \ \ ,
 \end{equation}
 #+end_latex
