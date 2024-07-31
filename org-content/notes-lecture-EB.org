@@ -118,16 +118,16 @@ orbital plane, therefore the line-of-sight (which is perpendicular to
 the plane of the sky by definition of plane of the sky) has an angle \varphi
 = \pi - /i/ w.r.t. the orbital plane. To have an eclipse, at least partial,
 
-#+begin_src tex
+#+begin_latex
 \sin(\varphi) \leq \frac{R_{1} + R_{2}}{a}
-#+end_src tex
+#+end_latex
 
 with R_{1}, R_{2} radii of the stars, and a their orbital separation. The
 eclipse will be total if
 
-#+begin_src tex
+#+begin_latex
 \sin(\varphi) \leq \frac{R_{1} - R_{2}}{a}
-#+end_src tex
+#+end_latex
 
 ** Dynamical mass determination
 
@@ -150,9 +150,9 @@ For a visual binary (see above) where we can measure the semi-major
 axes a_{i} of both stars around the center of mass, we also have another
 equation that follows from conservation of momentum:
 
-#+begin_src tex
+#+begin_latex
  \frac{M_{1}}{a_{1}} = \frac{M_{2}}{a_{2}}
-#+end_src
+#+end_latex
 
 We can then solve these two equations for the individual stellar
 masses (just having observations long enough to trace the semi-major
