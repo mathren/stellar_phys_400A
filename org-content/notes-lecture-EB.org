@@ -27,7 +27,7 @@ same time, presumably with the same initial composition, and we can
 derive physical properties comparing them to each other.
 
 #+CAPTION: Fraction of binaries and higher multiplicity as a function of mass (bottom x-axis) or spectral type (top x-axis), modified from [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]].
-#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :width 75%
 #+ATTR_HTML: :alt
 [[./images/bin-frac.png]]
 
@@ -54,7 +54,7 @@ triple system, and there have been claims that it may be a quintuplet
 even
 
 #+CAPTION: Zoom in on Mizar & Alcor from [[http://hdl.handle.net/11245.1/ee92e82a-13e8-4add-a4ce-f2d3613e42c3][Renzo 2019]]
-#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :width 75%
 #+ATTR_HTML: :alt
 [[./images/zoom2.png]]
 
@@ -82,8 +82,8 @@ astrometric measurements by /Gaia/ (see recent review by [[https://www.sciencedi
 - it can also be used to find stars in wide orbits around NS or other
   faint stars, and possibly even massive planets!
 
-#+CAPTION: Path on the sky for Sirius A (thick line), Sirius B (thin line), and the center of mass (dashed line). Top right: absolute orbits around the center of mass. From [[https://ui.adsabs.harvard.edu/abs/1961ASPL....8..311L/abstract][Lippincott 1961]]
-#+ATTR_HTML: :width 100%
+#+CAPTION: Path on the sky for Sirius A (thick line), Sirius B (thin line), and the center of mass (dashed line). Top right: absolute orbits around the center of mass. From [[https://ui.adsabs.harvard.edu/abs/1961ASPL....8..311L/abstract][Lippincott 1961]].
+#+ATTR_HTML: :width 50%
 [[./images/siriusAB.png]]
 
 
@@ -163,11 +163,11 @@ equation that follows from the definition of center of mass:
 #+begin_latex
 \begin{equation}
 \label{eq:semimajor_axes}
- M_{1} a_{1} = M_{2} a_{2}
+ M_{1} a_{1} = M_{2} a_{2} \ \ ,
 \end{equation}
 #+end_latex
 
-Where a_{1} + a_{2} = a. If we know the distance d to the binary (d \gg a, so
+where a_{1} + a_{2} = a. If we know the distance d to the binary (d \gg a, so
 we can consider both stars at the same distance), then the angular
 size of the ellipse that each stars traces on the orbit of the sky is
 \alpha_{j} = a_{j}/d for j=1,2. In reality, the orbit is typically not on the
@@ -179,11 +179,11 @@ semi-major axes of wide visual binaries and knowing their distances,
 for example because we have parallax measurements).
 
 *N.B.* even without knowing the distance d, using
-\ref{eq:semimajor_axes} one can still determine the mass ratio q=M_{2}/M_{1}!
+Eq. \ref{eq:semimajor_axes} one can still determine the mass ratio q=M_{2}/M_{1}!
 
 *** Spectroscopic binaries
 In this case, we have access to more information thanks to the
-variable "radial velocity/ies (RV) of the stars, that is the
+variable "radial velocity/ies" (RV) of the stars, that is the
 measurable Doppler shift of their spectral lines due to the orbital
 motion.
 
