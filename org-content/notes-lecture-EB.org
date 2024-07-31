@@ -138,9 +138,9 @@ models.
 
 In particular the third law can be written as
 
-#+begin_src tex label:Kepler3
+#+latex label:Kepler3
  G(M_{1}+M_{2}) = n^{2} a^{3}
-#+end_src
+#+latex
 
 where M_{i} are the masses of the stars, n= 2\pi/P is the angular velocity
 and a is the semimajor axis of the orbit (of the orbit of the reduced
