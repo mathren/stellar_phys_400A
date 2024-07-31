@@ -89,7 +89,9 @@ astrometric measurements by /Gaia/ (see recent review by [[https://www.sciencedi
 
 *** Spectroscopic binaries
 
-# possibly add fig. 2.3 from Tauris & van den Heuvel's book
+#+CAPTION: Schematic representation of the Doppler shift of spectral lines in binaries from which one can calculate radial velocities. Fig. 7.3 in Carrol & Ostie or 2.3 in Tauris & van den Heuvel's books.
+#+ATTR_HTML: :width 100%
+[[./images/RV_scheme.png]]
 
 **** SB1
 In a spectrum, one star of the binary dominates, but we can see its
@@ -119,14 +121,18 @@ the plane of the sky by definition of plane of the sky) has an angle \varphi
 = \pi - /i/ w.r.t. the orbital plane. To have an eclipse, at least partial,
 
 #+begin_latex
+\begin{equation*}
 \sin(\varphi) \leq \frac{R_{1} + R_{2}}{a}
+\end{equation}
 #+end_latex
 
 with R_{1}, R_{2} radii of the stars, and a their orbital separation. The
 eclipse will be total if
 
 #+begin_latex
+\begin{equation*}
 \sin(\varphi) \leq \frac{R_{1} - R_{2}}{a}
+\end{equation}
 #+end_latex
 
 ** Dynamical mass determination
@@ -141,22 +147,54 @@ In particular the third law can be written as
 #+begin_latex
 \begin{equation}
 \label{eq:Kepler3}
-   G(M_{1}+M_{2}) = n^{2} a^{3}
+   G(M_{1}+M_{2}) = n^{2} a^{3} \ \ ,
 \end{equation}
 #+end_latex
 
 where M_{i} are the masses of the stars, n= 2\pi/P is the angular velocity
-and a is the semimajor axis of the orbit (of the orbit of the reduced
-mass point \mu = M_{1}M_{2}/(M_{1}+M_{2}) around the center of mass).
+(aka "true anomaly") and a is the semimajor axis of the orbit (of the
+orbit of the reduced mass point \mu = M_{1}M_{2}/(M_{1}+M_{2}) around the center of
+mass).
 
 For a visual binary (see above) where we can measure the semi-major
 axes a_{i} of both stars around the center of mass, we also have another
-equation that follows from conservation of momentum:
+equation that follows from the definition of center of mass:
 
 #+begin_latex
- \frac{M_{1}}{a_{1}} = \frac{M_{2}}{a_{2}}
+\end{equation*}
+ M_{1} a_{1} = M_{2} a_{2}
+\end{equation*}
 #+end_latex
 
-We can then solve these two equations for the individual stellar
-masses (just having observations long enough to trace the semi-major
-axes of wide visual binaries).
+Where a_{1} + a_{2} = a. We can then solve these two equations for the
+individual stellar masses (just having observations long enough to
+trace the semi-major axes of wide visual binaries).
+
+*** Spectroscopic binaries
+In this case, we have access to more information thanks to the
+variable "radial velocity/ies (RV) of the stars, that is the
+measurable Doppler shift of their spectral lines due to the orbital
+motion.
+
+However, what we can see though this is only the /projected/ orbital
+motion along the line of sight (because we only get Doppler shift
+along the line of sight), this is why the terminology is "radial
+velocities": it's velocities along the radii of the celestial sphere
+centered on the observer!
+
+Following standard nomenclature, let's call z the direction of the
+line of sight, and
+
+We can take #+begin_latex Eq.~\ref{Kepler3} #+end_latex and multiply
+it by sin^{3}(i) to make the projection of the semi-major axis of the
+orbit on the line of sight, a \times sin(i), appear:
+
+#+begin_latex
+\begin{equation}
+\label{eq:Kepler3}
+   G(M_{1}+M_{2})\sin^{3}(i) = n^{2} a^{3} \sin^{3}(i) \ \ ,
+\end{equation}
+#+end_latex
+
+
+* Homework

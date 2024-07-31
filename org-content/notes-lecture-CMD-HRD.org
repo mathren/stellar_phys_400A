@@ -122,7 +122,7 @@ between ~300-900 nm.
 Brown Dwarves). This is because the temperature of the gas determine
 the electron populations in each ion/atom in the stellar atmosphere
 and thus how many and which lines can be seen. This is how this
-OBAFGKMLT order came to be.
+OBAFGKM(LTY) order came to be.
 
 *** A modern view on spectra
 The image above of the solar spectrum is pretty, but that is not how
