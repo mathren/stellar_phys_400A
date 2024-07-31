@@ -2,10 +2,11 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Theoretical Astrophysics - Stellar Evolution
+* 400A Theoretical Astrophysics - Stellar Evolution
 
-Material developed for this at the Department of Astronomy and Steward
-Observatory of the University of Arizona in the Fall semester 2024.
+Material developed for the 400A course at the Department of Astronomy
+and Steward Observatory of the University of Arizona in the Fall
+semester 2024.
 
 #+begin_export html
  <div class="banner_container">
