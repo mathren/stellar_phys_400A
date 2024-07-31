@@ -138,8 +138,11 @@ models.
 
 In particular the third law can be written as
 
-#+begin_latex label:Kepler3
- G(M_{1}+M_{2}) = n^{2} a^{3}
+#+begin_latex
+\begin{equation}
+\label{eq:Kepler3}
+   G(M_{1}+M_{2}) = n^{2} a^{3}
+\end{equation}
 #+end_latex
 
 where M_{i} are the masses of the stars, n= 2\pi/P is the angular velocity
