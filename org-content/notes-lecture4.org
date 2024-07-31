@@ -8,3 +8,6 @@ Estimate and compare the dynamical timescale using multiple methods:
 
  - Kepler's third law at the surface of the star
  -
+
+
+Using MESA-web, build a grid of ZAMS models and check the L\equiv L(M) scaling

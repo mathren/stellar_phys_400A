@@ -11,19 +11,29 @@ and student interest. The order roughly follows the presentation in
 [[https://www.astro.ru.nl/~onnop/][Onno Pols notes]].
 
 ** <2024-08-27 Tue> Intro & orders of magnitude
-
+*Aim*: Introduce the course, go over some quantities (M_{\odot}, R_{\odot},
+L_{\odot}, stellar lifetimes)
 [[./notes-lecture-Intro.org][Notes]]
 
 ** <2024-08-29 Thu> Color-magnitude and Hertzsprung-Russell diagram
+*Aim*: Introduce color-magnitude diagrams, theoretical HR diagram, and
+how they relate to each other. Review some black body radiation and
+the basics of spectral formation to introduce spectral types.
 
 [[./notes-lecture-CMD-HRD.org][Notes]]
 
-
-** <2024-09-03 Tue> Eclipsing binaries and mass measurements
+** <2024-09-03 Tue> Binaries and mass measurements
+*Aim*: Introduce binaries as a common thing, list various types of
+binaries (astrometric, visual, spectroscopic, eclipsing). Review
+Kepler's laws and application to the mass determination in eclipsing
+binary systems.
 
 [[./notes-lecture-EB.org][Notes]]
 
 ** <2024-09-05 Thu> Hydrostatic equilibrium
+*Aim*: Introduce the first stellar structure equation building from
+Newton's second law.
+
 
 ** <2024-09-10 Tue> Virial theorem, pressure, estimates
 
