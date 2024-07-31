@@ -298,7 +298,8 @@ necessarily, hence the wider distribution of stars on the HRD.
 
 * Homework
 
-** Aim
+** Make your own CMD
+*** Aim
 Make your own color-magnitude diagram of a selected group of stars.
 This is a data-visualization exercise, so try to make your diagram as
 informative and useful as possible. Think of a publication-quality
@@ -307,13 +308,13 @@ their slides, dense in information, and the info should possibly be
 layered. You will also need to write a brief paragraph of description
 of what is plotted, including the source of data.
 
-*** Deliverables
+**** Deliverables
   - Color-magnitude diagram/Hertzsprung-Russell diagram
   - Paragraph of description including the source of the data and what
     we see
   - Script to reproduce the plot.
 
-** Instructions
+*** Instructions
 We will use the latest data release from ESA's /Gaia/ mission, you will
 be using a bleeding-edge dataset! These are publicly available in the
 [[https://gea.esac.esa.int/archive/][Gaia archive]] or any of the [[https://www.cosmos.esa.int/web/gaia/data-access#PartnerDataCentres][partner data centers]].
@@ -342,3 +343,7 @@ be using a bleeding-edge dataset! These are publicly available in the
     =*.iso=, but it is /not/ and =iso= image file, just plain text!
   - *Optional*: use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot evolutionary
     tracks.
+
+** Suggested
+To follow the next lecture, it will be helpful for you to revise
+Kepler's laws, orbital and celestial mechanics. This is not graded.

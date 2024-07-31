@@ -178,7 +178,7 @@ stellar masses (just having observations long enough to trace the
 semi-major axes of wide visual binaries and knowing their distances,
 for example because we have parallax measurements).
 
-*N.B.* even without knowing the distance d, using
+*N.B.:* even without knowing the distance d, using
 Eq. \ref{eq:semimajor_axes} one can still determine the mass ratio q=M_{2}/M_{1}!
 
 *** Spectroscopic binaries
@@ -195,12 +195,67 @@ centered on the observer!
 
 **** Radial velocity measurement
 Following standard nomenclature, let's call z the direction of the
-line of sight, and
+line of sight, using xy for the plane of the sky. By definition the
+radial velocity of each star is dz/dt. \nu here is the true anomaly
+(such that d\nu/dt = n), \omega is the argument of periastron - that is the
+angle between the line of nodes (line where the plane of the sky,
+assumed to contain the focus of the ellipse, and the plane of the
+orbit intersect) and the direction of periastron.
+
+#+CAPTION: Geometry of a binary orbit. This is Fig. 3.3 in Tauris & van den Heuvel 2023 book.
+#+ATTR_HTML: :width 50%
+[[./images/bin_orbit.png]]
 
 
-We can take Eq. \ref{eq:Kepler3} and multiply
-it by sin^{3}(i) to make the projection of the semi-major axis of the
-orbit on the line of sight, a \times sin(i), appear:
+The one can calculate: z= rsin(i) sin(\nu+\omega) with r radius of the orbit
+(which for an elliptical orbit is a function of time), the sin(i)
+factor projects it on the plane of the sky and the sin(\nu+\omega) projects
+on the line of sight. The radial velocity is therefore:
+
+#+being_latex
+\begin{equation}\label{dzdt}
+\frac{dz}{dt} = \left(r \cos(\nu+\omega)\frac{d\nu}{dt}+\frac{dr}{dt}sin(\nu+\omega)\right)\sin(i)
+\end{equation}
+#+end_latex
+
+which using Kepler's second law
+
+#+begin_latex
+\begin{equation}
+\label{eq:Kepler2}
+\frac{1}{2}r^{2}\frac{d\nu}{dt} = \frac{\pi ab}{P} = \frac{\pi a^{2} \sqrt{1-e^2}}{P} \ \ ,
+\end{equation}
+#+end_latex
+where P is the orbital period, a and b are semi-major and semi-minor
+axes, and e = \sqrt{1-b^{2}/a^{2}} is the eccentricity, and the relation
+between r\equiv r(\nu) for an ellipse:
+
+#+begin_latex
+\begin{equation}
+r = \frac{a(1-e^{2})}{1+e\cos(\nu)} \ \ ,
+\end{equation}
+#+end_latex
+
+one can finally rewrite the radial velocity from Eq. \ref{dzdt} as
+
+#+begin_latex
+\begin{equation}
+v_{rad} = \frac{dz}{dt} = K (ecos(\omega)+cos(\omega+\nu)) \ \
+\end{equation}
+#+end_latex
+
+where
+#+begin_latex
+\begin{equation}
+ K = \frac{2\pi a\sin(i)}{P\sqrt{1-e^{2}}} \ \,
+\end{equation}
+#+end_latex
+is the so-called /semi-amplitude/ of the radial velocity, which apart
+from the sin(i) factor depends only on observable quantities!
+
+We can take Eq. \ref{eq:Kepler3} and multiply it by sin^{3}(i) to make
+the projection of the semi-major axis of the orbit on the line of
+sight, a \times sin(i), appear:
 
 #+begin_latex
 \begin{equation}

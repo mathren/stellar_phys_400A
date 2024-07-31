@@ -36,6 +36,8 @@ Newton's second law.
 
 
 ** <2024-09-10 Tue> Virial theorem, pressure, estimates
+*Aim*: Introduce the Virial theorem in various forms, use it to provide
+numerical estimates of the central temperature and pressure for stars.
 
 ** <2024-09-12 Thu> Equation of state 1
 
