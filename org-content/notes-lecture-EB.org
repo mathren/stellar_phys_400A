@@ -4,7 +4,7 @@
 
 * Measuring masses
 *Materials*: Verbunt lecture notes (part 1), Sections 2.1-2.4 in Tauris
-& Van den Heuvel 2023 book.
+& Van den Heuvel 2023 book, Chapter 7 of Carroll & Ostie's book.
 
 This is typically a very hard problem: as we have seen, on the HRD/CMD
 there is a tight correlation between a star's magnitude and color at
@@ -161,14 +161,25 @@ axes a_{i} of both stars around the center of mass, we also have another
 equation that follows from the definition of center of mass:
 
 #+begin_latex
-\begin{equation*}
+\begin{equation}
+\label{eq:semimajor_axes}
  M_{1} a_{1} = M_{2} a_{2}
-\end{equation*}
+\end{equation}
 #+end_latex
 
-Where a_{1} + a_{2} = a. We can then solve these two equations for the
-individual stellar masses (just having observations long enough to
-trace the semi-major axes of wide visual binaries).
+Where a_{1} + a_{2} = a. If we know the distance d to the binary (d \gg a, so
+we can consider both stars at the same distance), then the angular
+size of the ellipse that each stars traces on the orbit of the sky is
+\alpha_{j} = a_{j}/d for j=1,2. In reality, the orbit is typically not on the
+plane of the sky, but it has an inclination! This means what we can
+see is not a_{j} but the projection of it on the plane of the sky a_{j}
+cos(i). We can then solve these two equations for the individual
+stellar masses (just having observations long enough to trace the
+semi-major axes of wide visual binaries and knowing their distances,
+for example because we have parallax measurements).
+
+*N.B.* even without knowing the distance d, using
+\ref{eq:semimajor_axes} one can still determine the mass ratio q=M_{2}/M_{1}!
 
 *** Spectroscopic binaries
 In this case, we have access to more information thanks to the
@@ -182,8 +193,10 @@ along the line of sight), this is why the terminology is "radial
 velocities": it's velocities along the radii of the celestial sphere
 centered on the observer!
 
+**** Radial velocity measurement
 Following standard nomenclature, let's call z the direction of the
 line of sight, and
+
 
 We can take Eq. \ref{eq:Kepler3} and multiply
 it by sin^{3}(i) to make the projection of the semi-major axis of the
