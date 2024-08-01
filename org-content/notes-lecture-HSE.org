@@ -136,25 +136,30 @@ From this complete form we can take the partial derivatives w.r.t. r
 #+end_latex
 
 We can also derive the first one above w.r.t. t and the bottom one
-w.r.t r, and demand the two forms are the same. Recalling that \partial r/\partial t
-= v we obtain the typical form of the mass continuity equation in
-spherical symmetry:
+w.r.t r, and demand the two forms are the same. Since r and t are the
+independent variables here, we obtain:
 
 #+begin_latex
 \begin{equation}
-\frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial r^{2}\rho v}{\partial r}
+\frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial r^{2}\rho v}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \,
 \end{equation}
 #+end_latex
+with \partial_{\theta}\equiv\partial_{\varphi}\equiv 0 for the last one, that is
+the typical form of the mass continuity equation in spherical
+symmetry.
 
-To turn these equations in the more typical form for stellar
-structure, just take the first one in \ref{eq:mass_continuity_rt} and
-express it with m as independent variable:
+To turn these equations in the more typical form for
+stellar structure, just take the first one in
+\ref{eq:mass_continuity_rt} and express it with m as independent
+variable:
 
+#+begin_src
 #+begin_latex
 \begin{equation}
-\mbox{\frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho}}
+\frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho}
 \end{equation}
 #+end_latex
+#+end_src
 
 where the partial derivatives become total derivatives in a static
 situation (where by definition \partial_{t} = 0). This is the first stellar
