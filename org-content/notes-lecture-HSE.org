@@ -90,9 +90,9 @@ depend on the local gas density \rho(r, t) (or equivalently in the
 Lagrangian formalism \rho(m, t)!) and the amount of volume in the shell
 
 #+begin_latex
-\begin{equation}
+%\begin{equation}
 dm = \rho dAdr
-\end{equation}
+%\end{equation}
 #+end_latex
 
 where dA is the element base area, and dr its radial thickness. We can
@@ -114,24 +114,57 @@ dm = 4\pi \rho r^{2} dr
 
 In principle gas could also flow in/out of the shell at a rate
 determined by the inflow/outflow velocity such that in a time interval
-dt an amount \rho v dA dt flows in (for v>0) or out (v<0). Again
-integrating over dA:
+dt an amount -\rho v dA dt flows out (for v>0, the quantity is negative)
+or in (v<0). Again integrating over dA:
 
 #+begin_latex
 \begin{equation}
 \label{eq:mass_continuity}
-dm = 4\pi \rho r^{2} dr + 4\pi r^{2} \rho v dt
+dm = 4\pi \rho r^{2} dr - 4\pi r^{2} \rho v dt
 \end{equation}
 #+end_latex
 
-This is the complete mass continuity equation in spherical symmetry,
-and the first stellar structure equation. It depends on a yet unknown
-variable, the gas density \rho.
+This is the complete mass continuity equation in spherical symmetry.
+From this complete form we can take the partial derivatives w.r.t. r
+(at fixed t) and t (at fixed r):
 
-Typically, in a stellar evolution calculation the gas is in
-hydrostatic equilibrium, \partial_{t} = 0.
+#+begin_latex
+\begin{equation}\label{eq:mass_continuity_rt}
+\frac{\partial m}{\partial r} = \frac{4\pi r^{2} \rho} \\
+\frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v
+\end{equation}
+#+end_latex
 
-*** Recovering mas
+We can also derive the first one above w.r.t. t and the bottom one
+w.r.t r, and demand the two forms are the same. Recalling that \partial r/\partial t
+= v we obtain the typical form of the mass continuity equation in
+spherical symmetry:
+
+#+begin_latex
+\begin{equation}
+\frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial r^{2}\rho v}{\partial r}
+\end{equation}
+#+end_latex
+
+To turn these equations in the more typical form for stellar
+structure, just take the first one in \ref{eq:mass_continuity_rt} and
+express it with m as independent variable:
+
+#+begin_latex
+\begin{equation}
+\mbox{\frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho}}
+\end{equation}
+#+end_latex
+
+where the partial derivatives become total derivatives in a static
+situation (where by definition \partial_{t} = 0). This is the first stellar
+structure equation that expresses mass conservation, and it depends on
+a yet unknown variable, the gas density \rho.
+
+** Hydrostatic equilibrium
+
+*** Question
+- are stars in hydrostatic equilibrium? How do we know observationally?
 
 
 * Homework
