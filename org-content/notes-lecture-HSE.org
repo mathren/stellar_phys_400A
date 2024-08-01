@@ -104,7 +104,7 @@ where r is the radius of the shell, therefore
 
 #+begin_latex
 \begin{equation}
-dm = 4\pi \rho r^{2} dr
+dm = 4\pi \rho r^{2} dr \ \ .
 \end{equation}
 #+end_latex
 
@@ -116,7 +116,7 @@ or in (v<0). Again integrating over dA:
 #+begin_latex
 \begin{equation}
 \label{eq:mass_continuity}
-dm = 4\pi \rho r^{2} dr - 4\pi r^{2} \rho v dt
+dm = 4\pi \rho r^{2} dr - 4\pi r^{2} \rho v dt \ \ .
 \end{equation}
 #+end_latex
 
@@ -129,7 +129,7 @@ From this complete form we can take the partial derivatives w.r.t. r
 \frac{\partial m}{\partial r} = 4\pi r^{2} \rho
 \\
 
-\frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v
+\frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \ \ .
 \end{equation}
 #+end_latex
 
@@ -139,7 +139,7 @@ independent variables here, we obtain:
 
 #+begin_latex
 \begin{equation}
-\frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial (r^{2}\rho v)}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \,
+\frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial (r^{2}\rho v)}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \ ,
 \end{equation}
 #+end_latex
 with \partial_{\theta}\equiv\partial_{\varphi}\equiv 0 for the last one, that is
@@ -153,7 +153,7 @@ variable:
 
 #+begin_latex
 \begin{equation}\label{eq:mass_conservation}
-\frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho}
+\frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -184,7 +184,7 @@ which is a solution of the Poisson equation:
 
 #+begin_latex
 \begin{equation}
-\nabla^{2} \Phi = 4\pi G\rho \Rightarrow \frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\Phi}{\partial r} \right) = 4\pi G\rho
+\nabla^{2} \Phi = 4\pi G\rho \Rightarrow \frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\Phi}{\partial r} \right) = 4\pi G\rho \ \ ,
 \end{equation}
 #+end_latex
 
@@ -199,7 +199,7 @@ which from Newton's theory of gravity we know to be
 
 #+begin_latex
 \begin{equation}
-- \nabla \Phi = g \equiv g(m(r))= \frac{Gm(r)}{r^{2}} \ \,
+- \nabla \Phi = g \equiv g(m(r))= \frac{Gm(r)}{r^{2}} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -264,7 +264,7 @@ and thus
 
 #+begin_latex
 \begin{equation}\label{eq:HSE}
-\frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ .
+\frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
 #+end_latex
 
