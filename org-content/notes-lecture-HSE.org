@@ -6,7 +6,7 @@
 *Materials*: chapter 2 of Onno Pols' lecture notes, chapters 1 & 2 of
 Kippenhahn's book.
 
-** Spherical symmetry - onedimensional approximation
+** Spherical symmetry and one dimensional approximation
 At zeroth-order, the dynamical elements that determine the structure
 of a star are:
 
@@ -22,9 +22,9 @@ star as a function of a single variable, for example the radius from
 the center of the star. This allows for the calculation of
 
 :Questions:
-  - Discuss with your neighbor: can you think of cases where a star
-    may not be spherical?
+ - *Q*: Discuss with your neighbor: can you think of cases where a star  may not be spherical?
 :end:
+
 ** Lagrangian and Eulerian coordinates
 In hydrodynamics one is typically interested in describing fields
 (e.g., density, velocity, pressure, temperature, etc..). Let's call a
@@ -77,11 +77,10 @@ works because the m(r) function is invertible, and it is in fact
 monotonically increasing: as r increases, the amount of stellar mass
 enclosed can also only increase!
 
-*** Question:
- - can there be other variables that one can use as independent
-   variable for the description of the stellar structure? Anything
-   else that has a (generally) monotonic behavior throughout the star
-   can work.
+:Questions:
+ - *Q*: can there be other variables that one can use as independent
+variable for the description of the stellar structure?
+:end:
 
 ** Mass conservation
 
@@ -164,12 +163,63 @@ situation (where by definition \partial_{t} = 0). This is the first stellar
 structure equation that expresses mass conservation, and it depends on
 a yet unknown variable, the gas density \rho.
 
-** Hydrostatic equilibrium
+** Momentum conservation and hydrostatic equilibrium
 
 :Questions:
-- are stars in hydrostatic equilibrium? How do we know observationally?
+- *Q*: are stars in hydrostatic equilibrium? How do we know observationally?
 :end:
 
+Let's now consider the equation of motion of a parcel of stellar gas,
+F = dp/dt = ma (for constant m), or often more conveniently in fluid
+dynamics, work per unit volume with f = F/V and thus f=\rho a with \rho =
+m/V and V volume.
+
+*** Gravity
+Since by definition a star is a self-gravitating body (*N.B.* so is a
+planet, that's not the whole definition of a star!), we want to
+include the gravitational force on the l.h.s of our f=\rho a equation.
+This can be obtained as the gradient of the gravitational potential \Phi
+which is a solution of the Poisson equation:
+
+#+begin_latex
+\begin{equation}
+\nabla^{2} \Phi = 4\pi G\rho \Rightarrow \frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\Phi}{\partial r} \right) = 4\pi G\rho
+\end{equation}
+#+end_latex
+
+where the second form assumes already spherical symmetry. Note how
+this equation does not make the problem worse: we have a new variable
+\Phi but the r.h.s. only depends on the density \rho which is already
+appearing in Eq. \ref{eq:mass_conservation}.
+
+We can introduce the gravitational acceleration \mathbf{g} = - \nabla\Phi, which
+in spherical symmetry only has a non-zero radial component \Rightarrow g = - d\Phi/dr
+which from Newton's theory of gravity we know to be
+
+#+begin_latex
+\begin{equation}
+- \nabla \Phi = g \equiv g(m(r))= \frac{Gm(r)}{r^{2}} \ \,
+\end{equation}
+#+end_latex
+
+where m\equiv m(r) is the mass enclosed within a certain radius r, which we
+already encountered. The gravitational force acting on a spherical
+shell of mass dm = 4\pi r^{2}\rho dr is thus just -gdm = -Gm\rho/r^{-2}, where
+the minus sign is to explicitly indicate that this force points
+towards the center of the star, and
+
+*** Pressure gradient
+The other contribution we need to include in our f = \rho a equation is from
+the pressure. We could already use dimensional analysis to guess in
+what form pressure can enter the l.h.s. of the equation:
+
+[P] = [force]/[area] \Rightarrow [P]/[length] = [force]/[volume] \equiv [f]
+
+This suggests that the pressure divided an appropriate length scale
+has the right dimension to enter f. This in turn suggests that maybe
+what we need is the pressure /gradient/!
+
+Let's have a slightly more formal look at how this work.
 
 
 * Homework
