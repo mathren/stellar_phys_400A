@@ -383,6 +383,10 @@ stellar masses explored grew, this became a broken powerlaw:
 with x=4 for M\le0.8M_{\odot}, x=3 for 0.8M_{\odot} <M<50M_{\odot}, x=1 for M\geq
 50M_{\odot}. These thresholds are extremely approximated, probably
 metallicity dependent, as we will possibly see later in the course.
+Moreover, and importantly, these hold only for so-called "main
+sequence" stars, the one following also the L(T_{eff}) relatively tight
+relation on the color-magnitude diagram: evolved stars are a different
+problem!
 
 * Homework
 
