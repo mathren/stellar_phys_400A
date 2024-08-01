@@ -155,9 +155,10 @@ axis to be a and the period P:
 #+end_latex
 
 and
+
 #+begin_latex
 \begin{equation}
- \frac{t_{c}_{} -t_{b}}{P}_{} = \frac{2(R_{1}-R_{2})}{2\pi a} \ \ .
+ \frac{t_{c} -t_{b}}{P}_{} = \frac{2(R_{1}-R_{2})}{2\pi a} \ \ .
 \end{equation}
 #+end_latex
 
