@@ -40,7 +40,7 @@ This is like looking at the flow from on top of a bridge at a fixed
 position, describing the variables at that specific position.
 
 #+CAPTION: Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge
-#+ATTR_HTML: :width 50%  https://www.flickr.com/photos/frixan/114822407/
+#+ATTR_HTML: :width 50%  :alt https://www.flickr.com/photos/frixan/114822407/
 [[./images/Eulerian-bridge.jpg]]
 
 For a star assuming spherical symmetry as discussed above, we would
@@ -55,8 +55,8 @@ element, t)
 This is like hopping on a boat that moves with the fluid, and
 describing the properties of the fluid as the boat moves with it.
 
-#+CAPTION: Lagrangian description is like following the fluid on a boa and describe what goes on as a function of the fluid particle being followed
-#+ATTR_HTML: :width 50%
+#+CAPTION: Lagrangian description is like following the fluid on a boat and describe what goes on as a function of the fluid particle being followed
+#+ATTR_HTML: :width 50% :alt https://www.snowaddiction.org/2015/10/the-zen-of-kayaking-i-photograph-the-fjords-of-norway-from-the-kayak-seat.html?m=1
 [[./images/Lagrangian_kayak.jpg]]
 
 Because of the extremely large range of spatial scales in stellar
@@ -69,10 +69,19 @@ star not the radius r, but instead the amount of mass enclosed by a
 given radius m\equiv m(r), thus express \Psi(r,t) =\Psi(r(m), t)\rightarrow
 \Psi(m(r), t).
 
+Derivatives can then be expressed with the chain rule:
+\partial/\partial m = \partial/\partial r \times \partial r/\partial m.
+
 This is what is typically done in stellar evolution, and it
 works because the m(r) function is invertible, and it is in fact
 monotonically increasing: as r increases, the amount of stellar mass
 enclosed can also only increase!
+
+*** Question:
+ - can there be other variables that one can use as independent
+   variable for the description of the stellar structure? Anything
+   else that has a (generally) monotonic behavior throughout the star
+   can work.
 
 ** Mass conservation
 
@@ -80,16 +89,28 @@ Let's consider the amount of mass in a parcel of stellar gas. This will
 depend on the local gas density \rho(r, t) (or equivalently in the
 Lagrangian formalism \rho(m, t)!) and the amount of volume in the shell
 
+#+begin_latex
+\begin{equation}
 dm = \rho dAdr
+\end{equation}
+#+end_latex
 
 where dA is the element base area, and dr its radial thickness. We can
 integrate over the base to get the parcel to be a spherical shell
 
+#+begin_latex
+\begin{equation}
 \int dA = 4\pi r^{2}
+\end{equation}
+#+end_latex
 
 where r is the radius of the shell, therefore
 
+#+begin_latex
+\begin{equation}
 dm = 4\pi \rho r^{2} dr
+\end{equation}
+#+end_latex
 
 In principle gas could also flow in/out of the shell at a rate
 determined by the inflow/outflow velocity such that in a time interval

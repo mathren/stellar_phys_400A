@@ -12,7 +12,8 @@ and student interest. The order roughly follows the presentation in
 ** <2024-08-27 Tue> Intro & orders of magnitude
 *Aim*: Introduce the course, go over some quantities (M_{\odot}, R_{\odot},
 L_{\odot}, stellar lifetimes)
-[[./notes-lecture-Intro.org][Notes]]
+[[./notes-lecture-Intro.org][
+Notes]]
 
 ** <2024-08-29 Thu> Color-magnitude and Hertzsprung-Russell diagram
 *Aim*: Introduce color-magnitude diagrams, theoretical HR diagram, and
@@ -59,7 +60,6 @@ numerical estimates of the central temperature and pressure for stars.
 
 ** <2024-09-24 Tue> Radiative energy transport & conduction
 
-
 ** <2024-09-26 Thu> Convection
 
 *Aim*: Introduce convective instability, mixing length theory and its
@@ -72,7 +72,6 @@ limitations.
 *** Homework idea
  - compare structure of a star going through pp chain, CNO cycle, and
    a massive pop III star.
-
 
 ** <2024-10-03 Tue> Introduction to stellar evolution codes
 *Aim*: Introduce stellar evolution codes principles, MESA and MESA-web
@@ -90,12 +89,9 @@ limitations.
 
 ** <2024-10-15 Tue> Evolution: low mass stars
 
-
 ** <2024-10-22 Thu> Evolution: high mass stars
 
-
 ** <2024-10-24 Tue> Supernovae
-
 
 ** <2024-10-29 Thu> Four student presentations
 *** Presenter 1:
