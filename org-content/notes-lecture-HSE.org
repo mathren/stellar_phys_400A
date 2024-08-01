@@ -11,14 +11,15 @@ At zeroth-order, the dynamical elements that determine the structure
 of a star are:
 
  - Gravity: the weight of the gas forming the star itself
- - Gas thermal pressure
+ - Pressure: the thermal pressure of the gas, sometimes with
+   contribution from the radiation and degeneracy
 
 Gravity is a central force that depends only on the radius (\prop r^{-2}),
 and pressure is isotropic. Therefore at zeroth order, we expect stars
 to be well approximated as /spheres/. This mathematically means that we
 can express all the variables that characterize the structure of a
 star as a function of a single variable, for example the radius from
-the center of the star.
+the center of the star. This allows for the calculation of
 
 *** Questions
   - Discuss with your neighbor: can you think of cases where a star
@@ -39,7 +40,7 @@ This is like looking at the flow from on top of a bridge at a fixed
 position, describing the variables at that specific position.
 
 #+CAPTION: Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge
-#+HTML_ATTR: :width 50% :alt https://www.flickr.com/photos/frixan/114822407/
+#+ATTR_HTML: :width 50%  https://www.flickr.com/photos/frixan/114822407/
 [[./images/Eulerian-bridge.jpg]]
 
 For a star assuming spherical symmetry as discussed above, we would
@@ -55,7 +56,7 @@ This is like hopping on a boat that moves with the fluid, and
 describing the properties of the fluid as the boat moves with it.
 
 #+CAPTION: Lagrangian description is like following the fluid on a boa and describe what goes on as a function of the fluid particle being followed
-#+HTML_ATTR: :width 50% :alt
+#+ATTR_HTML: :width 50%
 [[./images/Lagrangian_kayak.jpg]]
 
 Because of the extremely large range of spatial scales in stellar

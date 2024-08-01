@@ -29,7 +29,6 @@ derive physical properties comparing them to each other.
 
 #+CAPTION: Fraction of binaries and higher multiplicity as a function of mass (bottom x-axis) or spectral type (top x-axis), modified from [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]].
 #+ATTR_HTML: :width 75%
-#+ATTR_HTML: :alt
 [[./images/bin-frac.png]]
 
 Let's review some types of binaries.
@@ -366,7 +365,6 @@ f(M_{1}, M_{2}) = \frac{M_{2}^{3 }\sin^{3}(i)}{(M_{1} + M_{2})^{2}} \ \ ,
 #+end_latex
 
 which together with an estimate of the mass-ratio provides a limit on M_{2}.
-
 
 ** Mass-luminosity relation
 Using systems for which this mass measurements are possible, we can
