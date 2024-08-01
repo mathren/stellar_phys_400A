@@ -21,10 +21,10 @@ can express all the variables that characterize the structure of a
 star as a function of a single variable, for example the radius from
 the center of the star. This allows for the calculation of
 
-*** Questions
+:Questions:
   - Discuss with your neighbor: can you think of cases where a star
     may not be spherical?
-
+:end:
 ** Lagrangian and Eulerian coordinates
 In hydrodynamics one is typically interested in describing fields
 (e.g., density, velocity, pressure, temperature, etc..). Let's call a
@@ -141,7 +141,7 @@ independent variables here, we obtain:
 
 #+begin_latex
 \begin{equation}
-\frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial r^{2}\rho v}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \,
+\frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial (r^{2}\rho v)}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \,
 \end{equation}
 #+end_latex
 with \partial_{\theta}\equiv\partial_{\varphi}\equiv 0 for the last one, that is
@@ -153,13 +153,11 @@ stellar structure, just take the first one in
 \ref{eq:mass_continuity_rt} and express it with m as independent
 variable:
 
-#+begin_src
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:mass_conservation}
 \frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho}
 \end{equation}
 #+end_latex
-#+end_src
 
 where the partial derivatives become total derivatives in a static
 situation (where by definition \partial_{t} = 0). This is the first stellar
@@ -168,8 +166,10 @@ a yet unknown variable, the gas density \rho.
 
 ** Hydrostatic equilibrium
 
-*** Question
+:Questions:
 - are stars in hydrostatic equilibrium? How do we know observationally?
+:end:
+
 
 
 * Homework
