@@ -230,14 +230,8 @@ radius P\equiv P(r) (\equiv P(r(m)).
 The net force per unit area on each side of a spherical shell of gas
 of thickness dr is P(r) at the inner boundary and P(r+dr) at the outer
 boundary. Therefore, dF_{press} = P(r)dA - P(r+dr)dA \simeq dP/dr dA where we
-used P(r+dr)\simeq P(r)+dP/dr dr. Now using dm = \rho drdA and dividing by dV
-= drdA we finally obtain
-
-#+begin_latex
-\begin{equation}
-f_{press} = -\frac{1}{\rho}\frac{dP}{dr} \ \ .
-\end{equation}
-#+end_latex
+used P(r+dr)\simeq P(r)+(dP/dr)dr. Now using dm = \rho drdA and dividing by dV
+= drdA we finally obtain f_{press} = - dP/dr.
 
 *** Combining the two
 
@@ -251,7 +245,7 @@ that overall the acceleration a of each parcel of gas is zero in most
 cases, that is a=0. /Stars are generally in hydrostatic equilibrium/. In
 this case the conservation of momentum becomes
 
-#+being_latex
+#+begin_latex
 \begin{equation}
 \frac{dP}{dr} = -g\rho = -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
@@ -259,6 +253,32 @@ this case the conservation of momentum becomes
 
 or changing to have m has the independent variable, to have a
 Lagrangian treatment:
+
+#+begin_latex
+\begin{equation}
+\frac{dP}{dr} = \frac{dP}{dm}\frac{dm}{dr} = \frac{dP}{dm}4\pi r^{2}\rho
+\end{equation}
+#+end_latex
+
+and thus
+
+#+begin_latex
+\begin{equation}\label{eq:HSE}
+\frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ .
+\end{equation}
+#+end_latex
+
+which is the second stellar structure equation that expresses the fact
+that the gravitational pull of the stellar gas is compensated by the
+pressure gradient inside the star. This also means that it is the
+gravity of the star that imposes the pressure stratification of the
+star and ultimately its structure.
+
+*N.B.:* This can also be obtained starting from the Navier-Stokes
+equation assuming no viscosity (the microscopic viscosity is generally
+negligible in stars).
+
+** Dynamical timescale estimates
 
 
 * Homework
