@@ -136,12 +136,37 @@ eclipse will be total if
 \end{equation*}
 #+end_latex
 
+The time duration of an eclipse can be used to determine the radii of
+the two stars. Consider the following figure:
+
+#+CAPTION: Light cuve (visual magnitude as function of time) for an eclipsing binary with i=\pi/2, figure 7.9 in Carrol & Ostie's book
+#+ATTR_HTML: :width 50%
+[[./images/EB.png]]
 
 
+one can see that, labeling with 2 the geometrically smaller star
+(darker gray) and assuming the orbit to be circular and the semi-major
+axis to be a and the period P:
 
+#+begin_latex
+\begin{equation}
+ \frac{t_{d} -t_{a}}{P} = \frac{2(R_{1}+R_{2})}{2\pi a} \ \ ,
+\end{equation}
+#+end_latex
 
+and
+#+begin_latex
+\begin{equation}
+ \frac{t_{c}_{} -t_{b}}{P}_{} = \frac{2(R_{1}-R_{2})}{2\pi a} \ \ .
+\end{equation}
+#+end_latex
 
+These equations allow to calculate R_{j}_{}/a and if also the masses are
+known also the individual radii R_{j} using Kepler's laws to get rid of
+the orbital semi-major axis a.
 
+*** Question
+In the figure above, which star is assume the hotter one?
 
 ** Dynamical mass determination
 
