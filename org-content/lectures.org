@@ -2,7 +2,6 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 #+options: title:nil
-#+OPTIONS:  p:with-planning
 
 * Lectures topic-by-topic
 This is a rough schedule of the topics we will cover. However, we may
@@ -28,12 +27,14 @@ binaries (astrometric, visual, spectroscopic, eclipsing). Review
 Kepler's laws and application to the mass determination in eclipsing
 binary systems.
 
-[[./notes-lecture-EB.org][Notes]]
+[[./notes-lecture-BIN.org][Notes]]
 
 ** <2024-09-05 Thu> Hydrostatic equilibrium
-*Aim*: Introduce the first stellar structure equation building from
-Newton's second law.
+*Aim*: Introduce the mass conservation and hydrostatic equilibrium
+equations of stellar evolution. Introduce the assumption of spherical
+symmetry.
 
+[Notes]
 
 ** <2024-09-10 Tue> Virial theorem, pressure, estimates
 *Aim*: Introduce the Virial theorem in various forms, use it to provide
@@ -61,6 +62,10 @@ numerical estimates of the central temperature and pressure for stars.
 
 ** <2024-09-26 Thu> Convection
 
+*Aim*: Introduce convective instability, mixing length theory and its
+limitations.
+
+[[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][Notes (preliminary)]]
 
 ** <2024-10-01 Thu> Nuclear energy generation
 
@@ -68,27 +73,31 @@ numerical estimates of the central temperature and pressure for stars.
  - compare structure of a star going through pp chain, CNO cycle, and
    a massive pop III star.
 
-** <2024-10-03 Tue> Presentation expectations
+
+** <2024-10-03 Tue> Introduction to stellar evolution codes
+*Aim*: Introduce stellar evolution codes principles, MESA and MESA-web
+
+** <2024-10-08 Tue> Presentation expectations
  - Discuss what is expected for the presentations, how they will be
    graded, etc.
  - Discuss structure: introduce problem, show state-of-the-art
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
 
-** <2024-10-08 Thu> Radiative transfer, stellar atmospheres, and spectral lines
+** <2024-10-10 Thu> Radiative transfer, stellar atmospheres, and spectral lines
 
 - line formation region
 - line broadening mechanisms
 
-** <2024-10-10 Tue> Evolution: low mass stars
+** <2024-10-15 Tue> Evolution: low mass stars
 
 
-** <2024-10-15 Thu> Evolution: high mass stars
+** <2024-10-22 Thu> Evolution: high mass stars
 
 
-** <2024-10-22 Tue> Supernovae
+** <2024-10-24 Tue> Supernovae
 
 
-** <2024-10-24 Thu> Four student presentations
+** <2024-10-29 Thu> Four student presentations
 *** Presenter 1:
 - reviewer 1:
 - reviewer 2:
@@ -101,7 +110,7 @@ numerical estimates of the central temperature and pressure for stars.
 *** Presenter 4:
 - reviewer 1:
 - reviewer 2:
-** <2024-10-29 Tue> Four student presentations
+** <2024-11-21 Tue> Four student presentations
 
 *** Presenter 1:
 - reviewer 1:
@@ -203,14 +212,12 @@ numerical estimates of the central temperature and pressure for stars.
 *** Presenter 4:
 - reviewer 1:
 - reviewer 2:
-** <2024-11-21 Thu> One student presentation
+** <2024-11-26 Thu> One student presentation
  Extra time can be used as backup
 
 *** Presenter 1:
 - reviewer 1:
 - reviewer 2:
-
-**  <2024-11-26 Tue> Extra
 
 **  <2024-12-03 Tue> Extra
 
