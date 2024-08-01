@@ -34,7 +34,7 @@ binary systems.
 equations of stellar evolution. Introduce the assumption of spherical
 symmetry.
 
-[Notes]
+[[./notes-lecture-HSE.org][Notes]]
 
 ** <2024-09-10 Tue> Virial theorem, pressure, estimates
 *Aim*: Introduce the Virial theorem in various forms, use it to provide

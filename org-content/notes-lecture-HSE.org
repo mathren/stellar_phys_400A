@@ -2,6 +2,116 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
+* The first two equations of stellar structure
+*Materials*: chapter 2 of Onno Pols' lecture notes, chapters 1 & 2 of
+Kippenhahn's book.
+
+** Spherical symmetry - onedimensional approximation
+At zeroth-order, the dynamical elements that determine the structure
+of a star are:
+
+ - Gravity: the weight of the gas forming the star itself
+ - Gas thermal pressure
+
+Gravity is a central force that depends only on the radius (\prop r^{-2}),
+and pressure is isotropic. Therefore at zeroth order, we expect stars
+to be well approximated as /spheres/. This mathematically means that we
+can express all the variables that characterize the structure of a
+star as a function of a single variable, for example the radius from
+the center of the star.
+
+*** Questions
+  - Discuss with your neighbor: can you think of cases where a star
+    may not be spherical?
+
+** Lagrangian and Eulerian coordinates
+In hydrodynamics one is typically interested in describing fields
+(e.g., density, velocity, pressure, temperature, etc..). Let's call a
+generic field \Psi. It can be described in two ways (well, they can also
+be "combined" sometimes).
+
+*** Eulerian description
+In a Eulerian description the fields are described as a function of
+space (and time): \Psi \equiv \Psi(x,y,z, t) in Cartesian coordinates or \Psi(r, \theta,
+\varphi, t) in spherical-polar coordinates.
+
+This is like looking at the flow from on top of a bridge at a fixed
+position, describing the variables at that specific position.
+
+#+CAPTION: Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge
+#+HTML_ATTR: :width 50% :alt https://www.flickr.com/photos/frixan/114822407/
+[[./images/Eulerian-bridge.jpg]]
+
+For a star assuming spherical symmetry as discussed above, we would
+have no dependence on the angular variables \partial_{\theta} \Psi \equiv
+\partial_{\varphi}\Psi \equiv 0 and we could express \Psi\equiv\Psi(r, t).
+
+*** Lagrangian description
+In a Lagrangian description the fields are described as a function of
+the fluid element, following the fluid element itself: \Psi \equiv\Psi(fluid
+element, t)
+
+This is like hopping on a boat that moves with the fluid, and
+describing the properties of the fluid as the boat moves with it.
+
+#+CAPTION: Lagrangian description is like following the fluid on a boa and describe what goes on as a function of the fluid particle being followed
+#+HTML_ATTR: :width 50% :alt
+[[./images/Lagrangian_kayak.jpg]]
+
+Because of the extremely large range of spatial scales in stellar
+evolution (e.g., in the Sun from the center at r\simeq0 to the outer radius
+r\simeq 7\times10^{11} cm, and in its future as a red giant 100-1000x larger),
+compared to the limited range in mass (in the appropriate units 0-1
+M_{\odot} for the Sun!), typically a Lagrangian description is preferred.
+This means, for example we can chose as independent coordinate in the
+star not the radius r, but instead the amount of mass enclosed by a
+given radius m\equiv m(r), thus express \Psi(r,t) =\Psi(r(m), t)\rightarrow
+\Psi(m(r), t).
+
+This is what is typically done in stellar evolution, and it
+works because the m(r) function is invertible, and it is in fact
+monotonically increasing: as r increases, the amount of stellar mass
+enclosed can also only increase!
+
+** Mass conservation
+
+Let's consider the amount of mass in a parcel of stellar gas. This will
+depend on the local gas density \rho(r, t) (or equivalently in the
+Lagrangian formalism \rho(m, t)!) and the amount of volume in the shell
+
+dm = \rho dAdr
+
+where dA is the element base area, and dr its radial thickness. We can
+integrate over the base to get the parcel to be a spherical shell
+
+\int dA = 4\pi r^{2}
+
+where r is the radius of the shell, therefore
+
+dm = 4\pi \rho r^{2} dr
+
+In principle gas could also flow in/out of the shell at a rate
+determined by the inflow/outflow velocity such that in a time interval
+dt an amount \rho v dA dt flows in (for v>0) or out (v<0). Again
+integrating over dA:
+
+#+begin_latex
+\begin{equation}
+\label{eq:mass_continuity}
+dm = 4\pi \rho r^{2} dr + 4\pi r^{2} \rho v dt
+\end{equation}
+#+end_latex
+
+This is the complete mass continuity equation in spherical symmetry,
+and the first stellar structure equation. It depends on a yet unknown
+variable, the gas density \rho.
+
+Typically, in a stellar evolution calculation the gas is in
+hydrostatic equilibrium, \partial_{t} = 0.
+
+*** Recovering mas
+
+
 * Homework
 
 Estimate and compare the dynamical timescale using multiple methods:
@@ -9,5 +119,7 @@ Estimate and compare the dynamical timescale using multiple methods:
  - Kepler's third law at the surface of the star
  -
 
+
+Using MESA-web make a one M_{\odot} star and plot the m(r)
 
 Using MESA-web, build a grid of ZAMS models and check the L\equiv L(M) scaling

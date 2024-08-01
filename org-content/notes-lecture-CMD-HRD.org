@@ -84,7 +84,6 @@ composition, position in the galaxy, etc.
    does /not/ look at the Sun, so it is actually not in this plot!)
  - Focusing on where most stars are, can you spot any trend?
 
-
 ** Digression: Spectral types and the letters OBAFGKM(LTY)
 
 This is one of the many nonsense names in astronomy that exist only
