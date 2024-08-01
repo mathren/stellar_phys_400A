@@ -140,7 +140,7 @@ The time duration of an eclipse can be used to determine the radii of
 the two stars. Consider the following figure:
 
 #+CAPTION: Light cuve (visual magnitude as function of time) for an eclipsing binary with i=\pi/2, figure 7.9 in Carrol & Ostie's book
-#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :width 100%
 [[./images/EB.png]]
 
 
@@ -166,8 +166,10 @@ These equations allow to calculate R_{j}_{}/a and if also the masses are
 known also the individual radii R_{j} using Kepler's laws to get rid of
 the orbital semi-major axis a.
 
-*** Question
-In the figure above, which star is assume the hotter one?
+*** Questions
+ - In the figure above, which star is assume the hotter one?
+ - Can you see what happens to the light curve minima if we have an
+   inclination of the binary orbit w.r.t. the plane of the sky?
 
 ** Dynamical mass determination
 
@@ -215,7 +217,7 @@ for example because we have parallax measurements).
 *N.B.:* even without knowing the distance d, using
 Eq. \ref{eq:semimajor_axes} one can still determine the mass ratio q=M_{2}/M_{1}!
 
-*** Spectroscopic binaries
+*** Spectroscopic (and eclipsing) binaries
 In this case, we have access to more information thanks to the
 variable "radial velocity/ies" (RV) of the stars, that is the
 measurable Doppler shift of their spectral lines due to the orbital
@@ -247,7 +249,7 @@ on the line of sight. The radial velocity is therefore:
 
 #+begin_latex
 \begin{equation}\label{dzdt}
-\frac{dz}{dt} = \left(r \cos(\nu+\omega)\frac{d\nu}{dt}+\frac{dr}{dt}sin(\nu+\omega)\right)\sin(i)
+\frac{dz}{dt} = \left(r \cos(\nu+\omega)\frac{d\nu}{dt}+\frac{dr}{dt}\sin(\nu+\omega)\right)\sin(i)
 \end{equation}
 #+end_latex
 
@@ -280,7 +282,7 @@ one can finally rewrite the radial velocity from Eq. \ref{dzdt} as
 
 #+begin_latex
 \begin{equation}\label{eq:vrad}
-v_{rad} = \frac{dz}{dt} = K (ecos(\omega)+cos(\omega+\nu)) \ \
+v_\mathrm{rad} = \frac{dz}{dt} = K (ecos(\omega)+cos(\omega+\nu)) \ \
 \end{equation}
 #+end_latex
 
@@ -346,11 +348,11 @@ a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{2}}{M_{1
 \end{equation}
 #+end_latex
 
-Thus we can rewrite Eq. \ref{eq:Kepler3} \times sin^{3}^{}(i) as
+Thus, we can rewrite Eq. \ref{eq:Kepler3} \times sin^{3}(i) as
 
 #+begin_latex
 \begin{equation}
- (M_{1} +M_{2}) sin^{3}(i) \frac{M_{2}^{3}}{(M_{1} +M_{2})^{3}} = \frac{n^{2}}{G}a_{1}^{3} sin^{3}(i) \ \,
+ (M_{1} +M_{2}) \sin^{3}(i) \frac{M_{2}^{3}}{(M_{1} +M_{2})^{3}} = \frac{n^{2}}{G}a_{1}^{3} \sin^{3}(i) \ \,
 \end{equation}
 #+end_latex
 
