@@ -78,8 +78,7 @@ monotonically increasing: as r increases, the amount of stellar mass
 enclosed can also only increase!
 
 :Questions:
- - *Q*: can there be other variables that one can use as independent
-variable for the description of the stellar structure?
+ - *Q*: are there other variables that one can use as independent?
 :end:
 
 ** Mass conservation
@@ -169,10 +168,12 @@ a yet unknown variable, the gas density \rho.
 - *Q*: are stars in hydrostatic equilibrium? How do we know observationally?
 :end:
 
-Let's now consider the equation of motion of a parcel of stellar gas,
-F = dp/dt = ma (for constant m), or often more conveniently in fluid
-dynamics, work per unit volume with f = F/V and thus f=\rho a with \rho =
-m/V and V volume.
+Sonsider the equation of motion of a parcel of stellar gas, F = dp/dt
+= ma (for constant m), or often more conveniently in fluid dynamics,
+work per unit volume with f = dF/dV and thus f=\rho a with \rho = dm/dV and
+dV=dAdr \Rightarrow V=\int dAdr the volume. Let's start by writing down explicitly
+the forces that we think are important for a non-rotating,
+non-magnetic star.
 
 *** Gravity
 Since by definition a star is a self-gravitating body (*N.B.* so is a
@@ -192,8 +193,8 @@ this equation does not make the problem worse: we have a new variable
 \Phi but the r.h.s. only depends on the density \rho which is already
 appearing in Eq. \ref{eq:mass_conservation}.
 
-We can introduce the gravitational acceleration \mathbf{g} = - \nabla\Phi, which
-in spherical symmetry only has a non-zero radial component \Rightarrow g = - d\Phi/dr
+We can introduce the gravitational acceleration g = - \nabla\Phi, which in
+spherical symmetry only has a non-zero radial component \Rightarrow g = - d\Phi/dr
 which from Newton's theory of gravity we know to be
 
 #+begin_latex
@@ -204,14 +205,15 @@ which from Newton's theory of gravity we know to be
 
 where m\equiv m(r) is the mass enclosed within a certain radius r, which we
 already encountered. The gravitational force acting on a spherical
-shell of mass dm = 4\pi r^{2}\rho dr is thus just -gdm = -Gm\rho/r^{-2}, where
-the minus sign is to explicitly indicate that this force points
-towards the center of the star, and
+shell of mass dm = 4\pi r^{2}\rho dr is thus just -gdm = -Gmdm/r^{2}, or per
+unit volume f_{grav} = -g\rho = -Gm\rho/r^{2}, where the minus sign is to
+explicitly indicate that this force points towards the center of the
+star.
 
 *** Pressure gradient
-The other contribution we need to include in our f = \rho a equation is from
-the pressure. We could already use dimensional analysis to guess in
-what form pressure can enter the l.h.s. of the equation:
+The other contribution we need to include in our f = \rho a equation is
+from the pressure. We could already use dimensional analysis to guess
+in what form pressure can enter the l.h.s. of the equation:
 
 [P] = [force]/[area] \Rightarrow [P]/[length] = [force]/[volume] \equiv [f]
 
@@ -219,7 +221,44 @@ This suggests that the pressure divided an appropriate length scale
 has the right dimension to enter f. This in turn suggests that maybe
 what we need is the pressure /gradient/!
 
-Let's have a slightly more formal look at how this work.
+Let's have a slightly more formal look at how this work. Because of
+spherical symmetry, the pressure in the horizontal direction (which in
+stellar context always means in the plane orthogonal to the radial
+direction) is perfectly balanced, and the pressure only depends on the
+radius P\equiv P(r) (\equiv P(r(m)).
+
+The net force per unit area on each side of a spherical shell of gas
+of thickness dr is P(r) at the inner boundary and P(r+dr) at the outer
+boundary. Therefore, dF_{press} = P(r)dA - P(r+dr)dA \simeq dP/dr dA where we
+used P(r+dr)\simeq P(r)+dP/dr dr. Now using dm = \rho drdA and dividing by dV
+= drdA we finally obtain
+
+#+begin_latex
+\begin{equation}
+f_{press} = -\frac{1}{\rho}\frac{dP}{dr} \ \ .
+\end{equation}
+#+end_latex
+
+*** Combining the two
+
+We have now an explicit form for the two most important forces in a
+(non-rotating, non-magnetic) star f = f_{grav} + f_{pres} = -g\rho - dP/dr \equiv \rho
+a.
+
+Since stars don't change that much on short timescales (we will see
+exceptions later, and define relevant timescales too), we can assume
+that overall the acceleration a of each parcel of gas is zero in most
+cases, that is a=0. /Stars are generally in hydrostatic equilibrium/. In
+this case the conservation of momentum becomes
+
+#+being_latex
+\begin{equation}
+\frac{dP}{dr} = -g\rho = -\frac{Gm}{r^{2}}\rho \ \ ,
+\end{equation}
+#+end_latex
+
+or changing to have m has the independent variable, to have a
+Lagrangian treatment:
 
 
 * Homework
