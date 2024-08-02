@@ -1,0 +1,10 @@
+#+title: Lecture 5: Virial theorem, pressure, estimates
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* Virial theorem
+
+* Homework
+
+- Using the virial theorem find a relation between the average sound
+speed in the star and the escape velocity

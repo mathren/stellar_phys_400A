@@ -59,6 +59,18 @@ describing the properties of the fluid as the boat moves with it.
 #+ATTR_HTML: :width 50% :alt https://www.snowaddiction.org/2015/10/the-zen-of-kayaking-i-photograph-the-fjords-of-norway-from-the-kayak-seat.html?m=1
 [[./images/Lagrangian_kayak.jpg]]
 
+In a Lagrangian system of coordinates, the total time derivative can
+be written as:
+
+#+begin_latex
+\begin{equation}
+ \frac{d}{dt} = \frac{\partial}{\partial t} + \frac{\partial x}{\partial t}\frac{\partial}{\partial x} + \frac{\partial y}{\partial t}\frac{\partial}{\partial y} +\frac{\partial z}{\partial t}\frac{\partial}{\partial z} \equiv \frac{\partial}{\partial t} + v\cdot\nabla \ \,
+\end{equation}
+#+end_latex
+
+where the second term on the r.h.s. is the "advective" term, due to
+the motion of the fluid element
+
 Because of the extremely large range of spatial scales in stellar
 evolution (e.g., in the Sun from the center at r\simeq0 to the outer radius
 r\simeq 7\times10^{11} cm, and in its future as a red giant 100-1000x larger),

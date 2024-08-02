@@ -64,7 +64,7 @@ The magnitude scale is a logarithmic scale first introduces by
 Hipparcos, who clearly was only able to do naked-eye observations.
 This explains why a logarithmic scale: the sensory responses are often
 logarithmic (see [[https://en.m.wikipedia.org/wiki/Weber%E2%80%93Fechner_law][Weber-Fechner's law]]). The magnitude scale was
-formalized in 1856 by Pogson.
+formalized by [[https://ui.adsabs.harvard.edu/abs/1856MNRAS..17...12P/abstract][Pogson 1856]].
 
 The magnitudes measure the monochromatic energy flux from a point-like
 source (like a distant star) and it is a differential measure relative
