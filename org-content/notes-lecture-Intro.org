@@ -57,7 +57,6 @@ chemist would not call "metals".
 *** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
 How old is the Sun? How long will it live?
 ** Parallax and magnitudes
-
 ** Discuss projects
 
 - Projects will cover topics that are important and or timely, but
@@ -74,6 +73,7 @@ DEADLINE: <2024-09-03 Tue>
 
 Calculate the average density of the Sun and compare it with the
 density of something familiar on Earth.
+
 
 Look over the project list, and come up with a ranked list of 5
 projects you are interested in. Feel free to search the web/literature

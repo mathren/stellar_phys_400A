@@ -19,3 +19,9 @@ semester 2024.
  - [[./projects.org][Projects and presentations]]
 
 For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
+
+** Disclaimer
+
+All the pages of this website are under active construction, may
+contain errors and change without notice. If you find an error please
+let me know and feel free to open an issue/PR on [[https://github.com/mathren/stellar_phys_400A][GitHub]].

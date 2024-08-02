@@ -3,11 +3,11 @@
 #+email: mrenzo@arizona.edu
 
 * Project/presentation
-Each student will pick a topic to research  from the list below and
+Each student will pick a topic to research from the list below and
 provide a short written summary (\le 5 pages including figures and/or
 tables) and an oral presentation to the classroom. This will allow
 each student to dig deeper into a topic we cannot spend too much time
-in class, and at the same we can all learn from each other!
+on in class, and at the same we can all learn from each other!
 
 *The text has to be submitted one week before the presentation is
 scheduled*, and the *presentation is 10min+5min questions*. I _strongly_
@@ -58,14 +58,14 @@ as we may be able to accommodate it.
 36. Orbital architectures of (star+star) binaries in the Universe
 
 ** Recommended sources
-You are free to do your own research, but in the final manuscript (and
-when appropriate in the oral presentation) you need to cite the
-relevant sources. These can be textbooks, review papers, and/or
-journal articles. To find journal articles, you can use [[https://ui.adsabs.harvard.edu/][NASA/ADS]]. You
-can use online freely-available resources (e.g., Wikipedia) as a
-starting point, but should go find /primary/ sources (e.g., what
-Wikipedia itself cites, if not the references cited by the source from
-Wikipedia, and so on down...).
+You are encouraged to do your own research, but in the final
+manuscript (and when appropriate in the oral presentation) you need to
+cite all the relevant sources. These can be textbooks, review papers,
+and/or journal articles. To find journal articles, you can use
+[[https://ui.adsabs.harvard.edu/][NASA/ADS]]. You can use online freely-available resources (e.g.,
+Wikipedia) as a starting point, but should go find /primary/ sources
+(e.g., what Wikipedia itself cites, if not the references cited by the
+source from Wikipedia, and so on down...).
 
 ** Grading
 /This part is worth 40% of your final grade -- as much as all the
@@ -74,9 +74,12 @@ homework combined, so you want to do it well!/
 Both text and presentations will be evaluated by the instructors /and/
 your peers according to the evaluation rubric outlined below.
 
-More specifically, the text will be evaluated by one other students
+More specifically, the text will be evaluated by two other students
 selected randomly, while the oral presentation and handling of the
-questions will be evaluated by all the students present.
+questions will be evaluated by all the students present. Your presence
+and active participation in the presentation from other students is
+required and will be counted towards the general in-class
+participation.
 
 All students will be encouraged to ask questions during the
 presentations. The questions and the way you provide your evaluations
