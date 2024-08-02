@@ -21,41 +21,42 @@ If you have some other topic in mind, please come talk to me early on,
 as we may be able to accommodate it.
 
 1. Stellar rotation: observational evidence
-2. Stellar rotation: angular momentum transport processes
-3. From T_{eff} to color: bolometric corrections and extinction
-4. Asteroseismology
-5. Astrometry & the /Gaia/ mission
-6. Astrometric detection of /Gaia/ BH1, BH2, BH3, and NS1
-7. Tides in stars
-8. Algol Paradox
-9. Common envelope evolution
-10. Roche model and mass transfer
-11. Globular clusters: CMD
-12. Globular clusters: dynamics
-13. Formation of stars
-14. Stars in galaxies: Chemical evolution
-15. Stars in galaxies: Mechanical feedback
-16. Stars in galaxies: Radiative feedback
-17. Nucleosynthesis: s-process
-18. Nucleosynthesis: r-process
-19. X-ray binaries
-20. Thermonuclear explosion in WDs
-21. Neutron star structure
-22. The Eddington limit
-23. Convective boundary mixing
-24. Nuclear reaction chains
-25. Stellar winds: Parker model and its updates
-26. Stellar winds: radiatively driven
-27. Analytic stellar models: Lane-Emden equation
-28. Analytic stellar models: Eddington standard model
-29. Novae
-30. Supermassive stars
-31. Stellar neutrinos
-32. Pair instability supernovae
-33. Triple systems: Kozai-Lidov-von Zeipel oscillations
-34. Formation of gravitational wave progenitors: isolated binary evolution
-35. Formation of gravitational wave progenitors: dynamical channels
-36. Orbital architectures of (star+star) binaries in the Universe
+2. Stellar rotation: Von Zeipel theorem
+3. Stellar rotation: angular momentum transport processes
+4. From T_{eff} to color: bolometric corrections and extinction
+5. Asteroseismology
+6. Astrometry & the /Gaia/ mission
+7. Astrometric detection of /Gaia/ BH1, BH2, BH3, and NS1
+8. Tides in stars
+9. Algol Paradox
+10. Common envelope evolution
+11. Roche model and mass transfer
+12. Globular clusters: CMD
+13. Globular clusters: dynamics
+14. Formation of stars
+15. Stars in galaxies: Chemical evolution
+16. Stars in galaxies: Mechanical feedback
+17. Stars in galaxies: Radiative feedback
+18. Nucleosynthesis: s-process
+19. Nucleosynthesis: r-process
+20. X-ray binaries
+21. Thermonuclear explosion in WDs
+22. Neutron star structure
+23. The Eddington limit
+24. Convective boundary mixing
+25. Nuclear reaction chains
+26. Stellar winds: Parker model and its updates
+27. Stellar winds: radiatively driven
+28. Analytic stellar models: Lane-Emden equation
+29. Analytic stellar models: Eddington standard model
+30. Novae
+31. Supermassive stars
+32. Stellar neutrinos
+33. Pair instability supernovae
+34. Triple systems: Kozai-Lidov-von Zeipel oscillations
+35. Formation of gravitational wave progenitors: isolated binary evolution
+36. Formation of gravitational wave progenitors: dynamical channels
+37. Orbital architectures of (star+star) binaries in the Universe
 
 ** Recommended sources
 You are encouraged to do your own research, but in the final

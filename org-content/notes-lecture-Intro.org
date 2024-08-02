@@ -29,15 +29,96 @@ the course.
 
 ** What determines the properties of a (single) star?
 - *Mass*
-- Chemical composition (what is a star made of? Can you think of a
-  star made of something else?)
+- Chemical composition
 - Rotation
+
+:Questions:
+- *Q*: what is a star made of? Can you think of a star made of something else?
+:end:
 
 ** Observations
 - Photometry
-- Spectroscopy (SB1 and SB2 binaries)
+- Spectroscopy
+- Astrometry
 - Asteroseismology
 - Neutrinos
+
+*** Parallax
+In astrophysics (and in stellar physics in particular) we still use
+quantities and units that have as only justification historical
+reasons.
+
+The yearly apparent motion on the sky of stars (w.r.t. to father stars
+that are too far to exhibit this behavior) due to the orbit of the
+Earth around the Sun is called /parallax/. A commonly used unit of
+distance in astronomy is the /parsec/ =  distance of a star with a
+parallax of one arcsecond
+
+1 pc \simeq 3\times10^{18} cm \simeq 2\times 10^{5} AU
+
+This is a measure of the stars distance that can be used for stars
+with relatively small distances to the Solar system.
+
+*** Magnitudes
+The magnitude scale is a logarithmic scale first introduces by
+Hipparcos, who clearly was only able to do naked-eye observations.
+This explains why a logarithmic scale: the sensory responses are often
+logarithmic (see [[https://en.m.wikipedia.org/wiki/Weber%E2%80%93Fechner_law][Weber-Fechner's law]]). The magnitude scale was
+formalized in 1856 by Pogson.
+
+The magnitudes measure the monochromatic energy flux from a point-like
+source (like a distant star) and it is a differential measure relative
+to some standard source. Hipparcos was comparing the visual brightness
+of various stars visible in the sky. This is still the basis of (some)
+magnitude systems, for instance, typically the star Vega (\alpha Lyrae) is
+used as a standard and by definition its magnitude in U, B, and V band
+in the Vega-based magnitude system is zero. So for magnitude M=0 we
+have a specific (i.e., per unit frequency) radiative energy flux of
+3.5\times10^{-20} erg cm^{-2} s^{-1} Hz^{-1} corresponding to a photon flux of N_{\lambda}
+\simeq 10^{3} photons cm^{-2} s^{-1} Å^{-1} for the visual band.
+
+In reality typically magnitudes are provided integrating over a range
+of frequencies (photometry!) accounting for the response of a filter
+as a function of wavelength T(\lambda):
+
+#+begin_latex
+\begin{equation}
+m_{\lambda} = -2.5\log_{10}\left(\frac{\int T(\lambda)F_{\lambda}d\lambda}{\int
+T(\lambda) d\lambda}\right) + m_{0} \ \ ,
+\end{equation}
+#+end_latex
+
+where m_{0} is the reference magnitude, F_{\lambda} is the monochromatic
+flux of the source, and the factor of -2.5 is chosen so that the
+magnitudes measured this way roughly agree with Hipparcos'. Thus, an
+increase of 5 magnitudes corresponds to an increase in flux of a
+factor of 100.
+
+The /bolometric/ magnitude is the magnitude across all wavelengths for
+an idealized perfect detector (T(\lambda) = 1 \forall \lambda). If the distance of a
+source is known, we can then infer its intrinsic luminosity from this.
+
+The /apparent/ magnitude is a measure of the actual photon flux received
+from a source (e.g., a star) on Earth, but that of course depends on
+how far the source is from Earth (a candle in your hand has a higher
+apparent magnitude than Betelgeuse in the sky!). Therefore, astronomer
+also introduced the /absolute/ magnitude as the apparent magnitude a
+star would have if it were at a distance of 10pc from the Sun, thus
+the relation between apparent magnitude m and absolute magnitude M is
+
+#+begin_latex
+\begin{equation}
+M - m = -2.5\log_{10}\left[\left(\frac{D}{10\mathrm{pc}}\right)^{2}\right] \ \,
+\end{equation}
+#+end_latex
+
+where D is the distance, and it is assumed there is no absorption of
+light by the interstellar material.
+
+:Questions:
+- *Q*: why the square within the argument of the logarithm?
+:end:
+
 
 ** Relevant physical scales
 The star we can observe best is the closest one, the Sun (\odot), so a
@@ -56,7 +137,6 @@ nor helium. This includes many elements (e.g., C, N, O, Si) that a
 chemist would not call "metals".
 *** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
 How old is the Sun? How long will it live?
-** Parallax and magnitudes
 ** Discuss projects
 
 - Projects will cover topics that are important and or timely, but
