@@ -272,13 +272,64 @@ which is the second stellar structure equation that expresses the fact
 that the gravitational pull of the stellar gas is compensated by the
 pressure gradient inside the star. This also means that it is the
 gravity of the star that imposes the pressure stratification of the
-star and ultimately its structure.
+star and ultimately its structure. And finally, the fact that dP/dm<0,
+that is the pressure decreases as the enclose mass increases, or
+equivalently, the pressure increases towards the center (smaller
+radii, smaller amount of enclosed mass) makes sense, if the gradient
+has to compensate the gravitational pull.
 
 *N.B.:* This can also be obtained starting from the Navier-Stokes
 equation assuming no viscosity (the microscopic viscosity is generally
 negligible in stars).
 
+
+Equations Eq. \ref{eq:mass_conservation} and \ref{eq:HSE} are two
+differential equations, that under the assumption of spherical
+symmetry are ordinary differential equations (\partial_{r} \rightarrow d/dr),
+for the function m\equiv m(r) that depend on P, \rho. We thus have three
+variables (m, P, \rho) and two equations: we cannot yet solve for the
+structure of a star. We will close the system of equations (meaning,
+obtain as many equations as variables, so we can solve for the stellar
+structure) later in the course.
+
+*** Estimate for the central pressure
+
+A first estimate for the central pressure can be obtained substituting
+the local gradient with the difference from surface to the core across
+the entire mass of the star dP/dm \rightarrow (P_{surface} - P_{center})/M \simeq
+-P_{center}/M, where we also use P increases inwards and thus it is
+legitimate to expect P_{center}\gg P_{surface}. Then, on the l.h.s. of Eq.
+\ref{eq:HSE}, we should take the entire mass m\rightarrow M=\int dm and outer radius
+R, which gives:
+
+#+begin_latex
+\begin{equation}
+P_\mathrm{center} = \frac{GM^{2}^{}}{4\pi R^{4}} \ \ ,
+\end{equation}
+#+end_latex
+
+Plugging in the numbers for the Sun this gives P_{center}\simeq 9\times
+10^{14} dyne/cm^{2}\simeq 10^{9}^{} atmospheres. Although this a is very imprecise
+estimate, it already gives the idea that the pressure in the center of
+the Sun must be extremely high. See Onno Pols chapter 2 for more
+precise estimates and lower bounds.
+
 ** Dynamical timescale estimates
+Let's say that the star was not in hydrostatic equilibrium, but still
+spherically symmetric. Returning to the general form for the momentum
+conservation f = \rho a \equiv \rho \partial^{2}r/\partial_{t}^{2} we have
+
+#+begin_latex
+\begin{equation}
+\rho \frac{\partial^{2} r}{\partial r^{2}} = -\frac{dP}{dr} -\frac{Gm}{r^{2}}\rho \ \ ,
+\end{equation}
+#+end_latex
+where since P decreases inwards, dP/dr<0, so the first term on the
+l.h.s. pushes outwards (positive radial acceleration), while gravity
+pulls inward, as one would expect.
+
+We can now estimate
+
 
 
 * Homework
@@ -286,7 +337,7 @@ negligible in stars).
 Estimate and compare the dynamical timescale using multiple methods:
 
  - Kepler's third law at the surface of the star
- -
+ - Estimate central pressure of the
 
 
 Using MESA-web make a one M_{\odot} star and plot the m(r)
