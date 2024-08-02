@@ -144,7 +144,7 @@ nor helium. This includes many elements (e.g., C, N, O, Si) that a
 chemist would not call "metals".
 *** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
 :Questions:
- - *Q*: How old is the Sun? How long will it live?
+ - *Q*: How old is the Sun? How long will it live? How do we know?
 :end:
 ** Discuss projects
 
