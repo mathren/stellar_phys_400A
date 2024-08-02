@@ -5,7 +5,9 @@
 * Introduction to the course
 *Materials*: chapter 1 of Onno Pols' lecture notes.
 
+** Aim
 - Discuss [[./syllabus.org][syllabus]] and learning outcomes
+- Go over some basics (magnitudes, parallaxes, solar quantities)
 - Discuss project, show list
 - Discuss expectations and grading rubrics for course and project
 
