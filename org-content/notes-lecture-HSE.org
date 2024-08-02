@@ -299,17 +299,18 @@ the local gradient with the difference from surface to the core across
 the entire mass of the star dP/dm \rightarrow (P_{surface} - P_{center})/M \simeq
 -P_{center}/M, where we also use P increases inwards and thus it is
 legitimate to expect P_{center}\gg P_{surface}. Then, on the l.h.s. of Eq.
-\ref{eq:HSE}, we should take the entire mass m\rightarrow M=\int dm and outer radius
-R, which gives:
+\ref{eq:HSE}, we should take as estimates some fraction of the total
+mass M and radius R. For the sake of simplicity, let's take the
+fraction to be 1 and drop the 4\pi:
 
 #+begin_latex
 \begin{equation}
-P_\mathrm{center} = \frac{GM^{2}^{}}{4\pi R^{4}} \ \ ,
+P_\mathrm{center} = \frac{GM^{2}^{}}{R^{4}} \ \ ,
 \end{equation}
 #+end_latex
 
-Plugging in the numbers for the Sun this gives P_{center}\simeq 9\times
-10^{14} dyne/cm^{2}\simeq 10^{9}^{} atmospheres. Although this a is very imprecise
+Plugging in the numbers for the Sun this gives P_{center}\simeq 10^{16}
+dyne/cm^{2}\simeq 10^{10} atmospheres. Although this a is very imprecise
 estimate, it already gives the idea that the pressure in the center of
 the Sun must be extremely high. See Onno Pols chapter 2 for more
 precise estimates and lower bounds.
@@ -317,19 +318,38 @@ precise estimates and lower bounds.
 ** Dynamical timescale estimates
 Let's say that the star was not in hydrostatic equilibrium, but still
 spherically symmetric. Returning to the general form for the momentum
-conservation f = \rho a \equiv \rho \partial^{2}r/\partial_{t}^{2} we have
+conservation f = \rho a \equiv \rho \partial^{2}r/\partial t^{2} we have
 
 #+begin_latex
 \begin{equation}
-\rho \frac{\partial^{2} r}{\partial r^{2}} = -\frac{dP}{dr} -\frac{Gm}{r^{2}}\rho \ \ ,
+\rho \frac{\partial^{2} r}{\partial t^{2}} = -\frac{dP}{dr} -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
 #+end_latex
 where since P decreases inwards, dP/dr<0, so the first term on the
 l.h.s. pushes outwards (positive radial acceleration), while gravity
 pulls inward, as one would expect.
 
-We can now estimate
+Normally, for a star, we expect these two terms to balance each other,
+but what happens if we turn one off?
 
+*** Explosion timescale
+Let's turn off gravity! To estimate how long it takes for the pressure
+gradient to push the gas out to a radius comparable to the radius of
+the star we can do the following rough substitution in the dynamical
+equation above:
+ - \partial^{2} r \rightarrow R (outer radius of the star)
+ - \partial t^{2} \rightarrow \tau_{expl}^{2}
+ - dP/dr\rightarrow P/R with P some averaged pressure in the star
+and we obtain:
+
+#+begin_latex
+\begin{equation}
+\tau_\mathrm{expl} = \frac{R}{\sqrt{\frac{P}{\rho}_{}}} \ \ .
+\end{equation}
+#+end_latex
+
+:Question:
+- *Q*: does anyone recognize
 
 
 * Homework
