@@ -373,10 +373,10 @@ with \rho_{avg} = M/R^{3} average density of the star.
 
 Estimate and compare the dynamical timescale using multiple methods:
 
- - Kepler's third law at the surface of the star
- - Estimate central pressure of the
-
-
-Using MESA-web make a one M_{\odot} star and plot the m(r)
-
-Using MESA-web, build a grid of ZAMS models and check the L\equiv L(M) scaling
+ - Calculate the Keplerian period of a point mass orbiting at the
+   surface of a star and compare it to the free fall timescale of the star.
+ - Calculate the free fall timescale for the Sun, for a Red Supergiant
+   with M=10M_{\odot} and R=1000R_{\odot} and a White Dwarf with M=1M_{\odot}
+   R=1000km, and a Neutron star with M=1M_{\odot} and radius R=10km.
+   Compare also their average densities.
+*Optional*: Using MESA-web make a one M_{\odot} star and plot the m(r)
