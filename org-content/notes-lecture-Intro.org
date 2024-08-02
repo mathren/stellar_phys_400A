@@ -100,7 +100,7 @@ star would have if it were at a distance of 10pc from the Sun, thus
 the relation between apparent magnitude m and absolute magnitude M is
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:abs_magn}
 M - m = -2.5\log_{10}\left[\left(\frac{D}{10\mathrm{pc}}\right)^{2}\right] \ \,
 \end{equation}
 #+end_latex
@@ -118,7 +118,8 @@ erg cm^{-2} s^{-1} Hz^{-1} corresponding to a photon flux of N_{\lambda} \simeq
 10^{3} photons cm^{-2} s^{-1} Å^{-1} for the visual band.
 
 :Questions:
-- *Q*: why the square within the argument of the logarithm?
+- *Q*: why the square within the argument of the logarithm in Eq.
+  \ref{eq:abs_magn}?
 :end:
 
 
