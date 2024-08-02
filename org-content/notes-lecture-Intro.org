@@ -54,7 +54,11 @@ Earth around the Sun is called /parallax/. A commonly used unit of
 distance in astronomy is the /parsec/ =  distance of a star with a
 parallax of one arcsecond
 
+#+begin_latex
+\begin{equation}
 1 pc \simeq 3\times10^{18} cm \simeq 2\times 10^{5} AU
+\end{equation}
+#+end_latex
 
 This is a measure of the stars distance that can be used for stars
 with relatively small distances to the Solar system.
