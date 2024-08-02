@@ -3,6 +3,22 @@
 #+email: mrenzo@arizona.edu
 
 * Virial theorem
+*Materials*: Chapter 2 of Onno Pols' lecture notes, Chapter 3 of
+Kippenhahn's book, Sec. 1.5 of "Tapestry of Modern Astrophysics" by S.
+N. Shore.
+
+/The virial theorem connects gravitational physics and thermodynamics/.
+Because of this, it has profound implications for any collection of
+self-gravitating particles large enough to apply statistical
+mechanics/thermodynamical methods: a star, but also a (sufficiently
+massive) cluster of stars!
+
+** Complete derivation
+Introduce the full form with the \ddot{I} term
+
+** Derivation for hydrostatic equilibrium
+
+** Derivation for binary orbits
 
 * Homework
 

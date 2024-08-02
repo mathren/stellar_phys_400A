@@ -8,6 +8,11 @@ Material developed for the 400A course at the Department of Astronomy
 and Steward Observatory of the University of Arizona in the Fall
 semester 2024.
 
+/Someday, we should be able to understand something as simple as a star/ - A. Eddington, 1927
+
+F. Hoyle: "...Fundamentally, a star is a pretty simple structure"
+Audience: "You'd look simple too at a distance of ten parsecs"
+
 #+begin_export html
  <div class="banner_container">
    <a href="https://sci.esa.int/web/gaia/-/60198-gaia-hertzsprung-russell-diagram"><img width="900vw" alt="Gaia DR2 Hertzsprung-Russel diagram" src="./images/Gaia_DR2_HRD_Gaia.png"/></a>

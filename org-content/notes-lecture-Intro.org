@@ -54,7 +54,7 @@ The yearly apparent motion on the sky of stars (w.r.t. to father stars
 that are too far to exhibit this behavior) due to the orbit of the
 Earth around the Sun is called /parallax/. A commonly used unit of
 distance in astronomy is the /parsec/ =  distance of a star with a
-parallax of one arcsecond
+parallax of one arcsecond:
 
 #+begin_latex
 \begin{equation}
