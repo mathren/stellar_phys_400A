@@ -70,16 +70,9 @@ The magnitudes measure the monochromatic energy flux from a point-like
 source (like a distant star) and it is a differential measure relative
 to some standard source. Hipparcos was comparing the visual brightness
 of various stars visible in the sky. This is still the basis of (some)
-magnitude systems, for instance, typically the star Vega (\alpha Lyrae) is
-used as a standard and by definition its magnitude in U, B, and V band
-in the Vega-based magnitude system is zero. So for magnitude M=0 we
-have a specific (i.e., per unit frequency) radiative energy flux of
-3.5\times10^{-20} erg cm^{-2} s^{-1} Hz^{-1} corresponding to a photon flux of N_{\lambda}
-\simeq 10^{3} photons cm^{-2} s^{-1} Å^{-1} for the visual band.
-
-In reality typically magnitudes are provided integrating over a range
-of frequencies (photometry!) accounting for the response of a filter
-as a function of wavelength T(\lambda):
+magnitude systems.  In reality typically magnitudes are provided
+integrating over a range of frequencies (photometry!) accounting for
+the response of a filter as a function of wavelength T(\lambda):
 
 #+begin_latex
 \begin{equation}
@@ -114,6 +107,15 @@ M - m = -2.5\log_{10}\left[\left(\frac{D}{10\mathrm{pc}}\right)^{2}\right] \ \,
 
 where D is the distance, and it is assumed there is no absorption of
 light by the interstellar material.
+
+For the reference magnitude m_{0} there are multiple choices (and there
+are many different magnitude systems because of the T(\lambda) and m_{0}
+choices!). For instance, typically the star Vega (\alpha Lyrae) is used as
+a standard and by definition its magnitude in U, B, and V band in the
+Vega-based magnitude system is zero. So for magnitude M=0 we have a
+specific (i.e., per unit frequency) radiative energy flux of 3.5\times10^{-20}
+erg cm^{-2} s^{-1} Hz^{-1} corresponding to a photon flux of N_{\lambda} \simeq
+10^{3} photons cm^{-2} s^{-1} Å^{-1} for the visual band.
 
 :Questions:
 - *Q*: why the square within the argument of the logarithm?
