@@ -305,7 +305,7 @@ fraction to be 1 and drop the 4\pi:
 
 #+begin_latex
 \begin{equation}
-P_\mathrm{center} = \frac{GM^{2}}{R^{4}} \ \ ,
+P_\mathrm{center} = \frac{GM^{2}}{R^{4}}\ \ ,
 \end{equation}
 #+end_latex
 
