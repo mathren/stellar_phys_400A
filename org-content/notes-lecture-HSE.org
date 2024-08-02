@@ -339,12 +339,13 @@ the star we can do the following rough substitution in the dynamical
 equation above:
  - \partial^{2} r \rightarrow R (outer radius of the star)
  - \partial t^{2} \rightarrow \tau_{expl}^{2}
- - dP/dr\rightarrow P/R with P some averaged pressure in the star
+ - dP/dr\rightarrow P_{avg}/R with P_{avg} some averaged pressure in the star
+ - \rho \rightarrow \rho_{avg} some averaged density of the star
 and we obtain:
 
 #+begin_latex
 \begin{equation}
-\tau_\mathrm{expl} = \frac{R}{\sqrt{\frac{P}{\rho}_{}}} = \frac{R}{c_{s}}\ \ .
+\tau_\mathrm{expl} = \frac{R}{\sqrt{\frac{P_{avg}}{\rho_{avg}}_{}}} = \frac{R}{c_{s}}\ \ .
 \end{equation}
 #+end_latex
 
@@ -362,7 +363,7 @@ we get:
 
 #+begin_latex
 \begin{equation}
-\tau_\mathrm{ff} = \sqrt{R^{3}}{GM} \equiv \sqrt{1}{G\rho_\mathrm{avg}}\ \ ,
+\tau_\mathrm{ff} = \sqrt{\frac{R^{3}}{GM}} \equiv \sqrt{\frac{1}{G\rho_\mathrm{avg}}}\ \ ,
 \end{equation}
 #+end_latex
 with \rho_{avg} = M/R^{3} average density of the star.
