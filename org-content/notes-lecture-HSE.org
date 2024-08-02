@@ -305,7 +305,7 @@ fraction to be 1 and drop the 4\pi:
 
 #+begin_latex
 \begin{equation}
-P_\mathrm{center} = \frac{GM^{2}^{}}{R^{4}} \ \ ,
+P_\mathrm{center} = \frac{GM^{2}}{R^{4}} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -333,7 +333,7 @@ Normally, for a star, we expect these two terms to balance each other,
 but what happens if we turn one off?
 
 *** Explosion timescale
-Let's turn off gravity! To estimate how long it takes for the pressure
+Let's turn off gravity, setting g = - Gm/r^{2 }\rightarrow 0! To estimate how long it takes for the pressure
 gradient to push the gas out to a radius comparable to the radius of
 the star we can do the following rough substitution in the dynamical
 equation above:
@@ -344,12 +344,28 @@ and we obtain:
 
 #+begin_latex
 \begin{equation}
-\tau_\mathrm{expl} = \frac{R}{\sqrt{\frac{P}{\rho}_{}}} \ \ .
+\tau_\mathrm{expl} = \frac{R}{\sqrt{\frac{P}{\rho}_{}}} = \frac{R}{c_{s}}\ \ .
 \end{equation}
 #+end_latex
 
-:Question:
-- *Q*: does anyone recognize
+where, if we interpret P and \rho as some average values throughout the
+star the sound speed c_{s}^{2} = P/\rho appears!
+
+*** Free fall timescale
+Almost by definition, this is how the star would collapse if there
+were no forces other than gravity, so let's turn off the pressure
+gradient dP/dr\rightarrow0. Then, as above:
+ - \partial^{2} r \rightarrow R (outer radius of the star)
+ - \partial t^{2} \rightarrow \tau_{ff}^{2}
+ - m \rightarrow M (total mass)
+we get:
+
+#+begin_latex
+\begin{equation}
+\tau_\mathrm{ff} = \sqrt{R^{3}}{GM} \equiv \sqrt{1}{G\rho_\mathrm{avg}}\ \ ,
+\end{equation}
+#+end_latex
+with \rho_{avg} = M/R^{3} average density of the star.
 
 
 * Homework
