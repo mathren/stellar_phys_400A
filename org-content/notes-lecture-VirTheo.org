@@ -57,14 +57,14 @@ derivative:
 #+end_latex
 
 And now we have on the right hand side (assuming the mass of the
-particles to be constant) the second time derivative of the moment of
-inertia I = \sum_{i} m r_{i}^{2} /2 and twice the kinetic energy KE = \sum_{i }m v_{i}^{2}/2. So
+particles to be constant) twice the second time derivative of the moment of
+inertia I = \sum_{i} m r_{i}^{2} and twice the kinetic energy KE = \sum_{i }m v_{i}^{2}/2. So
 putting the r.h.s. of this last equation in the first spatial moment
 of Newton's second law we obtain:
 
 #+begin_latex
 \begin{equation}
- 2KE+U = \ddot{I}
+ 2\mathrm{KE}+\mathrm{U} = \frac{1}{2}\ddot{I}
 \end{equation}
 #+end_latex
 
