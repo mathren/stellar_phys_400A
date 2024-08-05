@@ -38,7 +38,9 @@ net potential energy appear in the second term/:
 #+end_latex
 
 The r.h.s. looks like a sum of work done by the total foce on each
-particle: \sum_{i} F_{i} \cdot r_{i} \equiv W, but this by conservation of energy
+particle: \sum_{i} F_{i} \cdot r_{i} \equiv W. This is the so called "virial",
+which contains only long-range forces between the particles
+(collisions cancel out in the sum). This by conservation of energy
 has to be equal to the net potential energy available E_{pot}.
 
 The l.h.s. can be re-written using the chain rule for the second time
@@ -68,7 +70,11 @@ derivative of the moment of inertia on the r.h.s., which is often
 forgotten. We did not specify almost anything about the system (see
 Goldstein for a momentum-based derivation where the assumption of
 constant masses m_{i} of the particles implicit in the way we wrote
-Newton's second law is not even needed).
+Newton's second law is not even needed). It effectively says that for
+a bound system of self-interacting particles, there is a limited
+amount of potential energy that can be extracted, because part of the
+potential will need to go into the kinetic terms and the acceleration
+of the moment of inertia.
 
 So far, this general form doesn't give us much intuition on its
 meaning. We have a relation between the kinetic energy of a collection
@@ -96,7 +102,7 @@ E_\mathrm{tot} = \mathrm{E_\mathrm{kin}}_{1} + \mathrm{E_\mathrm{kin}}_{2} + \ma
 #+end_latex
 where in the last term we are using Kepler's laws. The gravitational
 potential energy is E_{pot} = -GM_{1}M_{2}/a, thus making it explicit we
-obtain: E_\mathrm{kin} = |E_{pot}|/2. Since Keplerian orbits in Newtonian gravity are
+obtain: E_{kin} = |E_{pot}|/2. Since Keplerian orbits in Newtonian gravity are
 stable, this implies that the second (and first) time-derivative of
 the moment of inertia of the orbit is zero, and thus this /is/ the
 virial theorem! /Keplerian binary orbits are "virialized"/.
