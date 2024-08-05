@@ -239,8 +239,8 @@ it follows that:
 E_\mathrm{int} = - E_\mathrm{pot}/2 \Rightarrow \frac{3}{2} \frac{M}{\mu m_{H}} k_{B}\langle T \rangle = C \frac{GM^{2}}{R} \ \ ,
 \end{equation}
 #+end_latex
-where C is a constant of O(1) that depends on the mass distribution in
-the star. Thus:
+where C = {\int_{0}^{M} Gmdm/r}/{GM^{2}/R} is a constant of O(1) that depends on
+the mass distribution in the star. Thus:
 #+begin_latex
 \begin{equation}
 \langle T \rangle = \frac{2}{3k_{B}} C \frac{GM^{}}{\mu R} \propto \frac{M}{\mu R} \ \ .
