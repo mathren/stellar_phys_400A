@@ -92,23 +92,19 @@ apply it to a collection of particle with only 2 particles subject
 only to the gravitational force, that is a binary system of two
 point-mass stars!
 
-We know that using Kepler's laws one can write the total energy of the
-binary as:
+One can write the total energy of the binary as:
 
 #+begin_latex
 \begin{equation}
-E_{tot} = -\frac{GM_{1}M_{2}}{2a} \equiv KE_{1} + KE_{2} + U \equiv KE + U  \ \ ,
+E_{tot} = \mathrm{KE}_{1} + \mathrm{KE}_{2} + \mathrm{U} \equiv \mathrm{KE} + \mathrm{U} \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
 \end{equation}
 #+end_latex
-
-where in the last term we are explicitly stating that the total energy
-is the sum of the kinetic energy of the two stars plus their
-gravitational potential energy: U = -GM_{1}M_{2}/a. Substituting the
-potential energy we obtain: KE = |U|/2, which, since Keplerian orbits
-in Newtonian gravity are stable, this implies that the second (and
-first) time-derivative of the moment of inertia of the orbit is zero,
-and thus this /is/ the virial theorem! /Keplerian binary orbits are
-"virialized"/.
+where in the last term we are using Kepler's laws. The gravitational
+potential energy is U = -GM_{1}M_{2}/a, thus making it explicit we obtain:
+KE = |U|/2. Since Keplerian orbits in Newtonian gravity are stable,
+this implies that the second (and first) time-derivative of the moment
+of inertia of the orbit is zero, and thus this /is/ the virial theorem!
+/Keplerian binary orbits are "virialized"/.
 
 ** Derivation for stars in hydrostatic equilibrium
 Let's now re-derive the Virial theorem for a star. Let's assume it is
@@ -119,4 +115,4 @@ in hydrostatic equilibrium.
 * Homework
 
 - Using the virial theorem find a relation between the average sound
-speed in the star and the escape velocity
+  speed in the star and the escape velocity
