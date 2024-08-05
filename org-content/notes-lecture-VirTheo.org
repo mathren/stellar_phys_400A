@@ -169,7 +169,7 @@ and rewrite the above as 3(\Gamma-1)E_{int}, and thus
 
 #+begin_latex
 \begin{equation}\label{eq:virial_star}
-- E_{pot} = 3(\Gamma-1)E_{int}
+- E_\mathrm{pot} = 3(\Gamma-1)E_\mathrm{int}
 \end{equation}
 #+end_latex
 
@@ -191,7 +191,16 @@ rewrite this as
 #+end_latex
 
 *** Stability criterion
-One can immediately see that if \Gamma <4/3, then
+One can immediately see that if \Gamma <4/3, then E_{tot} changes sign. If
+E_{tot}>0 the stellar gas is unbound: the kinetic energy is sufficient to
+overcome the gravitational potential and the gas will fly out.
+
+One can encounter cases in stellar evolution where \Gamma\le 4/3 e.g.,
+because of recombination that changes the mean molecular weight, or
+pair-production in the stellar interior.
+
+*** Stars have negative heat capacity
+
 
 
 
