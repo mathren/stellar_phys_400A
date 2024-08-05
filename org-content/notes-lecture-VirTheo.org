@@ -58,13 +58,13 @@ derivative:
 
 And now we have on the right hand side (assuming the mass of the
 particles to be constant) the second time derivative of the moment of
-inertia I = \sum_{i} m r_{i}^{2} and twice the kinetic energy K = \sum_{i }m v_{i}^{2}/2. So
+inertia I = \sum_{i} m r_{i}^{2} /2 and twice the kinetic energy KE = \sum_{i }m v_{i}^{2}/2. So
 putting the r.h.s. of this last equation in the first spatial moment
 of Newton's second law we obtain:
 
 #+begin_latex
 \begin{equation}
- 2K+U = \ddot{I}
+ 2KE+U = \ddot{I}
 \end{equation}
 #+end_latex
 
@@ -76,14 +76,44 @@ almost anything about the system (see Goldstein for a momentum-based
 derivation where the assumption of equal and constant masses of the
 particles is not necessary).
 
-
-
-
-
+So far, this general form doesn't give us much intuition on its
+meaning. We have a relation between the kinetic energy of a collection
+of particles and its potential energy. But in the frame of the center
+of mass of such collection, the kinetic energy of the particles is a
+measure of their thermal energy, and this is absolutely non-trivial:
+why would the thermal energy know about the potential energy! This
+statement is however very general and its implication for stellar
+structure and evolution are profound.
 
 ** Derivation for binary orbits
 
+As a demonstration for the generality of the virial theorem, we can
+apply it to a collection of particle with only 2 particles subject
+only to the gravitational force, that is a binary system of two
+point-mass stars!
+
+We know that using Kepler's laws one can write the total energy of the
+binary as:
+
+#+begin_latex
+\begin{equation}
+E_{tot} = -\frac{GM_{1}M_{2}}{2a} \equiv KE_{1} + KE_{2} + U \equiv KE + U  \ \ ,
+\end{equation}
+#+end_latex
+
+where in the last term we are explicitly stating that the total energy
+is the sum of the kinetic energy of the two stars plus their
+gravitational potential energy: U = -GM_{1}M_{2}/a. Substituting the
+potential energy we obtain: KE = |U|/2, which, since Keplerian orbits
+in Newtonian gravity are stable, this implies that the second (and
+first) time-derivative of the moment of inertia of the orbit is zero,
+and thus this /is/ the virial theorem!
+
 ** Derivation for stars in hydrostatic equilibrium
+Let's now re-derive the Virial theorem for a star. Let's assume it is
+in hydrostatic equilibrium.
+
+
 
 * Homework
 
