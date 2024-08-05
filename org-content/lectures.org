@@ -1,4 +1,4 @@
-#+Title: 400A Lectures topic-by-topic
+#+Title: 400A - Lectures topic-by-topic
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 #+options: title:nil
@@ -39,6 +39,8 @@ symmetry. Time permitting, brief showcasing of [[http://user.astro.wisc.edu/~tow
 
 ** <2024-09-10 Thu> Equation of state 1
 *Aim*: Introduce Polytropic and ideal gas equation of state.
+
+[[./notes-lecture-EOS1.org][Notes]]
 
 ** <2024-09-12 Tue> Virial theorem
 *Aim*: Introduce the Virial theorem in various forms. Demonstrate that

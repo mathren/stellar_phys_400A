@@ -1,4 +1,4 @@
-#+title: Lecture 4: Hydrostatic equilibrium
+#+title: 400A - Hydrostatic equilibrium
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 

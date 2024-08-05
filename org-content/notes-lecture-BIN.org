@@ -1,4 +1,4 @@
-#+title: Lecture 3: Binaries and dynamical masses
+#+title: 400A - Binaries and dynamical masses
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 

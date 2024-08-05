@@ -1,4 +1,4 @@
-#+title:Lecture 2 - CMD & HRD
+#+title: 400A - CMD & HRD
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 

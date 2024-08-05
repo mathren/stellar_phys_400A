@@ -1,0 +1,9 @@
+#+title: 400A - EOS (polytropic & ideal gas)
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* Equation of state 1/2
+
+** Polytropic
+
+** Ideal gas

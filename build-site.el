@@ -42,7 +42,7 @@
 	  org-version
 	  ))
 
-
+;; fix timestamps for html and latex exports
 (defun mr/filter-timestamp (trans back _comm)
   "Remove <> around time-stamps."
   (pcase back

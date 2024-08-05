@@ -1,4 +1,4 @@
-#+title: Lecture 1: Introduction
+#+title: 400A - Introduction
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 

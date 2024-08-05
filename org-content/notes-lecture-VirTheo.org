@@ -1,4 +1,4 @@
-#+title: Lecture 5: Virial theorem
+#+title: 400A - Virial theorem
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
@@ -8,13 +8,9 @@ Kippenhahn's book, Sec. 1.5 of "Tapestry of Modern Astrophysics" by S.
 N. Shore.
 
 /The virial theorem connects gravitational physics and thermodynamics/.
-Because of this, it has profound implications for any collection of
-self-gravitating particles large enough to apply statistical
-mechanics/thermodynamic methods: a star, but also a (sufficiently
-massive) cluster of stars!
-
-The etymology of the name comes from "vir" which is latin for
-"forces".
+It is a statistical statement on mutually interacting (e.g. because of
+self-gravity!) particles, and thus it is very general. The etymology of
+the name comes from "vir" which is latin for "forces".
 
 ** Complete derivation
 Let's start with the most general derivation (see for example
@@ -43,7 +39,7 @@ net potential energy appear in the second term/:
 
 The r.h.s. looks like a sum of work done by the total foce on each
 particle: \sum_{i} F_{i} \cdot r_{i} \equiv W, but this by conservation of energy
-has to be equal to the net potential energy available U.
+has to be equal to the net potential energy available E_{pot}.
 
 The l.h.s. can be re-written using the chain rule for the second time
 derivative:
@@ -62,7 +58,7 @@ of Newton's second law we obtain:
 
 #+begin_latex
 \begin{equation}
- 2\mathrm{KE}+\mathrm{U} = \frac{1}{2}\ddot{I}
+ 2\mathrm{KE}+\mathrm{E_\mathrm{pot} = \frac{1}{2}\ddot{I}
 \end{equation}
 #+end_latex
 
@@ -95,25 +91,24 @@ One can write the total energy of the binary as:
 
 #+begin_latex
 \begin{equation}
-E_\mathrm{tot} = \mathrm{KE}_{1} + \mathrm{KE}_{2} + \mathrm{U} \equiv \mathrm{KE} + \mathrm{U} \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
+E_\mathrm{tot} = \mathrm{KE}_{1} + \mathrm{KE}_{2} + \mathrm{E}_\mathrm{pot} \equiv \mathrm{KE} + \mathrm{E}_\mathrm{pot}  \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
 \end{equation}
 #+end_latex
 where in the last term we are using Kepler's laws. The gravitational
-potential energy is U = -GM_{1}M_{2}/a, thus making it explicit we obtain:
-KE = |U|/2. Since Keplerian orbits in Newtonian gravity are stable,
-this implies that the second (and first) time-derivative of the moment
-of inertia of the orbit is zero, and thus this /is/ the virial theorem!
-/Keplerian binary orbits are "virialized"/.
+potential energy is E_{pot} = -GM_{1}M_{2}/a, thus making it explicit we
+obtain: KE = |E_{pot}|/2. Since Keplerian orbits in Newtonian gravity are
+stable, this implies that the second (and first) time-derivative of
+the moment of inertia of the orbit is zero, and thus this /is/ the
+virial theorem! /Keplerian binary orbits are "virialized"/.
 
-** Derivation for stars in hydrostatic equilibrium
+** Derivation for stars
 Let's now re-derive the Virial theorem for a star. Let's assume a
 continuous description of the stellar gas, hydrostatic equilibrium and
 spherical symmetry, and write explicitly the forces acting on each
-shell dr of gas (cf. hydrostatic momentum balance in [[file:notes-lecture-HSE.org::*Combining the two][the previous
-lecture]]):
+shell dr of gas (cf. hydrostatic momentum balance in [[file:notes-lecture-HSE.org::*Combining the two][seen before]]):
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}}
 \end{equation}
 #+end_latex
@@ -125,11 +120,10 @@ mass of the star (from 0 to M).
 
 #+begin_latex
 \begin{equation}\label{eq:pot}
-\int_{0}^{M} -\frac{Gm}{4\pi r^{4}} \times 4\pi r^{3} dm  = \int_{0}^{M} -\frac{Gm}{r}dm \equiv \mathrm{U} \ \ .
+\int_{0}^{M} -\frac{Gm}{4\pi r^{4}} \times 4\pi r^{3} dm  = \int_{0}^{M} -\frac{Gm}{r}dm \equiv - \mathrm{E}_\mathrm{pot} \ \ .
 \end{equation}
 #+end_latex
-
-The l.h.s. becomes integrating per parts
+(so that E_{pot}=|\int_{0}^{M} -Gm/r dm| >0). The l.h.s. becomes integrating per parts
 
 #+begin_latex
 \begin{equation}
@@ -146,13 +140,60 @@ back the pieces together:
 \int_{0}^{M }\frac{Gmdm}{r} = 3\int_{0}^{M} \frac{P}{\rho} dm \ \ .
 \end{equation}
 #+end_latex
-We have already interpreted the r.h.s. as the gravitational potential
-energy (normalized to zero at infinity) in Eq. \ref{eq:pot}. Let's
-interpret the l.h.s. - for this we need a relation between the
-local pressure P and the local density \rho, which is an equation of
-state.
+Note that if we had kept a non-zero \rho a term in Eq. \ref{eq:HSE}, we
+would again obtain a term depending on the moment of inertia and the
+bulk kinetic energy of the stellar gas (see for example sec. 4.2.1 in
+Shore's "Tapestry of modern astrophysics"). We have already
+interpreted the r.h.s. as the gravitational potential energy
+(normalized to zero at infinity) in Eq. \ref{eq:pot}. Let's interpret
+the l.h.s. By dimensional analysis we know it has to have the
+dimension of an energy, and in fact we know from the [[file:notes-lecture-EOS1.org::*Equation of state 1/2][EOS]] that P/\rho =
+(\Gamma-1)u with \Gamma\equiv\Gamma_{1} the first adiabatic index and u specific (i.e. per
+unit mass) thermal energy of the gas, so we can write:
 
-ma
+#+begin_latex
+\begin{equation}
+3\int_{0}^{M} \frac{P}{\rho} dm = 3\int_{0}^{M} (\Gamma-1)u dm \ \ .
+\end{equation}
+#+end_latex
+Assuming that \Gamma is constant throughout the star, we can take the
+parenthesis out of the integral. We can define E_{int} = \int_{0}^{M} u dm
+and rewrite the above as 3(\Gamma-1)E_{int}, and thus
+
+#+begin_latex
+\begin{equation}\label{eq:virial_star}
+- E_{pot} = 3(\Gamma-1)E_{int}
+\end{equation}
+#+end_latex
+
+For a monoatomic gas where each particle has 3 degrees of freedom
+(motion in 3 direction, no internal degrees of freedom for
+point-particles), \Gamma = 5/3, and we obtain E_{pot} = 2 E_{int} where the
+internal energy is due to the thermal motion of gas, in agreement with
+the general form assuming hydrostatic equilibrium.
+
+Now lets define the total energy of the gas: E_{tot} = E_{pot} + E_{int}. For a
+star to be bound, E_{tot}<0.
+Because of the virial theorem in Eq. \ref{eq:virial_star}, we can
+rewrite this as
+
+#+begin_latex
+\begin{equation}
+\mathrm{E}_\mathrm{tot} = \mathrm{E}_\mathrm{pot}\frac{3\Gamma-4}{3(\Gamma-1)} \ \ .
+\end{equation}
+#+end_latex
+
+*** Stability criterion
+One can immediately see that if \Gamma <4/3, then
+
+
+
+
+
+
+
+
+
 
 * Homework
 
@@ -161,3 +202,6 @@ ma
 - Using the virial theorem, demonstrate that if a binary loses
   instantaneously an amount of mass greater than half the total mass
   of the binary, \Delta M \ge (M_{1}+M_{2})/2, then the orbit is unbound.
+- Using the model of the 1M_{\odot} star computed earlier with MESA-web,
+  use one profile file to plot \Gamma_{1}\equiv\Gamma_{1}(m). Label the age of
+  the star for the corresponding profile.
