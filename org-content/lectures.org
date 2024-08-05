@@ -42,6 +42,7 @@ Time permitting, brief showcasing of [[http://user.astro.wisc.edu/~townsend/stat
 *Aim*: Introduce the Virial theorem in various forms. Demonstrate that
 stars "heat up as they lose energy".
 
+[[./notes-lecture-VirTheo.org][Notes]]
 
 ** <2024-09-12 Thu> Equation of state 1
 *Aim*: Introduce Polytropic and ideal gas equation of state.

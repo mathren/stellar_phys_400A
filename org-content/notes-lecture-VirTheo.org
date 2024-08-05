@@ -43,15 +43,16 @@ net potential energy appear in the second term/:
 \end{equation}
 #+end_latex
 
-As desired, the r.h.s. looks like a sum of work done by the total foce
-on each particle: \sum_{i} F_{i} \cdot r_{i} \equiv W, but this by conservation of
-energy has to be equal to the net potential energy available U.
-The l.h.s. can be re-written using the chain rule of the time
-derivative appearing in there:
+The r.h.s. looks like a sum of work done by the total foce on each
+particle: \sum_{i} F_{i} \cdot r_{i} \equiv W, but this by conservation of energy
+has to be equal to the net potential energy available U.
+
+The l.h.s. can be re-written using the chain rule for the second time
+derivative:
 
 #+begin_latex
 \begin{equation}
-\sum_{i} m\ddot{r_{i}} \cdot r_{i}  = \sum_{i} m \frac{d^{2} r^{2}}{dt} - m \cdot \dot{r_{i}}^{2}
+\sum_{i} m\ddot{r_{i}} \cdot r_{i}  = \sum_{i} \frac{1}{2} m \frac{d^{2} r^{2}}{dt^{2}} - m \cdot \dot{r_{i}}^{2}
 \end{equation}
 #+end_latex
 
