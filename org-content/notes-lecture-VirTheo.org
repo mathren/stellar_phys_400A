@@ -302,7 +302,7 @@ surface. Note that L has the units of power:
 Then by definition:
 #+begin_latex
 \begin{equation}\label{eq:tau_KH}
-\tau_\mathrm{KH} = \frac{\mathrm{E}_\mathrm{int}_{}_{}}{L} \equiv
+\tau_\mathrm{KH} = \frac{\mathrm{E}_\mathrm{int}}{L} \equiv
 \frac{\mathrm{E}_\mathrm{pot}}{2L} \simeq \frac{GM^{2}}{2RL} \ \ ,
 \end{equation}
 #+end_latex
