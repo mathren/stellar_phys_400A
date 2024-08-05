@@ -113,7 +113,7 @@ shell dr of gas (cf. hydrostatic momentum balance in [[file:notes-lecture-HSE.or
 lecture]]):
 
 #+begin_latex
-\begin{equation}\label{eq:HSE}
+\begin{equation}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}}
 \end{equation}
 #+end_latex
@@ -121,11 +121,11 @@ lecture]]):
 By analogy with what is done in the general derivation above, we want
 to make the gravitational potential appear on the r.h.s., which can be
 done by multiplying by 4\pi r^{3} and integrating in dm over the entire
-mass of the star.
+mass of the star (from 0 to M).
 
 #+begin_latex
 \begin{equation}
-\int_{0}_{}^{M} \left( -\frac{Gm}{4\pi r^{4}} \times 4\pi r^{3} dm\right) = \int_{0}_{}^{M} -\frac{Gmdm}{r} \equiv \mathrm{U} \ \ .
+\int_{0}^{M} -\frac{Gm}{4\pi r^{4}} \times 4\pi r^{3} dm  = \int_{0}^{M} -\frac{Gm}{r}dm \equiv \mathrm{U} \ \ .
 \end{equation}
 #+end_latex
 
@@ -133,17 +133,17 @@ The l.h.s. becomes integrating per parts
 
 #+begin_latex
 \begin{equation}
-\int_{0}_{}^{M}  \frac{dP}{dm} 4\pi r^{3} dm = \left[4\pir^{3}P\right]^{M}^{}_{0} - \int_{0}^{M} 12\pi r^{2} \frac{\partial r}{\partial m} Pdm \ \ ,
+\int_{0}^{M} \frac{dP}{dm} 4\pi r^{3} dm = \left[ 4\pi r^{3}P \right]^{M}^{}_{0} - 3\int_{0}^{M}4\pi r^{2} \frac{\partial r}{\partial m} Pdm \ \ ,
 \end{equation}
 #+end_latex
 where the first term is zero: P(M)=0 at the outer surface of the star,
 and in the center r=0 by definition. For the second term, we can use
-the mass continuity equation and obtain -\int_{0}^{M} 3P/\rho dm, thus, putting
+the mass continuity equation and obtain -3\int_{0}^{M} P/\rho dm, thus, putting
 back the pieces together:
 
 #+begin_latex
 \begin{equation}
-\int_{0}_{}^{M} \frac{Gmdm}{r} = \int_{0}^{M} 3\frac{P}{\rho} dm \ \ .
+\int_{0}^{M }\frac{Gmdm}{r} = 3\int_{0}^{M} \frac{P}{\rho} dm \ \ .
 \end{equation}
 #+end_latex
 
