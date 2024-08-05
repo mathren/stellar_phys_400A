@@ -1,4 +1,4 @@
-#+title: Lecture 5: Virial theorem, pressure, estimates
+#+title: Lecture 5: Virial theorem
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
@@ -18,16 +18,15 @@ The etymology of the name comes from "vir" which is latin for
 
 
 ** Complete derivation
-Let's start with the most complete derivation (see for example
+Let's start with the most general derivation (see for example
 Goldstein's classical mechanics book or Shore's Tapesty of Modern
-Astrophysics Sec. 1.5). For a collection of particles with mass m (for
-simplicity assumed to be the same), Netwon's second law states that
+Astrophysics Sec. 1.5). For a collection of particles with mass m_{i}, Netwon's second law states that
 the change in their momentum is equal to the total force they are
 subject to:
 
 #+begin_latex
 \begin{equation}
- m \ddot{r_{i}} = F_{i} \ \, .
+ m_{i} \ddot{r_{i}} = F_{i} \ \, .
 \end{equation}
 #+end_latex
 
@@ -39,7 +38,7 @@ net potential energy appear in the second term/:
 
 #+begin_latex
 \begin{equation}
-\sum_{i} m\ddot{r_{i}} \cdot r_{i} = \sum_{i} F_{i} \cdot r_{i}
+\sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i} = \sum_{i} F_{i} \cdot r_{i}
 \end{equation}
 #+end_latex
 
@@ -52,13 +51,13 @@ derivative:
 
 #+begin_latex
 \begin{equation}
-\sum_{i} m\ddot{r_{i}} \cdot r_{i}  = \sum_{i} \frac{1}{2} m \frac{d^{2}}{dt^{2}}r^{2} - \sum_{i} m \cdot \dot{r_{i}}^{2}
+\sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i}  = \sum_{i} \frac{1}{2} m_{i} \frac{d^{2}}{dt^{2}}r^{2} - \sum_{i} m_{i} \cdot \dot{r_{i}}^{2}
 \end{equation}
 #+end_latex
 
 And now we have on the right hand side (assuming the mass of the
 particles to be constant) twice the second time derivative of the moment of
-inertia I = \sum_{i} m r_{i}^{2} and twice the kinetic energy KE = \sum_{i }m v_{i}^{2}/2. So
+inertia I = \sum_{i} m_{i} r_{i}^{2} and twice the kinetic energy KE = \sum_{i }m_{i} v_{i}^{2}/2. So
 putting the r.h.s. of this last equation in the first spatial moment
 of Newton's second law we obtain:
 
@@ -69,12 +68,12 @@ of Newton's second law we obtain:
 #+end_latex
 
 This is the most-general form of the Virial theorem derived by
-Clausius. This derivation is very general, and shows that in general
-in the virial theorem there is a second derivative of the moment of
-inertia on the r.h.s., which is often forgotten. We did not specify
-almost anything about the system (see Goldstein for a momentum-based
-derivation where the assumption of equal and constant masses of the
-particles is not necessary).
+Clausius. In general, in the virial theorem there is a second
+derivative of the moment of inertia on the r.h.s., which is often
+forgotten. We did not specify almost anything about the system (see
+Goldstein for a momentum-based derivation where the assumption of
+constant masses m_{i} of the particles implicit in the way we wrote
+Newton's second law is not even needed).
 
 So far, this general form doesn't give us much intuition on its
 meaning. We have a relation between the kinetic energy of a collection
