@@ -133,7 +133,7 @@ The l.h.s. becomes integrating per parts
 
 #+begin_latex
 \begin{equation}
-\int_{0}^{M} \frac{dP}{dm} 4\pi r^{3} dm = \left[ 4\pi r^{3}P \right]^{M}^{}_{0} - 3\int_{0}^{M}4\pi r^{2} \frac{\partial r}{\partial m} Pdm \ \ ,
+\int_{0}^{M} \frac{dP}{dm} 4\pi r^{3} dm = \left[ 4\pi r^{3}P \right]^{M}_{0}- 3\int_{0}^{M}4\pi r^{2} \frac{\partial r}{\partial m} Pdm \ \ ,
 \end{equation}
 #+end_latex
 where the first term is zero: P(M)=0 at the outer surface of the star,
