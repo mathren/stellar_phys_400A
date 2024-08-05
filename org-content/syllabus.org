@@ -1,9 +1,6 @@
 #+title: 400A Syllabus - Stellar Evolution
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
-#+options: toc:nil
-#+options: num:0
-#+LaTeX_HEADER: \usepackage[margin=0.8in]{geometry}
 
 * Description of the course
 The main topic of the course is stellar structure, a field of
@@ -67,18 +64,16 @@ and will mostly follow these:
 
 We will also use [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]], a cloud-computing resource to run stellar
 evolution simulations with the open-source, community-developed, code
-[[https://docs.mesastar.org/en/latest/][MESA]]. The =MESA-web= interface simplifies the access to this
-state-of-the-art stellar and binary evolution tool.
+[[https://docs.mesastar.org/en/latest/][MESA]].
 
 * Exams and grading
 The course grade will be based on:
-
  - In class participation: 20%
  - Homework: 40%
  - Project/Presentation (written+oral): 40%
 
-The class will not be curved. The correspondence between final
-percentages and letter grades will be:
+The class will not be curved, and this will be the correspondence
+between final percentages and letter grades:
  - A: 85-100%
  - B: 70-85%
  - C: 50-70%

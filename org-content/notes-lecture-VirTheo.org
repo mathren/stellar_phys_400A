@@ -16,7 +16,6 @@ massive) cluster of stars!
 The etymology of the name comes from "vir" which is latin for
 "forces".
 
-
 ** Complete derivation
 Let's start with the most general derivation (see for example
 Goldstein's classical mechanics book or Shore's Tapesty of Modern
@@ -77,25 +76,26 @@ Newton's second law is not even needed).
 
 So far, this general form doesn't give us much intuition on its
 meaning. We have a relation between the kinetic energy of a collection
-of particles and its potential energy. But in the frame of the center
-of mass of such collection, the kinetic energy of the particles is a
-measure of their thermal energy, and this is absolutely non-trivial:
-why would the thermal energy know about the potential energy! This
-statement is however very general and its implication for stellar
-structure and evolution are profound.
+of particles, its potential energy, and the second time-derivative of
+its moment of inertia. But in the frame of the center of mass of such
+collection, the kinetic energy of the particles is a measure of their
+thermal energy, and this is absolutely non-trivial: why would the
+thermal energy know about the potential energy! This statement is
+however very general and its implication for stellar structure and
+evolution are profound.
 
 ** Derivation for binary orbits
 
 As a demonstration for the generality of the virial theorem, we can
 apply it to a collection of particle with only 2 particles subject
 only to the gravitational force, that is a binary system of two
-point-mass stars!
+point-mass stars on a Keplerian orbit!
 
 One can write the total energy of the binary as:
 
 #+begin_latex
 \begin{equation}
-E_{tot} = \mathrm{KE}_{1} + \mathrm{KE}_{2} + \mathrm{U} \equiv \mathrm{KE} + \mathrm{U} \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
+E_\mathrm{tot} = \mathrm{KE}_{1} + \mathrm{KE}_{2} + \mathrm{U} \equiv \mathrm{KE} + \mathrm{U} \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
 \end{equation}
 #+end_latex
 where in the last term we are using Kepler's laws. The gravitational
@@ -106,8 +106,12 @@ of inertia of the orbit is zero, and thus this /is/ the virial theorem!
 /Keplerian binary orbits are "virialized"/.
 
 ** Derivation for stars in hydrostatic equilibrium
-Let's now re-derive the Virial theorem for a star. Let's assume it is
-in hydrostatic equilibrium.
+Let's now re-derive the Virial theorem for a star. Let's assume a
+continuous description of the stellar gas, hydrostatic equilibrium and
+spherical symmetry, and write explicitly the forces acting on each
+shell dr of gas (cf. Eq. \ref{eq:HSE} in [[file:notes-lecture-HSE.org::*Combining the two][the previous lecture]]):
+
+
 
 
 
@@ -115,3 +119,6 @@ in hydrostatic equilibrium.
 
 - Using the virial theorem find a relation between the average sound
   speed in the star and the escape velocity
+- Using the virial theorem, demonstrate that if a binary loses
+  instantaneously an amount of mass greater than half the total mass
+  of the binary, \Delta M \ge (M_{1}+M_{2})/2, then the orbit is unbound.
