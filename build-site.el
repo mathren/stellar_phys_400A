@@ -50,6 +50,8 @@
       org-html-head mr/site-html-head
       org-html-preamble mr/site-html-preamble
       org-html-postamble mr/html-postamble
+      org-display-custom-times t
+
       )
 
 ;; define the publishing project

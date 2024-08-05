@@ -124,7 +124,7 @@ done by multiplying by 4\pi r^{3} and integrating in dm over the entire
 mass of the star (from 0 to M).
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:pot}
 \int_{0}^{M} -\frac{Gm}{4\pi r^{4}} \times 4\pi r^{3} dm  = \int_{0}^{M} -\frac{Gm}{r}dm \equiv \mathrm{U} \ \ .
 \end{equation}
 #+end_latex
@@ -146,7 +146,13 @@ back the pieces together:
 \int_{0}^{M }\frac{Gmdm}{r} = 3\int_{0}^{M} \frac{P}{\rho} dm \ \ .
 \end{equation}
 #+end_latex
+We have already interpreted the r.h.s. as the gravitational potential
+energy (normalized to zero at infinity) in Eq. \ref{eq:pot}. Let's
+interpret the l.h.s. - for this we need a relation between the
+local pressure P and the local density \rho, which is an equation of
+state.
 
+ma
 
 * Homework
 
