@@ -52,7 +52,7 @@ derivative:
 
 #+begin_latex
 \begin{equation}
-\sum_{i} m\ddot{r_{i}} \cdot r_{i}  = \sum_{i} \frac{1}{2} m \frac{d^{2} r^{2}}{dt^{2}} - m \cdot \dot{r_{i}}^{2}
+\sum_{i} m\ddot{r_{i}} \cdot r_{i}  = \sum_{i} \frac{1}{2} m \frac{d^{2}}{dt^{2}}r^{2} - \sum_{i} m \cdot \dot{r_{i}}^{2}
 \end{equation}
 #+end_latex
 
