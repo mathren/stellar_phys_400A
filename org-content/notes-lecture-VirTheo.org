@@ -5,7 +5,7 @@
 * Virial theorem
 *Materials*: Chapter 2 of Onno Pols' lecture notes, Chapter 3 of
 Kippenhahn's book, Sec. 1.5 of "Tapestry of Modern Astrophysics" by S.
-N. Shore.
+N. Shore, pages 134-139 Clayton's book.
 
 /The virial theorem connects gravitational physics and thermodynamics/.
 It is a statistical statement on mutually interacting (e.g. because of
@@ -58,7 +58,7 @@ of Newton's second law we obtain:
 
 #+begin_latex
 \begin{equation}
- 2\mathrm{KE}+\mathrm{E_\mathrm{pot} = \frac{1}{2}\ddot{I}
+ 2\mathrm{KE}+\mathrm{E}_\mathrm{pot} = \frac{1}{2}\ddot{I}
 \end{equation}
 #+end_latex
 
@@ -140,13 +140,14 @@ back the pieces together:
 \int_{0}^{M }\frac{Gmdm}{r} = 3\int_{0}^{M} \frac{P}{\rho} dm \ \ .
 \end{equation}
 #+end_latex
-Note that if we had kept a non-zero \rho a term in Eq. \ref{eq:HSE}, we
+Note that if we had kept a non-zero \rho \times a term in Eq. \ref{eq:HSE}, we
 would again obtain a term depending on the moment of inertia and the
 bulk kinetic energy of the stellar gas (see for example sec. 4.2.1 in
 Shore's "Tapestry of modern astrophysics"). We have already
 interpreted the r.h.s. as the gravitational potential energy
 (normalized to zero at infinity) in Eq. \ref{eq:pot}. Let's interpret
-the l.h.s. By dimensional analysis we know it has to have the
+the l.h.s, which in the general derivation would be part of the \sum_{i}
+F\cdot r_{i} term. By dimensional analysis we know it has to have the
 dimension of an energy, and in fact we know from the [[file:notes-lecture-EOS1.org::*Equation of state 1/2][EOS]] that P/\rho =
 (\Gamma-1)u with \Gamma\equiv\Gamma_{1} the first adiabatic index and u specific (i.e. per
 unit mass) thermal energy of the gas, so we can write:
