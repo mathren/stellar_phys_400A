@@ -16,3 +16,6 @@ org-content/private-content/*
 html-content/*.html
 *.tex
 *.pdf
+
+# ignore MESA-web results
+MESA-web/*
