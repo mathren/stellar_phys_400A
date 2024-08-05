@@ -206,6 +206,10 @@ because of recombination that changes the mean molecular weight, or
 pair-production in the stellar interior triggering a (pulsational)
 pair-instability supernova!
 
+:Question:
+- *Q*: for a star made only of photons, what is \Gamma?
+:end:
+
 *** Use of gravitational energy in a star: negative heat capacity
 Let's consider a star made of a perfect monoatomic gas with \Gamma=5/3.
 Let's say that for some reason this star is contracting (e.g., because
@@ -285,6 +289,48 @@ the gravothermal collapse of the stars until either the ideal gas
 approximation does not hold (for white dwarfs) or even nuclear fusion
 cannot stop the collapse, and gravity wins, leading to a supernova
 explosion and/or the formation of a black hole.
+
+** Kelvin-Helmholtz timescale
+This is by definition the timescale it takes a star to radiate away
+all its internal energy at a constant rate in absence of any other
+energy sources. Let's call L the "luminosity of the star", that is the
+rate at which is loses energy from radiating away photons at its
+surface. Note that L has the units of power:
+
+[L] = [E]/[t]
+
+Then by definition:
+#+begin_latex
+\begin{equation}\label{eq:tau_KH}
+\tau_\mathrm{KH} = \frac{\mathrm{E}_\mathrm{int}_{}_{}}{L} \equiv
+\frac{\mathrm{E}_\mathrm{pot}}{2L} \simeq \frac{GM^{2}}{2RL} \ \ ,
+\end{equation}
+#+end_latex
+where we have used the virial theorem and set C\simeq1. We can scale all
+the quantities to Solar values and obtain:
+#+begin_latex
+\begin{equation}
+\tau_{KH} \simeq 10^{7} \mathrm{years} \times \left(\frac{M}{M_{\odot}}\right)^{2} \left(\frac{R}{R_{\odot}}\right)^{-1 }\left(\frac{L}{L_{\odot}}\right)^{-1} \ \ .
+\end{equation}
+#+end_latex
+Clearly \tau_{KH} \gg \tau_{ff}, and also \gg {human timescales}: it is hard to
+get direct observational evidence that stars are in thermal
+equilibrium. In fact, the name of this timescale comes from proposals
+in the late 19^{th} century by Kelvin and Helmholtz that the Sun may be
+out of thermal equilibrium and contracting, meaning it would have a
+lifetime of the order of \sim 10 million years -- this was in contrast
+with geological evidence (and with the timescale necessary for
+Darwinian evolution), leading to a great debate that was ultimately
+settled with the discovery of nuclear energy as a potential source of
+energy in the 1930s (by primarily Bethe and collaborators), see G.
+Shaviv "Life of stars" for a detailed discussion.
+
+:Question:
+- *Q*: A star may lose energy also by means other than photons,
+  especially neutrinos. If such energy losses are important, how can
+  we modify Eq. \ref{eq:tau_KH}?
+:end:
+
 
 * Homework
 

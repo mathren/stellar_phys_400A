@@ -1,4 +1,4 @@
-#+title: Lecture 7: EOS 2/2
+#+title: Lecture 6: EOS 1/2
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 

@@ -53,6 +53,8 @@ stars "heat up as they lose energy".
 - Degenerate and non-relativistic gas
 - Degenerate and relativistic gas
 - Radiation-dominated
+*** Homework
+Derive Chandrasekhar mass?
 
 ** <2024-09-19 Tue> Radiative energy transport & conduction
 *Aim*: Energy transport in radiative layers and the third stellar
@@ -68,12 +70,15 @@ limitations.
 
 [[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][Notes (preliminary)]]
 
+
 ** <2024-10-01 Thu> Nuclear energy generation
 *Aim*: Introduce basics of nuclear energy generation through fusion,
 recall basic quantum mechanics elements, Gamow peak
 *** Homework idea
  - compare structure of a star going through pp chain, CNO cycle, and
    a massive pop III star.
+
+*Aim*: introduce nuclear energy generation and nuclear timescale
 
 
 ** <2024-10-03 Tue> Introduction to stellar evolution codes
