@@ -333,10 +333,11 @@ spherically symmetric. Returning to the general form for the momentum
 conservation f = \rho a \equiv \rho \partial^{2}r/\partial t^{2} we have
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:dyn}
 \rho \frac{\partial^{2} r}{\partial t^{2}} = -\frac{dP}{dr} -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
 #+end_latex
+
 where since P decreases inwards, dP/dr<0, so the first term on the
 l.h.s. pushes outwards (positive radial acceleration), while gravity
 pulls inward, as one would expect.

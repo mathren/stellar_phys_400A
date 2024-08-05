@@ -10,15 +10,79 @@ N. Shore.
 /The virial theorem connects gravitational physics and thermodynamics/.
 Because of this, it has profound implications for any collection of
 self-gravitating particles large enough to apply statistical
-mechanics/thermodynamical methods: a star, but also a (sufficiently
+mechanics/thermodynamic methods: a star, but also a (sufficiently
 massive) cluster of stars!
 
-** Complete derivation
-Introduce the full form with the \ddot{I} term
+The etymology of the name comes from "vir" which is latin for
+"forces".
 
-** Derivation for hydrostatic equilibrium
+
+** Complete derivation
+Let's start with the most complete derivation (see for example
+Goldstein's classical mechanics book or Shore's Tapesty of Modern
+Astrophysics Sec. 1.5). For a collection of particles with mass m (for
+simplicity assumed to be the same), Netwon's second law states that
+the change in their momentum is equal to the total force they are
+subject to:
+
+#+begin_latex
+\begin{equation}
+ m \ddot{r_{i}} = F_{i} \ \, .
+\end{equation}
+#+end_latex
+
+Note that here r_{i} and F_{i} are vector quantities. We take the
+first-order spatial moment of this distribution, which means we take
+the dot product of each term by the position of the particles and sum
+over all the particles. Why? The reason is /to make something like the
+net potential energy appear in the second term/:
+
+#+begin_latex
+\begin{equation}
+\sum_{i} m\ddot{r_{i}} \cdot r_{i} = \sum_{i} F_{i} \cdot r_{i}
+\end{equation}
+#+end_latex
+
+As desired, the r.h.s. looks like a sum of work done by the total foce
+on each particle: \sum_{i} F_{i} \cdot r_{i} \equiv W, but this by conservation of
+energy has to be equal to the net potential energy available U.
+The l.h.s. can be re-written using the chain rule of the time
+derivative appearing in there:
+
+#+begin_latex
+\begin{equation}
+\sum_{i} m\ddot{r_{i}} \cdot r_{i}  = \sum_{i} m \frac{d^{2} r^{2}}{dt} - m \cdot \dot{r_{i}}^{2}
+\end{equation}
+#+end_latex
+
+And now we have on the right hand side (assuming the mass of the
+particles to be constant) the second time derivative of the moment of
+inertia I = \sum_{i} m r_{i}^{2} and twice the kinetic energy K = \sum_{i }m v_{i}^{2}/2. So
+putting the r.h.s. of this last equation in the first spatial moment
+of Newton's second law we obtain:
+
+#+begin_latex
+\begin{equation}
+ 2K+U = \ddot{I}
+\end{equation}
+#+end_latex
+
+This is the most-general form of the Virial theorem derived by
+Clausius. This derivation is very general, and shows that in general
+in the virial theorem there is a second derivative of the moment of
+inertia on the r.h.s., which is often forgotten. We did not specify
+almost anything about the system (see Goldstein for a momentum-based
+derivation where the assumption of equal and constant masses of the
+particles is not necessary).
+
+
+
+
+
 
 ** Derivation for binary orbits
+
+** Derivation for stars in hydrostatic equilibrium
 
 * Homework
 
