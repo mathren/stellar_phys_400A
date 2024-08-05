@@ -256,13 +256,12 @@ From this equation, several important fact follow:
   must radiate away energy, thus it will lose energy. This energy
   loss, since E_{tot} = E_{pot}/2 = - CGM^{2}/2R <0 implies that R must
   decrease. But then, <T> must increase! This is the "gravothermal"
-  collapse of a cloud/star. As the star loses energy (by radiating
-  away some of its internal energy into photons sent through space at
-  the surface), it heats up! This is why stars can be thought of
-  objects with /negative/ heat capacity: it heats up as it loses energy!
-  This is a property typical of self-gravitating systems only (stars
-  and gravitationally bound stellar clusters) and because of the
-  virial theorem it does not violate energy conservation.
+  collapse of a cloud/star. As thermal energy is lost to radiation at
+  the surface, the (average) temperature raises! This is why stars can
+  be thought of objects with /negative/ heat capacity: it heats up as it
+  loses energy! This is a property typical of self-gravitating systems
+  only (stars and gravitationally bound stellar clusters) and because
+  of the virial theorem it does not violate energy conservation.
 - The gravothermal collapse must go on until either:
   1. an internal energy source, compensating for the surface energy loss kicks in, or
   2. the ideal gas approximation does not hold anymore.
@@ -273,12 +272,13 @@ From this equation, several important fact follow:
 
 Thus, /gravity determines the evolution of a star/. It dictates that as
 the star loses energy, it heats up. Because of this, at some point
-nuclear fusion can occur (as we will discuss later): /stars don't
-shine because they burn. Stars burn because they shine/. Without the
-loss of (internal/thermal) energy by radiation they would not
-contract, without contracting they would not reach temperatures high
-enough to do nuclear fusion. The nuclear fusion is a /consequence/ of
-the fact that stars shine, and /not the cause/.
+nuclear fusion can occur (as we will discuss later): /stars don't shine
+because they burn. Stars burn because they shine/. Without the loss of
+(internal/thermal) energy by radiation they would not contract,
+without contracting they would not reach temperatures high enough to
+do nuclear fusion. *The nuclear fusion is a consequence of the fact
+that stars shine, and not the cause*. Stars shine as any object with
+finite temperature must do.
 
 Internal energy sources such as nuclear fusion ultimately only delay
 the gravothermal collapse of the stars until either the ideal gas
