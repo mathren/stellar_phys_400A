@@ -42,6 +42,19 @@
 	  org-version
 	  ))
 
+
+(defun mr/filter-timestamp (trans back _comm)
+  "Remove <> around time-stamps."
+  (pcase back
+    (`html
+     (replace-regexp-in-string "&[lg]t;" "" trans))
+    (`latex
+     (replace-regexp-in-string "[<>]" "" trans))))
+
+
+(add-to-list 'org-export-filter-timestamp-functions
+             #'mr/filter-timestamp)
+
 ;; Customize the HTML output
 (setq org-html-validation-link nil            ;; Don't show validation link
       org-html-head-include-scripts nil       ;; Use our own scripts
@@ -51,7 +64,6 @@
       org-html-preamble mr/site-html-preamble
       org-html-postamble mr/html-postamble
       org-display-custom-times t
-
       )
 
 ;; define the publishing project
