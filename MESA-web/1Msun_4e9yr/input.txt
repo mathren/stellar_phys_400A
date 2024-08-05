@@ -1,0 +1,51 @@
+Job 08052432504 was calculated using the following input parameters:
+---------------------------------------------
+Initial Mass: 1.0 (solar mass)
+
+Nuclear Reaction Network: basic.net
+
+Sampled Nuclear Reaction: none
+
+Initial Metallicity: 0.02
+
+Mixing Length Alpha: 2.0
+
+Mixing Length Theory Implementation: Cox
+
+Convective Overshoot f: 0.0001
+
+Convective Overshoot f0: 0.0005
+
+Semi-Convection Alpha: 0.01
+
+Thermohaline Alpha: 1.0
+
+Thermohaline Mixing Implementation: Kippenhahn
+
+Convective Premixing: %cpmlogic%
+
+Red Giant Branch Wind Scheme: Reimers
+
+RGB Wind Scaling Factor: 0.1
+
+Asymptotic Giant Branch Wind Scheme: Blocker
+
+AGB Wind Scaling Factor: 0.1
+
+Initial Rotational Value: 0.0 (omega_initial/omega_critical)
+
+Variance Control Target: 1e-2
+
+Mesh Delta Coefficient: 2.0
+
+dX_nuc_drop_min_X_limit: 1e-2
+
+MESA Release: r12778
+
+
+---------------------------------------------
+Your model completed, reporting the following stopping reason:
+star_age >= max_age
+---------------------------------------------
+
+Thank you for using MESA-Web!

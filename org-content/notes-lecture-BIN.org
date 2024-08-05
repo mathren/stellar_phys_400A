@@ -86,7 +86,6 @@ astrometric measurements by /Gaia/ (see recent review by [[https://www.sciencedi
 #+ATTR_HTML: :width 50%
 [[./images/siriusAB.png]]
 
-
 *** Spectroscopic binaries
 
 #+CAPTION: Schematic representation of the Doppler shift of spectral lines in binaries from which one can calculate radial velocities. Fig. 7.3 in Carrol & Ostie or 2.3 in Tauris & van den Heuvel's books.

@@ -391,4 +391,10 @@ Estimate and compare the dynamical timescale using multiple methods:
    with M=10M_{\odot} and R=1000R_{\odot} and a White Dwarf with M=1M_{\odot}
    R=1000km, and a Neutron star with M=1M_{\odot} and radius R=10km.
    Compare also their average densities.
-*Optional*: Using MESA-web make a one M_{\odot} star and plot the m(r)
+ - Skim [[https://ui.adsabs.harvard.edu/abs/2023arXiv230915930F/abstract][MESA-web paper by Fields et al. 2022]].
+ - Using MESA-web make a one M_{\odot} star until age 4.5\times10^{9} years
+   and plot m(r). Make sure to label your axes properly (including units!)
+ - With the model above, check the central pressure of the star (you
+   can also plot P(m) and P(r), or look at the final frame in the
+   movie made by MESA-web for you) and compare it with the estimate
+   above and the one provided in Onno Pols' lecture notes.

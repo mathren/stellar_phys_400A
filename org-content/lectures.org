@@ -38,8 +38,10 @@ symmetry.
 [[./notes-lecture-HSE.org][Notes]]
 
 ** <2024-09-10 Tue> Virial theorem, pressure, estimates
-*Aim*: Introduce the Virial theorem in various forms, use it to provide
-numerical estimates of the central temperature and pressure for stars.
+*Aim*: Introduce the Virial theorem in various forms. Demonstrate that
+stars "heat up as they lose energy".
+
+
 
 ** <2024-09-12 Thu> Equation of state 1
 *Aim*: Introduce Polytropic and ideal gas equation of state.
@@ -74,6 +76,7 @@ recall basic quantum mechanics elements, Gamow peak
 
 ** <2024-10-03 Tue> Introduction to stellar evolution codes
 *Aim*: Introduce stellar evolution codes principles, MESA and MESA-web
+
 
 ** <2024-10-08 Tue> Presentation expectations
 *Aim*: Discuss what is expected for the presentations, how they will be

@@ -50,7 +50,6 @@
       org-html-head mr/site-html-head
       org-html-preamble mr/site-html-preamble
       org-html-postamble mr/html-postamble
-      org-html-metadata-timestamp-format "%Y-%m-%d"
       )
 
 ;; define the publishing project
