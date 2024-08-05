@@ -107,7 +107,8 @@ gravitational potential energy: U = -GM_{1}M_{2}/a. Substituting the
 potential energy we obtain: KE = |U|/2, which, since Keplerian orbits
 in Newtonian gravity are stable, this implies that the second (and
 first) time-derivative of the moment of inertia of the orbit is zero,
-and thus this /is/ the virial theorem!
+and thus this /is/ the virial theorem! /Keplerian binary orbits are
+"virialized"/.
 
 ** Derivation for stars in hydrostatic equilibrium
 Let's now re-derive the Virial theorem for a star. Let's assume it is
