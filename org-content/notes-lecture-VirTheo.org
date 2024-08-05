@@ -236,7 +236,7 @@ it follows that:
 
 #+begin_latex
 \begin{equation}
-E_\mathrm{int} = - E_\mathrm{pot}/2 \Rightarrow \frac{3}{2} \frac{M}{\mu m_{H}} k_{B} \lang T \rangle = C \frac{GM^{2}}{R} \ \ ,
+E_\mathrm{int} = - E_\mathrm{pot}/2 \Rightarrow \frac{3}{2} \frac{M}{\mu m_{H}} k_{B}\lang T \rangle = C \frac{GM^{2}}{R} \ \ ,
 \end{equation}
 #+end_latex
 where C is a constant of O(1) that depends on the mass distribution in
