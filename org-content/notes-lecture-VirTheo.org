@@ -52,13 +52,13 @@ derivative:
 
 And now we have on the right hand side (assuming the mass of the
 particles to be constant) twice the second time derivative of the moment of
-inertia I = \sum_{i} m_{i} r_{i}^{2} and twice the kinetic energy KE = \sum_{i }m_{i} v_{i}^{2}/2. So
+inertia I = \sum_{i} m_{i} r_{i}^{2} and twice the kinetic energy E_{kin} = \sum_{i }m_{i} v_{i}^{2}/2. So
 putting the r.h.s. of this last equation in the first spatial moment
 of Newton's second law we obtain:
 
 #+begin_latex
 \begin{equation}
- 2\mathrm{KE}+\mathrm{E}_\mathrm{pot} = \frac{1}{2}\ddot{I}
+ 2\mathrm{E}_\mathrm{kin}+\mathrm{E}_\mathrm{pot} = \frac{1}{2}\ddot{I}
 \end{equation}
 #+end_latex
 
@@ -91,12 +91,12 @@ One can write the total energy of the binary as:
 
 #+begin_latex
 \begin{equation}
-E_\mathrm{tot} = \mathrm{KE}_{1} + \mathrm{KE}_{2} + \mathrm{E}_\mathrm{pot} \equiv \mathrm{KE} + \mathrm{E}_\mathrm{pot}  \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
+E_\mathrm{tot} = \mathrm{E_\mathrm{kin}}_{1} + \mathrm{E_\mathrm{kin}}_{2} + \mathrm{E}_\mathrm{pot} \equiv \mathrm{E_\mathrm{kin}} + \mathrm{E}_\mathrm{pot}  \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
 \end{equation}
 #+end_latex
 where in the last term we are using Kepler's laws. The gravitational
 potential energy is E_{pot} = -GM_{1}M_{2}/a, thus making it explicit we
-obtain: KE = |E_{pot}|/2. Since Keplerian orbits in Newtonian gravity are
+obtain: E_\mathrm{kin} = |E_{pot}|/2. Since Keplerian orbits in Newtonian gravity are
 stable, this implies that the second (and first) time-derivative of
 the moment of inertia of the orbit is zero, and thus this /is/ the
 virial theorem! /Keplerian binary orbits are "virialized"/.
