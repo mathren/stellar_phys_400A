@@ -1,4 +1,4 @@
-#+title: Lecture 6: EOS 1/2
+#+title: 400A - EOS (degenerate)
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 

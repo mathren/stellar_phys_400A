@@ -284,11 +284,12 @@ which is the second stellar structure equation that expresses the fact
 that the gravitational pull of the stellar gas is compensated by the
 pressure gradient inside the star. This also means that it is the
 gravity of the star that imposes the pressure stratification of the
-star and ultimately its structure. And finally, the fact that dP/dm<0,
-that is the pressure decreases as the enclose mass increases, or
-equivalently, the pressure increases towards the center (smaller
-radii, smaller amount of enclosed mass) makes sense, if the gradient
-has to compensate the gravitational pull.
+star and ultimately its structure: the pressure in each layer is just
+what is needed to support the weight of the layer above. And finally,
+the fact that dP/dm<0, that is the pressure decreases as the enclose
+mass increases, or equivalently, the pressure increases towards the
+center (smaller radii, smaller amount of enclosed mass) makes sense,
+if the gradient has to compensate the gravitational pull.
 
 *N.B.:* This can also be obtained starting from the Navier-Stokes
 equation assuming no viscosity (the microscopic viscosity is generally

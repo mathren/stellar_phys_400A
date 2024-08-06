@@ -3,8 +3,70 @@
 #+email: mrenzo@arizona.edu
 
 * Equation of state 1/2
+*Materials*: Chapter 3 of Onno Pols' lecture notes, Sec. 2.2 of
+Kippenhahn's book, Sec. 2-4 of Clayton's book.
 
-** Polytropic
+** Summary of where we are
+
+We have introduced now two equations of the stellar structure (*N.B.:*
+at the end of the course we'll need 5 to close the system and get a
+solvable model), and we know we can write them using the Lagrangian
+mass coordinate as independent variable. But to reason conceptually
+about the problem, we can stick to writing them as a function of r:
+
+*Mass conservation:*
+#+begin_latex
+\begin{equation}
+dm = 4\pi \rho r^{2} dr \ \ .
+\end{equation}
+#+end_latex
+
+*Hydrostatic equilibrium:*
+#+begin_latex
+\begin{equation}
+\frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \ ,
+\end{equation}
+#+end_latex
+
+These two equations have as variables m\equiv m(r) (or equivalently r\equiv
+r(m)), P and \rho. So clearly we cannot yet solve them, we need some
+relation between the pressure and the density - a so-called equation
+of state (EOS).
+
+The aim of this lecture is to introduce first simple EOS which do not
+introduce any other variables, and then go over a more appropriate
+EOS, the ideal gas EOS, which is a good approximation for most stars.
+We will see other EOS (for degenerate or radiation-dominated gas) in a
+[[./notes-lecture-EOS2][future lecture]].
+
+** Global and local thermal equilibrium
+Before we get into the EOS though, we have to ask ourselves whether we
+can use thermodynamics/statistical mechanics to try to find some
+relationship between P, \rho (and maybe other thermodynamic quantities
+will come in).
+
+
+
+
+# material in Sec. 3.1 of Onno's lecture notes
+
+
+
+** Polytropic EOS
+Polytropic EOS as a special case of /barotropic/ EOS, which are all the
+EOSs for which /the density depends only on the pressure/:
+\rho\equiv\rho(P). These have applications beyond stellar physics (e.g., for
+atmospheric physics). A polytropic EOS is thus a barotropic EOS where
+the \rho\equiv\rho(P) is in the form of a powerlaw, although usually written in
+this form:
+
+#+begin_latex
+\begin{equation}
+P = K\rho^{\Gamma} \equiv K\rho^{1+1/n}\ \ ,
+\end{equation}
+#+end_latex
+
+where K is a constant, and by definition \Gamma=\partial P /\partial\rho = 1+1/n.
 
 ** Ideal gas
 

@@ -339,6 +339,9 @@ Shaviv "Life of stars" for a detailed discussion.
 - Using the virial theorem, demonstrate that if a binary loses
   instantaneously an amount of mass greater than half the total mass
   of the binary, \Delta M \ge (M_{1}+M_{2})/2, then the orbit is unbound.
+- Using the virial theorem, estimate the average temperature of the
+  Sun and compare it with its surface temperature. Is the Sun in
+  thermal equilibrium?
 - Using the model of the 1M_{\odot} star computed earlier with MESA-web,
   use one profile file to plot \Gamma_{1}\equiv\Gamma_{1}(m). Label the age of
   the star for the corresponding profile.
