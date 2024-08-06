@@ -45,12 +45,89 @@ can use thermodynamics/statistical mechanics to try to find some
 relationship between P, \rho (and maybe other thermodynamic quantities
 will come in).
 
+Thermal equilibrium means by definition that all the particles in a
+system (including photons, if there is radiation) have the same
+temperature T, and their velocity distribution are described by a
+Maxwellian (for particles) and the black-body spectrum (for
+radiation). This situation can only be achieved if there are
+sufficient interactions so each particle can exchange energy with the
+others (collisions among particles, and scattering/absorption for
+photon-particles interactions).
 
+:Questions:
+- *Q*: are stars in global thermal equilibrium? If they were, they would
+  have a single temperature throughout the star, does this sound
+  realistic?
+:end:
 
+*Stars are not in global thermal equilibrium*. They are in "gravothermal
+equilibrium": the hydrostatic requirement and the self-gravity
+determine the thermal state of each layer so that the pressure
+gradient can balance gravity.
 
-# material in Sec. 3.1 of Onno's lecture notes
+However, /locally/, we can still assume that there are stellar layers
+with a thickness dr\ll R that are in thermal equilibrium. For this to
+happen, this layer needs still to be much larger than the
+mean-free-path for particle-particle and particle-photon interactions.
+Let's consider the latter first:
 
+#+begin_latex
+\begin{equation}
+\lambda_{\gamma} = \frac{1}{N\sigma} \equiv \frac{1}{\kappa\rho} \ \ ,
+\end{equation}
+#+end_latex
 
+where N is the number of particles and \sigma is the interaction cross
+section, or equivalently, \rho is the mass density (appearing in the two
+equations), and \kappa is the "opacity", which is a way to measure the
+probability of a photon to interact with a certain amount of mass.
+
+:Questions:
+- *Q*: what are the units of \kappa? How can we interpret it?
+:end:
+
+Let's for simplicity assume that a star is all made of hydrogen (a
+result first derived ~100 years ago by Cecilia Payne in her PhD thesis
+in 1925). Let's also assume that it is fully ionized (i.e., protons
+and electrons are separated from each other). The very minimum opacity
+in this case is given by scattering of photons onto the electrons and
+is: \kappa = 0.2(1+X) cm^{2} g^{-1}, where X is the mass fraction hydrogen, so
+for our rough approximation, \kappa\simeq0.4. The average density of the Sun
+(which you calculated for the last homework) is <\rho_{\odot}>\simeq1.4 g
+cm^{-3}, therefore \lambda_{\gamma} \simeq 2 cm. The mean-free-path for
+particle-particle interactions is much smaller (because the cross
+section \sigma is larger), so we can conservatively ask what is the
+temperature variation across this distance:
+
+\Delta T \simeq \lambda_{\gamma} dT/dr \le \lambda_{\gamma} T_{center}/R
+
+(where we neglect T_{surface} because we expect it much lower than
+T_{center}, since we already know P_{center} \gg P_{surface}). For the Sun we
+will see that we can estimate T_{center}\simeq 10^{9} K, and we know R_{\odot},
+so \Delta T\simeq 10^{-4} K \ll T_{surf} \ll T_{center}.
+
+Thus, we can define layers of the star with \lambda_{gamma} \ll dr \ll R where
+locally the temperature variation across the layer is negligible, and
+the assumption of /local thermal equilibrium/ (LTE) holds well. (*N.B.:* you can
+revise this a posteriori once we have an EOS!)
+
+This may not be true close to the surface, where \lambda_{\gamma} progressively
+increases (because \rho decreases). There we may need to care about the
+wavelength or frequency dependance of the cross section \sigma\equiv\sigma(\nu) and
+thus the mean free path: a star has a different "surface" for
+different photon frequencies! In those layers, the assumption of LTE
+does not work.
+
+As long as we discuss regions of the star with a thickness large
+w.r.t. \lambda_{\gamma} but small enough that the T variation across them, we
+can use thermodynamics!
+
+Also, as we have seen before, the stars are usually in equilibrium and
+change very slowly. Any /local/ thermal imbalance will be restored on
+the /local/ thermal timescale, which can be estimate in multiple ways,
+but it is usually very short compared to the star evolutionary
+timescale (we will see this in more detail later). Thus the assumption
+of LTE holds locally (as the L indicates) at any time!
 
 ** Polytropic EOS
 Polytropic EOS as a special case of /barotropic/ EOS, which are all the

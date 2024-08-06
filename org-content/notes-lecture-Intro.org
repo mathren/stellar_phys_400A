@@ -141,6 +141,16 @@ and in astronomy more generally.
 This may be one of the reasons why we still use =cgs= in astronomy,
 the other one being that the constants in electromagnetism are a
 bit simpler.
+*** Solar effective temperature: T_{\odot}\simeq 6000K
+This is the "effective temperature" of the Sun, which we will discuss
+in the [[file:notes-lecture-CMD-HRD.org][next lecture]]. It is an approximation for the temperature of the
+surface below which the radiation field is isotropic - that is the
+stellar interior - and above which there is a net radial flux of
+photons - that is the stellar atmosphere (but photons can still move
+around in any direction, it's just on average there are more moving in
+the positive r direction). Stars don't really have a well defined
+"surface" and their spectra form in the atmospheric layers.
+
 *** Solar metallicity: Z_{\odot} = 0.0146 \simeq 0.02 (older but still widely used value)
 The "metallicity" is the fraction by mass of gas that is /not/ hydrogen
 nor helium. This includes many elements (e.g., C, N, O, Si) that a

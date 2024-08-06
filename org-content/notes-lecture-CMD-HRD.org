@@ -296,7 +296,6 @@ This is not a region where all the stars have the same age
 necessarily, hence the wider distribution of stars on the HRD.
 
 * Homework
-
 ** Make your own CMD
 *** Aim
 Make your own color-magnitude diagram of a selected group of stars.

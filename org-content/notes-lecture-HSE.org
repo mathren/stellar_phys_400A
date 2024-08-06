@@ -383,6 +383,12 @@ we get:
 with \rho_{avg} = M/R^{3} average density of the star.
 
 
+** Introduction to =MESA_web=
+
+- [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-input][Description of Input]]
+- [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][Submission website]]
+- Show example output
+
 * Homework
 
 Estimate and compare the dynamical timescale using multiple methods:
