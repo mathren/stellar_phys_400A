@@ -1,0 +1,7 @@
+#+title: 400A - Convection
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* Convection
+
+[[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][Preliminary hand written notes]]
