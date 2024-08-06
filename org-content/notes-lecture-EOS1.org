@@ -214,28 +214,34 @@ number of particles with momentum between p and p+dp is
 
 #+begin_latex
 \begin{equation}\label{eq:Maxwellian}
-n(p)dp = \frac{n}{(2\pi m k_{B} T)^{3/2}} exp\left(-\frac{p^{2}}{2mk_{B}T}\right)4\pi p^{2}dp \ \ ,
+n(p)dp = \frac{n}{(2\pi m k_{B} T)^{3/2}} \exp\left(-\frac{p^{2}}{2mk_{B}T}\right)4\pi p^{2}dp \ \ ,
 \end{equation}
 #+end_latex
-where on the r.h.s., n is the total density, the prefactor of the
-exponential is the normalization constant, and the exponential comes
-from assuming a Gaussian distribution of kinetic energies for each
-momentum component (you can demonstrate that a Maxwellian distribution
-is equivalent to a Gaussian in each direction p_{x}, p_{y}, p_{z}, by going to
-spherical-polar coordinates in momentum space and integrating over the
-p_{\theta}, p_{\varphi} components).
 
-From this, we can calculate the pressure of this gas.
+where on the r.h.s., n is the total
+density, the prefactor of the
+exponential is the normalization
+constant, and the exponential comes
+from assuming a Gaussian
+distribution of kinetic energies for
+each momentum component (you can
+demonstrate that a Maxwellian
+distribution is equivalent to a
+Gaussian in each direction p_{x}, p_{y},
+p_{z}, by going to spherical-polar
+coordinates in momentum space and
+integrating over the p_{\theta},
+p_{\varphi} components).
 
-
-By definition
+From this, we can calculate the
+pressure of this gas. By definition
 this will be isotropic, and so we
-can imagine to put a "box" through
-our gas (the orientation of the
-walls does not matter), and to
-determine the gas pressure we want
-the force exerted by the gas per
-unit area of the walls. By Newton's
+can imagine to put a "box" with unit
+linear size through our gas (the
+orientation of the walls does not
+matter). To determine the gas
+pressure we want the force exerted
+by the gas on the walls. By Newton's
 third law this is equal to the
 change in momentum of each gas
 particles as they hit the walls. We
@@ -255,14 +261,59 @@ only the component perpendicular to the wall changes sign. Thus
 
 #+begin_latex
 \begin{equation}
-\Delta p = 2 p cos(\theta) \mathrm{with}
-p=\sqrt{p_{x}^{2} + p_{y}^{2} +p_{z}^{2}}
+\Delta p = 2 p \cos(\theta) \mathrm{with} p=\sqrt{p_{x}^{2} + p_{y}^{2} +p_{z}^{2}}
 \end{equation}
 #+end_latex
 
 The time between two collisions of a
 particle on the same wall is
 
-\Delta t = 2L
+#+begin_latex
+\begin{equation}
+\Delta t = \frac{2L}{v\cos(\theta)} = \frac{2}{v\cos(\theta)} \ \ ,
+\end{equation}
+#+end_latex
+
+where we used the L=1 assumption.
+Thus the force exerted on this
+imaginary wall of a unit box is F=\Delta
+p/\Delta t = vp cos^{2}(\theta), dividing by
+L^{2} = 1 we obtain the contribution to
+the pressure from one particle
+coming from one specific direction \theta
+(w.r.t. the wall of the box), and
+introducing the distribution of
+particles in angle and momentum we have
+
+
+#+begin_latex
+\begin{equation}
+dP =
+vp\cos^{2}(\theta)n(\theta,p)d\theta dp \ \ ,
+\end{equation}
+#+end_latex
+
+But we can assume that the motion of
+the particles is isotropic, so
+n(\theta,p)d\theta = n(p)sin(\theta)d\theta, and thus
+
+
+#+begin_latex
+\begin{equation}
+dP = vp\cos^{2}(\theta)n(p)\sin(\theta)d\theta dp = \frac{1}{3}\int_{0}^{+\infty} n(p)p v dp \ \ ,
+\end{equation}
+#+end_latex
+which combined with Eq.
+\ref{eq:Maxwellian} gives the
+pressure.
+
+*** Non-relativistic, classical gas
+Let's consider a non-relativistic
+gas of classical particles (no
+quantum effects). Then p= mv \leftrightarrow
+v=p^{2}/2m (*N.B.:* we are considering an
+ideal gas, so each particle is
+freely moving, no potential of
+interaction!)
 
 *** The mean molecular weight
