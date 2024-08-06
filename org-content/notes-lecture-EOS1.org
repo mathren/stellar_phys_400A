@@ -196,14 +196,73 @@ together.
 In general, it is not possible to have an EOS independent of T and/or
 the composition {X_{i}}. Let's consider a /perfect gas/, that is a gas of
 particles that do interact (otherwise they could never exchange energy
-and be in thermal equilibrium!), but such as that the energy \varepsilon
-exchanged in the particle-particle interactions is much small than
-their kinetic energy (due to their thermal motion).
+and be in thermal equilibrium!), but such as that the energy exchanged
+in the particle-particle interactions is much small than their kinetic
+energy (due to their thermal motion).
 
-The equipartition theorem says that for such a gas of
+To obtain the pressure of such gas, we may need to consider the
+distribution in velocity space of these particles. Let's for a moment
+consider particles that all have the same mass m, we can then
+equivalently consider the distribution in momentum p=mv of the
+particles -- this is convenient to generalize later to relativistic
+particles, and we will see how to deal with mixtures of gases (each
+with particles m_{i}) further down.
+
+Since the particles of the ideal gas move isotropically within their
+volume, the momentum distribution of particles is a Maxwellian. The
+number of particles with momentum between p and p+dp is
+
+#+begin_latex
+\begin{equation}\label{eq:Maxwellian}
+n(p)dp = \frac{n}{(2\pi m k_{B} T)^{3/2}} exp\left(-\frac{p^{2}}{2mk_{B}T}\right)4\pi p^{2}^{} dp \ \ ,
+\end{equation}
+#+end_latex
+where on the r.h.s., n is the total density, the prefactor of the
+exponential is the normalization constant, and the exponential comes
+from assuming a Gaussian distribution of kinetic energies for each
+momentum component (you can demonstrate that a Maxwellian distribution
+is equivalent to a Gaussian in each direction p_{x}, p_{y}, p_{z}, by going to
+spherical-polar coordinates in momentum space and integrating over the
+p_{\theta}, p_{\varphi} components).
+
+From this, we can calculate the pressure of this gas.
 
 
+By definition
+this will be isotropic, and so we
+can imagine to put a "box" through
+our gas (the orientation of the
+walls does not matter), and to
+determine the gas pressure we want
+the force exerted by the gas per
+unit area of the walls. By Newton's
+third law this is equal to the
+change in momentum of each gas
+particles as they hit the walls. We
+will first consider the momentum
+change for a generic single
+particle, and then integrate over
+the distribution in Eq.
+\ref{eq:Maxwellian} to get the whole
+pressure.
 
+Let's call the imaginary wall the xy plane and assume the collisions
+to be elastic (because we are considering an ideal gas, by definition
+any exchange of energy is negligible). For a generic particle of the
+gas, it will collide with the wall at an angle \theta \in [0, \pi/2] and the
+collision will change its momentum from (p_{x}, p_{y}, p_{z}) to (p_{x}, p_{y}, -p_{z}):
+only the component perpendicular to the wall changes sign. Thus
 
+#+begin_latex
+\begin{equation}
+\Delta p = 2 p cos(\theta) \mathrm{with}
+p=\sqrt{p_{x}^{2} + p_{y}^{2} +p_{z}^{2}}
+\end{equation}
+#+end_latex
+
+The time between two collisions of a
+particle on the same wall is
+
+\Delta t = 2L
 
 *** The mean molecular weight
