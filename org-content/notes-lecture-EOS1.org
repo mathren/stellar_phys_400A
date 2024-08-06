@@ -194,7 +194,16 @@ together.
 
 ** Ideal gas
 In general, it is not possible to have an EOS independent of T and/or
-the composition {X_{i}}.
+the composition {X_{i}}. Let's consider a /perfect gas/, that is a gas of
+particles that do interact (otherwise they could never exchange energy
+and be in thermal equilibrium!), but such as that the energy \varepsilon
+exchanged in the particle-particle interactions is much small than
+their kinetic energy (due to their thermal motion).
+
+The equipartition theorem says that for such a gas of
+
+
+
 
 
 *** The mean molecular weight
