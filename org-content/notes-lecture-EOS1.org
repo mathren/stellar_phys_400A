@@ -214,7 +214,7 @@ number of particles with momentum between p and p+dp is
 
 #+begin_latex
 \begin{equation}\label{eq:Maxwellian}
-n(p)dp = \frac{n}{(2\pi m k_{B} T)^{3/2}} exp\left(-\frac{p^{2}}{2mk_{B}T}\right)4\pi p^{2}^{} dp \ \ ,
+n(p)dp = \frac{n}{(2\pi m k_{B} T)^{3/2}} exp\left(-\frac{p^{2}}{2mk_{B}T}\right)4\pi p^{2}dp \ \ ,
 \end{equation}
 #+end_latex
 where on the r.h.s., n is the total density, the prefactor of the
