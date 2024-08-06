@@ -16,14 +16,14 @@ about the problem, we can stick to writing them as a function of r:
 
 *Mass conservation:*
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:mass_cont}
 dm = 4\pi \rho r^{2} dr \ \ .
 \end{equation}
 #+end_latex
 
 *Hydrostatic equilibrium:*
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:HSE}
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
 #+end_latex
@@ -33,17 +33,31 @@ r(m)), P and \rho. So clearly we cannot yet solve them, we need some
 relation between the pressure and the density - a so-called equation
 of state (EOS).
 
+In general this is a relation between the /local/ value of pressure P,
+density \rho, and temperature T, which may also depend on the
+composition, that is the ensemble of fraction by mass of elements (X_{i}
+= mass of i-th element/total mass):
+
+#+begin_latex
+\begin{equation}\label{eq:general_EOS}
+P\equiv P(\rho, T, \{X_{i}\})
+\end{equation}
+#+end_latex
+
+For a given composition {X_{i}}, given two out of three between P, \rho, T,
+one can obtain the third using the EOS.
+
 The aim of this lecture is to introduce first simple EOS which do not
-introduce any other variables, and then go over a more appropriate
-EOS, the ideal gas EOS, which is a good approximation for most stars.
-We will see other EOS (for degenerate or radiation-dominated gas) in a
-[[./notes-lecture-EOS2][future lecture]].
+introduce any other variables (so independent of T), and then go over
+a more appropriate EOS which is a good approximation for most stars,
+the ideal gas EOS. We will see other EOS (for degenerate or
+radiation-dominated gas) in a [[./notes-lecture-EOS2][future lecture]].
 
 ** Global and local thermal equilibrium
 Before we get into the EOS though, we have to ask ourselves whether we
-can use thermodynamics/statistical mechanics to try to find some
-relationship between P, \rho (and maybe other thermodynamic quantities
-will come in).
+can use thermodynamics/statistical mechanics to describe the
+/microscopic/ properties of the stellar gas and find some relationship
+between P, \rho (and maybe other thermodynamic quantities will come in).
 
 Thermal equilibrium means by definition that all the particles in a
 system (including photons, if there is radiation) have the same
@@ -139,57 +153,42 @@ the \rho\equiv\rho(P) is in the form of a powerlaw, although usually written in
 this form:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:polytrope}
 P = K\rho^{\Gamma} \equiv K\rho^{1+1/n}\ \ ,
 \end{equation}
 #+end_latex
 
-where K is a constant, and by definition \Gamma=\partial ln P /\partial ln \rho = 1+1/n.
-Such a form of the EOS may be
+where K is a constant, and by definition \Gamma=\partial ln P /\partial ln \rho = 1+1/n. The
+form of the EOS in Eq. \ref{eq:polytrope} may seem particularly
+artificial, but it is helpful because it does not introduce any new
+variable, and thus "closes" (together with Eq. \ref{eq:mass_cont} and
+Eq. \ref{eq:HSE}) the system of equations describing a star! This is
+the system of equations used to create, for example, analytic stellar
+models (e.g., the Lane-Emden equation), which is one of the topics for
+the projects. These can be useful to initialize roughly correct
+stellar structures in multi-D hydrodynamic codes (where we cannot/do
+not want to rely on the spherical symmetry anyways).
 
+But more importantly, there are various /physical/ situations (as we will return on
+during [[./notes-lecture-EOS2.org][the second lecture on EOSs]]) in which EOS of this form occur,
+and are useful to describe real observed stars.
 
-** Kelvin-Helmholtz timescale
-This is by definition the timescale it takes a star to radiate away
-all its internal energy at a constant rate in absence of any other
-energy sources. Let's call L the "luminosity of the star", that is the
-rate at which is loses energy from radiating away photons at its
-surface. Note that L has the units of power:
+- fully convective stars (see [[notes-lecture-conv.org][relative lecture]])
+- stars supported by quantum mechanical effects such as white dwarfs
+  (WDs)
 
-[L] = [E]/[t]
-
-Then by definition:
-#+begin_latex
-\begin{equation}\label{eq:tau_KH}
-\tau_\mathrm{KH} = \frac{\mathrm{E}_\mathrm{int}}{L} \equiv
-\frac{\mathrm{E}_\mathrm{pot}}{2L} \simeq \frac{GM^{2}}{2RL} \ \ ,
-\end{equation}
-#+end_latex
-where we have used the virial theorem and set C\simeq1. We can scale all
-the quantities to Solar values and obtain:
-#+begin_latex
-\begin{equation}
-\tau_{KH} \simeq 10^{7} \mathrm{years} \times \left(\frac{M}{M_{\odot}}\right)^{2} \left(\frac{R}{R_{\odot}}\right)^{-1 }\left(\frac{L}{L_{\odot}}\right)^{-1} \ \ .
-\end{equation}
-#+end_latex
-Clearly \tau_{KH} \gg \tau_{ff}, and also \gg {human timescales}: it is hard to
-get direct observational evidence that stars are in thermal
-equilibrium. In fact, the name of this timescale comes from proposals
-in the late 19^{th} century by Kelvin and Helmholtz that the Sun may be
-out of thermal equilibrium and contracting, meaning it would have a
-lifetime of the order of \sim 10 million years -- this was in contrast
-with geological evidence (and with the timescale necessary for
-Darwinian evolution), leading to a great debate that was ultimately
-settled with the discovery of nuclear energy as a potential source of
-energy in the 1930s (by primarily Bethe and collaborators), see G.
-Shaviv "Life of stars" for a detailed discussion.
+Often, different polytropes in the form of Eq. \ref{eq:polytrope} can
+be used for different layers of the stars (piece-wise polytropes) as
+useful approximation. In this cases, it is important to ensure the
+/continuity/ of P at the points where different polytropes are stitched
+together.
 
 :Question:
-- *Q*: A star may lose energy also by means other than photons,
-  especially neutrinos. If such energy losses are important, how can
-  we modify Eq. \ref{eq:tau_KH}?
+- *Q*: why?
 :end:
 
-
 ** Ideal gas
+
+
 
 *** The mean molecular weight

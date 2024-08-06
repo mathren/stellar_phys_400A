@@ -53,6 +53,9 @@ stars "heat up as they lose energy".
 - Degenerate and non-relativistic gas
 - Degenerate and relativistic gas
 - Radiation-dominated
+
+[[./notes-lecture-EOS2.org][Notes]]
+
 *** Homework
 Derive Chandrasekhar mass?
 
