@@ -144,7 +144,7 @@ P = K\rho^{\Gamma} \equiv K\rho^{1+1/n}\ \ ,
 \end{equation}
 #+end_latex
 
-where K is a constant, and by definition \Gamma=\partial log P /\partial log \rho = 1+1/n.
+where K is a constant, and by definition \Gamma=\partial ln P /\partial ln \rho = 1+1/n.
 Such a form of the EOS may be
 
 
