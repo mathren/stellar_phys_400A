@@ -142,15 +142,20 @@ change very slowly. Any /local/ thermal imbalance will be restored on
 the /local/ thermal timescale, which can be estimate in multiple ways,
 but it is usually very short compared to the star evolutionary
 timescale (we will see this in more detail later). Thus the assumption
-of LTE holds locally (as the L indicates) at any time!
+of LTE holds locally (as the "L" indicates) at any time! Therefore,
+while we cannot really define a physically meaningful T for the entire
+star (beyond some rough averaged quantity), we can meaningfully define
+a /local/ T(r) or T(m) temperature that characterizes the gas /and/ the
+radiation at that radius/mass coordinate.
 
 ** Polytropic EOS
 Polytropic EOS as a special case of /barotropic/ EOS, which are all the
-EOSs for which /the density depends only on the pressure/:
-\rho\equiv\rho(P). These have applications beyond stellar physics (e.g., for
-atmospheric physics). A polytropic EOS is thus a barotropic EOS where
-the \rho\equiv\rho(P) is in the form of a powerlaw, although usually written in
-this form:
+EOSs for which /the density depends only on the pressure and not on
+the temperature or composition/: \rho\equiv\rho(P). These have applications
+beyond stellar physics (e.g., for atmospheric physics). A polytropic
+EOS is thus a barotropic EOS where the \rho\equiv\rho(P) is in the form of a
+powerlaw, although usually written (following the general form of Eq.
+\ref{eq:general_EOS}:
 
 #+begin_latex
 \begin{equation}\label{eq:polytrope}
@@ -188,7 +193,7 @@ together.
 :end:
 
 ** Ideal gas
-
+In general, it
 
 
 *** The mean molecular weight

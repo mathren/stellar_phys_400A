@@ -155,6 +155,17 @@ the positive r direction). Stars don't really have a well defined
 The "metallicity" is the fraction by mass of gas that is /not/ hydrogen
 nor helium. This includes many elements (e.g., C, N, O, Si) that a
 chemist would not call "metals".
+
+Often, for lack of better knowledge available, we assume that the
+distribution of metals scales with the Solar distribution, sometimes
+allowing for enhancement of \alpha particles (e.g., carbon, oxygen, neon,
+and all other elements that can approximately be thought of as N \alpha
+particles bound together where \alpha particle = nucleus of helium 4).
+
+A common notation is also [X/H] = log_{10}[(n_{X}/n_{H})/(n_{X}/n_{H})_{\odot}], and
+[Fe/H] can be used as a proxy for the metallicity.
+
+
 *** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
 :Questions:
  - *Q*: How old is the Sun? How long will it live? How do we know?

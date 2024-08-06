@@ -67,6 +67,7 @@ structure equation for non-polytropic models
 *Aim*: Discuss the main source of opacities, Eddington limit and
 modified Eddington limit
 
+
 ** <2024-09-26 Thu> - Convection
 *Aim*: Introduce convective instability, mixing length theory and its
 limitations.
@@ -82,7 +83,6 @@ recall basic quantum mechanics elements, Gamow peak
    a massive pop III star.
 
 *Aim*: introduce nuclear energy generation and nuclear timescale
-
 
 ** <2024-10-03 Tue> - Introduction to stellar evolution codes
 *Aim*: Introduce stellar evolution codes principles, MESA and MESA-web
@@ -228,3 +228,7 @@ graded, etc.
 - reviewer 2:
 
 ** <2024-12-10 Tue> - Extra TBD
+
+- Using the virial theorem determine a condition for the minimum mass
+  of a gas cloud to collapse as a function of its temperature and
+  density (hint: collapse \Leftrightarrow d^{2} I/dt^{2}<0)
