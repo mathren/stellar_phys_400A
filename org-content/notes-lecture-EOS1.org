@@ -310,10 +310,25 @@ pressure.
 *** Non-relativistic, classical gas
 Let's consider a non-relativistic
 gas of classical particles (no
-quantum effects). Then p= mv \leftrightarrow
+quantum effects). Then p= mv \Leftrightarrow
 v=p^{2}/2m (*N.B.:* we are considering an
 ideal gas, so each particle is
 freely moving, no potential of
-interaction!)
+interaction!). Carrying out the
+integral above gives
+
+#+begin_latex
+\begin{equation}
+P = n k_{B} T
+\end{equation}
+#+end_latex
 
 *** The mean molecular weight
+
+Let's now say that we have multiple
+gas mixed, for example, a gas of
+ions of various species and
+electrons. Each gas will contribute
+to the pressure:
+
+P_{tot} = \sum_{i} P_{ion i} + P_{e} = (\sum_{i}n_{i} +n_{e}) k_{B}T
