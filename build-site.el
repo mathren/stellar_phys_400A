@@ -94,7 +94,7 @@
 	     )))
 
 ;; Generate the site output
-; (org-publish-all t) ;; publish all
+;; (org-publish-all t) ;; publish all
 
 (let ((modified-files (get-modified-org-files)))
   (if modified-files

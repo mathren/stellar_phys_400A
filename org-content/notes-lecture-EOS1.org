@@ -178,7 +178,7 @@ But more importantly, there are various /physical/ situations (as we will return
 during [[./notes-lecture-EOS2.org][the second lecture on EOSs]]) in which EOS of this form occur,
 and are useful to describe real observed stars.
 
-- fully convective stars (see [[notes-lecture-conv.org][relative lecture]])
+- fully convective stars (see [[./notes-lecture-conv.org][relative lecture]])
 - stars supported by quantum mechanical effects such as white dwarfs
   (WDs)
 
@@ -193,7 +193,8 @@ together.
 :end:
 
 ** Ideal gas
-In general, it
+In general, it is not possible to have an EOS independent of T and/or
+the composition {X_{i}}.
 
 
 *** The mean molecular weight
