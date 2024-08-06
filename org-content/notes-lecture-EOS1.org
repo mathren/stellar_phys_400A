@@ -295,12 +295,12 @@ P = n k_{B} T
 \end{equation}
 #+end_latex
 
-*** The mean molecular weight
+*** Mixture of (non-relativistic, classical) gases
 Let's now say that we have multiple gas mixed, for example, a gas of
 ions of various species and electrons. Each gas will contribute to the
-pressure: P_{tot} = \sum_{i} P_{ion i} + P_{e} = (\sum_{i}n_{i} +n_{e}) k_{B}T, where n_{i} is the
-number density of the ions i, which have mass m_{u} A_{i} with m_{u} the /atomic
-mass unit/:
+pressure: P_{tot} = P_{ion, tot} + P_{e} = \sum_{i} P_{ion i} + P_{e} = (\sum_{i}n_{i} +n_{e}) k_{B}T,
+where n_{i} is the number density of the ions i, which have mass m_{u} A_{i}
+with m_{u} the /atomic mass unit/:
 
 #+begin_latex
 \begin{equation}
@@ -310,4 +310,75 @@ m_{u} = 1 / N_{A} \simeq 1.66 \times 10^{-24} \,\mathrm{g} \ \ .
 
 Thus, we can relate the number density of the ions of species i with
 the mass density that already appears in the equations we already have
-with n_{i} = X_{i}\rho/(A_{i} m_{u})
+with n_{i} = X_{i}\rho/(A_{i} m_{u}).
+
+Thus we can re-write the total contribution of the ions defining the
+ion /mean molecular weight/ such that:
+
+#+begin_latex
+\begin{equation}
+\frac{1}{\mu_\mathrm{ion}} = \sum_{i}\frac{X_{i}\rho}{A_{i}} \ \ .
+\end{equation}
+#+end_latex
+
+Similarly, we can define an electron mean molecular weight noticing
+that to maintain a total charge of zero per unit volume, since each
+ion carries charge +Z_{i}e and each electron as charge -e: (\sum_{i} Z_{i}n_{i} -
+n_{e})e = 0. Thus
+
+#+begin_latex
+\begin{equation}
+\frac{1}{\mu_\mathrm{e}} = \sum_{i}\frac{Z_{i}X_{i}\rho}{A_{i}} \ \ .
+\end{equation}
+#+end_latex
+
+and we can define a combined mean molecular weight:
+
+#+begin_latex
+\begin{equation}
+\frac{1}{\mu} = \frac{1}{\mu_{ion}}+\frac{1}{\mu_{e}} \ \ ,
+\end{equation}
+#+end_latex
+So that the total pressure of a mixture of ideal, classical and
+non-relativistic gas is
+
+#+begin_latex
+\begin{equation}\label{eq:ideal_gas_EOS}
+P = \frac{\rho}{\mu m_{u}}k_{B}T
+\end{equation}
+#+end_latex
+
+*** Physical interpretation of \mu
+The /mean molecular weight/ we have introduced above may seem a bit
+arbitrary, but it has a clear physical interpretation: it is the
+average number of particles per unit atomic mass m_{u}.
+
+For a fully ionized gas (i.e., where every ion is stripped of /all/ its
+electrons):
+
+#+begin_latex
+\begin{equation}
+\mu = \frac{1}{\sum_{i}X_{i}\left(\frac{Z_{i}+1}{A_{i}}\right)} \ \ ,
+\end{equation}
+#+end_latex
+In fact, for every i-th species that corresponds to a fraction X_{i} of
+the mass, that is X_{i}/A_{i} in number of density, we have Z_{i} electrons
+plus one nucleus that contribute. This approximation is usually good
+in the stellar interior, but as one moves outwards in the star, P
+decreases, therefore by Eq. \ref{eq:ideal_gas_EOS} T decreases, and
+elements recombine, meaning the term Z_{i} +1 is reduced. This can have
+important consequences in certain layers of the stars.
+
+We can further simplify the expression for \mu by noting that for
+hydrogen (Z_{i} +1)/A_{i} = 2, for helium (specifically for the stable
+isotope he4) (Z_{i} +1)/A_{i} = 3/4, and for the vast majority of stable
+metals Z_{i} \gg 1 and Z_{i} \sim A_{i}/2. Therefore, for fully ionized gas, we
+can simplify the mean molecular weight to:
+
+#+begin_latex
+\begin{equation}
+\mu = \frac{1}{\frac{X}{2} + \frac{3Y}{4} + \frac{Z}{2}} \ \ ,
+\end{equation}
+#+end_latex
+where X, Y, Z are the mass fraction of hydrogen, helium, and the
+metallicity, respectively.
