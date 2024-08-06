@@ -3,8 +3,8 @@
 #+email: mrenzo@arizona.edu
 
 * Equation of state 1/2
-*Materials*: Chapter 3 of Onno Pols' lecture notes, Sec. 2.2 of
-Kippenhahn's book, Sec. 2-4 of Clayton's book.
+*Materials*: Chapter 3 of Onno Pols' lecture notes, Sec. 2.2 and Chapter
+13 of Kippenhahn's book, Sec. 2-4 of Clayton's book.
 
 ** Summary of where we are
 
@@ -336,7 +336,7 @@ and we can define a combined mean molecular weight:
 
 #+begin_latex
 \begin{equation}
-\frac{1}{\mu} = \frac{1}{\mu_{ion}}+\frac{1}{\mu_{e}} \ \ ,
+\frac{1}{\mu} = \frac{1}{\mu_\mathrm{ion}_{}}+\frac{1}{\mu_{e}} \ \ ,
 \end{equation}
 #+end_latex
 So that the total pressure of a mixture of ideal, classical and
@@ -347,6 +347,11 @@ non-relativistic gas is
 P = \frac{\rho}{\mu m_{u}}k_{B}T
 \end{equation}
 #+end_latex
+
+The introduction of the /mean molecular weight/ allows us to treat a
+mixture of gases (assumed to be in LTE) as a single gas! *N.B.:* this
+holds as long as every species satisfies our assumption of ideal,
+non-relativistic, classical gas.
 
 *** Physical interpretation of \mu
 The /mean molecular weight/ we have introduced above may seem a bit
@@ -362,7 +367,7 @@ electrons):
 \end{equation}
 #+end_latex
 In fact, for every i-th species that corresponds to a fraction X_{i} of
-the mass, that is X_{i}/A_{i} in number of density, we have Z_{i} electrons
+the total mass, that is X_{i}/A_{i} in number density, we have Z_{i} electrons
 plus one nucleus that contribute. This approximation is usually good
 in the stellar interior, but as one moves outwards in the star, P
 decreases, therefore by Eq. \ref{eq:ideal_gas_EOS} T decreases, and
@@ -370,14 +375,19 @@ elements recombine, meaning the term Z_{i} +1 is reduced. This can have
 important consequences in certain layers of the stars.
 
 We can further simplify the expression for \mu by noting that for
-hydrogen (Z_{i} +1)/A_{i} = 2, for helium (specifically for the stable
-isotope he4) (Z_{i} +1)/A_{i} = 3/4, and for the vast majority of stable
-metals Z_{i} \gg 1 and Z_{i} \sim A_{i}/2. Therefore, for fully ionized gas, we
-can simplify the mean molecular weight to:
+hydrogen (Z_{i} +1)/A_{i} = 2 (i.e., hydrogen contributes 2 particles per
+unit atomic mass, one proton and one electron), for helium (Z_{i} +1)/A_{i}
+= 3/4 (we are actually considering only the stable isotope of helium
+that contributes 3 particles every 4 atomic mass units, one nucleus
+and 2 electrons), and for the vast majority of stable metals Z_{i} \gg 1
+and Z_{i} \sim A_{i}/2 (i.e., most metals contribute per each A_{i} atomic mass
+units roughly A_{i}/2 particles which are the electrons that are
+typically half as many as the nucleons). Therefore, for fully ionized
+gas, we can simplify the mean molecular weight to:
 
 #+begin_latex
 \begin{equation}
-\mu = \frac{1}{\frac{X}{2} + \frac{3Y}{4} + \frac{Z}{2}} \ \ ,
+\mu \simeq \frac{1}{2X + \frac{3Y}{4} + \frac{Z}{2}} \ \ ,
 \end{equation}
 #+end_latex
 where X, Y, Z are the mass fraction of hydrogen, helium, and the
