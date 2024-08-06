@@ -387,7 +387,7 @@ problem!
 
 * Homework
 
-** Exercise 7.4 on Carrol & Ostie
+** Exercise 7.4 on Carroll & Ostie
 
  Sirius is a visual binary with a period of 49.94 yr. Its measured
  trigonometric parallax is 0.37921" \pm 0.00158" and, assuming that the
@@ -405,7 +405,7 @@ problem!
      100 K. Estimate its radius, and compare your answer to the radii
      of the Sun and Earth. What kind of star is that hot with that radius?
 
-** Exercise 7.6 on Carrol& Ostie
+** Exercise 7.6 on Carroll & Ostie
  From the light and velocity curves of an eclipsing, spectroscopic
  binary star system, it is determined that the orbital period is 6.31
  yr, and the maximum radial velocities of Stars A and B are 5.4 km s^{-1}
