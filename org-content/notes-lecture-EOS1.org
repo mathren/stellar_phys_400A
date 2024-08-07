@@ -304,7 +304,7 @@ with m_{u} the /atomic mass unit/:
 
 #+begin_latex
 \begin{equation}
-m_{u} = 1 / N_{A} \,\,mathrm{g} \simeq 1.66 \times 10^{-24} \,\mathrm{g} \ \ .
+m_{u} = 1 / N_{A} \,\mathrm{g} \simeq 1.66 \times 10^{-24} \,\mathrm{g} \ \ .
 \end{equation}
 #+end_latex
 
@@ -314,7 +314,8 @@ with n_{i} = X_{i}\rho/(A_{i} m_{u}).
 
 Thus we can re-write the total contribution of the ions defining the
 ion /mean molecular weight/ such that \mu_{ion} \times m_{u }= "average mass of
-ions":
+ions", therefore n_{ion} = \sum_{i} n_{i} = \sum_{i} X_{i}\rho/(A_{i}m_{u}) \equiv
+\rho/(\mu_{ion}mu_{}) and:
 
 #+begin_latex
 \begin{equation}
