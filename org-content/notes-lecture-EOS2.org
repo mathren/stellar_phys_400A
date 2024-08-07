@@ -22,6 +22,34 @@ will see later]], QM effects can matter also at extremely low
 temperatures and/or high densities, which can be encountered in
 stellar physics.
 
+From the wave-nature of the solutions of Schroedinger's equation, we
+know that there is a limit on the precision to which position and
+velocity of a particle can be known ("Heisenberg's uncertainty
+principle"): \Delta x \Delta p \ge h with h Planck's constant. This naturally
+translates in three spatial dimension to
+
+#+begin_latex
+\begin{equation}
+\Delta x \Delta y \Delta z \Delta p_{x} \Delta p_{y} \Delta p_{z} \ge h^{3} \ \,
+\end{equation}
+#+end_latex
+
+where h^{3} is the volume of a quantized cell in phase-space! Thus the
+number of particles with momentum between p+dp within a volume dV is
+
+#+begin_latex
+\begin{equation}
+f(p)dpdV = g \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
+\end{equation}
+#+end_latex
+In the equation above, the factor g allows to account for "internal
+degrees of freedom" of particles, e.g., their spin, polarization, or
+isospin. The key point here is f(p)\propto p^{2} to satisfy QM.
+
+Let's start by considering a non-extreme situation. Then the particles
+are distributed according to a Maxwellian distribution,
+
+
 
 *** Non-relativistic gas
 

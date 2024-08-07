@@ -186,7 +186,7 @@ rewrite this as
 
 #+begin_latex
 \begin{equation}
-\mathrm{E}_\mathrm{tot} = \mathrm{E}_\mathrm{pot}\frac{3\Gamma-4}{3(\Gamma-1)} \equiv -(3\Gamma-4)E_{int}\ \ .
+\mathrm{E}_\mathrm{tot} = \mathrm{E}_\mathrm{pot}\frac{3\Gamma-4}{3(\Gamma-1)} \equiv -(3\Gamma-4)\mathrm{E}_\mathrm{int}\ \ .
 \end{equation}
 #+end_latex
 Again, for a monoatomic gas with \Gamma=5/3 we recover E_{tot} = E_{pot}/2, the
@@ -335,7 +335,8 @@ Shaviv "Life of stars" for a detailed discussion.
 
 Using the virial theorem:
 - find a relation between the average sound speed in the star and the
-  escape velocity
+  escape velocity (assume the star is made of ideal gas of temperature
+  <T>).
 - demonstrate that if a binary loses instantaneously an amount of mass
   greater than half the total mass of the binary, \Delta M \ge (M_{1}+M_{2})/2,
   then the orbit is unbound.

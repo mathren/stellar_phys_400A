@@ -32,32 +32,32 @@ as we may be able to accommodate it.
 10. Algol Paradox
 11. Common envelope evolution
 12. Roche model and mass transfer
-13. Globular clusters: CMD
+13. Clusters: globular and open
 14. Globular clusters: dynamics
-15. Formation of stars
-16. Stars in galaxies: Chemical evolution
-17. Stars in galaxies: Mechanical feedback
-18. Stars in galaxies: Radiative feedback
-19. Nucleosynthesis: s-process
-20. Nucleosynthesis: r-process
-21. X-ray binaries
-22. Thermonuclear explosion in WDs
-23. Neutron star structure
-24. The Eddington limit
-25. Convective boundary mixing
-26. Nuclear reaction chains
-27. Stellar winds: Parker model and its updates
-28. Stellar winds: radiatively driven
-29. Analytic stellar models: Lane-Emden equation
-30. Analytic stellar models: Eddington standard model
-31. Novae
-32. Supermassive stars
-33. Stellar neutrinos
-34. Pair instability supernovae
-35. Triple systems: Kozai-Lidov-von Zeipel oscillations
-36. Formation of gravitational wave progenitors: isolated binary evolution
-37. Formation of gravitational wave progenitors: dynamical channels
-38. Orbital architectures of (star+star) binaries in the Universe
+16. Formation of stars
+17. Stars in galaxies: Chemical evolution
+18. Stars in galaxies: Mechanical feedback
+19. Stars in galaxies: Radiative feedback
+20. Nucleosynthesis: s-process
+21. Nucleosynthesis: r-process
+22. X-ray binaries
+23. Thermonuclear explosion in WDs
+24. Neutron star structure
+25. The Eddington limit
+26. Convective boundary mixing
+27. Nuclear reaction chains
+28. Stellar winds: Parker model and its updates
+29. Stellar winds: radiatively driven
+30. Analytic stellar models: Lane-Emden equation
+31. Analytic stellar models: Eddington standard model
+32. Novae
+33. Supermassive stars
+34. Stellar neutrinos
+35. Pair instability supernovae
+36. Triple systems: Kozai-Lidov-von Zeipel oscillations
+37. Formation of gravitational wave progenitors: isolated binary evolution
+38. Formation of gravitational wave progenitors: dynamical channels
+39. Orbital architectures of (star+star) binaries in the Universe
 
 ** Recommended sources
 You are encouraged to do your own research, but in the final
