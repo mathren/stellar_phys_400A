@@ -304,7 +304,7 @@ with m_{u} the /atomic mass unit/:
 
 #+begin_latex
 \begin{equation}
-m_{u} = 1 / N_{A} \simeq 1.66 \times 10^{-24} \,\mathrm{g} \ \ .
+m_{u} = 1 / N_{A} \,\,mathrm{g} \simeq 1.66 \times 10^{-24} \,\mathrm{g} \ \ .
 \end{equation}
 #+end_latex
 
@@ -313,7 +313,8 @@ the mass density that already appears in the equations we already have
 with n_{i} = X_{i}\rho/(A_{i} m_{u}).
 
 Thus we can re-write the total contribution of the ions defining the
-ion /mean molecular weight/ such that:
+ion /mean molecular weight/ such that \mu_{ion} \times m_{u }= "average mass of
+ions":
 
 #+begin_latex
 \begin{equation}
@@ -336,7 +337,7 @@ and we can define a combined mean molecular weight:
 
 #+begin_latex
 \begin{equation}
-\frac{1}{\mu} = \frac{1}{\mu_\mathrm{ion}_{}}+\frac{1}{\mu_{e}} \ \ ,
+\frac{1}{\mu} = \frac{1}{\mu_\mathrm{ion}}+\frac{1}{\mu_{e}} \ \ ,
 \end{equation}
 #+end_latex
 So that the total pressure of a mixture of ideal, classical and
@@ -392,3 +393,8 @@ gas, we can simplify the mean molecular weight to:
 #+end_latex
 where X, Y, Z are the mass fraction of hydrogen, helium, and the
 metallicity, respectively.
+
+
+* Homework
+
+ -
