@@ -32,11 +32,13 @@ stellar physics.
 ** Total pressure in a generic star
 
 #+begin_latex
+\begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T +
-P_{degeneracy} + \frac{1}{3}aT^{4}  \ \ ,
+P_{QM} + \frac{1}{3}aT^{4}  \ \ ,
+\end{equation}
 #+end_latex
-where we have decomposed the gas pressure into a degeneracy term and a
-classical term.
+where we have decomposed the gas pressure into a degeneracy term due
+to quantum effects and a classical term.
 
 
 * Homework
@@ -44,4 +46,5 @@ classical term.
 Derive Chandrasekhar mass?
 
 - Using the virial theorem, discuss which pressure term is more
-  important as a function of the mass (and radius) of stars.
+  important in the total pressure as a function of the mass (and
+  radius) of stars.
