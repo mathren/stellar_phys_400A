@@ -315,7 +315,7 @@ with n_{i} = X_{i}\rho/(A_{i} m_{u}).
 Thus we can re-write the total contribution of the ions defining the
 ion /mean molecular weight/ such that \mu_{ion} \times m_{u }= "average mass of
 ions", therefore n_{ion} = \sum_{i} n_{i} = \sum_{i} X_{i}\rho/(A_{i}m_{u}) \equiv
-\rho/(\mu_{ion}mu_{}) and:
+\rho/(\mu_{ion}m_{u}) and:
 
 #+begin_latex
 \begin{equation}
@@ -351,9 +351,10 @@ P = \frac{\rho}{\mu m_{u}}k_{B}T
 #+end_latex
 
 The introduction of the /mean molecular weight/ allows us to treat a
-mixture of gases (assumed to be in LTE) as a single gas! *N.B.:* this
-holds as long as every species satisfies our assumption of ideal,
-non-relativistic, classical gas.
+mixture of gases (assumed to be in LTE) as a single gas!
+
+*N.B.:* this holds as long as every species satisfies our assumption of
+ideal, non-relativistic, classical gas.
 
 *** Physical interpretation of \mu
 The /mean molecular weight/ we have introduced above may seem a bit
@@ -395,7 +396,16 @@ gas, we can simplify the mean molecular weight to:
 where X, Y, Z are the mass fraction of hydrogen, helium, and the
 metallicity, respectively.
 
-
 * Homework
-
- -
+- We have discussed that the internal layers of the star are in LTE
+  using an argument based on the photons mean free path \lambda_{\gamma}.
+  Assuming a star of constant density (use the mean density for
+  this!), pure hydrogen composition, and that electron scattering is
+  the dominant interaction of the photons in the stellar interior,
+  estimate, using one-dimensional random-walk arguments estimate:
+  1. how many scatterings a photon created in the center of the Sun
+     will experience before coming out at the surface?
+  2. Knowing that photons travel at the speed of light c and assuming
+     scatterings to be instantaneous, what is the photon diffusion
+     timescale throughout the star? How does it compare to the
+     dynamical timescale?
