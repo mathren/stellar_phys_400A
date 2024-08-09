@@ -391,7 +391,34 @@ show you how you can obtain numerical stellar models.
 
 - [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-input][Description of Input]]
 - [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][Submission website]]
-- Show example output
+- Example output:
+  1. Download the zip file from the email you receive when the
+     calculation is done
+  2. Unzip the file, the content has a =*.mp4= video with the evolution
+     of some quantities (depending on the star you asked, it may be
+     very short), an =input.txt= file that reminds you of what you put
+     into =MESA-web=, a =trimmed_history.data=  and a few =profile*.data=.
+  3. You can inspect the =txt= and =data= files using your text editor.
+
+     The =trimmed_history.data= contains in each column global variables
+     of the star (e.g., surface luminosity, outer radius, etc.) and
+     each row correspond to a specific timestep. This is what you can
+     use to plot, for example, an Herzsprung-Russell diagram using the
+     columns =log_L= and =log_Teff=.
+
+     The =profile*.data= files contain each a snapshot of the internal
+     structure of the star you simulated at fixed time, so each column
+     corresponds to a quantity that takes different values at
+     different locations in the star (e.g., Lagrangian mass
+     coordinate, density, pressure, opacity). Each row corresponds to
+     a "mesh point", that is a discretized spatial coordinate (we will
+     see later on how codes solve the stellar structure equations)
+
+     Refer to the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-output][MESA-web output page]] for a full description of the
+     output.
+  4. /If/ you want you can use the python module [[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][mesa_web.py]] provided by
+     =MESA_web= to read the output in the =*.data=, but remember these are
+     just plain text, so you can also write your own.
 
 * Homework
 - Calculate the Keplerian period of a point mass orbiting at the

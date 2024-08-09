@@ -409,3 +409,4 @@ metallicity, respectively.
      scatterings to be instantaneous, what is the photon diffusion
      timescale throughout the star? How does it compare to the
      dynamical timescale?
+- Run with =MESA-web= a 0.1M_{\odot} star up to 5Gyrs of age
