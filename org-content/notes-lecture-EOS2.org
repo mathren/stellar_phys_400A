@@ -8,7 +8,7 @@ Kippenhahn's book.
 
 In the [[./notes-lecture-EOS1.org][previous lecture on EOS]] we have dealt with a classical,
 non-relativistic, ideal gas. This is an accurate description of the
-stellar gas in most, but importantly not /all/ the physical cases.
+stellar gas in most, but not /all/ the astrophysical cases.
 
 We will consider now cases that don't verify the hypothesis we took
 previously and discuss briefly some stars for which we need to go

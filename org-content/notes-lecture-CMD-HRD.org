@@ -242,6 +242,12 @@ core-collapse and thus the point where it will go supernova
 #+ATTR_HTML: :alt 15M_{\odot} single stellar evolution track
 [[./images/15Msun_thesis.png]]
 
+:Questions:
+- *Q*: on this diagram, how does a line for stars at constant radius
+  look like?
+:end:
+
+
 ** Putting the two together
 
 One can also overplot theoretical tracks from computer-simulated
@@ -294,6 +300,7 @@ how masses can be measured only in some special cases.
 
 This is not a region where all the stars have the same age
 necessarily, hence the wider distribution of stars on the HRD.
+
 
 * Homework
 ** Make your own CMD

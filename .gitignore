@@ -19,3 +19,6 @@ html-content/*.html
 
 # ignore MESA-web results
 MESA-web/*
+# but force python scripts
+!MESA-web/python/*.py
+!MESA-web/python/matplotlibrc
