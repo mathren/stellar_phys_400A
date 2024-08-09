@@ -95,15 +95,24 @@ particles making up the star, which can be either
 
   #+begin_latex
   \begin{equation}
-   f_{}_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon-\mu)/k_{B}T}-1} \ \,
+   f_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon-\mu)/k_{B}T}-1} \ \,
   \end{equation}
   #+end_latex
 
   which can be larger than 1, meaning more than one boson can occupy
   the same energy level.
 
+  The total number of particles with momentum between p and p+dp is
+  thus given by f(\varepsilon(p))g(p)dp for an appropriate choice of f depending
+  on the particle considered (f=f_{FD} or f=f_{BE}). To determine the
+  chemical potential \mu one can impose the normalization following
+  from the total number density of particles:
 
-  To determine the chemical potential
+  #+begin_latex
+  \begin{equation}
+  n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp
+  \end{equation}
+  #+end_latex
 
 *** Non-relativistic gas
 
