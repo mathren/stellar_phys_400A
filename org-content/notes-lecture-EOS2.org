@@ -79,7 +79,7 @@ particles making up the star, which can be either
 
   #+begin_latex
   \begin{equation}
-   f_{FD}(\varepsilon) = \frac{1}{e^{(\varepsilon-\mu)/k_{B}T}+1} \le 1 \ \,
+   f_{FD}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T - \eta)}+1} \le 1 \ \,
   \end{equation}
   #+end_latex
 
@@ -95,12 +95,13 @@ particles making up the star, which can be either
 
   #+begin_latex
   \begin{equation}
-   f_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon-\mu)/k_{B}T}-1} \ \,
+   f_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T-\eta)}-1} \ \,
   \end{equation}
   #+end_latex
 
-  which can be larger than 1, meaning more than one boson can occupy
-  the same energy level.
+  which can be \ge 1, meaning more than one boson can occupy the same
+  energy level (e.g., in the extreme case of a Bose-Einstein
+  condensate all particles occupy the level with lowest \varepsilon).
 
   The total number of particles with momentum between p and p+dp is
   thus given by f(\varepsilon(p))g(p)dp for an appropriate choice of f depending
@@ -110,10 +111,11 @@ particles making up the star, which can be either
 
   #+begin_latex
   \begin{equation}
-  n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp
+  n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ .
   \end{equation}
   #+end_latex
 
+  We know these
 *** Non-relativistic gas
 
 *** Relativistic gas
