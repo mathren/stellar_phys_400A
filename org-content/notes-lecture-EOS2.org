@@ -35,21 +35,75 @@ translates in three spatial dimension to
 #+end_latex
 
 where h^{3} is the volume of a quantized cell in phase-space! Thus the
-number of particles with momentum between p+dp within a volume dV is
+available number of quantized states with momentum between p+dp within
+a volume dV is
 
 #+begin_latex
 \begin{equation}
-f(p)dpdV = g \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
+g(p)dpdV = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
 \end{equation}
 #+end_latex
-In the equation above, the factor g allows to account for "internal
+In the equation above, the factor g_{s} allows to account for "internal
 degrees of freedom" of particles, e.g., their spin, polarization, or
 isospin. The key point here is f(p)\propto p^{2} to satisfy QM.
 
+
 Let's start by considering a non-extreme situation. Then the particles
-are distributed according to a Maxwellian distribution,
+are distributed according to a Maxwellian distribution n(p), but
+whenever n(p) > g(p)^{}, we know this is going to violate QM!
+
+From the [[file:notes-lecture-EOS1.org::*Ideal gas][previous lecture on EOS]] we know that the Maxwellian
+distribution is n(p)\propto n/T^{3/2} exp(-p^{2}/2mk_{B} T)p^{2}, so n(p)/g(p)\propto n T^{-3/2}^{}
+exp(-p^{2}^{}/2mk_{B}T). We can see that:
+
+- at fixed temperature T, for very high number densities n, this ratio
+  is going to be larger than one in violation of QM
+- at fixed number density n, for very low temperatures, this ratio
+  will be larger than 1 in violation of QM (because every term in the
+  Taylor expansion of the exponential is proportional to a negative
+  power of T).
+
+Thus, we can expect that for very "cold" stars (we will define what is
+the relevant scale here) or vey dense stars the ideal gas EOS will not
+be appropriate.
+
+To account for QM effects, we need to consider the nature of the
+particles making up the star, which can be either
+
+- *Fermions* with semi-integer spin, such as electrons, protons,
+  neutrons (and protons and neutrons can be seen as two isospin state
+  of a generic nucleon, this is useful for example to discuss the
+  interior composition of neutron stars). In this case, the
+  distribution function that determines the occupation of quantum
+  states of energy between \varepsilon and \varepsilon+d\varepsilon is the Fermi-Dirac distribution:
+
+  #+begin_latex
+  \begin{equation}
+   f_{FD}(\varepsilon) = \frac{1}{e^{(\varepsilon-\mu)/k_{B}T}+1} \le 1 \ \,
+  \end{equation}
+  #+end_latex
+
+  where \mu is the /chemical potential/ (*N.B.:* do not confuse this with
+  the mean molecular weight which has the same symbol, the chemical
+  potential has the dimension of an energy, while the mean molecular
+  weight is a dimensionless number!) and \varepsilon\equiv\varepsilon(p). The fact that this is
+  \le 1 is an expression of Pauli's exclusion principle, no two fermions
+  can occupy the same quantum energy level.
+
+- *Bosons* with integer spin, such as photons, or \alpha particles. In this
+  case the relevant distribution is the Bose-Einstein's distribution:
+
+  #+begin_latex
+  \begin{equation}
+   f_{}_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon-\mu)/k_{B}T}-1} \ \,
+  \end{equation}
+  #+end_latex
+
+  which can be larger than 1, meaning more than one boson can occupy
+  the same energy level.
 
 
+  To determine the chemical potential
 
 *** Non-relativistic gas
 

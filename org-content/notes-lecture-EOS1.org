@@ -189,7 +189,7 @@ useful approximation. In this cases, it is important to ensure the
 together.
 
 :Question:
-- *Q*: why?
+- *Q*: why do we want P to be a continuous function in stars?
 :end:
 
 ** Ideal gas
@@ -218,7 +218,7 @@ n(p)dp = \frac{n}{(2\pi m k_{B} T)^{3/2}} \exp\left(-\frac{p^{2}}{2mk_{B}T}\righ
 \end{equation}
 #+end_latex
 
-where on the r.h.s., n is the total density, the prefactor of the
+where on the r.h.s., n is the total number density, the prefactor of the
 exponential is the normalization constant, and the exponential comes
 from assuming a Gaussian distribution of kinetic energies for each
 momentum component (you can demonstrate that a Maxwellian distribution

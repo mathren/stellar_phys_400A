@@ -57,9 +57,6 @@ stars "heat up as they lose energy".
 
 [[./notes-lecture-EOS2.org][Notes]]
 
-*** Homework
-Derive Chandrasekhar mass?
-
 ** <2024-09-19 Tue> - Radiative energy transport & conduction
 *Aim*: Energy transport in radiative layers and the third stellar
 structure equation for non-polytropic models
@@ -79,10 +76,6 @@ limitations.
 ** <2024-10-01 Thu> - Nuclear energy generation
 *Aim*: Introduce basics of nuclear energy generation through fusion,
 recall basic quantum mechanics elements, Gamow peak
-*** Homework idea
- - compare structure of a star going through pp chain, CNO cycle, and
-   a massive pop III star.
-
 *Aim*: introduce nuclear energy generation and nuclear timescale
 
 [[file:materials/nuclear_reaction_rates.pdf][Notes (preliminary)]]
@@ -96,9 +89,12 @@ recall basic quantum mechanics elements, Gamow peak
 
 ** <2024-10-10 Tue> - Presentation expectations
 *Aim*: Discuss what is expected for the presentations, how they will be
-graded, etc.
+graded, etc. how to provide useful feedback during peer-reviewing.
+
  - Discuss structure: introduce problem, show state-of-the-art
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
+
+
 
 ** <2024-10-15 Thu> - Radiative transfer
 - line formation region
