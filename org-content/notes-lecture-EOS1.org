@@ -409,4 +409,8 @@ metallicity, respectively.
      scatterings to be instantaneous, what is the photon diffusion
      timescale throughout the star? How does it compare to the
      dynamical timescale?
-- Run with =MESA-web= a 0.1M_{\odot} star up to 5Gyrs of age
+- Run with =MESA-web= a 0.3M_{\odot} star up to 10^{8} yrs, and plot the
+  P(\rho) profile of the star at this age, it may be useful to plot it on
+  a log-log plot. Do you think it is possible to find a good
+  approximation of this profile with a polytropic relation? Note that
+  =MESA-web= does *not* assume a poytropic EOS!
