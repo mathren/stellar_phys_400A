@@ -53,8 +53,8 @@ are distributed according to a Maxwellian distribution n(p), but
 whenever n(p) > g(p)^{}, we know this is going to violate QM!
 
 From the [[file:notes-lecture-EOS1.org::*Ideal gas][previous lecture on EOS]] we know that the Maxwellian
-distribution is n(p)\propto n/T^{3/2} exp(-p^{2}/2mk_{B} T)p^{2}, so n(p)/g(p)\propto n T^{-3/2}^{}
-exp(-p^{2}^{}/2mk_{B}T). We can see that:
+distribution is n(p)\propto n/mT^{3/2} exp(-p^{2}/2mk_{B} T)p^{2}, so n(p)/g(p)\propto n
+m^{-1}T^{-3/2}exp(-p^{2}^{}/2mk_{B}T). We can see that:
 
 - at fixed temperature T, for very high number densities n, this ratio
   is going to be larger than one in violation of QM
@@ -75,26 +75,28 @@ particles making up the star, which can be either
   of a generic nucleon, this is useful for example to discuss the
   interior composition of neutron stars). In this case, the
   distribution function that determines the occupation of quantum
-  states of energy between \varepsilon and \varepsilon+d\varepsilon is the Fermi-Dirac distribution:
+  states of energy between \varepsilon\equiv\varepsilon(p) and \varepsilon+d\varepsilon is the Fermi-Dirac
+  distribution:
 
   #+begin_latex
-  \begin{equation}
+  \begin{equation}\label{eq:Fermi-Dirac}
    f_{FD}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T - \eta)}+1} \le 1 \ \,
   \end{equation}
   #+end_latex
 
-  where \mu is the /chemical potential/ (*N.B.:* do not confuse this with
-  the mean molecular weight which has the same symbol, the chemical
-  potential has the dimension of an energy, while the mean molecular
-  weight is a dimensionless number!) and \varepsilon\equiv\varepsilon(p). The fact that this is
-  \le 1 is an expression of Pauli's exclusion principle, no two fermions
-  can occupy the same quantum energy level.
+  where \eta=\mu/k_{b}T is the "degeneracy parameter" dependent on the
+  /chemical potential \mu/ (*N.B.:* do not confuse this with the mean
+  molecular weight which has the same symbol, the chemical potential
+  has the dimension of an energy, while the mean molecular weight is a
+  dimensionless number!) and the temperature. The fact that this is \le 1 is an
+  expression of Pauli's exclusion principle, no two fermions can
+  occupy the same quantum energy level.
 
 - *Bosons* with integer spin, such as photons, or \alpha particles. In this
   case the relevant distribution is the Bose-Einstein's distribution:
 
   #+begin_latex
-  \begin{equation}
+  \begin{equation}\label{eq:Bose-Einstein}
    f_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T-\eta)}-1} \ \,
   \end{equation}
   #+end_latex
@@ -115,12 +117,46 @@ particles making up the star, which can be either
   \end{equation}
   #+end_latex
 
-  We know these
-*** Non-relativistic gas
+  Let's now consider a gas of electrons. These are the particles in
+  the ionized gas of the star that will first start feeling QM
+  effects, since m_{e} \ll m_{ion} (in fact m_{e} \simeq m_{proton}/2000),
+  therefore, for a given temperature and density, they have much
+  higher momentum p.
 
-*** Relativistic gas
+  In practice, the pressure provided by the /ions/ never becomes
+  affected by QM directly: because of the m^{-1} term in the
+  Maxwell-Boltzmann distribution, this would require densities so high
+  that the ions would not exist as ions anymore. Instead the high
+  density would allow for electron captures onto the protons of the
+  ions turning them in neutrons (e^{-} + p \rightarrow n + \nu_{e}). As we will see this
+  is what happens at the very end of the evolution of massive stars.
+  However, the pressure provided by the neutrons resulting from this
+  process does depend on QM effects and it is what sustains the
+  structure of the neutron stars!
+
+  Because the pressure term from electrons (which in the ideal gas EOS
+  is accounted for thanks to our definition of the mean molecular
+  weight \mu) changes because of QM effects first, let's now consider a
+  gas made of electrons only. These particles have spin 1/2, thus they
+  are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and q_{s} = 2 in it
+  (each quantum cell of the phase space 4\pi p^{2}dp dV can be occupied by
+  2 electrons, one with spin up and one with spin down).
+
+*** Fully degenerate electron gas
+
+**** Non-relativistic electron gas
+
+  In this case \varepsilon = p^{2}/2m is the energy of the electrons (still ideal
+  gas), thus from the previous lecture on EOS we have:
+
+**** Relativistic electron gas
+
+*** Partial degeneracy
 
 ** Radiation pressure
+
+
+** Partial ionization effects
 
 ** Total pressure in a generic star
 
@@ -136,8 +172,7 @@ to quantum effects and a classical term.
 
 * Homework
 
-Derive Chandrasekhar mass?
-
 - Using the virial theorem, discuss which pressure term is more
   important in the total pressure as a function of the mass (and
   radius) of stars.
+- Derive Chandrasekhar mass (cf. Clayton's problem 2-59)

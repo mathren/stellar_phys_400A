@@ -1,4 +1,3 @@
-import numpy as np
 from MESAreader import get_src_col, read_MESA_header
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
