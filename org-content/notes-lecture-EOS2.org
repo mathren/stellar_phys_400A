@@ -3,8 +3,8 @@
 #+email: mrenzo@arizona.edu
 
 * Equation of state 2/2: Quantum-mechanical effects
-*Materials*: Chapter 3 of Onno Pols' lecture notes, Chapter 15 and 16 of
-Kippenhahn's book.
+*Materials*: Chapter 3 of Onno Pols' lecture notes, Chapter 14, 15, and
+16 of Kippenhahn's book.
 
 In the [[./notes-lecture-EOS1.org][previous lecture on EOS]], we have discussed polytropic EOS and
 classical, non-relativistic, ideal gas. The latter is an accurate
@@ -309,6 +309,58 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
   #+end_latex
 
 ** Partial ionization effects
+:Question:
+- *Q*: So far we have assumed full ionization of the gas. What do you
+  think may change if we account for partial ionization? And where may
+  that be important?
+:end:
+
+Ionization is the process of removal of an electron from an ion, which
+can be collisional (e.g., molecules/atoms bumping into each other in
+the atmosphere charging a cloud and preparing it for lightning
+discharge) or radiative (e.g., photoionization in the photoelectric
+effect that won Einstein the Nobel prize). For an element with Z
+electrons there are Z+1 ions, from the neutral atom to the fully
+stripped nucleus with no electrons attached to it. So far in our
+discussion of the EOS, we have considered always this last case. Since
+the atomic binding energies are of order of \sim1-10 eV (think of the
+Rydberg, 13.6eV to strip Hydrogen of its electron from the fundamental
+state), that is 1eV/k_{B} ~ 10^{4} K, and most of the stellar material is
+hotter than this, this was probably not a bad approximation: the
+kinetic energy of the particles flying around in the stellar gas are
+much larger than what is needed to separate electrons and ions, so
+probably this will happen a lot.
+
+However, in the layers where T decreases, we can have partial
+ionization, which /will change the number of particles per unit atomic
+mass/, so you can expect this to impact the mean molecular weight \mu,
+and thus the pressure from the EOS (and we will see [[./notes-lecture-ETransport.org][later]] also the
+temperature gradient).
+
+To make things tractable, let's consider a star made of pure Hydrogen
+for simplicity, since in that case we only have three possible
+particles:
+- neutral H (HI)
+- ionized H (HII), that is a proton
+- electron
+
+:Question:
+- *Q*: can there be a star of pure H astrophysically?
+:end:
+
+Let's also assume that LTE still holds, therefore, the rate at which
+atoms are ionized I matches the rate at which there are recombinations
+R (principle of detailed balance). Therefore:
+
+#+begin_latex
+\begin{equation}
+ n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}}} = \frac{I}{R}\ \ ,
+\end{equation}
+#+end_latex
+where n_{e}, n_{+}, and n_{0} are the number densities of electrons, positive
+ions, and neutral atoms respectively (so we are imposing a balance per
+unit volume).
+
 
 * Total pressure in a generic star
 

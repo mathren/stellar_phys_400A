@@ -457,10 +457,11 @@ The ratio of these two is often called the Coulomb parameter
 \end{equation}
 #+end_latex
 We can assume the ideal gas situation if \Gamma_{C} \ll 1, which is the case
-for the average T and \rho of the Sun. We also see that at progressively
-lower temperature the Coulomb interaction start to matter (this is
-important for the crystallization of WDs for instance), or at
-increasingly high densities.
+for the average T and \rho of the Sun (we will estimate the average
+temperature of the Sun in the [[file:notes-lecture-VirTheo.org::+title: 400A - Virial theorem][next lecture]]). We also see that at
+progressively lower temperature the Coulomb interaction start to
+matter (this is important for the crystallization of WDs for
+instance), or at increasingly high densities.
 
 
 * Homework
