@@ -354,7 +354,7 @@ R (principle of detailed balance). Therefore:
 
 #+begin_latex
 \begin{equation}
- n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}}} = \frac{I}{R}\ \ ,
+ n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}} = \frac{I}{R}\ \ ,
 \end{equation}
 #+end_latex
 where n_{e}, n_{+}, and n_{0} are the number densities of electrons, positive
