@@ -114,7 +114,11 @@ particle-particle interactions is much smaller (because the cross
 section \sigma is larger), so we can conservatively ask what is the
 temperature variation across this distance:
 
+#+begin_latex
+\begin{equation}
 \Delta T \simeq \lambda_{\gamma} dT/dr \le \lambda_{\gamma} T_{center}/R
+\end{equation}
+#+end_latex
 
 (where we neglect T_{surface} because we expect it much lower than
 T_{center}, since we already know P_{center} \gg P_{surface}). For the Sun we
@@ -292,7 +296,7 @@ interaction!). Carrying out the integral above gives
 
 #+begin_latex
 \begin{equation}
-P = n k_{B} T
+P = n k_{B} T \ \ .
 \end{equation}
 #+end_latex
 
@@ -396,6 +400,27 @@ gas, we can simplify the mean molecular weight to:
 #+end_latex
 where X, Y, Z are the mass fraction of hydrogen, helium, and the
 metallicity, respectively.
+
+** Relation between pressure and internal density
+
+Eq. \ref{eq:P_statistic} can be used to relate P to the internal
+energy density of a gas. This can be defined as:
+
+#+begin_latex
+\begin{equation}\label{eq:E_statistic}
+dE_{int} = \varepsilon(p)n(p)dp  \ \ ,
+\end{equation}
+#+end_latex
+with \varepsilon(p) the energy per particle.
+
+*** Non-relativistic case
+If the particles in the (ideal) gas are non-relativistic, then
+\varepsilon=p^{2}/2m, thus in the term pv in Eq. \ref{eq:P_statistic} is pv = 2\varepsilon,
+and thus P = 2/3 E_{int}
+
+*** Ultra-relativistic case
+Then \varepsilon = pc (neglecting the mass term in the energy), and thus: P=E_{int}/3.
+
 
 * Homework
 - We have discussed that the internal layers of the star are in LTE

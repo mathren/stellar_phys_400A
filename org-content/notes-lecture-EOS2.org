@@ -208,7 +208,7 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
  (to see this more explicitly you can use the definition of the
  electron mean molecular weight to substitute n_{e} for the mass density \rho).
 
-*** Relativistic electron gas
+*** Ultra-relativistic electron gas
   As the number density of electrons increases, p_{F} increases, and thus
   at some point the v=p/m we used above will not hold anymore, because
   the electrons become relativistic. In the extremely relativistic
@@ -227,7 +227,9 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
   In general, we should expect a *smooth* transition between these two
   polytopes as n_{e} increases. Since the density in a star increases
   towards the center, we can expect this transition to occur as we
-  move inwards in a star where these effects matter.
+  move inwards in a star where these effects matter. In this case, we
+  need to use the relativistic formula p^{2} = \varepsilon^{2}-m_{e}c^{2} to solve the
+  integral and obtain the pressure.
 
   One can estimate the electron density at the transition with the
   condition p_{F} \simeq m_{e} c.
@@ -253,6 +255,22 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
   recovers the ideal gas equation of state.
 
 
+  So, in summary, because electrons are Fermions that need to obey
+  Pauli's principle at very low T (comparing their kinetic energy to
+  the Fermi energy) and/or very high \rho, they can exert a much larger
+  pressure than predicted by the classical ideal gas. Moreover, in
+  those situation, the pressure is a polytrope, independent of
+  temperature T! This means the stars do not need to heat up anymore
+  in order to sustain themselves against their own gravity. This is
+  the situation of a "white dwarf" (WD), which are the remnants for
+  the vast majority of stars, including the Sun.
+
+  These compact objects contract until they fully crystallize
+  (releasing further latent heat), becoming "planet-sized diamond-like
+  structures"! In the homework you will also see how there is a
+  maximum mass for a WD - the so-called Chandrasekhar mass, after the
+  Nobel-prize winning
+
 ** Radiation pressure
 
 
@@ -275,6 +293,12 @@ to quantum effects and a classical term.
 - Using the virial theorem, discuss which pressure term is more
   important in the total pressure as a function of the mass (and
   radius) of stars.
+- Derive an upper limit for the temperature T as a function of the
+  density \rho for a star supported by fully degenerate
+  (non-relativistic) electrons, and plot this relation on a T(\rho)
+  diagram. To explicit the relation between n_{e} and \rho, assume a
+  composition made of pure carbon (X_{i} = 1 if carbon, 0 otherwise, Z_{i} =
+  6, A_{i} = 12). Any T much lower than this limit can be considered T\simeq0
+  for the purpose of the pressure calculation, but that still leaves a
+  large range of non-zero T from the radiative point of view!
 - Derive Chandrasekhar mass (cf. Clayton's problem 2-59)
-- Estimate T for a WD assuming its supported by non-relativistic
-  electron degeneracy pressure
