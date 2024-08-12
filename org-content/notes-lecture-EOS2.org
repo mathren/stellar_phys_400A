@@ -293,11 +293,11 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
 
   #+begin_latex
   \begin{equation}
-  a = \frac{8\pi^{5} k_{B}^4}{15h^{3}c^{3}} = 7.56\times10^{-15} erg \ cm^{-3} \ K^{-4} \ \ ,
+  a = \frac{8\pi^{5} k_{B}^4}{15h^{3}c^{3}} = 7.56\times10^{-15} \mathrm{erg} \ \mathrm{cm}^{-3} \ \mathrm{K}^{-4} \ \ ,
   \end{equation}
   #+end_latex
 
-  which is closely related to the Stefan-Boltzmann constant.
+  which is closely related to the Stefan-Boltzmann constant \sigma: a=4\sigma/c.
 
   Relying again on the ultra-relativistic nature of photons, we know
   that P=u_{int}/3 and therefore the radiation pressure is:
@@ -307,10 +307,6 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
   P_\mathrm{rad} =\frac{1}{3}aT^{4} \ \ .
   \end{equation}
   #+end_latex
-
-
-
-
 
 ** Partial ionization effects
 
