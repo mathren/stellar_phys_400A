@@ -1,4 +1,4 @@
-#+title: 400A - EOS (degenerate)
+#+title: 400A - EOS (QM effects)
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
@@ -272,6 +272,44 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
   Nobel-prize winning
 
 ** Radiation pressure
+
+  In some stars, the radiation field is so strong that is has a
+  non-negligible contribution to the pressure. The particles providing
+  that pressure are photons, which are *bosons* with 2 possible
+  polarization states, so q_{S} = 2 (in a classical electromagnetic wave
+  language, this is because for a fixed propagation direction of a
+  wave the electric field can still be in two directions, the two
+  defining the plane orthogonal to the propagation direction).
+
+  Moreover, the number of photons does not need to be conserved,
+  radiative processes will destroy/create photons as needed to achieve
+  equilibrium: there is no chemical potential to overcome, thus \eta=0.
+
+  Finally, noting that the photons are ultra-relativistic by
+  definition, we have \varepsilon = pc = h\nu, and the Bose-Einstein distribution
+  in Eq. \ref{eq:Bose-Einstein} becomes the Black body distribution!
+  We can then calculate the internal energy density of the photon gas
+  as u_{int} = a T^{4} with a the radiation constant:
+
+  #+begin_latex
+  \begin{equation}
+  a = \frac{8\pi^{5} k_{B}^4}{15h^{3}c^{3}} = 7.56\times10^{-15} erg \ cm^{-3} \ K^{-4} \ \ ,
+  \end{equation}
+  #+end_latex
+
+  which is closely related to the Stefan-Boltzmann constant.
+
+  Relying again on the ultra-relativistic nature of photons, we know
+  that P=u_{int}/3 and therefore the radiation pressure is:
+
+  #+begin_latex
+  \begin{equation}
+  P_\mathrm{rad} =\frac{1}{3}aT^{4} \ \ .
+  \end{equation}
+  #+end_latex
+
+
+
 
 
 ** Partial ionization effects
