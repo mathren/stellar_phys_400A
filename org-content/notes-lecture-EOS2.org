@@ -67,7 +67,8 @@ the particles. Therefore:
 
 #+begin_latex
 \begin{equation}
-n(p)/g(p)\propto n m^{-1}T^{-3/2}\exp(-p^{2}^{}/2mk_{B}T) \ \ .
+n(p)/g(p)\propto n m^{-1}T^{-3/2}\exp(-p^{2}y
+/2mk_{B}T) \ \ .
 \end{equation}
 #+end_latex
 
