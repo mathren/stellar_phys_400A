@@ -408,18 +408,29 @@ energy density of a gas. This can be defined as:
 
 #+begin_latex
 \begin{equation}\label{eq:E_statistic}
-dE_{int} = \varepsilon(p)n(p)dp  \ \ ,
+dE_\mathrm{int} = \varepsilon(p)n(p)dp  \ \ ,
 \end{equation}
 #+end_latex
 with \varepsilon(p) the energy per particle.
 
-*** Non-relativistic case
 If the particles in the (ideal) gas are non-relativistic, then
 \varepsilon=p^{2}/2m, thus in the term pv in Eq. \ref{eq:P_statistic} is pv = 2\varepsilon,
-and thus P = 2/3 E_{int}
+and thus:
 
-*** Ultra-relativistic case
-Then \varepsilon = pc (neglecting the mass term in the energy), and thus: P=E_{int}/3.
+#+begin_latex
+\begin{equation}
+P = \frac{2}{3} E_\mathrm{int} \ \.
+\end{equation}
+#+end_latex
+
+If instead the gas is ultra-relativistic, then \varepsilon = pc (neglecting the
+mass term in the energy), and thus:
+
+#+begin_latex
+\begin{equation}
+P=\frac{E_\mathrm{int}}{3} \ \ .
+\end{equation}
+#+end_latex
 
 
 * Homework
