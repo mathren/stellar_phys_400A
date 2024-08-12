@@ -58,7 +58,7 @@ distribution is
 
 #+begin_latex
 \begin{equation}
-n(p)\propto \frac{n}{mT^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }\ \ ,
+n(p)\propto \frac{n}{(mT)^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }\ \ ,
 \end{equation}
 #+end_latex
 
@@ -67,8 +67,7 @@ the particles. Therefore:
 
 #+begin_latex
 \begin{equation}
-n(p)/g(p)\propto n m^{-1}T^{-3/2}\exp(-p^{2}y
-/2mk_{B}T) \ \ .
+n(p)/g(p)\propto n (mT)^{-3/2}\exp(-p^{2}/2mk_{B}T) \ \ .
 \end{equation}
 #+end_latex
 
