@@ -172,7 +172,7 @@ particles making up the star, which can be either
 
   #+begin_latex
   \begin{equation}
-  g_{e}(p)dp = q_{s}_{} \frac{4\pi p^{2}_{}^{}}{h^{3}}dp \equiv \frac{8\pi p^{2}_{}^{}}{h^{3}}dp \ \mathrm{for} p\leq p_{f} \ \mathrm{otherwise} 0 \ \ .
+  g_{e}(p)dp = q_{s}\frac{4\pi p^{2}}{h^{3}}dp \equiv \frac{8\pi p^{2}}{h^{3}}dp \ \mathrm{for} p\leq p_{f} \ \mathrm{otherwise} 0 \ \ .
   \end{equation}
   #+end_latex
   Where we use q_{s}=2 for electrons. To find the value of p_{f} we can use
