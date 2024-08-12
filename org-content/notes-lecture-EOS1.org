@@ -62,7 +62,7 @@ between P, \rho (and maybe other thermodynamic quantities will come in).
 Thermal equilibrium means by definition that all the particles in a
 system (including photons, if there is radiation) have the same
 temperature T, and their velocity distribution are described by a
-Maxwellian (for particles) and the black-body spectrum (for
+Maxwell-Boltzmann (for particles) and the black-body spectrum (for
 radiation). This situation can only be achieved if there are
 sufficient interactions so each particle can exchange energy with the
 others (collisions among particles, and scattering/absorption for
@@ -209,8 +209,9 @@ particles, and we will see how to deal with mixtures of gases (each
 with particles m_{i}) further down.
 
 Since the particles of the ideal gas move isotropically within their
-volume, the momentum distribution of particles is a Maxwellian. The
-number of particles with momentum between p and p+dp is
+volume, the momentum distribution of particles is a Maxwell-Boltzmann
+distribution. The number of particles with momentum between p and p+dp
+is
 
 #+begin_latex
 \begin{equation}\label{eq:Maxwellian}

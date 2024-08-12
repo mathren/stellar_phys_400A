@@ -51,9 +51,9 @@ stars "heat up as they lose energy".
 
 ** <2024-09-17 Tue> - Equation of state 2
 *Aim*: Introduce other relevant equations of state
-- Radiation-dominated
 - Degenerate and non-relativistic gas
 - Degenerate and relativistic gas
+- Radiation-dominated
 
 [[./notes-lecture-EOS2.org][Notes]]
 

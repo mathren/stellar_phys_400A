@@ -6,9 +6,10 @@
 *Materials*: Chapter 3 of Onno Pols' lecture notes, Chapter 15 and 16 of
 Kippenhahn's book.
 
-In the [[./notes-lecture-EOS1.org][previous lecture on EOS]] we have dealt with a classical,
-non-relativistic, ideal gas. This is an accurate description of the
-stellar gas in most, but not /all/ the astrophysical cases.
+In the [[./notes-lecture-EOS1.org][previous lecture on EOS]], we have discussed polytropic EOS and
+classical, non-relativistic, ideal gas. The latter is an accurate
+description of the stellar gas in most, but importantly not /all/ the
+astrophysical cases.
 
 We will consider now cases that don't verify the hypothesis we took
 previously and discuss briefly some stars for which we need to go
@@ -50,11 +51,27 @@ isospin. The key point here is f(p)\propto p^{2} to satisfy QM.
 
 Let's start by considering a non-extreme situation. Then the particles
 are distributed according to a Maxwellian distribution n(p), but
-whenever n(p) > g(p)^{}, we know this is going to violate QM!
+whenever n(p)> g(p), we know this is going to violate QM!
 
-From the [[file:notes-lecture-EOS1.org::*Ideal gas][previous lecture on EOS]] we know that the Maxwellian
-distribution is n(p)\propto n/mT^{3/2} exp(-p^{2}/2mk_{B} T)p^{2}, so n(p)/g(p)\propto n
-m^{-1}T^{-3/2}exp(-p^{2}^{}/2mk_{B}T). We can see that:
+From the [[file:notes-lecture-EOS1.org::*Ideal gas][previous lecture on EOS]] we know that the Maxwell-Boltzmann
+distribution is
+
+#+begin_latex
+\begin{equation}
+n(p)\propto \frac{n}{mT^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }\ \ ,
+\end{equation}
+#+end_latex
+
+where n is the number density, T the temperature, and m the mass of
+the particles. Therefore:
+
+#+begin_latex
+\begin{equation}
+n(p)/g(p)\propto n m^{-1}T^{-3/2}\exp(-p^{2}^{}/2mk_{B}T) \ \ .
+\end{equation}
+#+end_latex
+
+We can see that:
 
 - at fixed temperature T, for very high number densities n, this ratio
   is going to be larger than one in violation of QM
