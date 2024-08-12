@@ -2,7 +2,7 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Equation of state 2/2
+* Equation of state 2/2: Quantum-mechanical effects
 *Materials*: Chapter 3 of Onno Pols' lecture notes, Chapter 15 and 16 of
 Kippenhahn's book.
 
@@ -14,8 +14,6 @@ astrophysical cases.
 We will consider now cases that don't verify the hypothesis we took
 previously and discuss briefly some stars for which we need to go
 beyond those.
-
-** Quantum-mechanical effects
 
 A star is "big", why do we need to care about quantum mechanics (QM)?
 Besides its central role in allowing for nuclear burning, [[file:materials/nuclear_reaction_rates.pdf][which we
@@ -162,7 +160,7 @@ particles making up the star, which can be either
   (each quantum cell of the phase space 4\pi p^{2}dp dV can be occupied by
   2 electrons, one with spin up and one with spin down).
 
-*** Fully degenerate electron gas
+** Fully degenerate electron gas
 
   By definition, a fully degenerate gas is one where all the particles
   are in the lowest possible energy state, corresponding to the limit
@@ -172,7 +170,8 @@ particles making up the star, which can be either
 
   #+begin_latex
   \begin{equation}
-  g_{e}(p)dp = q_{s}\frac{4\pi p^{2}}{h^{3}}dp \equiv \frac{8\pi p^{2}}{h^{3}}dp \ \  \mathrm{for} p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
+  g_{e}(p)dp = q_{s}\frac{4\pi p^{2}}{h^{3}}dp \equiv \frac{8\pi p^{2}}{h^{3}}dp \ \  \mathrm{for} \ \
+p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
   \end{equation}
   #+end_latex
   Where we use q_{s}=2 for electrons. To find the value of p_{f} we can use
@@ -180,7 +179,7 @@ particles making up the star, which can be either
 
   #+begin_latex
   \begin{equation}
-  n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{f}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8pi}n_{e}\right)^{1/3} \ \ .
+  n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{f}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8\pi}n_{e}\right)^{1/3} \ \ .
   \end{equation}
   #+end_latex
   Therefore, the /Fermi momentum depends only on the density of
@@ -191,7 +190,7 @@ particles making up the star, which can be either
   need the appropriate p\equiv p(\varepsilon) relaton
 
 
-**** Non-relativistic electron gas
+*** Non-relativistic electron gas
 
   In this case \varepsilon = p^{2}/2m is the energy of the electrons (still ideal
   gas) and v=p/m, thus from the previous lecture on EOS we have:
@@ -209,7 +208,7 @@ particles making up the star, which can be either
  (to see this more explicitly you can use the definition of the
  electron mean molecular weight to substitute n_{e} for the mass density \rho).
 
-**** Relativistic electron gas
+*** Relativistic electron gas
   As the number density of electrons increases, p_{F} increases, and thus
   at some point the v=p/m we used above will not hold anymore, because
   the electrons become relativistic. In the extremely relativistic
@@ -233,7 +232,7 @@ particles making up the star, which can be either
   One can estimate the electron density at the transition with the
   condition p_{F} \simeq m_{e} c.
 
-*** Partial degeneracy
+** Partial degeneracy
 
   The equations derived above are valid in the strict limit of T=0,
   necessary for *full* degeneracy. Clearly, if T=0 then there is no
@@ -259,7 +258,7 @@ particles making up the star, which can be either
 
 ** Partial ionization effects
 
-** Total pressure in a generic star
+* Total pressure in a generic star
 
 #+begin_latex
 \begin{equation}
