@@ -67,7 +67,7 @@ the particles. Therefore:
 
 #+begin_latex
 \begin{equation}
-\frac{n(p)}{g(p)}\propto n (mT)^{-3/2}\exp(-p^{2}/2mk_{B}T) \ \ .
+\frac{n(p)}{g(p)}\propto n (mT)^{-3/2}\exp(\frac{-p^{2}}{2mk_{B}T}) \ \ .
 \end{equation}
 #+end_latex
 
@@ -79,9 +79,11 @@ We can see that:
   will be larger than 1 in violation of QM (because every term in the
   Taylor expansion of the exponential is proportional to a negative
   power of T).
+- the smaller mass particle will violate QM earlier than the higher
+  mass particles
 
 Thus, we can expect that for very "cold" stars (we will define what is
-the relevant scale here) or vey dense stars the ideal gas EOS will not
+the relevant scale here) or very dense stars the ideal gas EOS will not
 be appropriate.
 
 To account for QM effects, we need to consider the nature of the
@@ -141,19 +143,20 @@ particles making up the star, which can be either
   higher momentum p.
 
   In practice, the pressure provided by the /ions/ never becomes
-  affected by QM directly: because of the m^{-1} term in the
+  affected by QM directly: because of the m^{-3/2} term in the
   Maxwell-Boltzmann distribution, this would require densities so high
   that the ions would not exist as ions anymore. Instead the high
   density would allow for electron captures onto the protons of the
   ions turning them in neutrons (e^{-} + p \rightarrow n + \nu_{e}). As we will see this
-  is what happens at the very end of the evolution of massive stars.
-  However, the pressure provided by the neutrons resulting from this
-  process does depend on QM effects and it is what sustains the
-  structure of the neutron stars!
+  is what happens at the very end of the evolution of massive stars
+  that end their life exploding and leaving a neutron-star: those
+  electron capture reactions are where the neutrons come from! The
+  pressure provided by the neutrons does depend on QM effects and it
+  is what sustains the structure of the neutron stars!
 
   Because the pressure term from electrons (which in the ideal gas EOS
   is accounted for thanks to our definition of the mean molecular
-  weight \mu) changes because of QM effects first, let's now consider a
+  weight) changes because of QM effects first, let's now consider a
   gas made of electrons only. These particles have spin 1/2, thus they
   are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and q_{s} = 2 in it
   (each quantum cell of the phase space 4\pi p^{2}dp dV can be occupied by
@@ -161,14 +164,95 @@ particles making up the star, which can be either
 
 *** Fully degenerate electron gas
 
+  By definition, a fully degenerate gas is one where all the particles
+  are in the lowest possible energy state, corresponding to the limit
+  T\rightarrow0. For fermions (like the electrons we are focusing on), this
+  means that the electrons occupy a sphere in momentum space with a
+  radius p_{F} called the "Fermi" momentum:
+
+  #+begin_latex
+  \begin{equation}
+  g_{e}(p)dp = q_{s}_{} \frac{4\pi p^{2}_{}^{}}{h^{3}}dp \equiv \frac{8\pi p^{2}_{}^{}}{h^{3}}dp \ \mathrm{for} p\leq p_{f} \ \mathrm{otherwise} 0 \ \ .
+  \end{equation}
+  #+end_latex
+  Where we use q_{s}=2 for electrons. To find the value of p_{f} we can use
+  the normalization coming from the total number density of electrons
+
+  #+begin_latex
+  \begin{equation}
+  n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{f}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8pi}n_{e}\right)^{1/3} \ \ .
+  \end{equation}
+  #+end_latex
+  Therefore, the /Fermi momentum depends only on the density of
+  electrons for a fully degenerate electron gas/.
+
+  We can now calculate the pressure exactly like we did for the
+  classical ideal gas (cf. Eq. 10 in [[file:notes-lecture-EOS1.org::*Ideal gas][the Ideal gas section]]), we just
+  need the appropriate p\equiv p(\varepsilon) relaton
+
+
 **** Non-relativistic electron gas
 
   In this case \varepsilon = p^{2}/2m is the energy of the electrons (still ideal
-  gas), thus from the previous lecture on EOS we have:
+  gas) and v=p/m, thus from the previous lecture on EOS we have:
+  #+begin_latex
+  \begin{equation}
+  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p/m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{f}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \ \ .
+  \end{equation}
+  #+end_latex
+
+ Note the functional form P_{e}\equiv P_{e}(n_{e})! It's a powerlaw, like we
+ arbitrarily assumed would be a decent guess when discussing
+ polytropes. /A fully degenerate classical electron gas has a
+ polytropic EOS with exponent \Gamma=5/3/.
+
+ (to see this more explicitly you can use the definition of the
+ electron mean molecular weight to substitute n_{e} for the mass density \rho).
 
 **** Relativistic electron gas
+  As the number density of electrons increases, p_{F} increases, and thus
+  at some point the v=p/m we used above will not hold anymore, because
+  the electrons become relativistic. In the extremely relativistic
+  limit, we can assume v=c (i.e. neglect the rest energy of the
+  electrons in the p(\varepsilon) relation), and then we lose one power of p in
+  the integral above. Thus, in the /fully degenerate ultrarelativistic
+  gas, the EOS will again be a polytrope with exponent now \Gamma=4/3/.
+
+  Specifically the calculation yields:
+  #+begin_latex
+  \begin{equation}
+  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \ \ .
+  \end{equation}
+  #+end_latex
+
+  In general, we should expect a *smooth* transition between these two
+  polytopes as n_{e} increases. Since the density in a star increases
+  towards the center, we can expect this transition to occur as we
+  move inwards in a star where these effects matter.
+
+  One can estimate the electron density at the transition with the
+  condition p_{F} \simeq m_{e} c.
 
 *** Partial degeneracy
+
+  The equations derived above are valid in the strict limit of T=0,
+  necessary for *full* degeneracy. Clearly, if T=0 then there is no
+  thermal energy (which is the point of full degeneracy), but also a
+  star would not radiate away any photon, becoming invisible and
+  extremely dense (sometimes referred to as a "black dwarf"!). In
+  reality it is sufficient to have k_{b}T \ll \varepsilon_{F} = p_{f}^{2}/2m (for
+  non-relativistic electrons). This is equivalent to asking \eta\gg 1 with
+  \eta electron degeneracy parameter.
+
+  The transition between ideal gas and fully degenerate gas goes
+  through partially degenerate gas, and in that case the degeneracy
+  pressure is harder to calculate analytically, and one needs to
+  calculate P = 1/3 \times \int n(p)pvdp using n(p) = g(p)f(\varepsilon(p))dp with the
+  Fermi-Dirac distribution for f (in the case of electrons).
+
+  For \eta \ll1 the Fermi-Dirac distribution can be Taylor expanded and one
+  recovers the ideal gas equation of state.
+
 
 ** Radiation pressure
 
@@ -193,3 +277,5 @@ to quantum effects and a classical term.
   important in the total pressure as a function of the mass (and
   radius) of stars.
 - Derive Chandrasekhar mass (cf. Clayton's problem 2-59)
+- Estimate T for a WD assuming its supported by non-relativistic
+  electron degeneracy pressure

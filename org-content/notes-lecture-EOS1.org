@@ -278,7 +278,7 @@ n(\theta,p)d\theta = n(p)sin(\theta)d\theta, and thus
 
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:P_statistic}
 dP = vp\cos^{2}(\theta)n(p)\sin(\theta)d\theta dp = \frac{1}{3}\int_{0}^{+\infty} n(p)p v dp \ \ ,
 \end{equation}
 #+end_latex
