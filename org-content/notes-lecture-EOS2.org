@@ -67,7 +67,7 @@ the particles. Therefore:
 
 #+begin_latex
 \begin{equation}
-n(p)/g(p)\propto n (mT)^{-3/2}\exp(-p^{2}/2mk_{B}T) \ \ .
+\frac{n(p)}{g(p)}\propto n (mT)^{-3/2}\exp(-p^{2}/2mk_{B}T) \ \ .
 \end{equation}
 #+end_latex
 
