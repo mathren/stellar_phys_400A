@@ -97,6 +97,7 @@ graded, etc. how to provide useful feedback during peer-reviewing.
 
 
 ** <2024-10-15 Thu> - Radiative transfer
+- Saha equation
 - line formation region
 - line broadening mechanisms
 

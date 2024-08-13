@@ -322,7 +322,12 @@ discharge) or *radiative* (e.g., photoionization in the photoelectric
 effect that won Einstein the Nobel prize).
 
 For an element with Z electrons there are Z+1 ions, from the neutral
-atom to the fully stripped nucleus with no electrons attached to it.
+atom to the fully stripped nucleus with no electrons attached to it
+For historical reasons, these are often indicated with the element
+symbol followed by a roman number from I - for the neutral atom to Z+1
+in roman numbers for the fully ionized ion, e.g., HII for fully
+ionized hydrogen.
+
 So far in our discussion of the EOS, we have considered always this
 last case. Since the atomic binding energies are of order of \sim1-10 eV
 (think of the Rydberg, \chi=13.6eV to strip Hydrogen of its electron from
@@ -338,52 +343,36 @@ mass/, so you can expect this to /impact the mean molecular weight \mu/,
 and thus the pressure from the EOS (and we will see [[./notes-lecture-ETransport.org][later]] also the
 temperature gradient).
 
-To make things tractable, let's consider a star made of pure Hydrogen
-for simplicity, since in that case we only have three possible
-particles:
-- neutral H (HI)
-- ionized H (HII), that is a proton
-- electron
-
-:Question:
-- *Q*: can there be a star of pure H astrophysically?
-:end:
-
-Let's also assume that LTE still holds, therefore, the rate at which
-atoms are ionized I matches the rate at which there are recombinations
-R (principle of detailed balance). Therefore:
+By definition the mean molecular weight \mu is such that
+\rho = m_{u}\mu = (n+n_{e})m_{u}. This is what we used in the ideal gas equation
+to get P=\rho k_{b}T/(\mu m_{u}) combining the electrons and ions pressure.
+Similarly we can define \mu_{0} as the mean molecular weight per nucleus,
+and \mu_{e} as the mean molecular weight per electron, and thus
 
 #+begin_latex
 \begin{equation}
- n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}} = \frac{I}{R}\ \ ,
+\rho = (n+n_{e})\mu m_{u}\equiv n\mu_{o}m_{u} \equiv n_{e}\mu_{e} m_{u} \ \ .
 \end{equation}
 #+end_latex
-where n_{e}, n_{+}, and n_{0} are the number densities of electrons, positive
-ions, and neutral atoms respectively (so we are imposing a balance per
-unit volume). But that must also be equal to the ratio of available
-states to all these particles, which in the limit of ideal gas we can
-calculate using Maxwell-Boltzmann statistics! The momentum terms of
-the ions and neutral atoms cancel each other in the ratio (neglecting
-the small mass difference between these 2), and we are left with
+
+We can also define the number of free electrons per ion/atom
+E=n_{e}/n (where n_{e} is the number density of electrons and n the number
+density of massive ions regarless of their ionization state), and thus
+rewrite the above as
 
 #+begin_latex
 \begin{equation}
-\frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
+\mu = \frac{\rho}{m_{u}n}\frac{1}{1+E} \equiv \frac{\mu_{0}}{1+E} \equiv \mu_{e}\frac{E}{1+E} \ \.
 \end{equation}
 #+end_latex
-where the first term comes from the momentum phase space of the
-electron (with 2 factor for its spin) and the exponential depends on
-the ionization potential \chi.
 
-we can introduce the ionization fraction x = n_{+}/(n_{0} + n_{+}), and
-rewrite the ideal gas pressure as the sum of the contributions of
-electron, ion, and neutral atom P = P_{e} + P_{+} + P_{0}. Using the
-approximation that electrons don't contribute to the mass, that is \rho =
-(n_{+} + n_{0})m_{u}, and the definition of the ionization fraction, this
-gives P = (1+x)\rho T
-
+which gives the relation between the mean molecular weight(s) and the
+number of free electrons. We will see in a [[./notes-lecture-radTrans.org][later lecture]] how to
+calculate E as a function of T, and \rho.
 
 * Total pressure in a generic star
+
+Putting all things together:
 
 #+begin_latex
 \begin{equation}

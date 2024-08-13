@@ -1,0 +1,46 @@
+#+title: 400A - Radiative transfer
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+
+* TODO in construction
+Let's also assume that LTE still holds, therefore, the rate at which
+atoms are ionized I matches the rate at which there are recombinations
+R (principle of detailed balance). Therefore:
+
+#+begin_latex
+\begin{equation}
+ n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}} = \frac{I}{R}\ \ ,
+\end{equation}
+#+end_latex
+where n_{e}, n_{+}, and n_{0} are the number densities of electrons, positive
+ions, and neutral atoms respectively (so we are imposing a balance per
+unit volume). But that must also be equal to the ratio of available
+states to all these particles, which in the limit of ideal gas we can
+calculate using Maxwell-Boltzmann statistics! The momentum terms of
+the ions and neutral atoms cancel each other in the ratio (neglecting
+the small mass difference between these 2), and we are left with
+
+#+begin_latex
+\begin{equation}
+\frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
+\end{equation}
+#+end_latex
+where the first term comes from the momentum phase space of the
+electron (with 2 factor for its spin) and the exponential depends on
+the ionization potential \chi.
+
+
+
+
+
+To make things tractable, let's consider a star made of pure Hydrogen
+for simplicity, since in that case we only have three possible
+particles:
+- neutral H (HI)
+- ionized H (HII), that is a proton
+- electron
+
+:Question:
+- *Q*: can there be a star of pure H astrophysically?
+:end:
