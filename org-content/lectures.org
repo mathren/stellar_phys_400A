@@ -15,7 +15,6 @@ L_{\odot}, stellar lifetimes)
 
 [[./notes-lecture-Intro.org][Notes]]
 
-
 ** <2024-08-29 Thu> - Color-magnitude and Hertzsprung-Russell diagram
 *Aim*: Introduce color-magnitude diagrams, theoretical HR diagram, and
 how they relate to each other. Review some black body radiation and

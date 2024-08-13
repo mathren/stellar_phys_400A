@@ -1,3 +1,121 @@
 #+title: 400A - Energy transport
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+
+* Energy transport in stars
+*Materials*: Chapters 3 and 5 of Onno Pols' lecture notes, chapter 5 of
+Kippenhan & Weigert's book.
+
+** Summary of where we are
+
+*Mass conservation:*
+#+begin_latex
+\begin{equation}\label{eq:mass_cont}
+dm = 4\pi \rho r^{2} dr \ \ .
+\end{equation}
+#+end_latex
+
+*Hydrostatic equilibrium:*
+#+begin_latex
+\begin{equation}\label{eq:HSE}
+\frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \ ,
+\end{equation}
+#+end_latex
+
+
+*Equation of state:*
+#+begin_latex
+\begin{equation}\label{eq:HSE}
+P \equiv P(\rho, \mu, T) \ \ .
+\end{equation}
+#+end_latex
+
+These three equations have as variables m \equiv m(r) (or equivalently r\equiv
+r(m)), P, \rho, and T. By adding an EOS to relate P and \rho (and the
+composition of the star which enters in the mean molecular weight \mu),
+in the general case, we have also added a new variable T, so the
+system is not close again, and we need to look for one more equation
+to be able to solve it!
+
+** Energy flow in stars
+
+To find another equation, we can consider how energy flows in a star.
+We have already seen that the surface temperature (e.g., of the Sun),
+and the average temperature (estimated using the [[file:notes-lecture-VirTheo.org::+title: 400A - Virial theorem][virial theorem]]) are
+/not/ the same, so we know that the star is /not/ in global thermal
+equilibrium. We also know, from similar arguments, that the average
+temperature is higher than the surface temperature, so there should be
+an energy flow from the interior outwards.
+
+This energy flow can occur in two forms in a star:
+1. *Diffusion*: thermal energy can be moved by the random motion of
+   particles. This is often the dominant energy transport mechanism in
+   a star -- unless for some reason it is insufficient. The diffusion
+   of energy can be:
+   - *Radiative*, if the particles carrying the energy through their
+     random motion are photons
+   - *Conductive*: if it is the thermal motion of gas particles
+     (typically electrons, unless you are in a neutron star) that
+     carries the energy
+2. *Convection*: in this case thermal energy is transported by bulk
+   motion of matter. This occurs as a *thermal* instability if the other
+   means of energy transport are insufficient to carry the energy flux
+   required by the local stellar structure, and it will be the topic
+   of a [[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][future lecture]].
+
+The next /two/ stellar structure equations to add to our system will
+come from combining all of these together.
+
+** Diffusion processes
+In general, the "diffusion approximation" is useful to describe the
+net flux of "something" when the average path of the carrier of said
+"something" is small compared to the lengthscale over which the
+"something" is transported.
+
+In this approximation, the net flux of this "something" is related to
+the density of "something" by
+
+#+begin_latex
+\begin{equation}
+\mathbb{J} = D\nabla n \ \ ,
+\end{equation}
+#+end_latex
+where J is the flux (which is in general a vector quantity), D is the
+so called "diffusion coefficient", and \nabla n is the gradient of the
+volumetric density of the "something" we are considering. By
+dimensional analysis, regardless of what "something" is (and what are
+its dimensions), you can see that:
+- [J] = [something]/(L^{2}t) with L length dimension and t time;
+- [\nabla] \equiv [d/dx] = 1/L;
+- [n] = [something]/L^{3}^{}
+Therefore, the diffusion coefficient has the dimensions of [D] = L^{2}/t
+\equiv v \times L, so we can expect D to be proportional to the average velocity
+of the "something" that is diffusing times the length scale for the
+motion of this something (which by hypothesis is small compared to the
+length scale over which we want to study the motion of this
+"something"). In fact this is almost correct!
+
+
+
+
+
+
+** Energy transport by radiative diffusion
+We have already
+
+
+
+[[file:notes-lecture-EOS1.org::*Global and local thermal
+equilibrium][mean free path for photons]]
+
+
+** Energy transport by conduction
+
+
+** Local energy conservation
+
+
+* Homework
+
+- Is a star a black body? Discuss this in terms of T_{eff}, spectral
+  lines, and energy transport.

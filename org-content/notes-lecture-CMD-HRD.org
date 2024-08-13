@@ -352,4 +352,4 @@ be using a bleeding-edge dataset! These are publicly available in the
 
 ** Suggested
 To follow the next lecture, it will be helpful for you to revise
-Kepler's laws, orbital and celestial mechanics. This is not graded.
+Kepler's laws, orbital and celestial mechanics.
