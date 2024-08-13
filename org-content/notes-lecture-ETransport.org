@@ -25,7 +25,7 @@ dm = 4\pi \rho r^{2} dr \ \ .
 
 *Equation of state:*
 #+begin_latex
-\begin{equation}\label{eq:HSE}
+\begin{equation}\label{eq:EOS}
 P \equiv P(\rho, \mu, T) \ \ .
 \end{equation}
 #+end_latex
@@ -76,18 +76,21 @@ In this approximation, the net flux of this "something" is related to
 the density of "something" by
 
 #+begin_latex
-\begin{equation}
-\mathbb{J} = D\nabla n \ \ ,
+\begin{equation}\label{eq:diff}
+\mathbb{J} = - D\nabla n \ \ ,
 \end{equation}
 #+end_latex
 where J is the flux (which is in general a vector quantity), D is the
 so called "diffusion coefficient", and \nabla n is the gradient of the
-volumetric density of the "something" we are considering. By
+volumetric density of the "something" we are considering. The negative
+sign appears because the flux is opposite to the gradient ("something"
+flows from where there is a lot to where there is less!). By
 dimensional analysis, regardless of what "something" is (and what are
 its dimensions), you can see that:
 - [J] = [something]/(L^{2}t) with L length dimension and t time;
 - [\nabla] \equiv [d/dx] = 1/L;
-- [n] = [something]/L^{3}^{}
+- [n] = [something]/L^{3}
+
 Therefore, the diffusion coefficient has the dimensions of [D] = L^{2}/t
 \equiv v \times L, so we can expect D to be proportional to the average velocity
 of the "something" that is diffusing times the length scale for the
@@ -102,7 +105,7 @@ number that crosses a given coordinate z with a positive \delta z as a
 function of time is:
 #+begin_latex
 \begin{equation}
-\right.\frac{dN}{dt}\left|_{x} =\frac{1}{2} n \frac{1}{3}v \ \ ,
+\frac{dN}{dt}(z) =\frac{1}{2} n \frac{1}{3}v \ \ ,
 \end{equation}
 #+end_latex
 where the first 1/2 factor comes from the fact that their motion is
@@ -118,11 +121,12 @@ flux across z is
 
 #+begin_latex
 \begin{equation}
-J = \frac{dN}{dt}
+J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)=\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ .
 \end{equation}
 #+end_latex
 
-
+Eq. \ref{eq:diff} is the generalization in 3 dimensions of the above,
+where \nabla = (\partial_{x}, \partial_{y}, \partial_{z}) for Cartesian coordinates.
 
 
 
