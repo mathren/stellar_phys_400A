@@ -315,25 +315,26 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
   that be important?
 :end:
 
-Ionization is the process of removal of an electron from an ion, which
-can be collisional (e.g., molecules/atoms bumping into each other in
+/Ionization is the process of removal of an electron from an ion/, which
+can be *collisional* (e.g., molecules/atoms bumping into each other in
 the atmosphere charging a cloud and preparing it for lightning
-discharge) or radiative (e.g., photoionization in the photoelectric
-effect that won Einstein the Nobel prize). For an element with Z
-electrons there are Z+1 ions, from the neutral atom to the fully
-stripped nucleus with no electrons attached to it. So far in our
-discussion of the EOS, we have considered always this last case. Since
-the atomic binding energies are of order of \sim1-10 eV (think of the
-Rydberg, 13.6eV to strip Hydrogen of its electron from the fundamental
-state), that is 1eV/k_{B} ~ 10^{4} K, and most of the stellar material is
-hotter than this, this was probably not a bad approximation: the
-kinetic energy of the particles flying around in the stellar gas are
-much larger than what is needed to separate electrons and ions, so
-probably this will happen a lot.
+discharge) or *radiative* (e.g., photoionization in the photoelectric
+effect that won Einstein the Nobel prize).
+
+For an element with Z electrons there are Z+1 ions, from the neutral
+atom to the fully stripped nucleus with no electrons attached to it.
+So far in our discussion of the EOS, we have considered always this
+last case. Since the atomic binding energies are of order of \sim1-10 eV
+(think of the Rydberg, \chi=13.6eV to strip Hydrogen of its electron from
+the fundamental state), that is 1eV/k_{B} ~ 10^{4} K, and most of the
+stellar material is hotter than this, this was probably not a bad
+approximation: the (thermal) kinetic energy of the particles flying
+around in the stellar gas are much larger than what is needed to
+separate electrons and ions, so probably this will happen a lot.
 
 However, in the layers where T decreases, we can have partial
 ionization, which /will change the number of particles per unit atomic
-mass/, so you can expect this to impact the mean molecular weight \mu,
+mass/, so you can expect this to /impact the mean molecular weight \mu/,
 and thus the pressure from the EOS (and we will see [[./notes-lecture-ETransport.org][later]] also the
 temperature gradient).
 
@@ -359,7 +360,27 @@ R (principle of detailed balance). Therefore:
 #+end_latex
 where n_{e}, n_{+}, and n_{0} are the number densities of electrons, positive
 ions, and neutral atoms respectively (so we are imposing a balance per
-unit volume).
+unit volume). But that must also be equal to the ratio of available
+states to all these particles, which in the limit of ideal gas we can
+calculate using Maxwell-Boltzmann statistics! The momentum terms of
+the ions and neutral atoms cancel each other in the ratio (neglecting
+the small mass difference between these 2), and we are left with
+
+#+begin_latex
+\begin{equation}
+\frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}_{}T}\right) \ \ ,
+\end{equation}
+#+end_latex
+where the first term comes from the momentum phase space of the
+electron (with 2 factor for its spin) and the exponential depends on
+the ionization potential \chi.
+
+we can introduce the ionization fraction x = n_{+}/(n_{0} + n_{+}), and
+rewrite the ideal gas pressure as the sum of the contributions of
+electron, ion, and neutral atom P = P_{e} + P_{+} + P_{0}. Using the
+approximation that electrons don't contribute to the mass, that is \rho =
+(n_{+} + n_{0})m_{u}, and the definition of the ionization fraction, this
+gives P = (1+x)\rho T
 
 
 * Total pressure in a generic star
