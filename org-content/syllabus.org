@@ -95,15 +95,19 @@ throughout the course, rewarding specifically _growth_ and _improvement_
 throughout the course.
 
 ** Homework
+
 There will be regular homework assignments, including
 order-of-magnitude, quantitative, computational and/or more
 qualitative exercises depending on the week and topic. Please feel
 free to use resources outside of the textbook. You can also
 collaborate with your peers, but please each time you do, indicate
 with whom. You *must* show your work to receive full credit. Assignments
-should be uploaded via D2L and must be turned in *before the start of
-class on the due date.* Timely feedback will be provided for you to
-assess your understanding and progress.
+should be uploaded *in pdf form* via D2L and must be turned in *before
+the start of class on the due date.* In your pdf files, you should show
+the calculations done and contextualise them as appropriate.
+
+Timely feedback will be provided for you to assess your understanding
+and progress.
 
 ** Project/Presentation
 This will consist of a written text plus an oral presentation. The

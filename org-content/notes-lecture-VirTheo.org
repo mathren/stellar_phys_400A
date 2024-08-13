@@ -309,7 +309,7 @@ Then by definition:
 where we have used the virial theorem and set C\simeq1. We can scale all
 the quantities to Solar values and obtain:
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:KH_timescale_scaling}
 \tau_{KH} \simeq 10^{7} \mathrm{years} \times \left(\frac{M}{M_{\odot}}\right)^{2} \left(\frac{R}{R_{\odot}}\right)^{-1 }\left(\frac{L}{L_{\odot}}\right)^{-1} \ \ .
 \end{equation}
 #+end_latex
@@ -339,14 +339,44 @@ Using the virial theorem:
   <T>).
 - demonstrate that if a binary loses instantaneously an amount of mass
   greater than half the total mass of the binary, \Delta M \ge (M_{1}+M_{2})/2,
-  then the orbit is unbound.
+  then the orbit is unbound. This can happen when a supernova goes off
+  in a binary!
 - estimate the average temperature of the Sun and compare it with its
-  surface temperature. Is the Sun in thermal equilibrium?
-- determine a condition for the minimum mass
-  of a gas cloud to collapse as a function of its temperature and
-  density (hint: collapse \Leftrightarrow d^{2} I/dt^{2}<0)
+  surface temperature. Is the Sun in global thermal equilibrium?
+- determine a condition for the minimum mass of a gas cloud to
+  collapse as a function of its temperature and density (hint:
+  collapse \Leftrightarrow d^{2} I/dt^{2}<0)
 
-Using the model of the 1M_{\odot} star computed earlier with MESA-web
+Using the model of the 1M_{\odot} star computed earlier with =MESA-web=
 - use one profile file to plot \Gamma_{1}\equiv\Gamma_{1}(m) for a Sun-like star
   of roughly the same age as the Sun. Label the age of the star for
   the corresponding profile.
+
+
+** The Sun with no nuclear energy sources
+
+Let's use =MESA-web= to revisit the late 19^{th} century/early 20^{th} century
+debate on the age of the Earth/Sun. (Astro)physicists calculated the
+Kelvin-Helmholtz timescale and assumed that this was the age of the
+Sun (from Eq. \ref{eq:KH_timescale_scaling}). Geologists and
+biologists instead argued for a much longer age.
+
+Let's assume we know the age of the Earth to be 4.5\times10^{9} years (this is
+what the geologist and biologists argued!), but let's assume, like
+physicists had to before knowing nuclear physics, that there is no
+energy source in the Sun. In =MESA-web=, there is a =Burning Modifiers=
+option where you can disable energy release and chemical evolution.
+Make a model of a 1M_{\odot} star without energy release and/or chemical
+evolution, until 4.5\times10^{9} years, and plot an HR diagram. Plot also the
+1M_{\odot} star you ran previously (which should have included the
+nuclear energy release and chemical evolution).
+
+*N.B.:* we can make a computer code do whatever we want! Never take
+computer simulations as ground truth, they are only as good as the
+input
+
+
+- Which agrees better with the observation of the real Sun?
+- What is the average density of the model without energy generation?
+- What is its radius (hint: you can plot the lines at constant radius
+  on the HRD)?

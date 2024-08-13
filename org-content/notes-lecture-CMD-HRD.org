@@ -317,7 +317,8 @@ of what is plotted, including the source of data.
   - Color-magnitude diagram/Hertzsprung-Russell diagram
   - Paragraph of description including the source of the data and what
     we see
-  - Script to reproduce the plot.
+  - Script to reproduce the plot (we will not run the script, but you
+    should make it an habit to "show your code").
 
 *** Instructions
 We will use the latest data release from ESA's /Gaia/ mission, you will
