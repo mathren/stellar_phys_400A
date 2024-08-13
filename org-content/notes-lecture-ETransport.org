@@ -126,17 +126,14 @@ J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n
 #+end_latex
 
 Eq. \ref{eq:diff} is the generalization in 3 dimensions of the above,
-where \nabla = (\partial_{x}, \partial_{y}, \partial_{z}) for Cartesian coordinates.
+where \nabla = (\partial_{x}, \partial_{y}, \partial_{z}) for Cartesian coordinates, and
+D=v\ell/3.
 
 
 
 
 ** Energy transport by radiative diffusion
-We have already
-
-
-
-[[file:notes-lecture-EOS1.org::*Global and local thermal
+We have already calculated that [[file:notes-lecture-EOS1.org::*Global and local thermal
 equilibrium][mean free path for photons]]
 
 

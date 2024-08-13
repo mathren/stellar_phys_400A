@@ -88,7 +88,7 @@ Let's consider the latter first:
 
 #+begin_latex
 \begin{equation}
-\lambda_{\gamma} = \frac{1}{n\sigma} \equiv \frac{1}{\kappa\rho} \ \ ,
+\ell_{\gamma} = \frac{1}{n\sigma} \equiv \frac{1}{\kappa\rho} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -110,14 +110,14 @@ in this case is given by scattering of photons onto the electrons and
 is: \kappa = 0.2(1+X) cm^{2} g^{-1}, where X is the mass fraction hydrogen, so
 for our rough approximation, \kappa\simeq0.4. The average density of the Sun
 (which you calculated for the last homework) is \rho_{\odot, avg}\simeq1.4 g
-cm^{-3}, therefore \lambda_{\gamma} \simeq 2 cm. The mean-free-path for
+cm^{-3}, therefore \ell_{\gamma} \simeq 2 cm. The mean-free-path for
 particle-particle interactions is much smaller (because the cross
 section \sigma is larger), so we can conservatively ask what is the
 temperature variation across this distance:
 
 #+begin_latex
 \begin{equation}
-\Delta T \simeq \lambda_{\gamma} dT/dr \le \lambda_{\gamma} T_\mathrm{center}/R
+\Delta T \simeq \ell_{\gamma} dT/dr \le \ell_{\gamma} T_\mathrm{center}/R
 \end{equation}
 #+end_latex
 
@@ -126,12 +126,12 @@ T_{center}, since we already know P_{center} \gg P_{surface}). For the Sun we
 will see that we can estimate T_{center}\simeq 10^{9} K, and we know R_{\odot},
 so \Delta T\simeq 10^{-4} K \ll T_{surf} \ll T_{center}.
 
-Thus, we can define layers of the star with \lambda_{gamma} \ll dr \ll R where
+Thus, we can define layers of the star with \ell_{\gamma} \ll dr \ll R where
 locally the temperature variation across the layer is negligible, and
 the assumption of /local thermal equilibrium/ (LTE) holds well. (*N.B.:* you can
 revise this a posteriori once we have an EOS!)
 
-This may not be true close to the surface, where \lambda_{\gamma} progressively
+This may not be true close to the surface, where \ell_{\gamma} progressively
 increases (because \rho decreases). There we may need to care about the
 wavelength or frequency dependance of the cross section \sigma\equiv\sigma(\nu) and
 thus the mean free path: a star has a different "surface" for
@@ -139,7 +139,7 @@ different photon frequencies! In those layers, the assumption of LTE
 does not work.
 
 As long as we discuss regions of the star with a thickness large
-w.r.t. \lambda_{\gamma} but small enough that the T variation across them, we
+w.r.t. \ell_{\gamma} but small enough that the T variation across them, we
 can use thermodynamics!
 
 Also, as we have seen before, the stars are usually in equilibrium and
@@ -467,7 +467,7 @@ instance), or at increasingly high densities.
 
 * Homework
 - We have discussed that the internal layers of the star are in LTE
-  using an argument based on the photons mean free path \lambda_{\gamma}.
+  using an argument based on the photons mean free path \ell_{\gamma}.
   Assuming a star of constant density (use the mean density for
   this!), pure hydrogen composition, and that electron scattering is
   the dominant interaction of the photons in the stellar interior,
