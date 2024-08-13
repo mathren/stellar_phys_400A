@@ -368,7 +368,7 @@ the small mass difference between these 2), and we are left with
 
 #+begin_latex
 \begin{equation}
-\frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T\right) \ \ ,
+\frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
 \end{equation}
 #+end_latex
 where the first term comes from the momentum phase space of the
