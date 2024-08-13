@@ -60,6 +60,8 @@ stars "heat up as they lose energy".
 *Aim*: Energy transport in radiative layers and the third stellar
 structure equation for non-polytropic models
 
+[[file:notes-lecture-ETransport.org::+title: 400A - Energy transport][Notes]]
+
 ** <2024-09-24 Thu> - Opacities
 *Aim*: Discuss the main source of opacities, Eddington limit and
 modified Eddington limit
