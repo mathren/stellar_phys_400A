@@ -95,6 +95,33 @@ motion of this something (which by hypothesis is small compared to the
 length scale over which we want to study the motion of this
 "something"). In fact this is almost correct!
 
+To get the correct pre-factor, let's say "something" are particles
+moving in 3 dimensions and focus on one direction, say z. If all these
+particles have a mean free path \ell and an average velocity v, then the
+number that crosses a given coordinate z with a positive \delta z as a
+function of time is:
+#+begin_latex
+\begin{equation}
+\right.\frac{dN}{dt}\left|_{x} =\frac{1}{2} n \frac{1}{3}v \ \ ,
+\end{equation}
+#+end_latex
+where the first 1/2 factor comes from the fact that their motion is
+random, so half the particles have negative \delta z and half have a
+positive one, and we just want to count the latter, and the factor of
+1/3 in front of their average velocity comes from the fact that the
+motion is isotropic (see [[file:notes-lecture-EOS1.org::*Ideal gas][derivation of the pressure]]).
+
+If there is a gradient \partial n /\partial z of particles along the z direction,
+the particles moving with positive \delta z  come from n(z-\ell)
+while those moving with the negative \delta z  come from n(z+\ell), so the net
+flux across z is
+
+#+begin_latex
+\begin{equation}
+J = \frac{dN}{dt}
+\end{equation}
+#+end_latex
+
 
 
 
