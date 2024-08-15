@@ -158,7 +158,7 @@ mean velocity of photons is v\rightarrow c, and we have already written \ell_{\g
 
 Thus, the radiative diffusion equation is
 #+begin_latex
-\begin{equation}\label{eq:diff}
+\begin{equation}
 F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{du}{dr} \ \ ,
 \end{equation}
 #+end_latex
@@ -170,7 +170,7 @@ quantity and it is valid in a region of the star where the dominant
 energy transport is radiative diffusion only:
 
 #+begin_latex
-\begin{equation}\label{eq:diff}
+\begin{equation}
 \frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa F \ \ .
 \end{equation}
 #+end_latex
@@ -215,9 +215,25 @@ next the case where energy is carried not by photons, but by the local
 motion of particles, that is *conduction*.
 
 *** Energy transport by conduction
+Energy transport by conduction is not limited to stars. For example a
+piece of metal left half in the Arizona Sun and half in the shade. The
+thermal motion of particles (atoms, electrons, ions) carries energy
+from the hotter parts to the colder ones.
+
+Actually, it is important only in certain kind of stars. To
+demonstrate this, we can consider the diffusion coefficient D=v\ell/3 and
+compare it to the radiative diffusion coefficient D_{rad} = c\ell_{\gamma}/3
+=c/(3\kappa\rho). The latter is going to be in general much larger because c\gg
+v with v thermal velocity of the particles (v^{2}\simeq 2k_{b}<T>/m)
 
 
 ** Local energy conservation
 
 
 * Homework
+- estimate the thermal velocity of particles (electrons and protons)
+  using the Virial theorem to estimate the temperature and compare it
+  to the speed of light. Compare the diffusion coefficient for
+  radiative diffusion and conduction and derive the average density
+  above which conduction can start to compete with radiative
+  diffusion. For a star of 1M_{\odot}, to which radius does that correspond?

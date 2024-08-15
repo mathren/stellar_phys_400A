@@ -58,7 +58,8 @@ stars "heat up as they lose energy".
 
 ** <2024-09-19 Tue> - Radiative energy transport & conduction
 *Aim*: Energy transport in radiative layers and the third stellar
-structure equation for non-polytropic models
+structure equation for non-polytropic models, and local energy
+conservation
 
 [[file:notes-lecture-ETransport.org::+title: 400A - Energy transport][Notes]]
 
@@ -66,13 +67,17 @@ structure equation for non-polytropic models
 *Aim*: Discuss the main source of opacities, Eddington limit and
 modified Eddington limit
 
+*Aim*: discuss opaci Rosseland mean opacities, atomic physics and other
+sources of opacity in a star
+
+[[file:notes-lecture-kappa.org::+title: 400A - opacity][Notes]]
+
 
 ** <2024-09-26 Thu> - Convection
 *Aim*: Introduce convective instability, mixing length theory and its
 limitations.
 
 [[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][Notes (preliminary)]]
-
 
 ** <2024-10-01 Thu> - Nuclear energy generation
 *Aim*: Introduce basics of nuclear energy generation through fusion,
@@ -82,11 +87,14 @@ recall basic quantum mechanics elements, Gamow peak
 [[file:materials/nuclear_reaction_rates.pdf][Notes (preliminary)]]
 
 
+[[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][Notes (preliminary)]]
+
 ** <2024-10-03 Tue> - Introduction to stellar evolution codes
 *Aim*: Introduce stellar evolution codes principles, MESA and MESA-web
 
 
 ** <2024-10-08 Tue> - Homology relations
+
 
 ** <2024-10-10 Tue> - Presentation expectations
 *Aim*: Discuss what is expected for the presentations, how they will be
@@ -107,7 +115,6 @@ graded, etc. how to provide useful feedback during peer-reviewing.
 ** <2024-10-29 Thu> - Evolution: high mass stars
 
 ** <2024-10-31 Tue> - Supernovae
-
 ** <2024-11-05 Thu> - Roche model and binary interactions
 ** <2024-11-07 Thu> - Four student presentations
 *** Presenter 1:
