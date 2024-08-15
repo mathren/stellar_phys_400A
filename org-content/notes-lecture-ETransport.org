@@ -188,7 +188,7 @@ luminosity. This is in general not true because of the contribution
 by neutrinos and convection: L(r) = L_{rad} + L_{\nu} +L_{conv}.
 
 #+begin_latex
-\begin{equation}\label{eq:diff}
+\begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa}{r^{2}}\frac{L_{rad}}{T^{3}} \ \ .
 \end{equation}
 #+end_latex
