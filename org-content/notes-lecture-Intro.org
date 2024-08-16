@@ -210,12 +210,12 @@ A common notation is also [X/H] = log_{10}[(n_{X}/n_{H})/(n_{X}/n_{H})_{\odot}],
 * Homework
 
 - Calculate the average density of the Sun and compare it with the
-density of something familiar on Earth.
+  density of something familiar on Earth.
 
 - start looking over the [[file:projects.org::*List of possible projects/presentations][list of final project]], you will need to
-provide us with a ranked list of 5 preferences. Feel free to search
-the web/literature to decide. Based on this list, we will try to
-assign projects and peer-referee, but it may not be possible to
-satisfy everyone. If you want, feel free to come up with different
-subjects related to stellar physics as well to propose, but you need
-to talk to us to get them approved before they can be on your list!
+  provide us with a ranked list of 5 preferences. Feel free to search
+  the web/literature to decide. Based on this list, we will try to
+  assign projects and peer-referee, but it may not be possible to
+  satisfy everyone. If you want, feel free to come up with different
+  subjects related to stellar physics as well to propose, but you need
+  to talk to us to get them approved before they can be on your list!
