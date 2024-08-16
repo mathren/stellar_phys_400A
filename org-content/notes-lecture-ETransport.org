@@ -278,7 +278,7 @@ F_\mathrm{cond} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{cond}\rho}\frac{d T}{dr} 
 where now
 #+begin_latex
 \begin{equation}\label{eq:kappas}
-\frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_{cond}} \ \ .
+\frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
 \end{equation}
 #+end_latex
 
