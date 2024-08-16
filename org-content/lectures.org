@@ -10,8 +10,11 @@ and student interest. The order roughly follows the presentation in
 [[https://www.astro.ru.nl/~onnop/][Onno Pols notes]].
 
 ** <2024-08-27 Tue> - Intro & orders of magnitude
-*Aim*: Introduce the course, go over some quantities (M_{\odot}, R_{\odot},
-L_{\odot}, stellar lifetimes)
+*Aim*:
+ - Discuss [[./syllabus.org][syllabus]] and learning outcomes
+ - Go over some basics (magnitudes, parallaxes, solar quantities: M_{\odot}, R_{\odot}, L_{\odot}, stellar lifetimes)
+ - Discuss project, show list
+ - Discuss expectations and grading rubrics for course and project
 
 [[./notes-lecture-Intro.org][Notes]]
 

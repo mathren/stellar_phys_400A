@@ -5,16 +5,42 @@
 * Introduction to the course
 *Materials*: chapter 1 of Onno Pols' lecture notes.
 
-** Aim
-- Discuss [[./syllabus.org][syllabus]] and learning outcomes
-- Go over some basics (magnitudes, parallaxes, solar quantities)
-- Discuss project, show list
-- Discuss expectations and grading rubrics for course and project
-
 ** Aim of the course
-
 *To understand the structure and evolution of stars and their
 observational properties using known laws of physics.*
+
+** Expectations
+:Questions:
+- *Q*: what are the classroom expectations?
+[[./images/400A-intro-QR.png]]
+:end:
+
+This is a core course during your 4^{th} year, so you are approaching the
+academic threshold beyond which you will be *expected* to carry out
+independent work (either in your thesis, in the future as graduate
+students, or highly skilled worker wherever you will be).
+
+My idea in this course is to not only provide you some /content/
+regarding stellar physics and stellar evolution, but also to help you
+develop your skills as independent researchers for your future
+(whether in academia or elsewhere).
+
+Throughout the course, I will try to highlight what is the result of
+computer models based on necessary (but often grossly oversimplifying)
+approximations and what is more solidly grounded in observations. We
+will start by going over the physical foundations, but I will ask you
+to use your own computer models pretty early on, before we have all
+the foundations laid out.
+
+This is also a very vast topic, and there is too much to cover in only
+one semester, with many bleeding edge developments. So I will ask *you*
+to teach your peers some of the topics that don't fit within the main
+part of the course. You will also evaluate (and be evaluated) by your
+peers. This is because the ability of giving constructive and helpful
+feedback is important in science and beyond: you will work with others
+and need to help them improve, and you will receive feedback
+yourselves for the rest of your careers whatever they may be. We will
+do this though a project, that we will discuss later.
 
 ** What is a star?
 - Historical definition: /flickering light source in the sky with no
@@ -36,7 +62,7 @@ the course.
 
 :Questions:
 - *Q*: what is a star made of? Can you think of a star made of something
-  else? Mention Cecilia Payne-Gaposchkin.
+  else? Mention [[https://en.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin][Cecilia Payne-Gaposchkin]].
 :end:
 
 ** Observations
