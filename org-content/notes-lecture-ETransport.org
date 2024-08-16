@@ -318,14 +318,98 @@ treat as a parameter dependent on atomic and condensed matter physics
 Let's finally write an equation for the /local/ luminosity in a star L
 that we have introduced above. Since the luminosity is just the local
 "power", it makes sense to look into the /local/ energy conservation to
-derive such equation.
+derive such equation. For a unit mass, the "first law of
+thermodynamics" states that the change d u in internal energy (the
+specific internal energy) is equal to the heat added/extracted d q plus
+the work done on the unit mass Pd v with v=1/\rho the specific volume:
 
-Above, we have defined: L = 4\pi r^{2} F (where now both L and F include
-the contribution from conduction and radiation).
+#+begin_latex
+\begin{equation}
+d u = d q + Pd v \equiv d q + \frac{P}{\rho^{2}}d\rho \ \ ,
+\end{equation}
+#+end_latex
+where we express things as a function of the density \rho which already
+appears in the other equations.
 
+:Question:
+- *Q*: if we compress the gas (\delta\rho > 0 because \rho increases), without
+  adding/extracting heat (\delta q = 0) what happens to the internal
+  energy?
+:end:
 
-The energy density per unit mass and volume in a star is often
-indicated with \varepsilon, such that [\varepsilon] = [E]/[m][L^{3}].
+The heat term in a star can only be due to:
+- energy generation by an internal source (nuclear fusion!), which can
+  release per unit mass and time energy equal to \varepsilon_{nuc} ([\varepsilon_{nuc}] =[E]/([t][M])).
+- energy loss by some particle escaping, this can be for example
+  neutrinos \nu. Neutrinos in a star can come from nuclear reactions and
+  they effectively just reduce \varepsilon_{nuc} \rightarrow \varepsilon_{nuc} -
+  \varepsilon_{\nu, nuc}, or they can come from so-called *cooling processes*, for
+  example e^{-} +\gamma \rightarrow e^{-} + \nu + \bar{\nu}, which really
+  decrease the energy by extracting heat, since as soon as they are
+  produced neutrinos will leave the star with no further interaction
+  (with the exception of neutron stars). The neutrino energy cooling
+  rate per unit mass is indicated by \varepsilon_{\nu} and it has always a *negative*
+  contribution to the heat (it's a loss term for the star)
+- energy can flow in and out from the boundary of a thin shell of
+  matter. Above, we have defined: L = 4\pi r^{2} F (where now both L and F
+  include the contribution from conduction and radiation). Therefore,
+  the energy per unit time coming from below is L\equiv L(m) and the energy
+  per unit time leaking from above is L(m+dm)
+
+Putting all these together we have, at a given mass location m
+#+begin_latex
+\begin{equation}
+dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+\frac{dL}{dm}dt \ \ .
+\end{equation}
+#+end_latex
+Thus, substituting in the local energy conservation we obtain:
+#+begin_latex
+\begin{equation}
+\frac{dL}{dm} = \varepsilon_\mathrm{nuc}(m) -\varepsilon_{\nu}(m) - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} \ \ .
+\end{equation}
+#+end_latex
+Often the last two terms are combined together to define:
+#+begin_latex
+\begin{equation}
+\varepsilon_\mathrm{grav} = - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} = -T\frac{ds}{dt} \ \ .
+\end{equation}
+#+end_latex
+which being a term dependent on dt it is usually small for a star in a
+static (\partial_{t} \equiv 0) configuration. However, a star may occasionally
+be out of thermal equilibrium (du/dt \neq 0) and/or expanding or
+contracting (d\rho/dt\neq0). This will change the internal state of the gas,
+and that is why it is often convenient to write things in terms of the
+(specific) entropy s. Moreover, since most often this occurs because
+of contraction/expansion of a star, historically this has been called
+\varepsilon "grav", although it really has more to do with the internal energy
+of the gas. With this definition, the next equation of stellar
+structure becomes
+
+#+begin_latex
+\begin{equation}
+\frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav}_{}\ \ .
+\end{equation}
+
+*N.B.:* Once again, we found another equation but it comes with new
+unknowns. \varepsilon_{grav} is fortunately only dependent on the thermodynamics of
+the gas, so with the EOS we can calculate that (the specific entropy
+is yet a function of \rho and T). The other two terms instead are input
+physics for the star. We will [[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][later]] unpack more \varepsilon_{nuc} by discussing
+nuclear energy generation -- but ultimately it will depend on cross
+sections for nuclear interactions which in stellar physics are taken
+as known input physics (again coming often from military research).
+Similarly, \varepsilon_{\nu} depends on neutrino physics and contains many neutrino
+loss terms. We will discuss also these a bit more later on, but
+effectively in stellar physics \varepsilon_{\nu} is also a quantity that we assume
+to know as a function of T and \rho, borrowing the work of neutrino
+physicists.
+
+So, in total at this point, we have \kappa, \varepsilon_{\nu}, \varepsilon_{nuc} assumed to
+be known input physics, and we have an equation for the local
+conservation of energy, and the energy transport in the case of
+diffusion (mediated by photons or particles, i.e. conduction).
+
+We still need an equation for the convective energy transport.
 
 
 
