@@ -332,8 +332,8 @@ where we express things as a function of the density \rho which already
 appears in the other equations.
 
 :Question:
-- *Q*: if we compress the gas (\delta\rho > 0 because \rho increases), without
-  adding/extracting heat (\delta q = 0) what happens to the internal
+- *Q*: if we compress the gas (d\rho > 0 because \rho increases), without
+  adding/extracting heat (d q = 0) what happens to the internal
   energy?
 :end:
 
@@ -344,17 +344,17 @@ The heat term in a star can only be due to:
   neutrinos \nu. Neutrinos in a star can come from nuclear reactions and
   they effectively just reduce \varepsilon_{nuc} \rightarrow \varepsilon_{nuc} -
   \varepsilon_{\nu, nuc}, or they can come from so-called *cooling processes*, for
-  example e^{-} +\gamma \rightarrow e^{-} + \nu + \bar{\nu}, which really
-  decrease the energy by extracting heat, since as soon as they are
-  produced neutrinos will leave the star with no further interaction
-  (with the exception of neutron stars). The neutrino energy cooling
-  rate per unit mass is indicated by \varepsilon_{\nu} and it has always a *negative*
+  example e^{-} +\gamma \rightarrow e^{-} + \nu + anti-\nu, which really decrease
+  the energy by extracting heat, since as soon as they are produced
+  neutrinos will leave the star with no further interaction (with the
+  exception of neutron stars). The neutrino energy cooling rate per
+  unit mass is indicated by \varepsilon_{\nu} and it has always a *negative*
   contribution to the heat (it's a loss term for the star)
 - energy can flow in and out from the boundary of a thin shell of
   matter. Above, we have defined: L = 4\pi r^{2} F (where now both L and F
   include the contribution from conduction and radiation). Therefore,
   the energy per unit time coming from below is L\equiv L(m) and the energy
-  per unit time leaking from above is L(m+dm)
+  per unit time leaking from above is L(m+dm).
 
 Putting all these together we have, at a given mass location m
 #+begin_latex
@@ -409,7 +409,9 @@ be known input physics, and we have an equation for the local
 conservation of energy, and the energy transport in the case of
 diffusion (mediated by photons or particles, i.e. conduction).
 
-We still need an equation for the convective energy transport.
+We still need an equation for the convective energy transport, and
+while unpacking \varepsilon_{nuc} we will write a set of equations for the chemical
+evolution due to nuclear burning, but we are getting close!
 
 
 
