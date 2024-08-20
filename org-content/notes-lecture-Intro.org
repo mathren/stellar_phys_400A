@@ -12,7 +12,6 @@ observational properties using known laws of physics.*
 ** Expectations
 :Questions:
 - *Q*: what are the classroom expectations?
-[[./images/400A-intro-QR.png]]
 :end:
 
 This is a core course during your 4^{th} year, so you are approaching the
