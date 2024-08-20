@@ -414,7 +414,6 @@ while unpacking \varepsilon_{nuc} we will write a set of equations for the chemi
 evolution due to nuclear burning, but we are getting close!
 
 
-
 * Homework
 - estimate the thermal velocity of particles (electrons and protons)
   using the Virial theorem to estimate the temperature and compare it
