@@ -246,7 +246,7 @@ resources available within the local community for support.
 - Email: [[mailto:survivoradvocacy@email.arizona.edu][survivoradvocacy@email.arizona.edu]]
 - Phone: 520-621-5767
 
-** Support Outreach Success
+** Support Outreach Success (SOS)
 https://sos.arizona.edu/about
 
 Students who ask for help are more successful. If you have questions,
@@ -256,7 +256,7 @@ resources or connect you with the correct people. Whether you’re
 brand-new to campus or have been around for a while, just reach out to
 SOS for support.
 
-- Chat: [[sos.arizona.edu]]
+- Chat: [[http://sos.arizona.edu][sos.arizona.edu]]
 - Email: [[mailto:sos@arizona.edu][sos@arizona.edu]]
 - Text: SOS to 70542
 - Call: 520-621-2327
