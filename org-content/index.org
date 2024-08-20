@@ -8,9 +8,12 @@ Material developed for the 400A course at the Department of Astronomy
 and Steward Observatory of the University of Arizona in the Fall
 semester 2024.
 
-/Someday, we should be able to understand something as simple as a star/ - A. Eddington, 1927
+A. Eddington, 1927: /Someday, we should be able to understand something
+as simple as a star/
+
 
 F. Hoyle: "/...Fundamentally, a star is a pretty simple structure"/
+
 R. O. Redman: "/You'd look simple too at a distance of ten parsecs!/"
 
 #+begin_export html
