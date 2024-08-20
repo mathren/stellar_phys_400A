@@ -13,7 +13,6 @@ as simple as a star/
 
 
 F. Hoyle: "/...Fundamentally, a star is a pretty simple structure"/
-
 R. O. Redman: "/You'd look simple too at a distance of ten parsecs!/"
 
 #+begin_export html
