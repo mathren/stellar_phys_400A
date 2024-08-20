@@ -11,7 +11,7 @@ semester 2024.
 /Someday, we should be able to understand something as simple as a star/ - A. Eddington, 1927
 
 - F. Hoyle: "/...Fundamentally, a star is a pretty simple structure"/
-- R. O Redman: "/You'd look simple too at a distance of ten parsecs!/"
+- R. O. Redman: "/You'd look simple too at a distance of ten parsecs!/"
 
 #+begin_export html
  <div class="banner_container">
