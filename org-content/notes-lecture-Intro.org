@@ -12,34 +12,44 @@
 ** Intro to myself
 
 My name is Mathieu Renzo, I am an assistant professor here since
-January, and this will be the first complete course that I teach.
+January, before, I was a postdoc in New York city (at the Flatiron
+institute) and before that I did my PhD at the University of Amsterdam
+in the Netherlands -- but I am originally from none of these places!
 
-However, this is on stellar evolution, which is the research topic I
-work on. More specifically, I work on the evolution of massive stars
-in binary systems. These are the stars that end their lifes in
-/supernova explosions/, that can outshine briefly an entire galaxy.
-During these explosions some of the most exotic objects in the
-universe are formed, neutron stars or black holes (especially if the
-explosion fails!). The massive star progenitor of these objects are
-found most often in binary systems, meaning there are two stars
-orbiting each other, and they can, as they evolve, interact and
-exchange mass and sometimes merge. My research is strongly embedded in
-the topic of this course (stellar evolution) and touches on explosion
-physics, X-ray binaries, gravitational waves, etc. I will try to
-connect the course material to all these topics whenever possible!
+This will be the first complete course that I teach. However, this is
+on stellar evolution, which is the research topic I work on. More
+specifically, I work on the evolution of massive stars in binary
+systems. These are the stars that end their lifes in /supernova
+explosions/, that can outshine briefly an entire galaxy. During these
+explosions some of the most exotic objects in the universe are formed,
+neutron stars or black holes (especially if the explosion fails!). The
+massive star progenitor of these objects are found most often in
+binary systems, meaning there are two stars orbiting each other, and
+they can, as they evolve, interact and exchange mass and sometimes
+merge. My research is strongly embedded in the topic of this course
+(stellar evolution) and touches on explosion physics, X-ray binaries,
+gravitational waves, etc. I will try to connect the course material to
+all these topics whenever possible!
 
 Also, my research field (and more broadly the scientific topic of this
-course) is /very computationally oriented/. One of the things I want you
-to learn in this course is to understand what is numerical simulation,
-what is observational result, and what to trust/not trust of the
-answers a computer may give you. We will do this by having
+course) is /very computationally oriented/. Throughout the course, I
+will try to highlight what is the result of computer models based on
+necessary (but often grossly oversimplifying) approximations and what
+is more solidly grounded in observations. We will do this by having
 computational exercises, that's why I asked about your confidence in
-your ability to make plots in the survey.
+your ability to make plots in the survey. We will start the course by
+going over the physical foundations, but I will ask you to use your
+own computer models pretty early on, before we have all the
+foundations laid out.
 
-I am also a first-generation academic, meaning my parents don't have
-a bachelor degree themselves. I'm mentioning this because this may
-be the situation for some of you as well, and I want to emphasize
-how this is /not/ important to succeed.
+I am also a first-generation academic, meaning my parents don't have a
+bachelor degree themselves. I'm mentioning this because this may be
+the situation for some of you as well, and I want to emphasize how
+this is /not/ that important in the end: even if the father up you climb
+the academic pyramid the more people come from a long lineage of
+academics, you do belong here just based on your curiosity, skills,
+drive, which are developed throughout your studies and continued
+growth, and not genetically inherited.
 
 
 ** Aim of the course
@@ -54,31 +64,51 @@ observational properties using known laws of physics.*
 This is a core course during your 4^{th} year, so you are approaching the
 academic threshold beyond which you will be *expected* to carry out
 independent work (either in your thesis, in the future as graduate
-students or highly skilled workers).
+students or highly skilled workers). My idea in this course is to not
+only provide you some /content/ regarding stellar physics and stellar
+evolution, but also to help you develop your skills as independent
+researchers for your future (whether in academia or elsewhere).
 
-My idea in this course is to not only provide you some /content/
-regarding stellar physics and stellar evolution, but also to help you
-develop your skills as independent researchers for your future
-(whether in academia or elsewhere).
+For this reason also /we will not check your attendance/. However, I
+will try to present things in lectures in a way that is complementing
+the textbook resources, and you will more likely have a better
+understanding if you come. Also, as we'll discuss in a moment,
+in-class participation will count for up to 20% of your final grade,
+so if you want more than something like a B- you should come.
 
-Throughout the course, I will try to highlight what is the result of
-computer models based on necessary (but often grossly oversimplifying)
-approximations and what is more solidly grounded in observations. We
-will start by going over the physical foundations, but I will ask you
-to use your own computer models pretty early on, before we have all
-the foundations laid out.
+An important thing to keep in mind as we go through the semester is to
+have a [[https://en.wikipedia.org/wiki/Mindset#Fixed_and_growth_mindsets][growth mindset]]: we are all here to learn and improve ourselves!
+Grading will particularly reward improvement, so a failure at some
+point (of one homework) is just an opportunity for improvement -- not
+a career stopping tragedy.
 
-This is also a very vast topic, and there is too much to cover in only
-one semester, with many bleeding edge developments. So I will ask *you*
-to teach your peers some of the topics that don't fit within the main
-part of the course. You will also evaluate (and be evaluated) by your
-peers. This is because the ability of giving constructive and helpful
-feedback is important in science and beyond: you will work with others
-and need to help them improve, and you will receive feedback
-yourselves for the rest of your careers whatever they may be. We will
-do this though a project, that we will discuss later.
+Similarly, I expect everyone in the class to treat each other with
+respect and kindness. We don't all come from the same background, we
+don't all need to be at the same exact level to learn from each other.
+Ultimately, you are here to learn some science and science is a /team/
+effort, and it has been proven many times over than diverse teams
+achieve better results. Start practicing this now: if someone is
+struggling with some material that you think you have under control,
+help them. They are not slowing you down, but giving you an
+opportunity to verify and deepen your knowledge by engaging with them.
 
-** What is a star?
+Stellar evolution is also a very vast topic, and there is too much to
+cover in only one semester, with many bleeding edge developments. So I
+will ask *you* to teach your peers some of the topics that don't fit
+within the main part of the course. You will also evaluate (and be
+evaluated) by your peers. This is because the ability of giving
+constructive and helpful feedback is important in science and beyond:
+you will work with others and need to help them improve, and you will
+receive feedback yourselves for the rest of your careers whatever they
+may be. We will do this though a project, that we will discuss later.
+
+** Discuss syllabus
+
+[[syllabus.org]]
+
+** Let's start finally talking about stars!
+
+*** What is a star?
 - Historical definition: /flickering light source in the sky with no
   intrinsic motion/ (where flickering excludes planets, and no
   intrinsic motion excludes planets /and/ other solar system objects
@@ -91,7 +121,7 @@ about 100 years old! A lot can be learned about stars without knowing
 anything about nuclear fusion, which we will treat, but much later in
 the course.
 
-** What determines the properties of a (single) star?
+*** What determines the properties of a (single) star?
 - *Mass*
 - Chemical composition
 - Rotation
@@ -101,14 +131,14 @@ the course.
   else? Mention [[https://en.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin][Cecilia Payne-Gaposchkin]].
 :end:
 
-** Observations
+*** Observations
 - Photometry
 - Spectroscopy
 - Astrometry
 - Asteroseismology
 - Neutrinos
 
-*** Parallax
+**** Parallax
 In astrophysics (and in stellar physics in particular) we still use
 quantities and units that have as only justification historical
 reasons.
@@ -128,7 +158,7 @@ parallax of one arcsecond:
 This is a measure of the stars distance that can be used for stars
 with relatively small distances to the Solar system.
 
-*** Magnitudes
+**** Magnitudes
 The magnitude scale is a logarithmic scale first introduces by
 Hipparcos, who clearly was only able to do naked-eye observations.
 This explains why a logarithmic scale: the sensory responses are often
@@ -192,18 +222,18 @@ erg cm^{-2} s^{-1} Hz^{-1} corresponding to a photon flux of N_{\lambda} \simeq
 :end:
 
 
-** Relevant physical scales
+*** Relevant physical scales
 The star we can observe best is the closest one, the Sun (\odot), so a
 lot of quantities are scaled to those of the Sun in stellar physics
 and in astronomy more generally.
 
-*** Solar radius: R_{\odot} = 6.957\times 10^{10} cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
-*** Solar mass: M_{\odot} = 1.98\times10^{33} g\simeq 2\times10^{33} g
-*** Solar luminosity: L_{\odot} = 3.82\times10^{33} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
+**** Solar radius: R_{\odot} = 6.957\times 10^{10} cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
+**** Solar mass: M_{\odot} = 1.98\times10^{33} g\simeq 2\times10^{33} g
+**** Solar luminosity: L_{\odot} = 3.82\times10^{33} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
 This may be one of the reasons why we still use =cgs= in astronomy,
 the other one being that the constants in electromagnetism are a
 bit simpler.
-*** Solar effective temperature: T_{\odot}\simeq 6000K
+**** Solar effective temperature: T_{\odot}\simeq 6000K
 This is the "effective temperature" of the Sun, which we will discuss
 in the [[file:notes-lecture-CMD-HRD.org][next lecture]]. It is an approximation for the temperature of the
 surface below which the radiation field is isotropic - that is the
@@ -213,7 +243,7 @@ around in any direction, it's just on average there are more moving in
 the positive r direction). Stars don't really have a well defined
 "surface" and their spectra form in the atmospheric layers.
 
-*** Solar metallicity: Z_{\odot} = 0.0146 \simeq 0.02 (older but still widely used value)
+**** Solar metallicity: Z_{\odot} = 0.0146 \simeq 0.02 (older but still widely used value)
 The "metallicity" is the fraction by mass of gas that is /not/ hydrogen
 nor helium. This includes many elements (e.g., C, N, O, Si) that a
 chemist would not call "metals".
@@ -228,11 +258,11 @@ A common notation is also [X/H] = log_{10}[(n_{X}/n_{H})/(n_{X}/n_{H})_{\odot}],
 [Fe/H] can be used as a proxy for the metallicity.
 
 
-*** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
+**** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
 :Questions:
  - *Q*: How old is the Sun? How long will it live? How do we know?
 :end:
-** Discuss projects
+*** Discuss projects
 
 - Projects will cover topics that are important and or timely, but
   hard to fit in the main body of the course
