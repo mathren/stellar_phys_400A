@@ -5,6 +5,43 @@
 * Introduction to the course
 *Materials*: chapter 1 of Onno Pols' lecture notes.
 
+** Intro survey link
+
+[[./images/400A-intro-QR.png]]
+
+** Intro to myself
+
+My name is Mathieu Renzo, I am an assistant professor here since
+January, and this will be the first complete course that I teach.
+
+However, this is on stellar evolution, which is the research topic I
+work on. More specifically, I work on the evolution of massive stars
+in binary systems. These are the stars that end their lifes in
+/supernova explosions/, that can outshine briefly an entire galaxy.
+During these explosions some of the most exotic objects in the
+universe are formed, neutron stars or black holes (especially if the
+explosion fails!). The massive star progenitor of these objects are
+found most often in binary systems, meaning there are two stars
+orbiting each other, and they can, as they evolve, interact and
+exchange mass and sometimes merge. My research is strongly embedded in
+the topic of this course (stellar evolution) and touches on explosion
+physics, X-ray binaries, gravitational waves, etc. I will try to
+connect the course material to all these topics whenever possible!
+
+Also, my research field (and more broadly the scientific topic of this
+course) is /very computationally oriented/. One of the things I want you
+to learn in this course is to understand what is numerical simulation,
+what is observational result, and what to trust/not trust of the
+answers a computer may give you. We will do this by having
+computational exercises, that's why I asked about your confidence in
+your ability to make plots in the survey.
+
+I am also a first-generation academic, meaning my parents don't have
+a bachelor degree themselves. I'm mentioning this because this may
+be the situation for some of you as well, and I want to emphasize
+how this is /not/ important to succeed.
+
+
 ** Aim of the course
 *To understand the structure and evolution of stars and their
 observational properties using known laws of physics.*
