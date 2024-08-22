@@ -104,6 +104,7 @@ may be. We will do this through a project, that we will discuss later.
 
 ** Discuss syllabus
 
+#+CAPTION: Link to syllabus
 #+ATTR_HTML: :width 50%
 [[./images/syllabus-QR.png]]
 
