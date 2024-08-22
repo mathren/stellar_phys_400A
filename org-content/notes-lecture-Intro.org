@@ -16,8 +16,8 @@ January, before, I was a postdoc in New York city (at the Flatiron
 institute) and before that I did my PhD at the University of Amsterdam
 in the Netherlands -- but I am originally from none of these places!
 
-This will be the first complete course that I teach. However, this is
-on stellar evolution, which is the research topic I work on. More
+This will be the first complete course that I teach. However, the
+topic is stellar evolution, which is my research field. More
 specifically, I work on the evolution of massive stars in binary
 systems. These are the stars that end their lives in /supernova
 explosions/, that can outshine briefly an entire galaxy. During these
