@@ -19,7 +19,7 @@ in the Netherlands -- but I am originally from none of these places!
 This will be the first complete course that I teach. However, this is
 on stellar evolution, which is the research topic I work on. More
 specifically, I work on the evolution of massive stars in binary
-systems. These are the stars that end their lifes in /supernova
+systems. These are the stars that end their lives in /supernova
 explosions/, that can outshine briefly an entire galaxy. During these
 explosions some of the most exotic objects in the universe are formed,
 neutron stars or black holes (especially if the explosion fails!). The
@@ -100,7 +100,7 @@ evaluated) by your peers. This is because the ability of giving
 constructive and helpful feedback is important in science and beyond:
 you will work with others and need to help them improve, and you will
 receive feedback yourselves for the rest of your careers whatever they
-may be. We will do this though a project, that we will discuss later.
+may be. We will do this through a project, that we will discuss later.
 
 ** Discuss syllabus
 

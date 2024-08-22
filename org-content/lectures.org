@@ -92,11 +92,16 @@ recall basic quantum mechanics elements, Gamow peak
 
 [[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][Notes (preliminary)]]
 
-** <2024-10-03 Tue> - Introduction to stellar evolution codes
-*Aim*: Introduce stellar evolution codes principles, MESA and MESA-web
-
+** <2024-10-15 Thu> - Radiative transfer
+- Saha equation
+- line formation region
+- line broadening mechanisms
 
 ** <2024-10-08 Tue> - Homology relations
+
+
+** <2024-10-03 Tue> - Introduction to stellar evolution codes
+*Aim*: Introduce stellar evolution codes principles, MESA and MESA-web
 
 
 ** <2024-10-10 Tue> - Presentation expectations
@@ -107,11 +112,6 @@ graded, etc. how to provide useful feedback during peer-reviewing.
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
 
 
-
-** <2024-10-15 Thu> - Radiative transfer
-- Saha equation
-- line formation region
-- line broadening mechanisms
 
 ** <2024-10-22 Tue> - Evolution: low mass stars 1
 ** <2024-10-24 Tue> - Evolution: low mass stars 2
