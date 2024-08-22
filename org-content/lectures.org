@@ -87,10 +87,8 @@ limitations.
 recall basic quantum mechanics elements, Gamow peak
 *Aim*: introduce nuclear energy generation and nuclear timescale
 
-[[file:materials/nuclear_reaction_rates.pdf][Notes (preliminary)]]
-
-
 [[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][Notes (preliminary)]]
+
 
 ** <2024-10-15 Thu> - Radiative transfer
 - Saha equation
@@ -99,12 +97,21 @@ recall basic quantum mechanics elements, Gamow peak
 
 ** <2024-10-08 Tue> - Homology relations
 
-
 ** <2024-10-03 Tue> - Introduction to stellar evolution codes
 *Aim*: Introduce stellar evolution codes principles, MESA and MESA-web
 
 
-** <2024-10-10 Tue> - Presentation expectations
+** <2024-10-22 Tue> - Evolution: low mass stars 1
+
+** <2024-10-24 Tue> - Evolution: low mass stars 2
+
+** <2024-10-29 Thu> - Evolution: high mass stars
+
+** <2024-10-10 Tue> - Roche geometry and binary interactions
+*Aim*: Introduce the Roche approximation and its limitations and binary
+ mass transfer
+
+*** Presentation expectations
 *Aim*: Discuss what is expected for the presentations, how they will be
 graded, etc. how to provide useful feedback during peer-reviewing.
 
@@ -112,13 +119,11 @@ graded, etc. how to provide useful feedback during peer-reviewing.
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
 
 
-
-** <2024-10-22 Tue> - Evolution: low mass stars 1
-** <2024-10-24 Tue> - Evolution: low mass stars 2
-** <2024-10-29 Thu> - Evolution: high mass stars
-
 ** <2024-10-31 Tue> - Supernovae
-** <2024-11-05 Thu> - Roche model and binary interactions
+
+** <2024-11-05 Thu> - *Guest lecture*: r-process and/or accretion on compact objects
+Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
+
 ** <2024-11-07 Thu> - Four student presentations
 *** Presenter 1:
 - reviewer 1:
