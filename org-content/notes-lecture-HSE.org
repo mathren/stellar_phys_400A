@@ -295,6 +295,14 @@ if the gradient has to compensate the gravitational pull.
 equation assuming no viscosity (the microscopic viscosity is generally
 negligible in stars).
 
+*N.B.:* We have implicitly assumed that the star we model is
+sufficiently far away from anything else that there are no external
+forces. This may not hold in a binary system, for which in the
+Euler equation there will be other terms, such as the gravity of the
+binary companion, and tidal forces arising from its presence. While
+these are important, they often affect most directly only the outer
+layers of a star (that can be significantly tidally distorted), and
+can maybe be neglected further in the interior.
 
 Equations Eq. \ref{eq:mass_conservation} and \ref{eq:HSE} are two
 differential equations, that under the assumption of spherical

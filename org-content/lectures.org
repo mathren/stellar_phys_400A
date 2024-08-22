@@ -64,16 +64,16 @@ stars "heat up as they lose energy".
 structure equation for non-polytropic models, and local energy
 conservation
 
-[[file:notes-lecture-ETransport.org::+title: 400A - Energy transport][Notes]]
+[[./notes-lecture-ETransport.org][Notes]]
 
 ** <2024-09-24 Thu> - Opacities
 *Aim*: Discuss the main source of opacities, Eddington limit and
 modified Eddington limit
 
-*Aim*: discuss opaci Rosseland mean opacities, atomic physics and other
+*Aim*: discuss opacity, Rosseland mean opacities, atomic physics and other
 sources of opacity in a star
 
-[[file:notes-lecture-kappa.org::+title: 400A - opacity][Notes]]
+[[notes-lecture-kappa.org][Notes]]
 
 
 ** <2024-09-26 Thu> - Convection

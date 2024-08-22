@@ -175,7 +175,7 @@ energy transport is radiative diffusion only:
 \end{equation}
 #+end_latex
 /In a radiative region the temperature is proportional to the opacity
-\kappa_\mathrm{rad} times the radiative energy flux/: dT/dr\propto \kappa_\mathrm{rad} F_{rad}.
+\kappa_{rad} times the radiative energy flux/: dT/dr\propto \kappa_{rad} F_{rad}.
 
 We can further rewrite the flux F_{rad} = L_{rad}/(4\pi r^{2}). This introduces
 the /local/ luminosity L_{rad}\equiv L_{rad}(r) which is the rate (that is per
@@ -229,7 +229,6 @@ coefficient D\simeq c_{V}v\ell/3 and compare it to the radiative diffusion
 coefficient D_{rad} = c\ell_{\gamma}/3 =c/(3\kappa\rho). Note that D\propto c_{v}
 the specific heat at constant volume of the gas when we consider
 conduction (this is a result from condensed matter physics).
-
 
 In the diffusion coefficient D, the velocity that appears is the
 thermal velocity of the particles (v^{2}\simeq 2k_{b}T/m for a

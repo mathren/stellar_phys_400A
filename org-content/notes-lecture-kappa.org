@@ -1,3 +1,35 @@
 #+title: 400A - opacity
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+
+* Opacity
+*Materials*: Chapter 5 of Onno Pols' lecture notes,
+
+We have seen in [[file:notes-lecture-ETransport.org::*Energy transport by conduction][the previous lecture]] that in the equation for the
+energy transport by diffusion (either of photons or electrons, that is
+either radiative or conductive energy transport) there is a parameter
+\kappa that determines the "resistance" of the stellar gas to the passage
+of energy by diffusion. This was the analogy that comes out from the
+combination of the radiative opacity and conductive opacity
+
+#+begin_latex
+\begin{equation}\label{eq:kappas}
+\frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
+\end{equation}
+#+end_latex
+
+Since we also saw that dT/dr \propto \kappa F, it is clear that the opacity \kappa is
+an extremely important parameter for the structure of the star.
+Effectively, what that proportionality means is that given an opacity
+profile \kappa\equiv\kappa(r(m)), the stellar structure will adjust in such a way
+that the temperature gradient dT/dr is sufficient to carry out the
+flux F that is necessary to maintain energy conservation
+layer-by-layer (accounting for the energy losses at the surface and
+throughout because of e.g., neutrinos)!
+
+The purpose of this lecture is to focus on \kappa_{rad} and understand what
+physically determines it, and understand how \kappa_{rad}\equiv\kappa_{rad}(T,
+\rho, \{X_{i}\}) can be expressed as a function of the thermodynamics and
+composition of the stellar gas.
+
+* Sources of radiative opacity
