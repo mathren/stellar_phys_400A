@@ -7,6 +7,7 @@
 
 ** Intro survey link
 
+#+CAPTION: Link to intro survey
 #+ATTR_HTML: :width 50%
 [[./images/intro-survey-QR.png]]
 
