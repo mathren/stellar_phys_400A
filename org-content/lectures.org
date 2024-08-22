@@ -112,7 +112,7 @@ recall basic quantum mechanics elements, Gamow peak
  mass transfer
 
 *** Presentation expectations
-*Aim*: Discuss what is expected for the presentations, how they will be
+Discuss what is expected for the presentations, how they will be
 graded, etc. how to provide useful feedback during peer-reviewing.
 
  - Discuss structure: introduce problem, show state-of-the-art
