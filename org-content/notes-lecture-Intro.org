@@ -100,7 +100,7 @@ may be. We will do this through a project, that we will discuss later.
 
 ** Discuss syllabus
 
-[[syllabus.org]]
+[[./syllabus.org][syllabus]]
 
 ** Let's start finally talking about stars!
 

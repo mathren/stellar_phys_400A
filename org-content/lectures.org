@@ -73,7 +73,7 @@ modified Eddington limit
 *Aim*: discuss opacity, Rosseland mean opacities, atomic physics and other
 sources of opacity in a star
 
-[[notes-lecture-kappa.org][Notes]]
+[[./notes-lecture-kappa.org][Notes]]
 
 
 ** <2024-09-26 Thu> - Convection
