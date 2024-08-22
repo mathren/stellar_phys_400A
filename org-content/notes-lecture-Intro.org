@@ -86,7 +86,10 @@ effort, and it has been proven many times over than diverse teams
 achieve better results. Start practicing this now: if someone is
 struggling with some material that you think you have under control,
 help them. They are not slowing you down, but giving you an
-opportunity to verify and deepen your knowledge by engaging with them.
+opportunity to verify and deepen your knowledge by engaging with them
+and the difficulties they may be experiencing. You may soon be the one
+in difficulty yourself and give them a chance to "repay" you, and in
+the end we will all be better thanks to this dynamics.
 
 Stellar evolution is also a very vast topic, and there is too much to
 cover in only one semester, with many bleeding edge developments. So I
@@ -100,7 +103,7 @@ may be. We will do this through a project, that we will discuss later.
 
 ** Discuss syllabus
 
-[[./syllabus.org][syllabus]]
+[[./images/syllabus-QR.png]]
 
 ** Let's start finally talking about stars!
 
