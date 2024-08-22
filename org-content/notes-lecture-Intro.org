@@ -144,10 +144,10 @@ In astrophysics (and in stellar physics in particular) we still use
 quantities and units that have as only justification historical
 reasons.
 
-The yearly apparent motion on the sky of stars (w.r.t. to father stars
-that are too far to exhibit this behavior) due to the orbit of the
-Earth around the Sun is called /parallax/. A commonly used unit of
-distance in astronomy is the /parsec/ =  distance of a star with a
+The yearly apparent motion on the sky of stars (w.r.t. to farther
+stars that are too far to exhibit this behavior) due to the orbit of
+the Earth around the Sun is called /parallax/. A commonly used unit of
+distance in astronomy is the /parsec/ = distance of a star with a
 parallax of one arcsecond:
 
 #+begin_latex
@@ -156,21 +156,21 @@ parallax of one arcsecond:
 \end{equation}
 #+end_latex
 
-This is a measure of the stars distance that can be used for stars
+This is a measure of distance that can be used for stars
 with relatively small distances to the Solar system.
 
 *** Magnitudes
 The magnitude scale is a logarithmic scale first introduces by
-Hipparcos, who clearly was only able to do naked-eye observations.
+[[https://en.wikipedia.org/wiki/Hipparchus][Hipparchus]], who clearly was only able to do naked-eye observations.
 This explains why a logarithmic scale: the sensory responses are often
 logarithmic (see [[https://en.m.wikipedia.org/wiki/Weber%E2%80%93Fechner_law][Weber-Fechner's law]]). The magnitude scale was
 formalized by [[https://ui.adsabs.harvard.edu/abs/1856MNRAS..17...12P/abstract][Pogson 1856]].
 
-The magnitudes measure the monochromatic energy flux from a point-like
-source (like a distant star) and it is a differential measure relative
-to some standard source. Hipparcos was comparing the visual brightness
-of various stars visible in the sky. This is still the basis of (some)
-magnitude systems.  In reality typically magnitudes are provided
+The magnitudes measure the energy flux from a point-like source (like
+a distant star) and it is a differential measure relative to some
+standard source. Hipparchus was comparing the visual brightness of
+various stars visible in the sky. This is still the basis of (some)
+magnitude systems. In reality typically magnitudes are provided
 integrating over a range of frequencies (photometry!) accounting for
 the response of a filter as a function of wavelength T(\lambda):
 
@@ -183,9 +183,9 @@ T(\lambda) d\lambda}\right) + m_{0} \ \ ,
 
 where m_{0} is the reference magnitude, F_{\lambda} is the monochromatic
 flux of the source, and the factor of -2.5 is chosen so that the
-magnitudes measured this way roughly agree with Hipparcos'. Thus, an
-increase of 5 magnitudes corresponds to an increase in flux of a
-factor of 100.
+magnitudes measured this way roughly agree with Hipparchus'.
+Thus, /an increase of 5 magnitudes corresponds to an increase in flux of a
+factor of 100/.
 
 The /bolometric/ magnitude is the magnitude across all wavelengths for
 an idealized perfect detector (T(\lambda) = 1 \forall \lambda). If the distance of a
@@ -229,6 +229,10 @@ lot of quantities are scaled to those of the Sun in stellar physics
 and in astronomy more generally.
 
 ** Solar radius: R_{\odot} = 6.957\times 10^{10} cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
+:Question:
+- *Q*: How many R_{\odot} are in 1 AU?
+:end:
+
 ** Solar mass: M_{\odot} = 1.98\times10^{33} g\simeq 2\times10^{33} g
 ** Solar luminosity: L_{\odot} = 3.82\times10^{33} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
 This may be one of the reasons why we still use =cgs= in astronomy,
