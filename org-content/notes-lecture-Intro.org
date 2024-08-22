@@ -7,6 +7,7 @@
 
 ** Intro survey link
 
+#+ATTR_HTML: :width 50%
 [[./images/intro-survey-QR.png]]
 
 ** Who am I?
@@ -103,6 +104,7 @@ may be. We will do this through a project, that we will discuss later.
 
 ** Discuss syllabus
 
+#+ATTR_HTML: :width 50%
 [[./images/syllabus-QR.png]]
 
 ** Let's start finally talking about stars!
