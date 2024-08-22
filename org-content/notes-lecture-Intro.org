@@ -9,7 +9,7 @@
 
 [[./images/400A-intro-QR.png]]
 
-** Intro to myself
+** Who am I?
 
 My name is Mathieu Renzo, I am an assistant professor here since
 January, before, I was a postdoc in New York city (at the Flatiron
@@ -57,10 +57,6 @@ growth, and not genetically inherited.
 observational properties using known laws of physics.*
 
 ** Expectations
-:Questions:
-- *Q*: what are the classroom expectations?
-:end:
-
 This is a core course during your 4^{th} year, so you are approaching the
 academic threshold beyond which you will be *expected* to carry out
 independent work (either in your thesis, in the future as graduate
