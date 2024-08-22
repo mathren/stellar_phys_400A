@@ -7,7 +7,7 @@
 
 ** Intro survey link
 
-[[./images/400A-intro-QR.png]]
+[[./images/intro-survey-QR.png]]
 
 ** Who am I?
 
