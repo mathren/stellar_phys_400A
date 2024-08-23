@@ -28,7 +28,7 @@ parsecs!/"
  - [[./lectures.org][Lectures topic-by-topic]]
  - [[./projects.org][Projects and presentations]]
 
-For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
+For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1463376][D2L website]]
 
 ** Disclaimer
 

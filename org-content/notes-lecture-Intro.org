@@ -104,7 +104,7 @@ may be. We will do this through a project, that we will discuss later.
 
 * Discuss syllabus
 
-#+CAPTION: Link to syllabus
+#+CAPTION: Link to [[./syllabus.org][syllabus]]
 #+ATTR_HTML: :width 50%
 [[./images/syllabus-QR.png]]
 
@@ -127,6 +127,7 @@ the course.
 - *Mass*
 - Chemical composition
 - Rotation
+- Presence of other stellar companion(s)
 
 :Questions:
 - *Q*: what is a star made of? Can you think of a star made of something
@@ -225,7 +226,7 @@ The star we can observe best is the closest one, the Sun (\odot), so a
 lot of quantities are scaled to those of the Sun in stellar physics
 and in astronomy more generally.
 
-** Solar radius: R_{\odot} = 6.957\times 10^{10} cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
+** Solar radius: R_{\odot} = 6.957\times10^{10} cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
 :Question:
 - *Q*: How many R_{\odot} are in 1 AU?
 :end:
@@ -256,8 +257,15 @@ allowing for enhancement of \alpha particles (e.g., carbon, oxygen, neon,
 and all other elements that can approximately be thought of as N \alpha
 particles bound together where \alpha particle = nucleus of helium 4).
 
-A common notation is also [X/H] = log_{10}[(n_{X}/n_{H})/(n_{X}/n_{H})_{\odot}], and
-[Fe/H] can be used as a proxy for the metallicity.
+A common notation is also [X/H] = log_{10}[(n_{X}/n_{H})/(n_{X}/n_{H})_{\odot}] where n_{X}
+is the number of ions of species X and n_{H} is the number of protons
+(i.e., hydrogen positive ions!). Often, [Fe/H] can be used as a proxy for
+the metallicity (i.e., taking X=Fe).
+
+:Question:
+- *Q*: Any idea why Fe here?
+:end:
+
 ** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
 :Questions:
  - *Q*: How old is the Sun? How long will it live? How do we know?
@@ -268,17 +276,32 @@ A common notation is also [X/H] = log_{10}[(n_{X}/n_{H})/(n_{X}/n_{H})_{\odot}],
 - Projects will cover topics that are important and or timely, but
   hard to fit in the main body of the course
 - Occasion for you to dig deeper and teach to your peers
-- You should look over the [[file:projects.org::*List of possible projects/presentations][proposed project]], and within a week give us
-  a ranked list of 5 projects you'd like to do.
-- Look over also [[file:projects.org::*Grading][how the grading will work]].
-- We will assign to each a project trying to maximize happiness, and
-  for each project we will assign two peer referees.
+- You should look over the [[file:projects.org::*List of possible projects/presentations][proposed project]], and give us a ranked list
+  of 5 projects you'd like to do (see [[https://d2l.arizona.edu/d2l/home/1463376][D2L]] for updated deadline).
+- After receiving your preferences, we will assign to each a project
+  trying to maximize happiness (though it may not be possible to
+  accomodate everyone), and for each project we will assign two peer
+  referees.
+- Look over also [[file:projects.org::*Grading][how the grading of the project will work]]: in short,
+  we will evaluate your written summary (together with 2 of your
+  classmates!), your oral presentation in class (again, with your
+  peers!), and how you give feedback to others.
 
 * Homework
 
+** General considerations
+  - As per the syllabus, homework should be your own production,
+    though you can discuss with your peers. Science if made of
+    collaborations, but you are expected to be able to do all the
+    homeworks yourself
+  - Always consult [[https://d2l.arizona.edu/d2l/home/1463376][D2L]] for official deadlines.
+  - Throughout the course the typology of exercises and difficulty
+    will vary. This is normal also when doing research: not every task
+    is as easy/as hard as the next. If you encounter difficulties,
+    keep in mind that it's only an opportunity to grow and improve!
+** Specific assignments for today
 - Calculate the average density of the Sun and compare it with the
   density of something familiar on Earth.
-
 - start looking over the [[file:projects.org::*List of possible projects/presentations][list of final project]], you will need to
   provide us with a ranked list of 5 preferences. Feel free to search
   the web/literature to decide. Based on this list, we will try to
