@@ -170,7 +170,7 @@ obtaining:
 
 #+begin_latex
 \begin{equation}
-F_\mathrm{rad} = -\frac{4\pi}{3c\rho}\frac{1}{\kappa_{}}\frac{dT}{dr} \ \ ,
+F_\mathrm{rad} = -\frac{4ac}{3c\rho T^{3}}\frac{1}{\kappa_\mathrm{rad}_{}}\frac{dT}{dr} \ \ ,
 \end{equation}
 #+end_latex
 
