@@ -84,6 +84,7 @@ the density of "something" by
 \mathbf{J} = - D\nabla n \ \ ,
 \end{equation}
 #+end_latex
+
 where J is the flux (which is in general a vector quantity), D is the
 so called "diffusion coefficient", and \nabla n is the gradient of the
 volumetric density of the "something" we are considering. The negative

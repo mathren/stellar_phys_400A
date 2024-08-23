@@ -32,4 +32,44 @@ physically determines it, and understand how \kappa_{rad}\equiv\kappa_{rad}(T,
 \rho, \{X_{i}\}) can be expressed as a function of the thermodynamics and
 composition of the stellar gas.
 
+* Rosseland mean opacity
+
+But even before we discuss the microphysics, you know that the
+"resistance" of a material to the passage of light is dependent on the
+frequency of the radiation! Optical radiation clearly penetrates the
+Earth atmosphere, while X-rays don't; the small fraction of UV
+radiation that does penetrate the atmosphere and cause Sun burns does
+not penetrate the windshield of a car, but the optical wavelengths do,
+etc. So clearly in general \kappa_{rad} \equiv \kappa_{rad}(\nu) is a function of
+the frequency of the light we are considering with \nu = c/\lambda. What
+happened to that dependence in our stellar structure equations?
+
+In the [previous lecture] we have written for the radiative energy flux
+
+#+begin_latex
+\begin{equation}
+F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \ .
+\end{equation}
+#+end_latex
+
+In reality, we should have written an equation like this for the
+specific flux (i.e., the radiative flux F_{\nu} carried by radiation with
+frequency between \nu and \nu+d\nu) and integrate over the spectrum to get
+F_{rad} =\int_{0}^{+\infty} F_{\nu} n(\nu) d\nu, with n(\nu) number density of
+photons ad a function of frequency. For the specific flux, we also
+should put in the equation the specific opacity \kappa_{\nu}_{} and consider only
+the energy density of radiation u_{\nu} between \nu and \nu+d\nu:
+
+#+begin_latex
+\begin{equation}
+F_{\nu} = - \frac{1}{3}\frac{c}{\kappa_{\nu}\rho}\frac{du_{\nu}}{dr} \ \ .
+\end{equation}
+#+end_latex
+
+Recalling that u_{\nu} = h\nu n(\nu) and n(\nu) is determined by the
+condition of LTE (which is approximately correct in the stellar
+interior), which means the photons are distributed according to a
+black body distribution, we have
+
+
 * Sources of radiative opacity
