@@ -119,9 +119,9 @@ project/presentation and how it will be graded, see [[./projects.org][here]].
 ** Incomplete (I) or Withdrawal (W):
 Requests for incomplete (I) or withdrawal (W) must be made in
 accordance with University policies, which are available at
-http://catalog.arizona.edu/policy/grades-and-grading-system#incomplete
+https://registrar.arizona.edu/faculty-staff-resources/grading/grading-policies/incomplete
 and
-http://catalog.arizona.edu/policy/grades-and-grading-system#Withdrawal
+https://registrar.arizona.edu/faculty-staff-resources/grading/grading-policies/withdrawals,
 respectively.
 
 * Classroom Behavior
