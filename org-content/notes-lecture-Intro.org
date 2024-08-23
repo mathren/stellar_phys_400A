@@ -62,9 +62,9 @@ This is a core course during your 4^{th} year, so you are approaching the
 academic threshold beyond which you will be *expected* to carry out
 independent work (either in your thesis, in the future as graduate
 students or highly skilled workers). My idea in this course is to not
-only provide you some /content/ regarding stellar physics and stellar
-evolution, but also to help you develop your skills as independent
-researchers for your future (whether in academia or elsewhere).
+only provide /content/ regarding stellar physics and evolution, but also
+to help you develop skills as independent researchers for your
+future (whether in academia or elsewhere).
 
 For this reason also /we will not check your attendance/. However, I
 will try to present things in lectures in a way that is complementing
