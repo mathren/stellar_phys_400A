@@ -243,11 +243,11 @@ the relation between apparent magnitude m and absolute magnitude M is
 
 #+begin_latex
 \begin{equation}\label{eq:abs_magn}
-M - m = -2.5\log_{10}\left[\left(\frac{D}{10\mathrm{pc}}\right)^{2}\right] \ \,
+M - m = -2.5\log_{10}\left[\left(\frac{d}{10\mathrm{pc}}\right)^{2}\right] \ \,
 \end{equation}
 #+end_latex
 
-where D is the distance, and it is assumed there is no absorption of
+where d is the distance, and it is assumed there is no absorption of
 light by the interstellar material.
 
 For the reference magnitude m_{0} there are multiple choices (and there
