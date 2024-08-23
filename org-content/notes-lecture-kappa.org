@@ -101,13 +101,31 @@ which we can rewrite as
 
 #+begin_latex
 \begin{equation}
-\frac{1}{\kappa_{rad}} = \frac{\int_{0}^{+\infty} d\nu \frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T}}{\int_{0}^{+\infty} d\nu \frac{\partial B(\nu, T)}{\partial T}} \ \ ,
+\frac{1}{\kappa_\mathrm{rad}} = \frac{\int_{0}^{+\infty} d\nu \frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T}}{\int_{0}^{+\infty} d\nu \frac{\partial B(\nu, T)}{\partial T}} \ \ ,
 \end{equation}
 #+end_latex
 which is the /harmonic mean of specific opacities/ \kappa_{\nu} /weighted
 with the temperature derivative of the Black Body distribution/.
 This is usually referred to as the Rosseland mean opacity.
 
+** Physical interpretation
+This may seem like a bunch of math that did not advance us much: we
+still have \kappa_{\nu} (which in practice comes from atomic physics
+experimental and theoretical work), and the Rosseland mean opacity
+seems to not have a straightforward physical interpretation.
+
+However, consider that to a good approximation we can consider the
+stellar interior to be in LTE with a single temperature and a photon
+gas described by a black body. Therefore at a location in the star of
+given \rho and dT/dr, the frequency \nu at which most of the photon energy
+is found by solving \partial u_{\nu} / \partial T = 0, which yields a maximum at
+h\nu = 4k_{B}T. This means that the Rosseland mean tends to upweight where
+most of the radiation energy is.
+
+In other words, 1/\kappa_{rad} is smallest where most of the radiation energy
+can get through (which makes sense since we are developing an
+understanding for how energy is transported, and not for how energy is
+trapped!)
 
 
 * Sources of radiative opacity
