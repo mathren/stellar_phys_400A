@@ -58,7 +58,7 @@
     (save-excursion
       (goto-char (point-min))
       (while (re-search-forward "\\\\odot" nil t)
-        (replace-match "&#9737;" nil t)))))
+        (replace-match "☉" nil t)))))
 
 
 (add-hook 'org-export-before-processing-hook 'mr/export-odot-html)
@@ -106,11 +106,11 @@
 	     )))
 
 ;; Generate the site output
-; (org-publish-all t) ;; publish all
+(org-publish-all t) ;; publish all
 
-(let ((modified-files (get-modified-org-files)))
-  (if modified-files
-      (org-publish-project "org-site:main")
-    (message "No modified Org files found.")))
+;; (let ((modified-files (get-modified-org-files)))
+;;   (if modified-files
+;;       (org-publish-project "org-site:main")
+;;     (message "No modified Org files found.")))
 
 (message "Build complete!")
