@@ -83,7 +83,7 @@ Similarly, I expect everyone in the class to treat each other with
 respect and kindness. We don't all come from the same background, we
 don't all need to be at the same exact level to learn from each other.
 Ultimately, you are here to learn some science and science is a /team/
-effort, and it has been proven many times over than diverse teams
+effort, and it has been proven many times over that diverse teams
 achieve better results. Start practicing this now: if someone is
 struggling with some material that you think you have under control,
 help them. They are not slowing you down, but giving you an
@@ -324,7 +324,7 @@ the metallicity (i.e., taking X=Fe).
   of 5 projects you'd like to do (see [[https://d2l.arizona.edu/d2l/home/1463376][D2L]] for updated deadline).
 - After receiving your preferences, we will assign to each a project
   trying to maximize happiness (though it may not be possible to
-  accomodate everyone), and for each project we will assign two peer
+  accommodate everyone), and for each project we will assign two peer
   referees.
 - Look over also [[file:projects.org::*Grading][how the grading of the project will work]]: in short,
   we will evaluate your written summary (together with 2 of your
@@ -346,7 +346,7 @@ the metallicity (i.e., taking X=Fe).
 ** Specific assignments for today
 - Calculate the average density of the Sun and compare it with the
   density of something familiar on Earth.
-- start looking over the [[file:projects.org::*List of possible projects/presentations][list of final project]], you will need to
+- Start looking over the [[file:projects.org::*List of possible projects/presentations][list of final projects]], you will need to
   provide us with a ranked list of 5 preferences. Feel free to search
   the web/literature to decide. Based on this list, we will try to
   assign projects and peer-referee, but it may not be possible to
