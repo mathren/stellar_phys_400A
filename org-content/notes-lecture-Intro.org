@@ -13,23 +13,24 @@
 
 My name is Mathieu Renzo, I am an assistant professor here since
 January, before, I was a postdoc in New York city (at the Flatiron
-institute) and before that I did my PhD at the University of Amsterdam
-in the Netherlands -- but I am originally from none of these places!
+institute and Columbia University), and before that I did my PhD at
+the University of Amsterdam in the Netherlands -- but I am originally
+from none of these places!
 
-This will be the first complete course that I teach. However, the
-topic is stellar evolution, which is my research field. More
-specifically, I work on the evolution of massive stars in binary
-systems. These are the stars that end their lives in /supernova
-explosions/, that can outshine briefly an entire galaxy. During these
-explosions some of the most exotic objects in the universe are formed,
-neutron stars or black holes (especially if the explosion fails!). The
-massive star progenitor of these objects are found most often in
-binary systems, meaning there are two stars orbiting each other, and
-they can, as they evolve, interact and exchange mass and sometimes
-merge. My research is strongly embedded in the topic of this course
-(stellar evolution) and touches on explosion physics, X-ray binaries,
-gravitational waves, etc. I will try to connect the course material to
-all these topics whenever possible!
+This will be the first course that I teach here. However, the topic is
+stellar evolution, which is my research field. More specifically, I
+work on the evolution of massive stars in binary systems. These are
+the stars that end their lives in /supernova explosions/, that can
+outshine briefly an entire galaxy. During these explosions some of the
+most exotic objects in the universe are formed, neutron stars or black
+holes (especially if the explosion fails!). The massive star
+progenitor of these objects are found most often in binary systems,
+meaning there are two stars orbiting each other, and they can, as they
+evolve, interact and exchange mass and sometimes merge. My research is
+strongly embedded in the topic of this course (stellar evolution) and
+touches on explosion physics, X-ray binaries, gravitational waves,
+etc. I will try to connect the course material to all these topics
+whenever possible!
 
 Also, my research field (and more broadly the scientific topic of this
 course) is /very computationally oriented/. Throughout the course, I
