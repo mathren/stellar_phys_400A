@@ -300,16 +300,27 @@ This is not a region where all the stars have the same age
 necessarily, hence the wider distribution of stars on the HRD.
 
 
+
 * Homework
 ** Make your own CMD
 *** Aim
 Make your own color-magnitude diagram of a selected group of stars.
 This is a data-visualization exercise, so try to make your diagram as
 informative and useful as possible. Think of a publication-quality
-plot, you want it to be good looking for people to want to use it in
-their slides, dense in information, and the info should possibly be
-layered. You will also need to write a brief paragraph of description
-of what is plotted, including the source of data.
+plot (think of the plots shown in class, search in the literature!),
+you want it to be good looking for people to want to use it in their
+slides, dense in information, and the info should possibly be layered.
+You will also need to write a brief paragraph of description of what
+is plotted, including the source of data.
+
+You will be using /Gaia/ (the astrometry ESA mission) data that are
+bleeding edge and driving a real "renaissance" of stellar physics, and
+also [[https://waps.cfa.harvard.edu/MIST/][MIST]] models. MIST stands for MESA Isochrones and Stellar Tracks:
+those are models computed with the same code that is under the hood in
+=MESA-web= (although the configuration of the code is most likely not
+the same): once again, you are going to be using real tools used by
+researcher in the field! Challenges encountered in this exercise are
+the kind researchers face in their everyday life.
 
 **** Deliverables
   - Color-magnitude diagram/Hertzsprung-Russell diagram.
@@ -342,9 +353,10 @@ be using a bleeding-edge dataset! These are publicly available in the
     the y-axis, BP-RP color on the x-axis)
   - download and plot a bunch of Gaia data. Make the visualization as
     clear as possible
-  - *Optional*: use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot isochrones on
+  - Use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot isochrones on
     your plot. Note that the file you can download has extension
-    =*.iso=, but it is /not/ and =iso= image file, just plain text!
+    =*.iso=, but it is /not/ and =iso= image file, just plain text that you
+    can load and plot.
   - *Optional*: use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot evolutionary
     tracks.
 

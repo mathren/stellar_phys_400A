@@ -119,13 +119,18 @@ stellar interior to be in LTE with a single temperature and a photon
 gas described by a black body. Therefore at a location in the star of
 given \rho and dT/dr, the frequency \nu at which most of the photon energy
 is found by solving \partial u_{\nu} / \partial T = 0, which yields a maximum at
-h\nu = 4k_{B}T. This means that the Rosseland mean tends to upweight where
-most of the radiation energy is.
+h\nu = 4k_{B}T. This means that the Rosseland mean tends to "upweight" where
+most of the radiation energy is, and "down weight" the very low and
+very high frequencies.
 
 In other words, 1/\kappa_{rad} is smallest where most of the radiation energy
 can get through (which makes sense since we are developing an
 understanding for how energy is transported, and not for how energy is
-trapped!)
+trapped!).
+
+An unfortunate consequence of the harmonic nature of the Rosseland
+mean opacity is that it is not trivial to combine opacity of different
+gasses, the specific \kappa_{\nu} have to be summed *before* taking the average.
 
 
 * Sources of radiative opacity
