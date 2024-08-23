@@ -19,11 +19,23 @@
 (require 'ox-publish)
 
 
-(defun get-modified-org-files ()
+(defun mr/get-modified-org-files ()
   "Return a list of Org files modified since the last commit."
   (let* ((default-directory (expand-file-name "./org-content"))
          (modified-files (split-string (shell-command-to-string "git diff --name-only HEAD -- *.org") "\n" t)))
     (mapcar (lambda (file) (expand-file-name file default-directory)) modified-files)))
+
+(defun mr/check-for-all-flag-and-publish ()
+  "Check if all is in the command-line arguments."
+  (if (member "all" command-line-args)
+      (org-publish-all t) ;; publish all
+    (let ((modified-files (mr/get-modified-org-files)))
+      (if modified-files
+	  (org-publish-project "org-site:main")
+	(message "No modified Org files found.")))
+    ))
+
+
 
 (defun mr/read-file (file)
   "Read contents of FILE to string"
@@ -102,15 +114,9 @@
              :with-timestamps t					;; Include time stamp in file
              :with-toc nil					;; Don't include a table of contents
              :section-numbers nil				;; Don't include section numbers
-             :file-list (get-modified-org-files)		;; Use the list of modified files only
+             :file-list (mr/get-modified-org-files)		;; Use the list of modified files only
 	     )))
 
 ;; Generate the site output
-(org-publish-all t) ;; publish all
-
-;; (let ((modified-files (get-modified-org-files)))
-;;   (if modified-files
-;;       (org-publish-project "org-site:main")
-;;     (message "No modified Org files found.")))
-
+(mr/check-for-all-flag-and-publish)
 (message "Build complete!")
