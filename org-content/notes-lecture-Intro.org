@@ -66,12 +66,12 @@ only provide /content/ regarding stellar physics and evolution, but also
 to help you develop skills as independent researchers for your
 future (whether in academia or elsewhere).
 
-For this reason also /we will not check your attendance/. However, I
-will try to present things in lectures in a way that is complementing
-the textbook resources, and you will more likely have a better
-understanding if you come. Also, as we'll discuss in a moment,
-in-class participation will count for up to 20% of your final grade,
-so if you want more than something like a B- you should come.
+For this reason also /we will not check your attendance/. However,
+during the lectures I will present things in a way that complements
+the textbook(s), and you will more likely have a better understanding
+if you attend. Also, as we'll discuss in a moment, in-class
+participation will count for up to 20% of your final grade, so if you
+want more than something like a B- you should come.
 
 An important thing to keep in mind as we go through the semester is to
 have a [[https://en.wikipedia.org/wiki/Mindset#Fixed_and_growth_mindsets][growth mindset]]: we are all here to learn and improve ourselves!

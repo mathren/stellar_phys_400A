@@ -312,9 +312,9 @@ layered. You will also need to write a brief paragraph of description
 of what is plotted, including the source of data.
 
 **** Deliverables
-  - Color-magnitude diagram/Hertzsprung-Russell diagram
+  - Color-magnitude diagram/Hertzsprung-Russell diagram.
   - Paragraph of description including the source of the data and what
-    we see
+    we see. Describe what is observation and what is modeled.
   - Script to reproduce the plot (we will not run the script, but you
     should make it an habit to "show your code").
 
