@@ -11,11 +11,11 @@
 
 * Who am I?
 
-My name is Mathieu Renzo, I am an assistant professor here since
-January, before, I was a postdoc in New York city (at the Flatiron
-institute and Columbia University), and before that I did my PhD at
-the University of Amsterdam in the Netherlands -- but I am originally
-from none of these places!
+My name is Mathieu Renzo, I am an assistant professor, and have been
+here since January. Before, I was a postdoc in New York city (at the
+Flatiron institute and Columbia University), and before that I did my
+PhD at the University of Amsterdam in the Netherlands -- but I am
+originally from none of these places!
 
 This will be the first course that I teach here. However, the topic is
 stellar evolution, which is my research field. More specifically, I
@@ -50,7 +50,7 @@ this is /not/ that important in the end: even if the farther up you climb
 the academic pyramid the more people come from a long lineage of
 academics, you do belong here just based on your curiosity, skills,
 drive, which are developed throughout your studies and continued
-growth, and not genetically inherited.
+growth, and not genetically or socially inherited.
 
 
 * Aim of the course
@@ -152,7 +152,7 @@ the Earth around the Sun is called /parallax/. A commonly used unit of
 distance in astronomy is the /parsec/ = distance of a star with a
 parallax of one arcsecond:
 
-1 pc \simeq 3\times10^{18}cm \simeq 2 \times 10^{5} AU
+1 pc \simeq 3\times10^{18}cm \simeq 2 \times 10^{5} AU \simeq 3 light years
 
 This is a measure of distance that can be used for stars
 with relatively small distances to the Solar system.

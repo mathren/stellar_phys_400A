@@ -66,8 +66,6 @@ bucket") arrive at the telescope. It is "absolute" because it is
 rescaled to what the flux would be if the star were at a distance of
 10 parsec.
 
-*Q*: what is a parsec? (1pc \simeq 3\times 10^{18} cm \simeq 2\times10^{5} AU \simeq 3 light years)
-
 The x-axis is the color, obtained as the difference in flux between
 two filters of the /Gaia/ telescope =Bp-Rp=.
 
