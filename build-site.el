@@ -53,7 +53,7 @@
 
 ;; fix export of Sun symbol
 (defun mr/export-odot-html (backend)
-  "Custom filter to replace LaTeX `\odot` with HTML sun symbol `&#9737;`."
+  "Custom filter to replace LaTeX \odot with HTML sun symbol `&#9737;`."
   (when (org-export-derived-backend-p backend 'html)
     (save-excursion
       (goto-char (point-min))
