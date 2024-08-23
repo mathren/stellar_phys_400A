@@ -18,7 +18,7 @@ composition and dynamical status (w.r.t. the Galactic potential)
    (meaning their orbital velocity follows closely the Keplerian
    rotation curve around the Galactic center, with very small
    deviations from this). These are forming form gas enriched in
-   metals by processing in previous generations of stars.
+   metals by previous generations of stars.
  - *Population II*: these are typically stars in the Galactic halo with
    lower metallicity, but higher dynamical temperature, meaning their
    orbit are not following the Galactic disk Keplerian motion. In

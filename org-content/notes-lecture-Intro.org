@@ -157,6 +157,50 @@ parallax of one arcsecond:
 This is a measure of distance that can be used for stars
 with relatively small distances to the Solar system.
 
+*** Proper motion and radial velocity
+We can also see how stars move in the sky, but we need two different
+techniques to measure the velocity /on the plane of the sky/ (so called
+proper motion), and /towards/ or /away/ from us (so called "radial
+velocity", as in the radial direction in a sphere centered on the
+observer).
+
+But even before considering those, we need to remove all the apparent
+motions due to the Earth rotation:
+
+#+CAPTION: Long exposure picture showing circular tracks along the north direction. These are just the reflected motion due to the rotation of the Earth.
+#+ATTR_HTML: :width 100%
+[[./images/night_rotation.jpg]]
+
+We also have to remove the apparent motion due to the orbit of the
+Earth around the Sun, and the motion of the Sun and solar system
+across the Galaxy (which includes a component of "peculiar motion",
+that is a deviation from the galactic rotation curve).
+
+Once all that cleaning is done, we can see the intrinsic projected
+motion of a star on the sky, so called /proper motion/ (sometimes
+indicated with \mu or pm). All that requires is a long timeline (since \mu\simeq
+arcos((v_{\parallel} \times t)/d) with v_{\parallel} transverse velocity
+(i.e., on the plane of the sky), t time baseline and d distance of the
+star, and a reference frame. *N.B.:* converting proper motions to
+physical velocity requires knowing the distance d, which is usually
+hard! Moreover, d is very large typically (d \gg 1 pc), so measuring \mu
+requires long time baselines and very accurate instruments.
+
+#+CAPTION: Schematic representation of the proper motion
+#+ATTR_HTML: :width 50%
+[[./images/Proper_motion.JPG]]
+
+For the motion orthogonal to the plane of the sky, that is the motion
+away/towards the observe, that is the so called /radial velocity/ (RV)
+through the Doppler shift of spectral lines (we will talk more about
+these later in the course). These sometimes can be periodic and thus
+caused by either pulsations of the stellar atmosphere or Keplerian
+orbital motion around a (possibly unseen) companion star, or they can
+be constant (on timescales much shorter than the period of the orbit
+of the star around the Galactic center) and thus reveal intrinsic
+motion.
+
+
 *** Magnitudes
 The magnitude scale is a logarithmic scale first introduces by
 [[https://en.wikipedia.org/wiki/Hipparchus][Hipparchus]], who clearly was only able to do naked-eye observations.

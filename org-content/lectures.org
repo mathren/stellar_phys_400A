@@ -6,8 +6,8 @@
 * Lectures topic-by-topic
 This is a rough schedule of the topics we will cover. However, we may
 not get to all topics, depending on progress throughout the semester
-and student interest. The order roughly follows the presentation in
-[[https://www.astro.ru.nl/~onnop/][Onno Pols notes]].
+and student interests. The order roughly follows the presentation in
+[[https://www.astro.ru.nl/~onnop/][Onno Pols notes]], but it is subject to changes as the course progresses.
 
 ** <2024-08-27 Tue> - Intro & orders of magnitude
 *Aim*:
