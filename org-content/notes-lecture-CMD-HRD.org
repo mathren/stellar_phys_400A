@@ -308,29 +308,33 @@ DEADLINE: <2024-09-12 Thu>
 
 *** Aim
 Make your own color-magnitude diagram of a selected group of stars.
-This is a data-visualization exercise, so try to make your diagram as
-informative and useful as possible. Think of a publication-quality
-plot (think of the plots shown in class, search in the literature!),
-you want it to be good looking for people to want to use it in their
-slides, dense in information, and the info should possibly be layered.
-You will also need to write a brief paragraph of description of what
-is plotted, including the source of data.
+This is mainly a data-visualization exercise, so try to make your
+diagram as informative and useful as possible. Think of a
+publication-quality plot (think of the plots shown in class, search in
+the literature!), you want it to be good looking for people to want to
+use it in their slides, dense in information, and the info should
+possibly be layered. You will also need to write a brief paragraph of
+description of what is plotted, including the source of data.
 
-You will be using /Gaia/ (the astrometry ESA mission) data that are
-bleeding edge and driving a real "renaissance" of stellar physics, and
-also [[https://waps.cfa.harvard.edu/MIST/][MIST]] models. MIST stands for MESA Isochrones and Stellar Tracks:
-those are models computed with the same code that is under the hood in
-=MESA-web= (although the configuration of the code is most likely not
-the same): once again, you are going to be using real tools used by
-researcher in the field! Challenges encountered in this exercise are
-the kind researchers face in their everyday life.
+You will be using real bleeding edge data from the /Gaia/ mission and
+widely used stellar models from [[https://waps.cfa.harvard.edu/MIST/][MIST]]. MIST stands for "MESA Isochrones
+and Stellar Tracks": those are models computed with the same code that
+is under the hood in =MESA-web= (although the configuration of the code
+is most likely not the same): once again, you are going to be using
+real tools used by researcher in the field! Challenges encountered in
+this exercise are the kind researchers face in their everyday life!
 
 **** Deliverables
   - Color-magnitude diagram/Hertzsprung-Russell diagram.
-  - Paragraph of description including the source of the data and what
-    we see. Describe what is observation and what is modeled.
+  - One paragraph of description (i.e., we want you to /interpret/ your
+    plot, not just make it!). Make sure to include the source of the
+    data, what one should see in the plot, and what it means. Take
+    care in distinguishing what is observational data what is
+    theoretical modeling.
   - Script to reproduce the plot (we will not run the script, but you
-    should make it an habit to "show your code").
+    should make it an habit to "show your code"). If your script has
+    dependencies on other files you wrote, we want those too, but mark
+    /clearly/ which file is the main one producing the script.
 
 *** Instructions
 We will use the latest data release from ESA's /Gaia/ mission, you will
@@ -353,15 +357,17 @@ be using a bleeding-edge dataset! These are publicly available in the
     a manageable amount. If you want to select a cluster, you may need
     to do parallax cuts.
   - Plot the color-magnitude diagram (suggestion: G-band magnitude on
-    the y-axis, BP-RP color on the x-axis)
+    the y-axis, BP-RP color on the x-axis).
   - download and plot a bunch of Gaia data. Make the visualization as
-    clear as possible
-  - Use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot isochrones on
-    your plot. Note that the file you can download has extension
-    =*.iso=, but it is /not/ and =iso= image file, just plain text that you
-    can load and plot.
-  - *Optional*: use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot evolutionary
-    tracks.
+    clear as possible.
+  - Skim [[https://ui.adsabs.harvard.edu/abs/2016ApJ...823..102C/abstract][Choi et al. 2016]] describing the MIST project (it's ok if you
+    don't understand everything, you will have a much better
+    understanding by the end of the semester!).
+  - Use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot isochrones on your
+    plot. Note that the file you can download has extension =*.iso=, but
+    it is /not/ and =iso= image file, just plain text that you can load
+    and plot.
+  - Use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot evolutionary tracks.
 
 ** Suggested
 To follow the next lecture, it will be helpful for you to revise
