@@ -1,7 +1,5 @@
-build.sh
 *~
 .packages/*
-
 
 # ignore materials from other courses
 
@@ -24,3 +22,8 @@ MESA-web/*
 !MESA-web/python/matplotlibrc
 
 grades/*
+
+# ignore admin stuff
+*.docx
+*~
+*.lock
