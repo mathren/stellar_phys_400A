@@ -3,20 +3,19 @@
 #+email: mrenzo@arizona.edu
 
 * Project/presentation
-Each student will pick a topic to research from the list below and
-provide a short written summary (\le 5 pages including figures and/or
-tables) and an oral presentation to the classroom. This will allow
-each student to dig deeper into a topic we cannot spend too much time
-on in class, and at the same we can all learn from each other!
+Each student will be assigned a topic to research from the list below
+and provide a short written summary (\le 5 pages including figures
+and/or tables) and an oral presentation to the classroom. This will
+allow each student to dig deeper into a topic we cannot spend too much
+time on in class, and at the same we can all learn from each other!
 
-*The text has to be submitted one week before the presentation is
-scheduled*, and the *presentation is 10min+5min questions*. I _strongly_
-recommend talking to me and/or Hailey at least 2 weeks (the earlier
-the better!) before your written presentation is due to discuss
-materials that you found and structure of the presentation.
+*The text has to be submitted at least one week before the presentation
+is scheduled*, and the *presentation is 10min+5min questions*. I _strongly_
+recommend talking to me and/or Haley at least 2 weeks (the earlier the
+better!) before your written presentation is due to discuss materials
+that you found and the structure and content of the presentation.
 
 ** List of possible projects/presentations
-
 If you have some other topic in mind, please come talk to me early on,
 as we may be able to accommodate it.
 
@@ -31,7 +30,7 @@ as we may be able to accommodate it.
 9. Tides in stars
 10. Algol Paradox
 11. Common envelope evolution
-12. Roche model and mass transfer
+12. Mass transfer in binary systems
 13. Clusters: globular and open
 14. Globular clusters: dynamics
 15. Formation of stars
@@ -45,7 +44,7 @@ as we may be able to accommodate it.
 23. Neutron star structure
 24. The Eddington limit
 25. Convective boundary mixing
-26. Nuclear reaction chains
+26. Supernova Ia
 27. Stellar winds: Parker model and its updates
 28. Stellar winds: radiatively driven
 29. Analytic stellar models: Lane-Emden equation
@@ -58,7 +57,9 @@ as we may be able to accommodate it.
 36. Formation of gravitational wave progenitors: isolated binary evolution
 37. Formation of gravitational wave progenitors: dynamical channels
 38. Orbital architectures of (star+star) binaries in the Universe
-39. Something else with the scope of the course to be agreed upon
+39. Gravitational wave progenitor channels
+40. The lowest mass stars: M dwarfs and Brown dwarfs
+41. Something else with the scope of the course to be agreed upon
 
 ** Recommended sources
 You are encouraged to do your own research, but in the final
@@ -68,7 +69,7 @@ and/or journal articles. To find journal articles, you can use
 [[https://ui.adsabs.harvard.edu/][NASA/ADS]]. You can use online freely-available resources (e.g.,
 Wikipedia) as a starting point, but should go find /primary/ sources
 (e.g., what Wikipedia itself cites, if not the references cited by the
-source from Wikipedia, and so on down...).
+source from Wikipedia, and so on...).
 
 ** Grading
 /This part is worth 40% of your final grade -- as much as all the
@@ -77,10 +78,10 @@ homework combined, so you want to do it well!/
 Both text and presentations will be evaluated by the instructors /and/
 your peers according to the evaluation rubric outlined below.
 
-More specifically, the text will be evaluated by two other students
-selected randomly, while the oral presentation and handling of the
-questions will be evaluated by all the students present. Your presence
-and active participation in the presentation from other students is
+More specifically, the text will be evaluated by two other students in
+the class, while the oral presentation and handling of the questions
+will be evaluated by all the students present. Your presence and
+active participation in the presentation from other students is
 required and will be counted towards the general in-class
 participation.
 
@@ -89,11 +90,10 @@ presentations. The questions and the way you provide your evaluations
 and feedback to your peers will also be considered for your final
 grading.
 
-Of the project/presentation grade, 50% will come from the oral
-presentation and QA (corresponding to 20% of the total final grade),
-40% from the written report (corresponding to 16% of the total final
-grade), and 10% from how you provide feedback to others (corresponding
-to 4% of the total final grade).
+The breakdown of the  project/presentation grade is as follows:
+- 50% for the oral presentation and QA (corresponding to 20% of the total final grade)
+- 40% for the written report (corresponding to 16% of the total final grade)
+- 10% from how you provide feedback to others (corresponding to 4% of the total final grade).
 
 *** Evaluation rubric
 
@@ -102,7 +102,6 @@ work and be kind and constructive in providing feedback. The aim is to
 learn and improve, not to crush other people's work. And also, nothing
 is ever perfect, there is always something to be asked and/or
 something that can be improved!
-
 
 **** Written summary
 This counts for 40% of this assignment, corresponding to 16% of the
