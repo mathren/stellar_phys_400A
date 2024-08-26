@@ -110,7 +110,7 @@
 	     :with-sub-superscript t
 	     :with-tags t
 	     :with-tasks t
-	     :html-self-link-headlines nil
+	     :html-self-link-headlines t
              :with-timestamps t					;; Include time stamp in file
              :with-toc nil					;; Don't include a table of contents
              :section-numbers nil				;; Don't include section numbers
