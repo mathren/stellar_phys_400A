@@ -302,7 +302,10 @@ necessarily, hence the wider distribution of stars on the HRD.
 
 
 * Homework
+
 ** Make your own CMD
+DEADLINE: <2024-09-12 Thu>
+
 *** Aim
 Make your own color-magnitude diagram of a selected group of stars.
 This is a data-visualization exercise, so try to make your diagram as

@@ -167,9 +167,10 @@ observer).
 But even before considering those, we need to remove all the apparent
 motions due to the Earth rotation:
 
-#+CAPTION: Long exposure picture showing circular tracks along the north direction. These are just the reflected motion due to the rotation of the Earth.
+#+CAPTION: Long exposure picture showing circular tracks along the north direction. These are just the reflected motion due to the rotation of the Earth. Credits: G. Inchingolo
 #+ATTR_HTML: :width 100%
 [[./images/night_rotation.jpg]]
+
 
 We also have to remove the apparent motion due to the orbit of the
 Earth around the Sun, and the motion of the Sun and solar system
