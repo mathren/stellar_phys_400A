@@ -134,3 +134,18 @@ gasses, the specific \kappa_{\nu} have to be summed *before* taking the average.
 
 
 * Sources of radiative opacity
+
+Now, let's consider the radiation-matter interactions that can be
+source of opacity (i.e., determine the \kappa_{\nu} that we put in the
+Rosseland mean opacity to obtain \kappa_{rad}).
+
+** Bound-bound
+
+** Bound-free
+
+** Free-free
+
+** Scattering
+
+
+TODO: show MESA plot of \kappa(T,\rho)

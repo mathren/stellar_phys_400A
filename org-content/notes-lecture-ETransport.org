@@ -395,7 +395,7 @@ structure becomes
 
 #+begin_latex
 \begin{equation}
-\frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav}_{}\ \ .
+\frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
 
 *N.B.:* Once again, we found another equation but it comes with new
