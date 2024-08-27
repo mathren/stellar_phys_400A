@@ -199,7 +199,14 @@ caused by either pulsations of the stellar atmosphere or Keplerian
 orbital motion around a (possibly unseen) companion star, or they can
 be constant (on timescales much shorter than the period of the orbit
 of the star around the Galactic center) and thus reveal intrinsic
-motion.
+motion. In general, one does not look at just one spectral line, but a
+"series" of lines (e.g., the series coming from all the transitions of
+electrons across energy levels of a specific ion).
+
+#+CAPTION: Schematic representation of radial velocity shifts. Credits: Y. Gotberg.
+#+ATTR_HTML: :width 50%
+[[./images/Halpha_shift.png]]
+
 
 
 *** Magnitudes
