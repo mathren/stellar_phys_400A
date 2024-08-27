@@ -5,7 +5,7 @@
 * Introduction to the course
 *Materials*: chapter 1 of Onno Pols' lecture notes.
 
-#+CAPTION: Link to intro survey
+#+CAPTION: Link to initial [[https://uarizona.co1.qualtrics.com/jfe/form/SV_bdZgEJjHejhcKKW?Q_CHL=qr][survey]] (anonymous).
 #+ATTR_HTML: :width 50%
 [[./images/intro-survey-QR.png]]
 
