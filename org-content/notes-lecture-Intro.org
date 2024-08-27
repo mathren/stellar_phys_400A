@@ -124,10 +124,11 @@ anything about nuclear fusion, which we will treat, but much later in
 the course.
 
 ** What determines the properties of a (single) star?
-- *Mass*
-- Chemical composition
-- Rotation
-- Presence of other stellar companion(s)
+1. *Mass*
+2. Chemical composition
+3. Presence of other stellar companion(s)
+4. Rotation
+5. Magnetic fields
 
 :Questions:
 - *Q*: what is a star made of? Can you think of a star made of something
@@ -138,7 +139,7 @@ the course.
 - Photometry
 - Spectroscopy
 - Astrometry
-- Asteroseismology
+- Asteroseismology (either through photometry or spectroscopy)
 - Neutrinos
 
 *** Parallax
@@ -167,7 +168,7 @@ observer).
 But even before considering those, we need to remove all the apparent
 motions due to the Earth rotation:
 
-#+CAPTION: Long exposure picture showing circular tracks along the north direction. These are just the reflected motion due to the rotation of the Earth. Credits: G. Inchingolo
+#+CAPTION: Long exposure picture showing circular tracks along the north direction. These are just the reflected motion due to the rotation of the Earth. Note the stars have different colors! Credits: G. Inchingolo.
 #+ATTR_HTML: :width 100%
 [[./images/night_rotation.jpg]]
 
@@ -179,20 +180,22 @@ that is a deviation from the galactic rotation curve).
 
 Once all that cleaning is done, we can see the intrinsic projected
 motion of a star on the sky, so called /proper motion/ (sometimes
-indicated with \mu or pm). All that requires is a long timeline (since \mu\simeq
-arcos((v_{\parallel} \times t)/d) with v_{\parallel} transverse velocity
-(i.e., on the plane of the sky), t time baseline and d distance of the
-star, and a reference frame. *N.B.:* converting proper motions to
-physical velocity requires knowing the distance d, which is usually
-hard! Moreover, d is very large typically (d \gg 1 pc), so measuring \mu
-requires long time baselines and very accurate instruments.
+indicated with \mu or pm). All that requires is a long timeline (since
+\mu\simeq arcsin((v_{\parallel} \times \Delta t)/d) with v_{\parallel} transverse
+velocity (i.e., on the plane of the sky), \Delta t time baseline and d
+distance of the star, and a reference frame. *N.B.:* The proper motion
+is an /angle on the plane of the sky per unit time/. Converting proper
+motions to physical velocity requires knowing the distance d, which is
+usually hard! Moreover, d is very large typically (d \gg 1 pc), so
+measuring \mu requires long time baselines and very accurate
+instruments.
 
 #+CAPTION: Schematic representation of the proper motion
 #+ATTR_HTML: :width 50%
 [[./images/Proper_motion.JPG]]
 
 For the motion orthogonal to the plane of the sky, that is the motion
-away/towards the observe, that is the so called /radial velocity/ (RV)
+away/towards the observer, that is the so called /radial velocity/ (RV)
 through the Doppler shift of spectral lines (we will talk more about
 these later in the course). These sometimes can be periodic and thus
 caused by either pulsations of the stellar atmosphere or Keplerian
@@ -220,7 +223,7 @@ The magnitudes measure the energy flux from a point-like source (like
 a distant star) and it is a differential measure relative to some
 standard source. Hipparchus was comparing the visual brightness of
 various stars visible in the sky. This is still the basis of (some)
-magnitude systems. In reality typically magnitudes are provided
+magnitude systems. In reality. typically magnitudes are provided
 integrating over a range of frequencies (photometry!) accounting for
 the response of a filter as a function of wavelength T(\lambda):
 
@@ -241,13 +244,14 @@ The /bolometric/ magnitude is the magnitude across all wavelengths for
 an idealized perfect detector (T(\lambda) = 1 \forall \lambda). If the distance of a
 source is known, we can then infer its intrinsic luminosity from this.
 
-The /apparent/ magnitude is a measure of the actual photon flux received
-from a source (e.g., a star) on Earth, but that of course depends on
-how far the source is from Earth (a candle in your hand has a higher
-apparent magnitude than Betelgeuse in the sky!). Therefore, astronomer
-also introduced the /absolute/ magnitude as the apparent magnitude a
-star would have if it were at a distance of 10pc from the Sun, thus
-the relation between apparent magnitude m and absolute magnitude M is
+The /apparent/ magnitude m we just defined is a measure of the actual
+photon flux received from a source (e.g., a star) on Earth, but that
+of course depends on how far the source is from Earth (a candle in
+your hand has a higher apparent magnitude than Betelgeuse in the
+sky!). Therefore, astronomer also introduced the /absolute/ magnitude as
+the apparent magnitude a star would have if it were at a distance of
+10pc from the Sun, thus the relation between apparent magnitude m and
+absolute magnitude M is
 
 #+begin_latex
 \begin{equation}\label{eq:abs_magn}

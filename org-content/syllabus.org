@@ -33,7 +33,7 @@ By the end of the course, students will be able to:
  - *Apply a physically motivated theoretical framework to stellar
    structure to derive stellar properties and compare to observations.*
  - *Use mathematical and computational skills to solve astrophysical
-   problems related to stellar and more general astrophysics problems.*
+   problems related to stars and more generally astrophysics.*
  - *Communicating, translating, and interpreting fundamental
    astronomical concepts and research results.*
  - *Distinguish observationally confirmed elements of stellar physics
