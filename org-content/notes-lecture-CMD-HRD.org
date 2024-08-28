@@ -26,10 +26,12 @@ composition and dynamical status (w.r.t. the Galactic potential)
    form a quasi-spherical halo in the Galaxy.
 
 The distinction between these two population is however a bit outdated
-and not very used in research anymore (in favor of \alpha-rich and \alpha-poor
-stars, which depend on more specific criteria in their composition
-that correlate with the dynamical properties as well). One term that
-instead is still widely present in the literature is
+and not very used in research anymore. Within the Galaxy, it is more
+common to distinguish stellar populations based on their dynamical
+status (which correlates with how long they have orbited the Galaxy,
+and thus age) and the abundance of \alpha elements relative to their iron
+content (so a more specific criterion). One term that instead is still
+widely present in the literature is:
 
  - *Population III*: these are /hypothetical/ stars that have not yet been
    observed, formed by metal-free primordial gas composed only of

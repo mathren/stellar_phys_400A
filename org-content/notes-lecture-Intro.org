@@ -305,7 +305,8 @@ the positive r direction). Stars don't really have a well defined
 ** Solar metallicity: Z_{\odot} = 0.0146 \simeq 0.02 (older but still widely used value)
 The "metallicity" is the fraction by mass of gas that is /not/ hydrogen
 nor helium. This includes many elements (e.g., C, N, O, Si) that a
-chemist would not call "metals".
+chemist would not call "metals". See [[https://webelements.com/][here]] for an online periodic table
+of elements.
 
 Often, for lack of better knowledge available, we assume that the
 distribution of metals scales with the Solar distribution, sometimes
