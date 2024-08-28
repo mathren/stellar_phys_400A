@@ -200,28 +200,46 @@ Note that this only depends on the temperature T. One can also rewrite
 this in terms of frequency using \nu = c/\lambda (we will also use the form as
 a function of \nu later in the course). Integrating it across all
 wavelengths one obtain the total flux F \equiv \int F_{\lambda} d\lambda = \sigma
-T^{4}, which is the so called /Stefan-Boltzmann law/. The temperature
-appearing here is by definition the "effective temperature", that is
-the temperature of an ideal black body producing the same Flux as the
-star . The black body spectrum produces the "continuum" of an observed
-spectrum, and can be thought of the spectrum of light coming from the
-outermost layer of the stellar interior (where the photons are equally
-like to move in any direction, as opposed to the stellar atmosphere,
-see below):
+T^{4}, which is the so called /Stefan-Boltzmann law/.
 
-#+CAPTION: Example of black-body spectrum. Credits: Rich Townsend
+The temperature appearing here is by definition the "effective
+temperature", that is the temperature of an ideal black body producing
+the same Flux as the star. The black body spectrum produces the
+"continuum" of an observed spectrum, and can be thought of the
+spectrum of light coming from the outermost layer of the stellar
+interior (where the photons are equally like to move in any direction,
+as opposed to the stellar atmosphere, see below). In reality, T_{eff} is
+an idealization, as should be clear from the definition: the stellar
+surface actually does not have a sharp cutoff with a well defined
+radius R and temperature T_{eff}. Instead, as one moves outward in the
+stellar atmosphere, progressively the gas becomes transparent to
+different wavelength \lambda of light: in reality there is a different
+radius for each wavelength at which one can observe a star: R \equiv R(\lambda).
+This is the topic of the stellar atmosphere, which determines the
+outer-boundary conditions we need to study the interior. Throughout
+the atmosphere, there will be a location where T = T_{eff}, but there is
+nothing physically special occurring there! However, from the interior
+point-of-view, it is useful to determine at this idealized location
+the outer boundary. We can then specify there the outer boundary
+condition to solve the stellar structure equations, which you don't
+know yet -- but we will derive and write down during this course.
+
+
+#+CAPTION: Example of black-body spectrum. Credits: Rich Townsend.
 #+ATTR_HTML: :width 50%
 [[./images/Blackbody.png]]
 
-Before this reaches the telescope though, it has to filter through the
-stellar atmosphere, which is by definition the region of the star
-where there is a net radial flux of photons (as opposed to the
-optically thick interior where the distribution of photons direction
-is isotropic). It is in this region that absorption lines can form.
-There is another filter that matters: the Earth atmosphere. This can
-also introduce absorption lines (or even "bands" when the absorbers
-are molecules that have many roto-vibration levels close to each other
-in energy/frequency/wavelength).
+
+Before the continuum produced by the last fully opaque layer of the
+star (the outermost layer of the "interior") reaches the telescope, it
+has to filter through the stellar atmosphere, which is by definition
+the region of the star where there is a net radial flux of photons (as
+opposed to the optically thick interior where the distribution of
+photons direction is isotropic). It is in this region that absorption
+lines can form. Then, there is another filter that matters: the Earth
+atmosphere. This can also introduce absorption lines (or even "bands"
+when the absorbers are molecules that have many roto-vibration levels
+close to each other in energy/frequency/wavelength).
 
 #+CAPTION: Schematic representation of the Sun spectral energy distribution from [[https://www.sciencedirect.com/science/article/pii/B9780443187865000020?via%3Dihub][Wang et al. 2023]].
 #+ATTR_HTML: :width 100%
@@ -259,16 +277,17 @@ is neutral iron, FeII is once ionized iron, etc.
 :end:
 
 *** Relation with colors
-On the /Gaia/ color-magnitude diagram the color index, and the spectral
+On the /Gaia/ color-magnitude diagram, the color index and both the spectral
 types and effective temperature are all on the x-axis (bottom and top,
 respectively). How are these related?
 
-Depending on the T_{eff} the maximum of the Black body spectrum (i.e.,
-the "continuum") shifts in wavelength, something known as "Wien's
-displacement law": \lambda_{max}\prop 1/T. This in turn means that the change
-in T_{eff} translates in a change in the "color" of the star, because the
-wavelengths around \lambda_{max} will dominate the perception of the star (in
-naked eye observations).
+Depending on T_{eff}, the maximum flux of a black body (i.e., of the
+"continuum") shifts in wavelength, something known as "Wien's
+displacement law": \lambda_{max}\prop 1/T, the higher the temperature the
+shorter the wavelength of the maximum flux. This in turn means that
+the change in T_{eff} translates in a change in the "color" of the star,
+because the wavelengths around \lambda_{max} will dominate the perception of
+the star (in naked eye observations).
 
 This can further be formalized by defining a "color index" as the
 difference in flux between different photometric bands. Each band has
@@ -297,24 +316,20 @@ typically stellar modelers use, effective temperature (T_{eff}) on the
 x-axis and luminosity L on the y-axis.
 
 The effective temperature is defined as the temperature of a
-black-body with the same energy flux as the surface of the star, such
-that L=4\pi R^{2} \sigma T_{eff}^{4}, with R the radius of the star, \sigma=2\pi^{5} k_{B}^{4}/15c^{2}h^{3}
-Stefan-Boltzmann constant (k_{B} is the Boltzmann constant, c the speed
-of light, and h is Planck's constant). Therefore, T_{eff} is an
-idealization: the stellar surface actually does not have a sharp
-cutoff with a well defined radius R and temperature T_{eff}. Instead, as
-one moves outward in the stellar atmosphere, progressively the gas
-becomes transparent to different wavelength \lambda of light: in reality
-there is a different radius for each wavelength at which one can
-observe a star: R \equiv R(\lambda). This is the topic of the stellar atmosphere,
-which determines the outer-boundary conditions we need to study the
-interior. Throughout the atmosphere, there will be a location where T
-= T_{eff}, but there is nothing physically special occurring there!
-However, from the interior point-of-view, it is useful to determine at
-this idealized location the outer boundary. We can then specify there
-the outer boundary condition to solve the stellar structure equations,
-which you don't know yet -- but we will derive and write down during
-this course.
+black-body with the same energy flux as the surface of the star.
+
+By dimensional analysis the integrated flux F=\int F_{\lambda} d\lambda has
+units of energy per unit time and area: [E]/[t][A]. We also know that
+the stellar luminosity is the amount of energy lost (to photons) per
+unit time by the stellar surface. Assuming that the star is a sphere
+(a good approximation in absence of perturbing factors such as
+magnetic fields, companion stars, or fast rotation, since these are
+self-gravitating objects and gravity is a central force), we can thus
+write F = L/(stellar surface) = L/(4\pi R^{2}) and putting this together
+with Stefan-Boltzmann's law we finally arrive at L=4\pi R^{2} \sigma T_{eff}^{4},
+with R the radius of the star, \sigma=2\pi^{5} k_{B}^{4}/15c^{2}h^{3} Stefan-Boltzmann
+constant (k_{B} is the Boltzmann constant, c the speed of light, and h is
+Planck's constant).
 
 We can then use these same axes to plot not a collection of different
 stars at a given point in time, like in the plot from /Gaia/ above, but
