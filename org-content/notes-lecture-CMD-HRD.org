@@ -190,7 +190,10 @@ wavelength \lambda (or equivalently F_{\nu}\equiv F_{\nu}(\nu) with \nu =
 c/\lambda frequency), given by Planck's function:
 
 #+begin_latex
-F_{\lambda} d\lambda = \frac{2\pi hc^{2}}{\lambda^{5}}\frac{d\lambda}{e^{hc/\lambda k_{B} T} -1}
+\begin{equation}
+F_{\lambda} d\lambda = \frac{2\pi
+hc^{2}}{\lambda^{5}}\frac{d\lambda}{e^{hc/\lambda k_{B} T} -1}
+\end{equation}
 #+end_latex
 
 Note that this only depends on the temperature of the interior T.
