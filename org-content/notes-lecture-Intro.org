@@ -5,7 +5,7 @@
 * Introduction to the course
 *Materials*: chapter 1 of Onno Pols' lecture notes.
 
-#+CAPTION: Word cloud of the student expectations for what they are going to learn.
+#+CAPTION: Word cloud of the students' expectations for what they are going to learn in this class.
 [[./images/word_cloud20240827.png]]
 
 * Who am I?
