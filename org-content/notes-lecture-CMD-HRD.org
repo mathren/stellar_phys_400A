@@ -230,9 +230,9 @@ sufficient to observe a star moving through such a plot.
 The following is an example of HR diagram for a 15M_{\odot} star from
 zero age main sequence (roughly when most of its luminosity is
 provided by Hydrogen burning in the core) to the onset of
-core-collapse and thus the point where it will go supernova
+core-collapse and thus the point where it will go supernova.
 
-#+CAPTION: Hertzsprung-Russell diagram of a 15M_{\odot} stellar model from [[https://www.as.arizona.edu/~mrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]
+#+CAPTION: Hertzsprung-Russell diagram of a 15M_{\odot} stellar model from [[https://www.as.arizona.edu/~mrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note that this is the evolution of *one* star throughout time!
 #+ATTR_HTML: :width 100%
 #+ATTR_HTML: :alt 15M_{\odot} single stellar evolution track
 [[./images/15Msun_thesis.png]]
