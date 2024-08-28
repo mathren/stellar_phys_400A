@@ -349,10 +349,21 @@ core-collapse and thus the point where it will go supernova.
 #+ATTR_HTML: :alt 15M_{\odot} single stellar evolution track
 [[./images/15Msun_thesis.png]]
 
+While all these wiggles may seem arbitrary, one of the objectives of
+this course is for you to be able to understand and interpret all of
+these, and possibly even produce your own models. Let's not worry too
+much about them now, the important point is that we can put together
+on the same (or tightly related) axes information for an observed
+population of stars (e.g., the /Gaia/ CMD above) and for a theoretical
+model of individual stars (e.g., the Hertzsprung-Russel evolutionary
+diagram here). This mixes two ontologically different elements (models
+and observations), but provides a powerful tool to interpret the
+observations.
+
 :Questions:
-- *Q*: on this diagram, how does a line for stars at constant radius
-  look like?
+- *Q*: on this diagram, how does a line for stars at constant radius look like?
 :end:
+
 
 ** Putting the two together
 
