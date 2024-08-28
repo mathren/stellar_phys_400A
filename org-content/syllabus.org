@@ -91,8 +91,41 @@ between final percentages and letter grades:
 Your engagement, quality of contributions, and interactions with the
 instructors and with your peers will contribute to your final grade.
 Quality and frequency of your contributions will be evaluated
-throughout the course, rewarding specifically _growth_ and _improvement_
-throughout the course.
+throughout the course, rewarding specifically *growth* and *improvement*.
+
+*** Rubric for in class participation
+  |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
+  |               | Exceptional                              | Very good                           | Adequate                          | Poor                                    |
+  |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
+  | Engagement    | Consistent proactive                     | Frequent active participation       | Occasional                        | Rare or absent participation,           |
+  |               | participation with                       | with valuable insight and           | participation with                | or frequent but disruptive              |
+  |               | valuable insight                         | question                            | relevant contribution             | interruptions with rarely relevant      |
+  |               | and/or pertinent                         |                                     |                                   | and often beside-the-point              |
+  |               | questions                                |                                     |                                   | interventions                           |
+  |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
+  | Preparation   | Consistent demonstration                 | Consistent demonstration of         | Typically exhibit                 | Lack of understanding of the            |
+  |               | of thorough and in depth                 | thorough understanding of           | good understanding of             | materials already covered in            |
+  |               | understanding of course content          | course content already covered      | material covered in               | class and past homework.                |
+  |               | covered  /and knowledge of/                |                                     | the course with only              |                                         |
+  |               | topical content beyond the course        |                                     | occasional misunderstandings      |                                         |
+  |               | material                                 |                                     |                                   |                                         |
+  |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
+  | Collaboration | Consistent level of engagement           | Consistent level of engagement      | Typically proactive participation | Disengaged from group activities,       |
+  |               | with peers, exhibiting "leadership"      | with peers, with positive           | in group activities with positive | lets others do all the work.            |
+  |               | and "peer mentoring" qualities,          | contributions to group activities   | contribution                      | Does not let others contribute          |
+  |               | enabling and helping the participation   | and occasionally helping others     |                                   | and learn together, participation       |
+  |               | and development of others and themselves |                                     |                                   | is a net negative in content and        |
+  |               |                                          |                                     |                                   | climate within the group                |
+  |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
+  | Growth        | Shows significant improvement            | Demonstrates noticeable improvement | Demonstrates some improvement     | Demonstrates marginal or no improvement |
+  |               | in engagement, preparation, and          | in engagement, preparation, and     | in engagement, preparation, and   | in engagement, preparation, and         |
+  |               | collaboration over the semester          | collaboration over the semester     | collaboration over the semester   | collaboration over the semester         |
+  |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
+
+
+  Roughly between one-third and halfway through the course, depending
+  on how lectures proceed, you will receive individual feedback on
+  your participation in class.
 
 ** Homework
 
