@@ -6,6 +6,7 @@
 *Materials*: chapter 1 of Onno Pols' lecture notes.
 
 #+CAPTION: Word cloud of the students' expectations for what they are going to learn in this class.
+#+ATTR_HTML: :width 100%
 [[./images/word_cloud20240827.png]]
 
 * Who am I?

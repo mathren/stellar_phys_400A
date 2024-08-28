@@ -31,7 +31,7 @@ stars, which depend on more specific criteria in their composition
 that correlate with the dynamical properties as well). One term that
 instead is still widely present in the literature is
 
- - *Population III*: these are _hypothetical_ stars that have not yet been
+ - *Population III*: these are /hypothetical/ stars that have not yet been
    observed, formed by metal-free primordial gas composed only of
    hydrogen and helium (and maybe traces of Li and Be) formed at the
    Big Bang. These stars should exist, but they are so far out of
@@ -145,7 +145,6 @@ from the stellar interior:
 
 #+CAPTION: Example of black-body spectrum. Credits: Rich Townsend
 #+ATTR_HTML: :width 50%
-#+ATTR_HTML: :alt
 [[./images/Blackbody.png]]
 
 Before this reaches the telescope though, it has to filter through the
@@ -160,7 +159,6 @@ in energy/frequency/wavelength).
 
 #+CAPTION: Schematic representation of the Sun spectral energy distribution from [[https://www.sciencedirect.com/science/article/pii/B9780443187865000020?via%3Dihub][Wang et al. 2023]].
 #+ATTR_HTML: :width 100%
-#+ATTR_HTML: :alt
 [[./images/sun-SED.jpg]]
 
 Typically, data reduction pipelines are used to remove the "slope" due
@@ -171,7 +169,6 @@ for the visible absorption lines annotated is
 
 #+CAPTION: Example of reduced (portion of the) solar spectrum modified from [[https://ui.adsabs.harvard.edu/abs/2021ApJ...919..100V/abstract][Vejar et al. 2021]]
 #+ATTR_HTML: :width 100%
-#+ATTR_HTML: :alt
 [[./images/sun-normalized.png]]
 
 
@@ -297,8 +294,6 @@ how masses can be measured only in some special cases.
 
 This is not a region where all the stars have the same age
 necessarily, hence the wider distribution of stars on the HRD.
-
-
 
 * Homework
 
