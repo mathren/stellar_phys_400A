@@ -97,18 +97,18 @@ throughout the course, rewarding specifically *growth* and *improvement*.
   |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
   |               | Exceptional                              | Very good                           | Adequate                          | Poor                                    |
   |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
-  | Engagement    | Consistent proactive                     | Frequent active participation       | Occasional                        | Rare or absent participation,           |
-  |               | participation with                       | with valuable insight and           | participation with                | or frequent but disruptive              |
-  |               | valuable insight                         | question                            | relevant contribution             | interruptions with rarely relevant      |
-  |               | and/or pertinent                         |                                     |                                   | and often beside-the-point              |
-  |               | questions                                |                                     |                                   | interventions                           |
+  | Engagement    | Consistent proactive                     | Frequent active participation       | Occasional participation during   | Rare or absent participation,           |
+  |               | participation during lectures and        | during lectures and other in class  | lectures and in class activities  | or frequent but disruptive              |
+  |               | other in class activities with valuable  | activities with valuable            | with relevant contribution        | interruptions with rarely relevant      |
+  |               | insights and/or pertinent questions      | insight and question                |                                   | and often beside-the-point              |
+  |               |                                          |                                     |                                   | interventions                           |
   |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
-  | Preparation   | Consistent demonstration                 | Consistent demonstration of         | Typically exhibit                 | Lack of understanding of the            |
-  |               | of thorough and in depth                 | thorough understanding of           | good understanding of             | materials already covered in            |
-  |               | understanding of course content          | course content already covered      | material covered in               | class and past homework.                |
-  |               | covered  /and knowledge of/                |                                     | the course with only              |                                         |
-  |               | topical content beyond the course        |                                     | occasional misunderstandings      |                                         |
-  |               | material                                 |                                     |                                   |                                         |
+  | Preparation   | Consistent demonstration                 | Consistent demonstration of         | Typically good understanding      | Lack of understanding of the            |
+  |               | of thorough and in depth                 | thorough understanding of           | of material covered in            | materials already covered in            |
+  |               | understanding of course content          | course content already covered      | the course with only              | class and past homework.                |
+  |               | covered /and knowledge of/                 |                                     | occasional misunderstandings of   | Severe misconceptions unaddressed.      |
+  |               | topical content beyond the course        |                                     | previously covered content        |                                         |
+  |               |                                          |                                     |                                   |                                         |
   |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
   | Collaboration | Consistent level of engagement           | Consistent level of engagement      | Typically proactive participation | Disengaged from group activities,       |
   |               | with peers, exhibiting "leadership"      | with peers, with positive           | in group activities with positive | lets others do all the work.            |
