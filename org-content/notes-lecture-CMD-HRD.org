@@ -39,14 +39,19 @@ widely present in the literature is:
    Big Bang. These stars should exist, but they are so far out of
    reach for our telescopes. /JWST/ may be able to see the integrated
    light of populations of these primordial stars in some very high
-   redshift young galaxy, or maybe their explosions. Because of the
-   quasi-complete lack of metals, Pop III stars are expected to
-   possibly be more massive on average (so called top-heavy initial
-   mass function). Although they have not been observed, these are
-   still receiving much theoretical attention because of their
-   potential role during the epoch of reionization, as parents of the
-   super-massive black holes in the center of Galaxies, and as the
-   stars that kick started the production of chemical elements.
+   redshift young galaxy, or maybe their explosions. Strong
+   gravitational lensing may also serendipitously reveal these, but
+   the record holders in distance have redshift z\simeq6 (still not high
+   enough for Pop III), and it is debated whether the signal is from
+   individual stars or aggregated light from multiple sources in a
+   cluster. Because of the quasi-complete lack of metals, Pop III
+   stars are expected to possibly be more massive on average (so
+   called top-heavy initial mass function). Although they have not
+   been observed, these are still receiving much theoretical attention
+   because of their potential role during the epoch of reionization,
+   as parents of the super-massive black holes in the center of
+   Galaxies, and as the stars that kick started the production of
+   chemical elements.
 
 ** Observational color-magnitude diagram
 
