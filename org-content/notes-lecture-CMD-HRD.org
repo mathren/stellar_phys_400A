@@ -45,13 +45,13 @@ widely present in the literature is:
    enough for Pop III), and it is debated whether the signal is from
    individual stars or aggregated light from multiple sources in a
    cluster. Because of the quasi-complete lack of metals, Pop III
-   stars are expected to possibly be more massive on average (so
+   stars are expected to *possibly be more massive* on average (so
    called top-heavy initial mass function). Although they have not
    been observed, these are still receiving much theoretical attention
-   because of their potential role during the epoch of reionization,
-   as parents of the super-massive black holes in the center of
-   Galaxies, and as the stars that kick started the production of
-   chemical elements.
+   because of their *potential role during the epoch of reionization*,
+   as *parents of the super-massive black holes* in the center of
+   Galaxies, and as the *stars that kick started the production of
+   chemical elements*.
 
 ** Observational color-magnitude diagram
 
@@ -65,15 +65,13 @@ the second /Gaia/ data release, /Gaia/ DR2 in 2018. /Gaia/ is an ESA space
 mission to detect with great accuracy parallax and proper motion of >1
 billion stars in the Galaxy. This is a very "classical" astrophysics
 task, but the precision and size of the datasets from this mission are
-unprecedented and are revolutionizing this field.
+unprecedented and are revolutionizing this field (see for example [[https://ui.adsabs.harvard.edu/abs/2024NewAR..9801694E/abstract][El
+Badry 2024 review]]).
 
-The y-axis is the magnitude in the =G= band of the telescope. This is a
-measure of how many photons in each band (think of it as a "photon
-bucket") arrive at the telescope. It is "absolute" because it is
-rescaled to what the flux would be if the star were at a distance of
-10 parsec.
+The y-axis is the *absolute* magnitude in the =G= band of the telescope on
+board of the /Gaia/ space-craft.
 
-The x-axis is the color, obtained as the difference in flux between
+The x-axis is the "color index", obtained as the difference in flux between
 two filters of the /Gaia/ telescope =Bp-Rp=.
 
 Each dot is a different star, but there are so many (~1.5 billions in

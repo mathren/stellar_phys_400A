@@ -84,11 +84,13 @@ limitations.
 
 ** <2024-10-01 Thu> - Nuclear energy generation
 *Aim*: Introduce basics of nuclear energy generation through fusion,
-recall basic quantum mechanics elements, Gamow peak
-*Aim*: introduce nuclear energy generation and nuclear timescale
+recall basic quantum mechanics elements, Gamow peak.
 
 [[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][Notes (preliminary)]]
 
+*** Homework
+ - compare nuclear burning at various Z
+ - derive nuclear reaction chains with conservation laws
 
 ** <2024-10-15 Thu> - Radiative transfer
 - Saha equation
