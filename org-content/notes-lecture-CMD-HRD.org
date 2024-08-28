@@ -245,7 +245,6 @@ core-collapse and thus the point where it will go supernova
   look like?
 :end:
 
-
 ** Putting the two together
 
 One can also overplot theoretical tracks from computer-simulated
