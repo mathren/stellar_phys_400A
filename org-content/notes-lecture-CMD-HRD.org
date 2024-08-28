@@ -352,13 +352,7 @@ core-collapse and thus the point where it will go supernova.
 While all these wiggles may seem arbitrary, one of the objectives of
 this course is for you to be able to understand and interpret all of
 these, and possibly even produce your own models. Let's not worry too
-much about them now, the important point is that we can put together
-on the same (or tightly related) axes information for an observed
-population of stars (e.g., the /Gaia/ CMD above) and for a theoretical
-model of individual stars (e.g., the Hertzsprung-Russel evolutionary
-diagram here). This mixes two ontologically different elements (models
-and observations), but provides a powerful tool to interpret the
-observations.
+much about them now.
 
 :Questions:
 - *Q*: on this diagram, how does a line for stars at constant radius look like?
@@ -367,9 +361,15 @@ observations.
 
 ** Putting the two together
 
-One can also overplot theoretical tracks from computer-simulated
-stellar models and observed samples to infer physical properties of
-the observed stars.
+The important point here is that we can put together on the same (or
+tightly related) axes information for an observed population of stars
+(e.g., the /Gaia/ CMD above) and for a theoretical model of individual
+stars (e.g., the Hertzsprung-Russel evolutionary diagram here). This
+mixes two ontologically different elements (models and observations),
+but provides a powerful tool to interpret the observations. By
+comparing theoretical tracks from computer-simulated stellar models
+and observed samples one can infer the physical properties of
+the observed stars and the processes determining them.
 
 *** Example: cluster with isochrone
 
@@ -421,7 +421,6 @@ necessarily, hence the wider distribution of stars on the HRD.
 * Homework
 
 ** Make your own CMD
-DEADLINE: <2024-09-12 Thu>
 
 *** Aim
 Make your own color-magnitude diagram of a selected group of stars.
@@ -429,9 +428,12 @@ This is mainly a data-visualization exercise, so try to make your
 diagram as informative and useful as possible. Think of a
 publication-quality plot (think of the plots shown in class, search in
 the literature!), you want it to be good looking for people to want to
-use it in their slides, dense in information, and the info should
-possibly be layered. You will also need to write a brief paragraph of
-description of what is plotted, including the source of data.
+use it in their slides, dense in information, and the info should be
+layered (the most important things should be more evident, and
+secondary, tertiary, etc. information should be progressively less
+prominent). You will also need to write a brief paragraph of
+description of what is plotted, including the source of data, and the
+interpretation.
 
 You will be using real bleeding edge data from the /Gaia/ mission and
 widely used stellar models from [[https://waps.cfa.harvard.edu/MIST/][MIST]]. MIST stands for "MESA Isochrones
@@ -449,9 +451,10 @@ this exercise are the kind researchers face in their everyday life!
     care in distinguishing what is observational data what is
     theoretical modeling.
   - Script to reproduce the plot (we will not run the script, but you
-    should make it an habit to "show your code"). If your script has
-    dependencies on other files you wrote, we want those too, but mark
-    /clearly/ which file is the main one producing the script.
+    should make it an habit to "show your code" - it's only science if
+    it is reproducible!). If your script has dependencies on other
+    files you wrote, we want those too, but mark /clearly/ which file is
+    the main one producing the script.
 
 *** Instructions
 We will use the latest data release from ESA's /Gaia/ mission, you will
@@ -470,21 +473,26 @@ be using a bleeding-edge dataset! These are publicly available in the
     find in papers the queries of the /Gaia/ database for specific
     clusters! For example the cluster NGC6231 can be found using the
     appendix A of [[https://ui.adsabs.harvard.edu/abs/2021A%26A...655A..31V/abstract][this paper]].
-  - Download and, if needed, clean the data. Make sure you start with
-    a manageable amount. If you want to select a cluster, you may need
-    to do parallax cuts.
+  - Download and, if needed, clean the data (for example removing
+    stars that are not part of a cluster based on parallax cuts). Make
+    sure you start with a manageable amount -- the full catalog is
+    billions of stars, you most likely don't want that.
   - Plot the color-magnitude diagram (suggestion: G-band magnitude on
-    the y-axis, BP-RP color on the x-axis).
-  - download and plot a bunch of Gaia data. Make the visualization as
-    clear as possible.
+    the y-axis, BP-RP color on the x-axis, like the plot shown in
+    class).
   - Skim [[https://ui.adsabs.harvard.edu/abs/2016ApJ...823..102C/abstract][Choi et al. 2016]] describing the MIST project (it's ok if you
     don't understand everything, you will have a much better
     understanding by the end of the semester!).
   - Use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot isochrones on your
-    plot. Note that the file you can download has extension =*.iso=, but
-    it is /not/ and =iso= image file, just plain text that you can load
-    and plot.
-  - Use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot evolutionary tracks.
+    plot. Make sure you obtain and plot files with the correct
+    photometry for comparison with /Gaia data./ Note that the file you
+    can download has extension =*.iso=, but it is /not/ and =iso= image
+    file, just plain text that you can load and plot.
+  - *Optional* Use the [[https://waps.cfa.harvard.edu/MIST/][MIST web interpolator]] to over-plot evolutionary
+    tracks.
+  - Make sure to describe what you learn from comparing the model
+    tracks with the observations plotted. Do they match? Do they not?
+    If so, can you speculate on why?
 
 ** Suggested
 To follow the next lecture, it will be helpful for you to revise
