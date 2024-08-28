@@ -71,14 +71,17 @@ Badry 2024 review]]).
 The y-axis is the *absolute* magnitude in the =G= band of the telescope on
 board of the /Gaia/ space-craft.
 
-The x-axis is the "color index", obtained as the difference in flux between
-two filters of the /Gaia/ telescope =Bp-Rp=.
+The x-axis is the "color index", obtained as the difference in flux
+between two filters of the /Gaia/ telescope =Bp-Rp=. The color is
+typically obtained as difference between the flux in different bands
+(i.e., different photometric filters, e.g. B-V): we'll discuss why in
+a second.
 
-Each dot is a different star, but there are so many (~1.5 billions in
-/Gaia/ DR2), that in the most crowded region what is plotted is the
-density of stars (per unit "pixel" on this plot). So what we are
-looking at is a group picture of many different stars, varying in age,
-composition, position in the galaxy, etc.
+Each dot in this plot is a different star, but there are so many (~1.8
+billions in /Gaia/ DR2), that in the most crowded region what is plotted
+is the density of stars (per unit "pixel" on this plot). So what we
+are looking at is a group picture of many different stars, varying in
+age, composition, position in the galaxy, etc.
 
 *** Questions:
  - where are the cool stars?
