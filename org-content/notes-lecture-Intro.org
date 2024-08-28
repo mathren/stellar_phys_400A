@@ -293,7 +293,7 @@ and in astronomy more generally.
 This may be one of the reasons why we still use =cgs= in astronomy,
 the other one being that the constants in electromagnetism are a
 bit simpler.
-** Solar effective temperature: T_{\odot}\simeq 6000K
+** Solar effective temperature: T_{\odot}\simeq 5900K\simeq6000K
 This is the "effective temperature" of the Sun, which we will discuss
 in the [[file:notes-lecture-CMD-HRD.org][next lecture]]. It is an approximation for the temperature of the
 surface below which the radiation field is isotropic - that is the
