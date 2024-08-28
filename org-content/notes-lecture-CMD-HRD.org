@@ -72,23 +72,45 @@ The y-axis is the *absolute* magnitude in the =G= band of the telescope on
 board of the /Gaia/ space-craft.
 
 The x-axis is the "color index", obtained as the difference in flux
-between two filters of the /Gaia/ telescope =Bp-Rp=. The color is
-typically obtained as difference between the flux in different bands
-(i.e., different photometric filters, e.g. B-V): we'll discuss why in
-a second.
+between two filters of the /Gaia/ telescope =Bp-Rp=. The "color index" on
+the x-axis is generally obtained as difference between the flux in
+different bands (i.e., different photometric filters, e.g. B-V): we'll
+discuss why in a second.
 
 Each dot in this plot is a different star, but there are so many (~1.8
 billions in /Gaia/ DR2), that in the most crowded region what is plotted
-is the density of stars (per unit "pixel" on this plot). So what we
-are looking at is a group picture of many different stars, varying in
-age, composition, position in the galaxy, etc.
+is the (logarithm of the) density of stars per unit "pixel" on this
+plot. So what we are looking at is a /"group picture" of many different
+stars, varying in age, composition, position in the galaxy/, etc.
 
-*** Questions:
+:Questions:
  - where are the cool stars?
  - where are the bright stars?
  - where do you think the Sun would be on this diagram? (*N.B.:* /Gaia/
    does /not/ look at the Sun, so it is actually not in this plot!)
  - Focusing on where most stars are, can you spot any trend?
+:end:
+
+Even for such an inhomogeneous sample, the colors show that the vast
+majority of stars is sitting along a "line" on this diagram. Since a
+line is one dimensional, there should probably be *one* parameter that
+determines the position of the star on this diagram. This parameter is
+the total mass of the star (though this took several decades to be
+established, because it is not something easy to empirically
+measure!).
+
+There are also other sub-groups, like the "Giant Branch" and "White
+Dwarfs". We will encounter and explain those later on in the course,
+but basically these correspond to more "evolved" stars.
+
+From the density of stars we can also infer where on this diagram
+stars spend most of their time! The "main sequence" is surely much
+longer lasting than anything else. In fact this corresponds to ~90% of
+the lifetime of stars, for reason that we will explain when we touch
+upon nuclear burning. The other phases are much shorter, but stars
+still spend some time on the Giant Branch visibly, and then as White
+Dwarfs which are in reality "compact remnants" left behind by >95% of
+all stars.
 
 ** Digression: Spectral types and the letters OBAFGKM(LTY)
 
