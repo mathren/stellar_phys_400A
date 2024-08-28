@@ -196,10 +196,11 @@ hc^{2}}{\lambda^{5}}\frac{d\lambda}{e^{hc/\lambda k_{B} T} -1}
 \end{equation}
 #+end_latex
 
-Note that this only depends on the temperature of the interior T.
-Integrating it across all wavelengths one obtain the total flux F \equiv \int
-F_{\lambda} d\lambda = \sigma T^{4}, which is the so called /Stefan-Boltzmann
-law/.
+Note that this only depends on the temperature of the interior T. One
+can also rewrite this in terms of frequency using \nu = c/\lambda (we will
+also use the form as a function of \nu later in the course). Integrating
+it across all wavelengths one obtain the total flux F \equiv \int F_{\lambda}
+d\lambda = \sigma T^{4}, which is the so called /Stefan-Boltzmann law/.
 
 The black body spectrum produces the "continuum" of an observed
 spectrum, and can be thought of the spectrum of light coming
