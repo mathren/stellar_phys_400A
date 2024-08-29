@@ -55,7 +55,7 @@ widely present in the literature is:
 
 ** Observational color-magnitude diagram
 
-#+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] (second data release) color magnitude diagram, containing about ~1.3 billion Galactic stars.
+#+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] (second data release) color magnitude diagram, containing about ~1.3 billion Galactic stars. Only ~4.2 millions are plotted here
 #+ATTR_HTML: :width 100%
 #+ATTR_HTML: :alt [[https://sci.esa.int/web/gaia/-/60198-gaia-hertzsprung-russell-diagram][Gaia DR2 CMD]]
 [[./images/Gaia_DR2_HRD_Gaia.png]]
@@ -79,9 +79,10 @@ discuss why in a second.
 
 Each dot in this plot is a different star, but there are so many (\sim1.8
 billions in /Gaia/ DR2), that in the most crowded region what is plotted
-is the (logarithm of the) density of stars per unit "pixel" on this
-plot. So what we are looking at is a /"group picture" of many different
-stars, varying in age, composition, position in the galaxy/, etc.
+is proportional to the square root of the relative density of stars
+per unit "pixel" on this plot. So what we are looking at is a /"group
+picture" of many different stars, varying in age, composition,
+position in the galaxy/, etc.
 
 :Questions:
  - *Q*: where are the cool stars?
@@ -491,6 +492,10 @@ We will use the latest data release from ESA's /Gaia/ mission, you will
 be using a bleeding-edge dataset! These are publicly available in the
 [[https://gea.esac.esa.int/archive/][Gaia archive]] or any of the [[https://www.cosmos.esa.int/web/gaia/data-access#PartnerDataCentres][partner data centers]].
 
+  - Skim the /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] paper on Hertzsprung-Russel diagram: your aim is
+    not to understand every detail, but get an idea of how these
+    diagrams are constructed from the data and how they can be used as
+    tools for stellar physics.
   - Go to [[https://gea.esac.esa.int/archive/]] and select the "Search tab"
   - Select the /Gaia/ query you want to make. Feel free to experiment,
     but keep in mind that you will need to briefly explain what it is
