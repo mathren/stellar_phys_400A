@@ -147,7 +147,6 @@ available is the "optical" spectrum, that is a spectrum in the
 wavelength rage that can penetrate the Earth's atmosphere, roughly
 between \lambda\simeq300-900 nm.
 
-
 Kirchhof and Bunsen realized that filtering (white) light through a
 rarefied gas before taking its spectrum would produce "absorption
 lines", i.e. there would be regions of wavelength where light was
@@ -169,27 +168,33 @@ made of the same elements that are visible on Earth.
 At this point, people started to classify stars based on the
 qualitative morphology of their spectra (which lines are present,
 which are more dominant, etc.), and defining qualitative classes A, B,
-C,... As the number of observations increased, the classes were often
-merged, leaving the current ones listed above.
+C,...based on features such as the prominence of Balmer lines of
+Hydrogen.
 
 However, it was not yet known why different stars had different
-spectra and belong to a certain class. Only with the construction of
-the color-magnitude diagram it was realized that these qualitative
-classes were mostly determined by temperature from O for the hottest
-stars to M for the coolest (L and T are classes introduced later for
-are classes introduced later for Brown Dwarves). This is because the
-temperature of the gas determine the electron populations in each
-ion/atom in the stellar atmosphere and thus how many and which lines
-can be seen. This is how this OBAFGKM(LTY) order came to be.
+spectra and belong to a certain class. As the number of observations
+increased, the classes were reordered and merged, leaving the current
+ones listed above after the work by [[https://en.wikipedia.org/wiki/Annie_Jump_Cannon][Annie Jump Cannon]] together with
+other "Harvard computers", a group of mostly women who analyzed and
+made sense of stellar spectra in the Early 20^{th} century.
+
+With the construction of the color-magnitude diagram it was realized
+that these qualitative spectral classes were mostly determined by
+temperature - from O for the hottest stars to M for the coolest (L and
+T are classes introduced later for are classes introduced later for
+Brown Dwarves). This is because the temperature of the gas determine
+the electron populations in each ion/atom in the stellar atmosphere
+and thus how many and which lines can be seen. This is how this
+OBAFGKM(LTY) order came to be.
 
 *** A modern view on spectra
 The image above of the solar spectrum is pretty, but that is not how
 most astrophysicists look at spectra nowadays.
 
-At zeroth-order approximation a star is a black-body with the
+At zeroth-order _approximation_ a star is a black-body with the
 characteristic spectrum, that is flux F_{\lambda} as a function of the
 wavelength \lambda (or equivalently F_{\nu}\equiv F_{\nu}(\nu) with \nu =
-c/\lambda frequency), given by Planck's function (a.k.a, "black body"):
+c/\lambda frequency), given by Planck's function:
 
 #+begin_latex
 \begin{equation}
@@ -360,8 +365,13 @@ much about them now.
 - *Q*: on this diagram, how does a line for stars at constant radius look like?
 :end:
 
-
 ** Putting the two together
+
+We have effectively introduced two types of related diagram:
+ - Color-magnitude diagram ~ a "family picture" at a given time of
+   many different stars;
+ - Theoretical HR diagram ~ a "movie" of the life of one (or possibly
+   few) same star as it evolves across time.
 
 The important point here is that we can put together on the same (or
 tightly related) axes information for an observed population of stars
