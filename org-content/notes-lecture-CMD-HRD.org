@@ -77,7 +77,7 @@ the x-axis is generally obtained as difference between the flux in
 different bands (i.e., different photometric filters, e.g. B-V): we'll
 discuss why in a second.
 
-Each dot in this plot is a different star, but there are so many (~1.8
+Each dot in this plot is a different star, but there are so many (\sim1.8
 billions in /Gaia/ DR2), that in the most crowded region what is plotted
 is the (logarithm of the) density of stars per unit "pixel" on this
 plot. So what we are looking at is a /"group picture" of many different
@@ -107,7 +107,7 @@ but basically these correspond to more "evolved" stars.
 
 From the density of stars we can also infer where on this diagram
 stars spend most of their time! The "main sequence" is surely much
-longer lasting than anything else. In fact this corresponds to ~90% of
+longer lasting than anything else. In fact this corresponds to \sim90% of
 the lifetime of stars, for reason that we will explain when we touch
 upon nuclear burning. The other phases are much shorter, but stars
 still spend some time on the Giant Branch visibly, and then as White
@@ -351,7 +351,7 @@ zero age main sequence (roughly when most of its luminosity is
 provided by Hydrogen burning in the core) to the onset of
 core-collapse and thus the point where it will go supernova.
 
-#+CAPTION: Hertzsprung-Russell diagram of a 15M_{\odot} stellar model from [[https://www.as.arizona.edu/~mrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note that this is the evolution of *one* star throughout time!
+#+CAPTION: Hertzsprung-Russell diagram of a 15M_{\odot} stellar model from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note that this is the evolution of *one* star throughout time!
 #+ATTR_HTML: :width 100%
 #+ATTR_HTML: :alt 15M_{\odot} single stellar evolution track
 [[./images/15Msun_thesis.png]]
@@ -368,9 +368,9 @@ much about them now.
 ** Putting the two together
 
 We have effectively introduced two types of related diagram:
- - Color-magnitude diagram ~ a "family picture" at a given time of
+ - Color-magnitude diagram \sim a "family picture" at a given time of
    many different stars;
- - Theoretical HR diagram ~ a "movie" of the life of one (or possibly
+ - Theoretical HR diagram \sim a "movie" of the life of one (or possibly
    few) same star as it evolves across time.
 
 The important point here is that we can put together on the same (or
@@ -423,7 +423,7 @@ how masses can be measured only in some special cases.
 *** Example: 30 Doradus region
 
 The 30 Doradus region (a.k.a. Tarantula Nebula) is a bright massive
-star forming region in the LMC that contains ~1000 massive stars. This
+star forming region in the LMC that contains \sim1000 massive stars. This
 makes it a unique "laboratory" for massive stellar evolution - many of
 those stars were not around when dinosaurs were roaming the Earth!
 
