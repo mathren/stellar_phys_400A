@@ -419,7 +419,7 @@ those stars were not around when dinosaurs were roaming the Earth!
 #+ATTR_HTML: :width 100%
 [[./images/JWST_30Dor_R136.jpg]]
 
-#+CAPTION: /HST/ broader image of the whole 30Dor nebula
+#+CAPTION: Broader image of the whole 30Dor nebula. Note the different orientation from above, the multiple clusters of stars.
 #+ATTR_HTML: :width 100%
 [[./images/tarantula2_hst_1280.jpg]]
 

@@ -26,41 +26,42 @@ as we may be able to accommodate it.
 5. Asteroseismology
 6. Cepheids as distance indicators
 7. Astrometry & the /Gaia/ mission
-8. Astrometric detection of /Gaia/ BH1, BH2, BH3, and NS1
-9. Tides in stars
-10. Algol Paradox
-11. Common envelope evolution
-12. Mass transfer in binary systems
-13. Clusters: globular and open
-14. Globular clusters: dynamics
-15. Formation of stars
-16. Stars in galaxies: Chemical evolution
-17. Stars in galaxies: Mechanical feedback
-18. Stars in galaxies: Radiative feedback
-19. Nucleosynthesis: s-process
-20. Nucleosynthesis: r-process
-21. X-ray binaries
-22. Thermonuclear explosion in WDs
-23. Neutron star structure
-24. The Eddington limit
-25. Convective boundary mixing
-26. Schönberg-Chandrasekhar limit and its consequences
-27. Supernova Ia
-28. Stellar winds: Parker model and its updates
-29. Stellar winds: radiatively driven
-30. Analytic stellar models: Lane-Emden equation
-31. Analytic stellar models: Eddington standard model
-32. Novae
-33. Supermassive stars
-34. Stellar neutrinos
-35. Pair instability supernovae
-36. Triple systems: Kozai-Lidov-von Zeipel oscillations
-37. Formation of gravitational wave progenitors: isolated binary evolution
-38. Formation of gravitational wave progenitors: dynamical channels
-39. Orbital architectures of (star+star) binaries in the Universe
-40. Gravitational wave progenitor channels
-41. The lowest mass stars: M dwarfs and Brown dwarfs
-42. Something else with the scope of the course to be agreed upon
+8. Astrometry: walkaway, runaway, and/or hyper-velocity stars
+9. Astrometric detection of /Gaia/ BH1, BH2, BH3, and NS1
+10. Tides in stars
+11. Algol Paradox
+12. Common envelope evolution
+13. Mass transfer in binary systems
+14. Clusters: globular and open
+15. Globular clusters: dynamics
+16. Formation of stars
+17. Stars in galaxies: Chemical evolution
+18. Stars in galaxies: Mechanical feedback
+19. Stars in galaxies: Radiative feedback
+20. Nucleosynthesis: s-process
+21. Nucleosynthesis: r-process
+22. X-ray binaries
+23. Thermonuclear explosion in WDs
+24. Neutron star structure
+25. The Eddington limit
+26. Convective boundary mixing
+27. Schönberg-Chandrasekhar limit and its consequences
+28. Supernova Ia
+29. Stellar winds: Parker model and its updates
+30. Stellar winds: radiatively driven
+31. Analytic stellar models: Lane-Emden equation
+32. Analytic stellar models: Eddington standard model
+33. Novae
+34. Supermassive stars
+35. Stellar neutrinos
+36. Pair instability supernovae
+37. Triple systems: Kozai-Lidov-von Zeipel oscillations
+38. Formation of gravitational wave progenitors: isolated binary evolution
+39. Formation of gravitational wave progenitors: dynamical channels
+40. Orbital architectures of (star+star) binaries in the Universe
+41. Gravitational wave progenitor channels
+42. The lowest mass stars: M dwarfs and Brown dwarfs
+43. Something else with the scope of the course to be agreed upon
 
 ** Recommended sources
 You are encouraged to do your own research, but in the final
