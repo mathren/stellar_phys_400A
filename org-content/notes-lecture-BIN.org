@@ -75,7 +75,7 @@ motion (and on top of the parallax periodic wiggle).
 This was first detected for the binary Sirius A and Sirius B by Bessel
 in 1844 (the detection of photons from Sirius B followed in 1862 by
 Clark). Nowadays, this is a very timely because of the precise
-astrometric measurements by /Gaia/ (see recent review by [[https://www.sciencedirect.com/science/article/pii/S1387647324000010?ref=pdf_download&fr=RR-2&rr=8abf0b7a7c0115f3][El Badry 2024]]):
+astrometric measurements by /Gaia/:
 
 - this has been used to find /Gaia/ BH1, BH2, and BH3: these systems
   have stars orbiting around an otherwise undetectable Black Hole!
@@ -164,10 +164,11 @@ These equations allow to calculate R_{j}_{}/a and if also the masses are
 known also the individual radii R_{j} using Kepler's laws to get rid of
 the orbital semi-major axis a.
 
-*** Questions
- - In the figure above, which star is assume the hotter one?
- - Can you see what happens to the light curve minima if we have an
+:Questions:
+ - *Q*: In the figure above, which star is assumed to be the hotter one?
+ - *Q*: Can you see what happens to the light curve minima if we have an
    inclination of the binary orbit w.r.t. the plane of the sky?
+:end:
 
 ** Dynamical mass determination
 *** Visual binaries
