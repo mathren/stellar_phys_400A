@@ -314,6 +314,11 @@ allowing for enhancement of \alpha particles (e.g., carbon, oxygen, neon,
 and all other elements that can approximately be thought of as N \alpha
 particles bound together where \alpha particle = nucleus of helium 4).
 
+#+CAPTION: Solar abundance pattern from [[https://ui.adsabs.harvard.edu/abs/1989AIPC..183....1G/abstract][Anders & Grevesse 1989]]. Often, for lack of better knowledge, this (or more recent updates to it) is the abundance pattern that is rescaled when changing the metallicity in a model.
+#+ATTR_HTML: :width 100%
+[[./images/solar_abundance_pattern.png]]
+
+
 A common notation is also [X/H] = log_{10}[(n_{X}/n_{H})/(n_{X}/n_{H})_{\odot}] where n_{X}
 is the number of ions of species X and n_{H} is the number of protons
 (i.e., hydrogen positive ions!). Often, [Fe/H] can be used as a proxy for
