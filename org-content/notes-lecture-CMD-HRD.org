@@ -86,8 +86,10 @@ stars, varying in age, composition, position in the galaxy/, etc.
 :Questions:
  - *Q*: where are the cool stars?
  - *Q*: where are the bright stars?
- - *Q*: where do you think the Sun would be on this diagram? (*N.B.:* /Gaia/
-   does /not/ look at the Sun, so it is actually not in this plot!)
+ - *Q*: where would the Sun be on this diagram? (*N.B.:* /Gaia/
+   does /not/ look at the Sun, so it is actually not in this plot!) A
+   full list of the Sun's absolute and apparent magnitude in many
+   filters is available [[https://mips.as.arizona.edu/~cnaw/sun.html][here]].
  - *Q*: Focusing on where most stars are, can you spot any trend?
 :end:
 
