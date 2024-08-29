@@ -170,7 +170,6 @@ the orbital semi-major axis a.
    inclination of the binary orbit w.r.t. the plane of the sky?
 
 ** Dynamical mass determination
-
 *** Visual binaries
 Using Kepler's laws, we can use binaries to measure observationally
 masses without relying on hard, expensive, and uncertain stellar

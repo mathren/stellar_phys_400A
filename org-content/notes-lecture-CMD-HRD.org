@@ -310,7 +310,7 @@ body distribution.
 ** Theoretical Hertzsprung-Russel diagram
 
 Let's get back to the main topic of the lecture, color-magnitude and
-Hertzsprung-Russel diagrams. The /Gaia/ color-magnitude diagram on the
+Hertzsprung-Russel (HR) diagrams. The /Gaia/ color-magnitude diagram on the
 top shows on the right y-axis and top x-axis the quantities that
 typically stellar modelers use, effective temperature (T_{eff}) on the
 x-axis and luminosity L on the y-axis.
@@ -409,6 +409,24 @@ of the evolution. That parameter is *mass* -- and we will see next time
 how masses can be measured only in some special cases.
 
 *** Example: 30 Doradus region
+
+The 30 Doradus region (a.k.a. Tarantula Nebula) is a bright massive
+star forming region in the LMC that contains ~1000 massive stars. This
+makes it a unique "laboratory" for massive stellar evolution - many of
+those stars were not around when dinosaurs were roaming the Earth!
+
+#+CAPTION: /JWST/ image of the cluster R136 in the core of 30 Doradus
+#+ATTR_HTML: :width 100%
+[[./images/JWST_30Dor_R136.jpg]]
+
+#+CAPTION: /HST/ broader image of the whole 30Dor nebula
+#+ATTR_HTML: :width 100%
+[[./images/tarantula2_hst_1280.jpg]]
+
+This below is an HR diagram of this region excluding the central
+cluster R136 (which is too crowded for doing clean observations from
+the ground, but can be dissected from space with, for example, /HST/ see
+e.g., [[https://ui.adsabs.harvard.edu/abs/2022A%26A...663A..36B/abstract][Brands et al. 2022]] and references therein).
 
 #+CAPTION: Color-magnitude diagram of the 30 Doradus region in the LMC overlayed with theoretical stellar tracks (solid black lines), and isochrones (dashed black lines) from [[https://www.aanda.org/10.1051/0004-6361/201833433][Schneider et al. 2018]]
 #+ATTR_HTML: :width 100%
