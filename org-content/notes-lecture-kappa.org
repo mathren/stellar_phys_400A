@@ -109,8 +109,8 @@ which we can rewrite as
 \end{equation}
 #+end_latex
 which is the /harmonic mean of specific opacities/ \kappa_{\nu} /weighted
-with the temperature derivative of the Black Body distribution/.
-This is usually referred to as the Rosseland mean opacity.
+with the temperature derivative of the Black Body distribution/. This
+is usually referred to as the Rosseland mean opacity.
 
 ** Physical interpretation
 This may seem like a bunch of math that did not advance us much: we
@@ -134,8 +134,7 @@ trapped!).
 
 An unfortunate consequence of the harmonic nature of the Rosseland
 mean opacity is that it is not trivial to combine opacity of different
-gasses, the specific \kappa_{\nu} have to be summed *before* taking the average.
-
+gasses, the specific \kappa_{\nu} have to be summed /before/ taking the average.
 
 * Sources of radiative opacity
 
@@ -143,13 +142,51 @@ Now, let's consider the radiation-matter interactions that can be
 source of opacity (i.e., determine the \kappa_{\nu} that we put in the
 Rosseland mean opacity to obtain \kappa_{rad}).
 
-** Bound-bound
+** Free-free
+
 
 ** Bound-free
+An incoming photon may have sufficient energy to photoionize an
+atom/ion. That is the absorption of the photon makes an electron jump
+from a bound energy level to an unbound energy level.
 
-** Free-free
+#+CAPTION: Cartoon of a bound-free transition. Credits: R. Townsend.
+#+ATTR_HTML: :width 50%
+[[./images/bound_free.png]]
+
+*** TODO Kramer's approximation
+
+** Bound-bound
+Photons (orange wiggly line) can interact with the electrons in an
+atom/ion (especially if they have the "right" frequency close to
+\nu\simeq\Delta E/h with \Delta E the energy difference between the two levels for the
+electron). In this case the photon is absorbed by the ion and its
+energy goes into the energy level of the electron, which was bound to
+the nucleus before and after the interaction with the photon (hence
+the bound-bound name).
+
+Because every atom/ion has specific energy levels, this opacity source
+may have a very complex frequency (i.e. photon energy) dependency. The
+transition energies must be determined solving the Hamiltonian for the
+electrons in the potential for the specific atom/ion, which can be
+extremely complicated and/or computationally unfeasible: for this
+reason, laboratory experiments are often used to determine opacities.
+
+This opacity source matters only until there are bound electrons to
+their respective ions in the stellar gas, which at very high T becomes
+more and more rare (since collisions between atoms would strip away
+the electrons). However, this term starts playing a role for T\le10^{6} K,
+so still quite deep in the stars.
+
+#+CAPTION: Cartoon of a bound-bound transition. The photon (orange wiggly line) is absorbed by the ion (nucleus in blue, electron in green) where an electron jumps to a higher energy level, represented by the dashed black line. Credits: R. Townsend. *N.B.:* the orbit of the electron is not a little circle like this, which would be unstable!
+#+ATTR_HTML: :width 50%
+[[./images/bound_bound.png]]
 
 ** Scattering
 
 
-TODO: show MESA plot of \kappa(T,\rho)
+** Combining all these sources together
+
+#+CAPTION: \kappa\equiv\kappa(T,\rho) combining all the sources of opacities we discussed (and more) from [https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the =kap= module of the MESA code. See also [[https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract][Paxton et al. 2011]].
+#+ATTR_HTML: :width 100%
+[[./images/kappa_farag24.png]]
