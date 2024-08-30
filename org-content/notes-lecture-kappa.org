@@ -164,7 +164,7 @@ more and more rare (since collisions between atoms would strip away
 the electrons). However, this term starts playing a role for T\le10^{6} K,
 so still quite deep in the stars.
 
-#+CAPTION: Cartoon of a bound-bound transition. The photon (orange wiggly line) is absorbed by the ion (nucleus in blue, electron in green) where an electron jumps to a higher energy level, represented by the dashed black line. Credits: R. Townsend. *N.B.:* the orbit of the electron is not a little circle like this, which would be unstable!
+#+CAPTION: Cartoon of a bound-bound transition. The photon (orange wiggly line) is absorbed by the ion (nucleus in blue, electron in green) where an electron jumps to a higher energy level, represented by the dashed black line. Credits: R. Townsend. *N.B.:* the orbit of the electron is not a little circle like this, which would be unstable! It is instead an [[https://en.wikipedia.org/wiki/Atomic_orbital#/media/File:Atomic-orbital-clouds_spdf_m0.png][orbital]] which describes the spatial /probability distribution/ of finding the electron there in accordance to quantum-mechanics.
 #+ATTR_HTML: :width 20%
 [[./images/bound_bound.png]]
 
@@ -173,11 +173,14 @@ An incoming photon may have sufficient energy to photoionize an
 atom/ion. That is the absorption of the photon makes an electron jump
 from a bound energy level to an unbound energy level.
 
+As for bound-bound transition, bound-free photoionization requires the
+existence of electrons bound to nuclei, so its contribution to the
+opacity decreases at very high temperatures, when bound electrons are
+absent.
+
 #+CAPTION: Cartoon of a bound-free transition. Credits: R. Townsend.
 #+ATTR_HTML: :width 20%
 [[./images/bound_free.png]]
-
-*** TODO Kramer's approximation
 
 ** Free-free
 Even unbound electrons can absorb a photon transitioning between two
@@ -185,9 +188,18 @@ unbound energy levels of the continuum. This is effectively the
 opposite of bremstrahlung radiation, where the acceleration of an
 unbound electron results in the production of photons (or neutrinos!).
 
+This process cannot occur if there are no free electrons, for example
+at very low temperatures.
+
 #+CAPTION: Cartoon of a free-free transition. Credits: R. Townsend.
 #+ATTR_HTML: :width 20%
 [[./images/free_free.png]]
+
+
+Note that in the cartoon an ion/atom is still represented. The process
+of absorption of a photon by a single electron (\gamma+e \rightarrow e) would violate
+conservation of the four-momentum, and it is not possible, but it is
+possible for an electron in the electromagnetic field of an ion.
 
 ** Scattering
 Another source of opacity is scattering, which unlike the processes
@@ -199,8 +211,98 @@ ability to carry flux.
 #+ATTR_HTML: :width 20%
 [[./images/scattering.png]]
 
+At very high temperatures, scattering off free electrons is the main
+source of opacity (no bound-bound and bound-free processes without
+bound electrons), which greatly simplifies the \kappa_{rad}(T,\rho) dependence.
+
+The scattering of a classical electromagnetic wave off-an electron can
+be described by the Thomson scattering cross section, which divided by
+the \mu_{e}m_{u} gives the corresponding opacity. Therefore, for T\geq10^{6} K, \kappa_{rad}
+\equiv \kappa_{es}:
+#+begin_latex
+\begin{equation}
+\kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{g\ cm^{-2}} \ \ ,
+\end{equation}
+#+end_latex
+which does /not/ depend on T or \rho, but only on the mass fraction of
+Hydrogen X (recall that \mu_{e} = 2/(1+X) for fully ionized gas). If the
+gas is not fully ionized the expression here does not old.
+
+Note that this opacity does /not/ depend on the electromagnetic
+wave/photon frequency \nu, so in the Rosseland mean, it comes out of the
+integral!
+
+For very high energy, one needs to account also for the momentum
+exchange between radiation and the electron (Thomson \rightarrow Compton
+scattering), which decreases the opacity.
+
+** Molecules and dust
+
+At T\le4000K, atoms may bound together and form molecules, and even
+lower (T\le1500K) dust grains may form. These are not the same dust you find on
+Earth (mostly small crystals, dead skin, etc.) but large agglomeration
+of molecules. These structures cause a very large increase in the
+opacity: the electrons in them can have many degrees of freedom that
+can be used to absorb and scatter photons (e.g., roto-vibrational
+molecular bands).
+
+** H^{-}
+At low temperature hydrogen may capture an extra electron forming an
+H^{-} ion (i.e., a proton with 2 bound electrons). This is a fragile
+state, and in a pure hydrogen gas, it would not resist much, but if
+there are metals with one electron only (the first column of the
+periodic table, e.g., Na, K, Ca), they can provide extra electrons,
+allowing for the formation of this ion in stellar atmospheres.
+
+This negative ion can then provide most of the opacity in the envelope
+of non-metal-free cool stars, e.g., red giants or the Sun itself!
+An approximate relation for its opacity is
+
+#+begin_latex
+\begin{equation}
+\kappa_\mathrm{H^{-}} = 2.5\times10^{-31} \frac{Z}{Z_{\odot}} \rho^{1/2} T^{9} \ \mathrm{g\ cm^{-2}} \ \ .
+\end{equation}
+#+end_latex
+
+** Conductive opacity
+
+For an ideal gas, \kappa_{cond} \gg \kappa_{rad} making conduction irrelevant in
+the combined opacity. Only for degenerate gas (at least partially),
+diffusion of energy through the thermal motion of particles
+(electrons, because of their lower mass) is important.
+
+At very high densities, the electron mean-free path are very long
+(since collisions are forbidden by not having any level available
+below the Fermi energy), making conduction very efficient and allowing
+high density degenerate cores to become effectively isothermal
+(T=constant, dT/dr = 0).
+
 ** Combining all these sources together
 
 #+CAPTION: \kappa\equiv\kappa(T,\rho) combining all the sources of opacities we discussed (and more) from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the =kap= module of the MESA code. See also [[https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract][Paxton et al. 2011]].
 #+ATTR_HTML: :width 100%
 [[./images/kappa_farag24.png]]
+
+
+Ultimately, the metallicity (Z) or more specifically the detailed
+composition {X_{i}_{}} can have a large impact on \kappa_{rad} and \kappa, together with
+the thermodynamic state of the gas (T,\rho), which determines which
+process dominates the blocking of photons
+
+As you can see from the plot above, at fixed Z, there is maybe more
+structure as a function of T (because T determines the ionization
+levels, and thus the bound-bound and bound-free). The solid black line
+represents the T(\rho) profile of a stellar model.
+
+Opacity "bumps" in the stellar interior and surface can lead to a
+steepening of the radiative gradient (recall dT/dr \prop \kappa \times Flux), and
+cause the onset of other energy transport mechanisms and possibly
+stellar eruptions.
+
+By "projecting" the plot above on either axes, one can obtain the \kappa(T)
+at fixed \rho (or \kappa(\rho) at fixed T) and find that there are regimes where
+powerlaw approximations may be sufficient (e.g., the "Kramers" opacity
+law which gives \kappa\propto T^{-7/2}\rho, or the formula above for H^{-} opacity), but in practice to compute
+a stellar model one needs to use tabulated opacities from complex
+models and/or experiments carried out at LANL, Livermore, and other
+big, often military funded, laboratories.
