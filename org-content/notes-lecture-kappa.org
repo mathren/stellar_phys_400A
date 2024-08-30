@@ -35,7 +35,7 @@ the star compensates for the surface energy losses (its luminosity L).
 
 The purpose of this lecture is to focus on \kappa_{rad} and understand what
 physically determines it, and understand how \kappa_{rad}\equiv\kappa_{rad}(T,
-\rho, \{X_{i}\}) can be expressed as a function of the thermodynamics and
+\rho, {X_{i}}) can be expressed as a function of the thermodynamics and
 composition of the stellar gas.
 
 * Rosseland mean opacity
@@ -142,20 +142,6 @@ Now, let's consider the radiation-matter interactions that can be
 source of opacity (i.e., determine the \kappa_{\nu} that we put in the
 Rosseland mean opacity to obtain \kappa_{rad}).
 
-** Free-free
-
-
-** Bound-free
-An incoming photon may have sufficient energy to photoionize an
-atom/ion. That is the absorption of the photon makes an electron jump
-from a bound energy level to an unbound energy level.
-
-#+CAPTION: Cartoon of a bound-free transition. Credits: R. Townsend.
-#+ATTR_HTML: :width 50%
-[[./images/bound_free.png]]
-
-*** TODO Kramer's approximation
-
 ** Bound-bound
 Photons (orange wiggly line) can interact with the electrons in an
 atom/ion (especially if they have the "right" frequency close to
@@ -179,14 +165,42 @@ the electrons). However, this term starts playing a role for T\le10^{6} K,
 so still quite deep in the stars.
 
 #+CAPTION: Cartoon of a bound-bound transition. The photon (orange wiggly line) is absorbed by the ion (nucleus in blue, electron in green) where an electron jumps to a higher energy level, represented by the dashed black line. Credits: R. Townsend. *N.B.:* the orbit of the electron is not a little circle like this, which would be unstable!
-#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :width 20%
 [[./images/bound_bound.png]]
 
-** Scattering
+** Bound-free
+An incoming photon may have sufficient energy to photoionize an
+atom/ion. That is the absorption of the photon makes an electron jump
+from a bound energy level to an unbound energy level.
 
+#+CAPTION: Cartoon of a bound-free transition. Credits: R. Townsend.
+#+ATTR_HTML: :width 20%
+[[./images/bound_free.png]]
+
+*** TODO Kramer's approximation
+
+** Free-free
+Even unbound electrons can absorb a photon transitioning between two
+unbound energy levels of the continuum. This is effectively the
+opposite of bremstrahlung radiation, where the acceleration of an
+unbound electron results in the production of photons (or neutrinos!).
+
+#+CAPTION: Cartoon of a free-free transition. Credits: R. Townsend.
+#+ATTR_HTML: :width 20%
+[[./images/free_free.png]]
+
+** Scattering
+Another source of opacity is scattering, which unlike the processes
+above does not lead to the "disappearance" of a photon, but can still
+change its energy (and direction of propagation), thus affecting its
+ability to carry flux.
+
+#+CAPTION: Cartoon of the scattering of a photon on an electron. Credits: R. Townsend.
+#+ATTR_HTML: :width 20%
+[[./images/scattering.png]]
 
 ** Combining all these sources together
 
-#+CAPTION: \kappa\equiv\kappa(T,\rho) combining all the sources of opacities we discussed (and more) from [https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the =kap= module of the MESA code. See also [[https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract][Paxton et al. 2011]].
+#+CAPTION: \kappa\equiv\kappa(T,\rho) combining all the sources of opacities we discussed (and more) from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the =kap= module of the MESA code. See also [[https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract][Paxton et al. 2011]].
 #+ATTR_HTML: :width 100%
 [[./images/kappa_farag24.png]]
