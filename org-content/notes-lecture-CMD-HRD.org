@@ -100,7 +100,15 @@ line is one dimensional, there should probably be *one* parameter that
 determines the position of the star on this diagram. This parameter is
 the total mass of the star (though this took several decades to be
 established, because it is not something easy to empirically
-measure!).
+measure, as we will see in the next lecture!).
+
+#+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] zoom-in on the  color magnitude diagram of two clusters of similar ages Hyades and Praesepe. When selecting only "related" stars, It is much more evident than most are along one line on this diagram (the so-called "Main sequence"), and that this line agrees fairly well across different clusters of similar ages. The few points offset by up to 0.75 mag above the main sequence are unresolved binaries where the light of two stars adds up in the signal.
+#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :alt /Gaia/ zoom-in on the HR diagram of two clusters, Hyades and Praesepe
+[[./images/MS_hayades_praesepe.png]]
+
+
+
 
 There are also other sub-groups, like the "Giant Branch" and "White
 Dwarfs". We will encounter and explain those later on in the course,
