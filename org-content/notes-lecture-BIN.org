@@ -371,10 +371,18 @@ f(M_{1}, M_{2}) = \frac{M_{2}^{3 }\sin^{3}(i)}{(M_{1} + M_{2})^{2}} \ \ ,
 which together with an estimate of the mass-ratio provides a limit on M_{2}.
 
 ** Mass-luminosity relation
-Using systems for which this mass measurements are possible, we can
-derive an empirical mass-luminosity relation. In the best astronomical
-tradition, this was initially fit with a powerlaw, but as the range of
-stellar masses explored grew, this became a broken powerlaw:
+Using systems for which this mass and radius measurements are
+possible, we can derive empirical mass-luminosity and mass-radius
+relations:
+
+#+CAPTION: Mass-luminosity and Mass-radius empirical relations for a set of well measured SB2 eclipsing binaries. This is Fig. 1.3 in Onno Pols' lecture notes
+#+ATTR_HTML: :width 100%
+[[./images/mass_lum_mass_r_rel_pols.png]]
+
+
+In the best astronomical tradition, this was initially fit with a
+powerlaw, but as the range of stellar masses explored grew, this
+became a broken powerlaw:
 
 #+begin_latex
 \begin{equation}
