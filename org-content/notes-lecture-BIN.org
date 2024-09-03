@@ -13,9 +13,7 @@ least during the longest phase of its evolution, and there is one
 single parameter that determines the position on a star on this
 diagram. However, how do we determine what this parameter is, having
 only these observational data? It is generally not possible without
-relying on models.
-
-However, binaries can help!
+relying on models. However, binaries can help!
 
 ** Binaries are common
 
@@ -35,11 +33,12 @@ Let's review some types of binaries.
 
 *** Visual binaries
 
-These are binaries that can be seen by naked eye. Typically this means astrophysically
-very wide binaries that are unlikely to interact beyond orbiting each
-other, but they have an important historical role, since Hershel
-observation of their motion of the sky over decades proved that
-Kepler's law are valid beyond the Solar system.
+These are binaries that can be seen by naked eye. Typically this means
+astrophysically very wide binaries that are unlikely to interact
+beyond the fact that they are gravitationally bound and they orbit
+each other. Nevertheless, they have an important historical role,
+since Hershel observation of their motion of the sky over decades
+proved that Kepler's law are valid beyond the Solar system.
 
 Mitchell 1768 also used statistical argument that all the visual
 binaries visible at the time could not be just chance alignment, and
@@ -66,19 +65,22 @@ be seen on the sky. What matters is its /proper motion/ (not the
 apparent motion due to the Earth rotation) with respect to background
 stars too far to be moving. For a single star, this is usually a
 straight line (because the timescale for it to turn around the
-Galactic center is typically millions of years). However, if the star
-is in a binary, what moves along a straight line is the center of mass
-of the binary! The /photocenter/ (i.e. the point from where we can
-detect light) will "wiggle" around this straight line due to orbital
-motion (and on top of the parallax periodic wiggle).
+Galactic center is typically \sim hundreds of millions of years).
+However, if the star is in a binary, what moves along a straight line
+is the center of mass of the binary! The /photocenter/ (i.e. the point
+from where we can detect light) will "wiggle" around this straight
+line due to orbital motion (and on top of the parallax periodic
+wiggle).
 
 This was first detected for the binary Sirius A and Sirius B by Bessel
 in 1844 (the detection of photons from Sirius B followed in 1862 by
 Clark). Nowadays, this is a very timely because of the precise
 astrometric measurements by /Gaia/:
 
-- this has been used to find /Gaia/ BH1, BH2, and BH3: these systems
-  have stars orbiting around an otherwise undetectable Black Hole!
+- this has been used to find /Gaia/ BH1 ([[https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1057E/abstract][El Badry et al. 2023a]]), BH2 ([[https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.4323E/abstract][El
+  Badry 2023b]]), and BH3 ([[https://ui.adsabs.harvard.edu/abs/2024A%26A...686L...2G/abstract][Gaia Collaboration, Panuzzo et al. 2024]]):
+  these systems have stars orbiting around an otherwise undetectable
+  Black Hole!
 - it can also be used to find stars in wide orbits around NS or other
   faint stars, and possibly even massive planets!
 
@@ -115,18 +117,20 @@ of the luminosity of the system as a function of time).
 This of course can only happen if the inclination of the orbital plane
 of the binary w.r.t. the line of sight is not too large. Typically,
 astronomers define the inclination of the orbital plane /i/ w.r.t. the
-orbital plane, therefore the line-of-sight (which is perpendicular to
-the plane of the sky by definition of plane of the sky) has an angle \varphi
-= \pi - /i/ w.r.t. the orbital plane. To have an eclipse, at least partial,
+plane of the sky, therefore the line-of-sight (which is perpendicular
+to the plane of the sky by definition) has an angle \varphi = \pi/2 - /i/ w.r.t.
+the orbital plane. To have an eclipse, at least partial,
 
 #+begin_latex
 \begin{equation*}
-\sin(\varphi) \leq \frac{R_{1} + R_{2}}{a}
+\sin(\varphi) \leq \frac{R_{1} + R_{2}}{a} \ \ ,
 \end{equation*}
 #+end_latex
 
-with R_{1}, R_{2} radii of the stars, and a their orbital separation. The
-eclipse will be total if
+where we use that sin(\varphi)=cos(i), and a \times cos(i) is the projected
+binary separation a on the plane of the sky, which is smaller than R_{1}+R_{2}
+with R_{i} stellar radii, leads to an eclipse. The eclipse will be total
+if
 
 #+begin_latex
 \begin{equation*}
