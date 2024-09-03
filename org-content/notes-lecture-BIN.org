@@ -122,9 +122,9 @@ to the plane of the sky by definition) has an angle \varphi = \pi/2 - /i/ w.r.t.
 the orbital plane. To have an eclipse, at least partial,
 
 #+begin_latex
-\begin{equation*}
+\begin{equation}
 \sin(\varphi) \leq \frac{R_{1} + R_{2}}{a} \ \ ,
-\end{equation*}
+\end{equation}
 #+end_latex
 
 where we use that sin(\varphi)=cos(i), and a \times cos(i) is the projected
@@ -133,9 +133,9 @@ with R_{i} stellar radii, leads to an eclipse. The eclipse will be total
 if
 
 #+begin_latex
-\begin{equation*}
+\begin{equation}
 \sin(\varphi) \leq \frac{R_{1} - R_{2}}{a}
-\end{equation*}
+\end{equation}
 #+end_latex
 
 The time duration of an eclipse can be used to determine the radii of
@@ -190,7 +190,7 @@ In particular the third law can be written as
 #+end_latex
 
 where M_{i} are the masses of the stars, n= 2\pi/P is the angular velocity
-(aka "true anomaly") and a is the semimajor axis of the orbit (of the
+(a.k.a. "true anomaly") and a is the semimajor axis of the orbit (of the
 orbit of the reduced mass point \mu = M_{1}M_{2}/(M_{1}+M_{2}) around the center of
 mass).
 
@@ -311,9 +311,9 @@ for a decent fit to all these parameters):
    using other orbital parameters (mean anomaly and eccentric anomaly)
 
 *N.B.:* In a real observation, one also needs to remove the component
-along the line of site due to the motion of the Earth around the Sun,
+along the line of sight due to the motion of the Earth around the Sun,
 and the peculiar motion of the Sun (i.e., v_{rad} from Eq. \ref{eq:vrad}
-\rightarrow v_{rad}_{}-\gamma with \gamma peculiar velocity of the observer).
+\rightarrow v_{rad}-\gamma with \gamma peculiar velocity of the observer).
 
 Therefore, for an SB2 binary we can observe dz_{j}/dt = v_{rad, j} for
 each j=1,2 star, and we can determine K_{1} and K_{2}. using Eq.
@@ -338,7 +338,8 @@ we can solve for M_{j}sin^{3}(i), where except for the inclination angle of
 the orbit, we have the masses! In the case of an /eclipsing SB2 binary/,
 from the eclipses we can measure the inclination angle and obtain a
 direct measurement of the masses. These are the most precise mass
-measurements, which are only possible thanks to the occurrence in
+measurements (so-called "dynamical masses", because they are based on
+orbital dynamics). They are only possible thanks to the occurrence in
 nature of stellar binaries!
 
 In the case of an SB1 binary, when only one spectrum is visible, we
@@ -346,7 +347,7 @@ can write
 
 #+begin_latex
 \begin{equation}
-a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{2}}{M_{1}}) = a_{1} \frac{(M_{2} + M_{1})}{M_{2}} \ \ .
+a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{2}}{M_{1}}) = a_{1} \frac{(M_{1} + M_{2}_{})}{M_{1}_{}} \ \ .
 \end{equation}
 #+end_latex
 

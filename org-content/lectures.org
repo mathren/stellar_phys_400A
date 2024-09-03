@@ -26,10 +26,10 @@ the basics of spectral formation to introduce spectral types.
 [[./notes-lecture-CMD-HRD.org][Notes]]
 
 ** <2024-09-03 Tue> - Binaries and mass measurements
-*Aim*: Introduce binaries as a common thing, list various types of
-binaries (astrometric, visual, spectroscopic, eclipsing). Review
-Kepler's laws and application to the mass determination in eclipsing
-binary systems.
+*Aim*: Introduce the concept of binarity of stars as /not/ something
+exotic. Walk through some classes of binaries based on how we observe them
+(astrometric, visual, spectroscopic, eclipsing) and how they can be
+used for empirical mass determination.
 
 [[./notes-lecture-BIN.org][Notes]]
 
