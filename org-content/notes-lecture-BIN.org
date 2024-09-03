@@ -347,7 +347,7 @@ can write
 
 #+begin_latex
 \begin{equation}
-a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{2}}{M_{1}}) = a_{1} \frac{(M_{1} + M_{2}_{})}{M_{1}_{}} \ \ .
+a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{2}}{M_{1}}) = a_{1} \frac{(M_{1}+M_{2})}{M_{1}} \ \ .
 \end{equation}
 #+end_latex
 
