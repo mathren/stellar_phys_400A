@@ -53,7 +53,7 @@ have no dependence on the angular variables \partial_{\theta} \Psi \equiv
 *** Lagrangian description
 In a Lagrangian description the fields are described as a function of
 the fluid element, following the fluid element itself: \Psi \equiv\Psi(fluid
-element, t)
+element, t).
 
 This is like hopping on a boat that moves with the fluid, and
 describing the properties of the fluid as the boat moves with it.
@@ -72,11 +72,11 @@ be written as:
 #+end_latex
 
 where the second term on the r.h.s. is the "advective" term, due to
-the motion of the fluid element
+the motion of the fluid element.
 
 Because of the extremely large range of spatial scales in stellar
 evolution (e.g., in the Sun from the center at r\simeq0 to the outer radius
-r\simeq 7\times10^{11} cm, and in its future as a red giant 100-1000x larger),
+r\simeq 10^{11} cm, and in its future as a red giant 100-1000x larger),
 compared to the limited range in mass (in the appropriate units 0-1
 M_{\odot} for the Sun!), typically a Lagrangian description is preferred.
 This means, for example we can chose as independent coordinate in the

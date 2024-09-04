@@ -52,7 +52,6 @@ academics, you do belong here just based on your curiosity, skills,
 drive, which are developed throughout your studies and continued
 growth, and not genetically or socially inherited.
 
-
 * Aim of the course
 *To understand the structure and evolution of stars and their
 observational properties using known laws of physics.*
@@ -275,7 +274,6 @@ erg cm^{-2} s^{-1} Hz^{-1} corresponding to a photon flux of N_{\lambda} \simeq
 - *Q*: why the square within the argument of the logarithm in Eq.
   \ref{eq:abs_magn}?
 :end:
-
 
 * Relevant physical scales
 The star we can observe best is the closest one, the Sun (\odot), so a
