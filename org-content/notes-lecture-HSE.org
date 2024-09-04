@@ -145,7 +145,7 @@ From this complete form we can take the partial derivatives w.r.t. r
 
 #+begin_latex
 \begin{equation}\label{eq:mass_continuity_rt}
-\frac{\partial m}{\partial r} = 4\pi r^{2} \rho
+\frac{\partial m}{\partial r} = 4\pi r^{2} \rho \ \ ,
 \\
 
 \frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \ \ .
@@ -165,10 +165,9 @@ with \partial_{\theta}\equiv\partial_{\varphi}\equiv 0 for the last one, that is
 the typical form of the mass continuity equation in spherical
 symmetry.
 
-To turn these equations in the more typical form for
-stellar structure, just take the first one in
-\ref{eq:mass_continuity_rt} and express it with m as independent
-variable:
+To turn these equations in the more typical form for stellar
+structure, just take the first equation in \ref{eq:mass_continuity_rt}
+and express it with m as independent variable:
 
 #+begin_latex
 \begin{equation}\label{eq:mass_conservation}
@@ -177,9 +176,11 @@ variable:
 #+end_latex
 
 where the partial derivatives become total derivatives in a static
-situation (where by definition \partial_{t} = 0). This is the first stellar
-structure equation that expresses mass conservation, and it depends on
-a yet unknown variable, the gas density \rho.
+situation (where by definition \partial_{t} = 0, which is also why we don't
+typically focus on the second equation in
+\ref{eq:mass_continuity_rt}). This is the first stellar structure
+equation that expresses mass conservation, and it depends on a yet
+unknown variable, the gas density \rho.
 
 ** Momentum conservation and hydrostatic equilibrium
 
