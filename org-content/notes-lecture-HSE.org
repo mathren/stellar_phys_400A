@@ -144,10 +144,12 @@ From this complete form we can take the partial derivatives w.r.t. r
 (at fixed t) and t (at fixed r):
 
 #+begin_latex
+\begin{center}
 \begin{multline}\label{eq:mass_continuity_rt}
 \frac{\partial m}{\partial r} = 4\pi r^{2} \rho \ \ , \\
 \frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \ \ .
 \end{multline}
+\end{center}
 #+end_latex
 
 We can also derive the first one above w.r.t. t and the bottom one
