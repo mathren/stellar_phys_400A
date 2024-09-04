@@ -43,7 +43,7 @@ This is like looking at the flow from on top of a bridge at a fixed
 position, describing the variables at that specific position.
 
 #+CAPTION: Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge
-#+ATTR_HTML: :width 50%  :alt https://www.flickr.com/photos/frixan/114822407/
+#+ATTR_HTML: :width 50%  :alt https://www.flinilckr.com/photos/frixan/114822407/
 [[./images/Eulerian-bridge.jpg]]
 
 For a star assuming spherical symmetry as discussed above, we would
@@ -144,12 +144,11 @@ From this complete form we can take the partial derivatives w.r.t. r
 (at fixed t) and t (at fixed r):
 
 #+begin_latex
-\begin{equation}\label{eq:mass_continuity_rt}
+\begin{multline}\label{eq:mass_continuity_rt}
 \frac{\partial m}{\partial r} = 4\pi r^{2} \rho \ \ ,
-\\
 
 \frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \ \ .
-\end{equation}
+\end{multline}
 #+end_latex
 
 We can also derive the first one above w.r.t. t and the bottom one
@@ -339,7 +338,7 @@ P_\mathrm{center} = \frac{GM^{2}}{R^{4}}\ \ ,
 #+end_latex
 
 Plugging in the numbers for the Sun this gives P_{center}\simeq 10^{16}
-dyne cm^{-2}^{}\simeq 10^{10} atmospheres. Although this a is very imprecise
+dyne cm^{-2}\simeq 10^{10} atmospheres. Although this a is very imprecise
 estimate, it already gives the idea that the pressure in the center of
 the Sun must be extremely high. See Onno Pols chapter 2 for more
 precise estimates and lower bounds.
