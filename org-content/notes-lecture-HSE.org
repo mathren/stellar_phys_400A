@@ -417,7 +417,7 @@ show you how you can obtain numerical stellar models.
      =profile*.data=, and a =profiles.index= that contains a map of which
      =profile*.data= maps to which "model number" (i.e., timestep of the
      code).
-  3. You can inspect the =txt, =list=, and =*.data= files using your text
+  3. You can inspect the =txt, list=, and =*.data= files using your text
      editor.
 
      The =trimmed_history.data= contains in each column global variables
