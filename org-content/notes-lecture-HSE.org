@@ -188,23 +188,23 @@ unknown variable, the gas density \rho.
 - *Q*: are stars in hydrostatic equilibrium? How do we know observationally?
 :end:
 
-Sonsider the equation of motion of a parcel of stellar gas, F = dp/dt
+Consider the equation of motion of a parcel of stellar gas, F = dp/dt
 = ma (for constant m), or often more conveniently in fluid dynamics,
 work per unit volume with f = dF/dV and thus f=\rho a with \rho = dm/dV and
 dV=dAdr \Rightarrow V=\int dAdr the volume. Let's start by writing down explicitly
-the forces that we think are important for a non-rotating,
+the forces that we think are important for an isolated, non-rotating,
 non-magnetic star.
 
 *** Gravity
-Since by definition a star is a self-gravitating body (*N.B.* so is a
+Since by definition a star is a self-gravitating body (*N.B.:* so is a
 planet, that's not the whole definition of a star!), we want to
-include the gravitational force on the l.h.s of our f=\rho a equation.
+include the gravitational force on the l.h.s. of our f=\rho a equation.
 This can be obtained as the gradient of the gravitational potential \Phi
 which is a solution of the Poisson equation:
 
 #+begin_latex
 \begin{equation}
-\nabla^{2} \Phi = 4\pi G\rho \Rightarrow \frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\Phi}{\partial r} \right) = 4\pi G\rho \ \ ,
+\nabla^{2} \Phi = 4\pi G\rho \Rightarrow \frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial \Phi}{\partial r} \right) = 4\pi G\rho \ \ ,
 \end{equation}
 #+end_latex
 
@@ -241,11 +241,11 @@ This suggests that the pressure divided an appropriate length scale
 has the right dimension to enter f. This in turn suggests that maybe
 what we need is the pressure /gradient/!
 
-Let's have a slightly more formal look at how this work. Because of
+Let's have a slightly more formal look at how this may work. Because of
 spherical symmetry, the pressure in the horizontal direction (which in
 stellar context always means in the plane orthogonal to the radial
 direction) is perfectly balanced, and the pressure only depends on the
-radius P\equiv P(r) (\equiv P(r(m)).
+radius P\equiv P(r) (\equiv P(r(m) \equiv P(m)).
 
 The net force per unit area on each side of a spherical shell of gas
 of thickness dr is P(r) at the inner boundary and P(r+dr) at the outer
@@ -256,7 +256,7 @@ used P(r+dr)\simeq P(r)+(dP/dr)dr. Now using dm = \rho drdA and dividing by dV
 *** Combining the two
 
 We have now an explicit form for the two most important forces in a
-(non-rotating, non-magnetic) star f = f_{grav} + f_{pres} = -g\rho - dP/dr \equiv \rho
+(isolated, non-rotating, non-magnetic) star f = f_{grav} + f_{pres} = -g\rho - dP/dr \equiv \rho
 a.
 
 Since stars don't change that much on short timescales (we will see
@@ -368,14 +368,14 @@ gradient to push the gas out to a radius comparable to the radius of
 the star we can do the following rough substitution in the dynamical
 equation above:
  - \partial^{2} r \rightarrow R (outer radius of the star)
- - \partial t^{2} \rightarrow \tau_{expl}^{2}
+ - \partial t^{2} \rightarrow \tau_{expl}^{2} (what we want to estimate)
  - dP/dr\rightarrow P_{avg}/R with P_{avg} some averaged pressure in the star
  - \rho \rightarrow \rho_{avg} some averaged density of the star
 and we obtain:
 
 #+begin_latex
 \begin{equation}
-\tau_\mathrm{expl} = \frac{R}{\sqrt{\frac{P_{avg}}{\rho_{avg}}_{}}} = \frac{R}{c_{s}}\ \ .
+\tau_\mathrm{expl} \simeq \frac{R}{\sqrt{\frac{P_{avg}}{\rho_{avg}}_{}}} \simeq \frac{R}{c_{s}}\ \ .
 \end{equation}
 #+end_latex
 
@@ -387,17 +387,17 @@ Almost by definition, this is how the star would collapse if there
 were no forces other than gravity, so let's turn off the pressure
 gradient dP/dr\rightarrow0. Then, as above:
  - \partial^{2} r \rightarrow R (outer radius of the star)
- - \partial t^{2} \rightarrow \tau_{ff}^{2}
+ - \partial t^{2} \rightarrow \tau_{ff}^{2} (what we want to estimate)
  - m \rightarrow M (total mass)
 we get:
 
 #+begin_latex
 \begin{equation}
-\tau_\mathrm{ff} = \sqrt{\frac{R^{3}}{GM}} \equiv \sqrt{\frac{1}{G\rho_\mathrm{avg}}}\ \ ,
+\tau_\mathrm{ff} \simeq \sqrt{\frac{R^{3}}{GM}} \simeq \sqrt{\frac{1}{G\rho_\mathrm{avg}}}\ \ ,
 \end{equation}
 #+end_latex
-with \rho_{avg} = 3M/(4\pi R^{3}) average density of the star.
-
+with \rho_{avg} = 3M/(4\pi R^{3}) average density of the star. Note that here we
+have been very loose with the \pi factors and averages.
 
 ** Introduction to =MESA_web=
 We will discuss in detail stellar evolution codes, numerical
