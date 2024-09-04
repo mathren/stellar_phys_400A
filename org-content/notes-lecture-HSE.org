@@ -76,7 +76,7 @@ the motion of the fluid element.
 
 Because of the extremely large range of spatial scales in stellar
 evolution (e.g., in the Sun from the center at r\simeq0 to the outer radius
-r\simeq 10^{11} cm, and in its future as a red giant 100-1000x larger),
+r\simeq 10^{11} cm, and in its future as a red giant 100-1000\times larger),
 compared to the limited range in mass (in the appropriate units 0-1
 M_{\odot} for the Sun!), typically a Lagrangian description is preferred.
 This means, for example we can chose as independent coordinate in the
@@ -85,7 +85,11 @@ given radius m\equiv m(r), thus express \Psi(r,t) =\Psi(r(m), t)\rightarrow
 \Psi(m(r), t).
 
 Derivatives can then be expressed with the chain rule:
-\partial/\partial m = \partial/\partial r \times \partial r/\partial m.
+#+begin_latex
+\begin{equation}
+ \frac{\partial}{\partial m} = \frac{\partial r}{\partial m} \frac{\partial}{\partial m} \ \ .
+\end{equation}
+#+end_latex
 
 This is what is typically done in stellar evolution, and it
 works because the m(r) function is invertible, and it is in fact
