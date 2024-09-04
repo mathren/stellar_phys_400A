@@ -444,16 +444,16 @@ show you how you can obtain numerical stellar models.
      Refer to the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-output][MESA-web output page]] for a full description of the
      output.
   4. /If/ you want you can use the python module [[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][=mesa_web.py=]] provided by
-     =MESA_web= to read the output in the =*.data=, but remember these are
+     =MESA-web= to read the output in the =*.data=, but remember these are
      just plain text, so you can also write your own.
 
 * Homework
 - Calculate the Keplerian period of a point mass orbiting at the
-  surface of a star and compare it to the free fall timescale of the
-  star.
+  surface of a star of mass M and radius R and compare it to the free
+  fall timescale of the star.
 - Calculate the free fall timescale for the Sun, for a Red Supergiant
   with M=10M_{\odot} and R=1000R_{\odot} and a White Dwarf with M=1M_{\odot}
-  R=1000km, and a Neutron star with M=1M_{\odot} and radius R=10km.
+  and R=1000km, and a Neutron star with M=1M_{\odot} and radius R=10km.
   Compare also their average densities.
 - Skim [[https://ui.adsabs.harvard.edu/abs/2023arXiv230915930F/abstract][MESA-web paper by Fields et al. 2022]].
 - Using MESA-web make a 1 M_{\odot} star until age 4.5\times10^{9} years (a

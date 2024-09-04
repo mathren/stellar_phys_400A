@@ -36,7 +36,8 @@ used for empirical mass determination.
 ** <2024-09-05 Thu> - Hydrostatic equilibrium
 *Aim*: Introduce the mass conservation and hydrostatic equilibrium
 equations of stellar evolution. Introduce the assumption of spherical
-symmetry. Time permitting, brief showcasing of [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]].
+symmetry. Introduce the dynamical timescale. Brief introduction to
+[[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]].
 
 [[./notes-lecture-HSE.org][Notes]]
 
