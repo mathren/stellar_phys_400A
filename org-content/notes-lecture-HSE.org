@@ -432,13 +432,16 @@ show you how you can obtain numerical stellar models.
      different locations in the star (e.g., Lagrangian mass
      coordinate, density, pressure, opacity). Each row corresponds to
      a "mesh point", that is a discretized spatial coordinate (we will
-     see later on how codes solve the stellar structure equations)
+     see later what the full set of equations is and how codes like
+     MESA solve them).
 
      Refer to the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-output][MESA-web output page]] for a full description of the
      output.
-  4. /If/ you want you can use the python module [[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][mesa_web.py]] provided by
-     =MESA_web= to read the output in the =*.data=, but remember these are
-     just plain text, so you can also write your own.
+  4. /If/ you want you can use the python module
+     =[[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][mesa_web.py]]=
+     provided by =MESA_web= to read the output in the =*.data=, but
+     remember these are just plain text, so you can also write your
+     own.
 
 * Homework
 - Calculate the Keplerian period of a point mass orbiting at the
