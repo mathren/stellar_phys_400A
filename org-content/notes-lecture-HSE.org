@@ -154,7 +154,7 @@ From this complete form we can take the partial derivatives w.r.t. r
 
 We can also derive the first one above w.r.t. t and the bottom one
 w.r.t r, and demand the two forms are the same. Since r and t are the
-independent variables here, we obtain:
+independent variables here (i.e., \partial r/\partial t = 0) we obtain:
 
 #+begin_latex
 \begin{equation}
