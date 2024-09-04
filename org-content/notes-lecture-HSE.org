@@ -399,6 +399,12 @@ we get:
 with \rho_{avg} = 3M/(4\pi R^{3}) average density of the star. Note that here we
 have been very loose with the \pi factors and averages.
 
+:Question:
+- *Q*: you all have estimated the Sun's mean density, calculate the Sun
+  free fall time now. Does the Sun vary on this timescale? Do you
+  think this justifies our assumption of hydrostatic equilibrium?
+:end:
+
 ** Introduction to =MESA_web=
 We will discuss in detail stellar evolution codes, numerical
 strategies for solving the stellar structure equations, and what goes
