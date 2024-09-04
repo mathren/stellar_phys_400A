@@ -21,20 +21,23 @@ can express all the variables that characterize the structure of a
 star as a function of a single variable, for example the radius from
 the center of the star. This allows for the calculation of
 
-:Questions:
- - *Q*: Discuss with your neighbor: can you think of cases where a star  may not be spherical?
+:Question:
+ - *Q*: can you think of cases where a star  may not be spherical?
 :end:
 
 ** Lagrangian and Eulerian coordinates
 In hydrodynamics one is typically interested in describing fields
 (e.g., density, velocity, pressure, temperature, etc..). Let's call a
 generic field \Psi. It can be described in two ways (well, they can also
-be "combined" sometimes).
+be "combined" sometimes, with "moving mesh", see for example [[https://ui.adsabs.harvard.edu/abs/2020ApJS..248...32W/abstract][AREPO
+hydrodynamics code]], [[https://ui.adsabs.harvard.edu/abs/2016ApJS..226....2D/abstract][DISCO code]]).
 
 *** Eulerian description
 In a Eulerian description the fields are described as a function of
-space (and time): \Psi \equiv \Psi(x,y,z, t) in Cartesian coordinates or \Psi(r, \theta,
-\varphi, t) in spherical-polar coordinates.
+space (and time): \Psi \equiv \Psi(x, y, z, t) in Cartesian coordinates or \Psi(r, \theta,
+\varphi, t) in spherical-polar coordinates (of course, one could use any
+other spatial coordinate system as well, the point is the field is
+expressed as a function of a fixed location in space-time).
 
 This is like looking at the flow from on top of a bridge at a fixed
 position, describing the variables at that specific position.
