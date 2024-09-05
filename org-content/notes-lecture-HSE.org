@@ -173,8 +173,8 @@ From this complete form we can take the partial derivatives w.r.t. r
 
 #+begin_latex
 \begin{multline}\label{eq:mass_continuity_rt}
-\hfill \frac{\partial m}{\partial r} = 4\pi r^{2} \rho \ \ , \hfill \\
-\hfill \frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \hfill \ \ .
+ \frac{\partial m}{\partial r} = 4\pi r^{2} \rho \ \ , \\
+ \frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \ \ .
 \end{multline}
 #+end_latex
 
