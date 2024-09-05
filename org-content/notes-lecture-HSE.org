@@ -47,9 +47,10 @@ position, describing the variables at that specific position.
 #+ATTR_HTML: :width 50%  :alt https://www.flinilckr.com/photos/frixan/114822407/
 [[./images/Eulerian-bridge.jpg]]
 
-For a star assuming spherical symmetry as discussed above, we would
-have no dependence on the angular variables \partial_{\theta} \Psi \equiv
-\partial_{\varphi}\Psi \equiv 0 and we could express \Psi\equiv\Psi(r, t).
+For a star assuming spherical symmetry (as we already did to relate
+the stellar flux with the luminosity and obtain L=4\pi R^{2}\sigma T_{eff}^{4}),
+we would have no dependence on the angular variables \partial_{\theta} \Psi
+\equiv \partial_{\varphi}\Psi \equiv 0 and we could express \Psi\equiv\Psi(r, t).
 
 *** Lagrangian description
 In a Lagrangian description the fields are described as a function of
@@ -247,11 +248,12 @@ which from Newton's theory of gravity we know to be
 #+end_latex
 
 where m\equiv m(r) is the mass enclosed within a certain radius r, which we
-already encountered. The gravitational force acting on a spherical
-shell of mass dm = 4\pi r^{2}\rho dr is thus just -gdm = -Gmdm/r^{2}, or per
-unit volume f_{grav} = -g\rho = -Gm\rho/r^{2}, where the minus sign is to
-explicitly indicate that this force points towards the center of the
-star.
+already encountered. Thanks to the spherical symmetry assumption, we
+don't even need to really solve Poisson's equation to make a stellar
+model! The gravitational force acting on a spherical shell of mass dm
+= 4\pi r^{2}\rho dr is thus just -gdm = -Gmdm/r^{2}, or per unit volume f_{grav}
+= -g\rho = -Gm\rho/r^{2}, where the minus sign is to explicitly indicate that
+this force points towards the center of the star.
 
 *** Pressure gradient
 The other contribution we need to include in our f = \rho a equation is
