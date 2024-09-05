@@ -521,7 +521,7 @@ show you how you can obtain numerical stellar models.
   and R=1000km, and a Neutron star with M=1M_{\odot} and radius R=10km.
   Compare also their average densities.
 - Skim [[https://ui.adsabs.harvard.edu/abs/2023arXiv230915930F/abstract][MESA-web paper by Fields et al. 2022]].
-- Using MESA-web make a 1 M_{\odot} star until age 4.5\times10^{9} years (a
+- Using [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]] make a 1 M_{\odot} star until age 4.5\times10^{9} years (a
   very rough model of the Sun as it is today!). Plot m(r), make sure
   to label your axes properly (including units!). Are there other
   variables with a qualitatively similar behavior that one could use
