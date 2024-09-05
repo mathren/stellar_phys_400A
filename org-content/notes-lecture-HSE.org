@@ -322,9 +322,12 @@ mass increases, or equivalently, the pressure increases towards the
 center (smaller radii, smaller amount of enclosed mass) makes sense,
 if the gradient has to compensate the gravitational pull.
 
-*N.B.:* This can also be obtained starting from the Navier-Stokes
-equation assuming no viscosity (the microscopic viscosity is generally
-negligible in stars).
+*All of stellar evolution can be though as gas re-arranging itself to
+fight against gravity, delaying gravitational collapse.*
+
+*N.B.:* The hydrostatic equilibrium equation can also be obtained
+starting from the Navier-Stokes equation assuming no viscosity (the
+microscopic viscosity is generally negligible in stars).
 
 *N.B.:* We have implicitly assumed that the star we model is
 sufficiently far away from anything else that there are no external
