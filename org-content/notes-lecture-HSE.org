@@ -28,9 +28,10 @@ the star.
 
 ** Lagrangian and Eulerian coordinates
 In hydrodynamics one is typically interested in describing fields of
-variables (e.g., density, velocity, pressure, temperature, etc..).
-Let's call a generic field \Psi (=\rho, v, P, T, etc...). It can be
-described in two ways.
+variables that take one value for each point in the fluid (e.g.,
+density, velocity, pressure, temperature, etc..). Let's call a generic
+field \Psi (=\rho, v, P, T, etc...) and discuss the two ways we can use to
+described it.
 
 *** Eulerian description
 In a Eulerian description the fields are described as a function of
