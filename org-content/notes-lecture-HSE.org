@@ -6,6 +6,22 @@
 *Materials*: chapter 2 of Onno Pols' lecture notes, chapters 1 & 2 of
 Kippenhahn's book.
 
+So far we have mostly been discussing astronomical facts on stars
+(e.g., use of populations to understand phenomena too slow to observe,
+the CMD/HRD diagrams, various types of binaries and how to use
+observables to derive masses), albeit anticipating some physical
+modeling (e.g., some basics of black-body radiation to introduce
+T_{eff}). In this lecture, we will move on to proper astro *physics* of
+stars: we want to derive a set of equations to model the parts of the
+stars that we cannot see, the interior structure of stars and how they
+evolve in time. This will take a few lectures to construct, and it
+will require several approximations - I will try to highlight these
+when we encounter them.
+
+Note that this will take us away from directly observable phenomena,
+and push us into theoretical modeling based on physical understanding
+that needs to be /indirectly/ validated on observations.
+
 ** Spherical symmetry and one dimensional approximation
 At zeroth-order, the dynamical elements that determine the structure
 of a star are:
