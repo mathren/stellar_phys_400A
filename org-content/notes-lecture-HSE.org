@@ -268,7 +268,7 @@ Let's have a slightly more formal look at how this may work. Because of
 spherical symmetry, the pressure in the horizontal direction (which in
 stellar context always means in the plane orthogonal to the radial
 direction) is perfectly balanced, and the pressure only depends on the
-radius P\equiv P(r) (\equiv P(r(m) \equiv P(m)).
+radius P\equiv P(r) (\equiv P(r(m)) \equiv P(m)).
 
 The net force per unit area on each side of a spherical shell of gas
 of thickness dr is P(r) at the inner boundary and P(r+dr) at the outer
