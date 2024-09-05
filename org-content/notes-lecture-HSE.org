@@ -204,9 +204,10 @@ and express it with m as independent variable:
 where the partial derivatives become total derivatives in a static
 situation (where by definition \partial_{t} = 0, which is also why we don't
 typically focus on the second equation in
-\ref{eq:mass_continuity_rt}). This is the first stellar structure
-equation that expresses mass conservation, and it depends on a yet
-unknown variable, the gas density \rho.
+\ref{eq:mass_continuity_rt} - by the end of this lecture we will be
+able to discuss whether this is an acceptable approximation). This is
+the first stellar structure equation that expresses mass conservation,
+and it depends on a yet unknown variable, the gas density \rho.
 
 ** Momentum conservation and hydrostatic equilibrium
 
