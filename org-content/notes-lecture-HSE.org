@@ -261,8 +261,8 @@ in what form pressure can enter the l.h.s. of the equation:
 [P] = [force]/[area] \Rightarrow [P]/[length] = [force]/[volume] \equiv [f]
 
 This suggests that the pressure divided an appropriate length scale
-has the right dimension to enter f. This in turn suggests that maybe
-what we need is the pressure /gradient/!
+has the right dimension to enter the force per unit volume f. This in
+turn suggests that maybe what we need is the pressure /gradient/!
 
 Let's have a slightly more formal look at how this may work. Because of
 spherical symmetry, the pressure in the horizontal direction (which in
