@@ -22,38 +22,15 @@ Note that this will take us away from directly observable phenomena,
 and push us into theoretical modeling based on physical understanding
 that needs to be /indirectly/ validated on observations.
 
-** Spherical symmetry and one dimensional approximation
-We have defined a star to be a /self-gravitating mass of gas that can
-produce energy through internal sources/. Thus, from the
-/self-gravitating/ and the /gas/ parts of this definition, at
-zeroth-order, the dynamical elements (i.e., the forces!) that
-determine the structure of a star are:
-
- - Gravity: the weight of the gas forming the star itself
- - Pressure: the thermal pressure of the gas, sometimes with
-   contribution from the radiation and degeneracy
-
-Gravity is a central force that depends only on the radius (\prop r^{-2}),
-and pressure is isotropic. Therefore at zeroth order, we expect stars
-to be well approximated as /spheres/. This mathematically means that we
-can express all the variables that characterize the structure of a
-star as a function of a single variable, for example the radius from
-the center of the star. This allows for the calculation of
-
-:Question:
- - *Q*: can you think of cases where a star  may not be spherical?
-
-   #+ATTR_HTML: :width 20%
-   [[./images/HSE-QR.png]]
-
-:end:
+Before we get into arguments specific to stars, let's review briefly
+hydrodynamical coordinate systems that we will be using to describe
+the star.
 
 ** Lagrangian and Eulerian coordinates
-In hydrodynamics one is typically interested in describing fields
-(e.g., density, velocity, pressure, temperature, etc..). Let's call a
-generic field \Psi. It can be described in two ways (well, they can also
-be "combined" sometimes, with "moving mesh", see for example [[https://ui.adsabs.harvard.edu/abs/2020ApJS..248...32W/abstract][AREPO
-hydrodynamics code]], [[https://ui.adsabs.harvard.edu/abs/2016ApJS..226....2D/abstract][DISCO code]]).
+In hydrodynamics one is typically interested in describing fields of
+variables (e.g., density, velocity, pressure, temperature, etc..).
+Let's call a generic field \Psi (=\rho, v, P, T, etc...). It can be
+described in two ways.
 
 *** Eulerian description
 In a Eulerian description the fields are described as a function of
@@ -120,6 +97,35 @@ works because the m(r) function is invertible, and it is in fact
 monotonically increasing: as r increases, the amount of stellar mass
 enclosed can also only increase!
 
+*N.B.*: For some applications, Eulerian and Lagrangian descriptions can
+also be "combined", for example with "moving mesh" numerical
+approaches, see for example [[https://ui.adsabs.harvard.edu/abs/2020ApJS..248...32W/abstract][AREPO hydrodynamics code]], [[https://ui.adsabs.harvard.edu/abs/2016ApJS..226....2D/abstract][DISCO code]].
+
+** Spherical symmetry and one dimensional approximation
+We have defined a star to be a /self-gravitating mass of gas that can
+produce energy through internal sources/. Thus, from the
+/self-gravitating/ and the /gas/ parts of this definition, at
+zeroth-order, the dynamical elements (i.e., the forces!) that
+determine the structure of a star are:
+
+ - Gravity: the weight of the gas forming the star itself
+ - Pressure: the thermal pressure of the gas, sometimes with
+   contribution from the radiation and degeneracy
+
+Gravity is a central force that depends only on the radius (\prop r^{-2}),
+and pressure is isotropic. Therefore at zeroth order, we expect stars
+to be well approximated as /spheres/. This mathematically means that we
+can express all the variables that characterize the structure of a
+star as a function of a single variable, for example the radius from
+the center of the star. This allows for the calculation of
+
+:Question:
+ - *Q*: can you think of cases where a star  may not be spherical?
+
+   #+ATTR_HTML: :width 20%
+   [[./images/HSE-QR.png]]
+
+:end:
 
 ** Mass conservation
 
