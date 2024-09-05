@@ -23,8 +23,11 @@ and push us into theoretical modeling based on physical understanding
 that needs to be /indirectly/ validated on observations.
 
 ** Spherical symmetry and one dimensional approximation
-At zeroth-order, the dynamical elements that determine the structure
-of a star are:
+We have defined a star to be a /self-gravitating mass of gas that can
+produce energy through internal sources/. Thus, from the
+/self-gravitating/ and the /gas/ parts of this definition, at
+zeroth-order, the dynamical elements (i.e., the forces!) that
+determine the structure of a star are:
 
  - Gravity: the weight of the gas forming the star itself
  - Pressure: the thermal pressure of the gas, sometimes with
