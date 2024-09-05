@@ -120,9 +120,6 @@ works because the m(r) function is invertible, and it is in fact
 monotonically increasing: as r increases, the amount of stellar mass
 enclosed can also only increase!
 
-:Questions:
- - *Q*: are there other variables that one can use as independent?
-:end:
 
 ** Mass conservation
 
@@ -480,7 +477,12 @@ show you how you can obtain numerical stellar models.
 - Skim [[https://ui.adsabs.harvard.edu/abs/2023arXiv230915930F/abstract][MESA-web paper by Fields et al. 2022]].
 - Using MESA-web make a 1 M_{\odot} star until age 4.5\times10^{9} years (a
   very rough model of the Sun as it is today!). Plot m(r), make sure
-  to label your axes properly (including units!)
+  to label your axes properly (including units!). Are there other
+  variables with a qualitatively similar behavior that one could use
+  as independent coordinate for the stellar structure? Try to make
+  other plots to find some, and explain what is the mathematical
+  property that allows to use m(r) and or any other variable you found
+  as a coordinate.
 - With the model above, check the central pressure of the star (you
   can also plot P(m) and P(r), or look at the final frame in the
   movie made by MESA-web for you) and compare it with the estimate
