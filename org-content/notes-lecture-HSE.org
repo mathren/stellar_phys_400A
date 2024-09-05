@@ -99,13 +99,14 @@ the motion of the fluid element.
 
 Because of the extremely large range of spatial scales in stellar
 evolution (e.g., in the Sun from the center at r\simeq0 to the outer radius
-r\simeq 10^{11} cm, and in its future as a red giant 100-1000\times larger),
+r\simeq 10^{11} cm, and in its future as a red giant 100-1000\times larger - even
+using R_{\odot} as unit there are \sim3-5 orders of magnitude of dynamic
+range without even considering neutron stars and black holes!),
 compared to the limited range in mass (in the appropriate units 0-1
 M_{\odot} for the Sun!), typically a Lagrangian description is preferred.
 This means, for example we can chose as independent coordinate in the
 star not the radius r, but instead the amount of mass enclosed by a
-given radius m\equiv m(r), thus express \Psi(r,t) =\Psi(r(m), t)\rightarrow
-\Psi(m(r), t).
+given radius m\equiv m(r), thus express \Psi(r,t) =\Psi(r(m), t)\rightarrow \Psi(m(r), t).
 
 Derivatives can then be expressed with the chain rule:
 #+begin_latex
