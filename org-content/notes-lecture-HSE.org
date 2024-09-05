@@ -42,6 +42,10 @@ the center of the star. This allows for the calculation of
 
 :Question:
  - *Q*: can you think of cases where a star  may not be spherical?
+
+   #+ATTR_HTML: :width 50%
+   [[./images/HSE-QR.png]]
+
 :end:
 
 ** Lagrangian and Eulerian coordinates
