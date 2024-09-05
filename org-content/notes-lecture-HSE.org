@@ -264,6 +264,12 @@ This suggests that the pressure divided an appropriate length scale
 has the right dimension to enter the force per unit volume f. This in
 turn suggests that maybe what we need is the pressure /gradient/!
 
+
+#+CAPTION: Sketch of the force balance for an internal layer of a spherically symmetric star. Modified from Onno Pols' lecture notes Fig. 2.1
+#+ATTR_HTML: :width 50%
+[[./images/HSE-sketch.png]]
+
+
 Let's have a slightly more formal look at how this may work. Because of
 spherical symmetry, the pressure in the horizontal direction (which in
 stellar context always means in the plane orthogonal to the radial
@@ -337,6 +343,35 @@ binary companion, and tidal forces arising from its presence. While
 these are important, they often affect most directly only the outer
 layers of a star (that can be significantly tidally distorted), and
 can maybe be neglected further in the interior.
+
+*N.B.:* Similarly, we have neglected rotation, which also breaks the
+spherical symmetry by adding in the reference frame co-rotating with
+the star non-inertial forces (centrifugal, Euler, and Coriolis).
+However, the centrifugal foce depends on the distance from the
+rotation axis (r sin(\theta)) and thus mostly impacts the outer layers of
+the stars and is less critical in the inner regions (though not at all
+always negligible!). The Euler force depends on d\omega/dt with \omega rotation
+rate, so it is typically negligible on evolutionary timescales for the
+star. The Coriolis force depends on \omega \times v, so it does not affect
+static gas (but it does have important effects if there are
+velocities, think for examples hurricanes in the Earth atmosphere).
+Moreover, rotation can interplay with many hydrodynamical and secular
+instabilities affecting the stellar gas in ways that are only roughly
+approximated in models. All these complications introduced by rotation
+and how to model them in stellar evolution are still active
+research topics (see for example [[https://ui.adsabs.harvard.edu/abs/2000ARA%26A..38..143M/abstract][Maeder & Meynet 2000]] and [[https://ui.adsabs.harvard.edu/abs/2000ApJ...528..368H/abstract][Heger et al.
+2000]]).
+
+*N.B.:* Finally, we have neglected also the impact of magnetic fields on
+the stellar gas. We know that stellar magnetism exists from
+observational phenomena such as stellar flares, seeing Zeeman
+splitting in stellar spectra, etc. We should also expect magnetic
+fields theoretically, because stars are giant balls of ionized gas.
+However, the global dynamical impact of magnetic field should be small
+in most cases, given the success of stellar evolution in explaining
+many observations neglecting them. Stellar magnetism (and it's
+important interplay with rotation) is also an active field of research
+both observationally and theoretically.
 
 Equations Eq. \ref{eq:mass_conservation} and \ref{eq:HSE} are two
 differential equations, that under the assumption of spherical
