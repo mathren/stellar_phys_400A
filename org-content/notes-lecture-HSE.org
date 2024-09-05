@@ -211,10 +211,6 @@ and it depends on a yet unknown variable, the gas density \rho.
 
 ** Momentum conservation and hydrostatic equilibrium
 
-:Questions:
-- *Q*: are stars in hydrostatic equilibrium? How do we know observationally?
-:end:
-
 Consider the equation of motion of a parcel of stellar gas, F = dp/dt
 = ma (for constant m), or often more conveniently in fluid dynamics,
 work per unit volume with f = dF/dV and thus f=\rho a with \rho = dm/dV and
@@ -430,6 +426,8 @@ have been very loose with the \pi factors and averages.
 - *Q*: you all have estimated the Sun's mean density, calculate the Sun
   free fall time now. Does the Sun vary on this timescale? Do you
   think this justifies our assumption of hydrostatic equilibrium?
+- *Q*: are stars in hydrostatic equilibrium? How do we know
+  observationally?
 :end:
 
 ** Introduction to =MESA_web=
