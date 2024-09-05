@@ -35,8 +35,8 @@ used for empirical mass determination.
 
 ** <2024-09-05 Thu> - Hydrostatic equilibrium
 *Aim*: Introduce the mass conservation and hydrostatic equilibrium
-equations of stellar evolution. Introduce the assumption of spherical
-symmetry. Introduce the dynamical timescale. Brief introduction to
+equations of stellar evolution. Re-discuss the assumption of spherical
+symmetry. Introduce the dynamical timescale(s). Brief introduction to
 [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]].
 
 [[./notes-lecture-HSE.org][Notes]]
@@ -68,14 +68,10 @@ conservation
 [[./notes-lecture-ETransport.org][Notes]]
 
 ** <2024-09-24 Thu> - Opacities
-*Aim*: Discuss the main source of opacities, Eddington limit and
-modified Eddington limit
-
 *Aim*: discuss opacity, Rosseland mean opacities, atomic physics and other
 sources of opacity in a star
 
 [[./notes-lecture-kappa.org][Notes]]
-
 
 ** <2024-09-26 Thu> - Convection
 *Aim*: Introduce convective instability, mixing length theory and its
@@ -103,7 +99,6 @@ recall basic quantum mechanics elements, Gamow peak.
 ** <2024-10-03 Tue> - Introduction to stellar evolution codes
 *Aim*: Introduce stellar evolution codes principles, MESA and MESA-web
 
-
 ** <2024-10-22 Tue> - Evolution: low mass stars 1
 
 ** <2024-10-24 Tue> - Evolution: low mass stars 2
@@ -120,7 +115,6 @@ graded, etc. how to provide useful feedback during peer-reviewing.
 
  - Discuss structure: introduce problem, show state-of-the-art
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
-
 
 ** <2024-10-31 Tue> - Supernovae
 
