@@ -13,11 +13,14 @@ at the end of the course we'll need 5 to close the system and get a
 solvable model), and we know we can write them using the Lagrangian
 mass coordinate as independent variable. But to reason conceptually
 about the problem, we can stick to writing them as a function of r:
+the Lagrangian formalism is important when doing numerical work, but
+less so for analytic reasoning, when we can easily switch back and
+forth between r, m, or any other variable as independent.
 
 *Mass conservation:*
 #+begin_latex
 \begin{equation}\label{eq:mass_cont}
-dm = 4\pi \rho r^{2} dr \ \ .
+\frac{dm}{dr} = 4\pi r^{2}\rho\ \ .
 \end{equation}
 #+end_latex
 
@@ -30,8 +33,8 @@ dm = 4\pi \rho r^{2} dr \ \ .
 
 These two equations have as variables m \equiv m(r) (or equivalently r\equiv
 r(m)), P and \rho. So clearly we cannot yet solve them, we need some
-relation between the pressure and the density - a so-called equation
-of state (EOS).
+relation between the pressure and the density - a so-called /equation
+of state/ (EOS).
 
 ** General consideration on the EOS
 In general this is a relation between the /local/ value of pressure P,
