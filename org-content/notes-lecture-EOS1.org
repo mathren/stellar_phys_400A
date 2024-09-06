@@ -113,12 +113,13 @@ result first derived ~100 years ago by Cecilia Payne in her PhD thesis
 in 1925). Let's also assume that it is fully ionized (i.e., protons
 and electrons are separated from each other). The very minimum opacity
 in this case is given by scattering of photons onto the electrons and
-is: \kappa = 0.2(1+X) cm^{2} g^{-1}, where X is the mass fraction hydrogen, so
-for our rough approximation, \kappa\simeq0.4. The average density of the Sun is
-\rho_{\odot, avg}\simeq1.4 g cm^{-3}, therefore \ell_{\gamma} \simeq 2 cm. The
-mean-free-path for particle-particle interactions is much smaller
-(because the cross section \sigma is larger), so we can conservatively ask
-what is the temperature variation across this distance:
+is: \kappa = 0.2(1+X) cm^{2} g^{-1} (see also [[./notes-lecture-kappa.org][lecture on opacities]]), where X is
+the mass fraction hydrogen, so for our rough approximation, \kappa\simeq0.4. The
+average density of the Sun is \rho_{\odot, avg}\simeq1.4 g cm^{-3}, therefore
+\ell_{\gamma} \simeq 2 cm. The mean-free-path for particle-particle
+interactions is much smaller (because the cross section \sigma is larger),
+so we can conservatively ask what is the temperature variation across
+this distance:
 
 #+begin_latex
 \begin{equation}
@@ -133,8 +134,9 @@ R_{\odot}\simeq 10^{11} cm, so \Delta T\simeq 10^{-4} K \ll T_{surf} \ll T_{cent
 
 Thus, we can define layers of the star with \ell_{\gamma} \ll dr \ll R where
 locally the temperature variation across the layer is negligible, and
-the assumption of /local thermal equilibrium/ (LTE) holds well. (*N.B.:* you can
-revise this a posteriori once we have an EOS!)
+the assumption of /local thermal equilibrium/ (LTE) holds well. (*N.B.:*
+you can revise this a posteriori once we have an EOS and a way to
+estimate of T_{center}!)
 
 This may not be true close to the surface, where \ell_{\gamma} progressively
 increases (because \rho decreases). There we may need to care about the
@@ -144,8 +146,8 @@ different photon frequencies! In those layers, the assumption of LTE
 does not work.
 
 As long as we discuss regions of the star with a thickness large
-w.r.t. \ell_{\gamma} but small enough that the T variation across them, we
-can use thermodynamics!
+w.r.t. \ell_{\gamma} but small enough that the T variation across them are
+negligible, we can use thermodynamics!
 
 Also, as we have seen before, the stars are usually in equilibrium and
 change very slowly. Any /local/ thermal imbalance will be restored on
@@ -156,7 +158,10 @@ of LTE holds locally (as the "L" indicates) at any time! Therefore,
 while we cannot really define a physically meaningful T for the entire
 star (beyond some rough averaged quantity), we can meaningfully define
 a /local/ T(r) or T(m) temperature that characterizes the gas /and/ the
-radiation at that radius/mass coordinate.
+radiation at that radius/mass coordinate. The local validity of the
+LTE assumption allows us to define thermodynamic quantities from
+statistical mechanics and look for a relation between them, that is an
+EOS.
 
 ** Polytropic EOS
 Polytropic EOS as a special case of /barotropic/ EOS, which are all the
@@ -165,7 +170,7 @@ the temperature or composition/: \rho\equiv\rho(P). These have applications
 beyond stellar physics (e.g., for atmospheric physics). A polytropic
 EOS is thus a barotropic EOS where the \rho\equiv\rho(P) is in the form of a
 powerlaw, although usually written (following the general form of Eq.
-\ref{eq:general_EOS}:
+\ref{eq:general_EOS}):
 
 #+begin_latex
 \begin{equation}\label{eq:polytrope}
@@ -181,12 +186,13 @@ Eq. \ref{eq:HSE}) the system of equations describing a star! This is
 the system of equations used to create, for example, analytic stellar
 models (e.g., the Lane-Emden equation), which is one of the topics for
 the projects. These can be useful to initialize roughly correct
-stellar structures in multi-D hydrodynamic codes (where we cannot/do
-not want to rely on the spherical symmetry anyways).
+stellar structures in multi-D hydrodynamic codes for particular
+applications (e.g., a common envelope evolution simulation!), but they
+are usually insufficient for modern stellar physics application.
 
-But more importantly, there are various /physical/ situations (as we will return on
-during [[./notes-lecture-EOS2.org][the second lecture on EOSs]]) in which EOS of this form occur,
-and are useful to describe real observed stars.
+More importantly, there are various /physical/ situations (as we will
+return on during [[./notes-lecture-EOS2.org][the second lecture on EOSs]]) in which EOS of this form
+occur, and are useful to describe real observed stars.
 
 - fully convective stars (see [[./notes-lecture-conv.org][relative lecture]])
 - stars supported by quantum mechanical effects such as white dwarfs
@@ -229,15 +235,16 @@ n(p)dp = \frac{n}{(2\pi m k_{B} T)^{3/2}} \exp\left(-\frac{p^{2}}{2mk_{B}T}\righ
 \end{equation}
 #+end_latex
 
-where on the r.h.s., n is the total number density, the prefactor of the
-exponential is the normalization constant, and the exponential comes
-from assuming a Gaussian distribution of kinetic energies for each
-momentum component (you can demonstrate that a Maxwellian distribution
-is equivalent to a Gaussian in each direction p_{x}, p_{y}, p_{z}, by going to
-spherical-polar coordinates in momentum space and integrating over the
-p_{\theta}, p_{\varphi} components).
+where on the r.h.s., n is the total number density, the prefactor of
+the exponential is the normalization constant, and the exponential
+comes from assuming a Gaussian distribution of kinetic energies for
+each momentum component (you can demonstrate that a Maxwellian
+distribution is equivalent to a Gaussian in each direction p_{x}, p_{y}, p_{z},
+by going to spherical-polar coordinates in momentum space, thus
+introducing a Jacobian for the change of variables, and integrating
+over the p_{\theta}, p_{\varphi} components).
 
-From this, we can calculate the pressure of this gas. By definition
+From this, we can calculate the pressure of the gas. By definition
 this will be isotropic, and so we can imagine to put a "box" with unit
 linear size through our gas (the orientation of the walls does not
 matter). To determine the gas pressure we want the force exerted by
@@ -298,7 +305,8 @@ which combined with Eq. \ref{eq:Maxwellian} gives the pressure.
 Let's consider a non-relativistic gas of classical particles (no
 quantum effects). Then p= mv \Leftrightarrow v=p^{2}/2m (*N.B.:* we are considering an
 ideal gas, so each particle is freely moving, no potential of
-interaction!). Carrying out the integral above gives
+interaction!). Carrying out the integral above using the
+Maxwell-Boltzmann distribution for n(p) and v=p^{2}/2m gives
 
 #+begin_latex
 \begin{equation}
@@ -309,7 +317,7 @@ P = n k_{B} T \ \ .
 *** Mixture of (non-relativistic, classical) gases
 Let's now say that we have multiple gas mixed, for example, a gas of
 ions of various species and electrons. Each gas will contribute to the
-pressure: P_{tot} = P_{ion, tot} + P_{e} = \sum_{i} P_{ion i} + P_{e} = (\sum_{i}n_{i} +n_{e}) k_{B}T,
+pressure: P_{tot} = P_{ion, tot} + P_{e} = \sum_{i} P_{ion, i} + P_{e} = (\sum_{i}n_{i} +n_{e}) k_{B}T,
 where n_{i} is the number density of the ions i, which have mass m_{u} A_{i}
 with m_{u} the /atomic mass unit/:
 
@@ -321,11 +329,12 @@ m_{u} = 1 / N_{A} \,\mathrm{g} \simeq 1.66 \times 10^{-24} \,\mathrm{g} \ \ .
 
 Thus, we can relate the number density of the ions of species i with
 the mass density that already appears in the equations we already have
-with n_{i} = X_{i}\rho/(A_{i} m_{u}).
+with n_{i} = X_{i}\rho/(A_{i} m_{u}). Note that we are implicitly using the fact
+that everything has the same T because of the assumption of LTE!
 
-Thus we can re-write the total contribution of the ions defining the
+We can re-write the total contribution of the ions defining the
 ion /mean molecular weight/ such that \mu_{ion} \times m_{u }= "average mass of
-ions", therefore n_{ion} = \sum_{i} n_{i} = \sum_{i} X_{i}\rho/(A_{i}m_{u}) \equiv
+ions", that is \mu_{ion} n_{ion} = \rho/m_{u} or n_{ion} = \sum_{i} n_{i} = \sum_{i} X_{i}\rho/(A_{i}m_{u}) \equiv
 \rho/(\mu_{ion}m_{u}) and:
 
 #+begin_latex
@@ -384,9 +393,10 @@ In fact, for every i-th species that corresponds to a fraction X_{i} of
 the total mass, that is X_{i}/A_{i} in number density, we have Z_{i} electrons
 plus one nucleus that contribute. This approximation is usually good
 in the stellar interior, but as one moves outwards in the star, P
-decreases, therefore by Eq. \ref{eq:ideal_gas_EOS} T decreases, and
+decreases, therefore by Eq. \ref{eq:ideal_gas_EOS}, T decreases, and
 elements recombine, meaning the term Z_{i} +1 is reduced. This can have
-important consequences in certain layers of the stars.
+important consequences in certain layers of the stars ("partial
+ionization layers").
 
 We can further simplify the expression for \mu by noting that for
 hydrogen (Z_{i} +1)/A_{i} = 2 (i.e., hydrogen contributes 2 particles per
@@ -430,7 +440,7 @@ P = \frac{2}{3} u_\mathrm{int} \ \ .
 #+end_latex
 
 If instead the gas is ultra-relativistic, then \varepsilon = pc (neglecting the
-mass term in the energy), and thus:
+mass term in the energy since pc \gg mc^{2}), and thus:
 
 #+begin_latex
 \begin{equation}
