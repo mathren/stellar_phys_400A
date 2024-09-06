@@ -128,8 +128,8 @@ what is the temperature variation across this distance:
 
 (where we neglect T_{surface} because we expect it much lower than
 T_{center}, since we already know P_{center} \gg P_{surface}). For the Sun we
-will see that we can estimate T_{center}\simeq 10^{7}^{} K, and we know R_{\odot},
-so \Delta T\simeq 10^{-4} K \ll T_{surf} \ll T_{center}.
+will see that we can estimate T_{center}\simeq 10^{7} K, and we know
+R_{\odot}\simeq 10^{11} cm, so \Delta T\simeq 10^{-4} K \ll T_{surf} \ll T_{center}.
 
 Thus, we can define layers of the star with \ell_{\gamma} \ll dr \ll R where
 locally the temperature variation across the layer is negligible, and
