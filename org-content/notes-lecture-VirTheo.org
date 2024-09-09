@@ -24,9 +24,9 @@ the name comes from "vir" which is latin for "forces".
 ** Complete derivation
 Let's start with the most general derivation (see for example
 Goldstein's classical mechanics book or Shore's Tapesty of Modern
-Astrophysics Sec. 1.5). For a collection of particles with mass m_{i}, Netwon's second law states that
-the change in their momentum is equal to the total force they are
-subject to:
+Astrophysics Sec. 1.5). For a collection of particles with (constant)
+mass m_{i}, Netwon's second law states that the change in their momentum
+is equal to the total force they are subject to:
 
 #+begin_latex
 \begin{equation}

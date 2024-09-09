@@ -457,7 +457,7 @@ P=\frac{u_\mathrm{int}}{3} \ \ .
 This is legitimate as long as the interaction energy between the
 particles are small compared to their kinetic energy. The dominant
 interaction between the particles (ions and electrons) is going to be
-through the Coulomb force
+through the Coulomb force, leading to energy exchanges of the order of:
 
 #+begin_latex
 \begin{equation}
