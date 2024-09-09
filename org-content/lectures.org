@@ -74,10 +74,12 @@ sources of opacity in a star
 [[./notes-lecture-kappa.org][Notes]]
 
 ** <2024-09-26 Thu> - Convection
-*Aim*: Introduce convective instability, mixing length theory and its
+*Aim*: Introduce convective instability, mixing length theory, and its
 limitations.
 
-[[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][Notes (preliminary)]]
+[[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][handwritten notes (preliminary)]]
+
+[[./notes-lecture-convection.org][Notes]]
 
 ** <2024-10-01 Thu> - Nuclear energy generation
 *Aim*: Introduce basics of nuclear energy generation through fusion,

@@ -1,8 +1,8 @@
-#+title: 400A - Energy transport
+#+title: 400A - Energy transport 1/2
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Energy transport in stars
+* Energy transport in stars 1/2
 *Materials*: Chapters 3 and 5 of Onno Pols' lecture notes, chapter 5 of
 Kippenhan & Weigert's book.
 
@@ -15,7 +15,7 @@ dm = 4\pi \rho r^{2} dr \ \ .
 \end{equation}
 #+end_latex
 
-*Hydrostatic equilibrium:*
+*Hydrostatic equilibrium (Momentum conservation):*
 #+begin_latex
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \ ,
@@ -319,7 +319,6 @@ related T, \rho, and the new variable L we introduced and depends on the
 opacity (radiative and conductive combined in parallel) \kappa, which we
 treat as a parameter dependent on atomic and condensed matter physics
 (\kappa\equiv\kappa(T,\rho)).
-
 
 ** Local energy conservation
 

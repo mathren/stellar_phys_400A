@@ -1,0 +1,31 @@
+#+Title: 400A - Convection & MLT
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* Energy transport in stars 2/2
+*Materials*: Kippenhahn's book Ch. 6, Cox & Giuli vol. 1 Ch. 14,
+ Schwarzschild Ch. 7, [[https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract][Jermyn et al. 2022]], [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]], [[http://online.kitp.ucsb.edu/online/stars17/cantiello2][Matteo
+ Cantiello's talk at KITP in 2017]]
+
+In the [[./notes-lecture-ETransport.org][previous lecture on energy transport]] we have dealt with the
+situation where energy diffusion (carried by photons, i.e., radiative
+energy transport, or carried by electrons, i.e., conductive energy
+transport) is sufficient to sustain the star. However, this is /not/
+always the case! In this lecture we will deal with convection, which
+allows for /energy transport through the macroscopic motion of matter
+resulting in a non-zero energy flux with a zero matter flux/.
+
+Convection involves turbulence (the "last" open problem of classical
+physics), and is because of this inherently multi-dimensional. Because
+of this, convection is usually one of the poorest ingredients in
+stellar calculations, and often the root of many open problems.
+
+* Convective stability criterion: Schwarzschild & Ledoux criterion
+
+* Mixing length theory
+
+* Limitations of MLT
+
+** Convective boundary mixing (a.k.a. "overshooting")
+
+** Time-dependence
