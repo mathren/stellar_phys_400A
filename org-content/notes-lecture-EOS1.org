@@ -408,7 +408,7 @@ unit atomic mass, one proton and one electron), for helium (Z_{i} +1)/A_{i}
 = 3/4 (we are actually considering only the stable isotope of helium
 that contributes 3 particles every 4 atomic mass units, one nucleus
 and 2 electrons), and for the vast majority of stable metals Z_{i} \gg 1
-and Z_{i} \sim A_{i}/2 (i.e., most metals contribute per each A_{i} atomic mass
+and Z_{i} \simeq A_{i}/2 (i.e., most metals contribute per each A_{i} atomic mass
 units roughly A_{i}/2 particles which are the electrons that are
 typically half as many as the nucleons). Therefore, for fully ionized
 gas, we can simplify the mean molecular weight to:

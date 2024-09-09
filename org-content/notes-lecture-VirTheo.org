@@ -7,6 +7,15 @@
 Kippenhahn's book, Sec. 1.5 of "Tapestry of Modern Astrophysics" by S.
 N. Shore, pages 134-139 Clayton's book.
 
+In the [[./notes-lecture-EOS1.org][previous lecture]], we have discussed that it is appropriate to
+use thermodynamics to describe the /local/ properties of the stellar
+gas. We have before also determine that (self-)gravity determines the
+pressure gradient in the star through the hydrostatic equilibrium
+equation (which is just the particular form that momentum conservation
+takes in a stellar context). Therefore, in this lecture we will
+explore the relation there may be between gravitational physics and
+thermodynamics.
+
 /The virial theorem connects gravitational physics and thermodynamics/.
 It is a statistical statement on mutually interacting (e.g. because of
 self-gravity!) particles, and thus it is very general. The etymology of
