@@ -79,11 +79,11 @@ derivative of the moment of inertia on the r.h.s., which is often
 forgotten. We did not specify almost anything about the system (see
 Goldstein for a momentum-based derivation where the assumption of
 constant masses m_{i} of the particles implicit in the way we wrote
-Newton's second law is not even needed). It effectively says that for
-a bound system of self-interacting particles, there is a limited
-amount of potential energy that can be extracted, because part of the
-potential will need to go into the kinetic terms and the acceleration
-of the moment of inertia.
+Newton's second law is not even needed). It effectively says that /for
+a bound system of self-interacting particles/, /there is a limited
+amount of potential energy that can be extracted/, because part of the
+/potential will need to go into the kinetic terms and the acceleration
+of the moment of inertia/.
 
 So far, this general form doesn't give us much intuition on its
 meaning. We have a relation between the kinetic energy of a collection
