@@ -161,7 +161,7 @@ bulk kinetic energy of the stellar gas (see for example sec. 4.2.1 in
 Shore's "Tapestry of modern astrophysics"). We have already
 interpreted the r.h.s. as the gravitational potential energy
 (normalized to zero at infinity) in Eq. \ref{eq:pot}. Let's interpret
-the l.h.s, which in the general derivation would be part of the \sum_{i}
+the l.h.s., which in the general derivation would be part of the \sum_{i}
 F\cdot r_{i} term. By dimensional analysis we know it has to have the
 dimension of an energy, and in fact we know from the [[file:notes-lecture-EOS1.org::*Equation of state 1/2][EOS]] that P/\rho =
 (\Gamma-1)u with \Gamma\equiv\Gamma_{1} the first adiabatic index and u specific (i.e. per
@@ -259,7 +259,7 @@ the mass distribution in the star. Thus:
 \langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
 \end{equation}
 #+end_latex
-From this equation, several important fact follow:
+From this equation, several important facts follow:
 - the mean temperature of a star depends only on its mass M and radius R
   (and chemical composition through \mu);
 - /as a star contracts/ (R decreases at constant mass M), /the
@@ -278,7 +278,7 @@ From this equation, several important fact follow:
 - The gravothermal collapse must go on until either:
   1. an internal energy source, compensating for the surface energy loss kicks in, or
   2. the ideal gas approximation does not hold anymore.
-  As we will see, both 1. and 2. occur: 1. is the typical option for
+  As we will see, both 1. and 2. occur in nature: 1. is the typical option for
   stars using nuclear fusion as internal energy source to delay the
   collapse, and 2. is what occurs for white dwarfs, where quantum
   mechanical effects stop the collapse.
@@ -286,7 +286,7 @@ From this equation, several important fact follow:
 Thus, /gravity determines the evolution of a star/. It dictates that as
 the star loses energy, it heats up. Because of this, at some point
 nuclear fusion can occur (as we will discuss later): /stars don't shine
-because they burn. Stars burn because they shine/. Without the loss of
+because they burn, stars burn because they shine/. Without the loss of
 (internal/thermal) energy by radiation they would not contract,
 without contracting they would not reach temperatures high enough to
 do nuclear fusion. *The nuclear fusion is a consequence of the fact
@@ -381,11 +381,12 @@ evolution, until 4.5\times10^{9} years, and plot an HR diagram. Plot also the
 nuclear energy release and chemical evolution).
 
 *N.B.:* we can make a computer code do whatever we want! Never take
-computer simulations as ground truth, they are only as good as the
-input
+computer simulations as ground truth, they are /at best/ only as good as
+the input!
 
 
-- Which agrees better with the observation of the real Sun?
+- Which agrees better with the observation of the real Sun at the
+  Earth's age?
 - What is the average density of the model without energy generation?
 - What is its radius (hint: you can plot the lines at constant radius
   on the HRD)?

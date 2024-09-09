@@ -414,17 +414,22 @@ the T(\rho) plane ([[https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstr
   6, A_{i} = 12). Any T much lower than this limit can be considered T\simeq0
   for the purpose of the pressure calculation, but that still leaves a
   large range of non-zero T from the radiative point of view!
-- Clayton's problem 2-59: Consider a star entirely supported by
-  electron degeneracy. This is a good approximation for a white dwarf,
-  the end point of the vast majority of stars. Show that, if the
-  electrons are ultra-relativistic, the central pressure scales as:
-  P_{center} \simeq 1.244\times 10^{15} (\rho/\mu_{e})^{4/3} dynes cm^{-2}. Consider
+- Using the EOS for non-relativistic degenerate gas (and the other
+  stellar equations you know), determine a mass-radius relation for
+  stars entirely supported by (non-relativistic) electron degeneracy.
+  This is a good approximation for a white dwarf, the end point of the
+  vast majority (>98%) of stars!
+- Clayton's problem 2-59: Let's now consider the case where electrons
+  are are ultra-relativistic, show that the central pressure scales as
+  P_{center} \simeq 1.244 \times 10^{15} (\rho/\mu_{e})^{4/3} dynes cm^{-2}. Consider
   the case where the electrons are ultra-relativistic /throughout/ the
-  star, then P\simeq P_{center} /throughout/ the star as well, which implies
-  that the only mass that the ultra-relativistic electron gas can
-  sustain is M_{Chandrasekhar} = 5.80 M_{\odot} \times \mu_{e}^{-2} \simeq 1.44
-  M_{\odot} for \mu_{e} \simeq 1/2 (note the \mu_{e}^{2} dependence!). What does
-  this specific value of the mass (for a given composition, i.e., \mu_{e})
-  mean for stars supported by ultra-relativisti electron degeneracy
-  pressure? What equation of stellar structure (of the ones we have
-  seen so far) /cannot/ be satisfied for larger values of the mass?
+  star, then P\simeq P_{center} /throughout/ the star as well. Using the mass
+  continuity equation and hydrostatic equilibrium, show that this
+  implies that the only mass that the ultra-relativistic electron gas
+  can sustain is M_{Chandrasekhar} = 5.80 M_{\odot} \times \mu_{e}^{-2} \simeq
+  1.44 M_{\odot} for \mu_{e} \simeq 1/2 (note the \mu_{e}^{2} dependence!). What
+  does this specific value of the mass (for a given composition, i.e.,
+  \mu_{e}) mean for stars supported by ultra-relativistic electron
+  degeneracy pressure? What equation of stellar structure (of the ones
+  we have seen so far) /cannot/ be satisfied for larger values of the
+  mass?

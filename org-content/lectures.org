@@ -89,21 +89,13 @@ recall basic quantum mechanics elements, Gamow peak.
  - compare nuclear burning at various Z
  - derive nuclear reaction chains with conservation laws
 
-** <2024-10-15 Thu> - Radiative transfer
+** <2024-10-03 Thu> - Radiative transfer
 - Saha equation
 - line formation region
 - line broadening mechanisms
 
-** <2024-10-08 Tue> - Homology relations
-
-** <2024-10-03 Tue> - Introduction to stellar evolution codes
+** <2024-10-08 Tue> - Introduction to stellar evolution codes
 *Aim*: Introduce stellar evolution codes principles, MESA and MESA-web
-
-** <2024-10-22 Tue> - Evolution: low mass stars 1
-
-** <2024-10-24 Tue> - Evolution: low mass stars 2
-
-** <2024-10-29 Thu> - Evolution: high mass stars
 
 ** <2024-10-10 Tue> - Roche geometry and binary interactions
 *Aim*: Introduce the Roche approximation and its limitations and binary
@@ -115,7 +107,13 @@ graded, etc. how to provide useful feedback during peer-reviewing.
 
  - Discuss structure: introduce problem, show state-of-the-art
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
+** <2024-10-15 Tue> - Evolution: low mass stars 1
 
+** <2024-10-22 Tue> - Evolution: low mass stars 2
+
+** <2024-10-24 Thu> - Evolution: high mass stars
+
+** <2024-10-29 Tue> - Homology relations
 ** <2024-10-31 Tue> - Supernovae
 
 ** <2024-11-05 Thu> - *Guest lecture*: r-process and/or accretion on compact objects
