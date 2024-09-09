@@ -383,6 +383,23 @@ P_{QM} + \frac{1}{3}aT^{4}  \ \ ,
 where we have decomposed the gas pressure into a degeneracy term due
 to quantum effects and a classical term.
 
+Note that in practice, stellar evolution code often rely on /tabulated/
+EOS, which account for many non-ideal effects that we have only
+briefly discussed here. EOS are ultimately one of the points of
+contact between stellar physics and atomic physics and statistical
+mechanics:
+
+#+CAPTION: Blend of tabulated EOS on the T(\rho) plane used in MESA (Fig. 50 in [[https://ui.adsabs.harvard.edu/abs/2018ApJS..234...34P/abstract][Paxton et al. 2018]]), see also [[https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstract][Jermyn et al. 2021]] for updates relevant to large portions of this plane. The blue and purple tracks correspond to evolved stellar models of the mass labeled.
+#+ATTR_HTML :width 100%
+[[./images/EOS_blend_paxton18.png]]
+
+
+A typical issue is how to obtain numerically good derivatives from
+tabulated EOS, especially at the boundaries between tables coming from
+different studies. These can often be a severe limiting factor in the
+numerical accuracy of stellar models, and this was one of the
+motivation for the development of a new EOS covering large portions of
+the T(\rho) plane ([[https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstract][Jermyn et al. 2021]]) now used by default in MESA.
 
 * Homework
 
