@@ -144,8 +144,8 @@ estimate of T_{center}!)
 
 This may not be true close to the surface, where \ell_{\gamma} progressively
 increases (because \rho decreases). There we may need to care about the
-wavelength or frequency dependance of the cross section \sigma\equiv\sigma(\nu) and
-thus the mean free path: a star has a different "surface" for
+wavelength (or frequency) dependence of the cross section \sigma\equiv\sigma(\lambda)
+and thus the mean free path: a star has a different "surface" for
 different photon frequencies! In those layers, the assumption of LTE
 does not work.
 
