@@ -92,7 +92,7 @@ For this to happen, this layer needs still to be much larger than the
 mean-free-path for particle-particle and particle-photon interactions.
 This allows for many interactions between the particles to occur and
 establish /local/ thermal equilibrium within the layer of thickness dr.
-Let's consider the particle-photon interactions first:
+Let's consider the mean-free-path for particle-photon interactions first:
 
 #+begin_latex
 \begin{equation}
