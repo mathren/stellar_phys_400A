@@ -120,7 +120,7 @@ virial theorem! /Keplerian binary orbits are "virialized"/.
 Let's now re-derive the Virial theorem for a star. Let's assume a
 continuous description of the stellar gas, hydrostatic equilibrium and
 spherical symmetry, and write explicitly the forces acting on each
-shell dr of gas (cf. hydrostatic momentum balance in [[file:notes-lecture-HSE.org::*Combining the two][seen before]]):
+shell dr of gas (cf. hydrostatic momentum balance [[file:notes-lecture-HSE.org::*Combining the two][seen before]]):
 
 #+begin_latex
 \begin{equation}\label{eq:HSE}
