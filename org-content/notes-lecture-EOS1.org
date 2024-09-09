@@ -100,8 +100,8 @@ Let's consider the mean-free-path for particle-photon interactions first:
 \end{equation}
 #+end_latex
 
-where n is the number density of particles ([n] = cm^{-3}) and \sigma ([\sigma] =
-cm^{2}) is the interaction cross section, or equivalently, \rho is the mass
+where n is the number density of particles ([n] = cm^{-3}) and \sigma is the
+interaction cross section ([\sigma] = cm^{2}), or equivalently, \rho is the mass
 density (appearing in the two equations we already have), and \kappa is the
 "opacity", which is a way to measure the probability of a photon to
 interact with a certain amount of mass.
