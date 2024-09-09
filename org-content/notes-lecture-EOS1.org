@@ -485,8 +485,9 @@ instance), or at increasingly high densities.
   using an argument based on the photons mean free path \ell_{\gamma}.
   Assuming a star of constant density (use the mean density for
   this!), pure hydrogen composition, and that electron scattering is
-  the dominant interaction of the photons in the stellar interior,
-  estimate, using one-dimensional random-walk arguments estimate:
+  the dominant interaction of the photons in the stellar interior so
+  \kappa\simeq\kappa_{es}=0.2(1+X), using one-dimensional random-walk arguments,
+  estimate:
   1. how many scatterings a photon created in the center of the Sun
      will experience before coming out at the surface?
   2. Knowing that photons travel at the speed of light c and assuming
