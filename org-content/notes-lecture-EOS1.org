@@ -127,7 +127,7 @@ is the temperature variation across \ell_{\gamma}:
 
 #+begin_latex
 \begin{equation}
-\Delta T \simeq \ell_{\gamma} dT/dr \le \ell_{\gamma} (T_\mathrm{center} - T_\mathrm{surface})/R \simeq \ell_{\gamma} T_\mathrm{center}/R
+\Delta T \simeq \ell_{\gamma} \frac{dT}{dr} \le \ell_{\gamma} \frac{T_\mathrm{center} - T_\mathrm{surface}}{R} \simeq \ell_{\gamma} \frac{T_\mathrm{center}}{R}
 \end{equation}
 #+end_latex
 
