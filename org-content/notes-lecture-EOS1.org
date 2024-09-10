@@ -17,7 +17,7 @@ the Lagrangian formalism is important when doing numerical work, but
 less so for analytic reasoning, when we can easily switch back and
 forth between r, m, or any other variable as independent.
 
-*Mass conservation:*
+*Mass continuity:*
 #+begin_latex
 \begin{equation}\label{eq:mass_cont}
 \frac{dm}{dr} = 4\pi r^{2}\rho\ \ .
@@ -31,10 +31,12 @@ forth between r, m, or any other variable as independent.
 \end{equation}
 #+end_latex
 
-These two equations have as variables m \equiv m(r) (or equivalently r\equiv
-r(m)), P and \rho. So clearly we cannot yet solve them, we need some
-relation between the pressure and the density - a so-called /equation
-of state/ (EOS).
+These two equations express the conservation of mass and momentum,
+respectively (*N.B.:* it is often useful to write all equations in the
+form of conservation laws to solve them numerically), and have as
+variables the function m \equiv m(r) (or equivalently r\equiv r(m)), P and \rho. So
+clearly we cannot yet solve them, we need some relation between the
+pressure and the density - a so-called /equation of state/ (EOS).
 
 ** General consideration on the EOS
 In general, this is a relation between the /local/ value of pressure P,
