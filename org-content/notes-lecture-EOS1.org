@@ -485,6 +485,16 @@ progressively lower temperature the Coulomb interaction start to
 matter (this is important for the crystallization of WDs for
 instance), or at increasingly high densities.
 
+# *** Electron screening
+
+# At sufficiently high densities, the nuclei will tend to attract a
+# "cloud" of electrons in their surroundings, even if they are not bound
+# to each other forming an ion/atom. This effectively leads to the
+# so-called "electron screening", which decreases the effective charge
+# felt between nuclei: on the one hand this is a clear deviation from
+# the idea of a mixture of ideal gases made of ions and electrons, on
+# the other hand, this particular effect helps nuclear reactions occur
+# in the core, as we will see later on.
 
 * Homework
 - We have discussed that the internal layers of the star are in LTE
