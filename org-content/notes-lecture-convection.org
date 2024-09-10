@@ -11,18 +11,73 @@ In the [[./notes-lecture-ETransport.org][previous lecture on energy transport]] 
 situation where energy diffusion (carried by photons, i.e., radiative
 energy transport, or carried by electrons, i.e., conductive energy
 transport) is sufficient to sustain the star. However, this is /not/
-always the case! In this lecture we will deal with convection, which
-allows for /energy transport through the macroscopic motion of matter
-resulting in a non-zero energy flux with a zero matter flux/.
+always the case! For example, we know this is not the case in the
+outer layers of the Sun, we can [[https://apod.nasa.gov/apod/ap200203.html][directly see that]]:
+
+[[https://youtu.be/CCzl0quTDHw?si=RUwZfN5SrO1abD1Y][Sun granules]]
+
+We can also see this is not the case in the envelopes of red
+supergiants, as for example Betelgeuse, VY Canis Majoris, etc. Less
+directly, we can also infer this to happen in the cores of massive
+stars: /some stellar layers are not stably stratified and energy
+transport is not only diffusive/.
+
+* Convection
+
+In this lecture we will deal with convection, which allows for /energy
+transport through macroscopic motion of matter/ resulting in a
+/non-zero energy flux with a zero matter flux/.
 
 Convection involves turbulence (the "last" open problem of classical
 physics), and is because of this inherently multi-dimensional. Because
-of this, convection is usually one of the poorest ingredients in
-stellar calculations, and often the root of many open problems.
+of this, convection is usually one of the most approximate ingredients
+in stellar calculations, and often the root of many open problems.
+
+Convection is a /thermal/ instability (as we will see it kicks in if the
+temperature gradient is steeper than some threshold condition), and it
+is a phenomenon that is not unique to stars: the monsoon clouds in
+Tucson's summer are also manifestation of convection in the Earth
+atmosphere!
+
+Before discussing the details of the physics of convection by using
+oversimplified pictures dating back to [[https://en.wikipedia.org/wiki/Ludwig_Prandtl][Prandtl]], have a look at the
+following animations of multi-dimensional simulations of convection,
+these are probably/hopefully closer to reality than many of the
+oversimplifications we will use later in this lecture.
+
+It is important to keep in mind that we adopt modeling simplifications
+to make the simulation of stars tractable, but these introduce
+systematic uncertainties which are active topic of research
+
+** Core convection in a massive star ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]])
+
+
+  [[https://vimeo.com/684826914]]
+
+  This is a simulation of the temperature fluctuations (right) and
+  vertical velocities (left) in "code units" using the code [[https://github.com/DedalusProject/dedalus][Dedalus]].
+
+** Envelope convection in a red super-giant ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...929..156G/abstract][Goldberg et al. 2022]])
+
+ [][]
+
+ This is a 3D radiation-hydrodynamics simulation of large portions of
+ the envelope of a red supergiant (not that different from
+ Betelgeuse), computed with the [[https://www.athena-astro.app/][ATHENA++]] code.
+
+** Thermonuclear runaway during a Nova explosion ([[https://ui.adsabs.harvard.edu/abs/2018A%26A...619A.121C/abstract][Casanova et al. 2018]])
+
+ [[./images/125M-ONe-3.wmv]]
+
+ This is a 2D simulation of convection developing during a nova
+ explosions, what is shown is the (log_{10}) mass fraction of neon 20.
+
 
 * Convective stability criterion: Schwarzschild & Ledoux criterion
 
 * Mixing length theory
+
+** Convective velocity vs. thermal velocity
 
 * Limitations of MLT
 

@@ -511,7 +511,10 @@ instance), or at increasingly high densities.
      timescale throughout the star? How does it compare to the
      dynamical timescale?
 - Run with =MESA-web= a 0.3M_{\odot} star up to 10^{8} yrs, and plot the
-  P(\rho) profile of the star at this age, it may be useful to plot it on
-  a log-log plot. Do you think it is possible to find a good
+  P(\rho) profile of the star at this age (*Hint*: it may be useful to plot it on
+  a log-log plot). Do you think it is possible to find a good
   approximation of this profile with a polytropic relation? Note that
-  =MESA-web= does *not* assume a poytropic EOS!
+  =MESA-web= does *not* assume a poytropic EOS! As usual, the deliverables
+  are the plot, the code used to make it, and a small paragraph of
+  text with your answer. *Extra*: you may even try to fit a polytrope
+  throughout the star and provide the polytropic index \Gamma.

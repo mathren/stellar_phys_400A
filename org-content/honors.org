@@ -1,0 +1,37 @@
+#+Title: Honors project
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* Main sequence burning in massive population III stars
+
+Nuclear burning in massive stars occurs through the CNO cycle, which
+uses metals (Carbon, Nitrogen, and Oxygen) as catalysts to stick
+together 4 protons, turn two of them into neutrons, and produce
+helium. However, what happens when C, N, and O are /not/ available?
+
+One physical situation where we think this may have happened is for
+Population III stars, the first stars formed from pristine material
+from the Big Bang: those only had H and He (and maybe some trace Li
+and Be), no C, N, or O was available in the gas cloud they formed
+from. *N.B.:* we have not seen these stars, but clearly at some point
+they must have existed! The only way to study how they evolved for now
+is through numerical simulations.
+
+In this project you will compute with the stellar evolution code [[https://docs.mesastar.org/en/latest/][MESA]]
+the evolution of two 15M_{\odot} non-rotating, non-magnetic, single
+stars, one at solar metallicity Z_{\odot} and one with Z=0, until the end
+of hydrogen core burning, compare their evolution in terms of their
+potentially observable surface properties /and/ in terms of their
+interior structure, and interpret the differences.
+
+* Instructions
+
+ - Follow the [[https://docs.mesastar.org/en/latest/][MESA]] documentation to install the code
+ - Follow the tutorial to run MESA: this will be your Z_{\odot} 15M_{\odot} star!
+ - By reading the documentation, figure out which options to change
+   to set Z=0 (*hint*: there should be more than one!), and run a
+   second, Z=0 15M_{\odot} star (otherwise identical to the tutorial model)
+ - Plot as many things as you wish to understand the physical
+   differences between the two models and write up a short text (<4
+   pages including figures) with your findings. Focus on the interior
+   structure /and/ the consequences for the outer layers.

@@ -11,3 +11,30 @@ Observatory of the University of Arizona in the Fall semester 2024.
  - [[./org-content/projects.org][Projects and presentations]]
 
 For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
+
+* Technical details
+
+The lecture notes are written as =org= files available in [[./org-content]]
+and exported to =html= (available [[https://www.as.arizona.edu/~mrenzo/courses/index.html][online here]], the output of the export
+also relies on the =css= and =html= templates in [[./html-content]]), and in
+=pdf= for printing and annotating before I give a lecture.
+
+** How to build it?
+
+The script =build.sh= is the main script to build the website. It first
+checks if the flag =all= was passed as an argument, in which case it
+will build all the =org= files, otherwise it will look for the =org=-files
+that have been modified and only build those.
+
+The script actually calls emacs to do the build (with =-Q= flag so the
+process does not depend on my specific emacs configuration), which is
+run by =build.sh= in =script= mode to run the =elisp= script =build-site.el=.
+
+=build-site.el= checks for the =htmlize= and =ox-publish= packages, and
+installs them locally if they are not available, then exports to =html=
+the appropriate files (either all the =org= files or the ones modified
+since the last commit) to the folder =html-content=, and hands back the
+control to =build.sh=, which finishes things by pushing to this repo and
+rsync the =html= files from the server where I host the website (this is
+just because the server is very old and I cannot have a modern version
+of emacs to build directly there).

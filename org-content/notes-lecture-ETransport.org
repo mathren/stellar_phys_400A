@@ -22,7 +22,6 @@ dm = 4\pi \rho r^{2} dr \ \ .
 \end{equation}
 #+end_latex
 
-
 *Equation of state:*
 #+begin_latex
 \begin{equation}\label{eq:EOS}
