@@ -59,7 +59,7 @@ systematic uncertainties which are active topic of research
 
 ** Envelope convection in a red super-giant ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...929..156G/abstract][Goldberg et al. 2022]])
 
- [][]
+ [[https://youtu.be/Cq5EqDkXFhQ]]
 
  This is a 3D radiation-hydrodynamics simulation of large portions of
  the envelope of a red supergiant (not that different from
