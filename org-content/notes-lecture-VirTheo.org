@@ -38,10 +38,10 @@ Note that here r_{i} and F_{i} are vector quantities. We take the
 first-order spatial moment of this distribution, which means we take
 the dot product of each term by the position of the particles and sum
 over all the particles. Why? The reason is /to make something like the
-work done by forces appear in the second term/:
+work done by forces (and thus the potential energy) appear in the second term/:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:first_moment_second_law}
 \sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i} = \sum_{i} F_{i} \cdot r_{i}
 \end{equation}
 #+end_latex
@@ -57,7 +57,7 @@ derivative:
 
 #+begin_latex
 \begin{equation}
-\sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i}  = \sum_{i} \frac{1}{2} m_{i} \frac{d^{2}}{dt^{2}}r^{2} - \sum_{i} m_{i} \cdot \dot{r_{i}}^{2}
+\sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i}  = \sum_{i} \frac{1}{2} m_{i} \frac{d^{2}}{dt^{2}}r_{i}^{2} - \sum_{i} m_{i} \cdot \dot{r_{i}}^{2}
 \end{equation}
 #+end_latex
 
@@ -66,7 +66,7 @@ particles to be constant) twice the second time derivative of the
 moment of inertia I = \sum_{i} m_{i} r_{i}^{2} and twice the kinetic energy E_{kin} = \sum_{i
 }m_{i} v_{i}^{2}/2 (because of course v_{i} = dr_{i}/dt). So putting the r.h.s. of
 this last equation in the first spatial moment of Newton's second law
-we obtain:
+(Eq. \ref{eq:first_moment_second_law}) we obtain:
 
 #+begin_latex
 \begin{equation}
@@ -112,10 +112,21 @@ E_\mathrm{tot} = \mathrm{E_\mathrm{kin}}_{1} + \mathrm{E_\mathrm{kin}}_{2} + \ma
 #+end_latex
 where in the last term we are using Kepler's laws. The gravitational
 potential energy is E_{pot} = -GM_{1}M_{2}/a, thus making it explicit we
-obtain: E_{kin} = |E_{pot}|/2. Since Keplerian orbits in Newtonian gravity are
-stable, this implies that the second (and first) time-derivative of
-the moment of inertia of the orbit is zero, and thus this /is/ the
-virial theorem! /Keplerian binary orbits are "virialized"/.
+obtain: E_{kin} = |E_{pot}|/2. Since Keplerian orbits in Newtonian gravity
+are stable (radiation of energy through gravitational waves make this
+statement not physically true, but this is only relevant for close
+binaries of compact objects), this implies that the second (and first)
+time-derivative of the moment of inertia of the orbit is zero, and
+thus this /is/ the virial theorem! /Keplerian binary orbits are
+"virialized"/.
+
+*N.B.:* Here we considered the case of just 2 particles, but nothing
+stops us to consider i=2...N with N that can reach \sim 10^{6} and apply the
+virial theorem to /clusters/ of stars. Indeed, the virial theorem is
+useful to initialize the positions and velocities of stars in a
+simulated cluster (the question usually is whether the second-time
+derivative of the cluster's moment of inertia can or cannot be
+approximated with zero).
 
 ** Derivation for stars
 Let's now re-derive the Virial theorem for a star. Let's assume a
