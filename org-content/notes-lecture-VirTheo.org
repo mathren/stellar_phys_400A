@@ -297,10 +297,10 @@ mean temperature by
 E_\mathrm{int} = \frac{\# \mathrm{degrees\ of\ freedom}}{2}Nk_{B}\langle T \rangle
 \end{equation}
 #+end_latex
-where N = M/(\mu m_{u}) is the number of particles, with \mu mean molecular
-weight, <T> is the average temperature in the star, and the number of
-degrees of freedom is 3 for a monoatomic gas. From the Virial theorem
-it follows that:
+where N = \int \rho/(\mu m_{u})dV = M/(\mu m_{u)} is the number of particles, with \mu
+mean molecular weight assumed to be constant, <T> is the average
+temperature in the star, and the number of degrees of freedom is 3 for
+a monoatomic gas. From the Virial theorem it follows that:
 
 #+begin_latex
 \begin{equation}
