@@ -257,10 +257,16 @@ changes sign. If E_{tot}>0 the stellar gas is unbound: the kinetic energy
 is sufficient to overcome the gravitational potential and the gas will
 fly out.
 
-One can encounter cases in stellar evolution where \Gamma\le 4/3 e.g.,
-because of recombination that changes the mean molecular weight, or
-pair-production in the stellar interior triggering a (pulsational)
-pair-instability supernova!
+One can encounter cases in stellar evolution where \Gamma\le 4/3 (e.g.,
+because of recombination that changes the mean molecular weight or
+pair-production). In general though \Gamma is /not/ constant throughout the
+star as we assumed to pull the \Gamma-1 factor out of the integral. In
+physical situations where \Gamma\leq 4/3 this typically occurs first locally
+somewhere in the star, and there can be a /local/ rearrangement of the
+stellar gas that prevents catastrophic consequences. However, this
+local rearrangements are not always sufficient or even possible, and
+sometimes /global/ consequences of the impossibility of stability occur:
+for example (pulsational) pair instability supernovae.
 
 :Question:
 - *Q*: for a star made only of photons, what is \Gamma?
