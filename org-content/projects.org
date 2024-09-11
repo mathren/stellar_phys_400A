@@ -178,3 +178,13 @@ This counts for 10% of this assignment, corresponding to 4% of total grade
   |          | improved. The tone is supportive and comments  |                                        | seem only marginally relevant | the receiving end of it, they would feel       |
   |          | are fair and useful (as opposed to nitpicky).  |                                        |                               | discouraged instead of helped.                 |
   |----------+------------------------------------------------+----------------------------------------+-------------------------------+------------------------------------------------|
+
+
+
+* Honors project
+
+To get honors credits for this class, on top of the project described
+above, you will do a stellar evolution theory project using the [[https://docs.mesastar.org/en/latest/][MESA]]
+code on your own laptop to investigate in more depth some aspect that
+we will only barely mention in class. [[./honors.org][Follow this link to see an
+example honors project]].
