@@ -266,7 +266,9 @@ somewhere in the star, and there can be a /local/ rearrangement of the
 stellar gas that prevents catastrophic consequences. However, this
 local rearrangements are not always sufficient or even possible, and
 sometimes /global/ consequences of the impossibility of stability occur:
-for example (pulsational) pair instability supernovae.
+for example the theorized (pulsational) pair instability supernovae
+where a (very) massive star is completely obliterated and leaves
+behind no black hole.
 
 :Question:
 - *Q*: for a star made only of photons, what is \Gamma?
