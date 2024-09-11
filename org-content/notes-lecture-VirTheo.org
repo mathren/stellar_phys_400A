@@ -42,7 +42,7 @@ work done by forces appear in the second term/:
 
 #+begin_latex
 \begin{equation}
-\left{ \sum_{i} m_{i}\ddot{r_{i}} = \sum_{i} F_{i} \right} \cdot r_{i}
+\sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i} = \sum_{i} F_{i} \cdot r_{i}
 \end{equation}
 #+end_latex
 
