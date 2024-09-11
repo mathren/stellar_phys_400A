@@ -190,7 +190,7 @@ specific entropy s, and also re-write this in terms of density instead
 of specific volume v=(1 mass unit)/\rho:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:second_thermodynamics_law}
 dq = Tds = du + Pdv =du -\frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
 #+end_latex
@@ -201,8 +201,9 @@ related to dynamics (which acts fast compared to thermal processes!),
 let's consider an adiabatic process where by definition there is no
 heat exchange. Thus, dq=0 and du = P/\rho^{2} d\rho.
 
-Now by differentiating \Phi P/\rho =u we get du = \Phi (dP/\rho - P/\rho^{2} d\rho)
-\equiv P/\rho^{2}, that can be re-arranged into \Phi/(1+\Phi) dP/P = d\rho/\rho, or in other
+Now by differentiating u = \Phi P/\rho we get du = \Phi (dP/\rho - P/\rho^{2} d\rho)
+\equiv P/\rho^{2} d\rho (where we use Eq. \ref{eq:second_thermodynamics_law} with
+dq=0 in the last step), that can be re-arranged into \Phi/(1+\Phi) dP/P = d\rho/\rho, or in other
 words \Phi/(1+\Phi) = d log(P)/d log(\rho) = \Gamma_{1} because the derivative has to
 be taken assuming no heat exchange, that is at constant entropy.
 Ultimately, we can put all this together and write P/\rho = (\Gamma-1)u, where
