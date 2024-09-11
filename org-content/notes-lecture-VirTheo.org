@@ -178,11 +178,30 @@ Let's interpret the l.h.s., which in the general derivation would be
 part of the \sum_{i} F\cdot r_{i} term. By dimensional analysis we know it has
 to have the dimension of an energy. In fact, still by dimensional
 analysis we can infer that [P/\rho] = [E]/[L^{3}] / [M]/[L^{3}] = [E]/[M] has
-the units of a specific energy per unit mass, and thus P/\rho \prop u with u
-specific internal energy. For now, let's call the proportionality
-constant (\Gamma-1). It can be shown using the first law of thermodynamics
-assuming an adiabatic process (i.e., no heat exchange) that \Gamma\equiv\Gamma_{1} is
-the first adiabatic index, so P/\rho = (\Gamma_{1}-1)u, so we can write:
+the units of a specific energy (i.e., energy per unit mass), and thus
+P/\rho \prop u with u specific internal energy.
+
+To specify the proportionality constant, let's consider the second law
+of thermodynamics per unit mass: /the heat exchanged by a gas/ (dq) /is
+equal to the change in internal energy/ (du) plus the work done (pdv).
+We can use this to /define/ the specific entropy s, and also re-write
+this in terms of density instead of specific volume v=1/\rho
+
+#+begin_latex
+\begin{equation}
+dq = Tds = du + pdv =du -\frac{P}{\rho^{2}}d\rho \ \ ,
+\end{equation}
+#+end_latex
+
+For an adiabatic process by definition there is no heat exchange
+(let's focus on this to derive a relation between u, P, and \rho). Thus,
+dq=0 and du = P/\rho^{2} d\rho, but also P \propto \rho^{\Gamma}_{} with \Gamma
+adiabatic index. We can then differentiate P/\rho \prop u and substitute in
+the differential relation given by the second law of thermodynamics to
+obtain that P/\rho = (\Gamma-1)u, where \Gamma\equiv\Gamma_{1} is the first adiabatic index.
+
+Finally, substituting in the first-order moment of the hydrostatic
+equilibrium equation we have:
 
 #+begin_latex
 \begin{equation}
