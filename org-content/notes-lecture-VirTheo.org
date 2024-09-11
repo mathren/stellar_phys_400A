@@ -183,13 +183,14 @@ P/\rho \prop u with u specific internal energy.
 
 To specify the proportionality constant, let's consider the second law
 of thermodynamics per unit mass: /the heat exchanged by a gas/ (dq) /is
-equal to the change in internal energy/ (du) plus the work done (pdv).
-We can use this to /define/ the specific entropy s, and also re-write
-this in terms of density instead of specific volume v=1/\rho
+equal to the change in internal energy/ (du) plus the work done (pdv,
+with v the specific volume, i.e. the volume per unit mass). We can use
+this to /define/ the specific entropy s, and also re-write this in terms
+of density instead of specific volume v=(1 mass unit)/\rho:
 
 #+begin_latex
 \begin{equation}
-dq = Tds = du + pdv =du -\frac{P}{\rho^{2}}d\rho \ \ ,
+dq = Tds = du + Pdv =du -\frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
 #+end_latex
 
