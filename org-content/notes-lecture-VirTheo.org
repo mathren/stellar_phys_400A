@@ -9,12 +9,13 @@ N. Shore, pages 134-139 Clayton's book.
 
 In the [[./notes-lecture-EOS1.org][previous lecture]], we have discussed that it is appropriate to
 use thermodynamics to describe the /local/ properties of the stellar
-gas. We have before also determine that (self-)gravity determines the
+gas. We had already established that (self-)gravity determines the
 pressure gradient in the star through the hydrostatic equilibrium
 equation (which is just the particular form that momentum conservation
 takes in a stellar context). Therefore, in this lecture we will
 explore the relation there may be between gravitational physics and
-thermodynamics.
+thermodynamics which will allow us to get some crucial facts about
+stars.
 
 /The virial theorem connects gravitational physics and thermodynamics/.
 It is a statistical statement on mutually interacting (e.g., because
@@ -22,7 +23,7 @@ of self-gravity!) particles, and thus it is very general. The
 etymology of the name comes from "vir" which is latin for "forces".
 
 ** Complete derivation
-Let's start with the most general derivation (see for example
+Let's start with a very general derivation (see for example
 Goldstein's classical mechanics book or Shore's Tapesty of Modern
 Astrophysics Sec. 1.5). For a collection of particles with (constant)
 mass m_{i}, Netwon's second law states that the change in their momentum
@@ -74,17 +75,17 @@ this last equation in the first spatial moment of Newton's second law
 \end{equation}
 #+end_latex
 
-This is the most-general form of the Virial theorem derived by
-Clausius. In general, in the virial theorem there is a second
-derivative of the moment of inertia on the r.h.s., which is often
-forgotten. We did not specify almost anything about the system (see
-Goldstein for a momentum-based derivation where the assumption of
-constant masses m_{i} of the particles implicit in the way we wrote
-Newton's second law is not even needed). It effectively says that /for
-a bound system of self-interacting particles/, /there is a limited
-amount of potential energy that can be extracted/, because part of the
-/potential will need to go into the kinetic terms and the acceleration
-of the moment of inertia/.
+This is the general form of the Virial theorem derived by Clausius. In
+general, in the virial theorem there is a second derivative of the
+moment of inertia on the r.h.s., which is often forgotten. We did not
+specify almost anything about the system (see Goldstein for a
+momentum-based derivation where the assumption of constant masses m_{i}
+of the particles implicit in the way we wrote Newton's second law is
+not even needed). It effectively says that /for a bound system of
+self-interacting particles/, /there is a limited amount of potential
+energy that can be extracted/, because part of the /potential will need
+to go into the kinetic terms and the acceleration of the moment of
+inertia/.
 
 So far, this general form doesn't give us much intuition on its
 meaning. We have a relation between the kinetic energy of a collection
@@ -124,9 +125,9 @@ thus this /is/ the virial theorem! /Keplerian binary orbits are
 stops us to consider i=2...N with N that can reach \sim 10^{6} and apply the
 virial theorem to /clusters/ of stars. Indeed, the virial theorem is
 useful to initialize the positions and velocities of stars in a
-simulated cluster (the question usually is whether the second-time
-derivative of the cluster's moment of inertia can or cannot be
-approximated with zero).
+simulated self-gravitating cluster such as globular clusters (the
+question usually is whether the second-time derivative of the
+cluster's moment of inertia can or cannot be approximated with zero).
 
 ** Derivation for stars
 Let's now re-derive the Virial theorem for a star. Let's assume a
@@ -171,10 +172,10 @@ Note that if we had kept a non-zero \rho \times a term in Eq. \ref{eq:HSE}, we
 would again obtain a term depending on the moment of inertia and the
 bulk kinetic energy of the stellar gas (see for example sec. 4.2.1 in
 Shore's "Tapestry of modern astrophysics"). We have already
-interpreted the r.h.s. as the gravitational potential energy
+interpreted the l.h.s. as the gravitational potential energy
 (normalized to zero at infinity) in Eq. \ref{eq:pot}.
 
-Let's interpret the l.h.s., which in the general derivation would be
+Let's interpret the r.h.s., which in the general derivation would be
 part of the \sum_{i} F\cdot r_{i} term. By dimensional analysis we know it has
 to have the dimension of an energy. In fact, still by dimensional
 analysis we can infer that [P/\rho] = [E]/[L^{3}] / [M]/[L^{3}] = [E]/[M] has
