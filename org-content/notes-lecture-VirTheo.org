@@ -203,11 +203,12 @@ heat exchange. Thus, dq=0 and du = P/\rho^{2} d\rho.
 
 Now by differentiating u = \Phi P/\rho we get du = \Phi (dP/\rho - P/\rho^{2} d\rho)
 \equiv P/\rho^{2} d\rho (where we use Eq. \ref{eq:second_thermodynamics_law} with
-dq=0 in the last step), that can be re-arranged into \Phi/(1+\Phi) dP/P = d\rho/\rho, or in other
-words \Phi/(1+\Phi) = d log(P)/d log(\rho) = \Gamma_{1} because the derivative has to
-be taken assuming no heat exchange, that is at constant entropy.
-Ultimately, we can put all this together and write P/\rho = (\Gamma-1)u, where
-\Gamma\equiv\Gamma_{1} is the first adiabatic index.
+dq=0 in the last step), that can be re-arranged into \Phi/(1+\Phi) dP/P =
+d\rho/\rho, or in other words (1+\Phi)/\phi = d log(P)/d log(\rho) \equiv \Gamma_{1} because the
+derivative has to be taken assuming no heat exchange, that is at
+constant entropy, so that is by definition the first adiabatic index
+\Gamma_{1}. Ultimately, we can put all this together and write P/\rho = (\Gamma-1)u,
+where \Gamma\equiv\Gamma_{1} is the first adiabatic index.
 
 Finally, substituting in the first-order moment of the hydrostatic
 equilibrium equation we have:
