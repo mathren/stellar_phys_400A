@@ -185,10 +185,10 @@ P/\rho.
 
 To specify \Phi, let's consider the second law of thermodynamics per unit
 mass: /the heat exchanged by a gas/ (dq) /is equal to the change in
-internal energy/ (du) plus the work done (pdv, with v the specific
+internal energy/ (du) /plus the work done/ (pdv, with v the specific
 volume, i.e. the volume per unit mass). We can use this to /define/ the
 specific entropy s, and also re-write this in terms of density instead
-of specific volume v=(1 mass unit)/\rho:
+of specific volume v=(1 mass unit)/\rho \Rightarrow dv = -d\rho/\rho^{2}:
 
 #+begin_latex
 \begin{equation}\label{eq:second_thermodynamics_law}
@@ -205,7 +205,7 @@ heat exchange. Thus, dq=0 and du = P/\rho^{2} d\rho.
 Now by differentiating u = \Phi P/\rho we get du = \Phi (dP/\rho - P/\rho^{2} d\rho)
 \equiv P/\rho^{2} d\rho (where we use Eq. \ref{eq:second_thermodynamics_law} with
 dq=0 in the last step), that can be re-arranged into \Phi/(1+\Phi) dP/P =
-d\rho/\rho, or in other words (1+\Phi)/\phi = d log(P)/d log(\rho) \equiv \Gamma_{1} because the
+d\rho/\rho, or in other words (1+\Phi)/\Phi = d log(P)/d log(\rho) \equiv \Gamma_{1} because the
 derivative has to be taken assuming no heat exchange, that is at
 constant entropy, so that is by definition the first adiabatic index
 \Gamma_{1}. Ultimately, we can put all this together and write P/\rho = (\Gamma-1)u,
@@ -234,7 +234,7 @@ For a monoatomic gas where each particle has 3 degrees of freedom
 (motion in 3 direction, no internal degrees of freedom for
 point-particles), \Gamma = 5/3, and we obtain E_{pot} = 2 E_{int} where the
 internal energy is due to the thermal motion of gas, in agreement with
-the general form assuming hydrostatic equilibrium.
+the general form assuming hydro-/static/ equilibrium (\Rightarrow d^{2} I/dt^{2} =0).
 
 Now lets define the total energy of the gas: E_{tot} = E_{pot} + E_{int}. For a
 star to be bound, E_{tot}<0.
@@ -262,7 +262,7 @@ One can encounter cases in stellar evolution where \Gamma\le 4/3 (e.g.,
 because of recombination that changes the mean molecular weight or
 pair-production). In general though \Gamma is /not/ constant throughout the
 star as we assumed to pull the \Gamma-1 factor out of the integral. In
-physical situations where \Gamma\leq 4/3 this typically occurs first locally
+physical situations where \Gamma\leq 4/3 this typically occurs first /locally/
 somewhere in the star, and there can be a /local/ rearrangement of the
 stellar gas that prevents catastrophic consequences. However, this
 local rearrangements are not always sufficient or even possible, and
