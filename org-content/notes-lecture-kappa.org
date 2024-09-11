@@ -335,7 +335,10 @@ If \kappa(m) decreases as we move outward to larger mass coordinates m,
 L_{edd} \propto \kappa^{-1} will decrease, sometimes /faster/ than L(m),
 leading to the situation L(m) \geq L_{Edd}(\kappa(m)) which is problematic.
 
-Using =MESA-web=, compute a X M_{\odot} star saving multiple profiles, and
-plot \kappa(m) and or \kappa(T) for the outer layers. Plot also L(m) and L_{edd}(m,
-\kappa) and identify what happens in layers where L exceeds L_{edd}. We will
+Using =MESA-web=, compute a \ge30 M_{\odot} star until the maximum central
+temperature reaches above \ge 10^{8.5} K. Make sure to save multiple
+profile files. Plot a series of \kappa(m) and/or \kappa(T) for the outer layers,
+and identify peaks that occur (*Hint*: this may be more easily done
+looking at \kappa(T)). Plot also L(m) and L_{edd}(m, \kappa) and, using your model,
+try to identify what happens in layers where L exceeds L_{edd}. We will
 discuss this in more detail in the next lecture.
