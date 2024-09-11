@@ -172,18 +172,24 @@ would again obtain a term depending on the moment of inertia and the
 bulk kinetic energy of the stellar gas (see for example sec. 4.2.1 in
 Shore's "Tapestry of modern astrophysics"). We have already
 interpreted the r.h.s. as the gravitational potential energy
-(normalized to zero at infinity) in Eq. \ref{eq:pot}. Let's interpret
-the l.h.s., which in the general derivation would be part of the \sum_{i}
-F\cdot r_{i} term. By dimensional analysis we know it has to have the
-dimension of an energy, and in fact we know from the [[file:notes-lecture-EOS1.org::*Equation of state 1/2][EOS]] that P/\rho =
-(\Gamma-1)u with \Gamma\equiv\Gamma_{1} the first adiabatic index and u specific (i.e. per
-unit mass) thermal energy of the gas, so we can write:
+(normalized to zero at infinity) in Eq. \ref{eq:pot}.
+
+Let's interpret the l.h.s., which in the general derivation would be
+part of the \sum_{i} F\cdot r_{i} term. By dimensional analysis we know it has
+to have the dimension of an energy. In fact, still by dimensional
+analysis we can infer that [P/\rho] = [E]/[L^{3}] / [M]/[L^{3}] = [E]/[M] has
+the units of a specific energy per unit mass, and thus P/\rho \prop u with u
+specific internal energy. For now, let's call the proportionality
+constant (\Gamma-1). It can be shown using the first law of thermodynamics
+assuming an adiabatic process (i.e., no heat exchange) that \Gamma\equiv\Gamma_{1} is
+the first adiabatic index, so P/\rho = (\Gamma_{1}-1)u, so we can write:
 
 #+begin_latex
 \begin{equation}
 3\int_{0}^{M} \frac{P}{\rho} dm = 3\int_{0}^{M} (\Gamma-1)u dm \ \ .
 \end{equation}
 #+end_latex
+
 Assuming that \Gamma is constant throughout the star, we can take the
 parenthesis out of the integral. We can define E_{int} = \int_{0}^{M} u dm
 and rewrite the above as 3(\Gamma-1)E_{int}, and thus
