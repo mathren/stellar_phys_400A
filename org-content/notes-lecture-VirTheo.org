@@ -62,10 +62,11 @@ derivative:
 #+end_latex
 
 And now we have on the right hand side (assuming the mass of the
-particles to be constant) twice the second time derivative of the moment of
-inertia I = \sum_{i} m_{i} r_{i}^{2} and twice the kinetic energy E_{kin} = \sum_{i }m_{i} v_{i}^{2}/2. So
-putting the r.h.s. of this last equation in the first spatial moment
-of Newton's second law we obtain:
+particles to be constant) twice the second time derivative of the
+moment of inertia I = \sum_{i} m_{i} r_{i}^{2} and twice the kinetic energy E_{kin} = \sum_{i
+}m_{i} v_{i}^{2}/2 (because of course v_{i} = dr_{i}/dt). So putting the r.h.s. of
+this last equation in the first spatial moment of Newton's second law
+we obtain:
 
 #+begin_latex
 \begin{equation}
