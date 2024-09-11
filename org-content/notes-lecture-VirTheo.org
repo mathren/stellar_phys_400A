@@ -304,7 +304,7 @@ a monoatomic gas. From the Virial theorem it follows that:
 
 #+begin_latex
 \begin{equation}
-E_\mathrm{int} = - E_\mathrm{pot}/2 \Rightarrow \frac{3}{2} \frac{M}{\mu m_{u}} k_{B}\langle T \rangle = C \frac{GM^{2}}{R} \ \ ,
+E_\mathrm{int} = - \frac{E_\mathrm{pot}}{2} \Rightarrow \frac{3}{2} \frac{M}{\mu m_{u}} k_{B}\langle T \rangle = C \frac{GM^{2}}{R} \ \ ,
 \end{equation}
 #+end_latex
 where C = {\int_{0}^{M} Gmdm/r}/{GM^{2}/R} is a constant of O(1) that depends on
