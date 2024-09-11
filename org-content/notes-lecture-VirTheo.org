@@ -17,9 +17,9 @@ explore the relation there may be between gravitational physics and
 thermodynamics.
 
 /The virial theorem connects gravitational physics and thermodynamics/.
-It is a statistical statement on mutually interacting (e.g. because of
-self-gravity!) particles, and thus it is very general. The etymology of
-the name comes from "vir" which is latin for "forces".
+It is a statistical statement on mutually interacting (e.g., because
+of self-gravity!) particles, and thus it is very general. The
+etymology of the name comes from "vir" which is latin for "forces".
 
 ** Complete derivation
 Let's start with the most general derivation (see for example
@@ -38,11 +38,11 @@ Note that here r_{i} and F_{i} are vector quantities. We take the
 first-order spatial moment of this distribution, which means we take
 the dot product of each term by the position of the particles and sum
 over all the particles. Why? The reason is /to make something like the
-net potential energy appear in the second term/:
+work done by forces appear in the second term/:
 
 #+begin_latex
 \begin{equation}
-\sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i} = \sum_{i} F_{i} \cdot r_{i}
+\left{ \sum_{i} m_{i}\ddot{r_{i}} = \sum_{i} F_{i} \right} \cdot r_{i}
 \end{equation}
 #+end_latex
 
