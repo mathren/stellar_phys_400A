@@ -377,7 +377,7 @@ where we have used the virial theorem and set C\simeq1. We can scale all
 the quantities to Solar values and obtain:
 #+begin_latex
 \begin{equation}\label{eq:KH_timescale_scaling}
-\tau_{KH} \simeq 10^{7} \mathrm{years} \times \left(\frac{M}{M_{\odot}}\right)^{2} \left(\frac{R}{R_{\odot}}\right)^{-1 }\left(\frac{L}{L_{\odot}}\right)^{-1} \ \ .
+\tau_{KH} \simeq 1.57 \times 10^{7} \mathrm{years} \times \left(\frac{M}{M_{\odot}}\right)^{2} \left(\frac{R}{R_{\odot}}\right)^{-1 }\left(\frac{L}{L_{\odot}}\right)^{-1} \ \ .
 \end{equation}
 #+end_latex
 Clearly \tau_{KH} \gg \tau_{ff}, and also \gg {human timescales}: it is hard to

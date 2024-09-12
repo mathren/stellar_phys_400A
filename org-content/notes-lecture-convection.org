@@ -117,7 +117,13 @@ than \tau_{conv}).
 
 To derive a stability criterion, let's assume to start from a stable
 situation, where the temperature gradient is determined by the
-(radiative) diffusion of energy: dT/dr \propto
+(radiative) diffusion of energy: dT/dr \propto \kappa L/(4\pi r^{2}).
+
+Let's consider a parcel of gas initially in equilibrium with its
+surroundings at pressure P_{1} and density \rho_{1}. To determine a stability
+criterion, let's perturb such parcel by displacing it by a certain
+(small) amount \ell and discuss how the parcel reacts: if the parcel
+wants to move further
 
 
 * Mixing length theory
