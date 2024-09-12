@@ -416,8 +416,7 @@ Using the model of the 1M_{\odot} star computed earlier with =MESA-web=
   of roughly the same age as the Sun. Label the age of the star for
   the corresponding profile.
 
-
-** The Sun with no nuclear energy sources
+** The Sun with no energy sources
 
 Let's use =MESA-web= to revisit the late 19^{th} century/early 20^{th} century
 debate on the age of the Earth/Sun. (Astro)physicists calculated the
