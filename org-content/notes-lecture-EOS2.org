@@ -372,7 +372,7 @@ rewrite the above as
 
 #+begin_latex
 \begin{equation}
-\mu = \frac{\rho}{m_{u}n}\frac{1}{1+E} \equiv \frac{\mu_{0}}{1+E} \equiv \mu_{e}\frac{E}{1+E} \ \.
+\mu = \frac{\rho}{m_{u}n}\frac{1}{1+E} \equiv \frac{\mu_{0}}{1+E} \equiv \mu_{e}\frac{E}{1+E} \ \ .
 \end{equation}
 #+end_latex
 
