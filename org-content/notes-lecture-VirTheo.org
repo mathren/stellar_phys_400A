@@ -281,7 +281,8 @@ Let's say that for some reason this star is contracting (e.g., because
 it is in its formation process). Let's assume this contraction is
 quasi-static, meaning that at any point in time the hydrostatic
 equilibrium assumption holds, and all the bulk motion of the gas is
-highly sub-sonic.
+very slow compared to thermal velocities, that is v\ll v_{th} = (2k_{B}T/m)^{1/2},
+and thus also highly sub-sonic, v\ll c_{sound}.
 
 The contraction increases the gravitational potential energy E_{pot}
 \prop - GM^{2}/R since M is by assumption constant and R decreases. The total
@@ -399,17 +400,17 @@ Shaviv "Life of stars" for a detailed discussion.
 * Homework
 
 Using the virial theorem:
-- find a relation between the average sound speed in the star and the
-  escape velocity (assume the star is made of ideal gas of temperature
-  <T>).
+- find an order of magnitude (\sim) relation between the average sound
+  speed in the star and the escape velocity (assume the star is made
+  of ideal gas of temperature <T>).
 - demonstrate that if a binary loses instantaneously an amount of mass
   greater than half the total mass of the binary, \Delta M \ge (M_{1}+M_{2})/2,
   then the orbit is unbound. This can happen when a supernova goes off
-  in a binary!
+  in a binary (cf. [[https://ui.adsabs.harvard.edu/abs/1961BAN....15..265B/abstract][Blaauw 1961]])!
 - estimate the average temperature of the Sun and compare it with its
   surface temperature. Is the Sun in global thermal equilibrium?
 - determine a condition for the minimum mass of a gas cloud to
-  collapse as a function of its temperature and density (hint:
+  collapse as a function of its temperature and density (*Hint*:
   collapse \Leftrightarrow d^{2} I/dt^{2}<0)
 
 Using the model of the 1M_{\odot} star computed earlier with =MESA-web=
@@ -429,20 +430,22 @@ biologists instead argued for a much longer age.
 Let's assume we know the age of the Earth to be 4.5\times10^{9} years (this is
 what the geologist and biologists argued!), but let's assume, like
 physicists had to before knowing nuclear physics, that there is no
-energy source in the Sun. In =MESA-web=, there is a =Burning Modifiers=
-option where you can disable energy release and chemical evolution.
-Make a model of a 1M_{\odot} star without energy release and/or chemical
-evolution, until 4.5\times10^{9} years, and plot an HR diagram. Plot also the
-1M_{\odot} star you ran previously (which should have included the
-nuclear energy release and chemical evolution).
+internal energy source in the Sun. In =MESA-web=, there is a =Burning
+Modifiers= option where you can disable energy release and chemical
+evolution. Make a model of a 1M_{\odot} star without energy release
+and/or chemical evolution, until 4.5\times10^{9} years, and plot an HR
+diagram. Plot also the 1M_{\odot} star you ran previously (which should
+have included the nuclear energy release and chemical evolution).
 
 *N.B.:* we can make a computer code do whatever we want! Never take
 computer simulations as ground truth, they are /at best/ only as good as
 the input!
 
-
+Write up a short paragraph answering the following:
 - Which agrees better with the observation of the real Sun at the
   Earth's age?
+- What is its radius and how does it compare to the measured R_{\odot}?
+  (*hint*: you can plot the lines at constant radius on the HRD, or read
+  the outermost radius from the last =profile*.data= file you saved)
 - What is the average density of the model without energy generation?
-- What is its radius (hint: you can plot the lines at constant radius
-  on the HRD)?
+  (an order of magnitude estimate is sufficient for the purpose).
