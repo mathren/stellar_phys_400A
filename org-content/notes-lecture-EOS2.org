@@ -331,12 +331,12 @@ the atmosphere charging a cloud and preparing it for lightning
 discharge) or *radiative* (e.g., photoionization in the photoelectric
 effect that won Einstein the Nobel prize).
 
-For an element with Z electrons there are Z+1 ions, from the neutral
-atom to the fully stripped nucleus with no electrons attached to it
-For historical reasons, these are often indicated with the element
-symbol followed by a roman number from I - for the neutral atom to Z+1
-in roman numbers for the fully ionized ion, e.g., HII for fully
-ionized hydrogen.
+For an element with Z electrons there are Z+1 possible ions, from the
+neutral atom to the fully stripped nucleus with no electrons attached
+to it. For historical reasons, these are often indicated with the
+element symbol followed by a roman number from I - for the neutral
+atom to Z+1 in roman numbers for the fully ionized ion, e.g., HII for
+fully ionized hydrogen (cf. [[file:notes-lecture-CMD-HRD.org::*A modern view on spectra][digression on spectra in the CMD/HRD lecture]]).
 
 So far in our discussion of the EOS, we have considered always this
 last case. Since the atomic binding energies are of order of \sim1-10 eV
