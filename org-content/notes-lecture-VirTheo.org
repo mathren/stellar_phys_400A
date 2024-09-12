@@ -434,7 +434,7 @@ and/or chemical evolution, until 4.5\times10^{9} years, and plot an HR
 diagram. Plot also the 1M_{\odot} star you ran previously (which should
 have included the nuclear energy release and chemical evolution).
 
-*N.B.:* we can make a computer code do whatever we want! Never take
+*N.B.:* we can make a computer code do whatever we want! /Never/ take
 computer simulations as ground truth, they are /at best/ only as good as
 the input!
 
