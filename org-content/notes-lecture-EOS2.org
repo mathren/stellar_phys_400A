@@ -126,44 +126,44 @@ particles making up the star, which can be either
   condensate all particles occupy the level with lowest \varepsilon - this may
   be relevant in the interior structure of neutron stars for example).
 
-  The total number of particles with momentum between p and p+dp is
-  thus given by f(\varepsilon(p))g(p)dp for an appropriate choice of f depending
-  on the particle considered (f=f_{FD} or f=f_{BE}). To determine the
-  chemical potential \mu one can impose the normalization following
-  from the total number density of particles:
+The total number of particles with momentum between p and p+dp is
+thus given by f(\varepsilon(p))g(p)dp for an appropriate choice of f depending
+on the particle considered (f=f_{FD} or f=f_{BE}). To determine the
+chemical potential \mu one can impose the normalization following
+from the total number density of particles:
 
-  #+begin_latex
-  \begin{equation}
-  n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ .
-  \end{equation}
-  #+end_latex
+#+begin_latex
+\begin{equation}
+n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ .
+\end{equation}
+#+end_latex
 
-  Let's now consider a gas of electrons. These are the particles in
-  the ionized gas of the star that will first start feeling QM
-  effects, since m_{e} \ll m_{ion} (in fact m_{e} \simeq m_{proton}/1836.15 \simeq
-  m_{proton}/2000), therefore, for a given temperature and density, they
-  will deviate from a classical ideal gas much earlier (cf. Eq.
-  \label{eq:momentum_ratios}).
+Let's now consider a gas of electrons. These are the particles in
+the ionized gas of the star that will first start feeling QM
+effects, since m_{e} \ll m_{ion} (in fact m_{e} \simeq m_{proton}/1836.15 \simeq
+m_{proton}/2000), therefore, for a given temperature and density, they
+will deviate from a classical ideal gas much earlier (cf. Eq.
+\ref{eq:momentum_ratios}).
 
-  In practice, the pressure provided by the /ions/ never becomes
-  affected by QM directly: because of the m^{-3/2} term in the
-  Maxwell-Boltzmann distribution, this would require densities so high
-  that the ions would not exist as ions anymore. Instead the high
-  density would allow for electron captures onto the protons of the
-  ions turning them in neutrons (e^{-} + p \rightarrow n + \nu_{e}). As we will see this
-  is what happens at the very end of the evolution of massive stars
-  that end their life exploding and leaving a neutron-star: those
-  electron capture reactions are where the neutrons come from! The
-  pressure provided by the neutrons does depend on QM effects and it
-  is what sustains the structure of the neutron stars!
+In practice, the pressure provided by the /ions/ never becomes
+affected by QM directly: because of the m^{-3/2} term in the
+Maxwell-Boltzmann distribution, this would require densities so high
+that the ions would not exist as ions anymore. Instead the high
+density would allow for electron captures onto the protons of the
+ions turning them in neutrons (e^{-} + p \rightarrow n + \nu_{e}). As we will see this
+is what happens at the very end of the evolution of massive stars
+that end their life exploding and leaving a neutron-star: those
+electron capture reactions are where the neutrons come from! The
+pressure provided by the neutrons does depend on QM effects and it
+is what sustains the structure of the neutron stars!
 
-  Because the pressure term from electrons (which in the ideal gas EOS
-  is accounted for thanks to our definition of the mean molecular
-  weight) changes because of QM effects first, let's now consider a
-  gas made of electrons only. These particles have spin 1/2, thus they
-  are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and q_{s} = 2 in it
-  (each quantum cell of the phase space 4\pi p^{2}dp dV can be occupied by
-  2 electrons, one with spin up and one with spin down).
+Because the pressure term from electrons (which in the ideal gas EOS
+is accounted for thanks to our definition of the mean molecular
+weight) changes because of QM effects first, let's now consider a
+gas made of electrons only. These particles have spin 1/2, thus they
+are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and q_{s} = 2 in it
+(each quantum cell of the phase space 4\pi p^{2}dp dV can be occupied by
+2 electrons, one with spin up and one with spin down).
 
 ** Fully degenerate electron gas
 
