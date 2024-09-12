@@ -361,9 +361,7 @@ This is by definition the timescale it takes a star to radiate away
 all its internal energy at a constant rate in absence of any other
 energy sources. Let's call L the "luminosity of the star", that is the
 rate at which is loses energy from radiating away photons at its
-surface. Note that L has the units of power:
-
-[L] = [E]/[t]
+surface. Note that L has the units of power [L] = [E]/[t].
 
 Then by definition:
 #+begin_latex
