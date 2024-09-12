@@ -35,7 +35,7 @@ translates in three spatial dimension to
 
 where h^{3} is the volume of a quantized cell in phase-space! Thus the
 available number of quantized states with momentum between p+dp within
-a volume dV is
+a volume dV = dxdydz \equiv d^{3}x is
 
 #+begin_latex
 \begin{equation}
