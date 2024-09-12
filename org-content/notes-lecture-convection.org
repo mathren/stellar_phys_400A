@@ -35,7 +35,7 @@ in stellar calculations, and often the root of many open problems.
 
 Convection is a /thermal/ instability (as we will see it kicks in if the
 temperature gradient is steeper than some threshold condition), and it
-is a phenomenon that is not unique to stars: the monsoon clouds in
+is a phenomenon that is /not/ unique to stars: the monsoon clouds in
 Tucson's summer are also manifestation of convection in the Earth
 atmosphere!
 
@@ -47,10 +47,9 @@ oversimplifications we will use later in this lecture.
 
 It is important to keep in mind that we adopt modeling simplifications
 to make the simulation of stars tractable, but these introduce
-systematic uncertainties which are active topic of research
+systematic uncertainties which are active topic of research.
 
 ** Core convection in a massive star ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]])
-
 
   [[https://vimeo.com/684826914]]
 
@@ -70,10 +69,56 @@ systematic uncertainties which are active topic of research
  [[./images/125M-ONe-3.wmv]]
 
  This is a 2D simulation of convection developing during a nova
- explosions, what is shown is the (log_{10}) mass fraction of neon 20.
+ explosion using the [[https://flash.rochester.edu/site/][FLASH]] code. The movie shows the (log_{10}) mass
+ fraction of neon 20, and is taken from [[http://www.fen.upc.edu/users/jjose/][J. Jordi's personal webpage]]
+ (one of the co-authors).
 
+* The timescale for convection
+
+We can define a timescale associated to the macroscopic motion of
+matter with net zero flux that is carrying energy \tau_{conv} = \Delta r/v_{conv}.
+This is the "convective turnover timescale", where \Delta r is the spatial
+extent of a convective region, and v_{conv} is the velocity of the blobs
+of matter moving around.
+
+In the following we will see how to find \Delta r and get an estimate of
+v_{conv}.
+
+:Question:
+- *Q*: We have already encountered two /global/ timescales relevant to
+  stars, the free fall timescale \tau_{ff} and the Kelvin-Helmholtz
+  timescale \tau_{KH}. \tau_{conv} is instead a /local/ timescale, relevant only
+  to the convective layers. How do you think it compares to the two
+  global timescales we have defined?
+:end:
+
+Since convection is an /instability/ we expect that it kicks in when the
+stability of the matter stratification and transport of energy by the
+other mechanisms we have already discussed breaks down: /convection
+occurs if energy diffusion is insufficient to carry the flux/.
+
+How convection exactly turns on/off and especially how to treat this
+in stellar evolution models is still a debated issue - but we can
+construct a [[*Convective stability criterion: Schwarzschild & Ledoux criterion][stability criterion]], which when violated means we expect
+convection to develop, and [[*Mixing length theory][later on]] we will develop a theoretical
+model for the time- and spatially- averaged steady state which we
+expect to develop when the convective instability saturates.
+Hopefully, stellar /evolution/ timescales are long enough that
+describing the averaged steady state resulting from convection is
+sufficient for our purposes (but there are exceptions, for example
+during explosions of when looking at phenomena on timescales shorter
+than \tau_{conv}).
 
 * Convective stability criterion: Schwarzschild & Ledoux criterion
+
+#+CAPTION: Skematic picture of the convective stability based on Prandtl oversimplified "bubble picture". The right panel shows the gradients. This is Fig. 5.3 in Onno Pols' lecture notes.
+#+ATTR_HTML: :width 100%
+[[./images/conv_blobs.png]]
+
+To derive a stability criterion, let's assume to start from a stable
+situation, where the temperature gradient is determined by the
+(radiative) diffusion of energy: dT/dr \propto
+
 
 * Mixing length theory
 
