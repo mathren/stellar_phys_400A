@@ -138,12 +138,10 @@ n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ .
 \end{equation}
 #+end_latex
 
-Let's now consider a gas of electrons. These are the particles in
-the ionized gas of the star that will first start feeling QM
-effects, since m_{e} \ll m_{ion} (in fact m_{e} \simeq m_{proton}/1836.15 \simeq
-m_{proton}/2000), therefore, for a given temperature and density, they
-will deviate from a classical ideal gas much earlier (cf. Eq.
-\ref{eq:momentum_ratios}).
+Let's now consider a gas of electrons. These are the particles in the
+ionized gas of the star that will first start feeling QM effects,
+since m_{e} \ll m_{ion} (in fact m_{e} \simeq m_{proton}/1836.15 \simeq
+m_{proton}/2000), cf. Eq. \ref{eq:momentum_ratios}.
 
 In practice, the pressure provided by the /ions/ never becomes
 affected by QM directly: because of the m^{-3/2} term in the
@@ -164,6 +162,7 @@ gas made of electrons only. These particles have spin 1/2, thus they
 are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and q_{s} = 2 in it
 (each quantum cell of the phase space 4\pi p^{2}dp dV can be occupied by
 2 electrons, one with spin up and one with spin down).
+
 
 ** Fully degenerate electron gas
 
