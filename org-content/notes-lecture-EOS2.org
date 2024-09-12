@@ -140,9 +140,9 @@ particles making up the star, which can be either
 
   Let's now consider a gas of electrons. These are the particles in
   the ionized gas of the star that will first start feeling QM
-  effects, since m_{e} \ll m_{ion} (in fact m_{e} \simeq m_{proton}/2000),
-  therefore, for a given temperature and density, they have much
-  higher momentum p.
+  effects, since m_{e} \ll m_{ion} (in fact m_{e} \simeq m_{proton}/1836.15 \simeq
+  m_{proton}/2000), therefore, for a given temperature and density, they
+  have much higher momentum p.
 
   In practice, the pressure provided by the /ions/ never becomes
   affected by QM directly: because of the m^{-3/2} term in the
