@@ -169,12 +169,14 @@ are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and q_{s} = 2 in it
   By definition, a fully degenerate gas is one where all the particles
   are in the lowest possible energy state, corresponding to the limit
   T\rightarrow0. Of course, if T\equiv0 there would be no cooling through radiation,
-  the object would not be a /star/ anymore: what this really means is
-  that the thermal energy of the particles is very small compared to
-  the Fermi energy: k_{b}T \ll \varepsilon_{F}. In this limit the thermal
-  and mechanical properties of the gas decouple from each other, and
-  we can assume T\simeq 0 to discuss the mechanical properties, and
-  consider T only for the radiative properties.
+  the object would not be a /star/ anymore (it would be if one wants a
+  "black dwarf", a theoretical idea the Universe is too young to have
+  made, e.g., [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4357C/abstract][Caplan 2020]]). What we really mean by taking the T\rightarrow0
+  limit is that the thermal energy of the particles is very small
+  compared to the Fermi energy: k_{b}T \ll \varepsilon_{F}. In this limit
+  /the thermal and mechanical properties of the gas decouple from each
+  other/, and we can assume T\simeq 0 to discuss the mechanical properties,
+  and consider T only for the radiative properties.
 
   For fermions (like the electrons we are focusing on), this means that
   the electrons occupy a sphere in momentum space with a radius p_{F}
