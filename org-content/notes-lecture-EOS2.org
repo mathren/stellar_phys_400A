@@ -185,10 +185,10 @@ are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and q_{s} = 2 in it
   #+begin_latex
   \begin{equation}
   g_{e}(p)dp = q_{s}\frac{4\pi p^{2}}{h^{3}}dp \equiv \frac{8\pi p^{2}}{h^{3}}dp \ \  \mathrm{for} \ \
-p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
+p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   \end{equation}
   #+end_latex
-  Where we use q_{s}=2 for electrons. To find the value of p_{f} we can use
+  and we used q_{s}=2 for electrons. To find the value of p_{f} we can use
   the normalization coming from the total number density of electrons
 
   #+begin_latex
@@ -202,7 +202,6 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
   We can now calculate the pressure exactly like we did for the
   classical ideal gas (cf. Eq. 10 in [[file:notes-lecture-EOS1.org::*Ideal gas][the Ideal gas section]]), we just
   need the appropriate p\equiv p(\varepsilon) relaton
-
 
 *** Non-relativistic electron gas
 
@@ -220,7 +219,8 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
  polytropic EOS with exponent \Gamma=5/3/.
 
  (to see this more explicitly you can use the definition of the
- electron mean molecular weight to substitute n_{e} for the mass density \rho).
+ electron mean molecular weight \mu_{e} n_{e} = \rho/m_{u} to substitute n_{e} for the
+ mass density \rho).
 
 *** Ultra-relativistic electron gas
   As the number density of electrons increases, p_{F} increases, and thus
@@ -251,13 +251,9 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
 ** Partial degeneracy
 
   The equations derived above are valid in the strict limit of T=0,
-  necessary for *full* degeneracy. Clearly, if T=0 then there is no
-  thermal energy (which is the point of full degeneracy), but also a
-  star would not radiate away any photon, becoming invisible and
-  extremely dense (sometimes referred to as a "black dwarf"!). In
-  reality it is sufficient to have k_{b}T \ll \varepsilon_{F} = p_{f}^{2}/2m (for
-  non-relativistic electrons). This is equivalent to asking \eta\gg 1 with
-  \eta electron degeneracy parameter.
+  necessary for *full* degeneracy. In reality it is sufficient to have
+  k_{b}T \ll \varepsilon_{F} = p_{f}^{2}/2m (for non-relativistic electrons). This
+  is equivalent to asking \eta\gg 1 with \eta electron degeneracy parameter.
 
   The transition between ideal gas and fully degenerate gas goes
   through partially degenerate gas, and in that case the degeneracy
@@ -279,11 +275,11 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ .
   the situation of a "white dwarf" (WD), which are the remnants for
   the vast majority of stars, including the Sun.
 
-  These compact objects contract until they fully crystallize
+  These compact objects contract and cool until they fully crystallize
   (releasing further latent heat), becoming "planet-sized diamond-like
   structures"! In the homework you will also see how there is a
   maximum mass for a WD - the so-called Chandrasekhar mass, after the
-  Nobel-prize winning
+  Nobel-prize winning discovery by Subrahmanyan Chandrasekhar.
 
 ** Radiation pressure
 
