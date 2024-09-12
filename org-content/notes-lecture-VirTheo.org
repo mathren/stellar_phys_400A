@@ -398,20 +398,23 @@ Shaviv "Life of stars" for a detailed discussion.
 * Homework
 
 Using the virial theorem:
-- find an order of magnitude (\sim) relation between the average sound
+- Estimate the average temperature of the Sun and compare it with its
+  surface temperature. Is the Sun in global thermal equilibrium? (you
+  can assume C\sim1 in the notation used in class/in my notes, or use the
+  mass and radius profile from the =MESA-web= model you already computed
+  to calculate a more precise value for C)
+- Find an order of magnitude (\sim) relation between the average sound
   speed in the star and the escape velocity (assume the star is made
   of ideal gas of temperature <T>).
-- demonstrate that if a binary loses instantaneously an amount of mass
+- Demonstrate that if a binary loses instantaneously an amount of mass
   greater than half the total mass of the binary, \Delta M \ge (M_{1}+M_{2})/2,
   then the orbit is unbound. This can happen when a supernova goes off
   in a binary (cf. [[https://ui.adsabs.harvard.edu/abs/1961BAN....15..265B/abstract][Blaauw 1961]])!
-- estimate the average temperature of the Sun and compare it with its
-  surface temperature. Is the Sun in global thermal equilibrium?
 - determine a condition for the minimum mass of a gas cloud to
   collapse as a function of its temperature and density (*Hint*:
   collapse \Leftrightarrow d^{2} I/dt^{2}<0)
 
-Using the model of the 1M_{\odot} star computed earlier with =MESA-web=
+Using the model of the 1M_{\odot} star computed earlier with =MESA-web=:
 - use one profile file to plot \Gamma_{1}\equiv\Gamma_{1}(m) for a Sun-like star
   of roughly the same age as the Sun. Label the age of the star for
   the corresponding profile.

@@ -339,13 +339,13 @@ atom to Z+1 in roman numbers for the fully ionized ion, e.g., HII for
 fully ionized hydrogen (cf. [[file:notes-lecture-CMD-HRD.org::*A modern view on spectra][digression on spectra in the CMD/HRD lecture]]).
 
 So far in our discussion of the EOS, we have considered always this
-last case. Since the atomic binding energies are of order of \sim1-10 eV
-(think of the Rydberg, \chi=13.6eV to strip Hydrogen of its electron from
-the fundamental state), that is 1eV/k_{B} ~ 10^{4} K, and most of the
-stellar material is hotter than this, this was probably not a bad
-approximation: the (thermal) kinetic energy of the particles flying
-around in the stellar gas are much larger than what is needed to
-separate electrons and ions, so probably this will happen a lot.
+last case of full ionization. Since the atomic binding energies are of
+order of \sim1-10 eV (think of the Rydberg, \chi=13.6eV to strip Hydrogen of
+its electron from the fundamental state), that is 1eV/k_{B} ~ 10^{4} K, and
+most of the stellar material is hotter than this, this was probably
+not a bad approximation: the (thermal) kinetic energy of the particles
+flying around in the stellar gas are much larger than what is needed
+to separate electrons and ions, so probably this will happen a lot.
 
 However, in the layers where T decreases, we can have partial
 ionization, which /will change the number of particles per unit atomic
