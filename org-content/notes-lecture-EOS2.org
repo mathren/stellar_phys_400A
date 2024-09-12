@@ -47,7 +47,7 @@ degrees of freedom" of particles, e.g., their spin, polarization, or
 isospin. The key point here is f(p)\propto p^{2} to satisfy QM. *N.B.:* the p^{2}
 factor in g(p) comes from the Jacobian from going from Cartesian to
 spherical polar coordinates in momentum space and assuming an
-isotropic momentum distribution (dp_{x}dp_{y}dp_{z} \equiv d^{3}p = 4pi p^{2} dp).
+isotropic momentum distribution (dp_{x}dp_{y}dp_{z} \equiv d^{3}p = 4\pi p^{2} dp).
 
 
 Let's start by considering a non-extreme situation. Then the particles
@@ -91,10 +91,10 @@ To account for QM effects, we need to consider the nature of the
 particles making up the star, which can be either
 
 - *Fermions* with semi-integer spin, such as electrons, protons,
-  neutrons (and protons and neutrons can be seen as two isospin state
-  of a generic nucleon, this is useful for example to discuss the
-  interior composition of neutron stars). In this case, the
-  distribution function that determines the occupation of quantum
+  neutrons (and protons and neutrons can be seen as two different
+  isospin states of a generic nucleon, this is useful for example to
+  discuss the interior composition of neutron stars). In this case,
+  the distribution function that determines the occupation of quantum
   states of energy between \varepsilon\equiv\varepsilon(p) and \varepsilon+d\varepsilon is the Fermi-Dirac
   distribution:
 
@@ -108,9 +108,9 @@ particles making up the star, which can be either
   /chemical potential \mu/ (*N.B.:* do not confuse this with the mean
   molecular weight which has the same symbol, the chemical potential
   has the dimension of an energy, while the mean molecular weight is a
-  dimensionless number!) and the temperature. The fact that this is \le 1 is an
-  expression of Pauli's exclusion principle, no two fermions can
-  occupy the same quantum energy level.
+  dimensionless number!) and the temperature. The fact that this is \le
+  1 is an expression of Pauli's exclusion principle, each quantized
+  energy state can be occupied by at most one fermion.
 
 - *Bosons* with integer spin, such as photons, or \alpha particles. In this
   case the relevant distribution is the Bose-Einstein's distribution:
