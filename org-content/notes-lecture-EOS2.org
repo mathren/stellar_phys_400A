@@ -67,7 +67,7 @@ where n is the number density, T the temperature, and m the mass of
 the particles. Therefore:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:momentum_ratios}
 \frac{n(p)}{g(p)}\propto n (mT)^{-3/2}\exp(\frac{-p^{2}}{2mk_{B}T}) \ \ .
 \end{equation}
 #+end_latex
@@ -142,7 +142,8 @@ particles making up the star, which can be either
   the ionized gas of the star that will first start feeling QM
   effects, since m_{e} \ll m_{ion} (in fact m_{e} \simeq m_{proton}/1836.15 \simeq
   m_{proton}/2000), therefore, for a given temperature and density, they
-  have much higher momentum p.
+  will deviate from a classical ideal gas much earlier (cf. Eq.
+  \label{eq:momentum_ratios}).
 
   In practice, the pressure provided by the /ions/ never becomes
   affected by QM directly: because of the m^{-3/2} term in the
