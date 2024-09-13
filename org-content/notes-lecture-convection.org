@@ -155,6 +155,16 @@ stability of that equilibrium).
 (i.e., when the energy is transported by the diffusion of photons),
 which combined with the EOS can be turned into (d\rho/dr)_{rad}.
 
+*N.B.:* In reality, the "bubble" picture is a gross oversimplification.
+In a convective layer what really moves around are "flux tubes" of
+thermal energy carried by gas, but there is not a true "bubbling". A
+common misconception is that water boiling is convection: that is not
+exactly correct. Water boiling is /by definition/ a phase transition
+from liquid to gas, however, shortly before the phase transition
+occurs, it is true that conduction in the water is typically
+insufficient to carry the energy release at the bottom, and convective
+motion can be spotted as a small simmering of the water breaking down
+into small waves.
 
 ** Instability condition
 Comparing the density of the displaced bubble \rho_{bubble} to the density of the
