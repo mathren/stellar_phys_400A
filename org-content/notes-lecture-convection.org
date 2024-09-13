@@ -3,7 +3,7 @@
 #+email: mrenzo@arizona.edu
 
 * Energy transport in stars 2/2
-*Materials*: Kippenhahn's book Ch. 6, Cox & Giuli vol. 1 Ch. 14,
+*Materials*: Kippenhahn's book Ch. 6 and 7, Cox & Giuli vol. 1 Ch. 14,
  Schwarzschild Ch. 7, [[https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract][Jermyn et al. 2022]], [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]], [[http://online.kitp.ucsb.edu/online/stars17/cantiello2][Matteo
  Cantiello's talk at KITP in 2017]]
 
@@ -146,7 +146,15 @@ environment density. Once again we can use a first order
 approximation, but for the environment we have assumed an initially
 stable stratification, meaning d\rho/dr is not adiabatic, but the
 radiative gradient (which you can obtain from dT/dr for radiative
-transport and the EOS). Therefore \rho_{2} = \rho_{1} + (d\rho/dr)_{rad }\ell.
+transport and the EOS). Therefore \rho_{2} = \rho_{1} + (d\rho/dr)_{env }\ell \equiv
+\rho_{1} + (d\rho/dr)_{rad }\ell, because we are assuming the surrounding
+environment to be in radiative equilibrium (and assessing the
+stability of that equilibrium).
+
+*N.B.:* we have derived an equation for dT/dr in radiative equilibrium
+(i.e., when the energy is transported by the diffusion of photons),
+which combined with the EOS can be turned into (d\rho/dr)_{rad}.
+
 
 ** Instability condition
 Comparing the density of the displaced bubble \rho_{bubble} to the density of the
@@ -157,12 +165,163 @@ volume of fluid heavier than its own weight!):
 
 
 #+begin_latex
-\begin{equation}
-\rho_\mathrm{Bubble} \leq \rho_{2}  \Rightarrow
+\begin{equation}\label{eq:instability_crit}
+\mathrm{Instability if:} \ \rho_\mathrm{Bubble} \leq \rho_{2}  \Rightarrow
 \left(\frac{d\rho}{dr}\right)_\mathrm{ad} \leq
-\left(\frac{d\rho}{dr}\right)_\mathrm{env} \equiv \left(\frac{d\rho}{dr}\right)_\mathrm{rad}
+\left(\frac{d\rho}{dr}\right)_\mathrm{env} \equiv \left(\frac{d\rho}{dr}\right)_\mathrm{rad} \ \ .
 \end{equation}
 #+end_latex
+
+Therefore, the density stratification for radiative energy transport
+is /unstable w.r.t. buoyancy forces/ *if* the density gradient (d\rho/dr)_{rad}
+is larger than the adiabatic gradient (d\rho/dr)_{ad}. This is the criterion
+derived by [[https://en.wikipedia.org/wiki/Martin_Schwarzschild][Martin Schwarzschild]], however, in stellar physics textbooks
+it is often re-written in a slightly different form.
+
+*** Schwarzschild criterion
+
+For the same reason why we tend to use the Lagrangian enclosed mass as
+independent coordinate in stellar calculation, it is unpractical to
+use the derivatives w.r.t. radius when trying to determine whether the
+stratification of gas is stable or not. For example, a red supergiant
+envelope (which is convective!) has a radial extent of \sim 100-1000s of
+R_{\odot}. Moreover, since we are only dealing with properties of the
+stellar gas here, it is more practical to use as independent
+coordinate something else that is more directly related to the gas
+itself. The common choice is to use the pressure P itself.
+
+*N.B.:* P(r) is also monotonically increasing outwards because of the
+hydrostatic equilibrium equation, much like m(r) is, so it is a valid
+variable to use as independent coordinate.
+
+Furthermore, it is helpful to rewrite this in terms of temperature
+gradients instead of density gradients. These changes of variables,
+assuming an ideal gas EOS with constant mean molecular weight \mu allow
+to re-write \ref{eq:instability_crit} in the form most commonly called
+Schwarzschild criterion:
+
+#+begin_latex
+\begin{equation}\label{eq:schwarzschild_crit}
+\mathrm{Instability if:} \ \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{rad} = \nabla_\mathrm{rad} > \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{ad} = \nabla_\mathrm{ad} \ \ ,
+\end{equation}
+#+end_latex
+with \mu = constant. Note that from the radiative transport equation we
+can directly obtain \nabla_{rad}
+
+#+begin_latex
+\begin{equation}\label{eq:nabla_rad}
+\nabla_\mathrm{rad} = \frac{3\kappa L P}{64\pi G m \sigma T^{4}} \propto \kappa L\ \ ,
+\end{equation}
+#+end_latex
+
+So we see immediately that this is going to be large, and prone to
+convective instability in regions where there is a large opacity \kappa \equiv
+\kappa(m) and/or regions with a large luminosity L \equiv L(m).
+
+*** Ledoux criterion
+In a star, \mu is /not/ always constant: as we have already seen there can
+be regions of /partial ionization/ where \mu changes as we move through
+them, and we already know that in the fully ionized inner regions of
+the star we have \mu \simeq 1/(2X+3Y/4+Z/2) so as we convert hydrogen into
+helium in the core (and later on helium into metals), we also expect \mu
+to change. We can thus rewrite the instability condition
+\ref{eq:instability_crit} without assuming \mu = constant.
+
+To do this, it may be helpful to write the EOS functional dependence
+in a very general form P\equiv P(\rho, T, {X_{i}}) \equiv P(\rho, T, \mu). By
+differentiating this we obtain
+
+#+begin_latex
+\begin{equation}
+\frac{d\rho}{\rho} = \alpha \frac{dP}{P} -\delta \frac{dT}{T} +\varphi \frac{d\mu}{\mu} \ \ ,
+\end{equation}
+#+end_latex
+where \alpha, \delta, and \varphi are coefficients that depend on the details of the
+EOS, but known as long as the EOS is known.
+
+We can then rewrite \ref{eq:instability_crit} as
+
+#+begin_latex
+\begin{equation}\label{eq:ledoux_crit}
+\mathrm{Instability if:} \nabla_\mathrm{rad} \geq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
+\end{equation}
+#+end_latex
+with \nabla_{\mu} = \partial log(\mu)/\partial\log(P). Eq.
+\ref{eq:ledoux_crit} is usually referred to as the Ledoux criterion
+([[https://ui.adsabs.harvard.edu/abs/1947ApJ...105..305L/abstract][Ledoux 1947]]).
+
+*** Secular mixing processes: semiconvection and thermohaline mixing
+For stellar layers that are stable according to the Ledoux criterion
+but unstable according to the Schwarzschild criterion as we have
+defined them above, that is
+
+#+begin_latex
+\begin{equation}\label{eq:semiconv_crit}
+\nabla_\mathrm{ad} \le \nabla_\mathrm{rad}  \leq \nabla_{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
+\end{equation}
+#+end_latex
+
+the chemical potential gradient acts as a stabilizing force. There
+will /not/ be a full blown instability, but rather, in the approximate
+toy model we have used to derive the instability criterion, the gas
+parcels will experience small oscillations where the \mu gradient acts
+as a damping force. This is the so called *semiconvection*.
+
+Viceversa, if a layer is Schwarzschild stable but Ledoux unstable:
+
+#+begin_latex
+\begin{equation}\label{eq:thermohaline_crit}
+\nabla_{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} \ \ ,
+\end{equation}
+#+end_latex
+then the mean molecular weight gradient acts to /destabilize/ the layer.
+In this case, in our simplistic picture, a blob of gas will slowly
+start slowly moving because of \nabla_{\mu} but there will be no restoring forces,
+and we obtain the so called *thermohaline mixing* or *double diffusion
+instability*. The name double diffusion comes from the fact that for
+the gas parcel to move it has to diffuse thermal energy to its
+environment (which otherwise would stabilize it), as its different
+chemical composition also diffuses. This leads to the formation of
+long "fingers", as you can [[https://www.stellarphysics.org/thermohaline-mixing][prove in a kitchen experiment]]:
+
+#+CAPTION: Double-diffusive fingers in hot salty water on top of cold fresh water. Credits: M. Cantiello
+#+ATTR_HTML: :width 50%
+
+[[./images/thermohaline.jpg]]
+
+The thermohaline mixing is obviously not only a stellar phenomenon: it
+can occur for example in the sea close to the equator, where the
+surface is heated by the Sun and evaporates faster, leading to a layer
+with hotter and saltier water (higher \mu) on top of colder and less
+salty water below.
+
+An example where it occurs in stars are accretors in binaries which
+may receive helium enriched material from the outer layers of the core
+of the donor star, putting helium rich higher \mu gas on top of the lower \mu
+envelope.
+
+*** Which instability criterion should one use?
+Naively, one may think that the Ledoux convection is more physically
+accurate, since it requires one less hypothesis (which we know to not
+always be correct inside a star). This is generally true.
+
+However, when calculating stellar models what we are interested in is
+the long-term evolution of the star: as you can see from the
+thermohaline mixing figure above, this is not a 1D process (the
+"fingers" end with "mushrooms"), and we typically care about
+timescales very long compared to the timescales for these processes.
+These are in fact /thermal/ processes and their timescales are
+proportional to the /local/ thermal timescale, which as we have already
+seen is generally short compared to the evolutionary timescale.
+
+Especially for convection in the stellar cores (where we will see
+energy is generated, therefore L can be very large, especially in
+massive stars and drive convection), convection may flatten the \mu
+gradient on a timescale short compared to the main sequence lifetime,
+therefore erasing the ingredient that differentiates the two (see for
+instance [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]]). This is an active topic of debate in the
+recent literature!
+
 
 * Mixing length theory
 
