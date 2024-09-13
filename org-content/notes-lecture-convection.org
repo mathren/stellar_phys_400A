@@ -274,7 +274,7 @@ Viceversa, if a layer is Schwarzschild stable but Ledoux unstable:
 
 #+begin_latex
 \begin{equation}\label{eq:thermohaline_crit}
-\nabla_{_}\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} \ \ ,
+\nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} \ \ ,
 \end{equation}
 #+end_latex
 then the mean molecular weight gradient acts to /destabilize/ the layer.
