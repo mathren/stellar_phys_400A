@@ -160,9 +160,8 @@ volume of fluid heavier than its own weight!):
 \begin{equation}
 \rho_\mathrm{Bubble} \leq \rho_{2}  \Rightarrow
 \left(\frac{d\rho}{dr}\right)_\mathrm{ad} \leq
-\left(\frac{d\rho}{dr}\right)_\mathrm{env} \equiv
-\left(\frac{d\rho}{dr}\right)_\mathrm{rad}
-\end{equatio}
+\left(\frac{d\rho}{dr}\right)_\mathrm{env} \equiv \left(\frac{d\rho}{dr}\right)_\mathrm{rad}
+\end{equation}
 #+end_latex
 
 * Mixing length theory
