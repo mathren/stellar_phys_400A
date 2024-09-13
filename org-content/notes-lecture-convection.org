@@ -390,6 +390,19 @@ the flames).
    insufficient approximation?
 :end:
 
+** Convective energy flux
+To calculate the energy flux carried by convection within the
+framework of MLT, let's consider the difference in temperature between
+a bubble that risen by an amount \ell in an unstable layer (because of
+any small perturbation) w.r.t. the surrounding environment:
+
+#+begin_latex
+\begin{equation}
+\Delta T = T_\mathrm{Bubble} - T_\mathrm{env} = \left(T_{1} + \frac{dT}{dr}_\mathrm{Bubble}\ell \right) - \left(T_{1} + \frac{dT}{dr}_\mathrm{env}\ell \right) = \ell \left(\frac{dT}{dr}_\mathrm{Bubble} - \frac{dT}{dr}_\mathrm{env} \right) \ \ .
+\end{equation}
+#+end_latex
+
+
 
 
 ** Chemical mixing
