@@ -166,7 +166,7 @@ volume of fluid heavier than its own weight!):
 
 #+begin_latex
 \begin{equation}\label{eq:instability_crit}
-\mathrm{Instability if:} \ \rho_\mathrm{Bubble} \leq \rho_{2}  \Rightarrow
+\mathrm{Instability\ if:} \ \rho_\mathrm{Bubble} \leq \rho_{2}  \Rightarrow
 \left(\frac{d\rho}{dr}\right)_\mathrm{ad} \leq
 \left(\frac{d\rho}{dr}\right)_\mathrm{env} \equiv \left(\frac{d\rho}{dr}\right)_\mathrm{rad} \ \ .
 \end{equation}
@@ -174,9 +174,12 @@ volume of fluid heavier than its own weight!):
 
 Therefore, the density stratification for radiative energy transport
 is /unstable w.r.t. buoyancy forces/ *if* the density gradient (d\rho/dr)_{rad}
-is larger than the adiabatic gradient (d\rho/dr)_{ad}. This is the criterion
-derived by [[https://en.wikipedia.org/wiki/Martin_Schwarzschild][Martin Schwarzschild]], however, in stellar physics textbooks
-it is often re-written in a slightly different form.
+is larger than the adiabatic gradient (d\rho/dr)_{ad}: if the gradient is
+/too steep/ then radiative diffusion is not sufficient to carry the
+energy flux and convection kicks in, and the threshold defining what
+is /too steep/ is the adiabatic gradient. This is the criterion derived
+by [[https://en.wikipedia.org/wiki/Martin_Schwarzschild][Martin Schwarzschild]], however, in stellar physics textbooks it is
+often re-written in a slightly different form.
 
 *** Schwarzschild criterion
 
@@ -202,7 +205,7 @@ Schwarzschild criterion:
 
 #+begin_latex
 \begin{equation}\label{eq:schwarzschild_crit}
-\mathrm{Instability if:} \ \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{rad} = \nabla_\mathrm{rad} > \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{ad} = \nabla_\mathrm{ad} \ \ ,
+\mathrm{Instability\ if:} \ \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{rad} = \nabla_\mathrm{rad} > \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{ad} = \nabla_\mathrm{ad} \ \ ,
 \end{equation}
 #+end_latex
 with \mu = constant. Note that from the radiative transport equation we
@@ -243,7 +246,7 @@ We can then rewrite \ref{eq:instability_crit} as
 
 #+begin_latex
 \begin{equation}\label{eq:ledoux_crit}
-\mathrm{Instability if:} \nabla_\mathrm{rad} \geq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
+\mathrm{Instability\ if:} \nabla_\mathrm{rad} \geq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
 \end{equation}
 #+end_latex
 with \nabla_{\mu} = \partial log(\mu)/\partial\log(P). Eq.
@@ -257,7 +260,7 @@ defined them above, that is
 
 #+begin_latex
 \begin{equation}\label{eq:semiconv_crit}
-\nabla_\mathrm{ad} \le \nabla_\mathrm{rad}  \leq \nabla_{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
+\nabla_\mathrm{ad} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -271,7 +274,7 @@ Viceversa, if a layer is Schwarzschild stable but Ledoux unstable:
 
 #+begin_latex
 \begin{equation}\label{eq:thermohaline_crit}
-\nabla_{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} \ \ ,
+\nabla_{_}\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} \ \ ,
 \end{equation}
 #+end_latex
 then the mean molecular weight gradient acts to /destabilize/ the layer.
@@ -285,7 +288,7 @@ chemical composition also diffuses. This leads to the formation of
 long "fingers", as you can [[https://www.stellarphysics.org/thermohaline-mixing][prove in a kitchen experiment]]:
 
 #+CAPTION: Double-diffusive fingers in hot salty water on top of cold fresh water. Credits: M. Cantiello
-#+ATTR_HTML: :width 50%
+#+ATTR_HTML: :width 40%
 
 [[./images/thermohaline.jpg]]
 
@@ -323,7 +326,10 @@ instance [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Ander
 recent literature!
 
 
+
 * Mixing length theory
+
+** Chemical mixing
 
 ** Convective velocity vs. thermal velocity
 
@@ -332,3 +338,16 @@ recent literature!
 ** Convective boundary mixing (a.k.a. "overshooting")
 
 ** Time-dependence
+
+** Efficiency of semiconvection/thermohaline mixing
+The processes we have discussed are all inherently multi-dimensional.
+Therefore, in their 1D formulation necessary to have stellar structure
+and evolution models, we introduce free parameters, such as \alpha_{MLT}
+discussed above.
+
+This is also true for thermohaline mixing and semiconvection, each
+coming with their poorly known efficiency parameter. Furthermore, we
+need to better understand how these mixing processes in the star
+interact with each other, with rotation, magnetic fields, etc. Entire
+conferences are being dedicated to these topics, e.g. [[https://www.kitp.ucsb.edu/activities/transtar21][KITP "Probes of
+transport in stars"]]!
