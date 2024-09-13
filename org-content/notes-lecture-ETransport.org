@@ -57,7 +57,7 @@ This energy flow can occur in three forms in a star:
      (typically electrons, unless you are in a neutron star) that
      carries the energy
 2. *Convection*: in this case thermal energy is transported by bulk
-   motion of matter. This occurs as a *thermal* instability if the other
+   motion of matter. This occurs as an instability if the other
    means of energy transport are insufficient to carry the energy flux
    required by the local stellar structure, and it will be the topic
    of a [[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][future lecture]].
@@ -395,6 +395,7 @@ structure becomes
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
+#+end_latex
 
 *N.B.:* Once again, we found another equation but it comes with new
 unknowns. \varepsilon_{grav} is fortunately only dependent on the thermodynamics of

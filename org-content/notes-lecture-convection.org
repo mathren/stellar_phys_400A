@@ -287,7 +287,7 @@ environment (which otherwise would stabilize it), as its different
 chemical composition also diffuses. This leads to the formation of
 long "fingers", as you can [[https://www.stellarphysics.org/thermohaline-mixing][prove in a kitchen experiment]]:
 
-#+CAPTION: Double-diffusive fingers in hot salty water on top of cold fresh water. Credits: M. Cantiello
+#+CAPTION: Double-diffusive fingers in hot salty water on top of cold fresh water. Credits: M. Cantiello.
 #+ATTR_HTML: :width 40%
 
 [[./images/thermohaline.jpg]]
@@ -325,9 +325,63 @@ therefore erasing the ingredient that differentiates the two (see for
 instance [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]]). This is an active topic of debate in the
 recent literature!
 
-
-
 * Mixing length theory
+
+Let's now consider what happens in an unstable layer: we need to model
+how the energy is transported in these layers, were radiative
+diffusion is insufficient and the gas will start moving. A perfect
+solution would require to follow the dynamics of buoyant parcels of
+gas over the (long) thermal timescale, which is in general /not/
+possible: hydrodynamic simulations can only compute the much shorter
+/dynamical/ timescales!
+
+Physically, in the unstable situation we have described above, we
+should expect macroscopic motion of gas (the "bubbles") to stars, and
+these "bubbles" would move upward adiabatically, maintaining
+hydrostatic balance with the surroundings, until they release their
+excess heat, cooling down and finally falling back. This obviously is
+/not/ a one dimensional problem, since we have some bubbles moving
+upwards and some moving downwards simultaneously so that the net mass
+flux is zero, but the net energy flux is non-zero. Moreover this
+typically leads to turbulence in the flow which is an inherently
+multi-dimensional problem.
+
+[[https://en.wikipedia.org/wiki/Erika_B%C3%B6hm-Vitense][Erika Bohm-Vitense]] developed in 1957 an effective mean-field theory to
+describe the space- and time-averaged steady state at which convective
+energy transport would saturare. This is the so-called /mixing length
+theory/ (MLT) that is widely applied in stellar evolution still today,
+and is based on the simplified "bubble picture" from Prandtl we
+already used to derive a stability criterion.
+
+Before deriving the energy flux, and ultimately temperature gradient
+in a convective region according to MLT, let's try to get an intuition
+for what this very successful, albeit very approximate picture tries
+to describe. We can consider a more familiar example of convection for
+that, such as a self-sustaining fire:
+
+#+CAPTION: A flame sustains itself by driving convection that brings in more oxygen to allow combustion to happen.
+#+ATTR_HTML: :width 50%
+[[./images/fire.jpg]]
+
+MLT is meant to describe the spatial and temporal average of the gas
+flow in the convective region driven by the (chemical) energy release
+from the fire. Intuitively, it's like taking a picture (assuming any
+snapshot in time is statistically equivalent to any other), and then
+averaging across the horizontal cross section of this fire to obtain
+an approximation to the time- and space- averaged vertical flow of
+energy and temperature. With all the limitations that this entails,
+MLT is a very successful theory that is sufficient for /most/ stellar
+evolution applications since those typically are concerned with
+timescales that are very long w.r.t. the convective turnover timescale
+(i.e., in the fire analogy, very long compared to the "flickering" of
+the flames).
+
+:Question:
+ - *Q*: based on this, can you guess where/when MLT will be an
+   insufficient approximation?
+:end:
+
+
 
 ** Chemical mixing
 
