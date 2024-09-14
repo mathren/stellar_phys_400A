@@ -122,32 +122,32 @@ situation, where the temperature gradient is determined by the
 Let's consider a parcel of gas initially in equilibrium with its
 surroundings at pressure P_{1} and density \rho_{1}. To determine a stability
 criterion, let's perturb such parcel by displacing it by a certain
-(small) amount d and discuss how the parcel reacts: if things act to
+(small) amount \Delta and discuss how the parcel reacts: if things act to
 move the parcel of gas back towards its original position we have a
-stable situation, if instead a seed initial displacement d result in
+stable situation, if instead a seed initial displacement \Delta result in
 more displacement, we have an unstable situation.
 
 As the gas parcel moves, we can assume it maintains hydrostatic
 equilibrium with the surrounding: we are looking for a thermal
 instability that acts on a longer timescale than dynamical timescale.
 Moreover, if this were not the case, any pressure imbalance would be
-equalized through sound-waves. Therefore, throughout the path d and at
+equalized through sound-waves. Therefore, throughout the path \Delta and at
 the final position we have P_{bubble} = P_{environment}.
 
-Let's calculate the density. Since we assume d to be "small" (w.r.t.
+Let's calculate the density. Since we assume \Delta to be "small" (w.r.t.
 the relevant spatial scales in the star), a first order approximation
-is sufficient: \rho_{bubble} = \rho_{1} + (d\rho/dr)_{ad} d. The relevant way to calculate
+is sufficient: \rho_{bubble} = \rho_{1} + (d\rho/dr)_{ad} \Delta. The relevant way to calculate
 d\rho/dr here is to assume that the gas parcel moves /adiabatically/: there
 is no time for heat exchange, dq=0, and the specific entropy of the
 bubble remains constant ds = 0 (recall thermodynamics!).
 
-We want to compare \rho_{bubble} after the displacement by d to the
+We want to compare \rho_{bubble} after the displacement by \Delta to the
 environment density. Once again we can use a first order
 approximation, but for the environment we have assumed an initially
 stable stratification, meaning d\rho/dr is not adiabatic, but the
 radiative gradient (which you can obtain from dT/dr for radiative
-transport and the EOS). Therefore \rho_{2} = \rho_{1} + (d\rho/dr)_{env }d \equiv
-\rho_{1} + (d\rho/dr)_{rad }d, because we are assuming the surrounding
+transport and the EOS). Therefore \rho_{2} = \rho_{1} + (d\rho/dr)_{env }\Delta \equiv
+\rho_{1} + (d\rho/dr)_{rad }\Delta, because we are assuming the surrounding
 environment to be in radiative equilibrium (and assessing the
 stability of that equilibrium).
 
