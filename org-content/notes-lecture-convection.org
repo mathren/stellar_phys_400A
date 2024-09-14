@@ -402,6 +402,80 @@ any small perturbation) w.r.t. the surrounding environment:
 \end{equation}
 #+end_latex
 
+To put this in the form of the gradients that we have defined above
+for the stability, we can define the pressure scale height as the
+e-folding length of the pressure:
+
+#+begin_latex
+\begin{equation}
+ H_{p} = - \frac{dr}{d \log(P)} \Leftrightarrow P(r) \simeq P_{0} e^{-r/H_{p}} \ \ .
+\end{equation}
+#+end_latex
+
+We can also notice that dT/dr = T \times d log(T)/ dlog(P) \times d log(P)/dr,
+and assume that T_{Bubble} \simeq T_{env} \equiv T, that is effectively
+consider only the zeroth order of the Taylor series of the temperature
+expansion, and rewrite for the temperature difference:
+
+#+begin_latex
+\begin{equation}
+\Delta T = \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}_{}\right) \ \ ,
+\end{equation}
+#+end_latex
+where we use the assumption that the environment is characterized by a
+radiative gradient, and the sign in the parenthesis changes because of
+the minus sign in the definition of pressure scale height (which is
+there to make H_{p} a positive quantity). *N.B.:* We have worked out above
+that in the unstable situation \nabla_{rad} is steeper than \nabla_{ad}, so the form
+above also guarantees that \Delta T is actually positive, as we expect for
+a bubble raising and carrying an excess thermal energy compared to the
+background.
+
+
+The excess energy per unit volume carried by the raising bubble is
+then c_{p}\rho\Delta T, where c_{p} is the specific heat at constant
+pressure. Multiplying by the velocity of the bubble we get the
+*convective flux* (as you can verify by dimensional analysis!):
+
+#+begin_latex
+\begin{equation}
+F_\mathrm{conv} = c_{p} \rho \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}_{}\right) v_\mathrm{conv} \ \ .
+\end{equation}
+#+end_latex
+
+
+:Question:
+- *Q*: why do we use the constant pressure c_{p} here? *Hint*: think of the
+  assumptions we have discussed above.
+:end:
+
+Here there are two things we don't know yet: how far the bubble goes \ell
+and the convective velocity.
+
+*N.B.:* In general, to maintain the net-zero mass flux, for each bubble
+of mass \delta m raising there is one of the same mass sinking. The raising
+one carries excess thermal energy w.r.t. the radiative background, and
+the sinking one carries a deficiency in thermal energy w.r.t. the
+background so the total convective flux should be twice what we have
+derived. On the other hand, by taking the difference in the gradients
+across the entire (as of yet unknown) travel path \ell, we are
+overestimating the gradient difference, and on average it should be
+roughly half of that, canceling out the mistake we make by neglecting
+the sinking bubbles.
+
+** Convective velocity
+
+To estimate the convective velocity v_{conv} we can consider the work
+done by the buoyancy forces on the bubble.
+
+:Question:
+- *Q*: before we even do this calculation, can you imagine an
+  upper-limit for v_{conv} in the approximated picture we are developing?
+  (*Hint*: we have assumed that any pressure imbalance between the
+  bubble and the environment would be quickly be washed out)
+:end:
+
+
 
 
 
