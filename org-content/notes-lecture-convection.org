@@ -419,7 +419,7 @@ expansion, and rewrite for the temperature difference:
 
 #+begin_latex
 \begin{equation}
-\Delta T = \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}_{}\right) \ \ ,
+\Delta T = \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right) \ \ ,
 \end{equation}
 #+end_latex
 where we use the assumption that the environment is characterized by a
@@ -439,10 +439,9 @@ pressure. Multiplying by the velocity of the bubble we get the
 
 #+begin_latex
 \begin{equation}
-F_\mathrm{conv} = c_{p} \rho \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}_{}\right) v_\mathrm{conv} \ \ .
+F_\mathrm{conv} = c_{p} \rho \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right) v_\mathrm{conv} \ \ .
 \end{equation}
 #+end_latex
-
 
 :Question:
 - *Q*: why do we use the constant pressure c_{p} here? *Hint*: think of the
@@ -475,8 +474,77 @@ done by the buoyancy forces on the bubble.
   bubble and the environment would be quickly be washed out)
 :end:
 
+The buoyancy force per unit volume acts in the direction opposite of
+gravity and has amplitude equal to weight of the displaced fluid
+B = - \Delta\rho \times |g|, where \Delta\rho= \rho_{Bubble} - \rho_{env} is the difference in density
+between the rising fluid element and the environment. Doing a Taylor
+expansion and keeping only the first order in \ell we have:
 
+#+begin_latex
+\begin{equation}
+\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{rad} \ell\right) \simeq \frac{\rho}{T}(\nabla_\mathrm{ad}-\nabla_\mathrm{rad})\ell \ \ ,
+\end{equation}
+#+end_latex
 
+where again we take the zeroth order in T (so T_{Bubble} \simeq T_{env}) and
+use the definition of \nabla_{i}. This is the difference in density between
+the bubble and the environment at the end of the whole (yet unknown)
+travel path \ell. On average throughout the path, since the difference
+was \Delta\rho = 0 at the beginning, we only have half of that, so let's just
+consider 1/2 of this to estimate the work done by buoyancy.
+
+By energy conservation, the work done by buoyancy on the bubble is
+equal to the kinetic energy acquired by the bubble, which is what we
+will use to make v_{conv} appear:
+
+#+begin_latex
+\begin{equation}\label{eq:v_conv_MLT}
+E_{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_{Bubble} v_{conv}^{2} =  \frac{\rho}{T}(\nabla_\mathrm{ad}-\nabla_\mathrm{rad})\ell^{2} \frac{G m}{r^{2}} \ \ ,
+\end{equation}
+#+end_latex
+
+*N.B.:* the buoyancy force and the displacement vector are antiparallel,
+which adjusts the minus signs.
+
+Conveniently in Eq. \ref{eq:v_conv_MLT} both v_{conv} and \ell are squared: the same
+exact reasoning applies to the bubbles sinking and those rising!
+Eq. \ref{eq:v_conv_MLT} is a relation between the two unknowns we have
+in the convective energy flux, v_{conv} and \ell, which allows us to
+eliminate one for the other.
+
+At this point enters the heuristic hypothesis proposed by [[https://ui.adsabs.harvard.edu/abs/1958ZA.....46..108B/abstract][Bohm-Vitense
+1958]] (*N.B.:* the original paper is in German): let's assume that the
+length scale \ell traveled /on average/ by a convectively moving bubble
+before losing its identity by releasing its excess heat to the
+surroundings (or absorbing the amount of heat it was lacking, in the
+case of a sinking bubble), is proportional to the local pressure scale
+height. This heuristic hypothesis is sensible, since the pressure
+scale height tells us something about the thermal stratification of
+the gas, and we are discussing an instability that needs to transport
+energy when diffusion is insufficient, and it is still very widely
+used today. It gives us the central hypothesis of MLT:
+
+#+begin_latex
+\begin{equation}\label{eq:v_conv_MLT}
+\ell = \alpha_{MLT} H_{p} \ \ \mathrm{with} \ \ H_{p} = -\frac{dr}{d\log(P)} \ \ .
+\end{equation}
+#+end_latex
+
+The average length traveled by a bubble \ell is the so-called mixing
+length that gives the name to this "theory", and the proportionality
+constant \alpha_{MLT} is one of the most infamous free parameters in stellar
+evolution that is calibrated on stellar observations. If the heuristic
+hypothesis underpinning this approach holds, it should be a quantity
+of order 1.
+
+Putting all things together, we can now express the convective energy
+flux as a function of known quantities and this free parameter \alpha_{MLT}:
+
+#+begin_latex
+\begin{equation}
+F_\mathrm{conv} = c_{p} \rho \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right) v_\mathrm{conv} \ \ .
+\end{equation}
+#+end_latex
 
 
 ** Chemical mixing
