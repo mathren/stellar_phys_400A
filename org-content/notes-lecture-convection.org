@@ -482,7 +482,7 @@ expansion and keeping only the first order in \ell we have:
 
 #+begin_latex
 \begin{equation}
-\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{rad} \ell\right) \simeq \frac{\rho}{T}(\nabla_\mathrm{ad}-\nabla_\mathrm{rad})\ell \ \ ,
+\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{rad} \ell\right) \simeq \frac{\rho}{T}(\nabla_\mathrm{rad}-\nabla_\mathrm{ad})\ell \ \ ,
 \end{equation}
 #+end_latex
 
@@ -499,10 +499,10 @@ will use to make v_{conv} appear:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT}
-E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_\mathrm{Bubble} v_\mathrm{conv}^{2} =  \frac{\rho}{T}(\nabla_\mathrm{ad}-\nabla_\mathrm{rad})\ell^{2} \frac{G m}{r^{2}} \ \ .
+E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_\mathrm{Bubble} v_\mathrm{conv}^{2} =  \frac{\rho}{T}(\nabla_\mathrm{ad}-\nabla_\mathrm{rad})\ell^{2} g \ \ ,
 \end{equation}
 #+end_latex
-
+with g\equiv g(m) = G m/r^{2}.
 
 *N.B.:* the buoyancy force and the displacement vector are antiparallel,
 which adjusts the minus signs.
@@ -516,7 +516,7 @@ eliminate one for the other:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT}
- v_\mathrm{conv} = \sqrt{\frac{1}{2}\ell }
+ v_\mathrm{conv} = \sqrt{2 \frac{g\ell}{T} (\nabla_{rad} - \nabla_{ad})} \ \ ,
 \end{equation}
 #+end_latex
 
