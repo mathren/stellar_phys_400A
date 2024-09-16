@@ -485,23 +485,23 @@ done by the buoyancy forces (per unit volume) on the bubble.
 :end:
 
 The buoyancy force per unit volume acts in the direction opposite of
-gravity and has amplitude equal to weight of the displaced fluid
-B = - \Delta\rho \times |g|, where \Delta\rho= \rho_{Bubble} - \rho_{env} is the difference in density
-between the rising fluid element and the environment. Doing a Taylor
-expansion and keeping only the first order in \ell we have:
+gravity and has amplitude equal to weight of the displaced fluid minus
+the weight of the bubble itself, B = - \Delta\rho \times |g|, where \Delta\rho= \rho_{Bubble} -
+\rho_{env} is the difference in density between the rising fluid element and
+the environment. Doing a Taylor expansion and keeping only the first
+order in \ell we have:
 
 #+begin_latex
 \begin{equation}
-\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{rad} \ell\right) \simeq  \ \ ,
+\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{rad} \ell\right) \ \ ,
 \end{equation}
 #+end_latex
 
-where again we take the zeroth order in T (so T_{Bubble} \simeq T_{env}) and
-use the definition of \nabla_{i}. This is the difference in density between
-the bubble and the environment at the end of the whole (yet unknown)
-travel path \ell. On average throughout the path, since the difference
-was \Delta\rho = 0 at the beginning, we only have half of that, so let's just
-consider 1/2 of this to estimate the work done by buoyancy.
+This is the difference in density between the bubble and the
+environment at the end of the whole (yet unknown) travel path \ell. On
+average throughout the path, since the difference was \Delta\rho = 0 at the
+beginning, we only have half of that, so let's just consider 1/2 of
+this to estimate the work done by buoyancy.
 
 By energy conservation, the work done by buoyancy on the bubble is
 equal to the kinetic energy (per unit volume) acquired by the bubble,
@@ -524,7 +524,7 @@ function of the \nabla_{i} we have:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT_estimate}
- v_\mathrm{conv} = \sqrt{\frac{\ell^{2}g}{2H_{P}} (\nabla_{rad} - \nabla_{ad})}\ \ ,
+ v_\mathrm{conv} = \sqrt{\frac{\ell^{2}g}{2H_{P}} (\nabla_\mathrm{rad} - \nabla_\mathrm{ad})}\ \ ,
 \end{equation}
 #+end_latex
 
@@ -561,7 +561,7 @@ flux as a function of known quantities and this free parameter \alpha_{MLT}:
 
 #+begin_latex
 \begin{equation}\label{eq:conv_flux_MLT}
-F_\mathrm{conv} = \rho c_{P} T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2} \frac{Gm(r)}{r^{2}} H_{P}} (\nabla_\mathrm{rad}-\nabla_\mathrm{ad})^{3/2} \ \ .
+F_\mathrm{conv} = \rho c_{P} T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2} g H_{P}} (\nabla_\mathrm{rad}-\nabla_\mathrm{ad})^{3/2} \ \ .
 \end{equation}
 #+end_latex
 
