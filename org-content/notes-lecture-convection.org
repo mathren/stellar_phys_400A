@@ -221,13 +221,13 @@ we can rewrite:
 
 #+begin_latex
 \begin{equation}
-\frac{d\rho}{dr}_{i} = -\frac{P}{H_{P}} \frac{d\rho}{dP} \ \ .
+\frac{d\rho}{dr}= -\frac{P}{H_{P}} \frac{d\rho}{dP} \ \ .
 \end{equation}
 #+end_latex
 
 *N.B.:* because of the minus sign in the definition of pressure scale
 height (which is there to make H_{p} a positive quantity), the signs
-change when going from (d\rho/dr)_{i} to \nabla_{i.
+change when going from (d\rho/dr)_{i} to \nabla_{i}.
 
 Furthermore, it is helpful to rewrite this in terms of temperature
 gradients instead of density gradients. These changes of variables,
@@ -268,7 +268,7 @@ differentiating this we obtain
 
 #+begin_latex
 \begin{equation}
-\frac{d\rho}{\rho} = \alpha \frac{dP}{P} -\delta \frac{dT}{T} +\varphi \frac{d\mu}{\mu} \ \ ,
+\frac{d\rho}{\rho} = \alpha \frac{dP}{P} -\delta \frac{dT}{T} + \varphi \frac{d\mu}{\mu} \ \ ,
 \end{equation}
 #+end_latex
 where \alpha, \delta, and \varphi are coefficients that depend on the details of the
@@ -442,7 +442,6 @@ guarantees that \Delta T is actually positive, as we expect for a bubble
 raising and carrying an excess thermal energy compared to the
 background.
 
-
 The excess energy per unit volume carried by the raising bubble is
 then c_{p}\rho\Delta T, where c_{p} is the specific heat at constant
 pressure. Multiplying by the velocity of the bubble we get the
@@ -476,7 +475,7 @@ the sinking bubbles.
 ** Convective velocity
 
 To estimate the convective velocity v_{conv} we can consider the work
-done by the buoyancy forces on the bubble.
+done by the buoyancy forces (per unit volume) on the bubble.
 
 :Question:
 - *Q*: before we even do this calculation, can you imagine an
@@ -493,7 +492,7 @@ expansion and keeping only the first order in \ell we have:
 
 #+begin_latex
 \begin{equation}
-\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{rad} \ell\right) \simeq \frac{\rho}{T}(\nabla_\mathrm{rad}-\nabla_\mathrm{ad})\ell \ \ ,
+\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{rad} \ell\right) \simeq  \ \ ,
 \end{equation}
 #+end_latex
 
@@ -505,16 +504,14 @@ was \Delta\rho = 0 at the beginning, we only have half of that, so let's just
 consider 1/2 of this to estimate the work done by buoyancy.
 
 By energy conservation, the work done by buoyancy on the bubble is
-equal to the kinetic energy acquired by the bubble, which is what we
-will use to make v_{conv} appear:
+equal to the kinetic energy (per unit volume) acquired by the bubble,
+which is what we will use to make v_{conv} appear:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT}
-E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_\mathrm{Bubble} v_\mathrm{conv}^{2} =  \frac{\rho}{T}(\nabla_\mathrm{ad}-\nabla_\mathrm{rad})\ell^{2} g \ \ ,
+E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_\mathrm{Bubble} v_\mathrm{conv}^{2}  \ \ .
 \end{equation}
 #+end_latex
-with g\equiv g(m) = G m/r^{2}.
-
 *N.B.:* the buoyancy force and the displacement vector are antiparallel,
 which adjusts the minus signs.
 
@@ -522,19 +519,14 @@ Conveniently in Eq. \ref{eq:v_conv_MLT} both v_{conv} and \ell are squared: the 
 exact reasoning applies to the bubbles sinking and those rising!
 Eq. \ref{eq:v_conv_MLT} is a relation between the two unknowns we have
 in the convective energy flux, v_{conv} and \ell, which allows us to
-eliminate one for the other:
-
+eliminate one for the other. Using again the re-writing of d\rho/dr_{i} in
+function of the \nabla_{i} we have:
 
 #+begin_latex
-\begin{equation}\label{eq:v_conv_MLT}
- v_\mathrm{conv} = \sqrt{2 \frac{g\ell}{T} (\nabla_{rad} - \nabla_{ad})} \ \ ,
+\begin{equation}\label{eq:v_conv_MLT_estimate}
+ v_\mathrm{conv} = \sqrt{\frac{\ell^{2}g}{2H_{P}} (\nabla_{rad} - \nabla_{ad})}\ \ ,
 \end{equation}
 #+end_latex
-
-
-*** Estimate of the convective velocity
-
-From the e
 
 
 ** The mixing length and \alpha_{MLT}
@@ -629,8 +621,48 @@ gradient is not necessarily adiabatic. This is important for many
 stellar applications, for example eruptive mass loss of massive stars,
 and dynamical stability of mass transfer in binaries.
 
-** Chemical mixing
+** On the convective velocity and chemical mixing
 
+Eq. \ref{eq:v_conv_MLT_estimate} derived above tells us that v_{conv}
+\propto (\nabla_{rad} - \nabla_{ad})^{1/2} \times (gH_{P})^{1/2} \simeq (\nabla_{rad} - \nabla_{ad})^{1/2}
+c_{sound} \simeq (\nabla_{rad} - \nabla_{ad})^{1/2} v_{Thermal}. We have just seen
+that for efficient convection, the superadiabaticity is small,
+implying that the convective velocities are much smaller than the
+/local/ sound speed (which guarantees that hydrostatic equilibrium is
+verified along the path \ell), and, equivalently, the local /thermal/
+velocity.
+
+Nevertheless, even a velocity of v_{conv} \simeq 10^{-4} c_{sound} is
+sufficient to mix material very efficiently over the evolutionary
+timescales (*N.B.:* the sound crossing time of a star is \sim \tau_{ff} \ll
+evolutionary timescales by a factor smaller than 10^{-4}. For the Sun
+it's hours/billions of years - for now we are using geological
+evidence on Earth to estimate the age of the Sun). Therefore,
+/convection not only carries energy flux, but can also mix the
+chemical composition/!
+
+Similar argument apply to semiconvection and thermohaline mixing (and
+even the kitchen experiment can clearly show that thermohaline mixing
+can result in mixing of the composition.
+
+This is not always important, as we will see: in the Sun's envelope
+for example, convection mixes homogeneous material. However, in the
+core of a massive star, it mixes the material in the burning region
+(where hydrogen is turned into helium) into material that is
+non-burning and thus initially more hydrogen rich. As we will see,
+this determines qualitative morphological differences in the end of
+the main sequence evolution of massive stars w.r.t. low mass stars.
+
+One can derive from MLT a diffusion coefficient for the mixing of
+chemicals by convection (and similarly for thermohaline and
+semiconvective mixing), allowing for a diffusive approximation of
+convective mixing. In reality convective mixing is an advective
+process: the macroscopic motion of the fluid carries around chemicals,
+and then they diffuse from the "bubble" into the environment after
+having being advected. A diffusion approximation is still possible
+however because of the very high efficiency of this mixing (and the
+fact that when we apply MLT we do not attempt to describe faithfully
+the details of the local dynamics of each gas parcel).
 
 * Limitations of MLT
 
@@ -692,6 +724,46 @@ interact with each other, with rotation, magnetic fields, etc. Entire
 conferences are being dedicated to these topics, e.g. [[https://www.kitp.ucsb.edu/activities/transtar21][KITP "Probes of
 transport in stars"]]!
 
+** Turbulence
+
+Allegedly, Erika Bohm Vitense said that had she been aware of the work
+of Kolmogorov on turbulence, she would never had proposed MLT as a
+theory for convection! This is because in a convective layer one
+should expect a subsonic but highly turbulent flow. We can in fact
+estimate the Reynolds number:
+
+#+begin_latex
+\begin{equation}
+\mathrm{Re} = \frac{\ell v_{conv}}{\nu} \ \ ,
+\end{equation}
+#+end_latex
+
+where \nu here is the kinematic viscosity of the stellar plasma, a
+quantity that is very complicated to compute from first principle, but
+is usually a very small quantity in practice. Plugging in numbers for
+the Sun's envelope, for example, one gets Re\simeq10^{12} (see for example
+[[https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract][Jermyn et al. 2022]]). Such large value is usually associated with a
+high degree of turbulence - an inherently 3D phenomenon, associated
+with intermittence (i.e., time dependence!).
+
+*N.B.:* all the multi-D simulations shown at the beginning allow for 3D
+convective flows, which is one step better than MLT, but on the other
+hand, the effective Reynolds number they reach are much smaller than
+the ones estimated in the stars: take them as indicative of the
+limitations of MLT, but they have their own limitations and
+shortcomings!
+
+* The biggest strength of MLT
+MLT has been used for >50 years in 1D stellar evolution calculations,
+and despite decades of person-time in trying to improve many of its
+aspects, it remains, for better or worse, a cornerstone of stellar
+modeling. This is because it is an "effective mean field theory" that
+successfully describes the time and space averaged state of saturated
+convective instability in a stellar gas using one free parameter only
+(\alpha_{MLT}) and allows us to make *evolutionary* calculations on timescales
+much longer than the convective turnover timescale.
+
+
 * Summary of the key assumptions
 
 - The gradient of the background environment is *radiative* (meaning
@@ -710,4 +782,5 @@ transport in stars"]]!
 
 * Homework
 - Using the definition of pressure scale height and the hydrostatic
-  equilibrium equation, show that P/\rho = 1/(g H_{p})
+  equilibrium equation, show that P/\rho = 1/(g H_{p}) \Rightarrow c_{sound}^{2}
+  \simeq gH_{p}
