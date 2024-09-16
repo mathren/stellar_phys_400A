@@ -587,16 +587,8 @@ F_\mathrm{conv} \equiv \frac{L(r)}{4\pi r^{2}} \ \ .
 
 To obtain an order of magnitude estimate, we can substitute in F_{conv}
 the average density of the star, T from the virial theorem estimate,
-assume a monoatomic gas for c_{P} and use the ideal gas EOS to state and
-hydrostatic equilibrium equation to state:
-
-#+begin_latex
-\begin{equation}
-gH_{p} = \frac{P}{\rho} \ \ .
-\end{equation}
-#+end_latex
-
-Using L(r)/4\pi r^{2} \sim L/R^{2} and putting everything together we obtain:
+assume a monoatomic gas for c_{P}, and using L(r)/4\pi r^{2} \sim L/R^{2} we
+obtain:
 
 #+begin_latex
 \begin{equation}
