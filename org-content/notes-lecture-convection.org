@@ -499,7 +499,7 @@ will use to make v_{conv} appear:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT}
-E_{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_{Bubble} v_{conv}^{2} =  \frac{\rho}{T}(\nabla_\mathrm{ad}-\nabla_\mathrm{rad})\ell^{2} \frac{G m}{r^{2}} \ \ ,
+E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_\mathrm{Bubble} v_\mathrm{conv}^{2} =  \frac{\rho}{T}(\nabla_\mathrm{ad}-\nabla_\mathrm{rad})\ell^{2} \frac{G m}{r^{2}} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -525,8 +525,8 @@ energy when diffusion is insufficient, and it is still very widely
 used today. It gives us the central hypothesis of MLT:
 
 #+begin_latex
-\begin{equation}\label{eq:v_conv_MLT}
-\ell = \alpha_{MLT} H_{p} \ \ \mathrm{with} \ \ H_{p} = -\frac{dr}{d\log(P)} \ \ .
+\begin{equation}\label{eq:alpha_MLT}
+\ell = \alpha_{MLT} H_{p}
 \end{equation}
 #+end_latex
 
@@ -542,10 +542,9 @@ flux as a function of known quantities and this free parameter \alpha_{MLT}:
 
 #+begin_latex
 \begin{equation}
-F_\mathrm{conv} = c_{p} \rho \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right) v_\mathrm{conv} \ \ .
+F_\mathrm{conv} = c_{p} \rho T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2}\frac{Gm}{r^{2}} H_{p}} \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right)^{3/2}  \ \ .
 \end{equation}
 #+end_latex
-
 
 ** Chemical mixing
 
@@ -570,6 +569,7 @@ conferences are being dedicated to these topics, e.g. [[https://www.kitp.ucsb.ed
 transport in stars"]]!
 
 * Summary
+
 
 
 
