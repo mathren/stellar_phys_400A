@@ -40,7 +40,7 @@ to be able to solve it!
 
 To find another equation, we can consider how energy flows in a star.
 We have already seen that the surface temperature (e.g., of the Sun),
-and the average temperature (estimated using the [[file:notes-lecture-VirTheo.org::+title: 400A - Virial theorem][virial theorem]]) are
+and the average temperature (estimated using the [[./notes-lecture-VirTheo.org][virial theorem]]) are
 /not/ the same, so we know that the star is /not/ in global thermal
 equilibrium. We also know, from similar arguments, that the average
 temperature is higher than the surface temperature, so there should be

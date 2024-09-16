@@ -481,7 +481,6 @@ done by the buoyancy forces on the bubble.
 
 ** Chemical mixing
 
-** Convective velocity vs. thermal velocity
 
 * Limitations of MLT
 
@@ -501,3 +500,9 @@ need to better understand how these mixing processes in the star
 interact with each other, with rotation, magnetic fields, etc. Entire
 conferences are being dedicated to these topics, e.g. [[https://www.kitp.ucsb.edu/activities/transtar21][KITP "Probes of
 transport in stars"]]!
+
+* Summary
+
+
+
+* Homework

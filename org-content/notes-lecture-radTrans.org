@@ -2,7 +2,6 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-
 * TODO in construction
 Let's also assume that LTE still holds, therefore, the rate at which
 atoms are ionized I matches the rate at which there are recombinations
