@@ -542,9 +542,14 @@ flux as a function of known quantities and this free parameter \alpha_{MLT}:
 
 #+begin_latex
 \begin{equation}
-F_\mathrm{conv} = c_{p} \rho T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2}\frac{Gm}{r^{2}} H_{p}} \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right)^{3/2}  \ \ .
+F_\mathrm{conv} = \rho c_{P} T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2} \frac{Gm(r)}{r^{2}} H_{P}_{}} (\nabla_\mathrm{rad}-\nabla_\mathrm{ad})^{3/2} \ \ .
 \end{equation}
 #+end_latex
+
+*N.B.:* The convective flux predicted by MLT is \propto to a power of the /superadiabaticity/ (\nabla_{rad}-\nabla_{ad}).
+
+**
+
 
 ** Chemical mixing
 
@@ -568,9 +573,19 @@ interact with each other, with rotation, magnetic fields, etc. Entire
 conferences are being dedicated to these topics, e.g. [[https://www.kitp.ucsb.edu/activities/transtar21][KITP "Probes of
 transport in stars"]]!
 
-* Summary
+* Summary of the key assumptions
 
-
-
+- The gradient of the background environment is *radiative* (meaning
+  energy is transported by radiation diffusion)
+- We model the thermal flux tubes carrying energy up and down with no
+  mass flux as bubbles moving adiabatically. These are an idealization
+  far from realistic convective flows.
+- The "bubbles" maintain hydrostatic equilibrium w.r.t. the
+  environment at any point in their travel
+- We assume that the average distance travelled by a bubble is
+  proportional to the local pressure scale height \ell = \alpha_{MLT} H_{p}.
+  \alpha_{MLT} is /the/ free parameter of this approach that effectively exists
+  because convection is inherently a 3D phenomenon that we are trying
+  to approximate in a spherically symmetric fashion.
 
 * Homework
