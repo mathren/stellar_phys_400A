@@ -512,6 +512,8 @@ Eq. \ref{eq:v_conv_MLT} is a relation between the two unknowns we have
 in the convective energy flux, v_{conv} and \ell, which allows us to
 eliminate one for the other.
 
+** The mixing length and \alpha_{MLT}
+
 At this point enters the heuristic hypothesis proposed by [[https://ui.adsabs.harvard.edu/abs/1958ZA.....46..108B/abstract][Bohm-Vitense
 1958]] (*N.B.:* the original paper is in German): let's assume that the
 length scale \ell traveled /on average/ by a convectively moving bubble
@@ -541,14 +543,15 @@ Putting all things together, we can now express the convective energy
 flux as a function of known quantities and this free parameter \alpha_{MLT}:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:conv_flux_MLT}
 F_\mathrm{conv} = \rho c_{P} T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2} \frac{Gm(r)}{r^{2}} H_{P}_{}} (\nabla_\mathrm{rad}-\nabla_\mathrm{ad})^{3/2} \ \ .
 \end{equation}
 #+end_latex
 
-*N.B.:* The convective flux predicted by MLT is \propto to a power of the /superadiabaticity/ (\nabla_{rad}-\nabla_{ad}).
+*N.B.:* The convective flux predicted by MLT in Eq. \ref{eq:conv_flux_MLT} is \propto to a power of the /superadiabaticity/ (\nabla_{rad}-\nabla_{ad}).
 
-**
+** Efficiency of convection
+
 
 
 ** Chemical mixing
@@ -557,8 +560,49 @@ F_\mathrm{conv} = \rho c_{P} T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2} \frac{G
 * Limitations of MLT
 
 ** Convective boundary mixing (a.k.a. "overshooting")
+The stability criteria derived from buoyancy argument only determine
+the location where one can expect that radiative diffusion is
+insufficient to carry energy, and therefore small perturbations will
+result in macroscopic motion of matter at v\simeq v_{conv} \ll v_{thermal}.
+However, what happens when a convective element of gas reaches the
+instability boundary with a non-zero velocity? There, the buoyant
+force (and hence the acceleration) goes to zero, but the element has
+already a non-zero velocity! Thus, we should expect it to "overshoot"
+this boundary, decelerate outside of it, extending further the
+convective mixing.
+
+This simplistic picture of overshooting really requires a
+multi-dimensional treatment. As you can see in the numerical
+simulations by for example [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]] (with the usual caveat
+that simulations \neq physical world, but at least these do not assume
+spherical symmetry), at the outer boundary the velocity perturbations
+of the gas will turn over and necessarily acquire non-radial
+components. More in general, the gradient within the convective
+boundary mixing region may remain adiabatic (convective penetration)
+and deviate from it only progressively, and the picture of
+overshooting alone (which does not specify the temperature gradient in
+this region) is again an oversimplification. Significant work is
+presently dedicated to better understanding the convective boundary
+and mixing processes active in these regions.
 
 ** Time-dependence
+By construction MLT (attempts to, arguably successfully) describe the
+/steady state reached at the saturation point of the convective
+instability/. This is usually sufficient for stars since the evolution
+takes much longer than the convective turnover timescale \tau_{conv}.
+
+However, there are short phases and/or specific problems in stellar
+physics when one is concerned with timescales short or comparable to
+\tau_{conv}. For example:
+
+ - during explosions (e.g., helium flash, pulsational-pair instability).
+ - when looking at the interplay between convection and stellar
+   oscillations
+ - ...
+
+In this case, we need to model how convection turns on/off (having a
+model for d v_{conv} / dt, see e.g., [[https://ui.adsabs.harvard.edu/abs/1969ApJ...157..339A/abstract][Arnett 1969]], [[https://ui.adsabs.harvard.edu/abs/1974ApJ...190..609W/abstract][Wood 1974]], [[https://ui.adsabs.harvard.edu/abs/1977ApJ...214..196G/abstract][Gough 1977]],
+and more recently [[https://ui.adsabs.harvard.edu/abs/2023ApJS..265...15J/abstract][Jermyn 2023]]).
 
 ** Efficiency of semiconvection/thermohaline mixing
 The processes we have discussed are all inherently multi-dimensional.
@@ -586,6 +630,6 @@ transport in stars"]]!
   proportional to the local pressure scale height \ell = \alpha_{MLT} H_{p}.
   \alpha_{MLT} is /the/ free parameter of this approach that effectively exists
   because convection is inherently a 3D phenomenon that we are trying
-  to approximate in a spherically symmetric fashion.
+  to approximate in spherical symmetry.
 
 * Homework
