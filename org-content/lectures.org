@@ -87,9 +87,7 @@ recall basic quantum mechanics elements, Gamow peak.
 
 [[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][Notes (preliminary)]]
 
-*** Homework
- - compare nuclear burning at various Z
- - derive nuclear reaction chains with conservation laws
+[[./notes-lecture-nuclear-burning.org][Notes]]
 
 ** <2024-10-03 Thu> - Radiative transfer
 - Saha equation

@@ -1,0 +1,100 @@
+#+Title: 400A - Nuclear burning
+#+author: Mathieu Renzo
+
+* Nuclear burning in stars
+*Materials:* Onno Pol's lecture notes Chapter 6.1 and 6.2, Kippenhahn
+ book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, [[https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstract][Gamow 1928]],
+ [[https://ui.adsabs.harvard.edu/abs/1999RPPh...62..395A/abstract][Arnould & Takahashi 1999]], [[https://ui.adsabs.harvard.edu/abs/2011RPPh...74i6901J/abstract][Jose & Iliadis 2011]]
+
+** Summary of where we are
+
+We have four equations of the stellar /structure/ assuming spherical
+symmetry, LTE, and hydrostatic (\partial t \equiv 0) equilibrium:
+
+*** Mass continuity
+#+begin_latex
+\begin{equation}\label{eq:mass_cont}
+\frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
+\end{equation}
+#+end_latex
+
+*** Hydrostatic equilibrium
+#+begin_latex
+\begin{equation}\label{eq:HSE}
+\frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
+\end{equation}
+#+end_latex
+which follows from the momentum continuity equation
+
+*** Equation of state
+#+begin_latex
+\begin{equation}
+P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T + P_{QM} + \frac{1}{3}aT^{4}  \ \ .
+\end{equation}
+#+end_latex
+
+*** Energy transport
+#+begin_latex
+\begin{equation}
+\frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
+\end{equation}
+#+end_latex
+where \nabla =\partial log(T)/\partial log(P) is the local temperature gradient, equal to
+the radiative gradient in stably stratified regions:
+#+begin_latex
+\begin{equation}
+\nabla_mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
+\end{equation}
+#+end_latex
+with \kappa = (1/\kappa_{rad} + 1/\kappa_{cond})^{-1} the combination "in parallel" of the
+radiative and conductive opacity (assumed to be known from atomic
+physics), and \nabla \equiv \nabla_{ad} the adiabatic gradient (within \sim10^{-7-8}
+precision) for convective regions. We also have a criterion
+(Schwarzschild criterion) to determine which region is which.
+
+*** Energy conservation
+#+begin_latex
+\begin{equation}
+\frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
+\end{equation}
+#+end_latex
+
+with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy.
+
+** The next step
+
+With all the equations above we almost have a complete set of solvable
+differential equations. What is left to discuss is the specific energy
+generation per unit time \varepsilon_{nuc} due to nuclear burning and the specific
+energy loss \varepsilon_{\nu} due to neutrino losses.
+
+In doing so, we will introduce the only time-dependent equation: as
+nuclear burning proceeds, the chemical composition changes, on a
+timescale that we will see is extremely long compared to the thermal
+and dynamical timescales, allowing to keep the equations we already
+have as they are and only solve for the composition to drive the
+evolution of stellar structures described so far through quasi-static
+variations, that is going from stellar /structure/ to stellar /evolution/.
+
+** Need for energy generation
+
+We have seen in the [[./notes-lecture-VirTheo.org][virial theorem lecture]] that one can derive from
+first principle that stars have a "negative heat capacity":
+#+begin_latex
+\begin{equation}
+\langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
+\end{equation}
+#+end_latex
+As the star loses energy at the surface because of its luminosity L it
+must contract (lower its gravitational potential energy), leading to
+an increase in T. As we discussed then, for the Sun this would go on
+for \sim 15 Myrs, which is way too short a timescale to explain many
+Earthly observables.
+
+We know this must stop either because the ideal gas EOS does not work
+(QM effects \rightarrow degeneracy pressure \rightarrow white dwarfs), or because some
+other energy source intervenes, balancing out the energy losses at the
+surface.
+
+Such energy source was worked out in the 1930s to be nuclear burning:
+/stars don't shine because they burn, stars burn because they shine/.

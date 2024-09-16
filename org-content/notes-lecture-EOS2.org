@@ -6,6 +6,8 @@
 *Materials*: Chapter 3 of Onno Pols' lecture notes, Chapter 14, 15, and
 16 of Kippenhahn's book.
 
+
+
 In the [[./notes-lecture-EOS1.org][previous lecture on EOS]], we have discussed polytropic EOS and
 classical, non-relativistic, ideal gas. The latter is an accurate
 description of the stellar gas in most, but importantly not /all/ the
@@ -54,8 +56,8 @@ Let's start by considering a non-extreme situation. Then the particles
 are distributed according to a Maxwellian distribution n(p), but
 whenever n(p)> g(p), we know this is going to violate QM!
 
-From the [[file:notes-lecture-EOS1.org::*Ideal gas][previous lecture on EOS]] we know that the Maxwell-Boltzmann
-distribution is
+From the [[file:notes-lecture-EOS1.org::*Ideal gas][previous lecture on EOS]] we have already seen the Maxwell-Boltzmann
+distribution
 
 #+begin_latex
 \begin{equation}
@@ -171,7 +173,7 @@ are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and q_{s} = 2 in it
   T\rightarrow0. Of course, if T\equiv0 there would be no cooling through radiation,
   the object would not be a /star/ anymore (it would be if one wants a
   "black dwarf", a theoretical idea the Universe is too young to have
-  made, e.g., [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4357C/abstract][Caplan 2020]]). What we really mean by taking the T\rightarrow0
+  produced, e.g., [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4357C/abstract][Caplan 2020]]). What we really mean by taking the T\rightarrow0
   limit is that the thermal energy of the particles is very small
   compared to the Fermi energy: k_{b}T \ll \varepsilon_{F}. In this limit
   /the thermal and mechanical properties of the gas decouple from each
@@ -264,16 +266,19 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   For \eta \ll1 the Fermi-Dirac distribution can be Taylor expanded and one
   recovers the ideal gas equation of state.
 
-
   So, in summary, because electrons are Fermions that need to obey
   Pauli's principle at very low T (comparing their kinetic energy to
   the Fermi energy) and/or very high \rho, they can exert a much larger
   pressure than predicted by the classical ideal gas. Moreover, in
   those situation, the pressure is a polytrope, independent of
-  temperature T! This means the stars do not need to heat up anymore
-  in order to sustain themselves against their own gravity. This is
-  the situation of a "white dwarf" (WD), which are the remnants for
-  the vast majority of stars, including the Sun.
+  temperature T! The decoupling between mechanical (hydrostatic
+  structure) and radiative (energy transport) properties of the star
+  afforded by degeneracy of the gas greatly simplifies the problem.
+  This also means the stars do not need to heat up anymore in order to
+  sustain themselves against their own gravity (breaking the
+  conclusion we obtained from the Virial theorem). This is the
+  situation of a "white dwarf" (WD), which are the remnants for the
+  vast majority of stars, including the Sun.
 
   These compact objects contract and cool until they fully crystallize
   (releasing further latent heat), becoming "planet-sized diamond-like
@@ -341,7 +346,7 @@ fully ionized hydrogen (cf. [[file:notes-lecture-CMD-HRD.org::*A modern view on 
 So far in our discussion of the EOS, we have considered always this
 last case of full ionization. Since the atomic binding energies are of
 order of \sim1-10 eV (think of the Rydberg, \chi=13.6eV to strip Hydrogen of
-its electron from the fundamental state), that is 1eV/k_{B} ~ 10^{4} K, and
+its electron from the fundamental state), that is 1eV/k_{B} \sim 10^{4} K, and
 most of the stellar material is hotter than this, this was probably
 not a bad approximation: the (thermal) kinetic energy of the particles
 flying around in the stellar gas are much larger than what is needed
