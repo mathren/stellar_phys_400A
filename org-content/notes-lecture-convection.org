@@ -49,7 +49,7 @@ It is important to keep in mind that we adopt modeling simplifications
 to make the simulation of stars tractable, but these introduce
 systematic uncertainties which are active topic of research.
 
-** Core convection in a massive star ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]])
+** Core convection in a massive star ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022b]])
 
   [[https://vimeo.com/684826914]]
 
@@ -207,6 +207,28 @@ itself. The common choice is to use the pressure P itself.
 hydrostatic equilibrium equation, much like m(r) is, so it is a valid
 variable to use as independent coordinate.
 
+Thus, rewriting d\rho/dr = (d\rho/dP)/dP/dr, using the ideal gas EOS, and
+defining the pressure scale height as the e-folding length of the
+pressure:
+
+#+begin_latex
+\begin{equation}
+ H_{p} = - \frac{dr}{d \log(P)} \Leftrightarrow P(r) \simeq P_{0} e^{-r/H_{p}} \ \ ,
+\end{equation}
+#+end_latex
+
+we can rewrite:
+
+#+begin_latex
+\begin{equation}
+\frac{d\rho}{dr}_{i} = -\frac{P}{H_{P}} \frac{d\rho}{dP} \ \ .
+\end{equation}
+#+end_latex
+
+*N.B.:* because of the minus sign in the definition of pressure scale
+height (which is there to make H_{p} a positive quantity), the signs
+change when going from (d\rho/dr)_{i} to \nabla_{i.
+
 Furthermore, it is helpful to rewrite this in terms of temperature
 gradients instead of density gradients. These changes of variables,
 assuming an ideal gas EOS with constant mean molecular weight \mu allow
@@ -331,7 +353,7 @@ energy is generated, therefore L can be very large, especially in
 massive stars and drive convection), convection may flatten the \mu
 gradient on a timescale short compared to the main sequence lifetime,
 therefore erasing the ingredient that differentiates the two (see for
-instance [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]]). This is an active topic of debate in the
+instance [[https://ui.adsabs.harvard.edu/abs/2022ApJ...928L..10A/abstract][Anders et al. 2022a]]). This is an active topic of debate in the
 recent literature!
 
 * Mixing length theory
@@ -403,19 +425,10 @@ any small perturbation) w.r.t. the surrounding environment:
 #+end_latex
 
 To put this in the form of the gradients that we have defined above
-for the stability, we can define the pressure scale height as the
-e-folding length of the pressure:
-
-#+begin_latex
-\begin{equation}
- H_{p} = - \frac{dr}{d \log(P)} \Leftrightarrow P(r) \simeq P_{0} e^{-r/H_{p}} \ \ .
-\end{equation}
-#+end_latex
-
-We can also notice that dT/dr = T \times d log(T)/ dlog(P) \times d log(P)/dr,
-and assume that T_{Bubble} \simeq T_{env} \equiv T, that is effectively
-consider only the zeroth order of the Taylor series of the temperature
-expansion, and rewrite for the temperature difference:
+for the stability, we notice that dT/dr = T \times d log(T)/ dlog(P) \times d
+log(P)/dr, and assume that T_{Bubble} \simeq T_{env} \equiv T, that is
+effectively consider only the zeroth order of the Taylor series of the
+temperature expansion, and rewrite for the temperature difference:
 
 #+begin_latex
 \begin{equation}
@@ -423,12 +436,10 @@ expansion, and rewrite for the temperature difference:
 \end{equation}
 #+end_latex
 where we use the assumption that the environment is characterized by a
-radiative gradient, and the sign in the parenthesis changes because of
-the minus sign in the definition of pressure scale height (which is
-there to make H_{p} a positive quantity). *N.B.:* We have worked out above
-that in the unstable situation \nabla_{rad} is steeper than \nabla_{ad}, so the form
-above also guarantees that \Delta T is actually positive, as we expect for
-a bubble raising and carrying an excess thermal energy compared to the
+radiative gradient. *N.B.:* We have worked out above that in the
+unstable situation \nabla_{rad} is steeper than \nabla_{ad}, so the form above also
+guarantees that \Delta T is actually positive, as we expect for a bubble
+raising and carrying an excess thermal energy compared to the
 background.
 
 
@@ -691,10 +702,11 @@ transport in stars"]]!
 - The "bubbles" maintain hydrostatic equilibrium w.r.t. the
   environment at any point in their travel
 - We assume that the average distance travelled by a bubble is
-  proportional to the local pressure scale height \ell = \alpha_{MLT} H_{p}.
-  \alpha_{MLT} is /the/ free parameter of this approach that effectively exists
-  because convection is inherently a 3D phenomenon that we are trying
-  to approximate in spherical symmetry.
+  proportional to the local pressure scale height \ell = \alpha_{MLT} H_{p} (the
+  "mixing length").
+- \alpha_{MLT} is /the/ free parameter of this approach that
+  effectively exists because convection is inherently a 3D phenomenon
+  that we are trying to approximate in spherical symmetry.
 
 * Homework
 - Using the definition of pressure scale height and the hydrostatic
