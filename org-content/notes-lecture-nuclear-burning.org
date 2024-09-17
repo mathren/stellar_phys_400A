@@ -284,7 +284,7 @@ reagents and the products:
 
 #+begin_latex
 \begin{equation}
-Q = \left((m_{a} + m_{X}\right) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A})c^{2}  \ \ ,
+Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A}\right)c^{2}  \ \ ,
 \end{equation}
 #+end_latex
 which, if Q>0 is the energy /released/ by the /exoenergetic/ X(a,b)Y
