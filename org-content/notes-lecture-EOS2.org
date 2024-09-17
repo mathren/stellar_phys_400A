@@ -51,9 +51,8 @@ factor in g(p) comes from the Jacobian from going from Cartesian to
 spherical polar coordinates in momentum space and assuming an
 isotropic momentum distribution (dp_{x}dp_{y}dp_{z} \equiv d^{3}p = 4\pi p^{2} dp).
 
-
 Let's start by considering a non-extreme situation. Then the particles
-are distributed according to a Maxwellian distribution n(p), but
+are distributed according to a Maxwell-Boltzmann distribution n(p), but
 whenever n(p)> g(p), we know this is going to violate QM!
 
 From the [[file:notes-lecture-EOS1.org::*Ideal gas][previous lecture on EOS]] we have already seen the Maxwell-Boltzmann
@@ -107,12 +106,14 @@ particles making up the star, which can be either
   #+end_latex
 
   where \eta=\mu/k_{b}T is the "degeneracy parameter" dependent on the
-  /chemical potential \mu/ (*N.B.:* do not confuse this with the mean
-  molecular weight which has the same symbol, the chemical potential
-  has the dimension of an energy, while the mean molecular weight is a
-  dimensionless number!) and the temperature. The fact that this is \le
-  1 is an expression of Pauli's exclusion principle, each quantized
-  energy state can be occupied by at most one fermion.
+  /chemical potential \mu/, that is how much energy you need to "spend" to
+  create a new particle in an available energy level (*N.B.:* do not
+  confuse this with the mean molecular weight which has the same
+  symbol, the chemical potential has the dimension of an energy, while
+  the mean molecular weight is a dimensionless number!) and the
+  temperature. The fact that this is \le 1 is an expression of Pauli's
+  exclusion principle, each quantized energy state can be occupied by
+  at most one fermion.
 
 - *Bosons* with integer spin, such as photons, or \alpha particles. In this
   case the relevant distribution is the Bose-Einstein's distribution:
