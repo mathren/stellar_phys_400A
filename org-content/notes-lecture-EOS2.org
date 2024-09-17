@@ -212,7 +212,7 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   gas) and v=p/m, thus from the previous lecture on EOS we have:
   #+begin_latex
   \begin{equation}
-  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p/m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{f}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \ \ .
+  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{f}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \ \ .
   \end{equation}
   #+end_latex
 
