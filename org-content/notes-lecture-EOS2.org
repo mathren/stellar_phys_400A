@@ -367,7 +367,7 @@ and thus the pressure from the EOS (and we will see [[./notes-lecture-ETransport
 temperature gradient).
 
 By definition the mean molecular weight \mu is such that
-\rho = m_{u}\mu = (n+n_{e})m_{u}. This is what we used in the ideal gas equation
+\rho = m_{u}\mu(n+n_{e}). This is what we used in the ideal gas equation
 to get P=\rho k_{b}T/(\mu m_{u}) combining the electrons and ions pressure.
 Similarly we can define \mu_{0} as the mean molecular weight per nucleus,
 and \mu_{e} as the mean molecular weight per electron, and thus
