@@ -288,7 +288,8 @@ Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A
 \end{equation}
 #+end_latex
 which, if Q>0 is the energy /released/ by the /exoenergetic/ X(a,b)Y
-reaction, or if Q<0 is the energy input needed to get the
+reaction - of the kind that stars need to generate energy and sustain
+themselves against gravity, or if Q<0 is the energy input needed to get the
 /endoenergetic/ X(a,b)Y reaction going.
 
 Thus, the energy release by nuclear reaction per unit time and unit
