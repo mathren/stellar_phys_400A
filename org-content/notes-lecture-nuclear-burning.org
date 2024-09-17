@@ -209,7 +209,7 @@ nuclear (strong) interactions needs to explain:
   energy per nucleon of \sim 7.5MeV/nucleon;
 - there are peaks for nuclei with A divisible by 4 and N=Z, that is
   nuclei that can be approximately thought as bound collections of \alpha
-  particles (for example carbon 12 \sim 3\alpha particles bound together,
+  particles (for example carbon 12 \sim 3 \alpha particles bound together,
   oxygen 16 ~4 \alpha particles, etc..);
 - the nuclear binding energy is roughly constant at about \sim
   8MeV/nucleon for most heavy nuclei;
@@ -247,7 +247,7 @@ mass of the nucleus (measured experimentally):
 
 #+begin_latex
 \begin{equation}\label{eq:tau_nuc_scaling}
-B = (Zm_{p}+(A-Z)m_{n} - m_{nucleus})c^{2} \simeq (Zm_{H}+(A-Z)m_{n} - m_{nucleus})c^{2} + \mathcal{O}(10\mathrm{eV})>0 \ \ ,
+B = (Zm_{p}+(A-Z)m_{n} - m_\mathrm{nucleus})c^{2} \simeq (Zm_{H}+(A-Z)m_{n} - m_\mathrm{nucleus})c^{2} + O(10\mathrm{eV})>0 \ \ ,
 \end{equation}
 #+end_latex
 which is a positive quantity precisely because the strong interaction
