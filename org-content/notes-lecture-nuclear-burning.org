@@ -246,7 +246,7 @@ of the masses of the Z protons (m_{p}) and N=A-Z neutrons (m_{n}) minus the
 mass of the nucleus (measured experimentally):
 
 #+begin_latex
-\begin{equation}\label{eq:tau_nuc_scaling}
+\begin{equation}
 B = \left(Zm_{p}+(A-Z)m_{n} - m_\mathrm{nucleus}\right)c^{2} \simeq \left(Zm_{H}+(A-Z)m_{n} - m_\mathrm{nucleus}\right)c^{2} >0 \ \ ,
 \end{equation}
 #+end_latex
