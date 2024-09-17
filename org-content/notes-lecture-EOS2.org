@@ -248,8 +248,15 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   need to use the relativistic formula p^{2} = \varepsilon^{2}-m_{e}c^{2} to solve the
   integral and obtain the pressure.
 
-  One can estimate the electron density at the transition with the
-  condition p_{F} \simeq m_{e} c.
+  One can estimate the density at the transition with the
+  condition p_{F} \simeq m_{e} c:
+
+  #+begin_latex
+  \begin{equation}
+   \rho_{NR \rightarrow UR} \simeq \mu_{e} m_{u} \frac{8\pi}{3} \left(\frac{m_{e}c}{h}\right)^{3} \ \ .
+  \end{equation}
+  #+end_latex
+
 
 ** Partial degeneracy
 
