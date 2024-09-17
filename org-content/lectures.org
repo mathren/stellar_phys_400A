@@ -110,6 +110,9 @@ graded, etc. how to provide useful feedback during peer-reviewing.
 ** <2024-10-22 Tue> - Evolution: low mass stars 2
 
 ** <2024-10-24 Thu> - Evolution: high mass stars
+*Aim*: discuss late core burning and core-collapse mechanism
+
+[[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][Notes (preliminary)]]
 
 ** <2024-10-29 Tue> - Homology relations
 ** <2024-10-31 Tue> - Supernovae
