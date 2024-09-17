@@ -254,8 +254,8 @@ which is a positive quantity precisely because the strong interaction
 between protons and neutrons keeps them bound. In the second step, we
 approximate the proton mass with the hydrogen atom mass, making a
 mistake of the order of \sim 10 eV by neglecting the binding energy of
-the electron (which is acceptable since we are dealing with MeV = 10^{6}^{}
-eV as the relevant nuclear scale).
+the electron (which is acceptable since we are dealing with MeV =
+10^{6}eV as the relevant nuclear scale).
 
 Because of the apparent peaks in the B/A vs. A curve, stars will tend
 to produce more of the elements with the most tight nuclei, whose
@@ -276,6 +276,46 @@ thermal timescale, so all the equations we have derived so far still
 hold, since they are differential equations that describe /local/
 quantities). We will return on this [[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][later]].
 
+*** Q-value
+For any nuclear reaction that may happen a+X \rightarrow b+Y, which often is
+written as X(a,b)Y with a,b,X,Y generic particles, it is useful to
+define the so called Q-value as the mass difference between the
+reagents and the products:
+
+#+begin_latex
+\begin{equation}
+Q = \left((m_{a} + m_{X}\right) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A})c^{2}  \ \ ,
+\end{equation}
+#+end_latex
+which, if Q>0 is the energy /released/ by the /exoenergetic/ X(a,b)Y
+reaction, or if Q<0 is the energy input needed to get the
+/endoenergetic/ X(a,b)Y reaction going.
+
+Thus, the energy release by nuclear reaction per unit time and unit
+mass is just:
+
+#+begin_latex
+\begin{equation}
+\varepsilon_\mathrm{nuc} = \sum_{i} \frac{Q_{i} r_{i}}{\rho} \ \ ,
+\end{equation}
+#+end_latex
+
+where the sum runs over all the possible reactions, r_{i} is the rate per
+unit time and volume of the reactions, and the division by the mass
+density \rho gives the right dimensions [\varepsilon_{nuc}] = [E]/([t][M]).
+
+So, what is left to do is calculate the volumetric reaction rate r_{i}
+that can occur in a star.
+
+** Microphysics of nuclear reactions
+
+A generic nuclear reaction X(a,b)Y can be of various kinds depending
+on the particles involved:
 
 
-** TODO \varepsilon_{nuc} and Q values
+* Homework
+
+Using =MESA-web=, which contains tabulated data for nuclear reactions
+from experiments, calculate the evolution until the end of iron core
+burning (i.e., the onset of core-collapse) of a 15M_{\odot} star and use
+the output to estimate the duration of each core burning phase.
