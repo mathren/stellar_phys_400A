@@ -77,8 +77,6 @@ sources of opacity in a star
 *Aim*: Introduce convective instability, mixing length theory, and its
 limitations.
 
-[[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][handwritten notes (preliminary)]]
-
 [[./notes-lecture-convection.org][Notes]]
 
 ** <2024-10-01 Thu> - Nuclear energy generation
