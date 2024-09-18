@@ -311,29 +311,7 @@ big, often military funded, laboratories.
 
 * Homeworks
 
-** The Eddington Luminosity
-
-Consider the dynamics of an /optically thick/ gas. If sufficiently hot,
-we need to include in the momentum equation the radiation pressure,
-and if it is even hotter, we know that the radiation pressure will be
-the dominant pressure term. Let's assume to start from a situation
-where our optically thick gas is self-gravitating and in hydrostatic
-equilibrium. Using the momentum balance and the equation for radiative
-energy transport, derive the maximum luminosity for which hydrostatic
-equilibrium can be sustained: this is the so-called Eddington
-luminosity L_{Edd}, which has multiple applications from stellar to
-accretion physics!
-
-For L \geq L_{Edd} the radiation pressure wins over gravity, and hydrostatic
-equilibrium cannot occur. Consider the opacity dependence of L_{Edd}. In
-his original derivation Eddington only considered electron scattering.
-However, as you have just demonstrated, the generic gas opacity with
-all its contributions appears if one derives it from the equations for
-the stellar interior.
-
-If \kappa(m) decreases as we move outward to larger mass coordinates m,
-L_{edd} \propto \kappa^{-1} will decrease, sometimes /faster/ than L(m),
-leading to the situation L(m) \geq L_{Edd}(\kappa(m)) which is problematic.
+** The Eddington Luminosity again
 
 Using =MESA-web=, compute a \ge30 M_{\odot} star until the maximum central
 temperature reaches above \ge 10^{8.5} K. Make sure to save multiple
