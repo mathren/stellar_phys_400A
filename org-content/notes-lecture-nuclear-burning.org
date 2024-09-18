@@ -277,10 +277,9 @@ hold, since they are differential equations that describe /local/
 quantities). We will return on this [[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][later]].
 
 *** Q-value
-For any nuclear reaction that may happen a+X \rightarrow b+Y, which often is
-written as X(a,b)Y with a,b,X,Y generic particles, it is useful to
-define the so called Q-value as the mass difference between the
-reagents and the products:
+For any nuclear reaction that may happen a+X \rightarrow b+Y with a,b,X,Y
+generic particles, it is useful to define the so called Q-value as the
+mass difference between the reagents and the products:
 
 #+begin_latex
 \begin{equation}
@@ -310,13 +309,81 @@ that can occur in a star.
 
 ** Microphysics of nuclear reactions
 
-A generic nuclear reaction X(a,b)Y can be of various kinds depending
-on the particles involved:
+A generic nuclear reaction X+a \rightarrow Y+b is often written as X(a,b)Y to
+make it easy to express chains of reactions, e.g.,
+X(a,b)Y(c,d)Z(e,f)A...
 
+Depending on the nature of the incoming particle (X and a in our
+generic reaction), or in other words on the microphysics that
+determines the interaction, there can be of various kinds of
+reactions. All of these types can occur at some point in the evolution
+(and explosion!) of stars.
+
+*** Charged-particles reactions
+When X and a are charged nuclei, then the reaction can only occur if
+something allows them to overcome the Coulomb repulsion.
+
+These can be resonant or not (the distinction will come back later).
+
+*Example:*
+#+begin_latex
+\begin{equation}
+ ^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}
+\end{equation}
+#+end_latex
+
+*** Reactions involving neutrons
+In this case the force involved is the strong force, and there is no
+Coulomb repulsion to overcome. However, these require an environment
+that is neutron rich, which is astrophysically a rare occurrence,
+since the neutron is an unstable particle that decays in \sim15min to
+a proton n\rightarrow p+e^{}-+\bar{\nu_{e}}. This half-life however can significantly
+change for neutrons bound in nuclei (as opposed to free neutrons).
+
+Depending on the available flux of neutrons in the environment, we
+distinguish:
+
+- *r-process* for rapid neutron captures (i.e., the rate of neutron
+  captures is high w.r.t. the rate of neutron decays)
+- *s-process* for slow neutron captures (i.e., each nucleus captures at
+  best one neutron before decaying).
+
+These processes are involved in the formation of  elements heavier
+than iron, but they require particular astrophysical environment
+(e.g., the merger of two neutron stars or a neutron star with the core
+of another star, or the envelope of an AGB star).
+
+*** Weak reactions
+These can typically be spotted by the presence of a neutrino and/or
+the conversion of a nucleon from one eigenstate of isospin to another
+(in simpler words, the conversion of a proton into a neutron or
+viceversa).
+
+*Example:*
+#+begin_latex
+\begin{equation}
+p+e^{-} \rightarrow n+\nu_{e} \ \mathrm{or} \ p(e^{-},\nu_{e})n
+\end{equation}
+#+end_latex
+
+*** Photodisintegrations
+When one of the particles is a photon and the outgoing particles can
+be seen as "fragments" of the ingoing nucleus
+
+Example:*
+#+begin_latex
+\begin{equation}
+^{56}\mathrm{Fe}+\gamma \rightarrow 14\alpha
+\end{equation}
+#+end_latex
+
+** Charged particle reactions
 
 * Homework
 
-Using =MESA-web=, which contains tabulated data for nuclear reactions
+- Using =MESA-web=, which contains tabulated data for nuclear reactions
 from experiments, calculate the evolution until the end of iron core
 burning (i.e., the onset of core-collapse) of a 15M_{\odot} star and use
 the output to estimate the duration of each core burning phase.
+- Calculate the Sun's mass loss rate due to the nuclear burning of 4
+  protons into helium.
