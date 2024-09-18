@@ -529,11 +529,11 @@ of the plasma:
 
 #+begin_latex
 \begin{equation}
-r_\mathrm{Debye} = \sqrt{\frac{k_{B}T}{4\pi e N\Chi}} \ \ ,
+r_\mathrm{Debye} = \sqrt{\frac{k_{B}T}{4\pi e N\chi}} \ \ ,
 \end{equation}
 #+end_latex
 where N is the total number of particles in absence of screening
-(nuclei/ions+electrons), and \Chi = \sum_{i}_{}^{} Z_{i}^{2} (N_{i}/N) + N_{e}/N with N_{i} and N_{e}
+(nuclei/ions+electrons), and \chi = \sum_{i}_{}^{} Z_{i}^{2} (N_{i}/N) + N_{e}/N with N_{i} and N_{e}
 number of ions and electrons in absence of screening.
 
 For distances between a and X larger than r_{Debye} the electron
