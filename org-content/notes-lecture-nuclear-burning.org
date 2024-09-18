@@ -513,7 +513,7 @@ and any extra repulsive term such a centrifugal barrier is only going
 to lower the reaction rate. The most important reactions are going to
 have \ell = 0, that is head-on collisions between a and X.
 
-**** Coulomb potential term
+*** Coulomb potential term
 For the Coulomb term we can write:
 #+begin_latex
 \begin{equation}
@@ -533,19 +533,19 @@ r_\mathrm{Debye} = \sqrt{\frac{k_{B}T}{4\pi e N\chi}} \ \ ,
 \end{equation}
 #+end_latex
 where N is the total number of particles in absence of screening
-(nuclei/ions+electrons), and \chi = \sum_{i}_{}^{} Z_{i}^{2} (N_{i}/N) + N_{e}/N with N_{i} and N_{e}
+(nuclei/ions+electrons), and \chi = \sum_{i} Z_{i}^{2} (N_{i}/N) + N_{e}/N with N_{i} and N_{e}
 number of ions and electrons in absence of screening.
 
 For distances between a and X larger than r_{Debye} the electron
 screening reduces the Coulomb repulsion between the nuclei.
 
-**** Nuclear potential term
+*** Nuclear potential term
 Finally, for the nuclear potential, there isn't a well known
 functional form from first principles, and it is typically derived
 experimentally. This is because the strong interactions it is meant to
 represent cannot be treated perturbatively. Typically, it can be
 expressed in this form:
-#+being_latex
+#+begin_latex
 \begin{equation}
 V_\mathrm{nuc}(r) = a_\mathrm{vol} A - a_\mathrm{surf} A^{2/3} - a_\mathrm{Coulomb} \frac{Z^{2}}{A^{1/3}} - a_\mathrm{sym} \frac{(N-Z)^{2}}{A} + a_\mathrm{coupling} \ \ ,
 \end{equation}
@@ -574,11 +574,11 @@ the nuclear potential is going to be attractive at short range, but it
 has a repulsive core (otherwise the nuclei would not have a finite
 approximately constant density)
 
-**** Impossibility of nuclear reactions without QM
+*** Impossibility of nuclear reactions without QM
 Putting things together we
 
 
-*** Thermonuclear reaction rates
+** Thermonuclear reaction rates
 
 
 
