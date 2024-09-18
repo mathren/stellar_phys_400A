@@ -11,7 +11,7 @@ Kippenhan & Weigert's book.
 *Mass conservation:*
 #+begin_latex
 \begin{equation}\label{eq:mass_cont}
-dm = 4\pi \rho r^{2} dr \ \ .
+\frac{dm}{dr} = 4\pi \rho r^{2} \ \ .
 \end{equation}
 #+end_latex
 
