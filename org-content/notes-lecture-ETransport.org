@@ -420,11 +420,60 @@ We still need an equation for the convective energy transport, and
 while unpacking \varepsilon_{nuc} we will write a set of equations for the chemical
 evolution due to nuclear burning, but we are getting close!
 
-
 * Homework
-- estimate the thermal velocity of particles (electrons and protons)
-  using the Virial theorem to estimate the temperature and compare it
-  to the speed of light. Compare the diffusion coefficient for
-  radiative diffusion and conduction and derive the average density
-  above which conduction can start to compete with radiative
-  diffusion. For a star of 1M_{\odot}, to which radius does that correspond?
+
+** Eddington Luminosity
+Consider an optically thick, hot, and stratified gas: this could be
+(some layers of) a star, or a sufficiently dense accretion or
+decretion flow to/from a compact object. Because of the assumption of
+optical thickness, we can assume that the layer is in LTE and the
+radiation field is well approximated by a black body, thus we know
+that the radiation pressure is P_{rad} = aT^{4}/3. If the gas is
+sufficiently hot, this is the only pressure term we need to consider
+(P_{rad} \gg P_{gas}).
+1. Write dP_{rad}/dr as a function of L, \kappa, and \rho and r expressing dT/dr
+   assuming energy is transported throughout our layer of gas by
+   radiative diffusion.
+2. Impose hydrostatic equilibrium for this gas, and derive the
+   functional form for the luminosity (call it L_{Edd}) required for
+   radiation pressure in an optically thick gas to balance out
+   gravity.
+
+The expression that you found was first derived by [[https://en.wikipedia.org/wiki/Arthur_Eddington][Arthur Eddington]],
+assuming that \kappa \equiv \kappa_{es} = 0.2(1+X) g cm^{-2}. In this derivation you did
+not need to assume anything for \kappa: the expression you derived is
+sometimes referred to as "modified Eddington Luminosity".
+Because of its dependence on \kappa, which we will see can vary throughout
+the star, it can occasionally occur that L_{Edd} <L: in this case
+radiative energy transport and hydrostatic equilibrium cannot be
+simultaneously satisfied - and this occurs in the envelope of massive
+stars for example.
+
+*N.B.:* the only central hypothesis necessary to derive the Eddington
+luminosity here is that the photons are a black body, that is an
+optically thick environment is necessary.
+
+
+** Exercise 5.3 in Onno Pols' lecture notes
+Without solving the stellar structure equations, we can already derive
+useful scaling relations. In this question you will use the equation
+for radiative energy transport with the equation for hydrostatic
+equilibrium to derive a scaling relation between the mass and the
+luminosity of a star.
+1. Derive how the central temperature, T_{center}, scales with the mass,
+   M, radius, R, and luminosity, L, for a star in which the energy
+   transport is by radiation. To do this, use the stellar structure
+   equation for the temperature gradient in radiative equilibrium
+   (*hint:* use the dT/dr form).
+2. Assume that r \sim R and that the temperature is proportional to
+   T_{center}, L(m) \sim L and estimating dT/dr ∼ −T_{center} /R.
+3. Derive how T_{center} scales with M and R, using the hydrostatic
+   equilibrium equation, and assuming that the ideal gas EOS holds.
+4. Combine the results obtained in 1. and 2., to derive how L scales
+   with M and R for a star whose energy transport is radiative.
+
+You have arrived at a mass-luminosity relation /without assuming
+anything about how the energy is produced/, only about how it is
+transported (by radiation). This shows that the luminosity of a star
+is not determined by the rate of energy production in the centre, but
+by how fast it can be transported to the surface!

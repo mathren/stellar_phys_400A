@@ -367,7 +367,11 @@ p+e^{-} \rightarrow n+\nu_{e} \ \mathrm{or} \ p(e^{-},\nu_{e})n
 
 *** Photodisintegrations
 When one of the particles is a photon and the outgoing particles can
-be seen as "fragments" of the ingoing nucleus
+be seen as "fragments" of the ingoing nucleus. These can occur when
+very energetic \gamma ray photons, because their energy needs to be
+comparable to the binding energy of nuclei, of the order of ~8MeV, can
+encounter particles. This can occur for example at the very late
+moments of massive star evolution.
 
 Example:
 #+begin_latex
