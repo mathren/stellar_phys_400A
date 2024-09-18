@@ -325,7 +325,7 @@ something allows them to overcome the Coulomb repulsion.
 
 These can be resonant or not (the distinction will come back later).
 
-*Example:*
+Example:
 #+begin_latex
 \begin{equation}
  ^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}
@@ -359,7 +359,7 @@ the conversion of a nucleon from one eigenstate of isospin to another
 (in simpler words, the conversion of a proton into a neutron or
 viceversa).
 
-*Example:*
+Example:
 #+begin_latex
 \begin{equation}
 p+e^{-} \rightarrow n+\nu_{e} \ \mathrm{or} \ p(e^{-},\nu_{e})n
@@ -370,7 +370,7 @@ p+e^{-} \rightarrow n+\nu_{e} \ \mathrm{or} \ p(e^{-},\nu_{e})n
 When one of the particles is a photon and the outgoing particles can
 be seen as "fragments" of the ingoing nucleus
 
-Example:*
+Example:
 #+begin_latex
 \begin{equation}
 ^{56}\mathrm{Fe}+\gamma \rightarrow 14\alpha
