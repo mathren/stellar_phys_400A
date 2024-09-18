@@ -97,7 +97,7 @@ shine/.
 
 Initially, people considered chemical reactions and radioactivity as a
 possible energy sources, but it was shown very quickly that these are
-insufficient. It took major advances in quantum mechanics and their
+insufficient. It took major advances in quantum mechanics (QM) and their
 application to atomic and nuclear theory to work out in the late 1930s
 that the energy source is nuclear burning, a result obtained by [[https://en.wikipedia.org/wiki/Hans_Bethe][Hans
 Bethe]] and collaborators.
@@ -342,7 +342,7 @@ In this case the force involved is the strong force, and there is no
 Coulomb repulsion to overcome. However, these require an environment
 that is neutron rich, which is astrophysically a rare occurrence,
 since the neutron is an unstable particle that decays in \sim15min to
-a proton n\rightarrow p+e^{}-+\bar{\nu_{e}}. This half-life however can significantly
+a proton n\rightarrow p+e^{-}+anti-\nu_{e}. This half-life however can significantly
 change for neutrons bound in nuclei (as opposed to free neutrons).
 
 Depending on the available flux of neutrons in the environment, we
@@ -413,7 +413,7 @@ From Eq. \ref{eq:overall_h_burn} we can see that:
    process of H into He that we will detail later. Nevertheless, the
    process will necessarily involve charged particle reactions.
  - \nu_{e} appear \Rightarrow there will be weak reactions involved
- - as already seen earlier, we can calculate the \varphi factor (cf. Eq.
+ - as already seen earlier, we can calculate the \phi factor (cf. Eq.
    \ref{eq:mass_defect}), and thus the Q-value for the overall reaction
    Q_{H burn} \simeq 26.5 MeV. Note that the Q-value does not really depend on
    the details of the burning process.
@@ -431,7 +431,7 @@ slowest rate and last the longest.
 For the rest of this lecture we will focus mostly on charged particle
 reactions: as we just saw these are involved since H core burning, and
 they are the main reactions during the hydrostatic lifetime of stars.
-Moreover, breakthroughs in quantum mechanics (by [[https://en.wikipedia.org/wiki/George_Gamow][George Gamow]]) applied
+Moreover, breakthroughs in QM (by [[https://en.wikipedia.org/wiki/George_Gamow][George Gamow]]) applied
 to the interaction of charged particles are what opened the way to the
 discovery that the energy source in stars are nuclear reactions.
 
@@ -449,7 +449,7 @@ compound nucleus C:
 X + a \rightarrow C^{\star} \rightarrow Y + b \ \ ,
 \end{equation}
 #+end_latex
-where the nucleus C is formed in an excited state C^{\star}  since in
+where the nucleus C is formed in an excited state C^{\star} since in
 the reference frame of X the particle a arrives with its own kinetic
 energy and internal binding energy that (together with X's internal
 energy) are generally not exactly the total energy for the compound
@@ -473,20 +473,126 @@ needs to be explained by models of the strong force):
 
 #+begin_latex
 \begin{equation}
-r_\mathrm{nuc} = r_{0} A^{1/3} \simeq 1.4 \times 10^{-13} A^{1/3} \ \mathrm{cm} \ \.
+r_\mathrm{nuc} = r_{0} A^{1/3} \simeq 1.4 \times 10^{-13} A^{1/3} \ \mathrm{cm} \Rightarrow \tau_{cross} = \frac{r_\mathrm{nuc}}{c} \simeq 10^{-23} A^{1/3} \ \mathrm{s} \ \ .
 \end{equation}
 #+end_latex
-Thus the light crossing time is r_{n}/c \simeq 10^{-23} \times A^{1/3} seconds: any
-compound nucleus C^{\star }with lifetime longer than this allows us to
-use this two step approximation to treat the problem.
+Any compound nucleus C^{\star }with lifetime longer than this allows us
+to use this two step approximation to treat the problem, where the two
+incoming particles X and a come "into contact" (i.e., within their
+r_{nuc}), form an excited compound nucleus C^{\star}, which then de-excites
+in the final products Y and b independently of how it formed.
+
+*N.B.:* the nuclear radius dependence on A can be flipped around to
+infer that the average density of nuclei is constant as A increases:
+\rho_{nuc} \simeq Am_{u} / (4\pi/3 \times r_{nuc}^{3}) \simeq 2\times10^{14} A g \cm^{-3}.
+
+*N.B.:* this is necessarily an oversimplified picture, since nuclei are
+described by QM and don't have a "hard" boundary at r_{nuc}, but rather
+their constituent nucleons have decaying wave-functions that solve the
+Schrodinger equation with the nuclear potential for their
+interactions. In reality, each particle can be described as a wave
+with De Broglie wavelength \lambda = h/p, and a physically more accurate
+picture should treat all the particles involved accounting for their
+wave nature.
+
+To understand how two charged nuclei, both with positive charge, can "come into contact"
+within r_{nuc}, we need to consider the potential governing their
+interaction:
+
+#+begin_latex
+\begin{equation}
+V \equiv V(r) = V_\mathrm{Coulomb} + V_\mathrm{nuc} + \frac{\ell(\ell+1)\hbar^{2}}{2m_{aX}r^{2}} \ \ ,
+\end{equation}
+#+end_latex
+where the last term is the centrifugal potential in the rest-frame of
+the target nucleus X which depends on the reduced mass m_{aX} =
+m_{a}m_{X}/(m_{a}+m_{X}) and quantum number \ell which determines the order of the
+wave-function of the system a+X. For simplicity, we can limit ourselves to
+consider \ell=0: we already have a repulsive Coulomb term to win over,
+and any extra repulsive term such a centrifugal barrier is only going
+to lower the reaction rate. The most important reactions are going to
+have \ell = 0, that is head-on collisions between a and X.
+
+**** Coulomb potential term
+For the Coulomb term we can write:
+#+begin_latex
+\begin{equation}
+V_\mathrm{Coulomb} = \frac{Z_{a}Z_{X}e^{2}}{r} - \{\mathrm{electron\ screening\ term}\} \ \ ,
+\end{equation}
+#+end_latex
+where the first part is >0 and describes the electrostatic repulsion
+between the two nuclei of chage Z_{a}e and Z_{X}e (both positive), and the
+electron screening term /reduces/ the repulsion of the nuclei: in the
+stellar plasma we expect each nucleus to be statistically surrounded
+by a "cloud" of electrons of radius of the order of the Debye length
+of the plasma:
+#+being_latex
+\begin{equation}
+r_\mathrm{Debye} = \sqrt{\frac{k_{B}T}{4\pi e N\Chi}} \ \ ,
+\end{equation}
+#+end_latex
+where N is the total number of particles in absence of screening
+(nuclei/ions+electrons), and \Chi = \sum_{i}_{}^{} Z_{i}^{2} (N_{i}/N) + N_{e}/N with N_{i} and N_{e}
+number of ions and electrons in absence of screening.
+
+For distances between a and X larger than r_{Debye} the electron
+screening reduces the Coulomb repulsion between the nuclei.
+
+**** Nuclear potential term
+Finally, for the nuclear potential, there isn't a well known
+functional form from first principles, and it is typically derived
+experimentally. This is because the strong interactions it is meant to
+represent cannot be treated perturbatively. Typically, it can be
+expressed in this form:
+#+being_latex
+\begin{equation}
+V_\mathrm{nuc}(r) = a_\mathrm{vol} A - a_\mathrm{surf} A^{2/3} - a_\mathrm{Coulomb} \frac{Z^{2}}{A^{1/3}} - a_\mathrm{sym} \frac{(N-Z)^{2}}{A} + a_\mathrm{coupling} \ \ ,
+\end{equation}
+#+end_latex
+where the coefficients a_{i} are experimentally derived. Each term as a
+specific interpretation, keeping in mind the empirical relation for
+the nuclear radius r_{nuc} \equiv r_{nuc}(A) \propto A^{1/3}:
+- a_{vol} is the coefficient for a volume term, that is positive and
+  expresses the fact that on short range nucleons attract (F_{nuc}=- \nabla
+  V_{nuc}) each other and nuclei hold together.
+- a_{surf} is a surface correction that decreases the previous term, and
+  expresses the fact that nucleons at the edge of the nucleus feel
+  the interaction with fewer other nucleons.
+- a_{Coulomb} expresses the electromagnetic repulsion between protons
+- a_{sym} expresses the fact that stable nuclei prefer to have N=Z (unless N>Z
+  is necessary to increase A without increasing the Coulomb term for
+  heavy nuclei)
+- a_{coupling} \propto \pm A^{-3/4} which is >0 if both N and Z are even, <0
+  if both are odd, and zero otherwise, is a term that expresses the
+  fact that stable nuclei tend to prefer filling the energy levels for
+  protons and neutrons, so they tend to prefer having an even number
+  for each (one spin up and one spin down in each energy level).
+
+Besides the nuclear physics details here, the important point is that
+the nuclear potential is going to be attractive at short range, but it
+has a repulsive core (otherwise the nuclei would not have a finite
+approximately constant density)
+
+**** Impossibility of nuclear reactions without QM
+Putting things together we
+
+
+*** Thermonuclear reaction rates
 
 
 
 * Homework
 
 - Using =MESA-web=, which contains tabulated data for nuclear reactions
-from experiments, calculate the evolution until the end of iron core
-burning (i.e., the onset of core-collapse) of a 15M_{\odot} star and use
-the output to estimate the duration of each core burning phase.
+  from experiments, calculate the evolution until the end of iron core
+  burning (i.e., the onset of core-collapse) of a 15M_{\odot} star and
+  use the output to:
+  1. determine the typical composition of the core at various
+     evolutionary phases and explain it in terms of the experimentally
+     derived properties of nuclei
+  2. estimate the duration of each core burning phase.
+  *N.B.:* this may require you to obtain multiple =profile*.data= files, and/or
+  peruse the =trimmed_history.data= file. You can also use the "movie"
+  of the evolution of the star produced by =MESA-web= for you.
 - Calculate the Sun's mass loss rate due to the nuclear burning of 4
   protons into helium.
