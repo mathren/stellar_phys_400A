@@ -1,8 +1,8 @@
-#+title: 400A - Energy transport 1/2
+#+title: 400A - Diffusive energy transport
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Energy transport in stars 1/2
+* Energy transport in stars
 *Materials*: Chapters 3 and 5 of Onno Pols' lecture notes, chapter 5 of
 Kippenhan & Weigert's book.
 
