@@ -151,8 +151,8 @@ experimentally to make a standard), and the mass of helium 4 is m(^{4}He)
 helium nucleus is:
 
 #+begin_latex
-\begin{equation}
-\varphi = \frac{4m_{p} - m(^{4}\mathrm{He})}{4m_{p}} \simeq 0.007 \ \ .
+\begin{equation}\label{eq:mass_defect}
+\varphi = \frac{4m_{p} - m(^{4}\mathrm{He})}{4m_{p}} = \frac{2.85m_{u} c^{2}}{4m_{p}} \simeq 0.007 \ \ .
 \end{equation}
 #+end_latex
 Note that to turn 4 protons into a helium, because of charge and
@@ -316,8 +316,7 @@ X(a,b)Y(c,d)Z(e,f)A...
 Depending on the nature of the incoming particle (X and a in our
 generic reaction), or in other words on the microphysics that
 determines the interaction, there can be of various kinds of
-reactions. All of these types can occur at some point in the evolution
-(and explosion!) of stars.
+reactions.
 
 *** Charged-particles reactions
 When X and a are charged nuclei, then the reaction can only occur if
@@ -377,7 +376,50 @@ Example:
 \end{equation}
 #+end_latex
 
-** Charged particle reactions
+** Nuclear reactions in stars
+
+All of the types of reactions listed above (and more) can occur at
+some point in the evolution (and explosion!) of stars. For example,
+hen estimating the rest energy of protons that is released when fusing
+them into \alpha particles, we have seen that the overall reaction is:
+
+#+begin_latex
+\begin{equation}\label{eq:overall_h_burn}
+4p \rightarrow ^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ ,
+\end{equation}
+#+end_latex
+where the positrons need to be there to conserve electric charge
+throughout the process, and the neutrinos need to be there for
+conserving the leptonic number (+1 for the leptons electron e^{-}, muon
+\mu^{-}, tau \tau^{-} and the corresponding neutrinos \nu_{e}, \nu_{\mu}, \nu_{\tau} and -1
+for their antiparticles positron e^{+}, positive muon \mu^{+}, and positive
+\tau^{+} and the corresponding antineutrinos).
+
+From Eq. \ref{eq:overall_h_burn} we can see that:
+ - protons need to encounter each other. Statistically, 4 protons are
+   unlikely to meet each other at a point in space for reaction Eq.
+   \ref{eq:overall_h_burn} to occur. Eq. \ref{eq:overall_h_burn} is a
+   compound reaction that "summarizes" the more complex burning
+   process of H into He that we will detail later. Nevertheless, the
+   process will necessarily involve charged particle reactions.
+ - \nu_{e} appear \Rightarrow there will be weak reactions involved
+ - as already seen earlier, we can calculate the \varphi factor (cf. Eq.
+   \ref{eq:mass_defect}), and thus the Q-value for the overall reaction
+   Q_{H burn} \simeq 26.5 MeV. Note that the Q-value does not really depend on
+   the details of the burning process.
+
+*N.B.:* we discuss Eq. \ref{eq:overall_h_burn} because H is the most
+abundant element in the Universe, that most stars are made of, and
+thus this is (typically) the first process occurring in stars. It is
+also the one with the highest Q-value (cf. B/A vs. A plot!), thus the
+one that for a given luminosity L of the star can proceed at the
+slowest rate and last the longest.
+
+
+*** Charged particle reactions
+
+For the rest of this lecture we will focus mostly on
+
 
 * Homework
 
