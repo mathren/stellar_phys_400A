@@ -501,7 +501,7 @@ interaction:
 
 #+begin_latex
 \begin{equation}
-V \equiv V(r) = V_\mathrm{Coulomb} + V_\mathrm{n} + \frac{\ell(\ell+1)\hbar^{2}}{2m_{aX}r^{2}} \ \ ,
+V \equiv V(r) = V_\mathrm{Coulomb} + V_\mathrm{nuc} + \frac{\ell(\ell+1)\hbar^{2}}{2m_{aX}r^{2}} \ \ ,
 \end{equation}
 #+end_latex
 where the last term is the centrifugal potential in the rest-frame of
@@ -547,7 +547,7 @@ represent cannot be treated perturbatively. Typically, it can be
 expressed in this form:
 #+begin_latex
 \begin{equation}
-V_\mathrm{n}(r) = a_\mathrm{vol} A - a_\mathrm{surf} A^{2/3} - a_\mathrm{Coulomb} \frac{Z^{2}}{A^{1/3}} - a_\mathrm{sym} \frac{(N-Z)^{2}}{A} + a_\mathrm{coupling} \ \ ,
+V_\mathrm{nuc}(r) = a_\mathrm{vol} A - a_\mathrm{surf} A^{2/3} - a_\mathrm{Coulomb} \frac{Z^{2}}{A^{1/3}} - a_\mathrm{sym} \frac{(N-Z)^{2}}{A} + a_\mathrm{coupling} \ \ ,
 \end{equation}
 #+end_latex
 where the coefficients a_{i} are experimentally derived. Each term as a
