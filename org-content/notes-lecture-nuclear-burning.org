@@ -550,7 +550,7 @@ expressed in this form:
 V_\mathrm{nuc}(r) = a_\mathrm{vol} A - a_\mathrm{surf} A^{2/3} - a_\mathrm{Coulomb} \frac{Z^{2}}{A^{1/3}} - a_\mathrm{sym} \frac{(N-Z)^{2}}{A} + a_\mathrm{coupling} \ \ ,
 \end{equation}
 #+end_latex
-where the coefficients a_{i} are experimentally derived. Each term as a
+where the coefficients a_{i} are experimentally derived. Each term has a
 specific interpretation, keeping in mind the empirical relation for
 the nuclear radius r_{n} \equiv r_{n}(A) \propto A^{1/3}:
 - a_{vol} is the coefficient for a volume term, that is positive and

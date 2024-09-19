@@ -69,19 +69,24 @@ This energy flow can occur in three forms in a star:
 3. *Neutrino losses*: except for collapsing iron cores and neutron
    stars, the stellar gas is transparent to neutrinos. As soon as one
    is produced, it can free stream out of the star carrying away
-   energy effectively instantaneously.
+   energy effectively instantaneously (or more precisely on a
+   timescale \sim R/v_{\nu} \simeq R/c comparable to the light crossing time
+   if neutrinos are non interacting and we neglect their mass, so they
+   are ultra-relativistic particles with v_{\nu}\simeq c).
 
 The next /two/ stellar structure equations to add to our system will
-come from combining all of these together.
+come from combining all of these together and applying conservation of
+energy.
 
 ** Diffusion processes
 In general, the "diffusion approximation" is useful to describe the
 net flux of "something" when the average path of the carrier of said
 "something" is small compared to the lengthscale over which the
-"something" is transported.
+"something" is transported, that is the mean free path \ell_{m.f.p} is much smaller
+than the size L of the region \ell_{m.f.p.} \ll L.
 
 In this approximation, the net flux of this "something" is related to
-the density of "something" by
+the density of "something" by Fick's law:
 
 #+begin_latex
 \begin{equation}\label{eq:diff}
@@ -130,13 +135,14 @@ flux across z is
 
 #+begin_latex
 \begin{equation}
-J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)=\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ .
+J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) \simeq \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)=\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ ,
 \end{equation}
 #+end_latex
-
-Eq. \ref{eq:diff} is the generalization in 3 dimensions of the above,
-where \nabla = (\partial_{x}, \partial_{y}, \partial_{z}) for Cartesian coordinates, and
-D=v\ell/3.
+where the only approximation we use it a first order Taylor expansion
+of the density n(z) assuming that the mean free path \ell is small
+compared to the scale of interest! Eq. \ref{eq:diff} is the
+generalization in 3 dimensions of the above, where \nabla = (\partial_{x}, \partial_{y},
+\partial_{z}) for Cartesian coordinates, and D=v\ell/3.
 
 *** Energy transport by radiative diffusion
 We have already calculated that [[file:notes-lecture-EOS1.org::*Global and local thermal equilibrium][mean free path for photons]] and
