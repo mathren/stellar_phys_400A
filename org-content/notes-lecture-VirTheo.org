@@ -300,7 +300,7 @@ E_\mathrm{int} = \frac{\# \mathrm{degrees\ of\ freedom}}{2}Nk_{B}\langle T \rang
 \end{equation}
 #+end_latex
 where N = \int \rho/(\mu m_{u})dV = M/(\mu m_{u)} is the number of particles, with \mu
-mean molecular weight assumed to be constant, <T> is the average
+mean molecular weight assumed to be constant, \langle T \rangle is the average
 temperature in the star, and the number of degrees of freedom is 3 for
 a monoatomic gas. From the Virial theorem it follows that:
 
@@ -325,7 +325,7 @@ From this equation, several important facts follow:
 - A self-gravitating collection of particle with finite temperature
   must radiate away energy, thus it will lose energy. This energy
   loss, since E_{tot} = E_{pot}/2 = - CGM^{2}/2R <0 implies that R must
-  decrease. But then, <T> must increase! This is the "gravothermal"
+  decrease. But then, \langle T \rangle must increase! This is the "gravothermal"
   collapse of a cloud/star. As thermal energy is lost to radiation at
   the surface, the (average) temperature raises! This is why stars can
   be thought of objects with /negative/ heat capacity: it heats up as it
@@ -408,7 +408,7 @@ Using the virial theorem:
   to calculate a more precise value for C)
 - Find an order of magnitude (\sim) relation between the average sound
   speed in the star and the escape velocity (assume the star is made
-  of ideal gas of temperature <T>).
+  of ideal gas of temperature \langle T \rangle).
 - Demonstrate that if a binary loses instantaneously an amount of mass
   greater than half the total mass of the binary, \Delta M \ge (M_{1}+M_{2})/2,
   then the orbit is unbound. This can happen when a supernova goes off
