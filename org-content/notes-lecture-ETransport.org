@@ -82,8 +82,8 @@ energy.
 In general, the "diffusion approximation" is useful to describe the
 net flux of "something" when the average path of the carrier of said
 "something" is small compared to the lengthscale over which the
-"something" is transported, that is the mean free path \ell_{m.f.p} is much smaller
-than the size L of the region \ell_{m.f.p.} \ll L.
+"something" is transported, that is the mean free path \ell is much smaller
+than the size L of the region \ell \ll L.
 
 In this approximation, the net flux of this "something" is related to
 the density of "something" by Fick's law:
@@ -135,10 +135,10 @@ flux across z is
 
 #+begin_latex
 \begin{equation}
-J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) \simeq \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)=\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ ,
+J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)\simeq\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ ,
 \end{equation}
 #+end_latex
-where the only approximation we use it a first order Taylor expansion
+where the only approximation we use is a first order Taylor expansion
 of the density n(z) assuming that the mean free path \ell is small
 compared to the scale of interest! Eq. \ref{eq:diff} is the
 generalization in 3 dimensions of the above, where \nabla = (\partial_{x}, \partial_{y},
@@ -146,9 +146,10 @@ generalization in 3 dimensions of the above, where \nabla = (\partial_{x}, \part
 
 *** Energy transport by radiative diffusion
 We have already calculated that [[file:notes-lecture-EOS1.org::*Global and local thermal equilibrium][mean free path for photons]] and
-estimated that it is very small compared to the typical size of stars.
-Therefore, we can treat the energy transport by photons in the
-diffusion approximation.
+estimated that it is very small compared to the typical size of stars
+(and the typical size of a resolution element in a numerical
+simulation of a star!). Therefore, we can treat the energy transport
+by photons in the diffusion approximation.
 
 *N.B.*: if the star were a perfect black body, there would not be any
 transport of energy by photons, because by definition the radiation
@@ -165,7 +166,10 @@ If the "something" that we are considering in our diffusion equation
 is energy, then in Eq. \ref{eq:diff} J\rightarrow F_{rad} is a energy flux of
 radiative energy, and n\rightarrow u is the energy density. Moreover, in the
 diffusion coefficient D the mean velocity of photons is v\rightarrow c, and we
-have already written \ell_{\gamma} = 1/\kappa\rho as a function of \rho.
+have already written \ell_{\gamma} = 1/\kappa_{rad}\rho as a function of \rho.
+
+*N.B.:* today we will introduce different kinds of opacity \kappa, \kappa_{rad} is
+the one impeding the diffusion of photons.
 
 Thus, the radiative diffusion equation is
 #+begin_latex
@@ -190,11 +194,11 @@ the dominant energy transport is radiative diffusion only:
 
 #+begin_latex
 \begin{equation}
-\frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa_\mathrm{rad} F_\mathrm{rad} \ \ .
+\frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa_\mathrm{rad} F_\mathrm{rad} \propto \kappa_\mathrm{rad} F_\mathrm{rad}.\ \ .
 \end{equation}
 #+end_latex
 /In a radiative region the temperature is proportional to the opacity
-\kappa_{rad} times the radiative energy flux/: dT/dr\propto \kappa_{rad} F_{rad}.
+\kappa_{rad} times the radiative energy flux!/
 
 We can further rewrite the flux F_{rad} = L_{rad}/(4\pi r^{2}). This introduces
 the /local/ luminosity L_{rad}\equiv L_{rad}(r) which is the rate (that is per
