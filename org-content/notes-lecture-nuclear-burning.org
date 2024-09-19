@@ -608,7 +608,7 @@ E \simeq k_{B} T \geq E_{C} = \frac{Z_{a}Z_{X}e^{2}}{r_{n}} \geq \frac{e^{2}}{r_
 \end{equation}
 #+end_latex
 where we assume Z_{a} = Z_{x} = A = 1 to minimize the Coulomb barier, so
-r_{n} = r_{0} = 1.3 \times 10^{-13} cm. The temperature threshold we have derived
+r_{n} \equiv r_{0} = 1.3 \times 10^{-13} cm. The temperature threshold we have derived
 is much larger than the mean temperature in the Sun as estimated with
 the Virial theorem. It is also much larger than the central
 temperature of the Sun which one could estimate assuming \langle T \rangle -
@@ -621,7 +621,69 @@ however, the beams are /not/ in thermal equilibrium. The key point is
 than nuclear reactions in stars/.
 
 *** Charged particles nuclear reaction tunneling through the Coulomb barrier
+The piece of puzzle that allows for charged particles nuclear
+reactions in stars is the QM /tunnel effect/, which was studied in the
+context of the C^{\star} \rightarrow Y+b decay by Gamow.
 
+*N.B.:* the /tunnel effect/ is a purely wave mechanics phenomenon that has
+to do with constructive interference of waves. The QM element is that
+the particles involved here are waves!
+
+From QM, we know that in the "classically forbidden region", where E<V
+(so the classical kinetic energy term in E=K+V would be K<0), the wave
+function can still be non-zero. To calculate the wave-function \Psi of
+particle a in the potential of X, we can make the following ansatz:
+ - in the classically allowed region r\geq r_{c} the wave function will have
+   the form of a propagating wave with phase dependent on (E-V(r))^{1/2};
+ - in the classically allowed region with r\leq r_{n}, we assume the same
+   functional form;
+ - in the classically forbidden region, we will have a superposition
+   of evanescent waves with exponentially decaying amplitude
+
+
+*N.B.:* The math simplifies significantly using the WKB
+approximation, that is writing \Psi = exp(\Phi) and solving for \Phi instead of
+\Psi.
+
+By imposing that the wave function \Psi and its derivative \partial_{r}\Psi are
+continuous at the boundaries r_{c} and r_{n} one can find solutions that
+have a non-zero amplitude /inside/ r_{n}, that is tunneling solutions! The
+continuity of \Psi depends on the phase at the boundaries, for specific
+values of E it is possible to obtain solutions, these typically
+correspond to metastable energy levels of the potential, with energy
+E_{metastable} \pm \Delta E and \Delta E \sim h/\tau the "width" in
+energy depending on the \tau the half-life of the metastable state. *N.B.:*
+the width \Delta E of the levels is set by the uncertainty principle.
+
+
+These states are metastable because a bound system between a and X
+(i.e., C^{\star}) can result in the tunneling of a out of the potential
+of X (the decay C^{\star} \rightarrow a+X).
+
+Therefore, the nuclear reaction rates are going to be extremely
+sensitive to the relative energy of a and X: if this relative energy E
+hits a /resonance/ of the compound state C^{\star}, that is if E\sim
+E_{metastable}, the wave function of the system has non-zero amplitude
+inside the nucleus, and since the probability of finding a within r\le
+r_{n} is \prop ||\Psi||^{2}, this means there will be a non-zero probability of
+forming the compound nucleus.
+
+Actually carrying out the calculation give a probability of tunneling
+
+#+begin_latex
+\begin{equation}
+P\propto \exp\left(-\int_{r_{n}}^{r_c} \frac{\sqrt{2m_{aX} (V(r) - E)}}{\hbar} dr \right) \equiv P_{0} \exp\left(-\frac{b}{\sqrt{E}}\right) \ \ ,
+\end{equation}
+#+end_latex
+with b = 2\pi Z_{a} Z_{X} e^{2} (m_{aX}/2)^{1/2} / \hbar.
+
+*N.B.:* Nuclear resonances allow stars to work, and for example the
+existence of a specific resonance in the nucleus of carbon 12 (Hoyle
+state) is what allows helium to burn into carbon and ultimately allows
+for life! However, because nuclear physics experiments operate at so
+much higher energy than stars, extrapolating to lower relative
+energies is complicated and dangerous: it is easy to miss an unknown
+resonance that would change significantly the rate.
 
 ** Thermonuclear reaction rates
 
