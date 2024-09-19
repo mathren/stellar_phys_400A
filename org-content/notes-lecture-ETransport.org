@@ -8,21 +8,24 @@ Kippenhan & Weigert's book.
 
 ** Summary of where we are
 
-*Mass conservation:*
+*** Mass conservation:
 #+begin_latex
 \begin{equation}\label{eq:mass_cont}
 \frac{dm}{dr} = 4\pi \rho r^{2} \ \ .
 \end{equation}
 #+end_latex
 
-*Hydrostatic equilibrium (Momentum conservation):*
+*** Hydrostatic equilibrium:
 #+begin_latex
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
 #+end_latex
+*N.B.:* This is the particular form that momentum conservation takes
+since we can assume accelerations are \sim0 because stars do not evolve
+on timescales comparable to the dynamical timescale
 
-*Equation of state:*
+*** Equation of state:
 #+begin_latex
 \begin{equation}\label{eq:EOS}
 P \equiv P(\rho, \mu, T) = P_\mathrm{rad} + P_\mathrm{gas} = \frac{1}{3}aT^{4} + \frac{\rho}{\mu m_{u}}k_{B}T + P_\mathrm{QM}\ \ .
@@ -34,7 +37,9 @@ r(m)), P, \rho, and T. By adding an EOS to relate P and \rho (and the
 composition of the star which enters in the mean molecular weight \mu),
 in the general case, we have also added a new variable T, so the
 system is not close again, and we need to look for one more equation
-to be able to solve it!
+to be able to solve it! In today's lecture we will actually derive
+two, but one of them does not cover all possible physical situations
+in stars.
 
 ** Energy flow in stars
 
@@ -60,7 +65,7 @@ This energy flow can occur in three forms in a star:
    motion of matter. This occurs as an instability if the other
    means of energy transport are insufficient to carry the energy flux
    required by the local stellar structure, and it will be the topic
-   of a [[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][future lecture]].
+   of a [[./notes-lecture-convection.org][future lecture]].
 3. *Neutrino losses*: except for collapsing iron cores and neutron
    stars, the stellar gas is transparent to neutrinos. As soon as one
    is produced, it can free stream out of the star carrying away
