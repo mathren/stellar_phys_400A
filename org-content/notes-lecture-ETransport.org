@@ -204,12 +204,7 @@ We can further rewrite the flux F_{rad} = L_{rad}/(4\pi r^{2}). This introduces
 the /local/ luminosity L_{rad}\equiv L_{rad}(r) which is the rate (that is per
 unit time) at which radiation transports energy through a surface of
 radius r within the star (or in other words, the "power" that is in
-the photon field at the location r).
-
-*N.B.:* If radiative energy transport is the *only* energy transport
-mechanism at radius r, then L_{rad}(r)\equiv L(r) where L(r) is the /total/
-luminosity. This is in general not true because of the contribution
-by neutrinos and convection: L(r) = L_{rad} + L_{\nu} +L_{conv}.
+the photon field at the location r):
 
 #+begin_latex
 \begin{equation}
@@ -221,16 +216,22 @@ This is, for the case of radiative energy transport only, the extra
 differential equation relating T and \rho, but unfortunately it also
 brings in a new variable, the local radiative luminosity L_{rad}.
 
+*N.B.:* If radiative energy transport is the *only* energy transport
+mechanism at radius r, then L_{rad}(r)\equiv L(r) where L(r) is the /total/
+luminosity. This is in general not true because of the contribution
+by neutrinos and convection: L(r) = L_{rad} + L_{\nu} +L_{conv}.
+
 *N.B.:* Yes, we are introducing yet two other variables, L_{rad} and \kappa_{rad}
 here. We will have to write an equation for the former, but
-fortunately for us \kappa_{rad} is determined by atomic physics, as [[file:notes-lecture-kappa.org][we will see]].
-While this is an active topic of research (including classified
-research for military purposes...), for stellar physics application we
-have lookup tables for \kappa_{rad}\equiv\kappa_{rad}(T,\rho), and thus we will not count it as a
-new variable after discussing the physics it represents.
+fortunately for us \kappa_{rad} is determined by atomic physics, as [[file:notes-lecture-kappa.org][we will
+see in the next lecture]]. While this is an active topic of research
+(including classified research for military purposes...), for stellar
+physics application we have lookup tables for
+\kappa_{rad}\equiv\kappa_{rad}(T,\rho), and thus we will not count it as a new
+variable after discussing the physics it represents.
 
 Because of the assumption underpinning the diffusion approximation,
-this is /not/ the right equation whenever \ell_{\lambda} is not negligible
+this is /not/ the right equation whenever \ell_{}_{\gamma} is not negligible
 compared to the scale over which one wants to consider the gradient:
 in the stellar atmosphere we need a more detailed approach requiring
 to treat the radiative transfer.
@@ -240,11 +241,13 @@ next the case where energy is carried not by photons, but by the local
 motion of particles, that is *conduction*.
 
 *** Energy transport by conduction
-Energy transport by conduction is not limited to stars. For example a
-piece of metal left half in the Sun and half in the shade in Arizona.
-The thermal motion of particles (atoms, electrons, ions) carries
-energy from the hotter parts to the colder ones, and the transfer
-occurs through collisions between the particles.
+Energy transport by diffusion, and especially conduction that is
+diffusion of energy through particle motion, is not limited to stars.
+For example, in a piece of metal left half in the Sun and half in the
+shade, the thermal motion of particles (atoms, electrons, ions)
+carries energy from the hotter parts to the colder ones, and the
+transfer occurs through collisions between the loose electrons in the
+metallic energy bands.
 
 Conduction, although always present, is important only in certain kind
 of stars. To demonstrate this, we can consider the diffusion
