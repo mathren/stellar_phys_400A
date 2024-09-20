@@ -153,7 +153,7 @@ helium nucleus is:
 
 #+begin_latex
 \begin{equation}\label{eq:mass_defect}
-\varphi = \frac{4m_{p} - m(^{4}\mathrm{He})}{4m_{p}} = \frac{2.85m_{u} c^{2}}{4m_{p}} \simeq 0.007 \ \ .
+\varphi = \frac{4m_{p} - m(^{4}\mathrm{He})}{4m_{p}} = \frac{2.85 \times 10^{-2} m_{u} c^{2}}{4m_{p}} \simeq 0.007 \ \ .
 \end{equation}
 #+end_latex
 Note that to turn 4 protons into a helium, because of charge and
@@ -840,7 +840,7 @@ section \sigma peak (because E is within the width of a metastable energy
 level), the nuclear reaction rate is still very peaked around a
 specific energy!
 
-** Heuristic summary
+** Heuristic summary and S-factor
 For a generic charged particle thermonuclear reaction X(a,b)Y we can write:
 #+begin_latex
 \begin{equation}
@@ -855,14 +855,20 @@ Broglie, X} = h/p = h/E^{1/2} \Rightarrow \lambda_{de Broglie, X}^{2 }\propto
 E^{-1} and thus the heuristic expression above gives:
 
 #+begin_latex
-\begin{equation}
-\sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)\sigma_{_\mathrm{nuc}}(E) \ \ ,
+\begin{equation}\label{eq:heuristic_summary}
+\sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
 \end{equation}
 #+end_latex
-where \sigma_{nuc} is the intrinsic cross section that depends on the shape of
-the nuclear potential well, and thus the energy levels. This can be
-influenced strongly by nuclear resonances (when E \sim energy of a
-metastable state of C^{\star{}}).
+where S(E)_{} is the so called "astrophysical S-factor" that contains the
+intrinsic cross section that depends on the shape of the nuclear
+potential well, and thus the energy levels. This can be influenced
+strongly by nuclear resonances (when E \sim energy of a metastable state
+of C^{\star{}}). In practice, often one relies on laboratory measurements
+(at high E\gg thermal energy in stars), and extrapolation to low
+energies to obtain S(E), which is a risky business precisely because
+of the resonances! In absence of resonances though, one expects S(E)
+to be only slowly varying (unlike \sigma(E) which depends on the Coulomb
+penetration probability).
 
 ** Nuclear physics in stellar evolution codes
 When trying to model the structure and evolution of a star, we cannot
