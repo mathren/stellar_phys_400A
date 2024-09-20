@@ -90,7 +90,7 @@ Thus du_{\nu}/dr = 4\pi/c \times \partial B(\nu, T)/\partial T \times
 dT/dr, and performing the integral over the frequencies:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:int_flux}
 F_\mathrm{rad} = \int_{0}^{+\infty} F_{\nu}d\nu = - \frac{1}{3}\frac{c}{\rho}\int_{0}^{+\infty} \frac{1}{\kappa_{\nu}}\frac{du_{\nu}}{dr} =
 -\frac{4\pi}{3c\rho}  \frac{dT}{dr} \int_{0}^{+\infty}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} d\nu\ \ .
 \end{equation}
@@ -125,7 +125,7 @@ seem to not have a straightforward physical interpretation.
 However, consider that to a good approximation we can consider the
 stellar interior to be in LTE with a single temperature and a photon
 gas described by a black body. We can rewrite Eq.
-\ref{eq:specific_flux} as:
+\ref{eq:specific_flux} (using Eq. \ref{eq:int_flux}) as:
 
 #+begin_latex
 \begin{equation}
