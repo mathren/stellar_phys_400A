@@ -793,10 +793,12 @@ Often, this average quantity is approximated as a powerlaw from the
 known value at a certain temperature T_{0}.
 #+begin_latex
 \begin{equation}
-\langle \sigma(v)v \rangle = \langle \sigma(v)v \rangle_{T_{0}}_{} \left(\frac{T}{T_{0}}\right)^{\beta}
+\langle \sigma(v)v \rangle = \langle \sigma(v)v \rangle_{T_{0}} \left(\frac{T}{T_{0}}\right)^{\beta}
 \end{equation}
 #+end_latex
-this is convenient because powerlaw dependencies are intuitive.
+this is convenient because powerlaw dependencies are intuitive, and
+often people will quote the exponent \beta in arguments - be aware it is a
+big oversimplification
 
 
 Since velocity is not a great quantity to use in QM problems, and we
@@ -808,7 +810,7 @@ v=(2E/m_{aX})^{1/2}, and we can also use that the cross section \sigma is
 proportional to the tunneling probability so \sigma(E)\propto exp(-b/E^{1/2}):
 #+begin_latex
 \begin{equation}
-r_{aX} \prop \frac{N_{a}N_{X}}{1+\delta_{aX}}\sqrt{\frac{2}{\pi}}\frac{1}{k_{B}T}}\int_{0}^{+\infty}\exp\left(-\frac{E}{k_{B}T}-\frac{b}{\sqrt{E}}\right)  \ \ .
+r_{aX} \prop \frac{N_{a}N_{X}}{1+\delta_{aX}}\sqrt{\frac{2}{\pi}}\frac{1}{k_{B}T}\int_{0}^{+\infty}\exp\left(-\frac{E}{k_{B}T}-\frac{b}{\sqrt{E}}\right)  \ \ .
 \end{equation}
 #+end_latex
 
