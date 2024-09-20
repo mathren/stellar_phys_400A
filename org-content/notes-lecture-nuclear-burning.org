@@ -61,6 +61,7 @@ precision) for convective regions. We also have a criterion
 
 with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy.
 
+
 ** The next step
 
 With all the equations above we almost have a complete set of solvable
@@ -302,7 +303,7 @@ The energy release by nuclear reaction per unit time and unit mass is
 just:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:eps_nuc}
 \varepsilon_\mathrm{nuc} = \sum_{i} \frac{Q_{i} r_{i}}{\rho} \ \ ,
 \end{equation}
 #+end_latex
@@ -314,7 +315,7 @@ density \rho gives the right dimensions [\varepsilon_{nuc}] = [E]/([t][M]).
 So, what is left to do is calculate the volumetric reaction rate r_{i}
 that can occur in a star.
 
-** Microphysics of nuclear reactions
+** Variety of possible nuclear reactions
 
 A generic nuclear reaction X+a \rightarrow Y+b is often written as X(a,b)Y to
 make it easy to express chains of reactions, e.g.,
@@ -809,8 +810,14 @@ known value at a certain temperature T_{0}.
 #+end_latex
 this is convenient because powerlaw dependencies are intuitive, and
 often people will quote the exponent \beta in arguments - be aware it is a
-big oversimplification
+big oversimplification: in reality \beta\equiv\beta(T) itself, but since \sigma(v) is
+non-zero only for a small range of T, taking \beta\simeq constant is not that
+problematic.
 
+*N.B.:* thermonuclear reaction rates, because of the probability of
+tunneling through the Coulomb barrier are extremely sensitive to T.
+This makes nuclear physics equations very /stiff/ numerically and can be
+a problem when computing stellar models.
 
 Since velocity is not a great quantity to use in QM problems, and we
 have seen above that to get nuclear reactions we do need to account
@@ -870,7 +877,7 @@ of the resonances! In absence of resonances though, one expects S(E)
 to be only slowly varying (unlike \sigma(E) which depends on the Coulomb
 penetration probability).
 
-** Nuclear physics in stellar evolution codes
+* Nuclear physics in stellar evolution codes
 When trying to model the structure and evolution of a star, we cannot
 carry out all the integrals we wrote down here on the fly. Instead, we
 rely on tabulated nuclear reaction rates as a function of T and \rho.
@@ -880,6 +887,53 @@ particularly uncertain (e.g.,^{12}C(\alpha,\gamma)^{16}O which determines
 the C/O ratio in the Universe, or even the 3\alpha reaction that determines
 the formation of carbon in the first place). See for example [[https://ui.adsabs.harvard.edu/abs/2023ApJ...945...41S/abstract][Shen et
 al. 2023]].
+
+* Composition changes and stellar /evolution/ term
+
+We already wrote Eq. \ref{eq:eps_nuc} for the energy generation term
+\varepsilon_{nuc} entering in the stellar structure equation describing energy
+conservation (dL/dm = \varepsilon_{nuc} - \varepsilon_{\nu} + \varepsilon_{grav}). With a theory
+(and experimental data) to calculate the nuclear reaction rates r_{i} for
+each possible reaction, we have now a complete set of equations for
+the /structure/ of a star at any given point in time under the
+assumption of spherical symmetry (which in nature can and is broken
+occasionally!).
+
+However, because of nuclear reactions, the nuclei in the stellar
+plasma progressively change (on a timescale \sim \tau_{nuc}, which is long
+compared to all other timescales, but short compared to the age of the
+Universe!). This introduces the equations that drive the /evolution/ of
+stars.
+
+The change in number density of each nuclear species i per unit time
+is determined by its /production/ rate through all possible nuclear
+reactions j+k\rightarrow i+... that have i as an outgoing particle, minus the /destruction/
+rate i+j\rightarrow something:
+
+#+begin_latex
+\begin{equation}\label{eq:eps_nuc}
+\frac{dn_{i}}{dt} = \sum_{k,l} r_{k,l} - \sum_{i} (1+\delta_{ij})r_{ij} \ \,
+\end{equation}
+#+end_latex
+where the \delta_{i,j} expresses that if i=j (reaction of two nuclei of the
+same species), then two nuclei are destroyed.
+
+Using that n_{i} = X_{i}\rho/(A_{i}m_{u}) and what we have learned to determine
+the rates r_{ij} and r_{kl} we can rewrite this as a function of variables
+that already appear in our stellar structure equations:
+
+#+begin_latex
+\begin{equation}\label{eq:eps_nuc}
+\frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}}\left(\sum_{k,l} r_{k,l} - \sum_{i} (1+\delta_{ij})r_{ij}\right) \equiv \frac{dX_{i}}{dt}(T,\rho, \{X_{j}\})\ \,
+\end{equation}
+#+end_latex
+
+and we have one such equation for each species i to consider. In case
+there is also mixing (for example due to convection), then we need to
+add to each of these equation a mixing term (advective or diffusive).
+
+This effectively completes the set of equations we need to study not
+only the /structure/ of stars but also their long-term /evolution/.
 
 * Homework
 

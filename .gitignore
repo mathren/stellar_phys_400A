@@ -15,6 +15,9 @@ html-content/*.html
 *.tex
 *.pdf
 
+# ignore gimp figures
+*.xcf
+
 # ignore MESA-web results
 MESA-web/*
 # but force python scripts

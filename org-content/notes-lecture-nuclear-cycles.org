@@ -48,17 +48,21 @@ this could actually happen.
 
 The solution to the prohibitively small probability that nature finds
 in stars is to go through intermediate steps instead of doing the
-reaction \ref{eq:overall_reaction} in one single step. This theorized
-solution has been directly confirmed through solar neutrino
-observations (which also lead to the development of new neutrino
-physics), and chemical observations across astronomical sources.
+reaction \ref{eq:overall_reaction} in one single step, in other words,
+to use /thermonuclear reaction chains/.This theorized solution has been
+directly confirmed through solar neutrino observations (which also
+lead to the development of new neutrino physics), and chemical
+observations across astronomical sources.
 
 ** pp chain
 The "pp chain" is the dominant hydrogen burning mode in low mass
 stars, like the Sun.
 
-#+CAPTION: Schematic representation of the pp chain.The right branch is the so called pp1 chain, the rarer left branch is the so called pp2 chain
+#+CAPTION: Schematic representation of the pp chain.The right branch is the so called pp1 chain, the rarer left branch is the so called pp2 chain.
+#+ATTR_HTML: :width 100%
 [[./images/pp_cycle.png]]
+
+
 
 
 ** CN-NO bi-cycle
