@@ -128,7 +128,7 @@ gas described by a black body. We can rewrite Eq.
 \ref{eq:specific_flux} as:
 
 #+begin_latex
-\begin{equation}\label{eq:specific_flux}
+\begin{equation}
 F_{\nu} = - \frac{4\pi}{3\rho}\frac{dT}{dr}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} \ \ ,
 \end{equation}
 #+end_latex
