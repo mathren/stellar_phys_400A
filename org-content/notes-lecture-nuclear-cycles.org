@@ -1,0 +1,65 @@
+#+Title: 400A - Nuclear cycles
+#+author: Mathieu Renzo
+
+* Nuclear burning cycles
+*Materials:* Onno Pol's lecture notes Chapter 6.1 and 6.2, Kippenhahn
+ book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, [[https://journals.aps.org/pr/abstract/10.1103/PhysRev.55.434][Bethe 1939]]
+
+In the [[./notes-lecture-nuclear-burning.org][previous lecture]] we have developed some idea of the physics
+involved in thermonuclear burnings, enough to know that the
+thermonuclear reaction rates are going to be strongly peaked functions
+of the temperature (because of the Gamow peak and/or nuclear
+resonances), let's have a closer look at how this works inside stars.
+
+We have already know from the B/A vs. A curve that the most energy is
+released by hydrogen burning into helium (because \alpha particles have
+such a high binding energy), and using conservation of charge and
+leptonic number we have already written the overall reaction as:
+
+#+begin_latex
+\begin{equation}\label{eq:overall_reaction}
+4p \rightarrow ^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ .
+\end{equation}
+#+end_latex
+
+From this overall reaction we know that the conversion of hydrogen
+nuclei into helium requires two weak reactions to explain the two \nu_{e},
+necessary to conserve leptonic number. This is needed since we need to
+produce two positrons e^{+} to conserve the charge.
+
+As you may expect from its name the weak interactions are weak,
+meaning the coupling constant is small compared to the coupling
+constant for the strong force and electromagnetic force: /weak
+interactions are the bottleneck for nuclear processing of matter in stars/.
+
+Moreover, since the nucleus of helium (i.e., \alpha particle) is made of 4
+nucleons (2p and 2n), the reaction \ref{eq:overall_reaction} seems to
+require the encounter of 4 protons (i.e., hydrogen ions) in one point
+in space (within r_{nuc}\sim 10^{-13} cm) and with the right relative
+energies. The statistical probability of this is vanishingly small,
+and that /cannot/ be how the process works in nature, the rate would
+effectively be zero. [[https://en.wikipedia.org/wiki/Hans_Bethe][Hans Bethe]] was the person who worked out the way
+this could actually happen.
+
+The solution to the prohibitively small probability that nature finds
+in stars is to go through intermediate steps instead of doing the
+reaction \ref{eq:overall_reaction} in one single step. This theorized
+solution has been directly confirmed through solar neutrino
+observations (which also lead to the development of new neutrino
+physics), and chemical observations across astronomical sources.
+
+** pp chain
+The "pp chain" is the dominant hydrogen burning mode in low mass
+stars, like the Sun.
+
+#+begin_src
+p+p \rightarrow D+e^{+}+\nu_{e}
+#+end_src
+
+
+
+** CN-NO bi-cycle
+
+** 3\alpha
+
+** Heavier burning

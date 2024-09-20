@@ -1,7 +1,7 @@
 #+Title: 400A - Nuclear burning
 #+author: Mathieu Renzo
 
-* Nuclear burning in stars
+* Microphysics of nuclear burning
 *Materials:* Onno Pol's lecture notes Chapter 6.1 and 6.2, Kippenhahn
  book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, [[https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstract][Gamow 1928]],
  [[https://ui.adsabs.harvard.edu/abs/1999RPPh...62..395A/abstract][Arnould & Takahashi 1999]], [[https://ui.adsabs.harvard.edu/abs/2011RPPh...74i6901J/abstract][Jose & Iliadis 2011]]
@@ -97,10 +97,11 @@ shine/.
 
 Initially, people considered chemical reactions and radioactivity as a
 possible energy sources, but it was shown very quickly that these are
-insufficient. It took major advances in quantum mechanics (QM) and their
-application to atomic and nuclear theory to work out in the late 1930s
-that the energy source is nuclear burning, a result obtained by [[https://en.wikipedia.org/wiki/Hans_Bethe][Hans
-Bethe]] and collaborators.
+insufficient. It took major advances in quantum mechanics (QM) and
+their application to atomic and nuclear theory to work out in the late
+1930s that the energy source is nuclear burning, a result obtained by
+[[https://en.wikipedia.org/wiki/Hans_Bethe][Hans Bethe]] and
+collaborators.
 
 In a sense, you can think  of a star as an /inertial confinement nuclear
 reactor/ where the confinement is provided by the self-gravity. This
@@ -404,6 +405,16 @@ conserving the leptonic number (+1 for the leptons electron e^{-}, muon
 \mu^{-}, tau \tau^{-} and the corresponding neutrinos \nu_{e}, \nu_{\mu}, \nu_{\tau} and -1
 for their antiparticles positron e^{+}, positive muon \mu^{+}, and positive
 \tau^{+} and the corresponding antineutrinos).
+
+*N.B.:* because of the phenomenon of neutrino oscillations (i.e., the
+conversion of \nu_{e} \leftrightarrow \nu_{\mu} or \nu_{\tau}) the leptonic number
+conservation is not exact in nature, or in other words, the symmetry
+associated to this conservation law is not exact. While this was
+discovered through the "[[https://www.nobelprize.org/prizes/themes/solving-the-mystery-of-the-missing-neutrinos/][missing solar neutrinos problem]]", and it is
+thus related to stellar/solar physics, it requires the propagation of
+neutrinos over distances much longer than the size of nuclei,
+therefore, for the purpose of treating nuclear reactions we can assume
+conservation of the leptonic number.
 
 From Eq. \ref{eq:overall_h_burn} we can see that:
  - protons need to encounter each other. Statistically, 4 protons are
@@ -863,17 +874,6 @@ particularly uncertain (e.g.,^{12}C(\alpha,\gamma)^{16}O which determines
 the C/O ratio in the Universe, or even the 3\alpha reaction that determines
 the formation of carbon in the first place). See for example [[https://ui.adsabs.harvard.edu/abs/2023ApJ...945...41S/abstract][Shen et
 al. 2023]].
-
-* Nuclear burning cycles
-
-** PP chain
-
-** CN-NO bi-cycle
-
-** 3\alpha
-
-** Heavier burning
-
 
 * Homework
 
