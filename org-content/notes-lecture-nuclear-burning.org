@@ -425,7 +425,6 @@ also the one with the highest Q-value (cf. B/A vs. A plot!), thus the
 one that for a given luminosity L of the star can proceed at the
 slowest rate and last the longest.
 
-
 ** Charged particle reactions
 
 For the rest of this lecture we will focus mostly on charged particle
@@ -668,7 +667,21 @@ inside the nucleus, and since the probability of finding a within r\le
 r_{n} is \prop ||\Psi||^{2}, this means there will be a non-zero probability of
 forming the compound nucleus.
 
-Actually carrying out the calculation give a probability of tunneling
+In proximity of a resonance the cross section takes the typical shape
+of a Lorentzian with width determined by the energy width of the
+metastable state C^{\star{:}}
+
+#+begin_latex
+\begin{equation}
+\sigma_\mathrm{nuc} \propto \frac{1}{(E-E_\mathrm{metastable})^{2} +\left(\frac{\Gamma}{2}\right)^{2}} \ \ .
+\end{equation}
+#+end_latex
+
+Conversely, for non-resonant reactions, since the thermal energies are
+of order of 100 of eV while the nuclear scale is at \sim10MeV we can
+neglect the energy dependence of \sigma_{nuc}.
+
+Finally, actually carrying out the calculation give a probability of tunneling
 
 #+begin_latex
 \begin{equation}
@@ -684,6 +697,7 @@ for life! However, because nuclear physics experiments operate at so
 much higher energy than stars, extrapolating to lower relative
 energies is complicated and dangerous: it is easy to miss an unknown
 resonance that would change significantly the rate.
+
 
 ** Thermonuclear reaction rates
 Now that we have discussed how a charged particle nuclear reaction is
@@ -771,8 +785,19 @@ v^{2}dv.
 
 The term in the integral is the average over the distribution of
 velocities of \langle\sigma(v)v\rangle, which can be interpreted as /the probability
-per unit volume that two nuclei will react/. *N.B.:* this does /not/ depend
-on the density \rho!
+per unit volume that two nuclei will react/.
+
+*N.B.:* this does /not/ depend on the density \rho!
+
+Often, this average quantity is approximated as a powerlaw from the
+known value at a certain temperature T_{0}.
+#+begin_latex
+\begin{equation}
+\langle \sigma(v)v \rangle = \langle \sigma(v)v \rangle_{T_{0}}_{} \left(\frac{T}{T_{0}}\right)^{\beta}
+\end{equation}
+#+end_latex
+this is convenient because powerlaw dependencies are intuitive.
+
 
 Since velocity is not a great quantity to use in QM problems, and we
 have seen above that to get nuclear reactions we do need to account
@@ -787,6 +812,44 @@ r_{aX} \prop \frac{N_{a}N_{X}}{1+\delta_{aX}}\sqrt{\frac{2}{\pi}}\frac{1}{k_{B}T
 \end{equation}
 #+end_latex
 
+We can graph the part within the integral to understand where the rate
+is going to peak:
+
+#+CAPTION: Sketch of the "Gamow peak" resulting from the combination of the Maxwell-Boltzmann distribution of particles in (thermal) energy and the tunneling probability through the Coulomb repulsion. Credits: L. Trache.
+#+ATTR_HTML: :width 75%
+[[./images/gamow_peak.png]]
+
+The product of an exponentially decreasing Maxwell-Boltzmann
+distribution \propto exp(-E) times the exponentially growing tunneling
+probability \propto exp(-1/E^{1/2}) will result in a very peak integrand, the
+so called Gamow peak: even without nuclear resonances making the cross
+section \sigma peak (because E is within the width of a metastable energy
+level), the nuclear reaction rate is still very peaked around a
+specific energy!
+
+** Heuristic summary
+For a generic charged particle thermonuclear reaction X(a,b)Y we can write:
+#+begin_latex
+\begin{equation}
+\sigma = \pi \lambda_{\mathrm{de Broglie}, X}^{2} \times \{ \mathrm{Probability\ of\ Tunneling}\} \times \{\mathrm{Probability\ of\ C^{\star}\ decay\ in\ Y+b}\}\ \ ,
+\end{equation}
+#+end_latex
+where the first term is akin to a geometric cross section using the de
+Broglie wavelength of the target nucleus X. The product of the two
+terms in curly brackets appears because of Bohr's approximation (so
+that the two probabilities are independent of each other). Since \lambda_{de
+Broglie, X} = h/p = h/E^{1/2} \Rightarrow \lambda_{de Broglie, X}^{2 }\propto
+E^{-1} and thus the heuristic expression above gives:
+
+#+begin_latex
+\begin{equation}
+\sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)\sigma_{_\mathrm{nuc}}(E) \ \ ,
+\end{equation}
+#+end_latex
+where \sigma_{nuc} is the intrinsic cross section that depends on the shape of
+the nuclear potential well, and thus the energy levels. This can be
+influenced strongly by nuclear resonances (when E \sim energy of a
+metastable state of C^{\star{}}).
 
 
 
