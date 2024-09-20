@@ -52,9 +52,12 @@ physics), and chemical observations across astronomical sources.
 The "pp chain" is the dominant hydrogen burning mode in low mass
 stars, like the Sun.
 
-#+begin_src
-p+p \rightarrow D+e^{+}+\nu_{e}
-#+end_src
+#+begin_latex
+\begin{multline}
+p+p \rightarrow D + e^{+} + \nu_{e} \\
+D+p \rightarrow ^{3}\mathrm{He}+\gamma \\
+\end{multline}
+#+end_latex
 
 
 

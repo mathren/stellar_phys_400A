@@ -87,7 +87,7 @@ recall basic quantum mechanics elements, Gamow peak.
 
 ** <2024-10-03 Tue> - Nuclear reaction chains + introduction to stellar evolution codes
 *Aim*: Introduce pp chain, CN-NO bi-cycle, 3\alpha burning. Introduce general
-principles of stellar evolution codes, =MESA-web=, and MESA.
+principles of stellar evolution codes, =MESA-web=, and =MESA=.
 
 [[./notes-lecture-nuclear-cycles.org][Notes on nuclear reaction chains]]
 
