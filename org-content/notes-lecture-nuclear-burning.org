@@ -810,7 +810,7 @@ v=(2E/m_{aX})^{1/2}, and we can also use that the cross section \sigma is
 proportional to the tunneling probability so \sigma(E)\propto exp(-b/E^{1/2}):
 #+begin_latex
 \begin{equation}
-r_{aX} \prop \frac{N_{a}N_{X}}{1+\delta_{aX}}\sqrt{\frac{2}{\pi}}\frac{1}{k_{B}T}\int_{0}^{+\infty}\exp\left(-\frac{E}{k_{B}T}-\frac{b}{\sqrt{E}}\right)  \ \ .
+r_{aX} \propto \frac{N_{a}N_{X}}{1+\delta_{aX}}\sqrt{\frac{2}{\pi}}\frac{1}{k_{B}T}\int_{0}^{+\infty}\exp\left(-\frac{E}{k_{B}T}-\frac{b}{\sqrt{E}}\right)  \ \ .
 \end{equation}
 #+end_latex
 
@@ -853,17 +853,27 @@ the nuclear potential well, and thus the energy levels. This can be
 influenced strongly by nuclear resonances (when E \sim energy of a
 metastable state of C^{\star{}}).
 
+** Nuclear physics in stellar evolution codes
+When trying to model the structure and evolution of a star, we cannot
+carry out all the integrals we wrote down here on the fly. Instead, we
+rely on tabulated nuclear reaction rates as a function of T and \rho.
 
+This is a topic of active research, with certain reactions being
+particularly uncertain (e.g.,^{12}C(\alpha,\gamma)^{16}O which determines
+the C/O ratio in the Universe, or even the 3\alpha reaction that determines
+the formation of carbon in the first place). See for example [[https://ui.adsabs.harvard.edu/abs/2023ApJ...945...41S/abstract][Shen et
+al. 2023]].
 
-** Nuclear burning cycles
+* Nuclear burning cycles
 
-*** PP chain
+** PP chain
 
-*** CN-NO bi-cycle
+** CN-NO bi-cycle
 
-*** 3\alpha
+** 3\alpha
 
-*** Heavier burning
+** Heavier burning
+
 
 * Homework
 

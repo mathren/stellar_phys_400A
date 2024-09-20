@@ -31,12 +31,13 @@ throughout because of e.g., neutrinos)!
 *N.B.:* The structure of each layer of the star is determined by (i) the
 microscopic properties of matter (e.g., \kappa_{rad}) and, more importantly,
 (ii) the energy losses by the outward flux F. The latter is the way
-the star compensates for the surface energy losses (its luminosity L).
+the star compensates for the energy losses (its luminosity L).
 
 The purpose of this lecture is to focus on \kappa_{rad} and understand what
 physically determines it, and understand how \kappa_{rad}\equiv\kappa_{rad}(T,
 \rho, {X_{i}}) can be expressed as a function of the thermodynamics and
 composition of the stellar gas.
+
 
 * Rosseland mean opacity
 
@@ -58,15 +59,16 @@ F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \
 \end{equation}
 #+end_latex
 
-In reality, we should have written an equation like this for the
-specific flux (i.e., the radiative flux F_{\nu} carried by radiation with
+Here \kappa_{rad} should be interpreted as an "appropriate mean value". In
+reality, we should have written an equation like this for the specific
+flux (i.e., the radiative flux F_{\nu} carried by radiation with
 frequency between \nu and \nu+d\nu) and integrate over the spectrum to get
 F_{rad} =\int_{0}^{+\infty} F_{\nu} d\nu. For the specific flux, we also should
-put in the equation the specific opacity \kappa_{\nu}_{} and consider only the
+put in the equation the specific opacity \kappa_{\nu} and consider only the
 energy density of radiation u_{\nu} between \nu and \nu+d\nu:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:specific_flux}
 F_{\nu} = - \frac{1}{3}\frac{c}{\kappa_{\nu}\rho}\frac{du_{\nu}}{dr} \ \ .
 \end{equation}
 #+end_latex
@@ -75,7 +77,8 @@ Recall that u_{\nu} = h\nu n(\nu), with n(\nu) number density of photons
 ad a function of frequency determined by the condition of LTE (which
 is /approximately/ correct in the stellar interior). The LTE
 approximation effectively means the photons are distributed according
-to a black body distribution in the stellar interior:
+to a black body distribution for the intensity in the stellar
+interior:
 
 #+begin_latex
 \begin{equation}
@@ -89,7 +92,7 @@ dT/dr, and performing the integral over the frequencies:
 #+begin_latex
 \begin{equation}
 F_\mathrm{rad} = \int_{0}^{+\infty} F_{\nu}d\nu = - \frac{1}{3}\frac{c}{\rho}\int_{0}^{+\infty} \frac{1}{\kappa_{\nu}}\frac{du_{\nu}}{dr} =
--\frac{4\pi}{3c\rho}\int_{0}^{+\infty}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} d\nu \frac{dT}{dr} \ \ .
+-\frac{4\pi}{3c\rho}  \frac{dT}{dr} \int_{0}^{+\infty}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} d\nu\ \ .
 \end{equation}
 #+end_latex
 
@@ -110,22 +113,37 @@ which we can rewrite as
 #+end_latex
 which is the /harmonic mean of specific opacities/ \kappa_{\nu} /weighted
 with the temperature derivative of the Black Body distribution/. This
-is usually referred to as the Rosseland mean opacity.
+is usually referred to as the Rosseland mean opacity after [[https://en.wikipedia.org/wiki/Svein_Rosseland][Svein
+Rosseland]].
 
 ** Physical interpretation
 This may seem like a bunch of math that did not advance us much: we
 still have \kappa_{\nu} (which in practice comes from atomic physics
-experimental and theoretical work), and the Rosseland mean opacity
-seems to not have a straightforward physical interpretation.
+experimental and theoretical work), and the Rosseland mean opacity may
+seem to not have a straightforward physical interpretation.
 
 However, consider that to a good approximation we can consider the
 stellar interior to be in LTE with a single temperature and a photon
-gas described by a black body. Therefore at a location in the star of
-given \rho and dT/dr, the frequency \nu at which most of the photon energy
-is found by solving \partial u_{\nu} / \partial T = 0, which yields a maximum at
-h\nu = 4k_{B}T. This means that the Rosseland mean tends to "upweight" where
-most of the radiation energy is, and "down weight" the very low and
-very high frequencies.
+gas described by a black body. We can rewrite Eq.
+\ref{eq:specific_flux} as:
+
+#+begin_latex
+\begin{equation}\label{eq:specific_flux}
+F_{\nu} = - \frac{4\pi}{3\rho}\frac{dT}{dr}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} \ \ ,
+\end{equation}
+#+end_latex
+
+Therefore at a location in the star of given \rho and dT/dr, the integral
+in the numerator of the Rosseland mean opacity is proportional to the
+flux F_{\nu}: the Rosseland mean opacity weights the specific opacity
+(per unit frequency \nu) with the available flux F_{\nu} according to a
+black body distribution.
+
+The frequency \nu at which most of the photon energy is found by solving
+\partial u_{\nu} / \partial T = 0, which yields a maximum at h\nu = 4k_{B}T. This
+means that the Rosseland mean tends to "upweight" where most of the
+radiation energy is, and "down weight" the very low and very high
+frequencies.
 
 In other words, 1/\kappa_{rad} is smallest where most of the radiation energy
 can get through (which makes sense since we are developing an
@@ -135,6 +153,7 @@ trapped!).
 An unfortunate consequence of the harmonic nature of the Rosseland
 mean opacity is that it is not trivial to combine opacity of different
 gasses, the specific \kappa_{\nu} have to be summed /before/ taking the average.
+
 
 * Sources of radiative opacity
 
