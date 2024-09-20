@@ -177,6 +177,11 @@ electrons in the potential for the specific atom/ion, which can be
 extremely complicated and/or computationally unfeasible: for this
 reason, laboratory experiments are often used to determine opacities.
 
+Note that ions of heavy elements with many electrons (e.g., iron) will
+tend to have /the most/ lines (i.e., the largest number of possible
+bound-bound transitions), and dominate the opacity in the regime where
+they are not fully ionized.
+
 This opacity source matters only until there are bound electrons to
 their respective ions in the stellar gas, which at very high T becomes
 more and more rare (since collisions between atoms would strip away
@@ -253,7 +258,12 @@ integral!
 
 For very high energy, one needs to account also for the momentum
 exchange between radiation and the electron (Thomson \rightarrow Compton
-scattering), which decreases the opacity.
+scattering), which decreases the opacity. At even higher energies of
+the photons, one may need to use the Klein-Nishina formula.
+
+*N.B.:* Ultimately in stellar evolution we use tabulated \kappa_{rad} \equiv
+\kappa_{rad}(\rho, T) that (try to) account for all these effects without
+needing to calculate them on the fly while dealing with the star.
 
 ** Molecules and dust
 
@@ -304,7 +314,7 @@ high density degenerate cores to become effectively isothermal
 
 
 Ultimately, the metallicity (Z) or more specifically the detailed
-composition {X_{i}_{}} can have a large impact on \kappa_{rad} and \kappa, together with
+composition {X_{i}} can have a large impact on \kappa_{rad} and \kappa, together with
 the thermodynamic state of the gas (T,\rho), which determines which
 process dominates the blocking of photons
 
@@ -326,6 +336,9 @@ a stellar model one needs to use tabulated opacities from complex
 models and/or experiments carried out at LANL, Livermore, and other
 big, often military funded, laboratories.
 
+#+CAPTION: \kappa_{rad} \equiv \kappa_{rad}(T) for various fixed densities \rho (as indicated by the colorbar). This plot effectively shows various "slices" of the \kappa_{rad}\equiv\kappa_{rad}(T,\rho) and allows one to see how powerlaw approximations can be used in certain regimes, but do not capture the full picture. Note the shaded background indicating ionization levels of important elements. Also from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]
+#+ATTR_HTML: :width 100%
+[[./images/kappa_T_farag24.png]]
 
 
 * Homeworks
