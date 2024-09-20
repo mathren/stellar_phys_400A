@@ -91,6 +91,8 @@ principles of stellar evolution codes, =MESA-web=, and MESA.
 
 [[./notes-lecture-nuclear-cycles.org][Notes on nuclear reaction chains]]
 
+[[https://www.as.arizona.edu/~mrenzo/materials/slides/CompAstro_MESA.pdf][Slides on stellar evolution codes (old)]]
+
 ** <2024-10-08 Tue> - Roche geometry and binary interactions
 *Aim*: Introduce the Roche approximation and its limitations and binary
  mass transfer
