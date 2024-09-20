@@ -774,5 +774,4 @@ much longer than the convective turnover timescale.
 
 * Homework
 - Using the definition of pressure scale height and the hydrostatic
-  equilibrium equation, show that P/\rho = 1/(g H_{p}) \Rightarrow c_{sound}^{2}
-  \simeq gH_{p}
+  equilibrium equation, show that P/\rho = 1/(g H_{p}) \Rightarrow c_{sound}^{2}  \simeq gH_{p}

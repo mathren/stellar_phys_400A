@@ -686,6 +686,109 @@ energies is complicated and dangerous: it is easy to miss an unknown
 resonance that would change significantly the rate.
 
 ** Thermonuclear reaction rates
+Now that we have discussed how a charged particle nuclear reaction is
+possible through quantum tunneling through the Coulomb barrier, to
+complete our quest for \varepsilon_{nuc} we need to obtain the rate per unit volume
+and time of each possible nuclear reaction.
+
+What brings together the generic nuclei a and X, giving them the
+energy E such as the probability of tunneling through the Coulomb
+barrier is not negligible is the thermal motion of the gas they
+compose: this is why we talk about /thermonuclear/ reactions in a star
+(and why the energy scale for these reactions is much lower than the
+energy scale in laboratory experiments).
+
+Once again, to put together an expression for the nuclear reaction
+rate we can start from dimensional analysis trying to combine the
+available pieces:
+- number density of reactants [n_{a}] = [n_{X}] = [L]^{-3
+- their relative velocity [v] = [L]/[t] (which is related to their
+  relative energy at infinity E which is of the order of the thermal
+  energy)
+- the cross section for the reaction [\sigma] = [L^{2}] (whose calculation will depend on
+  the details of the QM problem outlined above and we know will depend
+  on the relative energy of the particles, and thus ultimately their
+  relative - thermal - velocity at infinity): \sigma \equiv \sigma(v)
+With these ingredients we can make a rate of the number of reactions
+X(a,b)Y per unit time and volume with:
+
+#+begin_latex
+\begin{equation}
+r_{aX} = \sigma(v) v n_{a} n_{X}  \ \ ,
+\end{equation}
+#+end_latex
+where we implicitly assumes that a \neq X. However, in a star sometimes
+there are reactions among identical particles (for example the weak
+reaction p+p\rightarrow D+e^{+} +\nu_{e}). In such cases we should make sure to not
+double count particle pairs, so we can write more generally:
+#+begin_latex
+\begin{equation}
+r_{aX} = \frac{1}{1+\delta_{aX}} \sigma(v) v n_{a} n_{X}  \ \ ,
+\end{equation}
+#+end_latex
+where \delta_{aX} = 1 \Leftrightarrow a=X. This would be the expression if all particles had
+the same relative velocity v. In reality, we know the stellar gas is
+pretty close to LTE and thus the distribution in energy of particles
+is given by the Maxwell-Boltzmann distribution, and to get the
+effective rate of reactions we need to integrate over that.
+
+The relative velocity is v=|v_{a} - v_{X}| (the velocities of the two
+species can be different if they have different masses), and
+substituting to the number density the integral over the velocities of
+the phase space densities n_{i} \rightarrow \int dn_{i}(v) (*N.B.*: we have
+already done this many times when deriving the EOS, just in momentum
+instead of velocity), our expression for the rate becomes:
+#+begin_latex
+\begin{equation}
+r_{aX} = \frac{1}{1+\delta_{aX}}\int\int dn_{a}(v_{a}) dn_{X}(v_{X}) \sigma(v)v  \ \ ,
+\end{equation}
+#+end_latex
+where dn_{i}(v_{i}) are Maxwell-Boltzmann distributions, unless we are
+considering thermo-nuclear burning in a (partially) degenerate
+environment.
+
+:Question:
+- *Q*: can you think of stellar situations where there is burning in a
+  (partially) degenerate environment?
+:end:
+
+We can explicit the Maxwell-Boltzmann distribution assuming that the
+nuclei are non-relativistic, since their thermal kinetic energy is of
+the order of k_{b}T \ll GeV \sim m_{u}/c^{2}, and you can analytically verify
+that the product of two Maxwell-Boltzmann distribution keeps the same
+functional form by changing variables to express things in the center
+of mass frame of the a+X system, yielding:
+#+begin_latex
+\begin{equation}
+r_{aX} = \frac{1}{1+\delta_{aX}}4\pi N_{a}N_{X} \left(\frac{m_{aX}}{2\pi k_{B}T}\right)^{3/2}\int_{0}^{+\infty}\exp\left(-\frac{m_{aX}v^{2}}{k_{B}T}\right) \sigma(v)v v^{2}dv  \ \ .
+\end{equation}
+#+end_latex
+where again m_{aX} = m_{a} m_{X} / (m_{a} + m_{X}) is the reduced mass between a and
+X, v their relative velocity, N_{a} and N_{X} are the total number of
+particles, and we get a factor of v^{2} from assuming isotropic motion
+and using spherical-polar coordinates in velocity space, so d^{3}v = 4\pi
+v^{2}dv.
+
+The term in the integral is the average over the distribution of
+velocities of \langle\sigma(v)v\rangle, which can be interpreted as /the probability
+per unit volume that two nuclei will react/. *N.B.:* this does /not/ depend
+on the density \rho!
+
+Since velocity is not a great quantity to use in QM problems, and we
+have seen above that to get nuclear reactions we do need to account
+for QM effects, we can rewrite the rate above using that for r\rightarrow +\infty the
+relative energy between a and X is purely kinetic (the potential goes
+to zero faster than r^{-2} because of electron screening!). Thus
+v=(2E/m_{aX})^{1/2}, and we can also use that the cross section \sigma is
+proportional to the tunneling probability so \sigma(E)\propto exp(-b/E^{1/2}):
+#+begin_latex
+\begin{equation}
+r_{aX} \prop \frac{N_{a}N_{X}}{1+\delta_{aX}}\sqrt{\frac{2}{\pi}}\frac{1}{k_{B}T}}\int_{0}^{+\infty}\exp\left(-\frac{E}{k_{B}T}-\frac{b}{\sqrt{E}}\right)  \ \ .
+\end{equation}
+#+end_latex
+
+
+
 
 ** Nuclear burning cycles
 

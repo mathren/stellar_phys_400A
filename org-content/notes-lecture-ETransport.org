@@ -251,18 +251,14 @@ metallic energy bands.
 
 Conduction, although always present, is important only in certain kind
 of stars. To demonstrate this, we can consider the diffusion
-coefficient D\simeq c_{V}v\ell/3 and compare it to the radiative diffusion
-coefficient D_{rad} = c\ell_{\gamma}/3 =c/(3\kappa\rho). Note that D\propto c_{v}
-the specific heat at constant volume of the gas, considered constant,
-because the energy carried by particle diffusion in the gas is a heat
-source at constant volume.
-
-In the diffusion coefficient D, the velocity that appears is the
-thermal velocity of the particles (v^{2}\simeq 2k_{B}T/m for a
-non-relativistic gas): at a given temperature T, the least massive
-particles are faster, and will contribute more to the conduction of
-thermal energy. In a star, this means the electrons are going to
-dominate conduction whenever there is some.
+coefficient D\simeq v\ell/3 and compare it to the radiative diffusion
+coefficient D_{rad} = c\ell_{\gamma}/3 =c/(3\kappa\rho). In the diffusion
+coefficient D, the velocity that appears is the thermal velocity of
+the particles (v^{2}\simeq 2k_{B}T/m for a non-relativistic gas): at a given
+temperature T, the least massive particles are faster, and will
+contribute more to the conduction of thermal energy. In a star, this
+means the electrons are going to dominate conduction whenever there is
+some.
 
 The other thing to consider is the mean free path \ell, but since the
 collisional (Coulomb-scattering) \sigma \leq 10^{-18} cm^{2}, the mean free path \ell =
@@ -273,7 +269,7 @@ sub-dominant compared to radiative energy.
 Things are different though for degenerate electron gas (so inside
 white dwarfs and neutron stars, but also evolved stellar cores that
 are dense enough for degeneracy to occur). In the case of degeneracy,
-the thermal velocities increase (up to v\simeq c for an degenerate gas of
+the thermal velocities increase (up to v \simeq c for an degenerate gas of
 ultra-relativistic electrons!), and the mean-free path for
 electron-electron scattering also increases, because for such a
 scattering to be possible the final state must be available for an
@@ -359,7 +355,7 @@ the work done on the unit mass Pd v with v=1/\rho the specific volume:
 
 #+begin_latex
 \begin{equation}
-d u = d q + Pd v \equiv d q + \frac{P}{\rho^{2}}d\rho \ \ ,
+d u = d q + Pd v \equiv d q - \frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
 #+end_latex
 where we express things as a function of the density \rho which already
@@ -378,12 +374,13 @@ The heat term in a star can only be due to:
   neutrinos \nu. Neutrinos in a star can come from nuclear reactions and
   they effectively just reduce \varepsilon_{nuc} \rightarrow \varepsilon_{nuc} -
   \varepsilon_{\nu, nuc}, or they can come from so-called *cooling processes*, for
-  example e^{-} +\gamma \rightarrow e^{-} + \nu + anti-\nu, which really decrease
-  the energy by extracting heat, since as soon as they are produced
-  neutrinos will leave the star with no further interaction (with the
-  exception of neutron stars). The neutrino energy cooling rate per
-  unit mass is indicated by \varepsilon_{\nu} and it has always a *negative*
-  contribution to the heat (it's a loss term for the star)
+  example e^{-} +\gamma \rightarrow e^{-} + \nu + anti-\nu, which really
+  decrease the energy by extracting internal energy, since as soon as
+  they are produced neutrinos will leave the star with no further
+  interaction (with the exception of neutron stars). The neutrino
+  energy cooling rate per unit mass is indicated by \varepsilon_{\nu} and it has
+  always a *negative* contribution to the heat (it's a loss term for the
+  star)
 - energy can flow in and out from the boundary of a thin shell of
   matter. Above, we have defined: L = 4\pi r^{2} F (where now both L and F
   include the contribution from conduction and radiation). Therefore,
@@ -393,7 +390,7 @@ The heat term in a star can only be due to:
 Putting all these together we have, at a given mass location m
 #+begin_latex
 \begin{equation}
-dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+\frac{dL}{dm}dt \ \ .
+dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
 \end{equation}
 #+end_latex
 Thus, substituting in the local energy conservation we obtain:
@@ -424,6 +421,11 @@ structure becomes
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
 #+end_latex
+
+*N.B.:* In regions where no energy is produced (\varepsilon_{nuc} = 0), there are no
+neutrino losses (\varepsilon_{\nu}=0) and in thermal equilibrium (\varepsilon_{grav} =
+T\partial s/\partial t = 0), the luminosity is constant as one moves inward or
+outward in mass coordinate: dL/dm = 0 \Rightarrow L = constant.
 
 *N.B.:* Once again, we found another equation but it comes with new
 unknowns. \varepsilon_{grav} is fortunately only dependent on the thermodynamics of

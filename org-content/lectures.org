@@ -117,7 +117,8 @@ graded, etc. how to provide useful feedback during peer-reviewing.
 ** <2024-10-29 Tue> - Homology relations
 ** <2024-10-31 Tue> - Supernovae
 
-** <2024-11-05 Thu> -
+** <2024-11-05 Thu> - No new material
+*Aim*: allow for people to go to vote, the hour will be used as a general office hour.
 ** <2024-11-07 Thu> - *Guest lecture*: r-process and/or accretion on compact objects
 Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
 
