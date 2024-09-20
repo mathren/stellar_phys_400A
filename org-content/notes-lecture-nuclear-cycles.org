@@ -22,10 +22,15 @@ leptonic number we have already written the overall reaction as:
 \end{equation}
 #+end_latex
 
-From this overall reaction we know that the conversion of hydrogen
-nuclei into helium requires two weak reactions to explain the two \nu_{e},
-necessary to conserve leptonic number. This is needed since we need to
-produce two positrons e^{+} to conserve the charge.
+And we know that a fraction \phi=0.007 of the rest mass of the 4 incoming
+protons (i.e., hydrogen positive ions) is converted into energy,
+corresponding to a total energy released is Q_{H burn}= 26.5 MeV.
+
+From the overall reaction \ref{eq:overall_reaction} we know that the
+conversion of hydrogen nuclei into helium requires two weak reactions
+to explain the two \nu_{e}, necessary to conserve leptonic number. This is
+needed since we need to produce two positrons e^{+} to conserve the
+charge.
 
 As you may expect from its name the weak interactions are weak,
 meaning the coupling constant is small compared to the coupling
@@ -52,13 +57,8 @@ physics), and chemical observations across astronomical sources.
 The "pp chain" is the dominant hydrogen burning mode in low mass
 stars, like the Sun.
 
-#+begin_latex
-\begin{multline}
-p+p \rightarrow D + e^{+} + \nu_{e} \\
-D+p \rightarrow ^{3}\mathrm{He}+\gamma \\
-\end{multline}
-#+end_latex
-
+#+CAPTION: Schematic representation of the pp chain.The right branch is the so called pp1 chain, the rarer left branch is the so called pp2 chain
+[[./images/pp_cycle.png]]
 
 
 ** CN-NO bi-cycle
