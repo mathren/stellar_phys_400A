@@ -109,7 +109,42 @@ Important thing to notice:
 
 *** Oxygen
 
-*** Silicon
+*** Silicon core burning
+
+** Summary of energy scaling
+
+#+CAPTION: \varepsilon_{nuc} \equiv \varepsilon_{nuc}(T) dependence on a log-log plot for the burning cycles that cover \ge99% of the stellar lifetime (H and He core burning). From [[https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg][wikipedia]].
+#+ATTR_HTML: :width 100%
+[[./images/Nuclear_energy_generation.png]]
+
+*N.B.* because of the higher and higher Coulomb barriers, the
+temperature dependence of \varepsilon_{nuc} gets steeper for heavier nuclear fuel,
+so post-helium core burning \varepsilon_{nuc} is more and more concentrated towards
+the center, leaving the outer layers unburned and allowing for the so
+called "onion layer" structure of stars:
+
+#+CAPTION: Layer structure for an initially 15M_{\odot} star at the end of its nuclear burning lifetime in mass coordinate from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note the final total mass is /not/ 15M_{\odot} because stars this massive lose mass through radiatively driven winds.
+#+ATTR_HTML: :width 100%
+[[./images/onion.png]]
+
+How much burns, that is, how "thick" in mass coordinate is each layer
+of the onion, depends on the mixing processes connecting the burning
+layer with the fuel reservoir. Each layer of heavier material requires
+a higher T to burn (to have a non-zero tunneling probability), so it
+is more centralized in mass and radius. However, moving inward \varepsilon_{nuc}
+depends more steeply on T, which implies the dT/dr becomes steeper,
+and thus we have convection, the extent of which determines where fuel
+is depleted. At high masses (M\geq20M_{\odot}), the inner layers start
+cooling through neutrinos, which may take away enough energy to
+prevent convection from occurring (*N.B.:* convection kicks in only if
+needed to transport the energy flux).
+
+The interplay between convection, neutrino cooling, and nuclear
+burning ultimately decides the core structure of massive stars at the
+end of their life, and whether they form a neutron star or a black
+hole, in ways that are still poorly understood (see for example
+[[https://ui.adsabs.harvard.edu/abs/2014ApJ...783...10S/abstract][Sukhbold & Woosley 2014]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv240902058L/abstract][Laplace et al. 2024]]).
+
 
 ** Duration of each burning phase
 
@@ -171,7 +206,7 @@ usually last 10% of the hydrogen core burning time (\phi_{He}_{} \simeq 0.1
 stellar lifetime/.
 
 All the other burning phases /collectively/ are only \leq 1% of a star
-lifetime! Although they are /crucial/ for the chemical evolution of the
+lifetime! Although they are /crucial/ for the chemical evolution of the b
 Universe, they are only a "blip" in the lifetime of the stars, because
 B/A vs. A roughly flattens (and f_{burn} also decreases): each subsequent
 fuel produces less and less energy per barion, thus the burning must
@@ -179,9 +214,5 @@ be faster and faster to compensate for the surface losses (and L also
 typically increases). This also makes these phases more rare to
 observe and thus harder to study.
 
-
-** Summary of energy scaling
-
-#+CAPTION: \varepsilon_{nuc} \equiv \varepsilon_{nuc}(T) dependence on a log-log plot for the burning cycles that cover \ge99% of the stellar lifetime (H and He core burning). From [[https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg][wikipedia]].
-#+ATTR_HTML: :width 100%
-[[./images/Nuclear_energy_generation.png]]
+For instance, the timescale for the last possible burning phase in
+massive stars, silicon \rightarrow iron only lasts order of /days/.
