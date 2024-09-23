@@ -60,10 +60,14 @@ observations across astronomical sources.
 The "pp chain" is the dominant hydrogen burning mode in low mass
 stars, like the Sun:
 
-#+begin_src
-p + p \rightarrow D + e^{+} + \nu_{e}
-#+end_src
-
+#+begin_latex
+ p + p \rightarrow D + e^{+} + \nu_{e}
+ D+p \rightarrow^{3}He +\gamma
+ ^{3}He+^{3}He\rightarrow^{4}He+p+p  (86%)
+           \rightarrow^{7}Be+\gamma    (14%)
+	   ^{7}Be\rightarrow^{7}Li+e^{+} + \nu_{e}
+	   ^{7}Li+p\rightarrow2^{4}He+\gamma
+#+end_latex
 
 
 
@@ -113,6 +117,14 @@ modeling choices. For masses larger than this, hydrogen core burning occurs
 through the CN-NO bi-cycle, where the "trick" to bypass the bottleneck
 of the weak reaction in the pp chain is to use metal ions as catalysts
 for the reactions.
+
+
+
+
+
+
+
+
 
 :Question:
 - *Q*: How did population III stars do this? This is the topic of the [[./honors.org::*Main sequence burning in massive population III
