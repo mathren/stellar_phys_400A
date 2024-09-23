@@ -58,7 +58,14 @@ observations across astronomical sources.
 
 *** pp chain
 The "pp chain" is the dominant hydrogen burning mode in low mass
-stars, like the Sun.
+stars, like the Sun:
+
+#+begin_src
+p + p \rightarrow D + e^{+} + \nu_{e}
+#+end_src
+
+
+
 
 #+CAPTION: Schematic representation of the pp chain.The right branch is the so called pp1 chain, the rarer left branch is the so called pp2 chain.
 #+ATTR_HTML: :width 100%
@@ -94,6 +101,27 @@ Important thing to notice:
   be /very concentrated/ inside the star in temperature coordinate.
 
 *** CN-NO bi-cycle
+When the luminosity of a star is high (recall for a fully radiative
+star L\propto M^{x}\mu^{4} with x \equiv x(M)\ge0), the bottleneck for the
+reaction p+p\rightarrow D+e^{+} +\nu_{e} prevents the stars from reaching L=L_{nuc}
+through the pp chain and another mechanism to achieve the overall
+reaction \ref{eq:overall_reaction} is needed.
+
+This occurs for stars with total mass M\ge1.2M_{\odot} and actually, to some, this is what
+/defines/ a star to be massive. The exact threshold value depends on
+modeling choices. For masses larger than this, hydrogen core burning occurs
+through the CN-NO bi-cycle, where the "trick" to bypass the bottleneck
+of the weak reaction in the pp chain is to use metal ions as catalysts
+for the reactions.
+
+:Question:
+- *Q*: How did population III stars do this? This is the topic of the [[./honors.org::*Main sequence burning in massive population III
+  stars][honors project]]!
+:end:
+
+
+
+
 
 ** Helium burning
 
