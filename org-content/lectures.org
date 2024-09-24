@@ -41,12 +41,12 @@ symmetry. Introduce the dynamical timescale(s). Brief introduction to
 
 [[./notes-lecture-HSE.org][Notes]]
 
-** <2024-09-10 Thu> - Equation of state 1
+** <2024-09-10 Tue> - Equation of state 1
 *Aim*: Introduce Polytropic and ideal gas equation of state.
 
 [[./notes-lecture-EOS1.org][Notes]]
 
-** <2024-09-12 Tue> - Virial theorem
+** <2024-09-12 Thu> - Virial theorem
 *Aim*: Introduce the Virial theorem in various forms. Demonstrate that
 stars "heat up as they lose energy".
 
@@ -60,14 +60,14 @@ stars "heat up as they lose energy".
 
 [[./notes-lecture-EOS2.org][Notes]]
 
-** <2024-09-19 Tue> - Radiative energy transport & conduction
+** <2024-09-19 Thu> - Radiative energy transport & conduction
 *Aim*: Energy transport in radiative layers and the third stellar
 structure equation for non-polytropic models, and local energy
 conservation
 
 [[./notes-lecture-ETransport.org][Notes]]
 
-** <2024-09-24 Thu> - Opacities
+** <2024-09-24 Tue> - Opacities
 *Aim*: discuss opacity, Rosseland mean opacities, atomic physics and other
 sources of opacity in a star
 
@@ -79,45 +79,50 @@ limitations.
 
 [[./notes-lecture-convection.org][Notes]]
 
-** <2024-10-01 Thu> - Nuclear energy generation
+** <2024-10-01 Tue> - Nuclear energy generation
 *Aim*: Introduce basics of nuclear energy generation through fusion,
 recall basic quantum mechanics elements, Gamow peak.
 
 [[./notes-lecture-nuclear-burning.org][Notes]]
 
-** <2024-10-03 Tue> - Nuclear reaction chains + introduction to stellar evolution codes
+** <2024-10-03 Thu> - Nuclear reaction chains
 *Aim*: Introduce pp chain, CN-NO bi-cycle, 3\alpha burning. Introduce general
 principles of stellar evolution codes, =MESA-web=, and =MESA=.
 
 [[./notes-lecture-nuclear-cycles.org][Notes on nuclear reaction chains]]
 
+** <2024-10-08 Tue> - Neutrino cooling + introduction to stellar evolution codes
+*Aim*: discuss neutrino cooling processes, complete the physics needed
+for 1D stellar evolution calculation, introduce general principles of
+stellar evolution codes.
+
 [[https://www.as.arizona.edu/~mrenzo/materials/slides/CompAstro_MESA.pdf][Slides on stellar evolution codes (old)]]
 
-** <2024-10-08 Tue> - Roche geometry and binary interactions
+** <2024-10-10 Thu> - Roche geometry and binary interactions
 *Aim*: Introduce the Roche approximation and its limitations and binary
  mass transfer
 
+** <2024-10-15 Tue> - Expectations for project presentations + HW review
 *** Presentation expectations
 Discuss what is expected for the presentations, how they will be
 graded, etc. how to provide useful feedback during peer-reviewing.
 
  - Discuss structure: introduce problem, show state-of-the-art
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
-** <2024-10-10 Thu> - Radiative transfer
+
+** <2024-10-17 Thu> - Radiative transfer
 - Saha equation
 - line formation region
 - line broadening mechanisms
+** <2024-10-22 Tue> - Evolution: low mass stars 1
 
-** <2024-10-15 Tue> - Evolution: low mass stars 1
+** <2024-10-24 Thu> - Evolution: low mass stars 2
 
-** <2024-10-22 Tue> - Evolution: low mass stars 2
-
-** <2024-10-24 Thu> - Evolution: high mass stars
+** <2024-10-29 Thu> - Evolution: high mass stars
 *Aim*: discuss late core burning and core-collapse mechanism
 
 [[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][Notes (preliminary)]]
 
-** <2024-10-29 Tue> - Homology relations
 ** <2024-10-31 Tue> - Supernovae
 
 ** <2024-11-05 Thu> - No new material

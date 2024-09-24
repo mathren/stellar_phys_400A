@@ -246,7 +246,7 @@ the \mu_{e}m_{u} gives the corresponding opacity. Therefore, for T\geq10^{6} K, 
 \equiv \kappa_{es}:
 #+begin_latex
 \begin{equation}
-\kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{g\ cm^{-2}} \ \ ,
+\kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2} \ g} \ \ ,
 \end{equation}
 #+end_latex
 which does /not/ depend on T or \rho, but only on the mass fraction of
@@ -295,7 +295,7 @@ itself! An approximate relation for its opacity is
 
 #+begin_latex
 \begin{equation}
-\kappa_\mathrm{H^{-}} = 2.5\times10^{-31} \frac{Z}{Z_{\odot}} \rho^{1/2} T^{9} \ \mathrm{g\ cm^{-2}} \ \ .
+\kappa_\mathrm{H^{-}} = 2.5\times10^{-31} \frac{Z}{Z_{\odot}} \rho^{1/2} T^{9} \ \mathrm{cm^{2} \ g}} \ \ .
 \end{equation}
 #+end_latex
 
