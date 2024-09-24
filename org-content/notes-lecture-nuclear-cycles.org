@@ -190,7 +190,7 @@ to meet in the same place within their nuclear radii because of
 thermal motion is negligibly small).
 
 #+begin_latex
-\alpha+\alpha\leftrightarrow^{8}Be+\gamma
+\alpha+\alpha\leftrightarrow^{8}Be+\gamma\\
 ^{8}Be+\alpha\rightarrow^{12}C^{\star}\rightarrow^{12}C+\gamma
 #+end_latex
 
@@ -212,9 +212,9 @@ evidence that carbon is the next most abundant element after H and He:
 stellar observations were used to correctly predict something on the
 structure of nuclei!
 
-*** ^{12}C(\alpha,\gamma)^{16}O
+*** $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$
 Once some carbon is produced, a new avenue for consuming \alpha particles
-opens up, the (in)famous ^{12}C(\alpha,\gamma)^{16}O reaction.
+opens up, the (in)famous $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$ reaction.
 This still consumes \alpha, but of course requires overcoming a higher
 Coulomb barrier (\propto Z_{c}Z_{He} >Z_{He}^{2}): it becomes convenient for the star
 when \alpha particles are getting scarse towards the end of helium core
@@ -243,7 +243,7 @@ contracts further, resulting in an increase in temperature until the
 next fuel can ignite.
 
 Because the end of helium core burning occurs through the
-^{12}C(\alpha,\gamma)^{16}O reaction, the composition of the core is now a mixture
+$^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$ reaction, the composition of the core is now a mixture
 of carbon and oxygen (plus some primordial metals there since
 formation, which have so far been untouched by nuclear processes,
 except maybe conversion of some primordial C and O into N by the CNO
@@ -262,9 +262,11 @@ The carbon+carbon reaction can have several branching ratios with
 positive Q values (thus exo-energetic and of interest for the star to
 sustain itself):
 
-^{12}C+^{12}C \rightarrow^{24}Mg+\gamma (Q\sim 13.93MeV)
-^{12}C+^{12}C \rightarrow^{20}Ne+\alpha (Q\sim 4.616MeV)
+#+begin_latex
+^{12}C+^{12}C \rightarrow^{24}Mg+\gamma (Q\sim 13.93MeV)\\
+^{12}C+^{12}C \rightarrow$^{20}\mathrm{Ne}$+\alpha (Q\sim 4.616MeV)\\
 ^{12}C+^{12}C \rightarrow^{23}Na+p (Q\sim 2.238MeV)
+#+end_latex
 
 These require T\geq10^{8.5} K, and produce a mixture of Neon, Magnesium (*N.B.:*
 an \alpha-nucleus!) and Sodium.
@@ -284,13 +286,13 @@ stable. This gives the nuclear "magic numbers" of nucleons that are
 particularly stable: 2, 8, 20, 28, 52 (and there are higher numbers
 theoretically predicted from nuclear structure calculations).
 
-^{16}O has Z=8 and N=8, so it is a "double magic nucleus", that from
+$^{16}O$ has Z=8 and N=8, so it is a "double magic nucleus", that from
 the nuclear interaction perspective is like a noble gas from the
 chemical perspective: it is extremely stable and does not want to
 interact.
 
 Therefore, the gravothermal collapse reaches temperatures sufficient
-to /photodisintegrate/ the heavier (but not magic) nucleus of ^{20}Ne
+to /photodisintegrate/ the heavier (but not magic) nucleus of $^{20}\mathrm{Ne}$
 before oxygen burns.
 
 However, the fact that the photodisintegration of neon is easy
