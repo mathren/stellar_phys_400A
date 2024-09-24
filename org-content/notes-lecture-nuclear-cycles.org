@@ -71,7 +71,7 @@ stars, like the Sun:
 
 
 
-#+CAPTION: Schematic representation of the pp chain.The right branch is the so called pp1 chain, the rarer left branch is the so called pp2 chain.
+#+CAPTION: Schematic representation of the pp chain. The right branch is the so called pp1 chain, the rarer left branch is the so called pp2 chain.
 #+ATTR_HTML: :width 100%
 [[./images/pp_cycle.png]]
 
@@ -118,28 +118,55 @@ through the CN-NO bi-cycle, where the "trick" to bypass the bottleneck
 of the weak reaction in the pp chain is to use metal ions as catalysts
 for the reactions.
 
+#+CAPTION: Schematic representation of the CN-NO bi cycle.
+[[./images/CN-NO.png]]
 
 
+Important things to notice:
+- C, N, and O are not /destroyed/ here, they just act as nuclear
+  catalyst. Protons momentarily "stick" to them, and then \alpha particles
+  are produced re-making the original C, N, and O
+- the bottleneck of the weak reactions is now bypassed by forming an
+  unstable isotope of a metal and having that decay: in a sense
+  massive stars "hack" nuclear physics to make the weak reaction not
+  happen in an isolated proton+proton reaction which is hard, but
+  within nuclei
+- CN + NO = CNO
+- ^{14}N is a stable isotope (N=Z=A/2), and the ^{14}N+p reaction is
+  the bottleneck of the bi-cycle: since at equilibrium all these
+  reactions occur at the same rate set by the slowest reaction, this
+  means that C and O are converted into ^{14}N in the core of massive
+  stars.
 
+Because of the higher Coulomb barriers involved one can expect a
+steeper temperature dependence of this hydrogen burning mode, and in
+fact one finds for the CNO cycle \varepsilon_{nuc} \propto T^{16}.
 
+This very steep energy dependence produces a very large temperature
+gradient in the core of massive stars (by releasing energy in a very
+small region in mass): the cores of stars burning through the CNO
+cycle are *convective*.
 
-
-
+*N.B.:* This is also how hydrogen burns in a shell or at the surface of
+a white dwarf during a nova explosion. However, in the latter case,
+the burning is not caused by the hydrostatic structure of the star
+(i.e., by the virial theorem)! In that case you can have the "hot CNO"
+cycle, where reaction rates do /not/ need to wait for \beta-decays to occur.
+This is a general feature of explosive burning: in that case we don't
+need to wait for the slowest nuclear reaction in the cycle, as the
+high temperatures can allow to bypass Coulomb barriers more easily.
 
 :Question:
 - *Q*: How did population III stars do this? This is the topic of the [[./honors.org::*Main sequence burning in massive population III
   stars][honors project]]!
 :end:
 
-
-
-
-
 ** Helium burning
 
 *** 3\alpha
 
 *** ^{12}C(\alpha,\gamma)^{16}O
+
 
 ** Heavier burning
 
@@ -151,7 +178,8 @@ for the reactions.
 
 *** Silicon core burning
 
-** Summary of energy scaling
+
+* Summary of energy scaling
 
 #+CAPTION: \varepsilon_{nuc} \equiv \varepsilon_{nuc}(T) dependence on a log-log plot for the burning cycles that cover \ge99% of the stellar lifetime (H and He core burning). From [[https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg][wikipedia]].
 #+ATTR_HTML: :width 100%
@@ -162,6 +190,8 @@ temperature dependence of \varepsilon_{nuc} gets steeper for heavier nuclear fue
 so post-helium core burning \varepsilon_{nuc} is more and more concentrated towards
 the center, leaving the outer layers unburned and allowing for the so
 called "onion layer" structure of stars:
+
+*N.B.:* The sun is pp, but we detected CNO produced neutrinos!
 
 #+CAPTION: Layer structure for an initially 15M_{\odot} star at the end of its nuclear burning lifetime in mass coordinate from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note the final total mass is /not/ 15M_{\odot} because stars this massive lose mass through radiatively driven winds.
 #+ATTR_HTML: :width 100%
@@ -185,8 +215,7 @@ end of their life, and whether they form a neutron star or a black
 hole, in ways that are still poorly understood (see for example
 [[https://ui.adsabs.harvard.edu/abs/2014ApJ...783...10S/abstract][Sukhbold & Woosley 2014]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv240902058L/abstract][Laplace et al. 2024]]).
 
-
-** Duration of each burning phase
+* Duration of each burning phase
 
 As we have seen (cf. [[./notes-lecture-VirTheo.org][virial theorem lecture]]) stars shine as anything
 with a finite temperature does. This eats at their internal thermal
@@ -256,3 +285,6 @@ observe and thus harder to study.
 
 For instance, the timescale for the last possible burning phase in
 massive stars, silicon \rightarrow iron only lasts order of /days/.
+
+#+CAPTION: example of durations of burning phases for a few massive stars from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]].
+[[./images/durations.png]]
