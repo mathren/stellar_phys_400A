@@ -54,18 +54,19 @@ happened to that dependence in our stellar structure equations?
 In the [[./notes-lecture-ETransport.org::*Energy transport by radiative diffusion][previous lecture]] we have written for the radiative energy flux
 
 #+begin_latex
-\begin{equation}
-F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \ .
+\begin{equation}\label{eq:f_rad}
+F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \equiv -\frac{4ac}{3c\rhoT^{3}}\frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ .
 \end{equation}
 #+end_latex
 
 Here \kappa_{rad} should be interpreted as an "appropriate mean value". In
 reality, we should have written an equation like this for the specific
 flux (i.e., the radiative flux F_{\nu} carried by radiation with
-frequency between \nu and \nu+d\nu) and integrate over the spectrum to get
-F_{rad} =\int_{0}^{+\infty} F_{\nu} d\nu. For the specific flux, we also should
-put in the equation the specific opacity \kappa_{\nu} and consider only the
-energy density of radiation u_{\nu} between \nu and \nu+d\nu:
+frequency between \nu and \nu+d\nu) and integrate over frequencies to get
+the total radiative flux F_{rad} =\int_{0}^{+\infty} F_{\nu} d\nu. For the
+specific flux, we also should put in the equation the specific opacity
+\kappa_{\nu} and consider only the energy density of radiation u_{\nu} between
+\nu and \nu+d\nu:
 
 #+begin_latex
 \begin{equation}\label{eq:specific_flux}
@@ -96,7 +97,7 @@ F_\mathrm{rad} = \int_{0}^{+\infty} F_{\nu}d\nu = - \frac{1}{3}\frac{c}{\rho}\in
 \end{equation}
 #+end_latex
 
-Comparing this with Eq. 8 from the previous lecture we obtain that the
+Comparing this with Eq. \ref{eq:f_rad} from the previous lecture we obtain that the
 \kappa_{rad} appearing there must be:
 
 #+begin_latex
