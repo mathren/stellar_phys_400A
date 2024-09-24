@@ -55,7 +55,7 @@ In the [[./notes-lecture-ETransport.org::*Energy transport by radiative diffusio
 
 #+begin_latex
 \begin{equation}\label{eq:f_rad}
-F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \equiv -\frac{4ac}{3c\rhoT^{3}}\frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ .
+F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \equiv -\frac{4ac}{3c\rho T^{3}}\frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ .
 \end{equation}
 #+end_latex
 
