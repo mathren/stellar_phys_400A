@@ -276,6 +276,11 @@ opacity: the electrons in them can have many degrees of freedom that
 can be used to absorb and scatter photons (e.g., roto-vibrational
 molecular bands).
 
+*N.B.:* molecular opacity is a field of research in /laboratory/
+astrophysics, when the relevant molecules can be synthesized and kept
+at the relevant T and \rho one can experimentally measure their \kappa_{rad}
+which is extremely complicated to calculate from first principles.
+
 ** H^{-}
 At low temperature hydrogen may capture an extra electron forming an
 H^{-} ion (i.e., a proton with 2 bound electrons). This is a fragile
@@ -284,9 +289,9 @@ there are metals with one electron only (the first column of the
 periodic table, e.g., Na, K, Ca), they can provide extra electrons,
 allowing for the formation of this ion in stellar atmospheres.
 
-This negative ion can then provide most of the opacity in the envelope
-of non-metal-free cool stars, e.g., red giants or the Sun itself!
-An approximate relation for its opacity is
+*N.B.:* This negative ion can then provide most of the opacity in the
+envelope of non-metal-free cool stars, e.g., red giants or the Sun
+itself! An approximate relation for its opacity is
 
 #+begin_latex
 \begin{equation}
@@ -294,12 +299,25 @@ An approximate relation for its opacity is
 \end{equation}
 #+end_latex
 
+:Question:
+- *Q*: since H^{-} is the dominant source of opacity in cool stars, such as
+  the Sun, red giants and supergiants, but for this ion to form metals
+  able to lose an electron are required, do we expect red giants and
+  supergiants for pop III stars? (The question is maybe less
+  interesting for Sun-like stars since they are less luminous and thus
+  even harder to detect, but still holds theoretically).
+:end:
+
 ** Conductive opacity
 
 For an ideal gas, \kappa_{cond} \gg \kappa_{rad} making conduction irrelevant in
-the combined opacity. Only for degenerate gas (at least partially),
-diffusion of energy through the thermal motion of particles
-(electrons, because of their lower mass) is important.
+the combined opacity. This is because the Coulomb scattering cross
+section among charged particles in a plasma is larger than the cross
+section for interactions with photons.
+
+Only for degenerate gas (at least partially), diffusion of energy
+through the thermal motion of particles (electrons, because of their
+lower mass) is important.
 
 At very high densities, the electron mean-free path are very long
 (since collisions are forbidden by not having any level available
