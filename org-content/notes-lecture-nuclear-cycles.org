@@ -3,7 +3,8 @@
 
 * Nuclear burning cycles
 *Materials:* Onno Pol's lecture notes Chapter 6.1 and 6.2, Kippenhahn
- book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, [[https://journals.aps.org/pr/abstract/10.1103/PhysRev.55.434][Bethe 1939]]
+ book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, Clayton,
+ Chapter 5, [[https://journals.aps.org/pr/abstract/10.1103/PhysRev.55.434][Bethe 1939]]
 
 In the [[./notes-lecture-nuclear-burning.org][previous lecture]] we have developed some idea of the physics
 involved in thermonuclear burnings, enough to know that the
@@ -54,20 +55,24 @@ directly confirmed through solar neutrino observations (which also
 lead to the development of new neutrino physics), and chemical
 observations across astronomical sources.
 
+*N.B.:* all the reactions we will write down today can be inferred using
+the conservation law for baryonic number, leptonic number, and
+four-momentum (i.e., energy and momentum).
+
 ** Hydrogen burning
 
 *** pp chain
 The "pp chain" is the dominant hydrogen burning mode in low mass
 stars, like the Sun:
 
-#+begin_latex
- p + p \rightarrow D + e^{+} + \nu_{e }\\
- D+p \rightarrow^{3}He +\gamma \\
- ^{3}He+^{3}He\rightarrow^{4}He+p+p  (86%) \\
-           \rightarrow^{7}Be+\gamma    (14%) \\
-	   ^{7}Be\rightarrow^{7}Li+e^{+} + \nu_{e}\\
-	   ^{7}Li+p\rightarrow2^{4}He+\gamma
-#+end_latex
+# #+begin_latex
+#  p + p \rightarrow D + e^{+} + \nu_{e }\\
+#  D+p \rightarrow^{3}He +\gamma \\
+#  ^{3}He+^{3}He\rightarrow^{4}He+p+p  (86%) \\
+#            \rightarrow^{7}Be+\gamma    (14%) \\
+# 	   ^{7}Be\rightarrow^{7}Li+e^{+} + \nu_{e}\\
+# 	   ^{7}Li+p\rightarrow2^{4}He+\gamma
+# #+end_latex
 
 
 
@@ -162,21 +167,188 @@ high temperatures can allow to bypass Coulomb barriers more easily.
 :end:
 
 ** Helium burning
+Once hydrogen fuel runs out in the core of a star (i.e., for mass
+coordinate m \le f_{burn} M_{tot}), the next fuel to burn is going to be
+helium. First of all, this is always available (since it was produced
+in the Big Bang), and secondly, it's the energetically second-best
+fuel in terms of energy release.
 
-*** 3\alpha
+However, there is a nuclear physics problem: no stable nucleus with
+A=5 and A=8 and the few A=7 produced during hydrogen burning are very
+fragile and easy to break, so they don't survive the hydrogen burning
+phase either. So how can one do thermonuclear reactions of helium?
+
+This was solved by [[https://en.wikipedia.org/wiki/Fred_Hoyle][Fred Hoyle]], who predicted that there would be a
+metastable state of carbon (as a C^{\star} compound nucleus in Bohr's
+approximation) that would allow to consume helium.
+
+*** "Triple \alpha" reaction
+The easiest way to consume helium is through the so called "tiple \alpha
+reaction", which is actually a /compound/ reaction with a very short
+lived intermediate state (*N.B.:* the probability of 3 alpha particles
+to meet in the same place within their nuclear radii because of
+thermal motion is negligibly small).
+
+#+begin_latex
+\alpha+\alpha\leftrightarrow^{8}Be+\gamma
+^{8}Be+\alpha\rightarrow^{12}C^{\star}\rightarrow^{12}C+\gamma
+#+end_latex
+
+As mentioned above, the A=8 nucleus of Beryllium is unstable, and
+decays with a half life of \tau_{Be}\sim8\times10^{-17} seconds (*N.B.:* this is
+still much longer than the light crossing time \sim2\times10^{-23}sec, so Bohr's
+approximation holds!). Therefore, the first reaction can go both ways,
+with the beryllium decaying back in two \alpha particles. However, if the
+temperature is such that /before/ it can decay, a third \alpha particle will
+interact with the beryllium, then one can consume three nuclei of
+helium to make a carbon. This requires T\sim10^{8} K \gg T_{center,\odot}\simeq10^{7}
+\sim T_{H burn}.
+
+
+The insight of F. Hoyle was that this would happen, and for this to
+happen there /needs/ to be an excited (actually doubly-excited) state of
+carbon 12 which was theoretically predicted from the astrophysical
+evidence that carbon is the next most abundant element after H and He:
+stellar observations were used to correctly predict something on the
+structure of nuclei!
 
 *** ^{12}C(\alpha,\gamma)^{16}O
+Once some carbon is produced, a new avenue for consuming \alpha particles
+opens up, the (in)famous ^{12}C(\alpha,\gamma)^{16}O reaction.
+This still consumes \alpha, but of course requires overcoming a higher
+Coulomb barrier (\propto Z_{c}Z_{He} >Z_{He}^{2}): it becomes convenient for the star
+when \alpha particles are getting scarse towards the end of helium core
+burning.
 
+This reaction regulates the C/O ratio in stars, and ultimately in the
+Universe, clearly something of interest for biology (among other
+things). However, its rate is notoriously uncertain, because of the
+possible presence of unknown resonances in the compound nucleus.
+In fact, here elements are getting sufficiently heavy that the energy
+gap between laboratory experiments and the stellar conditions grows
+and extrapolation of the astrophysical S-factor gets more and more
+uncertain.
+
+This reaction ultimately regulates the composition of the most common
+white dwarfs, and also the masses of the most massive black holes, and
+it is actively studied in laboratories /and/ in stellar context (see for
+example [[https://iopscience.iop.org/article/10.3847/0004-637X/823/1/46][Fields et al. 2016]] on the structure and composition of white
+dwarfs, [[https://ui.adsabs.harvard.edu/abs/2020ApJ...902L..36F/abstract][Farmer et al. 2020]] on black hole masses, [[https://ui.adsabs.harvard.edu/abs/2023ApJ...945...41S/abstract][Shen et al. 2023]] for
+the most recent lab measurements).
 
 ** Heavier burning
+Once helium fuel is exhausted, helium core burning cannot provide the
+energy to compensate for the losses, and the core of the star
+contracts further, resulting in an increase in temperature until the
+next fuel can ignite.
 
-*** Carbon core burning
+Because the end of helium core burning occurs through the
+^{12}C(\alpha,\gamma)^{16}O reaction, the composition of the core is now a mixture
+of carbon and oxygen (plus some primordial metals there since
+formation, which have so far been untouched by nuclear processes,
+except maybe conversion of some primordial C and O into N by the CNO
+cycle). The next fuel is thus carbon, because it has the lowest
+Coulomb barrier.
 
-*** Neon ignition
+*N.B.:* Recall that not all stars need to do all burning phases
+possible: if electron degeneracy kicks in before T_{center} is high
+enough to start reactions, the gravothermal collapse imposed by the
+virial theorem interrupts because of the EOS. Since we also know from
+the virial theorem that \langle T \rangle \propto M, we know that lower mass stars are
+on average cooler and will stop burning earlier.
+
+*** Carbon burning
+The carbon+carbon reaction can have several branching ratios with
+positive Q values (thus exo-energetic and of interest for the star to
+sustain itself):
+
+^{12}C+^{12}C \rightarrow^{24}Mg+\gamma (Q\sim 13.93MeV)
+^{12}C+^{12}C \rightarrow^{20}Ne+\alpha (Q\sim 4.616MeV)
+^{12}C+^{12}C \rightarrow^{23}Na+p (Q\sim 2.238MeV)
+
+These require T\geq10^{8.5} K, and produce a mixture of Neon, Magnesium (*N.B.:*
+an \alpha-nucleus!) and Sodium.
+
+*** Neon ignition and nuclear "magic numbers"
+Because of carbon burning, a significant amount of neon is produced.
+Although neon has A=20 and Z=10 so it is heavier and more charged than
+oxygen (produced by the end of helium core burning and still untouched
+by carbon burning at this point), it will ignite before.
+
+The reason has to do with a nuclear physics property: one can make a
+direct analogy between nuclei and atoms, and like atoms of "noble
+gases" which have electrons in all their shells are very stable and
+don't like to do chemical interactions with other atoms/molecules,
+nuclei with nucleons filling all their shells are also particularly
+stable. This gives the nuclear "magic numbers" of nucleons that are
+particularly stable: 2, 8, 20, 28, 52 (and there are higher numbers
+theoretically predicted from nuclear structure calculations).
+
+^{16}O has Z=8 and N=8, so it is a "double magic nucleus", that from
+the nuclear interaction perspective is like a noble gas from the
+chemical perspective: it is extremely stable and does not want to
+interact.
+
+Therefore, the gravothermal collapse reaches temperatures sufficient
+to /photodisintegrate/ the heavier (but not magic) nucleus of ^{20}Ne
+before oxygen burns.
+
+However, the fact that the photodisintegration of neon is easy
+relative to oxygen ignition is a direct consequence that the nucleus
+of neon is not extremely bound and its burning does not release very
+much energy, resulting in a brief phase of stellar evolution only.
 
 *** Oxygen
+As T further increases because of the oxygen finally ignites. The
+dominant reaction has multiple branching ratios with positive Q value
+that produce sulfur and silicon primarily.
 
 *** Silicon core burning
+Finally, if a star has reached this point, gravity will compress its
+core until it burns all the way to the most bound nucleus
+(iron/nickel): stopping somehow the gravothermal collapse at this
+point would require extreme fine-tuning.
+
+Post core oxygen burning, the core is made of a mixture of silicon and
+sulfur (*N.B.:* this is now very hard to probe directly observationally
+because of the very short evolutionary timescales, but it matches well
+the nuclear data and abundance patterns in the Universe!).
+
+The next burning phase is typically referred to as "silicon burning",
+although it physically proceeds in a slightly different fashion than
+all the burning phases we have seen so far.
+
+It typically requires T\sim2-5\times10^{9} K and densities \rho\sim10^{7}-10^{10} g cm^{-3} and
+only lasts order of \tau_{nuc, Si}\sim days-weeks since the energy release
+per nucleon is /only/ 0.1MeV/nucleon (cf. ~6.6 MeV/nucleon for H
+burning!).
+
+At such temperatures, we reach a "quasi statistical equilibrium"
+between nuclei: the silicon, sulfur, and other elements (referred to
+as "silicon group elements" with A\sim28 and Z\sim14) are photodisintegrated
+and re-created at very high and nearly canceling rates:
+
+#+begin_latex
+  \gamma + ^{A}Z \rightarrow ^{A'}Z' +{p,n,\alpha}
+#+end_latex
+
+This produces also a variety of light particles (protons, neutrons,
+and \alpha particles), which can be captured on the silicon group elements
+to form heavier "iron group nuclei" (which are also photodisintegrated
+and recreated constantly):
+#+begin_latex
+  \{p, n,\alpha\} + \{ ^{A}Z,^{A'}Z' \} \rightarrow \{ \mathrm{Fe \ group \ nuclei} \} + \dots
+#+end_latex
+Moreover, many ^{A'}Z' nuclei produced by photo-disintegrations and
+particles captures are extremely neutron or proton rich, therefore a
+lot of weak reaction such as $\beta^{\pm}-$decays and electron captures
+happen too (while positron captures are always negligible for stars
+with M \leq 40 M_{\odot,} and positrons prefer to annihilate with an
+electron producing \gamma rays that quickly thermalize in the plasma see
+[[https://ui.adsabs.harvard.edu/abs/1977ApJS...35..145A/abstract][Arnett et al. 1977]]).
+
+
+
 
 
 * Summary of energy scaling
@@ -191,7 +363,12 @@ so post-helium core burning \varepsilon_{nuc} is more and more concentrated towa
 the center, leaving the outer layers unburned and allowing for the so
 called "onion layer" structure of stars:
 
-*N.B.:* The sun is pp, but we detected CNO produced neutrinos!
+*N.B.:* The central temperature of the Sun correspond to the higher
+range where the pp chain dominates the energy production. This means
+that in the Sun we expect some CNO burning at a sub-dominant level,
+and indeed \nu_{e} from the decay of ^{13}N have been experimentally
+detected (one can recognize them from their spectrum), see [[https://www.nature.com/articles/s41586-020-2934-0][Borexino
+collaboration 2020]].
 
 #+CAPTION: Layer structure for an initially 15M_{\odot} star at the end of its nuclear burning lifetime in mass coordinate from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note the final total mass is /not/ 15M_{\odot} because stars this massive lose mass through radiatively driven winds.
 #+ATTR_HTML: :width 100%
