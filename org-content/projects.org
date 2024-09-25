@@ -65,7 +65,7 @@ as we may be able to accommodate it.
 40. Orbital architectures of (star+star) binaries in the Universe
 41. Gravitational wave progenitor channels
 42. The lowest mass stars: M dwarfs and Brown dwarfs
-43. Something else with the scope of the course to be agreed upon
+43. Something else with the scope of the course *to be agreed upon*!
 
 ** Recommended sources
 You are encouraged to do your own research, but in the final
