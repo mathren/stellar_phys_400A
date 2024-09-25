@@ -45,7 +45,7 @@ where \nabla =\partial log(T)/\partial log(P) is the local temperature gradient,
 the radiative gradient in stably stratified regions:
 #+begin_latex
 \begin{equation}
-\nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
+\nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
 \end{equation}
 #+end_latex
 with \kappa = (1/\kappa_{rad} + 1/\kappa_{cond})^{-1} the combination "in parallel" of the
@@ -61,7 +61,7 @@ precision) for convective regions. We also have a criterion
 \end{equation}
 #+end_latex
 
-with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy.
+with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy and \varepsilon_{\nu}>0.
 
 ** Two types of neutrinos
 
@@ -122,7 +122,7 @@ neutrinos from the so-called /URCA processes/ (named after a casino in
 Rio de Janeiro because when these processes kick in the energy of the
 nuclear reaction goes the same way as the money in the casino!):
 #+begin_latex
-$^AZ+e^{-}\rightarrow^{A}(Z-1) + \nu_e$\\
+$^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e}$\\
 $^{A}(Z-1)\rightarrow ^{A}Z +e^{-}+\bar{\nu_{e}}$
 #+end_latex
 
@@ -130,7 +130,8 @@ which produce one neutrino and one anti-neutrino without changing the
 composition of the star. This requires that the nucleus $^{A}(Z-1)$ is
 unstable to \beta^{-}-decay and the cross section for electron capture on
 $^AZ$ is non-negligible, which can happen during Si core burning and
-the subsequent collapse.
+the subsequent gravitational collapse of the core once the nuclear
+fuel runs out.
 
 The nuclear neutrinos are mostly sensitive to the core temperature for
 the activation of certain thermonuclear reaction chains (except for
@@ -184,7 +185,7 @@ several categories:
 #+ATTR_HTML: :width 100%
 [[./images/feynman_diagram_neutrinos.png]]
 
-  - plasmon processes: $\gamma + \gamma_{pl} \rightarrow \nu_x + \bar{\nu}_x$,
+  - plasmon processes: $\gamma + \tilde{\gamma} \rightarrow \nu_x + \bar{\nu}_x$,
   - bremsstrahlung: $e^{-} + ^{A}Z \rightarrow e^{-} + ^{A}Z + \nu_x + \bar{\nu}_x$,
   - pair-production: $\gamma + \gamma \rightarrow \nu_x + \bar{\nu}_x$,
   - pair annihilation:  $e^{+}+e^{-} \rightarrow \nu_x + \bar{\nu}_x$ ,

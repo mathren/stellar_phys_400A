@@ -89,7 +89,7 @@ recall basic quantum mechanics elements, Gamow peak.
 *Aim*: Introduce pp chain, CN-NO bi-cycle, 3\alpha burning. Introduce general
 principles of stellar evolution codes, =MESA-web=, and =MESA=.
 
-[[./notes-lecture-nuclear-cycles.org][Notes on nuclear reaction chains]]
+[[./notes-lecture-nuclear-cycles.org][Notes]]
 
 ** <2024-10-08 Tue> - Neutrino cooling + introduction to stellar evolution codes
 *Aim*: discuss neutrino physics relevant to stars, cooling processes and

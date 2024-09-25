@@ -10,7 +10,7 @@
 We have four equations of the stellar /structure/ assuming spherical
 symmetry, LTE, and hydrostatic (\partial t \equiv 0) equilibrium:
 
-*** Mass continuity
+*** Mass conservation
 #+begin_latex
 \begin{equation}\label{eq:mass_cont}
 \frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
@@ -23,7 +23,7 @@ symmetry, LTE, and hydrostatic (\partial t \equiv 0) equilibrium:
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
 #+end_latex
-which follows from the momentum continuity equation
+which follows from the momentum conservation equation
 
 *** Equation of state
 #+begin_latex
@@ -42,7 +42,7 @@ where \nabla =\partial log(T)/\partial log(P) is the local temperature gradient,
 the radiative gradient in stably stratified regions:
 #+begin_latex
 \begin{equation}
-\nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
+\nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
 \end{equation}
 #+end_latex
 with \kappa = (1/\kappa_{rad} + 1/\kappa_{cond})^{-1} the combination "in parallel" of the
@@ -58,7 +58,7 @@ precision) for convective regions. We also have a criterion
 \end{equation}
 #+end_latex
 
-with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy.
+with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy, and \varepsilon_{\nu}>0.
 
 ** The next step
 
