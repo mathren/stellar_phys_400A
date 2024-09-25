@@ -122,8 +122,8 @@ neutrinos from the so-called /URCA processes/ (named after a casino in
 Rio de Janeiro because when these processes kick in the energy of the
 nuclear reaction goes the same way as the money in the casino!):
 #+begin_latex
-$^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e}$\\
-$^{A}(Z-1)\rightarrow ^{A}Z +e^{-}+\bar{\nu_{e}}$
+$ ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e }$\\
+$ ^{A}(Z-1)\rightarrow ^{A}Z +e^{-}+\bar{\nu_{e}} $
 #+end_latex
 
 which produce one neutrino and one anti-neutrino without changing the
@@ -144,8 +144,8 @@ sufficiently high (because of the gravothermal collapse) that
 non-nuclear processes producing neutrinos start occurring. After
 carbon depletion, the neutrinos produced by these processes can take
 away more energy than is locally lost to photons by each stellar
-layer: /evolved massive stars are neutrino stars/ ([[https://ui.adsabs.harvard.edu/abs/1968Ap%26SS...2...96F/abstract][Fraley 1968]]), L_{\nu}
-\gg L_{rad}.
+layer: /evolved massive stars are neutrino stars/ L_{\nu}
+\gg L_{rad} ([[https://ui.adsabs.harvard.edu/abs/1968Ap%26SS...2...96F/abstract][Fraley 1968]]).
 
 This also effectively means that the stellar core of evolved (\sim during
 and after carbon core burning) massive stars is /decoupled/ from the
@@ -214,3 +214,52 @@ tabulated in stellar physics codes (see especially the widely used
 #+CAPTION: Neutrino energy losses on the T(\rho) plane. White lines mark the separation between regions where different neutrino emission processes dominate, the colored lines mark the T(\rho) tracks of helium cores of the labeled masses (in M_{\odot} units) computed with MESA. Credits: R. Farmer.
 #+ATTR_HTML: :width 100%
 [[./images/Trho_neutrinos.png]]
+
+* Principles of =computational= stellar evolution
+
+We now have finally derived/discussed all the pieces of physics
+necessary to compute a stellar /structure/ model, treat its nuclear
+energy generation and thus driving its /evolution/.
+
+The description we have obtained for a spherically symmetric star is
+made of 4 non-linear, coupled, ordinary differential equations (ODE)
+plus the equation of state that in a sense acts as closure condition
+for the system.
+
+As you can imagine, this is not a system easily solved by hand. Since
+the early days of the availability of computers in the 1960s, people
+have been designing and leveraging /computational techniques/
+to /numerically/ solve this system of equations.
+
+:Quote:
+"/Traditional scientific knowledge has generally taken the form of/
+/either theory or experimental data. However, where theory and/
+/experiment stumble, simulations may offer a third way./"
+Simulation, Johannes Lenhard et al.
+:end:
+
+Moreover, the /high non-linearity/ of the system means that there can be
+quasi-chaotic behavior: a small perturbation (maybe because of a
+numerical error or a small inconsistency in the tabulated input
+physics!) can cascade into dramatic consequences, similar to the
+famous "butterfly effect" (which was also theorized from numerical
+computations, but of atmospheric physics, by [[https://en.wikipedia.org/wiki/Edward_Norton_Lorenz][E. Lorenz]]).
+
+*N.B.:* without the assumption of spherical symmetry, the equations
+would become partial differential equations (PDE). When introducing
+effects such as rotation or binarity that formally break the spherical
+symmetry of the problem, these are "cast" in a form that still allows
+a 1D formalism (e.g., "shellular rotation" assuming that all
+quantities are constant along isobars and uses P as the independent
+coordinate, or using volume-weighted equivalent potentials of the
+companion).
+
+[[https://www.aip.org/history-programs/niels-bohr-library/oral-histories/5091][Kippenhahn interview in 1978]]
+
+
+[[https://www.as.arizona.edu/~mrenzo/materials/slides/CompAstro_MESA.pdf][Slides on stellar evolution codes (old)]]
+
+** TODO in progress
+ - general principles
+ - =MESA= and =MESA-web= with emphasis on open science
+ - systematic uncertainties

@@ -91,15 +91,13 @@ phases.
 
 [[./notes-lecture-nuclear-cycles.org][Notes]]
 
-** <2024-10-08 Tue> - Neutrino cooling + introduction to stellar evolution codes
+** <2024-10-08 Tue> - Neutrino cooling + stellar evolution codes
 *Aim*: discuss neutrino physics relevant to stars, cooling processes and
 thus complete the physics needed for 1D stellar evolution calculation.
 Introduce general principles of stellar evolution codes, =MESA-web=, and
 =MESA=.
 
 [[./notes-lecture-neutrinos.org][Notes]]
-
-[[https://www.as.arizona.edu/~mrenzo/materials/slides/CompAstro_MESA.pdf][Slides on stellar evolution codes (old)]]
 
 ** <2024-10-10 Thu> - Roche geometry and binary interactions
 *Aim*: Introduce the Roche approximation and its limitations and binary
@@ -110,7 +108,10 @@ Introduce general principles of stellar evolution codes, =MESA-web=, and
 Discuss what is expected for the presentations, how they will be
 graded, etc. how to provide useful feedback during peer-reviewing.
 
- - Discuss structure: introduce problem, show state-of-the-art
+ - Discuss structure:
+   - introduce problem
+   - focus on the physical processes
+   - connect to material covered in class (incl. by other presentations)
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
 
 ** <2024-10-17 Thu> - Radiative transfer
