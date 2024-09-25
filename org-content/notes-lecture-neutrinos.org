@@ -211,6 +211,6 @@ tabulated in stellar physics codes (see especially the widely used
 [[https://ui.adsabs.harvard.edu/abs/1996ApJS..102..411I/abstract][Itoh et al. 1996]]), and the figure below shows the |\varepsilon_{\nu}|
 \equiv |\varepsilon_{\nu}|(T,\rho) resulting from these tables:
 
-#+CAPTION: Neutrino energy losses on the T(\rho) plane. White lines mark the separation between regions where different neutrino emission processes dominate, the colored lines mark the T(\rho) tracks of helium cores of the labeled masses computed with MESA. Credits: R. Farmer.
+#+CAPTION: Neutrino energy losses on the T(\rho) plane. White lines mark the separation between regions where different neutrino emission processes dominate, the colored lines mark the T(\rho) tracks of helium cores of the labeled masses (in M_{\odot} units) computed with MESA. Credits: R. Farmer.
 #+ATTR_HTML: :width 100%
 [[./images/Trho_neutrinos.png]]
