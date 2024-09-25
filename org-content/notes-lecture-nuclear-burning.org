@@ -7,7 +7,6 @@
  Chapter 4, [[https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstract][Gamow 1928]], [[https://ui.adsabs.harvard.edu/abs/1999RPPh...62..395A/abstract][Arnould & Takahashi 1999]], [[https://ui.adsabs.harvard.edu/abs/2011RPPh...74i6901J/abstract][Jose & Iliadis 2011]]
 
 ** Summary of where we are
-
 We have four equations of the stellar /structure/ assuming spherical
 symmetry, LTE, and hydrostatic (\partial t \equiv 0) equilibrium:
 
@@ -60,7 +59,6 @@ precision) for convective regions. We also have a criterion
 #+end_latex
 
 with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy.
-
 
 ** The next step
 
@@ -709,7 +707,6 @@ for life! However, because nuclear physics experiments operate at so
 much higher energy than stars, extrapolating to lower relative
 energies is complicated and dangerous: it is easy to miss an unknown
 resonance that would change significantly the rate.
-
 
 ** Thermonuclear reaction rates
 Now that we have discussed how a charged particle nuclear reaction is
