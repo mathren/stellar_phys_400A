@@ -755,7 +755,6 @@ convective instability in a stellar gas using one free parameter only
 (\alpha_{MLT}) and allows us to make *evolutionary* calculations on timescales
 much longer than the convective turnover timescale.
 
-
 * Summary of the key assumptions
 
 - The gradient of the background environment is *radiative* (meaning

@@ -92,9 +92,11 @@ principles of stellar evolution codes, =MESA-web=, and =MESA=.
 [[./notes-lecture-nuclear-cycles.org][Notes on nuclear reaction chains]]
 
 ** <2024-10-08 Tue> - Neutrino cooling + introduction to stellar evolution codes
-*Aim*: discuss neutrino cooling processes, complete the physics needed
-for 1D stellar evolution calculation, introduce general principles of
-stellar evolution codes.
+*Aim*: discuss neutrino physics relevant to stars, cooling processes and
+thus complete the physics needed for 1D stellar evolution calculation.
+Introduce general principles of stellar evolution codes.
+
+[[./notes-lecture-neutrinos.org][Notes]]
 
 [[https://www.as.arizona.edu/~mrenzo/materials/slides/CompAstro_MESA.pdf][Slides on stellar evolution codes (old)]]
 

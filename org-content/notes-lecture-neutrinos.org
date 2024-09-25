@@ -1,0 +1,215 @@
+#+Title: 400A - Neutrinos in stars
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* Neutrino physics in stars
+*Materials:* Sec. 6.5 and 12.3.1 of Onno Pols' notes.
+
+We have almost seen all the pieces needed to make a one-dimensional
+hydrostatic model of a star, including the input physics in the
+quantities \kappa (opacity) and \varepsilon_{nuc}. The aim of this lecture is to unpack
+the last input quantities entering in the energy conservation which
+connects stellar physics with neutrino physics: \varepsilon_{\nu.}
+
+** Summary of equations we have derived
+
+*** Mass conservation
+#+begin_latex
+\begin{equation}\label{eq:mass_cont}
+\frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
+\end{equation}
+#+end_latex
+
+*** Hydrostatic equilibrium
+#+begin_latex
+\begin{equation}\label{eq:HSE}
+\frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
+\end{equation}
+#+end_latex
+which follows from the momentum conservation equation
+
+*** Equation of state
+#+begin_latex
+\begin{equation}
+P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T + P_{QM} + \frac{1}{3}aT^{4}  \ \ .
+\end{equation}
+#+end_latex
+
+*** Energy transport
+#+begin_latex
+\begin{equation}
+\frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
+\end{equation}
+#+end_latex
+where \nabla =\partial log(T)/\partial log(P) is the local temperature gradient, equal to
+the radiative gradient in stably stratified regions:
+#+begin_latex
+\begin{equation}
+\nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
+\end{equation}
+#+end_latex
+with \kappa = (1/\kappa_{rad} + 1/\kappa_{cond})^{-1} the combination "in parallel" of the
+radiative and conductive opacity (assumed to be known from atomic
+physics), and \nabla \equiv \nabla_{ad} the adiabatic gradient (within \sim10^{-7-8}
+precision) for convective regions. We also have a criterion
+(Schwarzschild criterion) to determine which region is which.
+
+*** Energy conservation
+#+begin_latex
+\begin{equation}
+\frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
+\end{equation}
+#+end_latex
+
+with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy.
+
+** Two types of neutrinos
+
+For the \rho typical in stars (think of \langle\rho_{\odot}\rangle and the other
+average densities you estimated in the various homeworks), neutrinos
+can safely be considered as non-interacting.
+
+Moreover, for distances smaller than the typical stellar radii
+(generously r\le1000R_{\odot}), we can also neglect the physics of neutrino
+oscillations and consider neutrinos as ultra-relativistic mass-less
+particles propagating at v \simeq c. Neglecting the neutrino masses also
+allows us to assume conservation of the leptonic number throughout
+stellar evolution.
+
+*N.B.:* recall that the leptonic number is +1 for the leptons electron
+e^{-}, muon \mu^{-}, tau \tau^{-} and the corresponding neutrinos \nu_{e}, \nu_{\mu},
+\nu_{\tau} and -1 for their antiparticles positron e^{+}, positive muon \mu^{+},
+and positive \tau^{+} and the corresponding antineutrinos.
+
+Therefore, any neutrino produced in the stellar interior leaves the
+star in the light-crossing time R/c \le 1000 R_{\odot}/c \simeq 1000 \times
+2 sec = 2000 sec which is much shorter than evolutionary timescales
+(and even during shorter evolutionary phases such as silicon shell
+burning, the energy carried by the neutrinos is on its way out and
+nothing is going to stop it from leaving the star).
+
+These arguments apply to both kinds of neutrinos that we can encounter
+in stellar evolution, and stop working only when densities get
+extremely high (\rho\ge10^{10} g cm^{-3}): at this point neutrinos can and do
+start interacting with matter. Such densities are only encountered in
+a collapsing core that has exhausted nuclear fuel and in neutron
+stars: neutrino interactions are crucial to the physics of the
+supernova explosions, but can safely be neglected before.
+
+During the evolution of the star that sets the stage for the
+explosion, we encounter two "classes" of neutrinos.
+
+*** Nuclear neutrinos
+We have already encountered processes occurring in stars: /weak
+nuclear reactions/! These are needed since the main sequence (both in
+the pp chain and CNO) to convert some protons into neutrons for the
+helium nuclei.
+
+These neutrinos do carry away energy as described above, /but/ that is
+just some of the energy that the exo-energetic thermonuclear reaction
+would have released. Effectively, they decrease the energy gain from
+releasing nuclear binding energy but they are not a net energy loss.
+
+This allows to incorporate them in models by re-writing \varepsilon_{nuc}
+\rightarrow \varepsilon_{nuc} - |\varepsilon_{\nu, nuc}|, where the neutrino term is always negative
+(hence we can write it as minus an absolute value), and needs to be
+calculated from nuclear physics, determining the spectrum of the
+neutrino produced by a given reaction (a non-trivial task which
+stellar physics leaves to neutrinos and nuclear physicists).
+
+Particularly important for the late evolution of massive stars are
+neutrinos from the so-called /URCA processes/ (named after a casino in
+Rio de Janeiro because when these processes kick in the energy of the
+nuclear reaction goes the same way as the money in the casino!):
+#+begin_latex
+$^AZ+e^{-}\rightarrow^{A}(Z-1) + \nu_e$\\
+$^{A}(Z-1)\rightarrow ^{A}Z +e^{-}+\bar{\nu_{e}}$
+#+end_latex
+
+which produce one neutrino and one anti-neutrino without changing the
+composition of the star. This requires that the nucleus $^{A}(Z-1)$ is
+unstable to \beta^{-}-decay and the cross section for electron capture on
+$^AZ$ is non-negligible, which can happen during Si core burning and
+the subsequent collapse.
+
+The nuclear neutrinos are mostly sensitive to the core temperature for
+the activation of certain thermonuclear reaction chains (except for
+pycno-nuclear reaction at extremely high densities where the electron
+screening effectively makes the Coulomb barrier negligible).
+
+*** Thermal neutrinos
+After helium core burning, the density in the stellar cores become
+sufficiently high (because of the gravothermal collapse) that
+non-nuclear processes producing neutrinos start occurring. After
+carbon depletion, the neutrinos produced by these processes can take
+away more energy than is locally lost to photons by each stellar
+layer: /evolved massive stars are neutrino stars/ ([[https://ui.adsabs.harvard.edu/abs/1968Ap%26SS...2...96F/abstract][Fraley 1968]]), L_{\nu}
+\gg L_{rad}.
+
+This also effectively means that the stellar core of evolved (\sim during
+and after carbon core burning) massive stars is /decoupled/ from the
+stellar envelope: the /gravothermal collapse of the core occurs to
+compensate the neutrino losses from the core itself/! The thermal
+timescale of the core becomes \tau_{KH,\nu}\simeq GM_{core}^{2}/(2R_{core} L_{\nu}) and
+the nuclear timescale becomes \tau_{nuc,\nu} = \phi f_{burn} Mc^{2}/L_{\nu} both of which
+are much shorter than the timescales in the low density, photon-cooled
+envelope: in the late stages of stellar evolution the envelope should
+be /frozen/ and the core evolves driven by neutrino losses.
+
+*N.B.:* it is still the energy losses driving the gravothermal collapse
+because of the virial theorem that govern the evolution, but the
+envelope does not have time to keep up with the core.
+
+*N.B.:* recently, observations of early signals of stellar explosion
+have questioned this picture of /frozen/ envelope: there /may/ be some
+presently unknown phenomena happening on a /dynamical/ timescale of the
+envelope in the final years/months of a massive star evolution that
+affect the envelope. The fact that they /need to be dynamical/ to do
+anything is related to the fact that the evolution of the core is sped
+up by the thermal neutrino losses.
+
+The neutrinos that do /not/ come from nuclear reactions are a real
+energy /loss/ term for the star that enter in the local energy
+conservation equation \varepsilon_{\nu}_{} (which is also always negative!): dL/dm =
+\varepsilon_{nuc} - |\varepsilon_{\nu}| +\varepsilon_{grav}.
+
+The /thermal/ processes producing these neutrinos typically will produce
+a neutrino-antineutrino /pair/ to conserve the leptonic number.
+Typically only electron neutrinos will be relevant: leptons other than
+e^{\pm} are unstable and are not commonly found in stars. They fall into
+several categories:
+
+
+#+CAPTION: Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from [[https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract][Aufderheide 1993]]
+#+ATTR_HTML: :width 100%
+[[./images/feynman_diagram_neutrinos.png]]
+
+  - plasmon processes: $\gamma + \gamma_{pl} \rightarrow \nu_x + \bar{\nu}_x$,
+  - bremsstrahlung: $e^{-} + ^{A}Z \rightarrow e^{-} + ^{A}Z + \nu_x + \bar{\nu}_x$,
+  - pair-production: $\gamma + \gamma \rightarrow \nu_x + \bar{\nu}_x$,
+  - pair annihilation:  $e^{+}+e^{-} \rightarrow \nu_x + \bar{\nu}_x$ ,
+  - photo-processes: $\gamma +e^{-} \rightarrow e^{-} + \nu_x + \bar{\nu}_x$,
+
+*N.B.:* "plasmons" are collective excitations of the stellar plasma that
+propagate (the analogy is with "solitons" in fluid dynamics).
+
+*N.B.:* The Feynman diagrams of some of these processes above are
+illustrating the processes (and the various pieces that contribute in
+the quantum field theory calculation of the cross section), the
+particles that are not "free legs" are mediators and not real
+particles, do not over-interpret these diagrams as physical pictures!
+
+Neutrino cooling processes are mostly sensitive to the core density \rho.
+The typical energy carried away per neutrino-antineutrino pair is of
+the order of the thermal energy of the electrons (i.e., their Fermi
+energy if the region from where the neutrinos are emitted is partially
+degenerate).
+
+Lke \kappa and \varepsilon_{nuc}, the energy losses to thermal neutrinos are usually
+tabulated in stellar physics codes (see especially the widely used
+[[https://ui.adsabs.harvard.edu/abs/1996ApJS..102..411I/abstract][Itoh et al. 1996]]), and the figure below shows the |\varepsilon_{\nu}|
+\equiv |\varepsilon_{\nu}|(T,\rho) resulting from these tables:
+
+#+CAPTION: Neutrino energy losses on the T(\rho) plane. White lines mark the separation between regions where different neutrino emission processes dominate, the colored lines mark the T(\rho) tracks of helium cores of the labeled masses computed with MESA. Credits: R. Farmer.
+#+ATTR_HTML: :width 100%
+[[./images/Trho_neutrinos.png]]
