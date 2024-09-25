@@ -181,7 +181,7 @@ e^{\pm} are unstable and are not commonly found in stars. They fall into
 several categories:
 
 
-#+CAPTION: Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from [[https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract][Aufderheide 1993]]
+#+CAPTION: Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from [[https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract][Aufderheide 1993]], and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W^{\pm}.
 #+ATTR_HTML: :width 100%
 [[./images/feynman_diagram_neutrinos.png]]
 
