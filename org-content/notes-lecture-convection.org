@@ -436,7 +436,7 @@ w.r.t. the surrounding environment:
 
 #+begin_latex
 \begin{equation}
-\Delta T = T_\mathrm{Bubble} - T_\mathrm{env} = \left(T_{1} + \frac{dT}{dr}_\mathrm{Bubble}\ell \right) - \left(T_{1} + \frac{dT}{dr}_\mathrm{env}\ell \right) = \left(\frac{dT}{dr}_\mathrm{Bubble} - \frac{dT}{dr}_\mathrm{env} \right)\ell \ \ .
+\Delta T = T_\mathrm{Bubble} - T_\mathrm{env} = \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{Bubble}\ell \right) - \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{env}\ell \right) = \left(\frac{dT}{dr}\rvert_\mathrm{Bubble} - \frac{dT}{dr}\rvert_\mathrm{env} \right)\ell \ \ .
 \end{equation}
 #+end_latex
 
@@ -528,7 +528,7 @@ which is what we will use to make v_{conv} appear:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT}
-E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_\mathrm{Bubble} v_\mathrm{conv}^{2}  \ \ .
+E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_\mathrm{Bubble} v_\mathrm{conv}^{2} = \frac{\rho}{T}(\nabla_{rad}-\nabla_{env})\ell^{2}\frac{Gm}{r^{2}} \ \ .
 \end{equation}
 #+end_latex
 *N.B.:* the buoyancy force and the displacement vector are antiparallel,
