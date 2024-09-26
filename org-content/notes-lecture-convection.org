@@ -690,9 +690,9 @@ this boundary, decelerate outside of it, extending further the
 convective mixing.
 
 #+CAPTION: Overshooting top in a thunderstorm on Earth seen from the ISS. Convection carries energy, generate turbulence (think of when an airplane crosses clouds!), and facilitates condensation of water into drops forming the cloud and raining down below this thunderstorm. The "anvil" spreads at the stability boundary, but in the center you can see the overshooting top.
-#+ATTR_HTML: :width 100%
-[[./images/overshooting_top.jpg
-]]
+[[./images/overshooting_top.jpg]]
+
+
 This simplistic picture of overshooting really requires a
 multi-dimensional treatment. As you can see in the numerical
 simulations by for example [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]] (with the usual caveat
