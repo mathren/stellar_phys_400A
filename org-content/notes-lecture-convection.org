@@ -431,8 +431,8 @@ the flames).
 ** Convective energy flux
 To calculate the energy flux carried by convection within the
 framework of MLT, let's consider the difference in temperature between
-a bubble that risen by an amount \ell in an unstable layer (because of
-any small perturbation) w.r.t. the surrounding environment:
+a bubble that is displaced upwards by an amount \ell in an unstable layer
+w.r.t. the surrounding environment:
 
 #+begin_latex
 \begin{equation}
@@ -452,11 +452,14 @@ temperature expansion, and rewrite for the temperature difference:
 \end{equation}
 #+end_latex
 where we use the assumption that the environment is characterized by a
-radiative gradient. *N.B.:* We have worked out above that in the
-unstable situation \nabla_{rad} is steeper than \nabla_{ad}, so the form above also
-guarantees that \Delta T is actually positive, as we expect for a bubble
-raising and carrying an excess thermal energy compared to the
-background.
+radiative gradient and the bubble by an adiabatic gradient.
+
+*N.B.:* The sign has changed becaue of the minus in the definition of
+the pressure scale height H_{p}. The stability criterion obtained above
+says that the unstable situation is when \nabla_{rad} is steeper than \nabla_{ad}, so
+the form above also guarantees that \Delta T is actually positive, as we
+expect for a bubble raising and carrying an excess thermal energy
+compared to the background.
 
 The excess energy per unit volume carried by the raising bubble is
 then c_{p}\rho\Delta T, where c_{p} is the specific heat at constant
@@ -509,7 +512,7 @@ order in \ell we have:
 
 #+begin_latex
 \begin{equation}
-\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}_\mathrm{rad} \ell\right) \ \ ,
+\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}\rvert_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}\rvert_\mathrm{rad} \ell\right) \ \ ,
 \end{equation}
 #+end_latex
 
@@ -543,7 +546,6 @@ function of the \nabla_{i} we have:
  v_\mathrm{conv} = \sqrt{\frac{\ell^{2}g}{2H_{P}} (\nabla_\mathrm{rad} - \nabla_\mathrm{ad})}\ \ ,
 \end{equation}
 #+end_latex
-
 
 ** The mixing length and \alpha_{MLT}
 
