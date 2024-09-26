@@ -10,9 +10,10 @@
 In the [[./notes-lecture-ETransport.org][previous lecture on energy transport]] we have dealt with the
 situation where energy diffusion (carried by photons, i.e., radiative
 energy transport, or carried by electrons, i.e., conductive energy
-transport) is sufficient to sustain the star. However, this is /not/
-always the case! For example, we know this is not the case in the
-outer layers of the Sun, we can [[https://apod.nasa.gov/apod/ap200203.html][directly see that]]:
+transport) is sufficient to sustain the star and carry all the flux to
+maintain /local/ energy conservation. However, this is /not/ always the
+case! For example, we know this is not the case in the outer layers of
+the Sun, we can [[https://apod.nasa.gov/apod/ap200203.html][directly see that]]:
 
 [[https://youtu.be/CCzl0quTDHw?si=RUwZfN5SrO1abD1Y][Sun granules]]
 
@@ -34,10 +35,11 @@ of this, convection is usually one of the most approximate ingredients
 in stellar calculations, and often the root of many open problems.
 
 Convection is a /thermal/ instability (as we will see it kicks in if the
-temperature gradient is steeper than some threshold condition), and it
-is a phenomenon that is /not/ unique to stars: the monsoon clouds in
-Tucson's summer are also manifestation of convection in the Earth
-atmosphere!
+temperature gradient is steeper than some threshold condition),
+although it results in /local/ motion of gas/plasma: as we will see the
+velocities are very small compared to thermal velocities. Moreover, it
+is /not/ unique to stars: the monsoon clouds in Tucson's summer are also
+manifestation of convection in the Earth atmosphere!
 
 Before discussing the details of the physics of convection by using
 oversimplified pictures dating back to [[https://en.wikipedia.org/wiki/Ludwig_Prandtl][Prandtl]], have a look at the
@@ -45,9 +47,23 @@ following animations of multi-dimensional simulations of convection,
 these are probably/hopefully closer to reality than many of the
 oversimplifications we will use later in this lecture.
 
-It is important to keep in mind that we adopt modeling simplifications
-to make the simulation of stars tractable, but these introduce
-systematic uncertainties which are active topic of research.
+*N.B.:* It is important to keep in mind that we adopt modeling
+simplifications to make the simulation of stars tractable, but these
+introduce systematic uncertainties which are active topic of research.
+Approximations are present also in the multidimensional simulations
+shown below, and therefore they should /not/ be taken as the truth!
+However, these multi-dimensional simulations do not need to make the
+same assumptions we will discuss in this lecture, which makes them
+informative on how rough these approximations are.
+
+What all these simulations of convection in different settings show is
+that the morphology of the convective flow is /more complicated/ than
+what we will assume. You can imagine "thermal flux tubes" carried by
+the gas that transport energy in all these situations, but the way we
+describe them in spherically symmetric models of stars /cannot/ (and
+does not attempt to) capture all the details we can see in the Sun and
+or a few nearby red supergiants, and we can simulate in restricted
+time and spatial domains.
 
 ** Core convection in a massive star ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022b]])
 
@@ -66,11 +82,11 @@ systematic uncertainties which are active topic of research.
 
 ** Thermonuclear runaway during a Nova explosion ([[https://ui.adsabs.harvard.edu/abs/2018A%26A...619A.121C/abstract][Casanova et al. 2018]])
 
- [[./images/125M-ONe-3.wmv]]
+ [[./images/125M-ONe-3.mp4]]
 
  This is a 2D simulation of convection developing during a nova
  explosion using the [[https://flash.rochester.edu/site/][FLASH]] code. The movie shows the (log_{10}) mass
- fraction of neon 20, and is taken from [[http://www.fen.upc.edu/users/jjose/][J. Jordi's personal webpage]]
+ fraction of $^{20}$Ne, and is taken from [[http://www.fen.upc.edu/users/jjose/][J. Jordi's personal webpage]]
  (one of the co-authors).
 
 * The timescale for convection
@@ -99,19 +115,19 @@ occurs if energy diffusion is insufficient to carry the flux/.
 
 How convection exactly turns on/off and especially how to treat this
 in stellar evolution models is still a debated issue - but we can
-construct a [[*Convective stability criterion: Schwarzschild & Ledoux criterion][stability criterion]], which when violated means we expect
-convection to develop, and [[*Mixing length theory][later on]] we will develop a theoretical
-model for the time- and spatially- averaged steady state which we
-expect to develop when the convective instability saturates.
-Hopefully, stellar /evolution/ timescales are long enough that
-describing the averaged steady state resulting from convection is
-sufficient for our purposes (but there are exceptions, for example
-during explosions of when looking at phenomena on timescales shorter
-than \tau_{conv}).
+construct a [[*Convective stability criterion: Schwarzschild & Ledoux criterion][stability criterion]]: when this is violated, convection
+develops. [[*Mixing length theory][Later on]] we will develop a theoretical model for the /time-
+and spatially- averaged steady state/ which we expect convection to
+reach when the instability saturates, glossing over the growth phase
+of the instability. Hopefully, stellar /evolution/ timescales are long
+enough that describing the averaged steady state resulting from
+convection is sufficient for our purposes (but there are exceptions,
+for example during explosions of when looking at phenomena on
+timescales shorter than \tau_{conv}).
 
 * Convective stability criterion: Schwarzschild & Ledoux criterion
 
-#+CAPTION: Skematic picture of the convective stability based on Prandtl oversimplified "bubble picture". The right panel shows the gradients. This is Fig. 5.3 in Onno Pols' lecture notes.
+#+CAPTION: Skematic picture of the convective stability based on Prandtl oversimplified "bubble picture". The right panel shows schematically the \rho(P) track, in the left panel the bubble is moved upwards (i.e. towards lower pressure), so we expect adiabatic expansion of the bubble to mantain pressure equilibrium with the environment. The This is Fig. 5.3 in Onno Pols' lecture notes.
 #+ATTR_HTML: :width 100%
 [[./images/conv_blobs.png]]
 
@@ -145,8 +161,7 @@ We want to compare \rho_{bubble} after the displacement by \Delta to the
 environment density. Once again we can use a first order
 approximation, but for the environment we have assumed an initially
 stable stratification, meaning d\rho/dr is not adiabatic, but the
-radiative gradient (which you can obtain from dT/dr for radiative
-transport and the EOS). Therefore \rho_{2} = \rho_{1} + (d\rho/dr)_{env }\Delta \equiv
+radiative gradient. Therefore \rho_{2} = \rho_{1} + (d\rho/dr)_{env }\Delta \equiv
 \rho_{1} + (d\rho/dr)_{rad }\Delta, because we are assuming the surrounding
 environment to be in radiative equilibrium (and assessing the
 stability of that equilibrium).
@@ -164,7 +179,7 @@ transition from liquid to gas, however, shortly before the phase
 transition occurs, it is true that conduction in the water is
 typically insufficient to carry the energy release at the bottom, and
 convective motion can be spotted as a small simmering of the water
-breaking down into small waves.
+breaking down into small waves at the surface.
 
 ** Instability condition
 Comparing the density of the displaced bubble \rho_{bubble} to the density of the
@@ -194,7 +209,7 @@ often re-written in a slightly different form.
 *** Schwarzschild criterion
 
 For the same reason why we tend to use the Lagrangian enclosed mass as
-independent coordinate in stellar calculation, it is unpractical to
+independent coordinate in stellar calculation, it is impractical to
 use the derivatives w.r.t. radius when trying to determine whether the
 stratification of gas is stable or not. For example, a red supergiant
 envelope (which is convective!) has a radial extent of \sim 100-1000s of
@@ -232,8 +247,8 @@ change when going from (d\rho/dr)_{i} to \nabla_{i}.
 Furthermore, it is helpful to rewrite this in terms of temperature
 gradients instead of density gradients. These changes of variables,
 assuming an ideal gas EOS with constant mean molecular weight \mu allow
-to re-write \ref{eq:instability_crit} in the form most commonly called
-Schwarzschild criterion:
+to re-write the instability condition \ref{eq:instability_crit} in the
+form most commonly called Schwarzschild criterion:
 
 #+begin_latex
 \begin{equation}\label{eq:schwarzschild_crit}
@@ -249,7 +264,7 @@ can directly obtain \nabla_{rad}
 \end{equation}
 #+end_latex
 
-So we see immediately that this is going to be large, and prone to
+So we see immediately that this is going to be large and prone to
 convective instability in regions where there is a large opacity \kappa \equiv
 \kappa(m) and/or regions with a large luminosity L \equiv L(m).
 

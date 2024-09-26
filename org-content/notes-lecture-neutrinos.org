@@ -1,4 +1,4 @@
-#+Title: 400A - Neutrinos in stars
+#+Title: 400A - Neutrinos & computational stellar evolution
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
@@ -215,7 +215,7 @@ tabulated in stellar physics codes (see especially the widely used
 #+ATTR_HTML: :width 100%
 [[./images/Trho_neutrinos.png]]
 
-* Principles of =computational= stellar evolution
+* Principles of computational stellar evolution
 
 We now have finally derived/discussed all the pieces of physics
 necessary to compute a stellar /structure/ model, treat its nuclear
@@ -224,26 +224,13 @@ energy generation and thus driving its /evolution/.
 The description we have obtained for a spherically symmetric star is
 made of 4 non-linear, coupled, ordinary differential equations (ODE)
 plus the equation of state that in a sense acts as closure condition
-for the system.
-
-As you can imagine, this is not a system easily solved by hand. Since
-the early days of the availability of computers in the 1960s, people
-have been designing and leveraging /computational techniques/
-to /numerically/ solve this system of equations.
-
-:Quote:
-"/Traditional scientific knowledge has generally taken the form of/
-/either theory or experimental data. However, where theory and/
-/experiment stumble, simulations may offer a third way./"
-Simulation, Johannes Lenhard et al.
-:end:
-
-Moreover, the /high non-linearity/ of the system means that there can be
-quasi-chaotic behavior: a small perturbation (maybe because of a
-numerical error or a small inconsistency in the tabulated input
-physics!) can cascade into dramatic consequences, similar to the
-famous "butterfly effect" (which was also theorized from numerical
-computations, but of atmospheric physics, by [[https://en.wikipedia.org/wiki/Edward_Norton_Lorenz][E. Lorenz]]).
+for the system. Solving these equations we can:
+ 1. study the interior structure of modelled stars and try to learn about
+    the parts of the star that are not accessible to direct
+    observations (hidden inside the photosphere)
+ 2. study the time evolution of modelled stars, which we cannot
+    observe for real stars since most evolve way too slow for us to
+    follow within our lifetimes.
 
 *N.B.:* without the assumption of spherical symmetry, the equations
 would become partial differential equations (PDE). When introducing
@@ -254,6 +241,54 @@ quantities are constant along isobars and uses P as the independent
 coordinate, or using volume-weighted equivalent potentials of the
 companion).
 
+As you can imagine, this is not a system easily solved by hand. Since
+the early days of the availability of computers in the 1960s, people
+have been designing and leveraging /computational techniques/ to
+/numerically/ solve this system of equations. For the rest of this
+lecture, we are going to discuss some general principles behind these
+computational techniques.
+
+** The most important thing to remember when using codes
+
+:Quote:
+"/Traditional scientific knowledge has generally taken the form of/
+/either theory or experimental data. However, where theory and/
+/experiment stumble, simulations may offer a third way./" - Simulation,
+Johannes Lenhard et al.
+:end:
+
+Computational techniques take a system of equations describing a
+physical models (for example the equations we have derived), which
+already rely on a whole variety of physical approximations (e.g.,
+spherical symmetry, LTE, free-streaming neutrinos, etc.), and apply a
+whole new set of /numerical/ approximations to obtain a numerical
+solution.
+
+Presumably, nature does not do /any/ of this: without opening the
+philosophical question of whether nature writes down equations to
+solve, it certainly does not need to do physical approximations (while
+we need to be able to reason on a problem), and even less the
+/numerical/ approximations needed to solve the equations. At ontological
+level, numerical simulations are /not/ equivalent to empirical evidence!
+Never trust numerical results as if they were ground truth: a computer
+will only do what it is told, and we tell it our physically and
+numerically approximated best guess for what we are trying to simulate
+which is /not/ what nature empirically provides. I emphasize this as a
+person who spends most of his time getting numerical results! Note
+also how this is more general than /just/ stellar physics: this applies
+to /any/ computational physics field.
+
+:Quote:
+"All models are wrong, but some are useful!" - G. Box
+:end:
+
+The /high non-linearity/ of the system means that there can be
+quasi-chaotic behavior: a small perturbation (maybe because of a
+numerical error or a small inconsistency in the tabulated input
+physics!) can cascade into dramatic consequences, similar to the
+famous "butterfly effect" (which was also theorized from numerical
+computations, but of atmospheric physics, by [[https://en.wikipedia.org/wiki/Edward_Norton_Lorenz][E. Lorenz]]).
+
 [[https://www.aip.org/history-programs/niels-bohr-library/oral-histories/5091][Kippenhahn interview in 1978]]
 
 
@@ -261,5 +296,6 @@ companion).
 
 ** TODO in progress
  - general principles
+ - why 1D is necessary?
  - =MESA= and =MESA-web= with emphasis on open science
  - systematic uncertainties
