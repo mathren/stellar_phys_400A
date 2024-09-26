@@ -730,7 +730,8 @@ and more recently [[https://ui.adsabs.harvard.edu/abs/2023ApJS..265...15J/abstra
 The processes we have discussed are all inherently multi-dimensional.
 Therefore, in their 1D formulation necessary to have stellar structure
 and evolution models, we introduce free parameters, such as \alpha_{MLT}
-discussed above.
+discussed above. In a sense, these free parameters /encapsulate/ our
+ignorance about details we cannot represent in spherical symmetry.
 
 This is also true for thermohaline mixing and semiconvection, each
 coming with their poorly known efficiency parameter. Furthermore, we
@@ -761,12 +762,11 @@ the Sun's envelope, for example, one gets Re\simeq10^{12} (see for example
 high degree of turbulence - an inherently 3D phenomenon, associated
 with intermittence (i.e., time dependence!).
 
-*N.B.:* all the multi-D simulations shown at the beginning allow for 3D
-convective flows, which is one step better than MLT, but on the other
-hand, the effective Reynolds number they reach are much smaller than
-the ones estimated in the stars: take them as indicative of the
-limitations of MLT, but they have their own limitations and
-shortcomings!
+*N.B.:* multi-D simulations allow for 3D convective flows, which is one
+step better than MLT, but on the other hand, the effective Reynolds
+number they reach are much smaller than the ones estimated in the
+stars: take them as indicative of the limitations of MLT, but they
+have their own limitations and shortcomings!
 
 * The biggest strength of MLT
 MLT has been used for >50 years in 1D stellar evolution calculations,
@@ -784,7 +784,9 @@ much longer than the convective turnover timescale.
   energy is transported by radiation diffusion)
 - We model the thermal flux tubes carrying energy up and down with no
   mass flux as bubbles moving adiabatically. These are an idealization
-  far from realistic convective flows.
+  of realistic convective flows which are turbulent and thus space-
+  and time-dependent on very short timescales (think of a flickering
+  flame).
 - The "bubbles" maintain hydrostatic equilibrium w.r.t. the
   environment at any point in their travel
 - We assume that the average distance travelled by a bubble is
