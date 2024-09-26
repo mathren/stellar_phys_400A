@@ -539,8 +539,7 @@ Conveniently in Eq. \ref{eq:v_conv_MLT} both v_{conv} and \ell are squared: the 
 exact reasoning applies to the bubbles sinking and those rising!
 Eq. \ref{eq:v_conv_MLT} is a relation between the two unknowns we have
 in the convective energy flux, v_{conv} and \ell, which allows us to
-eliminate one for the other. Using again the re-writing of d\rho/dr_{i} in
-function of the \nabla_{i} we have:
+eliminate one for the other:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT_estimate}
@@ -596,7 +595,8 @@ growth phase (see also [[*Time-dependence of convection][below]]), and found an 
 for the steady state depending on a free parameter \alpha_{MLT}. We can now
 ask, in such steady state, how big is the superadiabaticity needed
 such that the convective flux carries /all/ the energy? We can estimate
-this equating:
+this equating the convective flux F_{conv} to the entire flux that needs
+to be carried throughout a layer at radius r:
 
 #+begin_latex
 \begin{equation}
@@ -611,12 +611,12 @@ obtain:
 
 #+begin_latex
 \begin{equation}
-\nabla_{rad} - \nabla_{ad} \simeq \left(\frac{LR}{M}\right)^{2/3}\frac{R}{GM} \simeq 10^{-8} \ \ ,
+\nabla_\mathrm{rad} - \nabla_\mathrm{ad} \simeq \left(\frac{LR}{M}\right)^{2/3}\frac{R}{GM} \simeq 10^{-8} \ \ ,
 \end{equation}
 #+end_latex
 where in the last one we use the numerical values for the Sun. This of
 course is an estimate valid in the interior of the Sun (because we
-have used implicitly assumptions of LTE, and used effective averages).
+have used implicitly assumptions of LTE, and used averaged values).
 
 The fact that the superadiabaticity is so small implies that /when
 convection is efficient/, /the temperature gradient in the star can be
@@ -626,7 +626,7 @@ we have made in this lecture: since in the end the gradient is very
 nearly adiabatic when convection is efficient, the details do not
 matter that much.
 
-*N.B.:* In the outer layers of the star, where \rho \ll <\rho> and T\ll <T>, this
+*N.B.:* In the outer layers of the star, where \rho \ll \langle \rho \rangle and T\ll \langle T \rangle, this
 estimate breaks down, convection is not necessarily efficient and the
 gradient is not necessarily adiabatic. This is important for many
 stellar applications, for example eruptive mass loss of massive stars,
@@ -654,7 +654,7 @@ chemical composition/!
 
 Similar argument apply to semiconvection and thermohaline mixing (and
 even the kitchen experiment can clearly show that thermohaline mixing
-can result in mixing of the composition.
+can result in mixing of the composition).
 
 This is not always important, as we will see: in the Sun's envelope
 for example, convection mixes homogeneous material. However, in the
@@ -665,18 +665,18 @@ this determines qualitative morphological differences in the end of
 the main sequence evolution of massive stars w.r.t. low mass stars.
 
 One can derive from MLT a diffusion coefficient for the mixing of
-chemicals by convection (and similarly for thermohaline and
-semiconvective mixing), allowing for a diffusive approximation of
-convective mixing. In reality convective mixing is an advective
-process: the macroscopic motion of the fluid carries around chemicals,
-and then they diffuse from the "bubble" into the environment after
-having being advected. A diffusion approximation is still possible
-however because of the very high efficiency of this mixing (and the
-fact that when we apply MLT we do not attempt to describe faithfully
-the details of the local dynamics of each gas parcel).
+chemicals by convection D_{conv} = 1/3 \times v_{conv} \ell = 1/3 \times v_{conv}
+\alpha_{MLT} H_{p} (and similarly for thermohaline and semiconvective mixing),
+allowing for a diffusive approximation of convective mixing. In
+reality convective mixing is an advective process: the macroscopic
+motion of the fluid carries around chemicals, and then they diffuse
+from the "bubble" into the environment after having being advected. A
+diffusion approximation is still possible however because of the very
+high efficiency of this mixing (and the fact that when we apply MLT we
+do not attempt to describe faithfully the details of the local
+dynamics of each gas parcel).
 
 * Limitations of MLT
-
 ** Convective boundary mixing (a.k.a. "overshooting")
 The stability criteria derived from buoyancy argument only determine
 the location where one can expect that radiative diffusion is
@@ -689,6 +689,10 @@ already a non-zero velocity! Thus, we should expect it to "overshoot"
 this boundary, decelerate outside of it, extending further the
 convective mixing.
 
+#+CAPTION: Overshooting top in a thunderstorm on Earth seen from the ISS. Convection carries energy, generate turbulence (think of when an airplane crosses clouds!), and facilitates condensation of water into drops forming the cloud and raining down below this thunderstorm. The "anvil" spreads at the stability boundary, but in the center you can see the overshooting top.
+#+ATTR_HTML: :width 100%
+[[./images/overshooting_top.jpg
+]]
 This simplistic picture of overshooting really requires a
 multi-dimensional treatment. As you can see in the numerical
 simulations by for example [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]] (with the usual caveat
