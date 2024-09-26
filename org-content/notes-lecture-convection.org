@@ -529,7 +529,7 @@ which is what we will use to make v_{conv} appear:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT}
-E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_\mathrm{Bubble} v_\mathrm{conv}^{2} = \frac{\rho}{2H_{p}}(\nabla_\mathrm{rad}-\nabla_\mathrm{ad})\ell^{2}g \ \ .
+E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho v_\mathrm{conv}^{2} = \frac{\rho}{2H_{p}}(\nabla_\mathrm{rad}-\nabla_\mathrm{ad})\ell^{2}g \ \ .
 \end{equation}
 #+end_latex
 *N.B.:* the buoyancy force and the displacement vector are antiparallel,
