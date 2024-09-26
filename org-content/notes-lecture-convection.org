@@ -785,8 +785,7 @@ much longer than the convective turnover timescale.
 - We model the thermal flux tubes carrying energy up and down with no
   mass flux as bubbles moving adiabatically. These are an idealization
   of realistic convective flows which are turbulent and thus space-
-  and time-dependent on very short timescales (think of a flickering
-  flame).
+  and time-dependent on very short timescales (think of a flickering flame).
 - The "bubbles" maintain hydrostatic equilibrium w.r.t. the
   environment at any point in their travel
 - We assume that the average distance travelled by a bubble is
