@@ -520,7 +520,8 @@ This is the difference in density between the bubble and the
 environment at the end of the whole (yet unknown) travel path \ell. On
 average throughout the path, since the difference was \Delta\rho = 0 at the
 beginning, we only have half of that, so let's just consider 1/2 of
-this to estimate the work done by buoyancy.
+this to estimate the work done by buoyancy. We can further express the
+density gradients as a function of \nabla_{i} = \partial log(T)/\partial log(P).
 
 By energy conservation, the work done by buoyancy on the bubble is
 equal to the kinetic energy (per unit volume) acquired by the bubble,
@@ -528,7 +529,7 @@ which is what we will use to make v_{conv} appear:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT}
-E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_\mathrm{Bubble} v_\mathrm{conv}^{2} = \frac{\rho}{T}(\nabla_{rad}-\nabla_{env})\ell^{2}\frac{Gm}{r^{2}} \ \ .
+E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho_\mathrm{Bubble} v_\mathrm{conv}^{2} = \frac{\rho}{2H_{p}}(\nabla_\mathrm{rad}-\nabla_\mathrm{ad})\ell^{2}g \ \ .
 \end{equation}
 #+end_latex
 *N.B.:* the buoyancy force and the displacement vector are antiparallel,
