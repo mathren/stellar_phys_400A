@@ -67,19 +67,11 @@ with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy a
 
 For the \rho typical in stars (think of \langle\rho_{\odot}\rangle and the other
 average densities you estimated in the various homeworks), neutrinos
-can safely be considered as non-interacting.
-
-Moreover, for distances smaller than the typical stellar radii
-(generously r\le1000R_{\odot}), we can also neglect the physics of neutrino
-oscillations and consider neutrinos as ultra-relativistic mass-less
-particles propagating at v \simeq c. Neglecting the neutrino masses also
-allows us to assume conservation of the leptonic number throughout
-stellar evolution.
-
-*N.B.:* recall that the leptonic number is +1 for the leptons electron
-e^{-}, muon \mu^{-}, tau \tau^{-} and the corresponding neutrinos \nu_{e}, \nu_{\mu},
-\nu_{\tau} and -1 for their antiparticles positron e^{+}, positive muon \mu^{+},
-and positive \tau^{+} and the corresponding antineutrinos.
+can safely be considered as non-interacting. This means we can
+consider neutrinos as ultra-relativistic mass-less particles
+propagating at v \simeq c. The mass less approximation also implies that we
+neglect neutrino oscillations: even if a neutrino changes leptonic
+flavor, it's still going to leave the star carrying away its energy!
 
 Therefore, any neutrino produced in the stellar interior leaves the
 star in the light-crossing time R/c \le 1000 R_{\odot}/c \simeq 1000 \times
@@ -100,10 +92,18 @@ During the evolution of the star that sets the stage for the
 explosion, we encounter two "classes" of neutrinos.
 
 *** Nuclear neutrinos
-We have already encountered processes occurring in stars: /weak
-nuclear reactions/! These are needed since the main sequence (both in
-the pp chain and CNO) to convert some protons into neutrons for the
-helium nuclei.
+We have already encountered processes occurring in stars: /weak nuclear
+reactions/! These are needed since the main sequence (both in the pp
+chain and CNO) to convert some protons into neutrons for the helium
+nuclei. On the scale of r_{nuc}, the neutrino crossing time (that is the
+light crossing time) is so short that we can neglect neutrino
+oscillations and assume conservation of leptonic number to write down
+the equations.
+
+*N.B.:* recall that the leptonic number is +1 for the leptons electron
+e^{-}, muon \mu^{-}, tau \tau^{-} and the corresponding neutrinos \nu_{e}, \nu_{\mu},
+\nu_{\tau} and -1 for their antiparticles positron e^{+}, positive muon \mu^{+},
+and positive \tau^{+} and the corresponding antineutrinos.
 
 These neutrinos do carry away energy as described above, /but/ that is
 just some of the energy that the exo-energetic thermonuclear reaction
@@ -222,9 +222,9 @@ necessary to compute a stellar /structure/ model, treat its nuclear
 energy generation and thus driving its /evolution/.
 
 The description we have obtained for a spherically symmetric star is
-made of 4 non-linear, coupled, ordinary differential equations (ODE)
-plus the equation of state that in a sense acts as closure condition
-for the system. Solving these equations we can:
+made of *four non-linear, coupled, ordinary differential equations*
+(ODE) *plus the equation of state that acts as closure condition* for
+the system. Solving these equations we can:
  1. study the interior structure of modelled stars and try to learn about
     the parts of the star that are not accessible to direct
     observations (hidden inside the photosphere)
@@ -289,13 +289,44 @@ physics!) can cascade into dramatic consequences, similar to the
 famous "butterfly effect" (which was also theorized from numerical
 computations, but of atmospheric physics, by [[https://en.wikipedia.org/wiki/Edward_Norton_Lorenz][E. Lorenz]]).
 
-[[https://www.aip.org/history-programs/niels-bohr-library/oral-histories/5091][Kippenhahn interview in 1978]]
+** Why did we limit ourselves to spherical symmetry?
+
+** Boundary conditions
+
+** Solving strategies
+
+*** Shooting method
+
+*** Henyey method
+
+*** Evolution splitting
+
+** Open science: [[https://docs.mesastar.org/en/latest/][MESA]] and =MESA-web=
+
+:Quote:
+"/An algorithm must be seen to be believed/" - D. Knuth
+:end:
+
+For a biased overview of the evolution of the field of computational
+stellar physics by one of the "founding fathers" of the field, see
+this [[https://www.aip.org/history-programs/niels-bohr-library/oral-histories/5091][1978 interview to R. Kippenhahn]].
+
+*** Systematic computational uncertainties
+
+* A different kind of simulations: rapid population synthesis
+
+** Population synthesis
+
+** Semi-analytic approach to population synthesis
+
+*** Example of codes
+ - BSE: the forefather of many (*N.B.:* not /all/ rapid population
+   synthesis codes)
+ - [][COSMIC]: Open source and open development, =pip= installable
+ - [][COMPAS]: Open source
+ - [][binary_c]:
+ - [][SEVN]:
+ - [][MOBSE]:
 
 
 [[https://www.as.arizona.edu/~mrenzo/materials/slides/CompAstro_MESA.pdf][Slides on stellar evolution codes (old)]]
-
-** TODO in progress
- - general principles
- - why 1D is necessary?
- - =MESA= and =MESA-web= with emphasis on open science
- - systematic uncertainties

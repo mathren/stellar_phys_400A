@@ -23,7 +23,7 @@ symmetry, LTE, and hydrostatic (\partial t \equiv 0) equilibrium:
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
 #+end_latex
-which follows from the momentum conservation equation
+which follows from the momentum conservation equation.
 
 *** Equation of state
 #+begin_latex

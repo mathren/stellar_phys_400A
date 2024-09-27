@@ -94,8 +94,8 @@ phases.
 ** <2024-10-08 Tue> - Neutrino cooling + stellar evolution codes
 *Aim*: discuss neutrino physics relevant to stars, cooling processes and
 thus complete the physics needed for 1D stellar evolution calculation.
-Introduce general principles of stellar evolution codes, =MESA-web=, and
-=MESA=.
+Introduce general principles of stellar structure and evolution codes
+and population synthesis.
 
 [[./notes-lecture-neutrinos.org][Notes]]
 
