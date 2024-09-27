@@ -353,7 +353,10 @@ doubles every year) - an assumptions that may clash with the
 engineering reality, it will take several decades to have a
 numerically resolved 3D simulation of convection in a star for a
 convective turnover timescale, and longer for thermal and nuclear
-timescale: 1D will remain necessary.
+timescale: 1D will remain necessary, and we need to keep representing
+the complex multi-scale, multi-physics, and multi-dimensional problem
+of stellar evolution considering only variations along the radial
+direction!
 
 Nevertheless, 3D stellar hydrodynamics of restricted problems ("box in
 a star" approach, short timescales such as stellar explosions) are
@@ -440,6 +443,11 @@ local resolution in mass at location k, while if x=t, then k will
 label the "timestep" we are considering, and t_{k+1}-t_{k} = \Delta t_{k+1} is the
 timestep size.
 
+*N.B.:* typically both the spatial resolution \Delta m_{k} and the temporal
+resolution \Delta t_{k} are /adaptive/, meaning the stellar evolution code will
+put more mesh points where / take more timesteps when quantities vary
+more rapidly.
+
 *N.B.:* Nature \gg numerical models, because nature does not need to do
 this!
 
@@ -464,7 +472,7 @@ equations:
 \end{equation}
 
 \begin{equation}
-\frac{dL}{dr}=4\pi r^{2}\rho (\varepsilon_\mathrm{nuc} - \varepsilon_{\nu} +\varepsilon_\mathrm{grav})  \Leftrightarrow L_k-L_{k+1} = dm_k\{\varepsilon_\mathrm{nuc}-\varepsilon_\nu + \varepsilon_\mathrm{grav}
+\frac{dL}{dr}=4\pi r^{2}\rho (\varepsilon_\mathrm{nuc} - \varepsilon_{\nu} +\varepsilon_\mathrm{grav})  \Leftrightarrow L_k-L_{k+1} = dm_k (\varepsilon_\mathrm{nuc}-\varepsilon_\nu + \varepsilon_\mathrm{grav})
 \end{equation}
 
 \begin{equation}
@@ -473,7 +481,7 @@ P\equiv P(\rho,\mu,T)  \Leftrightarrow  P\equiv P(\rho,\mu,T)
 
 \begin{equation}
 \frac{dX_i}{dt}\bigg|_{r} = \left[ \sum\limits_j \mathcal{P}_{j,i}(T,\rho)
-    -\sum\limits_k \mathcal{D}_{i,k}(T,rho,)\right] + \left( D_i
+    -\sum\limits_k \mathcal{D}_{i,k}(T,\rho)\right] + \left( D_i
     \nabla^2X_i\phantom{\bigg|} \right)\\
 \Leftrightarrow \\
    X_{i,k}(t_n+\Delta t_{n+1}) = X_{i,k}(t_n) + \Delta
@@ -481,6 +489,42 @@ P\equiv P(\rho,\mu,T)  \Leftrightarrow  P\equiv P(\rho,\mu,T)
     \frac{\left(X_{i,k}-X_{i,k-1} \right)D_{k}\Delta t_{n+1}}{0.5(dm_{k-1} - dm_k)}
 \end{equation}
 #+end_latex
+
+Where, when going from the physical model to the
+numerical implementation:
+- we use m rather than r as independent coordinate
+- the mass continuity if re-formulated in terms of natural logarithm
+  or r instead or r itself (to keep numbers smaller)
+
+
+Now that we have transformed a set of ODEs into a set of algebraic
+equations, the stellar structure and evolution problem is reduced to
+solving a matrix equation:
+
+#+CAPTION: Section of an example of the matrix to solve. Black dots are non-zero entries, meaning the variables are coupled by an equation. Vertical dashed lines denote blocks of the matrix for cell =k-1=, =k=, and =k+1= respectively, red dotted lines separate structural variables and compositional variables. This is Fig. 47 of [[https://ui.adsabs.harvard.edu/abs/2013ApJS..208....4P/abstract][Paxton et al. 2013]].
+#+ATTR_HTML: :width 100%
+[[./images/matrix_mesa.png]]
+
+Writing this in a symbolic compact form we an array of quantities X(t)
+of length equal to the number of mesh points for our spatial
+discretization times the number of variables, and a matrix A which
+represents how all the entries of X are coupled to each other in the
+algebraic form of the equations: AX(t_{k}) = X(t_{k+1}).
+
+To solve this we could consider two approaches:
+- *Explicit methods*: in this case X(t_{k+1}) is expressed as a function of
+  X(t_{k}). This however will require resolving the /local/ dynamics (and
+  be limited by the sound crossing time), making it impossible to perform a
+  calculation for the /evolution/ of the star
+- *Implicit methods:* in this case we write a function F(X(t_{k}), X(t_{k+1}))
+  = 0 (e.g., AX(t_{k}) - X(t_{k+1}) = 0), and by solving the homogeneous
+  equation we have obtained we derive X(t_{k+1}). Implicit methods are
+  preferred in stellar evolution as they are not limited by the sound
+  crossing time.
+
+For each of these methods, we still need to specify a solver.
+Typically stellar evolution codes rely on generalized first order
+Newton Raphson solvers.
 
 *** Shooting method
 
@@ -498,9 +542,22 @@ For a biased overview of the evolution of the field of computational
 stellar physics by one of the "founding fathers" of the field, see
 this [[https://www.aip.org/history-programs/niels-bohr-library/oral-histories/5091][1978 interview to R. Kippenhahn]].
 
-** Systematic computational uncertainties
+*** TODO Systematic computational uncertainties
 
-
+** Summary
+ 1. take a star, which is a complex multi-scale, multi-physics,
+    multi-dimensional object
+ 2. obtain from other fields of physics input for \varepsilon_{nuc}, \varepsilon_{\nu},
+    \kappa, and the EOS
+ 3. write down an approximate physical model assuming spherical
+    symmetry, going from a multi-dimensional object to a continuous
+    line along a spatial direction
+ 4. discretize that line into "chunks" of (variable) size \Delta m_{k}
+ 5. use an implicit first-order generalized Newton-Raphson solver to
+    determine how variables at the points \Delta m_{k} vary within discrete
+    (variable) time interval \Delta t_{k}.
+ 6. *make sure that the scientific results you obtain do not depend on
+    any of steps 2-5*.
 
 * Population synthesis
 
