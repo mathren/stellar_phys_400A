@@ -282,7 +282,7 @@ you numerically solve them. This is often a painful task, but very
 important to not fool ourselves!
 
 :Quote:
-"All models are wrong, but some are useful!" - G. Box
+"/All models are wrong, but some are useful!/" - G. Box
 :end:
 
 In stellar physics, there is another problem: the /high non-linearity/
@@ -361,6 +361,8 @@ forefront of possibilities (see e.g., [[https://ui.adsabs.harvard.edu/abs/2023A%
 
 ** Boundary conditions
 
+
+
 ** Solving strategies
 
 *** Shooting method
@@ -368,7 +370,6 @@ forefront of possibilities (see e.g., [[https://ui.adsabs.harvard.edu/abs/2023A%
 *** Henyey method
 
 *** Evolution splitting
-
 
 ** Open science: [[https://docs.mesastar.org/en/latest/][MESA]] and =MESA-web=
 
@@ -380,27 +381,60 @@ For a biased overview of the evolution of the field of computational
 stellar physics by one of the "founding fathers" of the field, see
 this [[https://www.aip.org/history-programs/niels-bohr-library/oral-histories/5091][1978 interview to R. Kippenhahn]].
 
-*** Systematic computational uncertainties
+** Systematic computational uncertainties
 
 
-* A different kind of simulations: rapid population synthesis
 
-** Population synthesis
+* Population synthesis
 
-*** Semi-analytic approach to population synthesis
+As we saw since the [[./notes-lecture-CMD-HRD.org][lecture on the CMD/HRD]], in stellar physics it is
+often necessary to rely on /population studies/ to infer something about
+the physics of the star. Moreover, when thinking about galaxies (e.g.,
+integrated light from a far away galaxy where not all stars are
+resolved), we definitely need /populations/. Population studies are also
+needed to predict /rates/ of phenomena (e.g., supernovae, gravitational
+wave mergers, etc.).
 
- - BSE: the forefather of many (*N.B.:* not /all/ rapid population
-   synthesis codes)
- - [][COSMIC]: Open source and open development, =pip= installable
- - [][COMPAS]: Open source
- - [][binary_c]:
- - [][SEVN]:
+The practice of /combining/ many stellar models to make a population is
+generally referred to as /population synthesis/. This can be done with
+/detailed/ models, such as the one coming from codes that solve the
+equations of stellar structure (e.g., MESA, KEPLER, FRANEC, PARSEC,
+HOSHI, etc.).
 
-*** Pre-computed and tabulated codes
+However, often there are many things one may want to change for /fixed/
+stellar evolution (e.g., the initial distribution of stars, or their
+metallicity distribution, or how they interact in binaries or higher
+multiplicity systems), and recomputing all the models is not
+necessary.
+
+Since the 1990s, there has been the development of "semi-analytic"
+techniques based on implementing polynomial fits to a set of stellar
+models (e.g., [[https://ui.adsabs.harvard.edu/abs/1998MNRAS.298..525P/abstract][Pols et al. 1998]]), and use these to simulate the
+evolution of stars - producing a /rapid/ population synthesis. Coupling
+these to analytic models for the interaction of binaries (which are
+used by detailed stellar codes too!), one can get /rapid/ population
+synthesis.
+
+More recently, there has been a move to use directly tabulated results
+from detailed stellar evolution codes, instead of analytic fits to
+those tables, which allows to track more details (and more easily
+update the stellar models) for a small computational price that is now
+affordable.
+
+Below is an (incomplete, biased) list of some of these codes
+
+** Semi-analytic approach to population synthesis
+
+ - BSE: the forefather of many (*N.B.:* not /all/ rapid population synthesis codes)
+ - [[https://cosmic-popsynth.github.io/][COSMIC]]: Open source and open development, =pip= installable
+ - [[https://compas.science/][COMPAS]]: Open source
+ - [[https://binary_c.gitlab.io/][binary_c]]: Open source, python front-end available, can be run
+   online (similar to =MESA-web=)
+ - ...
+
+** Pre-computed and tabulated codes
  - ComBiNe (=BEC= tables of models)
  - METISSE (=MESA= tables of models)
  - MINT (= =binary_c= + =MESA= tables of models)
- - (= =PARSEC/FRANEC= tables of models)
-
-
-[[https://www.as.arizona.edu/~mrenzo/materials/slides/CompAstro_MESA.pdf][Slides on stellar evolution codes (old)]]
+ - [[https://web.oapd.inaf.it/mapelli/SEVN.tar.gz][SEVN]] (based on =PARSEC/FRANEC= tables of models)
+ - ...
