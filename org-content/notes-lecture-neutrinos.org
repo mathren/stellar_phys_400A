@@ -124,8 +124,10 @@ neutrinos from the so-called /URCA processes/ (named after a casino in
 Rio de Janeiro because when these processes kick in the energy of the
 nuclear reaction goes the same way as the money in the casino!):
 #+begin_latex
+\begin{equation}
  ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e }\\
- ^{A}(Z-1)\rightarrow ^{A}Z +e^{-}+\bar{\nu_{e}}
+ ^{A}(Z-1)\rightarrow ^{A}Z+ e^{+} +\bar{\nu_{e}}
+\end{equation}
 #+end_latex
 
 which produce one neutrino and one anti-neutrino without changing the
