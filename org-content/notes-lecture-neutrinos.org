@@ -460,11 +460,11 @@ equations:
 \end{equation}
 
 \begin{equation}
-\frac{dT}{dr} = - \frac{3}{16\pi a c}\frac{\kappa\rho L}{r^2 T^3}  \Leftrightarrow \frac{T_{k-1} - T_k}{(dm_{k-1} - dm_k)/2} = -\nabla_{T,k}\left(\frac{dP}{dm}\bigg|_k\right)\frac{\tilde{T_k}}{\tilde{P_k} \\
+\frac{dT}{dr} = - \frac{3}{16\pi a c}\frac{\kappa\rho L}{r^2 T^3}  \Leftrightarrow \frac{T_{k-1} - T_k}{(dm_{k-1} - dm_k)/2} = -\nabla_{T,k}\left(\frac{dP}{dm}\bigg|_k\right)\frac{\tilde{T_k}}{\tilde{P_k}} \\
 \end{equation}
 
 \begin{equation}
-\frac{dL}{dr}=4\pi r^{2}\rho \varepsilon_\mathrm{nuc} - \varepsilon_{\nu}_{} +\varepsilon_\mathrm{grav}  \Leftrightarrow L_k-L_{k+1} = dm_k\{\varepsilon_\mathrm{nuc}-\varepsilon_\nu + \varepsilon_\mathrm{grav}
+\frac{dL}{dr}=4\pi r^{2}\rho (\varepsilon_\mathrm{nuc} - \varepsilon_{\nu} +\varepsilon_\mathrm{grav})  \Leftrightarrow L_k-L_{k+1} = dm_k\{\varepsilon_\mathrm{nuc}-\varepsilon_\nu + \varepsilon_\mathrm{grav}
 \end{equation}
 
 \begin{equation}
