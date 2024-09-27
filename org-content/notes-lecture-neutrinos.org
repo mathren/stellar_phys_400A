@@ -427,7 +427,9 @@ advantages and disadvantages. The simplest is a first-order forward
 discretization of the form:
 
 #+begin_latex
+\begin{equation}
 \frac{df}{dx} \rightarrow \frac{f(x_{k+1})-f(x_{k})}{x_{k+1}-x_{k}} \ \ ,
+\end{equation}
 #+end_latex
 where f and x are a generic function and variable, and the index k
 labels the discretized points.
@@ -442,13 +444,14 @@ timestep size.
 this!
 
 #+CAPTION: Schematic representation of the spatial mesh in MESA. Intensive quantities (T, \rho, P) that do not depend on the amount matter are defined at the cell "center", while extensive quantities (m, L) are defined at the cell "boundaries". This is Figure 9 in [[https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract][Paxton et al. 2011]].
+#+ATTR_HTML: :width 100%
 [[./images/mesh.png]]
 
 With the discretization in mind, we can rewrite the ODEs as algebraic
 equations:
 
 #+begin_latex
-
+\begin{multline}
 \frac{dm}{dr}=4\pi r^2\rho }\qquad\qquad \,\, \hfill \Leftrightarrow \hfill
     \ln(r_k) = \frac{1}{3}\ln\left( r_{k+1}^3
       +\frac{3}{4\pi}\frac{dm_k}{\rho_k}\right)
@@ -476,6 +479,7 @@ P_k}{0.5(dm_{k-1} - dm_k)} = - \frac{G m_k}{4\pi r_k^4} \\
 	    X_{i,k}(t_n+\Delta t_{n+1}) = X_{i,k}(t_n) + \Delta
     t_{n+1}\left(\frac{dX_{i,k}}{dt}\right)_\mathrm{nuc} +
     \frac{\left(X_{i,k}-X_{i,k-1} \right)\sigma_k\Delta t_{n+1}}{0.5(dm_{k-1} - dm_k)}
+\end{multline}
 #+end_latex
 
 *** Shooting method
