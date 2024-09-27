@@ -451,35 +451,28 @@ With the discretization in mind, we can rewrite the ODEs as algebraic
 equations:
 
 #+begin_latex
-\begin{multline}
-\frac{dm}{dr}=4\pi r^2\rho }\qquad\qquad \,\, \hfill \Leftrightarrow \hfill
-    \ln(r_k) = \frac{1}{3}\ln\left( r_{k+1}^3
-      +\frac{3}{4\pi}\frac{dm_k}{\rho_k}\right)
-
-\frac{dP}{dr}=-\frac{Gm(r)\rho}{r^2}\hfill \Leftrightarrow \hfill\frac{P_{k-1} -
-P_k}{0.5(dm_{k-1} - dm_k)} = - \frac{G m_k}{4\pi r_k^4} \\
-
-\frac{dT}{dr} = - \frac{3}{16\pi a c}\frac{\kappa\rho
-        L}{r^2 T^3}} \qquad \qquad \,\,\,\,\,\hfill \Leftrightarrow\hfill
-    \frac{T_{k-1} - T_k}{(dm_{k-1} - dm_k)/2} =
-    -\nabla_{T,k}\left(\frac{dP}{dm}\bigg|_k\right)
-    \frac{\tilde{T_k}}{\tilde{P_k} \\
-
-\frac{dL}{dr}=4\pi r^2\rho\varepsilon} \qquad \qquad\qquad \,\, \phantom{a} \hfill
-    \Leftrightarrow\hfill L_k-L_{k+1} = dm_k\{\varepsilon_\mathrm{nuc}
-    -\varepsilon_\nu + \varepsilon_\mathrm{grav}\\
-
-    P\equiv P(\rho,\mu,T)} \hspace{-30pt}\hfill \Leftrightarrow
-    \hfill P\equiv P(\rho,\mu,T)\\
-
-    \frac{dX_i}{dt}\bigg|_{r} = \left[ \sum\limits_j
-        \mathcal{P}_{j,i}(T,\rho) -\sum\limits_k
-        \mathcal{D}_{i,k}(T,rho,)\right] + \left( D_i \nabla^2
-        X_i\phantom{\bigg|} \right)
-	    X_{i,k}(t_n+\Delta t_{n+1}) = X_{i,k}(t_n) + \Delta
+\begin{equation}
+\frac{dm}{dr}=4\pi r^2\rho \hfill  \Leftrightarrow \hfill  \ln(r_k) = \frac{1}{3}\ln\left( r_{k+1}^{3} +\frac{3}{4\pi}\frac{dm_k}{\rho_k}\right)
+\end{equation}
+\begin{equation}
+\frac{dP}{dr}=-\frac{Gm(r)\rho}{r^2}\hfill \Leftrightarrow \hfill\frac{P_{k-1} - P_k}{0.5(dm_{k-1} - dm_k)} = - \frac{G m_k}{4\pi r_k^4} \\
+\end{equation}
+\begin{equation}
+\frac{dT}{dr} = - \frac{3}{16\pi a c}\frac{\kappa\rho L}{r^2 T^3}} \qquad \qquad \,\,\,\,\,\hfill \Leftrightarrow\hfill \frac{T_{k-1} - T_k}{(dm_{k-1} - dm_k)/2} = -\nabla_{T,k}\left(\frac{dP}{dm}\bigg|_k\right)\frac{\tilde{T_k}}{\tilde{P_k} \\
+\end{equation}
+\begin{equation}
+\frac{dL}{dr}=4\pi r^2\rho\varepsilon} \qquad \qquad\qquad \,\, \phantom{a} \hfill \Leftrightarrow\hfill L_k-L_{k+1} = dm_k\{\varepsilon_\mathrm{nuc}-\varepsilon_\nu + \varepsilon_\mathrm{grav}\\
+\end{equation}
+\begin{equation}
+P\equiv P(\rho,\mu,T)} \hspace{-30pt}\hfill \Leftrightarrow \hfill P\equiv P(\rho,\mu,T)\\
+\end{equation}
+\begin{equation}
+\frac{dX_i}{dt}\bigg|_{r} = \left[ \sum\limits_j \mathcal{P}_{j,i}(T,\rho)
+    -\sum\limits_k \mathcal{D}_{i,k}(T,rho,)\right] + \left( D_i
+    \nabla^2X_i\phantom{\bigg|} \right) \Leftrightarrow   X_{i,k}(t_n+\Delta t_{n+1}) = X_{i,k}(t_n) + \Delta
     t_{n+1}\left(\frac{dX_{i,k}}{dt}\right)_\mathrm{nuc} +
     \frac{\left(X_{i,k}-X_{i,k-1} \right)\sigma_k\Delta t_{n+1}}{0.5(dm_{k-1} - dm_k)}
-\end{multline}
+\end{equation}
 #+end_latex
 
 *** Shooting method
