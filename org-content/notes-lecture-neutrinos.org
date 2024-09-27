@@ -3,7 +3,8 @@
 #+email: mrenzo@arizona.edu
 
 * Neutrino physics in stars
-*Materials:* Sec. 6.5 and 12.3.1 of Onno Pols' notes.
+*Materials:* Sec. 6.5 and 12.3.1 of Onno Pols' notes, Kippenhahn chapter
+9 and 10
 
 We have almost seen all the pieces needed to make a one-dimensional
 hydrostatic model of a star, including the input physics in the
@@ -360,10 +361,122 @@ possible, and stellar /structure/ simulations in 2D are also at the
 forefront of possibilities (see e.g., [[https://ui.adsabs.harvard.edu/abs/2023A%26A...677L...5M/abstract][Mombarag et al. 2023]]).
 
 ** Boundary conditions
+So, for the foreseeable future 1D stellar structure and evolution
+calculation using the set of equations we derived. To solve them, we
+need boundary conditions. These are crucial in determining the
+solution of the structure at each timestep!
 
+For the stellar problem, we need to specify boundary conditions at two
+locations.
 
+*** Central boundary conditions
+
+These are fairly intuitive:
+ - r(m=0) = 0. This is necessary to keep the local density \rho \sim m/r^{3} finite.
+ - L(m=0) = 0. This is necessary to keep the energy generation per
+   unit volume finite (as the volume goes to zero)
+
+However, we have 4 ODEs and these are only two boundary conditions, so
+the system is still undetermined. The central pressure and density are
+not a priori known (we can estimate them, but that is not precise
+enough!).
+
+*** Surface boundary conditions
+
+We need to turn to the surface to get observationally informed
+boundary conditions. Remember that from the point of view of a
+detailed stellar evolution code, which assumes LTE to solve for the
+internal structure, the "surface" (meaning: the outer boundary) is
+usually defined at the photosphere. This is by definition the
+"idealized" surface where T=T_{eff} which corresponds to the location
+outside of which LTE is not a good assumption anymore, the radiation
+field is /not/ isotropic, and the problem becomes the calculation of a
+stellar /atmosphere/.
+
+Accepting to externalize the problem of stellar atmosphere (which we
+will treat in more detail [[./notes-lecture-radTrans.org][in a future lecture]]), we already have
+written one of the missing outer boundary conditions at mass
+coordinate equal to the total mass of the star (m=M):
+ - T(m=M) = T_{eff}, where T_{eff} is /defined/ as the temperature of a black
+   body producing the same luminosity as the star: L=4\pi R^{2}\sigma T_{eff}
+   with R=r(M).
+
+For the final missing boundary condition, we need to specify the outer
+pressure P(r=R) at R=r(M). This typically comes from imposing a /smooth/
+transition from the stellar interior (inside, T \ge T_{eff}) and the
+stellar atmosphere (outside, T \le T_{edd}), which requires calculating the
+pressure in the stellar atmosphere where the assumptions we made so
+far, and consequently the equations we wrote do not hold.
+
+:Question:
+- *Q*: Why should P be smooth? (*Hint:* think of dP/dr!)
+:end:
 
 ** Solving strategies
+Let's assume we have a way to specify P(r=R), and postpone the
+discussion of stellar atmosphere to a [[./notes-lecture-radTrans.org][future lecture]].
+We then have 4 coupled non-linear ODEs with 4 boundary conditions (2
+at the center and 2 at the surface), and the EOS as a closure
+condition. How can we solve them numerically?
+
+*** Discretization
+First, to represent the system of equations in a computer we want to
+discretize them, that is convert every derivative into a /finite
+difference/. This can be done in various ways, each with specific
+advantages and disadvantages. The simplest is a first-order forward
+discretization of the form:
+
+#+begin_latex
+\frac{df}{dx} \rightarrow \frac{f(x_{k+1})-f(x_{k})}{x_{k+1}-x_{k}} \ \ ,
+#+end_latex
+where f and x are a generic function and variable, and the index k
+labels the discretized points.
+
+For example, if x=m, the index k will label which cell of the
+mass-coordinate "mesh" we are considering and m_{k+1} - m_{k} = \Delta m_{k} is the
+local resolution in mass at location k, while if x=t, then k will
+label the "timestep" we are considering, and t_{k+1}-t_{k} = \Delta t_{k+1} is the
+timestep size.
+
+*N.B.:* Nature \gg numerical models, because nature does not need to do
+this!
+
+#+CAPTION: Schematic representation of the spatial mesh in MESA. Intensive quantities (T, \rho, P) that do not depend on the amount matter are defined at the cell "center", while extensive quantities (m, L) are defined at the cell "boundaries". This is Figure 9 in [[https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract][Paxton et al. 2011]].
+[[./images/mesh.png]]
+
+With the discretization in mind, we can rewrite the ODEs as algebraic
+equations:
+
+#+begin_latex
+
+\frac{dm}{dr}=4\pi r^2\rho }\qquad\qquad \,\, \hfill \Leftrightarrow \hfill
+    \ln(r_k) = \frac{1}{3}\ln\left( r_{k+1}^3
+      +\frac{3}{4\pi}\frac{dm_k}{\rho_k}\right)
+
+\frac{dP}{dr}=-\frac{Gm(r)\rho}{r^2}\hfill \Leftrightarrow \hfill\frac{P_{k-1} -
+P_k}{0.5(dm_{k-1} - dm_k)} = - \frac{G m_k}{4\pi r_k^4} \\
+
+\frac{dT}{dr} = - \frac{3}{16\pi a c}\frac{\kappa\rho
+        L}{r^2 T^3}} \qquad \qquad \,\,\,\,\,\hfill \Leftrightarrow\hfill
+    \frac{T_{k-1} - T_k}{(dm_{k-1} - dm_k)/2} =
+    -\nabla_{T,k}\left(\frac{dP}{dm}\bigg|_k\right)
+    \frac{\tilde{T_k}}{\tilde{P_k} \\
+
+\frac{dL}{dr}=4\pi r^2\rho\varepsilon} \qquad \qquad\qquad \,\, \phantom{a} \hfill
+    \Leftrightarrow\hfill L_k-L_{k+1} = dm_k\{\varepsilon_\mathrm{nuc}
+    -\varepsilon_\nu + \varepsilon_\mathrm{grav}\\
+
+    P\equiv P(\rho,\mu,T)} \hspace{-30pt}\hfill \Leftrightarrow
+    \hfill P\equiv P(\rho,\mu,T)\\
+
+    \frac{dX_i}{dt}\bigg|_{r} = \left[ \sum\limits_j
+        \mathcal{P}_{j,i}(T,\rho) -\sum\limits_k
+        \mathcal{D}_{i,k}(T,rho,)\right] + \left( D_i \nabla^2
+        X_i\phantom{\bigg|} \right)
+	    X_{i,k}(t_n+\Delta t_{n+1}) = X_{i,k}(t_n) + \Delta
+    t_{n+1}\left(\frac{dX_{i,k}}{dt}\right)_\mathrm{nuc} +
+    \frac{\left(X_{i,k}-X_{i,k-1} \right)\sigma_k\Delta t_{n+1}}{0.5(dm_{k-1} - dm_k)}
+#+end_latex
 
 *** Shooting method
 
@@ -421,15 +534,14 @@ those tables, which allows to track more details (and more easily
 update the stellar models) for a small computational price that is now
 affordable.
 
-Below is an (incomplete, biased) list of some of these codes
+Below is an (incomplete, biased) list of some of these codes.
 
 ** Semi-analytic approach to population synthesis
 
  - BSE: the forefather of many (*N.B.:* not /all/ rapid population synthesis codes)
  - [[https://cosmic-popsynth.github.io/][COSMIC]]: Open source and open development, =pip= installable
  - [[https://compas.science/][COMPAS]]: Open source
- - [[https://binary_c.gitlab.io/][binary_c]]: Open source, python front-end available, can be run
-   online (similar to =MESA-web=)
+ - [[https://binary_c.gitlab.io/][binary_c]]: Open source, python front-end available, can be [[https://r-izzard.surrey.ac.uk/cgi-bin/binary5.cgi][run on online]] (similar to =MESA-web=)
  - ...
 
 ** Pre-computed and tabulated codes
