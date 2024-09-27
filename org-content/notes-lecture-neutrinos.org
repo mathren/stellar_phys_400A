@@ -26,7 +26,9 @@ connects stellar physics with neutrino physics: \varepsilon_{\nu.}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
 #+end_latex
-which follows from the momentum conservation equation
+which follows from the momentum conservation equation assuming the
+acceleration to be negligible *N.B.:* this last assumption could be
+relaxed to add an extra term in this equation analogous to ma in F=ma.
 
 *** Equation of state
 #+begin_latex
@@ -122,8 +124,8 @@ neutrinos from the so-called /URCA processes/ (named after a casino in
 Rio de Janeiro because when these processes kick in the energy of the
 nuclear reaction goes the same way as the money in the casino!):
 #+begin_latex
-$ ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e }$\\
-$ ^{A}(Z-1)\rightarrow ^{A}Z +e^{-}+\bar{\nu_{e}} $
+ ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e }\\
+ ^{A}(Z-1)\rightarrow ^{A}Z +e^{-}+\bar{\nu_{e}}
 #+end_latex
 
 which produce one neutrino and one anti-neutrino without changing the
@@ -232,23 +234,15 @@ the system. Solving these equations we can:
     observe for real stars since most evolve way too slow for us to
     follow within our lifetimes.
 
-*N.B.:* without the assumption of spherical symmetry, the equations
-would become partial differential equations (PDE). When introducing
-effects such as rotation or binarity that formally break the spherical
-symmetry of the problem, these are "cast" in a form that still allows
-a 1D formalism (e.g., "shellular rotation" assuming that all
-quantities are constant along isobars and uses P as the independent
-coordinate, or using volume-weighted equivalent potentials of the
-companion).
+However, this system of coupled, non-linear ODEs is not easily solved
+by hand. Since the early days of the availability of computers in the
+1960s, people have been designing and leveraging /computational
+techniques/ to /numerically/ solve this system of equations (see e.g.,
+[[https://ui.adsabs.harvard.edu/abs/1962ApJ...135..770I/abstract][Iben & Erhman 1962]], [[https://ui.adsabs.harvard.edu/abs/1964ApJ...139..306H/abstract][Henyey 1964]]). For the rest of this lecture, we are
+going to discuss some general principles behind these computational
+techniques.
 
-As you can imagine, this is not a system easily solved by hand. Since
-the early days of the availability of computers in the 1960s, people
-have been designing and leveraging /computational techniques/ to
-/numerically/ solve this system of equations. For the rest of this
-lecture, we are going to discuss some general principles behind these
-computational techniques.
-
-** The most important thing to remember when using codes
+** The most important thing: /Computer simulations are not empirical evidence/
 
 :Quote:
 "/Traditional scientific knowledge has generally taken the form of/
@@ -266,30 +260,102 @@ solution.
 
 Presumably, nature does not do /any/ of this: without opening the
 philosophical question of whether nature writes down equations to
-solve, it certainly does not need to do physical approximations (while
-we need to be able to reason on a problem), and even less the
-/numerical/ approximations needed to solve the equations. At ontological
-level, numerical simulations are /not/ equivalent to empirical evidence!
-Never trust numerical results as if they were ground truth: a computer
-will only do what it is told, and we tell it our physically and
-numerically approximated best guess for what we are trying to simulate
-which is /not/ what nature empirically provides. I emphasize this as a
-person who spends most of his time getting numerical results! Note
-also how this is more general than /just/ stellar physics: this applies
-to /any/ computational physics field.
+solve, it certainly does not need to make physical approximations
+(while we need to do it to reason on a problem and keep it
+manageable), and even less make /numerical/ approximations needed to
+solve equations. At ontological level, numerical simulations are /not/
+equivalent to empirical evidence! Never trust numerical results as if
+they were ground truth: a computer will only do what it is told, and
+we tell it our physically and numerically approximated best guess for
+what we are trying to simulate which is /not/ what nature empirically
+provides. I emphasize this as a person who spends most of his time
+making numerical simulations! Note also how this is more general than
+/just/ stellar physics: this applies to /any/ computational physics field.
+
+Because of these, it is always crucially important to /do resolution
+tests/: when performing a simulation of a physical phenomenon, you
+should always test that the scientific results you obtain do not
+depend on how you discretize your equations in time and space and on how
+you numerically solve them. This is often a painful task, but very
+important to not fool ourselves!
 
 :Quote:
 "All models are wrong, but some are useful!" - G. Box
 :end:
 
-The /high non-linearity/ of the system means that there can be
-quasi-chaotic behavior: a small perturbation (maybe because of a
-numerical error or a small inconsistency in the tabulated input
-physics!) can cascade into dramatic consequences, similar to the
-famous "butterfly effect" (which was also theorized from numerical
-computations, but of atmospheric physics, by [[https://en.wikipedia.org/wiki/Edward_Norton_Lorenz][E. Lorenz]]).
+In stellar physics, there is another problem: the /high non-linearity/
+of the coupled system of ODEs means that there can be chaotic
+behavior! A small perturbation (maybe because of a numerical error or
+a small inconsistency in the tabulated input physics!) can cascade
+into dramatic consequences, similar to the famous "butterfly effect"
+(which was also theorized from numerical computations, but of
+atmospheric physics, by [[https://en.wikipedia.org/wiki/Edward_Norton_Lorenz][E. Lorenz]]).
+
 
 ** Why did we limit ourselves to spherical symmetry?
+Throughout the course so far we have explicitly assumed spherical
+symmetry, although since the beginning we have discussed some
+phenomena that can break the global spherical symmetry (e.g.,
+rotation, magnetic fields, or the presence of gravity and/or
+irradiation from companion stars), and we have seen phenomena (e.g.,
+convection) that break the spherical symmetry locally. Without the
+assumption of spherical symmetry, the equations describing our system
+would become partial differential equations (PDE), changing the
+mathematical and thus computational approach.
+
+In some cases, it is possible to treat some of these by casting them
+in a form that still allows a 1D formalism with ODEs (e.g., "shellular
+rotation" assuming that all quantities are constant along isobars and
+uses P as the independent coordinate, or using volume-weighted
+equivalent potentials accounting for the gravity of a companion star).
+But ultimately the physics is non-spherical, so why do we insist with
+this limited approximation?
+
+The main reason is /necessity/ (see for example [[https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract][Jermyn et al. 2022
+section 5.4]]) *the contrast of scale in both space and time* required to
+follow the /evolution/ of a star from birth to death (or to the current
+age of the Universe, whichever comes first!) *is just too large* to be
+manageable with present day /and/ with foreseeable computational
+capabilities.
+
+*** Spatial scale limitations
+
+Consider the convective envelope in the Sun. It has a Reynolds number
+Re= v_{conv} \ell/\nu \sim 10^{12}, which, using Kolmogorov's model of
+turbulence implies that the turbulent cascade spans a range of scales
+from L to \ell with a contrast L/\ell \sim Re^{3/4} \sim 10^{9}. To resolve this
+contrast in a 3D simulation we would need this number of cells /in
+each direction/, meaning \sim10^{27} points.
+
+*** Temporal scale limitations
+Consider again the Sun. The free fall timescale is generously
+\tau_{ff}\sim1h, and its thermal timescale is \tau_{KH}\sim1.5\times10^{7} years,
+and current age is \sim 5\times10^{9} years \simeq \tau_{nuc}. In 3D we would need to
+resolve the dynamics of the gas, with timesteps \Delta t \leq \tau_{ff}. Even
+considering an equal sign \Delta t=\tau_{ff} (certainly insufficient to /resolve/
+the dynamics of the stellar plasma), it would take \sim \tau_{Kh} / \tau_{ff} = 10^{10}
+timesteps to calculate a thermal timescale and \sim \tau_{nuc} / \tau_{ff} = 10^{12}
+timesteps for a nuclear timescale.
+
+*** Present day and future prospects
+
+The largest present day multi-dimensional stellar hydrodynamics
+simulations reach maybe up to 10^{12} resolution points, and about 10^{8}
+timesteps and using lower-than-realistic Reynolds number and/or
+boosting the luminosity to drive dynamical effects faster than in
+reality (see [[https://ui.adsabs.harvard.edu/abs/2022ApJ...928L..10A/abstract][Anders et al. 2022]] or [[https://ui.adsabs.harvard.edu/abs/2024MNRAS.531.1316T/abstract][Thompson et al. 2024]]).
+
+Assuming that Moore's law (the number of transistors in a CPU roughly
+doubles every year) - an assumptions that may clash with the
+engineering reality, it will take several decades to have a
+numerically resolved 3D simulation of convection in a star for a
+convective turnover timescale, and longer for thermal and nuclear
+timescale: 1D will remain necessary.
+
+Nevertheless, 3D stellar hydrodynamics of restricted problems ("box in
+a star" approach, short timescales such as stellar explosions) are
+possible, and stellar /structure/ simulations in 2D are also at the
+forefront of possibilities (see e.g., [[https://ui.adsabs.harvard.edu/abs/2023A%26A...677L...5M/abstract][Mombarag et al. 2023]]).
 
 ** Boundary conditions
 
@@ -300,6 +366,7 @@ computations, but of atmospheric physics, by [[https://en.wikipedia.org/wiki/Edw
 *** Henyey method
 
 *** Evolution splitting
+
 
 ** Open science: [[https://docs.mesastar.org/en/latest/][MESA]] and =MESA-web=
 
@@ -313,20 +380,25 @@ this [[https://www.aip.org/history-programs/niels-bohr-library/oral-histories/50
 
 *** Systematic computational uncertainties
 
+
 * A different kind of simulations: rapid population synthesis
 
 ** Population synthesis
 
-** Semi-analytic approach to population synthesis
+*** Semi-analytic approach to population synthesis
 
-*** Example of codes
  - BSE: the forefather of many (*N.B.:* not /all/ rapid population
    synthesis codes)
  - [][COSMIC]: Open source and open development, =pip= installable
  - [][COMPAS]: Open source
  - [][binary_c]:
  - [][SEVN]:
- - [][MOBSE]:
+
+*** Pre-computed and tabulated codes
+ - ComBiNe (=BEC= tables of models)
+ - METISSE (=MESA= tables of models)
+ - MINT (= =binary_c= + =MESA= tables of models)
+ - (= =PARSEC/FRANEC= tables of models)
 
 
 [[https://www.as.arizona.edu/~mrenzo/materials/slides/CompAstro_MESA.pdf][Slides on stellar evolution codes (old)]]
