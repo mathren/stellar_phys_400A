@@ -598,13 +598,17 @@ algorithms as technicalities.
 
 Still today, the inner workings of many codes are only known to the
 inner circle of the group owning the code. In 2011, an independently
-wealthy computer-scientist turned astronomer, [[https://en.wikipedia.org/wiki/Bill_Paxton_(computer_scientist)][Bill Paxton]], with the
-collaboration of a large group of theoretical and computational
-astrophysicists, developed a new open-source, multi-purpose, and
-community driven stellar structure and evolution code, called =MESA=.
-The =MESA-web= interface you have been using is just a predefined setup
-of this very flexible and modular code designed for educational
-applications: you have been using a bleeding edge research tools!
+wealthy computer-scientist-turned-astrophysicist named [[https://en.wikipedia.org/wiki/Bill_Paxton_(computer_scientist)][Bill Paxton]],
+with the collaboration of a large group of theoretical and
+computational astrophysicists (notably, P. Eggleton who provided his
+code as a starting poing), developed a new open-source, multi-purpose,
+and community driven stellar structure and evolution code, called
+=MESA=. Because this is the tool I use, and the only one I can really
+inspect, a lot of my intuition on the numerical methods and
+computational aspects is tied to this particular code. The =MESA-web=
+interface you have been using is just a predefined setup of this very
+flexible and modular code designed for educational applications: you
+have been using a bleeding edge research tools!
 
 The release of this code, together with a change in perspective from
 funding agencies and a general push towards open-science and
