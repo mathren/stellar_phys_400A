@@ -372,7 +372,7 @@ solution of the structure at each timestep!
 For the stellar problem, we need to specify boundary conditions at two
 locations.
 
-*** Central boundary conditions
+*** Center
 
 These are fairly intuitive:
  - r(m=0) = 0. This is necessary to keep the local density \rho \sim m/r^{3} finite.
@@ -384,7 +384,7 @@ the system is still undetermined. The central pressure and density are
 not a priori known (we can estimate them, but that is not precise
 enough!).
 
-*** Surface boundary conditions
+*** Surface
 
 We need to turn to the surface to get observationally informed
 boundary conditions. Remember that from the point of view of a
@@ -468,7 +468,7 @@ equations:
 \end{equation}
 
 \begin{equation}
-\frac{dT}{dr} = - \frac{3}{16\pi a c}\frac{\kappa\rho L}{r^2 T^3}  \Leftrightarrow \frac{T_{k-1} - T_k}{(dm_{k-1} - dm_k)/2} = -\nabla_{T,k}\left(\frac{dP}{dm}\bigg|_k\right)\frac{\tilde{T_k}}{\tilde{P_k}} \\
+\frac{dT}{dr} = - \frac{3}{16\pi a c}\frac{\kappa\rho L}{r^2 T^3} \mathrm{or} \frac{dT}{dr}\bigg_\mathrm{ad}  \Leftrightarrow \frac{T_{k-1} - T_k}{(dm_{k-1} - dm_k)/2} = -\nabla_{T,k}\left(\frac{dP}{dm}\bigg|_k\right)\frac{\tilde{T_k}}{\tilde{P_k}} \\
 \end{equation}
 
 \begin{equation}
@@ -517,20 +517,65 @@ To solve this we could consider two approaches:
   be limited by the sound crossing time), making it impossible to perform a
   calculation for the /evolution/ of the star
 - *Implicit methods:* in this case we write a function F(X(t_{k}), X(t_{k+1}))
-  = 0 (e.g., AX(t_{k}) - X(t_{k+1}) = 0), and by solving the homogeneous
+  = 0 (e.g., F(X(t_{k}), X(t_{k+1})) \equiv AX(t_{k}) - X(t_{k+1}) = 0), and by solving the homogeneous
   equation we have obtained we derive X(t_{k+1}). Implicit methods are
   preferred in stellar evolution as they are not limited by the sound
   crossing time.
 
-For each of these methods, we still need to specify a solver.
-Typically stellar evolution codes rely on generalized first order
-Newton Raphson solvers.
+**** Solver
 
-*** Shooting method
+For each of these methods, we still need to specify a numerical
+solver. Typically stellar evolution codes rely on generalized first
+order Newton Raphson solvers, which find the zeros of a function
+starting from an initial guess and then computing its derivative to
+create a better second guess:
 
-*** Henyey method
+[[https://en.wikipedia.org/wiki/Newton's_method#/media/File:NewtonIteration_Ani.gif]]
+
+*** Shooting method vs. Henyey method
+There is a peculiarity in the way we built the system of equations to
+be solved: we have two boundary conditions at one edge of the (one dimensional) domain
+(the center), and one set at the other edge (the surface).
+
+Historically, the first computations of stellar models would use a
+"shooting method": integrate numerically from the center outward, and
+verify how far from the outer boundary conditions the solution lands,
+based on the distance, calculate a correction on the initial guess,
+and iterate. This was computationally expensive, and would require
+many iterations before the solution build "inside out" would be
+sufficiently good.
+
+In the late 1960s, [[https://en.wikipedia.org/wiki/Louis_G._Henyey][L. Henyey]] designed an alternative solving strategy,
+which was rapidly adopted by others and is still widely used today.
+The key idea was to not start computing the variables inside out, but
+instead, make an initial guess for the entire domain (typically the
+initial guess can be the solution for the previous timestep!), and
+calculate a correction not based on the distance between the solution
+and the outer boundary condition only, but based on both boundaries at
+the same time!
+
+*N.B.:* for a biased overview of the evolution of the field of
+computational stellar physics by one of the "founding fathers" of the
+field, see this [[https://www.aip.org/history-programs/niels-bohr-library/oral-histories/5091][1978 interview to R. Kippenhahn]].
 
 *** Evolution splitting
+One final peculiarity of the stellar structure and evolution problem
+is that the evolution is /slow/ and driven by nuclear physics, which
+provides some of the hardest equations to solve, because they are
+extremely /stiff/. Mathematically, this means the eigenvalues of the
+nuclear physics part of the problem have very different norms, making
+it challenging to design numerical algorithm that can find all the
+eigenvalues efficiently. Physically, this is because many reactions
+have extreme temperature sensitivities (because of the Coulomb
+barriers and the tunneling probability).
+
+The clear separation of timescales for the structure and evolution
+(\tau_{ff} \ll \tau_{KH }\ll \tau_{nuc}) allows for one more trick, so called
+"evolution splitting": one can compute the /structure/ of the star
+assuming fixed composition, then /evolve/ the composition with that
+fixed structure (meaning T, and \rho), and iterate computing a new
+structure with the updated composition. This allows to separate the
+problem and can make it more tractable.
 
 ** Open science: [[https://docs.mesastar.org/en/latest/][MESA]] and =MESA-web=
 
@@ -538,11 +583,48 @@ Newton Raphson solvers.
 "/An algorithm must be seen to be believed/" - D. Knuth
 :end:
 
-For a biased overview of the evolution of the field of computational
-stellar physics by one of the "founding fathers" of the field, see
-this [[https://www.aip.org/history-programs/niels-bohr-library/oral-histories/5091][1978 interview to R. Kippenhahn]].
+The discussion above is an attempt to highlight the general principles
+and technical aspects specific of computational stellar structure and
+evolution without narrowing down to a specific code. Historically,
+many groups independently developed computer codes, and only few
+universities would have the computing power to run them. In the
+1960s-1980s, even if the group leaders may have been willing to share
+their codes upon request, all the algorithmic details would typically
+be hidden from the scientific community, and considered as
+technicalities. Many of the people actually /writing/ the code and
+/implementing the algorithms/ were women, and their contribution has
+been under-appreciated because of this attitude of considering
+algorithms as technicalities.
 
-*** TODO Systematic computational uncertainties
+Still today, the inner workings of many codes are only known to the
+inner circle of the group owning the code. In 2011, an independently
+wealthy computer-scientist turned astronomer, [[https://en.wikipedia.org/wiki/Bill_Paxton_(computer_scientist)][Bill Paxton]], with the
+collaboration of a large group of theoretical and computational
+astrophysicists, developed a new open-source, multi-purpose, and
+community driven stellar structure and evolution code, called =MESA=.
+The =MESA-web= interface you have been using is just a predefined setup
+of this very flexible and modular code designed for educational
+applications: you have been using a bleeding edge research tools!
+
+The release of this code, together with a change in perspective from
+funding agencies and a general push towards open-science and
+open-know-how (which necessarily require to get a handle on the
+algorithmic details), has significantly changed the field of
+theoretical and computational stellar evolution. Other codes are
+progressively opening up, and at the very least being forced to
+compare their results with MESA.
+
+This openness allows finally to check /systematic modeling errors/ that
+arise from algorithmic and numerical choices that may differ even for
+the same physical assumptions and input physics. This has enabled
+progress, revealed (always existing) bugs in MESA and in other codes,
+and overall improved the state of this field.
+
+*N.B.:* Multiple independent codes are needed to cross-check and
+validate results. The exponential growth of the community of users of
+the MESA code has almost become a problem by quenching the use of
+other codes in this problem space!
+
 
 ** Summary
  1. take a star, which is a complex multi-scale, multi-physics,
@@ -602,7 +684,7 @@ Below is an (incomplete, biased) list of some of these codes.
  - BSE: the forefather of many (*N.B.:* not /all/ rapid population synthesis codes)
  - [[https://cosmic-popsynth.github.io/][COSMIC]]: Open source and open development, =pip= installable
  - [[https://compas.science/][COMPAS]]: Open source
- - [[https://binary_c.gitlab.io/][binary_c]]: Open source, python front-end available, can be [[https://r-izzard.surrey.ac.uk/cgi-bin/binary5.cgi][run on online]] (similar to =MESA-web=)
+ - [[https://binary_c.gitlab.io/][binary\_c]]: Open source, python front-end available, can be [[https://r-izzard.surrey.ac.uk/cgi-bin/binary5.cgi][run on online]] (similar to =MESA-web=)
  - ...
 
 ** Pre-computed and tabulated codes
