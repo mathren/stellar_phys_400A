@@ -241,9 +241,10 @@ However, this system of coupled, non-linear ODEs is not easily solved
 by hand. Since the early days of the availability of computers in the
 1960s, people have been designing and leveraging /computational
 techniques/ to /numerically/ solve this system of equations (see e.g.,
-[[https://ui.adsabs.harvard.edu/abs/1962ApJ...135..770I/abstract][Iben & Erhman 1962]], [[https://ui.adsabs.harvard.edu/abs/1964ApJ...139..306H/abstract][Henyey 1964]]). For the rest of this lecture, we are
-going to discuss some general principles behind these computational
-techniques.
+[[https://ui.adsabs.harvard.edu/abs/1962ApJ...135..770I/abstract][Iben & Erhman 1962]], [[https://ui.adsabs.harvard.edu/abs/1964ApJ...139..306H/abstract][Henyey 1964]], [[https://ui.adsabs.harvard.edu/abs/1971MNRAS.151..351E/abstract][Eggleton 1971]], [][Weaver
+  1978]. For the rest of this
+lecture, we are going to discuss some general principles behind these
+computational techniques.
 
 ** The most important thing: /Computer simulations are not empirical evidence/
 
