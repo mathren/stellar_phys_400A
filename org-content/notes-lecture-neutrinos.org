@@ -490,10 +490,12 @@ P\equiv P(\rho,\mu,T)  \Leftrightarrow  P\equiv P(\rho,\mu,T)
 
 Where, when going from the physical model to the
 numerical implementation:
-- we use m rather than r as independent coordinate
+- we use m rather than r as independent coordinate [[./notes-lecture-HSE.org::*Lagrangian and Eulerian coordinates][as expected]];
 - the mass continuity if re-formulated in terms of natural logarithm
-  or r instead or r itself (to keep numbers smaller)
-
+  or r instead or r itself (to keep numbers smaller);
+- the EOS, \kappa, \varepsilon_{nuc,}, and \varepsilon_{\nu} represent input physics that we borrow
+  from other fields, and typically are /tabulated/ as a function of T,
+  \rho or equivalent pairs of variables.
 
 Now that we have transformed a set of ODEs into a set of algebraic
 equations, the stellar structure and evolution problem is reduced to

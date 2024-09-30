@@ -101,11 +101,13 @@ and population synthesis.
 
 ** <2024-10-10 Thu> - Radiative transfer
 *Aims*: discuss in more detail the following:
-
 - outer boundary conditions
 - Saha equation
 - line formation region
 - line broadening mechanisms
+
+[[./notes-lecture-radTrans.org][Notes]]
+
 ** <2024-10-15 Tue> - Evolution: low mass stars 1
 ** <2024-10-17 Thu> - Evolution: low mass stars 2
 ** <2024-10-22 Tue> - Evolution: high mass stars
