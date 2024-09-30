@@ -2,6 +2,157 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
+* Stellar atmospheres
+
+So far in this course we have mostly dealt with the /interior/ of stars
+and derived equation to determine the stellar /structure/ and what
+drives their /evolution/ (which is typically "slow", \tau_{nuc} \gg \tau_{KH} \gg
+\tau_{ff}).
+
+The picture we have derived is that gravity drives a contraction of
+the (hot) stellar gas, which, because it has a finite temperature,
+shines. This loss of internal energy translates into a loss of
+gravitational potential because of the virial theorem relating the
+two, and consequently the temperature in the center increases. This
+continues until nuclear burning ignites to compensate for the energy
+losses: /stars don't shine because they burn, stars burn _because_ they
+shine/.
+
+The nuclear burning can be seen just as an attempt by the star to
+/delay/ its gravitational collapse: as nuclear fuel is depleted the star
+is forced to evolve (until either gravity "wins" or the EOS deviates
+from the classical ideal gas, and quantum mechanical effects provide
+sufficient pressure that win over gravity, we will see these in more
+detail in the coming lectures).
+
+However, many of the assumptions we have made to derive these
+equations and the picture of stellar evolution described above /do not
+apply to the stellar atmosphere/, which is the layer that produces the
+/detectable/ photons from stars! In this lecture we will consider in
+more details the physics of the stellar atmosphere which are crucial
+to obtain empirical evidence to test the picture of stellar evolution
+we now can build, and to provide the outer boundary conditions needed
+to calculate a stellar model.
+
+** Definition
+
+The /stellar atmosphere/ is by definition the layer where the radiation
+field is /not/ isotropic, but the photon flux has a net /radial/
+component.
+
+*N.B.:* This does /not/ mean that all the photons move radially! Just that
+on average there are more photons moving in the positive radial
+direction than the negative radial direction, but photons can still
+move in all direction!
+
+This means that /by definition/ the stellar atmosphere is /not/ a black
+body, and it is /partially/ transparent to photons (resulting in a
+positive radial component of the photon flux).
+
+To make models of stellar /spectra/ and determine the outer boundary
+conditions we need to consider how radiation from the bottom of the
+star flows through this atmospheric layer and consequently how this
+layer stratifies, determining the outer boundary pressure and
+temperature.
+
+*N.B.:* real stars are even more complicated: in the photosphere
+radiative and (magneto)-hydrodynamical processes can launch stellar
+winds that remove mass from the star and connect smoothly the stellar
+material with the interstellar material!
+
+By definition, the bottom layer of the atmosphere is the /photosphere/,
+that is this fictional surface that has T_{eff} such that a black body of
+this temperature would emits the same energy per unit time as the star
+does.
+
+*N.B.:* dL/dm = \varepsilon_{nuc} - \varepsilon_{\nu} + \varepsilon_{grav} \equiv 0 in the outer
+layers of the star where T is not high enough for nuclear burning, \rho
+is not high enough for \nu emission, and we assume gravothermal
+equilibrium, so \varepsilon_{grav} \propto ds/dt = 0, so L is constant.
+
+
+* Basics of radiative transfer
+
+The problem we need to consider in the stellar atmosphere is how
+radiation coming from the /photosphere/ flows through the overlaying
+gas, and how this impact the observable radiation itself, and the
+structure of this gas.
+
+*N.B.:* a useful thing for this problem is to "think like a photon", and
+imagine the physics it will encounter through it's trip towards the
+detector!
+
+Since by definition the photosphere the radiation coming out from it
+is the one of a black body, it is isotropic, so if you think of the
+atmosphere as a slab of gas with a thickness dr, the radiation
+illuminating it from below may come at an angle \theta w.r.t. the slab.
+
+We can define the specific intensity (per unit frequency or
+wavelength) I_{\nu} as the amount of energy flowing through a surface
+element dA in a time interval dt and coming within a solid angle d\Omega
+around the direction $\mathbb{n}$ with frequency in the range between
+\nu and \nu+d\nu:
+
+#+begin_latex
+\begin{equation}
+I_{\nu} \equiv \frac{dI}{d\nu} = \frac{E_{\nu}}{d\nu dt dA d\Omega} \mathbb{n} \ \ ,
+\end{equation}
+#+end_latex
+
+which has the dimensions of [E]/([L^{2}][t][\nu][solid angle]). This would
+be constant as photons propagate along a path of length ds along the
+direction $\mathbb{n}$, however there can be processes that add
+photons:
+- scattering from another direction onto the direction of
+interest,
+- emission processes,
+and process that can remove photons:
+- scattering from the direction of propagation onto another direction
+- absorption processes.
+Moreover, I_{\nu} itself may in general be time dependent (although this
+is not the case for stellar atmosphere), so we can write down the
+equation of radiative transfer as
+
+#+begin_latex
+\begin{equation}
+\frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \mathbb{n}\cdot\nabla I_{\nu} = -\kappa_{\nu}\rho I_{\nu} + j_{\nu}\rho \ \ ,
+\end{equation}
+#+end_latex
+
+where the l.h.s. expresses the total change in specific intensity
+along the direction $\mathbb{n}$ due to the intrinsic time-dependence (\partial_{t})
+of I_{\nu} and the spatial dependence along the direction we are
+considering ($\mathbb{n}\cdot\nabla$), and the r.h.s. expresses the loss of
+radiation intensity due to scattering /and/ absorption processes, which
+depends on \kappa_{\nu} (the specific opacity we have already encountered) and
+is proportional to I_{\nu} itself (you can't lose photons you don't
+have!), and the addition of radiation intensity from emission
+processes and scattering along the line of sight which depends on the
+emission coefficient j_{\nu}.
+
+*N.B.:* dimensional analysis reveals that each side has the units of
+[I_{\nu}]/[L], this equation describes how the intensity changes along
+its path. The fact that photons propagate at the speed of light c make
+the leftmost factor of 1/c appear. The density \rho on the l.h.s.
+expresses that the more matter there is (per unit volume), the more
+likely there will be absorption and emission.
+
+The specific intensity at the bottom of the atmosphere is related to
+the photospheric emission by:
+
+#+begin_latex
+\begin{equation}
+F = \int_{0}^{+\infty} d\nu F_{\nu} =  \int_{0}^{+\infty} d\nu \int d \Omega \cos(\theta) I_{\nu} \ \ ,
+\end{equation}
+#+end_latex
+
+that is the black body flux F is obtained by integrating the specific
+intensity over the solid angles. Note the factor cos(\theta) that arises
+because I_{\nu} is a vector and we only want the component normal to the
+surface element dA.
+
+
+
 * TODO in construction
 Let's also assume that LTE still holds, therefore, the rate at which
 atoms are ionized I matches the rate at which there are recombinations

@@ -3,8 +3,8 @@
 #+email: mrenzo@arizona.edu
 
 * Neutrino physics in stars
-*Materials:* Sec. 6.5 and 12.3.1 of Onno Pols' notes, Kippenhahn chapter
-9 and 10
+*Materials:*  Onno Pols' notes Sec. 6.5 and 12.3.1, Chapter 7, Kippenhahn chapter
+9, 10, 11
 
 We have almost seen all the pieces needed to make a one-dimensional
 hydrostatic model of a star, including the input physics in the
@@ -13,7 +13,6 @@ the last input quantities entering in the energy conservation which
 connects stellar physics with neutrino physics: \varepsilon_{\nu.}
 
 ** Summary of equations we have derived
-
 *** Mass conservation
 #+begin_latex
 \begin{equation}\label{eq:mass_cont}
@@ -685,10 +684,10 @@ Below is an (incomplete, biased) list of some of these codes.
 
 ** Semi-analytic approach to population synthesis
 
- - BSE: the forefather of many (*N.B.:* not /all/ rapid population synthesis codes)
+ - BSE: the forefather of many, see [[https://ui.adsabs.harvard.edu/abs/2002MNRAS.329..897H/abstract][Hurley 2002]] and references therein (*N.B.:* not /all/ rapid population synthesis codes)
  - [[https://cosmic-popsynth.github.io/][COSMIC]]: Open source and open development, =pip= installable
  - [[https://compas.science/][COMPAS]]: Open source
- - [[https://binary_c.gitlab.io/][binary\_c]]: Open source, python front-end available, can be [[https://r-izzard.surrey.ac.uk/cgi-bin/binary5.cgi][run on online]] (similar to =MESA-web=)
+ - [[https://binary_c.gitlab.io/][=binary_c=]]: Open source, python front-end available, can be [[https://r-izzard.surrey.ac.uk/cgi-bin/binary5.cgi][run on online]] (similar to =MESA-web=)
  - ...
 
 ** Pre-computed and tabulated codes
