@@ -200,7 +200,10 @@ The simplest stellar atmosphere model that allows to define
 non-trivial outer boundary conditions is the so called "Eddington gray
 atmosphere", which provides an analytic T(\tau) relation in the
 atmosphere that can be smoothly attached to the stellar interior where
-T \equiv T_{eff}.
+T \equiv T_{eff} and used to calculate the pressure needed at such boundary to
+have hydrostatic equilibrium. In other words, the Eddington gray
+atmosphere allows one to define the outer boundary conditions for the
+stellar interior problem.
 
 Let's start with the assumption of a /plane parallel atmosphere/, that
 is we neglect the /curvature/ of the stellar atmosphere, which is
@@ -212,11 +215,11 @@ and rewrite the steady state (\partial_{t} = 0) radiative transfer equation as:
 
 #+begin_latex
 \begin{equation}
-\cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = - (S_{\nu}-I_{\nu}_{}) \Leftrightarrow \ \ .
+\cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = - (S_{\nu}-I_{\nu}) \ \ .
 \end{equation}
 #+end_latex
 
-*N.B.:* There is a minus sign in the definition of d\tau_{\nu}
+*N.B.:* There is a minus sign in the definition of d\tau_{\nu}.
 
 The second approximation of the Eddington atmosphere is that we assume
 a "gray" radiative transfer, meaning the opacity is /independent of
