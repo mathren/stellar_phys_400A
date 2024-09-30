@@ -293,7 +293,6 @@ into dramatic consequences, similar to the famous "butterfly effect"
 (which was also theorized from numerical computations, but of
 atmospheric physics, by [[https://en.wikipedia.org/wiki/Edward_Norton_Lorenz][E. Lorenz]]).
 
-
 ** Why did we limit ourselves to spherical symmetry?
 Throughout the course so far we have explicitly assumed spherical
 symmetry, although since the beginning we have discussed some
@@ -482,7 +481,7 @@ P\equiv P(\rho,\mu,T)  \Leftrightarrow  P\equiv P(\rho,\mu,T)
 \frac{dX_i}{dt}\bigg|_{r} = \left[ \sum\limits_j \mathcal{P}_{j,i}(T,\rho)
     -\sum\limits_k \mathcal{D}_{i,k}(T,\rho)\right] + \left( D_i
     \nabla^2X_i\phantom{\bigg|} \right)\\
-\Leftrightarrow \\
+\Updownarrow \\
    X_{i,k}(t_n+\Delta t_{n+1}) = X_{i,k}(t_n) + \Delta
     t_{n+1}\left(\frac{dX_{i,k}}{dt}\right)_\mathrm{nuc} +
     \frac{\left(X_{i,k}-X_{i,k-1} \right)D_{k}\Delta t_{n+1}}{0.5(dm_{k-1} - dm_k)}
@@ -627,7 +626,6 @@ and overall improved the state of this field.
 validate results. The exponential growth of the community of users of
 the MESA code has almost become a problem by quenching the use of
 other codes in this problem space!
-
 
 ** Summary
  1. take a star, which is a complex multi-scale, multi-physics,
