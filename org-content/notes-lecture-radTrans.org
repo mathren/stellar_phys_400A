@@ -256,7 +256,7 @@ cos(\theta) (since \theta always appears in a cosine, it is usual to change
 variable to cos(\theta)=\mu in radiative transfer calculations):
 
 #+begin_latex
-\begin{equation}\label{eq:eq:momenta_rad}
+\begin{equation}\label{eq:momenta_rad}
 u \equiv u(\tau) = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
 F \equiv F(\tau) = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
 P \equiv P(\tau) = \frac{2\pi}{c}\int_{-1}^{1} I(\tau, \theta)\cos^{2}(\theta)d\cos(\theta) \ \ .
@@ -295,7 +295,7 @@ radiation energy density u). Putting all these findings together:
 
 #+begin_latex
 \begin{equation}
-S = J = \frac{3 P c}{4\pi} = {3F\tau}{4\pi} + \mathrm{constant} \ \ ,
+S = J = \frac{3 P c}{4\pi} = \frac{3F\tau}{4\pi} + \mathrm{constant} \ \ ,
 \end{equation}
 #+end_latex
 that is we have an expression for the source function assuming:
