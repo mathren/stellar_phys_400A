@@ -3,6 +3,9 @@
 #+email: mrenzo@arizona.edu
 
 * Stellar atmospheres
+*Materials:* Mihalas Stellar atmospheres, Chapter 3.
+
+
 
 So far in this course we have mostly dealt with the /interior/ of stars
 and derived equation to determine the stellar /structure/ and what
@@ -231,7 +234,7 @@ these hypotheses we can now integrate this in d\nu from 0 to +\infty and
 obtain:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:gray_eq}
 \cos(\theta) \frac{dI}{d\tau} = -(S-I) \ \ ,
 \end{equation}
 #+end_latex
@@ -253,15 +256,64 @@ cos(\theta) (since \theta always appears in a cosine, it is usual to change
 variable to cos(\theta)=\mu in radiative transfer calculations):
 
 #+begin_latex
-\begin{equation}
-u = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
-F = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
-P = \frac{2\pi}{c}\int_{-1}^{1} I(\tau, \theta)\cos^{2}(\theta)d\cos(\theta) \ \ .
+\begin{equation}\label{eq:eq:momenta_rad}
+u \equiv u(\tau) = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
+F \equiv F(\tau) = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
+P \equiv P(\tau) = \frac{2\pi}{c}\int_{-1}^{1} I(\tau, \theta)\cos^{2}(\theta)d\cos(\theta) \ \ .
 \end{equation}
 #+end_latex
 
-We can also define the average specific intensity as J = 0.5\int_{-1}^{+1}
-Idcos(\theta), and rewrite the
+We can also define the average specific intensity as J(\tau) = 0.5\int_{-1}^{+1}
+I(\tau)dcos(\theta), so that J=c u/4\pi. and dividing Eq. \ref{eq:gray_eq} by two and integrating
+between -1 and 1 in cos(\theta) we have
+
+#+begin_latex
+\begin{equation}
+\frac{1}{4\pi}\frac{d F}{d\tau} = J-S \ \ .
+\end{equation}
+#+end_latex
+
+Now the total radiative gray flux in the atmosphere has to be
+constant, dF/d\tau = 0: there is radiative equilibrium and what goes in
+must come out! So this equations tells us J=S.
+
+We can also take Eq. \ref{eq:gray_eq} and multiply it by cos^{2}(\theta)
+and integrate between -1 and 1 in cos(\theta) to obtain:
+
+#+begin_latex
+\begin{equation}
+\frac{dP}{d\tau} = \frac{F}{c} \ \ .
+\end{equation}
+#+end_latex
+
+The r.h.s. is constant, so this can be integrated to give P = F\tau/c +
+constant. One more hypothesis of the Eddington approximation is to
+/assume/ that the gas is radiation pressure dominated (this was to allow
+him to proceed further): then we also know from thermodynamics that
+P=u/3 \equiv 4\pi J/3c (using the definition of J and its relation with the
+radiation energy density u). Putting all these findings together:
+
+#+begin_latex
+\begin{equation}
+S = J = \frac{3 P c}{4\pi} = {3F\tau}{4\pi} + \mathrm{constant} \ \ ,
+\end{equation}
+#+end_latex
+that is we have an expression for the source function assuming:
+1. plane parallel
+2. gray (i.e., independent on frequency \nu)
+3. radiation dominated atmosphere.
+
+Substituting for S in the solution for I we get:
+#+begin_latex
+\begin{equation}
+I(\tau, \cos(\theta)) = \frac{3F}{4\pi}\frac{\exp(\tau/cos(\theta))}{cos(\theta)}\int_{\tau}^{+\infty} \left(\tau+\mathrm{constant}\right) \exp\left(-\frac{\tau}{\cos(\theta)}\right)d\tau \Rightarrow I(0,\cos(\theta)) = \frac{3F}{4\pi}(cos(\theta)+\mathrm{constant}) \ \ .
+\end{equation}
+#+end_latex
+
+To determine the constant of integration, we can use the second
+Eq. \ref{eq:momenta_rad} which defines F using the solution for
+I(\tau,cos(\theta)) in the integral,
+
 
 *N.B.:* While Eddington atmosphere are the simplest non-trivial case, it
 is still on approximations which can (and sometimes are) relaxed in
