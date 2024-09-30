@@ -98,7 +98,7 @@ around the direction $\mathbb{n}$ with frequency in the range between
 
 #+begin_latex
 \begin{equation}
-I_{\nu} \equiv \frac{dI}{d\nu} = \frac{E_{\nu}}{d\nu dt dA d\Omega} \mathbb{n} \ \ ,
+I_{\nu} \equiv I_{\nu}(\theta) = \frac{dI}{d\nu} = \frac{E_{\nu}}{d\nu dt dA d\Omega} \mathbb{n} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -153,7 +153,7 @@ intensity over the solid angles. Note the factor cos(\theta) that arises
 because I_{\nu} is a vector and we only want the component normal to the
 surface element dA.
 
-** Simple solutions of the radiative transfer equation
+** Simple solutions of the steady state radiative transfer equation
 
 *** Steady state without emission
 
@@ -179,7 +179,7 @@ With the definition of d\tau_{\nu}, we can re-write Eq. \eq{eq:radTrans}
 (still assuming no explicit time dependence, \partial_{t}I_{\nu} = 0) as:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:rad_trans_tau}
 \frac{dI_{\nu}}{d\tau_{\nu}} = \frac{j_{\nu}}{\kappa_{\nu}} - I_{\nu} \equiv S_{\nu} - I_{\nu} \ \ ,
 \end{equation}
 #+end_latex
@@ -195,6 +195,46 @@ emission processes, the absorption processes, and scattering in and
 out of the direction of interest all cancel each other out.
 
 ** Eddington atmosphere
+
+The simplest stellar atmosphere model that allows to define
+non-trivial outer boundary conditions is the so called "Eddington gray
+atmosphere", which provides an analytic T(\tau) relation in the
+atmosphere that can be smoothly attached to the stellar interior where
+T \equiv T_{eff}.
+
+Let's start with the assumption of a /plane parallel atmosphere/, that
+is we neglect the /curvature/ of the stellar atmosphere, which is
+acceptable if its radius is much larger than the length scale of
+interest at any point in it. This assumption reduces the problem to a
+one-dimensional problem along the vertical direction, and ds =
+dz/cos(\theta) for the element of length along a generic photon path ds.
+
+The second approximation of the Eddington atmosphere is that we assume
+a "gray" radiative transfer, meaning the opacity is /independent of
+frequency/ \kappa_{\nu}\rightarrow\kappa. With these two hypothesis (plane
+parallel and gray atmosphere) we can rewrite \tau_{\nu}\rightarrow\tau and
+
+#+begin_latex
+\begin{equation}
+\cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = (S_{\nu}-I_{\nu}_{}) \Leftrightarrow \ \ .
+\end{equation}
+#+end_latex
+
+With the second hypothesis of a gray atmosphere, we can now integrate
+this in d\nu from 0 to +\infty and obtain:
+
+#+begin_latex
+\begin{equation}
+\cos(\theta) \frac{dI}{dz} = -\kappa\rho(S-I) \ \ ,
+\end{equation}
+#+end_latex
+
+
+
+
+*N.B.:* While Eddington atmosphere are the simplest non-trivial case, it
+is still on approximations which can (and sometimes are) relaxed in
+stellar evolution modeling.
 
 
 
