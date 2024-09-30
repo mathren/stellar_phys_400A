@@ -207,30 +207,56 @@ is we neglect the /curvature/ of the stellar atmosphere, which is
 acceptable if its radius is much larger than the length scale of
 interest at any point in it. This assumption reduces the problem to a
 one-dimensional problem along the vertical direction, and ds =
-dz/cos(\theta) for the element of length along a generic photon path ds.
+dz/cos(\theta) for the element of length along a generic photon path ds,
+and rewrite the steady state (\partial_{t} = 0) radiative transfer equation as:
+
+#+begin_latex
+\begin{equation}
+\cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = - (S_{\nu}-I_{\nu}_{}) \Leftrightarrow \ \ .
+\end{equation}
+#+end_latex
+
+*N.B.:* There is a minus sign in the definition of d\tau_{\nu}
 
 The second approximation of the Eddington atmosphere is that we assume
 a "gray" radiative transfer, meaning the opacity is /independent of
-frequency/ \kappa_{\nu}\rightarrow\kappa. With these two hypothesis (plane
-parallel and gray atmosphere) we can rewrite \tau_{\nu}\rightarrow\tau and
+frequency/ \kappa_{\nu}\rightarrow\kappa, thus \tau_{\nu}\rightarrow\tau. We
+also neglect the frequency dependence of the source term S_{\nu}. With
+these hypotheses we can now integrate this in d\nu from 0 to +\infty and
+obtain:
 
 #+begin_latex
 \begin{equation}
-\cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = (S_{\nu}-I_{\nu}_{}) \Leftrightarrow \ \ .
+\cos(\theta) \frac{dI}{d\tau} = -(S-I) \ \ ,
 \end{equation}
 #+end_latex
-
-With the second hypothesis of a gray atmosphere, we can now integrate
-this in d\nu from 0 to +\infty and obtain:
+which can be solved analytically (multiply by e^{-\tau/cos(\theta)},
+rewrite the r.h.s. as a total derivative and integrate in d\tau) getting
 
 #+begin_latex
 \begin{equation}
-\cos(\theta) \frac{dI}{dz} = -\kappa\rho(S-I) \ \ ,
+I(\tau,\theta) = \frac{\exp(\tau/\cos(\theta))}{\cos(\theta)} \int_{\tau}^{+\infty} S\exp(-\tau/\cos(\theta))d\tau \ \ ,
+\end{equation}
+#+end_latex
+where the r.h.s. is integrated from a certain optical depth \tau
+outwards. We can recover the \nu dependence of S as an optical depth
+dependence in this integral.
+
+We can also define the radiation energy density u, the total flux F,
+and the radiation pressure as moments of the intensity I(\tau,\theta) w.r.t.
+cos(\theta) (since \theta always appears in a cosine, it is usual to change
+variable to cos(\theta)=\mu in radiative transfer calculations):
+
+#+begin_latex
+\begin{equation}
+u = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
+F = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
+P = \frac{2\pi}{c}\int_{-1}^{1} I(\tau, \theta)\cos^{2}(\theta)d\cos(\theta) \ \ .
 \end{equation}
 #+end_latex
 
-
-
+We can also define the average specific intensity as J = 0.5\int_{-1}^{+1}
+Idcos(\theta), and rewrite the
 
 *N.B.:* While Eddington atmosphere are the simplest non-trivial case, it
 is still on approximations which can (and sometimes are) relaxed in
@@ -240,6 +266,7 @@ stellar evolution modeling.
 
 * Spectral line formation
 
+** Saha equation
 
 Let's also assume that LTE still holds, therefore, the rate at which
 atoms are ionized I matches the rate at which there are recombinations
@@ -289,5 +316,3 @@ particles:
 
 *** Pressure broadening
 (e.g., magnetic splitting unresolved)
-
-***
