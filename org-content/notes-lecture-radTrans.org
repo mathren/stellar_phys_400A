@@ -47,13 +47,15 @@ move in all direction!
 
 This means that /by definition/ the stellar atmosphere is /not/ a black
 body, and it is /partially/ transparent to photons (resulting in a
-positive radial component of the photon flux).
+positive radial component of the photon flux). We /cannot/ use the
+diffusion approximation to treat radiative transport here, since the
+mean free path of photons \ell_{\gamma} are becoming comparable to the
+thickness of the atmosphere (\rho decreases moving outward!).
 
 To make models of stellar /spectra/ and determine the outer boundary
-conditions we need to consider how radiation from the bottom of the
-star flows through this atmospheric layer and consequently how this
-layer stratifies, determining the outer boundary pressure and
-temperature.
+conditions we need to consider how radiation from the bottom flows
+through the atmospheric layer and consequently how this layer
+stratifies, determining the outer boundary pressure and temperature.
 
 *N.B.:* real stars are even more complicated: in the photosphere
 radiative and (magneto)-hydrodynamical processes can launch stellar
@@ -63,7 +65,8 @@ material with the interstellar material!
 By definition, the bottom layer of the atmosphere is the /photosphere/,
 that is this fictional surface that has T_{eff} such that a black body of
 this temperature would emits the same energy per unit time as the star
-does.
+does. This is /by definition/ from where the bulk of the stellar
+radiation comes from (recall the [[file:notes-lecture-CMD-HRD.org::*Digression: Spectral types and the letters OBAFGKM(LTY)][discussion on spectral types!]]).
 
 *N.B.:* dL/dm = \varepsilon_{nuc} - \varepsilon_{\nu} + \varepsilon_{grav} \equiv 0 in the outer
 layers of the star where T is not high enough for nuclear burning, \rho
@@ -113,7 +116,7 @@ is not the case for stellar atmosphere), so we can write down the
 equation of radiative transfer as
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:radTrans}
 \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \mathbb{n}\cdot\nabla I_{\nu} = -\kappa_{\nu}\rho I_{\nu} + j_{\nu}\rho \ \ ,
 \end{equation}
 #+end_latex
@@ -150,6 +153,10 @@ intensity over the solid angles. Note the factor cos(\theta) that arises
 because I_{\nu} is a vector and we only want the component normal to the
 surface element dA.
 
+** Simple solutions of the radiative transfer equation
+
+*** Steady state without emission
+
 In absence of an explicit time dependence (\partial_{t} I_{\nu} =0) and emission
 processes (j_{\nu}=0), this equation is easily solved calling s the
 length element along the direction $\mathbb{n}$ so that $\mathbb{n}\cdot\nabla
@@ -157,16 +164,43 @@ length element along the direction $\mathbb{n}$ so that $\mathbb{n}\cdot\nabla
 
 #+begin_latex
 \begin{equation}
-I_{\nu} = I_{\nu,0} e^{-\kappa_{nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
+I_{\nu} = I_{\nu,0} e^{-\kappa_{\nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
 \end{equation}
 #+end_latex
-where we introduce the definition of specific optical depth d\tau =
--\kappa_{\nu}\rho ds.
+where we introduce the definition of specific optical depth d\tau_{\nu} =
+-\kappa_{\nu}\rho ds. This variable is useful because it gives the
+scale-length of the problem as depending on \kappa_{\nu}\rho =
+1/\ell_{\gamma,\nu} with \ell_{\gamma,\nu} the mean free path for a photon of
+frequency between \nu and \nu+d\nu.
+
+*** Steady state with emission and absorption canceling each other
+
+With the definition of d\tau_{\nu}, we can re-write Eq. \eq{eq:radTrans}
+(still assuming no explicit time dependence, \partial_{t}I_{\nu} = 0) as:
+
+#+begin_latex
+\begin{equation}
+\frac{dI_{\nu}}{d\tau_{\nu}} = \frac{j_{\nu}}{\kappa_{\nu}} - I_{\nu} \equiv S_{\nu} - I_{\nu} \ \ ,
+\end{equation}
+#+end_latex
+
+where in the last step we define the source function S_{\nu}_{}. In thermal
+equilibrium and at high optical depth, for instance in the interior
+region of a star, dI_{\nu}/d\tau_{\nu}=0 and I_{\nu} = B(\nu,T) is the black
+body function for the intensity, and this equation states S_{\nu} = I_{\nu}
+\equiv B(\nu, T).
+
+This effectively is a statement that at thermal equilibrium, the
+emission processes, the absorption processes, and scattering in and
+out of the direction of interest all cancel each other out.
+
+** Eddington atmosphere
 
 
 
+* Spectral line formation
 
-* TODO in construction
+
 Let's also assume that LTE still holds, therefore, the rate at which
 atoms are ionized I matches the rate at which there are recombinations
 R (principle of detailed balance). Therefore:
@@ -207,3 +241,13 @@ particles:
 :Question:
 - *Q*: can there be a star of pure H astrophysically?
 :end:
+
+
+** Broadening mechanisms
+
+*** Rotational broadening
+
+*** Pressure broadening
+(e.g., magnetic splitting unresolved)
+
+***
