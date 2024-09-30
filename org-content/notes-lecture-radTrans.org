@@ -281,7 +281,7 @@ We can also take Eq. \ref{eq:gray_eq} and multiply it by cos^{2}(\theta)
 and integrate between -1 and 1 in cos(\theta) to obtain:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:sol_S}
 \frac{dP}{d\tau} = \frac{F}{c} \ \ .
 \end{equation}
 #+end_latex
@@ -295,7 +295,7 @@ radiation energy density u). Putting all these findings together:
 
 #+begin_latex
 \begin{equation}
-S = J = \frac{3 P c}{4\pi} = \frac{3F\tau}{4\pi} + \mathrm{constant} \ \ ,
+S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right) \ \ ,
 \end{equation}
 #+end_latex
 that is we have an expression for the source function assuming:
@@ -316,7 +316,7 @@ I(\tau=0,cos(\theta)) in the integral:
 
 #+begin_latex
 \begin{equation}
-F = 2\pi\int_{0}^{1}T\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{0}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(theta)\right)d\cos(\theta) = \frac{3F}{4\pi}(\cos(\theta)+\mathrm{constant}) \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
+F = 2\pi\int_{0}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{0}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2}) \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
 \end{equation}
 #+end_latex
 With this specification of the constant that we obtained imposing the
@@ -327,7 +327,17 @@ completely specified the source function S \equiv S(\tau) and we can obtain I\eq
 I(\tau) and use it to calculate the pressure!
 
 *** Temperature solution
-From
+From Eq. \ref{eq:sol_S} we now have:
+
+#+begin_latex
+\begin{equation}
+J = S =  \frac{3F}{4\pi}\left(\tau+\frac{2}{3}\right)  \ \ ,
+\end{equation}
+#+end_latex
+but by definition of the mean intensity J, using the expression for
+I(\tau, cos(\theta)) we have:
+
+
 
 
 *N.B.:* While Eddington atmosphere are the simplest non-trivial case, it
