@@ -171,11 +171,13 @@ where we introduce the definition of specific optical depth d\tau_{\nu} =
 -\kappa_{\nu}\rho ds. This variable is useful because it gives the
 scale-length of the problem as depending on \kappa_{\nu}\rho =
 1/\ell_{\gamma,\nu} with \ell_{\gamma,\nu} the mean free path for a photon of
+frequency between \nu and \nu+d\nu. Effectively, this allows us to use \tau_{\nu}
+as the independent coordinate for the propagation of photons of
 frequency between \nu and \nu+d\nu.
 
 *** Steady state with emission and absorption canceling each other
 
-With the definition of d\tau_{\nu}, we can re-write Eq. \eq{eq:radTrans}
+With the definition of d\tau_{\nu}, we can re-write Eq. \ref{eq:radTrans}
 (still assuming no explicit time dependence, \partial_{t}I_{\nu} = 0) as:
 
 #+begin_latex
@@ -234,7 +236,7 @@ obtain:
 \end{equation}
 #+end_latex
 which can be solved analytically (multiply by e^{-\tau/cos(\theta)},
-rewrite the r.h.s. as a total derivative and integrate in d\tau) getting
+rewrite the l.h.s. as a total derivative and integrate in d\tau) getting
 
 #+begin_latex
 \begin{equation}
