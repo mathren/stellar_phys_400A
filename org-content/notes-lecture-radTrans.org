@@ -103,8 +103,7 @@ which has the dimensions of [E]/([L^{2}][t][\nu][solid angle]). This would
 be constant as photons propagate along a path of length ds along the
 direction $\mathbb{n}$, however there can be processes that add
 photons:
-- scattering from another direction onto the direction of
-interest,
+- scattering from another direction onto the direction of interest,
 - emission processes,
 and process that can remove photons:
 - scattering from the direction of propagation onto another direction
@@ -142,7 +141,7 @@ the photospheric emission by:
 
 #+begin_latex
 \begin{equation}
-F = \int_{0}^{+\infty} d\nu F_{\nu} =  \int_{0}^{+\infty} d\nu \int d \Omega \cos(\theta) I_{\nu} \ \ ,
+F \equiv \int_{0}^{+\infty} d\nu F_{\nu} \equiv \sigma T_\mathrm{eff}^{4} =  \int_{0}^{+\infty} d\nu \int d \Omega \cos(\theta) I_{\nu} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -150,6 +149,20 @@ that is the black body flux F is obtained by integrating the specific
 intensity over the solid angles. Note the factor cos(\theta) that arises
 because I_{\nu} is a vector and we only want the component normal to the
 surface element dA.
+
+In absence of an explicit time dependence (\partial_{t} I_{\nu} =0) and emission
+processes (j_{\nu}=0), this equation is easily solved calling s the
+length element along the direction $\mathbb{n}$ so that $\mathbb{n}\cdot\nabla
+\equiv d/ds$, and the solution becomes:
+
+#+begin_latex
+\begin{equation}
+I_{\nu} = I_{\nu,0} e^{-\kappa_{nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
+\end{equation}
+#+end_latex
+where we introduce the definition of specific optical depth d\tau =
+-\kappa_{\nu}\rho ds.
+
 
 
 
