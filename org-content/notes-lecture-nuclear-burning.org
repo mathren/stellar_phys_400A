@@ -408,9 +408,8 @@ Example:
 
 All of the types of reactions listed above (and more) can occur at
 some point in the evolution (and explosion!) of stars. For example,
-hen estimating the rest energy of protons that is released when fusing
-them into \alpha particles, we have seen that the overall reaction is:
-
+during hydrogen core burning (which we have used to estimate \phi and
+thus \tau_{nuc}) the star burns 4 protons into \alpha particles:
 #+begin_latex
 \begin{equation}\label{eq:overall_h_burn}
 4p \rightarrow ^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ ,
