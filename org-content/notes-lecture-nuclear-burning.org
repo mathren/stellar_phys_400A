@@ -212,7 +212,7 @@ bound configuration and extract binding energy as heat source.
 Therefore, it is useful to consider the nuclear binding energy per
 nucleon of all nuclei in the periodic table:
 
-#+CAPTION: Nuclear binding energy per nucleon as a function of atomic mass A. From [[https://etd.adm.unipi.it/theses/available/etd-05062015-125630/unrestricted/Thesis_colored_10052015.pdf][Renzo 2015]]
+#+CAPTION: Nuclear binding energy per nucleon as a function of atomic mass A. From [[https://etd.adm.unipi.it/theses/available/etd-05062015-125630/unrestricted/Thesis_colored_10052015.pdf][Renzo 2015]].
 #+ATTR_HTML: :width 100%
 [[./images/nuclear_binding.png]]
 
@@ -225,36 +225,36 @@ nuclear (strong) interactions needs to explain:
   energy per nucleon of \sim 7.5MeV/nucleon;
 - there are peaks for nuclei with A divisible by 4 and N=Z, that is
   nuclei that can be approximately thought as bound collections of \alpha
-  particles (for example carbon 12 \sim 3 \alpha particles bound together,
-  oxygen 16 ~4 \alpha particles, etc..);
+  particles (for example $^{12}\mathr{C}$ \sim 3 \alpha particles bound together,
+  $^{16}\mathrm{O}$ \sim4 \alpha particles, etc..);
 - the nuclear binding energy is roughly constant at about \sim
   8MeV/nucleon for most heavy nuclei;
+- the slight drop in B/A after the maximum is caused by the
+  Coulomb repulsion between the protons in heavy nuclei, and this is
+  why those nuclei require a higher number of neutrons than protons to
+  hold together, N>Z.
 - there is a local /maximum/ of the binding energy per nucleon at the
-  iron group, around iron 56/nickel 62.
+  iron group, around $^{56}\mathr{Fe}$/$^{62}\mathrm{Ni}$.
 
-
-*N.B.:* The slight drop in B/A after the maximum is caused by the
-Coulomb repulsion between the protons in heavy nuclei, and this is why
-those nuclei require a higher number of neutrons than protons to hold
-together, N>Z.
-
-The last fact implies that there cannot be energy release from the
-/fusion/ of nuclei heavier than iron: indeed those heavy nuclei are
-typically fuel for nuclear fission reactors, where energy is extracted
-breaking them apart. Stars, which do nuclear burning to /release/ energy
-and balance the losses at the surface, have no interest in producing
-element heavier than iron during their stable/hydrostatic lifetime.
-The question of the formation of elements heavier than iron (which
-clearly exist!) is something that is actively worked on and requires
-out-of-equilibrium processes that can only occur in the presence of a
-neutron rich environment (e.g., AGB stellar winds, neutron stars
-interacting with something else, etc.). We may have a guest lecture on
-this later on, and there are projects related to these.
+The presence of a maximum implies that there cannot be energy release
+from the /fusion/ of nuclei heavier than iron: indeed those heavy nuclei
+are typically fuel for nuclear fission reactors, where energy is
+extracted breaking them apart. Stars, which do nuclear burning to
+/release/ energy and balance the losses at the surface, have no interest
+in producing element heavier than iron during their stable/hydrostatic
+lifetime. The question of the formation of elements heavier than iron
+(which clearly exist!) is something that is actively worked on and
+requires out-of-equilibrium processes that can only occur in the
+presence of a neutron rich environment (e.g., AGB stellar winds,
+neutron stars interacting with something else, etc.). We may have a
+guest lecture on this later on, and there are projects related to
+these.
 
 Conversely, moving leftward on this chart, by fusing together light
-nuclei, stars can release gravitational binding energy and sustain
-themselves. This is also great since stars are mostly made of H and
-He, so they have a lot of light elements available as energy sources.
+nuclei, stars can release nuclear binding energy and sustain
+themselves. This is also convenient since stars are mostly made of H
+and He, so they have a lot of light elements available as energy
+sources.
 
 The change in binding energy per nucleon \Delta(B/A) is what powers stars,
 and we can write the binding energy as the difference between the sum
@@ -283,10 +283,11 @@ then the curve rapidly flattens, we know that the rate at which nuclei
 are converted to achieve the equilibrium condition L_{nuc} = L will be
 slower when H is converted into He, and then it will need to rapidly
 speed up when He is converted in carbon and onwards (because the
-energy release per nucleon significantly drops).
+energy release per nucleon significantly drops lowering the factor \phi
+in \tau_{nuc}).
 
 In the very late evolutionary phases (post helium burning), the
-required burning rate may become so high that L_{nuc} becomes shorter
+required burning rate may become so high that \tau_{nuc} becomes shorter
 than the /global/ thermal timescale (but luckily not of the /local/
 thermal timescale, so all the equations we have derived so far still
 hold, since they are differential equations that describe /local/
@@ -302,10 +303,10 @@ mass difference between the reagents and the products:
 Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A}\right)c^{2}  \ \ ,
 \end{equation}
 #+end_latex
-which, if Q>0 is the energy /released/ by the /exoenergetic/ X(a,b)Y
-reaction - of the kind that stars need to generate energy and sustain
-themselves against gravity, or if Q<0 is the energy input needed to get the
-/endoenergetic/ X(a,b)Y reaction going.
+which, if Q>0 is the energy /released/ by the reaction which is thus
+/exoenergetic/ - of the kind that stars need to generate energy
+and sustain themselves against gravity, or if Q<0 is the energy input
+needed to get the /endoenergetic/ reaction going.
 
 *N.B.:* In exoenergetic nuclear reactions, the energy release comes from
 the /mass defect/, caused by the increase in binding energy per nucleon:
@@ -342,9 +343,8 @@ reactions.
 
 *** Charged-particles reactions
 When X and a are charged nuclei, then the reaction can only occur if
-something allows them to overcome the Coulomb repulsion.
-
-These can be resonant or not (the distinction will come back later).
+something allows them to overcome the Coulomb repulsion. These can be
+resonant or not (the distinction will come back later).
 
 Example:
 #+begin_latex
@@ -358,8 +358,10 @@ In this case the force involved is the strong force, and there is no
 Coulomb repulsion to overcome. However, these require an environment
 that is neutron rich, which is astrophysically a rare occurrence,
 since the neutron is an unstable particle that decays in \sim15min to
-a proton n\rightarrow p+e^{-}+anti-\nu_{e}. This half-life however can significantly
-change for neutrons bound in nuclei (as opposed to free neutrons).
+a proton n\rightarrow p+e^{-}+$\bar{\nu_{e}}$. This half-life however can significantly
+change for neutrons bound in nuclei as opposed to free neutrons, that
+is the \beta^{-} decay time of a neutron rich nucleus can be much longer than
+the half-life of a free neutron.
 
 Depending on the available flux of neutrons in the environment, we
 distinguish:
@@ -391,8 +393,8 @@ p+e^{-} \rightarrow n+\nu_{e} \ \mathrm{or} \ p(e^{-},\nu_{e})n
 When one of the particles is a photon and the outgoing particles can
 be seen as "fragments" of the ingoing nucleus. These can occur when
 very energetic \gamma ray photons, because their energy needs to be
-comparable to the binding energy of nuclei, of the order of ~8MeV, can
-encounter particles. This can occur for example at the very late
+comparable to the binding energy of nuclei, of the order of \sim8MeV \times A,
+can encounter particles. This can occur for example at the very late
 moments of massive star evolution.
 
 Example:
