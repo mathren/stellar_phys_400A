@@ -847,7 +847,7 @@ is going to peak:
 
 The product of an exponentially decreasing Maxwell-Boltzmann
 distribution \propto exp(-E) times the exponentially growing tunneling
-probability \propto exp(-1/E^{1/2}) will result in a very peak integrand, the
+probability \propto exp(-1/E^{1/2}) will result in a very peaked integrand, the
 so called Gamow peak: even without nuclear resonances making the cross
 section \sigma peak (because E is within the width of a metastable energy
 level), the nuclear reaction rate is still very peaked around a
@@ -872,7 +872,7 @@ E^{-1} and thus the heuristic expression above gives:
 \sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
 \end{equation}
 #+end_latex
-where S(E)_{} is the so called "astrophysical S-factor" that contains the
+where S(E) is the so called "astrophysical S-factor" that contains the
 intrinsic cross section that depends on the shape of the nuclear
 potential well, and thus the energy levels. This can be influenced
 strongly by nuclear resonances (when E \sim energy of a metastable state
@@ -966,13 +966,15 @@ only the /structure/ of stars but also their long-term /evolution/.
   composition and typical duration up to where your model evolved (or
   try fiddling with the settings!).
 
-  I have tried the following settings to get at least:
-  - Initial Mass: 20M_{\odot}
+  I have tried the following settings to get at least to an oxygen
+  composition in the core (so not till the very end, feel free to
+  explore different combinations!):
+  - Initial Mass: 15M_{\odot}
   - Burning Modifiers: =none=
   - Nuclear Reaction Network: =approx21= (this uses 21 isotopes)
   - Sampled Nuclear Reaction: =none=
   - Initial Metallicity: 0.02
-  - Mixing Length Alpha: 1.5
+  - Mixing Length Alpha: 2.0
   - Mixing Length Theory Implementation: =Cox= (this is a specific
     implementation of MLT)
   - Convective Overshoot f: 0.355
@@ -988,7 +990,7 @@ only the /structure/ of stars but also their long-term /evolution/.
   - Asymptotic Giant Branch Wind Scheme: =Dutch=
   - AGB Wind Scaling Factor: 0.8
   - Initial Rotational Value: 0.0 (omega_initial/omega_critical)
-  - Variance Control Target: =1e-4= (specifies the time resolution)
+  - Variance Control Target: =1e-2= (specifies the time resolution)
   - Mesh Delta Coefficient: =1.0= (specifies the mass resolution)
   - dX_nuc_drop_min_X_limit: 1e-1 (specifies the resolution in nuclear
     composition)
