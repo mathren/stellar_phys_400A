@@ -903,7 +903,7 @@ reactions j+k\rightarrow i+... that have i as an outgoing particle, minus the /d
 rate i+j\rightarrow something:
 
 #+begin_latex
-\begin{equation}\label{eq:eps_nuc}
+\begin{equation}
 \frac{dn_{i}}{dt} = \sum_{k,l} r_{k,l} - \sum_{i} (1+\delta_{ij})r_{ij} \ \,
 \end{equation}
 #+end_latex
@@ -915,7 +915,7 @@ the rates r_{ij} and r_{kl} we can rewrite this as a function of variables
 that already appear in our stellar structure equations:
 
 #+begin_latex
-\begin{equation}\label{eq:eps_nuc}
+\begin{equation}
 \frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}}\left(\sum_{k,l} r_{k,l} - \sum_{i} (1+\delta_{ij})r_{ij}\right) \equiv \frac{dX_{i}}{dt}(T,\rho, \{X_{j}\})\ \,
 \end{equation}
 #+end_latex
