@@ -298,11 +298,7 @@ radiation energy density u). Putting all these findings together:
 S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right) \ \ ,
 \end{equation}
 #+end_latex
-that is we have an expression for the source function assuming:
-1. plane parallel
-2. gray (i.e., independent on frequency \nu)
-3. radiation dominated atmosphere.
-
+that is we have an expression for the source function!
 Substituting for S in the solution for I we get:
 #+begin_latex
 \begin{equation}
@@ -316,7 +312,8 @@ I(\tau=0,cos(\theta)) in the integral:
 
 #+begin_latex
 \begin{equation}
-F = 2\pi\int_{0}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{0}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2}) \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
+F = 2\pi\int_{0}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{0}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2})\\
+ \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
 \end{equation}
 #+end_latex
 With this specification of the constant that we obtained imposing the
@@ -334,17 +331,58 @@ From Eq. \ref{eq:sol_S} we now have:
 J = S =  \frac{3F}{4\pi}\left(\tau+\frac{2}{3}\right)  \ \ ,
 \end{equation}
 #+end_latex
-but by definition of the mean intensity J, using the expression for
-I(\tau, cos(\theta)) we have:
+
+# The Eddington approximation further breaks down the intensity into two
+# components, one upwards I_{up} and one downwards I_{down} such that the
+# average intensity is J = (I_{up} + I_{down})/2. With this approximation,
+# from the integrals in Eq. \ref{eq:momenta_rad} we have: F
+# =\pi(I_{up}-I_{down}) and P =2\pi/(3c) \times (I_{up}-I_{down}), and thus a relation
+# between P and J. Putting all these together with the Stefan-Boltzmann
+# law F=\sigma T^{4} we get:
+
+but also, assuming that the atmosphere is also in LTE (including
+radiation!), J=S=B(\nu,T)=\sigma T^{4}/\pi, so using that F=\sigma T_{eff}^{4} we
+obtain:
+
+#+begin_latex
+\begin{equation}
+T^{4} = \frac{3}{4}T_\mathrm{eff}^{4}(\tau+\frac{2}{3}) \ \ ,
+\end{equation}
+#+end_latex
+
+which is the Eddington T(\tau) relation which connects the effective
+temperature of the black body to the outer temperature T(\tau) under the
+approximations for the atmosphere:
+1. plane parallel
+2. gray (i.e., independent on frequency \nu)
+3. radiation dominated
+4. Local thermal equilibrium.
 
 
+*N.B.:* In the stellar atmosphere, T is a steep function of \tau in this
+approximation!
+
+*N.B.:* in this approach the photosphere correspond to \tau=2/3, this
+factor comes from imposing T=T_{eff} in the radiation dominated, gray,
+plane parallel atmosphere. This number is a direct consequence of
+these specific approximations, and it makes sense that it is of order
+\sim1: the black body radiation from the stellar interior comes from the
+region where \tau goes from \le1 (where the optical depth is low and we
+cannot assume black body) to \tau\gg1 (where I_{\nu} = S_{\nu} and we have a
+black body function. Once again, it is important to remember that the
+photosphere is an idealization, and nothing that special occurs at
+\tau=2/3, it's just a convenient location where we can stitch the
+Eddington gray atmospheric model to the interior model.
 
 
 *N.B.:* While Eddington atmosphere are the simplest non-trivial case, it
 is still on approximations which can (and sometimes are) relaxed in
-stellar evolution modeling.
+stellar evolution modeling: this can move the outer boundary in \tau
+location too!
 
-
+*N.B.:* A "classic" generalization of this atmospheric model is the
+generic class of gray atmospheres where the constant of integration is
+/not/ a constant, but a function of \tau itself.
 
 * Spectral line formation
 
@@ -391,8 +429,9 @@ particles:
 - *Q*: can there be a star of pure H astrophysically?
 :end:
 
-
 ** Broadening mechanisms
+
+*** Intrinsic width of lines
 
 *** Rotational broadening
 

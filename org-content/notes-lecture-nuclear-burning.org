@@ -42,14 +42,14 @@ where \nabla =\partial log(T)/\partial log(P) is the local temperature gradient,
 the radiative gradient in stably stratified regions:
 #+begin_latex
 \begin{equation}
-\nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
+\nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{16\pi acGm T^{4}}\kappa L
 \end{equation}
 #+end_latex
 with \kappa = (1/\kappa_{rad} + 1/\kappa_{cond})^{-1} the combination "in parallel" of the
 radiative and conductive opacity (assumed to be known from atomic
 physics), and \nabla \equiv \nabla_{ad} the adiabatic gradient (within \sim10^{-7-8}
 precision) for convective regions. We also have a criterion
-(Schwarzschild criterion) to determine which region is which.
+(Schwarzschild or Ledoux) to determine which region is which.
 
 *** Energy conservation
 #+begin_latex
@@ -57,20 +57,23 @@ precision) for convective regions. We also have a criterion
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
 #+end_latex
-
-with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy, and \varepsilon_{\nu}>0.
+with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy (typically \simeq 0 in
+gravothermal equilibrium, that is for phases when the evolution is
+much slower than \tau_{KH}), and \varepsilon_{\nu}>0.
 
 ** The next step
 
 With all the equations above we almost have a complete set of solvable
 differential equations. What is left to discuss is the specific energy
-generation per unit time \varepsilon_{nuc} due to nuclear burning and the specific
-energy loss \varepsilon_{\nu} due to neutrino losses.
+generation per unit time \varepsilon_{nuc} due to nuclear burning (which will
+occupy us in this and [[./notes-lecture-nuclear-cycles.org][the next lecture]]) and the specific energy loss
+\varepsilon_{\nu} due to neutrino losses (which we will treat [[./notes-lecture-neutrinos.org][later]]).
 
-In doing so, we will introduce the only time-dependent equation: as
-nuclear burning proceeds, the chemical composition changes, on a
-timescale that we will see is extremely long compared to the thermal
-and dynamical timescales.
+In doing so, we will introduce another time-dependent equation
+(besides the implicit dependence in \varepsilon_{grav}): as nuclear burning
+proceeds, the chemical composition changes, on a timescale that we
+will see is extremely long compared to the thermal and dynamical
+timescales.
 
 ** Energy generation as a self-regulating process
 
@@ -79,14 +82,19 @@ first principle that stars have a "negative heat capacity" and obtain
 a scaling between mass, radius and average temperature:
 #+begin_latex
 \begin{equation}
-\langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
+\langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ ,
 \end{equation}
 #+end_latex
-As the star loses energy at the surface because of its luminosity L it
-must contract (lower its gravitational potential energy), leading to
-an increase in T. For the Sun this would go on for \sim 15 Myrs before it
-runs out of all of its internal energy, which is way too short a
-timescale to explain many Earthly observables.
+where C was a constant depending on the details of the mass
+distribution.
+
+The star has a finite temperature, thus it radiates away thermal
+energy at the surface in the form of a luminosity L. This means the
+gravitational potential energy is decreasing (because of the virial
+theorem!), thus it must contract leading to an increase in T. For the
+Sun this would go on for \sim 15 Myrs before it runs out of all of its
+internal energy, which is way too short a timescale to explain many
+Earthly observables.
 
 We know this must stop either because the ideal gas EOS does not work
 (QM effects \rightarrow degeneracy pressure \rightarrow white dwarfs), or because some
@@ -96,7 +104,15 @@ shine/.
 
 Initially, people considered chemical reactions and radioactivity as a
 possible energy sources, but it was shown very quickly that these are
-insufficient. It took major advances in quantum mechanics (QM) and
+insufficient.
+
+:Question:
+- *Q*: how would you show that these sources are insufficient? (*Hint*:
+  consider the \phi factor for the amount of mass released in the
+  equations below)
+:end:
+
+It took major advances in quantum mechanics (QM) and
 their application to atomic and nuclear theory to work out in the late
 1930s that the energy source is nuclear burning, a result obtained by
 [[https://en.wikipedia.org/wiki/Hans_Bethe][Hans Bethe]] and
@@ -145,7 +161,7 @@ with your =MESA-web= model!).
 \phi depends on the nuclear physics details. For hydrogen burning into
 helium (the two lightest elements), the proton mass is m_{p} = 1.0081 m_{u}
 (where the atomic mass unit m_{u} is defined in such a way that the mass
-of carbon 12 is exactly 12 - this is more convenient to measure
+of $^{12}\mathrm{C}$ is exactly 12m_{u} - this is more convenient to measure
 experimentally to make a standard), and the mass of helium 4 is m(^{4}He)
 = 4.0039m_{u}, so the fraction of rest mass of 4 protons turning into a
 helium nucleus is:
