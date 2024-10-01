@@ -300,7 +300,7 @@ mass difference between the reagents and the products:
 
 #+begin_latex
 \begin{equation}
-Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A}\right)c^{2}  \ \ ,
+Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A}\right) \ \ ,
 \end{equation}
 #+end_latex
 which, if Q>0 is the energy /released/ by the reaction which is thus
@@ -966,37 +966,9 @@ only the /structure/ of stars but also their long-term /evolution/.
   composition and typical duration up to where your model evolved (or
   try fiddling with the settings!).
 
-  I have tried the following settings to get at least to an oxygen
-  composition in the core (so not till the very end, feel free to
-  explore different combinations!):
-  - Initial Mass: 15M_{\odot}
-  - Burning Modifiers: =none=
-  - Nuclear Reaction Network: =approx21= (this uses 21 isotopes)
-  - Sampled Nuclear Reaction: =none=
-  - Initial Metallicity: 0.02
-  - Mixing Length Alpha: 2.0
-  - Mixing Length Theory Implementation: =Cox= (this is a specific
-    implementation of MLT)
-  - Convective Overshoot f: 0.355
-  - Convective Overshoot f0: 0.02 (these "overshooting" parameters
-    determine convective boundary mixing )
-  - Semi-Convection Alpha: 0.0
-  - Thermohaline Alpha: 0.0
-  - Thermohaline Mixing Implementation: Kippenhahn
-  - boundary Mixing: =none=
-  - Red Giant Branch Wind Scheme: =Dutch= (specifies the wind mass loss
-    rate from the star)
-  - RGB Wind Scaling Factor: 0.8
-  - Asymptotic Giant Branch Wind Scheme: =Dutch=
-  - AGB Wind Scaling Factor: 0.8
-  - Initial Rotational Value: 0.0 (omega_initial/omega_critical)
-  - Variance Control Target: =1e-2= (specifies the time resolution)
-  - Mesh Delta Coefficient: =1.0= (specifies the mass resolution)
-  - dX_nuc_drop_min_X_limit: 1e-1 (specifies the resolution in nuclear
-    composition)
-  - MESA Release: r12778
-
-
+  I have tried the default settings except a 15M_{\odot} initial mass and
+  got to an oxygen-rich composition in the core (so not till the very end,
+  feel free to explore different combinations!):
 - Calculate the Sun's mass loss rate due to the nuclear burning of 4
   protons into helium.
 
