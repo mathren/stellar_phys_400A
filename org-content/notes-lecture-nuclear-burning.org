@@ -917,7 +917,7 @@ that already appear in our stellar structure equations:
 
 #+begin_latex
 \begin{equation}
-\frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
+\frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
 \end{equation}
 #+end_latex
 
