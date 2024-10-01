@@ -6,11 +6,42 @@
  book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, Clayton,
  Chapter 5, [[https://journals.aps.org/pr/abstract/10.1103/PhysRev.55.434][Bethe 1939]]
 
+** Heuristic summary and S-factor
 In the [[./notes-lecture-nuclear-burning.org][previous lecture]] we have developed some idea of the physics
-involved in thermonuclear burnings, enough to know that the
-thermonuclear reaction rates are going to be strongly peaked functions
-of the temperature (because of the Gamow peak and/or nuclear
-resonances), let's have a closer look at how this works inside stars.
+involved in thermonuclear burnings. For a generic charged particle
+thermonuclear reaction X(a,b)Y we can write:
+#+begin_latex
+\begin{equation}
+\sigma = \pi \lambda_{\mathrm{de Broglie}, X}^{2} \times \{ \mathrm{Probability\ of\ Tunneling}\} \times \{\mathrm{Probability\ of\ C^{\star}\ decay\ in\ Y+b}\}\ \ ,
+\end{equation}
+#+end_latex
+where the first term is akin to a geometric cross section using the de
+Broglie wavelength of the target nucleus X. The product of the two
+terms in curly brackets appears because of Bohr's approximation (so
+that the two probabilities are independent of each other). Since \lambda_{de
+Broglie, X} = h/p = h/E^{1/2} \Rightarrow \lambda_{de Broglie, X}^{2 }\propto
+E^{-1} and thus the heuristic expression above gives:
+
+#+begin_latex
+\begin{equation}\label{eq:heuristic_summary}
+\sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
+\end{equation}
+#+end_latex
+where S(E) is the so called "astrophysical S-factor" that contains the
+intrinsic cross section that depends on the shape of the nuclear
+potential well, and thus the energy levels. This can be influenced
+strongly by nuclear resonances (when E \sim energy of a metastable state
+of C^{\star{}}). In practice, often one relies on laboratory measurements
+(at high E\gg thermal energy in stars), and extrapolation to low
+energies to obtain S(E), which is a risky business precisely because
+of the resonances! In absence of resonances though, one expects S(E)
+to be only slowly varying (unlike \sigma(E) which depends on the Coulomb
+penetration probability).
+
+Therefore, because of the multiplication between the tunneling
+probability and the Maxwell-Boltzmann distribution producing the
+"Gamow peak" and nuclear resonances, thermonuclear reaction rates are
+strongly peaked functions of the temperature.
 
 We have already know from the B/A vs. A curve that the most energy is
 released by hydrogen burning into helium (because \alpha particles have
