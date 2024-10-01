@@ -490,8 +490,8 @@ formed) as long as the half-life of C^{\star} is long compared to the
 light-crossing time of C^{\star} itself. This is because we consider
 charged particles by hypothesis, so electromagnetic forces mediated by
 photons are what determines the interactions of the building blocks of
-C^{\star}, and on a long timescale (cf. the light-crossing time) they
-will equilibrate and lose memory of how they came to be.
+C^{\star}, and on a timescale long compared to the light-crossing time
+they will equilibrate and lose memory of how they came to be.
 
 The light crossing time of a nucleus can be estimated starting from
 the experimental result on the size of nuclei (something that also
