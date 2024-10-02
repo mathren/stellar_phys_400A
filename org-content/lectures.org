@@ -242,7 +242,7 @@ Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Gric
 *** Presenter 4:
 - reviewer 1:
 - reviewer 2:
-** <2024-12-10 Thu>  Four student presentations
+** <2024-12-10 Thu> - Four student presentations
 *** Presenter 1:
 - reviewer 1:
 - reviewer 2:
@@ -255,9 +255,8 @@ Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Gric
 *** Presenter 4:
 - reviewer 1:
 - reviewer 2:
-- One student presentation
 
-** <2024-12-17 Thu> One student presentation
+** <2024-12-17 Thu> - One student presentation
 Extra time can be used as backup.
 *** Presenter 1:
 - reviewer 1:

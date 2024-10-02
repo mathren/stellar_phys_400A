@@ -8,40 +8,45 @@
 
 ** Heuristic summary and S-factor
 In the [[./notes-lecture-nuclear-burning.org][previous lecture]] we have developed some idea of the physics
-involved in thermonuclear burnings. For a generic charged particle
-thermonuclear reaction X(a,b)Y we can write:
+involved in thermonuclear reactions. We can have a heuristic
+derivation of the main results we obtained for a generic charged particle
+reaction X(a,b)Y by writing the cross section for the reaction as:
 #+begin_latex
 \begin{equation}
-\sigma = \pi \lambda_{\mathrm{de Broglie}, X}^{2} \times \{ \mathrm{Probability\ of\ Tunneling}\} \times \{\mathrm{Probability\ of\ C^{\star}\ decay\ in\ Y+b}\}\ \ ,
+\sigma = \pi \lambda_{X}^{2} \times \{ \mathrm{Probability\ of\ Tunneling}\} \times \{\mathrm{Probability\ of\ C^{\star}\ decay\ in\ Y+b}\}\ \ ,
 \end{equation}
 #+end_latex
 where the first term is akin to a geometric cross section using the de
 Broglie wavelength of the target nucleus X. The product of the two
 terms in curly brackets appears because of Bohr's approximation (so
-that the two probabilities are independent of each other). Since \lambda_{de
-Broglie, X} = h/p = h/E^{1/2} \Rightarrow \lambda_{de Broglie, X}^{2 }\propto
-E^{-1} and thus the heuristic expression above gives:
+that the two probabilities are independent of each other). Since \lambda_{X} = h/p = h/E^{1/2} \Rightarrow \lambda_{X}^{2 }\propto
+E^{-1} and thus:
 
 #+begin_latex
 \begin{equation}\label{eq:heuristic_summary}
 \sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
 \end{equation}
 #+end_latex
-where S(E) is the so called "astrophysical S-factor" that contains the
-intrinsic cross section that depends on the shape of the nuclear
-potential well, and thus the energy levels. This can be influenced
-strongly by nuclear resonances (when E \sim energy of a metastable state
-of C^{\star{}}). In practice, often one relies on laboratory measurements
-(at high E\gg thermal energy in stars), and extrapolation to low
-energies to obtain S(E), which is a risky business precisely because
-of the resonances! In absence of resonances though, one expects S(E)
-to be only slowly varying (unlike \sigma(E) which depends on the Coulomb
-penetration probability).
 
-Therefore, because of the multiplication between the tunneling
-probability and the Maxwell-Boltzmann distribution producing the
-"Gamow peak" and nuclear resonances, thermonuclear reaction rates are
-strongly peaked functions of the temperature.
+where S(E) is the so called "/astrophysical S-factor/" that contains the
+intrinsic cross section that depends on the shape of the nuclear
+potential well. This can be influenced strongly by nuclear resonances
+(when E \sim energy of a metastable state of C^{\star{}}).
+
+In practice, often one relies on laboratory measurements (at high E\gg
+thermal energy in stars), and extrapolation to low energies to obtain
+S(E), which is a risky business precisely because of the resonances!
+In absence of resonances though, one expects S(E) to be only slowly
+varying (unlike \sigma(E) which depends on the Coulomb penetration
+probability).
+
+To obtain a /thermo/-nuclear reaction rate, the cross section above has
+to be averaged over a Maxwell-Boltzmann distribution. The product
+between the tunneling probability and the exponential factor of the
+Maxwell-Boltzmann distribution produces the "Gamow peak" making
+thermonuclear reaction rates strongly peaked functions of the
+temperature whether there are resonances (included in the
+astrophysical factor S(E)) or not.
 
 We have already know from the B/A vs. A curve that the most energy is
 released by hydrogen burning into helium (because \alpha particles have
@@ -67,7 +72,7 @@ charge.
 As you may expect from its name the weak interactions are weak,
 meaning the coupling constant is small compared to the coupling
 constant for the strong force and electromagnetic force: /weak
-interactions are the bottleneck for nuclear processing of matter in stars/.
+interactions are the bottleneck for nuclear burning in stars/.
 
 Moreover, since the nucleus of helium (i.e., \alpha particle) is made of 4
 nucleons (2p and 2n), the reaction \ref{eq:overall_reaction} seems to
@@ -95,17 +100,6 @@ four-momentum (i.e., energy and momentum).
 *** pp chain
 The "pp chain" is the dominant hydrogen burning mode in low mass
 stars, like the Sun:
-
-# #+begin_latex
-#  p + p \rightarrow D + e^{+} + \nu_{e }\\
-#  D+p \rightarrow^{3}He +\gamma \\
-#  ^{3}He+^{3}He\rightarrow^{4}He+p+p  (86%) \\
-#            \rightarrow^{7}Be+\gamma    (14%) \\
-# 	   ^{7}Be\rightarrow^{7}Li+e^{+} + \nu_{e}\\
-# 	   ^{7}Li+p\rightarrow2^{4}He+\gamma
-# #+end_latex
-
-
 
 #+CAPTION: Schematic representation of the pp chain. The right branch is the so called pp1 chain, the rarer left branch is the so called pp2 chain.
 #+ATTR_HTML: :width 100%
@@ -135,10 +129,10 @@ Important thing to notice:
 - note from the pp1 cycle we get two 2 protons out at the end as well
   (but 4 went in).
 
- Fitting the temperature dependence for the overall cycle one obtains
-  \varepsilon_{nuc} \propto \langle \sigma(v)v \rangle \propto T^{4}. This is a fairly
-  steep powerlaw, therefore one should expect the nuclear burning to
-  be /very concentrated/ inside the star in temperature coordinate.
+Fitting the temperature dependence for the overall cycle one obtains
+\varepsilon_{nuc} \propto \langle \sigma(v)v \rangle \propto T^{4}. This is a fairly
+steep powerlaw, therefore one should expect the nuclear burning to
+be /very concentrated/ inside the star in temperature coordinate.
 
 *** CN-NO bi-cycle
 When the luminosity of a star is high (recall for a fully radiative
@@ -582,7 +576,8 @@ massive stars, silicon \rightarrow iron only lasts order of /days/.
   your model evolved.
 
   *Hint*: I have tried with the following settings and got a model to
-  form an iron core:
+  form an iron core, that is successfully burn through all the viable
+  nuclear fuel:
     - Initial Mass: 20M_{\odot} (solar mass)
     - Burning Modifiers: =none=
     - Nuclear Reaction Network: =approx21=
