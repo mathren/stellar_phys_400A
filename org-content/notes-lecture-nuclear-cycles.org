@@ -571,7 +571,7 @@ For instance, the timescale for the last possible burning phase in
 massive stars, silicon \rightarrow iron only lasts order of /days/.
 
 #+CAPTION: example of durations of burning phases for a few massive stars from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]].
-#+ATTR_HTML: :width 70%
+#+ATTR_HTML: :width 100%
 [[./images/durations.png]]
 
 
