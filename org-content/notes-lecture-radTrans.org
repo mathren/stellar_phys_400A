@@ -375,6 +375,35 @@ photosphere is an idealization, and nothing that special occurs at
 Eddington gray atmospheric model to the interior model.
 
 
+Finally, to find the outer boundary pressure, we need to integrate
+downward from \tau=0 to \tau(T=T_{eff})\simeq2/3 the hydrostatic equilibrium
+equation. We typically assume that the atmosphere is in hydrostatic
+equilibrium, however /can/ be a big assumption, depending on the star
+and whether it loses mass and whether the interaction between
+radiation and the gas drives non-trivial dynamics. Furthermore, we
+usually assume that the gravity is constant, or in other words, we
+neglect the atmosphere's "self-gravity" since the bulk of the mass is
+inside its inner boundary. One can just assume that \kappa is constant
+throughout the atmosphere, an oversimplification that allows for an
+analytic calculation which yields:
+
+#+begin_latex
+\begin{equation}
+P(\tau) = \frac{GM}{R^{2}\kappa}\tau \Rightarrow P(\tau=2/3) = \frac{2}{3}\frac{GM}{R^{2}\kappa}\ \ ,
+\end{equation}
+#+end_latex
+where M is the total mass of the star, R is the radius such that L/(4\pi
+R^{2}) = \sigma T_{eff}, \kappa is the opacity assumed constant in the
+atmosphere, and we /define/ the bottom of the atmosphere at \tau=2/3
+because of the Eddington T(\tau) relation. Alternatively, one could use
+tabulated values of \kappa and a T(\tau) to perform the integral.
+
+Together with T=T_{eff}, we now have specified the outer boundary
+conditions fixing T and P at \tau=2/3 and completely determined the
+mathematical problem of the structure and evolution of a single,
+non-rotating, non-magnetic star of known total (initial) mass M and
+composition.
+
 *N.B.:* While Eddington atmosphere are the simplest non-trivial case, it
 is still on approximations which can (and sometimes are) relaxed in
 stellar evolution modeling: this can move the outer boundary in \tau
