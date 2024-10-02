@@ -249,7 +249,7 @@ to meet in the same place within their nuclear radii because of
 thermal motion is negligibly small).
 
 #+begin_latex
-$\alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma$\\
+$\alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma$ \\
 $^{8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star}}\rightarrow^{12}\mathrm{C}+\gamma$
 #+end_latex
 
@@ -323,8 +323,8 @@ sustain itself):
 
 #+begin_latex
 $^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{24}Mg+\gamma$ (Q\sim 13.93MeV)\\
-$^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{20}\mathrm{Ne}+\alpha $(Q\sim 4.616MeV)\\
-$^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{23}Na+p $(Q\sim 2.238MeV)
+$^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{20}\mathrm{Ne}+\alpha$ (Q\sim 4.616MeV)\\
+$^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{23}Na+p$ (Q\sim 2.238MeV)
 #+end_latex
 
 These require T\geq10^{8.5} K, and produce a mixture of Neon, Magnesium (*N.B.:*
