@@ -424,7 +424,7 @@ distinct groups of isotopes in equilibrium are formed around silicon
 and iron and only few reactions linking the two groups are out of
 balance with their reverse.
 
-Within each ``equilibrium group'', the abundances of each isotope stay
+Within each "equilibrium group", the abundances of each isotope stay
 roughly constant, because production and destruction reactions
 involving only isotopes of that group cancel out almost exactly. This
 means that within each group, Nuclear Statistical Equilibrium (NSE) is
@@ -436,10 +436,10 @@ reaction/: the cross section for neutrino captures is too small at
 this stage. Strong and electromagnetic mediated nuclear reactions need
 to compensate also the weak reactions for the isotopes that can
 \beta-decay or capture electrons. Therefore this is not a true
-statistical equilibrium regime, and the ``principle of detailed
-balance'' does not hold strictly. Some widely used stellar evolution
-codes therefore do not rely on the approximation of ``quasi
-equilibrium'' and instead calculate directly all the reactions.
+statistical equilibrium regime, and the "principle of detailed
+balance" does not hold strictly. Some widely used stellar evolution
+codes therefore do not rely on the approximation of "quasi
+equilibrium" and instead calculate directly all the reactions.
 
 This process ends with the formation of an Iron core, made of nuclei
 at the maximum of the B/A vs. A curve that the star cannot burn to
