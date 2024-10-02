@@ -123,7 +123,7 @@ Important thing to notice:
   to the star
 - viceversa, the \nu_{e} leave directly the star (and the Earth is
   constantly bombarded by a flux of \nu_{e} from the Sun!)
-- the ^{3}He+^{3}He\rightarrow^{4}He+p+p turns two nuclei into 3, this will
+- the $^{3}\mathrm{He}+^{3}\mathrm{He}\rightarrow^{4}\mathrm{He}+p+p$ turns two nuclei into 3, this will
   impact the number of particles per unit baryonic mass (which remains
   \sim6m_{u} at zeroth-order): this will impact the mean molecular \mu
 - note from the pp1 cycle we get two 2 protons out at the end as well
@@ -162,10 +162,10 @@ Important things to notice:
   happen in an isolated proton+proton reaction which is hard, but
   within nuclei
 - CN + NO = CNO
-- ^{14}N is a stable isotope (N=Z=A/2), and the ^{14}N+p reaction is
+- $^{14}\mathrm{N}$ is a stable isotope (N=Z=A/2), and the $^{14}\mathrm{N}$+p reaction is
   the bottleneck of the bi-cycle: since at equilibrium all these
   reactions occur at the same rate set by the slowest reaction, this
-  means that C and O are converted into ^{14}N in the core of massive
+  means that C and O are converted into $^{14}\mathrm{N}$ in the core of massive
   stars.
 
 Because of the higher Coulomb barriers involved one can expect a
@@ -320,14 +320,12 @@ on average cooler and will stop burning earlier.
 The carbon+carbon reaction can have several branching ratios with
 positive Q values (thus exo-energetic and of interest for the star to
 sustain itself):
-
 #+begin_latex
 $^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{24}\mathrm{Mg}+\gamma$ (Q\sim13.93MeV)\\
 $^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{20}\mathrm{Ne}+\alpha$ (Q\sim4.616MeV)\\
-$^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{23}\mathrm{Na}+p$ (Q\sim2.238MeV)
+$^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{23}\mathrm{Na}+p$ (Q\sim2.238MeV)\\
 \cdots
 #+end_latex
-
 These require T\geq10^{8.5} K, and produce a mixture of Neon, Magnesium (*N.B.:*
 an \alpha-nucleus!) and Sodium.
 
@@ -372,18 +370,16 @@ much energy, resulting in a brief phase of stellar evolution only.
 As T further increases because of the oxygen finally ignites. The
 dominant reaction has multiple branching ratios with positive Q value
 that produce sulfur and silicon primarily:
-
 #+begin_latex
 $^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{32}\mathrm{S}+\gamma$ (Q\sim16.53MeV)\\
-$^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{28}\mathrm{Si}+\alpha$ (Q\sim9.593MeV)
-$^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{31}\mathrm{P}+palpha$ (Q\sim7.676MeV)\\
+$^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{28}\mathrm{Si}+\alpha$ (Q\sim9.593MeV)\\
+$^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{31}\mathrm{P}+p$ (Q\sim7.676MeV)\\
 \cdots
 #+end_latex
-
 *N.B.:* as before all the light
-particles produced will immediately
-react with the present mixture at
-this temperature!
+produced will immediately react with
+the present mixture at this
+temperature!
 
 *** Silicon core burning
 Finally, if a star has reached this point, gravity will compress its
@@ -409,11 +405,9 @@ At such temperatures, we reach a "quasi statistical equilibrium"
 between nuclei: the silicon, sulfur, and other elements (referred to
 as "silicon group elements" with A\sim28 and Z\sim14) are photodisintegrated
 and re-created at very high and nearly canceling rates:
-
 #+begin_latex
 $\gamma + ^{A}Z \rightarrow ^{A'}Z' +{p,n,\alpha}$
 #+end_latex
-
 This produces also a variety of light particles (protons, neutrons,
 and \alpha particles), which can be captured on the silicon group elements
 to form heavier "iron group nuclei" (which are also photodisintegrated
@@ -575,7 +569,7 @@ The burning of Helium into a mixture of carbon and oxygen is the
 second most energetic burning: this is the reason why it occurs once a
 star runs out of hydrogen fuel. Again, we get a high \phi factor because
 helium fusion climbs the B/A vs. A curve, and helium core burning
-usually last 10% of the hydrogen core burning time (\phi_{He}_{} \simeq 0.1
+usually last 10% of the hydrogen core burning time (\phi_{He} \simeq 0.1
 \phi_{H}), so /hydrogen and helium core burning together cover 99% of the
 stellar lifetime/.
 
@@ -595,6 +589,35 @@ massive stars, silicon \rightarrow iron only lasts order of /days/.
 #+ATTR_HTML: :width 100%
 [[./images/durations.png]]
 
+* Energetically unimportant but observationally puzzling burning of Lithium
+
+Lithium is a relatively rare element which has a low nuclear binding energy
+and is thus easily broken without releasing much energy. Therefore, lithium
+burning is never energetically important.
+
+*N.B.:* similarly deuterium (D=hydrogen with an extra neutron) is very
+loosely bound and its burning is not energetically important, to the point
+that both can happen in sub-stellar mass objects such as brown-dwarfs
+(where the virial theorem imposes a collapse, but \langle T \rangle is never high
+enough to generate enough energy through nuclear reaction to sustain the
+structure and their collapse is interrupted by degeneracy pressure).
+
+Traces of Lithium are produced in the Big Bang nucleosynthesis, so some of
+it exists in stars at the beginning of their evolution. Because of its
+fragility, Lithium is a sensitive tracer of temperature in stars, and in
+evolved stars it should not be found because of the
+$^{7}\mathrm{Li}+p\rightarrow2^{4}\mathrm{He}$ reaction. However, lithium can be observed
+in some stars atmospheres! This posed the problem of how lithium can be
+produced again once the star evolves. Various mechanisms have been
+proposed:
+- spallation of cosmic rays (but generally one expects the cosmic ray flux
+  to be too low to explain the amount of lithium found)
+- "Cameron-Fowler mechanism": mixing at the bottom of the envelope can lead
+  to $^{3}\mathrm{He}(\alpha, \gamma)^{7}\mathrm{Be}$ and the produced $^{7}\mathrm{Be}$ is
+  then mixed outwards where it may decay into $^{7}\mathrm{Li}$ with an
+  electron capture. For this mixing to happen one expects the star to be
+  quite evolved (an AGB star), and we see more Lithium-rich giants than
+  this can explain.
 
 * Homework
 - Calculate the Sun's mass loss rate due to the nuclear burning of 4
