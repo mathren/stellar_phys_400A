@@ -191,6 +191,40 @@ high temperatures can allow to bypass Coulomb barriers more easily.
   stars][honors project]]!
 :end:
 
+*** pp \rightarrow CNO transition
+
+Because of the higher Coulomb barriers involved in the CNO cycle (i.e.
+the higher charge of $^{12}\mathrm{C}$), it has a more sensitive
+temperature dependence:
+ - \varepsilon_{nuc, pp} \propto T^{4}
+ - \varepsilon_{nuc, CNO} \propto T^{16}
+However, the proportionality constant is larger for the pp cycle (see
+figure), therefore, for stars with lower mass M, that is lower \langle T \rangle
+by the virial theorem, hydrogen burning through the pp-chain will
+dominate. However, increasing M (and thus \langle T \rangle), at some point the
+CNO cycle takes over as dominant energy production mechanism.
+
+#+CAPTION: \varepsilon_{nuc}/\rho as a function of central temperature T_{c} (bottom axis) or initial mass (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning. Dashed lines are linear fits. Credits: R. Townsend.
+#+ATTR_HTML: :width 75%
+[[./images/pp_vs_CNO.png]]
+
+
+Because of the steepness of the \varepsilon_{nuc, CNO} we expect that at higher
+initial total mass M the core will be /convective/ (recall that if \nabla_{rad}
+\propto \kappa L > \nabla_{ad} we expect convection), while if M is sufficiently low that
+the pp chain dominates, the core is stable against convection and
+remains radiative. This is something that is /indirectly/ confirmed by
+studying the eigenfrequencies of stars that can be observed as
+pulsational frequencies (i.e., asteroseismology), stellar lifetimes
+inferred from population analyses, etc.
+
+The initial mass M at which the transition happens needs to be
+determined with stellar models and is around M_{pp \rightarrow CNO} \sim
+1.1-1.2M_{\odot}, where the imprecision comes from the systematic
+uncertainties in stellar models (in terms of input physics and
+algorithmic representation of the processes in the code, that we will
+discuss in more detail in the [[./notes-lecture-neutrinos.org][next lecture]]).
+
 ** Helium burning
 Once hydrogen fuel runs out in the core of a star (i.e., for mass
 coordinate m \le f_{burn} M_{tot}), the next fuel to burn is going to be
