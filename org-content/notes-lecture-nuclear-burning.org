@@ -951,8 +951,8 @@ only the /structure/ of stars but also their long-term /evolution/.
     - Semi-Convection Alpha: 0
     - Thermohaline Alpha: 0
     - Thermohaline Mixing Implementation: Kippenhahn
-    - Boundary Mixing: pred = .false. / predms = .true. / cpm =
-      .false. (the default)
+    - Boundary Mixing: =pred= = =.false.= / =predms= = =.true.= / =cpm= =
+      =.false.= (the default)
     - Red Giant Branch Wind Scheme: Dutch (this specifies stellar winds)
     - RGB Wind Scaling Factor: 0.8
     - Asymptotic Giant Branch Wind Scheme: Dutch
