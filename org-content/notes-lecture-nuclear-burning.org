@@ -936,9 +936,33 @@ only the /structure/ of stars but also their long-term /evolution/.
   composition and typical duration up to where your model evolved (or
   try fiddling with the settings!).
 
-  I have tried the default settings except a 15M_{\odot} initial mass and
-  got to an oxygen-rich composition in the core (so not till the very end,
-  feel free to explore different combinations!):
+  I have tried with the following settings and got a model to form an
+  iron core:
+    - Initial Mass: 20M_{\odot} (solar mass)
+    - Burning Modifiers: =none=
+    - Nuclear Reaction Network: =approx21=
+    - Sampled Nuclear Reaction: =none=
+    - Initial Metallicity: 0.02
+    - Mixing Length Alpha: 2.0
+    - Mixing Length Theory Implementation: Cox (this is an algorithmic
+      formulation of MLT)
+    - Convective Overshoot f: 0.000
+    - Convective Overshoot f0: 0
+    - Semi-Convection Alpha: 0
+    - Thermohaline Alpha: 0
+    - Thermohaline Mixing Implementation: Kippenhahn
+    - Boundary Mixing: pred = .false. / predms = .true. / cpm =
+      .false. (the default)
+    - Red Giant Branch Wind Scheme: Dutch (this specifies stellar winds)
+    - RGB Wind Scaling Factor: 0.8
+    - Asymptotic Giant Branch Wind Scheme: Dutch
+    - AGB Wind Scaling Factor: 0.8
+    - Initial Rotational Value: 0.0 (omega_initial/omega_critical)
+    - Variance Control Target: 1e-2
+    - Mesh Delta Coefficient: 2.0
+    - dX_nuc_drop_min_X_limit: 1e-2
+    - MESA Release: =r12778=
+
 - Calculate the Sun's mass loss rate due to the nuclear burning of 4
   protons into helium.
 
