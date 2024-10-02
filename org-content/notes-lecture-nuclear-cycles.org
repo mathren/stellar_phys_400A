@@ -546,3 +546,64 @@ massive stars, silicon \rightarrow iron only lasts order of /days/.
 #+ATTR_HTML: :width 70%
 
 [[./images/durations.png]]
+
+
+* Homework
+- Calculate the Sun's mass loss rate due to the nuclear burning of 4
+  protons into helium.
+- Using =MESA-web=, which contains tabulated data for nuclear reactions
+  from experiments, calculate the evolution until the end of iron core
+  burning of a massive (M>15M_{\odot})_{}_{} star and use the
+  =trimmed_history.data= output to:
+  1. determine the typical composition of the core at various
+     evolutionary phases and explain it in terms of the experimentally
+     derived properties of nuclei (*hint*: use the variables =center_*= to
+     plot the mass fraction of abundances as a function of time)
+  2. estimate the duration of each core burning phase.
+
+  *N.B.:* You can also use the "movie" of the evolution of the star
+  produced by =MESA-web= for you.
+
+   *N.B.:* The values you will find may differ from the table above:
+  that's ok! The simulation output depends on many physics assumptions
+  which are probably not the same in the models =MESA-web= runs and
+  those I quoted, this actually gives you an idea of /systematic/ errors
+  in the numerical computations
+
+  *N.B.:* Computing the evolution of massive stars through /all/ the
+  burning phases is numerically challenging (and the stiffness of the
+  nuclear reactions rate dependence on T is a big part of the
+  challenge), therefore it is possible that your =MESA-web= model may
+  not finish the run. The file =input.txt= has a string at the end
+  telling you if the model was successful or not. If your model is not
+  and you can't get a successful model by the deadline by fiddling
+  with the input parameters, mention which input you used (listed in
+  that file) and list the composition and typical duration up to where
+  your model evolved.
+
+  *Hint*: I have tried with the following settings and got a model to
+  form an iron core:
+    - Initial Mass: 20M_{\odot} (solar mass)
+    - Burning Modifiers: =none=
+    - Nuclear Reaction Network: =approx21=
+    - Sampled Nuclear Reaction: =none=
+    - Initial Metallicity: 0.02
+    - Mixing Length Alpha: 2.0
+    - Mixing Length Theory Implementation: Cox (this is an algorithmic
+      formulation of MLT)
+    - Convective Overshoot f: 0.000
+    - Convective Overshoot f0: 0
+    - Semi-Convection Alpha: 0
+    - Thermohaline Alpha: 0
+    - Thermohaline Mixing Implementation: Kippenhahn
+    - Boundary Mixing: =pred= = =.false.= / =predms= = =.true.= / =cpm= =
+      =.false.= (the default)
+    - Red Giant Branch Wind Scheme: Dutch (this specifies stellar winds)
+    - RGB Wind Scaling Factor: 0.8
+    - Asymptotic Giant Branch Wind Scheme: Dutch
+    - AGB Wind Scaling Factor: 0.8
+    - Initial Rotational Value: 0.0 (initial rotation)
+    - Variance Control Target: 1e-2
+    - Mesh Delta Coefficient: 2.0
+    - dX_nuc_drop_min_X_limit: 1e-2
+    - MESA Release: =r12778=

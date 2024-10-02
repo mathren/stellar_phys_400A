@@ -108,18 +108,11 @@ and population synthesis.
 
 [[./notes-lecture-radTrans.org][Notes]]
 
-** <2024-10-15 Tue> - Evolution: low mass stars 1
-** <2024-10-17 Thu> - Evolution: low mass stars 2
-** <2024-10-22 Tue> - Evolution: high mass stars
-*Aim*: discuss late core burning and core-collapse mechanism
-
-[[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][Notes (preliminary)]]
-
-** <2024-10-24 Thu> - Roche geometry and binary interactions
+** <2024-10-15 Tue> - Roche geometry and binary interactions
 *Aim*: Introduce the Roche approximation and its limitations and binary
  mass transfer
 
-** <2024-10-29 Tue> - Expectations for project presentations + HW review
+** <2024-10-17 Thu> - Expectations for project presentations + HW review
 *** Presentation expectations
 Discuss what is expected for the presentations, how they will be
 graded, etc. how to provide useful feedback during peer-reviewing.
@@ -129,6 +122,16 @@ graded, etc. how to provide useful feedback during peer-reviewing.
    - focus on the physical processes
    - connect to material covered in class (incl. by other presentations)
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
+
+*** Review of homework assignments that appeared more challenging
+   (by TA)
+
+** <2024-10-22 Tue> - Evolution: low mass stars 1
+** <2024-10-24 Thu> - Evolution: low mass stars 2
+** <2024-10-29 Tue> - Evolution: high mass stars
+*Aim*: discuss late core burning and core-collapse mechanism
+
+[[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][Notes (preliminary)]]
 
 ** <2024-10-31 Thu> - Supernovae
 
