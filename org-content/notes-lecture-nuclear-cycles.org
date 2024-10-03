@@ -21,13 +21,11 @@ Broglie wavelength of the target nucleus X. The product of the two
 terms in curly brackets appears because of Bohr's approximation (so
 that the two probabilities are independent of each other). Since \lambda_{X} = h/p = h/E^{1/2} \Rightarrow \lambda_{X}^{2 }\propto
 E^{-1} and thus:
-
 #+begin_latex
 \begin{equation}\label{eq:heuristic_summary}
 \sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
 \end{equation}
 #+end_latex
-
 where S(E) is the so called "/astrophysical S-factor/" that contains the
 intrinsic cross section that depends on the shape of the nuclear
 potential well. This can be influenced strongly by nuclear resonances
@@ -52,13 +50,11 @@ We already know from the B/A vs. A curve that the most energy is
 released by hydrogen burning into helium (because \alpha particles have
 such a high binding energy), and using conservation of charge and
 leptonic number we have already written the overall reaction as:
-
 #+begin_latex
 \begin{equation}\label{eq:overall_reaction}
 4p \rightarrow ^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ .
 \end{equation}
 #+end_latex
-
 And we know that a fraction \phi=0.007 of the rest mass of the 4 incoming
 protons (i.e., hydrogen positive ions) is converted into energy,
 corresponding to a total energy released is Q_{H burn}= 26.5 MeV.
@@ -237,28 +233,30 @@ other meaningful threshold exist: the term "massive star" is typically
 context dependent.
 
 ** Helium burning
-Once hydrogen fuel runs out in the core of a star (i.e., for mass
-coordinate m \le f_{burn} M_{tot}), the next fuel to burn is going to be
-helium. First of all, this is always available (since it was produced
-in the Big Bang), and secondly, it's the energetically second-best
-fuel in terms of energy release.
+Once hydrogen fuel runs out in the core of a star (i.e., anywhere with mass
+coordinate m \le f_{burn} M_{tot}), the next fuel to burn is going to be helium.
+First of all, this is always available since it was produced in the Big
+Bang and also /locally brewed/ by the burning of hydrogen that just ended,
+and secondly, it's the energetically second-best fuel in terms of energy
+release per nucleon.
 
-However, there is a nuclear physics problem: no stable nucleus with
-A=5 and A=8 and the few A=7 produced during hydrogen burning are very
-fragile and easy to break, so they don't survive the hydrogen burning
-phase either. So how can one do thermonuclear reactions of helium?
+However, there is a nuclear physics problem: there are no stable nuclei
+with A=5 and A=8 and the few A=7 produced during hydrogen burning are very
+fragile and easy to break, so they don't survive the hydrogen burning phase
+either. So how can one do thermonuclear reactions of helium?
 
 This was solved by [[https://en.wikipedia.org/wiki/Fred_Hoyle][Fred Hoyle]], who predicted that there would be a
 metastable state of carbon (as a C^{\star} compound nucleus in Bohr's
-approximation) that would allow to consume helium.
+approximation) that would allow to consume helium, using astrophysics to
+understand nuclear structure!
 
 *** "Triple \alpha" reaction
 The easiest way to consume helium is through the so called "tiple \alpha
 reaction", which is actually a /compound/ reaction with a very short
 lived intermediate state (*N.B.:* the probability of 3 alpha particles
 to meet in the same place within their nuclear radii because of
-thermal motion is negligibly small).
-
+thermal motion is negligibly small). The $3\alpha\rightarrow^{12}\mathrm{C}$ compound
+reaction is actually:
 #+begin_latex
 $\alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma$ \\
 $^{8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star}}\rightarrow^{12}\mathrm{C}+\gamma$
@@ -281,6 +279,13 @@ carbon 12 which was theoretically predicted from the astrophysical
 evidence that carbon is the next most abundant element after H and He:
 stellar observations were used to correctly predict something on the
 structure of nuclei!
+
+*N.B.*: In practice $^{8}\mathrm{Be}$ is so short lived that often it is not
+included in stellar evolution simulation and what we use is a reaction rate
+for the /compound/ 3\alpha process with a temperature dependence that makes
+the rate non-zero only for T\geq10^{8}K allowing \alpha+$^{8}\mathrm{Be}$ to occur. This
+allows to not have to track the isotope of $^{8}\mathrm{Be}$ saving
+computational time.
 
 *** The nuclear astrophysics "holy grail": $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$
 Once some carbon is produced, a new avenue for consuming \alpha particles
@@ -337,6 +342,7 @@ $^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{20}\mathrm{Ne}+\alpha$ (Q\sim4.616
 $^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{23}\mathrm{Na}+p$ (Q\sim2.238MeV)\\
 \cdots
 #+end_latex
+
 These require T\geq10^{8.5} K, and produce a mixture of Neon, Magnesium (*N.B.:*
 an \alpha-nucleus!) and Sodium.
 
@@ -387,10 +393,9 @@ $^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{28}\mathrm{Si}+\alpha$ (Q\sim9.593
 $^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{31}\mathrm{P}+p$ (Q\sim7.676MeV)\\
 \cdots
 #+end_latex
-*N.B.:* as before all the light
-produced will immediately react with
-the present mixture at this
-temperature!
+
+*N.B.:* as before all the light produced will immediately react with the
+present mixture at this temperature!
 
 *** Silicon core burning
 Finally, if a star has reached this point, gravity will compress its
