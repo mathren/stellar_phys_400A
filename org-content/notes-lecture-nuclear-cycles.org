@@ -336,6 +336,7 @@ on average cooler and will stop burning earlier.
 The carbon+carbon reaction can have several branching ratios with
 positive Q values (thus exo-energetic and of interest for the star to
 sustain itself):
+
 #+begin_latex
 $^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{24}\mathrm{Mg}+\gamma$ (Q\sim13.93MeV)\\
 $^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{20}\mathrm{Ne}+\alpha$ (Q\sim4.616MeV)\\
@@ -346,47 +347,58 @@ $^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{23}\mathrm{Na}+p$ (Q\sim2.238MeV)\
 These require T\geq10^{8.5} K, and produce a mixture of Neon, Magnesium (*N.B.:*
 an \alpha-nucleus!) and Sodium.
 
-*N.B.*: the \alpha particle released by the
- second reaction listed, and the
- proton released by the third will
- immediately start reacting with the
- other particles present at the
- temperatures necessary for
- $^{12}\mathrm{C}+^{12}\mathrm{C}$ to be
- activated
+*N.B.*: the \alpha particle released by the second reaction listed, and the proton
+ released by the third will immediately start reacting with the other
+ particles present at the temperatures necessary for
+ $^{12}\mathrm{C}+^{12}\mathrm{C}$ to be activated. Actually at these T, the
+ reactions rates for reactions involving these light particles are going to
+ be extremely high!
+
+
 *** Neon ignition and nuclear "magic numbers"
 Because of carbon burning, a significant amount of neon is produced.
 Although neon has A=20 and Z=10 so it is heavier and more charged than
 oxygen (produced by the end of helium core burning and still untouched
 by carbon burning at this point), it will ignite before.
 
-The reason has to do with a nuclear physics property: one can make a
-direct analogy between nuclei and atoms, and like atoms of "noble
-gases" which have electrons in all their shells are very stable and
-don't like to do chemical interactions with other atoms/molecules,
-nuclei with nucleons filling all their shells are also particularly
-stable. This gives the nuclear "magic numbers" of nucleons that are
-particularly stable: 2, 8, 20, 28, 52 (and there are higher numbers
-theoretically predicted from nuclear structure calculations).
+The reason has to do with a nuclear physics property: one can make a direct
+analogy between nuclei and atoms, and like atoms of "noble gases" which
+have electrons in all their shells are very stable and don't like to do
+chemical interactions with other atoms/molecules, nuclei with nucleons
+filling all their shells are also particularly stable. This gives the
+nuclear "magic numbers" of nucleons that are particularly stable: Z or N =
+2, 8, 20, 28, 52 (and there are higher numbers theoretically predicted from
+nuclear structure calculations).
 
 $^{16}\mathrm{O}$ has Z=8 and N=8, so it is a "double magic nucleus", that from
 the nuclear interaction perspective is like a noble gas from the
 chemical perspective: it is extremely stable and does not want to
 interact.
 
-Therefore, the gravothermal collapse reaches temperatures sufficient
-to /photodisintegrate/ the heavier (but not magic) nucleus of $^{20}\mathrm{Ne}$
-before oxygen burns.
+*N.B.:* \alpha particles have Z=N=2 and are also a "double magic" nucleus,
+and in fact they have an extremely high binding energy per nucleon!
+$^{16}\mathrm{O}$ is the second-lightest double magic nucleus.
 
-However, the fact that the photodisintegration of neon is easy
-relative to oxygen ignition is a direct consequence that the nucleus
-of neon is not extremely bound and its burning does not release very
-much energy, resulting in a brief phase of stellar evolution only.
+Therefore, the gravothermal collapse reaches temperatures sufficient to
+/photodisintegrate/ the heavier (but not magic) nucleus of $^{20}\mathrm{Ne}$
+before oxygen burns: photodisintegration reactions are in fact not affected
+by the Coulomb barriers. This photodisintegration produce \alpha particles and
+protons that stick to the existing nuclei changing the composition
+typically increasing the mass fractions of \alpha-nuclei ($^{16}^{}\mathrm{O}$ and
+$^{24}\mathrm{Mg}$, primarily). While unimportant for the energy generation,
+secondary reactions producing $^{22}\mathrm{Ne}$ can be important for the
+synthesis of elements heavier than iron through the s-process.
+
+However, the fact that the photodisintegration of neon is easy relative to
+oxygen ignition is a direct consequence that the nucleus of neon is not
+very bound (compared to oxygen, or carbon) and its burning does not release
+very much energy, resulting in a brief phase of stellar evolution only.
 
 *** Oxygen
-As T further increases because of the oxygen finally ignites. The
-dominant reaction has multiple branching ratios with positive Q value
-that produce sulfur and silicon primarily:
+As T further increases because of the gravothermal collapse the oxygen
+finally ignites. The dominant reaction has multiple branching ratios with
+positive Q value that produce sulfur and silicon primarily:
+
 #+begin_latex
 $^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{32}\mathrm{S}+\gamma$ (Q\sim16.53MeV)\\
 $^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{28}\mathrm{Si}+\alpha$ (Q\sim9.593MeV)\\
@@ -398,10 +410,12 @@ $^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{31}\mathrm{P}+p$ (Q\sim7.676MeV)\\
 present mixture at this temperature!
 
 *** Silicon core burning
-Finally, if a star has reached this point, gravity will compress its
-core until it burns all the way to the most bound nucleus
-(iron/nickel): stopping somehow the gravothermal collapse at this
-point would require extreme fine-tuning.
+Finally, if a star has reached this point, gravity will compress its core
+until it burns all the way to the most bound nucleus (iron/nickel):
+stopping somehow the gravothermal collapse at this point would require
+extreme fine-tuning, and by now the core density is so high that the
+gravothermal collapse (of the core) is driven by neutrino emission (as we
+will discuss in the [[./notes-lecture-neutrinos.org][next lecture]]) rather than photon losses at the surface.
 
 Post core oxygen burning, the core is made of a mixture of silicon and
 sulfur (*N.B.:* this is now very hard to probe directly observationally
@@ -412,32 +426,35 @@ The next burning phase is typically referred to as "silicon burning",
 although it physically proceeds in a slightly different fashion than
 all the burning phases we have seen so far.
 
-It typically requires T\sim2-5\times10^{9} K and densities \rho\sim10^{7}-10^{10} g cm^{-3} and
-only lasts order of \tau_{nuc, Si}\sim days-weeks since the energy release
-per nucleon is /only/ 0.1MeV/nucleon (cf. ~6.6 MeV/nucleon for H
+It typically requires T\sim2-5\times10^{9} K and densities \rho\sim10^{7}-10^{10} g cm^{-3} and only
+lasts order of \tau_{nuc, Si}\sim days-weeks since the energy release per nucleon
+is /only/ 0.1MeV/nucleon (cf. \sim Q_{H-burn}/4\simeq6.6 MeV/nucleon for H
 burning!).
 
 At such temperatures, we reach a "quasi statistical equilibrium"
 between nuclei: the silicon, sulfur, and other elements (referred to
 as "silicon group elements" with A\sim28 and Z\sim14) are photodisintegrated
 and re-created at very high and nearly canceling rates:
+
 #+begin_latex
 $\gamma + ^{A}Z \rightarrow ^{A'}Z' +{p,n,\alpha}$
 #+end_latex
+
 This produces also a variety of light particles (protons, neutrons,
 and \alpha particles), which can be captured on the silicon group elements
 to form heavier "iron group nuclei" (which are also photodisintegrated
 and recreated constantly):
+
 #+begin_latex
 $\{p, n,\alpha\} + \{ ^{A}Z,^{A'}Z' \} \rightarrow \{ \mathrm{Fe \ group \ nuclei} \} + \dots$
 #+end_latex
-Moreover, many ^{A'}Z' nuclei produced by photo-disintegrations and
-particles captures are extremely neutron or proton rich, therefore a
-lot of weak reaction such as $\beta^{\pm}-$decays and electron captures
-happen too (while positron captures are always negligible for stars
-with M \leq 40 M_{\odot,} and positrons prefer to annihilate with an
-electron producing \gamma rays that quickly thermalize in the plasma see
-[[https://ui.adsabs.harvard.edu/abs/1977ApJS...35..145A/abstract][Arnett et al. 1977]]).
+
+Moreover, many $^{A'}Z'$ nuclei produced by photo-disintegrations and
+particles captures are neutron or proton rich, therefore a lot of
+weak reaction such as \beta^{\pm}-decays and electron captures happen too (while
+positron captures are always negligible for stars with M \leq 40 M_{\odot,} and
+positrons prefer to annihilate with an electron producing \gamma rays that
+quickly thermalize in the plasma see [[https://ui.adsabs.harvard.edu/abs/1977ApJS...35..145A/abstract][Arnett et al. 1977]]).
 
 
 #+CAPTION:  Schematic representation of quasi statistical equilibrium on the nuclear chart. The two filled circle represent the Si (red) and Fe (blue) groups. The abundance of nuclei within each group reach NSE. The links connecting specific isotopes within each group represent the few reactions out of equilibrium, which progressively result in the depletion of the number of isotopes in the Si group in favor of those in the Fe group.
@@ -449,11 +466,12 @@ forward and reverse reactions happening at very high rates but
 canceling each other out, resulting in a very /stiff/ set of equations
 to solve for the evolution of the chemical composition. In this
 situation, the truncation errors in the floating point algebra of
-computers can easily become problematic. The rates are so high that
-the Quasi Statistical Equilibrium (QSE) regime is achieved: two
-distinct groups of isotopes in equilibrium are formed around silicon
-and iron and only few reactions linking the two groups are out of
-balance with their reverse.
+computers can easily become problematic.
+
+The rates are so high that the Quasi Statistical Equilibrium (QSE) regime
+is achieved: two distinct groups of isotopes in equilibrium are formed
+around silicon and iron and only few reactions linking the two groups are
+out of balance with their reverse.
 
 Within each "equilibrium group", the abundances of each isotope stay
 roughly constant, because production and destruction reactions
@@ -485,12 +503,11 @@ lecture]].
 #+ATTR_HTML: :width 100%
 [[./images/Nuclear_energy_generation.png]]
 
-*N.B.:* The central temperature of the Sun correspond to the higher
-range where the pp chain dominates the energy production. This means
-that in the Sun we expect some CNO burning at a sub-dominant level,
-and indeed \nu_{e} from the decay of ^{13}N have been experimentally
-detected (one can recognize them from their spectrum), see [[https://www.nature.com/articles/s41586-020-2934-0][Borexino
-collaboration 2020]].
+*N.B.:* The central temperature of the Sun correspond to the higher range
+where the pp chain dominates the energy production. This means that in the
+Sun we expect some CNO burning at a sub-dominant level, and indeed \nu_{e} from
+the decay of $^{13}N$ have been experimentally detected (one can recognize
+them from their spectrum), see [[https://www.nature.com/articles/s41586-020-2934-0][Borexino collaboration 2020]].
 
 Because of the higher and higher Coulomb barriers, the temperature
 dependence of \varepsilon_{nuc} gets steeper for heavier nuclear fuel, so
@@ -568,18 +585,18 @@ matter to tell a computer how to solve them!), but clearly 0 <
 f_{burn}<1. For a give star of mass M, the important factor here is \phi,
 which we can estimate from the nuclear binding energy per nucleon.
 
-Hydrogen burning into helium releases a lot of energy (26.5MeV/4
-protons \sim 6.625 MeV/nucleon) because if forms one of the most bound
-nuclei in nature, the \alpha particle. This large energy release, means a
-large \phi and long nuclear burning timescale. In fact, pretty much for
-any star, /hydrogen core burning covers \sim90% of the stellar lifetime/.
-This independently on whether H burning happens through the pp chain
-or CNO cycle. For this reason, while the "main sequence" is
+Hydrogen burning into helium releases a lot of energy (26.5MeV/4 protons \sim
+6.625 MeV/nucleon) because if forms one of the most bound nuclei in nature,
+the \alpha particle (which is also a double-magic nucleus!). This large energy
+release, means a large \phi and long nuclear burning timescale. In fact,
+pretty much for any star, /hydrogen core burning covers \sim90% of the stellar
+lifetime/. This independently on whether H burning happens through the pp
+chain or CNO cycle. For this reason, while the "main sequence" is
 technically an observationally defined feature on the color-magnitude
-diagram, it is common to refer to hydrogen core burning models as
-"main sequence" models: observed stars on the observed main sequence
-are so numerous because they are in the by far longest phase of their
-evolution, during which they are burning hydrogen in their core.
+diagram, it is common to refer to hydrogen core burning models as "main
+sequence" models: observed stars on the observed main sequence are so
+numerous because they are in the by far longest phase of their evolution,
+during which they are burning hydrogen in their core.
 
 The burning of Helium into a mixture of carbon and oxygen is the
 second most energetic burning: this is the reason why it occurs once a
@@ -590,7 +607,7 @@ usually last 10% of the hydrogen core burning time (\phi_{He} \simeq 0.1
 stellar lifetime/.
 
 All the other burning phases /collectively/ are only \leq 1% of a star
-lifetime! Although they are /crucial/ for the chemical evolution of the b
+lifetime! Although they are /crucial/ for the chemical evolution of the
 Universe, they are only a "blip" in the lifetime of the stars, because
 B/A vs. A roughly flattens (and f_{burn} also decreases): each subsequent
 fuel produces less and less energy per barion, thus the burning must
@@ -605,7 +622,7 @@ massive stars, silicon \rightarrow iron only lasts order of /days/.
 #+ATTR_HTML: :width 100%
 [[./images/durations.png]]
 
-* Energetically unimportant but observationally puzzling burning of Lithium
+* Energetically unimportant but observationally puzzling Lithium
 
 Lithium is a relatively rare element which has a low nuclear binding energy
 and is thus easily broken without releasing much energy. Therefore, lithium
