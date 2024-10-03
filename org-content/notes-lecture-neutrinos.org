@@ -614,9 +614,15 @@ The release of this code, together with a change in perspective from
 funding agencies and a general push towards open-science and
 open-know-how (which necessarily require to get a handle on the
 algorithmic details), has significantly changed the field of
-theoretical and computational stellar evolution. Other codes are
-progressively opening up, and at the very least being forced to
-compare their results with MESA.
+theoretical and computational stellar evolution. Other codes ("the
+GENEVA code" - a.k.a. GENEC, "the Frascati code" - a.k.a. FRANEC, "the
+Cambridge code", KEPLER, HOSHI, etc.) are progressively opening up,
+and at the very least being forced to compare their results with MESA.
+
+*N.B.:* the fact that most codes don't even have a name and are
+identified with the institution where they are mainly developed is an
+indication of the secrecy behind the computational aspects: you had to
+be at the right place to get a handle on all the details!
 
 This openness allows finally to check /systematic modeling errors/ that
 arise from algorithmic and numerical choices that may differ even for

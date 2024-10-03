@@ -654,11 +654,11 @@ proposed:
 
 * Homework
 - Calculate the Sun's mass loss rate due to the nuclear burning of 4
-  protons into helium.
-- Using =MESA-web=, which contains tabulated data for nuclear reactions
-  from experiments, calculate the evolution until the end of iron core
-  burning of a massive (M>15M_{\odot})_{}_{} star and use the
-  =trimmed_history.data= output to:
+  protons into helium
+- Using =MESA-web=, which contains tabulated data for nuclear reactions from
+  experiments, calculate the evolution until the end of iron core burning
+  of a massive (M>15M_{\odot}) star and use the =trimmed_history.data= output
+  to:
   1. determine the typical composition of the core at various
      evolutionary phases and explain it in terms of the experimentally
      derived properties of nuclei (*hint*: use the variables =center_*= to
@@ -674,16 +674,16 @@ proposed:
   those I quoted, this actually gives you an idea of /systematic/ errors
   in the numerical computations
 
-  *N.B.:* Computing the evolution of massive stars through /all/ the
-  burning phases is numerically challenging (and the stiffness of the
-  nuclear reactions rate dependence on T is a big part of the
-  challenge), therefore it is possible that your =MESA-web= model may
-  not finish the run. The file =input.txt= has a string at the end
-  telling you if the model was successful or not. If your model is not
-  and you can't get a successful model by the deadline by fiddling
-  with the input parameters, mention which input you used (listed in
-  that file) and list the composition and typical duration up to where
-  your model evolved.
+  *N.B.:* Computing the evolution of massive stars through /all/ the burning
+  phases is numerically challenging (and the stiffness of the nuclear
+  reactions rate dependence on T is a big part of the challenge), therefore
+  it is possible that your =MESA-web= model may not finish the run. The file
+  =input.txt= in the =*.zip= file you download from =MESA-web= has a string at
+  the end telling you if the model was successful or not. If your model is
+  not and you can't get a successful model by the deadline by fiddling with
+  the input parameters, mention which input you used (listed in that file)
+  and list the composition and typical duration up to where your model
+  evolved.
 
   *Hint*: I have tried with the following settings and got a model to
   form an iron core, that is successfully burn through all the viable
