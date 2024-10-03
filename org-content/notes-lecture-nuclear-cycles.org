@@ -48,7 +48,7 @@ thermonuclear reaction rates strongly peaked functions of the
 temperature whether there are resonances (included in the
 astrophysical factor S(E)) or not.
 
-We have already know from the B/A vs. A curve that the most energy is
+We already know from the B/A vs. A curve that the most energy is
 released by hydrogen burning into helium (because \alpha particles have
 such a high binding energy), and using conservation of charge and
 leptonic number we have already written the overall reaction as:
@@ -69,7 +69,7 @@ to explain the two \nu_{e}, necessary to conserve leptonic number. This is
 needed since we need to produce two positrons e^{+} to conserve the
 charge.
 
-As you may expect from its name the weak interactions are weak,
+As you may expect from the name the weak interactions are weak,
 meaning the coupling constant is small compared to the coupling
 constant for the strong force and electromagnetic force: /weak
 interactions are the bottleneck for nuclear burning in stars/.
@@ -101,33 +101,38 @@ four-momentum (i.e., energy and momentum).
 The "pp chain" is the dominant hydrogen burning mode in low mass
 stars, like the Sun:
 
-#+CAPTION: Schematic representation of the pp chain. The right branch is the so called pp1 chain, the rarer left branch is the so called pp2 chain.
+#+CAPTION: Schematic representation of the pp chain. The right branch is the so called pp1, the rarer left branch is the so called pp2, which further has a rarer pp3 branch ending up with the formation and decay of a $^{8}\mathrm{Be}$ nucleus.
 #+ATTR_HTML: :width 100%
 [[./images/pp_cycle.png]]
 
 
 Important thing to notice:
-- there are two branches (pp1 and pp2) with different "branching
-  ratios" (86% and 14%, respectively) determined by the resonances in
-  the daughter nuclei C^{\star}
+- there are three branches (pp1, pp2 which further branches off into pp3)
+  with different "branching ratios" (86% and 14% for pp1 and pp2,
+  respectively, with 0.01% of pp2 ending in pp3) determined by the
+  resonances in the daughter nuclei C^{\star} which are $^{7}\mathrm{Be}$,
+  $^{7}\mathrm{Li}$, and ^{8}\mathrm{B}$ respectively here.
 - the overall reaction produces two neutrinos \nu_{e}, as expected from the
   overall reaction \ref{eq:overall_reaction}.
 - the first reaction, the weak reaction producing Deuterium (D) is the
   main bottleneck, which can also be understood in terms of the
   nuclear physics: it requires the interaction of two protons (A=1 \Rightarrow
-  r_{nuc} = r_{0} = 1.5\times10^{-13} cm) with a high Coulomb barier.
-- the \gamma particle produced in certain reactions (i.e. photons needed
-  for the conservation of the four-momentum, which are \gamma rays because
-  of the 1-10MeV energy scale of nuclear interactions) will quickly
-  scatter around off electrons and "thermalize" providing the energy
-  to the star
-- viceversa, the \nu_{e} leave directly the star (and the Earth is
-  constantly bombarded by a flux of \nu_{e} from the Sun!)
-- the $^{3}\mathrm{He}+^{3}\mathrm{He}\rightarrow^{4}\mathrm{He}+p+p$ turns two nuclei into 3, this will
-  impact the number of particles per unit baryonic mass (which remains
-  \sim6m_{u} at zeroth-order): this will impact the mean molecular \mu
+  r_{nuc} = r_{0} = 1.5\times10^{-13} cm) with a Coulomb barrier.
+- the \gamma particle produced in certain reactions (i.e., photons needed for
+  the conservation of the four-momentum, which are \gamma rays because of the
+  1-10MeV energy scale of nuclear interactions) will quickly scatter around
+  off electrons and "thermalize" providing the energy to the star
+- viceversa, the \nu_{e} leave directly the star. In fact the Earth is
+  constantly bombarded by a flux of \nu_{e} from (primarily) the Sun, with a
+  flux of \sim10^{9} neutrinos per s^{-1} cm^{-2}.
+- the $^{3}\mathrm{He}+^{3}\mathrm{He}\rightarrow^{4}\mathrm{He}+p+p$ turns two nuclei into 3,
+  this will impact the number of particles per unit baryonic mass (which
+  remains \sim6m_{u} at zeroth-order, neglecting the small fraction \phi going into
+  energy): this will impact the mean molecular \mu and thus the temperature
+  gradient and the mixing!
 - note from the pp1 cycle we get two 2 protons out at the end as well
-  (but 4 went in).
+  (but 6 went in, 4 went into the \alpha particle as expected in the overall
+  reaction \ref{eq:overall_reaction}).
 
 Fitting the temperature dependence for the overall cycle one obtains
 \varepsilon_{nuc} \propto \langle \sigma(v)v \rangle \propto T^{4}. This is a fairly
@@ -143,6 +148,7 @@ reaction \ref{eq:overall_reaction} is needed.
 
 This occurs for stars with total mass M\ge1.2M_{\odot} and actually, to some, this is what
 /defines/ a star to be massive. The exact threshold value depends on
+
 modeling choices. For masses larger than this, hydrogen core burning occurs
 through the CN-NO bi-cycle, where the "trick" to bypass the bottleneck
 of the weak reaction in the pp chain is to use metal ions as catalysts
@@ -612,12 +618,12 @@ produced again once the star evolves. Various mechanisms have been
 proposed:
 - spallation of cosmic rays (but generally one expects the cosmic ray flux
   to be too low to explain the amount of lithium found)
-- "Cameron-Fowler mechanism": mixing at the bottom of the envelope can lead
-  to $^{3}\mathrm{He}(\alpha, \gamma)^{7}\mathrm{Be}$ and the produced $^{7}\mathrm{Be}$ is
-  then mixed outwards where it may decay into $^{7}\mathrm{Li}$ with an
-  electron capture. For this mixing to happen one expects the star to be
-  quite evolved (an AGB star), and we see more Lithium-rich giants than
-  this can explain.
+- "Cameron-Fowler mechanism" ([[https://ui.adsabs.harvard.edu/abs/1971ApJ...164..111C/abstract][Cameron & Fowler 1971]]): mixing at the bottom
+  of the envelope can lead to $^{3}\mathrm{He}(\alpha, \gamma)^{7}\mathrm{Be}$ and the
+  produced $^{7}\mathrm{Be}$ is then mixed outwards where it may decay into
+  $^{7}\mathrm{Li}$ with an electron capture. For this mixing to happen one
+  expects the star to be quite evolved (an AGB star), and we see more
+  Lithium-rich giants than this can explain.
 
 * Homework
 - Calculate the Sun's mass loss rate due to the nuclear burning of 4

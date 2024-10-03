@@ -413,13 +413,11 @@ location too!
 generic class of gray atmospheres where the constant of integration is
 /not/ a constant, but a function of \tau itself.
 
-* Spectral line formation
+* Saha equation
 
-** Saha equation
-
-Let's also assume that LTE still holds, therefore, the rate at which
-atoms are ionized I matches the rate at which there are recombinations
-R (principle of detailed balance). Therefore:
+Let's also assume that LTE holds in the stellar atmosphere, therefore,
+the rate at which atoms are ionized I matches the rate at which there
+are recombinations R (principle of detailed balance). Therefore:
 
 #+begin_latex
 \begin{equation}
@@ -433,7 +431,6 @@ states to all these particles, which in the limit of ideal gas we can
 calculate using Maxwell-Boltzmann statistics! The momentum terms of
 the ions and neutral atoms cancel each other in the ratio (neglecting
 the small mass difference between these 2), and we are left with
-
 #+begin_latex
 \begin{equation}
 \frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
@@ -441,22 +438,30 @@ the small mass difference between these 2), and we are left with
 #+end_latex
 where the first term comes from the momentum phase space of the
 electron (with 2 factor for its spin) and the exponential depends on
-the ionization potential \chi.
+the ionization potential \chi. This is the so called Saha equation named
+after [[https://en.wikipedia.org/wiki/Meghnad_Saha][Megnhad Saha]], which under the assumption of LTE (sometimes
+questionable in stellar atmospheres) allows to calculate the free
+electron and ion densities.
+
+*N.B.:* The exponential factor comes from the Maxwell-Boltzmann
+statistical distribution of dn_{0} and dn_{e} dn_{+}!
+
+For any ion/atom for which we can calculate (or empirically determine
+in a lab) the ionization potential \chi, or more in general the
+difference in their energy levels, we can write a similar equation!
+Thus once the temperature T of a gas is specified this allows us to
+predict what the photons filtering through the atmosphere will
+encounter, and thus what we expect will be "removed" from the
+distribution of photons coming out of the photosphere and the
+resulting spectrum of the stars.
+
+*N.B.:* This equation also allows us to determine the number of free
+electrons and thus the chemical potential in the partial ionization
+zones of the stars!
+
+* Spectral line formation
 
 
-
-
-
-To make things tractable, let's consider a star made of pure Hydrogen
-for simplicity, since in that case we only have three possible
-particles:
-- neutral H (HI)
-- ionized H (HII), that is a proton
-- electron
-
-:Question:
-- *Q*: can there be a star of pure H astrophysically?
-:end:
 
 ** Broadening mechanisms
 
@@ -466,3 +471,11 @@ particles:
 
 *** Pressure broadening
 (e.g., magnetic splitting unresolved)
+
+*** P Cygni profiles
+
+** Emission lines
+
+*** Be stars
+
+*** Wolf-rayet stars
