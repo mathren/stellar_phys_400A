@@ -140,19 +140,16 @@ steep powerlaw, therefore one should expect the nuclear burning to
 be /very concentrated/ inside the star in temperature coordinate.
 
 *** CN-NO bi-cycle
-When the luminosity of a star is high (recall for a fully radiative
-star L\propto M^{x}\mu^{4} with x \equiv x(M)\ge0), the bottleneck for the
-reaction p+p\rightarrow D+e^{+} +\nu_{e} prevents the stars from reaching L=L_{nuc}
-through the pp chain and another mechanism to achieve the overall
-reaction \ref{eq:overall_reaction} is needed.
+When the luminosity of a star is high (recall for a fully radiative star L\propto
+M^{x}\mu^{4} with x \equiv x(M)\ge0), the bottleneck reaction p+p\rightarrow D+e^{+}
++\nu_{e} prevents the stars from reaching L=L_{nuc} through the pp chain: its rate
+is too low. Another mechanism to achieve the overall reaction
+\ref{eq:overall_reaction} is needed.
 
-This occurs for stars with total mass M\ge1.2M_{\odot} and actually, to some, this is what
-/defines/ a star to be massive. The exact threshold value depends on
-
-modeling choices. For masses larger than this, hydrogen core burning occurs
-through the CN-NO bi-cycle, where the "trick" to bypass the bottleneck
-of the weak reaction in the pp chain is to use metal ions as catalysts
-for the reactions.
+Therefore, for masses larger than a certain threshold, hydrogen core
+burning occurs through the CN-NO bi-cycle, where the "trick" to bypass the
+bottleneck of the weak reaction in the pp chain is to use metal ions as
+catalysts for the reactions.
 
 #+CAPTION: Schematic representation of the CN-NO bi cycle.
 [[./images/CN-NO.png]]
@@ -163,16 +160,20 @@ Important things to notice:
   catalyst. Protons momentarily "stick" to them, and then \alpha particles
   are produced re-making the original C, N, and O
 - the bottleneck of the weak reactions is now bypassed by forming an
-  unstable isotope of a metal and having that decay: in a sense
-  massive stars "hack" nuclear physics to make the weak reaction not
-  happen in an isolated proton+proton reaction which is hard, but
-  within nuclei
-- CN + NO = CNO
-- $^{14}\mathrm{N}$ is a stable isotope (N=Z=A/2), and the $^{14}\mathrm{N}$+p reaction is
-  the bottleneck of the bi-cycle: since at equilibrium all these
-  reactions occur at the same rate set by the slowest reaction, this
-  means that C and O are converted into $^{14}\mathrm{N}$ in the core of massive
-  stars.
+  unstable isotope of a metal and having that decay: in a sense /massive
+  stars hack nuclear physics/ to make the weak reaction not happen in an
+  isolated proton+proton reaction which is hard, but within nuclei.
+- There are really two main cycles, the CN cycle and the NO (the figure
+  shows also minor branching out points). The second involves oxygen, which
+  has a higher Z and slightly higher Coulomb barriers, so it kicks in at
+  slightly higher temperatures, but typically a star going through the CN
+  cycle will also do the NO cycle, and they are often referred to jointly
+  as CNO cycle.
+- $^{14}\mathrm{N}$ is a stable isotope (N=Z=A/2), and the $^{14}\mathrm{N}$+p
+  reaction is the bottleneck of the bi-cycle: since at equilibrium all
+  these reactions occur at the same rate set by the slowest reaction, this
+  means that C and O are converted into $^{14}\mathrm{N}$ in the core of
+  massive stars.
 
 Because of the higher Coulomb barriers involved one can expect a
 steeper temperature dependence of this hydrogen burning mode, and in
@@ -183,14 +184,15 @@ gradient in the core of massive stars (by releasing energy in a very
 small region in mass): the cores of stars burning through the CNO
 cycle are *convective*.
 
-*N.B.:* This is also how hydrogen burns in a shell or at the surface of
-a white dwarf during a nova explosion. However, in the latter case,
-the burning is not caused by the hydrostatic structure of the star
-(i.e., by the virial theorem)! In that case you can have the "hot CNO"
-cycle, where reaction rates do /not/ need to wait for \beta-decays to occur.
-This is a general feature of explosive burning: in that case we don't
-need to wait for the slowest nuclear reaction in the cycle, as the
-high temperatures can allow to bypass Coulomb barriers more easily.
+*N.B.:* This is also how hydrogen burns in a shell or at the surface of a
+white dwarf during a nova explosion: in those cases the temperature of the
+gas is set by the structure of the star independently of the requirement of
+thermonuclear burning! For novae explosions, the burning is not even
+hydrostatic: can have the "hot CNO" cycle, where reaction rates do /not/ need
+to wait for \beta-decays to occur. This is a general feature of explosive
+burning: in that case we don't need to wait for the slowest nuclear
+reaction in the cycle, as the high temperatures can allow to bypass Coulomb
+barriers more easily.
 
 :Question:
 - *Q*: How did population III stars do this? This is the topic of the [[./honors.org::*Main sequence burning in massive population III
@@ -210,7 +212,7 @@ by the virial theorem, hydrogen burning through the pp-chain will
 dominate. However, increasing M (and thus \langle T \rangle), at some point the
 CNO cycle takes over as dominant energy production mechanism.
 
-#+CAPTION: \varepsilon_{nuc}/\rho as a function of central temperature T_{c} (bottom axis) or initial mass (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning. Dashed lines are linear fits. Credits: R. Townsend.
+#+CAPTION: \varepsilon_{nuc}/\rho as a function of central temperature T_{c} (bottom axis) or initial mass (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning. Dashed lines are linear fits. Modified from a figure by R. Townsend.
 #+ATTR_HTML: :width 75%
 [[./images/pp_vs_CNO.png]]
 
@@ -224,12 +226,15 @@ studying the eigenfrequencies of stars that can be observed as
 pulsational frequencies (i.e., asteroseismology), stellar lifetimes
 inferred from population analyses, etc.
 
-The initial mass M at which the transition happens needs to be
-determined with stellar models and is around M_{pp \rightarrow CNO} \sim
-1.1-1.2M_{\odot}, where the imprecision comes from the systematic
-uncertainties in stellar models (in terms of input physics and
-algorithmic representation of the processes in the code, that we will
-discuss in more detail in the [[./notes-lecture-neutrinos.org][next lecture]]).
+The initial mass M at which the transition happens needs to be determined
+with stellar models and is around M_{pp \rightarrow CNO} \sim 1.1-1.2M_{\odot}, where the
+imprecision comes from the systematic uncertainties in stellar models (in
+terms of input physics and algorithmic representation of the processes in
+the code, that we will discuss in more detail in the [[./notes-lecture-neutrinos.org][next lecture]]). To some
+extent, this is a physically motivated threshold to /define/ what a "massive"
+star is (for example this is typical in asteroseismology context), though
+other meaningful threshold exist: the term "massive star" is typically
+context dependent.
 
 ** Helium burning
 Once hydrogen fuel runs out in the core of a star (i.e., for mass
