@@ -3,7 +3,9 @@
 #+email: mrenzo@arizona.edu
 
 * Stellar atmospheres
-*Materials:* Mihalas Stellar atmospheres, Chapter 3.
+*Materials:* Mihalas /Stellar atmospheres/ book, Chapter 3. de Koter's
+[[https://staff.fnwi.uva.nl/a.dekoter/ARTv1.103.00.pdf][lecture notes on radiative transfer and stellar atmospheres]], Shore's
+/Astrophysical Hydrodynamics/ book, Lamers & Cassinelli 1994 book.
 
 
 
@@ -462,7 +464,7 @@ zones of the stars!
 * Spectral line formation
 
 Lines form because the black body spectrum coming from the photosphere
-(by definition) filter through the overlaying /atmospheres/ where
+(by definition) filter through the overlaying /atmospheres/ where atomic
 radiative processes (mainly bound-bound and bound-free transitions)
 can /remove/ some photons from the spectrum.
 
@@ -533,10 +535,89 @@ outflow, a particular shape of the spectral lines will form. This is
 called after the first star in which this was detected a "P Cygni"
 line.
 
+The wind moving toward the observer will absorb radiation like any
+atmosphere, but because of its motion the absorption will be moved to
+shorter wavelengths (blue-shifted). Viceversa, the wind moving in
+directions away from the observer will have electrons de-exciting and
+thus photon /emission/ (if the de-excitation is radiative and not
+collisional), which will be redshifted to longer wavelengths, causing
+a specific shape of the line:
+
+#+CAPTION: Schematic representation of the formation of a P Cygni profile in a stellar wind. The dark region is moving toward the observer, causing the bulk of the blue-shifted absorption, as the dashed arrows indicate. The gas moving in all other directions contributes to the red-shifted emission. The gray region is occulted by the mass-losing star, and thus the gas in that region is not accessible to observations. This figure is Fig. 10.4 of S. N. Shore /Astrophysical Hydrodynamics/.
+#+HTML_ATTR: :width 100%
+[[./images/P_Cygni.png]]
 
 
 ** Emission lines
+Some stars not only show /absorption/ lines (i.e., "lack" of photons at
+certain wavelengths compared to the underlying black body spectrum
+produced at the photosphere), but also /emission lines/.
+
+The P Cygni profiles mentioned above are in a sense an "intermediate"
+behavior between these two regimes.
 
 *** Be stars
+These are stars of spectral class B (recall the [[./note-lecture-CMD-HRD.org][lecture on CMD/HRD]]),
+so fairly hot and massive, which show /emission/ lines, typically H\alpha. A
+star is classified as Be if it is a B-type star that ever showed H\alpha in
+emission, even though these can be intermittent and disappear: long
+term spectroscopic followup, including the crucial contribution of
+amateur observers is important to understand the spectral behavior and
+thus the nature of these objects (see [[http://basebe.obspm.fr/basebe/][BeSS catalog]] containing
+professionally taken and amateur spectra of many bright Be stars!).
+
+These stars are interpreted as being /fast rotating/
+(\omega\ge0.7\omega_{crit}) which shed a "decretion disk": the emission lines are not
+from the star directly, but from the disk of the star! A clear
+indication of the presence of the disk is the "double peaked"
+morphology of the H\alpha emission:
+
+#+CAPTION: Spectrum of Alcyone (\eta Tau) on March 18^{th} 2019 centered around H\alpha (\lambda\sim6562 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer [[https://www.astronomie.be/erik.bryssinck/aboutme.html][E. Bryssinck]].
+#+ATTR_HTML: :width 100%
+[[./images/Alcyone_Halpha.png]]
+
+
+:Question:
+- *Q*: can you infer why the double peaked morphology suggests a disk?
+:end:
+
+The formation path of these stars is still being actively
+investigated, but the fact that none are found with main sequence
+binary companions and many are found instead with a neutron star
+companion (periodically plunging through the disk producing X-rays
+making the system a Be-X-ray binary!) suggest that these may be
+accretor stars spun up by binary interactions (cf. [[https://ui.adsabs.harvard.edu/abs/1994A%26A...288..475P/abstract][Pols & Marinus
+1994]], [[https://ui.adsabs.harvard.edu/abs/2020A%26A...641A..42B/abstract][Bodensteiner et al. 2020]], [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.498.4705V/abstract][Vinciguerra et al. 2020]]), although
+single star evolutionary pathways also exist (e.g., [[https://ui.adsabs.harvard.edu/abs/1998A%26A...329..551L/abstract][Langer 1998]]), see
+also the review by [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...69R/abstract][Rivinus et al. 2013]].
+
+*** B[e] stars
+These are also B-type stars showing emission lines, but /forbidden/
+emission lines, that is radiative transitions where the angular
+momentum of the electron changes which are exponentially disfavored.
+These can only occur in low-density environments: if the density was
+high, the atoms/ions would much rather de-excite collisionally than with
+a radiative transition with \Delta \ell >0.
+
+Thus, the presence of a forbidden line (indicated by the squared
+brackets) suggests a very low density environment surrounding these
+stars. They tend to be brighter than Be stars (presumably, more
+massive!), and whether there is an evolutionary relation between the
+two classes is presently unclear.
 
 *** Wolf-Rayet stars
+Wolf-Rayet stars are a spectroscopic class /defined/ by the presence of
+emission lines and the deficiency (but not necessarily total lack) of
+hydrogen.
+
+They are further subdivided in classes based on the dominant lines
+visible (WNh if there is still significant amount of hydrogen, WN is
+it's nitorgen, WC for carbon, WO for oxygen). These are massive stars
+which have somehow shed a large portion of their H-rich envelopes
+(either because of winds of binary interactions) and are bright enough
+to drive strong outflows that are so dense that they are optically
+thick (remember \tau(r)=\int_{0}^{r }\kappa\rho dr'). In these dense winds
+collisional excitation of atoms/ions is possible followed by radiative
+de-excitation producing an /excess/ of photons at the specific frequency
+of the atom/ion and transition considered, resulting in the emission
+line.
