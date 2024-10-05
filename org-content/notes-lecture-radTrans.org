@@ -577,6 +577,7 @@ morphology of the H\alpha emission:
 [[./images/Alcyone_Halpha.png]]
 
 
+
 :Question:
 - *Q*: can you infer why the double peaked morphology suggests a disk?
 :end:
