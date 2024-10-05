@@ -99,7 +99,7 @@ and population synthesis.
 
 [[./notes-lecture-neutrinos.org][Notes]]
 
-** <2024-10-10 Thu> - Radiative transfer
+** <2024-10-10 Thu> - Stellar atmospheres and outer boundary conditions
 *Aims*: discuss in more detail the following:
 - outer boundary conditions
 - Saha equation
@@ -108,11 +108,6 @@ and population synthesis.
 
 [[./notes-lecture-radTrans.org][Notes]]
 
-** <2024-10-15 Tue> - Roche geometry and binary interactions
-*Aim*: Introduce the Roche approximation and its limitations and binary
- mass transfer
-
-** <2024-10-17 Thu> - Expectations for project presentations + HW review
 *** Presentation expectations
 Discuss what is expected for the presentations, how they will be
 graded, etc. how to provide useful feedback during peer-reviewing.
@@ -123,8 +118,13 @@ graded, etc. how to provide useful feedback during peer-reviewing.
    - connect to material covered in class (incl. by other presentations)
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
 
-*** Review of homework assignments that appeared more challenging
-   (by TA)
+** <2024-10-15 Tue> - Roche geometry and binary interactions
+*Aim*: Introduce the Roche approximation and its limitations and binary
+ mass transfer
+
+** <2024-10-17 Thu> - Homework review
+*Aim*: TA will review conceptual consequences of homework questions
+ focusing on the ones that appeared to pose bigger challenges
 
 ** <2024-10-22 Tue> - Evolution: low mass stars 1
 ** <2024-10-24 Thu> - Evolution: low mass stars 2
@@ -137,127 +137,18 @@ graded, etc. how to provide useful feedback during peer-reviewing.
 
 ** <2024-11-05 Tue> - No new material
 *Aim*: allow for people to go to vote, the hour will be used as a general office hour.
-** <2024-11-07 Thu> - *Guest lecture*: r-process and/or accretion on compact objects
+** <2024-11-07 Thu> - *Guest lecture*: neutrinos
 Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
 
 ** <2024-11-12 Tue> - Four student presentations
-
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
-
+*Aim*: students will present a topic in stellar evolution to the class.
+ The details of the schedule will be communicated on d2l.
 ** <2024-11-14 Thu> - Four student presentations
-
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
-
 ** <2024-11-19 Tue> - Four student presentations
-
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
 ** <2024-11-21 Thu> - Four student presentations
-
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
-
 ** <2024-11-26 Tue> - Four student presentations
-
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
-
 ** <2024-12-03 Thu> - Four student presentations
-
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
 ** <2024-12-05 Tue> - Four student presentations
-
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
 ** <2024-12-10 Thu> - Four student presentations
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 2:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 3:
-- reviewer 1:
-- reviewer 2:
-*** Presenter 4:
-- reviewer 1:
-- reviewer 2:
-
 ** <2024-12-17 Thu> - One student presentation
 Extra time can be used as backup.
-*** Presenter 1:
-- reviewer 1:
-- reviewer 2:

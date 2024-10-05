@@ -1,0 +1,136 @@
+* Presentation assigned topics, reviewers, and schedule
+
+This is the planned schedule, with dates, topics and referees.
+
+Because of the high popularity of some proposed topics and very uneven
+distribution of preferences it was /impossible/ to accommodate everyone.
+
+Dates are chosen to group topics by theme, and avoid having to both
+present and referee the same day. If you know you cannot present on
+the assigned day (or if you know you cannot referee in the week
+preceding the date of the presentation on the topic you have been
+assigned), please /let me know as soon as possible/.
+
+Adjustments to the schedule are still possible in the coming week, but
+will not be possible afterwards. Barring very exceptional
+circumstances, not presenting on the scheduled day and not providing
+feedback on the deadlines will not be excused.
+
+*N.B.:* Having exams of other classes will not count as exceptional
+circumstance, I am making the schedule available as early as possible
+so you can organize yourself
+
+*In the list below, you should find your name 3 times: once as
+presenter and twice as referee.*
+
+** Reminders
+
+ - the aim is for you to review, summarize, and explain to your peers
+   some topic we cannot cover: you want to teach the others what you
+   learned!
+ - it is *strongly* advised to check your sources and plan with TA and
+   me before starting to write your written document.
+ - *written summary due one week (7 days) before the oral
+   presentation* is scheduled
+ - referees (+myself and TA) to provide feedback within 3 working days
+   after the reception of the written summary
+ - no revision of the written summary is required, but you can incorporate the feedback in your oral presentation
+ - oral presentations on the day scheduled should be 10 minutes-long
+   (+ 5 minutes of Q&A). The class will be grading the presentation.
+
+** <2024-11-12 Tue> - Four student presentations
+
+*** /Formation of stars/ - Presenter: Gilles, Matthew Scott
+- reviewers: Miller, Colin Benjamin; Soto Robles, Paulina
+*** /Orbital architectures/ - Presenter: Joyce, Thomas Alexander
+- reviewers: Klint, Kris; Doty, Ava Kaitlin
+*** /Triples: Kozai-Lidov-von Zeipel oscillations/ - Presenter: Quirk,Colton James Ramler
+- reviewers: Bernshteyn, Vadim; Srivastava, Shambhavi
+*** /Clusters: globular vs. open/ - Presenter: Olin, Isabella Juliette
+- reviewers: Dey, Swapnaneel; Garg,  Animesh
+
+** <2024-11-14 Thu> - Four student presentations
+
+*** /Astrometry/ - Presenter: Mack, Laura Johanna
+- reviewers: Lagnado, Matan Jacob; Bressani, Alessandro Rafael
+*** /Gaia BHs/ - Presenter: Gurney, Jessica Lynn
+- reviewers: Kowalski, Laine Katherine; Olin, Isabella Juliette
+*** /Cluster dynamics/ - Presenter: Doty, Ava Kaitlin
+- reviewers: Quirk, Colton James Ramler; Smith, Savannah R
+*** /Polluted WDs/ - Presenter: Larson, Linae
+- reviewers: Klingele, Justin Ross; Fowler, Chip Jewel
+
+** <2024-11-19 Tue> - Four student presentations
+*** /Mass transfer/ - Presenter: Singelstad, Ole Ole
+- reviewers: Phan, Ben A; Kress,Virginia Veronica
+*** /Algol paradox/ - Presenter: Cardona, Alondra
+- reviewers: Butler, Ella J; Srivastava, Shambhavi
+*** /Common envelope/ - Presenter: Andras-Letanovszky, Hanga
+- reviewers: Harnist, Zach P; Klingele, Justin Ross
+*** /Tides/ - Presenter: Garg, Animesh
+- reviewers: Doty,Ava Kaitlin; Larson, Linae
+
+** <2024-11-21 Thu> - Four student presentations
+
+*** /Novae/ - Presenter: Klingele, Justin Ross
+- reviewers: Phan, Ben A; Tucker, Vincent Riley Mason
+*** /Thermonuclear explosions in WDs/ - Presenter: Antonic, Aleksandar
+- reviewers: Cardona, Alondra; Larson, Coco Renee
+*** /PISN/ - Presenter: Bernshteyn, Vadim Yuryevich
+- reviewers: Singelstad, Ole Ole; Smith,  Savannah
+*** /s- and /r-process/ - Presenter: Jesina, Ellen Lee
+- reviewers: Andras-Letanovszky Hanga; Wang, Eason
+
+** <2024-11-26 Tue> - Four student presentations
+
+*** /Parker model of the solar wind/ - Presenter: Lagnado, Matan Jacob
+- reviewers: Jesina, Ellen Lee;	Gilles, Matthew Scott
+*** /Radiatively driven stellar winds/ - Presenter: Bressani, Alessandro Rafael
+- reviewers: Mack,  Laura; Dey, Swapnaneel
+*** /Neutron star structure/ - Presenter: Smith, Savannah R
+- reviewers: Wang, Eason; Doty, Ava Kaitlin
+*** /X-ray binaries/ - Presenter: Srivastava, Shambhavi
+- reviewers:Andras-Letanovszky, Hanga; Kowalski, Laine Katherine
+
+** <2024-12-03 Tue> - Four student presentations
+
+*** /Chemical evolution/ - Presenter: Dey, Swapnaneel
+- reviewers: Jesina, Ellen Lee;	Singelstad, Ole Ole
+*** /Stars in AGNs/ - Presenter: Phan, Ben A
+- reviewers: Miller, Colin Benjamin; Tucker, Vincent Riley Mason
+*** /Convective boundary mixing/ - Presenter: Fowler, Chip Jewel
+- reviewers: Bressani, Alessandro Rafael; Harnist, Zach P
+*** /M dwarfs & Brown dwarfs/ - Presenter: Soto Robles, Paulina
+- reviewers: Klindt, Kris; Fowler, Chip Jewel
+
+** <2024-12-05 Thu> - Four student presentations
+
+*** /Stellar rotation/ - Presenter: Larson, Coco Renee
+- reviewers: Klindt, Kris; Kowalski, Laine Katherine
+*** /Supermassive stars/ - Presenter: Butler, Ella J
+- reviewers: Larson, Coco Renee; Kress,  Virginia
+*** /Stellar neutrinos/ - Presenter: Wang, Eason
+- reviewers: Bernshteyn, Vadim;	Joyce,  Thomas
+*** /Shonber/g-Chandrasekhar limit - Presenter: Klindt, Kris
+- reviewers: Soto Robles, Paulina; Olin, Isabella Juliette
+
+** <2024-12-10 Tue> - Three student presentations
+Extra time can be used as backup.
+
+*** /Dark stars/ - Presenter: Kress, Virginia Veronica
+- reviewers: Antonic, Aleksandar; Bressani, Alessandro Rafael
+*** /GW progenitors: isolated binaries/ - Presenter: Harnist, Zach P
+- reviewers: Antonic, Aleksandar; Gurney, Jessica Lynn
+*** /GW progenitors: Presenter: Miller, Colin Benjamin/
+- reviewers: Bressani,  Alessandro Raphael; Mack, Laura Johanna
+
+** <2024-12-12 Thu> - Two student presentation
+Extra time can be used as backup.
+
+*** /Asteroseismology/ - Presenter: Kowalski, Laine Katherine
+- reviewers: Joyce,  Thomas; Butler,  Ella
+*** /Cepheids/ - Presenter: Tucker, Vincent Riley Mason
+- reviewers: Garg Animesh; Quirk,  Colton
+
+** Exam week
+No presentation planned, extra time can be used as backup

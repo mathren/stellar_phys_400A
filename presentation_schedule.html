@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-10-04 Fri 16:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="author" content="math" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<div id="outline-container-org5baf6ec" class="outline-2">
+<h2 id="org5baf6ec">Presentation assigned topics, reviewers, and schedule</h2>
+<div class="outline-text-2" id="text-org5baf6ec">
+<p>
+This is the planned schedule, with dates, topics and referees.
+</p>
+
+<p>
+Because of the high popularity of some proposed topics and very uneven
+distribution of preferences it was <i>impossible</i> to accommodate everyone.
+</p>
+
+<p>
+Dates are chosen to group topics by theme, and avoid having to both
+present and referee the same day. If you know you cannot present on
+the assigned day (or if you know you cannot referee in the week
+preceding the date of the presentation on the topic you have been
+assigned), please <i>let me know as soon as possible</i>.
+</p>
+
+<p>
+Adjustments to the schedule are still possible in the coming week, but
+will not be possible afterwards. Barring very exceptional
+circumstances, not presenting on the scheduled day and not providing
+feedback on the deadlines will not be excused.
+</p>
+
+<p>
+<b>N.B.:</b> Having exams of other classes will not count as exceptional
+circumstance, I am making the schedule available as early as possible
+so you can organize yourself well ahead!
+</p>
+</div>
+
+<div id="outline-container-orga933639" class="outline-3">
+<h3 id="orga933639">Reminder</h3>
+<div class="outline-text-3" id="text-orga933639">
+<ul class="org-ul">
+<li>the aim is for you to review, summarize, and explain to your peers
+some topic we cannot cover: you want to teach the others what you
+learned!</li>
+<li>it is <b>strongly</b> advised to check your sources and plan with TA and
+me before starting to write your written document.</li>
+<li><b>written summary due one week (7 days) before the oral
+presentation</b> is scheduled</li>
+<li>referees (+myself and TA) to provide feedback within 3 working days
+after the reception of the written summary</li>
+<li>no revision of the written summary is required, but you can incorporate the feedback in your oral presentation</li>
+<li>oral presentations on the day scheduled should be 10 minutes-long
+(+ 5 minutes of Q&amp;A). The class will be grading the presentation.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org272f79b" class="outline-3">
+<h3 id="org272f79b"><span class="timestamp-wrapper"><span class="timestamp">&lt;2024-11-12 Tue&gt; </span></span> - Four student presentations</h3>
+<div class="outline-text-3" id="text-org272f79b">
+</div>
+<div id="outline-container-org0d92025" class="outline-4">
+<h4 id="org0d92025">Formation of stars - Presenter: Gilles, Matthew Scott</h4>
+<div class="outline-text-4" id="text-org0d92025">
+<ul class="org-ul">
+<li>reviewers: Miller, Colin Benjamin; Soto Robles, Paulina</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf0c9fcd" class="outline-4">
+<h4 id="orgf0c9fcd">Orbital architectures - Presenter: Joyce, Thomas Alexander</h4>
+<div class="outline-text-4" id="text-orgf0c9fcd">
+<ul class="org-ul">
+<li>reviewers: Klint, Kris; Doty, Ava Kaitlin</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7a73c05" class="outline-4">
+<h4 id="org7a73c05">Triples: Kozai-Lidov-von Zeipel oscillations - Presenter: Quirk,Colton James Ramler</h4>
+<div class="outline-text-4" id="text-org7a73c05">
+<ul class="org-ul">
+<li>reviewers: Bernshteyn, Vadim; Srivastava, Shambhavi</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org1ef8fde" class="outline-4">
+<h4 id="org1ef8fde">Clusters: globular vs. open - Presenter: Olin, Isabella Juliette</h4>
+<div class="outline-text-4" id="text-org1ef8fde">
+<ul class="org-ul">
+<li>reviewers: Dey, Swapnaneel; Garg,  Animesh</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5d9357b" class="outline-3">
+<h3 id="org5d9357b"><span class="timestamp-wrapper"><span class="timestamp">&lt;2024-11-14 Thu&gt; </span></span> - Four student presentations</h3>
+<div class="outline-text-3" id="text-org5d9357b">
+</div>
+<div id="outline-container-org0fbbcca" class="outline-4">
+<h4 id="org0fbbcca">Astrometry - Presenter: Mack, Laura Johanna</h4>
+<div class="outline-text-4" id="text-org0fbbcca">
+<ul class="org-ul">
+<li>reviewers: Lagnado, Matan Jacob; Bressani, Alessandro Rafael</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4863141" class="outline-4">
+<h4 id="org4863141">Gaia BHs - Presenter: Gurney, Jessica Lynn</h4>
+<div class="outline-text-4" id="text-org4863141">
+<ul class="org-ul">
+<li>reviewers: Kowalski, Laine Katherine; Olin, Isabella Juliette</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc0424bf" class="outline-4">
+<h4 id="orgc0424bf">Cluster dynamics - Presenter: Doty, Ava Kaitlin</h4>
+<div class="outline-text-4" id="text-orgc0424bf">
+<ul class="org-ul">
+<li>reviewers: Quirk, Colton James Ramler; Smith, Savannah R</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9179d18" class="outline-4">
+<h4 id="org9179d18">Polluted WDs - Presenter: Larson, Linae</h4>
+<div class="outline-text-4" id="text-org9179d18">
+<ul class="org-ul">
+<li>reviewers: Klingele, Justin Ross; Fowler, Chip Jewel</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4dc30e6" class="outline-3">
+<h3 id="org4dc30e6"><span class="timestamp-wrapper"><span class="timestamp">&lt;2024-11-19 Tue&gt; </span></span> - Four student presentations</h3>
+<div class="outline-text-3" id="text-org4dc30e6">
+</div>
+<div id="outline-container-org50a264d" class="outline-4">
+<h4 id="org50a264d">Mass transfer - Presenter: Singelstad, Ole Ole</h4>
+<div class="outline-text-4" id="text-org50a264d">
+<ul class="org-ul">
+<li>reviewers: Phan, Ben A; Kress,Virginia Veronica</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5118e8b" class="outline-4">
+<h4 id="org5118e8b">Algol paradox - Presenter: Cardona, Alondra</h4>
+<div class="outline-text-4" id="text-org5118e8b">
+<ul class="org-ul">
+<li>reviewers: Butler, Ella J; Srivastava, Shambhavi</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb4e8ab9" class="outline-4">
+<h4 id="orgb4e8ab9">Common envelope - Presenter: Andras-Letanovszky, Hanga</h4>
+<div class="outline-text-4" id="text-orgb4e8ab9">
+<ul class="org-ul">
+<li>reviewers: Harnist, Zach P; Klingele, Justin Ross</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org29d2616" class="outline-4">
+<h4 id="org29d2616">Tides - Presenter: Garg, Animesh</h4>
+<div class="outline-text-4" id="text-org29d2616">
+<ul class="org-ul">
+<li>reviewers: Doty,Ava Kaitlin; Larson, Linae</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org60a9aea" class="outline-3">
+<h3 id="org60a9aea"><span class="timestamp-wrapper"><span class="timestamp">&lt;2024-11-21 Thu&gt; </span></span> - Four student presentations</h3>
+<div class="outline-text-3" id="text-org60a9aea">
+</div>
+<div id="outline-container-orge3a3493" class="outline-4">
+<h4 id="orge3a3493">Novae - Presenter: Klingele, Justin Ross</h4>
+<div class="outline-text-4" id="text-orge3a3493">
+<ul class="org-ul">
+<li>reviewers: Phan, Ben A; Tucker, Vincent Riley Mason</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org547a9df" class="outline-4">
+<h4 id="org547a9df">Thermonuclear explosions in WDs - Presenter: Antonic, Aleksandar</h4>
+<div class="outline-text-4" id="text-org547a9df">
+<ul class="org-ul">
+<li>reviewers: Cardona, Alondra; Larson, Coco Renee</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0d6cf4e" class="outline-4">
+<h4 id="org0d6cf4e">PISN - Presenter: Bernshteyn, Vadim Yuryevich</h4>
+<div class="outline-text-4" id="text-org0d6cf4e">
+<ul class="org-ul">
+<li>reviewers: Singelstad, Ole Ole; Smith,  Savannah</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org4a9f5eb" class="outline-4">
+<h4 id="org4a9f5eb">s-/r-process - Presenter: Jesina, Ellen Lee</h4>
+<div class="outline-text-4" id="text-org4a9f5eb">
+<ul class="org-ul">
+<li>reviewers: Andras-Letanovszky Hanga; Wang, Eason</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org76b0b63" class="outline-3">
+<h3 id="org76b0b63"><span class="timestamp-wrapper"><span class="timestamp">&lt;2024-11-26 Tue&gt; </span></span> - Four student presentations</h3>
+<div class="outline-text-3" id="text-org76b0b63">
+</div>
+<div id="outline-container-org9a03a67" class="outline-4">
+<h4 id="org9a03a67">Parker model of the solar wind - Presenter: Lagnado, Matan Jacob</h4>
+<div class="outline-text-4" id="text-org9a03a67">
+<ul class="org-ul">
+<li>reviewers: Jesina, Ellen Lee;	Gilles, Matthew Scott</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga2b7256" class="outline-4">
+<h4 id="orga2b7256">Radiatively driven stellar winds - Presenter: Bressani, Alessandro Rafael</h4>
+<div class="outline-text-4" id="text-orga2b7256">
+<ul class="org-ul">
+<li>reviewers: Mack,  Laura; Dey, Swapnaneel</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org78c4cb5" class="outline-4">
+<h4 id="org78c4cb5">Neutron star structure - Presenter: Smith, Savannah R</h4>
+<div class="outline-text-4" id="text-org78c4cb5">
+<ul class="org-ul">
+<li>reviewers: Wang, Eason; Doty, Ava Kaitlin</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7fcbf75" class="outline-4">
+<h4 id="org7fcbf75">X-ray binaries - Presenter: Srivastava, Shambhavi</h4>
+<div class="outline-text-4" id="text-org7fcbf75">
+<ul class="org-ul">
+<li>reviewers:Andras-Letanovszky, Hanga; Kowalski, Laine Katherine</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org38e1013" class="outline-3">
+<h3 id="org38e1013"><span class="timestamp-wrapper"><span class="timestamp">&lt;2024-12-03 Tue&gt; </span></span> - Four student presentations</h3>
+<div class="outline-text-3" id="text-org38e1013">
+</div>
+<div id="outline-container-org564119f" class="outline-4">
+<h4 id="org564119f">Chemical evolution - Presenter: Dey, Swapnaneel</h4>
+<div class="outline-text-4" id="text-org564119f">
+<ul class="org-ul">
+<li>reviewers: Jesina, Ellen Lee;	Singelstad, Ole Ole</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3f87e5e" class="outline-4">
+<h4 id="org3f87e5e">Stars in AGNs - Presenter: Phan, Ben A</h4>
+<div class="outline-text-4" id="text-org3f87e5e">
+<ul class="org-ul">
+<li>reviewers: Miller, Colin Benjamin; Tucker, Vincent Riley Mason</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb1d3d42" class="outline-4">
+<h4 id="orgb1d3d42">Convective boundary mixing - Presenter: Fowler, Chip Jewel</h4>
+<div class="outline-text-4" id="text-orgb1d3d42">
+<ul class="org-ul">
+<li>reviewers: Bressani, Alessandro Rafael; Harnist, Zach P</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org713fe01" class="outline-4">
+<h4 id="org713fe01">M dwarfs &amp; Brown dwarfs - Presenter: Soto Robles, Paulina</h4>
+<div class="outline-text-4" id="text-org713fe01">
+<ul class="org-ul">
+<li>reviewers: Klindt, Kris; Fowler, Chip Jewel</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc034f36" class="outline-3">
+<h3 id="orgc034f36"><span class="timestamp-wrapper"><span class="timestamp">&lt;2024-12-05 Thu&gt; </span></span> - Four student presentations</h3>
+<div class="outline-text-3" id="text-orgc034f36">
+</div>
+<div id="outline-container-org272f337" class="outline-4">
+<h4 id="org272f337">Stellar rotation - Presenter: Larson, Coco Renee</h4>
+<div class="outline-text-4" id="text-org272f337">
+<ul class="org-ul">
+<li>reviewers: Klindt, Kris; Kowalski, Laine Katherine</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org64e7fa1" class="outline-4">
+<h4 id="org64e7fa1">Supermassive stars - Presenter: Butler, Ella J</h4>
+<div class="outline-text-4" id="text-org64e7fa1">
+<ul class="org-ul">
+<li>reviewers: Larson, Coco Renee; Kress,  Virginia</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org14a3e9e" class="outline-4">
+<h4 id="org14a3e9e">Stellar neutrinos - Presenter: Wang, Eason</h4>
+<div class="outline-text-4" id="text-org14a3e9e">
+<ul class="org-ul">
+<li>reviewers: Bernshteyn, Vadim;	Joyce,  Thomas</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgb4549ab" class="outline-4">
+<h4 id="orgb4549ab">Shonberg-Chandrasekhar limit - Presenter: Klindt, Kris</h4>
+<div class="outline-text-4" id="text-orgb4549ab">
+<ul class="org-ul">
+<li>reviewers: Soto Robles, Paulina; Olin, Isabella Juliette</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org866a069" class="outline-3">
+<h3 id="org866a069"><span class="timestamp-wrapper"><span class="timestamp">&lt;2024-12-10 Tue&gt; </span></span> - Three student presentations</h3>
+<div class="outline-text-3" id="text-org866a069">
+<p>
+Extra time can be used as backup.
+</p>
+</div>
+
+<div id="outline-container-org383c0e0" class="outline-4">
+<h4 id="org383c0e0">Dark stars - Presenter: Kress, Virginia Veronica</h4>
+<div class="outline-text-4" id="text-org383c0e0">
+<ul class="org-ul">
+<li>reviewers: Antonic, Aleksandar; Bressani, Alessandro Rafael</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org7c4ec5e" class="outline-4">
+<h4 id="org7c4ec5e">GW progenitors: isolated binaries - Presenter: Harnist, Zach P</h4>
+<div class="outline-text-4" id="text-org7c4ec5e">
+<ul class="org-ul">
+<li>reviewers: Antonic, Aleksandar; Gurney, Jessica Lynn</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org828e064" class="outline-4">
+<h4 id="org828e064">GW progenitors: Presenter: Miller, Colin Benjamin</h4>
+<div class="outline-text-4" id="text-org828e064">
+<ul class="org-ul">
+<li>reviewers: Bressani,  Alessandro Raphael; Mack, Laura Johanna</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org49f33d5" class="outline-3">
+<h3 id="org49f33d5"><span class="timestamp-wrapper"><span class="timestamp">&lt;2024-12-12 Thu&gt; </span></span> - Two student presentation</h3>
+<div class="outline-text-3" id="text-org49f33d5">
+<p>
+Extra time can be used as backup.
+</p>
+</div>
+
+<div id="outline-container-orge24b931" class="outline-4">
+<h4 id="orge24b931">Asteroseismology - Presenter: Kowalski, Laine Katherine</h4>
+<div class="outline-text-4" id="text-orge24b931">
+<ul class="org-ul">
+<li>reviewers: Joyce,  Thomas; Butler,  Ella</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgdf8b0bd" class="outline-4">
+<h4 id="orgdf8b0bd">Cepheids - Presenter: Tucker, Vincent Riley Mason</h4>
+<div class="outline-text-4" id="text-orgdf8b0bd">
+<ul class="org-ul">
+<li>reviewers: Garg Animesh; Quirk,  Colton</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9a5ce48" class="outline-3">
+<h3 id="org9a5ce48">Exam week</h3>
+<div class="outline-text-3" id="text-org9a5ce48">
+<p>
+No presentation planned, extra time can be used as backup
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: math</p>
+<p class="date">Created: 2024-10-04 Fri 16:41</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

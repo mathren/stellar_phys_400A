@@ -461,21 +461,82 @@ zones of the stars!
 
 * Spectral line formation
 
+Lines form because the black body spectrum coming from the photosphere
+(by definition) filter through the overlaying /atmospheres/ where
+radiative processes (mainly bound-bound and bound-free transitions)
+can /remove/ some photons from the spectrum.
 
+To predict the spectrum of a star, one needs to know the temperature,
+density, and velocity structure of the atmosphere (to be able to
+calculate the Doppler shifts!), whether it is in LTE (so electron
+populations are described by the Saha equation above) or non-LTE
+effects need to be accounted for (e.g., for maser lines), and solve
+the radiative transfer equation.
+
+In some cases, the velocity structure depends on the radiation itself
+making this process extremely complicated, or more precisely, in the
+momentum equation of the gas, a radiative acceleration term dependent
+on the velocity (because of the Doppler-dependence of \kappa_{\nu}) appears,
+making the dynamics of the radiation+gas highly non-linear. This is,
+for example, the case of radiatively driven stellar winds from massive
+stars (see for instance the book by Lamers & Cassinelli 1994 or the
+review [[https://ui.adsabs.harvard.edu/abs/2014ARA%26A..52..487S/abstract][Smith 2014]]).
 
 ** Broadening mechanisms
+While treating in detail all these processes would require an entire
+course on its own, we can give a brief qualitative description of some
+key effects here.
+
+While considering these remember that for virtually all stars (except
+the Sun), the projected disk on the sky is /unresolved/ (the size of the
+point-spread function of the telescope is bigger than the size of the
+stellar disk projected on the sky): in an observed spectrum you see
+all the surface at the same time!
 
 *** Intrinsic width of lines
+Because of the uncertainty principle, an electron in an ion allowing
+for a bound-bound or bound-free transition is not perfectly localized.
+A consequence of this is that the spectral lines formed by one
+particular ion in a particular energy state is not an infinitely sharp
+delta function \delta(\nu_{0}) centered at \nu_{0}=\Delta E/h, but instead it is a
+Lorentzian profile with an intrinsic width.
 
 *** Rotational broadening
+If the star is rotating, some parts of the disk will be moving away
+from the observer (at a velocity v_{rot} \times sin(i) with i inclination
+angle to the line of sight), and some parts will be moving towards the
+observer (unless i=0, i.e. the star is seen rotation pole on, as seems
+to be the case for the North Star!).
+
+This will introduce a Doppler shift from each part of the disk: this
+/rotational broadening/ is usually described by a Gaussian, that needs
+to be convolved in frequency space with the intrinsic Lorentzian
+distribution coming from the QM of the transition.
+
+The /convolution/ of a Lorentzian and a Gaussian give a Voigt profile.
 
 *** Pressure broadening
-(e.g., magnetic splitting unresolved)
+In a star, even in the relatively low \rho atmosphere, ions/atoms
+interacting with radiation are /not/ in isolation! The presence of
+external forces (due to other ions/atoms, or global magnetic field,
+etc.) can modify the energy levels of each atom's Hamiltonian, and
+thus the central frequency \nu_{0} /and/ the width of specific bound-bound
+transition. Collectively this is referred to as "pressure broadening".
+
+As a concrete example, Zeeman splitting of the degenerate (in absence
+of magnetic field) \ell=1, m=0,\pm1 triplet can result in small (non
+resolved) shift in frequency that are observed as a broadened line.
 
 *** P Cygni profiles
+If the atmosphere is "moving", for example because there is a wind
+outflow, a particular shape of the spectral lines will form. This is
+called after the first star in which this was detected a "P Cygni"
+line.
+
+
 
 ** Emission lines
 
 *** Be stars
 
-*** Wolf-rayet stars
+*** Wolf-Rayet stars
