@@ -704,7 +704,7 @@ Below is an (incomplete, biased) list of some of these codes.
  - ...
 
 
-* Homework
+* Homework: preparation for in class activity
  In two weeks from now we are going to do a class activity to piece
  together all the things we have learned so far and describe the
  evolution of single, non-rotating stars with /your/ =MESA-web=-produced
@@ -719,27 +719,39 @@ Below is an (incomplete, biased) list of some of these codes.
  You will then be grouped based on the masses you have run, and be
  asked in class to discuss among yourselves why the evolution proceeds
  the way it does, and we will then discuss some of these models with
- the whole class.
+ the whole class. We will mostly used the "movies" that =MESA-web=
+ produces for you, but feel free to prepare to read profile files
+ and/or history files in a script and plot other things to better
+ understand what goes on.
 
  *N.B.:* =MESA-web= can get clogged if you all ask calculations the night
  before, so please to this well ahead - it's just filling an online
- form in the end!
+ form!
 
  *N.B.:* for the sake of having a uniform set of models to discuss,
- please use the following options for your =MESA-web= submission:
+ please use the options listed below for your =MESA-web= submission (I
+ listed all options but the mass and highlighted in *bold* the ones to
+ change w.r.t. the defaults).
+
+ *N.B.:* if the models below do not reach the desired stopping
+ condition, feel free to try again with different parameters
+ (especially "Variance Control Target" and "Mesh Delta Coefficient"
+ which control the temporal and spatial resolution, lower means higher
+ resolution for both). Please keep the first model around too for the
+ in class activity.
 
 ** initial mass M\le 5M_{\odot}
     - Burning Modifiers: =none=
-    - Nuclear Reaction Network: =approx21=
+    - *Nuclear Reaction Network*: =approx21=
     - Sampled Nuclear Reaction: =none=
     - Initial Metallicity: 0.02
     - Mixing Length Alpha: 2.0
     - Mixing Length Theory Implementation: Cox (this is an algorithmic
       formulation of MLT)
-    - Convective Overshoot f: 0.000
-    - Convective Overshoot f0: 0
-    - Semi-Convection Alpha: 0
-    - Thermohaline Alpha: 0
+    - *Convective Overshoot f*: 0.000
+    - *Convective Overshoot f0*: 0
+    - Semi-Convection Alpha: 0.01
+    - Thermohaline Alpha: 1.0
     - Thermohaline Mixing Implementation: Kippenhahn
     - Boundary Mixing: =pred= = =.false.= / =predms= = =.true.= / =cpm= =
       =.false.= (the default)
@@ -753,27 +765,41 @@ Below is an (incomplete, biased) list of some of these codes.
     - dX_nuc_drop_min_X_limit: 1e-2
     - MESA Release: =r12778=
 
-** initial mass M\ge 5M_{\odot}
+*** Stopping condition log(\rho_{center}/([g cm^{-3}]))\ge10
+    Not all models may successfully reach this condition. We will have
+    a chance to discuss "failed" models!
+
+** initial mass M\ge 7M_{\odot}
     - Burning Modifiers: =none=
-    - Nuclear Reaction Network: =approx21=
+    - *Nuclear Reaction Network*: =approx21=
     - Sampled Nuclear Reaction: =none=
     - Initial Metallicity: 0.02
     - Mixing Length Alpha: 2.0
     - Mixing Length Theory Implementation: Cox (this is an algorithmic
       formulation of MLT)
-    - Convective Overshoot f: 0.000
-    - Convective Overshoot f0: 0
-    - Semi-Convection Alpha: 0
-    - Thermohaline Alpha: 0
+    - *Convective Overshoot f*: 0.000
+    - *Convective Overshoot f0*: 0
+    - *Semi-Convection Alpha*: 0
+    - *Thermohaline Alpha*: 0
     - Thermohaline Mixing Implementation: Kippenhahn
     - Boundary Mixing: =pred= = =.false.= / =predms= = =.true.= / =cpm= =
       =.false.= (the default)
-    - Red Giant Branch Wind Scheme: Dutch (this specifies stellar winds)
-    - RGB Wind Scaling Factor: 0.8
-    - Asymptotic Giant Branch Wind Scheme: Dutch
-    - AGB Wind Scaling Factor: 0.8
+    - *Red Giant Branch Wind Scheme*: Dutch (this specifies stellar winds)
+    - *RGB Wind Scaling Factor*: 0.8
+    - *Asymptotic Giant Branch Wind Scheme*: Dutch
+    - *AGB Wind Scaling Factor*: 0.8
     - Initial Rotational Value: 0.0 (initial rotation)
     - Variance Control Target: 1e-2
     - Mesh Delta Coefficient: 2.0
     - dX_nuc_drop_min_X_limit: 1e-2
     - MESA Release: =r12778=
+
+*** Stopping condition: iron core collapse (default) value =1e8=
+   The value specified the speed of collapse that the iron core needs
+   to reach before the model stops. Usually by this point of the
+   evolution \rho is so high that \nu interactions start to matter, the EOS
+   is not that of an ideal quantum gas + radiation, and the time left
+   before a NS is formed is of order of 100 milliseconds.
+
+   Not all models may successfully reach this condition. We will have
+   a chance to discuss "failed" models!
