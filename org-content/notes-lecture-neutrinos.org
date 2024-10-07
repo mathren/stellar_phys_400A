@@ -702,3 +702,78 @@ Below is an (incomplete, biased) list of some of these codes.
  - MINT (= =binary_c= + =MESA= tables of models)
  - [[https://web.oapd.inaf.it/mapelli/SEVN.tar.gz][SEVN]] (based on =PARSEC/FRANEC= tables of models)
  - ...
+
+
+* Homework
+ In two weeks from now we are going to do a class activity to piece
+ together all the things we have learned so far and describe the
+ evolution of single, non-rotating stars with /your/ =MESA-web=-produced
+ models!
+
+ This homework is not graded, I just ask you to gather these models
+ that you will discuss to try to understand stellar evolution with the
+ physics we have discussed. Each student will have one (randomly
+ assigned) mass to run with MESA web, you will need to download and
+ unzip on your laptop and have it ready by <2024-10-22 Tue>.
+
+ You will then be grouped based on the masses you have run, and be
+ asked in class to discuss among yourselves why the evolution proceeds
+ the way it does, and we will then discuss some of these models with
+ the whole class.
+
+ *N.B.:* =MESA-web= can get clogged if you all ask calculations the night
+ before, so please to this well ahead - it's just filling an online
+ form in the end!
+
+ *N.B.:* for the sake of having a uniform set of models to discuss,
+ please use the following options for your =MESA-web= submission:
+
+** initial mass M\le 5M_{\odot}
+    - Burning Modifiers: =none=
+    - Nuclear Reaction Network: =approx21=
+    - Sampled Nuclear Reaction: =none=
+    - Initial Metallicity: 0.02
+    - Mixing Length Alpha: 2.0
+    - Mixing Length Theory Implementation: Cox (this is an algorithmic
+      formulation of MLT)
+    - Convective Overshoot f: 0.000
+    - Convective Overshoot f0: 0
+    - Semi-Convection Alpha: 0
+    - Thermohaline Alpha: 0
+    - Thermohaline Mixing Implementation: Kippenhahn
+    - Boundary Mixing: =pred= = =.false.= / =predms= = =.true.= / =cpm= =
+      =.false.= (the default)
+    - Red Giant Branch Wind Scheme: Reimers (this specifies stellar winds)
+    - RGB Wind Scaling Factor: 0.1
+    - Asymptotic Giant Branch Wind Scheme: Blocker
+    - AGB Wind Scaling Factor: 0.1
+    - Initial Rotational Value: 0.0 (initial rotation)
+    - Variance Control Target: 1e-2
+    - Mesh Delta Coefficient: 2.0
+    - dX_nuc_drop_min_X_limit: 1e-2
+    - MESA Release: =r12778=
+
+** initial mass M\ge 5M_{\odot}
+    - Burning Modifiers: =none=
+    - Nuclear Reaction Network: =approx21=
+    - Sampled Nuclear Reaction: =none=
+    - Initial Metallicity: 0.02
+    - Mixing Length Alpha: 2.0
+    - Mixing Length Theory Implementation: Cox (this is an algorithmic
+      formulation of MLT)
+    - Convective Overshoot f: 0.000
+    - Convective Overshoot f0: 0
+    - Semi-Convection Alpha: 0
+    - Thermohaline Alpha: 0
+    - Thermohaline Mixing Implementation: Kippenhahn
+    - Boundary Mixing: =pred= = =.false.= / =predms= = =.true.= / =cpm= =
+      =.false.= (the default)
+    - Red Giant Branch Wind Scheme: Dutch (this specifies stellar winds)
+    - RGB Wind Scaling Factor: 0.8
+    - Asymptotic Giant Branch Wind Scheme: Dutch
+    - AGB Wind Scaling Factor: 0.8
+    - Initial Rotational Value: 0.0 (initial rotation)
+    - Variance Control Target: 1e-2
+    - Mesh Delta Coefficient: 2.0
+    - dX_nuc_drop_min_X_limit: 1e-2
+    - MESA Release: =r12778=
