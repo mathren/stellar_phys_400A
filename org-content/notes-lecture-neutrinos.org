@@ -740,7 +740,8 @@ Below is an (incomplete, biased) list of some of these codes.
  resolution for both). Please keep the first model around too for the
  in class activity.
 
-** initial mass M\le 5M_{\odot}
+** Initial mass M\le 7M_{\odot}
+}
     - Burning Modifiers: =none=
     - *Nuclear Reaction Network*: =approx21=
     - Sampled Nuclear Reaction: =none=
@@ -762,14 +763,14 @@ Below is an (incomplete, biased) list of some of these codes.
     - Initial Rotational Value: 0.0 (initial rotation)
     - Variance Control Target: 1e-2
     - Mesh Delta Coefficient: 2.0
-    - dX\_nuc\_drop\_min\_X\_limit: 1e-2
+    - dX nuc drop min X limit: 1e-2
     - MESA Release: =r12778=
 
 *** Stopping condition log(\rho_{center}/([g cm^{-3}]))\ge10
     Not all models may successfully reach this condition. We will have
     a chance to discuss "failed" models!
 
-** initial mass M\ge 7M_{\odot}
+** Initial mass M>7M_{\odot}
     - Burning Modifiers: =none=
     - *Nuclear Reaction Network*: =approx21=
     - Sampled Nuclear Reaction: =none=
@@ -791,7 +792,7 @@ Below is an (incomplete, biased) list of some of these codes.
     - Initial Rotational Value: 0.0 (initial rotation)
     - Variance Control Target: 1e-2
     - Mesh Delta Coefficient: 2.0
-    - dX\_nuc\_drop\_min\_X\_limit: 1e-2
+    - dX nuc drop min X limit: 1e-2
     - MESA Release: =r12778=
 
 *** Stopping condition: iron core collapse (default) value =1e8=
