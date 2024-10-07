@@ -41,3 +41,5 @@ if __name__ == "__main__":
     print("m =", src[:, col.index("star_mass")])
     print("You can list all the available variable names printing the list col")
     print(col)
+    print("You can use this function by putting MIST_reader.py in your script folder")
+    print("and using `from MIST_reader import get_src_col`")
