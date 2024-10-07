@@ -741,7 +741,6 @@ Below is an (incomplete, biased) list of some of these codes.
  in class activity.
 
 ** Initial mass M\le 7M_{\odot}
-}
     - Burning Modifiers: =none=
     - *Nuclear Reaction Network*: =approx21=
     - Sampled Nuclear Reaction: =none=
@@ -800,7 +799,8 @@ Below is an (incomplete, biased) list of some of these codes.
    to reach before the model stops. Usually by this point of the
    evolution \rho is so high that \nu interactions start to matter, the EOS
    is not that of an ideal quantum gas + radiation, and the time left
-   before a NS is formed is of order of 100 milliseconds.
+   before a NS is formed is of order of \sim100 milliseconds (see also
+   [[./notes-lecture-SNe.org][lecture on supernovae]]).
 
    Not all models may successfully reach this condition. We will have
    a chance to discuss "failed" models!

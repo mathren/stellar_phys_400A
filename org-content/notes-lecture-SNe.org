@@ -1,0 +1,19 @@
+#+Title: 400A - SNe and compact object formation
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+(in construction)
+
+* Historical note
+
+* The supernova zoo
+
+* Physics of core collapse
+
+** Neutrino radiation hydrodynamics
+
+** Importance of multi-dimensional treatment
+
+** Neutron star or black hole?
+
+** If black hole, with or without explosion?
