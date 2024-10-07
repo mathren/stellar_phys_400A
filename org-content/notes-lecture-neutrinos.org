@@ -762,7 +762,7 @@ Below is an (incomplete, biased) list of some of these codes.
     - Initial Rotational Value: 0.0 (initial rotation)
     - Variance Control Target: 1e-2
     - Mesh Delta Coefficient: 2.0
-    - dX_nuc_drop_min_X_limit: 1e-2
+    - dX\_nuc\_drop\_min\_X\_limit: 1e-2
     - MESA Release: =r12778=
 
 *** Stopping condition log(\rho_{center}/([g cm^{-3}]))\ge10
@@ -791,7 +791,7 @@ Below is an (incomplete, biased) list of some of these codes.
     - Initial Rotational Value: 0.0 (initial rotation)
     - Variance Control Target: 1e-2
     - Mesh Delta Coefficient: 2.0
-    - dX_nuc_drop_min_X_limit: 1e-2
+    - dX\_nuc\_drop\_min\_X\_limit: 1e-2
     - MESA Release: =r12778=
 
 *** Stopping condition: iron core collapse (default) value =1e8=
