@@ -1,0 +1,36 @@
+#+Title: 400A - Roche geometry
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* Mass transfer in binary systems
+*Materials*: Onno Pols' lecture notes Chapter 7,8, Tauris & van den
+Heuvel book chapter 4,
+
+We have already seen in the [[./notes-lecture-BIN.org::*Binaries are common][second lecture]] that in the Universe binary
+systems of two stars orbiting each other are common, the higher the
+mass of the stars the more so (see for example [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]]).
+Historically, this fact has been leveraged to design empirical
+/dynamical mass measurement/ which rely only on Kepler's laws to obtain
+masses.
+
+However, often enough, stars in binaries are so close to each other
+than as they evolve, they will "touch" each other and exchange mass.
+In today's lecture we will discuss in more detail how being in a
+binary can lead to dramatic consequences for the evolution of /both/
+stars in the system, starting with the Roche model of the potential.
+
+** Roche model
+
+*** Limitations and extensions
+
+** Type of binary interactions
+
+*** Dynamically stable mass-transfer
+
+**** Case A
+
+**** Case B
+
+**** Case C
+
+*** Dynamically unstable common envelope
