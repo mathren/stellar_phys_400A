@@ -120,7 +120,9 @@ graded, etc. how to provide useful feedback during peer-reviewing.
 
 ** <2024-10-15 Tue> - Roche geometry and binary interactions
 *Aim*: Introduce the Roche approximation and its limitations and binary
- mass transfer
+mass transfer
+
+[[./notes-lecture-RLOF.org][Notes]]
 
 ** <2024-10-17 Thu> - Homework review
 *Aim*: TA will review conceptual consequences of homework questions
