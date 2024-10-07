@@ -17,3 +17,6 @@
 ** Neutron star or black hole?
 
 ** If black hole, with or without explosion?
+
+** Neutron star kicks
+(put in context with Blaauw kick!)

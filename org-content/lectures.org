@@ -126,17 +126,41 @@ graded, etc. how to provide useful feedback during peer-reviewing.
 *Aim*: TA will review conceptual consequences of homework questions
  focusing on the ones that appeared to pose bigger challenges
 
-** <2024-10-22 Tue> - Evolution: low mass stars 1
-** <2024-10-24 Thu> - Evolution: low mass stars 2
-** <2024-10-29 Tue> - Evolution: high mass stars
-*Aim*: discuss late core burning and core-collapse mechanism
+** <2024-10-22 Tue> - Evolution 1
+*Aim*: discuss the evolution of stars in an in-class activity based on
+=MESA-web= models obtained by the students.
 
-[[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][Notes (preliminary)]]
+ - fully convective stars
+ - Hayashi track for pre-MS
+ - He WDs
+
+** <2024-10-24 Thu> - Evolution 2
+*Aim*: discuss the evolution of stars in an in-class activity based on
+=MESA-web= models obtained by the students.
+
+ - red giant clump
+ - AGB pulses
+ - WD formation
+ - morphology of end of the MS
+
+
+** <2024-10-29 Tue> - Evolution 3
+*Aim*: discuss the evolution of stars in an in-class activity based on
+=MESA-web= models obtained by the students.
+
+ - Hertzsprung gap
+ - single star WR formation
+ - C, Ne, O, Si burning
 
 ** <2024-10-31 Thu> - Supernovae
+*Aim*: Introduce the nomenclature for supernovae, discuss the physics of
+core-collapse and the formation of compact objects.
+
+[[./notes-lecture-SNe.org][Notes]]
 
 ** <2024-11-05 Tue> - No new material
 *Aim*: allow for people to go to vote, the hour will be used as a general office hour.
+
 ** <2024-11-07 Thu> - *Guest lecture*: neutrinos
 Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
 
