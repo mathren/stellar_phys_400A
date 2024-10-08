@@ -23,7 +23,7 @@ stars in the system, starting with the Roche model of the potential.
 
 *** Limitations and extensions
 
-** Type of binary interactions
+* Type of binary interactions
 
 *** Dynamically stable mass-transfer
 

@@ -63,17 +63,23 @@ precision) for convective regions. We also have a criterion
 \end{equation}
 #+end_latex
 
-with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy and \varepsilon_{\nu}>0.
+with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy and \varepsilon_{\nu}>0
+(\Rightarrow it is always a /loss/ term during stellar evolution).
 
 ** Two types of neutrinos
 
-For the \rho typical in stars (think of \langle\rho_{\odot}\rangle and the other
+For the density typical in stellar interior (think of \langle\rho_{\odot}\rangle and the other
 average densities you estimated in the various homeworks), neutrinos
 can safely be considered as non-interacting. This means we can
 consider neutrinos as ultra-relativistic mass-less particles
 propagating at v \simeq c. The mass less approximation also implies that we
 neglect neutrino oscillations: even if a neutrino changes leptonic
 flavor, it's still going to leave the star carrying away its energy!
+
+*N.B.:* recall that the leptonic number is +1 for the leptons electron
+e^{-}, muon \mu^{-}, tau \tau^{-} and the corresponding neutrinos \nu_{e}, \nu_{\mu},
+\nu_{\tau} and -1 for their antiparticles positron e^{+}, positive muon \mu^{+},
+and positive \tau^{+} and the corresponding antineutrinos.
 
 Therefore, any neutrino produced in the stellar interior leaves the
 star in the light-crossing time R/c \le 1000 R_{\odot}/c \simeq 1000 \times
@@ -82,30 +88,25 @@ star in the light-crossing time R/c \le 1000 R_{\odot}/c \simeq 1000 \times
 burning, the energy carried by the neutrinos is on its way out and
 nothing is going to stop it from leaving the star).
 
-These arguments apply to both kinds of neutrinos that we can encounter
-in stellar evolution, and stop working only when densities get
-extremely high (\rho\ge10^{10} g cm^{-3}): at this point neutrinos can and do
-start interacting with matter. Such densities are only encountered in
-a collapsing core that has exhausted nuclear fuel and in neutron
-stars: neutrino interactions are crucial to the physics of the
-supernova explosions, but can safely be neglected before.
+These arguments apply to both kinds of neutrinos that we encounter in
+stellar evolution (and are about to introduce), and stop working only
+when densities get extremely high (\rho\ge10^{10} g cm^{-3}): at this point
+neutrinos can and do start interacting with matter. Such densities are
+only encountered in a collapsing core that has exhausted nuclear fuel
+and in neutron stars: neutrino interactions are crucial to the physics
+of the supernova explosions, but can safely be neglected before.
 
 During the evolution of the star that sets the stage for the
 explosion, we encounter two "classes" of neutrinos.
 
 *** Nuclear neutrinos
-We have already encountered processes occurring in stars: /weak nuclear
-reactions/! These are needed since the main sequence (both in the pp
-chain and CNO) to convert some protons into neutrons for the helium
-nuclei. On the scale of r_{nuc}, the neutrino crossing time (that is the
-light crossing time) is so short that we can neglect neutrino
-oscillations and assume conservation of leptonic number to write down
-the equations.
-
-*N.B.:* recall that the leptonic number is +1 for the leptons electron
-e^{-}, muon \mu^{-}, tau \tau^{-} and the corresponding neutrinos \nu_{e}, \nu_{\mu},
-\nu_{\tau} and -1 for their antiparticles positron e^{+}, positive muon \mu^{+},
-and positive \tau^{+} and the corresponding antineutrinos.
+We have already encountered processes producing neutrinos occurring in
+stars: /weak nuclear reactions/! These are needed since the main
+sequence (both in the pp chain and CNO) to convert some protons into
+neutrons for the helium nuclei. On the scale of r_{nuc}, the neutrino
+crossing time (that is the light crossing time) is so short that we
+can neglect neutrino oscillations and assume conservation of leptonic
+number to write down the equations.
 
 These neutrinos do carry away energy as described above, /but/ that is
 just some of the energy that the exo-energetic thermonuclear reaction
@@ -125,7 +126,7 @@ Rio de Janeiro because when these processes kick in the energy of the
 nuclear reaction goes the same way as the money in the casino!):
 #+begin_latex
 \begin{equation}
- ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e }\\
+ ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e  }\\
  ^{A}(Z-1)\rightarrow ^{A}Z+ e^{+} +\bar{\nu_{e}}
 \end{equation}
 #+end_latex
@@ -175,14 +176,15 @@ up by the thermal neutrino losses.
 
 The neutrinos that do /not/ come from nuclear reactions are a real
 energy /loss/ term for the star that enter in the local energy
-conservation equation \varepsilon_{\nu}_{} (which is also always negative!): dL/dm =
+conservation equation \varepsilon_{\nu} (which is also always negative!): dL/dm =
 \varepsilon_{nuc} - |\varepsilon_{\nu}| +\varepsilon_{grav}.
 
 The /thermal/ processes producing these neutrinos typically will produce
 a neutrino-antineutrino /pair/ to conserve the leptonic number.
 Typically only electron neutrinos will be relevant: leptons other than
 e^{\pm} are unstable and are not commonly found in stars. They fall into
-several categories:
+several categories (here x={e,\mu, or \tau} but in stellar conditions it's
+typically e):
 
 
 #+CAPTION: Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from [[https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract][Aufderheide 1993]], and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W^{\pm}.
@@ -703,7 +705,6 @@ Below is an (incomplete, biased) list of some of these codes.
  - [[https://web.oapd.inaf.it/mapelli/SEVN.tar.gz][SEVN]] (based on =PARSEC/FRANEC= tables of models)
  - ...
 
-
 * Homework: preparation for in class activity
  In two weeks from now we are going to do a class activity to piece
  together all the things we have learned so far and describe the
@@ -741,58 +742,20 @@ Below is an (incomplete, biased) list of some of these codes.
  in class activity.
 
 ** Initial mass M\le 7M_{\odot}
-    - Burning Modifiers: =none=
     - *Nuclear Reaction Network*: =approx21=
-    - Sampled Nuclear Reaction: =none=
-    - Initial Metallicity: 0.02
-    - Mixing Length Alpha: 2.0
-    - Mixing Length Theory Implementation: Cox (this is an algorithmic
-      formulation of MLT)
-    - *Convective Overshoot f*: 0.000
-    - *Convective Overshoot f0*: 0
-    - Semi-Convection Alpha: 0.01
-    - Thermohaline Alpha: 1.0
-    - Thermohaline Mixing Implementation: Kippenhahn
-    - Boundary Mixing: =pred= = =.false.= / =predms= = =.true.= / =cpm= =
-      =.false.= (the default)
-    - Red Giant Branch Wind Scheme: Reimers (this specifies stellar winds)
-    - RGB Wind Scaling Factor: 0.1
-    - Asymptotic Giant Branch Wind Scheme: Blocker
-    - AGB Wind Scaling Factor: 0.1
-    - Initial Rotational Value: 0.0 (initial rotation)
-    - Variance Control Target: 1e-2
-    - Mesh Delta Coefficient: 2.0
-    - dX nuc drop min X limit: 1e-2
-    - MESA Release: =r12778=
 
 *** Stopping condition log(\rho_{center}/([g cm^{-3}]))\ge10
     Not all models may successfully reach this condition. We will have
     a chance to discuss "failed" models!
 
 ** Initial mass M>7M_{\odot}
-    - Burning Modifiers: =none=
     - *Nuclear Reaction Network*: =approx21=
-    - Sampled Nuclear Reaction: =none=
-    - Initial Metallicity: 0.02
-    - Mixing Length Alpha: 2.0
-    - Mixing Length Theory Implementation: Cox (this is an algorithmic
-      formulation of MLT)
-    - *Convective Overshoot f*: 0.000
-    - *Convective Overshoot f0*: 0
     - *Semi-Convection Alpha*: 0
     - *Thermohaline Alpha*: 0
-    - Thermohaline Mixing Implementation: Kippenhahn
-    - Boundary Mixing: =pred= = =.false.= / =predms= = =.true.= / =cpm= =
-      =.false.= (the default)
     - *Red Giant Branch Wind Scheme*: Dutch (this specifies stellar winds)
     - *RGB Wind Scaling Factor*: 0.8
     - *Asymptotic Giant Branch Wind Scheme*: Dutch
     - *AGB Wind Scaling Factor*: 0.8
-    - Initial Rotational Value: 0.0 (initial rotation)
-    - Variance Control Target: 1e-2
-    - Mesh Delta Coefficient: 2.0
-    - dX nuc drop min X limit: 1e-2
-    - MESA Release: =r12778=
 
 *** Stopping condition: iron core collapse (default) value =1e8=
    The value specified the speed of collapse that the iron core needs
