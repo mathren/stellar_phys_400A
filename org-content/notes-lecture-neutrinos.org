@@ -716,11 +716,13 @@ Below is an (incomplete, biased) list of some of these codes.
  - [[https://binary_c.gitlab.io/][=binary_c=]]: Open source, python front-end available, can be [[https://r-izzard.surrey.ac.uk/cgi-bin/binary5.cgi][run on online]] (similar to =MESA-web=)
  - ...
 
-** Pre-computed and tabulated codes
+** Pre-computed and tabulated or hybrid codes
+ - [[https://posydon.org/][POSYDON]] (=MESA= tables of models, open source)
+ - BPASS (Based on models from "the Cambridge code")
  - ComBiNe (=BEC= tables of models)
- - METISSE (=MESA= tables of models)
- - MINT (= =binary_c= + =MESA= tables of models)
- - [[https://web.oapd.inaf.it/mapelli/SEVN.tar.gz][SEVN]] (based on =PARSEC/FRANEC= tables of models)
+ - METISSE (=MESA= tables of models, open source)
+ - MINT (= =binary_c= + =MESA= tables of models, not yet public)
+ - [[https://web.oapd.inaf.it/mapelli/SEVN.tar.gz][SEVN]] (based on =PARSEC/FRANEC= tables of models, open source)
  - ...
 
 * Homework: preparation for in class activity
