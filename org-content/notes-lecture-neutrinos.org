@@ -530,7 +530,7 @@ To solve this we could consider two approaches:
   preferred in stellar evolution as they are not limited by the sound
   crossing time.
 
-**** Solver
+*** Solver
 
 For each of these methods, we still need to specify a numerical
 solver. Typically stellar evolution codes rely on generalized first
