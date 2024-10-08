@@ -222,6 +222,13 @@ tabulated in stellar physics codes (see especially the widely used
 
 * Principles of computational stellar evolution
 
+:Quote:
+"/Traditional scientific knowledge has generally taken the form of/
+/either theory or experimental data. However, where theory and/
+/experiment stumble, simulations may offer a third way./" - Simulation,
+Johannes Lenhard et al.
+:end:
+
 We now have finally derived/discussed all the pieces of physics
 necessary to compute a stellar /structure/ model, treat its nuclear
 energy generation and thus driving its /evolution/.
@@ -247,12 +254,6 @@ some general principles behind these computational techniques.
 
 ** The most important thing: /Computer simulations are not empirical evidence/
 
-:Quote:
-"/Traditional scientific knowledge has generally taken the form of/
-/either theory or experimental data. However, where theory and/
-/experiment stumble, simulations may offer a third way./" - Simulation,
-Johannes Lenhard et al.
-:end:
 
 Computational techniques take a system of equations describing a
 physical models (for example the equations we have derived), which
