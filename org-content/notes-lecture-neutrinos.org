@@ -153,7 +153,7 @@ layer: /evolved massive stars are neutrino stars/ L_{\nu}
 \gg L_{rad} ([[https://ui.adsabs.harvard.edu/abs/1968Ap%26SS...2...96F/abstract][Fraley 1968]]).
 
 #+CAPTION: Left: evolutionary tracks on a photon HR diagram. Right: corresponding evolutionary tracks on a "neutrino" HR diagram. This is Fig. 2 from [[https://ui.adsabs.harvard.edu/abs/2020ApJ...893..133F/abstract][Farag et al. 2020]]. Note the y-axis scale in both panels.
-#+HTML_ATTR: :width 100%
+#+ATTR_HTML: :width 100%
 [[./images/neutrino_HRD.png]]
 
 
