@@ -538,6 +538,8 @@ order Newton Raphson solvers, which find the zeros of a function
 starting from an initial guess and then computing its derivative to
 create a better second guess:
 
+#+CAPTION: Animation of the Newton-Raphson method to find the zero of a function y=f(x) in one dimension through tangent approximations (from [[https://en.wikipedia.org/wiki/Newton's_method][Wikipedia]]).
+#+ATTR_HTML: :width 100%
 [[https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif]]
 
 *** Shooting method vs. Henyey method
