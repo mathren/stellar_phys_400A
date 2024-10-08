@@ -185,20 +185,19 @@ Typically only electron neutrinos will be relevant: leptons other than
 e^{\pm} are unstable and are not commonly found in stars. They fall into
 several categories (here x={e,\mu, or \tau} but in stellar conditions it's
 typically e):
-
-
-#+CAPTION: Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from [[https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract][Aufderheide 1993]], and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W^{\pm}.
-#+ATTR_HTML: :width 100%
-[[./images/feynman_diagram_neutrinos.png]]
-
   - plasmon processes: $\gamma + \tilde{\gamma} \rightarrow \nu_x + \bar{\nu}_x$,
   - bremsstrahlung: $e^{-} + ^{A}Z \rightarrow e^{-} + ^{A}Z + \nu_x + \bar{\nu}_x$,
   - pair-production: $\gamma + \gamma \rightarrow \nu_x + \bar{\nu}_x$,
   - pair annihilation:  $e^{+}+e^{-} \rightarrow \nu_x + \bar{\nu}_x$ ,
   - photo-processes: $\gamma +e^{-} \rightarrow e^{-} + \nu_x + \bar{\nu}_x$,
 
+#+CAPTION: Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from [[https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract][Aufderheide 1993]], and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W^{\pm}.
+#+ATTR_HTML: :width 100%
+[[./images/feynman_diagram_neutrinos.png]]
+
 *N.B.:* "plasmons" are collective excitations of the stellar plasma that
-propagate (the analogy is with "solitons" in fluid dynamics).
+propagate (the analogy is with "solitons" in fluid dynamics), and can
+be quantized and coupled via quantum electrodynamics to e^{\pm}.
 
 *N.B.:* The Feynman diagrams of some of these processes above are
 illustrating the processes (and the various pieces that contribute in
@@ -709,25 +708,34 @@ Below is an (incomplete, biased) list of some of these codes.
  In two weeks from now we are going to do a class activity to piece
  together all the things we have learned so far and describe the
  evolution of single, non-rotating stars with /your/ =MESA-web=-produced
- models!
+ models! Although we will stay close to the textbook stellar
+ evolution, this activity is similar to actually doing research with
+ stellar models: you compute a model, and see if it makes physical
+ sense based on physical intuition and contextual knowledge -- keeping
+ in mind that models can and do produce numerical nonsense
+ occasionally, and one has to be careful to not fool oneself!
+ Typically in research I will ran further models changing the input to
+ test my interpretation, run numerical tests (change the spatial and
+ temporal resolution for example), and iterate.
 
- This homework is not graded, I just ask you to gather these models
- that you will discuss to try to understand stellar evolution with the
- physics we have discussed. Each student will have one (randomly
- assigned) mass to run with MESA web, you will need to download and
- unzip on your laptop and have it ready by <2024-10-22 Tue>.
+ This preparation homework is not graded, I just ask you to gather
+ these models that we will discuss in class. Each student will have
+ one (randomly assigned) mass to run with MESA web, you will need to
+ download and unzip on your laptop and have it ready by
+ <2024-10-22 Tue>.
 
- You will then be grouped based on the masses you have run, and be
- asked in class to discuss among yourselves why the evolution proceeds
- the way it does, and we will then discuss some of these models with
- the whole class. We will mostly used the "movies" that =MESA-web=
- produces for you, but feel free to prepare to read profile files
- and/or history files in a script and plot other things to better
- understand what goes on.
+ In class, you will gather in groups based on the masses you have run,
+ and be discuss among yourselves why the evolution proceeds the way it
+ does, whether you think it is physical or numerical artifacts, and we
+ will then discuss some of these models with the whole class.
 
- *N.B.:* =MESA-web= can get clogged if you all ask calculations the night
- before, so please to this well ahead - it's just filling an online
- form!
+ We will mostly used the "movies" that =MESA-web= produces for you, but
+ feel free to prepare to read profile files and/or history files in a
+ script and plot other things to better understand what goes on.
+
+ *N.B.:* The =MESA-web= interface can get clogged if you all ask
+ calculations the night before, so please to this well ahead - it's
+ just filling an online form!
 
  *N.B.:* for the sake of having a uniform set of models to discuss,
  please use the options listed below for your =MESA-web= submission (I

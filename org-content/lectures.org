@@ -145,7 +145,6 @@ mass transfer
  - WD formation
  - morphology of end of the MS
 
-
 ** <2024-10-29 Tue> - Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models obtained by the students.
