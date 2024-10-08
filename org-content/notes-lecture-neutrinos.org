@@ -457,8 +457,7 @@ this!
 #+ATTR_HTML: :width 100%
 [[./images/mesh.png]]
 
-With the discretization in mind, we can rewrite the ODEs as algebraic
-equations:
+By discretizing the ODEs we can rewrite them as algebraic equations:
 
 #+begin_latex
 \begin{equation}
@@ -534,7 +533,7 @@ order Newton Raphson solvers, which find the zeros of a function
 starting from an initial guess and then computing its derivative to
 create a better second guess:
 
-[[https://en.wikipedia.org/wiki/Newton's_method#/media/File:NewtonIteration_Ani.gif]]
+[[https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif]]
 
 *** Shooting method vs. Henyey method
 There is a peculiarity in the way we built the system of equations to
@@ -581,6 +580,7 @@ fixed structure (meaning T, and \rho), and iterate computing a new
 structure with the updated composition. This allows to separate the
 problem and can make it more tractable.
 
+
 ** Open science: [[https://docs.mesastar.org/en/latest/][MESA]] and =MESA-web=
 
 :Quote:
@@ -590,29 +590,30 @@ problem and can make it more tractable.
 The discussion above is an attempt to highlight the general principles
 and technical aspects specific of computational stellar structure and
 evolution without narrowing down to a specific code. Historically,
-many groups independently developed computer codes, and only few
-universities would have the computing power to run them. In the
-1960s-1980s, even if the group leaders may have been willing to share
-their codes upon request, all the algorithmic details would typically
-be hidden from the scientific community, and considered as
-technicalities. Many of the people actually /writing/ the code and
-/implementing the algorithms/ were women, and their contribution has
-been under-appreciated because of this attitude of considering
-algorithms as technicalities.
+many groups independently developed computer codes to solve the
+stellar structure and evolution problem, and only few universities
+would have the computing power to run them. In the 1960s-1980s, even
+if the group leaders may have been willing to share their codes upon
+request, all the algorithmic details would typically be hidden from
+the scientific community, and considered as technicalities. Many of
+the people actually /writing/ the code and /implementing the algorithms/
+were women, and their contribution has been under-appreciated because
+of this attitude of considering algorithms as technicalities.
 
-Still today, the inner workings of many codes are only known to the
-inner circle of the group owning the code. In 2011, an independently
-wealthy computer-scientist-turned-astrophysicist named [[https://en.wikipedia.org/wiki/Bill_Paxton_(computer_scientist)][Bill Paxton]],
-with the collaboration of a large group of theoretical and
-computational astrophysicists (notably, P. Eggleton who provided his
-code as a starting poing), developed a new open-source, multi-purpose,
-and community driven stellar structure and evolution code, called
-=MESA=. Because this is the tool I use, and the only one I can really
-inspect, a lot of my intuition on the numerical methods and
-computational aspects is tied to this particular code. The =MESA-web=
-interface you have been using is just a predefined setup of this very
-flexible and modular code designed for educational applications: you
-have been using a bleeding edge research tools!
+Still today, the algorithmic details of many codes are only known to
+the inner circle of the group owning the code. In 2011, an
+independently wealthy computer-scientist-turned-astrophysicist free
+from the publish-or-perish academic mentality named [[https://en.wikipedia.org/wiki/Bill_Paxton_(computer_scientist)][Bill Paxton]], with
+the collaboration of a large group of theoretical and computational
+astrophysicists (notably, P. Eggleton who provided his code as a
+starting point), developed a new open-source, multi-purpose, and
+community driven stellar structure and evolution code, called =MESA=.
+Because this is the tool I use, and the only one I can really inspect,
+a lot of my intuition on the numerical methods and computational
+aspects is tied to this particular code. The =MESA-web= interface you
+have been using is just a predefined setup of this very flexible and
+modular code designed for educational applications: you have been
+using a bleeding edge research tools!
 
 The release of this code, together with a change in perspective from
 funding agencies and a general push towards open-science and
@@ -670,6 +671,9 @@ generally referred to as /population synthesis/. This can be done with
 equations of stellar structure (e.g., MESA, KEPLER, FRANEC, PARSEC,
 HOSHI, etc.).
 
+*N.B.:* These codes being 1D typically are /relatively/ cheap to run,
+about ~1-10\times CPUh per model.
+
 However, often there are many things one may want to change for /fixed/
 stellar evolution (e.g., the initial distribution of stars, or their
 metallicity distribution, or how they interact in binaries or higher
@@ -683,6 +687,11 @@ evolution of stars - producing a /rapid/ population synthesis. Coupling
 these to analytic models for the interaction of binaries (which are
 used by detailed stellar codes too!), one can get /rapid/ population
 synthesis.
+
+*N.B.:* In these codes the stellar structure problem is "pre-solved" and
+the use of semi-analytic fitting formulae to those solutions saves a
+lot of time, going from 10s of CPUh per star/binary to \sim100
+CPU-millisecond per star/binary.
 
 More recently, there has been a move to use directly tabulated results
 from detailed stellar evolution codes, instead of analytic fits to
