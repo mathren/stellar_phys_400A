@@ -254,9 +254,8 @@ some general principles behind these computational techniques.
 
 ** The most important thing: /Computer simulations are not empirical evidence/
 
-
 Computational techniques take a system of equations describing a
-physical models (for example the equations we have derived), which
+physical model (for example the equations we have derived), which
 already rely on a whole variety of physical approximations (e.g.,
 spherical symmetry, LTE, free-streaming neutrinos, etc.), and apply a
 whole new set of /numerical/ approximations to obtain a numerical
@@ -306,13 +305,14 @@ assumption of spherical symmetry, the equations describing our system
 would become partial differential equations (PDE), changing the
 mathematical and thus computational approach.
 
-In some cases, it is possible to treat some of these by casting them
-in a form that still allows a 1D formalism with ODEs (e.g., "shellular
-rotation" assuming that all quantities are constant along isobars and
-uses P as the independent coordinate, or using volume-weighted
-equivalent potentials accounting for the gravity of a companion star).
-But ultimately the physics is non-spherical, so why do we insist with
-this limited approximation?
+In some cases, it is possible to treat some of the non-spherical
+effects by casting them in a form that still allows a 1D formalism
+with ODEs (e.g., "shellular rotation" assuming that all quantities are
+constant along isobars and uses P as the independent coordinate, e.g.,
+[[https://ui.adsabs.harvard.edu/abs/2000A%26A...361..159M/abstract][Maeder & Meynet 2000]], or using volume-weighted equivalent potentials
+accounting for the gravity of a companion star, e.g., [[https://ui.adsabs.harvard.edu/abs/2015ApJS..220...15P/abstract][Paxton et al.
+2015]]). But ultimately the physics is non-spherical, so why do we
+insist with this limited approximation?
 
 The main reason is /necessity/ (see for example [[https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract][Jermyn et al. 2022
 section 5.4]]) *the contrast of scale in both space and time* required to
@@ -359,15 +359,16 @@ of stellar evolution considering only variations along the radial
 direction!
 
 Nevertheless, 3D stellar hydrodynamics of restricted problems ("box in
-a star" approach, short timescales such as stellar explosions) are
-possible, and stellar /structure/ simulations in 2D are also at the
-forefront of possibilities (see e.g., [[https://ui.adsabs.harvard.edu/abs/2023A%26A...677L...5M/abstract][Mombarag et al. 2023]]).
+a star" approach - e.g., [[https://ui.adsabs.harvard.edu/abs/2024MNRAS.533..687R/abstract][Rizzuti et al. 2024]], short timescales such as
+stellar explosions - e.g., [[https://ui.adsabs.harvard.edu/abs/2021ApJ...921...28F/abstract][Fields & Couch 2021]]) are possible, and
+stellar /structure/ simulations in 2D are also at the forefront of
+possibilities (see e.g., [[https://ui.adsabs.harvard.edu/abs/2023A%26A...677L...5M/abstract][Mombarag et al. 2023]]).
 
 ** Boundary conditions
-So, for the foreseeable future 1D stellar structure and evolution
-calculation using the set of equations we derived. To solve them, we
-need boundary conditions. These are crucial in determining the
-solution of the structure at each timestep!
+So, for the foreseeable future we will need 1D stellar structure and
+evolution calculation using the set of equations we derived. To solve
+them, we need boundary conditions. These are crucial in determining
+the solution of the structure at each timestep!
 
 For the stellar problem, we need to specify boundary conditions at two
 locations.
@@ -446,7 +447,8 @@ timestep size.
 *N.B.:* typically both the spatial resolution \Delta m_{k} and the temporal
 resolution \Delta t_{k} are /adaptive/, meaning the stellar evolution code will
 put more mesh points where / take more timesteps when quantities vary
-more rapidly.
+more rapidly. This is necessary to deal with the large dynamic range
+of multiple quantities.
 
 *N.B.:* Nature \gg numerical models, because nature does not need to do
 this!
@@ -468,7 +470,7 @@ equations:
 \end{equation}
 
 \begin{equation}
-\frac{dT}{dr} = - \frac{3}{16\pi a c}\frac{\kappa\rho L}{r^2 T^3} \mathrm{or} \frac{dT}{dr}\bigg|_\mathrm{ad}  \Leftrightarrow \frac{T_{k-1} - T_k}{(dm_{k-1} - dm_k)/2} = -\nabla_{T,k}\left(\frac{dP}{dm}\bigg|_k\right)\frac{\tilde{T_k}}{\tilde{P_k}} \\
+\frac{dT}{dr} = - \frac{3}{16\pi a c}\frac{\kappa\rho L}{r^2 T^3} \,\mathrm{or}\, \frac{dT}{dr}\bigg|_\mathrm{ad}  \Leftrightarrow \frac{T_{k-1} - T_k}{(dm_{k-1} - dm_k)/2} = -\nabla_{T,k}\left(\frac{dP}{dm}\bigg|_k\right)\frac{\tilde{T_k}}{\tilde{P_k}} \\
 \end{equation}
 
 \begin{equation}
