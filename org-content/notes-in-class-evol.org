@@ -2,6 +2,11 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
+*Materials*:
+
 * In class activity: evolution of stars
 
-*Aim*
+*Aim*: inspired by homework
+
+
+[[https://www.stellarphysics.org/research][Example pgstar plots from M. Cantiello]]
