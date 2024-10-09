@@ -50,7 +50,7 @@ but the gravitational potential of the two stars can be written as:
 
 #+begin_latex
 \begin{equation}
-V(\mathbf{r}) = -\frac{GM_{1}}{\lvert \mathbf{r}-\mathbf{r}_{1}\rvert}-\frac{GM_{2}}{\lvert \mathbf{r}-\mathbf{r}_{2}\rvert}-\frac{1}{2}(\mathbf{\Omega}\timex\mathbr{r})^{2} \ \ ,
+\Phi(\mathbf{r}) = -\frac{GM_{1}}{\lvert \mathbf{r}-\mathbf{r}_{1}\rvert}-\frac{GM_{2}}{\lvert \mathbf{r}-\mathbf{r}_{2}\rvert}-\frac{1}{2}(\mathbf{\Omega}\times\mathbr{r})^{2} \ \ ,
 \end{equation}
 #+end_latex
 Where r_{i} is the distance to M_{i} (considered a point-mass), so the first
@@ -62,30 +62,104 @@ of the stars in the binary is F=-\nabla V(\mathbf{r}). But because we are
 in non-inertial frame, there is also another term to add to the
 momentum equation which cannot be expressed as a potential, because it
 depends on the velocity of the test mass m: the Coriolis force \prop
-2\mathbf{\Omega}\times \mathbf{v}. Per unit volume the momentum conservation is thus
+2\Omega\times v. Per unit volume the momentum conservation is thus
 
 #+begin_latex
 \begin{equation}
-\partial_{t} v + (v\cdot\nabla )v = -\frac{\nabla V}{\rho}-\frac{\nabla P}{\rho}-2\mathbf{\Omega}\times \mathbf{v} \ \ .
+\partial_{t} v + (v\cdot\nabla )v = -\nabla \Phi-\frac{\nabla P}{\rho}-2\mathbf{\Omega}\times \mathbf{v} \ \ .
 \end{equation}
 #+end_latex
 
 Finally, one could also relax the hypothesis 2. above and include a
-tidal term in the potential (this again works because most of the mass
-of the star is in it's core, saving the Roche model, and the tides are
-a relatively small perturbation on top of this.)
+tidal term due to the finite size of the stars in the potential (this
+again works because most of the mass of the star is in it's core,
+saving the Roche model, and the tides are a relatively small
+perturbation on top of this):
 
 
 #+CAPTION: Visualization of the Roche potential (grid) and the equipotential surfaces intersecting the xy orbital plane for a binary with q=M_{2}/M_{1}=0.5. The three Lagrangian points L_{1}, L_{2}, and L_{3} are marked. From [[https://en.wikipedia.org/wiki/Roche_lobe#/media/File:RochePotential.jpg][wikipedia]].
 #+ATTR_HTML: :width 100%
 [[./images/RochePotential.jpeg]]
 
+On the line connecting the two binaries, this potential has three
+zeros, meaning points where there is no net force. These are called
+Lagrangian points:
+- L_{1} sits in between the two stars, and it is the point where the
+  gravitational pull from each star cancel each other
+- L_{2} is the point behind star 2 (many telescopes, including for
+  example /JWST/ sit at the L_{2} point of the Earth-Sun binary system)
+- L_{3} is the point behind star 1.
+
+The equipotential shapes are close to spheres for r_{1} and/or r_{2} \ll
+r_{L{1}}, then they get progressively elongated along the axis connecting
+the stars, and flattened by the centrifugal potential.
+
+For short period binaries, P<10 days (though the exact value depends
+on many things, especially mass M_{1}, mass ratio q=M_{2}/M_{1}, metallicity,
+etc.), we observe that the stars co-rotate with the orbit, that is
+there is complete /tidal synchronization/. In that case, in the
+co-rotating frame, the gas of both stars is still, $\mathbf{v}=0$, and
+the momentum conservation reduces to
+
+#+begin_latex
+\begin{equation}
+- \rho \nabla\Phi = \nabla P \ \ ,
+\end{equation}
+#+end_latex
+that is equipotential surfaces are also isobaric surfaces (\nabla\Phi = 0 \Leftrightarrow \nabla
+P=0), and since \rho\sim dP/d\Phi has to remain finite, it is also constant on
+these surfaces!
+
+Therefore, for a tidally synchronized binary the stellar gas will be
+shaped like equipotential surfaces in the Roche potential, producing
+non-axisymmetric, tear-drop-shaped stars.
+
+For larger periods, tidal synchronization may not occur (tides are a
+steep function of R/a), and in that case the rotational bulge may lag
+behind the orbit, adding an extra deformation.
+
 *** Limitations and extensions
+On top of the necessary hypothesis (e=0, M_{1 }\ge M_{2} \gg m, point masses
+and in co-rotation) to derive the Roche approximation, it is worth
+noting that for r\gg r_{L_{2}} the Roche model becomes less and less
+physically meaningful. By construction, it is based on the assumption
+of co-rotation with the binary, but a parcel of gas significantly
+outside L_{2} will not maintain this co-rotation, an it is more likely to
+only "see" the inner binary as a point mass with total mass M_{1}+M_{2}.
+
+The Roche potential is /clearly/ not spherically symmetric: how can we
+use this in stellar evolution simulations?! In reality, thanks to the
+fact that in depth, the potential is very closed to spherically
+symmetric, and most of the deformation is in a large by radius by
+extremely small in mass region of the star (nevertheless important for
+atmospheric effects and observable predictions!). So for the stellar
+/interior/ calculation, the spherical symmetry is still acceptable for
+most of the mass domain and as long as the stars are detached (see
+below).
+
+Each Roche lobe can then be interpreted as the /sphere of gravitational
+influence/ of each star.
+
+What we need to know then is the /volume/ of each Roche lobe, and we can
+then /define/ a sphere that has the same volume and compare the volume
+of the stellar gas to the volume of such sphere. There are multiple
+formulae to fit the Roche volume as a function of the binary
+parameters (e.g., [[https://ui.adsabs.harvard.edu/abs/1971ARA%26A...9..183P/abstract][Paczsynki 1971]]), but probably the most common one is
+[[https://ui.adsabs.harvard.edu/abs/1983ApJ...268..368E/abstract][Eggleton 1983]]'s formula, which provides a fit accurate to \sim1% and
+continuous across a large range of mass ratios:
+
+#+begin_latex
+\begin{equation}
+R_{RL,i}_{} = a \frac{0.49 q_{i}^{2/3}}{0.6q_{i}^{2/3}+\ln(1+q_{i}^{2/3})} \ \ ,
+\end{equation}
+#+end_latex
+where a is the orbital separation, q_{i} = M_{i}/M_{j}, and 4\pi R_{RL,i}^{3}/3 \sim Roche
+volume of star i.
+
 
 * Type of binary interactions
 
-*** Dynamically stable mass-transfer
-
+*** Dynamically stable mass-transferSS
 **** Case A
 
 **** Case B
@@ -93,3 +167,9 @@ a relatively small perturbation on top of this.)
 **** Case C
 
 *** Dynamically unstable common envelope
+
+
+:Question:
+- *Q*: if there is matter flowing through L_{1}, can it be convective at
+  that radius?
+:end:
