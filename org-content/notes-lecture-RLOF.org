@@ -50,7 +50,7 @@ but the gravitational potential of the two stars can be written as:
 
 #+begin_latex
 \begin{equation}
-\Phi(\mathbf{r}) = -\frac{GM_{1}}{\lvert \mathbf{r}-\mathbf{r}_{1}\rvert}-\frac{GM_{2}}{\lvert \mathbf{r}-\mathbf{r}_{2}\rvert}-\frac{1}{2}(\mathbf{\Omega}\times\mathbr{r})^{2} \ \ ,
+\Phi(\mathbf{r}) = -\frac{GM_{1}}{\lvert \mathbf{r}-\mathbf{r}_{1}\rvert}-\frac{GM_{2}}{\lvert \mathbf{r}-\mathbf{r}_{2}\rvert}-\frac{1}{2}(\mathbf{\Omega}\times\mathbf{r})^{2} \ \ ,
 \end{equation}
 #+end_latex
 Where r_{i} is the distance to M_{i} (considered a point-mass), so the first
@@ -82,8 +82,8 @@ perturbation on top of this):
 [[./images/RochePotential.jpeg]]
 
 On the line connecting the two binaries, this potential has three
-zeros, meaning points where there is no net force. These are called
-Lagrangian points:
+zeros, meaning points where there is no net force. All three are
+/saddle points/ and they are called Lagrangian points:
 - L_{1} sits in between the two stars, and it is the point where the
   gravitational pull from each star cancel each other
 - L_{2} is the point behind star 2 (many telescopes, including for
@@ -107,7 +107,7 @@ the momentum conservation reduces to
 \end{equation}
 #+end_latex
 that is equipotential surfaces are also isobaric surfaces (\nabla\Phi = 0 \Leftrightarrow \nabla
-P=0), and since \rho\sim dP/d\Phi has to remain finite, it is also constant on
+P=0), and since \rho \sim dP/d\Phi has to remain finite, it is also constant on
 these surfaces!
 
 Therefore, for a tidally synchronized binary the stellar gas will be
@@ -118,7 +118,6 @@ For larger periods, tidal synchronization may not occur (tides are a
 steep function of R/a), and in that case the rotational bulge may lag
 behind the orbit, adding an extra deformation.
 
-*** Limitations and extensions
 On top of the necessary hypothesis (e=0, M_{1 }\ge M_{2} \gg m, point masses
 and in co-rotation) to derive the Roche approximation, it is worth
 noting that for r\gg r_{L_{2}} the Roche model becomes less and less
@@ -126,6 +125,14 @@ physically meaningful. By construction, it is based on the assumption
 of co-rotation with the binary, but a parcel of gas significantly
 outside L_{2} will not maintain this co-rotation, an it is more likely to
 only "see" the inner binary as a point mass with total mass M_{1}+M_{2}.
+
+
+#+CAPTION: cross section of the potential on a plane perpendicular to the orbit and passing through the three Lagrangian points. The dotted line outside of L_{2} mark where co-rotation is not achievable and the Roche approximations don't hold anymore. The dark gray binary with both stars within their Roche lobes is a /detached/ binary, the intermediate gray one, where M_{1} fills its Roche lobe is a /semidetached/ binary, and the lightest gray where both stars fill their lobes is a contact binary. This is Figure 6.1 of Onno Pols' lecture notes.
+#+ATTR_HTML: :width 100%
+[[./images/potential_Roche.png]]
+
+
+*** Spherical approximation
 
 The Roche potential is /clearly/ not spherically symmetric: how can we
 use this in stellar evolution simulations?! In reality, thanks to the
@@ -158,15 +165,67 @@ volume of star i.
 
 
 * Type of binary interactions
+As we will see in the next in class activity, stars tend to grow
+bigger as the evolve: even a binary system that stars as detached may
+come into contact as the stars evolve, triggering the onset of mass
+transfer between the stars in the binary system. In fact, gas reaching
+L_{1} will be equally bound to either stars, and it can easily be
+perturbed to fall into the other star.
 
-*** Dynamically stable mass-transferSS
-**** Case A
+Depending on the stability of the /orbital response/ to the
+transfer of mass, we distinguish two cases:
 
-**** Case B
+** Dynamically stable mass-transfer
+If Roche lobe overflow does not hit a runaway response of the orbit
+(causing more and more overflow), then it is dynamically stable.
 
-**** Case C
+This will occur in the vast majority of massive stars, and it can have
+important consequences for /both/ stars that will be modified by this
+interaction:
+- the donor typically will lose most or all it's hydrogen rich
+  envelope, becoming a hot, Helium rich, compact star
+- the accretor will be spun up and polluted by material from the
+  companion, becoming a fast rotating and overluminous star.
+- if the accretor has a convective core, increasing M will because of
+  the virial theorem increase \langle T \rangle, and facilitate a growth in mass
+  coordinate of the core, allowing the burning region to access more
+  fuel and thus rejuvenating the star.
 
-*** Dynamically unstable common envelope
+** Dynamically unstable common envelope
+Sometimes, the orbit and or the evolution of the stars respond to mass
+transfer increasing the amount of overflow, leading to an unstable
+situation: in this case the system enters in contact first, and then
+ultimately in a common envelope event.
+
+During a common envelope the gas of the envelope of both stars fills
+equipotentials beyond L_{2}, cannot maintain co-rotation, and thus start
+exerting a friction on the orbit of the two cores (or core and star)
+inside this shared envelope.
+
+This results in an inspiral that can end either with:
+ - a stellar merger
+ - the successful ejection of the shared envelope (interrupting the
+   drag), and the formation of a tight period binary
+
+** Case A, B, and C
+Depending on when mass transfer starts, we can have:
+  - case A RLOF: donor is burning hydrogen in its core
+  - case B RLOF: the donor has a helium core (possibly inert and
+    sustained by electron degeneracy or burning)
+  - case C RLOF: for low mass stars, this is typically defined after
+    He ignition, for high mass stars, it is typically defined after
+    core He depletion
+Because of the different L and \varphi factors for each nuclear burning
+phase, the timescales and therefore responses of both stars and the
+orbit to mass transfer can be very different for these three.
+
+* Conservative mass transfer evolution: \Delta M = \Delta J = 0
+
+
+
+
+
+
 
 
 :Question:
