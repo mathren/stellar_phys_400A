@@ -2,11 +2,11 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Virial theorem
 *Materials*: Chapter 2 of Onno Pols' lecture notes, Chapter 3 of
 Kippenhahn's book, Sec. 1.5 of "Tapestry of Modern Astrophysics" by S.
 N. Shore, pages 134-139 Clayton's book.
 
+* Virial theorem
 In the [[./notes-lecture-EOS1.org][previous lecture]], we have discussed that it is appropriate to
 use thermodynamics to describe the /local/ properties of the stellar
 gas. We had already established that (self-)gravity determines the

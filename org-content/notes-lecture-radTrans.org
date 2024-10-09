@@ -2,12 +2,11 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Stellar atmospheres
 *Materials:* Mihalas /Stellar atmospheres/ book, Chapter 3. de Koter's
 [[https://staff.fnwi.uva.nl/a.dekoter/ARTv1.103.00.pdf][lecture notes on radiative transfer and stellar atmospheres]], Shore's
 /Astrophysical Hydrodynamics/ book, Lamers & Cassinelli 1994 book.
 
-
+* Stellar atmospheres
 
 So far in this course we have mostly dealt with the /interior/ of stars
 and derived equation to determine the stellar /structure/ and what

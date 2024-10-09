@@ -2,10 +2,10 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* The first two equations of stellar structure
 *Materials*: chapter 2 of Onno Pols' lecture notes, chapters 1 & 2 of
 Kippenhahn's book.
 
+* The first two equations of stellar structure
 So far we have mostly been discussing astronomical facts on stars
 (e.g., use of populations to understand phenomena too slow to observe,
 the CMD/HRD diagrams, various types of binaries and how to use

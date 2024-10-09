@@ -2,10 +2,10 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Energy transport in stars
 *Materials*: Chapters 3 and 5 of Onno Pols' lecture notes, chapter 5 of
 Kippenhan & Weigert's book.
 
+* Energy transport in stars
 ** Summary of where we are
 
 *** Mass conservation:

@@ -2,9 +2,10 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Mass transfer in binary systems
 *Materials*: Onno Pols' lecture notes Chapter 7,8, Tauris & van den
 Heuvel book chapter 4,
+
+* Mass transfer in binary systems
 
 We have already seen in the [[./notes-lecture-BIN.org::*Binaries are common][second lecture]] that, in the Universe,
 binary systems composed of two stars orbiting each other are common,
@@ -170,7 +171,8 @@ bigger as the evolve: even a binary system that stars as detached may
 come into contact as the stars evolve, triggering the onset of mass
 transfer between the stars in the binary system. In fact, gas reaching
 L_{1} will be equally bound to either stars, and it can easily be
-perturbed to fall into the other star.
+perturbed to fall into the other star (see also review by [[https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract][Marchant &
+Bodensteiner 2024]]).
 
 Depending on the stability of the /orbital response/ to the
 transfer of mass, we distinguish two cases:
@@ -195,7 +197,8 @@ interaction:
 Sometimes, the orbit and or the evolution of the stars respond to mass
 transfer increasing the amount of overflow, leading to an unstable
 situation: in this case the system enters in contact first, and then
-ultimately in a common envelope event.
+ultimately in a /common envelope event/ (see reviews by [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract][Ivanova et al.
+2013]], [[https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract][Ropke & de Marco 2023]] and Ivanova et al. 2020s book)
 
 During a common envelope the gas of the envelope of both stars fills
 equipotentials beyond L_{2}, cannot maintain co-rotation, and thus start

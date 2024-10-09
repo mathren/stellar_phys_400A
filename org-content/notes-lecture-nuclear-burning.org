@@ -1,11 +1,12 @@
 #+Title: 400A - Nuclear burning
 #+author: Mathieu Renzo
 
-* Microphysics of nuclear burning
 *Materials:* Onno Pol's lecture notes Chapter 6.1 and 6.2, Kippenhahn
- book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, Clayton
- Chapter 4, [[https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstract][Gamow 1928]], [[https://ui.adsabs.harvard.edu/abs/1999RPPh...62..395A/abstract][Arnould & Takahashi 1999]], [[https://ui.adsabs.harvard.edu/abs/2011RPPh...74i6901J/abstract][Jose & Iliadis 2011]]
+book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, Clayton
+Chapter 4, [[https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstract][Gamow 1928]], [[https://ui.adsabs.harvard.edu/abs/1999RPPh...62..395A/abstract][Arnould & Takahashi 1999]], [[https://ui.adsabs.harvard.edu/abs/2011RPPh...74i6901J/abstract][Jose & Iliadis 2011]]
 
+
+* Microphysics of nuclear burning
 ** Summary of where we are
 We have four equations of the stellar /structure/ assuming spherical
 symmetry, LTE, and hydrostatic (\partial t \equiv 0) equilibrium:

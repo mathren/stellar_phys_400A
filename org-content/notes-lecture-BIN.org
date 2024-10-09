@@ -2,10 +2,11 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Measuring masses
 *Materials*: Verbunt lecture notes (part 1), Sections 2.1-2.4 and 3.2 in
 Tauris & Van den Heuvel 2023 book, Chapter 7 of Carroll & Ostie's
 book, Chapter 3 in Prsa's book.
+
+* Measuring masses
 
 This is typically a very hard problem: as we have seen, on the HRD/CMD
 there is a tight correlation between a star's magnitude and color at

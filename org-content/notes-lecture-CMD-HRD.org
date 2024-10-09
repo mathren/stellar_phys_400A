@@ -2,10 +2,11 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* How can we study things that evolve too slow for us to see?
+
 *Materials*: chapter 1 of Onno Pols' lecture notes, Sec. 30.2 of
 Kippehahn book, Sec. 8.2 of Ostie & Carroll book.
 
+* How can we study things that evolve too slow for us to see?
 ** Population studies
 We can look at large samples and try to infer lifetimes from how many
 individual stars we find in each subset of the population.

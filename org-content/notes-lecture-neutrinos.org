@@ -2,9 +2,9 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Neutrino physics in stars
 *Materials:*  Onno Pols' notes Sec. 6.5 and 12.3.1, Chapter 7, Kippenhahn chapter
 9, 10, 11
+* Neutrino physics in stars
 
 We have almost seen all the pieces needed to make a one-dimensional
 hydrostatic model of a star, including the input physics in the

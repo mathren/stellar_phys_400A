@@ -2,12 +2,10 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Equation of state 2/2: Quantum-mechanical effects
 *Materials*: Chapter 3 of Onno Pols' lecture notes, Chapter 14, 15, and
 16 of Kippenhahn's book.
 
-
-
+* Equation of state 2/2: Quantum-mechanical effects
 In the [[./notes-lecture-EOS1.org][previous lecture on EOS]], we have discussed polytropic EOS and
 classical, non-relativistic, ideal gas. The latter is an accurate
 description of the stellar gas in most, but importantly not /all/ the

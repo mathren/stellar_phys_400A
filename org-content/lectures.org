@@ -133,6 +133,8 @@ mass transfer
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models obtained by the students.
 
+[[./notes-in-class-evol.org][Notes]]
+
  - fully convective stars
  - Hayashi track for pre-MS
  - He WDs

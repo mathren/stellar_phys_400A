@@ -2,10 +2,9 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Equation of state 1/2
 *Materials*: Chapter 3 of Onno Pols' lecture notes, Sec. 2.2 and Chapter
 5 and 13 of Kippenhahn's book, Sec. 2-4 of Clayton's book.
-
+* Equation of state 1/2
 ** Summary of where we are
 
 We have introduced now two equations of the stellar structure (*N.B.:*

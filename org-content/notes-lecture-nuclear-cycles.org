@@ -1,11 +1,11 @@
 #+Title: 400A - Nuclear cycles
 #+author: Mathieu Renzo
 
-* Nuclear burning cycles
 *Materials:* Onno Pol's lecture notes Chapter 6.1 and 6.2, Kippenhahn
- book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, Clayton,
- Chapter 5, [[https://journals.aps.org/pr/abstract/10.1103/PhysRev.55.434][Bethe 1939]]
+book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, Clayton,
+Chapter 5, [[https://journals.aps.org/pr/abstract/10.1103/PhysRev.55.434][Bethe 1939]]
 
+* Nuclear burning cycles
 ** Heuristic summary and S-factor
 In the [[./notes-lecture-nuclear-burning.org][previous lecture]] we have developed some idea of the physics
 involved in thermonuclear reactions. We can have a heuristic

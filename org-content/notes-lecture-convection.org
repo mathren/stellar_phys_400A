@@ -2,11 +2,11 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Energy transport in stars 2/2
 *Materials*: Kippenhahn's book Ch. 6 and 7, Cox & Giuli vol. 1 Ch. 14,
- Schwarzschild Ch. 7, [[https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract][Jermyn et al. 2022]], [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]], [[http://online.kitp.ucsb.edu/online/stars17/cantiello2][Matteo
- Cantiello's talk at KITP in 2017]], review by [[https://ui.adsabs.harvard.edu/abs/2023Galax..11...75J/abstract][Joyce & Tayar 2023]].
+Schwarzschild Ch. 7, [[https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract][Jermyn et al. 2022]], [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]], [[http://online.kitp.ucsb.edu/online/stars17/cantiello2][Matteo
+Cantiello's talk at KITP in 2017]], review by [[https://ui.adsabs.harvard.edu/abs/2023Galax..11...75J/abstract][Joyce & Tayar 2023]].
 
+* Energy transport in stars 2/2
 In the [[./notes-lecture-ETransport.org][previous lecture on energy transport]] we have dealt with the
 situation where energy diffusion (carried by photons, i.e., radiative
 energy transport, or carried by electrons, i.e., conductive energy
