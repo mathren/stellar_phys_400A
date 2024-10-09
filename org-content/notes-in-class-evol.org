@@ -30,6 +30,8 @@ timestep marked on the top right.
 *N.B.:* if you set up a full blown MESA installation you can customize
 /all/ of this!
 
+*N.B.:* See also the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-output][output description]] on the =MESA-web= site.
+
 *** Top right panel: abundance panel
 This shows log_{10}(X_{i}) with X_{i} the mass fraction of the i-th isotope as
 a function of mass coordinate.
