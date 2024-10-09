@@ -8,5 +8,89 @@
 
 *Aim*: inspired by homework
 
+** Brief description of pgstar movies created by =MESA-web=
+Since you downloaded your models from [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]], it makes sense to
+start trying to understand your model using the =*.mp4= movie it
+produces for you.
+
+#+CAPTION: snapshot of a =MESA-web= generated movie for the evolution of a 1M_{\odot} star.
+#+ATTR_HTML: :width 100%
+[[./images/MESA-web_pgstar.png]]
+
+There is a lot going on here! You probably will need to play the movie
+over and over and try to correlate what happens in the various panels
+to build physical understanding. If needed, you can also make more
+plots (of =trimmed_history.data= and any =profile*.data= file available,
+remember the python module available to read the data: [[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][mesa_web.py]])
+
+Below I describe the panels in the movies produced by =MESA-web=. Note
+the clock for physical time on the very top left, and the number of
+timestep marked on the top right.
+
+*N.B.:* if you set up a full blown MESA installation you can customize
+/all/ of this!
+
+*** Top right panel: abundance panel
+This shows log_{10}(X_{i}) with X_{i} the mass fraction of the i-th isotope as
+a function of mass coordinate.
+
+*** Bottom right panel: HR diagram
+Showing absolute bolometric luminosity vs. effective temperature
+
+*** Middle top panel: Kippenhahn diagram
+This shows the internal mixing processes and the energy generation as
+a function of "time" (on the x-axis) and mass coordinate (y-axis):
+each vertical line is effectively a snapshot at fixed time, the bottom
+is the center, and the top is the surface.
+
+Light blue indicates regions of the star where there is convection,
+purple indicates thermohaline mixing, gray (if any) indicates
+semiconvection. Red regions (which /can/ be hidden behind the mixing)
+indicate \varepsilon_{nuc}>0, dark blue region indicate regions of strong neutrino
+cooling (\varepsilon_{\nu} \ge \varepsilon_{nuc}). Some lines plotting M_{tot}, and mass
+of the Helium, CO etc. cores may also be ploted.
+
+The x-axis here is actually the timestep number. *N.B.:* \Delta t_{n} can
+vary a lot with n, so this is not a linear mapping between physical
+time and timestep number!
+
+*** Middle bottom panel: T(\rho)
+Annotated log-log plot of the temperature and density. The line color
+indicates mixing at that location in the star, the yellow/orange/red
+outline indicates the level of energy generation.
+
+The annotations behind indicate regions of \Gamma<4/3 (\Rightarrow dynamical
+instability), full degeneracy (\Rightarrow \varepsilon_{Fermi}\simeq 4 K_{B}T), and T(\rho)
+lines corresponding to the ignition of various fuels.
+
+*** Right panel: various profiles
+These three panels show P, \rho, and T as a function of mass coordinate.
+
+
+** General questions.
+To guide your investigation of the models:
+
+  - explain the behavior on the Hertzsrpung-Russell diagram
+  - consider the timescales for anything you observe
+  - consider the internal composition and its changes
+  - explain the T(\rho) diagram
+
+
+** Low mass stars
+
+  - Hayashi track
+  - He Flash
+  - AGB pulses
+  - WD formation
+  - Tip of RGB
+
+** High mass stars
+
+  - Winds
+  - T(\rho) diagram
+
+
+
+* Clean example
 
 [[https://www.stellarphysics.org/research][Example pgstar plots from M. Cantiello]]
