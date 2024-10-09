@@ -78,7 +78,6 @@ layers of the star where T is not high enough for nuclear burning, \rho
 is not high enough for \nu emission, and we assume gravothermal
 equilibrium, so \varepsilon_{grav} \propto ds/dt = 0, so L is constant.
 
-
 * Basics of radiative transfer
 
 The problem we need to consider in the stellar atmosphere is how

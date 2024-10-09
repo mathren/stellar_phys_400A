@@ -6,12 +6,12 @@
 *Materials*: Onno Pols' lecture notes Chapter 7,8, Tauris & van den
 Heuvel book chapter 4,
 
-We have already seen in the [[./notes-lecture-BIN.org::*Binaries are common][second lecture]] that in the Universe binary
-systems of two stars orbiting each other are common, the higher the
-mass of the stars the more so (see for example [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]]).
-Historically, this fact has been leveraged to design empirical
-/dynamical mass measurement/ which rely only on Kepler's laws to obtain
-masses.
+We have already seen in the [[./notes-lecture-BIN.org::*Binaries are common][second lecture]] that, in the Universe,
+binary systems composed of two stars orbiting each other are common,
+the higher the mass of the stars the more so (see for example [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner
+et al. 2023]]). Historically, this fact has been leveraged to design
+empirical /dynamical mass measurement/ which rely only on Kepler's laws
+to obtain masses.
 
 However, often enough, stars in binaries are so close to each other
 than as they evolve, they will "touch" each other and exchange mass.
@@ -20,6 +20,65 @@ binary can lead to dramatic consequences for the evolution of /both/
 stars in the system, starting with the Roche model of the potential.
 
 ** Roche model
+
+To describe the gas of the stars in a binary system subject to the
+gravity of both stars is effectively a /three body problem/, hard to
+solve even before we fold in anything else but gravity.
+
+A useful approximation often used is the [[https://en.wikipedia.org/wiki/%C3%89douard_Roche][Roche]] model of the
+gravitational potential. This is based on the following key
+assumptions:
+
+1. e=0: the mutual orbit of M_{1} and M_{2} is circular;
+2. M_{1} and M_{2} are treated as point masses;
+3. M_{1} \geq M_{2} \gg m: the masses of the two stars are much larger than
+   the test mass m we consider to map the potential;
+
+These defined the /restricted circular three body problem/. Of these
+assumptions the most restrictive is perhaps the first: binaries can be
+eccentric, and updates to this model to account for that are actively
+being developed (e.g., [[https://ui.adsabs.harvard.edu/abs/2009ApJ...702.1387S/abstract][Sepinsky 2009]]). The second assumption is not
+critical, since the density increases steeply moving inwards in the
+star: /most of the mass is in the center/. The last assumption is
+typically easily verified as long as one considers small parcels of
+gas.
+
+With these three assumptions, one can put themselves in a *frame
+centered in the binary center of mass and co-rotating with the binary*
+at frequency \Omega=2\pi/P. Since it is a rotating frame, it is non-inertial,
+but the gravitational potential of the two stars can be written as:
+
+#+begin_latex
+\begin{equation}
+V(\mathbf{r}) = -\frac{GM_{1}}{\lvert \mathbf{r}-\mathbf{r}_{1}\rvert}-\frac{GM_{2}}{\lvert \mathbf{r}-\mathbf{r}_{2}\rvert}-\frac{1}{2}(\mathbf{\Omega}\timex\mathbr{r})^{2} \ \ ,
+\end{equation}
+#+end_latex
+Where r_{i} is the distance to M_{i} (considered a point-mass), so the first
+two terms represent the gravity of each star, respectively, and the
+last term represents the centrifugal force.
+
+Taking the gradient, the gravitational force from the combined masses
+of the stars in the binary is F=-\nabla V(\mathbf{r}). But because we are
+in non-inertial frame, there is also another term to add to the
+momentum equation which cannot be expressed as a potential, because it
+depends on the velocity of the test mass m: the Coriolis force \prop
+2\mathbf{\Omega}\times \mathbf{v}. Per unit volume the momentum conservation is thus
+
+#+begin_latex
+\begin{equation}
+\partial_{t} v + (v\cdot\nabla )v = -\frac{\nabla V}{\rho}-\frac{\nabla P}{\rho}-2\mathbf{\Omega}\times \mathbf{v} \ \ .
+\end{equation}
+#+end_latex
+
+Finally, one could also relax the hypothesis 2. above and include a
+tidal term in the potential (this again works because most of the mass
+of the star is in it's core, saving the Roche model, and the tides are
+a relatively small perturbation on top of this.)
+
+
+#+CAPTION: Visualization of the Roche potential (grid) and the equipotential surfaces intersecting the xy orbital plane for a binary with q=M_{2}/M_{1}=0.5. The three Lagrangian points L_{1}, L_{2}, and L_{3} are marked. From [[https://en.wikipedia.org/wiki/Roche_lobe#/media/File:RochePotential.jpg][wikipedia]].
+#+ATTR_HTML: :width 100%
+[[./images/RochePotential.jpeg]]
 
 *** Limitations and extensions
 

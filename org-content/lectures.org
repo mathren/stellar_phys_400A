@@ -116,6 +116,7 @@ graded, etc. how to provide useful feedback during peer-reviewing.
    - introduce problem
    - focus on the physical processes
    - connect to material covered in class (incl. by other presentations)
+ - Referee task:
  - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
 
 ** <2024-10-15 Tue> - Roche geometry and binary interactions
