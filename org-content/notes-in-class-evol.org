@@ -8,6 +8,27 @@
 
 *Aim*: inspired by homework
 
+
+** General questions.
+To guide your investigation of the models:
+
+  - explain the behavior on the Hertzsrpung-Russell diagram
+  - explain the T(\rho) diagram
+  - ask yourselves: is this feature I see physical or is it a
+    numerical artifact?
+  - consider the timescales for anything you observe
+  - consider the internal composition and its changes
+
+Compare your model to the models of people nearby you and explore the
+data you have. You probably want to start from the movie =MESA-web=
+provides. Likely, you will need to play the movie over and over,
+pausing it, and trying to correlate what happens in the various panels
+to build physical understanding. If needed, you can also make more
+plots (of =trimmed_history.data= and any =profile*.data= file available,
+remember the python module available to read the data: [[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][mesa_web.py]]).
+
+*N.B.:* See also the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-output][output description]] on the =MESA-web= site.
+
 ** Brief description of pgstar movies created by =MESA-web=
 Since you downloaded your models from [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]], it makes sense to
 start trying to understand your model using the =*.mp4= movie it
@@ -17,20 +38,12 @@ produces for you.
 #+ATTR_HTML: :width 100%
 [[./images/MESA-web_pgstar.png]]
 
-There is a lot going on here! You probably will need to play the movie
-over and over and try to correlate what happens in the various panels
-to build physical understanding. If needed, you can also make more
-plots (of =trimmed_history.data= and any =profile*.data= file available,
-remember the python module available to read the data: [[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][mesa_web.py]])
-
-Below I describe the panels in the movies produced by =MESA-web=. Note
-the clock for physical time on the very top left, and the number of
-timestep marked on the top right.
+There is a lot going on here! Below I describe the panels in the
+movies produced by =MESA-web=. Note the clock for physical time on the
+very top left, and the number of timestep marked on the top right.
 
 *N.B.:* if you set up a full blown MESA installation you can customize
 /all/ of this!
-
-*N.B.:* See also the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-output][output description]] on the =MESA-web= site.
 
 *** Top right panel: abundance panel
 This shows log_{10}(X_{i}) with X_{i} the mass fraction of the i-th isotope as
@@ -69,21 +82,12 @@ lines corresponding to the ignition of various fuels.
 These three panels show P, \rho, and T as a function of mass coordinate.
 
 
-** General questions.
-To guide your investigation of the models:
-
-  - explain the behavior on the Hertzsrpung-Russell diagram
-  - consider the timescales for anything you observe
-  - consider the internal composition and its changes
-  - explain the T(\rho) diagram
-
-
 ** Low mass stars
 
   - Hayashi track
   - He Flash
   - AGB pulses
-  - WD formation
+  - WD formation (\rightarrow HeWD)
   - Tip of RGB
 
 ** High mass stars
