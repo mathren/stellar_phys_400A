@@ -207,8 +207,9 @@ This results in an inspiral that can end either with:
  - the successful ejection of the shared envelope (interrupting the
    drag), and the formation of a tight period binary
 
-** Case A, B, and C
-Depending on when mass transfer starts, we can have:
+** Nomenclature: Case A, B, and C
+Depending on when mass transfer starts, we can have three different
+categories (defined by [[https://ui.adsabs.harvard.edu/abs/1967ZA.....66...58K/abstract][Kippenhahn et al. 1967]] and [[https://ui.adsabs.harvard.edu/abs/1970A%26A.....7..150L/abstract][Lauterborn 1970]]):
   - case A RLOF: donor is burning hydrogen in its core
   - case B RLOF: the donor has a helium core (possibly inert and
     sustained by electron degeneracy or burning)
@@ -217,7 +218,11 @@ Depending on when mass transfer starts, we can have:
     core He depletion
 Because of the different L and \varphi factors for each nuclear burning
 phase, the timescales and therefore responses of both stars and the
-orbit to mass transfer can be very different for these three.
+orbit to mass transfer can be very different for these three: case A
+typically has a short thermal timescale phase, followed by nuclear
+timescale mass transfer. Case B and C tend to be faster (thermal
+timescale or shorter), though this may also be metallicity dependent
+(see e.g., [[https://ui.adsabs.harvard.edu/abs/2022A%26A...662A..56K/abstract][Klencki et al. 2022]]).
 
 * Conservative mass transfer evolution: \Delta M = \Delta J = 0
 
