@@ -152,7 +152,6 @@ selected peers, the oral presentation will be evaluated by all the
 student present plus the instructors. For more information on the
 project/presentation and how it will be graded, see [[./projects.org][here]].
 
-
 ** Incomplete (I) or Withdrawal (W):
 Requests for incomplete (I) or withdrawal (W) must be made in
 accordance with University policies, which are available at
@@ -304,7 +303,6 @@ SOS for support.
 - Email: [[mailto:sos@arizona.edu][sos@arizona.edu]]
 - Text: SOS to 70542
 - Call: 520-621-2327
-
 
 * Confidentiality of Student Records
 http://www.registrar.arizona.edu/ferpa

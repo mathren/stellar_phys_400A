@@ -213,12 +213,12 @@ This results in an inspiral that can end either with:
 ** Nomenclature: Case A, B, and C
 Depending on when mass transfer starts, we can have three different
 categories (defined by [[https://ui.adsabs.harvard.edu/abs/1967ZA.....66...58K/abstract][Kippenhahn et al. 1967]] and [[https://ui.adsabs.harvard.edu/abs/1970A%26A.....7..150L/abstract][Lauterborn 1970]]):
-  - case A RLOF: donor is burning hydrogen in its core
-  - case B RLOF: the donor has a helium core (possibly inert and
-    sustained by electron degeneracy or burning)
-  - case C RLOF: for low mass stars, this is typically defined after
-    He ignition, for high mass stars, it is typically defined after
-    core He depletion
+ - case A RLOF: donor is burning hydrogen in its core
+ - case B RLOF: the donor has a helium core (possibly inert and
+   sustained by electron degeneracy or burning)
+ - case C RLOF: for low mass stars, this is typically defined after
+   He ignition, for high mass stars, it is typically defined after
+   core He depletion
 Because of the different L and \varphi factors for each nuclear burning
 phase, the timescales and therefore responses of both stars and the
 orbit to mass transfer can be very different for these three: case A
@@ -229,6 +229,7 @@ timescale or shorter), though this may also be metallicity dependent
 
 * Conservative mass transfer evolution: \Delta M = \Delta J = 0
 
+* Mass transfer rate calculation
 
 
 
@@ -237,6 +238,5 @@ timescale or shorter), though this may also be metallicity dependent
 
 
 :Question:
-- *Q*: if there is matter flowing through L_{1}, can it be convective at
-  that radius?
+- *Q*: if there is matter flowing through L_{1}, can it be convective at  that radius?
 :end:

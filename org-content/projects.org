@@ -3,6 +3,15 @@
 #+email: mrenzo@arizona.edu
 
 * Literature review project/presentation
+The aim of the final review project is for each student to engage in a
+bit more depth in an important topic in modern stellar physics /and/
+explain it to the rest of the class. This is effectively a
+literature + exposition project, you are /not/ expected to produce new
+results, but you should aim at digesting and being able to explain the
+context, physical processes at play, and how they relate to the
+material seen in class (during lectures, activities, and other student
+presentations!).
+
 Each student will be assigned a topic to research from the list below
 and provide a short written summary (\le 5 pages including figures
 and/or tables) and an oral presentation to the classroom. This will
@@ -167,7 +176,7 @@ total grade.
   |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
 
 **** Providing feedback
-This counts for 10% of this assignment, corresponding to 4% of total grade
+This counts for 10% of this assignment, corresponding to 4% of total grade.
 
   |----------+------------------------------------------------+----------------------------------------+-------------------------------+------------------------------------------------|
   |          | Exceptional                                    | Very good                              | Adequate                      | Poor                                           |
@@ -178,6 +187,10 @@ This counts for 10% of this assignment, corresponding to 4% of total grade
   |          | improved. The tone is supportive and comments  |                                        | seem only marginally relevant | the receiving end of it, they would feel       |
   |          | are fair and useful (as opposed to nitpicky).  |                                        |                               | discouraged instead of helped.                 |
   |----------+------------------------------------------------+----------------------------------------+-------------------------------+------------------------------------------------|
+
+Note that the aim of the feedback is to help the author improve their
+presentation. You are asked to evaluate the work, /not/ the author. Give
+clear and constructive criticism focusing on helping the presenter.
 
 
 

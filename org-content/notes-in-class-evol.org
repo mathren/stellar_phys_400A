@@ -1,19 +1,53 @@
-#+Title: 400A - Stellar evolution
+#+Title: 400A - Evolution of stars
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-*Materials*:
+*Materials*: Onno Pols' lecture notes Chapters 9-11, Kippenhahn's book
+Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2.
 
 * In class activity: evolution of stars
 
-*Aim*: inspired by homework
+** Aims
+In this class activity, you will work together in groups of three to
+piece together all the things we have learned so far and describe the
+evolution of single, non-rotating stars with /your/ =MESA-web= models!
 
+The aim if for you to be able to:
+ 1. distinguish physical features from numerical artifacts
+ 2. explain physically the features of the evolution of the star
+    (e.g., on the HR diagram), based on the interior structure and evolution
+ 3. appreciate the timescales corresponding to the various features
+ 4. being able to describe and explain the qualitative differences
+    between stars of different masses (and maybe even metallicity!)
+
+This is often what we do with stellar models in research: we setup a
+numerical experiment on the computer (in this case a grid of many
+masses across the class), and then look at the results with some
+healthy skepticism and trying to filter out the numerical artifacts
+from physical features of the models to build understanding!
+
+** Task 0: mass-luminosity relation revisited with models
+We have already discussed /empirical/ L \equiv L(M) relations based on
+/dynamical/ mass measurements in SB2 eclipsing binaries, and you have
+derived an analytic relation for radiative stars. Let's now see if our
+models agree and if we can understand why if they don't!
+
+Find the "beginning of the main sequence" of your star, as in the
+point where gravothermal equilibrium is achieved and L_{nuc} = L thanks
+to hydrogen core burning and report on [[https://docs.google.com/spreadsheets/d/17HdroCGDeq5wl5l60erJ_-Vstz5JTujuxsz1BQhns0M/edit?gid=0#gid=0][this spreadsheet]] your mass and
+luminosity at that point.
+
+*Hint*: A very simple approximate criterion we can adopt here is
+=center_h1= <= 99% =center_h1= at the beginning of the evolution.
 
 ** General questions.
 To guide your investigation of the models:
 
-  - explain the behavior on the Hertzsrpung-Russell diagram
-  - explain the T(\rho) diagram
+  - explain the behavior on the Hertzsrpung-Russell diagram: why does
+    L decrease/increase when it does? What happens at each hook and
+    turn?
+  - Use the other diagrams to infer the physical cause of each feature
+    you investigate
   - ask yourselves: is this feature I see physical or is it a
     numerical artifact?
   - consider the timescales for anything you observe
@@ -97,6 +131,6 @@ These three panels show P, \rho, and T as a function of mass coordinate.
 
 
 
-* Clean example
+* Clean examples
 
-[[https://www.stellarphysics.org/research][Example pgstar plots from M. Cantiello]]
+- [[https://www.stellarphysics.org/research][Example pgstar plots from M. Cantiello]]

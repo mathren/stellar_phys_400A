@@ -108,17 +108,6 @@ and population synthesis.
 
 [[./notes-lecture-radTrans.org][Notes]]
 
-*** Presentation expectations
-Discuss what is expected for the presentations, how they will be
-graded, etc. how to provide useful feedback during peer-reviewing.
-
- - Discuss structure:
-   - introduce problem
-   - focus on the physical processes
-   - connect to material covered in class (incl. by other presentations)
- - Referee task:
- - How to search for papers on [[https://ui.adsabs.harvard.edu/classic-form][NASA/ADS]]
-
 ** <2024-10-15 Tue> - Roche geometry and binary interactions
 *Aim*: Introduce the Roche approximation and its limitations and binary
 mass transfer
@@ -171,6 +160,7 @@ Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Gric
 ** <2024-11-12 Tue> - Four student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
  The details of the schedule will be communicated on d2l.
+
 ** <2024-11-14 Thu> - Four student presentations
 ** <2024-11-19 Tue> - Four student presentations
 ** <2024-11-21 Thu> - Four student presentations
