@@ -101,7 +101,7 @@ around the direction $\mathbf{n}$ with frequency in the range between
 
 #+begin_latex
 \begin{equation}
-I_{\nu} \equiv I_{\nu}(\theta) = \frac{dI}{d\nu} = \frac{E_{\nu}}{d\nu dt dA d\Omega} \mathbf{n} \ \ ,
+I_{\nu} \equiv I_{\nu}(\theta) = \frac{dI}{d\nu} = \frac{dE_{\nu}}{d\nu dt dA d\Omega} \mathbf{n} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -120,7 +120,7 @@ equation of radiative transfer as
 
 #+begin_latex
 \begin{equation}\label{eq:radTrans}
-\frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \mathbf{n}\cdot\nabla I_{\nu} = -\kappa_{\nu}\rho I_{\nu} + j_{\nu}\rho \ \ ,
+\frac{dI_{\nu}}{ds} = \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \mathbf{n}\cdot\nabla I_{\nu} = -\kappa_{\nu}\rho I_{\nu} + j_{\nu}\rho \ \ ,
 \end{equation}
 #+end_latex
 
@@ -138,9 +138,9 @@ emission coefficient j_{\nu}.
 *N.B.:* dimensional analysis reveals that each side has the units of
 [I_{\nu}]/[L], this equation describes how the intensity changes along
 its path. The fact that photons propagate at the speed of light c make
-the leftmost factor of 1/c appear. The density \rho on the l.h.s.
-expresses that the more matter there is (per unit volume), the more
-likely there will be absorption and emission.
+the leftmost factor of 1/c appear: $d\ds = c\partial_{t} + \mathbf{n}\cdot\nabla$. The
+density \rho on the l.h.s. expresses that the more matter there is (per
+unit volume), the more likely there will be absorption and emission.
 
 The specific intensity at the bottom of the atmosphere is related to
 the photospheric emission by:
@@ -155,6 +155,10 @@ that is the black body flux F is obtained by integrating the specific
 intensity over the solid angles. Note the factor cos(\theta) that arises
 because I_{\nu} is a vector and we only want the component normal to the
 surface element dA.
+
+This last expression is going to be useful to connect the physics in
+the atmosphere with the interior, since we /define/ the photosphere to
+have a flux \sigma T_{eff}^{4}.
 
 ** Simple solutions of the steady state radiative transfer equation
 
