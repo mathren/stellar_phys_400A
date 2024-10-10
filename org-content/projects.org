@@ -126,7 +126,7 @@ total grade.
   |                               | Exceptional                                       | Very good                                  | Adequate                                     | Poor                                |
   |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
   | Structure and formatting      | Clear, logical, engaging, and easy to follow.     | Clear and easy to follow.                  | The text is sufficiently clear.              | The text is hard to follow.         |
-  |                               | All figures are useful, have captions, and are    | Figures are provided with                  | When present, Figures are useful             | Figures and/or captions are missing |
+  |                               | All figures are useful, have captions, and are    | Figures are provided with                  | When present, figures are useful             | Figures and/or captions are missing |
   |                               | and well integrated with text. All references     | useful caption and integrated              | but could be better integrated,              | or not useful. References are       |
   |                               | are provided and relevant.                        | in the tex. All references are listed.     | captions could be improved for clarity.      | incomplete or missing.              |
   |                               |                                                   |                                            | References are provided but seem incomplete. |                                     |
