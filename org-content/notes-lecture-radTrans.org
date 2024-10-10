@@ -138,7 +138,7 @@ emission coefficient j_{\nu}.
 *N.B.:* dimensional analysis reveals that each side has the units of
 [I_{\nu}]/[L], this equation describes how the intensity changes along
 its path. The fact that photons propagate at the speed of light c make
-the leftmost factor of 1/c appear: $d\ds = c\partial_{t} + \mathbf{n}\cdot\nabla$. The
+the leftmost factor of 1/c appear: $d/ds = c\partial_{t} + \mathbf{n}\cdot\nabla$. The
 density \rho on the l.h.s. expresses that the more matter there is (per
 unit volume), the more likely there will be absorption and emission.
 
