@@ -607,7 +607,7 @@ two classes is presently unclear.
 *** Wolf-Rayet stars
 Wolf-Rayet stars are a spectroscopic class /defined/ by the presence of
 emission lines and the deficiency (but not necessarily total lack) of
-hydrogen.
+hydrogen (see also review by [[https://ui.adsabs.harvard.edu/abs/2024arXiv241004436S/abstract][Shenar 2024]]).
 
 They are further subdivided in classes based on the dominant lines
 visible (WNh if there is still significant amount of hydrogen, WN is

@@ -175,24 +175,26 @@ total grade.
   |                              | required to know everything!)                     |                                        |                                  |                             |
   |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
 
+*N.B.:* You are not obliged to make slides, and you can use the
+whiteboard if you think this fits better the presentation of your
+topic.
+
 **** Providing feedback
 This counts for 10% of this assignment, corresponding to 4% of total grade.
 
-  |----------+------------------------------------------------+----------------------------------------+-------------------------------+------------------------------------------------|
-  |          | Exceptional                                    | Very good                              | Adequate                      | Poor                                           |
-  |----------+------------------------------------------------+----------------------------------------+-------------------------------+------------------------------------------------|
-  | Feedback | Positive aspects are highlighted before        | Positive aspects are noted, suggestion | Actionable suggestions        | No relevant actionable suggestion is provided. |
-  |          | suggesting clear, constructive, and actionable | are clear, actionable, and relevant.   | are provided, but could       | The tone is dismissive, and/or unclear.        |
-  |          | suggestions on the things that could be        |                                        | be clearer. Some suggestions  | If the provider of this feedback would be at   |
-  |          | improved. The tone is supportive and comments  |                                        | seem only marginally relevant | the receiving end of it, they would feel       |
-  |          | are fair and useful (as opposed to nitpicky).  |                                        |                               | discouraged instead of helped.                 |
-  |----------+------------------------------------------------+----------------------------------------+-------------------------------+------------------------------------------------|
+  |----------+-----------------------------------------------+----------------------------------------+--------------------------------+------------------------------------------------|
+  |          | Exceptional                                   | Very good                              | Adequate                       | Poor                                           |
+  |----------+-----------------------------------------------+----------------------------------------+--------------------------------+------------------------------------------------|
+  | Feedback | Positive aspects are highlighted before       | Positive aspects are noted, suggestion | Actionable suggestions         | No relevant actionable suggestion is provided. |
+  |          | providing clear, constructive, and actionable | are clear, actionable, and relevant.   | are provided, but could        | The tone is dismissive, and/or unclear.        |
+  |          | suggestions on the things that could be       |                                        | be clearer. Some suggestions   | If the provider of this feedback would be at   |
+  |          | improved. The tone is supportive and comments |                                        | seem only marginally relevant. | the receiving end of it, they would feel       |
+  |          | are fair and useful (as opposed to nitpicky). |                                        |                                | discouraged instead of helped.                 |
+  |----------+-----------------------------------------------+----------------------------------------+--------------------------------+------------------------------------------------|
 
-Note that the aim of the feedback is to help the author improve their
+*N.B.:* the aim of the feedback is to help the author improve their
 presentation. You are asked to evaluate the work, /not/ the author. Give
 clear and constructive criticism focusing on helping the presenter.
-
-
 
 * Honors project
 
