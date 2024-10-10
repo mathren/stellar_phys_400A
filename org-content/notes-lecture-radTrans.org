@@ -319,7 +319,7 @@ I(\tau=0,cos(\theta)) in the integral:
 
 #+begin_latex
 \begin{equation}
-F = 2\pi\int_{0}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{0}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2})\\
+F = 2\pi\int_{-1}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{-1}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2})\\
  \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
 \end{equation}
 #+end_latex
