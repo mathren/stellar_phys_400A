@@ -15,7 +15,7 @@ maintain /local/ energy conservation. However, this is /not/ always the
 case! For example, we know this is not the case in the outer layers of
 the Sun, we can [[https://apod.nasa.gov/apod/ap200203.html][directly see that]]:
 
-#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/CCzl0quTDHw?si=1h3tkmpwsi4w9uRz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+#+HTML: <iframe width="600" height="400" src="https://www.youtube.com/embed/CCzl0quTDHw?si=1h3tkmpwsi4w9uRz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 We can also see this is not the case in the envelopes of red
 supergiants, as for example Betelgeuse, VY Canis Majoris, etc. Less
