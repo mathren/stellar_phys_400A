@@ -85,7 +85,7 @@ Betelgeuse), computed with the [[https://www.athena-astro.app/][ATHENA++]] code.
 
 ** Thermonuclear runaway during a Nova explosion ([[https://ui.adsabs.harvard.edu/abs/2018A%26A...619A.121C/abstract][Casanova et al. 2018]])
 
-#+HTML: <video  width="560" height="315" src="./images/125M-ONe-3.mp4" </video>
+#+HTML: <video  controls width="560" height="315" src="./images/125M-ONe-3.mp4" </video>
 #  [[./images/125M-ONe-3.mp4]]
 
 This is a 2D simulation of convection developing during a nova
