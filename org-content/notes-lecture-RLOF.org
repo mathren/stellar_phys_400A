@@ -436,9 +436,9 @@ the donor star ends up on the accretor star (thus a fraction \beta_{RLOF} is
 instead lost from the system),
 
 
-#+begin_HTML
+#+begin_export HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Zn1E23saY-A?si=8ZDx-C8uQlt0-jgd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-#+end_HTML
+#+end_export HTML
 
 * Mass transfer rate calculation
 
