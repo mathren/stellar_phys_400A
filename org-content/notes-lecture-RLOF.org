@@ -269,14 +269,14 @@ total orbital angular momentum of the binary:
 
 #+begin_latex
 \begin{equation}
-J_\mathrm{tot} = J_{orb}_{}+J_{1}+J_{2} \ \ ,
+J_\mathrm{tot} = J_\mathrm{orb}+J_{1}+J_{2} \ \ ,
 \end{equation}
 #+end_latex
 with J_{i} = I_{i} \omega_{i} spin angular momentum of the two stars, and J_{orb}
 orbital angular momentum. A simple order of magnitude calculation can
 show that
 #+begin_latex
-\begin{equation}\label{eq:J_ordering}.
+\begin{equation}\label{eq:J_ordering}
 J_{i} \simeq M_{i} R_{i}^{2} \omega_{i} \ll J_\mathrm{orb} \simeq \frac{M_{1}M_{2}}{M_{1}+M_{2}} a^{2} n \ \ ,
 \end{equation}
 #+end_latex
@@ -316,9 +316,9 @@ the donor star is by definition almost as large as it can be, allowing
 for tides to torque it, in reality post-mass transfer eccentric
 systems are known (see e.g., [[https://ui.adsabs.harvard.edu/abs/2009MNRAS.400L..20E/abstract][Eldridge 2009]]): it is possible that the
 timescale for circularization $e/\dot{e}$ is comparable or longer than
-the thermal timescale of the donor star (e.g., for case B RLOF),
-making it impossible for tides to circularize the system before/during
-mass transfer.
+the thermal timescale of the donor star (e.g., for case B Roche lobe
+overflow), making it impossible for tides to circularize the system
+before/during mass transfer.
 
 The orbital angular momentum losses can occur do to a variety of
 phenomena:
@@ -343,7 +343,50 @@ phenomena:
   some orbital angular momentum, and the rate depends on poorly
   understdood details.
 
-The last term is usually the dominant one.
+The last term is usually the dominant one, but a general solution
+would require to treat all of the effects above.
+
+Let's now consider some cases where we can solve the equation for the
+orbital evolution.
+
+** Stellar wind mass loss
+
+Consider for simplicity a circular binary (e=0) where the only mass
+lost is due to stellar winds (no mass exchange).
+
+The winds have velocity v_{wind,i }\geq v_{esc,i} \sim(2GM_{i}/R_{i})^{1/2} for each
+star, while the orbital velocity of the binary is set by Kepler's 3^{rd}
+law, and each individual star has
+#+begin_latex
+\begin{equation}
+v_{1} = \frac{M_{2}}{M_{1}+M_{2}}\sqrt{\frac{G(M_{1}+M_{2})}{a}} \ \ ,\\
+v_{2} = \frac{M_{1}}{M_{1}+M_{2}}\sqrt{\frac{G(M_{1}+M_{2})}{a}} \ \ ,\\
+\end{equation}
+#+end_latex
+where the square root term is v_{orb} (i.e., the velocity around the
+center of mass of the reduced-mass point-mass), and the prefactors
+come from momentum balance in the center of mass frame of the system.
+
+Thus, taking the ratio, we see that:
+#+begin_latex
+\begin{equation}
+\frac{v_\mathrm{wind, 1}}{v_\mathrm{orb,1}} \geq \frac{v_\mathrm{esc, 1}}{v_\mathrm{orb, 1}} = \sqrt{2\frac{M_{1}(M_{1}+M_{2})}{M_{2}^{2}}\frac{a}{R_{1}}} \gg 1 \ \ , \\
+\frac{v_\mathrm{wind, 2}}{v_\mathrm{orb,2}} \geq \frac{v_\mathrm{esc, 1}}{v_\mathrm{orb, 2}} = \sqrt{2\frac{M_{2}_{}(M_{1}+M_{2})}{M_{1}^{2}}\frac{a}{R_{2}}} \gg 1 \ \ , \\
+\end{equation}
+#+end_latex
+where the last comes from a \gg R_{i}. This means that to a good
+approximation one can assume winds from the stars to leave the system
+instantaneously without exerting any torque on the binary.
+In this case, the material lost to winds will carry the specific
+angular momentum (per unit mass) of the wind-losing star moving on its
+orbit:
+#+begin_latex
+\begin{equation}
+dJ_\mathrm{orb} = \frac{J_\mathrm{orb, 1}}{M_{1}}dM_{1} + \frac{J_\mathrm{orb, 2}}{M_{2}}dM_{2} \equiv \frac{M_{1} J_\mathrm{orb}}{M_{2} (M_{1}+M_{2})}dM_{1} + \frac{M_{2}_{} J_\mathrm{orb}}{M_{1}_{} (M_{1}+M_{2})}dM_{2} \ \ ,
+\end{equation}
+#+end_latex
+where in the last we used J_{orb, i} M_{i} = J_{orb} M_{1}M_{2}/(M_{1}+M_{2}).
+
 
 ** Conservative mass transfer evolution: \Delta M = \Delta J = 0
 
