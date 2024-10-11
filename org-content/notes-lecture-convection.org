@@ -15,7 +15,7 @@ maintain /local/ energy conservation. However, this is /not/ always the
 case! For example, we know this is not the case in the outer layers of
 the Sun, we can [[https://apod.nasa.gov/apod/ap200203.html][directly see that]]:
 
-[[https://youtu.be/CCzl0quTDHw?si=RUwZfN5SrO1abD1Y][Sun granules]]
+#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/CCzl0quTDHw?si=1h3tkmpwsi4w9uRz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 We can also see this is not the case in the envelopes of red
 supergiants, as for example Betelgeuse, VY Canis Majoris, etc. Less
@@ -67,6 +67,7 @@ time and spatial domains.
 
 ** Core convection in a massive star ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022b]])
 
+#+HTML: <iframe width="560" height="315" src="https://vimeo.com/684826914" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   [[https://vimeo.com/684826914]]
 
   This is a simulation of the temperature fluctuations (right) and
@@ -74,7 +75,8 @@ time and spatial domains.
 
 ** Envelope convection in a red super-giant ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...929..156G/abstract][Goldberg et al. 2022]])
 
- [[https://youtu.be/Cq5EqDkXFhQ]]
+
+#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/Cq5EqDkXFhQ?si=m4hGwqZy_YPeOcxC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
  This is a 3D radiation-hydrodynamics simulation of large portions of
  the envelope of a red supergiant (not that different from
