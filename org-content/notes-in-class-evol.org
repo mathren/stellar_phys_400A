@@ -47,6 +47,15 @@ To guide your investigation of the models:
   - explain the behavior on the Hertzsrpung-Russell diagram: why does
     L decrease/increase when it does? What happens at each hook and
     turn?
+  - where does core hydrogen burning ends? What is the star physical
+    age then?
+  - During the long evolutionary phase, what is the core vs. envelope
+    structure in term of convective stability? Does that seem to
+    depend on mass?
+  - where does helium core burning start? How long in physical time
+    between H depletion and He ignition? Any difference in mass?
+  - explain the morphology of the curve at the end of the H core
+    burning main sequence?
   - Use the other diagrams to infer the physical cause of each feature
     you investigate
   - ask yourselves: is this feature I see physical or is it a
@@ -115,6 +124,9 @@ lines corresponding to the ignition of various fuels.
 
 *** Right panel: various profiles
 These three panels show P, \rho, and T as a function of mass coordinate.
+
+
+
 
 
 ** Low mass stars
