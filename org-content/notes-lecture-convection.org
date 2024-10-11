@@ -67,7 +67,7 @@ time and spatial domains.
 
 ** Core convection in a massive star ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022b]])
 
-#+HTML: <iframe width="560" height="315" src="https://vimeo.com/684826914" title="Vimeo video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+#+HTML: <iframe width="100%" height="550" src="https://player.vimeo.com/video/684826914" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
   [[https://vimeo.com/684826914]]
 
   This is a simulation of the temperature fluctuations (right) and
