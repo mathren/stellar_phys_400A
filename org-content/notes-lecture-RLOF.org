@@ -46,12 +46,12 @@ gas.
 
 With these three assumptions, one can put themselves in a *frame
 centered in the binary center of mass and co-rotating with the binary*
-at frequency \Omega=2\pi/P. Since it is a rotating frame, it is non-inertial,
+at frequency n=2\pi/P. Since it is a rotating frame, it is non-inertial,
 but the gravitational potential of the two stars can be written as:
 
 #+begin_latex
 \begin{equation}
-\Phi(\mathbf{r}) = -\frac{GM_{1}}{\lvert \mathbf{r}-\mathbf{r}_{1}\rvert}-\frac{GM_{2}}{\lvert \mathbf{r}-\mathbf{r}_{2}\rvert}-\frac{1}{2}(\mathbf{\Omega}\times\mathbf{r})^{2} \ \ ,
+\Phi(\mathbf{r}) = -\frac{GM_{1}}{\lvert \mathbf{r}-\mathbf{r}_{1}\rvert}-\frac{GM_{2}}{\lvert \mathbf{r}-\mathbf{r}_{2}\rvert}-\frac{1}{2}(\mathbf{n}\times\mathbf{r})^{2} \ \ ,
 \end{equation}
 #+end_latex
 Where r_{i} is the distance to M_{i} (considered a point-mass), so the first
@@ -63,11 +63,11 @@ of the stars in the binary is F=-\nabla V(\mathbf{r}). But because we are
 in non-inertial frame, there is also another term to add to the
 momentum equation which cannot be expressed as a potential, because it
 depends on the velocity of the test mass m: the Coriolis force \prop
-2\Omega\times v. Per unit volume the momentum conservation is thus
+2n\times v. Per unit volume the momentum conservation is thus
 
 #+begin_latex
 \begin{equation}
-\partial_{t} v + (v\cdot\nabla )v = -\nabla \Phi-\frac{\nabla P}{\rho}-2\mathbf{\Omega}\times \mathbf{v} \ \ .
+\partial_{t} v + (v\cdot\nabla )v = -\nabla \Phi-\frac{\nabla P}{\rho}-2\mathbf{n}\times \mathbf{v} \ \ .
 \end{equation}
 #+end_latex
 
@@ -228,6 +228,8 @@ timescale or shorter), though this may also be metallicity dependent
 (see e.g., [[https://ui.adsabs.harvard.edu/abs/2022A%26A...662A..56K/abstract][Klencki et al. 2022]]).
 
 * Conservative mass transfer evolution: \Delta M = \Delta J = 0
+
+
 
 * Mass transfer rate calculation
 

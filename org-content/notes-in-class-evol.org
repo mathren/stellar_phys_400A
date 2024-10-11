@@ -43,6 +43,7 @@ luminosity at that point.
 ** General questions.
 To guide your investigation of the models:
 
+  - where does the model start initially?
   - explain the behavior on the Hertzsrpung-Russell diagram: why does
     L decrease/increase when it does? What happens at each hook and
     turn?
