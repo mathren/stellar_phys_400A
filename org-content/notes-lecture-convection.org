@@ -67,11 +67,11 @@ time and spatial domains.
 
 ** Core convection in a massive star ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022b]])
 
-#+HTML: <iframe width="100%" height="550" src="https://player.vimeo.com/video/684826914" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+#+HTML: <iframe width="560" height="315" src="https://player.vimeo.com/video/684826914" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 # [[https://vimeo.com/684826914]]
 
-  This is a simulation of the temperature fluctuations (right) and
-  vertical velocities (left) in "code units" using the code [[https://github.com/DedalusProject/dedalus][Dedalus]].
+This is a simulation of the temperature fluctuations (right) and
+vertical velocities (left) in "code units" using the code [[https://github.com/DedalusProject/dedalus][Dedalus]].
 
 ** Envelope convection in a red super-giant ([[https://ui.adsabs.harvard.edu/abs/2022ApJ...929..156G/abstract][Goldberg et al. 2022]])
 
@@ -79,19 +79,19 @@ time and spatial domains.
 #+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/Cq5EqDkXFhQ?si=m4hGwqZy_YPeOcxC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # https://www.youtube.com/embed/Cq5EqDkXFhQ?si=m4hGwqZy_YPeOcxC
 
- This is a 3D radiation-hydrodynamics simulation of large portions of
- the envelope of a red supergiant (not that different from
- Betelgeuse), computed with the [[https://www.athena-astro.app/][ATHENA++]] code.
+This is a 3D radiation-hydrodynamics simulation of large portions of
+the envelope of a red supergiant (not that different from
+Betelgeuse), computed with the [[https://www.athena-astro.app/][ATHENA++]] code.
 
 ** Thermonuclear runaway during a Nova explosion ([[https://ui.adsabs.harvard.edu/abs/2018A%26A...619A.121C/abstract][Casanova et al. 2018]])
 
-#+HTML: <video id="125M-ONe-3" class="video-js vjs-default-skin" width="640" height="264" src="./images/125M-ONe-3.mp4" type='video/mp4' </video>
+#+HTML: <video  width="560" height="315" src="./images/125M-ONe-3.mp4" </video>
 #  [[./images/125M-ONe-3.mp4]]
 
- This is a 2D simulation of convection developing during a nova
- explosion using the [[https://flash.rochester.edu/site/][FLASH]] code. The movie shows the (log_{10}) mass
- fraction of $^{20}$Ne, and is taken from [[http://www.fen.upc.edu/users/jjose/][J. Jordi's personal webpage]]
- (one of the co-authors).
+This is a 2D simulation of convection developing during a nova
+explosion using the [[https://flash.rochester.edu/site/][FLASH]] code. The movie shows the (log_{10}) mass
+fraction of $^{20}$Ne, and is taken from [[http://www.fen.upc.edu/users/jjose/][J. Jordi's personal webpage]]
+(one of the co-authors).
 
 * The timescale for convection
 
