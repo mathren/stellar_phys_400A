@@ -299,7 +299,7 @@ J_\mathrm{orb} = M_{1} a_{1}^{2} v_{1} + M_{2} a_{2}^{2} v_{2} = \sqrt{\frac{GM_
 #+end_latex
 and thus taking a logarithmic derivative obtain:
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:am_balance}
 \frac{\dot{a}}{a} = 2 \frac{\dot{J_\mathrm{orb}}}{J_\mathrm{orb}}-2\frac{\dot{M_{1}}}{M_{1}}-2\frac{\dot{M_{2}}}{M_{2}}+\frac{\dot{M_{1}}+\dot{M_{2}}}{M_{1}+M_{2}} +2\frac{e\dot{e}}{1-e^{2}} \ \ ,
 \end{equation}
 #+end_latex
@@ -385,12 +385,60 @@ orbit:
 dJ_\mathrm{orb} = \frac{J_\mathrm{orb, 1}}{M_{1}}dM_{1} + \frac{J_\mathrm{orb, 2}}{M_{2}}dM_{2} \equiv \frac{M_{1} J_\mathrm{orb}}{M_{2} (M_{1}+M_{2})}dM_{1} + \frac{M_{2} J_\mathrm{orb}}{M_{1}(M_{1}+M_{2})}dM_{2} \ \ ,
 \end{equation}
 #+end_latex
-where in the last we used J_{orb, i} M_{i} = J_{orb} M_{1}M_{2}/(M_{1}+M_{2}).
+where in the last we used J_{orb, i} M_{i} = J_{orb} M_{1}M_{2}/(M_{1}+M_{2}) (angular
+momentum conservation in the center of mass frame) and dM_{i}<0 in both
+cases. The Eq. \ref{eq:am_balance} reduces to
+#+begin_latex
+\begin{equation}
+\frac{\dot{a}}{a} = - \frac{\dot{M_{1}}+\dot{M_{2}}}{M_{1}+M_{2}} \ \ ,
+\end{equation}
+#+end_latex
+which since dM_{i}<0 means that in the approximation of /fast/ stellar wind
+mass loss (w.r.t. to the orbital velocity) and assuming the wind to
+take the specific orbital angular momentum of the mass-losing star
+around its orbit and no accretion, then /the binary widens/ and the
+relative rate at which is widens is equal to the relative rate at
+which the binary loses mass! Note that the orbital angular momentum is
+decreasing, and yet the binary widens. This is sometimes referred to
+as "Jeans mode".
+
+** Conservative mass transfer evolution
+
+Another case that allows for analytic consideration is the case of
+/conservative/ mass transfer, that is
+#+begin_latex
+\begin{equation}
+\dot{M_{1}} = - \dot{M_{2}} \ \ \mathrm{and} \dot{J_\mathrm{orb}}=0 \ \,
+\end{equation}
+#+end_latex
+that is all the mass lost by star 1 is accreted by star 2, no spills
+from the system occurs and thus no orbital angular momentum can be
+lost.
+
+In this case Eq. \ref{am_balance} becomes:
+#+begin_latex
+\begin{equation}
+\frac{\dot{a}}{a} = 2\left(\frac{M_{1}}{M_{2}}-1\right)\frac{\dot{M_{1}}}{M_{1}} \ \ ,
+\end{equation}
+#+end_latex
+which tells us that since dM_{1}<0 when star 1 is the one filling its
+Roche lobe and donating the mass, the orbit initially shrinks, until
+the condition M_{2}=M_{1} is reached because of mass transfer, after which
+further mass loss results in /widening/ of the orbit.
+
+Effectively, what we have found is that conservation of angular
+momentum imposes that the orbit initially shrinks and then widens once
+the mass ratio flips from q=M_{2}/M_{1}<1 to q>1.
+
+** General case
+In general, we can assume that a fraction (1-\beta_{RLOF}) of the mass lost by
+the donor star ends up on the accretor star (thus a fraction \beta_{RLOF} is
+instead lost from the system),
 
 
-** Conservative mass transfer evolution: \Delta M = \Delta J = 0
-
-
+#+begin_HTML
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zn1E23saY-A?si=8ZDx-C8uQlt0-jgd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+#+end_HTML
 
 * Mass transfer rate calculation
 
@@ -403,3 +451,13 @@ where in the last we used J_{orb, i} M_{i} = J_{orb} M_{1}M_{2}/(M_{1}+M_{2}).
 :Question:
 - *Q*: if there is matter flowing through L_{1}, can it be convective at  that radius?
 :end:
+
+
+
+* Homework
+
+- Assuming that star 1 in a binary is filling its Roche lobe and
+  transferring mass, find a relation between it's average density and
+  the orbital parameters P and q=M_{2}/M_{1}. Since these are (in some
+  cases) observationally measurable, this relation gives a way to
+  measure the average density of stars during mass transfer!
