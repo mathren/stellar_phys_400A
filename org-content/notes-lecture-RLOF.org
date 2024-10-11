@@ -1,4 +1,4 @@
-#+Title: 400A - Roche geometry
+#+Title: 400A - Mass transfer
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
