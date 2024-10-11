@@ -447,6 +447,50 @@ where in general \beta_{RLOF} and \gamma_{RLOF} are going to be unknown function
 the masses and separation (or period), but they can be analytically
 specified for some physically relevant cases.
 
+* Modifications to the structure of stars because of mass transfer
+
+#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/Zn1E23saY-A?si=w0m_yOw7DRnEqX7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The artist impression in the video above shows a /conservative/ (no
+spill over), dynamically stable mass transfer between a 20M_{\odot} and a
+15M_{\odot} star. Although this is an artist impression (as you can tell
+from the fact that the stars are resolved), it illustrates several
+important modifications that will occur in /both/ stars as they go
+through mass transfer.
+
+** Donor: loss of the envelope, revealing the core
+The donor will lose (most of) its hydrogen rich envelope, becoming a
+low opacity, high temperature, small in radius, helium enriched star.
+This is something that only very massive stars may do if single (and
+how massive they need to be is a matter of debate because of wind
+uncertainties).
+
+** Accretor: Spin up, pollution, rejuvenation
+
+The mass transferred comes with angular momentum and will easily spin
+up the accretor star, making it fast rotating up to the point where at
+the equator centrifugal force and radiation pressure balance the
+gravitational pull. This is what is invoked to explain Be stars in
+Be-X-ray binaries for example
+
+Secondly, the matter from the donor may be chemically enriched by
+nuclear processes in /the donor's core/. For example, if the star
+transfers matter from the outermost layers of the core, it may be
+CNO-processed! This can change the chemical composition in the
+accretor structure, and thus its spectrum.
+
+Finally, for massive stars, there is a /rejuvenation/ effect. Since they
+burn through the CN-NO cycle, \varepsilon_{CNO}\prop T^{16} releases a lot of energy
+in a small hot-enough volume, leading to a steep temperature gradient
+and thus convection. As the mass of the accretor increases because of
+accretion itself, \langle T \rangle \propto M by the virial theorem means that the
+average (and central) temperature have to increase to sustain the
+increased mass. This leads to a steepening of the temperature gradient
+in the core, and drives further /convection/. This "extra" convection
+takes Hydrogen of the accretor that would /not/ have burned had the star
+been single, and mixes it in the burning region itself, elongating the
+lifetime of the star.
+
 * Mass transfer rate calculation
 
 
@@ -468,5 +512,3 @@ specified for some physically relevant cases.
   the orbital parameters P and q=M_{2}/M_{1}. Since these are (in some
   cases) observationally measurable, this relation gives a way to
   measure the average density of stars during mass transfer!
-
-#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/Zn1E23saY-A?si=w0m_yOw7DRnEqX7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
