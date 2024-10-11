@@ -371,7 +371,7 @@ Thus, taking the ratio, we see that:
 #+begin_latex
 \begin{equation}
 \frac{v_\mathrm{wind, 1}}{v_\mathrm{orb,1}} \geq \frac{v_\mathrm{esc, 1}}{v_\mathrm{orb, 1}} = \sqrt{2\frac{M_{1}(M_{1}+M_{2})}{M_{2}^{2}}\frac{a}{R_{1}}} \gg 1 \ \ , \\
-\frac{v_\mathrm{wind, 2}}{v_\mathrm{orb,2}} \geq \frac{v_\mathrm{esc, 1}}{v_\mathrm{orb, 2}} = \sqrt{2\frac{M_{2}_{}(M_{1}+M_{2})}{M_{1}^{2}}\frac{a}{R_{2}}} \gg 1 \ \ , \\
+\frac{v_\mathrm{wind, 2}}{v_\mathrm{orb,2}} \geq \frac{v_\mathrm{esc, 1}}{v_\mathrm{orb, 2}} = \sqrt{2\frac{M_{2}(M_{1}+M_{2})}{M_{1}^{2}}\frac{a}{R_{2}}} \gg 1 \ \ , \\
 \end{equation}
 #+end_latex
 where the last comes from a \gg R_{i}. This means that to a good
@@ -382,7 +382,7 @@ angular momentum (per unit mass) of the wind-losing star moving on its
 orbit:
 #+begin_latex
 \begin{equation}
-dJ_\mathrm{orb} = \frac{J_\mathrm{orb, 1}}{M_{1}}dM_{1} + \frac{J_\mathrm{orb, 2}}{M_{2}}dM_{2} \equiv \frac{M_{1} J_\mathrm{orb}}{M_{2} (M_{1}+M_{2})}dM_{1} + \frac{M_{2}_{} J_\mathrm{orb}}{M_{1}_{} (M_{1}+M_{2})}dM_{2} \ \ ,
+dJ_\mathrm{orb} = \frac{J_\mathrm{orb, 1}}{M_{1}}dM_{1} + \frac{J_\mathrm{orb, 2}}{M_{2}}dM_{2} \equiv \frac{M_{1} J_\mathrm{orb}}{M_{2} (M_{1}+M_{2})}dM_{1} + \frac{M_{2} J_\mathrm{orb}}{M_{1}(M_{1}+M_{2})}dM_{2} \ \ ,
 \end{equation}
 #+end_latex
 where in the last we used J_{orb, i} M_{i} = J_{orb} M_{1}M_{2}/(M_{1}+M_{2}).
