@@ -408,14 +408,14 @@ Another case that allows for analytic consideration is the case of
 /conservative/ mass transfer, that is
 #+begin_latex
 \begin{equation}
-\dot{M_{1}} = - \dot{M_{2}} \ \ \mathrm{and} \dot{J_\mathrm{orb}}=0 \ \,
+\dot{M_{1}} = - \dot{M_{2}} \ \ \mathrm{and}\ \  \dot{J_\mathrm{orb}}=0 \ \,
 \end{equation}
 #+end_latex
 that is all the mass lost by star 1 is accreted by star 2, no spills
 from the system occurs and thus no orbital angular momentum can be
 lost.
 
-In this case Eq. \ref{am_balance} becomes:
+In this case Eq. \ref{eq:am_balance} becomes:
 #+begin_latex
 \begin{equation}
 \frac{\dot{a}}{a} = 2\left(\frac{M_{1}}{M_{2}}-1\right)\frac{\dot{M_{1}}}{M_{1}} \ \ ,
@@ -436,9 +436,9 @@ the donor star ends up on the accretor star (thus a fraction \beta_{RLOF} is
 instead lost from the system),
 
 
-#+begin_export HTML
+#+begin_src HTML
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Zn1E23saY-A?si=8ZDx-C8uQlt0-jgd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-#+end_export HTML
+#+end_src HTML
 
 * Mass transfer rate calculation
 
