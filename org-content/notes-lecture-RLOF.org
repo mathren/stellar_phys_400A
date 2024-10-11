@@ -430,15 +430,23 @@ Effectively, what we have found is that conservation of angular
 momentum imposes that the orbit initially shrinks and then widens once
 the mass ratio flips from q=M_{2}/M_{1}<1 to q>1.
 
-** General case
-In general, we can assume that a fraction (1-\beta_{RLOF}) of the mass lost by
-the donor star ends up on the accretor star (thus a fraction \beta_{RLOF} is
-instead lost from the system),
+** TODO General case
+In general, we can assume that a fraction \beta_{RLOF} of the mass lost by
+the donor star ends up on the accretor star (thus a fraction 1-\beta_{RLOF}
+is instead lost from the system), and that the non-accreted material
+takes away a specific angular momentum per unit mass \gamma_{RLOF}. With this
+parametrization of the uncertain mass transfer efficiency (represented
+by the poorly known parameter \beta_{ROLF}) and angular momentum losses
+(represented by \gamma_{RLOF}) we can re-write Eq. \ref{eq:am_balance} as:
+#+begin_latex
+\begin{equation}
+\frac{\dot{a}}{a} =-2\frac{\dot{M_{1}}}{M_{1}}\left[1-\beta_{RLOF}\frac{M_{1}_{}}{M_{2}}-(1-\beta_{RLOF})\left(\gamma_{RLOF}+\frac{1}{2}\right)\frac{M_{1}}{M_{1}+M_{2}}\right] \ \ ,
+\end{equation}
+#+end_latex
+where in general \beta_{RLOF} and \gamma_{RLOF} are going to be unknown functions of
+the masses and separation (or period), but they can be analytically
+specified for some physically relevant cases.
 
-
-#+begin_HTML
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Zn1E23saY-A?si=8ZDx-C8uQlt0-jgd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-#+end_HTML
 
 * Mass transfer rate calculation
 
