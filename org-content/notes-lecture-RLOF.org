@@ -3,7 +3,7 @@
 #+email: mrenzo@arizona.edu
 
 *Materials*: Onno Pols' lecture notes Chapter 7,8, Tauris & van den
-Heuvel book chapter 4,
+Heuvel book chapter 4.
 
 * Mass transfer in binary systems
 
@@ -447,14 +447,20 @@ where in general \beta_{RLOF} and \gamma_{RLOF} are going to be unknown function
 the masses and separation (or period), but they can be analytically
 specified for some physically relevant cases.
 
+These parameter may also depend on the formation of an accretion disk
+around the initially less massive star (as opposed to direct impact of
+the stream of matter with the star), and possibly of a circumbinary
+disk (see for example [[https://ui.adsabs.harvard.edu/abs/1975ApJ...198..383L/abstract][Lubow & Shu 1975]]).
+
 * Modifications to the structure of stars because of mass transfer
 
 #+HTML: <iframe width="600" height="400" src="https://www.youtube.com/embed/Zn1E23saY-A?si=w0m_yOw7DRnEqX7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The artist impression in the video above shows a /conservative/ (no
 spill over), dynamically stable mass transfer between a 20M_{\odot} and a
-15M_{\odot} star. Although this is an artist impression (as you can tell
-from the fact that the stars are resolved), it illustrates several
+15M_{\odot} star producing a direct impact of the L_{1} stream with the
+accretor. Although this is an artist impression (as you can tell from
+the fact that the stars are resolved), it illustrates several
 important modifications that will occur in /both/ stars as they go
 through mass transfer.
 
@@ -493,17 +499,106 @@ lifetime of the star.
 
 * Mass transfer rate calculation
 
+Say we have a binary that is starting to transfer mass through the L_{1}
+Lagrangian point: how can we decide the mass transfer /rate/ per unit
+time? This is a crucial question, since the response of both stars to
+mass transfer will depend on the $dM_{i}/dt$ of both stars (or in other
+words on how the mass-change timescale $M_{i}/\dot{M_{i}}$ compares to the
+/local/ timescales of the stellar surfaces), and thus whether it remains
+dynamically stable or devolves into a common envelope!
 
+The classic approach is to /postulate/ that the mass transfer rate is a
+function of the amount of overflow in radius. If the donor is star 1:
 
+#+begin_latex
+\begin{equation}
+\dot{M_{1}} \equiv \dot{M_{1}}(\Delta R_{1}/R_{RL,1}) \equiv \dot{M_{1}}(\frac{R_{1}-R_{RL,1}}{R_{RL,1}}) \ \ .
+\end{equation}
+#+end_latex
 
+By dimensional analysis we can infer that the mass loss rate by the
+donor is related to the gas density and velocity at L_{1} (the point
+where it becomes gravitationally unbound) times the cross section of
+the nozzle of gas across the plane perpendicular to the axis
+connecting the two stars and going through L_{1}
 
+#+begin_latex
+\begin{equation}
+\dot{M_{1}} = \rho_{L_{1}} v_{L_{1}} A_{L_{1}} \ \ .
+\end{equation}
+#+end_latex
+
+*N.B.:* this is reminiscent of the time-dependent mass-conservation term
+we obtained during the [[./notes-lecture-HSE.org][lecture on hydrostatic equilibrium]], not by
+accident!
+
+Each term needs to be estimate based on thermo- and hydro-dynamical
+considerations on the flow of the gas, but typically v_{L_{1}}\ge
+v_{esc,1}\simeq c_{sound,1} because the gas has to leave the gravitational
+potential well of star 1 and the last step is a consequence of the
+Virial theorem, \rho_{L_{1}} can be estimated using an EOS and mass
+continuity from the stellar surface to L_{1}, and to estimate A_{L_{1}} we
+consider that the Roche potential has a saddle point in L_{1}, therefore
+we can do a Taylor approximation along the y-direction the plane of
+interest and get:
+
+#+begin_latex
+\begin{equation}
+\Delta \Phi \simeq \frac{\partial \Phi}{\partial y}\rvert_{L_{1}} y + \frac{1}{2}\frac{}{\partial^{2} \Phi}{\partial y^{2}}\rvert_{L_{1}}y^{2} \ \ ,
+\end{equation}
+#+end_latex
+(where \partial_{x}\Phi(L_{1})=0), and using the Roche potential plus Kepler's 3^{rd}
+law this gives:
+#+begin_latex
+\begin{equation}
+\Delta \Phi \simeq \frac{1}{2}{n^{2}}y^{2} \ \ ,
+\end{equation}
+#+end_latex
+with n= 2\pi/P the orbital frequency. A_{L_{1}}\simeq y^{2} for y determined
+by how much outside of its Roche lobe the donor star is. This can be
+related by looking at a point far from L_{1}'s direction where the
+gravity of the companion does not distort the equipotential surfaces
+too much, resulting in \Phi \sim GM_{1}/(R_{1}), and thus:
+#+begin_latex
+\begin{equation}
+\Delta \Phi \simeq \frac{GM_{1}}{R_{1}}\frac{\Delta R}{R} \ \ ,
+\end{equation}
+#+end_latex
+and putting things together:
+#+begin_latex
+\begin{equation}
+A_{L_{1}} \simeq y^{2}(\Delta R) = \frac{2GM_{1}}{n^{2}R_{1}}\frac{\Delta R}{R_{1}} \ \ ,
+\end{equation}
+#+end_latex
+
+More detailed calculations use the Bernoulli principle applied to the
+gas streaming from the outer layers of the donor star to the L_{1} point,
+and differ in whether the inner point is in the stellar atmosphere
+(which is optically thin, likely non-isothermal) or inside the
+photosphere (optically thick), see for instance [[https://ui.adsabs.harvard.edu/abs/1988A%26A...202...93R/abstract][Ritter 1988]], [[https://ui.adsabs.harvard.edu/abs/1990A%26A...236..385K/abstract][Kolb &
+Ritter 1990]], [[https://ui.adsabs.harvard.edu/abs/2021A%26A...650A.107M/abstract][Marchant et al. 2021]], [[https://ui.adsabs.harvard.edu/abs/2023MNRAS.524..471C/abstract][Cehula & Pejcha 2023]], [[https://ui.adsabs.harvard.edu/abs/2024ApJ...971...64I/abstract][Ivanova et
+al. 2024]].
+
+Once the mass loss rate from the donor is determined, several
+processes occurring during the travel of the gas in between the stars
+(does it form a disk or not? does the gas have time to cool and change
+its entropy) and when it reaches the accretor (what is the shear and
+entropy contrast with the accretor's outer layers? Is the composition
+the same?) will determine the mass accretion rate of the accretor, and
+enter in the parameters \beta_{RLOF}, and \gamma_{RLOF} we introduced above while
+determining the orbital evolution in the general case.
+
+Note that a lot of the physics at play here may happen while the stars
+are /not/ in gravothermal equilibrium, something that is neglected in
+/rapid/ binary population synthesis calculations based on pre-computed
+single star models (where the single stars were always in gravothermal
+equilibrium themselves), cf. [[./notes-lecture-neutrinos.org::*Population synthesis][notes on codes]].
 
 
 :Question:
-- *Q*: if there is matter flowing through L_{1}, can it be convective at  that radius?
+- if there is matter flowing through L_{1}, can it be convective at that
+  location (*Hint*: think of what force drives the instability)?
 :end:
-
-
 
 * Homework
 
