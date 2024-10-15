@@ -20,6 +20,13 @@ In today's lecture we will discuss in more detail how being in a
 binary can lead to dramatic consequences for the evolution of /both/
 stars in the system, starting with the Roche model of the potential.
 
+:Question:
+- *Q*: We will see this in more detail in the coming in class activity,
+  but you can already answer based on your 1M_{\odot} stellar models:
+  what happens to the stellar radius as a typical star evolves?
+- *Q*: Which stars evolve faster: higher or lower mass?
+:end:
+
 ** Roche model
 
 To describe the gas of the stars in a binary system subject to the
@@ -235,7 +242,7 @@ categories (defined by [[https://ui.adsabs.harvard.edu/abs/1967ZA.....66...58K/a
    He ignition, for high mass stars, it is typically defined after
    core He depletion.
 
-Because of the different L and \varphi factors for each nuclear burning
+Because of the different L and \phi factors for each nuclear burning
 phase ([[./notes-lecture-nuclear-burning.org::*The nuclear timescale][see lecture on nuclear burning for notation]]), the timescales
 for mass transfer and therefore responses of both stars and the orbit
 to mass transfer can be very different for these three, leading to
@@ -245,13 +252,6 @@ timescale phase. Case B and C tend to be faster (thermal timescale or
 shorter), though this may also be metallicity dependent .
 
 * Orbital evolution during mass transfer
-
-:Question:
-- *Q*: We will see this in more detail in the coming in class activity,
-  but you can already answer based on your 1M_{\odot} stellar models:
-  what happens to the stellar radius as a typical star evolves?
-- *Q*: Which stars evolve faster: higher or lower mass?
-:end:
 
 Because of the evolution of the stellar radius R(t), many stellar
 binaries will evolve from an initially /detached/ state (i.e., the mass
@@ -265,7 +265,8 @@ During a phase of mass transfer the structure of /both/ stars changes,
 but also the orbit! The details of this are arguably the biggest
 uncertainty in binary stellar evolution:
  - in most cases this process is /fast/ (\propto thermal timescale),
-   making direct observations rare
+   making direct observations rare (with the exception of case A RLOF
+   on nuclear timescales)
  - where, how much, and how mass is transferred and lost from the
    system determines the torques that the orbit feels and thus it's
    angular momentum and energy evolution
@@ -273,7 +274,8 @@ uncertainty in binary stellar evolution:
    can intervene in the mass transfer, and with different degrees of
    importance on the process depending on the masses and mass-ratios
    of the system, and the evolutionary stage: a general recipe valid
-   for /all/ binaries is not known and may not even exist!
+   for /all/ binaries is not known and may not even exist because of the
+   wide range of physical regimes in which mass transfer could occur!
 
 To study the evolution of the orbit, it is useful to consider the
 total orbital angular momentum of the binary:
@@ -298,8 +300,10 @@ frequency n = 2\pi/P and at best equal when tides can synchronize
 rotation and revolution (e.g., in the Moon+Earth binary!). Note
 however that there are known exception to this (see for example
 [[https://ui.adsabs.harvard.edu/abs/2024A%26A...684A..35B/abstract][Britavski et al. 2024]]), but they don't invalidate the ordering of Eq.
-\ref{eq:J_ordering}: /the spin angular momentum of both stars in a
-binary is typically small compared to the orbital angular momentum/.
+\ref{eq:J_ordering} because of the squared dependence on the lever arm
+length of the angular momentum:
+/the spin angular momentum of both stars in a binary is typically small
+compared to the orbital angular momentum/.
 
 For the orbital term, using Kepler's 3^{rd} law and a_{1}M_{1}
 = a_{2}M_{2} = a M_{1}M_{2}/(M_{1}+M_{2}) we can write:
@@ -334,7 +338,7 @@ before/during mass transfer.
 The orbital angular momentum losses can occur do to a variety of
 phenomena:
 - *magnetic braking*: if the stars are magnetic (e.g., because of the
-  presence of a convective), expelled gas can remain magnetically
+  presence of a convective envelope), expelled gas can remain magnetically
   tethered to them, providing a long lever arm to that gas to extract
   angular momentum
 - *tidal LS coupling*: if the system is small enough that tides matter,
@@ -382,7 +386,7 @@ Thus, taking the ratio, we see that:
 #+begin_latex
 \begin{equation}
 \frac{v_\mathrm{wind, 1}}{v_\mathrm{orb,1}} \geq \frac{v_\mathrm{esc, 1}}{v_\mathrm{orb, 1}} = \sqrt{2\frac{M_{1}(M_{1}+M_{2})}{M_{2}^{2}}\frac{a}{R_{1}}} \gg 1 \ \ , \\
-\frac{v_\mathrm{wind, 2}}{v_\mathrm{orb,2}} \geq \frac{v_\mathrm{esc, 1}}{v_\mathrm{orb, 2}} = \sqrt{2\frac{M_{2}(M_{1}+M_{2})}{M_{1}^{2}}\frac{a}{R_{2}}} \gg 1 \ \ , \\
+\frac{v_\mathrm{wind, 2}}{v_\mathrm{orb,2}} \geq \frac{v_\mathrm{esc, 2}}{v_\mathrm{orb, 2}} = \sqrt{2\frac{M_{2}(M_{1}+M_{2})}{M_{1}^{2}}\frac{a}{R_{2}}} \gg 1 \ \ , \\
 \end{equation}
 #+end_latex
 where the last comes from a \gg R_{i}. This means that to a good
@@ -448,7 +452,8 @@ is instead lost from the system), and that the non-accreted material
 takes away a specific angular momentum per unit mass \gamma_{RLOF}. With this
 parametrization of the uncertain mass transfer efficiency (represented
 by the poorly known parameter \beta_{ROLF}) and angular momentum losses
-(represented by \gamma_{RLOF}) we can re-write Eq. \ref{eq:am_balance} as:
+(represented by \gamma_{RLOF}) we can re-write Eq. \ref{eq:am_balance} for a
+circular system (e=0) as:
 #+begin_latex
 \begin{equation}
 \frac{\dot{a}}{a} =-2\frac{\dot{M_{1}}}{M_{1}}\left[1-\beta_{RLOF}\frac{M_{1}}{M_{2}}-(1-\beta_{RLOF})\left(\gamma_{RLOF}+\frac{1}{2}\right)\frac{M_{1}}{M_{1}+M_{2}}\right] \ \ ,
@@ -456,7 +461,9 @@ by the poorly known parameter \beta_{ROLF}) and angular momentum losses
 #+end_latex
 where in general \beta_{RLOF} and \gamma_{RLOF} are going to be unknown functions of
 the masses and separation (or period), but they can be analytically
-specified for some physically relevant cases.
+specified for some physically relevant cases (alternative but
+equivalent parametrizations exist, see for example [[https://ui.adsabs.harvard.edu/abs/1997A%26A...327..620S/abstract][Sobermann et al.
+1997]]).
 
 These parameter may also depend on the formation of an accretion disk
 around the initially less massive star (as opposed to direct impact of
@@ -481,6 +488,10 @@ low opacity, high temperature, small in radius, helium enriched star.
 This is something that only very massive stars may do if single (and
 how massive they need to be is a matter of debate because of wind
 uncertainties).
+
+This means that post-mass transfer, the donor star is the /exposed/ core
+of the star, which allows a unique opportunity to directly see (with
+photons!) the interior of a star.
 
 ** Accretor: Spin up, pollution, rejuvenation
 
@@ -593,7 +604,7 @@ al. 2024]].
 Once the mass loss rate from the donor is determined, several
 processes occurring during the travel of the gas in between the stars
 (does it form a disk or not? does the gas have time to cool and change
-its entropy) and when it reaches the accretor (what is the shear and
+its entropy?) and when it reaches the accretor (what is the shear and
 entropy contrast with the accretor's outer layers? Is the composition
 the same?) will determine the mass accretion rate of the accretor, and
 enter in the parameters \beta_{RLOF}, and \gamma_{RLOF} we introduced above while
