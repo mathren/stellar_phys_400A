@@ -59,7 +59,7 @@ two terms represent the gravity of each star, respectively, and the
 last term represents the centrifugal force.
 
 Taking the gradient, the gravitational force from the combined masses
-of the stars in the binary is F=-\nabla V(\mathbf{r}). But because we are
+of the stars in the binary is F=-\nabla \Phi(\mathbf{r}). But because we are
 in non-inertial frame, there is also another term to add to the
 momentum equation which cannot be expressed as a potential, because it
 depends on the velocity of the test mass m: the Coriolis force \prop
@@ -78,21 +78,28 @@ saving the Roche model, and the tides are a relatively small
 perturbation on top of this):
 
 
-#+CAPTION: Visualization of the Roche potential (grid) and the equipotential surfaces intersecting the xy orbital plane for a binary with q=M_{2}/M_{1}=0.5. The three Lagrangian points L_{1}, L_{2}, and L_{3} are marked. From [[https://en.wikipedia.org/wiki/Roche_lobe#/media/File:RochePotential.jpg][wikipedia]].
+#+CAPTION: Visualization of the Roche potential (grid) and the equipotential surfaces intersecting the orbital plane for a binary with q=M_{2}/M_{1}=0.5. The three Lagrangian points L_{1}, L_{2}, and L_{3} are marked. From [[https://en.wikipedia.org/wiki/Roche_lobe#/media/File:RochePotential.jpg][wikipedia]].
 #+ATTR_HTML: :width 100%
 [[./images/RochePotential.jpeg]]
 
 On the line connecting the two binaries, this potential has three
-zeros, meaning points where there is no net force. All three are
-/saddle points/ and they are called Lagrangian points:
+zeros, meaning points where there is no net
+(gravitational+centrifugal) force. All three are /saddle points/ and
+they are called Lagrangian points:
 - L_{1} sits in between the two stars, and it is the point where the
   gravitational pull from each star cancel each other
 - L_{2} is the point behind star 2 (many telescopes, including for
-  example /JWST/ sit at the L_{2} point of the Earth-Sun binary system)
+  example /JWST/ or /Gaia/ sit close to the L_{2} point of the Earth-Sun
+  binary system)
 - L_{3} is the point behind star 1.
 
+*N.B.:* The position of the center of mass depends on the mass
+distribution (here the masses are assumed to be point like), while the
+position of the Lagrangian points depends on the dynamics (gravity and
+centrifugal forces)
+
 The equipotential shapes are close to spheres for r_{1} and/or r_{2} \ll
-r_{L{1}}, then they get progressively elongated along the axis connecting
+r_{L_{1}}, then they get progressively elongated along the axis connecting
 the stars, and flattened by the centrifugal potential.
 
 For short period binaries, P<10 days (though the exact value depends
@@ -116,8 +123,9 @@ shaped like equipotential surfaces in the Roche potential, producing
 non-axisymmetric, tear-drop-shaped stars.
 
 For larger periods, tidal synchronization may not occur (tides are a
-steep function of R/a), and in that case the rotational bulge may lag
-behind the orbit, adding an extra deformation.
+steep function of R/a with R stellar radius and a orbital separation),
+and in that case the rotational bulge may lag behind the orbit, adding
+an extra deformation.
 
 On top of the necessary hypothesis (e=0, M_{1 }\ge M_{2} \gg m, point masses
 and in co-rotation) to derive the Roche approximation, it is worth
@@ -175,23 +183,16 @@ perturbed to fall into the other star (see also review by [[https://ui.adsabs.ha
 Bodensteiner 2024]]).
 
 Depending on the stability of the /orbital response/ to the
-transfer of mass, we distinguish two cases:
+transfer of mass, we distinguish two cases: /stable Roche lobe overflow/
+or /dynamically unstable common envelope/.
 
 ** Dynamically stable mass-transfer
 If Roche lobe overflow does not hit a runaway response of the orbit
 (causing more and more overflow), then it is dynamically stable.
 
-This will occur in the vast majority of massive stars, and it can have
-important consequences for /both/ stars that will be modified by this
-interaction:
-- the donor typically will lose most or all it's hydrogen rich
-  envelope, becoming a hot, Helium rich, compact star
-- the accretor will be spun up and polluted by material from the
-  companion, becoming a fast rotating and overluminous star.
-- if the accretor has a convective core, increasing M will because of
-  the virial theorem increase \langle T \rangle, and facilitate a growth in mass
-  coordinate of the core, allowing the burning region to access more
-  fuel and thus rejuvenating the star.
+This will occur in the majority (50-70%) of massive stars, and it
+can have important consequences for /both/ stars that will be modified
+by this interaction (see below).
 
 ** Dynamically unstable common envelope
 Sometimes, the orbit and or the evolution of the stars respond to mass
@@ -210,28 +211,38 @@ This results in an inspiral that can end either with:
  - the successful ejection of the shared envelope (interrupting the
    drag), and the formation of a tight period binary
 
+Common envelope evolution, since it's theorization in the 1970s by
+Paczynski, Webbink, Taam, and Ostriker, remains one of the biggest
+open questions in stellar physics that impacts the formation of all
+compact binaries (cataclysmic variables made of a main sequence plus a
+white dwarf, binary white dwarfs, gravitational wave mergers, etc.).
+
+
 ** Nomenclature: Case A, B, and C
 Depending on when mass transfer starts, we can have three different
 categories (defined by [[https://ui.adsabs.harvard.edu/abs/1967ZA.....66...58K/abstract][Kippenhahn et al. 1967]] and [[https://ui.adsabs.harvard.edu/abs/1970A%26A.....7..150L/abstract][Lauterborn 1970]]):
- - case A RLOF: donor is burning hydrogen in its core -- it typically
-   starts with a thermal timescale phase, followed by a longer nuclear
-   timescale phase during which the slow evolution of the donor drives
-   the mass transfer
+ - case A RLOF: donor is burning hydrogen in its core, thus it occurs
+   in the tightest (smaller separation a) binaries when the stars are
+   still relatively small in radius.
  - case B RLOF: the donor has a helium core (possibly inert and
    sustained by electron degeneracy or burning), typically this is a
-   faster mass transfer on thermal timescale, although this may also
-   depend on the metallicity and its impact on where on the HR diagram
-   Helium ignites
+   faster mass, although this may also depend on the metallicity and
+   its impact on where on the HR diagram Helium ignites (see e.g.,
+   [[https://ui.adsabs.harvard.edu/abs/2022A%26A...662A..56K/abstract][Klencki et al. 2022]]). Since stars typically expand after they run
+   out of hydrogen-rich fuel in the core, this mode of mass transfer
+   is the most common overall.
  - case C RLOF: for low mass stars, this is typically defined after
    He ignition, for high mass stars, it is typically defined after
-   core He depletion
+   core He depletion.
+
 Because of the different L and \varphi factors for each nuclear burning
-phase, the timescales and therefore responses of both stars and the
-orbit to mass transfer can be very different for these three: case A
-typically has a short thermal timescale phase, followed by nuclear
-timescale mass transfer. Case B and C tend to be faster (thermal
-timescale or shorter), though this may also be metallicity dependent
-(see e.g., [[https://ui.adsabs.harvard.edu/abs/2022A%26A...662A..56K/abstract][Klencki et al. 2022]]).
+phase ([[./notes-lecture-nuclear-burning.org::*The nuclear timescale][see lecture on nuclear burning for notation]]), the timescales
+for mass transfer and therefore responses of both stars and the orbit
+to mass transfer can be very different for these three, leading to
+divergent evolution of the binaries and the outcome: case A typically
+has a short thermal timescale phase, followed by a much longer nuclear
+timescale phase. Case B and C tend to be faster (thermal timescale or
+shorter), though this may also be metallicity dependent .
 
 * Orbital evolution during mass transfer
 
@@ -477,7 +488,7 @@ The mass transferred comes with angular momentum and will easily spin
 up the accretor star, making it fast rotating up to the point where at
 the equator centrifugal force and radiation pressure balance the
 gravitational pull. This is what is invoked to explain Be stars in
-Be-X-ray binaries for example
+Be-X-ray binaries for example.
 
 Secondly, the matter from the donor may be chemically enriched by
 nuclear processes in /the donor's core/. For example, if the star
@@ -544,10 +555,10 @@ interest and get:
 
 #+begin_latex
 \begin{equation}
-\Delta \Phi \simeq \frac{\partial \Phi}{\partial y}\rvert_{L_{1}} y + \frac{1}{2}\frac{}{\partial^{2} \Phi}{\partial y^{2}}\rvert_{L_{1}}y^{2} \ \ ,
+\Delta \Phi \simeq \frac{\partial \Phi}{\partial y}\rvert_{L_{1}} y + \frac{1}{2}\frac{\partial^{2} \Phi}{\partial y^{2}}\rvert_{L_{1}}y^{2} \ \ ,
 \end{equation}
 #+end_latex
-(where \partial_{x}\Phi(L_{1})=0), and using the Roche potential plus Kepler's 3^{rd}
+where \partial_{x}\Phi(L_{1})=\partial_{y}\Phi(L_{1})0, and using the Roche potential plus Kepler's 3^{rd}
 law this gives:
 #+begin_latex
 \begin{equation}
