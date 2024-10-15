@@ -33,3 +33,5 @@ grades/*
 presentation_schedule.*
 
 MIST/*
+
+*.zip
