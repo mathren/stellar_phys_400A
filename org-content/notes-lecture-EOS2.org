@@ -448,7 +448,7 @@ the T(\rho) plane ([[https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstr
   continuity equation and hydrostatic equilibrium, show that this
   implies that the only mass that the ultra-relativistic electron gas
   can sustain is M_{Chandrasekhar} = 5.80 M_{\odot} \times \mu_{e}^{-2} \simeq
-  1.44 M_{\odot} for \mu_{e} \simeq 1/2 (note the \mu_{e}^{2} dependence!). What
+  1.44 M_{\odot} for \mu_{e} \simeq 2 (note the \mu_{e}^{-2} dependence!). What
   does this specific value of the mass (for a given composition, i.e.,
   \mu_{e}) mean for stars supported by ultra-relativistic electron
   degeneracy pressure? What equation of stellar structure (of the ones
