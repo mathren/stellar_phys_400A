@@ -66,6 +66,17 @@ precision) for convective regions. We also have a criterion
 with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy and \varepsilon_{\nu}>0
 (\Rightarrow it is always a /loss/ term during stellar evolution).
 
+*** Composition evolution
+#+begin_latex
+\begin{equation}
+\frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) + D_\mathrm{mix}\frac{dX_{i}}{dr} \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
+\end{equation}
+#+end_latex
+
+where the first two terms represent production and destruction of the
+i-th isotope by nuclear processes and the third term represent mixing
+by various instabilities treated in diffusion approximation.
+
 ** Two types of neutrinos
 
 For the density typical in stellar interior (think of \langle\rho_{\odot}\rangle and the other
