@@ -2,8 +2,9 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-*Materials*: Onno Pols' lecture notes Chapters 9-11, Kippenhahn's book
-Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2.
+*Materials*: Onno Pols' lecture notes Chapters 7-9-11, Kippenhahn's book
+Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2,
+[[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web][MESA-web]].
 
 * In class activity: evolution of stars
 
@@ -12,25 +13,26 @@ In this class activity, you will work together in groups of three to
 piece together all the things we have learned so far and describe the
 evolution of single, non-rotating stars with /your/ =MESA-web= models!
 
-The aim if for you to be able to:
- 1. distinguish physical features from numerical artifacts
- 2. explain physically the features of the evolution of the star
+The aim is for you to be able to:
+ 1. *distinguish physical features from numerical artifacts*
+ 2. give a physical explanation for the features of the evolution of the star
     (e.g., on the HR diagram), based on the interior structure and evolution
  3. appreciate the timescales corresponding to the various features
  4. being able to describe and explain the qualitative differences
     between stars of different masses (and maybe even metallicity!)
 
 This is often what we do with stellar models in research: we setup a
-numerical experiment on the computer (in this case a grid of many
-masses across the class), and then look at the results with some
-healthy skepticism and trying to filter out the numerical artifacts
-from physical features of the models to build understanding!
+numerical experiment on the computer (in this case a crowdsourced grid
+of many masses across the class), and then look at the results with a
+copious dose of healthy skepticism and trying to filter out the
+numerical artifacts from physical features of the models to build
+understanding!
 
 ** Task 0: mass-luminosity relation revisited with models
 We have already discussed /empirical/ L \equiv L(M) relations based on
 /dynamical/ mass measurements in SB2 eclipsing binaries, and you have
-derived an analytic relation for radiative stars. Let's now see if our
-models agree and if we can understand why if they don't!
+derived an analytic relation for fully radiative stars. Let's now see
+if our models agree and if we can understand why if they don't!
 
 Find the "beginning of the main sequence" of your star, as in the
 point where gravothermal equilibrium is achieved and L_{nuc} = L thanks
@@ -38,40 +40,9 @@ to hydrogen core burning and report on [[https://docs.google.com/spreadsheets/d/
 luminosity at that point.
 
 *Hint*: A very simple approximate criterion we can adopt here is
-=center_h1= <= 99% =center_h1= at the beginning of the evolution.
-
-** General questions.
-To guide your investigation of the models:
-
-  - where does the model start initially?
-  - explain the behavior on the Hertzsrpung-Russell diagram: why does
-    L decrease/increase when it does? What happens at each hook and
-    turn?
-  - where does core hydrogen burning ends? What is the star physical
-    age then?
-  - During the long evolutionary phase, what is the core vs. envelope
-    structure in term of convective stability? Does that seem to
-    depend on mass?
-  - where does helium core burning start? How long in physical time
-    between H depletion and He ignition? Any difference in mass?
-  - explain the morphology of the curve at the end of the H core
-    burning main sequence?
-  - Use the other diagrams to infer the physical cause of each feature
-    you investigate
-  - ask yourselves: is this feature I see physical or is it a
-    numerical artifact?
-  - consider the timescales for anything you observe
-  - consider the internal composition and its changes
-
-Compare your model to the models of people nearby you and explore the
-data you have. You probably want to start from the movie =MESA-web=
-provides. Likely, you will need to play the movie over and over,
-pausing it, and trying to correlate what happens in the various panels
-to build physical understanding. If needed, you can also make more
-plots (of =trimmed_history.data= and any =profile*.data= file available,
-remember the python module available to read the data: [[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][mesa_web.py]]).
-
-*N.B.:* See also the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-output][output description]] on the =MESA-web= site.
+=center_h1= <= 99% =center_h1= at the beginning of the evolution. You can
+find this in your =trimmed_history.data= in which every line contains a
+timestep.
 
 ** Brief description of pgstar movies created by =MESA-web=
 Since you downloaded your models from [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]], it makes sense to
@@ -88,6 +59,11 @@ very top left, and the number of timestep marked on the top right.
 
 *N.B.:* if you set up a full blown MESA installation you can customize
 /all/ of this!
+
+*N.B.:* large excursions on a plot can take a very short physical time
+(but a long computational time and many timesteps), viceversa
+long-duration phases may take few large timesteps and /not/ produce
+large variations on these plots!
 
 *** Top right panel: abundance panel
 This shows log_{10}(X_{i}) with X_{i} the mass fraction of the i-th isotope as
@@ -126,23 +102,151 @@ lines corresponding to the ignition of various fuels.
 These three panels show P, \rho, and T as a function of mass coordinate.
 
 
+** Discuss with your "mass" group
+Compare your model to the models of people nearby you and explore the
+data you have. You probably want to start from the movie =MESA-web=
+provides. Likely, you will need to play the movie over and over,
+pausing it, and trying to correlate what happens in the various panels
+to build physical understanding. If needed, you can also make more
+plots (of =trimmed_history.data= and any =profile*.data= file available,
+remember the python module available to read the data: [[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][mesa_web.py]]).
+
+*N.B.:* See also the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-output][output description]] on the =MESA-web= site.
+
+Pay attention to:
+ - timescales /and/ timestep size
+ - HR diagram
+ - behavior on the T(\rho) diagram
+ - composition (at surface and core)
+ - Kippenhahn diagram
+
+*** Some guiding questions for inspiration
+1. where does the evolution start?
+2. when does (significant) nuclear burning start? How long between the
+   start of the run and the beginning of nuclear burning (in physical time)?
+3. where does H run out in the core? How long does the H-core burning
+   main sequence last?
+4. what is the /structure/ of the star during H core burning (core vs.
+   envelope). and why?
+5. can you explain the morphology of the end of the H-core burning
+   main sequence?
+6. where does He core burning start?
+7. is there any other nuclear burning during He core burning? And before?
+
+* Wrap-up: Hayashi track and main sequence evolution
+
+** Pre-main sequence and Hayashi track
+We have developed a set of 4 non-linear, coupled ODEs to describe the
+/structure/ and /evolution/ of stars (with physical approximations
+built-in), with an EOS for closure conditions plus a set of equations
+that describe the changes in composition due to nuclear processing and
+mixing (see for example [[./notes-lecture-neutrinos.org::*Summary of equations we have derived][this summary]]).
+
+We have also worked out the ordering of timescales of the problem:
+#+begin_latex
+\begin{equation}
+\tau_\mathrm{nuc} \gg \tau_\mathrm{KH} \gg \tau_\mathrm{free\ fall} \ \ ,
+\end{equation}
+#+end_latex
+which implies that for a star in hydrostatic equilibrium and LTE at
+every location throughout the star (i.e., global gravothermal
+equilibrium), the equations describing the (slow) /evolution/ of the
+composition decouple from the 4 ODEs+EOS that describe the /structure/ of
+the star.
+
+The =MESA_web= stellar models that you have been looking at start at the
+/top right/ of the Herzsprung-Russell diagram (so high L low T_{eff}) as a
+uniform sphere of gas with set composition that is in hydrostatic but
+not thermal equilibrium. These models thus evolve on a thermal
+timescale \sim\tau_{KH} losing energy (L goes down) and contracting -- picture
+lines of constant R=(L/(4\pi\sigma T_{eff}^{4)}))^{1/2}! This /is/ the gravothermal KH
+contraction which leads to the increase in average \langle T \rangle by the virial
+theorem, and it goes on until either:
+1. *degeneracy pressure stops this process by changing the EOS, tapping
+   into quantum mechanical effects to provide extra pressure*: this
+   should not happen to any of your models, but it is how you form a
+   *Brown Dwarfs* (BD) and a planets. The distinction between these is
+   whether some minor nuclear burning, energetically unimportant but
+   still affecting the composition happens before the object sets on
+   gravothermal equilibrium: BD experience deuterium burning, but
+   deuterium is a loosely bound nucleus and its burning doesn't release
+   a lot of energy.
+2. *an energy source (namely nuclear burning) stops the collapse*. This
+   is what happens to your stars, where H burning (as the lightest and
+   most energy-releasing fuel) starts. The point where L=L_{nuc} because
+   of H core burning is referred to as *Zero Age Main Sequence* (ZAMS),
+   since the "main sequence" of the color magnitude diagram containing
+   most stars is made of stars during their longest phase of evolution,
+   hydrogen core burning.
+
+From the ignition of H in the core onwards, for timescales \tau \ll \tau_{nuc},
+once the composition is decided (i.e., for fixed mass fractions {X_{i}})
+the structure is determined by those 4 ODEs+EOS. This means that the
+/initial/ structure of the star is /not/ sensitive to the (complex,
+not-yet-fully understood) star formation process, and the ZAMS
+structure is fully determined by the composition!
+
+*** Pre-main sequence stellar structure
+
+If the gravothermal collapse of the mass of gas considered ends with
+the ignition of nuclear fuel (option 2. above), that is, if we make a
+star (recall \langle T \rangle \prop \mu M/R, so the mass determines whether we get
+here), then the phase from the beginning of the simulation until ZAMS
+is called /pre-main-sequence/ (pre-MS).
+
+During this phase the models start from the top-right of the diagram
+at high L, large R (\Rightarrow low \langle T \rangle), and contract progressively contract
+and heat up. This is an idealization: often as stars are doing that,
+they still accrete mass, in the most massive stars (which have shorter
+KH timescales and pre-MS phases), accretion may not be over until even
+after ZAMS!
+
+The \langle T \rangle is initially low (the gas that is collapsing is coming from
+the ISM), and increasing. Since \nabla = \partial ln(T)/\partial ln(P) \propto \kappa L and \kappa
+generally increases at low T, initially the stars have steep
+temperature gradient and are /fully convective/! This homogenizes their
+composition (but deuterium burning during the pre-MS can change this),
+and also determines that \nabla\simeq\nabla_{ad} to very good approximation.
+
+Since almost arbitrarily high energy flux can be carried by
+(efficient) convection maintaining an adiabatic gradient, this means
+the luminosity of a fully convective star does not depend much on its
+structure (unlike a stably stratified /radiative/ star where the
+temperature gradient of the /structure/ is determined by the need of
+carrying the flux out).
+
+This leads to the evolution of these stars along an almost vertical
+initial path on the HR diagram, the so-called /Hayashi track/ (see also
+Sec. 9.1.1. of Onno Pols' lecture notes for an analytic
+approximation). The Hayashi track corresponds to solutions for fully
+convective stars. Wiggles around this vertical line are due to
+recombination and partial ionization zones leading to deviations of
+the temperature gradient \nabla from adiabatic.
+
+The Hayashi line effectively determines a right, low-T_{eff} boundary on
+the HRD for stars in hydrostatic equilibrium: if a star were to be
+colder, it would have a steeper-than-adiabatic gradient somewhere and
+a lower opacity \kappa, thus radiation would escape more easily, meaning L
+would increase, moving the star upwards back onto the Hayashi track.
+
+*N.B.:* for these cool temperatures, we already know that the opacity is
+dominated by H^{-}, molecules, and dust, and we have approximate powerlaw
+scalings with T_{eff} (cf. [[./notes-lecture-kappa.org][opacity lecture]] and references therein).
+
+The location in T_{eff} of the Hayashi track is dependent on the mass M
+of the star: more massive stars are hotter since the very beginning.
+This can be analytically derived imposing \nabla=\nabla_{ad} and solving the
+remaining 3 EOSs assuming some form for \kappa\equiv\kappa(T,\rho) at the photosphere:
+effectively the outer boundary condition and atmospheric physics
+determine this.
+
+Stars to the right, hotter side of the Hayashi track instead must not
+be /fully convective/ and have some radiative layers.
+
+** Main sequence
 
 
-
-** Low mass stars
-
-  - Hayashi track
-  - He Flash
-  - AGB pulses
-  - WD formation (\rightarrow HeWD)
-  - Tip of RGB
-
-** High mass stars
-
-  - Winds
-  - T(\rho) diagram
-
-
+*** End of the main sequence
 
 * Clean examples
 

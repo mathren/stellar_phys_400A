@@ -5,6 +5,8 @@
 *Materials*: Chapter 5 of Onno Pols' lecture notes, Sec. 5.1.3 of
 Kippenhahn's book.
 
+
+
 * Opacity
 
 We have seen in [[file:notes-lecture-ETransport.org::*Energy transport by conduction][the previous lecture]] that in the equation for the

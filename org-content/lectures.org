@@ -118,7 +118,7 @@ mass transfer
 *Aim*: TA will review conceptual consequences of homework questions
  focusing on the ones that appeared to pose bigger challenges
 
-** <2024-10-22 Tue> - Evolution 1
+** <2024-10-22 Tue> - In class activity: Evolution 1
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models obtained by the students.
 
@@ -128,7 +128,7 @@ mass transfer
  - Hayashi track for pre-MS
  - He WDs
 
-** <2024-10-24 Thu> - Evolution 2
+** <2024-10-24 Thu> - In class activity: Evolution 2
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models obtained by the students.
 
@@ -137,7 +137,7 @@ mass transfer
  - WD formation
  - morphology of end of the MS
 
-** <2024-10-29 Tue> - Evolution 3
+** <2024-10-29 Tue> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models obtained by the students.
 
