@@ -122,16 +122,18 @@ Pay attention to:
 
 *** Some guiding questions for inspiration
 1. where does the evolution start?
-2. when does (significant) nuclear burning start? How long between the
+2. what is the energy source providing the luminosity L before
+   significant nuclear burning occurs?
+3. when does (significant) nuclear burning start? How long between the
    start of the run and the beginning of nuclear burning (in physical time)?
-3. where does H run out in the core? How long does the H-core burning
+4. where does H run out in the core? How long does the H-core burning
    main sequence last?
-4. what is the /structure/ of the star during H core burning (core vs.
+5. what is the /structure/ of the star during H core burning (core vs.
    envelope). and why?
-5. can you explain the morphology of the end of the H-core burning
+6. can you explain the morphology of the end of the H-core burning
    main sequence?
-6. where does He core burning start?
-7. is there any other nuclear burning during He core burning? And before?
+7. where does He core burning start?
+8. is there any other nuclear burning during He core burning? And before?
 
 * Wrap-up: Hayashi track and main sequence evolution
 
@@ -244,6 +246,66 @@ Stars to the right, hotter side of the Hayashi track instead must not
 be /fully convective/ and have some radiative layers.
 
 ** Main sequence
+
+As the gravothermal collapse continues and \langle T \rangle increases, at some
+point, if we are making a star, by /definition/ nuclear burning turns on
+(option 2. above). This is when the central temperature (which at this
+stage is the highest temperature in the star), is sufficient to obtain
+enough tunneling through the Coulomb barriers.
+
+Because it is abundant, and its burning releases a lot of energy per
+nucleon (\sim 6.5MeV/nucleon) because it produces the double-magic
+nucleus $^{4}$He \equiv \alpha (neutrons /and/ protons fill their nuclear "shells",
+by analogy with electron shells in atomic physics), hydrogen is the
+first fuel to ignite.
+
+As we discussed in the [[./notes-lecture-nuclear-cycles.org][nuclear reaction cycles lecture]], hydrogen
+burning can occur in two different ways: pp-cycle and CN-NO bi-cycle.
+
+Looking at =MESA-web= models, we can see that the pp-cycle is sufficient
+to achieve the equilibrium condition L_{nuc}=\int dm \varepsilon_{nuc}
+\equiv L in low mass stars (*N.B.:* L\prop M^{x} with x>1). This is because the
+pp-cycle has lower Coulomb barriers (shallower relation between \varepsilon_{nuc}
+and T) but a higher normalization (cf. [[file:notes-lecture-nuclear-cycles.org::*pp \rightarrow CNO transition][pp \rightarrow CNO transition]]).
+
+For the lowest-mass stars, T_{eff} remains cold and the opacity remains
+high: they burn through the pp cycle, but remain /convective/ throughout
+the main sequence. In this case, /all/ of the stellar material is
+available to burn, there is no core/envelope structure at all! These
+stars however have (relatively speaking) very low L, thus they evolve
+very slowly. All these stars are still on the main-sequence! This is
+the case of the 0.3M_{\odot} star you computed for a homework, which has
+an approximately polytropic EOS because it is fully convective, thus
+has \nabla=\nabla_{ad} \Rightarrow P\propto\rho^{\Gamma_{1}}.
+
+- *Very low M main sequence \Rightarrow fully convective*
+
+Moving slightly higher in mass, meaning also to higher T_{eff}, a
+radiative core appears. the burning is very concentrated in the
+innermost region, but they are cool enough to have high \kappa at the
+surface, and thus retain a convective /envelope/:
+
+- *Low M main sequence \Rightarrow radiative core, convective envelope*
+
+
+*N.B.:* we are seeing that the cooler T_{eff} is the deeper the convective
+envelope! Increasing T_{eff} the convective layer disappear in the
+deepest layers.
+
+
+Increasing M \Leftrightarrow T_{eff} further, the equilibrium condition L=L_{nuc} cannot
+be satisfied anymore with the pp-chain, and the CN-NO bi-cycle kicks
+in. Because of its higher Coulomb barriers, it has a steeper
+temperature dependence: the energy release is even more concentrated,
+implying that \nabla in the core is very steep (recall \nabla\prop \kappa L \prop \kappa L_{nuc}),
+thus /the core becomes convective/. This means that convective mixing
+makes a larger mass of hydrogen available to the very central burning
+zone. At the same time, higher M \rightarrow higher T_{eff} and the envelope
+becomes radiative
+
+- *High M main sequence \Rightarrow convective core, radiative envelope*
+
+- core recession and L increase L\propto\mu^{4}M^{x}
 
 
 *** End of the main sequence
