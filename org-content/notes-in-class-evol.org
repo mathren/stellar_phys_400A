@@ -130,10 +130,12 @@ Pay attention to:
    main sequence last?
 5. what is the /structure/ of the star during H core burning (core vs.
    envelope). and why?
-6. can you explain the morphology of the end of the H-core burning
+6. can you physically explain the behavior of L, R, and T_{eff} during
+   the hydrogen core burning main sequence phase?
+7. can you explain the morphology of the end of the H-core burning
    main sequence?
-7. where does He core burning start?
-8. is there any other nuclear burning during He core burning? And before?
+8. where does He core burning start?
+9. is there any other nuclear burning during He core burning? And before?
 
 * Wrap-up: Hayashi track and main sequence evolution
 
@@ -259,6 +261,7 @@ nucleus $^{4}$He \equiv \alpha (neutrons /and/ protons fill their nuclear "shell
 by analogy with electron shells in atomic physics), hydrogen is the
 first fuel to ignite.
 
+*** Structure during the main sequence
 As we discussed in the [[./notes-lecture-nuclear-cycles.org][nuclear reaction cycles lecture]], hydrogen
 burning can occur in two different ways: pp-cycle and CN-NO bi-cycle.
 
@@ -292,7 +295,6 @@ surface, and thus retain a convective /envelope/:
 envelope! Increasing T_{eff} the convective layer disappear in the
 deepest layers.
 
-
 Increasing M \Leftrightarrow T_{eff} further, the equilibrium condition L=L_{nuc} cannot
 be satisfied anymore with the pp-chain, and the CN-NO bi-cycle kicks
 in. Because of its higher Coulomb barriers, it has a steeper
@@ -305,10 +307,95 @@ becomes radiative
 
 - *High M main sequence \Rightarrow convective core, radiative envelope*
 
+#+CAPTION: The "initial" gravothermal equilibrium structure of a star is determined only by mass M and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn & Weigert) shows in gray the region in mass coordinate y=m that are convective as a function of the total mass M=\int dm for Z=0.02 models. Red lines indicate where 50 and 90 % of the luminosity L is generated (the "burning region") and the blue dashed lines show r(m)=0.25M and r(m)=0.5M.
+#+ATTR_HTML: :width 100%
+[[./images/conv_ZAMS.png]]
+
+*** Evolution during the main sequence
+During the main sequence L steadily increases on \tau\sim\tau_{nuc}. This is
+because the conversion of hydrogen into helium decreases X, which
+enters in two key quantities, mean molecular weight and electron
+scattering opacity:
+#+begin_latex
+\begin{equation}
+\mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2} \ \ , \\
+\kappa \simeq \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}^{}} \ \ \ .
+\end{equation}
+#+end_latex
+
+
 - core recession and L increase L\propto\mu^{4}M^{x}
 
 
 *** End of the main sequence
+
+**** "Low" mass
+
+Very low mass stars smoothly evolve off the main sequence: if you look
+at the T(\rho) diagram in the movie produced by =MESA-web=, from the
+outlines of the track you can see where the nuclear burning moves.
+
+#+CAPTION: Screenshot of a =MESA-web= calculation of a 1M_{\odot} star shortly after the main sequence. The HRD (bottom left) shows a smooth end of the main sequence, and the Kippenhahn diagram and T(\rho) tracks (middle) show that all the burning is in a shell surrouding the inert He core. The bottom right panel shows that the inner region as a flattening T profile because of conduction efficiently transporting energy and erasing the dT/dr.
+#+ATTR_HTML: :width 100%
+[[./images/1Msun_TAMS.png]]
+
+Since these are stars that were burning radiatively (the fully
+convective ones have not yet finished their main sequence even if they
+had been burning since the birth of the Universe!), they have just
+outside the region hot enough for hydrogen burning fresh fuel
+available that has not been mixed in the burning region. Therefore,
+*hydrogen ignites in a shell* around the now H-depleted, He-rich core.
+
+Because of the gap in T to bridge the Coulomb barriers for
+hydrogen-burning and 3\alpha, Helium core burning does /not/ ignite
+immediately: the Helium core sits inert, contracts, degeneracy
+pressure starts to matter and conduction becomes important, leading to
+an almost /isothermal/ He core sitting below the H shell.
+
+The morphology of the end of the main sequence for low mass stars with
+radiative cores is /smooth/: the core contracts, the shell above it
+contracts and it is immediately hot enough to burn. The temperature of
+the shell is determined by the /contraction/ of the inert He core,
+rather than by the energy generation by nuclear physics. Therefore,
+the shell is typically becoming hot enough to burn through the CNO
+cycle even for a low mass star.
+
+
+**** "High" mass
+
+Increasing the mass above the threshold for activating the CN-NO
+bi-cycle (somewhere \sim1.1-1.3M_{\odot} depending on assumptions), the
+morphology of the end of the main sequence changes.
+
+#+CAPTION: Screenshot of a =MESA-web= calculation of a 30M_{\odot} star shortly after the main sequence. The HRD (bottom left) shows the "Henyey hook" feature, the Kippenhahn diagran and T(\rho) track shows that there is an off-center H-burning shell but the He in the core ignites promptly too. The core is not degenerate, but convective again, and mantains a nearly adiabatic temperature gradient.
+#+ATTR_HTML: :width 100%
+[[./images/30Msun_TAMS.png]]
+
+
+:Question:
+- *Q*: for your =MESA-web= models, what is the highest mass with a
+  radiative main sequence core, and the lowest with convective main
+  sequence core?
+:end:
+
+In this case, during the main sequence the /burning/ is even more
+centralized in mass and radius coordinate than for lower-mass
+pp-chain-sustained stars, but that drives /convection/. Therefore,
+convective mixing refuels the burning region from a larger reservoir,
+and when the fuel runs out, it means that there is a gap in the star
+between where T is hot enough for nuclear reactions and where viable
+fuel is. This causes an "overall contraction phase", also known as
+"Henyey hook", where the star, out of energy sources resumes its
+gravothermal collapse and shrinks in radius.
+
+This process increases the temperature profile until the H-rich fuel
+left at the edge of the convective core ignites in a shell. However,
+the He core below, whose mass is set by the extent of convection
+(+convective boundary mixing) during the main sequence, is too big to
+be sustained by electron degeneracy pressure and too hot to be
+degenerate (recall that \langle T \rangle \prop \mu M/R): below the shell the
+contraction continues until He also promptly ignites!
+
 
 * Clean examples
 
