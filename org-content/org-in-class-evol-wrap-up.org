@@ -3,9 +3,7 @@
 #+email: mrenzo@arizona.edu
 
 
-* Wrap-up on early stellar evolution: Hayashi track and Main sequence
-
-** Pre-main sequence and Hayashi track
+* Pre-main sequence and Hayashi track
 We have developed a set of 4 non-linear, coupled ODEs to describe the
 /structure/ and /evolution/ of stars (with physical approximations
 built-in), with an EOS for closure conditions plus a set of equations
@@ -56,7 +54,7 @@ the structure is determined by those 4 ODEs+EOS. This means that the
 not-yet-fully understood) star formation process, and the ZAMS
 structure is fully determined by the composition!
 
-*** Pre-main sequence stellar structure
+** Pre-main sequence stellar structure
 
 If the gravothermal collapse of the mass of gas considered ends with
 the ignition of nuclear fuel (option 2. above), that is, if we make a
@@ -113,7 +111,7 @@ determine this.
 Stars to the right, hotter side of the Hayashi track instead must not
 be /fully convective/ and have some radiative layers.
 
-** Main sequence
+* Main sequence
 
 As the gravothermal collapse continues and \langle T \rangle increases, at some
 point, if we are making a star, by /definition/ nuclear burning turns on
@@ -127,7 +125,7 @@ nucleus $^{4}\mathrm{He} \equiv \alpha$ (neutrons /and/ protons fill their nucle
 by analogy with electron shells in atomic physics), hydrogen is the
 first fuel to ignite.
 
-*** Structure during the main sequence
+** Structure during the main sequence
 As we discussed in the [[./notes-lecture-nuclear-cycles.org][nuclear reaction cycles lecture]], hydrogen
 burning can occur in two different ways: pp-cycle and CN-NO bi-cycle.
 
@@ -170,14 +168,13 @@ implying that \nabla in the core is very steep (recall \nabla\prop \kappa L \pro
 thus /the core becomes convective/. This means that convective mixing
 makes a larger mass of hydrogen available to the very central burning
 zone. At the same time, higher M \Rightarrow higher T_{eff} and the envelope
-becomes radiative
+becomes radiative.
 
-
-#+CAPTION: The "initial" gravothermal equilibrium structure of a star is determined only by mass M and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn & Weigert) shows in gray the region in mass coordinate y=m that are convective as a function of the total mass M=\int dm for Z=0.02 models. Red lines indicate where 50 and 90 % of the luminosity L is generated (the "burning region") and the blue dashed lines show r(m)=0.25M and r(m)=0.5M.
+#+CAPTION: The "initial" gravothermal equilibrium structure of a star is determined only by mass M and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn & Weigert) shows in gray the region in mass coordinate y=m/M that are convective as a function of the total mass M=\int dm for Z=0.02 models. Red lines indicate where 50 and 90 % of the luminosity L is generated (the "burning region") and the blue dashed lines show r(m)=0.25M and r(m)=0.5M.
 #+ATTR_HTML: :width 100%
 [[./images/conv_ZAMS.png]]
 
-*** Evolution during the main sequence
+** Evolution during the main sequence
 During the main sequence L steadily increases on \tau\sim\tau_{nuc}. This is
 because the conversion of hydrogen into helium decreases X (and
 increases Y), which enter in two key quantities, mean molecular weight
@@ -189,8 +186,8 @@ and electron scattering opacity:
 \end{equation}
 #+end_latex
 Assuming a star to be in gravothermal equilibrium and assuming
-radiative energy transport (which are rough assumptions not exactly
-verified by your models!), we know that:
+radiative energy transport (which we have just seen is not verified
+everywhere by =MESA-web= models!), we know that:
 #+begin_latex
 \begin{equation}\label{eq:L_scaling}
 L\propto \frac{\mu^{4} M^{3}}{\kappa} \ \ ,
@@ -242,7 +239,8 @@ in \mu is determining their /evolution/ along the main sequence.
 :Question:
 - *Q*: based on the scaling in Eq. \ref{eq:L_scaling}, how does the
   luminosity of two identical stars differing only in Z compare? Which
-  star has the highest L?
+  star has the highest L? (*Hint*: you can compute more =MESA-web= models
+  of your mass varying Z to check your answer!)
 :end:
 
 Looking at the Kippenhahn diagrams and composition diagrams from
@@ -268,9 +266,9 @@ becomes "less steep", meaning there is less need for convection:
 /during the main sequence of massive stars, the convective core
 receeds in mass coordinate/.
 
-*** End of the main sequence
+* End of the main sequence
 
-**** "Low" mass stars with radiative cores
+*** "Low" mass stars with radiative cores
 
 Very low mass stars smoothly evolve off the main sequence: if you look
 at the T(\rho) diagram in the movie produced by =MESA-web=, from the
@@ -301,8 +299,7 @@ rather than by the energy generation by nuclear physics. Therefore,
 the shell is typically becoming hot enough to burn through the CNO
 cycle even for a low mass star.
 
-
-**** "High" mass stars with convective cores
+*** "High" mass stars with convective cores
 
 Increasing the mass above the threshold for activating the CN-NO
 bi-cycle (somewhere \sim1.1-1.3M_{\odot} depending on assumptions), the
@@ -336,3 +333,18 @@ the He core below, whose mass is set by the extent of convection
 be sustained by electron degeneracy pressure and too hot to be
 degenerate (recall that \langle T \rangle \prop \mu M/R): below the shell the
 contraction continues until He also promptly ignites!
+
+* Helium ignition and burning
+
+(in construction)
+
+** Low mass star "flashes"
+
+** High mass stars
+
+
+* Late evolution
+
+** Low mass stars: thermal pulses and WD cooling
+
+** High mass stars: \nu speedup the evolution
