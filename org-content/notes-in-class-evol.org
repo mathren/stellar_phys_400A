@@ -313,23 +313,98 @@ becomes radiative
 
 *** Evolution during the main sequence
 During the main sequence L steadily increases on \tau\sim\tau_{nuc}. This is
-because the conversion of hydrogen into helium decreases X, which
-enters in two key quantities, mean molecular weight and electron
-scattering opacity:
+because the conversion of hydrogen into helium decreases X (and
+increases Y), which enter in two key quantities, mean molecular weight
+and electron scattering opacity:
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:microphysics_XY}
 \mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2} \ \ , \\
-\kappa \simeq \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}^{}} \ \ \ .
+\kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}} \ \ \ .
 \end{equation}
 #+end_latex
+Assuming a star to be in gravothermal equilibrium and assuming
+radiative energy transport (which are rough assumptions not exactly
+verified by your models!), we know that:
+#+begin_latex
+\begin{equation}\label{eq:L_scaling}
+L\propto \frac{\mu^{4} M^{3}}{\kappa} \ \ ,
+\end{equation}
+#+end_latex
+(see [[file:notes-lecture-ETransport.org::*Exercise 5.3 in Onno Pols' lecture notes][homework on radiative energy transport]]). This scaling relation is
+approximate and does not exactly hold if a star is not fully
+radiative, but it tells that:
+- the higher \kappa, that is, the harder it is for photons to get out, the
+  lower the luminosity
+- the higher the mass, the higher the luminosity (\Rightarrow the higher the
+  nuclear burning rate for a given fuel!), and since the mass exponent
+  is larger than 1, this implies that /more massive stars have shorter
+  lifetimes w.r.t. lower mass stars/. They do have more fuel available
+  (\propto M), but they burn through it at a higher rate (\prop M^{3})! In fact
+  stellar lifetimes of stars which end up burning all the way to iron
+  (M_{ZAMS}\ge7.5M_{\odot}, with the exact lower limit depending on Z,
+  rotation, binary interactions, cf. for example [[https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D/abstract][Doherty et al. 2017]]
+  and [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]])
+- the higher the mean molecular weight \mu (= number of particles per
+  baryonic mass), the higher the luminosity.
 
+Using Eq. \ref{eq:L_scaling} we can infer that the high power of \mu
+drives the luminosity evolution of the stars during the main sequence:
+because hydrogen is converted into helium (X \rightarrow Y), the mass-weighted
+average \langle \mu \rangle = \int dm \mu(m)/\int dm increases and thus L increases.
 
-- core recession and L increase L\propto\mu^{4}M^{x}
+*N.B.:* massive and low mass stars however have a very different
+morphology of the main sequence. For stars with radiative cores
+(burning through the pp-chain, M\le1.2M_{\odot}), L increases, R varies
+little, thus since L=4\pi R^{2}\sigma T_{eff}^{4} in equilibrium, we also see a
+slight increase in temperature of the star during the main sequence.
+Conversely, massive stars with convective cores (burning through the
+CNO cycle, M\geq1.2M_{\odot}) increase in radius and actually become /cooler/
+as they evolve during the main sequence. One can derive (see Onno
+Pols' notes chapter 7) analytic R(M) relations assuming a specific
+scaling for the energy generation to qualitatively explain this. In
+reality, the details of the core evolution (influenced by uncertain
+processes such as convective boundary mixing) and envelope (influenced
+by wind uncertainties) matter for the details.
 
+*N.B.:* The relative role of \mu and \kappa is slightly sensitive to
+metallicity too (because at lower Z the approximation \kappa\simeq\kappa_{es} is
+progressively better since fewer bound-bound and bound-free
+transitions are available, see also [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.5816X/abstract][Xin et al. 2022]]). The opacity \kappa is
+dominant in determining the L and R at ZAMS for Z\simeq0.02, but the change
+in \mu is determining their /evolution/ along the main sequence.
+
+:Question:
+- *Q*: based on the scaling in Eq. \ref{eq:L_scaling}, how does the
+  luminosity of two identical stars differing only in Z compare? Which
+  star has the highest L?
+:end:
+
+Looking at the Kippenhahn diagrams and composition diagrams from
+=MESA-web= we can also see what the model does in the core (something
+not /directly/ accessible to observations - if not through neutrinos).
+
+For low mass stars with radiative cores and high \rho_{center} (something
+you can derive from the virial theorem + hydrostatic equilibrium +
+EOS), partial degeneracy already plays a role in sustaining the
+structure during the main sequence, and as the central burning region
+converts hydrogen into helium, the helium core becomes hot and
+degenerate - thus sustaining itself against gravitational collapse
+with the quantum effects due to the Fermi-Dirac statistics of
+electrons.
+
+Conversely, high mass stars have a convective core: convective mixing
+connects the innermost burning region with a larger fuel reservoir.
+The progressive burning of hydrogen changes the center opacity (well
+approximated by electron scattering only in the hot, fully ionized
+interior) \kappa\simeq\kappa_{es}=0.2(1+X) cm^{2} g^{-1}. Specifically, as X decreases, so
+does \kappa, and since \nabla = \partial ln(T)/\partial ln(\rho) \propto \kappa L, the temperature gradient
+becomes "less steep", meaning there is less need for convection:
+/during the main sequence of massive stars, the convective core
+receeds in mass coordinate/.
 
 *** End of the main sequence
 
-**** "Low" mass
+**** "Low" mass stars with radiative cores
 
 Very low mass stars smoothly evolve off the main sequence: if you look
 at the T(\rho) diagram in the movie produced by =MESA-web=, from the
@@ -361,7 +436,7 @@ the shell is typically becoming hot enough to burn through the CNO
 cycle even for a low mass star.
 
 
-**** "High" mass
+**** "High" mass stars with convective cores
 
 Increasing the mass above the threshold for activating the CN-NO
 bi-cycle (somewhere \sim1.1-1.3M_{\odot} depending on assumptions), the
