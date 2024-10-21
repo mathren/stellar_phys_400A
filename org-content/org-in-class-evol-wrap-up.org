@@ -169,7 +169,7 @@ temperature dependence: the energy release is even more concentrated,
 implying that \nabla in the core is very steep (recall \nabla\prop \kappa L \prop \kappa L_{nuc}),
 thus /the core becomes convective/. This means that convective mixing
 makes a larger mass of hydrogen available to the very central burning
-zone. At the same time, higher M \rightarrow higher T_{eff} and the envelope
+zone. At the same time, higher M \Rightarrow higher T_{eff} and the envelope
 becomes radiative
 
 
@@ -184,7 +184,7 @@ increases Y), which enter in two key quantities, mean molecular weight
 and electron scattering opacity:
 #+begin_latex
 \begin{equation}\label{eq:microphysics_XY}
-\mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2} \ \ , \\
+\mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2}} \ \ , \\
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}} \ \ \ .
 \end{equation}
 #+end_latex
