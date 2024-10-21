@@ -65,11 +65,11 @@ here), then the phase from the beginning of the simulation until ZAMS
 is called /pre-main-sequence/ (pre-MS).
 
 During this phase the models start from the top-right of the diagram
-at high L, large R (\Rightarrow low \langle T \rangle), and contract progressively contract
-and heat up. This is an idealization: often as stars are doing that,
-they still accrete mass, in the most massive stars (which have shorter
-KH timescales and pre-MS phases), accretion may not be over until even
-after ZAMS!
+at high L, large R (\Rightarrow low \langle T \rangle), and progressively contract and heat
+up. This is an idealization: often as stars are doing that, they still
+accrete mass, in the most massive stars (which have shorter KH
+timescales and pre-MS phases), accretion may not be over until even
+after ZAMS! See for instance the recent review by [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]].
 
 The \langle T \rangle is initially low (the gas that is collapsing is coming from
 the ISM), and increasing. Since \nabla = \partial ln(T)/\partial ln(P) \propto \kappa L and \kappa
@@ -123,7 +123,7 @@ enough tunneling through the Coulomb barriers.
 
 Because it is abundant, and its burning releases a lot of energy per
 nucleon (\sim 6.5MeV/nucleon) because it produces the double-magic
-nucleus $^{4}$He \equiv \alpha (neutrons /and/ protons fill their nuclear "shells",
+nucleus $^{4}\mathrm{He} \equiv \alpha$ (neutrons /and/ protons fill their nuclear "shells",
 by analogy with electron shells in atomic physics), hydrogen is the
 first fuel to ignite.
 
@@ -137,6 +137,8 @@ to achieve the equilibrium condition L_{nuc}=\int dm \varepsilon_{nuc}
 pp-cycle has lower Coulomb barriers (shallower relation between \varepsilon_{nuc}
 and T) but a higher normalization (cf. [[file:notes-lecture-nuclear-cycles.org::*pp \rightarrow CNO transition][pp \rightarrow CNO transition]]).
 
+- *Very low M main sequence \Rightarrow fully convective*
+
 For the lowest-mass stars, T_{eff} remains cold and the opacity remains
 high: they burn through the pp cycle, but remain /convective/ throughout
 the main sequence. In this case, /all/ of the stellar material is
@@ -147,19 +149,18 @@ the case of the 0.3M_{\odot} star you computed for a homework, which has
 an approximately polytropic EOS because it is fully convective, thus
 has \nabla=\nabla_{ad} \Rightarrow P\propto\rho^{\Gamma_{1}}.
 
-- *Very low M main sequence \Rightarrow fully convective*
+- *Low M main sequence \Rightarrow radiative core, convective envelope*
 
 Moving slightly higher in mass, meaning also to higher T_{eff}, a
 radiative core appears. the burning is very concentrated in the
 innermost region, but they are cool enough to have high \kappa at the
 surface, and thus retain a convective /envelope/:
 
-- *Low M main sequence \Rightarrow radiative core, convective envelope*
-
-
 *N.B.:* we are seeing that the cooler T_{eff} is the deeper the convective
 envelope! Increasing T_{eff} the convective layer disappear in the
 deepest layers.
+
+- *High M main sequence \Rightarrow convective core, radiative envelope*
 
 Increasing M \Leftrightarrow T_{eff} further, the equilibrium condition L=L_{nuc} cannot
 be satisfied anymore with the pp-chain, and the CN-NO bi-cycle kicks
@@ -171,7 +172,6 @@ makes a larger mass of hydrogen available to the very central burning
 zone. At the same time, higher M \rightarrow higher T_{eff} and the envelope
 becomes radiative
 
-- *High M main sequence \Rightarrow convective core, radiative envelope*
 
 #+CAPTION: The "initial" gravothermal equilibrium structure of a star is determined only by mass M and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn & Weigert) shows in gray the region in mass coordinate y=m that are convective as a function of the total mass M=\int dm for Z=0.02 models. Red lines indicate where 50 and 90 % of the luminosity L is generated (the "burning region") and the blue dashed lines show r(m)=0.25M and r(m)=0.5M.
 #+ATTR_HTML: :width 100%
