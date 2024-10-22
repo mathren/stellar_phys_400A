@@ -106,6 +106,12 @@ establish equilibrium, but we are still very close to a homogeneous
 initial stellar structure. You can find the variable =center_h1= in your
 =trimmed_history.data,= in which every line contains a timestep.
 
+
+#+CAPTION: L(M) relation obtained in class. The red points assume homogeneous stars in hydrostatic equilibrium and fully radiative, the orange points are the results reported by the students based on =MESA-web= results. Deviations at large and small masses (related to violations of the theoretical assumptions) are expected.
+#+ATTR_HTML: :width 100%
+[[./images/LM_crowdsourced.png]]
+
+
 ** Discuss with your "mass" group
 Compare your model to the models of people nearby you and explore the
 data you have. You probably want to start from the movie =MESA-web=
