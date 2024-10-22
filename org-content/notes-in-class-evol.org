@@ -42,7 +42,7 @@ movies produced by =MESA-web=. Note the clock for physical time on the
 very top left, and the number of timestep marked on the top right.
 
 *N.B.:* if you set up a full blown MESA installation you can customize
-/all/ of this!
+/all/ of these!
 
 *N.B.:* large excursions on a plot can take a very short physical time
 (but a long computational time and many timesteps), viceversa
@@ -51,10 +51,10 @@ large variations on these plots!
 
 *** Top right panel: abundance panel
 This shows log_{10}(X_{i}) with X_{i} the mass fraction of the i-th isotope as
-a function of mass coordinate.
+a function of mass coordinate (m=0 is the center, m=M the surface).
 
 *** Bottom right panel: HR diagram
-Showing absolute bolometric luminosity vs. effective temperature
+Showing absolute bolometric luminosity vs. effective temperature.
 
 *** Middle top panel: Kippenhahn diagram
 This shows the internal mixing processes and the energy generation as
@@ -63,6 +63,7 @@ each vertical line is effectively a snapshot at fixed time, the bottom
 is the center, and the top is the surface.
 
 Light blue indicates regions of the star where there is convection,
+white shows convective boundary mixing (a.k.a. "overshooting",)
 purple indicates thermohaline mixing, gray (if any) indicates
 semiconvection. Red regions (which /can/ be hidden behind the mixing)
 indicate \varepsilon_{nuc}>0, dark blue region indicate regions of strong neutrino
@@ -86,7 +87,7 @@ lines corresponding to the ignition of various fuels.
 These three panels show P, \rho, and T as a function of mass coordinate.
 
 
-** Task 0: mass-luminosity relation revisited with models
+** Mass-luminosity relation revisited with models
 We have already discussed /empirical/ L \equiv L(M) relations based on
 /dynamical/ mass measurements in SB2 eclipsing binaries, and you have
 derived an analytic relation for fully radiative stars (see [[file:notes-lecture-ETransport.org::*Exercise 5.3 in Onno Pols' lecture notes][homework
@@ -112,7 +113,7 @@ provides. Likely, you will need to play the movie over and over,
 pausing it, and trying to correlate what happens in the various panels
 to build physical understanding. If needed, you can also make more
 plots (of =trimmed_history.data= and any =profile*.data= file available,
-remember the python module available to read the data: [[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][mesa_web.py]]).
+remember the python module available to read the data: [[http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py][=mesa_web.py=]]).
 
 *N.B.:* See also the [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-output][output description]] on the =MESA-web= site.
 
