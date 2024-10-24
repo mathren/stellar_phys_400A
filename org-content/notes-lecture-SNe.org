@@ -2,7 +2,132 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-(in construction)
+Massive stars can be defined as those that will end their life forming
+a compact object, either a neutron star (NS) or a black hole (BH).
+This requires them to consume (at least partially) the oxygen-rich
+core, that is, for the widest range of initial masses, to build a
+silicon-rich core and subsequently iron-rich core that is too massive
+to be sustained by the electron degeneracy pressure. This core is
+therefore doomed to collapse under the influence of its own
+self-gravity, and this can result in a successful supernova explosion.
+For single massive stars, this happens for initial mass
+$M_\mathrm{ZAMS}\gtrsim 7-10\,M_\odot$, depending on their metallicity
+and rotation rate \cite{doherty:17}. The presence of companions, which is the rule
+rather than the exception \cite{sana:12}, can also change this
+threshold \cite{zapartas:17}.
+
+
+
+While the surface properties of massive stars in late evolutionary
+stages are still uncertain (mostly because of uncertainties in their
+mass loss rate, \cite{smith:14, renzo:17}, see also Sec. 12.1 in
+\cite{pols_lectures}), the qualitative behavior of their cores is more
+established (in large part thanks to our knowledge of nuclear physics
+from laboratory experiments). After helium depletion, the core is made
+mainly of carbon and oxygen. These become the next nuclear fuel, with
+carbon igniting first\footnote{Technically, carbon starts burning
+  through the $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$ reaction
+  which consumes $\alpha$ particles, i.e., before $^{4}\mathrm{He}$ is
+  depleted!}. Above the carbon-oxygen core, two shell sources exists
+burning helium and hydrogen, respectively. In low-mass stars, the
+ignition of the He shell in degenerate environment leads to ``thermal
+pulses'', ultimately removing the envelope and leading to the
+formation of a white dwarf. For massive stars, this does not happen
+since the He core is too hot to be degenerate.
+
+During (late) carbon burning, a large fraction of the energy of the
+core is carried out by thermal neutrinos produced because of the high
+temperatures and densities reached \cite{aufderheide:93} (see also
+Sec.~\ref{sec:cool}). At this stage, neutrinos leave the star
+unimpeded (because of the inherently small cross sections for
+weak-interaction), which accelerates even further the evolution. This
+neutrino cooling becomes the dominant energy loss process in the late
+evolutionary stages (evolved massive stars are ``neutrino stars''
+\cite{fraley:68}).
+
+After core carbon depletion, the star contracts and increasing further
+its temperature until it ignites neon (through photodisintegrations),
+and then oxygen, and finally silicon. Each fuel type is made of the
+ashes of the previous burning stages. For every new element processed
+in the core, a shell of the old type of fuel ignites above it, leading
+to the characteristic pre-SN onion-skin structure, see
+\Figref{fig:onion}. However, the interplay between violent ignition
+episodes and mixing can smooth and merge boundaries between the
+various shells in ways that are not fully understood as of yet.
+
+\begin{figure}[!ht]
+  % \setlength{\abovecaptionskip}{-0.4cm}
+  % \setlength{\belowcaptionskip}{0.3cm}
+  % \vspace{-0.2cm}
+  \centering
+  \includegraphics[width=\textwidth]{./figures/onion.pdf}
+  \caption{\footnotesize Schematic structure of a single 15\,$M_\odot$ star at
+    the onset of core-collapse (see \Eqref{eq:onset_cc}). The radius of
+    each wedge is proportional to its mass. Note that the final mass is
+    lower than $M_\mathrm{ZAMS}(=15M_\odot)$ because of the wind mass loss. At the interface between
+    each shell there is a nuclear burning region using the material of
+    the overlying region as fuel. This is Fig.~1.2 of
+    \cite{renzo:15:thesis}, from which significant portions of this
+    document are taken. \label{fig:onion}}
+\end{figure}
+
+
+
+The degenerate iron core is too massive to be sustained by the
+electron degeneracy pressure, and therefore it collapses because of
+gravity, reaches (super--)nuclear density
+($\rho\sim10^{14} \ \mathrm{g\ cm^{-3}}$), bounces due to the
+repulsive core of the nuclear force and this triggers a shock-wave.
+This shock wave is thought to explode the star, unbinding the stellar
+envelope. However, historically (hydrodynamical) simulations have had
+limited success in producing explosions. In most cases, the shock just
+stops or reverts deep in the star. Therefore, a ``shock--revival''
+mechanism (usually neutrino heating behind the shock aided by
+asymmetries in the flow) is needed to push it further and make it
+succeed in unbinding the stellar envelope.
+
+The stellar structure (especially of the
+deepest layers) is paramount for the success or failure of the SN
+explosion, especially the density profile that the shock will
+encounter moving outward. But the details of the stellar structure
+depend on the late burning stages (namely, Si burning) of the star, and on
+the mixing processes during these phases.
+% \subsection{The Compactness Parameter}
+
+Several attempts to define a (small set of) parameter(s) describing
+the pre-collapse core structure that could predict the outcome of the
+simulation of a SN explosion (success or failure, NS or BH remnant)
+have been made (e.g., \cite{oconnor:11, ertl:16, couch:19}). Because
+the late burning phases and ultimately the formation of the
+collapsing core itself is a multi-physics, multi-scale, and likely
+stochastic problem, any attempt to define such a parameter is
+necessarily an attempt to average and (over?) simplify the structure
+\cite{muller:19}.
+
+The thermal state and composition of the iron core are of crucial
+importance for the collapse itself: a slight variation in one of these
+cause significant differences in the density profile of the star and
+can in principle influence the outcome of the evolution (i.e.\
+successful explosion, or not).
+As an example, the amount of free electrons in the core, which is quantified by $Y_e$:
+\begin{equation}
+  Y_e\udef\ \sum_i \frac{Z_i}{A_i}X_i \ \ ,
+\end{equation}
+enters quadratically in the effective Chandrasekhar
+mass,
+\begin{equation}\label{eq:Mcha}
+  M_\mathrm{Fe} \geq M_\mathrm{Ch}^\mathrm{eff} \sim (5.83 M_\odot) Y_e^2\left[1 +
+    \left(\frac{s_e}{\pi Y_e}\right)^2\right]%1.44M_\odot(2 Y_e)^2 \ \ ,
+\end{equation}
+i.e.\ the maximum mass that can be sustained by electron degeneracy
+pressure.
+
+
+The dynamics of the collapse, and therefore the success or failure of
+the explosion, depend on the structure (temperature, density, etc.)
+and details of the composition of the core.
+
+
 
 * Historical note
 
