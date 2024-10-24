@@ -295,6 +295,12 @@ becomes "less steep", meaning there is less need for convection:
 /during the main sequence of massive stars, the convective core
 receeds in mass coordinate/.
 
+
+#+CAPTION: Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 20M_{\odot}, Z=0.001 =MESA= model across its main sequence evolution. The color go from dark (\sim ZAMS) to light (\sim TAMS), and as time passes the core receeds because of the change in \kappa.
+#+ATTR_HTML: :width 100%
+[[./images/20Msun_H_profile.png]]
+
+
 * End of the main sequence
 
 *** "Low" mass stars with radiative cores
@@ -358,6 +364,10 @@ contraction continues until He also promptly ignites through the 3\alpha
 reaction, driving core convection!
 
 * H-shell and He burning
+
+"[The post main sequence acts as a] /sort of magnifying glass, also
+revealing relentlessly the faults of calculations of earlier phases/" -
+Kippenhahn.
 
 ** Low mass star "flashes"
 
@@ -434,13 +444,13 @@ luminosity.
 
 *** He flash
 
-
 #+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/2_Km4RTdkPw?si=ZkacE_zcP7g67kIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # https://www.youtube.com/embed/2_Km4RTdkPw?si=ZkacE_zcP7g67kIN
 
-Above is a =pgstar= movie of the He flash(es) in a 1M_{\odot} star. Note
-the panels are /different/ than in the =MESA-web= configuration, and the
-HRD does /not/ show the pre-main sequence.
+Above is a =pgstar= movie of the He flash(es) in a 1M_{\odot} star computed
+with =MESA= by [[https://www.stellarphysics.org/][M. Cantiello]]. Note the panels are /different/ than in the
+=MESA-web= configuration, and the HRD does /not/ show the pre-main
+sequence.
 
 As the H burning shell adds nuclear ashes to the underlying inert He
 core, until it reaches a mass that cannot be sustained by degeneracy
@@ -473,24 +483,87 @@ secondary flash can occur as the core re-collapses, until He core
 burning finally stabilizes, lifting degeneracy and causing core
 convection.
 
-*** Horizontal branch
+*** Red clump and Horizontal branch
 
 During He core burning, low mass stars have a convective core burning
 thought the 3\alpha (and later $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$), surrounded
 by an inert He layer, and a H-burning shell wherever H becomes
-available.
+available. Above the H-burning shell, if there is a substantial H-rich
+envelope, it will be convective: these stars are close to the Hayashi
+track (by radius they are mostly convective), but on the hotter side
+(because of the existing radiative layers).
 
-The envelope that has not been lost during the RG phase is typically a
-bit less luminous and extended. Very approximately, increasing the
-mass, L stays roughly constant, and T_{eff} increases forming the
-so-called "horizontal branch".
+Since the He flash occurs as soon as the He core mass reaches a
+sufficient mass, all these stars have similar luminosities, and form
+the so-called "red clump" on the HR diagram, a noticeable feature in
+cluster and galaxy populations that can also be used for distance and
+age estimates (see also for example [[https://www.annualreviews.org/content/journals/10.1146/annurev-astro-081915-023354][Girardi 2016]]).
+
+Depending on the amount of H-rich mass left after the He flash(es),
+stars can appear bluer in this phase (but because the occurrence of
+the He flash requires a minimum threshold mass, they all have roughly
+the same luminosity): there can be a continuous almost horizontal line
+of stars in the HR diagram for low mass core-He burning stars whose
+coolest end is the red clump.
 
 (continuing reading about the evolution of low mass [[*Low mass stars: AGB thermal pulses and WD cooling][here]])
 
 ** High mass stars and "Hertzsprung gap"
 
-*** Single-star evolution path to Wolf-Rayet
+Stars with masses sufficiently high for the core to be convective
+during the hydrogen core burning main sequence (M\geq1.2M_{\odot{}} roughly,
+depending on assumptions) will /not/ have a phase of evolution with an
+inert, isothermal He core: the core is too big for degeneracy pressure
+to sustain it and after the main sequence it continues contracting
+until the 3\alpha reaction activates and He burns. The prompt post "Henyey
+hook" appearance of two nuclear energy sources (He core and H shell)
+drives the star towards the cool side of the HR diagram very quickly
+(\sim \tau_{KH}), becoming red supergiants (RSG)
 
+Thus, in the HRD of a coeval stellar population, there will be many
+stars on the main sequence (\tau\sim\tau_{nuc,H}) and close to the Hayashi track
+as RSG (\tau\sim\tau_{nuc,He}), but very few in between: this is often referred to
+as the "Hertzsprung gap". *N.B.:* the scarcity of stars in the gap is
+only due to the timescales of evolution, it is not a forbidden region
+of the HRD.
+
+Some stars may experience "blue loops" as their H-shell climbs upward
+in mass coordinate and encounters layers with more H (see for example
+[[https://ui.adsabs.harvard.edu/abs/2015MNRAS.447.2951W/abstract][Walmswell et al. 2015]]). The occurrence of these is very sensitive to
+numerical approximations and make solid predictions hard, but their
+physical nature in some cases is supported by observations. Depending
+on metallicity, some stars may even spend most of their He core
+burning time in a blue loop appearing hotter than a typical RSG.
+
+*** Mass loss and single-star evolution path to Wolf-Rayet
+As M increases (and consequently even more so L), mass loss becomes a
+progressively more important ingredient for the evolution of stars.
+
+Stars can lose mass through:
+ - stellar winds (pressure driven for low mass stars, radiation driven
+   for high mass stars)
+ - eruptive events (e.g., "luminous blue variable eruptions")
+ - binary interactions
+
+All of these can directly or indirectly impact the internal structure
+of the star, and its appearance. Very massive stars may have such high
+mass loss rates that they lose their entire H-rich envelope already
+during the main sequence (becoming WNh stars). Moving to lower masses,
+they may evolve red-ward on the HR diagram (which increases the
+opacity \kappa and thus presumably the wind mass-loss rate, although this
+is highly debated presently, see [[https://ui.adsabs.harvard.edu/abs/2014ARA%26A..52..487S/abstract][Smith 2014]], [[https://ui.adsabs.harvard.edu/abs/2017A%26A...603A.118R/abstract][Renzo et al. 2017]], [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5994B/abstract][Beasor
+et al. 2020]], [[https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..17D/abstract][Decin et al. 2024]]), and then shed their H-rich envelope.
+
+A star which has lost its envelope will "reveal" its He core, and if
+luminous enough, this will drive a thick wind that can enshroud the
+star and hide it below a "pseudo-photosphere". These winds can be so
+dense that collisional excitation produces emission lines, making the
+stars appear as WR (see e.g., [[https://ui.adsabs.harvard.edu/abs/2024arXiv241004436S/abstract][Shenar 2024]]).
+
+*N.B.:* stripped low and intermediate mass stars not luminous enough to
+drive WR-like outflows that produce emission lines are predicted and
+observed and require binary interactions to form, see [[https://ui.adsabs.harvard.edu/abs/2023Sci...382.1287D/abstract][Drout et al.
+2023]].
 
 * Late evolution
 
@@ -607,3 +680,38 @@ pushed upwards by radiation.
 
 
 ** High mass stars: \nu speedup the evolution
+
+As we discussed in the [[./notes-lecture-nuclear-burning.org][nuclear burning]] and [[./notes-lecture-neutrinos.org][neutrino lectures]], for
+initially sufficiently massive stars (M\geq7-8M_{\odot}) the electron
+degeneracy pressure never suffice to stop the gravothermal collapse.
+As gravity drives their cores to higher and higher densities, L_{\nu} \gg L_{\gamma}
+decoupling the neutrino-cooled core from the envelope: the nuclear
+timescale of the core becomes shorter than the thermal timescale of
+the envelope.
+
+*N.B.:* partial electron degeneracy may play a role, depending on the
+ mass, and at late burning phases "flashes" similar to the He flash in
+ low mass stars can occur deep in the core.
+
+Thus these stars proceed through burning all the way to iron, and
+each new fuel ignites in a more centralized, hotter mass range,
+surrounded by an inert layer, and then a shell of the previous nuclear
+fuel above it, creating the "onion structure" we have already seen.
+
+While in theory the envelope should be completely "frozen" at this
+point, early observations of supernova explosions suggest that some
+/dynamical/ coupling between core and envelope must occur in the last
+final years and months of the star, a topic of great research interest
+presently (see for example the review by [[https://ui.adsabs.harvard.edu/abs/2024arXiv240504259D/abstract][Dessart 2024]]).
+
+*** super-AGB stars
+In the transition regime between intermediate mass stars (burning H
+convectively in their main sequence core but forming a WD at the end
+of their evolution) and massive stars we can define super-AGB stars:
+these burn partially carbon into a mixture of oxygen, neon, magnesium,
+after which they can experience thermal pulses (like lower mass AGB
+stars).
+
+Typically, as the ONeMg core cools and contracts, it reaches densities
+sufficient to start electron captures, which remove the electrons
+sustaining the core leading to a so-called "electron capture SN".
