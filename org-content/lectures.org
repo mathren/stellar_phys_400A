@@ -120,19 +120,19 @@ mass transfer
 
 ** <2024-10-22 Tue> - In class activity: Evolution 1
 *Aim*: discuss the evolution of stars in an in-class activity based on
-=MESA-web= models obtained by the students.
+=MESA-web= models precomputed by the students.
 
 [[./notes-in-class-evol.org][Notes]]
 
 ** <2024-10-24 Thu> - In class activity: Evolution 2
 *Aim*: discuss the evolution of stars in an in-class activity based on
-=MESA-web= models obtained by the students.
+=MESA-web= models precomputed by the students.
 
 [[./notes-in-class-evol.org][Notes]]
 
 ** <2024-10-29 Tue> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
-=MESA-web= models obtained by the students.
+=MESA-web= models precomputed by the students.
 
 [[./notes-in-class-evol.org][Notes]]
 
@@ -145,7 +145,7 @@ core-collapse and the formation of compact objects.
 ** <2024-11-05 Tue> - No new material
 *Aim*: allow for people to go to vote, the hour will be used as a general office hour.
 
-** <2024-11-07 Thu> - *Guest lecture*: neutrinos
+** <2024-11-07 Thu> - *Guest lecture*: Neutrinos
 Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
 
 ** <2024-11-12 Tue> - Four student presentations
@@ -158,6 +158,6 @@ Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Gric
 ** <2024-11-26 Tue> - Four student presentations
 ** <2024-12-03 Thu> - Four student presentations
 ** <2024-12-05 Tue> - Four student presentations
-** <2024-12-10 Thu> - Four student presentations
-** <2024-12-17 Thu> - One student presentation
+** <2024-12-10 Tue> - Four student presentations
+** <2024-12-12 Thu> - Two student presentation
 Extra time can be used as backup.

@@ -473,13 +473,24 @@ secondary flash can occur as the core re-collapses, until He core
 burning finally stabilizes, lifting degeneracy and causing core
 convection.
 
-*** TODO horizontal branch
+*** Horizontal branch
 
-** High mass stars
+During He core burning, low mass stars have a convective core burning
+thought the 3\alpha (and later $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$), surrounded
+by an inert He layer, and a H-burning shell wherever H becomes
+available.
 
-*** hertzsprung gap
+The envelope that has not been lost during the RG phase is typically a
+bit less luminous and extended. Very approximately, increasing the
+mass, L stays roughly constant, and T_{eff} increases forming the
+so-called "horizontal branch".
+
+(continuing reading about the evolution of low mass [[*Low mass stars: AGB thermal pulses and WD cooling][here]])
+
+** High mass stars and "Hertzsprung gap"
 
 *** Single-star evolution path to Wolf-Rayet
+
 
 * Late evolution
 
@@ -586,7 +597,7 @@ most opaque elements (typically the primordial iron present) will be
 pushed upwards by radiation.
 
 :Question:
- - *Q*: consider the formation of helium WDs. These are observed,
+ - *Q*: Consider the formation of Helium WDs. These are observed,
    however, to form from a single star not-massive-enough to ignite He
    burning, it would take longer than the current age of the Universe
    (because low M \Rightarrow much lower L \Rightarrow L_{nuc} = L drives a very slow
