@@ -305,7 +305,6 @@ receeds in mass coordinate/.
 #+ATTR_HTML: :width 100%
 [[./images/20Msun_H_profile.png]]
 
-
 * End of the main sequence
 
 *** "Low" mass stars with radiative cores

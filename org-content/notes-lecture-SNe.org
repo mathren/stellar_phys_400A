@@ -5,79 +5,6 @@
 *Materials*: [[https://ui.adsabs.harvard.edu/abs/2012ARNPS..62..407J][Janka 2012]], [[https://ui.adsabs.harvard.edu/abs/2024OJAp....7E..31S/abstract][Soker 2023]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.4689V][Burrows et al. 2023]], see also [[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][my
 guest lecture notes]] and references therein.
 
-* Gravity's victory over nuclear energy release
-
-"Massive stars" can be defined as those that will end their life forming
-a compact object, either a neutron star (NS) or a black hole (BH).
-This requires them to consume (at least partially) the oxygen-rich
-core, that is, for the widest range of initial masses, to build a
-silicon-rich core and subsequently iron-rich core that is too massive
-to be sustained by the electron degeneracy pressure. This core is
-therefore doomed to collapse under the influence of its own
-self-gravity, and this can result in a successful supernova explosion.
-For single massive stars, this happens for initial mass
-$M_\mathrm{ZAMS}\gtrsim 7-10\,M_\odot$, depending on their metallicity and
-rotation rate ([[https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D][Doherty et al. 2017]]). The presence of companions, which
-is the rule rather than the exception ([[http://adsabs.harvard.edu/abs/2012Sci...337..444S][Sana et al. 2012]]), can also
-change this threshold ([[http://adsabs.harvard.edu/abs/2017A%26A...601A..29Z][Zapartas et al. 2017]], [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]]).
-
-At the very end of the evolution, the degenerate iron core is too
-massive to be sustained by the electron degeneracy pressure, and
-therefore it collapses because of gravity, reaches (super--)nuclear
-density ($\rho\sim10^{14} \ \mathrm{g\ cm^{-3}}$), bounces due to the repulsive
-core of the nuclear force and this triggers a shock-wave. This shock
-wave is thought to explode the star, unbinding the stellar envelope.
-However, historically (hydrodynamical) simulations have had limited
-success in producing explosions. In most cases, the shock just stops
-or reverts deep in the star. Therefore, a ``shock-revival'' mechanism
-(usually neutrino heating behind the shock aided by asymmetries in the
-flow) is needed to push it further and make it succeed in unbinding
-the stellar envelope.
-
-The stellar structure (especially of the
-deepest layers) is paramount for the success or failure of the SN
-explosion, especially the density profile that the shock will
-encounter moving outward. But the details of the stellar structure
-depend on the late burning stages (namely, Si burning) of the star, and on
-the mixing processes during these phases.
-% \subsection{The Compactness Parameter}
-
-Several attempts to define a (small set of) parameter(s) describing
-the pre-collapse core structure that could predict the outcome of the
-simulation of a SN explosion (success or failure, NS or BH remnant)
-have been made (e.g., \cite{oconnor:11, ertl:16, couch:19}). Because
-the late burning phases and ultimately the formation of the
-collapsing core itself is a multi-physics, multi-scale, and likely
-stochastic problem, any attempt to define such a parameter is
-necessarily an attempt to average and (over?) simplify the structure
-\cite{muller:19}.
-
-The thermal state and composition of the iron core are of crucial
-importance for the collapse itself: a slight variation in one of these
-cause significant differences in the density profile of the star and
-can in principle influence the outcome of the evolution (i.e.\
-successful explosion, or not).
-As an example, the amount of free electrons in the core, which is quantified by $Y_e$:
-\begin{equation}
-  Y_e=\ \sum_i \frac{Z_i}{A_i}X_i \ \ ,
-\end{equation}
-enters quadratically in the effective Chandrasekhar
-mass,
-\begin{equation}\label{eq:Mcha}
-  M_\mathrm{Fe} \geq M_\mathrm{Ch}^\mathrm{eff} \sim (5.83 M_\odot) Y_e^2\left[1 +
-    \left(\frac{s_e}{\pi Y_e}\right)^2\right]%1.44M_\odot(2 Y_e)^2 \ \ ,
-\end{equation}
-that is the maximum mass that can be sustained by electron degeneracy
-pressure.
-
-
-The dynamics of the collapse, and therefore the success or failure of
-the explosion, depend on the structure (temperature, density, etc.)
-and details of the composition of the core.
-
-* Historical note
-
-
 * The supernova zoo
 
 #+CAPTION: Schematic representation of the SN taxonomy, based on spectral features and light curve shape. The dot-dashed line indicates the possible connection between SN events detected in late stages and classified as type Ib/Ic and SNe of type IIb. This figure is from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]] and inspired by  Fig.~2 in [[https://ui.adsabs.harvard.edu/abs/2001ASSL..264..199C/abstract][Cappellaro et al. 2001]].
@@ -85,8 +12,102 @@ and details of the composition of the core.
 [[./images/SN_taxonomy.png]]
 
 
+* Gravity's victory over nuclear energy release
+
+"Massive stars" can be defined as those that will end their life
+forming a compact object, either a neutron star (NS) or a black hole
+(BH). This requires them to consume (at least partially) the
+oxygen-rich core, that is, for the widest range of initial masses, to
+build a silicon-rich core and subsequently iron-rich core that is too
+massive to be sustained by the electron degeneracy pressure (M_{Fe} \ge
+M_{Chandrasekhar}). This core is therefore doomed to collapse under the
+influence of its own self-gravity, and this can result in a successful
+supernova explosion. For single massive stars, this happens for
+initial mass M_{ZAMS} \ge 7-10M_{\odot}, depending on their metallicity and
+rotation rate ([[https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D][Doherty et al. 2017]]). The presence of companions, which
+is the rule rather than the exception ([[http://adsabs.harvard.edu/abs/2012Sci...337..444S][Sana et al. 2012]]), can also
+change this threshold ([[http://adsabs.harvard.edu/abs/2017A%26A...601A..29Z][Zapartas et al. 2017]], [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]]).
+
+*N.B.:* In other subfields, for example asteroseismology or exoplanets,
+"massive" may just mean "with a convective main sequence core",
+meaning M_{ZAMS} \ge 1.2-1.3M_{\odot}.
+
+*N.B.:* At the lower mass end, super-AGB supernova progenitors may reach
+the onset of core collapse because of electron-captures in the oxygen,
+neon, magnesium degenerate core instead of because electron-captures
+in the iron core (cf. [[file:in-class-evol-wrap-up.org::*super-AGB stars][sAGB evolution]]).
+
+At the very end of the evolution, the degenerate iron core is too
+massive to be sustained by the electron degeneracy pressure, and
+therefore it collapses because of gravity, reaches (super--)nuclear
+density (\rho\geq10^{14} g cm^{-3}), bounces due to the repulsive core of the
+nuclear force and this triggers a shock-wave.
+
+*N.B.:* The collapse and bounce is analogous to a ball bouncing off a
+wall which momentarily compresses a bit and momentum changes sign in
+the direction perpendicular to the wall progressively across the ball
+volume. In this analogy, for a collapsing star, the wall is the inner
+core reaching super-nuclear densities.
 
 
+The shock wave launched is thought to explode the star, unbinding the
+stellar envelope. However, historically (hydrodynamical) simulations
+have had limited success in producing explosions. In most cases, the
+shock just stops or reverts deep in the star. Therefore, a
+``shock-revival'' mechanism (usually neutrino heating behind the shock
+aided by asymmetries in the flow) is needed to push it further and
+make it succeed in unbinding the stellar envelope.
+
+The stellar structure (especially of the deepest layers) is paramount
+for the success or failure of the SN explosion, especially the density
+profile that the shock will encounter moving outward. But the details
+of the stellar structure depend on the late burning stages (namely,
+[[./notes-lecture-nuclear-cycles.org::*Silicon core burning][Silicon burning]]]) of the star, and on the mixing processes during these
+phases.
+
+Several attempts to define a (small set of) parameter(s) describing
+the pre-collapse core structure that could predict the outcome of the
+simulation of a SN explosion (success or failure, NS or BH remnant)
+have been made (e.g.,[[https://ui.adsabs.harvard.edu/abs/2011ApJ...730...70O/abstract][O'connor & Ott 2011]], [[https://ui.adsabs.harvard.edu/abs/2016ApJ...818..124E/abstract][Ertl et al. 2016]], [[http://adsabs.harvard.edu/abs/2019arXiv190201340C][Couch et
+al. 2019]]). Because the late burning phases and ultimately the
+formation of the collapsing core itself is a multi-physics,
+multi-scale, and likely stochastic problem, any attempt to define such
+a parameter is necessarily an attempt to average and (over?) simplify
+the structure ([[https://ui.adsabs.harvard.edu/abs/2019MNRAS.487.5304M/abstract][Mueller 2019]]).
+
+The thermal state and composition of the iron core are of crucial
+importance for the collapse itself: a slight variation in one of these
+cause significant differences in the density profile of the star and
+can in principle influence the outcome of the evolution (i.e.
+successful explosion, or not). As an example, the amount of free
+electrons in the core, which is quantified by $Y_e=1/\mu_{e}$:
+
+#+begin_latex
+\begin{equation}
+  Y_e=\ \sum_i \frac{Z_i}{A_i}X_i \ \ ,
+\end{equation}
+#+end_latex
+
+enters quadratically in the effective Chandrasekhar
+mass,
+
+#+begin_latex
+\begin{equation}\label{eq:Mcha}
+  M_\mathrm{Fe} \geq M_\mathrm{Ch}^\mathrm{eff} \simeq (5.80 M_\odot) Y_e^2\left[1 +
+    \left(\frac{s_e}{\pi Y_e}\right)^2\right]%1.44M_\odot(2 Y_e)^2 \ \ ,
+\end{equation}
+#+end_latex
+
+that is the maximum mass that can be sustained by electron degeneracy
+pressure, where s_{e} is the electrons specific entropy and the term
+dependent on it is a "thermal correction" to account for the fact that
+not the entire core is fully degenerate and with k_{B}T\ll\varepsilon_{Fermi}.
+
+The dynamics of the collapse, and therefore the success or failure of
+the explosion, depend on the structure (temperature, density, etc.)
+and details of the composition of the core (see also [[https://ui.adsabs.harvard.edu/abs/2014ApJ...783...10S/abstract][Sukhbold &
+Woosley 2014]], [[https://ui.adsabs.harvard.edu/abs/2016ApJS..227...22F/abstract][Farmer et al. 2016]], [[https://ui.adsabs.harvard.edu/abs/2024RNAAS...8..152R/abstract][Renzo et al. 2024]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv240902058L/abstract][Laplace et al.
+2024]]).
 
 
 * Physics of core collapse
