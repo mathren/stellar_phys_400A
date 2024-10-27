@@ -327,6 +327,9 @@ progenitor structure (in terms of angular momentum and magnetic
 fields) is even more uncertain.
 
 
+#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/KhT5yHTWgxc?si=v3rO0BbGL-KrGk40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 ** Neutron star kicks
 (put in context with Blaauw kick!)
 
