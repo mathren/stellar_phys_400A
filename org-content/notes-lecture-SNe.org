@@ -182,7 +182,7 @@ disrupts the star, producing a SN. However, in most cases, the shock
 needs to be ``revived'' by some mechanism.
 
 #+CAPTION: Velocity profile for the core of an initially 15 M_\odot star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward (v<0) everywhere. The  data in the right panel are obtained using the open-source code GR1D, \cite{oconnor:10}, with the data at  the onset of core collapse as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of \sim1.4 M_{\odot} of Fe-rich material with radius of almost \sim1000 km to a proto-NS with radius of \sim10 km:
-#+ATTR_HTML :width 100%
+#+ATTR_HTML: :width 100%
 [[./images/v_profile_core_bounce.png]]
 
 #+begin_latex
@@ -201,7 +201,7 @@ radiated away by a SN is typically a small fraction of the kinetic
 energy ($\int L_\mathrm{SN}(t)\,dt \simeq10^{49}\,\mathrm{erg}$).
 
 #+CAPTION: Evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for the explosion of an 18 M_{\odot} stellar model. Red curves are computed in 1D: in spherical symmetry the shock stalls and its radius stays roughly constant. This is Fig.~5 of \cite{muller:16}.
-#+ATTR_HTML :width 100%
+#+ATTR_HTML: :width 100%
 [[./images/shockR.png]]
 
 As the shock wave propagates in the outer core, it loses energy by
@@ -330,23 +330,16 @@ fields) is even more uncertain.
 ** Neutron star kicks
 (put in context with Blaauw kick!)
 
-\begin{wrapfigure}[17]{R}{0.5\textwidth}
-  \centering
-  \hspace{-20pt}\includegraphics[width=0.5\textwidth]{figures/sketch_perturbations_new}
-  \caption{\footnotesize Schematic of the development of a large
-    asymmetry in a 3D CCSN simulation resulting in a large natal
-    kick. From \cite{muller:17}.}
-  \label{fig:perturb}
-\end{wrapfigure}
-
+#+CAPTION: Schematic of the development of a large asymmetry in a 3D CCSN simulation resulting in a large natal kick. From \cite{muller:17}.
+#+ATTR_HTML: :width 100%
+[[file:images/sketch_perturbations.png][./images/sketch_perturbations.png]]
 
 The current understanding of core-collapse dynamics suggests that
 asymmetries are likely the key to the success of the explosion. This
 is further confirmed by the large velocities at which we observe some
 single NSs moving. The proper motion of radio pulsars can correspond
-to velocities in excess of $\sim$$1000\,\mathrm{km\
-  s^{-1}}$, which is much higher than the maximum velocity at which we
-observe O and B type stars moving.
+to velocities in excess of \sim1000 km s^{-1}, which is much higher than the
+maximum velocity at which we observe O and B type stars moving.
 
 These are explained invoking an energy and momentum re-distribution
 between the forming compact object and the SN ejecta allowed by the
@@ -386,6 +379,7 @@ its direction and accelerate it.
 Because of the SN kick, the kinetic energy of the compact object is
 greatly increased, and this can lead to an increase of the total
 (orbital) energy of a putative binary system:
+#+begin_latex
 \begin{equation}
   \label{eq:1}
   E_\mathrm{orb} =
@@ -394,41 +388,46 @@ greatly increased, and this can lead to an increase of the total
   \frac{1}{2}(M_1-M_\mathrm{ej})(v_1+v_\mathrm{kick})^2+\frac{1}{2}M_2v_2^2-\frac{GM_1M_2}{a}
   > 0
 \end{equation}
+#+end_latex
+
 where we implicitly assume an instantaneous explosion (compared to the
 orbital period of the binary), which leaves the gravitational
-interaction term unchanged. If $E_\mathrm{orb}$ becomes positive, the
-binary system is unbound. The SN kick thus breaks most massive binary
-systems by giving a large velocity to the compact object, but without
+interaction term unchanged. If E_{orb} becomes positive, the binary
+system is unbound. The SN kick thus breaks most massive binary systems
+by giving a large velocity to the compact object, but without
 modifying significantly the instantaneous velocity of the companion
-star\footnote{Do not confuse $v_2$ with the orbital velocity
-$v_\mathrm{orb} = \sqrt{\frac{G(M_1+M_2)}{a}}$ which represents the
-velocity of the point of reduced mass $\mu$ orbiting around the center
-of mass of the binary, and not the velocity of a physical object!}
+star.
 
+*N.B.:* Do not confuse v_{2} with the orbital velocity $v_\mathrm{orb} =
+\sqrt{\frac{G(M_1+M_2)}{a}}$ which represents the velocity of the
+point of reduced mass M_{1}M_{2}/(M_{1}+M_{2}) orbiting around the center of mass
+of the binary, and not the velocity of a physical object!}
+#+begin_latex
 \begin{equation}
   \label{eq:2}
   v_2 = \frac{M_1}{M_1+M_2}v_\mathrm{orb}\equiv\frac{M_1}{M_1+M_2}\sqrt{\frac{G(M_1+M_2)}{a}} \ \ .
 \end{equation}
+#+end_latex
 
 The companion star is thus shot out of the binary with its
-pre-explosion $v_2$, and if $v_2>30\,\mathrm{km\ s^{-1}}$ it becomes a
-runaway star \cite{renzo:19}. This however tends to happen rarely,
-since mass transfer during the binary evolution tends to increase the
-separation $a$, decrease the mass $M_1$, and increase the mass $M_2$.
+pre-explosion v_{2}, and if v_{2}>30 km s^{-1} it becomes a runaway star
+\cite{renzo:19}. This however tends to happen rarely, since mass
+transfer during the binary evolution tends to increase the separation
+$a$, decrease the mass M_{1}, and increase the mass M_{2}.
 
-Note typically SN ejecta achieve velocities of $10\,000\,\mathrm{km\
-s^{-1}} \gg v_\mathrm{orb}$, thus we can neglect the orbital motion of
-the binary during the SN (although see also \cite{batta:17}):
-effectively this corresponds to an instantaneous loss of mass from the
-exploding star, which is not the center of mass of the binary. This
-off-center mass loss (from the point of view of the binary) is also
-referred to as or "Blaauw kick" and can modify the orbit, and in
-extreme case where $M_\mathrm{ejecta}\geq (M_1+M_2)/2$ it can change it
-from an circle/ellipse to a parabola/hyperbole - so unbind the binary
+Note typically SN ejecta achieve velocities of \sim10^{4} km s^{-1} \gg v_{orb},
+thus we can neglect the orbital motion of the binary during the SN
+(although see also \cite{batta:17}): effectively this corresponds to
+an instantaneous loss of mass from the exploding star, which is not
+the center of mass of the binary. This off-center mass loss (from the
+point of view of the binary) is also referred to as or "Blaauw kick"
+and can modify the orbit, and in extreme case where
+$M_\mathrm{ejecta}\geq (M_1+M_2)/2$ it can change it from an
+circle/ellipse to a parabola/hyperbole - so unbind the binary
 \cite{blaauw:61}. Typically in massive binary evolution, the exploding
 star loses its H-rich envelope to the companion long before its SN
-explosion, therefore $M_\mathrm{ej}$ is rarely sufficiently large to
-unbind the binary without a natal kick due to asymmetries.
+explosion, therefore M_{ej} is rarely sufficiently large to unbind the
+binary without a natal kick due to asymmetries.
 
 From the observation of the pulsars proper motions we know that at
 least some NS receive such large kicks, however there is still debate
@@ -439,22 +438,22 @@ binaries in which they form. In at least a handful of cases, it can be
 shown that large mass BHs were formed with negligible natal kicks
 \cite{vigna-gomez:24}.
 
-The observation of double pulsars \cite{hulse:75} also raises
-the question of whether some successful SN explosion resulting in NS
+The observation of double pulsars \cite{hulse:75} also raises the
+question of whether some successful SN explosion resulting in NS
 formation might also lead to systematically smaller kicks, allowing
 for a binary to survive two consequent explosions. The idea is that
 ultra-stripped SNe (i.e. the explosion of a star that has lost a very
 substantial amount of mass in multiple binary mass transfer episodes),
 and/or electron-capture SNe\footnote{The least massive stars to
-  explode might never become hot enough to burn completely the oxygen
-  core, leaving a partially degenerate oxygen-neon-magnesium composition. As this
-  core contracts and cools through neutrino emission, it reaches
-  densities sufficient to trigger electron capture on the nuclei of
-  the core, decreasing the electron degeneracy pressure support and
-  triggering the core-collapse.} or core-collapse SN of small Fe cores
-would more easily result in a successful explosion (no shock stalling,
-and no time to develop significant asymmetries during a shock stalling
-phase) with consequently small kicks.
+explode might never become hot enough to burn completely the oxygen
+core, leaving a partially degenerate oxygen-neon-magnesium
+composition. As this core contracts and cools through neutrino
+emission, it reaches densities sufficient to trigger electron capture
+on the nuclei of the core, decreasing the electron degeneracy pressure
+support and triggering the core-collapse.} or core-collapse SN of
+small Fe cores would more easily result in a successful explosion (no
+shock stalling, and no time to develop significant asymmetries during
+a shock stalling phase) with consequently small kicks.
 
 
 ** Importance of multi-dimensional treatment
