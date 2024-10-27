@@ -200,6 +200,7 @@ radiated away by a SN is typically a small fraction of the kinetic
 energy ($\int L_\mathrm{SN}(t)\,dt \simeq10^{49}\,\mathrm{erg}$).
 
 #+CAPTION: Evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for the explosion of an 18 M_{\odot} stellar model. Red curves are computed in 1D: in spherical symmetry the shock stalls and its radius stays roughly constant. This is Fig.~5 of \cite{muller:16}.
+#+ATTR_HTML :width :100%
 [[./images/shockR.png]]
 
 As the shock wave propagates in the outer core, it loses energy by
@@ -542,8 +543,10 @@ The CCSN rate in Milky-way galaxies (with star formation rate of
 approximately few M_{\odot} yr^{-1}) is about \sim 1 per century. We are
 currently awaiting for one!
 
-#+CAPTION: [[https://academic.oup.com/mnras/article-lookup/doi/10.1111/j.1365-2966.2011.17229.x][Smith et al. 2011]] break down of CCSN by type in a  volume limited.
-#+ATTR_HTML :width :50%
+The figure below shows a breakdown per SN type:
+
+#+CAPTION: [[https://academic.oup.com/mnras/article-lookup/doi/10.1111/j.1365-2966.2011.17229.x][Smith et al. 2011]] break down of CCSN by type in a  volume limited sample.
+#+ATTR_HTML: :width 50%
 [[./images/smith11.png]]
 
 ** Current open questions
