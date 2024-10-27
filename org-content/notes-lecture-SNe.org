@@ -183,7 +183,7 @@ needs to be ``revived'' by some mechanism.
 
 #+CAPTION: Velocity profile for the core of an initially 15\,$M_\odot$ star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward (v<0) everywhere. The  data in the right panel are obtained using the open-source code GR1D, \cite{oconnor:10}, with the data at  the onset of core collapse as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of \sim1.4 M_{\odot} of Fe-rich material with radius of almost \sim1000 km to a proto-NS with radius of \sim10 km:
 #+ATTR_HTML: :width 100%
-[[./images//v_profile_core_bounce.pdf]]
+[[./images/v_profile_core_bounce.png]]
 
 #+begin_latex
 \begin{equation}
