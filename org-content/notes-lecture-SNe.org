@@ -1,16 +1,15 @@
-#+Title: 400A - SNe and compact object formation
+#+Title: 400A - CCSNe and compact object formation
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
 *Materials*: [[https://ui.adsabs.harvard.edu/abs/2012ARNPS..62..407J][Janka 2012]], [[https://ui.adsabs.harvard.edu/abs/2024OJAp....7E..31S/abstract][Soker 2023]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.4689V][Burrows et al. 2023]], see also [[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][my
 guest lecture notes]] and references therein.
 
-* The supernova zoo
-
-#+CAPTION: Schematic representation of the SN taxonomy, based on spectral features and light curve shape. The dot-dashed line indicates the possible connection between SN events detected in late stages and classified as type Ib/Ic and SNe of type IIb. This figure is from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]] and inspired by  Fig.~2 in [[https://ui.adsabs.harvard.edu/abs/2001ASSL..264..199C/abstract][Cappellaro et al. 2001]].
-#+ATTR_HTML: :width 100%
-[[./images/SN_taxonomy.png]]
-
+*Disclaimer:* Here, we discuss the collapse and possible explosion of
+massive stars, that is "core collapse supernovae" (CCSNe). These are
+/not/ the only kind of supernova transient that can be observed, and our
+focus here excludes SNIa, pair-instability supernovae, luminous red
+novae, tidal disruption events, etc. (see also [[./projects.org][projects]]).
 
 * Gravity's victory over nuclear energy release
 
@@ -49,11 +48,10 @@ the direction perpendicular to the wall progressively across the ball
 volume. In this analogy, for a collapsing star, the wall is the inner
 core reaching super-nuclear densities.
 
-
 The shock wave launched is thought to explode the star, unbinding the
 stellar envelope. However, historically (hydrodynamical) simulations
 have had limited success in producing explosions. In most cases, the
-shock just stops or reverts deep in the star. Therefore, a
+shock just stops or reverts while still deep in the star. Therefore, a
 ``shock-revival'' mechanism (usually neutrino heating behind the shock
 aided by asymmetries in the flow) is needed to push it further and
 make it succeed in unbinding the stellar envelope.
@@ -62,7 +60,7 @@ The stellar structure (especially of the deepest layers) is paramount
 for the success or failure of the SN explosion, especially the density
 profile that the shock will encounter moving outward. But the details
 of the stellar structure depend on the late burning stages (namely,
-[[./notes-lecture-nuclear-cycles.org::*Silicon core burning][Silicon burning]]]) of the star, and on the mixing processes during these
+[[./notes-lecture-nuclear-cycles.org::*Silicon core burning][Silicon burning]]) of the star, and on the mixing processes during these
 phases.
 
 Several attempts to define a (small set of) parameter(s) describing
@@ -112,13 +110,444 @@ Woosley 2014]], [[https://ui.adsabs.harvard.edu/abs/2016ApJS..227...22F/abstract
 
 * Physics of core collapse
 
-** Neutrino radiation hydrodynamics
+** Core Bounce
+Since the nuclei of the iron group are the most tightly bound, the
+fusion of two of them would require energy input greater than the
+energy released. Therefore, inside the iron core, fusion reactions
+cannot compensate the energy loss of the star, and the core is doomed
+to collapse. % under the influence of gravity. The conventional
+definition for the onset of collapse is
 
-** Importance of multi-dimensional treatment
+#+begin_latex
+\begin{equation}\label{eq:onset_cc}
+  \mathrm{max}\{ |v| \} \geq 10^3 \ \mathrm{km \ s^{-1}} \ \ ,
+\end{equation}
+#+end_latex
+where v is the radial infall velocity. The arbitrary threshold set by
+Eq. \ref{eq:onset_cc} is motivated by the fact that, at this point, the
+star is a few tenths of seconds (roughly a dynamical timescale) away
+from ``core bounce'' (see below). The central density is so high ($\rho
+\gtrsim 10^{10} \mathrm{ \ g \ cm^{-3}}$) that stellar evolution codes
+usually cannot properly simulate the physics needed (e.g., the high
+density regions require a different equation of state - EOS,
+hydrostatic equilibrium does not hold any longer, neutrinos start to
+be trapped because of the higher density and neutrino opacity).
+However, this is a purely technical threshold, while in nature the
+evolution of such a star is continuous during collapse.
 
-** Neutron star or black hole?
+During collapse, electron capture reactions, e.g.,
 
-** If black hole, with or without explosion?
+#+begin_latex
+\begin{equation}
+  \label{eq:ecap}
+  p+e^-\rightarrow n+\nu_e \ \ , \ \ ^AZ+e^-\rightarrow ^A(Z-1)+ \nu_e \ \ ,
+\end{equation}
+#+end_latex
+
+decrease Y_{e}, and diminishing $M_\mathrm{Ch}^\mathrm{eff}$ (see
+Eq.~\ref{eq:Mcha}) accelerating the collapse further. Together with
+positron capture reactions, electron capture reactions form the
+so-called [[./notes-lecture-neutrinos.org::*Nuclear neutrinos][URCA process]], responsible for the lion's share of the
+cooling (provided by neutrinos) during the collapse phase. As the
+infall velocity progressively increases, the core divides into two
+separate parts \cite{woosley:02}:
+
+- *Inner Core*: in sonic contact and collapsing self-similarly (i.e.,
+  the infall velocity |v| \propto r). Its mass is given by:
+  #+begin_latex
+   \begin{equation}
+    \label{eq:InnerCoreMass} M_\mathrm{i.c.}=\int_{|v(r)|\leq c_s(r)}4\pi\rho(r) r^2 dr \ \ ,
+  \end{equation}
+  #+end_latex
+  where c_{s} \equiv c_{s}(r) is the local sound speed, and the integral can
+  be evaluated analytically assuming [[./notes-lecture-EOS2.org::*Ultra-relativistic electron gas][ultra-relativistic electron
+  degeneracy]] dominates the pressure. The value of $M_\mathrm{i.c.}$ at
+  core bounce is almost independent of the stellar progenitor and it
+  is about $1\,M_\odot$ \cite{goldreich:80,yahil:82}.
+- *Outer Core*: in supersonic collapse, because at lower density the
+  sound speed c_{s} decreases, so no information about the inner core
+  can reach into the outer core.
+
+The collapse goes on until the central density is so high (\rho_{c}\sim10^{14}
+g cm^{-3}) that the repulsive core of the nuclear force becomes relevant.
+This repulsive contribution causes a sudden stiffening of the EOS, and
+triggers the so-called core bounce, which is conventionally defined by
+an arbitrary threshold on the specific entropy at the edge of the
+inner core: s=3 (in units of the Boltzmann constant k_{B} times the
+Avogadro number N_{A}). The inner core overshoots the equilibrium density
+of the stiffened EOS, stops collapsing and reverses its radial
+velocity. This launches a shock wave at the edge of the inner core. It
+is thought that this shock wave at least in some cases, successfully
+disrupts the star, producing a SN. However, in most cases, the shock
+needs to be ``revived'' by some mechanism.
+
+The energy source to drive the explosion is the gravitational binding
+energy released by the collapse of \sim1.4 M_{\odot} of Fe-rich material
+with radius of almost \sim1000 km to a proto-NS with radius of \sim10 km:
+#+begin_latex
+\begin{equation}
+  \label{eq:3}
+  \Delta E_\mathrm{bind} \simeq \frac{G M^2}{R_{\rm NS}} - \frac{G
+    M^2}{R_{\rm Fe}} \sim 10^{53}\,\mathrm{erg} \ \ ,
+\end{equation}
+#+end_latex
+
+The energy reservoir provided by the gravitational collapse is largely
+in excess of the total binding energy of the stellar envelope, and
+roughly speaking $100$ times more that the typical kinetic energy of a
+SN explosions (1 Bethe \equiv 1 f.o.e. \equiv 10^{51} erg). Note that the energy
+radiated away by a SN is typically a small fraction of the kinetic
+energy ($\int L_\mathrm{SN}(t)\,dt \simeq10^{49}\,\mathrm{erg}$).
+
+#+CAPTION: Evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for the explosion of an 18 M_{\odot} stellar model. Red curves are computed in 1D: in spherical symmetry the shock stalls and its radius stays roughly constant. This is Fig.~5 of \cite{muller:16}.
+[[./images/shockR.png]]
+
+As the shock wave propagates in the outer core, it loses energy by
+heating and photodisintegrating the infalling material, and overcoming
+the ram pressure (P_{ram }\simeq \rho v^{2}) of this same material.
+Moreover, all the neutrinos that are not absorbed in the ``gain
+region'' contribute to decreasing the total energy of the material
+behind the shock. The energy loss through these mechanisms leads to a
+stalled shock (the shock radius remains roughly constant for \sim0.1
+millisec) in most simulations available to date. An uncertain ``shock
+revival mechanism'' must act to revive the shock and restart its
+radial expansion allowing it to unbind the stellar envelope and
+produce a SN explosion.
+
+In the /neutrino-driven paradigm/ (for reviews see \cite{janka:12,
+vartanyan:22}), the shock is pushed by the large neutrino emission
+from the hot proto-NS formed in the inner part of the bouncing inner
+core. These neutrinos are mostly produced by electron captures to
+``neutronize'' the Fe core (in the innermost ``cooling-region'' where
+the proto-NS is), cf.~\Eqref{eq:ecap} and from [[./notes-lecture-neutrinos.org::*Thermal neutrinos][cooling processes]]. A
+small fraction of these neutrinos will interact in a region behind the
+shock (the so-called ``gain-region''). This is because the stellar
+plasma has now densities and temperatures higher than during core Si
+burning, and the cross section for neutrino absorption is not
+negligible anymore.
+
+Note, however, that other explosion mechanism relying less heavily on
+the neutrino flux have been proposed. For instance, accretion on the
+forming compact object in the inner core might trigger energetic jets
+that might help pushing the shock, and this might be the dominant
+explosion mechanism for long gamma ray bursts and SNIc showing broad
+emission lines (i.e., very large ejecta velocities).
+
+\begin{figure}[htbp]
+  % \begin{wrapfigure}[15]{R}{0.5\textwidth}
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/sketch_mechanism}
+  \caption{\footnotesize Sketch of the key ingredients for a successful explosion in
+    the neutrino driven paradigm, from \cite{muller:17}.}
+  \label{fig:sketch}
+  % \end{wrapfigure}
+\end{figure}
+
+** Shock revival mechanisms
+As mentioned above, historically, numerical simulations of
+core-collapse SNe would always find stalling and ultimately receding
+shocks, i.e. failed explosions. This lead to the realization that
+the \emph{asymmetries} in the flow are a key ingredient to
+achieve a successful explosion.
+
+Several sources of asymmetry (both local and global) exist in the
+collapsing core of a massive star, most are summarized in \Figref{fig:sketch}:
+- The neutrino heat the bottom of the gain region, driving convection
+  (a steep temperature and entropy gradient can develop because of the
+  neutrino heating);
+- Convection implies the presence of turbulent flow and an associated
+  turbulent pressure (P_{turb}\simeq \rho v_{turb}^{2}) that can help pushing
+  the shock \cite{oconnor:18},
+- Standing accretion Shock Instability (SASI, \cite{blondin:03}):
+  when the shock stalls its surface is perturbed by the infalling
+  material. These perturbation (e.g., in terms of the local velocity)
+  are advected downwards by convection and amplified which leads to a
+  sloshing motion of the shock\footnote{The growth time of this
+  instability may be too long for it to play a role in successful
+  explosions, where other mechanism revive the shock faster than SASI
+  can develop \cite{burrows:23}.}
+- Lepton Emission Self-Sustained Emission (LESA, \cite{tamborra:14}),
+  found in 3D simulations where the neutrino emission is roughly
+  dipolar.
+
+
+The overall effect of asymmetries is to (i) increase the amount of
+time spent by matter in the gain region, where the energy of the
+neutrinos can be harvested and used to push the shock (ii) provide
+extra pressure terms (e.g., due to turbulence). The combination of
+these two should result, at least in some cases, in successful
+explosions.
+
+
+The first axisymmetric (i.e., 2D) simulations showed some successful
+explosion, but it was soon realized that the symmetry imposed
+artificially in these calculation (cf.~\Figref{fig:2d3dCCSNe}) was
+changing the turbulent cascade: instead of dripping towards smaller
+scale and be dissipated at the viscous scale, energy is pumped to
+larger scales in 2D, which artificially helps the explosion.
+
+
+#+CAPTION: Visualization of the shock morphology in 3D (left) and 2D(right): clearly the artificial imposition of a symmetry by running at lower dimensionality changes the dynamics of the explosion.
+#+ATTR_HTML: :width 100%
+[[./images/2v3dCCSN.png]]
+
+
+As of early 2019, there is an emerging picture from the 3D core-collapse SN
+simulations of different research groups (\cite{ott:18, kuroda:18}): \emph{not only the
+  asymmetries during the first millisecond after core-bounce are
+  necessary to achieve successful explosions, but also the
+  pre-collapse core-structure and in particular the Si/O interface is crucial}.
+
+The most massive stellar cores, for which the Si/O interface is at a
+large Lagrangian mass coordinate, develop strong neutrino driven
+convection, which together with the contribution of the turbulent
+pressure drives a successful explosion with significant fallback and
+result in the formation of a black hole.
+
+Intermediate mass cores show a steep density gradient at the Si/O
+interface: if the shock can reach this interface, it will
+significantly accelerate outwards (because of mass continuity and the
+drop in the impinging ram pressure). The neutrino driven convection
+and turbulent pressure combined with the density drop result in
+successful explosions with neutron star remnant. Smaller cores show
+strong SASI oscillations of the shock and delayed explosions, likely
+also resulting in NS remnants. However, note that the landscape on
+explosion physics in the literature is itself very dynamic, with
+multiple groups working on this problem and disagreeing on the
+details.
+
+*N.B.:* We have not mentioned /rotation/ and /magnetic fields/. These may
+play an important role in the explosion mechanism -- certainly in
+relatively more rare explosions such as long gamma-ray bursts, and
+possibly for any explosion producing \ge10^{52} erg of energy. These are
+also very active research topics, where our understanding of the
+progenitor structure (in terms of angular momentum and magnetic
+fields) is even more uncertain.
+
 
 ** Neutron star kicks
 (put in context with Blaauw kick!)
+
+\begin{wrapfigure}[17]{R}{0.5\textwidth}
+  \centering
+  \hspace{-20pt}\includegraphics[width=0.5\textwidth]{figures/sketch_perturbations_new}
+  \caption{\footnotesize Schematic of the development of a large
+    asymmetry in a 3D CCSN simulation resulting in a large natal
+    kick. From \cite{muller:17}.}
+  \label{fig:perturb}
+\end{wrapfigure}
+
+
+The current understanding of core-collapse dynamics suggests that
+asymmetries are likely the key to the success of the explosion. This
+is further confirmed by the large velocities at which we observe some
+single NSs moving. The proper motion of radio pulsars can correspond
+to velocities in excess of $\sim$$1000\,\mathrm{km\
+  s^{-1}}$, which is much higher than the maximum velocity at which we
+observe O and B type stars moving.
+
+These are explained invoking an energy and momentum re-distribution
+between the forming compact object and the SN ejecta allowed by the
+asymmetries. One possible source of asymmetry is if the neutrino flux
+from the cooling region is itself non-spherical, however, since the
+proto-NS that occupies most of the volume of the cooling region is
+convective with a convective turnover timescale faster than the
+explosion, this explaination is currently disfavored. Another
+possibility is that hydrodynamical instabilities lead to aspherical
+flows.
+
+A key prediction of this ``tug-boat'' model is that the SN shock is
+faster in the direction opposite to the one in which the compact
+object is accelerated. A faster shock is more efficient at
+photodisintegrating nuclei, producing light particles that can be
+accreted by the surviving nuclei: this model predicts stronger
+explosive nucleosynthesis in the direction opposite to the compact
+object. This prediction seems to be consistent with observations of
+supernova remnant for which we can find the associated NS
+\cite{holland-ashford:17,katsuda:18}. Note however, that recent
+simulations from \cite{burrows:23_kick} disagree with this picture,
+and produce sizable natal kicks just through momentum conservation in
+asymmetric ejecta.
+
+Whether the SN shock achieves a runaway radial growth (successful
+explosion, cf.~black lines in \Figref{fig:shock}) or it stalls and
+reverts (failed explosion, likely to result in BH formation) is
+typically decided within the first few 100 millisec after core-bounce.
+However, until few seconds after core-bounce the deeper layers of the
+ejecta and the proto-NS are still dynamically connected, and interact
+through gravity \cite{janka:13, burrows:23_kick}. If a clump of ejecta
+is more dense because of asymmetries in the flow (a situation
+routinely realized in 3D ab-initio simulations of the core-collapse
+process), it can gravitationally pull the newly born compact object in
+its direction and accelerate it.
+
+Because of the SN kick, the kinetic energy of the compact object is
+greatly increased, and this can lead to an increase of the total
+(orbital) energy of a putative binary system:
+\begin{equation}
+  \label{eq:1}
+  E_\mathrm{orb} =
+  \frac{1}{2}M_1v_1^2+\frac{1}{2}M_2v_2^2-\frac{GM_1M_2}{a}
+  \stackrel{\mathrm{SN}}{\rightarrow}
+  \frac{1}{2}(M_1-M_\mathrm{ej})(v_1+v_\mathrm{kick})^2+\frac{1}{2}M_2v_2^2-\frac{GM_1M_2}{a}
+  > 0
+\end{equation}
+where we implicitly assume an instantaneous explosion (compared to the
+orbital period of the binary), which leaves the gravitational
+interaction term unchanged. If $E_\mathrm{orb}$ becomes positive, the
+binary system is unbound. The SN kick thus breaks most massive binary
+systems by giving a large velocity to the compact object, but without
+modifying significantly the instantaneous velocity of the companion
+star\footnote{Do not confuse $v_2$ with the orbital velocity
+$v_\mathrm{orb} = \sqrt{\frac{G(M_1+M_2)}{a}}$ which represents the
+velocity of the point of reduced mass $\mu$ orbiting around the center
+of mass of the binary, and not the velocity of a physical object!}
+
+\begin{equation}
+  \label{eq:2}
+  v_2 = \frac{M_1}{M_1+M_2}v_\mathrm{orb}\equiv\frac{M_1}{M_1+M_2}\sqrt{\frac{G(M_1+M_2)}{a}} \ \ .
+\end{equation}
+
+The companion star is thus shot out of the binary with its
+pre-explosion $v_2$, and if $v_2>30\,\mathrm{km\ s^{-1}}$ it becomes a
+runaway star \cite{renzo:19}. This however tends to happen rarely,
+since mass transfer during the binary evolution tends to increase the
+separation $a$, decrease the mass $M_1$, and increase the mass $M_2$.
+
+Note typically SN ejecta achieve velocities of $10\,000\,\mathrm{km\
+s^{-1}} \gg v_\mathrm{orb}$, thus we can neglect the orbital motion of
+the binary during the SN (although see also \cite{batta:17}):
+effectively this corresponds to an instantaneous loss of mass from the
+exploding star, which is not the center of mass of the binary. This
+off-center mass loss (from the point of view of the binary) is also
+referred to as or "Blaauw kick" and can modify the orbit, and in
+extreme case where $M_\mathrm{ejecta}\geq (M_1+M_2)/2$ it can change it
+from an circle/ellipse to a parabola/hyperbole - so unbind the binary
+\cite{blaauw:61}. Typically in massive binary evolution, the exploding
+star loses its H-rich envelope to the companion long before its SN
+explosion, therefore $M_\mathrm{ej}$ is rarely sufficiently large to
+unbind the binary without a natal kick due to asymmetries.
+
+From the observation of the pulsars proper motions we know that at
+least some NS receive such large kicks, however there is still debate
+on whether SN resulting in the formation of a BH can also provide
+significant kicks, and consequently whether most BHs remain bound to
+their stellar companion, or whether their formation breaks the
+binaries in which they form. In at least a handful of cases, it can be
+shown that large mass BHs were formed with negligible natal kicks
+\cite{vigna-gomez:24}.
+
+The observation of double pulsars \cite{hulse:75} also raises
+the question of whether some successful SN explosion resulting in NS
+formation might also lead to systematically smaller kicks, allowing
+for a binary to survive two consequent explosions. The idea is that
+ultra-stripped SNe (i.e. the explosion of a star that has lost a very
+substantial amount of mass in multiple binary mass transfer episodes),
+and/or electron-capture SNe\footnote{The least massive stars to
+  explode might never become hot enough to burn completely the oxygen
+  core, leaving a partially degenerate oxygen-neon-magnesium composition. As this
+  core contracts and cools through neutrino emission, it reaches
+  densities sufficient to trigger electron capture on the nuclei of
+  the core, decreasing the electron degeneracy pressure support and
+  triggering the core-collapse.} or core-collapse SN of small Fe cores
+would more easily result in a successful explosion (no shock stalling,
+and no time to develop significant asymmetries during a shock stalling
+phase) with consequently small kicks.
+
+
+** Importance of multi-dimensional treatment
+
+
+** Light curves
+
+*** Power sources
+- $^{56}\mathrm{Ni}\rightarrow^{56}\mathrm{Co}\rightarrow^{56}\mathrm{Fe}$ decay power
+- Interaction between circumstellar material (CSM) converting kinetic
+  energy into radiation (\Rightarrow emission lines!)
+- magnetar spin down
+
+*** Scaling quantities
+
+- From spectra v_{ejecta} \ge 10000 km s^{-1}
+- Photosphere recedes in mass coordinate (expands in radius because of
+  explosion though)
+*** Type II SNe
+
+*** Type I SNe
+
+- Low ejecta mass \Rightarrow progenitors not luminous enough to self strip by
+single star winds
+- Shorter radiation diffusion time \Rightarrow faster decay time
+
+* The supernova zoo
+
+#+CAPTION: Schematic representation of the SN taxonomy, based on spectral features and light curve shape. The dot-dashed line indicates the possible connection between SN events detected in late stages and classified as type Ib/Ic and SNe of type IIb. This figure is from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]] and inspired by  Fig.~2 in [[https://ui.adsabs.harvard.edu/abs/2001ASSL..264..199C/abstract][Cappellaro et al. 2001]].
+#+ATTR_HTML: :width 100%
+[[./images/SN_taxonomy.png]]
+
+The classification of supernovae (SNe), as many things in astronomy,
+is rooted in history and was designed before the development of a
+physical understanding of what is observed.
+
+The "modern" version is based on a combination of /photometric/ and
+/spectroscopic/ criteria which allow to classify transients observed in
+the sky.
+
+*N.B.:* the criteria are purely phenomenology-base and empirical!
+
+The term "nova" in latin means "new" (omitting "star"), and in the
+time of visual observations it was used for any new source appearing
+in the sky. Keeping track of "changes" in the sky was especially
+developed in Eastern Asian astronomy (and astrology), while it
+received less attention in Western cultures where the dominant
+Aristotelian philosophy postulated some "perfection" of the
+"superlunar" world (and if it's perfect, why would it "change"?)
+
+The term "supernova" was introduced by Baade and Zwicky in 1931 to
+identify "new sources in the sky" with a particularly high luminosity.
+
+The first step to classify transients is to look at Hydrogen lines in
+the spectrum, and in absence of Hydrogen lines, whether there are
+Silicon lines. No hydrogen and silicon is called a type Ia SN which is
+theoretically associated to the thermonuclear obliteration of a white
+dwarf (see corresponding project for more information, the rest of
+this lecture will focus on massive stars explosions).
+
+All other SN types are associated instead to the death of massive
+stars: in absence of hydrogen lines and presence of helium lines we
+speak of type Ib (so the progenitor star had no more H-rich envelope
+at death), absence of both hydrogen and helium we have a type Ic
+(progenitor stripped of H and He -- though a small amount of He may be
+"hidden"). There is then a "transitional class" of type IIb SNe which
+show H only very early on. Collectively type Ib/Ic/IIb are often
+referred to as "stripped envelope SNe".
+
+SNe showing hydrogen in their spectrum are called type II SNe.
+Type II SNe are more common than stripped envelope ones, and they are
+further classified base on the light curve:
+
+ - type IIP showing a plateau (when the photosphere is locked by H recombination)
+ - type IIL showing a linear decay in log(L) vs. time
+
+Moreover, finer distinction and sub-classes exist, for example SNIIn,
+Ibn, Icn which are SN with the conditions mentioned above also showing
+narrow (\sim1000km s^{-1}) *emission* lines.
+
+SNe are also said to be "super-luminous" if their absolute bolometric
+magnitude exceeds M=-21 at peak.
+
+** Supernova rates
+
+The CCSN rate in Milky-way galaxies (with star formation rate of
+approximately few M_{\odot} yr^{-1}) is about \sim 1 per century. We are
+currently awaiting for one!
+
+#+CAPTION: [[https://academic.oup.com/mnras/article-lookup/doi/10.1111/j.1365-2966.2011.17229.x][Smith et al. 2011]] break down of CCSN by type in a  volume limited.
+#+ATTR_HTML :width :50%
+[[./images/smith11.png]]
+
+** Current open questions
+
+ - Neutron star or black hole?
+ - If black hole, with or without explosion?
+ - BH kicks?
