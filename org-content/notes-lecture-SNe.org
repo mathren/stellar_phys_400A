@@ -459,7 +459,7 @@ core (mostly in the form of neutrinos), and this requires
 non-spherically-symmetric physical ingredients.
 
 
-** Light curves
+* Light curves
 
 *** Power sources
 - $^{56}\mathrm{Ni}\rightarrow^{56}\mathrm{Co}\rightarrow^{56}\mathrm{Fe}$ decay power
