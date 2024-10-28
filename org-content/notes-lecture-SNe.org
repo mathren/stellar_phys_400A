@@ -106,16 +106,15 @@ pressure, where s_{e} is the electrons specific entropy and the term
 dependent on it is a "thermal correction" to account for the fact that
 not the entire core is fully degenerate and with k_{B}T\ll\varepsilon_{Fermi}.
 
-
 * Physics of core collapse
 
 ** Core Bounce
-Since the nuclei of the iron group are the most tightly bound, the
-fusion of two of them would require energy input greater than the
-energy released. Therefore, inside the iron core, fusion reactions
-cannot compensate the energy loss of the star, and the core is doomed
-to collapse. % under the influence of gravity. The conventional
-definition for the onset of collapse is
+Since the nuclei of the iron group are the most tightly bound (cf.
+[[./notes-lecture-nuclear-burning.org][lecture on microphysics of nuclear reactions]]), the fusion of two of
+them would require energy input greater than the energy released.
+Therefore, inside the iron core, fusion reactions cannot compensate
+the energy loss of the star, and the core is doomed to collapse. The
+conventional definition for the onset of collapse is
 
 #+begin_latex
 \begin{equation}\label{eq:onset_cc}
