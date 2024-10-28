@@ -458,7 +458,7 @@ sequence.
 
 As the H burning shell adds nuclear ashes to the underlying inert He
 core, until it reaches a mass that cannot be sustained by degeneracy
-pressure anymore, and He ignites.
+pressure anymore, and He ignites. This typically occurs for M_{He}\simeq0.45M_{\odot}.
 
 This ignition however happens in a degenerate environment where P does
 /not/ depend on T! Therefore the energy released by the burning of He
@@ -472,12 +472,12 @@ due to electron degeneracy to being ideal gas again: this causes an
 abrupt change in pressure and a temporarily /dynamical/ phase of the
 evolution!
 
-Because this requires a specific He core mass (\sim 0.45M_{\odot}), and the
-He core mass before the flashes is determining the total luminosity of
-the red giant, this means that pre-flash there is a "standardizable"
-maximum luminosity of red giants, the so called "tip of the red giant
-branch", which is nowadays used as an alternative method to measure
-distances for cosmological applications.
+Because this requires a specific He core mass, and the He core mass
+before the flashes is determining the total luminosity of the red
+giant, this means that pre-flash there is a "standardizable" maximum
+luminosity of red giants, the so called "tip of the red giant branch",
+which is nowadays used as an alternative method to measure distances
+for cosmological applications.
 
 The occurrence of neutrino cooling in the core can cause the burning
 during the He flash to be initially off-center. Moreover, the star can
@@ -501,14 +501,14 @@ Since the He flash occurs as soon as the He core mass reaches a
 sufficient mass, all these stars have similar luminosities, and form
 the so-called "red clump" on the HR diagram, a noticeable feature in
 cluster and galaxy populations that can also be used for distance and
-age estimates (see also for example [[https://www.annualreviews.org/content/journals/10.1146/annurev-astro-081915-023354][Girardi 2016]]).
-
-Depending on the amount of H-rich mass left after the He flash(es),
-stars can appear bluer in this phase (but because the occurrence of
-the He flash requires a minimum threshold mass, they all have roughly
-the same luminosity): there can be a continuous almost horizontal line
-of stars in the HR diagram for low mass core-He burning stars whose
-coolest end is the red clump.
+age estimates (see also for example [[https://www.annualreviews.org/content/journals/10.1146/annurev-astro-081915-023354][Girardi 2016]]). Since the mass of
+the He core at ignition for low mass stars is set by the He flash at
+\sim0.45M_{\odot}, the lower mass stars will have less envelope at this
+point (more has been processed into He to reach the threshold mass for
+the flash): from the red clump a there is a continuous almost
+horizontal line (they all have roughly the same luminosity set by the
+core mass) of stars in the HR diagram for low mass core-He burning
+stars whose coolest end is the red clump.
 
 (continuing reading about the evolution of low mass [[*Low mass stars: AGB thermal pulses and WD cooling][here]])
 

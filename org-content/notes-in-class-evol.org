@@ -156,4 +156,5 @@ some clean examples for a representative low-mass star (1M_{\odot}), high
 mass star (15M_{\odot}). These were also produced with MESA, but likely
 configured differently than =MESA-web=.
 
-*Spoiler alert*: see [[./in-class-evol-wrap-up.org][for some discussion of the results you should get]]
+*Spoiler alert*: find [[./in-class-evol-wrap-up.org][here]] some (partial) discussion of the evolution of
+stars of various mass.
