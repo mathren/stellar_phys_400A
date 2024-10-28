@@ -171,7 +171,7 @@ of the stiffened EOS, stops collapsing and reverses its radial
 velocity. This launches a shock wave at the edge of the inner core. It
 is thought that this shock wave at least in some cases, successfully
 disrupts the star, producing a SN. However, in most cases, the shock
-needs to be ``revived'' by some mechanism.
+needs to be ``revived'' by some mechanism (see below).
 
 *N.B.:* The collapse and bounce is analogous to a ball bouncing off a
 wall which momentarily compresses a bit and momentum changes sign in
@@ -179,32 +179,33 @@ the direction perpendicular to the wall progressively across the ball
 volume. In this analogy, for a collapsing star, the wall is the inner
 core reaching super-nuclear densities.
 
-#+CAPTION: Velocity profile for the core of an initially 15 M_\odot star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward (v<0) everywhere. The  data in the right panel are obtained using the open-source code GR1D, \cite{oconnor:10}, with the data at  the onset of core collapse as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of \sim1.4 M_{\odot} of Fe-rich material with radius of almost \sim1000 km to a proto-NS with radius of \sim10 km.
+#+CAPTION: Velocity profile for the core of an initially 15 M_{\odot} star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward (v<0) everywhere. The  data in the right panel are obtained using the open-source code GR1D, [[http://adsabs.harvard.edu/abs/2010CQGra..27k4103O][O'connor & Ott 2010]], with the data at  the onset of core collapse as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of \sim1.4 M_{\odot} of Fe-rich material with radius of almost \sim1000 km to a proto-NS with radius of \sim10 km.
 #+ATTR_HTML: :width 100%
 [[./images/v_profile_core_bounce.png]]
 
+The collapse of the core releases gravitational binding energy:
 #+begin_latex
 \begin{equation}
   \label{eq:3}
-  \Delta E_\mathrm{bind} \simeq \frac{G M^2}{R_{\rm NS}} - \frac{G
-    M^2}{R_{\rm Fe}} \sim 10^{53}\,\mathrm{erg} \ \ ,
+  \Delta E_\mathrm{bind} \simeq \frac{G M_\mathrm{Fe}^2}{R_{\rm NS}} - \frac{G
+    M_\mathrm{Fe}^2}{R_{\rm Fe}} \sim 10^{53}\,\mathrm{erg} \ \ ,
 \end{equation}
 #+end_latex
-
-The energy reservoir provided by the gravitational collapse is largely
-in excess of the total binding energy of the stellar envelope, and
-roughly speaking $100$ times more that the typical kinetic energy of a
-SN explosions (1 Bethe \equiv 1 f.o.e. \equiv 10^{51} erg). Note that the energy
-radiated away by a SN is typically a small fraction of the kinetic
-energy ($\int L_\mathrm{SN}(t)\,dt \simeq10^{49}\,\mathrm{erg}$).
+This largely exceeds the total binding energy of the stellar envelope,
+and roughly speaking $100$ times more that the typical kinetic energy
+of a SN explosions (1 Bethe \equiv 1 f.o.e. \equiv 10^{51} erg). Note that the
+energy radiated away by a SN is typically a small fraction of the
+kinetic energy ($\int L_\mathrm{SN}(t)\,dt \simeq10^{49}\,\mathrm{erg}$).
+Thus, the CCSN explosion problem is about how this energy can be
+harvested by the shock to explode the star.
 
 #+CAPTION: Evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for the explosion of an 18 M_{\odot} stellar model. Red curves are computed in 1D: in spherical symmetry the shock stalls and its radius stays roughly constant. This is Fig.~5 of [[http://adsabs.harvard.edu/abs/2016PASA...33...48M][M\"uller 2016]].
 #+ATTR_HTML: :width 100%
 [[./images/shockR.png]]
 
 As the shock wave propagates in the outer core, it loses energy by
-heating and photodisintegrating the infalling material, and overcoming
-the ram pressure (P_{ram }\simeq \rho v^{2}) of this same material.
+/heating and photodisintegrating the infalling material/, and overcoming
+the /ram pressure/ (P_{ram }\simeq \rho v^{2}) of this same material.
 Moreover, all the neutrinos that are not absorbed in the ``gain
 region'' contribute to decreasing the total energy of the material
 behind the shock. The energy loss through these mechanisms leads to a
@@ -214,12 +215,12 @@ revival mechanism'' must act to revive the shock and restart its
 radial expansion allowing it to unbind the stellar envelope and
 produce a SN explosion.
 
-In the /neutrino-driven paradigm/ (for reviews see \cite{janka:12,
-vartanyan:22}), the shock is pushed by the large neutrino emission
-from the hot proto-NS formed in the inner part of the bouncing inner
-core. These neutrinos are mostly produced by electron captures to
+In the /neutrino-driven paradigm/ (for reviews see [[https://ui.adsabs.harvard.edu/abs/2012ARNPS..62..407J][Janka 2012]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.4689V][Vartanyan
+et al. 2022]]), the shock is pushed by the large neutrino emission from
+the hot proto-NS formed in the inner part of the bouncing inner core.
+These neutrinos are mostly produced by electron captures to
 ``neutronize'' the Fe core (in the innermost ``cooling-region'' where
-the proto-NS is), cf.~\Eqref{eq:ecap} and from [[./notes-lecture-neutrinos.org::*Thermal neutrinos][cooling processes]]. A
+the proto-NS is), cf. \Eqref{eq:ecap} and from [[./notes-lecture-neutrinos.org::*Thermal neutrinos][cooling processes]]. A
 small fraction of these neutrinos will interact in a region behind the
 shock (the so-called ``gain-region''). This is because the stellar
 plasma has now densities and temperatures higher than during core Si
@@ -240,9 +241,9 @@ emission lines (i.e., very large ejecta velocities).
 ** Shock revival mechanisms
 As mentioned above, historically, numerical simulations of
 core-collapse SNe would always find stalling and ultimately receding
-shocks, i.e. failed explosions. This lead to the realization that the
-/asymmetries/ in the flow are a key ingredient to achieve a successful
-explosion.
+shocks, that is failed explosions. This lead to the realization that
+the /asymmetries/ in the flow are a key ingredient to achieve a
+successful explosion.
 
 Several sources of asymmetry (both local and global) exist in the
 collapsing core of a massive star:
