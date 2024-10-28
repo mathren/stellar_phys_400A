@@ -58,14 +58,15 @@ have had limited success in producing explosions. In most cases, the
 shock just stops or reverts while still deep in the star. Therefore, a
 ``shock-revival'' mechanism (usually neutrino heating behind the shock
 aided by asymmetries in the flow) is needed to push it further and
-make it succeed in unbinding the stellar envelope.
+make it unbind the stellar envelope.
 
-The stellar structure (especially of the deepest layers) is paramount
-for the success or failure of the SN explosion, especially the density
-profile that the shock will encounter moving outward. But the details
-of the stellar structure depend on the late burning stages (namely,
-[[./notes-lecture-nuclear-cycles.org::*Silicon core burning][Silicon burning]]) of the star, and on the mixing processes during these
-phases.
+The dynamics of the collapse, and therefore the success or failure of
+the explosion, depend on the structure (temperature, density, etc.)
+and details of the composition of the core (see also [[https://ui.adsabs.harvard.edu/abs/2014ApJ...783...10S/abstract][Sukhbold &
+Woosley 2014]], [[https://ui.adsabs.harvard.edu/abs/2016ApJS..227...22F/abstract][Farmer et al. 2016]], [[https://ui.adsabs.harvard.edu/abs/2024RNAAS...8..152R/abstract][Renzo et al. 2024]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv240902058L/abstract][Laplace et al.
+2024]]). But the details of the stellar structure depend on the late
+burning stages (namely, [[./notes-lecture-nuclear-cycles.org::*Silicon core burning][Silicon burning]]) of the star, and on the
+mixing processes during these phases.
 
 Several attempts to define a (small set of) parameter(s) describing
 the pre-collapse core structure that could predict the outcome of the
@@ -104,12 +105,6 @@ that is the maximum mass that can be sustained by electron degeneracy
 pressure, where s_{e} is the electrons specific entropy and the term
 dependent on it is a "thermal correction" to account for the fact that
 not the entire core is fully degenerate and with k_{B}T\ll\varepsilon_{Fermi}.
-
-The dynamics of the collapse, and therefore the success or failure of
-the explosion, depend on the structure (temperature, density, etc.)
-and details of the composition of the core (see also [[https://ui.adsabs.harvard.edu/abs/2014ApJ...783...10S/abstract][Sukhbold &
-Woosley 2014]], [[https://ui.adsabs.harvard.edu/abs/2016ApJS..227...22F/abstract][Farmer et al. 2016]], [[https://ui.adsabs.harvard.edu/abs/2024RNAAS...8..152R/abstract][Renzo et al. 2024]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv240902058L/abstract][Laplace et al.
-2024]]).
 
 
 * Physics of core collapse
