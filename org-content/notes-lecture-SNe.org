@@ -66,7 +66,7 @@ phases.
 Several attempts to define a (small set of) parameter(s) describing
 the pre-collapse core structure that could predict the outcome of the
 simulation of a SN explosion (success or failure, NS or BH remnant)
-have been made (e.g.,[[https://ui.adsabs.harvard.edu/abs/2011ApJ...730...70O/abstract][O'connor & Ott 2011]], [[https://ui.adsabs.harvard.edu/abs/2016ApJ...818..124E/abstract][Ertl et al. 2016]], [[http://adsabs.harvard.edu/abs/2019arXiv190201340C][Couch et
+have been made (e.g., [[https://ui.adsabs.harvard.edu/abs/2011ApJ...730...70O/abstract][O'connor & Ott 2011]], [[https://ui.adsabs.harvard.edu/abs/2016ApJ...818..124E/abstract][Ertl et al. 2016]], [[http://adsabs.harvard.edu/abs/2019arXiv190201340C][Couch et
 al. 2019]]). Because the late burning phases and ultimately the
 formation of the collapsing core itself is a multi-physics,
 multi-scale, and likely stochastic problem, any attempt to define such
@@ -181,7 +181,7 @@ is thought that this shock wave at least in some cases, successfully
 disrupts the star, producing a SN. However, in most cases, the shock
 needs to be ``revived'' by some mechanism.
 
-#+CAPTION: Velocity profile for the core of an initially 15 M_\odot star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward (v<0) everywhere. The  data in the right panel are obtained using the open-source code GR1D, \cite{oconnor:10}, with the data at  the onset of core collapse as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of \sim1.4 M_{\odot} of Fe-rich material with radius of almost \sim1000 km to a proto-NS with radius of \sim10 km:
+#+CAPTION: Velocity profile for the core of an initially 15 M_\odot star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward (v<0) everywhere. The  data in the right panel are obtained using the open-source code GR1D, \cite{oconnor:10}, with the data at  the onset of core collapse as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of \sim1.4 M_{\odot} of Fe-rich material with radius of almost \sim1000 km to a proto-NS with radius of \sim10 km.
 #+ATTR_HTML: :width 100%
 [[./images/v_profile_core_bounce.png]]
 
@@ -200,7 +200,7 @@ SN explosions (1 Bethe \equiv 1 f.o.e. \equiv 10^{51} erg). Note that the energy
 radiated away by a SN is typically a small fraction of the kinetic
 energy ($\int L_\mathrm{SN}(t)\,dt \simeq10^{49}\,\mathrm{erg}$).
 
-#+CAPTION: Evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for the explosion of an 18 M_{\odot} stellar model. Red curves are computed in 1D: in spherical symmetry the shock stalls and its radius stays roughly constant. This is Fig.~5 of \cite{muller:16}.
+#+CAPTION: Evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for the explosion of an 18 M_{\odot} stellar model. Red curves are computed in 1D: in spherical symmetry the shock stalls and its radius stays roughly constant. This is Fig.~5 of [[http://adsabs.harvard.edu/abs/2016PASA...33...48M][M\"uller 2016]].
 #+ATTR_HTML: :width 100%
 [[./images/shockR.png]]
 
@@ -235,40 +235,34 @@ that might help pushing the shock, and this might be the dominant
 explosion mechanism for long gamma ray bursts and SNIc showing broad
 emission lines (i.e., very large ejecta velocities).
 
-\begin{figure}[htbp]
-  % \begin{wrapfigure}[15]{R}{0.5\textwidth}
-  \centering
-  \includegraphics[width=0.5\textwidth]{figures/sketch_mechanism}
-  \caption{\footnotesize Sketch of the key ingredients for a successful explosion in
-    the neutrino driven paradigm, from \cite{muller:17}.}
-  \label{fig:sketch}
-  % \end{wrapfigure}
-\end{figure}
+#+CAPTION: Sketch of the key ingredients for a successful explosion in the neutrino driven paradigm, from [[https://ui.adsabs.harvard.edu/\#abs/2017IAUS..329...17M][M\"uller 2017]]
+#+ATTR_HTML: :width 100%
+[[./images/sketch_mechanism.png]]
 
 ** Shock revival mechanisms
 As mentioned above, historically, numerical simulations of
 core-collapse SNe would always find stalling and ultimately receding
-shocks, i.e. failed explosions. This lead to the realization that
-the \emph{asymmetries} in the flow are a key ingredient to
-achieve a successful explosion.
+shocks, i.e. failed explosions. This lead to the realization that the
+/asymmetries/ in the flow are a key ingredient to achieve a successful
+explosion.
 
 Several sources of asymmetry (both local and global) exist in the
-collapsing core of a massive star, most are summarized in \Figref{fig:sketch}:
+collapsing core of a massive star:
 - The neutrino heat the bottom of the gain region, driving convection
   (a steep temperature and entropy gradient can develop because of the
   neutrino heating);
 - Convection implies the presence of turbulent flow and an associated
   turbulent pressure (P_{turb}\simeq \rho v_{turb}^{2}) that can help pushing
-  the shock \cite{oconnor:18},
-- Standing accretion Shock Instability (SASI, \cite{blondin:03}):
+  the shock [[https://ui.adsabs.harvard.edu/\#abs/2018ApJ...865...81O][O'Connor et al. 2018]],
+- Standing accretion Shock Instability (SASI, [[http://adsabs.harvard.edu/abs/2003ApJ...584..971B][Blondin et al. 2003]]):
   when the shock stalls its surface is perturbed by the infalling
   material. These perturbation (e.g., in terms of the local velocity)
   are advected downwards by convection and amplified which leads to a
-  sloshing motion of the shock\footnote{The growth time of this
-  instability may be too long for it to play a role in successful
-  explosions, where other mechanism revive the shock faster than SASI
-  can develop \cite{burrows:23}.}
-- Lepton Emission Self-Sustained Emission (LESA, \cite{tamborra:14}),
+  sloshing motion of the shock (although recently it was suggested
+  that the growth time of this instability may be too long for it to
+  play a role in successful explosions, where other mechanism revive
+  the shock faster than SASI can develop, see [[https://ui.adsabs.harvard.edu/abs/2023ApJ...957...68B][Burrows et al. 2023]].)
+- Lepton Emission Self-Sustained Emission (LESA, [[https://ui.adsabs.harvard.edu/\#abs/2014ApJ...792...96T][Tamborra et al 2014]]),
   found in 3D simulations where the neutrino emission is roughly
   dipolar.
 
@@ -283,10 +277,10 @@ explosions.
 
 The first axisymmetric (i.e., 2D) simulations showed some successful
 explosion, but it was soon realized that the symmetry imposed
-artificially in these calculation (cf.~\Figref{fig:2d3dCCSNe}) was
-changing the turbulent cascade: instead of dripping towards smaller
-scale and be dissipated at the viscous scale, energy is pumped to
-larger scales in 2D, which artificially helps the explosion.
+artificially in these calculation was changing the turbulent cascade:
+instead of dripping towards smaller scale and be dissipated at the
+viscous scale, energy is pumped to larger scales in 2D, which
+artificially helps the explosion.
 
 
 #+CAPTION: Visualization of the shock morphology in 3D (left) and 2D(right): clearly the artificial imposition of a symmetry by running at lower dimensionality changes the dynamics of the explosion.
@@ -294,11 +288,12 @@ larger scales in 2D, which artificially helps the explosion.
 [[./images/2v3dCCSN.png]]
 
 
-As of early 2019, there is an emerging picture from the 3D core-collapse SN
-simulations of different research groups (\cite{ott:18, kuroda:18}): \emph{not only the
-  asymmetries during the first millisecond after core-bounce are
-  necessary to achieve successful explosions, but also the
-  pre-collapse core-structure and in particular the Si/O interface is crucial}.
+As of early 2019, there is an emerging picture from the 3D
+core-collapse SN simulations of different research groups ([[http://adsabs.harvard.edu/abs/2018ApJ...855L...3O][Ott et al.
+2018]], [[http://adsabs.harvard.edu/abs/2018arXiv180101293K][Kuroda et al. 2018]]): /not only the asymmetries/ during the first
+millisecond after core-bounce are necessary for successful explosions,
+but also /the pre-collapse core-structure and in particular the Si/O
+interface is crucial/.
 
 The most massive stellar cores, for which the Si/O interface is at a
 large Lagrangian mass coordinate, develop strong neutrino driven
