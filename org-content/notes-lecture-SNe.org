@@ -325,7 +325,6 @@ fields) is even more uncertain.
 
 
 ** Neutron star kicks
-(put in context with Blaauw kick!)
 
 The current understanding of core-collapse dynamics suggests that
 asymmetries are likely the key to the success of the explosion. This
@@ -459,27 +458,6 @@ core (mostly in the form of neutrinos), and this requires
 non-spherically-symmetric physical ingredients.
 
 
-* Light curves
-
-*** Power sources
-- $^{56}\mathrm{Ni}\rightarrow^{56}\mathrm{Co}\rightarrow^{56}\mathrm{Fe}$ decay power
-- Interaction between circumstellar material (CSM) converting kinetic
-  energy into radiation (\Rightarrow emission lines!)
-- magnetar spin down
-
-*** Scaling quantities
-
-- From spectra v_{ejecta} \ge 10000 km s^{-1}
-- Photosphere recedes in mass coordinate (expands in radius because of
-  explosion though)
-*** Type II SNe
-
-*** Type I SNe
-
-- Low ejecta mass \Rightarrow progenitors not luminous enough to self strip by
-single star winds
-- Shorter radiation diffusion time \Rightarrow faster decay time
-
 * The supernova zoo
 
 #+CAPTION: Schematic representation of the SN taxonomy, based on spectral features and light curve shape. The dot-dashed line indicates the possible connection between SN events detected in late stages and classified as type Ib/Ic and SNe of type IIb. This figure is from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]] and inspired by  Fig.~2 in [[https://ui.adsabs.harvard.edu/abs/2001ASSL..264..199C/abstract][Cappellaro et al. 2001]].
@@ -549,7 +527,29 @@ The figure below shows a breakdown per SN type:
 #+ATTR_HTML: :width 50%
 [[./images/smith11.png]]
 
-** Current open questions
+* Light curves
+
+*** Power sources
+- $^{56}\mathrm{Ni}\rightarrow^{56}\mathrm{Co}\rightarrow^{56}\mathrm{Fe}$ decay power
+- Interaction between circumstellar material (CSM) converting kinetic
+  energy into radiation (\Rightarrow emission lines!)
+- magnetar spin down
+
+*** Scaling quantities
+
+- From spectra v_{ejecta} \ge 10000 km s^{-1}
+- Photosphere recedes in mass coordinate (expands in radius because of
+  explosion though)
+*** Type II SNe
+
+*** Type I SNe
+
+- Low ejecta mass \Rightarrow progenitors not luminous enough to self strip by
+single star winds
+- Shorter radiation diffusion time \Rightarrow faster decay time
+
+
+* Current open questions
 
  - Neutron star or black hole?
  - If black hole, with or without explosion?
