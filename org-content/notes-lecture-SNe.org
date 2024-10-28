@@ -46,12 +46,6 @@ density (\rho\geq10^{14} g cm^{-3}), bounces due to the repulsive core of the
 nuclear force (cf. [[./notes-lecture-nuclear-burning.org][lecture on microphysics of nuclear reactions]]) and
 this triggers a shock-wave.
 
-*N.B.:* The collapse and bounce is analogous to a ball bouncing off a
-wall which momentarily compresses a bit and momentum changes sign in
-the direction perpendicular to the wall progressively across the ball
-volume. In this analogy, for a collapsing star, the wall is the inner
-core reaching super-nuclear densities.
-
 The shock wave launched is thought to explode the star, unbinding the
 stellar envelope. However, historically (hydrodynamical) simulations
 have had limited success in producing explosions. In most cases, the
@@ -142,13 +136,13 @@ During collapse, electron capture reactions, e.g.,
 \end{equation}
 #+end_latex
 
-decrease Y_{e}, and diminishing $M_\mathrm{Ch}^\mathrm{eff}$ (see
-Eq.~\ref{eq:Mcha}) accelerating the collapse further. Together with
+decrease Y_{e}, and diminishing $M_\mathrm{Ch}^\mathrm{eff}$ (see Eq.
+\ref{eq:Mcha}) accelerating the collapse further. Together with
 positron capture reactions, electron capture reactions form the
 so-called [[./notes-lecture-neutrinos.org::*Nuclear neutrinos][URCA process]], responsible for the lion's share of the
 cooling (provided by neutrinos) during the collapse phase. As the
 infall velocity progressively increases, the core divides into two
-separate parts \cite{woosley:02}:
+separate parts [[http://adsabs.harvard.edu/abs/2002RvMP...74.1015W][Woosley et al. 2002]]:
 
 - *Inner Core*: in sonic contact and collapsing self-similarly (i.e.,
   the infall velocity |v| \propto r). Its mass is given by:
@@ -161,7 +155,7 @@ separate parts \cite{woosley:02}:
   be evaluated analytically assuming [[./notes-lecture-EOS2.org::*Ultra-relativistic electron gas][ultra-relativistic electron
   degeneracy]] dominates the pressure. The value of $M_\mathrm{i.c.}$ at
   core bounce is almost independent of the stellar progenitor and it
-  is about $1\,M_\odot$ \cite{goldreich:80,yahil:82}.
+  is about $1\,M_\odot$, [[http://adsabs.harvard.edu/abs/1980ApJ...238..991G][Goldreich & Weber 1980]], [[http://adsabs.harvard.edu/abs/1982ASIC...90...53Y][Yahil & Lattimer 1982]].
 - *Outer Core*: in supersonic collapse, because at lower density the
   sound speed c_{s} decreases, so no information about the inner core
   can reach into the outer core.
@@ -178,6 +172,12 @@ velocity. This launches a shock wave at the edge of the inner core. It
 is thought that this shock wave at least in some cases, successfully
 disrupts the star, producing a SN. However, in most cases, the shock
 needs to be ``revived'' by some mechanism.
+
+*N.B.:* The collapse and bounce is analogous to a ball bouncing off a
+wall which momentarily compresses a bit and momentum changes sign in
+the direction perpendicular to the wall progressively across the ball
+volume. In this analogy, for a collapsing star, the wall is the inner
+core reaching super-nuclear densities.
 
 #+CAPTION: Velocity profile for the core of an initially 15 M_\odot star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward (v<0) everywhere. The  data in the right panel are obtained using the open-source code GR1D, \cite{oconnor:10}, with the data at  the onset of core collapse as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of \sim1.4 M_{\odot} of Fe-rich material with radius of almost \sim1000 km to a proto-NS with radius of \sim10 km.
 #+ATTR_HTML: :width 100%
