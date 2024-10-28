@@ -529,6 +529,17 @@ The figure below shows a breakdown per SN type:
 
 * Light curves
 
+Once a SN is detected (typically from ground-based observatories), it
+can be followed up to measure a light curve and spectra. This is
+necessary to understand the type of transient identified (is it
+"really" a supernova or something else?), classify it (what spectral
+type and light curve morphology does it have?), and understand the
+physical mechanism driving the explosion and the progenitor star that
+caused it.
+
+*N.B.:* Presently, uncertainties in progenitor structure and evolution
+are dominant in this problem space!
+
 *** Power sources
 - $^{56}\mathrm{Ni}\rightarrow^{56}\mathrm{Co}\rightarrow^{56}\mathrm{Fe}$ decay power
 - Interaction between circumstellar material (CSM) converting kinetic
@@ -540,13 +551,14 @@ The figure below shows a breakdown per SN type:
 - From spectra v_{ejecta} \ge 10000 km s^{-1}
 - Photosphere recedes in mass coordinate (expands in radius because of
   explosion though)
+
 *** Type II SNe
 
 *** Type I SNe
 
-- Low ejecta mass \Rightarrow progenitors not luminous enough to self strip by
-single star winds
-- Shorter radiation diffusion time \Rightarrow faster decay time
+- Low ejecta mass \Rightarrow progenitors not luminous enough to self strip by single star winds
+- Shorter radiation diffusion time \Rightarrow faster decay time \Rightarrow faster
+  evolution of the light-curve
 
 
 * Current open questions

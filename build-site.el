@@ -109,7 +109,6 @@
 	     :with-latex t
 	     :with-sub-superscript t
 	     :with-tags t
-	     :options "tex:dvisvgm"
 	     :with-tasks t
 	     :html-self-link-headlines t
              :with-timestamps t					;; Include time stamp in file
