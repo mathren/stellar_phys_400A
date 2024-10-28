@@ -353,6 +353,17 @@ flows.
 #+ATTR_HTML: :width 100%
 [[./images/sketch_perturbations.png]]
 
+Whether the SN shock achieves a runaway radial growth (successful
+explosion,) or it stalls and reverts (failed explosion, likely to
+result in BH formation) is typically decided within the first few 100
+millisec after core-bounce. However, until few seconds after
+core-bounce the deeper layers of the ejecta and the proto-NS are still
+dynamically connected, and interact through gravity (see, e.g, [[http://adsabs.harvard.edu/abs/2013MNRAS.434.1355J][Janka
+2013]], [[https://ui.adsabs.harvard.edu/abs/2023arXiv231112109B][Burrows et al. 2023b]]). If a clump of ejecta is more dense
+because of asymmetries in the flow (a situation routinely realized in
+3D ab-initio simulations of the core-collapse process), it can
+gravitationally pull the newly born compact object in its direction
+and accelerate it.
 
 A key prediction of this ``tug-boat'' model is that the SN shock is
 faster in the direction opposite to the one in which the compact
@@ -360,24 +371,12 @@ object is accelerated. A faster shock is more efficient at
 photodisintegrating nuclei, producing light particles that can be
 accreted by the surviving nuclei: this model predicts stronger
 explosive nucleosynthesis in the direction opposite to the compact
-object. This prediction seems to be consistent with observations of
-supernova remnant for which we can find the associated NS
-\cite{holland-ashford:17,katsuda:18}. Note however, that recent
-simulations from \cite{burrows:23_kick} disagree with this picture,
-and produce sizable natal kicks just through momentum conservation in
-asymmetric ejecta.
-
-Whether the SN shock achieves a runaway radial growth (successful
-explosion, cf.~black lines in \Figref{fig:shock}) or it stalls and
-reverts (failed explosion, likely to result in BH formation) is
-typically decided within the first few 100 millisec after core-bounce.
-However, until few seconds after core-bounce the deeper layers of the
-ejecta and the proto-NS are still dynamically connected, and interact
-through gravity \cite{janka:13, burrows:23_kick}. If a clump of ejecta
-is more dense because of asymmetries in the flow (a situation
-routinely realized in 3D ab-initio simulations of the core-collapse
-process), it can gravitationally pull the newly born compact object in
-its direction and accelerate it.
+object! This prediction seems to be consistent with observations of
+supernova remnant for which we can find the associated NS,
+[[http://adsabs.harvard.edu/abs/2017ApJ...844...84H][Holland-Ashford et al. 2017]], [[http://adsabs.harvard.edu/abs/2018ApJ...856...18K][Katsuda et al. 2018]]. Note however, that
+recent simulations from [[https://ui.adsabs.harvard.edu/abs/2023arXiv231112109B][Burrows et al. 2023b]] disagree with this
+picture, and produce sizable natal kicks just through momentum
+conservation in asymmetric ejecta.
 
 Because of the SN kick, the kinetic energy of the compact object is
 greatly increased, and this can lead to an increase of the total
@@ -413,24 +412,25 @@ of the binary, and not the velocity of a physical object!}
 #+end_latex
 
 The companion star is thus shot out of the binary with its
-pre-explosion v_{2}, and if v_{2}>30 km s^{-1} it becomes a runaway star
-\cite{renzo:19}. This however tends to happen rarely, since mass
-transfer during the binary evolution tends to increase the separation
-$a$, decrease the mass M_{1}, and increase the mass M_{2}.
+pre-explosion v_{2}, and if v_{2}>30 km s^{-1} it becomes a runaway star [[https://ui.adsabs.harvard.edu/abs/2019A&A...624A..66R][Renzo
+et al. 2019]]. This however tends to happen rarely, since mass transfer
+during the binary evolution tends to increase the separation a,
+decrease the mass M_{1}, and increase the mass M_{2}.
 
 Note typically SN ejecta achieve velocities of \sim10^{4} km s^{-1} \gg v_{orb},
 thus we can neglect the orbital motion of the binary during the SN
-(although see also \cite{batta:17}): effectively this corresponds to
+(although see also [[http://adsabs.harvard.edu/abs/2017ApJ...846L..15B][Batta et al. 2017]]): effectively this corresponds to
 an instantaneous loss of mass from the exploding star, which is not
 the center of mass of the binary. This off-center mass loss (from the
 point of view of the binary) is also referred to as or "Blaauw kick"
 and can modify the orbit, and in extreme case where
 $M_\mathrm{ejecta}\geq (M_1+M_2)/2$ it can change it from an
-circle/ellipse to a parabola/hyperbole - so unbind the binary
-\cite{blaauw:61}. Typically in massive binary evolution, the exploding
-star loses its H-rich envelope to the companion long before its SN
-explosion, therefore M_{ej} is rarely sufficiently large to unbind the
-binary without a natal kick due to asymmetries.
+circle/ellipse to a parabola/hyperbole - so unbind the binary [[http://adsabs.harvard.edu/abs/1961BAN....15..265B][Blaauw
+1961]] (see also homework on virial theorem!). Typically in massive
+binary evolution, the exploding star loses its H-rich envelope to the
+companion long before its SN explosion, therefore M_{ej} is rarely
+sufficiently large to unbind the binary without a natal kick due to
+asymmetries.
 
 From the observation of the pulsars proper motions we know that at
 least some NS receive such large kicks, however there is still debate
@@ -438,28 +438,25 @@ on whether SN resulting in the formation of a BH can also provide
 significant kicks, and consequently whether most BHs remain bound to
 their stellar companion, or whether their formation breaks the
 binaries in which they form. In at least a handful of cases, it can be
-shown that large mass BHs were formed with negligible natal kicks
-\cite{vigna-gomez:24}.
+shown that large mass BHs were formed with negligible natal kicks,
+[[https://ui.adsabs.harvard.edu/abs/2023arXiv231001509V][Vigna-gomez et al. 2024]].
 
-The observation of double pulsars \cite{hulse:75} also raises the
+The observation of double pulsars [[http://adsabs.harvard.edu/abs/1975ApJ...195L..51H][Hulse & Taylor 1975]] also raises the
 question of whether some successful SN explosion resulting in NS
 formation might also lead to systematically smaller kicks, allowing
 for a binary to survive two consequent explosions. The idea is that
 ultra-stripped SNe (i.e. the explosion of a star that has lost a very
 substantial amount of mass in multiple binary mass transfer episodes),
-and/or electron-capture SNe\footnote{The least massive stars to
-explode might never become hot enough to burn completely the oxygen
-core, leaving a partially degenerate oxygen-neon-magnesium
-composition. As this core contracts and cools through neutrino
-emission, it reaches densities sufficient to trigger electron capture
-on the nuclei of the core, decreasing the electron degeneracy pressure
-support and triggering the core-collapse.} or core-collapse SN of
-small Fe cores would more easily result in a successful explosion (no
-shock stalling, and no time to develop significant asymmetries during
-a shock stalling phase) with consequently small kicks.
+and/or electron-capture SNe from collapsing ONeMg cores, or yet
+core-collapse SN of small Fe cores would more easily result in a
+successful explosion (no shock stalling, and no time to develop
+significant asymmetries during a shock stalling phase) with
+consequently small kicks.
 
-
-** Importance of multi-dimensional treatment
+*N.B.:* A SN shock successful in exploding the star needs to harvest \sim1%
+of the gravitational binding energy released by the collapse of the
+core (mostly in the form of neutrinos), and this requires
+non-spherically-symmetric physical ingredients.
 
 
 ** Light curves
