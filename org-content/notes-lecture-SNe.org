@@ -327,16 +327,16 @@ fields) is even more uncertain.
 ** Neutron star kicks
 (put in context with Blaauw kick!)
 
-#+CAPTION: Schematic of the development of a large asymmetry in a 3D CCSN simulation resulting in a large natal kick. From \cite{muller:17}.
-#+ATTR_HTML: :width 100%
-[[file:images/sketch_perturbations.png][./images/sketch_perturbations.png]]
-
 The current understanding of core-collapse dynamics suggests that
 asymmetries are likely the key to the success of the explosion. This
 is further confirmed by the large velocities at which we observe some
 single NSs moving. The proper motion of radio pulsars can correspond
 to velocities in excess of \sim1000 km s^{-1}, which is much higher than the
 maximum velocity at which we observe O and B type stars moving.
+
+#+CAPTION: Guitar nebula formed by the bow shock of a NS travelling at \sim1000km s^{-1} \gg v_{OB} \sim 10 km s^{-1}. From [[https://ui.adsabs.harvard.edu/abs/2004ApJ...600L..51C/abstract][Chatterjee & Cordes 2003]].
+#+ATTR_HTML: :width 100%
+[[./images/guitar_nebula.png]]
 
 These are explained invoking an energy and momentum re-distribution
 between the forming compact object and the SN ejecta allowed by the
@@ -347,6 +347,12 @@ convective with a convective turnover timescale faster than the
 explosion, this explaination is currently disfavored. Another
 possibility is that hydrodynamical instabilities lead to aspherical
 flows.
+
+
+#+CAPTION: Schematic of the development of a large asymmetry in a 3D CCSN simulation resulting in a large natal kick. From \cite{muller:17}.
+#+ATTR_HTML: :width 100%
+[[./images/sketch_perturbations.png]]
+
 
 A key prediction of this ``tug-boat'' model is that the SN shock is
 faster in the direction opposite to the one in which the compact
