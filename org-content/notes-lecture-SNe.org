@@ -27,20 +27,24 @@ rotation rate ([[https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D][Doherty 
 is the rule rather than the exception ([[http://adsabs.harvard.edu/abs/2012Sci...337..444S][Sana et al. 2012]]), can also
 change this threshold ([[http://adsabs.harvard.edu/abs/2017A%26A...601A..29Z][Zapartas et al. 2017]], [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]]).
 
-*N.B.:* In other subfields, for example asteroseismology or exoplanets,
-"massive" may just mean "with a convective main sequence core",
-meaning M_{ZAMS} \ge 1.2-1.3M_{\odot}.
-
 *N.B.:* At the lower mass end, super-AGB supernova progenitors may reach
 the onset of core collapse because of electron-captures in the oxygen,
-neon, magnesium degenerate core instead of because electron-captures
-in the iron core (cf. [[file:in-class-evol-wrap-up.org::*super-AGB stars][sAGB evolution]]).
+neon, magnesium degenerate core producing a so-called "electron
+capture SN" (cf. [[file:in-class-evol-wrap-up.org::*super-AGB stars][sAGB evolution]]) instead of because electron-captures
+in the iron core. In reality, al CCSNe /are/ electron-capture SNe
+because electron captures always play a role in accelerating the
+collapse (see below).
+
+*N.B.:* In other subfields, for example asteroseismology or exoplanets,
+"massive" may just mean "with a convective main sequence core",
+meaning a much lower threshold M_{ZAMS} \ge 1.2-1.3M_{\odot}.
 
 At the very end of the evolution, the degenerate iron core is too
 massive to be sustained by the electron degeneracy pressure, and
-therefore it collapses because of gravity, reaches (super--)nuclear
+therefore it collapses under its own gravity, reaches (super--)nuclear
 density (\rho\geq10^{14} g cm^{-3}), bounces due to the repulsive core of the
-nuclear force and this triggers a shock-wave.
+nuclear force (cf. [[./notes-lecture-nuclear-burning.org][lecture on microphysics of nuclear reactions]]) and
+this triggers a shock-wave.
 
 *N.B.:* The collapse and bounce is analogous to a ball bouncing off a
 wall which momentarily compresses a bit and momentum changes sign in
