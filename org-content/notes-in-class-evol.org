@@ -28,6 +28,7 @@ copious dose of healthy skepticism and trying to filter out the
 numerical artifacts from physical features of the models to build
 understanding!
 
+
 ** Brief description of pgstar movies created by =MESA-web=
 Since you downloaded your models from [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]], it makes sense to
 start trying to understand your model using the =*.mp4= movie it
@@ -100,7 +101,7 @@ to hydrogen core burning and report on [[https://docs.google.com/spreadsheets/d/
 luminosity at that point.
 
 *Hint*: A very simple approximate criterion we can adopt here is
-=center_h1= <= 99% =center_h1= at the beginning of the evolution: this
+=center_h1= \le 99% =center_h1= at the beginning of the evolution: this
 imposes that a small amount of hydrogen has burned, enough to
 establish equilibrium, but we are still very close to a homogeneous
 initial stellar structure. You can find the variable =center_h1= in your
@@ -111,6 +112,21 @@ initial stellar structure. You can find the variable =center_h1= in your
 #+ATTR_HTML: :width 100%
 [[./images/LM_crowdsourced.png]]
 
+The red dots here correspond to log_{10}[(M/M_{\odot})^{3}], the L(M) relation
+that can be obtained assuming hydrostatic equilibrium /and/ purely
+radiative energy transport. Despite this assumption, which is /not/
+verified for most of the stars, the agreement between these relations
+is not bad! We can barely notice two expected significant deviations:
+
+- at low masses we have a /steepening/ of the relation: the portion of
+  these stars being convective is progressively larger. Assuming fully
+  convective transport of energy (i.e., assuming an adiabatic
+  temperature gradient), one can in fact derive L(M) \propto M^{4}, steeper
+  than the theoretical scaling represented here
+- at the high masses we have a /flattening/: this is because for very
+  massive stars their luminosity L \rightarrow L_{Edd}\propto M, therefore we
+  expect a progressive flattening until L(M)\propto M. This may also be
+  implicated in the discussion for what is the maximum mass of a star.
 
 ** Discuss with your "mass" group
 Compare your model to the models of people nearby you and explore the
