@@ -82,12 +82,12 @@ accrete mass, in the most massive stars (which have shorter KH
 timescales and pre-MS phases), accretion may not be over until even
 after ZAMS! See for instance the recent review by [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]].
 
-*N.B.:* this accretion drives "outflows" in Young stellar objects, which
+*N.B.:* this accretion drives "outflows" in young stellar objects, which
 can be "dusty" and thus opaque, making the pre-main sequence evolution
 /embedded/ and hard to directly observe.
 
 The \langle T \rangle is initially low (the gas that is collapsing is coming from
-the ISM), and increasing. Since \nabla = \partial ln(T)/\partial ln(P) \propto \kappa L and \kappa
+the interstellar medium), and increasing. Since \nabla = \partial ln(T)/\partial ln(P) \propto \kappa L and \kappa
 generally increases at low T, initially the stars have steep
 temperature gradient and are /fully convective/! This homogenizes their
 composition (but deuterium burning during the pre-MS can change this),
@@ -113,11 +113,12 @@ elements (^{2}H,^{7}Li) that releases some energy.
 is very low and does not manage to alt the thermal-timescale
 quasi-static collapse.
 
-*The Hayashi line effectively determines a right, low-T_{eff} boundary on
-the HRD for stars in hydrostatic equilibrium*: if a star were to be
-colder, it would have a steeper-than-adiabatic gradient somewhere and
-a lower opacity \kappa, thus radiation would escape more easily, meaning L
-would increase, moving the star upwards back onto the Hayashi track.
+*The Hayashi line effectively determines a right, low-T_{eff} boundary
+on the HRD for stars in hydrostatic equilibrium*: if a star were to be
+colder, it would have a steeper-than-adiabatic gradient somewhere,
+which would imply a higher convective flux (cf. [[file:notes-lecture-convection.org::*Convective energy flux][convective energy
+flux]])) and thus increase the luminosity of the star, moving the star
+upwards back onto the Hayashi track.
 
 *N.B.:* for these cool temperatures, we already know that the opacity is
 dominated by H^{-}, molecules, and dust, and we have approximate powerlaw
@@ -131,9 +132,9 @@ remaining 3 EOSs assuming some form for \kappa\equiv\kappa(T,\rho) at the photos
 effectively the outer boundary condition and atmospheric physics
 determines this.
 
-Stars to the right, hotter side of the Hayashi track instead must not
-be /fully convective/ and have some radiative layers (recombination
-and light-elements burning chaging \kappa and \mu)!
+Stars to the left, hotter side of the Hayashi track instead must not
+be /fully convective/ and have some radiative layers (recombination and
+light-elements burning chaging \kappa and \mu)!
 
 * Main sequence
 
