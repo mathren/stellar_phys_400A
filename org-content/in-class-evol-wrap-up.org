@@ -242,13 +242,15 @@ accurate!), but it tells that:
   single-star lifetimes of stars that burn all the way to iron is only
   \sim10-50Myr (M_{ZAMS}\ge7.5M_{\odot}, with the exact lower limit depending
   on Z, rotation, binary interactions, cf. for example [[https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D/abstract][Doherty et al.
-  2017]] and [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]]), compared to \gt 10^{9} years for M_{ZAMS}\le1M_{\odot}
-- the higher the mean molecular weight \mu (= number of particles per
-  baryonic mass), the higher the luminosity.
+  2017]] and [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]]), compared to \gt 10^{9} years for
+  M_{ZAMS}\le2M_{\odot}.
 
 #+CAPTION: Stellar lifetime as a function of initial masses from [[https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..29Z/abstract][Zapartas et al. 2017]]. =MESA= and =GENEC= models are shown, focusing on masses that result in a final core-collapse event. The bottom panel shows the deviations between the analytic fit and the numerical models.
 #+HTML_ATTR: :width 100%
 [[./images/stellar_lifetimes.png]]
+
+- the higher the mean molecular weight \mu (= number of particles per
+  baryonic mass), the higher the luminosity.
 
 
 Using Eq. \ref{eq:L_scaling} we can infer that the high power of \mu
