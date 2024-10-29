@@ -255,8 +255,8 @@ accurate!), but it tells that:
 
 Using Eq. \ref{eq:L_scaling} we can infer that the high power of \mu
 drives the luminosity evolution of the stars during the main sequence:
-because hydrogen is converted into helium (X \rightarrow Y), the mass-weighted
-average \langle \mu \rangle = \int dm \mu(m)/\int dm increases and thus L increases.
+because hydrogen is converted into helium (X \rightarrow Y), the *mass-weighted
+average \langle \mu \rangle = \int dm \mu(m)/\int dm increases and thus L increases*.
 
 *N.B.:* massive and low mass stars however have a very different
 morphology of the main sequence. For stars with radiative cores
@@ -289,7 +289,6 @@ in \mu is determining their /evolution/ along the main sequence.
 Looking at the Kippenhahn diagrams and composition diagrams from
 =MESA-web= we can also see what the model does in the core (something
 not /directly/ accessible to observations - if not through neutrinos).
-
 For low mass stars with radiative cores and high \rho_{center} (something
 you can derive from the virial theorem + hydrostatic equilibrium +
 EOS), partial degeneracy already plays a role in sustaining the
@@ -309,8 +308,12 @@ becomes "less steep", meaning there is less need for convection:
 /during the main sequence of massive stars, the convective core
 receeds in mass coordinate/.
 
+#+CAPTION: Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 1M_{\odot}, Z=0.02 =MESA= model across its main sequence evolution. The color go from dark (\sim ZAMS) to light (\sim TAMS).
+#+ATTR_HTML: :width 100%
+[[./images/1Msun_X_M.png]]
 
-#+CAPTION: Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 20M_{\odot}, Z=0.001 =MESA= model across its main sequence evolution. The color go from dark (\sim ZAMS) to light (\sim TAMS), and as time passes the core receeds because of the change in \kappa.
+
+#+CAPTION: Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 20M_{\odot}, Z=0.001 =MESA= model across its main sequence evolution. The color go from dark (\sim ZAMS) to light (\sim TAMS), and as time passes the core recedes because of the change in \kappa.
 #+ATTR_HTML: :width 100%
 [[./images/20Msun_H_profile.png]]
 
