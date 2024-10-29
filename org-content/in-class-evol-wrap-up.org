@@ -246,7 +246,7 @@ accurate!), but it tells that:
   M_{ZAMS}\le2M_{\odot}.
 
 #+CAPTION: Stellar lifetime as a function of initial masses from [[https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..29Z/abstract][Zapartas et al. 2017]]. =MESA= and =GENEC= models are shown, focusing on masses that result in a final core-collapse event. The bottom panel shows the deviations between the analytic fit and the numerical models.
-#+HTML_ATTR: :width 100%
+#+ATTR_HTML: :width 100%
 [[./images/stellar_lifetimes.png]]
 
 - the higher the mean molecular weight \mu (= number of particles per
