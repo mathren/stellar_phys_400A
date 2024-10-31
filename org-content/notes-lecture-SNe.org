@@ -277,14 +277,19 @@ collapsing core of a massive star:
 - Convection implies the presence of turbulent flow and an associated
   turbulent pressure (P_{turb}\simeq \rho v_{turb}^{2}) that can help pushing
   the shock ([[https://ui.adsabs.harvard.edu/\#abs/2018ApJ...865...81O][O'Connor et al. 2018]]),
-- Standing accretion Shock Instability (SASI, [[http://adsabs.harvard.edu/abs/2003ApJ...584..971B][Blondin et al. 2003]]):
-  when the shock stalls its surface is perturbed by the infalling
-  material. These perturbation (e.g., in terms of the local velocity)
-  are advected downwards by convection and amplified which leads to a
-  sloshing motion of the shock (although recently it was suggested
-  that the growth time of this instability may be too long for it to
-  play a role in successful explosions, where other mechanism revive
-  the shock faster than SASI can develop, see [[https://ui.adsabs.harvard.edu/abs/2023ApJ...957...68B][Burrows et al. 2023]].)
+- Standing accretion Shock Instability (SASI, [[http://adsabs.harvard.edu/abs/2003ApJ...584..971B][Blondin et al. 2003]], see
+  also embedded video below): when the shock stalls its surface is
+  perturbed by the infalling material. These perturbation (e.g., in
+  terms of the local velocity) are advected downwards by convection
+  and amplified which leads to a sloshing motion of the shock
+  (although recently it was suggested that the growth time of this
+  instability may be too long for it to play a role in successful
+  explosions, where other mechanism revive the shock faster than SASI
+  can develop, see [[https://ui.adsabs.harvard.edu/abs/2023ApJ...957...68B][Burrows et al. 2023]].) *N.B.:* there is a mathematical
+  analogy between the problem of the propagation of a perturbed shock
+  with convection behind it and the draining of shallow water, and the
+  same instability can develop in a table top experiment, see
+  [[https://www.youtube.com/watch?v=5fcsSA31rkE][for example this experiment]].
 - Lepton Emission Self-Sustained Emission (LESA, [[https://ui.adsabs.harvard.edu/\#abs/2014ApJ...792...96T][Tamborra et al 2014]]),
   found in 3D simulations where the neutrino emission is roughly
   dipolar.
@@ -295,7 +300,7 @@ time spent by matter in the gain region, where the energy of the
 neutrinos can be harvested and used to push the shock (ii) provide
 extra pressure terms (e.g., due to turbulence). The combination of
 these two should result, at least in some cases, in successful
-explosions.
+explosions (since we do observe SNe!).
 
 
 The first axisymmetric (i.e., 2D) simulations showed some successful
@@ -322,7 +327,14 @@ The most massive stellar cores, for which the Si/O interface is at a
 large Lagrangian mass coordinate, develop strong neutrino driven
 convection, which together with the contribution of the turbulent
 pressure drives a successful explosion with significant fallback and
-result in the formation of a black hole.
+result in the formation of a BH.
+
+*N.B.:* BHs may form if this explosion mechanism fails (possibly with
+very little more than the disappearance of the star as a transient,
+see for instance [][]), /or/ with an explosions and a visible transient
+anyways (see for instance) -- it is possible both occur in nature
+depending on the mass of the progenitor (and BH) considered and this
+is highly debated presently.
 
 Intermediate mass cores show a steep density gradient at the Si/O
 interface: if the shock can reach this interface, it will
@@ -345,7 +357,7 @@ progenitor structure (in terms of angular momentum and magnetic
 fields) is even more uncertain.
 
 
-#+HTML:<iframe width="560" height="315" src="https://www.youtube.com/embed/XzaYNOKK6Xk?si=WnOgcVW-wDQLuOTD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/4SPq9_-h0Bs?si=-Ljb_roZT__rprtf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ** Neutron star kicks
