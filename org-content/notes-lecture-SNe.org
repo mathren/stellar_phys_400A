@@ -205,28 +205,31 @@ ultimately is the energy source of the possible SN explosion:
 \end{equation}
 #+end_latex
 This largely exceeds the total binding energy of the stellar envelope,
-and roughly speaking $100$ times more that the typical kinetic energy
+and roughly speaking 100 times more that the typical kinetic energy
 of a SN explosions (1 Bethe \equiv 1 f.o.e. \equiv 10^{51} erg). Note that the
 energy radiated away by a SN is typically a small fraction of the
 kinetic energy ($\int L_\mathrm{SN}(t)\,dt \simeq10^{49}\,\mathrm{erg}$).
 Thus, the CCSN explosion problem is about how this energy can be
 harvested by the shock to explode the star.
 
-#+CAPTION: Evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for the explosion of an 18 M_{\odot} stellar model. Red curves are computed in 1D: in spherical symmetry the shock stalls and its radius stays roughly constant. This is Fig.~5 of [[http://adsabs.harvard.edu/abs/2016PASA...33...48M][M\"uller 2016]].
+#+CAPTION: Evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for the explosion of an 18 M_{\odot} stellar model. Red curves are computed in 1D: in spherical symmetry the shock stalls and its radius stays roughly constant. This is Fig.~5 of [[http://adsabs.harvard.edu/abs/2016PASA...33...48M][Muller 2016]].
 #+ATTR_HTML: :width 100%
 [[./images/shockR.png]]
 
 As the shock wave propagates in the outer core, it loses energy by
 /heating and photodisintegrating the infalling material/, and overcoming
 the /ram pressure/ (P_{ram }\simeq \rho v^{2}) of this same material.
-Moreover, all the neutrinos that are not absorbed in the ``gain
-region'' contribute to decreasing the total energy of the material
-behind the shock. The energy loss through these mechanisms leads to a
-stalled shock (the shock radius remains roughly constant for \sim0.1
-millisec) in most simulations available to date. An uncertain ``shock
-revival mechanism'' must act to revive the shock and restart its
-radial expansion allowing it to unbind the stellar envelope and
-produce a SN explosion.
+Neutrinos are emitted from the cooling proto-NS and absorbed in a
+layer, called "gain layer" behind the shock, who is still in a region
+of the star so dense that neutrinos are /not/ free to stream out. All
+the neutrinos that are not absorbed in the gain region contribute to
+decreasing the total energy of the material behind the shock. The
+energy loss through these mechanisms leads to a stalled shock (the
+shock radius remains roughly constant for \sim0.1 millisec) in most
+simulations available to date. An uncertain ``shock revival
+mechanism'' must act to revive the shock and restart its radial
+expansion allowing it to unbind the stellar envelope and produce a SN
+explosion.
 
 In the /neutrino-driven paradigm/ (for reviews see [[https://ui.adsabs.harvard.edu/abs/2012ARNPS..62..407J][Janka 2012]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.4689V][Vartanyan
 et al. 2022]]), the shock is pushed by the large neutrino emission from
@@ -254,7 +257,7 @@ that might help pushing the shock, and this might be the dominant
 explosion mechanism for long gamma ray bursts and SNIc showing broad
 emission lines (i.e., very large ejecta velocities).
 
-#+CAPTION: Sketch of the key ingredients for a successful explosion in the neutrino driven paradigm, from [[https://ui.adsabs.harvard.edu/\#abs/2017IAUS..329...17M][M\"uller 2017]]
+#+CAPTION: Sketch of the key ingredients for a successful explosion in the neutrino driven paradigm, from [[https://ui.adsabs.harvard.edu/\#abs/2017IAUS..329...17M][Muller 2017]]
 #+ATTR_HTML: :width 100%
 [[./images/sketch_mechanism.png]]
 
@@ -273,7 +276,7 @@ collapsing core of a massive star:
   neutrino heating);
 - Convection implies the presence of turbulent flow and an associated
   turbulent pressure (P_{turb}\simeq \rho v_{turb}^{2}) that can help pushing
-  the shock [[https://ui.adsabs.harvard.edu/\#abs/2018ApJ...865...81O][O'Connor et al. 2018]],
+  the shock ([[https://ui.adsabs.harvard.edu/\#abs/2018ApJ...865...81O][O'Connor et al. 2018]]),
 - Standing accretion Shock Instability (SASI, [[http://adsabs.harvard.edu/abs/2003ApJ...584..971B][Blondin et al. 2003]]):
   when the shock stalls its surface is perturbed by the infalling
   material. These perturbation (e.g., in terms of the local velocity)
