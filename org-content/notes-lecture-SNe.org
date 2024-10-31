@@ -359,6 +359,7 @@ fields) is even more uncertain.
 
 #+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/4SPq9_-h0Bs?si=-Ljb_roZT__rprtf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+#+HTML: <iframe width="560" height="315" src="https://youtube.com/shorts/QDqCbrD80bI?si=GxbsooSRdg8zSM-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ** Neutron star kicks
 
