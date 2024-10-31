@@ -300,7 +300,7 @@ time spent by matter in the gain region, where the energy of the
 neutrinos can be harvested and used to push the shock (ii) provide
 extra pressure terms (e.g., due to turbulence). The combination of
 these two should result, at least in some cases, in successful
-explosions (since we do observe SNe!).
+explosions (since we do observe SNe and NS!).
 
 
 The first axisymmetric (i.e., 2D) simulations showed some successful
@@ -331,10 +331,12 @@ result in the formation of a BH.
 
 *N.B.:* BHs may form if this explosion mechanism fails (possibly with
 very little more than the disappearance of the star as a transient,
-see for instance [][]), /or/ with an explosions and a visible transient
-anyways (see for instance) -- it is possible both occur in nature
-depending on the mass of the progenitor (and BH) considered and this
-is highly debated presently.
+see for instance [[https://ui.adsabs.harvard.edu/abs/2015MNRAS.450.3289G/abstract][Gerke et al. 2015]], [[https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.1156B/abstract][Basinger et al. 2021]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv241007055T/abstract][Tsuna et al.
+2024]]), /or/ with an explosions and a visible transient anyways (see for
+instance [[https://ui.adsabs.harvard.edu/abs/2013ApJ...769..109L/abstract][Lovegrove & Woosley 2013]], [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.485L..83Q/abstract][Quartaet et al. 2019]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.511..176A/abstract][Antoni et al.
+2022]]) -- it is possible both occur in nature depending on the mass of
+the progenitor (and BH) considered and this is highly debated
+presently.
 
 Intermediate mass cores show a steep density gradient at the Si/O
 interface: if the shock can reach this interface, it will
@@ -357,9 +359,12 @@ progenitor structure (in terms of angular momentum and magnetic
 fields) is even more uncertain.
 
 
+Example of a 3D neutrino radiation hydrodynamics simulation (3D \nu-RHD)
+of a SASI-driven explosion:
 #+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/4SPq9_-h0Bs?si=-Ljb_roZT__rprtf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-#+HTML: <iframe width="560" height="315" src="https://youtube.com/shorts/QDqCbrD80bI?si=GxbsooSRdg8zSM-Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Example of a 3D \nu-RHD simulation dominated by neutrino convection:
+#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/watch?v=W4tvoKVBYTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ** Neutron star kicks
 
@@ -368,7 +373,8 @@ asymmetries are likely the key to the success of the explosion. This
 is further confirmed by the large velocities at which we observe some
 single NSs moving. The proper motion of radio pulsars can correspond
 to velocities in excess of \sim1000 km s^{-1}, which is much higher than the
-maximum velocity at which we observe O and B type stars moving.
+maximum velocity at which we observe O and B type stars moving through
+the galaxy (\le10km s^{-1} for the bulk of the population).
 
 #+CAPTION: Guitar nebula formed by the bow shock of a NS travelling at \sim1000km s^{-1} \gg v_{OB} \sim 10 km s^{-1}. From [[https://ui.adsabs.harvard.edu/abs/2004ApJ...600L..51C/abstract][Chatterjee & Cordes 2003]].
 #+ATTR_HTML: :width 100%
@@ -391,8 +397,8 @@ flows.
 
 Whether the SN shock achieves a runaway radial growth (successful
 explosion,) or it stalls and reverts (failed explosion, likely to
-result in BH formation) is typically decided within the first few 100
-millisec after core-bounce. However, until few seconds after
+result in BH formation) is typically decided within the first few 100s
+of millisec after core-bounce. However, until few seconds after
 core-bounce the deeper layers of the ejecta and the proto-NS are still
 dynamically connected, and interact through gravity (see, e.g, [[http://adsabs.harvard.edu/abs/2013MNRAS.434.1355J][Janka
 2013]], [[https://ui.adsabs.harvard.edu/abs/2023arXiv231112109B][Burrows et al. 2023b]]). If a clump of ejecta is more dense
@@ -604,3 +610,5 @@ are dominant in this problem space!
  - Neutron star or black hole?
  - If black hole, with or without explosion?
  - BH kicks?
+ - Impact of the progenitor structure (including rotation and magnetic
+   fields) on the outcome
