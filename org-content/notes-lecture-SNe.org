@@ -14,11 +14,11 @@ novae, tidal disruption events, etc. (see also [[./projects.org][projects]]).
 * Gravity's victory over nuclear energy release
 
 "Massive stars" can be defined as those that will end their life
-forming a compact object, either a neutron star (NS) or a black hole
-(BH). This requires them to consume (at least partially) the
-oxygen-rich core, that is, for the widest range of initial masses, to
-build a silicon-rich core and subsequently iron-rich core that is too
-massive to be sustained by the electron degeneracy pressure (M_{Fe} \ge
+collapsing either into a neutron star (NS) or a black hole (BH). This
+requires them to consume (at least partially) the oxygen-rich core,
+that is, for the widest range of initial masses, to build a
+silicon-rich core and subsequently iron-rich core that is too massive
+to be sustained by the electron degeneracy pressure (M_{Fe} \ge
 M_{Chandrasekhar}). This core is therefore doomed to collapse under the
 influence of its own self-gravity, and this can result in a successful
 supernova explosion. For single massive stars, this happens for
@@ -100,6 +100,7 @@ pressure, where s_{e} is the electrons specific entropy and the term
 dependent on it is a "thermal correction" to account for the fact that
 not the entire core is fully degenerate and with k_{B}T\ll\varepsilon_{Fermi}.
 
+
 * Physics of core collapse
 
 ** Core Bounce
@@ -115,17 +116,20 @@ conventional definition for the onset of collapse is
   \mathrm{max}\{ |v| \} \geq 10^3 \ \mathrm{km \ s^{-1}} \ \ ,
 \end{equation}
 #+end_latex
-where v is the radial infall velocity. The arbitrary threshold set by
-Eq. \ref{eq:onset_cc} is motivated by the fact that, at this point, the
-star is a few tenths of seconds (roughly a dynamical timescale) away
-from ``core bounce'' (see below). The central density is so high ($\rho
-\gtrsim 10^{10} \mathrm{ \ g \ cm^{-3}}$) that stellar evolution codes
-usually cannot properly simulate the physics needed (e.g., the high
-density regions require a different equation of state - EOS,
-hydrostatic equilibrium does not hold any longer, neutrinos start to
-be trapped because of the higher density and neutrino opacity).
-However, this is a purely technical threshold, while in nature the
-evolution of such a star is continuous during collapse.
+where v is the radial infall velocity. This is the very latest point
+to which a stellar evolution model can be computed with a stellar
+evolution code (e.g., =MESA= and/or =MESA-web=), but it is just an
+arbitrary threshold set by Eq. \ref{eq:onset_cc} is motivated by the
+fact that, at this point, the star is a few tenths of seconds (roughly
+a dynamical timescale) away from ``core bounce'' (see below). The
+central density is so high ($\rho \gtrsim 10^{10} \mathrm{ \ g \ cm^{-3}}$)
+that stellar evolution codes usually cannot properly simulate the
+physics needed (e.g., the high density regions require a different
+equation of state - EOS, hydrostatic equilibrium does not hold any
+longer, neutrinos start to be trapped because of the higher density
+and neutrino opacity). However, this is a purely technical threshold,
+while in nature the evolution of such a star is continuous during
+collapse.
 
 During collapse, electron capture reactions, e.g.,
 
@@ -179,7 +183,7 @@ the direction perpendicular to the wall progressively across the ball
 volume. In this analogy, for a collapsing star, the wall is the inner
 core reaching super-nuclear densities.
 
-#+CAPTION: Velocity profile for the core of an initially 15 M_{\odot} star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward (v<0) everywhere. The  data in the right panel are obtained using the open-source code GR1D, [[http://adsabs.harvard.edu/abs/2010CQGra..27k4103O][O'connor & Ott 2010]], with the data at  the onset of core collapse as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of \sim1.4 M_{\odot} of Fe-rich material with radius of almost \sim1000 km to a proto-NS with radius of \sim10 km.
+#+CAPTION: Velocity profile for the core of an initially 15 M_{\odot} star at the onset of core-collapse (left panel) at core bounce (right panel). Note the linear behavior of the infall in the inner core on the left panel. Note also the scales on the two panels: at the onset of core collapse, the infall velocity is still subsonic and directed inward (v<0) everywhere. The  data in the right panel are obtained using the open-source code GR1D ([[http://adsabs.harvard.edu/abs/2010CQGra..27k4103O][O'connor & Ott 2010]]), with the data at the onset of core collapse (left panel) as input. The energy source to drive the explosion is the gravitational binding energy released by the collapse of \sim1.4 M_{\odot} of Fe-rich material with radius of almost \sim1000 km to a proto-NS with radius of \sim10 km. This figure is modified from [[https://etd.adm.unipi.it/theses/available/etd-05062015-125630/unrestricted/Thesis_colored_10052015.pdf][Renzo 2015]].
 #+ATTR_HTML: :width 100%
 [[./images/v_profile_core_bounce.png]]
 
@@ -237,6 +241,7 @@ emission lines (i.e., very large ejecta velocities).
 #+CAPTION: Sketch of the key ingredients for a successful explosion in the neutrino driven paradigm, from [[https://ui.adsabs.harvard.edu/\#abs/2017IAUS..329...17M][M\"uller 2017]]
 #+ATTR_HTML: :width 100%
 [[./images/sketch_mechanism.png]]
+
 
 ** Shock revival mechanisms
 As mentioned above, historically, numerical simulations of
@@ -526,6 +531,7 @@ The figure below shows a breakdown per SN type:
 #+CAPTION: [[https://academic.oup.com/mnras/article-lookup/doi/10.1111/j.1365-2966.2011.17229.x][Smith et al. 2011]] break down of CCSN by type in a  volume limited sample.
 #+ATTR_HTML: :width 50%
 [[./images/smith11.png]]
+
 
 * Light curves
 
