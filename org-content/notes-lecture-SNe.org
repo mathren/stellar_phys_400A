@@ -46,6 +46,14 @@ density (\rho\geq10^{14} g cm^{-3}), bounces due to the repulsive core of the
 nuclear force (cf. [[./notes-lecture-nuclear-burning.org][lecture on microphysics of nuclear reactions]]) and
 this triggers a shock-wave.
 
+*N.B.:* The collapse of the exhausted core takes a /dynamical/ timescale,
+which for the densities reached at the end of the nuclear life of the
+star (\rho\ge10^{10} g cm^{-3}) is extremely short, \tau_{free fall}\sim0.1 sec \leq
+blink of an eye!. Therefore, while the inner core collapses, the outer
+layer barely notice that something is happening: the collapse, bounce
+and reversal of the velocity therefore has to trigger a shock
+(discontinuity in the velocity of the gas)!
+
 The shock wave launched is thought to explode the star, unbinding the
 stellar envelope. However, historically (hydrodynamical) simulations
 have had limited success in producing explosions. In most cases, the
@@ -187,7 +195,8 @@ core reaching super-nuclear densities.
 #+ATTR_HTML: :width 100%
 [[./images/v_profile_core_bounce.png]]
 
-The collapse of the core releases gravitational binding energy:
+The collapse of the core releases gravitational binding energy, which
+ultimately is the energy source of the possible SN explosion:
 #+begin_latex
 \begin{equation}
   \label{eq:3}
@@ -224,12 +233,19 @@ et al. 2022]]), the shock is pushed by the large neutrino emission from
 the hot proto-NS formed in the inner part of the bouncing inner core.
 These neutrinos are mostly produced by electron captures to
 ``neutronize'' the Fe core (in the innermost ``cooling-region'' where
-the proto-NS is), cf. \Eqref{eq:ecap} and from [[./notes-lecture-neutrinos.org::*Thermal neutrinos][cooling processes]]. A
+the proto-NS is), cf. Eq. \ref{eq:ecap} and from [[./notes-lecture-neutrinos.org::*Thermal neutrinos][cooling processes]]. A
 small fraction of these neutrinos will interact in a region behind the
 shock (the so-called ``gain-region''). This is because the stellar
 plasma has now densities and temperatures higher than during core Si
 burning, and the cross section for neutrino absorption is not
 negligible anymore.
+
+
+#+CAPTION: Strong empirical evidence for the crucial involvement of neutrinos in CCSNe came from the direct detection of \sim12 high energy neutrinos coincident with SN1987A which went off in the LMC, the latest supernova within \sim50kpc (see [[https://ui.adsabs.harvard.edu/abs/1989ARA%26A..27..629A/abstract][Arnett 1989]] review).
+#+ATTR_HTML: :width 100%
+[[./images/87A.jpeg]]
+
+
 
 Note, however, that other explosion mechanism relying less heavily on
 the neutrino flux have been proposed. For instance, accretion on the
