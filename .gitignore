@@ -35,3 +35,5 @@ presentation_schedule.*
 MIST/*
 
 *.zip
+
+student_projects/*
