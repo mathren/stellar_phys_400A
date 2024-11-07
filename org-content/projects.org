@@ -110,6 +110,13 @@ The breakdown of the  project/presentation grade is as follows:
 - 40% for the written report (corresponding to 16% of the total final grade)
 - 10% from how you provide feedback to others (corresponding to 4% of the total final grade).
 
+To make sure that the feedback can be of use to the presenter, you
+will be expected to provide it /at least/ 2 work-days pre-presentation
+(i.e., on Fridays for presentations on Tuesday and on Tuesdays for
+presentations on Thursdays). This gives referees a few working days to
+read and comment, and at least 2 days to the presenters to consider
+and act on said comments.
+
 *** Evaluation rubric
 
 Remember to appreciate the time and effort others have put in their
