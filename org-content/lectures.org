@@ -148,8 +148,8 @@ core-collapse and the formation of compact objects.
 ** <2024-11-07 Thu> - *Guest lecture*: Neutrinos
 Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
 
-[[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
-[[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
+- [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
+- [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
 
 ** <2024-11-12 Tue> - Four student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
