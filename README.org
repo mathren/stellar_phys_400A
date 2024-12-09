@@ -38,3 +38,7 @@ control to =build.sh=, which finishes things by pushing to this repo and
 rsync the =html= files from the server where I host the website (this is
 just because the server is very old and I cannot have a modern version
 of emacs to build directly there).
+
+* Log
+
+Fall 2024 course corresponds to release v1.0.
