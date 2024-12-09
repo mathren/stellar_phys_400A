@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2024-12-08 Sun 18:50 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Honors project</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="./css/style.css" />
+<!-- <link rel="stylesheet" href="./css/fontawesome.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, 400A, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./README.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- The hamburger menu  -->
+<script>
+  function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+</div>
+<div id="content" class="content">
+
+<div id="outline-container-org4b6e141" class="outline-2">
+<h2 id="org4b6e141"><a href="#org4b6e141">Main sequence burning in massive population III stars</a></h2>
+<div class="outline-text-2" id="text-org4b6e141">
+<p>
+Nuclear burning in massive stars occurs through the CNO cycle, which
+uses metals (Carbon, Nitrogen, and Oxygen) as catalysts to stick
+together 4 protons, turn two of them into neutrons, and produce
+helium. However, what happens when C, N, and O are <i>not</i> available?
+</p>
+
+<p>
+One physical situation where we think this may have happened is for
+Population III stars, the first stars formed from pristine material
+from the Big Bang: those only had H and He (and maybe some trace Li
+and Be), no C, N, or O was available in the gas cloud they formed
+from. <b>N.B.:</b> we have not seen these stars, but clearly at some point
+they must have existed! The only way to study how they evolved for now
+is through numerical simulations.
+</p>
+
+<p>
+In this project you will compute with the stellar evolution code <a href="https://docs.mesastar.org/en/latest/">MESA</a>
+the evolution of two 30M<sub>☉</sub> non-rotating, non-magnetic, single
+stars, one at solar metallicity Z<sub>☉</sub> and one with Z=0, until the end
+of hydrogen core burning, compare their evolution in terms of their
+potentially observable surface properties <i>and</i> in terms of their
+interior structure, and interpret the differences.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3e965a2" class="outline-2">
+<h2 id="org3e965a2"><a href="#org3e965a2">Instructions</a></h2>
+<div class="outline-text-2" id="text-org3e965a2">
+<ul class="org-ul">
+<li>Follow the <a href="https://docs.mesastar.org/en/latest/">MESA</a> documentation to install the code</li>
+<li>Follow the tutorial to run MESA: this will be your Z<sub>☉</sub> 15M<sub>☉</sub> star!</li>
+<li>By reading the documentation, figure out what to change to make
+this a 30M<sub>☉</sub> star and run it until "terminal age main sequence"
+(end of H core burning).</li>
+<li>By reading the documentation, figure out which options to change to
+set Z=0 (<b>hint</b>: there should be more than one!), and run a second,
+Z=0 30M<sub>☉</sub> star (otherwise identical to the tutorial model)</li>
+<li>Plot as many things as you wish to understand the physical
+differences between the two models and write up a short text (&lt;4
+pages including figures) with your findings. Focus on the physical
+processes in the stellar interior and why they may differ, and put
+them in the context of the course material.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#top"><i class="fa fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa fa-github" style="font-size:16px"></i></a>
+  <hr>
+  <br>
+  Last updated on 8 December 2024 <br>
+  Made with Emacs 28.1 - Org mode 9.5.2
+  <br>
+</div>
+</div>
+</body>
+</html>

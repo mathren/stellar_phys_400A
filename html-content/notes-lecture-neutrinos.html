@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2024-12-08 Sun 18:50 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>400A - Neutrinos &amp; computational stellar evolution</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="./css/style.css" />
+<!-- <link rel="stylesheet" href="./css/fontawesome.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, 400A, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./README.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- The hamburger menu  -->
+<script>
+  function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+</div>
+<div id="content" class="content">
+<p>
+<b>Materials:</b>  Onno Pols' notes Sec. 6.5 and 12.3.1, Chapter 7, Kippenhahn chapter
+9, 10, 11
+</p>
+
+
+<div id="outline-container-org7be1260" class="outline-2">
+<h2 id="org7be1260"><a href="#org7be1260">Neutrino physics in stars</a></h2>
+<div class="outline-text-2" id="text-org7be1260">
+<p>
+We have almost seen all the pieces needed to make a one-dimensional
+hydrostatic model of a star, including the input physics in the
+quantities &kappa; (opacity) and &epsilon;<sub>nuc</sub>. The aim of this lecture is to unpack
+the last input quantities entering in the energy conservation which
+connects stellar physics with neutrino physics: &epsilon;<sub>&nu;.</sub>
+</p>
+</div>
+
+<div id="outline-container-org19fc808" class="outline-3">
+<h3 id="org19fc808"><a href="#org19fc808">Summary of equations we have derived</a></h3>
+<div class="outline-text-3" id="text-org19fc808">
+</div>
+<div id="outline-container-org4061c40" class="outline-4">
+<h4 id="org4061c40"><a href="#org4061c40">Mass conservation</a></h4>
+<div class="outline-text-4" id="text-org4061c40">
+<div class="latex" id="org87854e8">
+\begin{equation}\label{eq:mass_cont}
+\frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
+\end{equation}
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc28d92d" class="outline-4">
+<h4 id="orgc28d92d"><a href="#orgc28d92d">Hydrostatic equilibrium</a></h4>
+<div class="outline-text-4" id="text-orgc28d92d">
+<div class="latex" id="org44e97bb">
+\begin{equation}\label{eq:HSE}
+\frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
+\end{equation}
+
+</div>
+<p>
+which follows from the momentum conservation equation assuming the
+acceleration to be negligible <b>N.B.:</b> this last assumption could be
+relaxed to add an extra term in this equation analogous to ma in F=ma.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org324030b" class="outline-4">
+<h4 id="org324030b"><a href="#org324030b">Equation of state</a></h4>
+<div class="outline-text-4" id="text-org324030b">
+<div class="latex" id="orge792d56">
+\begin{equation}
+P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T + P_{QM} + \frac{1}{3}aT^{4}  \ \ .
+\end{equation}
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb43e143" class="outline-4">
+<h4 id="orgb43e143"><a href="#orgb43e143">Energy transport</a></h4>
+<div class="outline-text-4" id="text-orgb43e143">
+<div class="latex" id="org44727c3">
+\begin{equation}
+\frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
+\end{equation}
+
+</div>
+<p>
+where &nabla; =&part; log(T)/&part; log(P) is the local temperature gradient, equal to
+the radiative gradient in stably stratified regions:
+</p>
+<div class="latex" id="orgd7eae1e">
+\begin{equation}
+\nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
+\end{equation}
+
+</div>
+<p>
+with &kappa; = (1/&kappa;<sub>rad</sub> + 1/&kappa;<sub>cond</sub>)<sup>-1</sup> the combination "in parallel" of the
+radiative and conductive opacity (assumed to be known from atomic
+physics), and &nabla; &equiv; &nabla;<sub>ad</sub> the adiabatic gradient (within &sim;10<sup>-7-8</sup>
+precision) for convective regions. We also have a criterion
+(Schwarzschild criterion) to determine which region is which.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org275a16a" class="outline-4">
+<h4 id="org275a16a"><a href="#org275a16a">Energy conservation</a></h4>
+<div class="outline-text-4" id="text-org275a16a">
+<div class="latex" id="org9055b2a">
+\begin{equation}
+\frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+with &epsilon;<sub>grav</sub> = T&part; s/&part; t the change in internal energy and &epsilon;<sub>&nu;</sub>&gt;0
+(&rArr; it is always a <i>loss</i> term during stellar evolution).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6b6c9b7" class="outline-4">
+<h4 id="org6b6c9b7"><a href="#org6b6c9b7">Composition evolution</a></h4>
+<div class="outline-text-4" id="text-org6b6c9b7">
+<div class="latex" id="orgdd394c7">
+\begin{equation}
+\frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) + D_\mathrm{mix}\frac{dX_{i}}{dr} \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+where the first two terms represent production and destruction of the
+i-th isotope by nuclear processes and the third term represent mixing
+by various instabilities treated in diffusion approximation.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6b17209" class="outline-3">
+<h3 id="org6b17209"><a href="#org6b17209">Two types of neutrinos</a></h3>
+<div class="outline-text-3" id="text-org6b17209">
+<p>
+For the density typical in stellar interior (think of &lang;&rho;<sub>☉</sub>&rang; and the other
+average densities you estimated in the various homeworks), neutrinos
+can safely be considered as non-interacting. This means we can
+consider neutrinos as ultra-relativistic mass-less particles
+propagating at v &cong; c. The mass less approximation also implies that we
+neglect neutrino oscillations: even if a neutrino changes leptonic
+flavor, it's still going to leave the star carrying away its energy!
+</p>
+
+<p>
+<b>N.B.:</b> recall that the leptonic number is +1 for the leptons electron
+e<sup>-</sup>, muon &mu;<sup>-</sup>, tau &tau;<sup>-</sup> and the corresponding neutrinos &nu;<sub>e</sub>, &nu;<sub>&mu;</sub>,
+&nu;<sub>&tau;</sub> and -1 for their antiparticles positron e<sup>+</sup>, positive muon &mu;<sup>+</sup>,
+and positive &tau;<sup>+</sup> and the corresponding antineutrinos.
+</p>
+
+<p>
+Therefore, any neutrino produced in the stellar interior leaves the
+star in the light-crossing time R/c &le; 1000 R<sub>☉</sub>/c &cong; 1000 &times;
+2 sec = 2000 sec which is much shorter than evolutionary timescales
+(and even during shorter evolutionary phases such as silicon shell
+burning, the energy carried by the neutrinos is on its way out and
+nothing is going to stop it from leaving the star).
+</p>
+
+<p>
+These arguments apply to both kinds of neutrinos that we encounter in
+stellar evolution (and are about to introduce), and stop working only
+when densities get extremely high (&rho;&ge;10<sup>10</sup> g cm<sup>-3</sup>): at this point
+neutrinos can and do start interacting with matter. Such densities are
+only encountered in a collapsing core that has exhausted nuclear fuel
+and in neutron stars: neutrino interactions are crucial to the physics
+of the supernova explosions, but can safely be neglected before.
+</p>
+
+<p>
+During the evolution of the star that sets the stage for the
+explosion, we encounter two "classes" of neutrinos.
+</p>
+</div>
+
+<div id="outline-container-org052e74c" class="outline-4">
+<h4 id="org052e74c"><a href="#org052e74c">Nuclear neutrinos</a></h4>
+<div class="outline-text-4" id="text-org052e74c">
+<p>
+We have already encountered processes producing neutrinos occurring in
+stars: <i>weak nuclear reactions</i>! These are needed since the main
+sequence (both in the pp chain and CNO) to convert some protons into
+neutrons for the helium nuclei. On the scale of r<sub>nuc</sub>, the neutrino
+crossing time (that is the light crossing time) is so short that we
+can neglect neutrino oscillations and assume conservation of leptonic
+number to write down the equations.
+</p>
+
+<p>
+These neutrinos do carry away energy as described above, <i>but</i> that is
+just some of the energy that the exo-energetic thermonuclear reaction
+would have released. Effectively, they decrease the energy gain from
+releasing nuclear binding energy but they are not a net energy loss.
+</p>
+
+<p>
+This allows to incorporate them in models by re-writing &epsilon;<sub>nuc</sub>
+&rarr; &epsilon;<sub>nuc</sub> - |&epsilon;<sub>&nu;, nuc</sub>|, where the neutrino term is always negative
+(hence we can write it as minus an absolute value), and needs to be
+calculated from nuclear physics, determining the spectrum of the
+neutrino produced by a given reaction (a non-trivial task which
+stellar physics leaves to neutrinos and nuclear physicists).
+</p>
+
+<p>
+Particularly important for the late evolution of massive stars are
+neutrinos from the so-called <i>URCA processes</i> (named after a casino in
+Rio de Janeiro because when these processes kick in the energy of the
+nuclear reaction goes the same way as the money in the casino!):
+</p>
+<div class="latex" id="org0d9fe7e">
+\begin{equation}
+ ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e  }\\
+ ^{A}(Z-1)\rightarrow ^{A}Z+ e^{+} +\bar{\nu_{e}}
+\end{equation}
+
+</div>
+
+<p>
+which produce one neutrino and one anti-neutrino without changing the
+composition of the star. This requires that the nucleus \(^{A}(Z-1)\) is
+unstable to &beta;<sup>-</sup>-decay and the cross section for electron capture on
+\(^AZ\) is non-negligible, which can happen during Si core burning and
+the subsequent gravitational collapse of the core once the nuclear
+fuel runs out.
+</p>
+
+<p>
+The nuclear neutrinos are mostly sensitive to the core temperature for
+the activation of certain thermonuclear reaction chains (except for
+pycno-nuclear reaction at extremely high densities where the electron
+screening effectively makes the Coulomb barrier negligible).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0ede4b9" class="outline-4">
+<h4 id="org0ede4b9"><a href="#org0ede4b9">Thermal neutrinos</a></h4>
+<div class="outline-text-4" id="text-org0ede4b9">
+<p>
+After helium core burning, the density in the stellar cores become
+sufficiently high (because of the gravothermal collapse) that
+non-nuclear processes producing neutrinos start occurring. After
+carbon depletion, the neutrinos produced by these processes can take
+away more energy than is locally lost to photons by each stellar
+layer: <i>evolved massive stars are neutrino stars</i> L<sub>&nu;</sub>
+&Gt; L<sub>rad</sub> (<a href="https://ui.adsabs.harvard.edu/abs/1968Ap%26SS...2...96F/abstract">Fraley 1968</a>).
+</p>
+
+
+<figure id="org3b5ba79">
+<img src="./images/neutrino_HRD.png" alt="neutrino_HRD.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Left: evolutionary tracks on a photon HR diagram. Right: corresponding evolutionary tracks on a "neutrino" HR diagram. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...893..133F/abstract">Farag et al. 2020</a>. Note the y-axis scale in both panels.</figcaption>
+</figure>
+
+
+<p>
+This also effectively means that the stellar core of evolved (&sim; during
+and after carbon core burning) massive stars is <i>decoupled</i> from the
+stellar envelope: the <i>gravothermal collapse of the core occurs to
+compensate the neutrino losses from the core itself</i>! The thermal
+timescale of the core becomes &tau;<sub>KH,&nu;</sub>&cong; GM<sub>core</sub><sup>2</sup>/(2R<sub>core</sub> L<sub>&nu;</sub>) and
+the nuclear timescale becomes &tau;<sub>nuc,&nu;</sub> = &phi; f<sub>burn</sub> Mc<sup>2</sup>/L<sub>&nu;</sub> both of which
+are much shorter than the timescales in the low density, photon-cooled
+envelope: in the late stages of stellar evolution the envelope should
+be <i>frozen</i> and the core evolves driven by neutrino losses.
+</p>
+
+<p>
+<b>N.B.:</b> it is still the energy losses driving the gravothermal collapse
+because of the virial theorem that govern the evolution, but the
+envelope does not have time to keep up with the core.
+</p>
+
+<p>
+<b>N.B.:</b> recently, observations of early signals of stellar explosion
+have questioned this picture of <i>frozen</i> envelope: there <i>may</i> be some
+presently unknown phenomena happening on a <i>dynamical</i> timescale of the
+envelope in the final years/months of a massive star evolution that
+affect the envelope. The fact that they <i>need to be dynamical</i> to do
+anything is related to the fact that the evolution of the core is sped
+up by the thermal neutrino losses.
+</p>
+
+<p>
+The neutrinos that do <i>not</i> come from nuclear reactions are a real
+energy <i>loss</i> term for the star that enter in the local energy
+conservation equation &epsilon;<sub>&nu;</sub> (which is also always negative!): dL/dm =
+&epsilon;<sub>nuc</sub> - |&epsilon;<sub>&nu;</sub>| +&epsilon;<sub>grav</sub>.
+</p>
+
+<p>
+The <i>thermal</i> processes producing these neutrinos typically will produce
+a neutrino-antineutrino <i>pair</i> to conserve the leptonic number.
+Typically only electron neutrinos will be relevant: leptons other than
+e<sup>&plusmn;</sup> are unstable and are not commonly found in stars. They fall into
+several categories (here x={e,&mu;, or &tau;} but in stellar conditions it's
+typically e):
+</p>
+<ul class="org-ul">
+<li>plasmon processes: \(\gamma + \tilde{\gamma} \rightarrow \nu_x + \bar{\nu}_x\),</li>
+<li>bremsstrahlung: \(e^{-} + ^{A}Z \rightarrow e^{-} + ^{A}Z + \nu_x + \bar{\nu}_x\),</li>
+<li>pair-production: \(\gamma + \gamma \rightarrow \nu_x + \bar{\nu}_x\),</li>
+<li>pair annihilation:  \(e^{+}+e^{-} \rightarrow \nu_x + \bar{\nu}_x\) ,</li>
+<li>photo-processes: \(\gamma +e^{-} \rightarrow e^{-} + \nu_x + \bar{\nu}_x\),</li>
+</ul>
+
+
+<figure id="org3a66218">
+<img src="./images/feynman_diagram_neutrinos.png" alt="feynman_diagram_neutrinos.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 2: </span>Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from <a href="https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract">Aufderheide 1993</a>, and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W<sup>&plusmn;</sup>.</figcaption>
+</figure>
+
+<p>
+<b>N.B.:</b> "plasmons" are collective excitations of the stellar plasma that
+propagate (the analogy is with "solitons" in fluid dynamics), and can
+be quantized and coupled via quantum electrodynamics to e<sup>&plusmn;</sup>.
+</p>
+
+<p>
+<b>N.B.:</b> The Feynman diagrams of some of these processes above are
+illustrating the processes (and the various pieces that contribute in
+the quantum field theory calculation of the cross section), the
+particles that are not "free legs" are mediators and not real
+particles, do not over-interpret these diagrams as physical pictures!
+</p>
+
+<p>
+Neutrino cooling processes are mostly sensitive to the core density &rho;.
+The typical energy carried away per neutrino-antineutrino pair is of
+the order of the thermal energy of the electrons (i.e., their Fermi
+energy if the region from where the neutrinos are emitted is partially
+degenerate).
+</p>
+
+<p>
+Lke &kappa; and &epsilon;<sub>nuc</sub>, the energy losses to thermal neutrinos are usually
+tabulated in stellar physics codes (see especially the widely used
+<a href="https://ui.adsabs.harvard.edu/abs/1996ApJS..102..411I/abstract">Itoh et al. 1996</a>), and the figure below shows the |&epsilon;<sub>&nu;</sub>|
+&equiv; |&epsilon;<sub>&nu;</sub>|(T,&rho;) resulting from these tables:
+</p>
+
+
+<figure id="org348fa4a">
+<img src="./images/Trho_neutrinos.png" alt="Trho_neutrinos.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 3: </span>Neutrino energy losses on the T(&rho;) plane. White lines mark the separation between regions where different neutrino emission processes dominate, the colored lines mark the T(&rho;) tracks of helium cores of the labeled masses (in M<sub>☉</sub> units) computed with MESA. Credits: R. Farmer.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3594fdd" class="outline-2">
+<h2 id="org3594fdd"><a href="#org3594fdd">Principles of computational stellar evolution</a></h2>
+<div class="outline-text-2" id="text-org3594fdd">
+<p>
+"<i>Traditional scientific knowledge has generally taken the form of</i>
+<i>either theory or experimental data. However, where theory and</i>
+<i>experiment stumble, simulations may offer a third way.</i>" - Simulation,
+Johannes Lenhard et al.
+</p>
+
+<p>
+We now have finally derived/discussed all the pieces of physics
+necessary to compute a stellar <i>structure</i> model, treat its nuclear
+energy generation and thus driving its <i>evolution</i>.
+</p>
+
+<p>
+The description we have obtained for a spherically symmetric star is
+made of <b>four non-linear, coupled, ordinary differential equations</b>
+(ODE) <b>plus the equation of state that acts as closure condition</b> for
+the system. Solving these equations we can:
+</p>
+<ol class="org-ol">
+<li>study the interior structure of modelled stars and try to learn about
+the parts of the star that are not accessible to direct
+observations (hidden inside the photosphere)</li>
+<li>study the time evolution of modelled stars, which we cannot
+observe for real stars since most evolve way too slow for us to
+follow within our lifetimes.</li>
+</ol>
+
+<p>
+However, this system of coupled, non-linear ODEs is not easily solved
+by hand. Since the early days of the availability of computers in the
+1960s, people have been designing and leveraging <i>computational
+techniques</i> to <i>numerically</i> solve this system of equations (see e.g.,
+<a href="https://ui.adsabs.harvard.edu/abs/1959ApJ...129..628H/abstract">Henyey 1959</a>, <a href="https://ui.adsabs.harvard.edu/abs/1962ApJ...135..770I/abstract">Iben &amp; Erhman 1962</a>, <a href="https://ui.adsabs.harvard.edu/abs/1970ApJ...159..619S/abstract">Sujimoto 1970</a> <a href="https://ui.adsabs.harvard.edu/abs/1971MNRAS.151..351E/abstract">Eggleton 1971</a>, <a href="https://ui.adsabs.harvard.edu/abs/1978ApJ...225.1021W/abstract">Weaver
+et al. 1978</a>). For the rest of this lecture, we are going to discuss
+some general principles behind these computational techniques.
+</p>
+</div>
+
+<div id="outline-container-orge8ab6b0" class="outline-3">
+<h3 id="orge8ab6b0"><a href="#orge8ab6b0">The most important thing: <i>Computer simulations are not empirical evidence</i></a></h3>
+<div class="outline-text-3" id="text-orge8ab6b0">
+<p>
+Computational techniques take a system of equations describing a
+physical model (for example the equations we have derived), which
+already rely on a whole variety of physical approximations (e.g.,
+spherical symmetry, LTE, free-streaming neutrinos, etc.), and apply a
+whole new set of <i>numerical</i> approximations to obtain a numerical
+solution.
+</p>
+
+<p>
+Presumably, nature does not do <i>any</i> of this: without opening the
+philosophical question of whether nature writes down equations to
+solve, it certainly does not need to make physical approximations
+(while we need to do it to reason on a problem and keep it
+manageable), and even less make <i>numerical</i> approximations needed to
+solve equations. At ontological level, numerical simulations are <i>not</i>
+equivalent to empirical evidence! Never trust numerical results as if
+they were ground truth: a computer will only do what it is told, and
+we tell it our physically and numerically approximated best guess for
+what we are trying to simulate which is <i>not</i> what nature empirically
+provides. I emphasize this as a person who spends most of his time
+making numerical simulations! Note also how this is more general than
+<i>just</i> stellar physics: this applies to <i>any</i> computational physics field.
+</p>
+
+<p>
+Because of these, it is always crucially important to <i>do resolution
+tests</i>: when performing a simulation of a physical phenomenon, you
+should always test that the scientific results you obtain do not
+depend on how you discretize your equations in time and space and on how
+you numerically solve them. This is often a painful task, but very
+important to not fool ourselves!
+</p>
+
+<p>
+"<i>All models are wrong, but some are useful!</i>" - G. Box
+</p>
+
+<p>
+In stellar physics, there is another problem: the <i>high non-linearity</i>
+of the coupled system of ODEs means that there can be chaotic
+behavior! A small perturbation (maybe because of a numerical error or
+a small inconsistency in the tabulated input physics!) can cascade
+into dramatic consequences, similar to the famous "butterfly effect"
+(which was also theorized from numerical computations, but of
+atmospheric physics, by <a href="https://en.wikipedia.org/wiki/Edward_Norton_Lorenz">E. Lorenz</a>).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0bf4814" class="outline-3">
+<h3 id="org0bf4814"><a href="#org0bf4814">Why did we limit ourselves to spherical symmetry?</a></h3>
+<div class="outline-text-3" id="text-org0bf4814">
+<p>
+Throughout the course so far we have explicitly assumed spherical
+symmetry, although since the beginning we have discussed some
+phenomena that can break the global spherical symmetry (e.g.,
+rotation, magnetic fields, or the presence of gravity and/or
+irradiation from companion stars), and we have seen phenomena (e.g.,
+convection) that break the spherical symmetry locally. Without the
+assumption of spherical symmetry, the equations describing our system
+would become partial differential equations (PDE), changing the
+mathematical and thus computational approach.
+</p>
+
+<p>
+In some cases, it is possible to treat some of the non-spherical
+effects by casting them in a form that still allows a 1D formalism
+with ODEs (e.g., "shellular rotation" assuming that all quantities are
+constant along isobars and uses P as the independent coordinate, e.g.,
+<a href="https://ui.adsabs.harvard.edu/abs/2000A%26A...361..159M/abstract">Maeder &amp; Meynet 2000</a>, or using volume-weighted equivalent potentials
+accounting for the gravity of a companion star, e.g., <a href="https://ui.adsabs.harvard.edu/abs/2015ApJS..220...15P/abstract">Paxton et al.
+2015</a>). But ultimately the physics is non-spherical, so why do we
+insist with this limited approximation?
+</p>
+
+<p>
+The main reason is <i>necessity</i> (see for example <a href="https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract">Jermyn et al. 2022
+section 5.4</a>) <b>the contrast of scale in both space and time</b> required to
+follow the <i>evolution</i> of a star from birth to death (or to the current
+age of the Universe, whichever comes first!) <b>is just too large</b> to be
+manageable with present day <i>and</i> with foreseeable computational
+capabilities.
+</p>
+</div>
+
+<div id="outline-container-org05a3b63" class="outline-4">
+<h4 id="org05a3b63"><a href="#org05a3b63">Spatial scale limitations</a></h4>
+<div class="outline-text-4" id="text-org05a3b63">
+<p>
+Consider the convective envelope in the Sun. It has a Reynolds number
+Re= v<sub>conv</sub> &ell;/&nu; &sim; 10<sup>12</sup>, which, using Kolmogorov's model of
+turbulence implies that the turbulent cascade spans a range of scales
+from L to &ell; with a contrast L/&ell; &sim; Re<sup>3/4</sup> &sim; 10<sup>9</sup>. To resolve this
+contrast in a 3D simulation we would need this number of cells <i>in
+each direction</i>, meaning &sim;10<sup>27</sup> points.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc879b9d" class="outline-4">
+<h4 id="orgc879b9d"><a href="#orgc879b9d">Temporal scale limitations</a></h4>
+<div class="outline-text-4" id="text-orgc879b9d">
+<p>
+Consider again the Sun. The free fall timescale is generously
+&tau;<sub>ff</sub>&sim;1h, and its thermal timescale is &tau;<sub>KH</sub>&sim;1.5&times;10<sup>7</sup> years,
+and current age is &sim; 5&times;10<sup>9</sup> years &cong; &tau;<sub>nuc</sub>. In 3D we would need to
+resolve the dynamics of the gas, with timesteps &Delta; t &le; &tau;<sub>ff</sub>. Even
+considering an equal sign &Delta; t=&tau;<sub>ff</sub> (certainly insufficient to <i>resolve</i>
+the dynamics of the stellar plasma), it would take &sim; &tau;<sub>Kh</sub> / &tau;<sub>ff</sub> = 10<sup>10</sup>
+timesteps to calculate a thermal timescale and &sim; &tau;<sub>nuc</sub> / &tau;<sub>ff</sub> = 10<sup>12</sup>
+timesteps for a nuclear timescale.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org26b1c6c" class="outline-4">
+<h4 id="org26b1c6c"><a href="#org26b1c6c">Present day and future prospects</a></h4>
+<div class="outline-text-4" id="text-org26b1c6c">
+<p>
+The largest present day multi-dimensional stellar hydrodynamics
+simulations reach maybe up to 10<sup>12</sup> resolution points, and about 10<sup>8</sup>
+timesteps and using lower-than-realistic Reynolds number and/or
+boosting the luminosity to drive dynamical effects faster than in
+reality (see <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...928L..10A/abstract">Anders et al. 2022</a> or <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.531.1316T/abstract">Thompson et al. 2024</a>).
+</p>
+
+<p>
+Assuming that Moore's law (the number of transistors in a CPU roughly
+doubles every year) - an assumptions that may clash with the
+engineering reality, it will take several decades to have a
+numerically resolved 3D simulation of convection in a star for a
+convective turnover timescale, and longer for thermal and nuclear
+timescale: 1D will remain necessary, and we need to keep representing
+the complex multi-scale, multi-physics, and multi-dimensional problem
+of stellar evolution considering only variations along the radial
+direction!
+</p>
+
+<p>
+Nevertheless, 3D stellar hydrodynamics of restricted problems ("box in
+a star" approach - e.g., <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.533..687R/abstract">Rizzuti et al. 2024</a>, short timescales such as
+stellar explosions - e.g., <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...921...28F/abstract">Fields &amp; Couch 2021</a>) are possible, and
+stellar <i>structure</i> simulations in 2D are also at the forefront of
+possibilities (see e.g., <a href="https://ui.adsabs.harvard.edu/abs/2023A%26A...677L...5M/abstract">Mombarag et al. 2023</a>).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf05c1d9" class="outline-3">
+<h3 id="orgf05c1d9"><a href="#orgf05c1d9">Boundary conditions</a></h3>
+<div class="outline-text-3" id="text-orgf05c1d9">
+<p>
+So, for the foreseeable future we will need 1D stellar structure and
+evolution calculation using the set of equations we derived. To solve
+them, we need boundary conditions. These are crucial in determining
+the solution of the structure at each timestep!
+</p>
+
+<p>
+For the stellar problem, we need to specify boundary conditions at two
+locations.
+</p>
+</div>
+
+<div id="outline-container-orgd56de21" class="outline-4">
+<h4 id="orgd56de21"><a href="#orgd56de21">Center</a></h4>
+<div class="outline-text-4" id="text-orgd56de21">
+<p>
+These are fairly intuitive:
+</p>
+<ul class="org-ul">
+<li>r(m=0) = 0. This is necessary to keep the local density &rho; &sim; m/r<sup>3</sup> finite.</li>
+<li>L(m=0) = 0. This is necessary to keep the energy generation per
+unit volume finite (as the volume goes to zero)</li>
+</ul>
+
+<p>
+However, we have 4 ODEs and these are only two boundary conditions, so
+the system is still undetermined. The central pressure and density are
+not a priori known (we can estimate them, but that is not precise
+enough!).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgac70900" class="outline-4">
+<h4 id="orgac70900"><a href="#orgac70900">Surface</a></h4>
+<div class="outline-text-4" id="text-orgac70900">
+<p>
+We need to turn to the surface to get observationally informed
+boundary conditions. Remember that from the point of view of a
+detailed stellar evolution code, which assumes LTE to solve for the
+internal structure, the "surface" (meaning: the outer boundary) is
+usually defined at the photosphere. This is by definition the
+"idealized" surface where T=T<sub>eff</sub> which corresponds to the location
+outside of which LTE is not a good assumption anymore, the radiation
+field is <i>not</i> isotropic, and the problem becomes the calculation of a
+stellar <i>atmosphere</i>.
+</p>
+
+<p>
+Accepting to externalize the problem of stellar atmosphere (which we
+will treat in more detail <a href="./notes-lecture-radTrans.html">in a future lecture</a>), we already have
+written one of the missing outer boundary conditions at mass
+coordinate equal to the total mass of the star (m=M):
+</p>
+<ul class="org-ul">
+<li>T(m=M) = T<sub>eff</sub>, where T<sub>eff</sub> is <i>defined</i> as the temperature of a black
+body producing the same luminosity as the star: L=4&pi; R<sup>2</sup>&sigma; T<sub>eff</sub>
+with R=r(M).</li>
+</ul>
+
+<p>
+For the final missing boundary condition, we need to specify the outer
+pressure P(r=R) at R=r(M). This typically comes from imposing a <i>smooth</i>
+transition from the stellar interior (inside, T &ge; T<sub>eff</sub>) and the
+stellar atmosphere (outside, T &le; T<sub>edd</sub>), which requires calculating the
+pressure in the stellar atmosphere where the assumptions we made so
+far, and consequently the equations we wrote do not hold.
+</p>
+
+<ul class="org-ul">
+<li><b>Q</b>: Why should P be smooth? (<b>Hint:</b> think of dP/dr!)</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgab54451" class="outline-3">
+<h3 id="orgab54451"><a href="#orgab54451">Solving strategies</a></h3>
+<div class="outline-text-3" id="text-orgab54451">
+<p>
+Let's assume we have a way to specify P(r=R), and postpone the
+discussion of stellar atmosphere to a <a href="./notes-lecture-radTrans.html">future lecture</a>.
+We then have 4 coupled non-linear ODEs with 4 boundary conditions (2
+at the center and 2 at the surface), and the EOS as a closure
+condition. How can we solve them numerically?
+</p>
+</div>
+
+<div id="outline-container-org19866c8" class="outline-4">
+<h4 id="org19866c8"><a href="#org19866c8">Discretization</a></h4>
+<div class="outline-text-4" id="text-org19866c8">
+<p>
+First, to represent the system of equations in a computer we want to
+discretize them, that is convert every derivative into a <i>finite
+difference</i>. This can be done in various ways, each with specific
+advantages and disadvantages. The simplest is a first-order forward
+discretization of the form:
+</p>
+
+<div class="latex" id="orge2b89a2">
+\begin{equation}
+\frac{df}{dx} \rightarrow \frac{f(x_{k+1})-f(x_{k})}{x_{k+1}-x_{k}} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where f and x are a generic function and variable, and the index k
+labels the discretized points.
+</p>
+
+<p>
+For example, if x=m, the index k will label which cell of the
+mass-coordinate "mesh" we are considering and m<sub>k+1</sub> - m<sub>k</sub> = &Delta; m<sub>k</sub> is the
+local resolution in mass at location k, while if x=t, then k will
+label the "timestep" we are considering, and t<sub>k+1</sub>-t<sub>k</sub> = &Delta; t<sub>k+1</sub> is the
+timestep size.
+</p>
+
+<p>
+<b>N.B.:</b> typically both the spatial resolution &Delta; m<sub>k</sub> and the temporal
+resolution &Delta; t<sub>k</sub> are <i>adaptive</i>, meaning the stellar evolution code will
+put more mesh points where / take more timesteps when quantities vary
+more rapidly. This is necessary to deal with the large dynamic range
+of multiple quantities.
+</p>
+
+<p>
+<b>N.B.:</b> Nature &Gt; numerical models, because nature does not need to do
+this!
+</p>
+
+
+<figure id="org12eea9f">
+<img src="./images/mesh.png" alt="mesh.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 4: </span>Schematic representation of the spatial mesh in MESA. Intensive quantities (T, &rho;, P) that do not depend on the amount matter are defined at the cell "center", while extensive quantities (m, L) are defined at the cell "boundaries". This is Figure 9 in <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract">Paxton et al. 2011</a>.</figcaption>
+</figure>
+
+<p>
+By discretizing the ODEs we can rewrite them as algebraic equations:
+</p>
+
+<div class="latex" id="orgca95ae0">
+\begin{equation}
+\frac{dm}{dr}=4\pi r^2\rho   \Leftrightarrow   \ln(r_k) = \frac{1}{3}\ln\left( r_{k+1}^{3} +\frac{3}{4\pi}\frac{dm_k}{\rho_k}\right)
+\end{equation}
+
+\begin{equation}
+\frac{dP}{dr}=-\frac{Gm(r)\rho}{r^2} \Leftrightarrow \frac{P_{k-1} - P_k}{0.5(dm_{k-1} - dm_k)} = - \frac{G m_k}{4\pi r_k^4} \\
+\end{equation}
+
+\begin{equation}
+\frac{dT}{dr} = - \frac{3}{16\pi a c}\frac{\kappa\rho L}{r^2 T^3} \,\mathrm{or}\, \frac{dT}{dr}\bigg|_\mathrm{ad}  \Leftrightarrow \frac{T_{k-1} - T_k}{(dm_{k-1} - dm_k)/2} = -\nabla_{T,k}\left(\frac{dP}{dm}\bigg|_k\right)\frac{\tilde{T_k}}{\tilde{P_k}} \\
+\end{equation}
+
+\begin{equation}
+\frac{dL}{dr}=4\pi r^{2}\rho (\varepsilon_\mathrm{nuc} - \varepsilon_{\nu} +\varepsilon_\mathrm{grav})  \Leftrightarrow L_k-L_{k+1} = dm_k (\varepsilon_\mathrm{nuc}-\varepsilon_\nu + \varepsilon_\mathrm{grav})
+\end{equation}
+
+\begin{equation}
+P\equiv P(\rho,\mu,T)  \Leftrightarrow  P\equiv P(\rho,\mu,T)
+\end{equation}
+
+\begin{equation}
+\frac{dX_i}{dt}\bigg|_{r} = \left[ \sum\limits_j \mathcal{P}_{j,i}(T,\rho)
+    -\sum\limits_k \mathcal{D}_{i,k}(T,\rho)\right] + \left( D_i
+    \nabla^2X_i\phantom{\bigg|} \right)\\
+\Updownarrow \\
+   X_{i,k}(t_n+\Delta t_{n+1}) = X_{i,k}(t_n) + \Delta
+    t_{n+1}\left(\frac{dX_{i,k}}{dt}\right)_\mathrm{nuc} +
+    \frac{\left(X_{i,k}-X_{i,k-1} \right)D_{k}\Delta t_{n+1}}{0.5(dm_{k-1} - dm_k)}
+\end{equation}
+
+</div>
+
+<p>
+Where, when going from the physical model to the
+numerical implementation:
+</p>
+<ul class="org-ul">
+<li>we use m rather than r as independent coordinate <a href="./notes-lecture-HSE.html#org8801e3c">as expected</a>;</li>
+<li>the mass continuity if re-formulated in terms of natural logarithm
+or r instead or r itself (to keep numbers smaller);</li>
+<li>the EOS, &kappa;, &epsilon;<sub>nuc,</sub>, and &epsilon;<sub>&nu;</sub> represent input physics that we borrow
+from other fields, and typically are <i>tabulated</i> as a function of T,
+&rho; or equivalent pairs of variables.</li>
+</ul>
+
+<p>
+Now that we have transformed a set of ODEs into a set of algebraic
+equations, the stellar structure and evolution problem is reduced to
+solving a matrix equation:
+</p>
+
+
+<figure id="org5cf3f98">
+<img src="./images/matrix_mesa.png" alt="matrix_mesa.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 5: </span>Section of an example of the matrix to solve. Black dots are non-zero entries, meaning the variables are coupled by an equation. Vertical dashed lines denote blocks of the matrix for cell <code>k-1</code>, <code>k</code>, and <code>k+1</code> respectively, red dotted lines separate structural variables and compositional variables. This is Fig. 47 of <a href="https://ui.adsabs.harvard.edu/abs/2013ApJS..208....4P/abstract">Paxton et al. 2013</a>.</figcaption>
+</figure>
+
+<p>
+Writing this in a symbolic compact form we an array of quantities X(t)
+of length equal to the number of mesh points for our spatial
+discretization times the number of variables, and a matrix A which
+represents how all the entries of X are coupled to each other in the
+algebraic form of the equations: AX(t<sub>k</sub>) = X(t<sub>k+1</sub>).
+</p>
+
+<p>
+To solve this we could consider two approaches:
+</p>
+<ul class="org-ul">
+<li><b>Explicit methods</b>: in this case X(t<sub>k+1</sub>) is expressed as a function of
+X(t<sub>k</sub>). This however will require resolving the <i>local</i> dynamics (and
+be limited by the sound crossing time), making it impossible to perform a
+calculation for the <i>evolution</i> of the star</li>
+<li><b>Implicit methods:</b> in this case we write a function F(X(t<sub>k</sub>), X(t<sub>k+1</sub>))
+= 0 (e.g., F(X(t<sub>k</sub>), X(t<sub>k+1</sub>)) &equiv; AX(t<sub>k</sub>) - X(t<sub>k+1</sub>) = 0), and by solving the homogeneous
+equation we have obtained we derive X(t<sub>k+1</sub>). Implicit methods are
+preferred in stellar evolution as they are not limited by the sound
+crossing time.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org097a8ff" class="outline-4">
+<h4 id="org097a8ff"><a href="#org097a8ff">Solver</a></h4>
+<div class="outline-text-4" id="text-org097a8ff">
+<p>
+For each of these methods, we still need to specify a numerical
+solver. Typically stellar evolution codes rely on generalized first
+order Newton Raphson solvers, which find the zeros of a function
+starting from an initial guess and then computing its derivative to
+create a better second guess:
+</p>
+
+
+<figure id="orge68b2dc">
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif" alt="NewtonIteration_Ani.gif" width="100%">
+
+<figcaption><span class="figure-number">Figure 6: </span>Animation of the Newton-Raphson method to find the zero of a function y=f(x) in one dimension through tangent approximations (from <a href="https://en.wikipedia.org/wiki/Newton's_method">Wikipedia</a>).</figcaption>
+</figure>
+</div>
+</div>
+
+<div id="outline-container-org9f88e75" class="outline-4">
+<h4 id="org9f88e75"><a href="#org9f88e75">Shooting method vs. Henyey method</a></h4>
+<div class="outline-text-4" id="text-org9f88e75">
+<p>
+There is a peculiarity in the way we built the system of equations to
+be solved: we have two boundary conditions at one edge of the (one dimensional) domain
+(the center), and one set at the other edge (the surface).
+</p>
+
+<p>
+Historically, the first computations of stellar models would use a
+"shooting method": integrate numerically from the center outward, and
+verify how far from the outer boundary conditions the solution lands,
+based on the distance, calculate a correction on the initial guess,
+and iterate. This was computationally expensive, and would require
+many iterations before the solution build "inside out" would be
+sufficiently good.
+</p>
+
+<p>
+In the late 1960s, <a href="https://en.wikipedia.org/wiki/Louis_G._Henyey">L. Henyey</a> designed an alternative solving strategy,
+which was rapidly adopted by others and is still widely used today.
+The key idea was to not start computing the variables inside out, but
+instead, make an initial guess for the entire domain (typically the
+initial guess can be the solution for the previous timestep!), and
+calculate a correction not based on the distance between the solution
+and the outer boundary condition only, but based on both boundaries at
+the same time!
+</p>
+
+<p>
+<b>N.B.:</b> for a biased overview of the evolution of the field of
+computational stellar physics by one of the "founding fathers" of the
+field, see this <a href="https://www.aip.org/history-programs/niels-bohr-library/oral-histories/5091">1978 interview to R. Kippenhahn</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgba104dc" class="outline-4">
+<h4 id="orgba104dc"><a href="#orgba104dc">Evolution splitting</a></h4>
+<div class="outline-text-4" id="text-orgba104dc">
+<p>
+One final peculiarity of the stellar structure and evolution problem
+is that the evolution is <i>slow</i> and driven by nuclear physics, which
+provides some of the hardest equations to solve, because they are
+extremely <i>stiff</i>. Mathematically, this means the eigenvalues of the
+nuclear physics part of the problem have very different norms, making
+it challenging to design numerical algorithm that can find all the
+eigenvalues efficiently. Physically, this is because many reactions
+have extreme temperature sensitivities (because of the Coulomb
+barriers and the tunneling probability).
+</p>
+
+<p>
+The clear separation of timescales for the structure and evolution
+(&tau;<sub>ff</sub> &Lt; &tau;<sub>KH </sub>&Lt; &tau;<sub>nuc</sub>) allows for one more trick, so called
+"evolution splitting": one can compute the <i>structure</i> of the star
+assuming fixed composition, then <i>evolve</i> the composition with that
+fixed structure (meaning T, and &rho;), and iterate computing a new
+structure with the updated composition. This allows to separate the
+problem and can make it more tractable.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge90e439" class="outline-3">
+<h3 id="orge90e439"><a href="#orge90e439">Open science: <a href="https://docs.mesastar.org/en/latest/">MESA</a> and <code>MESA-web</code></a></h3>
+<div class="outline-text-3" id="text-orge90e439">
+<p>
+"<i>An algorithm must be seen to be believed</i>" - D. Knuth
+</p>
+
+<p>
+The discussion above is an attempt to highlight the general principles
+and technical aspects specific of computational stellar structure and
+evolution without narrowing down to a specific code. Historically,
+many groups independently developed computer codes to solve the
+stellar structure and evolution problem, and only few universities
+would have the computing power to run them. In the 1960s-1980s, even
+if the group leaders may have been willing to share their codes upon
+request, all the algorithmic details would typically be hidden from
+the scientific community, and considered as technicalities. Many of
+the people actually <i>writing</i> the code and <i>implementing the algorithms</i>
+were women, and their contribution has been under-appreciated because
+of this attitude of considering algorithms as technicalities.
+</p>
+
+<p>
+Still today, the algorithmic details of many codes are only known to
+the inner circle of the group owning the code. In 2011, an
+independently wealthy computer-scientist-turned-astrophysicist free
+from the publish-or-perish academic mentality named <a href="https://en.wikipedia.org/wiki/Bill_Paxton_(computer_scientist)">Bill Paxton</a>, with
+the collaboration of a large group of theoretical and computational
+astrophysicists (notably, P. Eggleton who provided his code as a
+starting point), developed a new open-source, multi-purpose, and
+community driven stellar structure and evolution code, called <code>MESA</code>.
+Because this is the tool I use, and the only one I can really inspect,
+a lot of my intuition on the numerical methods and computational
+aspects is tied to this particular code. The <code>MESA-web</code> interface you
+have been using is just a predefined setup of this very flexible and
+modular code designed for educational applications: you have been
+using a bleeding edge research tools!
+</p>
+
+<p>
+The release of this code, together with a change in perspective from
+funding agencies and a general push towards open-science and
+open-know-how (which necessarily require to get a handle on the
+algorithmic details), has significantly changed the field of
+theoretical and computational stellar evolution. Other codes ("the
+GENEVA code" - a.k.a. GENEC, "the Frascati code" - a.k.a. FRANEC, "the
+Cambridge code", KEPLER, HOSHI, etc.) are progressively opening up,
+and at the very least being forced to compare their results with MESA.
+</p>
+
+<p>
+<b>N.B.:</b> the fact that most codes don't even have a name and are
+identified with the institution where they are mainly developed is an
+indication of the secrecy behind the computational aspects: you had to
+be at the right place to get a handle on all the details!
+</p>
+
+<p>
+This openness allows finally to check <i>systematic modeling errors</i> that
+arise from algorithmic and numerical choices that may differ even for
+the same physical assumptions and input physics. This has enabled
+progress, revealed (always existing) bugs in MESA and in other codes,
+and overall improved the state of this field.
+</p>
+
+<p>
+<b>N.B.:</b> Multiple independent codes are needed to cross-check and
+validate results. The exponential growth of the community of users of
+the MESA code has almost become a problem by quenching the use of
+other codes in this problem space!
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb1b5219" class="outline-3">
+<h3 id="orgb1b5219"><a href="#orgb1b5219">Summary</a></h3>
+<div class="outline-text-3" id="text-orgb1b5219">
+<ol class="org-ol">
+<li>take a star, which is a complex multi-scale, multi-physics,
+multi-dimensional object</li>
+<li>obtain from other fields of physics input for &epsilon;<sub>nuc</sub>, &epsilon;<sub>&nu;</sub>,
+&kappa;, and the EOS</li>
+<li>write down an approximate physical model assuming spherical
+symmetry, going from a multi-dimensional object to a continuous
+line along a spatial direction</li>
+<li>discretize that line into "chunks" of (variable) size &Delta; m<sub>k</sub></li>
+<li>use an implicit first-order generalized Newton-Raphson solver to
+determine how variables at the points &Delta; m<sub>k</sub> vary within discrete
+(variable) time interval &Delta; t<sub>k</sub>.</li>
+<li><b>make sure that the scientific results you obtain do not depend on
+any of steps 2-5</b>.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org92e45f0" class="outline-2">
+<h2 id="org92e45f0"><a href="#org92e45f0">Population synthesis</a></h2>
+<div class="outline-text-2" id="text-org92e45f0">
+<p>
+As we saw since the <a href="./notes-lecture-CMD-HRD.html">lecture on the CMD/HRD</a>, in stellar physics it is
+often necessary to rely on <i>population studies</i> to infer something about
+the physics of the star. Moreover, when thinking about galaxies (e.g.,
+integrated light from a far away galaxy where not all stars are
+resolved), we definitely need <i>populations</i>. Population studies are also
+needed to predict <i>rates</i> of phenomena (e.g., supernovae, gravitational
+wave mergers, etc.).
+</p>
+
+<p>
+The practice of <i>combining</i> many stellar models to make a population is
+generally referred to as <i>population synthesis</i>. This can be done with
+<i>detailed</i> models, such as the one coming from codes that solve the
+equations of stellar structure (e.g., MESA, KEPLER, FRANEC, PARSEC,
+HOSHI, etc.).
+</p>
+
+<p>
+<b>N.B.:</b> These codes being 1D typically are <i>relatively</i> cheap to run,
+about ~1-10&times; CPUh per model.
+</p>
+
+<p>
+However, often there are many things one may want to change for <i>fixed</i>
+stellar evolution (e.g., the initial distribution of stars, or their
+metallicity distribution, or how they interact in binaries or higher
+multiplicity systems), and recomputing all the models is not
+necessary.
+</p>
+
+<p>
+Since the 1990s, there has been the development of "semi-analytic"
+techniques based on implementing polynomial fits to a set of stellar
+models (e.g., <a href="https://ui.adsabs.harvard.edu/abs/1998MNRAS.298..525P/abstract">Pols et al. 1998</a>), and use these to simulate the
+evolution of stars - producing a <i>rapid</i> population synthesis. Coupling
+these to analytic models for the interaction of binaries (which are
+used by detailed stellar codes too!), one can get <i>rapid</i> population
+synthesis.
+</p>
+
+<p>
+<b>N.B.:</b> In these codes the stellar structure problem is "pre-solved" and
+the use of semi-analytic fitting formulae to those solutions saves a
+lot of time, going from 10s of CPUh per star/binary to &sim;100
+CPU-millisecond per star/binary.
+</p>
+
+<p>
+More recently, there has been a move to use directly tabulated results
+from detailed stellar evolution codes, instead of analytic fits to
+those tables, which allows to track more details (and more easily
+update the stellar models) for a small computational price that is now
+affordable.
+</p>
+
+<p>
+Below is an (incomplete, biased) list of some of these codes.
+</p>
+</div>
+
+<div id="outline-container-orge6ec6e2" class="outline-3">
+<h3 id="orge6ec6e2"><a href="#orge6ec6e2">Semi-analytic approach to population synthesis</a></h3>
+<div class="outline-text-3" id="text-orge6ec6e2">
+<ul class="org-ul">
+<li>BSE: the forefather of many, see <a href="https://ui.adsabs.harvard.edu/abs/2002MNRAS.329..897H/abstract">Hurley 2002</a> and references therein (<b>N.B.:</b> not <i>all</i> rapid population synthesis codes)</li>
+<li><a href="https://cosmic-popsynth.github.io/">COSMIC</a>: Open source and open development, <code>pip</code> installable</li>
+<li><a href="https://compas.science/">COMPAS</a>: Open source</li>
+<li><a href="https://binary_c.gitlab.io/"><code>binary_c</code></a>: Open source, python front-end available, can be <a href="https://r-izzard.surrey.ac.uk/cgi-bin/binary5.cgi">run on online</a> (similar to <code>MESA-web</code>)</li>
+<li>&#x2026;</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb717af0" class="outline-3">
+<h3 id="orgb717af0"><a href="#orgb717af0">Pre-computed and tabulated or hybrid codes</a></h3>
+<div class="outline-text-3" id="text-orgb717af0">
+<ul class="org-ul">
+<li><a href="https://posydon.org/">POSYDON</a> (<code>MESA</code> tables of models, open source)</li>
+<li>BPASS (Based on models from "the Cambridge code")</li>
+<li>ComBiNe (<code>BEC</code> tables of models)</li>
+<li>METISSE (<code>MESA</code> tables of models, open source)</li>
+<li>MINT (= <code>binary_c</code> + <code>MESA</code> tables of models, not yet public)</li>
+<li><a href="https://web.oapd.inaf.it/mapelli/SEVN.tar.gz">SEVN</a> (based on <code>PARSEC/FRANEC</code> tables of models, open source)</li>
+<li>&#x2026;</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4c50627" class="outline-2">
+<h2 id="org4c50627"><a href="#org4c50627">Homework: preparation for in class activity</a></h2>
+<div class="outline-text-2" id="text-org4c50627">
+<p>
+In two weeks from now we are going to do a class activity to piece
+together all the things we have learned so far and describe the
+evolution of single, non-rotating stars with <i>your</i> <code>MESA-web</code>-produced
+models! Although we will stay close to the textbook stellar
+evolution, this activity is similar to actually doing research with
+stellar models: you compute a model, and see if it makes physical
+sense based on physical intuition and contextual knowledge &#x2013; keeping
+in mind that models can and do produce numerical nonsense
+occasionally, and one has to be careful to not fool oneself!
+Typically in research I will ran further models changing the input to
+test my interpretation, run numerical tests (change the spatial and
+temporal resolution for example), and iterate.
+</p>
+
+<p>
+This preparation homework is not graded, I just ask you to gather
+these models that we will discuss in class. Each student will have
+one (randomly assigned) mass to run with MESA web, you will need to
+download and unzip on your laptop and have it ready by
+<span class="timestamp-wrapper"><span class="timestamp">2024-10-22 Tue</span></span>.
+</p>
+
+<p>
+In class, you will gather in groups based on the masses you have run,
+and be discuss among yourselves why the evolution proceeds the way it
+does, whether you think it is physical or numerical artifacts, and we
+will then discuss some of these models with the whole class.
+</p>
+
+<p>
+We will mostly used the "movies" that <code>MESA-web</code> produces for you, but
+feel free to prepare to read profile files and/or history files in a
+script and plot other things to better understand what goes on.
+</p>
+
+<p>
+<b>N.B.:</b> The <code>MESA-web</code> interface can get clogged if you all ask
+calculations the night before, so please to this well ahead - it's
+just filling an online form!
+</p>
+
+<p>
+<b>N.B.:</b> for the sake of having a uniform set of models to discuss,
+please use the options listed below for your <code>MESA-web</code> submission (I
+listed all options but the mass and highlighted in <b>bold</b> the ones to
+change w.r.t. the defaults).
+</p>
+
+<p>
+<b>N.B.:</b> if the models below do not reach the desired stopping
+condition, feel free to try again with different parameters
+(especially "Variance Control Target" and "Mesh Delta Coefficient"
+which control the temporal and spatial resolution, lower means higher
+resolution for both). Please keep the first model around too for the
+in class activity.
+</p>
+</div>
+
+<div id="outline-container-orgbecdc4b" class="outline-3">
+<h3 id="orgbecdc4b"><a href="#orgbecdc4b">Initial mass M&le; 7M<sub>☉</sub></a></h3>
+<div class="outline-text-3" id="text-orgbecdc4b">
+<ul class="org-ul">
+<li><b>Nuclear Reaction Network</b>: <code>approx21</code></li>
+</ul>
+</div>
+
+<div id="outline-container-orgfafcde3" class="outline-4">
+<h4 id="orgfafcde3"><a href="#orgfafcde3">Stopping condition log(&rho;<sub>center</sub>/([g cm<sup>-3</sup>]))&ge;10</a></h4>
+<div class="outline-text-4" id="text-orgfafcde3">
+<p>
+Not all models may successfully reach this condition. We will have
+a chance to discuss "failed" models!
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd46f749" class="outline-3">
+<h3 id="orgd46f749"><a href="#orgd46f749">Initial mass M&gt;7M<sub>☉</sub></a></h3>
+<div class="outline-text-3" id="text-orgd46f749">
+<ul class="org-ul">
+<li><b>Nuclear Reaction Network</b>: <code>approx21</code></li>
+<li><b>Semi-Convection Alpha</b>: 0</li>
+<li><b>Thermohaline Alpha</b>: 0</li>
+<li><b>Red Giant Branch Wind Scheme</b>: Dutch (this specifies stellar winds)</li>
+<li><b>RGB Wind Scaling Factor</b>: 0.8</li>
+<li><b>Asymptotic Giant Branch Wind Scheme</b>: Dutch</li>
+<li><b>AGB Wind Scaling Factor</b>: 0.8</li>
+</ul>
+</div>
+
+<div id="outline-container-orge4d26a2" class="outline-4">
+<h4 id="orge4d26a2"><a href="#orge4d26a2">Stopping condition: iron core collapse (default) value <code>1e8</code></a></h4>
+<div class="outline-text-4" id="text-orge4d26a2">
+<p>
+The value specified the speed of collapse that the iron core needs
+to reach before the model stops. Usually by this point of the
+evolution &rho; is so high that &nu; interactions start to matter, the EOS
+is not that of an ideal quantum gas + radiation, and the time left
+before a NS is formed is of order of &sim;100 milliseconds (see also
+<a href="./notes-lecture-SNe.html">lecture on supernovae</a>).
+</p>
+
+<p>
+Not all models may successfully reach this condition. We will have
+a chance to discuss "failed" models!
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#top"><i class="fa fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa fa-github" style="font-size:16px"></i></a>
+  <hr>
+  <br>
+  Last updated on 8 December 2024 <br>
+  Made with Emacs 28.1 - Org mode 9.5.2
+  <br>
+</div>
+</div>
+</body>
+</html>

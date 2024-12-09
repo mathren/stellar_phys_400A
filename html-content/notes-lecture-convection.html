@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2024-12-08 Sun 18:50 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>400A - Convection &amp; MLT</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="./css/style.css" />
+<!-- <link rel="stylesheet" href="./css/fontawesome.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, 400A, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./README.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- The hamburger menu  -->
+<script>
+  function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+</div>
+<div id="content" class="content">
+<p>
+<b>Materials</b>: Kippenhahn's book Ch. 6 and 7, Cox &amp; Giuli vol. 1 Ch. 14,
+Schwarzschild Ch. 7, <a href="https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract">Jermyn et al. 2022</a>, <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract">Anders et al. 2022</a>, <a href="http://online.kitp.ucsb.edu/online/stars17/cantiello2">Matteo
+Cantiello's talk at KITP in 2017</a>, review by <a href="https://ui.adsabs.harvard.edu/abs/2023Galax..11...75J/abstract">Joyce &amp; Tayar 2023</a>.
+</p>
+
+<div id="outline-container-org2ddf2d4" class="outline-2">
+<h2 id="org2ddf2d4"><a href="#org2ddf2d4">Energy transport in stars 2/2</a></h2>
+<div class="outline-text-2" id="text-org2ddf2d4">
+<p>
+In the <a href="./notes-lecture-ETransport.html">previous lecture on energy transport</a> we have dealt with the
+situation where energy diffusion (carried by photons, i.e., radiative
+energy transport, or carried by electrons, i.e., conductive energy
+transport) is sufficient to sustain the star and carry all the flux to
+maintain <i>local</i> energy conservation. However, this is <i>not</i> always the
+case! For example, we know this is not the case in the outer layers of
+the Sun, we can <a href="https://apod.nasa.gov/apod/ap200203.html">directly see that</a>:
+</p>
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/CCzl0quTDHw?si=1h3tkmpwsi4w9uRz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>
+We can also see this is not the case in the envelopes of red
+supergiants, as for example Betelgeuse, VY Canis Majoris, etc. Less
+directly, we can also infer this to happen in the cores of massive
+stars: <i>some stellar layers are not stably stratified and energy
+transport is not only diffusive</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org870c001" class="outline-2">
+<h2 id="org870c001"><a href="#org870c001">Convection</a></h2>
+<div class="outline-text-2" id="text-org870c001">
+<p>
+In this lecture we will deal with convection, which allows for <i>energy
+transport through macroscopic motion of matter</i> resulting in a
+<i>non-zero energy flux with a zero matter flux</i>.
+</p>
+
+<p>
+Convection involves turbulence (the "last" open problem of classical
+physics), and is because of this inherently multi-dimensional. Because
+of this, convection is usually one of the most approximate ingredients
+in stellar calculations, and often the root of many open problems.
+</p>
+
+<p>
+Convection is a <i>thermal</i> instability (as we will see it kicks in if the
+temperature gradient is steeper than some threshold condition),
+although it results in <i>local</i> motion of gas/plasma: as we will see the
+velocities are very small compared to thermal velocities. Moreover, it
+is <i>not</i> unique to stars: the monsoon clouds in Tucson's summer are also
+manifestation of convection in the Earth atmosphere!
+</p>
+
+<p>
+Before discussing the details of the physics of convection by using
+oversimplified pictures dating back to <a href="https://en.wikipedia.org/wiki/Ludwig_Prandtl">Prandtl</a>, have a look at the
+following animations of multi-dimensional simulations of convection,
+these are probably/hopefully closer to reality than many of the
+oversimplifications we will use later in this lecture.
+</p>
+
+<p>
+<b>N.B.:</b> It is important to keep in mind that we adopt modeling
+simplifications to make the simulation of stars tractable, but these
+introduce systematic uncertainties which are active topic of research.
+Approximations are present also in the multidimensional simulations
+shown below, and therefore they should <i>not</i> be taken as the truth!
+However, these multi-dimensional simulations do not need to make the
+same assumptions we will discuss in this lecture, which makes them
+informative on how rough these approximations are.
+</p>
+
+<p>
+What all these simulations of convection in different settings show is
+that the morphology of the convective flow is <i>more complicated</i> than
+what we will assume. You can imagine "thermal flux tubes" carried by
+the gas that transport energy in all these situations, but the way we
+describe them in spherically symmetric models of stars <i>cannot</i> (and
+does not attempt to) capture all the details we can see in the Sun and
+or a few nearby red supergiants, and we can simulate in restricted
+time and spatial domains.
+</p>
+</div>
+
+<div id="outline-container-orgbfaa292" class="outline-3">
+<h3 id="orgbfaa292"><a href="#orgbfaa292">Core convection in a massive star (<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract">Anders et al. 2022b</a>)</a></h3>
+<div class="outline-text-3" id="text-orgbfaa292">
+<iframe width="600" height="400" src="https://player.vimeo.com/video/684826914" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<p>
+This is a simulation of the temperature fluctuations (right) and
+vertical velocities (left) in "code units" using the code <a href="https://github.com/DedalusProject/dedalus">Dedalus</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf91cb06" class="outline-3">
+<h3 id="orgf91cb06"><a href="#orgf91cb06">Envelope convection in a red super-giant (<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...929..156G/abstract">Goldberg et al. 2022</a>)</a></h3>
+<div class="outline-text-3" id="text-orgf91cb06">
+<iframe width="600" height="400" src="https://www.youtube.com/embed/Cq5EqDkXFhQ?si=m4hGwqZy_YPeOcxC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>
+This is a 3D radiation-hydrodynamics simulation of large portions of
+the envelope of a red supergiant (not that different from
+Betelgeuse), computed with the <a href="https://www.athena-astro.app/">ATHENA++</a> code.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2ed44bc" class="outline-3">
+<h3 id="org2ed44bc"><a href="#org2ed44bc">Thermonuclear runaway during a Nova explosion (<a href="https://ui.adsabs.harvard.edu/abs/2018A%26A...619A.121C/abstract">Casanova et al. 2018</a>)</a></h3>
+<div class="outline-text-3" id="text-org2ed44bc">
+<video  controls width="600" height="400" src="./images/125M-ONe-3.mp4" </video>
+
+<p>
+This is a 2D simulation of convection developing during a nova
+explosion using the <a href="https://flash.rochester.edu/site/">FLASH</a> code. The movie shows the (log<sub>10</sub>) mass
+fraction of $<sup>20</sup>$Ne, and is taken from <a href="http://www.fen.upc.edu/users/jjose/">J. Jordi's personal webpage</a>
+(one of the co-authors).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org11e7bea" class="outline-2">
+<h2 id="org11e7bea"><a href="#org11e7bea">The timescale for convection</a></h2>
+<div class="outline-text-2" id="text-org11e7bea">
+<p>
+We can define a timescale associated to the macroscopic motion of
+matter with net zero flux that is carrying energy &tau;<sub>conv</sub> = &Delta; r/v<sub>conv</sub>.
+This is the "convective turnover timescale", where &Delta; r is the spatial
+extent of a convective region, and v<sub>conv</sub> is the velocity of the blobs
+of matter moving around.
+</p>
+
+<p>
+In the following we will see how to find &Delta; r and get an estimate of
+v<sub>conv</sub>.
+</p>
+
+<ul class="org-ul">
+<li><b>Q</b>: We have already encountered two <i>global</i> timescales relevant to
+stars, the free fall timescale &tau;<sub>ff</sub> and the Kelvin-Helmholtz
+timescale &tau;<sub>KH</sub>. &tau;<sub>conv</sub> is instead a <i>local</i> timescale, relevant only
+to the convective layers. How do you think it compares to the two
+global timescales we have defined?</li>
+</ul>
+
+<p>
+Since convection is an <i>instability</i> we expect that it kicks in when the
+stability of the matter stratification and transport of energy by the
+other mechanisms we have already discussed breaks down: <i>convection
+occurs if energy diffusion is insufficient to carry the flux</i>.
+</p>
+
+<p>
+How convection exactly turns on/off and especially how to treat this
+in stellar evolution models is still a debated issue - but we can
+construct a <a href="#orgfb60d8b">stability criterion</a>: when this is violated, convection
+develops. <a href="#org64a737a">Later on</a> we will develop a theoretical model for the <i>time-
+and spatially- averaged steady state</i> which we expect convection to
+reach when the instability saturates, glossing over the growth phase
+of the instability. Hopefully, stellar <i>evolution</i> timescales are long
+enough that describing the averaged steady state resulting from
+convection is sufficient for our purposes (but there are exceptions,
+for example during explosions of when looking at phenomena on
+timescales shorter than &tau;<sub>conv</sub>).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfb60d8b" class="outline-2">
+<h2 id="orgfb60d8b"><a href="#orgfb60d8b">Convective stability criterion: Schwarzschild &amp; Ledoux criterion</a></h2>
+<div class="outline-text-2" id="text-orgfb60d8b">
+
+<figure id="org11245d9">
+<img src="./images/conv_blobs.png" alt="conv_blobs.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Skematic picture of the convective stability based on Prandtl oversimplified "bubble picture". The right panel shows schematically the &rho;(P) track, in the left panel the bubble is moved upwards (i.e. towards lower pressure), so we expect adiabatic expansion of the bubble to mantain pressure equilibrium with the environment. The This is Fig. 5.3 in Onno Pols' lecture notes.</figcaption>
+</figure>
+
+<p>
+To derive a stability criterion, let's assume to start from a stable
+situation, where the temperature gradient is determined by the
+(radiative) diffusion of energy: dT/dr &prop; &kappa; L/(4&pi; r<sup>2</sup>).
+</p>
+
+<p>
+Let's consider a parcel of gas initially in equilibrium with its
+surroundings at pressure P<sub>1</sub> and density &rho;<sub>1</sub>. To determine a stability
+criterion, let's perturb such parcel by displacing it by a certain
+(small) amount &Delta; and discuss how the parcel reacts: if things act to
+move the parcel of gas back towards its original position we have a
+stable situation, if instead a seed initial displacement &Delta; result in
+more displacement, we have an unstable situation.
+</p>
+
+<p>
+As the gas parcel moves, we can assume it maintains hydrostatic
+equilibrium with the surrounding: we are looking for a thermal
+instability that acts on a longer timescale than dynamical timescale.
+Moreover, if this were not the case, any pressure imbalance would be
+equalized through sound-waves. Therefore, throughout the path &Delta; and at
+the final position we have P<sub>bubble</sub> = P<sub>environment</sub>.
+</p>
+
+<p>
+Let's calculate the density. Since we assume &Delta; to be "small" (w.r.t.
+the relevant spatial scales in the star), a first order approximation
+is sufficient: &rho;<sub>bubble</sub> = &rho;<sub>1</sub> + (d&rho;/dr)<sub>ad</sub> &Delta;. The relevant way to calculate
+d&rho;/dr here is to assume that the gas parcel moves <i>adiabatically</i>: there
+is no time for heat exchange, dq=0, and the specific entropy of the
+bubble remains constant ds = 0 (recall thermodynamics!).
+</p>
+
+<p>
+We want to compare &rho;<sub>bubble</sub> after the displacement by &Delta; to the
+environment density. Once again we can use a first order
+approximation, but for the environment we have assumed an initially
+stable stratification, meaning d&rho;/dr is not adiabatic, but the
+radiative gradient. Therefore &rho;<sub>2</sub> = &rho;<sub>1</sub> + (d&rho;/dr)<sub>env </sub>&Delta; &equiv;
+&rho;<sub>1</sub> + (d&rho;/dr)<sub>rad </sub>&Delta;, because we are assuming the surrounding
+environment to be in radiative equilibrium (and assessing the
+stability of that equilibrium).
+</p>
+
+<p>
+<b>N.B.:</b> we have derived an equation for dT/dr in radiative equilibrium
+(i.e., when the energy is transported by the diffusion of photons),
+which combined with the EOS can be turned into (d&rho;/dr)<sub>rad</sub>.
+</p>
+
+<p>
+<b>N.B.:</b> In reality, the "bubble" picture is a gross oversimplification.
+In a convective layer what really moves around are "flux tubes" of
+thermal energy carried by gas, but there is not a true "bubbling". A
+common misconception is that water boiling is exhibiting convection:
+that is not exactly correct. Water boiling is <i>by definition</i> a phase
+transition from liquid to gas, however, shortly before the phase
+transition occurs, it is true that conduction in the water is
+typically insufficient to carry the energy release at the bottom, and
+convective motion can be spotted as a small simmering of the water
+breaking down into small waves at the surface.
+</p>
+</div>
+
+<div id="outline-container-org7e1a4c6" class="outline-3">
+<h3 id="org7e1a4c6"><a href="#org7e1a4c6">Instability condition</a></h3>
+<div class="outline-text-3" id="text-org7e1a4c6">
+<p>
+Comparing the density of the displaced bubble &rho;<sub>bubble</sub> to the density of the
+environment &rho;<sub>2</sub> we can determine a condition for instability. If
+&rho;<sub>Bubble</sub> &le; &rho;<sub>2</sub> then there will be a buoyant force acting to
+displace it further up (Archimedes force, the bubble displaces a
+volume of fluid heavier than its own weight!):
+</p>
+
+
+<div class="latex" id="org57da299">
+\begin{equation}\label{eq:instability_crit}
+\mathrm{Instability\ if:} \ \rho_\mathrm{Bubble} \leq \rho_{2}  \Rightarrow
+\left(\frac{d\rho}{dr}\right)_\mathrm{ad} \leq
+\left(\frac{d\rho}{dr}\right)_\mathrm{env} \equiv \left(\frac{d\rho}{dr}\right)_\mathrm{rad} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+Therefore, the density stratification for radiative energy transport
+is <i>unstable w.r.t. buoyancy forces</i> <b>if</b> the density gradient (d&rho;/dr)<sub>rad</sub>
+is larger than the adiabatic gradient (d&rho;/dr)<sub>ad</sub>: if the gradient is
+<i>too steep</i> then radiative diffusion is not sufficient to carry the
+energy flux and convection kicks in, and the threshold defining what
+is <i>too steep</i> is the adiabatic gradient. This is the criterion derived
+by <a href="https://en.wikipedia.org/wiki/Martin_Schwarzschild">Martin Schwarzschild</a>, however, in stellar physics textbooks it is
+often re-written in a slightly different form.
+</p>
+</div>
+
+<div id="outline-container-org3c4979a" class="outline-4">
+<h4 id="org3c4979a"><a href="#org3c4979a">Schwarzschild criterion</a></h4>
+<div class="outline-text-4" id="text-org3c4979a">
+<p>
+For the same reason why we tend to use the Lagrangian enclosed mass as
+independent coordinate in stellar calculation, it is impractical to
+use the derivatives w.r.t. radius when trying to determine whether the
+stratification of gas is stable or not. For example, a red supergiant
+envelope (which is convective!) has a radial extent of &sim; 100-1000s of
+R<sub>☉</sub>. Moreover, since we are only dealing with properties of the
+stellar gas here, it is more practical to use as independent
+coordinate something else that is more directly related to the gas
+itself. The common choice is to use the pressure P itself.
+</p>
+
+<p>
+<b>N.B.:</b> P(r) is also monotonically increasing outwards because of the
+hydrostatic equilibrium equation, much like m(r) is, so it is a valid
+variable to use as independent coordinate.
+</p>
+
+<p>
+Thus, rewriting d&rho;/dr = (d&rho;/dP)/dP/dr, using the ideal gas EOS, and
+defining the pressure scale height as the e-folding length of the
+pressure:
+</p>
+
+<div class="latex" id="org9bd3903">
+\begin{equation}
+ H_{p} = - \frac{dr}{d \log(P)} \Leftrightarrow P(r) \simeq P_{0} e^{-r/H_{p}} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+we can rewrite:
+</p>
+
+<div class="latex" id="orgc430f34">
+\begin{equation}
+\frac{d\rho}{dr}= -\frac{P}{H_{P}} \frac{d\rho}{dP} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+<b>N.B.:</b> because of the minus sign in the definition of pressure scale
+height (which is there to make H<sub>p</sub> a positive quantity), the signs
+change when going from (d&rho;/dr)<sub>i</sub> to &nabla;<sub>i</sub>.
+</p>
+
+<p>
+Furthermore, it is helpful to rewrite this in terms of temperature
+gradients instead of density gradients. These changes of variables,
+assuming an ideal gas EOS with constant mean molecular weight &mu; allow
+to re-write the instability condition \ref{eq:instability_crit} in the
+form most commonly called Schwarzschild criterion:
+</p>
+
+<div class="latex" id="orgc11a544">
+\begin{equation}\label{eq:schwarzschild_crit}
+\mathrm{Instability\ if:} \ \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{rad} = \nabla_\mathrm{rad} > \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{ad} = \nabla_\mathrm{ad} \ \ ,
+\end{equation}
+
+</div>
+<p>
+with &mu; = constant. Note that from the radiative transport equation we
+can directly obtain &nabla;<sub>rad</sub>
+</p>
+
+<div class="latex" id="orgf2370e2">
+\begin{equation}\label{eq:nabla_rad}
+\nabla_\mathrm{rad} = \frac{3\kappa L P}{64\pi G m \sigma T^{4}} \propto \kappa L\ \ ,
+\end{equation}
+
+</div>
+
+<p>
+So we see immediately that this is going to be large and prone to
+convective instability in regions where there is a large opacity &kappa; &equiv;
+&kappa;(m) and/or regions with a large luminosity L &equiv; L(m).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8cc5251" class="outline-4">
+<h4 id="org8cc5251"><a href="#org8cc5251">Ledoux criterion</a></h4>
+<div class="outline-text-4" id="text-org8cc5251">
+<p>
+In a star, &mu; is <i>not</i> always constant: as we have already seen there can
+be regions of <i>partial ionization</i> where &mu; changes as we move through
+them, and we already know that in the fully ionized inner regions of
+the star we have &mu; &cong; 1/(2X+3Y/4+Z/2) so as we convert hydrogen into
+helium in the core (and later on helium into metals), we also expect &mu;
+to change. We can thus rewrite the instability condition
+\ref{eq:instability_crit} without assuming &mu; = constant.
+</p>
+
+<p>
+To do this, it may be helpful to write the EOS functional dependence
+in a very general form P&equiv; P(&rho;, T, {X<sub>i</sub>}) &equiv; P(&rho;, T, &mu;). By
+differentiating this we obtain
+</p>
+
+<div class="latex" id="org19eae73">
+\begin{equation}
+\frac{d\rho}{\rho} = \alpha \frac{dP}{P} -\delta \frac{dT}{T} + \varphi \frac{d\mu}{\mu} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where &alpha;, &delta;, and &varphi; are coefficients that depend on the details of the
+EOS, but known as long as the EOS is known.
+</p>
+
+<p>
+We can then rewrite \ref{eq:instability_crit} as
+</p>
+
+<div class="latex" id="org7075821">
+\begin{equation}\label{eq:ledoux_crit}
+\mathrm{Instability\ if:} \nabla_\mathrm{rad} \geq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
+\end{equation}
+
+</div>
+<p>
+with &nabla;<sub>&mu;</sub> = &part; log(&mu;)/&part;log(P). Eq.
+\ref{eq:ledoux_crit} is usually referred to as the Ledoux criterion
+(<a href="https://ui.adsabs.harvard.edu/abs/1947ApJ...105..305L/abstract">Ledoux 1947</a>).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc40ebac" class="outline-4">
+<h4 id="orgc40ebac"><a href="#orgc40ebac">Secular mixing processes: semiconvection and thermohaline mixing</a></h4>
+<div class="outline-text-4" id="text-orgc40ebac">
+<p>
+For stellar layers that are stable according to the Ledoux criterion
+but unstable according to the Schwarzschild criterion as we have
+defined them above, that is
+</p>
+
+<div class="latex" id="org3d70676">
+\begin{equation}\label{eq:semiconv_crit}
+\nabla_\mathrm{ad} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+the chemical potential gradient acts as a stabilizing force. There
+will <i>not</i> be a full blown instability, but rather, in the approximate
+toy model we have used to derive the instability criterion, the gas
+parcels will experience small oscillations where the &mu; gradient acts
+as a damping force. This is the so called <b>semiconvection</b>.
+</p>
+
+<p>
+Viceversa, if a layer is Schwarzschild stable but Ledoux unstable
+(this can occur depending on &delta; and &phi;, that is depending on the EOS and
+the chemical composition):
+</p>
+
+<div class="latex" id="orgba49ec6">
+\begin{equation}\label{eq:thermohaline_crit}
+\nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} \ \ ,
+\end{equation}
+
+</div>
+<p>
+then the mean molecular weight gradient acts to <i>destabilize</i> the layer.
+In this case, in our simplistic picture, a blob of gas will slowly
+start slowly moving because of &nabla;<sub>&mu;</sub> but there will be no restoring forces,
+and we obtain the so called <b>thermohaline mixing</b> or <b>double diffusion
+instability</b>. The name double diffusion comes from the fact that for
+the gas parcel to move it has to diffuse thermal energy to its
+environment (which otherwise would stabilize it), as its different
+chemical composition also diffuses. This leads to the formation of
+long "fingers", as you can <a href="https://www.stellarphysics.org/thermohaline-mixing">prove in a kitchen experiment</a>:
+</p>
+
+
+<figure id="org7f7d91e">
+<img src="./images/thermohaline.jpg" alt="thermohaline.jpg" width="40%">
+
+<figcaption><span class="figure-number">Figure 2: </span>Double-diffusive fingers in hot salty water on top of cold fresh water. Credits: M. Cantiello.</figcaption>
+</figure>
+
+<p>
+The thermohaline mixing is obviously not only a stellar phenomenon: it
+can occur for example in the sea close to the equator, where the
+surface is heated by the Sun and evaporates faster, leading to a layer
+with hotter and saltier water (higher &mu;) on top of colder and less
+salty water below.
+</p>
+
+<p>
+An example where it occurs in stars are accretors in binaries which
+may receive helium enriched material from the outer layers of the core
+of the donor star, putting helium rich higher &mu; gas on top of the lower &mu;
+envelope.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4722598" class="outline-4">
+<h4 id="org4722598"><a href="#org4722598">Which instability criterion should one use?</a></h4>
+<div class="outline-text-4" id="text-org4722598">
+<p>
+Naively, one may think that the Ledoux convection is more physically
+accurate, since it requires one less hypothesis (which we know to not
+always be correct inside a star). However, when calculating stellar
+models, what we are interested in is the <i>long-term</i> evolution of the
+star: as you can see from the thermohaline mixing figure above, this
+is not a 1D process (the "fingers" end with "mushrooms"), and we
+typically care about timescales very long compared to the timescales
+for these processes. These are in fact <i>thermal</i> processes and their
+timescales are proportional to the <i>local</i> thermal timescale, which as
+we have already seen is generally short compared to the evolutionary
+timescale.
+</p>
+
+<p>
+Especially for convection in the stellar cores (where we will see
+energy is generated, therefore L can be very large, especially in
+massive stars and drive convection), convection may flatten the &mu;
+gradient on a timescale short compared to the main sequence lifetime,
+therefore erasing the ingredient that differentiates the two (see for
+instance <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...928L..10A/abstract">Anders et al. 2022a</a>). This is an active topic of debate in the
+recent literature!
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org64a737a" class="outline-2">
+<h2 id="org64a737a"><a href="#org64a737a">Mixing length theory</a></h2>
+<div class="outline-text-2" id="text-org64a737a">
+<p>
+Let's now consider what happens in an unstable layer: we need to model
+how the energy is transported in these layers, were radiative
+diffusion is insufficient and the gas will start moving. An ideal
+solution to this problem would follow the dynamics of buoyant parcels
+of gas over the (long) thermal timescale, which is in general <i>not</i>
+possible: hydrodynamic simulations can only compute the much shorter
+<i>dynamical</i> timescales!
+</p>
+
+<p>
+Physically, in the unstable situation we have described above, we
+should expect macroscopic motion of gas (the "bubbles") to start, and
+these "bubbles" would move upward adiabatically, maintaining
+hydrostatic balance with the surroundings, until they release their
+excess heat, cooling down and finally falling back. This obviously is
+<i>not</i> a one dimensional problem, since we have some bubbles moving
+upwards and some moving downwards simultaneously so that the net mass
+flux is zero, but the net energy flux is non-zero. Moreover this
+typically leads to turbulence in the flow which is an inherently
+multi-dimensional problem.
+</p>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Erika_B%C3%B6hm-Vitense">Erika Bohm-Vitense</a> developed in 1957 an effective mean-field theory to
+describe the space- and time-averaged steady state at which convective
+energy transport would saturate. This is the so-called <i>mixing length
+theory</i> (MLT) that is widely applied in stellar evolution still today,
+and is based on the simplified "bubble picture" from Prandtl we
+already used to derive a stability criterion.
+</p>
+
+<p>
+Before deriving the energy flux, and ultimately temperature gradient
+in a convective region according to MLT, let's try to get an intuition
+for what this very successful, albeit very approximate picture tries
+to describe. We can consider a more familiar example of convection for
+that, such as a self-sustaining flame:
+</p>
+
+
+<figure id="org1178f68">
+<img src="./images/fire.jpg" alt="fire.jpg" width="50%">
+
+<figcaption><span class="figure-number">Figure 3: </span>A flame sustains itself by driving convection that brings in more oxygen to allow combustion to happen.</figcaption>
+</figure>
+
+<p>
+MLT is meant to describe the spatial and temporal average of the gas
+flow in the convective region driven by the (chemical) energy release
+from the flame. Intuitively, it's like taking a picture (assuming any
+snapshot in time is statistically equivalent to any other), and then
+averaging across the horizontal cross section of this flame to obtain
+an approximation to the time- and space- averaged vertical flow of
+energy and temperature. With all the limitations that this entails,
+MLT is a very successful theory that is sufficient for <i>most</i> stellar
+evolution applications since those typically are concerned with
+timescales that are very long w.r.t. the convective turnover timescale
+(i.e., in the fire analogy, very long compared to the "flickering" of
+the flames).
+</p>
+
+<ul class="org-ul">
+<li><b>Q</b>: based on this, can you guess where/when MLT will be an
+insufficient approximation?</li>
+</ul>
+</div>
+
+<div id="outline-container-orgb184051" class="outline-3">
+<h3 id="orgb184051"><a href="#orgb184051">Convective energy flux</a></h3>
+<div class="outline-text-3" id="text-orgb184051">
+<p>
+To calculate the energy flux carried by convection within the
+framework of MLT, let's consider the difference in temperature between
+a bubble that is displaced upwards by an amount &ell; in an unstable layer
+w.r.t. the surrounding environment:
+</p>
+
+<div class="latex" id="orgd7f0e54">
+\begin{equation}
+\Delta T = T_\mathrm{Bubble} - T_\mathrm{env} = \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{Bubble}\ell \right) - \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{env}\ell \right) = \left(\frac{dT}{dr}\rvert_\mathrm{Bubble} - \frac{dT}{dr}\rvert_\mathrm{env} \right)\ell \ \ .
+\end{equation}
+
+</div>
+
+<p>
+To put this in the form of the gradients that we have defined above
+for the stability, we notice that dT/dr = T &times; d log(T)/ dlog(P) &times; d
+log(P)/dr, and assume that T<sub>Bubble</sub> &cong; T<sub>env</sub> &equiv; T, that is
+effectively consider only the zeroth order of the Taylor series of the
+temperature expansion, and rewrite for the temperature difference:
+</p>
+
+<div class="latex" id="org4277d6d">
+\begin{equation}
+\Delta T = \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right) \ \ ,
+\end{equation}
+
+</div>
+<p>
+where we use the assumption that the environment is characterized by a
+radiative gradient and the bubble by an adiabatic gradient.
+</p>
+
+<p>
+<b>N.B.:</b> The sign has changed becaue of the minus in the definition of
+the pressure scale height H<sub>p</sub>. The stability criterion obtained above
+says that the unstable situation is when &nabla;<sub>rad</sub> is steeper than &nabla;<sub>ad</sub>, so
+the form above also guarantees that &Delta; T is actually positive, as we
+expect for a bubble raising and carrying an excess thermal energy
+compared to the background.
+</p>
+
+<p>
+The excess energy per unit volume carried by the raising bubble is
+then c<sub>p</sub>&rho;&Delta; T, where c<sub>p</sub> is the specific heat at constant
+pressure. Multiplying by the velocity of the bubble we get the
+<b>convective flux</b> (as you can verify by dimensional analysis!):
+</p>
+
+<div class="latex" id="orgbb88d6a">
+\begin{equation}
+F_\mathrm{conv} = c_{p} \rho \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right) v_\mathrm{conv} \ \ .
+\end{equation}
+
+</div>
+
+<ul class="org-ul">
+<li><b>Q</b>: why do we use the constant pressure c<sub>p</sub> here? <b>Hint</b>: think of the
+assumptions we have discussed above.</li>
+</ul>
+
+<p>
+Here there are two things we don't know yet: how far the bubble goes &ell;
+and the convective velocity.
+</p>
+
+<p>
+<b>N.B.:</b> In general, to maintain the net-zero mass flux, for each bubble
+of mass &delta; m raising there is one of the same mass sinking. The raising
+one carries excess thermal energy w.r.t. the radiative background, and
+the sinking one carries a deficiency in thermal energy w.r.t. the
+background so the total convective flux should be twice what we have
+derived. On the other hand, by taking the difference in the gradients
+across the entire (as of yet unknown) travel path &ell;, we are
+overestimating the gradient difference, and on average it should be
+roughly half of that, canceling out the mistake we make by neglecting
+the sinking bubbles.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4f7e133" class="outline-3">
+<h3 id="org4f7e133"><a href="#org4f7e133">Convective velocity</a></h3>
+<div class="outline-text-3" id="text-org4f7e133">
+<p>
+To estimate the convective velocity v<sub>conv</sub> we can consider the work
+done by the buoyancy forces (per unit volume) on the bubble.
+</p>
+
+<ul class="org-ul">
+<li><b>Q</b>: before we even do this calculation, can you imagine an
+upper-limit for v<sub>conv</sub> in the approximated picture we are developing?
+(<b>Hint</b>: we have assumed that any pressure imbalance between the
+bubble and the environment would be quickly be washed out)</li>
+</ul>
+
+<p>
+The buoyancy force per unit volume acts in the direction opposite of
+gravity and has amplitude equal to weight of the displaced fluid minus
+the weight of the bubble itself, B = - &Delta;&rho; &times; |g|, where &Delta;&rho;= &rho;<sub>Bubble</sub> -
+&rho;<sub>env</sub> is the difference in density between the rising fluid element and
+the environment. Doing a Taylor expansion and keeping only the first
+order in &ell; we have:
+</p>
+
+<div class="latex" id="org3541825">
+\begin{equation}
+\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}\rvert_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}\rvert_\mathrm{rad} \ell\right) \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+This is the difference in density between the bubble and the
+environment at the end of the whole (yet unknown) travel path &ell;. On
+average throughout the path, since the difference was &Delta;&rho; = 0 at the
+beginning, we only have half of that, so let's just consider 1/2 of
+this to estimate the work done by buoyancy. We can further express the
+density gradients as a function of &nabla;<sub>i</sub> = &part; log(T)/&part; log(P).
+</p>
+
+<p>
+By energy conservation, the work done by buoyancy on the bubble is
+equal to the kinetic energy (per unit volume) acquired by the bubble,
+which is what we will use to make v<sub>conv</sub> appear:
+</p>
+
+<div class="latex" id="orgb27d8dc">
+\begin{equation}\label{eq:v_conv_MLT}
+E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho v_\mathrm{conv}^{2} = \frac{\rho}{4H_{p}}(\nabla_\mathrm{rad}-\nabla_\mathrm{ad})\ell^{2}g \ \ .
+\end{equation}
+
+</div>
+<p>
+<b>N.B.:</b> the buoyancy force and the displacement vector are antiparallel,
+which, together with the definition of H<sub>p</sub>, adjusts the minus signs.
+</p>
+
+<p>
+Conveniently in Eq. \ref{eq:v_conv_MLT} both v<sub>conv</sub> and &ell; are squared: the same
+exact reasoning applies to the bubbles sinking and those rising!
+Eq. \ref{eq:v_conv_MLT} is a relation between the two unknowns we have
+in the convective energy flux, v<sub>conv</sub> and &ell;, which allows us to
+eliminate one for the other:
+</p>
+
+<div class="latex" id="orgff8934b">
+\begin{equation}\label{eq:v_conv_MLT_estimate}
+ v_\mathrm{conv} = \sqrt{\frac{\ell^{2}g}{2H_{P}} (\nabla_\mathrm{rad} - \nabla_\mathrm{ad})}\ \ ,
+\end{equation}
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbc99b19" class="outline-3">
+<h3 id="orgbc99b19"><a href="#orgbc99b19">The mixing length and &alpha;<sub>MLT</sub></a></h3>
+<div class="outline-text-3" id="text-orgbc99b19">
+<p>
+At this point enters the heuristic hypothesis proposed by <a href="https://ui.adsabs.harvard.edu/abs/1958ZA.....46..108B/abstract">Bohm-Vitense
+1958</a> (<b>N.B.:</b> the original paper is in German): let's assume that the
+length scale &ell; traveled <i>on average</i> by a convectively moving bubble
+before losing its identity by releasing its excess heat to the
+surroundings (or absorbing the amount of heat it was lacking, in the
+case of a sinking bubble), is proportional to the local pressure scale
+height. This heuristic hypothesis is sensible, since the pressure
+scale height tells us something about the thermal stratification of
+the gas, and we are discussing an instability that needs to transport
+energy when diffusion is insufficient, and it is still very widely
+used today. It gives us the central hypothesis of MLT:
+</p>
+
+<div class="latex" id="org3800c48">
+\begin{equation}\label{eq:alpha_MLT}
+\ell = \alpha_{MLT} H_{p}
+\end{equation}
+
+</div>
+
+<p>
+The average length traveled by a bubble &ell; is the so-called mixing
+length that gives the name to this "theory", and the proportionality
+constant &alpha;<sub>MLT</sub> is one of the most infamous free parameters in stellar
+evolution that is calibrated on stellar observations. If the heuristic
+hypothesis underpinning this approach holds, it should be a quantity
+of order 1.
+</p>
+
+<p>
+Putting all things together, we can now express the convective energy
+flux as a function of known quantities and this free parameter &alpha;<sub>MLT</sub>:
+</p>
+
+<div class="latex" id="orge1fec97">
+\begin{equation}\label{eq:conv_flux_MLT}
+F_\mathrm{conv} = \rho c_{P} T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2} g H_{P}} (\nabla_\mathrm{rad}-\nabla_\mathrm{ad})^{3/2} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+<b>N.B.:</b> The convective flux predicted by MLT in Eq.
+\ref{eq:conv_flux_MLT} is &prop; to a power of the <i>superadiabaticity</i>
+(&nabla;<sub>env</sub>-&nabla;<sub>ad</sub>) &equiv; (&nabla;<sub>rad</sub> - &nabla;<sub>ad</sub>), because of the
+assumption of an initially radiative background environment.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge04bb46" class="outline-3">
+<h3 id="orge04bb46"><a href="#orge04bb46">Efficiency of convection</a></h3>
+<div class="outline-text-3" id="text-orge04bb46">
+<p>
+Convection is an <i>instability,</i> meaning once it kicks in, it grows
+exponentially fast towards a saturated state. We have neglected the
+growth phase (see also <a href="#org3f40eec">below</a>), and found an approximate description
+for the steady state depending on a free parameter &alpha;<sub>MLT</sub>. We can now
+ask, in such steady state, how big is the superadiabaticity needed
+such that the convective flux carries <i>all</i> the energy? We can estimate
+this equating the convective flux F<sub>conv</sub> to the entire flux that needs
+to be carried throughout a layer at radius r:
+</p>
+
+<div class="latex" id="org11b2874">
+\begin{equation}
+F_\mathrm{conv} \equiv \frac{L(r)}{4\pi r^{2}} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+To obtain an order of magnitude estimate, we can substitute in F<sub>conv</sub>
+the average density of the star, T from the virial theorem estimate,
+assume a monoatomic gas for c<sub>P</sub>, and using L(r)/4&pi; r<sup>2</sup> &sim; L/R<sup>2</sup> we
+obtain:
+</p>
+
+<div class="latex" id="org0db93a6">
+\begin{equation}
+\nabla_\mathrm{rad} - \nabla_\mathrm{ad} \simeq \left(\frac{LR}{M}\right)^{2/3}\frac{R}{GM} \simeq 10^{-8} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where in the last one we use the numerical values for the Sun. This of
+course is an estimate valid in the interior of the Sun (because we
+have used implicitly assumptions of LTE, and used averaged values).
+</p>
+
+<p>
+The fact that the superadiabaticity is so small implies that <i>when
+convection is efficient</i>, <i>the temperature gradient in the star can be
+approximated with adiabatic</i>. This comes from a relatively rough
+estimate, and validates a posteriori many of the questionable assumptions
+we have made in this lecture: since in the end the gradient is very
+nearly adiabatic when convection is efficient, the details do not
+matter that much.
+</p>
+
+<p>
+<b>N.B.:</b> In the outer layers of the star, where &rho; &Lt; &lang; &rho; &rang; and T&Lt; &lang; T &rang;, this
+estimate breaks down, convection is not necessarily efficient and the
+gradient is not necessarily adiabatic. This is important for many
+stellar applications, for example eruptive mass loss of massive stars,
+and dynamical stability of mass transfer in binaries.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4de04a6" class="outline-3">
+<h3 id="org4de04a6"><a href="#org4de04a6">On the convective velocity and chemical mixing</a></h3>
+<div class="outline-text-3" id="text-org4de04a6">
+<p>
+Eq. \ref{eq:v_conv_MLT_estimate} derived above tells us that v<sub>conv</sub>
+&prop; (&nabla;<sub>rad</sub> - &nabla;<sub>ad</sub>)<sup>1/2</sup> &times; (gH<sub>P</sub>)<sup>1/2</sup> &cong; (&nabla;<sub>rad</sub> - &nabla;<sub>ad</sub>)<sup>1/2</sup>
+c<sub>sound</sub> &cong; (&nabla;<sub>rad</sub> - &nabla;<sub>ad</sub>)<sup>1/2</sup> v<sub>Thermal</sub>. We have just seen
+that for efficient convection, the superadiabaticity is small,
+implying that the convective velocities are much smaller than the
+<i>local</i> sound speed (which guarantees that hydrostatic equilibrium is
+verified along the path &ell;), and, equivalently, the local <i>thermal</i>
+velocity.
+</p>
+
+<p>
+Nevertheless, even a velocity of v<sub>conv</sub> &cong; 10<sup>-4</sup> c<sub>sound</sub> is
+sufficient to mix material very efficiently over the evolutionary
+timescales (<b>N.B.:</b> the sound crossing time of a star is &sim; &tau;<sub>ff</sub> &Lt;
+evolutionary timescales by a factor smaller than 10<sup>-4</sup>. For the Sun
+it's hours/billions of years - for now we are using geological
+evidence on Earth to estimate the age of the Sun). Therefore,
+<i>convection not only carries energy flux, but can also mix the
+chemical composition</i>!
+</p>
+
+<p>
+Similar argument apply to semiconvection and thermohaline mixing (and
+even the kitchen experiment can clearly show that thermohaline mixing
+can result in mixing of the composition).
+</p>
+
+<p>
+This is not always important, as we will see: in the Sun's envelope
+for example, convection mixes homogeneous material. However, in the
+core of a massive star, it mixes the material in the burning region
+(where hydrogen is turned into helium) into material that is
+non-burning and thus initially more hydrogen rich. As we will see,
+this determines qualitative morphological differences in the end of
+the main sequence evolution of massive stars w.r.t. low mass stars.
+</p>
+
+<p>
+One can derive from MLT a diffusion coefficient for the mixing of
+chemicals by convection D<sub>conv</sub> = 1/3 &times; v<sub>conv</sub> &ell; = 1/3 &times; v<sub>conv</sub>
+&alpha;<sub>MLT</sub> H<sub>p</sub> (and similarly for thermohaline and semiconvective mixing),
+allowing for a diffusive approximation of convective mixing. In
+reality convective mixing is an advective process: the macroscopic
+motion of the fluid carries around chemicals, and then they diffuse
+from the "bubble" into the environment after having being advected. A
+diffusion approximation is still possible however because of the very
+high efficiency of this mixing (and the fact that when we apply MLT we
+do not attempt to describe faithfully the details of the local
+dynamics of each gas parcel).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbde2188" class="outline-2">
+<h2 id="orgbde2188"><a href="#orgbde2188">Limitations of MLT</a></h2>
+<div class="outline-text-2" id="text-orgbde2188">
+</div>
+<div id="outline-container-org865a2f5" class="outline-3">
+<h3 id="org865a2f5"><a href="#org865a2f5">Convective boundary mixing (a.k.a. "overshooting")</a></h3>
+<div class="outline-text-3" id="text-org865a2f5">
+<p>
+The stability criteria derived from buoyancy argument only determine
+the location where one can expect that radiative diffusion is
+insufficient to carry energy, and therefore small perturbations will
+result in macroscopic motion of matter at v&cong; v<sub>conv</sub> &Lt; v<sub>thermal</sub>.
+However, what happens when a convective element of gas reaches the
+instability boundary with a non-zero velocity? There, the buoyant
+force (and hence the acceleration) goes to zero, but the element has
+already a non-zero velocity! Thus, we should expect it to "overshoot"
+this boundary, decelerate outside of it, extending further the
+convective mixing.
+</p>
+
+
+<figure id="org9704999">
+<img src="./images/overshooting_top.jpg" alt="overshooting_top.jpg">
+
+<figcaption><span class="figure-number">Figure 4: </span>Overshooting top in a thunderstorm on Earth seen from the ISS. Convection carries energy, generate turbulence (think of when an airplane crosses clouds!), and facilitates condensation of water into drops forming the cloud and raining down below this thunderstorm. The "anvil" spreads at the stability boundary, but in the center you can see the overshooting top.</figcaption>
+</figure>
+
+
+<p>
+This simplistic picture of overshooting really requires a
+multi-dimensional treatment. As you can see in the numerical
+simulations by for example <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract">Anders et al. 2022</a> (with the usual caveat
+that simulations &ne; physical world, but at least these do not assume
+spherical symmetry), at the outer boundary the velocity perturbations
+of the gas will turn over and necessarily acquire non-radial
+components. More in general, the gradient within the convective
+boundary mixing region may remain adiabatic (convective penetration)
+and deviate from it only progressively, and the picture of
+overshooting alone (which does not specify the temperature gradient in
+this region) is again an oversimplification. Significant work is
+presently dedicated to better understanding the convective boundary
+and mixing processes active in these regions.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3f40eec" class="outline-3">
+<h3 id="org3f40eec"><a href="#org3f40eec">Time-dependence of convection</a></h3>
+<div class="outline-text-3" id="text-org3f40eec">
+<p>
+By construction MLT (attempts to, arguably successfully) describe the
+<i>steady state reached at the saturation point of the convective
+instability</i>. This is usually sufficient for stars since the evolution
+takes much longer than the convective turnover timescale &tau;<sub>conv</sub>.
+</p>
+
+<p>
+However, there are short phases and/or specific problems in stellar
+physics when one is concerned with timescales short or comparable to
+&tau;<sub>conv</sub>. For example:
+</p>
+
+<ul class="org-ul">
+<li>during explosions (e.g., helium flash, pulsational-pair instability).</li>
+<li>when looking at the interplay between convection and stellar
+oscillations</li>
+<li>&#x2026;</li>
+</ul>
+
+<p>
+In this case, we need to model how convection turns on/off (having a
+model for d v<sub>conv</sub> / dt, see e.g., <a href="https://ui.adsabs.harvard.edu/abs/1969ApJ...157..339A/abstract">Arnett 1969</a>, <a href="https://ui.adsabs.harvard.edu/abs/1974ApJ...190..609W/abstract">Wood 1974</a>, <a href="https://ui.adsabs.harvard.edu/abs/1977ApJ...214..196G/abstract">Gough 1977</a>,
+and more recently <a href="https://ui.adsabs.harvard.edu/abs/2023ApJS..265...15J/abstract">Jermyn 2023</a>).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0e9c434" class="outline-3">
+<h3 id="org0e9c434"><a href="#org0e9c434">Efficiency of semiconvection/thermohaline mixing</a></h3>
+<div class="outline-text-3" id="text-org0e9c434">
+<p>
+The processes we have discussed are all inherently multi-dimensional.
+Therefore, in their 1D formulation necessary to have stellar structure
+and evolution models, we introduce free parameters, such as &alpha;<sub>MLT</sub>
+discussed above. In a sense, these free parameters <i>encapsulate</i> our
+ignorance about details we cannot represent in spherical symmetry.
+</p>
+
+<p>
+This is also true for thermohaline mixing and semiconvection, each
+coming with their poorly known efficiency parameter. Furthermore, we
+need to better understand how these mixing processes in the star
+interact with each other, with rotation, magnetic fields, etc. Entire
+conferences are being dedicated to these topics, e.g. <a href="https://www.kitp.ucsb.edu/activities/transtar21">KITP "Probes of
+transport in stars"</a>!
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgebaf29c" class="outline-3">
+<h3 id="orgebaf29c"><a href="#orgebaf29c">Turbulence</a></h3>
+<div class="outline-text-3" id="text-orgebaf29c">
+<p>
+Allegedly, Erika Bohm Vitense said that had she been aware of the work
+of Kolmogorov on turbulence, she would never had proposed MLT as a
+theory for convection! This is because in a convective layer one
+should expect a subsonic but highly turbulent flow. We can in fact
+estimate the Reynolds number:
+</p>
+
+<div class="latex" id="orgc759532">
+\begin{equation}
+\mathrm{Re} = \frac{\ell v_{conv}}{\nu} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+where &nu; here is the kinematic viscosity of the stellar plasma, a
+quantity that is very complicated to compute from first principle, but
+is usually a very small quantity in practice. Plugging in numbers for
+the Sun's envelope, for example, one gets Re&cong;10<sup>12</sup> (see for example
+<a href="https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract">Jermyn et al. 2022</a>). Such large value is usually associated with a
+high degree of turbulence - an inherently 3D phenomenon, associated
+with intermittence (i.e., time dependence!).
+</p>
+
+<p>
+<b>N.B.:</b> multi-D simulations allow for 3D convective flows, which is one
+step better than MLT, but on the other hand, the effective Reynolds
+number they reach are much smaller than the ones estimated in the
+stars: take them as indicative of the limitations of MLT, but they
+have their own limitations and shortcomings!
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org110c17b" class="outline-2">
+<h2 id="org110c17b"><a href="#org110c17b">The biggest strength of MLT</a></h2>
+<div class="outline-text-2" id="text-org110c17b">
+<p>
+MLT has been used for &gt;50 years in 1D stellar evolution calculations,
+and despite decades of person-time in trying to improve many of its
+aspects, it remains, for better or worse, a cornerstone of stellar
+modeling. This is because it is an "effective mean field theory" that
+successfully describes the time and space averaged state of saturated
+convective instability in a stellar gas using one free parameter only
+(&alpha;<sub>MLT</sub>) and allows us to make <b>evolutionary</b> calculations on timescales
+much longer than the convective turnover timescale.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org458e906" class="outline-2">
+<h2 id="org458e906"><a href="#org458e906">Summary of the key assumptions</a></h2>
+<div class="outline-text-2" id="text-org458e906">
+<ul class="org-ul">
+<li>The gradient of the background environment is <b>radiative</b> (meaning
+energy is transported by radiation diffusion)</li>
+<li>We model the thermal flux tubes carrying energy up and down with no
+mass flux as bubbles moving adiabatically. These are an idealization
+of realistic convective flows which are turbulent and thus space-
+and time-dependent on very short timescales (think of a flickering flame).</li>
+<li>The "bubbles" maintain hydrostatic equilibrium w.r.t. the
+environment at any point in their travel</li>
+<li>We assume that the average distance travelled by a bubble is
+proportional to the local pressure scale height &ell; = &alpha;<sub>MLT</sub> H<sub>p</sub> (the
+"mixing length").</li>
+<li>&alpha;<sub>MLT</sub> is <i>the</i> free parameter of this approach that
+effectively exists because convection is inherently a 3D phenomenon
+that we are trying to approximate in spherical symmetry.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgafc548c" class="outline-2">
+<h2 id="orgafc548c"><a href="#orgafc548c">Homework</a></h2>
+<div class="outline-text-2" id="text-orgafc548c">
+<ul class="org-ul">
+<li>Using the definition of pressure scale height and the hydrostatic
+equilibrium equation, show that P/&rho; = 1/(g H<sub>p</sub>) &rArr; c<sub>sound</sub><sup>2</sup>  &cong; gH<sub>p</sub></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#top"><i class="fa fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa fa-github" style="font-size:16px"></i></a>
+  <hr>
+  <br>
+  Last updated on 8 December 2024 <br>
+  Made with Emacs 28.1 - Org mode 9.5.2
+  <br>
+</div>
+</div>
+</body>
+</html>

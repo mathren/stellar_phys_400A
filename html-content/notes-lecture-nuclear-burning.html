@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2024-12-08 Sun 18:50 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>400A - Nuclear burning</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="./css/style.css" />
+<!-- <link rel="stylesheet" href="./css/fontawesome.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, 400A, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./README.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- The hamburger menu  -->
+<script>
+  function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+</div>
+<div id="content" class="content">
+<p>
+<b>Materials:</b> Onno Pol's lecture notes Chapter 6.1 and 6.2, Kippenhahn
+book Chapter 9 and 18, Cox &amp; Giuli vol. I, Chapter 17.7, Clayton
+Chapter 4, <a href="https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstract">Gamow 1928</a>, <a href="https://ui.adsabs.harvard.edu/abs/1999RPPh...62..395A/abstract">Arnould &amp; Takahashi 1999</a>, <a href="https://ui.adsabs.harvard.edu/abs/2011RPPh...74i6901J/abstract">Jose &amp; Iliadis 2011</a>
+</p>
+
+<div id="outline-container-orga6f796c" class="outline-2">
+<h2 id="orga6f796c"><a href="#orga6f796c">Microphysics of nuclear burning</a></h2>
+<div class="outline-text-2" id="text-orga6f796c">
+</div>
+<div id="outline-container-org955f15b" class="outline-3">
+<h3 id="org955f15b"><a href="#org955f15b">Summary of where we are</a></h3>
+<div class="outline-text-3" id="text-org955f15b">
+<p>
+We have four equations of the stellar <i>structure</i> assuming spherical
+symmetry, LTE, and hydrostatic (&part; t &equiv; 0) equilibrium:
+</p>
+</div>
+
+<div id="outline-container-org4c59a68" class="outline-4">
+<h4 id="org4c59a68"><a href="#org4c59a68">Mass conservation</a></h4>
+<div class="outline-text-4" id="text-org4c59a68">
+<div class="latex" id="org9c7ae27">
+\begin{equation}\label{eq:mass_cont}
+\frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
+\end{equation}
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org95ff34b" class="outline-4">
+<h4 id="org95ff34b"><a href="#org95ff34b">Hydrostatic equilibrium</a></h4>
+<div class="outline-text-4" id="text-org95ff34b">
+<div class="latex" id="orgfc7c79a">
+\begin{equation}\label{eq:HSE}
+\frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
+\end{equation}
+
+</div>
+<p>
+which follows from the momentum conservation equation.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5e16e52" class="outline-4">
+<h4 id="org5e16e52"><a href="#org5e16e52">Equation of state</a></h4>
+<div class="outline-text-4" id="text-org5e16e52">
+<div class="latex" id="org47a771d">
+\begin{equation}
+P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T + P_{QM} + \frac{1}{3}aT^{4}  \ \ .
+\end{equation}
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org630e683" class="outline-4">
+<h4 id="org630e683"><a href="#org630e683">Energy transport</a></h4>
+<div class="outline-text-4" id="text-org630e683">
+<div class="latex" id="org92f40b7">
+\begin{equation}
+\frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
+\end{equation}
+
+</div>
+<p>
+where &nabla; =&part; log(T)/&part; log(P) is the local temperature gradient, equal to
+the radiative gradient in stably stratified regions:
+</p>
+<div class="latex" id="orga237924">
+\begin{equation}
+\nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{16\pi acGm T^{4}}\kappa L
+\end{equation}
+
+</div>
+<p>
+with &kappa; = (1/&kappa;<sub>rad</sub> + 1/&kappa;<sub>cond</sub>)<sup>-1</sup> the combination "in parallel" of the
+radiative and conductive opacity (assumed to be known from atomic
+physics), and &nabla; &equiv; &nabla;<sub>ad</sub> the adiabatic gradient (within &sim;10<sup>-7-8</sup>
+precision) for convective regions. We also have a criterion
+(Schwarzschild or Ledoux) to determine which region is which.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org810fa1c" class="outline-4">
+<h4 id="org810fa1c"><a href="#org810fa1c">Energy conservation</a></h4>
+<div class="outline-text-4" id="text-org810fa1c">
+<div class="latex" id="org4ba52d3">
+\begin{equation}
+\frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
+\end{equation}
+
+</div>
+<p>
+with &epsilon;<sub>grav</sub> = T&part; s/&part; t the change in internal energy (typically &cong; 0 in
+gravothermal equilibrium, that is for phases when the evolution is
+much slower than &tau;<sub>KH</sub>), and &epsilon;<sub>&nu;</sub>&gt;0.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5795393" class="outline-3">
+<h3 id="org5795393"><a href="#org5795393">The next step</a></h3>
+<div class="outline-text-3" id="text-org5795393">
+<p>
+With all the equations above we almost have a complete set of solvable
+differential equations. What is left to discuss is the specific energy
+generation per unit time &epsilon;<sub>nuc</sub> due to nuclear burning (which will
+occupy us in this and <a href="./notes-lecture-nuclear-cycles.html">the next lecture</a>) and the specific energy loss
+&epsilon;<sub>&nu;</sub> due to neutrino losses (which we will treat <a href="./notes-lecture-neutrinos.html">later</a>).
+</p>
+
+<p>
+In doing so, we will introduce another time-dependent equation
+(besides the implicit dependence in &epsilon;<sub>grav</sub>): as nuclear burning
+proceeds, the chemical composition changes, on a timescale that we
+will see is extremely long compared to the thermal and dynamical
+timescales.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org41d78dd" class="outline-3">
+<h3 id="org41d78dd"><a href="#org41d78dd">Energy generation as a self-regulating process</a></h3>
+<div class="outline-text-3" id="text-org41d78dd">
+<p>
+We have seen in the <a href="./notes-lecture-VirTheo.html">virial theorem lecture</a> that one can derive from
+first principle that stars have a "negative heat capacity" and obtain
+a scaling between mass, radius and average temperature:
+</p>
+<div class="latex" id="org9144a73">
+\begin{equation}
+\langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where C was a constant depending on the details of the mass
+distribution.
+</p>
+
+<p>
+The star has a finite temperature, thus it radiates away thermal
+energy at the surface in the form of a luminosity L. This means the
+gravitational potential energy is decreasing (because of the virial
+theorem!), thus it must contract leading to an increase in T. For the
+Sun this would go on for &sim; 15 Myrs before it runs out of all of its
+internal energy, which is way too short a timescale to explain many
+Earthly observables.
+</p>
+
+<p>
+We know this must stop either because the ideal gas EOS does not work
+(QM effects &rarr; degeneracy pressure &rarr; white dwarfs), or because some
+other energy source intervenes, balancing out the energy losses at the
+surface. <i>Stars don't shine because they burn, stars burn because they
+shine</i>.
+</p>
+
+<p>
+Initially, people considered chemical reactions and radioactivity as a
+possible energy sources, but it was shown very quickly that these are
+insufficient.
+</p>
+
+<ul class="org-ul">
+<li><b>Q</b>: how would you show that these sources are insufficient? (<b>Hint</b>:
+consider the &phi; factor for the amount of mass released in the
+equations below)</li>
+</ul>
+
+<p>
+It took major advances in quantum mechanics (QM) and
+their application to atomic and nuclear theory to work out in the late
+1930s that the energy source is nuclear burning, a result obtained by
+<a href="https://en.wikipedia.org/wiki/Hans_Bethe">Hans Bethe</a> and
+collaborators.
+</p>
+
+<p>
+In a sense, you can think  of a star as an <i>inertial confinement nuclear
+reactor</i> where the confinement is provided by the self-gravity. This
+also implies that nuclear burning in a star is a <i>self-regulating</i>
+process: because nuclear reactions are a consequence of the energy
+losses, during long-lived equilibrium phases of the stellar life, they
+produce just enough energy to balance the losses! In other words,
+L<sub>nuc</sub> = L ( + L<sub>&nu;</sub>).
+</p>
+
+<p>
+If a star were to not produce enough energy to verify that (i.e.,
+L&gt;L<sub>nuc</sub>), then it will lose too much energy, meaning it will contract,
+and increase it's temperature because of the virial theorem, which in
+turn regulates the energy generation by nuclear reactions (as we will
+see in a moment), until L<sub>nuc</sub> reaches L.
+Viceversa, if L<sub>nuc</sub> &gt; L for some reason (e.g., there is a thermonuclear
+explosion in the star), than the extra energy release will cause an
+expansion of the star and by the virial theorem lower the mean
+temperature until L<sub>nuc</sub> = L.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb8bfcf3" class="outline-3">
+<h3 id="orgb8bfcf3"><a href="#orgb8bfcf3">The nuclear timescale</a></h3>
+<div class="outline-text-3" id="text-orgb8bfcf3">
+<p>
+Naturally, nuclear energy generation consumes nuclear fuel: to provide
+L<sub>nuc</sub> the composition of the star slightly changes in time. This drives
+the <i>evolution</i> of star.
+</p>
+
+<p>
+We can estimate the timescale for this assuming the star is in
+gravothermal equilibrium, so L=L<sub>nuc</sub>. The <i>nuclear timescale</i> is the time
+it takes to lose the energy generated by nuclear reactions:
+</p>
+
+<div class="latex" id="org643e53b">
+\begin{equation}
+\tau_\mathrm{nuc} = \varphi f_\mathrm{burn} \frac{Mc^{2}}{L_\mathrm{nuc}} \equiv \varphi f_\mathrm{burn} \frac{Mc^{2}}{L_{}} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+where &phi; is the fraction of rest mass of nuclei converted in energy by
+nuclear burning, f<sub>burn</sub> is the fraction of the stellar mass M that is
+affected by burning (we need a stellar model to estimate that).
+For the Sun, f<sub>burn</sub> &cong; 0.1 from detailed models (as you can verify
+with your <code>MESA-web</code> model!).
+</p>
+
+<p>
+&phi; depends on the nuclear physics details. For hydrogen burning into
+helium (the two lightest elements), the proton mass is m<sub>p</sub> = 1.0081 m<sub>u</sub>
+(where the atomic mass unit m<sub>u</sub> is defined in such a way that the mass
+of \(^{12}\mathrm{C}\) is exactly 12m<sub>u</sub> - this is more convenient to measure
+experimentally to make a standard), and the mass of helium 4 is m(<sup>4</sup>He)
+= 4.0039m<sub>u</sub>, so the fraction of rest mass of 4 protons turning into a
+helium nucleus is:
+</p>
+
+<div class="latex" id="orgbd7d803">
+\begin{equation}\label{eq:mass_defect}
+\varphi = \frac{4m_{p} - m(^{4}\mathrm{He})}{4m_{p}} = \frac{2.85 \times 10^{-2} m_{u} c^{2}}{4m_{p}} \simeq 0.007 \ \ .
+\end{equation}
+
+</div>
+<p>
+Note that to turn 4 protons into a helium, because of charge and
+leptonic number conservation, there needs to be 2 positrons and 2
+neutrinos produced! Plugging in &phi; and M<sub>☉</sub> and L<sub>☉</sub> we get for the nuclear
+timescale:
+</p>
+
+<div class="latex" id="orgf5fc0eb">
+\begin{equation}\label{eq:tau_nuc_scaling}
+\tau_\mathrm{nuc} \simeq 10^{10} \frac{f_\mathrm{burn}}{0.1} \frac{M}{M_{☉}} \frac{L}{L_{☉}} \ \mathrm{yr} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+So we now have estimates that allow us to see the complete
+ordering for the main <i>global</i> timescales for stellar evolution:
+</p>
+
+<div class="latex" id="org87327a4">
+\begin{equation}\label{eq:timescale_ordering}
+\tau_\mathrm{ff} \ll \tau_\mathrm{KH} \ll \tau_\mathrm{nuc} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+Moreover, Eq. \ref{eq:tau_nuc_scaling} shows that when accounting for
+nuclear energy generation (which we have implicitly assumed here to
+give a value of &phi;), the nuclear timescale matches the timescale found
+from geological evidence on Earth, and the ordering \ref{eq:timescale_ordering}
+tells us that the evolution of the Sun is on a very slow timescale
+compared to thermal and dynamical timescale, validating the
+assumptions we made so far to derive the equations for stellar
+<i>structure</i> and allowing for a <i>quasi-static</i> approximation to deal with
+the stellar <i>evolution</i>.
+</p>
+
+<p>
+Let's now dive into the details of the nuclear physics that allow for
+nuclear burning.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb088f8a" class="outline-3">
+<h3 id="orgb088f8a"><a href="#orgb088f8a">The energy reservoir: binding energy per nucleon</a></h3>
+<div class="outline-text-3" id="text-orgb088f8a">
+<p>
+The energy reservoir that stars tap into is the nuclear binding
+energy: nuclear reactions rearrange nucleons in nuclei to create more
+bound configuration and extract binding energy as heat source.
+Therefore, it is useful to consider the nuclear binding energy per
+nucleon of all nuclei in the periodic table:
+</p>
+
+
+<figure id="org222783e">
+<img src="./images/nuclear_binding.png" alt="nuclear_binding.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Nuclear binding energy per nucleon as a function of atomic mass A. From <a href="https://etd.adm.unipi.it/theses/available/etd-05062015-125630/unrestricted/Thesis_colored_10052015.pdf">Renzo 2015</a>.</figcaption>
+</figure>
+
+<p>
+This plot shows empirical data, and there are several notable features
+coming from the internal structure of the nuclei that any model of
+nuclear (strong) interactions needs to explain:
+</p>
+<ul class="org-ul">
+<li>the binding energy per nucleon raises sharply with A among the light
+nuclei;</li>
+<li>the helium nucleus (&alpha; particle) has an exceptionally high binding
+energy per nucleon of &sim; 7.5MeV/nucleon;</li>
+<li>there are peaks for nuclei with A divisible by 4 and N=Z, that is
+nuclei that can be approximately thought as bound collections of &alpha;
+particles (for example \(^{12}\mathr{C}\) &sim; 3 &alpha; particles bound together,
+\(^{16}\mathrm{O}\) &sim;4 &alpha; particles, etc..);</li>
+<li>the nuclear binding energy is roughly constant at about &sim;
+8MeV/nucleon for most heavy nuclei;</li>
+<li>the slight drop in B/A after the maximum is caused by the
+Coulomb repulsion between the protons in heavy nuclei, and this is
+why those nuclei require a higher number of neutrons than protons to
+hold together, N&gt;Z.</li>
+<li>there is a local <i>maximum</i> of the binding energy per nucleon at the
+iron group, around $<sup>56</sup>\mathr{Fe}\(/\)<sup>62</sup>\mathrm{Ni}$.</li>
+</ul>
+
+<p>
+The presence of a maximum implies that there cannot be energy release
+from the <i>fusion</i> of nuclei heavier than iron: indeed those heavy nuclei
+are typically fuel for nuclear fission reactors, where energy is
+extracted breaking them apart. Stars, which do nuclear burning to
+<i>release</i> energy and balance the losses at the surface, have no interest
+in producing element heavier than iron during their stable/hydrostatic
+lifetime. The question of the formation of elements heavier than iron
+(which clearly exist!) is something that is actively worked on and
+requires out-of-equilibrium processes that can only occur in the
+presence of a neutron rich environment (e.g., AGB stellar winds,
+neutron stars interacting with something else, etc.). We may have a
+guest lecture on this later on, and there are projects related to
+these.
+</p>
+
+<p>
+Conversely, moving leftward on this chart, by fusing together light
+nuclei, stars can release nuclear binding energy and sustain
+themselves. This is also convenient since stars are mostly made of H
+and He, so they have a lot of light elements available as energy
+sources.
+</p>
+
+<p>
+The change in binding energy per nucleon &Delta;(B/A) is what powers stars,
+and we can write the binding energy as the difference between the sum
+of the masses of the Z protons (m<sub>p</sub>) and N=A-Z neutrons (m<sub>n</sub>) minus the
+mass of the nucleus (measured experimentally):
+</p>
+
+<div class="latex" id="orge6bd2a2">
+\begin{equation}
+B = \left(Zm_{p}+(A-Z)m_{n} - m_\mathrm{nucleus}\right)c^{2} \simeq \left(Zm_{H}+(A-Z)m_{n} - m_\mathrm{nucleus}\right)c^{2} >0 \ \ ,
+\end{equation}
+
+</div>
+<p>
+which is a positive quantity precisely because the strong interaction
+between protons and neutrons keeps them bound. In the second step, we
+approximate the proton mass with the hydrogen atom mass, making a
+mistake of the order of &sim; 10 eV by neglecting the binding energy of
+the electron (which is acceptable since we are dealing with MeV =
+10<sup>6</sup>eV as the relevant nuclear scale).
+</p>
+
+<p>
+Because of the apparent peaks in the B/A vs. A curve, stars will tend
+to produce more of the elements with the most tight nuclei, whose
+production releases more energy! <i>The nuclear structure determines the
+most abundant chemicals in the Universe</i>.
+</p>
+
+<p>
+Moreover, from the fact that there is a sharp jump form H to He, and
+then the curve rapidly flattens, we know that the rate at which nuclei
+are converted to achieve the equilibrium condition L<sub>nuc</sub> = L will be
+slower when H is converted into He, and then it will need to rapidly
+speed up when He is converted in carbon and onwards (because the
+energy release per nucleon significantly drops lowering the factor &phi;
+in &tau;<sub>nuc</sub>).
+</p>
+
+<p>
+In the very late evolutionary phases (post helium burning), the
+required burning rate may become so high that &tau;<sub>nuc</sub> becomes shorter
+than the <i>global</i> thermal timescale (but luckily not of the <i>local</i>
+thermal timescale, so all the equations we have derived so far still
+hold, since they are differential equations that describe <i>local</i>
+quantities). We will return on this <a href="https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf">later</a>.
+</p>
+</div>
+
+<div id="outline-container-org8a3db80" class="outline-4">
+<h4 id="org8a3db80"><a href="#org8a3db80">Q-value</a></h4>
+<div class="outline-text-4" id="text-org8a3db80">
+<p>
+For any nuclear reaction that may happen a+X &rarr; b+Y with a,b,X,Y
+generic particles, it is useful to define the so called Q-value as the
+mass difference between the reagents and the products:
+</p>
+
+<div class="latex" id="orge0f175f">
+\begin{equation}
+Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A}\right) \ \ ,
+\end{equation}
+
+</div>
+<p>
+which, if Q&gt;0 is the energy <i>released</i> by the reaction which is thus
+<i>exoenergetic</i> - of the kind that stars need to generate energy
+and sustain themselves against gravity, or if Q&lt;0 is the energy input
+needed to get the <i>endoenergetic</i> reaction going.
+</p>
+
+<p>
+<b>N.B.:</b> In exoenergetic nuclear reactions, the energy release comes from
+the <i>mass defect</i>, caused by the increase in binding energy per nucleon:
+the total mass of the outgoing particles is lower than the ones
+incoming because their binding energy is higher or in other words
+their total energy is more negative.
+</p>
+
+<p>
+The energy release by nuclear reaction per unit time and unit mass is
+just:
+</p>
+
+<div class="latex" id="orgff751c6">
+\begin{equation}\label{eq:eps_nuc}
+\varepsilon_\mathrm{nuc} = \sum_{i} \frac{Q_{i} r_{i}}{\rho} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+where the sum runs over all the possible reactions, r<sub>i</sub> is the rate per
+unit time and volume of the reactions, and the division by the mass
+density &rho; gives the right dimensions [&epsilon;<sub>nuc</sub>] = [E]/([t][M]).
+</p>
+
+<p>
+So, what is left to do is calculate the volumetric reaction rate r<sub>i</sub>
+that can occur in a star.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org031c3b8" class="outline-3">
+<h3 id="org031c3b8"><a href="#org031c3b8">Variety of possible nuclear reactions</a></h3>
+<div class="outline-text-3" id="text-org031c3b8">
+<p>
+A generic nuclear reaction X+a &rarr; Y+b is often written as X(a,b)Y to
+make it easy to express chains of reactions, e.g.,
+X(a,b)Y(c,d)Z(e,f)A&#x2026;
+</p>
+
+<p>
+Depending on the nature of the incoming particle (X and a in our
+generic reaction), or in other words on the microphysics that
+determines the interaction, there can be of various kinds of
+reactions.
+</p>
+</div>
+
+<div id="outline-container-org17afdc7" class="outline-4">
+<h4 id="org17afdc7"><a href="#org17afdc7">Charged-particles reactions</a></h4>
+<div class="outline-text-4" id="text-org17afdc7">
+<p>
+When X and a are charged nuclei, then the reaction can only occur if
+something allows them to overcome the Coulomb repulsion. These can be
+resonant or not (the distinction will come back later).
+</p>
+
+<p>
+Example:
+</p>
+<div class="latex" id="org5b5adf4">
+\begin{equation}
+ ^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}
+\end{equation}
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc0a989f" class="outline-4">
+<h4 id="orgc0a989f"><a href="#orgc0a989f">Reactions involving neutrons</a></h4>
+<div class="outline-text-4" id="text-orgc0a989f">
+<p>
+In this case the force involved is the strong force, and there is no
+Coulomb repulsion to overcome. However, these require an environment
+that is neutron rich, which is astrophysically a rare occurrence,
+since the neutron is an unstable particle that decays in &sim;15min to
+a proton n&rarr; p+e<sup>-</sup>+\(\bar{\nu_{e}}\). This half-life however can significantly
+change for neutrons bound in nuclei as opposed to free neutrons, that
+is the &beta;<sup>-</sup> decay time of a neutron rich nucleus can be much longer than
+the half-life of a free neutron.
+</p>
+
+<p>
+Depending on the available flux of neutrons in the environment, we
+distinguish:
+</p>
+
+<ul class="org-ul">
+<li><b>r-process</b> for rapid neutron captures (i.e., the rate of neutron
+captures is high w.r.t. the rate of neutron decays)</li>
+<li><b>s-process</b> for slow neutron captures (i.e., each nucleus captures at
+best one neutron before decaying).</li>
+</ul>
+
+<p>
+These processes are involved in the formation of  elements heavier
+than iron, but they require particular astrophysical environment
+(e.g., the merger of two neutron stars or a neutron star with the core
+of another star, or the envelope of an AGB star).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org295fc1f" class="outline-4">
+<h4 id="org295fc1f"><a href="#org295fc1f">Weak reactions</a></h4>
+<div class="outline-text-4" id="text-org295fc1f">
+<p>
+These can typically be spotted by the presence of a neutrino and/or
+the conversion of a nucleon from one eigenstate of isospin to another
+(in simpler words, the conversion of a proton into a neutron or
+viceversa).
+</p>
+
+<p>
+Example:
+</p>
+<div class="latex" id="org50ccf6d">
+\begin{equation}
+p+e^{-} \rightarrow n+\nu_{e} \ \mathrm{or} \ p(e^{-},\nu_{e})n
+\end{equation}
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org634048e" class="outline-4">
+<h4 id="org634048e"><a href="#org634048e">Photodisintegrations</a></h4>
+<div class="outline-text-4" id="text-org634048e">
+<p>
+When one of the particles is a photon and the outgoing particles can
+be seen as "fragments" of the ingoing nucleus. These can occur when
+very energetic &gamma; ray photons, because their energy needs to be
+comparable to the binding energy of nuclei, of the order of &sim;8MeV &times; A,
+can encounter particles. This can occur for example at the very late
+moments of massive star evolution.
+</p>
+
+<p>
+Example:
+</p>
+<div class="latex" id="org3c04b80">
+\begin{equation}
+^{56}\mathrm{Fe}+\gamma \rightarrow 14\alpha
+\end{equation}
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga6c1606" class="outline-3">
+<h3 id="orga6c1606"><a href="#orga6c1606">Nuclear reactions in stars</a></h3>
+<div class="outline-text-3" id="text-orga6c1606">
+<p>
+All of the types of reactions listed above (and more) can occur at
+some point in the evolution (and explosion!) of stars. For example,
+during hydrogen core burning (which we have used to estimate &phi; and
+thus &tau;<sub>nuc</sub>) the star burns 4 protons into &alpha; particles:
+</p>
+<div class="latex" id="org0c138de">
+\begin{equation}\label{eq:overall_h_burn}
+4p \rightarrow ^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where the positrons need to be there to conserve electric charge
+throughout the process, and the neutrinos need to be there for
+conserving the leptonic number (+1 for the leptons electron e<sup>-</sup>, muon
+&mu;<sup>-</sup>, tau &tau;<sup>-</sup> and the corresponding neutrinos &nu;<sub>e</sub>, &nu;<sub>&mu;</sub>, &nu;<sub>&tau;</sub> and -1
+for their antiparticles positron e<sup>+</sup>, positive muon &mu;<sup>+</sup>, and positive
+&tau;<sup>+</sup> and the corresponding antineutrinos).
+</p>
+
+<p>
+<b>N.B.:</b> because of the phenomenon of neutrino oscillations (i.e., the
+conversion of &nu;<sub>e</sub> &harr; &nu;<sub>&mu;</sub> or &nu;<sub>&tau;</sub>) the leptonic number
+conservation is not exact in nature, or in other words, the symmetry
+associated to this conservation law is not exact. While this was
+discovered through the "<a href="https://www.nobelprize.org/prizes/themes/solving-the-mystery-of-the-missing-neutrinos/">missing solar neutrinos problem</a>", and it is
+thus related to stellar/solar physics, it requires the propagation of
+neutrinos over distances much longer than the size of nuclei,
+therefore, for the purpose of treating nuclear reactions we can assume
+conservation of the leptonic number.
+</p>
+
+<p>
+From Eq. \ref{eq:overall_h_burn} we can see that:
+</p>
+<ul class="org-ul">
+<li>protons need to encounter each other. Statistically, 4 protons are
+unlikely to meet each other at a point in space for reaction Eq.
+\ref{eq:overall_h_burn} to occur. Eq. \ref{eq:overall_h_burn} is a
+compound reaction that "summarizes" the more complex burning
+process of H into He that we will detail later. Nevertheless, the
+process will necessarily involve charged particle reactions.</li>
+<li>&nu;<sub>e</sub> appear &rArr; there will be weak reactions involved</li>
+<li>as already seen earlier, we can calculate the &phi; factor (cf. Eq.
+\ref{eq:mass_defect}), and thus the Q-value for the overall reaction
+Q<sub>H burn</sub> &cong; 26.5 MeV. Note that the Q-value does not really depend on
+the details of the burning process.</li>
+</ul>
+
+<p>
+<b>N.B.:</b> we discuss Eq. \ref{eq:overall_h_burn} because H is the most
+abundant element in the Universe, that most stars are made of, and
+thus this is (typically) the first process occurring in stars. It is
+also the one with the highest Q-value (cf. B/A vs. A plot!), thus the
+one that for a given luminosity L of the star can proceed at the
+slowest rate and last the longest.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7541f09" class="outline-3">
+<h3 id="org7541f09"><a href="#org7541f09">Charged particle reactions</a></h3>
+<div class="outline-text-3" id="text-org7541f09">
+<p>
+For the rest of this lecture we will focus mostly on charged particle
+reactions: as we just saw these are involved since H core burning, and
+they are the main reactions during the hydrostatic lifetime of stars.
+Moreover, breakthroughs in QM (by <a href="https://en.wikipedia.org/wiki/George_Gamow">George Gamow</a>) applied
+to the interaction of charged particles are what opened the way to the
+discovery that the energy source in stars are nuclear reactions.
+</p>
+</div>
+
+<div id="outline-container-org36293f2" class="outline-4">
+<h4 id="org36293f2"><a href="#org36293f2">Bohr's approximation</a></h4>
+<div class="outline-text-4" id="text-org36293f2">
+<p>
+To discuss them, we will implicitly use <i>Bohr's approximation</i>, which is
+not a completely accurate physical picture, but it is intuitive and
+allows to describe the main processes occurring in nuclei. In this
+approximation, we treat the generic reaction between charged particles
+X(a,b)Y as if it went through an intermediate step of forming a
+compound nucleus C:
+</p>
+
+<div class="latex" id="org12f3139">
+\begin{equation}
+X + a \rightarrow C^{\star} \rightarrow Y + b \ \ ,
+\end{equation}
+
+</div>
+<p>
+where the nucleus C is formed in an excited state C<sup>*</sup> since in
+the reference frame of X the particle a arrives with its own kinetic
+energy and internal binding energy that (together with X's internal
+energy) are generally not exactly the total energy for the compound
+nucleus C.
+</p>
+
+<p>
+The second step is the decay of this fictional compound excited
+particle C<sup>*</sup> in the products Y and b.
+</p>
+
+<p>
+In this approximation, the second step of the decay does <i>not</i> depend on
+the first step (in other words, C<sup>*</sup> loses the memory of how it
+formed) as long as the half-life of C<sup>*</sup> is long compared to the
+light-crossing time of C<sup>*</sup> itself. This is because we consider
+charged particles by hypothesis, so electromagnetic forces mediated by
+photons are what determines the interactions of the building blocks of
+C<sup>*</sup>, and on a timescale long compared to the light-crossing time
+they will equilibrate and lose memory of how they came to be.
+</p>
+
+<p>
+The light crossing time of a nucleus can be estimated starting from
+the experimental result on the size of nuclei (something that also
+needs to be explained by models of the strong force):
+</p>
+
+<div class="latex" id="org4825d55">
+\begin{equation}
+r_\mathrm{n} = r_{0} A^{1/3} \simeq 1.4 \times 10^{-13} A^{1/3} \ \mathrm{cm} \Rightarrow \tau_\mathrm{light\ cross} = \frac{r_\mathrm{n}}{c} \simeq 10^{-23} A^{1/3} \ \mathrm{s} \ \ .
+\end{equation}
+
+</div>
+<p>
+Any compound nucleus C<sup>* </sup>with lifetime longer than this allows us
+to use this two step approximation to treat the problem, where the two
+incoming particles X and a come "into contact" (i.e., within their
+r<sub>n</sub>), form an excited compound nucleus C<sup>*</sup>, which then de-excites
+in the final products Y and b independently of how it formed.
+</p>
+
+<p>
+<b>N.B.:</b> the nuclear radius dependence on A can be flipped around to
+infer that the average density of nuclei is constant as A increases:
+&rho;<sub>n</sub> &cong; Am<sub>u</sub> / (4&pi;/3 &times; r<sub>n</sub><sup>3</sup>) &cong; 2&times;10<sup>14</sup> A g cm<sup>-3</sup>.
+</p>
+
+<p>
+<b>N.B.:</b> this is necessarily an oversimplified picture, since nuclei are
+described by QM and don't have a "hard" boundary at r<sub>n</sub>, but rather
+their constituent nucleons have decaying wave-functions that solve the
+Schrodinger equation with the nuclear potential for their
+interactions. In reality, each particle can be described as a wave
+with De Broglie wavelength &lambda; = h/p, and a physically more accurate
+picture should treat all the particles involved accounting for their
+wave nature.
+</p>
+
+<p>
+To understand how two charged nuclei, both with positive charge, can "come into contact"
+within r<sub>n</sub>, we need to consider the potential governing their
+interaction:
+</p>
+
+<div class="latex" id="org33eb752">
+\begin{equation}
+V \equiv V(r) = V_\mathrm{EM} + V_\mathrm{nuc} + \frac{\ell(\ell+1)\hbar^{2}}{2m_{aX}r^{2}} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where the last term is the centrifugal potential in the rest-frame of
+the target nucleus X which depends on the reduced mass m<sub>aX</sub> =
+m<sub>a</sub>m<sub>X</sub>/(m<sub>a</sub>+m<sub>X</sub>) and quantum number &ell; which determines the order of the
+wave-function of the system a+X. For simplicity, we can limit ourselves to
+consider &ell;=0: we already have a repulsive Coulomb term to win over,
+and any extra repulsive term such a centrifugal barrier is only going
+to lower the reaction rate. The most important reactions are going to
+have &ell; = 0, that is head-on collisions between a and X.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge177ff0" class="outline-4">
+<h4 id="orge177ff0"><a href="#orge177ff0">Electromagnetic potential term</a></h4>
+<div class="outline-text-4" id="text-orge177ff0">
+<p>
+For the electromagnetic term we can write:
+</p>
+<div class="latex" id="orgbae1ba6">
+\begin{equation}
+V_\mathrm{EM} = \frac{Z_{a}Z_{X}e^{2}}{r} - \{\mathrm{electron\ screening\ term}\} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where the first part is &gt;0 and describes the Coulomb repulsion between
+the two nuclei of chage Z<sub>a</sub>e and Z<sub>X</sub>e (both positive), and the electron
+screening term <i>reduces</i> the repulsion of the nuclei: in the stellar
+plasma we expect each nucleus to be statistically surrounded by a
+"cloud" of electrons of radius of the order of the Debye length of the
+plasma:
+</p>
+
+<div class="latex" id="orga1d8c55">
+\begin{equation}
+r_\mathrm{Debye} = \sqrt{\frac{k_{B}T}{4\pi e N\chi}} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where N is the total number of particles in absence of screening
+(nuclei/ions+electrons), and &chi; = &sum;<sub>i</sub> Z<sub>i</sub><sup>2</sup> (N<sub>i</sub>/N) + N<sub>e</sub>/N with N<sub>i</sub> and N<sub>e</sub>
+number of ions and electrons in absence of screening.
+</p>
+
+<p>
+For distances between a and X larger than r<sub>Debye</sub> the electron
+screening reduces the Coulomb repulsion between the nuclei.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4f4e5a4" class="outline-4">
+<h4 id="org4f4e5a4"><a href="#org4f4e5a4">Nuclear potential term</a></h4>
+<div class="outline-text-4" id="text-org4f4e5a4">
+<p>
+Finally, for the nuclear potential, there isn't a well known
+functional form from first principles, and it is typically derived
+experimentally. This is because the interactions between nucleons
+(=protons and neutrons) cannot be treated in a perturbative theory of
+the strong force. For more details than necessary to understand
+thermonuclear reactions, see also <a href="#org96509d6">this appendix</a> and nuclear physics
+textbooks such as "<i>Introductory nuclear physics</i>" by K. Krane.
+</p>
+
+<p>
+Besides the nuclear physics details here, the important point is that
+the nuclear potential is going to be attractive at short range
+(V<sub>nuc</sub>(r&le; r<sub>n</sub>)&lt;0), but it has a repulsive core (that is there is a
+certain r<sub>nuc,core</sub> below which V<sub>nuc</sub> becomes very large and positive),
+otherwise the nuclei would not have a finite approximately constant
+density, and goes to zero at large distances (the strong force has a
+short range).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7b7fc38" class="outline-4">
+<h4 id="org7b7fc38"><a href="#org7b7fc38">Combining electromagnetic and nuclear potential</a></h4>
+<div class="outline-text-4" id="text-org7b7fc38">
+<p>
+Putting things together we can sketch the following graph for the
+potential felt by particle a and generated by the strong and
+electromagnetic force by particle X:
+</p>
+
+<ul class="org-ul">
+<li>at distances r &Gt; r<sub>Debye</sub> electron screening nullifies the repulsive Coulomb potential</li>
+<li>for a relative energy at infinity of E, there is a distance of
+classical minimum approach r<sub>c</sub></li>
+<li>just outside r<sub>n</sub>&equiv; r<sub>n</sub> there is the maximum height of the Coulomb barrier
+E<sub>C</sub> = Z<sub>a</sub> Z<sub>X</sub> e<sup>2</sup>/r<sub>n</sub>.</li>
+<li>inside r<sub>n</sub> (the nuclear radius of particle X), the potential is
+attractive, and allows for bound states with quantized energy levels.</li>
+<li>if the two nuclei get too close to each other, there is a repulsive
+core of the nuclear force that dominates over any electromagnetic
+effect.</li>
+<li>For 0&lt;E&lt;E<sub>c</sub>, there are <i>metastable</i> energy level possible (represented
+in the figure by the gray bands). What makes them metastable is also
+what allows nuclear burning: quantum tunnelling through the Coulomb
+barrier.</li>
+</ul>
+
+
+<figure id="org040886b">
+<img src="./images/nuc_pot.png" alt="nuc_pot.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 2: </span>Top: Interaction potential generated by the nucleus X and felt by the nucleus a considering nuclear and electromagnetic interactions. For r&gt;r<sub>Debye</sub> the potential deviates from a r<sup>-1</sup> Coulomb potential (sketched in red) because of electron screening. The gray vertical band marks the repulsive core of the nuclear force (necessary to obtain a constant nuclear density), purple shading marks metastable states of the compound nucleus C<sup>*</sup> where a is trapped inside the nuclear potential well of X. Bottom: qualitative sketch of the wave function of particle a in the potential caused by particle X (blue). The region between r<sub>n</sub> and r<sub>c</sub> is the "classically forbidden region". The wavefunction needs to be smooth at both those radii and the solution where quantum tunnelling succeeds allow for a large amplitude of the wave function inside r&lt;r<sub>n</sub>. Modified from Fig. 6.2 of Onno Pols' lecture notes.</figcaption>
+</figure>
+</div>
+</div>
+
+
+<div id="outline-container-orgf75260c" class="outline-4">
+<h4 id="orgf75260c"><a href="#orgf75260c">Impossibility of nuclear reactions without QM</a></h4>
+<div class="outline-text-4" id="text-orgf75260c">
+<p>
+Without QM, for a nuclear reaction to happen (assuming Bohr's
+approximation), the two charged particles would need a relative energy
+at infinity higher than the maximum of the Coulomb barrier, so that r<sub>c</sub>
+&le; r<sub>n</sub>. Assuming the energy is just coming from the thermal energy of
+the gas:
+</p>
+
+<div class="latex" id="org0401c07">
+\begin{equation}
+E \simeq k_{B} T \geq E_{C} = \frac{Z_{a}Z_{X}e^{2}}{r_{n}} \geq \frac{e^{2}}{r_{0}} \Rightarrow T\geq \frac{e^{2}}{r_{0} k_{B}} \simeq 10^{10} \ \mathrm{K} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where we assume Z<sub>a</sub> = Z<sub>x</sub> = A = 1 to minimize the Coulomb barier, so
+r<sub>n</sub> &equiv; r<sub>0</sub> = 1.3 &times; 10<sup>-13</sup> cm. The temperature threshold we have derived
+is much larger than the mean temperature in the Sun as estimated with
+the Virial theorem. It is also much larger than the central
+temperature of the Sun which one could estimate assuming &lang; T &rang; -
+T<sub>surf,☉</sub> &sim; T<sub>center,☉</sub> - &lang; T &rang;. <i>The Sun is not hot
+enough to have nuclear energy generation without QM</i>.
+</p>
+
+<p>
+<b>N.B.:</b> In a nuclear fusion experiment energies E&ge; E<sub>C</sub> are reached,
+however, the beams are <i>not</i> in thermal equilibrium. The key point is
+<i>laboratory nuclear physics experiment occur at much higher energies
+than nuclear reactions in stars</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org21da7ab" class="outline-4">
+<h4 id="org21da7ab"><a href="#org21da7ab">Charged particles nuclear reaction tunneling through the Coulomb barrier</a></h4>
+<div class="outline-text-4" id="text-org21da7ab">
+<p>
+The piece of puzzle that allows for charged particles nuclear
+reactions in stars is the QM <i>tunnel effect</i>, which was studied in the
+context of the C<sup>*</sup> &rarr; Y+b decay in <a href="https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstract">Gamow 1928</a>.
+</p>
+
+<p>
+<b>N.B.:</b> the <i>tunnel effect</i> is a purely wave mechanics phenomenon that has
+to do with constructive interference of waves. The QM element is that
+the particles involved here are waves!
+</p>
+
+<p>
+From QM, we know that in the "classically forbidden region", where E&lt;V
+(so the classical kinetic energy term in E=K+V would be K&lt;0), the wave
+function can still be non-zero. To calculate the wave-function &Psi; of
+particle a in the potential of X, we can make the following ansatz:
+</p>
+<ul class="org-ul">
+<li>in the classically allowed region r&ge; r<sub>c</sub> the wave function will have
+the form of a propagating wave with phase dependent on (E-V(r))<sup>1/2</sup>;</li>
+<li>in the classically allowed region with r&le; r<sub>n</sub>, we assume the same
+functional form;</li>
+<li>in the classically forbidden region, we will have a superposition
+of evanescent waves with exponentially decaying amplitude</li>
+</ul>
+
+
+<p>
+<b>N.B.:</b> The math simplifies significantly using the WKB
+approximation, that is writing &Psi; = exp(&Phi;) and solving for &Phi; instead of
+&Psi;.
+</p>
+
+<p>
+By imposing that the wave function &Psi; and its derivative &part;<sub>r</sub>&Psi; are
+continuous at the boundaries r<sub>c</sub> and r<sub>n</sub> one can find solutions that
+have a non-zero amplitude <i>inside</i> r<sub>n</sub>, that is tunneling solutions! The
+continuity of &Psi; depends on the phase at the boundaries, for specific
+values of E it is possible to obtain solutions, these typically
+correspond to metastable energy levels of the potential, with energy
+E<sub>metastable</sub> &plusmn; &Delta; E and &Delta; E &sim; h/&tau; the "width" in
+energy depending on the &tau; the half-life of the metastable state. <b>N.B.:</b>
+the width &Delta; E of the levels is set by the uncertainty principle.
+</p>
+
+
+<p>
+These states are metastable because a bound system between a and X
+(i.e., C<sup>*</sup>) can result in the tunneling of a out of the potential
+of X (the decay C<sup>*</sup> &rarr; a+X).
+</p>
+
+<p>
+Therefore, the nuclear reaction rates are going to be extremely
+sensitive to the relative energy of a and X: if this relative energy E
+hits a <i>resonance</i> of the compound state C<sup>*</sup>, that is if E&sim;
+E<sub>metastable</sub>, the wave function of the system has non-zero amplitude
+inside the nucleus, and since the probability of finding a within r&le;
+r<sub>n</sub> is &prop; ||&Psi;||<sup>2</sup>, this means there will be a non-zero probability of
+forming the compound nucleus.
+</p>
+
+<p>
+In proximity of a resonance the cross section takes the typical shape
+of a Lorentzian with width determined by the energy width of the
+metastable state C<sup>*</sup>:
+</p>
+
+<div class="latex" id="org08c0952">
+\begin{equation}
+\sigma_\mathrm{nuc} \propto \frac{1}{(E-E_\mathrm{metastable})^{2} +\left(\frac{\Gamma}{2}\right)^{2}} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+where &Gamma; is the "width" in energy of the metastable level, determined
+by the uncertainty principle: &Gamma;&tau; &sim; h with &tau; half-life of the
+metastable state and h Planck's constant.
+</p>
+
+<p>
+Conversely, for non-resonant reactions, since the thermal energies are
+of order of 100 of eV while the nuclear scale is at &sim;10MeV we can
+neglect the energy dependence of &sigma;<sub>nuc</sub>.
+</p>
+
+<p>
+Finally, actually carrying out the calculation give a probability of tunneling
+</p>
+
+<div class="latex" id="orgf206d84">
+\begin{equation}
+P\propto \exp\left(-\int_{r_{n}}^{r_c} \frac{\sqrt{2m_{aX} (V(r) - E)}}{\hbar} dr \right) \equiv P_{0} \exp\left(-\frac{b}{\sqrt{E}}\right) \ \ ,
+\end{equation}
+
+</div>
+<p>
+with b = 2&pi; Z<sub>a</sub> Z<sub>X</sub> e<sup>2</sup> (m<sub>aX</sub>/2)<sup>1/2</sup> / &hbar;.
+</p>
+
+<p>
+<b>N.B.:</b> Nuclear resonances allow stars to work, and for example the
+existence of a specific resonance in the nucleus of \(^{12}\mathrm{C}\)
+(Hoyle state) is what allows helium to burn into carbon and ultimately
+allows for life (as we will see in more detail in the <a href="./notes-lecture-nuclear-cycles.html#orga9d2497">next lecture</a>)!
+</p>
+
+<p>
+However, because nuclear physics experiments operate at so much higher
+energy than stars, extrapolating to lower relative energies is
+complicated and dangerous: it is easy to miss an unknown resonance
+that would change significantly the rate.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb0c6946" class="outline-3">
+<h3 id="orgb0c6946"><a href="#orgb0c6946">Thermonuclear reaction rates</a></h3>
+<div class="outline-text-3" id="text-orgb0c6946">
+<p>
+Now that we have discussed how a charged particle nuclear reaction is
+possible through quantum tunneling through the Coulomb barrier, to
+complete our quest for &epsilon;<sub>nuc</sub> we need to obtain the rate per unit volume
+and time of each possible nuclear reaction.
+</p>
+
+<p>
+What brings together the generic nuclei a and X, giving them the
+energy E such as the probability of tunneling through the Coulomb
+barrier is not negligible is the thermal motion of the gas they
+compose: this is why we talk about <i>thermonuclear</i> reactions in a star
+(and why the energy scale for these reactions is much lower than the
+energy scale in laboratory experiments).
+</p>
+
+<p>
+Once again, to put together an expression for the nuclear reaction
+rate we can start from dimensional analysis trying to combine the
+available pieces:
+</p>
+<ul class="org-ul">
+<li>number density of reactants [n<sub>a</sub>] = [n<sub>X</sub>] = [L]<sup>-3</sup></li>
+<li>their relative velocity [v] = [L]/[t] (which is related to their
+relative energy at infinity E which is of the order of the thermal
+energy, v&sim;(2k<sub>B</sub>T/m<sub>aX</sub>)<sup>1/2</sup>)</li>
+<li>the cross section for the reaction [&sigma;] = [L<sup>2</sup>] (whose calculation will depend on
+the details of the QM problem outlined above and we know will depend
+on the relative energy of the particles, and thus ultimately their
+relative - thermal - velocity at infinity): &sigma; &equiv; &sigma;(v)</li>
+</ul>
+<p>
+With these ingredients we can make a rate of the number of reactions
+X(a,b)Y per unit time and volume with:
+</p>
+
+<div class="latex" id="orgf6fc590">
+\begin{equation}
+r_{aX} = \sigma(v) v n_{a} n_{X}  \ \ ,
+\end{equation}
+
+</div>
+<p>
+where we implicitly assumes that a &ne; X. However, in a star sometimes
+there are reactions among identical particles (for example the weak
+reaction p+p&rarr; D+e<sup>+</sup> +&nu;<sub>e</sub>). In such cases we should make sure to not
+double count particle pairs, so we can write more generally:
+</p>
+<div class="latex" id="org5d20ff6">
+\begin{equation}
+r_{aX} = \frac{1}{1+\delta_{aX}} \sigma(v) v n_{a} n_{X}  \ \ ,
+\end{equation}
+
+</div>
+<p>
+where &delta;<sub>aX</sub> = 1 &hArr; a=X. This would be the expression if all particles had
+the same relative velocity v. In reality, we know the stellar gas is
+pretty close to LTE and thus the distribution in energy of particles
+is given by the Maxwell-Boltzmann distribution, and to get the
+effective rate of reactions we need to integrate over that.
+</p>
+
+<p>
+The relative velocity is v=|v<sub>a</sub> - v<sub>X</sub>| (the velocities of the two
+species can be different if they have different masses), and
+substituting to the number density the integral over the velocities of
+the phase space densities n<sub>i</sub> &rarr; &int; dn<sub>i</sub>(v) (<b>N.B.</b>: we have
+already done this many times when deriving the EOS, just in momentum
+instead of velocity), our expression for the rate becomes:
+</p>
+<div class="latex" id="orgcff11c3">
+\begin{equation}
+r_{aX} = \frac{1}{1+\delta_{aX}}\int\int dn_{a}(v_{a}) dn_{X}(v_{X}) \sigma(v)v  \ \ ,
+\end{equation}
+
+</div>
+<p>
+where dn<sub>i</sub>(v<sub>i</sub>) are Maxwell-Boltzmann distributions, unless we are
+considering thermo-nuclear burning in a (partially) degenerate
+environment.
+</p>
+
+<ul class="org-ul">
+<li><b>Q</b>: can you think of stellar situations where there is burning in a
+(partially) degenerate environment?</li>
+</ul>
+
+<p>
+We can explicit the Maxwell-Boltzmann distribution assuming that the
+nuclei are non-relativistic, since their thermal kinetic energy is of
+the order of k<sub>b</sub>T &Lt; GeV &sim; m<sub>u</sub>/c<sup>2</sup>, and you can analytically verify
+that the product of two Maxwell-Boltzmann distribution keeps the same
+functional form by changing variables to express things in the center
+of mass frame of the a+X system, yielding:
+</p>
+<div class="latex" id="org8f0e29d">
+\begin{equation}
+r_{aX} = \frac{1}{1+\delta_{aX}}4\pi N_{a}N_{X} \left(\frac{m_{aX}}{2\pi k_{B}T}\right)^{3/2}\int_{0}^{+\infty}\exp\left(-\frac{m_{aX}v^{2}}{k_{B}T}\right) \sigma(v)v v^{2}dv  \ \ .
+\end{equation}
+
+</div>
+<p>
+where again m<sub>aX</sub> = m<sub>a</sub> m<sub>X</sub> / (m<sub>a</sub> + m<sub>X</sub>) is the reduced mass between a and
+X, v their relative velocity, N<sub>a</sub> and N<sub>X</sub> are the total number of
+particles, and we get a factor of v<sup>2</sup> from assuming isotropic motion
+and using spherical-polar coordinates in velocity space, so d<sup>3</sup>v = 4&pi;
+v<sup>2</sup>dv.
+</p>
+
+<p>
+The term in the integral is the average over the distribution of
+velocities of &lang;&sigma;(v)v&rang;, which has the dimension of [L<sup>2</sup>]&times;[L]/[t] =
+[L<sup>3</sup>]/[t].
+</p>
+
+<p>
+<b>N.B.:</b> this does <i>not</i> depend on the density &rho;!
+</p>
+
+<p>
+Often, this average quantity is approximated as a powerlaw from the
+known value at a certain temperature T<sub>0</sub>.
+</p>
+<div class="latex" id="orgc36e56d">
+\begin{equation}
+\langle \sigma(v)v \rangle = \langle \sigma(v)v \rangle_{T_{0}} \left(\frac{T}{T_{0}}\right)^{\beta}
+\end{equation}
+
+</div>
+<p>
+this is convenient because powerlaw dependencies are intuitive, and
+often people will quote the exponent &beta; in arguments - be aware it is a
+big oversimplification: in reality &beta;&equiv;&beta;(T) itself, but since &sigma;(v) is
+non-zero only for a small range of T, taking &beta;&cong; constant is not that
+problematic.
+</p>
+
+<p>
+<b>N.B.:</b> thermonuclear reaction rates, because of the probability of
+tunneling through the Coulomb barrier are extremely sensitive to T.
+This makes nuclear physics equations very <i>stiff</i> numerically and can be
+a problem when computing stellar models.
+</p>
+
+<p>
+Since velocity is not a great quantity to use in QM problems, and we
+have seen above that to get nuclear reactions we do need to account
+for QM effects, we can rewrite the rate above using that for r&rarr; +&infin; the
+relative energy between a and X is purely kinetic (the potential goes
+to zero faster than r<sup>-2</sup> because of electron screening!). Thus
+v=(2E/m<sub>aX</sub>)<sup>1/2</sup>, and we can also use that the cross section &sigma; is
+proportional to the tunneling probability so &sigma;(E)&prop; exp(-b/E<sup>1/2</sup>):
+</p>
+<div class="latex" id="org2c4bca5">
+\begin{equation}
+r_{aX} \propto \frac{N_{a}N_{X}}{1+\delta_{aX}}\sqrt{\frac{2}{\pi}}\frac{1}{k_{B}T}\int_{0}^{+\infty}\exp\left(-\frac{E}{k_{B}T}-\frac{b}{\sqrt{E}}\right)  \ \ .
+\end{equation}
+
+</div>
+
+<p>
+We can graph the part within the integral to understand where the rate
+is going to peak:
+</p>
+
+
+<figure id="org8c08612">
+<img src="./images/gamow_peak.png" alt="gamow_peak.png" width="75%">
+
+<figcaption><span class="figure-number">Figure 3: </span>Sketch of the "Gamow peak" resulting from the combination of the Maxwell-Boltzmann distribution of particles in (thermal) energy and the tunneling probability through the Coulomb repulsion. Credits: L. Trache.</figcaption>
+</figure>
+
+<p>
+The product of an exponentially decreasing Maxwell-Boltzmann
+distribution &prop; exp(-E) times the exponentially growing tunneling
+probability &prop; exp(-1/E<sup>1/2</sup>) will result in a very peaked integrand, the
+so called Gamow peak: even without nuclear resonances making the cross
+section &sigma; peak (because E is within the width of a metastable energy
+level), the nuclear reaction rate is still very peaked around a
+specific energy!
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb804660" class="outline-2">
+<h2 id="orgb804660"><a href="#orgb804660">Nuclear physics in stellar evolution codes</a></h2>
+<div class="outline-text-2" id="text-orgb804660">
+<p>
+When trying to model the structure and evolution of a star, we cannot
+carry out all the integrals we wrote down here on the fly. Instead, we
+rely on tabulated nuclear reaction rates as a function of T and &rho;.
+</p>
+
+<p>
+This is a topic of active research, with certain reactions being
+particularly uncertain (e.g.,<sup>12</sup>C(&alpha;,&gamma;)<sup>16</sup>O which determines
+the C/O ratio in the Universe, or even the 3&alpha; reaction that determines
+the formation of carbon in the first place). See for example <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...945...41S/abstract">Shen et
+al. 2023</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7f6040a" class="outline-2">
+<h2 id="org7f6040a"><a href="#org7f6040a">Composition changes and stellar <i>evolution</i> term</a></h2>
+<div class="outline-text-2" id="text-org7f6040a">
+<p>
+We already wrote Eq. \ref{eq:eps_nuc} for the energy generation term
+&epsilon;<sub>nuc</sub> entering in the stellar structure equation describing energy
+conservation (dL/dm = &epsilon;<sub>nuc</sub> - &epsilon;<sub>&nu;</sub> + &epsilon;<sub>grav</sub>). With a theory
+(and experimental data) to calculate the nuclear reaction rates r<sub>i</sub> for
+each possible reaction, we have now a complete set of equations for
+the <i>structure</i> of a star at any given point in time under the
+assumption of spherical symmetry (which in nature can and is broken
+occasionally!).
+</p>
+
+<p>
+However, because of nuclear reactions, the nuclei in the stellar
+plasma progressively change (on a timescale &sim; &tau;<sub>nuc</sub>, which is long
+compared to all other timescales, but short compared to the age of the
+Universe!). This introduces the equations that drive the <i>evolution</i> of
+stars.
+</p>
+
+<p>
+The change in number density of each nuclear species i per unit time
+is determined by its <i>production</i> rate through all possible nuclear
+reactions j+k&rarr; i+&#x2026; that have i as an outgoing particle, minus the <i>destruction</i>
+rate i+j&rarr; something:
+</p>
+
+<div class="latex" id="org587c4c8">
+\begin{equation}
+\frac{dn_{i}}{dt} = \sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij} \ \,
+\end{equation}
+
+</div>
+<p>
+where the &delta;<sub>i,j</sub> expresses that if i=j (reaction of two nuclei of the
+same species), then two nuclei are destroyed.
+</p>
+
+<p>
+Using that n<sub>i</sub> = X<sub>i</sub>&rho;/(A<sub>i</sub>m<sub>u</sub>) and what we have learned to determine
+the rates r<sub>ij</sub> and r<sub>kl</sub> we can rewrite this as a function of variables
+that already appear in our stellar structure equations:
+</p>
+
+<div class="latex" id="orga187859">
+\begin{equation}
+\frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+and we have one such equation for each species i to consider. In case
+there is also mixing (for example due to convection), then we need to
+add to each of these equation a mixing term (advective or diffusive).
+</p>
+
+<p>
+This effectively completes the set of equations we need to study not
+only the <i>structure</i> of stars but also their long-term <i>evolution</i>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org96509d6" class="outline-2">
+<h2 id="org96509d6"><a href="#org96509d6">Appendix: Nuclear liquid drop model</a></h2>
+<div class="outline-text-2" id="text-org96509d6">
+<p>
+In the 1930s Gamow, and later Bethe, Weiszacker and collaborators
+developed a model of the nuclear interactions based on the analogy
+with a liquid drop, which explains most of the observed features
+available at the time (e.g., the constant density of the nuclei, the
+preference for N=Z=A/2, the existence of particularly bound nuclei
+with certain even N and Z numbers).
+</p>
+
+<p>
+<b>N.B.:</b> this is still a rough approximation that has been updated by
+other models since then, but paints a physically intuitive picture
+that has a wide range of applicability. Still today, most nuclear
+potential models are either specialized to a narrow energy range (so
+called <i>local</i> potentials), or involve a large number of experimentally
+determined parameters like this model.
+</p>
+
+<p>
+In the liquid drop model, the nuclear binding energy can be expressed
+as:
+</p>
+<div class="latex" id="org36ec097">
+\begin{equation}
+\mathrm{BE}_\mathrm{nuc} = a_\mathrm{vol} A - a_\mathrm{surf} A^{2/3} - a_\mathrm{Coulomb} \frac{Z^{2}}{A^{1/3}} - a_\mathrm{sym} \frac{(N-Z)^{2}}{A} - a_\mathrm{coupling} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where the coefficients a<sub>i</sub> are experimentally derived. Each term has a
+specific interpretation, keeping in mind the empirical relation for
+the nuclear radius r<sub>n</sub> &equiv; r<sub>n</sub>(A) &prop; A<sup>1/3</sup>:
+</p>
+<ul class="org-ul">
+<li>a<sub>vol</sub> is the coefficient for a volume term, that is negative and
+expresses the fact that on short range nucleons attract (F<sub>n</sub>=- &nabla; V<sub>n</sub>)
+each other and nuclei hold together.</li>
+<li>a<sub>surf</sub> is a surface correction on the previous term, and expresses
+the fact that nucleons at the edge of the nucleus feel the
+interaction with fewer other nucleons.</li>
+<li>a<sub>Coulomb</sub> expresses the electromagnetic repulsion between protons</li>
+<li>a<sub>sym</sub> expresses the fact that stable nuclei prefer to have N=Z (unless N&gt;Z
+is necessary to increase A without increasing the Coulomb term for
+heavy nuclei)</li>
+<li>a<sub>coupling</sub> &prop; &plusmn; A<sup>-3/4</sup> which is &gt;0 if both N and Z are even, &lt;0
+if both are odd, and zero otherwise. This term expresses the fact
+that stable nuclei tend to prefer filling the energy levels for
+protons and neutrons (think by analogy with atoms wanting to fill
+their electron levels to be stable), so they tend to prefer having
+an even number for each, one spin up and one spin down in each
+energy level. (<b>N.B.:</b> this means that there are some number of
+nucleons for which nuclei are particularly stable, these are the
+"magic numbers" that will come back in the <a href="./notes-lecture-nuclear-cycles.html#org316d22b">next lecture</a>)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#top"><i class="fa fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa fa-github" style="font-size:16px"></i></a>
+  <hr>
+  <br>
+  Last updated on 8 December 2024 <br>
+  Made with Emacs 28.1 - Org mode 9.5.2
+  <br>
+</div>
+</div>
+</body>
+</html>

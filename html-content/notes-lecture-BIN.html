@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2024-12-08 Sun 18:50 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>400A - Binaries and dynamical masses</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="./css/style.css" />
+<!-- <link rel="stylesheet" href="./css/fontawesome.css" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, 400A, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./README.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- The hamburger menu  -->
+<script>
+  function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+</div>
+<div id="content" class="content">
+<p>
+<b>Materials</b>: Verbunt lecture notes (part 1), Sections 2.1-2.4 and 3.2 in
+Tauris &amp; Van den Heuvel 2023 book, Chapter 7 of Carroll &amp; Ostie's
+book, Chapter 3 in Prsa's book.
+</p>
+
+<div id="outline-container-orgd6b2ad4" class="outline-2">
+<h2 id="orgd6b2ad4"><a href="#orgd6b2ad4">Measuring masses</a></h2>
+<div class="outline-text-2" id="text-orgd6b2ad4">
+<p>
+This is typically a very hard problem: as we have seen, on the HRD/CMD
+there is a tight correlation between a star's magnitude and color at
+least during the longest phase of its evolution, and there is one
+single parameter that determines the position on a star on this
+diagram. However, how do we determine what this parameter is, having
+only these observational data? It is generally not possible without
+relying on models. However, binaries can help!
+</p>
+</div>
+
+<div id="outline-container-org41fe16c" class="outline-3">
+<h3 id="org41fe16c"><a href="#org41fe16c">Binaries are common</a></h3>
+<div class="outline-text-3" id="text-org41fe16c">
+<p>
+The Sun is clearly not in a binary system. However, it is <b>not</b> uncommon
+for stars to have gravitationally bound companions orbiting around
+them, which can be of great help to determine their properties.
+</p>
+
+<p>
+In fact, in this case we have two stars presumably born at roughly the
+same time, presumably with the same initial composition, and we can
+derive physical properties comparing them to each other.
+</p>
+
+
+<figure id="org59de31e">
+<img src="./images/bin-frac.png" alt="bin-frac.png" width="75%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Fraction of binaries and higher multiplicity as a function of mass (bottom x-axis) or spectral type (top x-axis), modified from <a href="https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract">Offner et al. 2023</a>.</figcaption>
+</figure>
+
+<p>
+Let's review some types of binaries.
+</p>
+</div>
+
+<div id="outline-container-orga38ffcc" class="outline-4">
+<h4 id="orga38ffcc"><a href="#orga38ffcc">Visual binaries</a></h4>
+<div class="outline-text-4" id="text-orga38ffcc">
+<p>
+These are binaries that can be seen by naked eye. Typically this means
+astrophysically very wide binaries that are unlikely to interact
+beyond the fact that they are gravitationally bound and they orbit
+each other. Nevertheless, they have an important historical role,
+since Hershel observation of their motion of the sky over decades
+proved that Kepler's law are valid beyond the Solar system.
+</p>
+
+<p>
+Mitchell 1768 also used statistical argument that all the visual
+binaries visible at the time could not be just chance alignment, and
+instead had to be somehow physically related to each other.
+</p>
+
+<p>
+A classic example are Mizar &amp; Alcor in the Big Dipper: the ability of
+finding the "double star" in this asterism was used as an eyesight
+test to become an astronomer in Hellenistic times. The name Alcor
+comes from the arabic for "hard to see"! Nowadays with modern
+telescopes we can see that Mizar and Alcor are actually at least a
+triple system, and there have been claims that it may be a quintuplet
+even
+</p>
+
+
+<figure id="org495c731">
+<img src="./images/zoom2.png" width="75%">
+
+<figcaption><span class="figure-number">Figure 2: </span>Zoom in on Mizar &amp; Alcor from <a href="http://hdl.handle.net/11245.1/ee92e82a-13e8-4add-a4ce-f2d3613e42c3">Renzo 2019</a></figcaption>
+</figure>
+</div>
+</div>
+
+<div id="outline-container-org70b425d" class="outline-4">
+<h4 id="org70b425d"><a href="#org70b425d">Astrometric binaries</a></h4>
+<div class="outline-text-4" id="text-org70b425d">
+<p>
+Wide binaries where one of the two stars is too faint to be seen can
+still be found by looking at the peculiar motion of the star that can
+be seen on the sky. What matters is its <i>proper motion</i> (not the
+apparent motion due to the Earth rotation) with respect to background
+stars too far to be moving. For a single star, this is usually a
+straight line (because the timescale for it to turn around the
+Galactic center is typically &sim; hundreds of millions of years).
+However, if the star is in a binary, what moves along a straight line
+is the center of mass of the binary! The <i>photocenter</i> (i.e. the point
+from where we can detect light) will "wiggle" around this straight
+line due to orbital motion (and on top of the parallax periodic
+wiggle).
+</p>
+
+<p>
+This was first detected for the binary Sirius A and Sirius B by Bessel
+in 1844 (the detection of photons from Sirius B followed in 1862 by
+Clark). Nowadays, this is a very timely because of the precise
+astrometric measurements by <i>Gaia</i>:
+</p>
+
+<ul class="org-ul">
+<li>this has been used to find <i>Gaia</i> BH1 (<a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.518.1057E/abstract">El Badry et al. 2023a</a>), BH2 (<a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.4323E/abstract">El
+Badry 2023b</a>), and BH3 (<a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...686L...2G/abstract">Gaia Collaboration, Panuzzo et al. 2024</a>):
+these systems have stars orbiting around an otherwise undetectable
+Black Hole!</li>
+<li>it can also be used to find stars in wide orbits around NS or other
+faint stars, and possibly even massive planets!</li>
+</ul>
+
+
+<figure id="org3e4542b">
+<img src="./images/siriusAB.png" alt="siriusAB.png" width="50%">
+
+<figcaption><span class="figure-number">Figure 3: </span>Path on the sky for Sirius A (thick line), Sirius B (thin line), and the center of mass (dashed line). Top right: absolute orbits around the center of mass. From <a href="https://ui.adsabs.harvard.edu/abs/1961ASPL....8..311L/abstract">Lippincott 1961</a>.</figcaption>
+</figure>
+</div>
+</div>
+
+<div id="outline-container-org8b165ce" class="outline-4">
+<h4 id="org8b165ce"><a href="#org8b165ce">Spectroscopic binaries</a></h4>
+<div class="outline-text-4" id="text-org8b165ce">
+
+<figure id="orge1ff0d2">
+<img src="./images/RV_scheme.png" alt="RV_scheme.png" width="50%">
+
+<figcaption><span class="figure-number">Figure 4: </span>Schematic representation of the Doppler shift of spectral lines in binaries from which one can calculate radial velocities. Fig. 7.3 in Carrol &amp; Ostie 2007 or 2.3 in Tauris &amp; van den Heuvel 2023 books.</figcaption>
+</figure>
+</div>
+
+<ul class="org-ul">
+<li><a id="org55fe2c8"></a><a href="#org55fe2c8">SB1</a><br>
+<div class="outline-text-5" id="text-org55fe2c8">
+<p>
+In a spectrum, one star of the binary dominates, but we can see its
+orbital motion as Doppler shifting of the spectral lines. Even if we
+never see the less bright star, we can infer its presence from the
+orbital motion of the brighter star.
+</p>
+
+<p>
+<b>N.B.:</b> Radial velocity surveys that find massive and close-by planet
+are effectively finding SB1 binaries made of a star and a planet!
+</p>
+</div>
+</li>
+
+<li><a id="org1779d28"></a><a href="#org1779d28">SB2</a><br>
+<div class="outline-text-5" id="text-org1779d28">
+<p>
+These are spectroscopic binaries where both stars are contributing
+light to the spectrum, meaning there will be two sets of spectral
+lines that are periodically Doppler shifted in couter-phase.
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org1c26f47" class="outline-4">
+<h4 id="org1c26f47"><a href="#org1c26f47">Eclipsing binaries</a></h4>
+<div class="outline-text-4" id="text-org1c26f47">
+<p>
+These are binaries when at some point in the orbit one star passes in
+front of the other. This blocks some of the light from one of the two
+stars causing an eclipse and a dip in the light curve (i.e., the plot
+of the luminosity of the system as a function of time).
+</p>
+
+<p>
+This of course can only happen if the inclination of the orbital plane
+of the binary w.r.t. the line of sight is not too large. Typically,
+astronomers define the inclination of the orbital plane <i>i</i> w.r.t. the
+plane of the sky, therefore the line-of-sight (which is perpendicular
+to the plane of the sky by definition) has an angle &varphi; = &pi;/2 - <i>i</i> w.r.t.
+the orbital plane. To have an eclipse, at least partial,
+</p>
+
+<div class="latex" id="orgc21ef86">
+\begin{equation}
+\sin(\varphi) \leq \frac{R_{1} + R_{2}}{a} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+where we use that sin(&varphi;)=cos(i), and a &times; cos(i) is the projected
+binary separation a on the plane of the sky, which is smaller than R<sub>1</sub>+R<sub>2</sub>
+with R<sub>i</sub> stellar radii, leads to an eclipse. The eclipse will be total
+if
+</p>
+
+<div class="latex" id="org0432c5d">
+\begin{equation}
+\sin(\varphi) \leq \frac{R_{1} - R_{2}}{a}
+\end{equation}
+
+</div>
+
+<p>
+The time duration of an eclipse can be used to determine the radii of
+the two stars. Consider the following figure:
+</p>
+
+
+<figure id="org7319fcd">
+<img src="./images/EB.png" alt="EB.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 5: </span>Light cuve (visual magnitude as function of time) for an eclipsing binary with i=&pi;/2, figure 7.9 in Carrol &amp; Ostie's book</figcaption>
+</figure>
+
+
+<p>
+one can see that, labeling with 2 the geometrically smaller star
+(darker gray) and assuming the orbit to be circular and the semi-major
+axis to be a and the period P:
+</p>
+
+<div class="latex" id="org07e383a">
+\begin{equation}
+ \frac{t_{d} -t_{a}}{P} = \frac{2(R_{1}+R_{2})}{2\pi a} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+and
+</p>
+
+<div class="latex" id="orgcb1dcf2">
+\begin{equation}
+ \frac{t_{c} -t_{b}}{P}_{} = \frac{2(R_{1}-R_{2})}{2\pi a} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+These equations allow to calculate R<sub>j</sub><sub>nil</sub>/a and if also the masses are
+known also the individual radii R<sub>j</sub> using Kepler's laws to get rid of
+the orbital semi-major axis a.
+</p>
+
+<ul class="org-ul">
+<li><b>Q</b>: In the figure above, which star is assumed to be the hotter one?</li>
+<li><b>Q</b>: Can you see what happens to the light curve minima if we have an
+inclination of the binary orbit w.r.t. the plane of the sky?</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4994417" class="outline-3">
+<h3 id="org4994417"><a href="#org4994417">Dynamical mass determination</a></h3>
+<div class="outline-text-3" id="text-org4994417">
+</div>
+<div id="outline-container-org614fdd4" class="outline-4">
+<h4 id="org614fdd4"><a href="#org614fdd4">Visual binaries</a></h4>
+<div class="outline-text-4" id="text-org614fdd4">
+<p>
+Using Kepler's laws, we can use binaries to measure observationally
+masses without relying on hard, expensive, and uncertain stellar
+models.
+</p>
+
+<p>
+In particular the third law can be written as
+</p>
+
+<div class="latex" id="orgbc324d5">
+\begin{equation}
+\label{eq:Kepler3}
+   G(M_{1}+M_{2}) = n^{2} a^{3} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+where M<sub>i</sub> are the masses of the stars, n= 2&pi;/P is the angular velocity
+(a.k.a. "true anomaly") and a is the semimajor axis of the orbit (of the
+orbit of the reduced mass point &mu; = M<sub>1</sub>M<sub>2</sub>/(M<sub>1</sub>+M<sub>2</sub>) around the center of
+mass).
+</p>
+
+<p>
+For a visual binary (see above) where we can measure the semi-major
+axes a<sub>i</sub> of both stars around the center of mass, we also have another
+equation that follows from the definition of center of mass:
+</p>
+
+<div class="latex" id="org9cc096e">
+\begin{equation}
+\label{eq:semimajor_axes}
+ M_{1} a_{1} = M_{2} a_{2} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+where a<sub>1</sub> + a<sub>2</sub> = a. If we know the distance d to the binary (d &Gt; a, so
+we can consider both stars at the same distance), then the angular
+size of the ellipse that each stars traces on the orbit of the sky is
+&alpha;<sub>j</sub> = a<sub>j</sub>/d for j=1,2. In reality, the orbit is typically not on the
+plane of the sky, but it has an inclination! This means what we can
+see is not a<sub>j</sub> but the projection of it on the plane of the sky a<sub>j</sub>
+sin(i). We can then solve these two equations for the individual
+stellar masses (just having observations long enough to trace the
+semi-major axes of wide visual binaries and knowing their distances,
+for example because we have parallax measurements).
+</p>
+
+<p>
+<b>N.B.:</b> even without knowing the distance d, using
+Eq. \ref{eq:semimajor_axes} one can still determine the mass ratio q=M<sub>2</sub>/M<sub>1</sub>!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org585b1da" class="outline-4">
+<h4 id="org585b1da"><a href="#org585b1da">Spectroscopic (and eclipsing) binaries</a></h4>
+<div class="outline-text-4" id="text-org585b1da">
+<p>
+In this case, we have access to more information thanks to the
+variable "radial velocity/ies" (RV) of the stars, that is the
+measurable Doppler shift of their spectral lines due to the orbital
+motion.
+</p>
+
+<p>
+However, what we can see though this is only the <i>projected</i> orbital
+motion along the line of sight (because we only get Doppler shift
+along the line of sight), this is why the terminology is "radial
+velocities": it's velocities along the radii of the celestial sphere
+centered on the observer!
+</p>
+
+<p>
+Following standard nomenclature, let's call z the direction of the
+line of sight, using xy for the plane of the sky. By definition the
+radial velocity of each star is dz/dt. &nu; here is the true anomaly
+(such that d&nu;/dt = n), &omega; is the argument of periastron - that is the
+angle between the line of nodes (line where the plane of the sky,
+assumed to contain the focus of the ellipse, and the plane of the
+orbit intersect) and the direction of periastron.
+</p>
+
+
+<figure id="org5f512b1">
+<img src="./images/bin_orbit.png" alt="bin_orbit.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 6: </span>Geometry of a binary orbit. This is Fig. 3.3 in Tauris &amp; van den Heuvel 2023 book.</figcaption>
+</figure>
+
+
+<p>
+The one can calculate: z= rsin(i) sin(&nu;+&omega;) with r radius of the orbit
+(which for an elliptical orbit is a function of time), the sin(i)
+factor projects it on the plane of the sky and the sin(&nu;+&omega;) projects
+on the line of sight. The radial velocity is therefore:
+</p>
+
+<div class="latex" id="orgdf384e4">
+\begin{equation}\label{dzdt}
+\frac{dz}{dt} = \left(r \cos(\nu+\omega)\frac{d\nu}{dt}+\frac{dr}{dt}\sin(\nu+\omega)\right)\sin(i)
+\end{equation}
+
+</div>
+
+<p>
+which using Kepler's second law
+</p>
+
+<div class="latex" id="org41d20b8">
+\begin{equation}
+\label{eq:Kepler2}
+\frac{1}{2}r^{2}\frac{d\nu}{dt} = \frac{\pi ab}{P} = \frac{\pi a^{2} \sqrt{1-e^2}}{P} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where P is the orbital period, a and b are semi-major and semi-minor
+axes, and
+</p>
+
+<div class="latex" id="org58c5f1f">
+\begin{equation}
+e = \sqrt{1-b^{2}/a^{2}} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+is the eccentricity, and the relation between r&equiv; r(&nu;) for an ellipse:
+</p>
+
+<div class="latex" id="org1e9faea">
+\begin{equation}
+r = \frac{a(1-e^{2})}{1+e\cos(\nu)} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+one can finally rewrite the radial velocity from Eq. \ref{dzdt} as
+</p>
+
+<div class="latex" id="org34825f0">
+\begin{equation}\label{eq:vrad}
+v_\mathrm{rad} = \frac{dz}{dt} = K (ecos(\omega)+cos(\omega+\nu)) \ \
+\end{equation}
+
+</div>
+
+<p>
+where
+</p>
+<div class="latex" id="org4788d51">
+\begin{equation}
+ K = \frac{2\pi a\sin(i)}{P\sqrt{1-e^{2}}} \ \,
+\end{equation}
+
+</div>
+<p>
+is the so-called <i>semi-amplitude</i> of the radial velocity, which apart
+from the sin(i) factor depends only on observable quantities if one
+can get spectra of many epochs (i.e., return to take spectra of the
+same binary at many times, typically at least 7 spectra are required
+for a decent fit to all these parameters):
+</p>
+<ul class="org-ul">
+<li>P &rarr; from the time interval between repeating identical spectra</li>
+<li>e &rarr; from the shape of the measured radial velocities as a function
+of time (i.e., radial velocity curve)</li>
+<li>&omega; &rarr; similarly as e, it influences the shape of the radial velocity
+curve and can be deduced from it</li>
+<li>asin(i) &rarr; if the binary is SB2, then we can measure K<sub>1</sub>&equiv; K<sub>1</sub>(a<sub>1</sub>)
+and K<sub>2</sub>&equiv; K<sub>2</sub> (a<sub>2</sub>) and use the relation between a<sub>1</sub>+a<sub>2</sub> = a to work
+out asin(i)</li>
+<li>&nu; &rarr; this is less directly obtained by performing an orbital fit
+using other orbital parameters (mean anomaly and eccentric anomaly)</li>
+</ul>
+
+<p>
+<b>N.B.:</b> In a real observation, one also needs to remove the component
+along the line of sight due to the motion of the Earth around the Sun,
+and the peculiar motion of the Sun (i.e., v<sub>rad</sub> from Eq. \ref{eq:vrad}
+&rarr; v<sub>rad</sub>-&gamma; with &gamma; peculiar velocity of the observer).
+</p>
+
+<p>
+Therefore, for an SB2 binary we can observe dz<sub>j</sub>/dt = v<sub>rad, j</sub> for
+each j=1,2 star, and we can determine K<sub>1</sub> and K<sub>2</sub>. using Eq.
+\ref{eq:Kepler3} multiplied by sin<sup>3</sup>(i) to make the projection of
+the semi-major axis of the orbit on the line of sight, a &times; sin(i):
+</p>
+
+<div class="latex" id="orgdb26f27">
+\begin{equation}
+   G(M_{1}+M_{2})\sin^{3}(i) = n^{2} a^{3} \sin^{3}(i) \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+and using \ref{eq:semimajor_axes} rewritten as
+</p>
+
+<div class="latex" id="orgb165d59">
+\begin{equation}
+  \frac{a_{1} \sin(i)}{a_{2} \sin(i)} = \frac{M_{2}}{M_{1}} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+we can solve for M<sub>j</sub>sin<sup>3</sup>(i), where except for the inclination angle of
+the orbit, we have the masses! In the case of an <i>eclipsing SB2 binary</i>,
+from the eclipses we can measure the inclination angle and obtain a
+direct measurement of the masses. These are the most precise mass
+measurements (so-called "dynamical masses", because they are based on
+orbital dynamics). They are only possible thanks to the occurrence in
+nature of stellar binaries!
+</p>
+
+<p>
+In the case of an SB1 binary, when only one spectrum is visible, we
+can write
+</p>
+
+<div class="latex" id="org97f888c">
+\begin{equation}
+a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{1}}{M_{2}}) = a_{1} \frac{(M_{1}+M_{2})}{M_{2}} \ \ .
+\end{equation}
+
+</div>
+
+<p>
+Thus, we can rewrite Eq. \ref{eq:Kepler3} &times; sin<sup>3</sup>(i) as
+</p>
+
+<div class="latex" id="org009e148">
+\begin{equation}
+ (M_{1} +M_{2}) \sin^{3}(i) \frac{M_{2}^{3}}{(M_{1} +M_{2})^{3}} = \frac{n^{2}}{G}a_{1}^{3} \sin^{3}(i) \ \,
+\end{equation}
+
+</div>
+
+<p>
+where the r.h.s. depends only on observables, and thus this allow us
+to derive observationally the mass function
+</p>
+
+<div class="latex" id="org00157a9">
+\begin{equation}
+f(M_{1}, M_{2}) = \frac{M_{2}^{3 }\sin^{3}(i)}{(M_{1} + M_{2})^{2}} \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+which together with an estimate of the mass-ratio provides a limit on M<sub>2</sub>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org62c45bd" class="outline-3">
+<h3 id="org62c45bd"><a href="#org62c45bd">Mass-luminosity relation</a></h3>
+<div class="outline-text-3" id="text-org62c45bd">
+<p>
+Using systems for which this mass and radius measurements are
+possible, we can derive empirical mass-luminosity and mass-radius
+relations:
+</p>
+
+
+<figure id="orgd17d9c3">
+<img src="./images/mass_lum_mass_r_rel_pols.png" alt="mass_lum_mass_r_rel_pols.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 7: </span>Mass-luminosity and Mass-radius empirical relations for a set of well measured SB2 eclipsing binaries. This is Fig. 1.3 in Onno Pols' lecture notes</figcaption>
+</figure>
+
+
+<p>
+In the best astronomical tradition, this was initially fit with a
+powerlaw, but as the range of stellar masses explored grew, this
+became a broken powerlaw:
+</p>
+
+<div class="latex" id="orgf4c92b6">
+\begin{equation}
+ L \propto M^{x}
+\end{equation}
+
+</div>
+
+<p>
+with x=4 for M&le;0.8M<sub>☉</sub>, x=3 for 0.8M<sub>☉</sub> &lt;M&lt;50M<sub>☉</sub>, x=1 for M&ge;
+50M<sub>☉</sub>. These thresholds are extremely approximated, probably
+metallicity dependent, as we will possibly see later in the course.
+Moreover, and importantly, these hold only for so-called "main
+sequence" stars, the one following also the L(T<sub>eff</sub>) relatively tight
+relation on the color-magnitude diagram: evolved stars are a different
+problem!
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5b3666d" class="outline-2">
+<h2 id="org5b3666d"><a href="#org5b3666d">Homework</a></h2>
+<div class="outline-text-2" id="text-org5b3666d">
+</div>
+<div id="outline-container-org5f9b564" class="outline-3">
+<h3 id="org5f9b564"><a href="#org5f9b564">Exercise 7.4 on Carroll &amp; Ostie</a></h3>
+<div class="outline-text-3" id="text-org5f9b564">
+<p>
+Sirius is a visual binary with a period of 49.94 yr. Its measured
+trigonometric parallax is 0.37921" &plusmn; 0.00158" and, assuming that the
+plane of the orbit is in the plane of the sky, the true angular
+extent of the semimajor axis of the reduced mass is 7.61". The ratio
+of the distances of Sirius A and Sirius B from the center of mass is
+a a<sub>A</sub> /a<sub>B</sub> = 0.466.
+</p>
+
+<ol class="org-ol">
+<li>Find the mass of each member of the system.</li>
+<li>The absolute bolometric magnitude of Sirius A is 1.36, and Sirius B
+has an absolute bolometric magnitude of 8.79. Determine their
+luminosities. Express your answers in terms of the luminosity of
+the luminosity of the Sun</li>
+<li>The effective temperature of Sirius B is approximately 24790 K &plusmn;
+100 K. Estimate its radius, and compare your answer to the radii
+of the Sun and Earth. What kind of star is that hot with that radius?</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org684dd7f" class="outline-3">
+<h3 id="org684dd7f"><a href="#org684dd7f">Exercise 7.6 on Carroll &amp; Ostie</a></h3>
+<div class="outline-text-3" id="text-org684dd7f">
+<p>
+From the light and velocity curves of an eclipsing, spectroscopic
+binary star system, it is determined that the orbital period is 6.31
+yr, and the maximum radial velocities of Stars A and B are 5.4 km s<sup>-1</sup>
+and 22.4 km s<sup>−1</sup>, respectively. Furthermore, the time period between
+first contact and minimum light (t<sub>b</sub> − t<sub>a</sub>) is 0.58 d, the length
+of the primary minimum (t<sub>c</sub>− t<sub>b</sub>) is 0.64 d, and the apparent
+bolometric magnitudes of maximum, primary minimum, and secondary
+minimum are 5.40 magnitudes, 9.20 magnitudes, and 5.44 magnitudes,
+respectively. From this information, and assuming circular orbits,
+find:
+</p>
+<ol class="org-ol">
+<li>Ratio of stellar masses</li>
+<li>Sum of the masses (assume i = 90 degrees)</li>
+<li>Individual masses</li>
+<li>Individual radii (assume that the orbits are circular)</li>
+<li>Ratio of the effective temperatures of the two stars</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#top"><i class="fa fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa fa-github" style="font-size:16px"></i></a>
+  <hr>
+  <br>
+  Last updated on 8 December 2024 <br>
+  Made with Emacs 28.1 - Org mode 9.5.2
+  <br>
+</div>
+</div>
+</body>
+</html>
