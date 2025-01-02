@@ -2,7 +2,16 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-* Main sequence burning in massive population III stars
+* Examples of past honor's projects
+
+The honor's project consist in installing on your machine [[https://docs.mesastar.org/en/latest/][MESA]], and
+use it to investigate something we will barely touch upon in class.
+
+The list below contains some examples, if you are interested in doing
+an honor's project for this class, please come talk to me to define a
+scope that best fits your interests /and/ the content of this class.
+
+** Main sequence burning in massive population III stars
 
 Nuclear burning in massive stars occurs through the CNO cycle, which
 uses metals (Carbon, Nitrogen, and Oxygen) as catalysts to stick
@@ -24,7 +33,7 @@ of hydrogen core burning, compare their evolution in terms of their
 potentially observable surface properties /and/ in terms of their
 interior structure, and interpret the differences.
 
-* Instructions
+*** Instructions
 
  - Follow the [[https://docs.mesastar.org/en/latest/][MESA]] documentation to install the code
  - Follow the tutorial to run MESA: this will be your Z_{\odot} 15M_{\odot} star!

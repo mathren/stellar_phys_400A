@@ -3,9 +3,9 @@
 #+email: mrenzo@arizona.edu
 
 * Literature review project/presentation
-The aim of the final review project is for each student to engage in a
-bit more depth in an important topic in modern stellar physics /and/
-explain it to the rest of the class. This is effectively a
+The aim of this literature review project is for each student to
+engage in a bit more depth with an important topic in modern stellar
+physics /and/ explain it to the rest of the class. This is effectively a
 literature + exposition project, you are /not/ expected to produce new
 results, but you should aim at digesting and being able to explain the
 context, physical processes at play, and how they relate to the
@@ -19,10 +19,10 @@ allow each student to dig deeper into a topic we cannot spend too much
 time on in class, and at the same we can all learn from each other!
 
 *The text has to be submitted at least one week before the presentation
-is scheduled*, and the *presentation is 10min+5min questions*. I _strongly_
-recommend talking to me and/or Haley at least 2 weeks (the earlier the
-better!) before your written presentation is due to discuss materials
-that you found and the structure and content of the presentation.
+is scheduled*, and the *presentation is 20min+5min questions*. I _strongly_
+recommend talking to me at least 2 weeks (the earlier the better!)
+before your written presentation is due to discuss materials that you
+found and the structure and content of the presentation.
 
 *N.B.:* The aim of the project is for you to focus on the /physical
 processes/ that are relevant and to put them in the context of the
@@ -60,21 +60,16 @@ as we may be able to accommodate it.
 26. Convective boundary mixing
 27. Schönberg-Chandrasekhar limit and its consequences
 28. Supernova Ia
-29. Stellar winds: Parker model and its updates
-30. Stellar winds: radiatively driven
-31. Analytic stellar models: Lane-Emden equation
-32. Analytic stellar models: Eddington standard model
-33. Novae
-34. Supermassive stars
-35. Stellar neutrinos
-36. Pair instability supernovae
-37. Triple systems: Kozai-Lidov-von Zeipel oscillations
-38. Formation of gravitational wave progenitors: isolated binary evolution
-39. Formation of gravitational wave progenitors: dynamical channels
-40. Orbital architectures of (star+star) binaries in the Universe
-41. Gravitational wave progenitor channels
-42. The lowest mass stars: M dwarfs and Brown dwarfs
-43. Something else within the scope of the course *to be agreed upon*!
+29. Analytic stellar models: Lane-Emden equation
+30. Analytic stellar models: Eddington standard model
+31. Novae
+32. Supermassive stars
+33. Stellar neutrinos
+34. Pair instability supernovae
+35. Triple systems: Kozai-Lidov-von Zeipel oscillations
+36. Orbital architectures of (star+star) binaries in the Universe
+37. The lowest mass stars: M dwarfs and Brown dwarfs
+38. Something else within the scope of the course *to be agreed upon*!
 
 ** Recommended sources
 You are encouraged to do your own research, but in the final

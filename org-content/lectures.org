@@ -117,9 +117,9 @@ mass transfer
 ** *SPRING BREAK*
 ** <2025-03-18 Tue> - *Guest Lecture TBD*
 Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
-
-
-** <2025-03-20 Thu> - In class activity: Evolution 1
+** <2025-03-20 Thu> - TBD
+** <2025-03-20 Tue> - Stellar winds
+** <2025-03-25 Thu> - In class activity: Evolution 1
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students.
 
@@ -131,47 +131,39 @@ Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
 
 [[./notes-in-class-evol.org][Notes]]
 
-** <2025-03-25 Tue> - In class activity: Evolution 3
+** <2025-03-27 Tue> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students.
 
 [[./notes-in-class-evol.org][Notes]]
 
-
-** <2025-03-27 Thu> - Supernovae
+** <2025-04-01 Thu> - In class activity: Evolution 4
+** <2025-04-03 Thu> - In class activity: Evolution 5
+** <2025-04-08 Thu> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
 core-collapse and the formation of compact objects.
 
 [[./notes-lecture-SNe.org][Notes]]
 
-
-** <2025-04-01 Tue> - TBD
-
-
-** <2025-04-03 Thu> - *Guest lecture* TBD
+** <2025-04-10 Tue> - Gravitational wave progenitors
+** <2025-04-15 Thu> - *Guest lecture* TBD
 Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
 
 - [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
 - [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
 
 
-** <2025-04-08 Tue> - Two student presentations
-** <2025-04-10 Tue> - Two student presentations
-
-** <2025-04-15 Thu> - Two student presentations
-
-
 ** <2025-04-17 Tue> - Two student presentations
+** <2025-04-22 Tue> - Two student presentations
+
+** <2025-04-24 Thu> - Two student presentations
+
+
+** <2025-04-29 Tue> - Two student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
  The details of the schedule will be communicated on d2l.
 
-** <2025-04-22 Thu> - Two student presentations
+** <2025-05-01 Thu> - Two student presentations
 
-** <2025-04-24 Tue> - Two student presentations
-
-** <2025-04-29 Thu> - Two student presentations
-
-
-** <2025-05-01 Tue> - Two student presentations
-
-** <2025-05-06 Thu> - Two student presentations
+** <2025-05-06 Tue> - One student presentations
+Extra time can be used as backup

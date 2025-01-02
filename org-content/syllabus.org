@@ -73,7 +73,7 @@ evolution simulations with the open-source, community-developed, code
 The course grade will be based on:
  - In class participation: 20%
  - Homework: 40%
- - Project/Presentation (written+oral): 40%
+ - Literature review project/presentation (written+oral): 40%
 
 The class will not be curved, and this will be the correspondence
 between final percentages and letter grades:
@@ -145,12 +145,13 @@ contextualise them as appropriate.
 Timely feedback will be provided for you to assess your understanding
 and progress.
 
-** Project/Presentation
+** Literature review project and presentation
 This will consist of a written text plus an oral presentation. The
 written text will be evaluated both by the instructor and two randomly
 selected peers, the oral presentation will be evaluated by all the
 student present plus the instructors. For more information on the
-project/presentation and how it will be graded, see [[./projects.org][here]].
+literature review project/presentation and how it will be graded, see
+[[./projects.org][here]].
 
 ** Incomplete (I) or Withdrawal (W):
 Requests for incomplete (I) or withdrawal (W) must be made in
