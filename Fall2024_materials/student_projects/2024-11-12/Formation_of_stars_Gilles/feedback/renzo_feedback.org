@@ -1,0 +1,27 @@
+#+TITLE: feedback to Matthew Gilles - Star formation
+
+ - which molecules?
+ - cascades of what?
+ - What is M_BE? Jeans mass?
+ - "size of the protostar determines the mass of the star", size in
+   what, mass? that seems to assume there is no further accretion
+   then, but given this assumption isn't it an obvious statement?
+ - why would one confuse protostars' masses based on the accretion
+   rate? Explain
+
+
+Hi Matthew,
+
+Thanks for your timely submission! My own feedback on your manuscript
+overlaps significantly with Matan's and Paulina's, so I will avoid
+repeating it. I suggest to focus on sharpening the connection to the
+class materials and make sure that the concepts you introduce are well
+defined in the oral presentation. The text is well organized (and very
+good disclaimer that you made choices), but at times it feels not
+sufficiently deep in terms of physical explanations, and I think Matan
+and Paulina's questions/suggestions will be helpful to improve this
+aspect. Also fine to connect to your own current research, but maybe
+you can make the connection smoother (cf. Paulina's comments).
+
+Bests,
+Mathieu

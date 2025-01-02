@@ -3,8 +3,9 @@
 
 * Theoretical Astrophysics - Stellar Evolution
 
-Material developed for this at the Department of Astronomy and Steward
-Observatory of the University of Arizona in the Fall semester 2024.
+Material developed for the =AST400A= course at the Department of
+Astronomy and Steward Observatory of the University of Arizona (Fall
+semester 2024/Spring semester 2025).
 
  - [[./org-content/syllabus.org][Syllabus]]
  - [[./org-content/lectures.org][Lectures topic-by-topic]]
@@ -41,4 +42,5 @@ of emacs to build directly there).
 
 * Log
 
-Fall 2024 course corresponds to release v1.0.
+Each semester's website is archived as a [[https://github.com/mathren/stellar_phys_400A/releases][release]]. The Fall 2024
+semester corresponds to release v1.0.

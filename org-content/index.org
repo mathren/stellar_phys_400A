@@ -5,8 +5,7 @@
 * 400A Theoretical Astrophysics - Stellar Evolution
 
 Material developed for the 400A course at the Department of Astronomy
-and Steward Observatory of the University of Arizona in the Fall
-semester 2024.
+and Steward Observatory of the University of Arizona (Spring 2025 semester).
 
 
 A. Eddington, 1927: /Someday, we should be able to understand something
@@ -28,7 +27,7 @@ parsecs!/"
  - [[./lectures.org][Lectures topic-by-topic]]
  - [[./projects.org][Projects and presentations]]
 
-For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1463376][D2L website]]
+For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1561844][D2L website]]
 
 ** Disclaimer
 

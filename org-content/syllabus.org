@@ -13,17 +13,13 @@ See also [[./lectures.org][here]] for a breakdown of the main topics covered and
 a tentative list of topics covered by student presentations.
 
 * Where and when
-Steward Observatory room *204*, Tuesday and Thursday 12:30-1:45pm
+Steward Observatory room *204*, Tuesday and Thursday 11:00 am-12:15 pm.
 
-* Instructors
+* Instructor
 ** Professor: Mathieu Renzo
 - Office: N506
 - Email: [[mailto:mrenzo@arizona.edu][mrenzo@arizona.edu]]
 - Office hours: by appointment to be scheduled by email
-
-** Teaching Assistant: Haley Bowden
-- Email: [[mailto:hbowden@arizona.edu][hbowden@arizona.edu]]
-- Office hours: Thursday 2-3pm in the Parker Library (but still email to confirm)
 
 * Expected learning outcomes
 By the end of the course, students will be able to:
@@ -93,6 +89,10 @@ instructors and with your peers will contribute to your final grade.
 Quality and frequency of your contributions will be evaluated
 throughout the course, rewarding specifically *growth* and *improvement*.
 
+Note that I will not log attendance: being there is *not a sufficient*
+condition to guarantee a good participation grade.
+
+
 *** Rubric for in class participation
   |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
   |               | Exceptional                              | Very good                           | Adequate                          | Poor                                    |
@@ -124,7 +124,7 @@ throughout the course, rewarding specifically *growth* and *improvement*.
 
 
   Roughly between one-third and halfway through the course, depending
-  on how lectures proceed, you will receive individual feedback on
+  on how lectures proceed, you will receive feedback on
   your participation in class.
 
 ** Homework
@@ -133,8 +133,8 @@ There will be regular homework assignments, including
 order-of-magnitude, quantitative, computational and/or more
 qualitative exercises depending on the week and topic. Please feel
 free to use resources outside of the textbook. You can also
-collaborate with your peers, but please each time you do, indicate
-with whom. You *must* show your work to receive full credit. Assignments
+collaborate with your peers, but please *each time you do, indicate
+with whom*. You *must* show your work to receive full credit. Assignments
 should be uploaded *in pdf form* via D2L and must be turned in *before
 the start of class on the due date*. *Late submissions will not be
 accepted unless explicitly agreed upon beforehand*, if you cannot make
@@ -206,7 +206,6 @@ To facilitate everyone's participation, audio and/or video recording
 of in class activities is not allowed unless explicitly agreed upon by
 all present students /and/ instructors. In no case sharing on public
 platforms of the recordings will be allowed.
-
 
 ** Preferred Name and Pronoun
 This course affirms people of all gender expressions and gender
