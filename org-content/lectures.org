@@ -115,7 +115,7 @@ mass transfer
 
 [[./notes-lecture-RLOF.org][Notes]]
 
-** *SPRING BREAK
+** SPRING BREAK
 ** <2025-03-18 Tue> - *Guest Lecture TBD*
 Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
 ** TODO <2025-03-20 Thu> - TBD
