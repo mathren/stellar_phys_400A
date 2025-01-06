@@ -108,17 +108,17 @@ and population synthesis.
 
 [[./notes-lecture-radTrans.org][Notes]]
 
-** <2025-03-06 Thu> - Roche geometry and binary interactions
+** <2025-03-20 Tue> - Stellar winds
+** TODO <2025-03-06 Thu> - Roche geometry and binary interactions
 *Aim*: Introduce the Roche approximation and its limitations and binary
 mass transfer
 
 [[./notes-lecture-RLOF.org][Notes]]
 
-** *SPRING BREAK*
+** *SPRING BREAK
 ** <2025-03-18 Tue> - *Guest Lecture TBD*
 Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
-** <2025-03-20 Thu> - TBD
-** <2025-03-20 Tue> - Stellar winds
+** TODO <2025-03-20 Thu> - TBD
 ** <2025-03-25 Thu> - In class activity: Evolution 1
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students.
@@ -137,15 +137,16 @@ Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
 
 [[./notes-in-class-evol.org][Notes]]
 
-** <2025-04-01 Thu> - In class activity: Evolution 4
-** <2025-04-03 Thu> - In class activity: Evolution 5
+** TODO <2025-04-01 Thu> - In class activity: Evolution 4
+** TODO <2025-04-03 Thu> - In class activity: Evolution 5
 ** <2025-04-08 Thu> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
 core-collapse and the formation of compact objects.
 
 [[./notes-lecture-SNe.org][Notes]]
 
-** <2025-04-10 Tue> - Gravitational wave progenitors
+** TODO <2025-04-10 Tue> - Gravitational wave progenitors
+
 ** <2025-04-15 Thu> - *Guest lecture* TBD
 Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
 
@@ -154,16 +155,24 @@ Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Gric
 
 
 ** <2025-04-17 Tue> - Two student presentations
+*Aim*: students will present a topic in stellar evolution to the class.
+The details of the schedule will be communicated on d2l.
+
 ** <2025-04-22 Tue> - Two student presentations
+*Aim*: students will present a topic in stellar evolution to the class.
+The details of the schedule will be communicated on d2l.
 
 ** <2025-04-24 Thu> - Two student presentations
-
+*Aim*: students will present a topic in stellar evolution to the class.
+The details of the schedule will be communicated on d2l.
 
 ** <2025-04-29 Tue> - Two student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
- The details of the schedule will be communicated on d2l.
+The details of the schedule will be communicated on d2l.
 
 ** <2025-05-01 Thu> - Two student presentations
+*Aim*: students will present a topic in stellar evolution to the class.
+The details of the schedule will be communicated on d2l.
 
 ** <2025-05-06 Tue> - One student presentations
 Extra time can be used as backup
