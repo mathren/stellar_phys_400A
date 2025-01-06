@@ -63,6 +63,19 @@
     (`latex
      (replace-regexp-in-string "[<>]" "" trans))))
 
+;; fix timestamps for html and latex exports
+(defun mr/remove-todo (trans back _comm)
+  "Remove TODO/DONE keywords"
+  (pcase back
+    (`html
+     (replace-regexp-in-string "TODO" "" trans)
+     (replace-regexp-in-string "DONE" "" trans))
+    (`latex
+     (replace-regexp-in-string "TODO" "" trans)
+     (replace-regexp-in-string "DONE" "" trans))))
+
+
+
 ;; fix export of Sun symbol
 (defun mr/export-odot-html (backend)
   "Custom filter to replace LaTeX \odot with HTML sun symbol `&#9737;`."
@@ -75,7 +88,8 @@
 
 (add-hook 'org-export-before-processing-hook 'mr/export-odot-html)
 (add-to-list 'org-export-filter-timestamp-functions
-             #'mr/filter-timestamp)
+             #'mr/filter-timestamp
+	     #'mr/remove-todo)
 
 ;; Customize the HTML output
 (setq org-html-validation-link nil            ;; Don't show validation link
