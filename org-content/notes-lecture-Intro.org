@@ -6,7 +6,7 @@
 
 * Introduction to the course
 
-#+CAPTION: Intro survey
+#+CAPTION: Link to [[https://uarizona.co1.qualtrics.com/jfe/form/SV_6y99dJCQwYNCQ5g][Intro survey]]
 #+ATTR_HTML: :width 50%
 [[./images/QR-intro.png]]
 
@@ -16,10 +16,10 @@
 
 * Who am I?
 
-My name is Mathieu Renzo, I am an assistant professor, and have been
-here since 2024. Before, I was a postdoc in New York city (at the
-Flatiron institute and Columbia University), and before that I did my
-PhD at the University of Amsterdam in the Netherlands -- but I am
+My name is Mathieu Renzo, I have been an assistant professor here at
+Steward since last year. Before, I was a postdoc in New York city (at
+the Flatiron institute and Columbia University), and before that I did
+my PhD at the University of Amsterdam in the Netherlands -- but I am
 originally from none of these places!
 
 The topic of this course is stellar evolution, which is my research
@@ -44,7 +44,7 @@ is more solidly grounded in observations. We will do this by having
 computational exercises, that's why I asked about your confidence in
 your ability to make plots in the survey. We will start the course by
 going over the physical foundations, but I will also ask you to use your
-own computer models.
+own computer models too.
 
 # I am also a first-generation academic, meaning my parents don't have a
 # bachelor degree themselves. I'm mentioning this because this may be
@@ -63,12 +63,14 @@ observational properties using known laws of physics.*
 This is a core course during your 4^{th} year, so you are approaching the
 academic threshold beyond which you will be *expected* to carry out
 independent work (either in your thesis, in the future as graduate
-students or highly skilled workers). My idea in this course is to not
-only provide /content/ regarding stellar physics and evolution, but also
-to help you develop skills as independent researchers for your
-future (whether in academia or elsewhere).
+students or highly skilled professionals).
 
-For this reason also /we will not check your attendance/. However,
+My idea for this course is to not only provide /content/ regarding
+stellar physics and evolution, but also to help you develop skills as
+independent researchers for your future (whether in academia or
+elsewhere).
+
+For this reason also /I will not check your attendance/. However,
 during the lectures I will present things in a way that complements
 the textbook(s), and you will more likely have a better understanding
 if you attend. Also, as we'll discuss in a moment, in-class
@@ -84,15 +86,15 @@ a career stopping tragedy.
 Similarly, I expect everyone in the class to treat each other with
 respect and kindness. We don't all come from the same background, we
 don't all need to be at the same exact level to learn from each other.
-Ultimately, you are here to learn some science and science is a /team/
-effort, and it has been proven many times over that diverse teams
-achieve better results. Start practicing this now: if someone is
-struggling with some material that you think you have under control,
-help them. They are not slowing you down, but giving you an
-opportunity to verify and deepen your knowledge by engaging with them
-and the difficulties they may be experiencing. You may soon be the one
-in difficulty yourself and give them a chance to "repay" you, and in
-the end we will all be better thanks to this dynamics.
+Ultimately, you are here to learn some science and /science is a team
+effort/. It has been proven many times over that diverse teams achieve
+better results. Start practicing this now: if someone is struggling
+with some material that you think you have under control, help them.
+They are not slowing you down, but giving you an opportunity to verify
+and deepen your knowledge by engaging with them and the difficulties
+they may be experiencing. You may soon be the one in difficulty
+yourself and give them a chance to "repay". In the end we will
+all be better thanks to this dynamics.
 
 Stellar evolution is also a very vast topic, and there is too much to
 cover in only one semester, with many bleeding edge developments. So I
@@ -146,8 +148,9 @@ the course.
 
 *** Parallax
 In astrophysics (and in stellar physics in particular) we still use
-quantities and units that have as only justification historical
-reasons.
+quantities and units that have mostly a historical justification (one
+could say for "backward compatibility" to borrow software development
+language).
 
 The yearly apparent motion on the sky of stars (w.r.t. to farther
 stars that are too far to exhibit this behavior) due to the orbit of
@@ -182,15 +185,16 @@ that is a deviation from the galactic rotation curve).
 
 Once all that cleaning is done, we can see the intrinsic projected
 motion of a star on the sky, so called /proper motion/ (sometimes
-indicated with \mu or pm). All that requires is a long timeline (since
-\mu\simeq arcsin((v_{\parallel} \times \Delta t)/d) with v_{\parallel} transverse
+indicated with \mu or pm). All that requires is a long timeline (since \mu
+\simeq arcsin((v_{\parallel} \times \Delta t)/d) with v_{\parallel} transverse
 velocity (i.e., on the plane of the sky), \Delta t time baseline and d
-distance of the star, and a reference frame. *N.B.:* The proper motion
-is an /angle on the plane of the sky per unit time/. Converting proper
-motions to physical velocity requires knowing the distance d, which is
-usually hard! Moreover, d is very large typically (d \gg 1 pc), so
-measuring \mu requires long time baselines and very accurate
-instruments.
+distance of the star, and a reference frame.
+
+*N.B.:* The proper motion is an /angle on the plane of the sky per unit
+time/. Converting proper motions to physical velocity requires knowing
+the distance d, which is usually hard! Moreover, d is very large
+typically (d \gg 1 pc), so measuring \mu requires long time baselines and
+very accurate instruments.
 
 #+CAPTION: Schematic representation of the proper motion
 #+ATTR_HTML: :width 50%
@@ -213,7 +217,6 @@ electrons across energy levels of a specific ion).
 [[./images/Halpha_shift.png]]
 
 
-
 *** Magnitudes
 The magnitude scale is a logarithmic scale first introduces by
 [[https://en.wikipedia.org/wiki/Hipparchus][Hipparchus]], who clearly was only able to do naked-eye observations.
@@ -231,16 +234,15 @@ the response of a filter as a function of wavelength T(\lambda):
 
 #+begin_latex
 \begin{equation}
-m = -2.5\log_{10}\left(\frac{\int T(\lambda)F_{\lambda}d\lambda}{\int
-T(\lambda) d\lambda}\right) + m_{0} \ \ ,
+m = -2.5\log_{10}\left(\frac{\int T(\lambda)F_{\lambda}d\lambda}{\int T(\lambda) d\lambda}\right) + m_{0} \ \ ,
 \end{equation}
 #+end_latex
 
 where m_{0} is the reference magnitude, F_{\lambda} is the monochromatic
 flux of the source, and the factor of -2.5 is chosen so that the
 magnitudes measured this way roughly agree with Hipparchus'.
-Thus, /an increase of 5 magnitudes corresponds to an increase in flux of a
-factor of 100/.
+/An increase of 5 magnitudes corresponds to an increase in flux
+of a factor of 100/.
 
 The /bolometric/ magnitude is the magnitude across all wavelengths for
 an idealized perfect detector (T(\lambda) = 1 \forall \lambda). If the distance of a
@@ -354,10 +356,12 @@ the metallicity (i.e., taking X=Fe).
 
 ** General considerations
   - As per the syllabus, homework should be your own production,
-    though you can discuss with your peers. Science if made of
+    though you can discuss with your peers. Science is made of
     collaborations, but you are expected to be able to do all the
-    homeworks yourself
-  - Always consult [[https://d2l.arizona.edu/d2l/home/1463376][D2L]] for official deadlines.
+    homeworks yourself.
+  - Always consult [[https://d2l.arizona.edu/d2l/home/1463376][D2L]] for official deadlines. If you need an
+    extension, it should be agreed upon at least *one day before the
+    official deadline*.
   - Throughout the course the typology of exercises and difficulty
     will vary. This is normal also when doing research: not every task
     is as easy/as hard as the next. If you encounter difficulties,

@@ -1,0 +1,26 @@
+#+title: 400A HW timeline
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+
+* HW \langle\rho_{\odot}\rangle
+DEADLINE: <2025-01-21 Tue>
+
+* Project topics list
+DEADLINE: <2025-02-27 Thu>
+
+* Make your own CMD
+DEADLINE: <2025-02-25 Tue>
+
+* Binary mass determination
+DEADLINE: <2025-02-06 Thu>
+
+* Hydrostatic equilibrium
+DEADLINE: <2025-02-13 Thu>
+
+* EOS 1
+DEADLINE: <2025-02-20 Thu>
+
+* Virial theorem
+DEADLINE: <2025-02-27 Thu>
+
+* EOS 2

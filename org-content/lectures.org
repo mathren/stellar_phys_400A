@@ -157,7 +157,6 @@ core-collapse and the formation of compact objects
 [[./notes-lecture-SNe.org][Notes]]
 
 ** TODO <2025-04-10 Tue> - Gravitational wave progenitors
-
 ** <2025-04-17 Tue> - Two student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
 The details of the schedule will be communicated on D2L
