@@ -124,6 +124,7 @@ something that can be improved!
 This counts for 40% of this assignment, corresponding to 16% of the
 total grade.
 
+#+ATTR_LATEX: :font \tiny :float sideways
   |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
   |                               | Exceptional                                       | Very good                                  | Adequate                                     | Poor                                |
   |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
@@ -136,9 +137,9 @@ total grade.
   | Content logic and readability | The scope of the presentation is clearly          | The scope is stated clearly stated.        | The scope could have been clarified more     | The presentation does not proceed   |
   |                               | stated. The presentation builds up clearly and    | The presentation logically builds to it,   | explicitly but is in the end achieved. The   | orderly and it is hard to follow.   |
   |                               | progressively, in an easy to follow and logical   | and the reader can follow it. The (astro)  | (astro)physical aspects are explained in an  | The (astro)physical context is left |
-  |                               | way. By the end, the reader has is left with      | physics is clearly explained and the       | appropriate way that the reader can follow.  | implicit and not enough pointers    |
-  |                               | a clear understanding of the topic and of where   | reader is given sufficient pointers to     | The reader is given a starting point for     | for further investigation           |
-  |                               | further information can be searched for.          | dig deeper.                                | further investigation.                       | are provided                        |
+  |                               | way. The physics presented is sound and           | physics is clearly explained and the       | appropriate way that the reader can follow.  | implicit and not enough pointers    |
+  |                               | the depth is adequate. References are to          | is given sufficient pointers to            | The reader is given a starting point for     | for further investigation           |
+  |                               | reliable sources.                                 | dig deeper.                                | further investigation.                       | are provided                        |
   |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
   | Scientific depth              | The (astro)physics is clearly explained in a      | The (astro)physics is explained in a clear | The (astro)physics is explained but the      | The (astro)physics is not explained |
   |                               | concise but insightful way. The topic is          | way and context is provided. Quantitative  | presentation could be clearer. Small gaps in | or the explanation is incorrect.    |
@@ -151,6 +152,7 @@ total grade.
 This counts for 50% of this assignment, corresponding to 20% of the
 total grade.
 
+#+ATTR_LATEX: :font \tiny :float sideways
   |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
   |                              | Exceptional                                       | Very good                              | Adequate                         | Poor                        |
   |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
@@ -184,6 +186,7 @@ topic.
 **** Providing feedback
 This counts for 10% of this assignment, corresponding to 4% of total grade.
 
+#+ATTR_LATEX: :font \tiny :float sideways
   |----------+-----------------------------------------------+----------------------------------------+--------------------------------+------------------------------------------------|
   |          | Exceptional                                   | Very good                              | Adequate                       | Poor                                           |
   |----------+-----------------------------------------------+----------------------------------------+--------------------------------+------------------------------------------------|

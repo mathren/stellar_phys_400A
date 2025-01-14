@@ -16,7 +16,7 @@ a tentative list of topics covered by student presentations.
 Steward Observatory room *204*, Tuesday and Thursday 11:00 am-12:15 pm.
 
 * Instructor
-** Professor: Mathieu Renzo
+** Prof. Mathieu Renzo
 - Office: N506
 - Email: [[mailto:mrenzo@arizona.edu][mrenzo@arizona.edu]]
 - Office hours: by appointment to be scheduled by email
@@ -94,6 +94,14 @@ condition to guarantee a good participation grade.
 
 
 *** Rubric for in class participation
+
+  The rubric used to evaluate the in class participation is given below.
+  I will keep track of relevant and/or insightful questions/comments in
+  class and/or at office hours.
+
+#+ATTR_LATEX: :font \tiny :float sideways
+  |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
+  |               | Rubric for in class participation        |                                     |                                   |                                         |
   |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|
   |               | Exceptional                              | Very good                           | Adequate                          | Poor                                    |
   |---------------+------------------------------------------+-------------------------------------+-----------------------------------+-----------------------------------------|

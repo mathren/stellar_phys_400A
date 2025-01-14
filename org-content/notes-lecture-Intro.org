@@ -5,9 +5,14 @@
 *Materials*: chapter 1 of Onno Pols' lecture notes.
 
 * Introduction to the course
-#+CAPTION: Word cloud of the students' expectations for what they are going to learn in this class.
-#+ATTR_HTML: :width 100%
-[[./images/word_cloud20240827.png]]
+
+#+CAPTION: Intro survey
+#+ATTR_HTML: :width 50%
+[[./images/QR-intro.png]]
+
+# #+CAPTION: Word cloud of the students' expectations for what they are going to learn in this class.
+# #+ATTR_HTML: :width 100%
+# [[./images/word_cloud20250116.png]]
 
 * Who am I?
 
