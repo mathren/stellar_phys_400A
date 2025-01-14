@@ -26,10 +26,10 @@ the basics of spectral formation to introduce spectral types.
 [[./notes-lecture-CMD-HRD.org][Notes]]
 
 ** <2025-01-23 Thu> - Binaries and mass measurements
-*Aim*: Introduce the concept of binarity of stars as /not/ something
-exotic. Walk through some classes of binaries based on how we observe them
-(astrometric, visual, spectroscopic, eclipsing) and how they can be
-used for empirical mass determination.
+*Aim*: Introduce the concept of binarity of stars as something /not/
+exotic. Walk through some classes of binaries based on how we observe
+them (astrometric, visual, spectroscopic, eclipsing) and how they can
+be used for empirical mass determination.
 
 [[./notes-lecture-BIN.org][Notes]]
 
@@ -48,7 +48,7 @@ symmetry. Introduce the dynamical timescale(s). Brief introduction to
 
 ** <2025-02-04 Tue> - Virial theorem
 *Aim*: Introduce the Virial theorem in various forms. Demonstrate that
-stars "heat up as they lose energy".
+stars "become hotter as they lose energy".
 
 [[./notes-lecture-VirTheo.org][Notes]]
 
@@ -61,9 +61,8 @@ stars "heat up as they lose energy".
 [[./notes-lecture-EOS2.org][Notes]]
 
 ** <2025-02-11 Tue> - Radiative energy transport & conduction
-*Aim*: Energy transport in radiative layers and the third stellar
-structure equation for non-polytropic models, and local energy
-conservation
+*Aim*: Energy transport in radiative layers, the third stellar structure
+equation for non-polytropic models, and local energy conservation
 
 [[./notes-lecture-ETransport.org][Notes]]
 
@@ -75,13 +74,13 @@ sources of opacity in a star
 
 ** <2025-02-18 Tue> - Convection
 *Aim*: Introduce convective instability, mixing length theory, and its
-limitations.
+limitations
 
 [[./notes-lecture-convection.org][Notes]]
 
 ** <2025-02-20 Thu> - Nuclear energy generation
 *Aim*: Introduce basics of nuclear energy generation through fusion,
-recall basic quantum mechanics elements, Gamow peak.
+recall basic quantum mechanics elements, Gamow peak
 
 [[./notes-lecture-nuclear-burning.org][Notes]]
 
@@ -124,22 +123,27 @@ mass transfer
 ** SPRING BREAK
 ** TODO <2025-03-18 Tue> - *Guest Lecture TBD*
 Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
-** TODO <2025-03-20 Thu> - TBD
+** TODO <2025-03-20 Thu> - *Special Guest Lecture*: Asteroseismology
+Guest Lecturer: [[https://fys.kuleuven.be/ster/staff/conny-aerts][Prof. Conny Aerts]] from KU Leuven
+
+ - [[https://www.aanda.org/articles/aa/full_html/2024/12/aa48575-23/aa48575-23.html][Recent review article]]
+
+
 ** <2025-03-25 Thu> - In class activity: Evolution 1
 *Aim*: discuss the evolution of stars in an in-class activity based on
-=MESA-web= models precomputed by the students.
+=MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
 
 ** <2025-03-27 Tue> - In class activity: Evolution 2
 *Aim*: discuss the evolution of stars in an in-class activity based on
-=MESA-web= models precomputed by the students.
+=MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
 
 ** <2025-04-08 Tue> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
-=MESA-web= models precomputed by the students.
+=MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
 
@@ -147,7 +151,7 @@ Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
 ** TODO <2025-04-03 Thu> - In class activity: Evolution 5
 ** <2025-04-15 Thu> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
-core-collapse and the formation of compact objects.
+core-collapse and the formation of compact objects
 
 [[./notes-lecture-SNe.org][Notes]]
 
@@ -155,23 +159,23 @@ core-collapse and the formation of compact objects.
 
 ** <2025-04-17 Tue> - Two student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
-The details of the schedule will be communicated on d2l.
+The details of the schedule will be communicated on D2L
 
 ** <2025-04-22 Tue> - Two student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
-The details of the schedule will be communicated on d2l.
+The details of the schedule will be communicated on D2L
 
 ** <2025-04-24 Thu> - Two student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
-The details of the schedule will be communicated on d2l.
+The details of the schedule will be communicated on D2L
 
 ** <2025-04-29 Tue> - Two student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
-The details of the schedule will be communicated on d2l.
+The details of the schedule will be communicated on D2L
 
 ** <2025-05-01 Thu> - Two student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
-The details of the schedule will be communicated on d2l.
+The details of the schedule will be communicated on D2L
 
 ** <2025-05-06 Tue> - One student presentations
 Extra time can be used as backup
