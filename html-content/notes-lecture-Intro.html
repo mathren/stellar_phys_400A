@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-13 Mon 18:11 -->
+<!-- 2025-01-14 Tue 11:00 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Introduction</title>
@@ -89,7 +89,7 @@
 <h2 id="orgae6e00c"><a href="#orgae6e00c">Introduction to the course</a></h2>
 <div class="outline-text-2" id="text-orgae6e00c">
 
-<figure id="org8cdbd5e">
+<figure id="org7c26253">
 <img src="./images/QR-intro.png" alt="QR-intro.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Intro survey</figcaption>
@@ -102,27 +102,26 @@
 <div class="outline-text-2" id="text-orgb9a9825">
 <p>
 My name is Mathieu Renzo, I am an assistant professor, and have been
-here since January. Before, I was a postdoc in New York city (at the
+here since 2024. Before, I was a postdoc in New York city (at the
 Flatiron institute and Columbia University), and before that I did my
 PhD at the University of Amsterdam in the Netherlands &#x2013; but I am
 originally from none of these places!
 </p>
 
 <p>
-This will be the first course that I teach here. However, the topic is
-stellar evolution, which is my research field. More specifically, I
-work on the evolution of massive stars in binary systems. These are
-the stars that end their lives in <i>supernova explosions</i>, that can
-outshine briefly an entire galaxy. During these explosions some of the
-most exotic objects in the universe are formed, neutron stars or black
-holes (especially if the explosion fails!). The massive star
-progenitor of these objects are found most often in binary systems,
-meaning there are two stars orbiting each other, and they can, as they
-evolve, interact and exchange mass and sometimes merge. My research is
-strongly embedded in the topic of this course (stellar evolution) and
-touches on explosion physics, X-ray binaries, gravitational waves,
-etc. I will try to connect the course material to all these topics
-whenever possible!
+The topic of this course is stellar evolution, which is my research
+field. More specifically, I work on the evolution of massive stars in
+binary systems. These are the stars that end their lives in <i>supernova
+explosions</i>, that can outshine briefly an entire galaxy. During these
+explosions some of the most exotic objects in the universe are formed,
+neutron stars or black holes (especially if the explosion fails!). The
+massive star progenitor of these objects are found most often in
+binary systems, meaning there are two stars orbiting each other, and
+they can, as they evolve, interact and exchange mass and sometimes
+merge. My research is strongly embedded in the topic of this course
+(stellar evolution) and touches on explosion physics, X-ray binaries,
+gravitational waves, etc. I will try to connect the course material to
+all these topics whenever possible!
 </p>
 
 <p>
@@ -133,20 +132,8 @@ necessary (but often grossly oversimplifying) approximations and what
 is more solidly grounded in observations. We will do this by having
 computational exercises, that's why I asked about your confidence in
 your ability to make plots in the survey. We will start the course by
-going over the physical foundations, but I will ask you to use your
-own computer models pretty early on, before we have all the
-foundations laid out.
-</p>
-
-<p>
-I am also a first-generation academic, meaning my parents don't have a
-bachelor degree themselves. I'm mentioning this because this may be
-the situation for some of you as well, and I want to emphasize how
-this is <i>not</i> that important in the end: even if the farther up you climb
-the academic pyramid the more people come from a long lineage of
-academics, you do belong here just based on your curiosity, skills,
-drive, which are developed throughout your studies and continued
-growth, and not genetically or socially inherited.
+going over the physical foundations, but I will also ask you to use your
+own computer models.
 </p>
 </div>
 </div>
@@ -180,7 +167,7 @@ during the lectures I will present things in a way that complements
 the textbook(s), and you will more likely have a better understanding
 if you attend. Also, as we'll discuss in a moment, in-class
 participation will count for up to 20% of your final grade, so if you
-want more than something like a B- you should come.
+want more than a B you should come <b>and actively participate</b>.
 </p>
 
 <p>
@@ -224,7 +211,7 @@ may be. We will do this through a project, that we will discuss later.
 <h2 id="orgf5b6622"><a href="#orgf5b6622">Discuss syllabus</a></h2>
 <div class="outline-text-2" id="text-orgf5b6622">
 
-<figure id="orga8d69f8">
+<figure id="org8b9a6dc">
 <img src="./images/syllabus-QR.png" alt="syllabus-QR.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Link to <a href="./syllabus.html">syllabus</a></figcaption>
@@ -332,7 +319,7 @@ motions due to the Earth rotation:
 </p>
 
 
-<figure id="org11c53e2">
+<figure id="orge4b0311">
 <img src="./images/night_rotation.jpg" alt="night_rotation.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Long exposure picture showing circular tracks along the north direction. These are just the reflected motion due to the rotation of the Earth. Note the stars have different colors! Credits: G. Inchingolo.</figcaption>
@@ -361,7 +348,7 @@ instruments.
 </p>
 
 
-<figure id="org7f94aba">
+<figure id="orgb95e1b3">
 <img src="./images/Proper_motion.JPG" alt="Proper_motion.JPG" width="50%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Schematic representation of the proper motion</figcaption>
@@ -382,7 +369,7 @@ electrons across energy levels of a specific ion).
 </p>
 
 
-<figure id="orga8aa96a">
+<figure id="org20554c4">
 <img src="./images/Halpha_shift.png" alt="Halpha_shift.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Schematic representation of radial velocity shifts. Credits: Y. Gotberg.</figcaption>
@@ -413,7 +400,7 @@ integrating over a range of frequencies (photometry!) accounting for
 the response of a filter as a function of wavelength T(&lambda;):
 </p>
 
-<div class="latex" id="org29a919f">
+<div class="latex" id="orge9e9609">
 \begin{equation}
 m = -2.5\log_{10}\left(\frac{\int T(\lambda)F_{\lambda}d\lambda}{\int
 T(\lambda) d\lambda}\right) + m_{0} \ \ ,
@@ -446,7 +433,7 @@ the apparent magnitude a star would have if it were at a distance of
 absolute magnitude M is
 </p>
 
-<div class="latex" id="orgdf87d87">
+<div class="latex" id="org9a480af">
 \begin{equation}\label{eq:abs_magn}
 M - m = -2.5\log_{10}\left[\left(\frac{d}{10\mathrm{pc}}\right)^{2}\right] \ \,
 \end{equation}
@@ -545,7 +532,7 @@ particles bound together where &alpha; particle = nucleus of helium 4).
 </p>
 
 
-<figure id="orge2c9262">
+<figure id="org1e13cdd">
 <img src="./images/solar_abundance_pattern.png" alt="solar_abundance_pattern.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Solar abundance pattern from <a href="https://ui.adsabs.harvard.edu/abs/1989AIPC..183....1G/abstract">Anders &amp; Grevesse 1989</a>. This shows the number of atoms normalized to 10<sup>6</sup> atoms of Silicon as a function of atomic number A. Often, for lack of better knowledge, this (or more recent updates to it) is the abundance pattern that is rescaled when changing the metallicity in a model.</figcaption>
@@ -640,7 +627,7 @@ to talk to us to get them approved before they can be on your list!</li>
   <a href="#top"><i class="fa fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa fa-github" style="font-size:16px"></i></a>
   <hr>
   <br>
-  Last updated on 13 January 2025 <br>
+  Last updated on 14 January 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>

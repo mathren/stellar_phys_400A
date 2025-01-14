@@ -17,25 +17,24 @@
 * Who am I?
 
 My name is Mathieu Renzo, I am an assistant professor, and have been
-here since January. Before, I was a postdoc in New York city (at the
+here since 2024. Before, I was a postdoc in New York city (at the
 Flatiron institute and Columbia University), and before that I did my
 PhD at the University of Amsterdam in the Netherlands -- but I am
 originally from none of these places!
 
-This will be the first course that I teach here. However, the topic is
-stellar evolution, which is my research field. More specifically, I
-work on the evolution of massive stars in binary systems. These are
-the stars that end their lives in /supernova explosions/, that can
-outshine briefly an entire galaxy. During these explosions some of the
-most exotic objects in the universe are formed, neutron stars or black
-holes (especially if the explosion fails!). The massive star
-progenitor of these objects are found most often in binary systems,
-meaning there are two stars orbiting each other, and they can, as they
-evolve, interact and exchange mass and sometimes merge. My research is
-strongly embedded in the topic of this course (stellar evolution) and
-touches on explosion physics, X-ray binaries, gravitational waves,
-etc. I will try to connect the course material to all these topics
-whenever possible!
+The topic of this course is stellar evolution, which is my research
+field. More specifically, I work on the evolution of massive stars in
+binary systems. These are the stars that end their lives in /supernova
+explosions/, that can outshine briefly an entire galaxy. During these
+explosions some of the most exotic objects in the universe are formed,
+neutron stars or black holes (especially if the explosion fails!). The
+massive star progenitor of these objects are found most often in
+binary systems, meaning there are two stars orbiting each other, and
+they can, as they evolve, interact and exchange mass and sometimes
+merge. My research is strongly embedded in the topic of this course
+(stellar evolution) and touches on explosion physics, X-ray binaries,
+gravitational waves, etc. I will try to connect the course material to
+all these topics whenever possible!
 
 Also, my research field (and more broadly the scientific topic of this
 course) is /very computationally oriented/. Throughout the course, I
@@ -44,18 +43,17 @@ necessary (but often grossly oversimplifying) approximations and what
 is more solidly grounded in observations. We will do this by having
 computational exercises, that's why I asked about your confidence in
 your ability to make plots in the survey. We will start the course by
-going over the physical foundations, but I will ask you to use your
-own computer models pretty early on, before we have all the
-foundations laid out.
+going over the physical foundations, but I will also ask you to use your
+own computer models.
 
-I am also a first-generation academic, meaning my parents don't have a
-bachelor degree themselves. I'm mentioning this because this may be
-the situation for some of you as well, and I want to emphasize how
-this is /not/ that important in the end: even if the farther up you climb
-the academic pyramid the more people come from a long lineage of
-academics, you do belong here just based on your curiosity, skills,
-drive, which are developed throughout your studies and continued
-growth, and not genetically or socially inherited.
+# I am also a first-generation academic, meaning my parents don't have a
+# bachelor degree themselves. I'm mentioning this because this may be
+# the situation for some of you as well, and I want to emphasize how
+# this is /not/ that important in the end: even if the farther up you climb
+# the academic pyramid the more people come from a long lineage of
+# academics, you do belong here just based on your curiosity, skills,
+# drive, which are developed throughout your studies and continued
+# growth, and not genetically or socially inherited.
 
 * Aim of the course
 *To understand the structure and evolution of stars and their
@@ -75,7 +73,7 @@ during the lectures I will present things in a way that complements
 the textbook(s), and you will more likely have a better understanding
 if you attend. Also, as we'll discuss in a moment, in-class
 participation will count for up to 20% of your final grade, so if you
-want more than something like a B- you should come.
+want more than a B you should come *and actively participate*.
 
 An important thing to keep in mind as we go through the semester is to
 have a [[https://en.wikipedia.org/wiki/Mindset#Fixed_and_growth_mindsets][growth mindset]]: we are all here to learn and improve ourselves!
