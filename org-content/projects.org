@@ -6,29 +6,50 @@
 The aim of this literature review project is for each student to
 engage in a bit more depth with an important topic in modern stellar
 physics /and/ explain it to the rest of the class. This is effectively a
-literature + exposition project, you are /not/ expected to produce new
+literature review + exposition project, you are /not/ expected to produce new
 results, but you should aim at digesting and being able to explain the
 context, physical processes at play, and how they relate to the
 material seen in class (during lectures, activities, and other student
 presentations!).
 
-Each student will be assigned a topic to research from the list below
-and provide a short written summary (\le 5 pages including figures
-and/or tables) and an oral presentation to the classroom. This will
-allow each student to dig deeper into a topic we cannot spend too much
-time on in class, and at the same we can all learn from each other!
-
-*The text has to be submitted at least one week before the presentation
-is scheduled*, and the *presentation is 20min+5min questions*. I _strongly_
-recommend talking to me at least 2 weeks (the earlier the better!)
-before your written presentation is due to discuss materials that you
-found and the structure and content of the presentation.
-
 *N.B.:* The aim of the project is for you to focus on the /physical
 processes/ that are relevant and to put them in the context of the
 course material to explain the rest of the class something.
 
-** List of possible projects/presentations
+Each student will be assigned a topic to research from the list below
+and provide a short written summary (\le 5 pages including figures
+and/or tables and references) and an oral presentation to the
+classroom. This will allow each student to dig deeper into a topic we
+cannot spend too much time on in class, and at the same we can all
+learn from each other!
+
+*The written text has to be submitted at least three lectures before the
+presentation is scheduled*. The *oral presentation is 20min+10min
+questions*. I _strongly_ recommend talking to me at least 3 weeks (the
+earlier the better!) before your written presentation is due to
+discuss materials that you found and the structure and content of the
+presentation.
+
+
+** Timeline
+
+ - *Presentation day minus 3 lectures*: submission of manuscript to peer-referees
+ - *Presentation day minus 2 lectures*: referees submit feedback
+ - *Presentation day minus 1 lecture*: edited manuscript is submitted
+ - *Presentation day*: Oral presentation (slides or whiteboard)
+
+All files should be exchanged *in pdf* format, via email copying the instructor.
+To make sure that your peers have time to read, provide feedback, and
+incorporate that feedback, please adhere strictly to this timeline.
+Any deviations need to be agreed upon by all parties.
+
+** Procedure to assign projects
+Each student will be asked identify 5 topics of interest from the list
+below, and I will assign the research topic and the peer referees from
+these lists. It may not be possible to satisfy each student's
+preferences.
+
+*** List of possible projects/presentations
 If you have some other topic in mind, please come talk to me early on,
 as we may be able to accommodate it.
 
@@ -69,7 +90,8 @@ as we may be able to accommodate it.
 35. Triple systems: Kozai-Lidov-von Zeipel oscillations
 36. Orbital architectures of (star+star) binaries in the Universe
 37. The lowest mass stars: M dwarfs and Brown dwarfs
-38. Something else within the scope of the course *to be agreed upon*!
+38. Something else within the scope of the course (*to be agreed upon*!)
+39. Combination of topics above (*to be agreed upon*!)
 
 ** Recommended sources
 You are encouraged to do your own research, but in the final
@@ -86,7 +108,7 @@ source from Wikipedia, and so on...).
 homework combined, so you want to do it well!/
 
 Both text and presentations will be evaluated by the instructors /and/
-your peers according to the evaluation rubric outlined below.
+your peers according to the evaluation rubrics outlined below.
 
 More specifically, the text will be evaluated by two other students in
 the class, while the oral presentation and handling of the questions
@@ -105,12 +127,10 @@ The breakdown of the  project/presentation grade is as follows:
 - 40% for the written report (corresponding to 16% of the total final grade)
 - 10% from how you provide feedback to others (corresponding to 4% of the total final grade).
 
-To make sure that the feedback can be of use to the presenter, you
-will be expected to provide it /at least/ 2 work-days pre-presentation
-(i.e., on Fridays for presentations on Tuesday and on Tuesdays for
-presentations on Thursdays). This gives referees a few working days to
-read and comment, and at least 2 days to the presenters to consider
-and act on said comments.
+*N.B.*: Regardless of the quantitative weight of each portion towards
+ the grade, your engagement is necessary for the success of the
+ others. When refereeing your feedback should help them improve, and
+ nobody wants to present to an absent audience!
 
 *** Evaluation rubric
 
@@ -128,24 +148,25 @@ total grade.
   |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
   |                               | Exceptional                                       | Very good                                  | Adequate                                     | Poor                                |
   |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
-  | Structure and formatting      | Clear, logical, engaging, and easy to follow.     | Clear and easy to follow.                  | The text is sufficiently clear.              | The text is hard to follow.         |
-  |                               | All figures are useful, have captions, and are    | Figures are provided with                  | When present, figures are useful             | Figures and/or captions are missing |
-  |                               | and well integrated with text. All references     | useful caption and integrated              | but could be better integrated,              | or not useful. References are       |
-  |                               | are provided and relevant.                        | in the tex. All references are listed.     | captions could be improved for clarity.      | incomplete or missing.              |
-  |                               |                                                   |                                            | References are provided but seem incomplete. |                                     |
-  |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
-  | Content logic and readability | The scope of the presentation is clearly          | The scope is stated clearly stated.        | The scope could have been clarified more     | The presentation does not proceed   |
-  |                               | stated. The presentation builds up clearly and    | The presentation logically builds to it,   | explicitly but is in the end achieved. The   | orderly and it is hard to follow.   |
-  |                               | progressively, in an easy to follow and logical   | and the reader can follow it. The (astro)  | (astro)physical aspects are explained in an  | The (astro)physical context is left |
-  |                               | way. The physics presented is sound and           | physics is clearly explained and the       | appropriate way that the reader can follow.  | implicit and not enough pointers    |
-  |                               | the depth is adequate. References are to          | is given sufficient pointers to            | The reader is given a starting point for     | for further investigation           |
-  |                               | reliable sources.                                 | dig deeper.                                | further investigation.                       | are provided                        |
-  |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
   | Scientific depth              | The (astro)physics is clearly explained in a      | The (astro)physics is explained in a clear | The (astro)physics is explained but the      | The (astro)physics is not explained |
   |                               | concise but insightful way. The topic is          | way and context is provided. Quantitative  | presentation could be clearer. Small gaps in | or the explanation is incorrect.    |
   |                               | appropriately unwrapped and connected to          | and qualitative aspects are discussed in   | the quantitative and/or qualitative aspects  | Quantitative and/or qualitative.    |
   |                               | the broader context. Qualitative and quantitative | an understandable fashion.                 | can be identified.                           | errors are present,                 |
   |                               | aspects are clearly addressed and put in context. |                                            |                                              |                                     |
+  |                               |                                                   |                                            |                                              |                                     |
+  |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
+  | Content logic and readability | The scope of the presentation is clearly          | The scope is stated clearly stated.        | The scope could have been clarified more     | The presentation does not proceed   |
+  |                               | stated. The presentation builds up clearly and    | The presentation logically builds to it,   | explicitly but is in the end achieved. The   | orderly and it is hard to follow.   |
+  |                               | progressively, in an easy to follow and logical   | and the reader can follow it. The (astro)  | (astro)physical aspects are explained in an  | The (astro)physical context is left |
+  |                               | way. The physics presented is correct and         | physics is clearly explained and the       | appropriate way that the reader can follow.  | implicit and not enough pointers    |
+  |                               | the depth is adequate. References are to          | is given sufficient pointers to            | The reader is given a starting point for     | for further investigation           |
+  |                               | reliable sources.                                 | dig deeper.                                | further investigation.                       | are provided                        |
+  |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
+  | Structure and formatting      | Clear, logical, engaging, and easy to follow.     | Clear and easy to follow.                  | The text is sufficiently clear.              | The text is hard to follow.         |
+  |                               | All figures are useful, have captions, and are    | Figures are provided with                  | When present, figures are useful             | Figures and/or captions are missing |
+  |                               | and well integrated with text. All references     | useful caption and integrated              | but could be better integrated,              | or not useful. References are       |
+  |                               | are provided and relevant.                        | in the tex. All references are listed.     | captions could be improved for clarity.      | incomplete or missing.              |
+  |                               |                                                   |                                            | References are provided but seem incomplete. |                                     |
   |-------------------------------+---------------------------------------------------+--------------------------------------------+----------------------------------------------+-------------------------------------|
 
 **** Oral presentation
@@ -156,6 +177,12 @@ total grade.
   |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
   |                              | Exceptional                                       | Very good                              | Adequate                         | Poor                        |
   |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
+  | Content and Scientific depth | The presentation is logical, thorough, and clear. | The presentation is logical and clear. | The presentation is logical,     | The presentation is         |
+  |                              | Topics are appropriately unwrapped within the     | The speaker's line of argument is easy | the speaker makes their argument | incomplete or unclear. The  |
+  |                              | available time. The speaker provides the audience | to follow and provides the audience    | clear and the audience can       | line of argument is hard to |
+  |                              | with insight and understanding and is thought     | with new insight and knowledge.        | effectively learn from the       | follow or contains          |
+  |                              | provoking.                                        |                                        | presentation.                    | factual errors.             |
+  |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
   | Slides quality and delivery  | Informative and exciting slides that              | Clear and relevant slides that         | Slides contain the relevant      | Slides are cluttered        |
   |                              | effectively corroborate the presentation          | corroborate the presentation.          | information. The tone is         | or incomplete and do        |
   |                              | by the speaker. No information is missing         | The tone is clear and well paced,      | clear and the timing is          | not effectively support     |
@@ -165,12 +192,6 @@ total grade.
   |                              | timing is perfect.                                |                                        | most questions clearly.          | not talk to the audience    |
   |                              |                                                   |                                        |                                  | but rather to themselves.   |
   |                              |                                                   |                                        |                                  | The speaker is overtime.    |
-  |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
-  | Content and Scientific depth | The presentation is logical, thorough, and clear. | The presentation is logical and clear. | The presentation is logical,     | The presentation is         |
-  |                              | Topics are appropriately unwrapped within the     | The speaker's line of argument is easy | the speaker makes their argument | incomplete or unclear. The  |
-  |                              | available time. The speaker provides the audience | to follow and provides the audience    | clear and the audience can       | line of argument is hard to |
-  |                              | with insight and understanding and is thought     | with new insight and knowledge.        | effectively learn from the       | follow or contains          |
-  |                              | provoking.                                        |                                        | presentation.                    | factual errors.             |
   |------------------------------+---------------------------------------------------+----------------------------------------+----------------------------------+-----------------------------|
   | QA handling                  | The speaker repeats the questions to make         | The speaker answers questions clearly  | The speaker answers clearly      | The speaker answers in      |
   |                              | sure everyone can follow and handles them         | and concisely.                         | with insightful answers, but     | a confused/confusing manner |

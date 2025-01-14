@@ -25,8 +25,7 @@ Steward Observatory room *204*, Tuesday and Thursday 11:00 am-12:15 pm.
 ask any questions you have. My availability is different every week,
 so please reach out to schedule an appointment. Email is the best way
 to get in touch with me, but given my schedule, I may not respond for
-a full business day. Please plan ahead and be patient.
-
+a full business day. Please plan ahead.
 
 * Expected learning outcomes
 By the end of the course, students will be able to:
@@ -44,8 +43,9 @@ By the end of the course, students will be able to:
 
 These learning outcomes will be met through attendance at lectures,
 in-class activities, homework and writing assignments, and a final
-presentation made of a written component and an oral presentation on a
-selected topic (see [[./projects.org][here]]).
+literature review project made of written and oral presentation on a
+selected topic. See [[./projects.org][Projects]] for more information, including a list of
+possible topics.
 
 * Course format and teaching methods
 This course relies on frontal lectures, homework, and in-class problem
@@ -99,7 +99,6 @@ throughout the course, rewarding specifically *growth* and *improvement*.
 *N.B.:* I will not log attendance, being there is *not a sufficient*
 condition to guarantee a good participation grade.
 
-
 *** Rubric for in class participation
 
   The rubric used to evaluate the in class participation is given below.
@@ -146,12 +145,12 @@ condition to guarantee a good participation grade.
 
 There will be regular homework assignments, including
 order-of-magnitude, quantitative, computational and/or more
-qualitative exercises depending on the week and topic. Please feel
+qualitative exercises, depending on the week and topic. Please feel
 free to use resources outside of the textbook. You can also
 collaborate with your peers, but please *each time you do, indicate
-with whom*. You *must* show your work to receive full credit. Assignments
-should be uploaded *in pdf form* via D2L and must be turned in *before
-the start of class on the due date*. *Late submissions will not be
+with whom*. You *must* show your individual work to receive full credit.
+Assignments should be uploaded *in pdf form* via D2L by Thursday
+midnight, unless otherwise specified. *Late submissions will not be
 accepted unless explicitly agreed upon beforehand*, if you cannot make
 it in time, it's better to submit something incomplete than nothing.
 In your pdf files, you should show the calculations done and
@@ -161,12 +160,13 @@ Timely feedback will be provided for you to assess your understanding
 and progress.
 
 ** Literature review project and presentation
-This will consist of a written text plus an oral presentation. The
-written text will be evaluated both by the instructor and two randomly
-selected peers, the oral presentation will be evaluated by all the
-student present plus the instructors. For more information on the
-literature review project/presentation and how it will be graded, see
-[[./projects.org][here]].
+You will be assigned a topic relevant to the course to explain to your
+peers. You will search the literature and prepare a written text plus
+an oral presentation. The written text will be evaluated both by the
+instructor and two randomly selected peers, the oral presentation will
+be evaluated by all the student present plus the instructors. For more
+information on the literature review project/presentation and how it
+will be graded, see [[./projects.org][here]].
 
 ** Incomplete (I) or Withdrawal (W):
 Requests for incomplete (I) or withdrawal (W) must be made in
