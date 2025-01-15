@@ -11,21 +11,20 @@ semester 2024/Spring semester 2025).
  - [[./org-content/lectures.org][Lectures topic-by-topic]]
  - [[./org-content/projects.org][Projects and presentations]]
 
-For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1463376][d2l website]]
-
 * Technical details
 
-The lecture notes are written as =org= files available in [[./org-content]]
-and exported to =html= (available [[https://www.as.arizona.edu/~mrenzo/courses/index.html][online here]], the output of the export
-also relies on the =css= and =html= templates in [[./html-content]]), and in
-=pdf= for printing and annotating before I give a lecture.
+The lecture notes are written as emacs =org= files available in
+[[./org-content]] and exported to =html= (available [[https://www.as.arizona.edu/~mrenzo/courses/index.html][online here]], the output
+of the export also relies on the =css= and =html= templates in
+[[./html-content]]), and in =pdf= (compiled with =LaTeX=) for printing and
+annotating before I give a lecture.
 
 ** How to build it?
 
 The script =build.sh= is the main script to build the website. It first
 checks if the flag =all= was passed as an argument, in which case it
 will build all the =org= files, otherwise it will look for the =org=-files
-that have been modified and only build those.
+that have been modified using =git diff= and only build those.
 
 The script actually calls emacs to do the build (with =-Q= flag so the
 process does not depend on my specific emacs configuration), which is
