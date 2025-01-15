@@ -18,7 +18,7 @@ a tentative list of topics covered by student presentations.
 Steward Observatory room *204*, Tuesday and Thursday 11:00 am-12:15 pm.
 
 * Instructor
-** Prof. Mathieu Renzo
+** Prof. [[https://www.as.arizona.edu/~mrenzo/index.html][Mathieu Renzo]]
 - Office: N506
 - Email: [[mailto:mrenzo@arizona.edu][mrenzo@arizona.edu]]
 - Office hours: by appointment to be scheduled by email
