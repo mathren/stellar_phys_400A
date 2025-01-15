@@ -43,7 +43,7 @@ if [ $? -eq 0 ]; then
     if [ "$pushed" == true ] ; then
 	read -p "rsync to remote server?" yn
 	if [ "$yn" = "y" ] || [ "$yn" = "Y" ]; then
-	    rsync -rzv --exclude="*~" html-content/* lavinia:~/public_html/courses/
+	    rsync -rz --exclude="*~" html-content/* lavinia:~/public_html/courses/
 	    pulled=true
 	else
 	    pulled=false
