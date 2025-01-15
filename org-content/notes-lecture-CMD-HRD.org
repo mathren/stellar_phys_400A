@@ -12,6 +12,10 @@ Kippehahn book, Sec. 8.2 of Ostie & Carroll book, [[https://ui.adsabs.harvard.ed
 We can look at large samples and try to infer lifetimes from how many
 individual stars we find in each subset of the population.
 
+This is like studying the life of trees not by sitting there and
+waiting for the seed to grow, but instead by looking at how many trees
+are in each stage of life in a forest.
+
 Classically, we divide stars in populations based on their chemical
 composition and dynamical status (w.r.t. the Galactic potential)
 
@@ -27,21 +31,24 @@ composition and dynamical status (w.r.t. the Galactic potential)
    fact, they are not in the Galactic disk by definition, but rather
    form a quasi-spherical halo in the Galaxy.
 
-The distinction between these two population is however a bit outdated
-and not very used in research anymore. Within the Galaxy, it is more
-common to distinguish stellar populations based on their dynamical
-status (which correlates with how long they have orbited the Galaxy,
-and thus age) and the abundance of \alpha elements relative to their iron
-content (so a more specific criterion). One term that instead is still
-widely present in the literature is:
+The distinction between these two population dates to [[https://ui.adsabs.harvard.edu/abs/1944ApJ...100..137B/abstract][Baade 1944]], and
+while it captures some key features of Galactic stellar populations
+and the terminology is still in use, it is often possible to be more
+precise. Within the Galaxy, it is more common to distinguish stellar
+populations based on their dynamical status (which correlates with how
+long they have orbited the Galaxy, and thus age) and the abundance of
+\alpha elements relative to their iron content (so a more specific
+criterion).
+
+One term that instead is still widely present in the literature is:
 
  - *Population III*: these are /hypothetical/ stars that have not yet been
    observed, formed by metal-free primordial gas composed only of
-   hydrogen and helium (and maybe traces of Li and Be) formed at the
-   Big Bang. These stars should exist, but they are so far out of
-   reach for our telescopes. /JWST/ may be able to see the integrated
-   light of populations of these primordial stars in some very high
-   redshift young galaxy, or maybe their explosions. Strong
+   hydrogen and helium (and maybe traces of Li and Be) synthesized
+   during the Big Bang. These stars should exist, but so far they are
+   out of reach for our telescopes. /JWST/ may be able to see the
+   integrated light of populations of these primordial stars in some
+   very high redshift young galaxy, or maybe their explosions. Strong
    gravitational lensing may also serendipitously reveal these, but
    the [[https://ui.adsabs.harvard.edu/abs/2022ApJ...940L...1W/abstract][record holder]] in distance has redshift z\simeq6.2 (still not high
    enough for Pop III), and it is debated whether the signal is from
@@ -53,7 +60,10 @@ widely present in the literature is:
    because of their *potential role during the epoch of reionization*,
    as *parents of the super-massive black holes* in the center of
    Galaxies, and as the *stars that kick started the production of
-   chemical elements*.
+   chemical elements*. "Third generation" gravitational-wave detectors
+   currently planned will be able to detect the signals from mergers
+   of the compact object remnants of these stars up to redshift \sim20,
+   well beyond the formation of the first stars.
 
 ** Observational color-magnitude diagram
 
