@@ -9,7 +9,11 @@
 This is a rough schedule of the topics we will cover. However, we may
 not get to all topics, depending on progress throughout the semester
 and student interests. The order roughly follows the presentation in
-[[https://www.astro.ru.nl/~onnop/][Onno Pols notes]], but it is subject to changes as the course progresses.
+[[https://www.astro.ru.nl/~onnop/][Prof. Onno Pols' notes]], but it is subject to changes as the course progresses.
+
+*N.B.:* The notes provided here are intended to complement, /not/
+substitute other sources. You are *strongly encouraged* to consult books
+(e.g., Kippenhahn et al. 2012) and Prof. Onno Pols' notes.
 
 ** <2025-01-16 Thu> - Intro & orders of magnitude
 *Aim*:

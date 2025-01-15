@@ -70,7 +70,7 @@ if [ $? -eq 0 ]; then
 	echo "Done: local build, not pushed, check html file"
     else
 	if [ "$pulled" == true ] ; then
-	    echo "Done: local build pushed, and synced with remote! Website is online at http://as.arizona.edu/~mrenzo"
+	    echo "Done: local build pushed, and synced with remote! Website is online at https://www.as.arizona.edu/~mrenzo/courses/index.html"
 	else
 	    echo "Done: local build pushed, but not synced with remote! Latest version of website is *NOT* online"
 	fi
