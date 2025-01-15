@@ -75,7 +75,6 @@ INFO is the export plist."
     ;; (message "Footer template before substitution: %s" footer-template)
     ;; (message "Previous page: %s" previous-page)
     ;; (message "Next page: %s" next-page)
-    (message "%s" case-replace)
     (setq footer (replace-regexp-in-string "PREVIOUS_PAGE" (or previous-page "#") footer t t))
     (setq footer (replace-regexp-in-string "NEXT_PAGE" (or next-page "#") footer t t))
     ))
