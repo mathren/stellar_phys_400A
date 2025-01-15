@@ -2,6 +2,8 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 #+options: title:nil
+#+PREVIOUS_PAGE: syllabus.org
+#+NEXT_PAGE: notes-lecture-Intro.org
 
 * Lectures topic-by-topic
 This is a rough schedule of the topics we will cover. However, we may

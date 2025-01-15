@@ -1,6 +1,8 @@
 #+title: 400A Syllabus - Stellar Evolution
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: index.org
+#+NEXT_PAGE: projects.org
 
 * Description of the course
 The main topic of the course is stellar structure, a field of

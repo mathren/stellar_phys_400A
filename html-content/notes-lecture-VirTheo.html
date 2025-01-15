@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-14 Tue 21:13 -->
+<!-- 2025-01-15 Wed 13:01 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Virial theorem</title>
@@ -10,7 +10,6 @@
 <meta charset="UTF-8" />
 <link rel="stylesheet" href="./css/style.css" />
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
 			       stellar evolution, 400A, University of
 			       Arizona, Steward Observatory, stars,
@@ -87,9 +86,9 @@ Kippenhahn's book, Sec. 1.5 of "Tapestry of Modern Astrophysics" by S.
 N. Shore, pages 134-139 Clayton's book.
 </p>
 
-<div id="outline-container-org4931a94" class="outline-2">
-<h2 id="org4931a94"><a href="#org4931a94">Virial theorem</a></h2>
-<div class="outline-text-2" id="text-org4931a94">
+<div id="outline-container-orgeb835ba" class="outline-2">
+<h2 id="orgeb835ba"><a href="#orgeb835ba">Virial theorem</a></h2>
+<div class="outline-text-2" id="text-orgeb835ba">
 <p>
 In the <a href="./notes-lecture-EOS1.html">previous lecture</a>, we have discussed that it is appropriate to
 use thermodynamics to describe the <i>local</i> properties of the stellar
@@ -110,9 +109,9 @@ etymology of the name comes from "vir" which is latin for "forces".
 </p>
 </div>
 
-<div id="outline-container-orge956613" class="outline-3">
-<h3 id="orge956613"><a href="#orge956613">Complete derivation</a></h3>
-<div class="outline-text-3" id="text-orge956613">
+<div id="outline-container-org7768c98" class="outline-3">
+<h3 id="org7768c98"><a href="#org7768c98">Complete derivation</a></h3>
+<div class="outline-text-3" id="text-org7768c98">
 <p>
 Let's start with a very general derivation (see for example
 Goldstein's classical mechanics book or Shore's Tapesty of Modern
@@ -121,7 +120,7 @@ mass m<sub>i</sub>, Netwon's second law states that the change in their momentum
 is equal to the total force they are subject to:
 </p>
 
-<div class="latex" id="org3979ae6">
+<div class="latex" id="org5620a8c">
 \begin{equation}
  m_{i} \ddot{r_{i}} = F_{i} \ \, .
 \end{equation}
@@ -136,7 +135,7 @@ over all the particles. Why? The reason is <i>to make something like the
 work done by forces (and thus the potential energy) appear in the second term</i>:
 </p>
 
-<div class="latex" id="orge3494c6">
+<div class="latex" id="org2e38e12">
 \begin{equation}\label{eq:first_moment_second_law}
 \sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i} = \sum_{i} F_{i} \cdot r_{i}
 \end{equation}
@@ -156,7 +155,7 @@ The l.h.s. can be re-written using the chain rule for the second time
 derivative:
 </p>
 
-<div class="latex" id="org0aa962d">
+<div class="latex" id="orgc0420ce">
 \begin{equation}
 \sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i}  = \sum_{i} \frac{1}{2} m_{i} \frac{d^{2}}{dt^{2}}r_{i}^{2} - \sum_{i} m_{i} \cdot \dot{r_{i}}^{2}
 \end{equation}
@@ -172,7 +171,7 @@ this last equation in the first spatial moment of Newton's second law
 (Eq. \ref{eq:first_moment_second_law}) we obtain:
 </p>
 
-<div class="latex" id="orgdac59bc">
+<div class="latex" id="org9c38df0">
 \begin{equation}
  2\mathrm{E}_\mathrm{kin}+\mathrm{E}_\mathrm{pot} = \frac{1}{2}\ddot{I}
 \end{equation}
@@ -207,9 +206,9 @@ evolution are profound.
 </div>
 </div>
 
-<div id="outline-container-org994ac5c" class="outline-3">
-<h3 id="org994ac5c"><a href="#org994ac5c">Derivation for binary orbits</a></h3>
-<div class="outline-text-3" id="text-org994ac5c">
+<div id="outline-container-org5f8f99c" class="outline-3">
+<h3 id="org5f8f99c"><a href="#org5f8f99c">Derivation for binary orbits</a></h3>
+<div class="outline-text-3" id="text-org5f8f99c">
 <p>
 As a demonstration for the generality of the virial theorem, we can
 apply it to a collection of particle with only 2 particles subject
@@ -221,7 +220,7 @@ point-mass stars on a Keplerian orbit!
 One can write the total energy of the binary as:
 </p>
 
-<div class="latex" id="orgded3c82">
+<div class="latex" id="org850f33f">
 \begin{equation}
 E_\mathrm{tot} = \mathrm{E_\mathrm{kin}}_{1} + \mathrm{E_\mathrm{kin}}_{2} + \mathrm{E}_\mathrm{pot} \equiv \mathrm{E_\mathrm{kin}} + \mathrm{E}_\mathrm{pot}  \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
 \end{equation}
@@ -251,17 +250,17 @@ cluster's moment of inertia can or cannot be approximated with zero).
 </div>
 </div>
 
-<div id="outline-container-orgac68d6b" class="outline-3">
-<h3 id="orgac68d6b"><a href="#orgac68d6b">Derivation for stars</a></h3>
-<div class="outline-text-3" id="text-orgac68d6b">
+<div id="outline-container-orgf3421a4" class="outline-3">
+<h3 id="orgf3421a4"><a href="#orgf3421a4">Derivation for stars</a></h3>
+<div class="outline-text-3" id="text-orgf3421a4">
 <p>
 Let's now re-derive the Virial theorem for a star. Let's assume a
 continuous description of the stellar gas, hydrostatic equilibrium and
 spherical symmetry, and write explicitly the forces acting on each
-shell dr of gas (cf. hydrostatic momentum balance <a href="notes-lecture-HSE.html#org4a6e0a8">seen before</a>):
+shell dr of gas (cf. hydrostatic momentum balance <a href="notes-lecture-HSE.html#orgd162b92">seen before</a>):
 </p>
 
-<div class="latex" id="org56273cd">
+<div class="latex" id="orgf07ba0b">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}}
 \end{equation}
@@ -275,7 +274,7 @@ done by multiplying by 4&pi; r<sup>3</sup> and integrating in dm over the entire
 mass of the star (from 0 to M).
 </p>
 
-<div class="latex" id="orgf956f70">
+<div class="latex" id="org106cc94">
 \begin{equation}\label{eq:pot}
 \int_{0}^{M} -\frac{Gm}{4\pi r^{4}} \times 4\pi r^{3} dm  = \int_{0}^{M} -\frac{Gm}{r}dm \equiv - \mathrm{E}_\mathrm{pot} \ \ .
 \end{equation}
@@ -285,7 +284,7 @@ mass of the star (from 0 to M).
 (so that E<sub>pot</sub>=|&int;<sub>0</sub><sup>M</sup> -Gm/r dm| &gt;0). The l.h.s. becomes integrating per parts
 </p>
 
-<div class="latex" id="org643c285">
+<div class="latex" id="orgde3a92b">
 \begin{equation}
 \int_{0}^{M} \frac{dP}{dm} 4\pi r^{3} dm = \left[ 4\pi r^{3}P \right]^{M}_{0}- 3\int_{0}^{M}4\pi r^{2} \frac{\partial r}{\partial m} Pdm \ \ ,
 \end{equation}
@@ -298,7 +297,7 @@ the mass continuity equation and obtain -3&int;<sub>0</sub><sup>M</sup> P/&rho; 
 back the pieces together:
 </p>
 
-<div class="latex" id="org7a0fae1">
+<div class="latex" id="org6bdd493">
 \begin{equation}
 \int_{0}^{M }\frac{Gmdm}{r} = 3\int_{0}^{M} \frac{P}{\rho} dm \ \ .
 \end{equation}
@@ -332,7 +331,7 @@ specific entropy s, and also re-write this in terms of density instead
 of specific volume v=(1 mass unit)/&rho; &rArr; dv = -d&rho;/&rho;<sup>2</sup>:
 </p>
 
-<div class="latex" id="orgb36fadf">
+<div class="latex" id="org6ef5bba">
 \begin{equation}\label{eq:second_thermodynamics_law}
 dq = Tds = du + Pdv =du -\frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
@@ -363,7 +362,7 @@ Finally, substituting in the first-order moment of the hydrostatic
 equilibrium equation we have:
 </p>
 
-<div class="latex" id="org5a2d84f">
+<div class="latex" id="orgf9ff998">
 \begin{equation}
 3\int_{0}^{M} \frac{P}{\rho} dm = 3\int_{0}^{M} (\Gamma-1)u dm \ \ .
 \end{equation}
@@ -376,7 +375,7 @@ parenthesis out of the integral. We can define E<sub>int</sub> = &int;<sub>0</su
 and rewrite the above as 3(&Gamma;-1)E<sub>int</sub>, and thus
 </p>
 
-<div class="latex" id="org6b1b138">
+<div class="latex" id="org5bd78c2">
 \begin{equation}\label{eq:virial_star}
 - E_\mathrm{pot} = 3(\Gamma-1)E_\mathrm{int}
 \end{equation}
@@ -398,7 +397,7 @@ Because of the virial theorem in Eq. \ref{eq:virial_star}, we can
 rewrite this as
 </p>
 
-<div class="latex" id="orge3b728d">
+<div class="latex" id="org3b46688">
 \begin{equation}
 \mathrm{E}_\mathrm{tot} = \mathrm{E}_\mathrm{pot}\frac{3\Gamma-4}{3(\Gamma-1)} \equiv -(3\Gamma-4)\mathrm{E}_\mathrm{int}\ \ .
 \end{equation}
@@ -410,9 +409,9 @@ total energy is half of the gravitational binding energy!
 </p>
 </div>
 
-<div id="outline-container-orge26343a" class="outline-4">
-<h4 id="orge26343a"><a href="#orge26343a">Stability criterion</a></h4>
-<div class="outline-text-4" id="text-orge26343a">
+<div id="outline-container-org1590029" class="outline-4">
+<h4 id="org1590029"><a href="#org1590029">Stability criterion</a></h4>
+<div class="outline-text-4" id="text-org1590029">
 <p>
 From the form of E<sub>tot</sub>&equiv; E<sub>tot</sub>(E<sub>int</sub>), since E<sub>int</sub> is a quantity that
 is always non-negative by definition (think thermal energy!), we see
@@ -444,9 +443,9 @@ behind no black hole.
 </div>
 </div>
 
-<div id="outline-container-orgb0603be" class="outline-4">
-<h4 id="orgb0603be"><a href="#orgb0603be">Use of gravitational energy in a star: negative heat capacity</a></h4>
-<div class="outline-text-4" id="text-orgb0603be">
+<div id="outline-container-orgc884bd2" class="outline-4">
+<h4 id="orgc884bd2"><a href="#orgc884bd2">Use of gravitational energy in a star: negative heat capacity</a></h4>
+<div class="outline-text-4" id="text-orgc884bd2">
 <p>
 Let's consider a star made of a perfect monoatomic gas with &Gamma;=5/3.
 Let's say that for some reason this star is contracting (e.g., because
@@ -471,7 +470,7 @@ theorem mentioned above.
 For an ideal  gas, the internal energy is related to the
 mean temperature by
 </p>
-<div class="latex" id="orgc4ac770">
+<div class="latex" id="orgd4a85c9">
 \begin{equation}
 E_\mathrm{int} = \frac{\# \mathrm{degrees\ of\ freedom}}{2}Nk_{B}\langle T \rangle
 \end{equation}
@@ -484,7 +483,7 @@ temperature in the star, and the number of degrees of freedom is 3 for
 a monoatomic gas. From the Virial theorem it follows that:
 </p>
 
-<div class="latex" id="org681ccaf">
+<div class="latex" id="orgf8c64fa">
 \begin{equation}
 E_\mathrm{int} = - \frac{E_\mathrm{pot}}{2} \Rightarrow \frac{3}{2} \frac{M}{\mu m_{u}} k_{B}\langle T \rangle = C \frac{GM^{2}}{R} \ \ ,
 \end{equation}
@@ -494,7 +493,7 @@ E_\mathrm{int} = - \frac{E_\mathrm{pot}}{2} \Rightarrow \frac{3}{2} \frac{M}{\mu
 where C = {&int;<sub>0</sub><sup>M</sup> Gmdm/r}/{GM<sup>2</sup>/R} is a constant of O(1) that depends on
 the mass distribution in the star. Thus:
 </p>
-<div class="latex" id="org35af2b3">
+<div class="latex" id="orgfa05e4c">
 \begin{equation}
 \langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
 \end{equation}
@@ -557,9 +556,9 @@ explosion and/or the formation of a black hole.
 </div>
 </div>
 
-<div id="outline-container-orga806573" class="outline-3">
-<h3 id="orga806573"><a href="#orga806573">Kelvin-Helmholtz timescale</a></h3>
-<div class="outline-text-3" id="text-orga806573">
+<div id="outline-container-org67ccf39" class="outline-3">
+<h3 id="org67ccf39"><a href="#org67ccf39">Kelvin-Helmholtz timescale</a></h3>
+<div class="outline-text-3" id="text-org67ccf39">
 <p>
 This is by definition the timescale it takes a star to radiate away
 all its internal energy at a constant rate in absence of any other
@@ -576,7 +575,7 @@ L has the units of power [L] = [E]/[t].
 <p>
 Then by definition:
 </p>
-<div class="latex" id="org66f57ad">
+<div class="latex" id="org217781f">
 \begin{equation}\label{eq:tau_KH}
 \tau_\mathrm{KH} = \frac{\mathrm{E}_\mathrm{int}}{L} \equiv
 \frac{\mathrm{E}_\mathrm{pot}}{2L} \simeq \frac{GM^{2}}{2RL} \ \ ,
@@ -587,7 +586,7 @@ Then by definition:
 where we have used the virial theorem and set C&cong;1. We can scale all
 the quantities to Solar values and obtain:
 </p>
-<div class="latex" id="orgaaf0b05">
+<div class="latex" id="org35ee1ef">
 \begin{equation}\label{eq:KH_timescale_scaling}
 \tau_{KH} \simeq 1.57 \times 10^{7} \mathrm{years} \times \left(\frac{M}{M_{☉}}\right)^{2} \left(\frac{R}{R_{☉}}\right)^{-1 }\left(\frac{L}{L_{☉}}\right)^{-1} \ \ .
 \end{equation}
@@ -616,9 +615,9 @@ we modify Eq. \ref{eq:tau_KH}?</li>
 </div>
 </div>
 
-<div id="outline-container-org8b7fa7b" class="outline-2">
-<h2 id="org8b7fa7b"><a href="#org8b7fa7b">Homework</a></h2>
-<div class="outline-text-2" id="text-org8b7fa7b">
+<div id="outline-container-orgc0521fe" class="outline-2">
+<h2 id="orgc0521fe"><a href="#orgc0521fe">Homework</a></h2>
+<div class="outline-text-2" id="text-orgc0521fe">
 <p>
 Using the virial theorem:
 </p>
@@ -650,9 +649,9 @@ the corresponding profile.</li>
 </ul>
 </div>
 
-<div id="outline-container-org184a323" class="outline-3">
-<h3 id="org184a323"><a href="#org184a323">The Sun with no energy sources</a></h3>
-<div class="outline-text-3" id="text-org184a323">
+<div id="outline-container-org0585272" class="outline-3">
+<h3 id="org0585272"><a href="#org0585272">The Sun with no energy sources</a></h3>
+<div class="outline-text-3" id="text-org0585272">
 <p>
 Let's use <code>MESA-web</code> to revisit the late 19<sup>th</sup> century/early 20<sup>th</sup> century
 debate on the age of the Earth/Sun. (Astro)physicists calculated the
@@ -698,10 +697,24 @@ the outermost radius from the last <code>profile*.data</code> file you saved)</l
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a>
+  <a href="notes-lecture-EOS1.html">
+    <i class="fa-solid fa-arrow-left" style="font-size:16px"></i>
+  </a>
+  &emsp;&emsp;&emsp;&emsp;
+  <a href="#top">
+    <i class="fa-solid fa-arrow-up" style="font-size:16px"></i>
+  </a>
+  &emsp;&emsp;&emsp;&emsp;
+  <a href="notes-lecture-EOS2.html">
+    <i class="fa-solid fa-arrow-right" style="font-size:16px"></i>
+  </a>
+  &emsp;&emsp;&emsp;&emsp;
+  <a href="https://github.com/mathren/stellar_phys_400A">
+    <i class="fa-brands fa-github" style="font-size:16px"></i>
+  </a>
   <hr>
   <br>
-  Last updated on 14 January 2025 <br>
+  Last updated on 15 January 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>

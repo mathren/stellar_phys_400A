@@ -1,6 +1,8 @@
 #+title: 400A - Binaries and dynamical masses
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-CMD-HRD.org
+#+NEXT_PAGE: notes-lecture-HSE.org
 
 *Materials*: Verbunt lecture notes (part 1), Sections 2.1-2.4 and 3.2 in
 Tauris & Van den Heuvel 2023 book, Chapter 7 of Carroll & Ostie's

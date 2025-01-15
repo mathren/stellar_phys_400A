@@ -1,6 +1,8 @@
 #+title: 400A Projects
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: syllabus.org
+#+NEXT_PAGE: lectures.org
 
 * Literature review project/presentation
 The aim of this literature review project is for each student to

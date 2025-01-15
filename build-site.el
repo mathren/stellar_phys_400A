@@ -7,12 +7,10 @@
 (setq package-archives '(("melpa" . "https://melpa.org/packages/")
                          ("elpa" . "https://elpa.gnu.org/packages/")))
 
-;; Initialize the package system
+;; Initialize the package system and install dependencies
 (package-initialize)
 (unless package-archive-contents
   (package-refresh-contents))
-
-;; Install dependencies
 (package-install 'htmlize)
 
 ;; Load the publishing system
@@ -36,23 +34,57 @@
     ))
 
 
-
 (defun mr/read-file (file)
   "Read contents of FILE to string"
   (with-temp-buffer (insert-file-contents file) (buffer-string)))
+
+;; Dynamically make footer with pointers to preivous and next page
+(defun mr/get-html-link (org-file publishing-directory)
+  "Convert ORG-FILE to the corresponding HTML file in PUBLISHING-DIRECTORY."
+  (when org-file
+    (let* ((file-name (file-name-sans-extension org-file))  ;; Get the file name without extension
+           (html-file (concat file-name
+                             ".html")))
+      html-file)))
+
+(defun mr/read-navigation-keywords ()
+  "Read the keywords #+PREVIOUS_PAGE and #+NEXT_PAGE from the current Org file.
+Return them as two values: previous-page and next-page."
+  (let* ((keywords (org-element-map (org-element-parse-buffer) 'keyword
+                                   (lambda (el) (cons (org-element-property :key el)
+                                                      (org-element-property :value el)))))
+         (previous (cdr (assoc "PREVIOUS_PAGE" keywords)))
+         (next (cdr (assoc "NEXT_PAGE" keywords))))
+    ;; Return previous and next as single strings, or nil if not found
+    (list previous next)))
+
+(defun mr/html-postamble (info)
+  "Generate a dynamic HTML footer for the Org export.
+Substitute placeholders PREVIOUS_PAGE and NEXT_PAGE with corresponding links.
+INFO is the export plist."
+  (let* ((publishing-directory (plist-get info :publishing-directory))
+         (nav (mr/read-navigation-keywords))
+         (previous-page (mr/get-html-link (car nav) publishing-directory))  ;; Get the first item
+         (next-page (mr/get-html-link (cadr nav) publishing-directory))  ;; Get the second item
+         (footer-template (mr/read-file "../html-content/html-templates/postamble.html"))
+         (footer (format footer-template
+                         (format-time-string "%-d %B %Y")
+                         emacs-version
+                         org-version)))
+    ;; Substitute previous_page and next_page in the footer template
+    ;; (message "Footer template before substitution: %s" footer-template)
+    ;; (message "Previous page: %s" previous-page)
+    ;; (message "Next page: %s" next-page)
+    (message "%s" case-replace)
+    (setq footer (replace-regexp-in-string "PREVIOUS_PAGE" (or previous-page "#") footer t t))
+    (setq footer (replace-regexp-in-string "NEXT_PAGE" (or next-page "#") footer t t))
+    ))
 
 (defconst mr/site-html-head
   (mr/read-file "html-content/html-templates/html_head.html"))
 
 (defconst mr/site-html-preamble
   (mr/read-file "html-content/html-templates/preamble.html"))
-
-(defconst mr/html-postamble
-  (format (mr/read-file "html-content/html-templates/postamble.html")
-	  (format-time-string "%-d %B %Y")
-	  emacs-version
-	  org-version
-	  ))
 
 ;; fix timestamps for html and latex exports
 (defun mr/filter-timestamp (trans back _comm)
@@ -84,7 +116,7 @@
       user-full-name "Mathieu Renzo"          ;; for creator
       org-html-head mr/site-html-head
       org-html-preamble mr/site-html-preamble
-      org-html-postamble mr/html-postamble
+      org-html-postamble #'mr/html-postamble
       org-display-custom-times t
       )
 

@@ -1,6 +1,8 @@
 #+title: 400A - Introduction
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: index.org
+#+NEXT_PAGE: notes-lecture-CMD-HRD.org
 
 *Materials*: chapter 1 of Onno Pols' lecture notes.
 

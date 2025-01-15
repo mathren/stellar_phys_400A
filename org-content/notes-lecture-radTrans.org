@@ -1,6 +1,8 @@
 #+title: 400A - Radiative transfer
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-neutrinos.org
+#+NEXT_PAGE: images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf
 
 *Materials:* Mihalas /Stellar atmospheres/ book, Chapter 3. de Koter's
 [[https://staff.fnwi.uva.nl/a.dekoter/ARTv1.103.00.pdf][lecture notes on radiative transfer and stellar atmospheres]], Shore's

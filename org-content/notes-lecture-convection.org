@@ -1,6 +1,8 @@
 #+Title: 400A - Convection & MLT
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-kappa.org
+#+NEXT_PAGE: notes-lecture-nuclear-burning.org
 
 *Materials*: Kippenhahn's book Ch. 6 and 7, Cox & Giuli vol. 1 Ch. 14,
 Schwarzschild Ch. 7, [[https://ui.adsabs.harvard.edu/abs/2022ApJS..262...19J/abstract][Jermyn et al. 2022]], [[https://ui.adsabs.harvard.edu/abs/2022ApJ...926..169A/abstract][Anders et al. 2022]], [[http://online.kitp.ucsb.edu/online/stars17/cantiello2][Matteo

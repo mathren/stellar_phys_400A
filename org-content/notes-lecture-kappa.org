@@ -1,6 +1,8 @@
 #+title: 400A - opacity
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-ETransport.org
+#+NEXT_PAGE: notes-lecture-convection.org
 
 *Materials*: Chapter 5 of Onno Pols' lecture notes, Sec. 5.1.3 of
 Kippenhahn's book.

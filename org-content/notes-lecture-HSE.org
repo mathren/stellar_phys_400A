@@ -1,6 +1,8 @@
 #+title: 400A - Hydrostatic equilibrium
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-BIN.org
+#+NEXT_PAGE: notes-lecture-EOS1.org
 
 *Materials*: chapter 2 of Onno Pols' lecture notes, chapters 1 & 2 of
 Kippenhahn's book.

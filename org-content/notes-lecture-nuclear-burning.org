@@ -1,5 +1,8 @@
 #+Title: 400A - Nuclear burning
 #+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-convection.org
+#+NEXT_PAGE: notes-lecture-nuclear-cycles.org
 
 *Materials:* Onno Pol's lecture notes Chapter 6.1 and 6.2, Kippenhahn
 book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, Clayton

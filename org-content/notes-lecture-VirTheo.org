@@ -1,6 +1,8 @@
 #+title: 400A - Virial theorem
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-EOS1.org
+#+NEXT_PAGE: notes-lecture-EOS2.org
 
 *Materials*: Chapter 2 of Onno Pols' lecture notes, Chapter 3 of
 Kippenhahn's book, Sec. 1.5 of "Tapestry of Modern Astrophysics" by S.

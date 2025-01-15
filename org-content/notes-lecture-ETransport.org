@@ -1,6 +1,8 @@
 #+title: 400A - Diffusive energy transport
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-EOS2.org
+#+NEXT_PAGE: notes-lecture-kappa.org
 
 *Materials*: Chapters 3 and 5 of Onno Pols' lecture notes, chapter 5 of
 Kippenhan & Weigert's book.

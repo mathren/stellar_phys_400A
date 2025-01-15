@@ -1,6 +1,8 @@
 #+title: 400A - EOS (QM effects)
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-VirTheo.org
+#+NEXT_PAGE: notes-lecture-ETransport.org
 
 *Materials*: Chapter 3 of Onno Pols' lecture notes, Chapter 14, 15, and
 16 of Kippenhahn's book.

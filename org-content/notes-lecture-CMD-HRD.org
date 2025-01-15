@@ -1,7 +1,8 @@
 #+title: 400A - CMD & HRD
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
-
+#+PREVIOUS_PAGE: notes-lecture-Intro.org
+#+NEXT_PAGE: notes-lecture-BIN.org
 
 *Materials*: chapter 1 of Onno Pols' lecture notes, Sec. 30.2 of
 Kippehahn book, Sec. 8.2 of Ostie & Carroll book, [[https://ui.adsabs.harvard.edu/abs/1914PA.....22..331R][Russell 1914]]
