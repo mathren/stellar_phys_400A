@@ -112,7 +112,7 @@ may be. We will do this through a project, that we will discuss later.
 
 #+CAPTION: Link to [[./syllabus.org][syllabus]]
 #+ATTR_HTML: :width 50%
-[[./images/syllabus-QR.png]]
+[[./images/QR-syllabus.png]]
 
 * Let's start finally talking about stars!
 
@@ -292,13 +292,13 @@ and in astronomy more generally.
 - *Q*: How many R_{\odot} are in 1 AU?
 :end:
 
-** Solar mass: M_{\odot} = 1.98\times10^{33} g\simeq 2\times10^{33} g
+** Solar mass: M_{\odot} = 1.98\times10^{33} g \simeq 2\times10^{33} g
 
 ** Solar luminosity: L_{\odot} = 3.82\times10^{33} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
 This may be one of the reasons why we still use =cgs= in astronomy,
 the other one being that the constants in electromagnetism are a
 bit simpler.
-** Solar effective temperature: T_{\odot}\simeq 5900K\simeq6000K
+** Solar effective temperature: T_{\odot} \simeq 5900K \simeq 6000K
 This is the "effective temperature" of the Sun, which we will discuss
 in the [[file:notes-lecture-CMD-HRD.org][next lecture]]. It is an approximation for the temperature of the
 surface below which the radiation field is isotropic - that is the
@@ -338,7 +338,7 @@ the metallicity (i.e., taking X=Fe).
  - *Q*: How old is the Sun? How long will it live? How do we know?
 :end:
 
-* Discuss projects
+* Discupss projects
 
 - Projects will cover topics that are important and or timely, but
   hard to fit in the main body of the course
