@@ -8,13 +8,13 @@
 
 * Introduction to the course
 
-#+CAPTION: Link to [[https://uarizona.co1.qualtrics.com/jfe/form/SV_6y99dJCQwYNCQ5g][Intro survey]]
-#+ATTR_HTML: :width 50%
-[[./images/QR-intro.png]]
+# #+CAPTION: Link to [[https://uarizona.co1.qualtrics.com/jfe/form/SV_6y99dJCQwYNCQ5g][Intro survey]]
+# #+ATTR_HTML: :width 50%
+# [[./images/QR-intro.png]]
 
-# #+CAPTION: Word cloud of the students' expectations for what they are going to learn in this class.
-# #+ATTR_HTML: :width 100%
-# [[./images/word_cloud20250116.png]]
+#+CAPTION: Word cloud of the students' expectations for what they are going to learn in this class.
+#+ATTR_HTML: :width 100%
+[[./images/word_cloud20250116.png]]
 
 * Who am I?
 

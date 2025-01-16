@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-15 Wed 13:09 -->
+<!-- 2025-01-16 Thu 13:06 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - EOS (QM effects)</title>
@@ -103,7 +103,7 @@ beyond those.
 
 <p>
 A star is "big", why do we need to care about quantum mechanics (QM)?
-Besides its central role in allowing for nuclear burning, <a href="materials/nuclear_reaction_rates.pdf">which we
+Besides its central role in allowing for nuclear burning, <a href="./notes-lecture-nuclear-burning.html">which we
 will see later</a>, QM effects can matter also at extremely low
 temperatures and/or high densities, which can be encountered in
 stellar physics.
@@ -117,7 +117,7 @@ principle"): &Delta; x &Delta; p &ge; h with h Planck's constant. This naturally
 translates in three spatial dimension to
 </p>
 
-<div class="latex" id="orgde956cc">
+<div class="latex" id="orge91ae8b">
 \begin{equation}
 \Delta x \Delta y \Delta z \Delta p_{x} \Delta p_{y} \Delta p_{z} \ge h^{3} \ \,
 \end{equation}
@@ -130,7 +130,7 @@ available number of quantized states with momentum between p+dp within
 a volume dV = dxdydz &equiv; d<sup>3</sup>x is
 </p>
 
-<div class="latex" id="orgdf019fa">
+<div class="latex" id="org8f6f1a1">
 \begin{equation}
 g(p)dpdV = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
 \end{equation}
@@ -156,7 +156,7 @@ From the <a href="notes-lecture-EOS1.html#orgd3989b8">previous lecture on EOS</a
 distribution
 </p>
 
-<div class="latex" id="orgf40950f">
+<div class="latex" id="orgd2c0123">
 \begin{equation}
 n(p)\propto \frac{n}{(mT)^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }\ \ ,
 \end{equation}
@@ -168,7 +168,7 @@ where n is the number density, T the temperature, and m the mass of
 the particles. Therefore:
 </p>
 
-<div class="latex" id="orgf31df96">
+<div class="latex" id="orga72d732">
 \begin{equation}\label{eq:momentum_ratios}
 \frac{n(p)}{g(p)}\propto n (mT)^{-3/2}\exp(\frac{-p^{2}}{2mk_{B}T}) \ \ .
 \end{equation}
@@ -212,7 +212,7 @@ states of energy between &epsilon;&equiv;&epsilon;(p) and &epsilon;+d&epsilon; i
 distribution:
 </p>
 
-<div class="latex" id="orgaf938a5">
+<div class="latex" id="org92e0b99">
 \begin{equation}\label{eq:Fermi-Dirac}
  f_{FD}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T - \eta)}+1} \le 1 \ \,
 \end{equation}
@@ -236,7 +236,7 @@ at most one fermion.
 case the relevant distribution is the Bose-Einstein's distribution:
 </p>
 
-<div class="latex" id="orge2a5c98">
+<div class="latex" id="org75c20c8">
 \begin{equation}\label{eq:Bose-Einstein}
  f_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T-\eta)}-1} \ \,
 \end{equation}
@@ -259,7 +259,7 @@ chemical potential &mu; one can impose the normalization following
 from the total number density of particles:
 </p>
 
-<div class="latex" id="org99eb073">
+<div class="latex" id="orgde17801">
 \begin{equation}
 n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ .
 \end{equation}
@@ -322,7 +322,7 @@ the electrons occupy a sphere in momentum space with a radius p<sub>F</sub>
 called the "Fermi" momentum:
 </p>
 
-<div class="latex" id="org9ba7342">
+<div class="latex" id="org36a6d07">
   \begin{equation}
   g_{e}(p)dp = q_{s}\frac{4\pi p^{2}}{h^{3}}dp \equiv \frac{8\pi p^{2}}{h^{3}}dp \ \  \mathrm{for} \ \
 p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
@@ -334,7 +334,7 @@ and we used q<sub>s</sub>=2 for electrons. To find the value of p<sub>f</sub> we
 the normalization coming from the total number density of electrons
 </p>
 
-<div class="latex" id="org0613c48">
+<div class="latex" id="org55cfb08">
 \begin{equation}
 n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{f}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8\pi}n_{e}\right)^{1/3} \ \ .
 \end{equation}
@@ -359,7 +359,7 @@ need the appropriate p&equiv; p(&epsilon;) relaton
 In this case &epsilon; = p<sup>2</sup>/2m is the energy of the electrons (still ideal
 gas) and v=p/m, thus from the previous lecture on EOS we have:
 </p>
-<div class="latex" id="orgb0c9557">
+<div class="latex" id="orgb74953d">
 \begin{equation}
 P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{f}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \ \ .
 \end{equation}
@@ -397,7 +397,7 @@ gas, the EOS will again be a polytrope with exponent now &Gamma;=4/3</i>.
 <p>
 Specifically the calculation yields:
 </p>
-<div class="latex" id="orgdd7e641">
+<div class="latex" id="org45d5e27">
 \begin{equation}
 P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \ \ .
 \end{equation}
@@ -418,7 +418,7 @@ One can estimate the density at the transition with the
 condition p<sub>F</sub> &cong; m<sub>e</sub> c:
 </p>
 
-<div class="latex" id="org602b3da">
+<div class="latex" id="org6cedf13">
 \begin{equation}
  \rho_{NR \rightarrow UR} \simeq \mu_{e} m_{u} \frac{8\pi}{3} \left(\frac{m_{e}c}{h}\right)^{3} \ \ .
 \end{equation}
@@ -505,7 +505,7 @@ We can then calculate the internal energy density of the photon gas
 as u<sub>int</sub> = a T<sup>4</sup> with a the radiation constant:
 </p>
 
-<div class="latex" id="orgf6af236">
+<div class="latex" id="org15efb0c">
 \begin{equation}
 a = \frac{8\pi^{5} k_{B}^4}{15h^{3}c^{3}} = 7.56\times10^{-15} \mathrm{erg} \ \mathrm{cm}^{-3} \ \mathrm{K}^{-4} \ \ ,
 \end{equation}
@@ -521,7 +521,7 @@ Relying again on the ultra-relativistic nature of photons, we know
 that P=u<sub>int</sub>/3 and therefore the radiation pressure is:
 </p>
 
-<div class="latex" id="org2aacc4a">
+<div class="latex" id="org175f518">
 \begin{equation}
 P_\mathrm{rad} =\frac{1}{3}aT^{4} \ \ .
 \end{equation}
@@ -583,7 +583,7 @@ Similarly we can define &mu;<sub>0</sub> as the mean molecular weight per nucleu
 and &mu;<sub>e</sub> as the mean molecular weight per electron, and thus
 </p>
 
-<div class="latex" id="orgacc3a0c">
+<div class="latex" id="org327d305">
 \begin{equation}
 \rho = (n+n_{e})\mu m_{u}\equiv n\mu_{o}m_{u} \equiv n_{e}\mu_{e} m_{u} \ \ .
 \end{equation}
@@ -597,7 +597,7 @@ density of massive ions regarless of their ionization state), and thus
 rewrite the above as
 </p>
 
-<div class="latex" id="orge5f4979">
+<div class="latex" id="org142f01e">
 \begin{equation}
 \mu = \frac{\rho}{m_{u}n}\frac{1}{1+E} \equiv \frac{\mu_{0}}{1+E} \equiv \mu_{e}\frac{E}{1+E} \ \ .
 \end{equation}
@@ -620,7 +620,7 @@ calculate E as a function of T, and &rho;.
 Putting all things together:
 </p>
 
-<div class="latex" id="org9711b7b">
+<div class="latex" id="org4c0f48d">
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T +
 P_{QM} + \frac{1}{3}aT^{4}  \ \ ,
@@ -641,7 +641,7 @@ mechanics:
 </p>
 
 
-<figure id="org8e334cd">
+<figure id="org90f30a2">
 <img src="./images/EOS_blend_paxton18.png" alt="EOS_blend_paxton18.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Blend of tabulated EOS on the T(&rho;) plane used in MESA (Fig. 50 in <a href="https://ui.adsabs.harvard.edu/abs/2018ApJS..234...34P/abstract">Paxton et al. 2018</a>), see also <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstract">Jermyn et al. 2021</a> for updates relevant to large portions of this plane. The blue and purple tracks correspond to evolved stellar models of the mass labeled.</figcaption>
@@ -702,7 +702,7 @@ mass?</li>
   <hr>
   <a href="notes-lecture-VirTheo.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-ETransport.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 15 January 2025 <br>
+  Last updated on 16 January 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>
