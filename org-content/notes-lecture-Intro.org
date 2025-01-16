@@ -338,7 +338,7 @@ the metallicity (i.e., taking X=Fe).
  - *Q*: How old is the Sun? How long will it live? How do we know?
 :end:
 
-* Discupss projects
+* Discuss projects
 
 - Projects will cover topics that are important and or timely, but
   hard to fit in the main body of the course
