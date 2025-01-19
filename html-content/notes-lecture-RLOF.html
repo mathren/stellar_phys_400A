@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-15 Wed 13:10 -->
+<!-- 2025-01-19 Sun 15:15 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Mass transfer</title>
@@ -50,7 +50,7 @@
   <!-- The hamburger -->
   <div class="hamburger">
     <div id="myLinks" class="menu">
-      <a href="./README.html">Home</a>
+      <a href="./index.html">Home</a>
       <a href="./syllabus.html">Syllabus</a>
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
@@ -85,11 +85,11 @@
 Heuvel book chapter 4.
 </p>
 
-<div id="outline-container-org4d2090e" class="outline-2">
-<h2 id="org4d2090e"><a href="#org4d2090e">Mass transfer in binary systems</a></h2>
-<div class="outline-text-2" id="text-org4d2090e">
+<div id="outline-container-org324a475" class="outline-2">
+<h2 id="org324a475"><a href="#org324a475">Mass transfer in binary systems</a></h2>
+<div class="outline-text-2" id="text-org324a475">
 <p>
-We have already seen in the <a href="./notes-lecture-BIN.html#org2eb28c8">second lecture</a> that, in the Universe,
+We have already seen in the <a href="./notes-lecture-BIN.html#orge41bc19">second lecture</a> that, in the Universe,
 binary systems composed of two stars orbiting each other are common,
 the higher the mass of the stars the more so (see for example <a href="https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract">Offner
 et al. 2023</a>). Historically, this fact has been leveraged to design
@@ -113,9 +113,9 @@ what happens to the stellar radius as a typical star evolves?</li>
 </ul>
 </div>
 
-<div id="outline-container-org13109ae" class="outline-3">
-<h3 id="org13109ae"><a href="#org13109ae">Roche model</a></h3>
-<div class="outline-text-3" id="text-org13109ae">
+<div id="outline-container-orgcd88b66" class="outline-3">
+<h3 id="orgcd88b66"><a href="#orgcd88b66">Roche model</a></h3>
+<div class="outline-text-3" id="text-orgcd88b66">
 <p>
 To describe the gas of the stars in a binary system subject to the
 gravity of both stars is effectively a <i>three body problem</i>, hard to
@@ -153,7 +153,7 @@ at frequency n=2&pi;/P. Since it is a rotating frame, it is non-inertial,
 but the gravitational potential of the two stars can be written as:
 </p>
 
-<div class="latex" id="org7642702">
+<div class="latex" id="org4040cc0">
 \begin{equation}
 \Phi(\mathbf{r}) = -\frac{GM_{1}}{\lvert \mathbf{r}-\mathbf{r}_{1}\rvert}-\frac{GM_{2}}{\lvert \mathbf{r}-\mathbf{r}_{2}\rvert}-\frac{1}{2}(\mathbf{n}\times\mathbf{r})^{2} \ \ ,
 \end{equation}
@@ -174,7 +174,7 @@ depends on the velocity of the test mass m: the Coriolis force &prop;
 2n&times; v. Per unit volume the momentum conservation is thus
 </p>
 
-<div class="latex" id="org6c8c20e">
+<div class="latex" id="org5d93c2c">
 \begin{equation}
 \partial_{t} v + (v\cdot\nabla )v = -\nabla \Phi-\frac{\nabla P}{\rho}-2\mathbf{n}\times \mathbf{v} \ \ .
 \end{equation}
@@ -191,7 +191,7 @@ perturbation on top of this):
 
 
 
-<figure id="orgd145eaa">
+<figure id="org131bda2">
 <img src="./images/RochePotential.jpeg" alt="RochePotential.jpeg" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Visualization of the Roche potential (grid) and the equipotential surfaces intersecting the orbital plane for a binary with q=M<sub>2</sub>/M<sub>1</sub>=0.5. The three Lagrangian points L<sub>1</sub>, L<sub>2</sub>, and L<sub>3</sub> are marked. From <a href="https://en.wikipedia.org/wiki/Roche_lobe#/media/File:RochePotential.jpg">wikipedia</a>.</figcaption>
@@ -234,7 +234,7 @@ co-rotating frame, the gas of both stars is still, \(\mathbf{v}=0\), and
 the momentum conservation reduces to
 </p>
 
-<div class="latex" id="org865d085">
+<div class="latex" id="orgcef392e">
 \begin{equation}
 - \rho \nabla\Phi = \nabla P \ \ ,
 \end{equation}
@@ -271,7 +271,7 @@ only "see" the inner binary as a point mass with total mass M<sub>1</sub>+M<sub>
 
 
 
-<figure id="org2d1d7b3">
+<figure id="org86b770f">
 <img src="./images/potential_Roche.png" alt="potential_Roche.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>cross section of the potential on a plane perpendicular to the orbit and passing through the three Lagrangian points. The dotted line outside of L<sub>2</sub> mark where co-rotation is not achievable and the Roche approximations don't hold anymore. The dark gray binary with both stars within their Roche lobes is a <i>detached</i> binary, the intermediate gray one, where M<sub>1</sub> fills its Roche lobe is a <i>semidetached</i> binary, and the lightest gray where both stars fill their lobes is a contact binary. This is Figure 6.1 of Onno Pols' lecture notes.</figcaption>
@@ -279,9 +279,9 @@ only "see" the inner binary as a point mass with total mass M<sub>1</sub>+M<sub>
 </div>
 
 
-<div id="outline-container-org87dc965" class="outline-4">
-<h4 id="org87dc965"><a href="#org87dc965">Spherical approximation</a></h4>
-<div class="outline-text-4" id="text-org87dc965">
+<div id="outline-container-org63dc606" class="outline-4">
+<h4 id="org63dc606"><a href="#org63dc606">Spherical approximation</a></h4>
+<div class="outline-text-4" id="text-org63dc606">
 <p>
 The Roche potential is <i>clearly</i> not spherically symmetric: how can we
 use this in stellar evolution simulations?! In reality, thanks to the
@@ -309,7 +309,7 @@ parameters (e.g., <a href="https://ui.adsabs.harvard.edu/abs/1971ARA%26A...9..18
 continuous across a large range of mass ratios:
 </p>
 
-<div class="latex" id="org08c9552">
+<div class="latex" id="orgaae84d2">
 \begin{equation}
 R_{RL,i}= a \frac{0.49 q_{i}^{2/3}}{0.6q_{i}^{2/3}+\ln(1+q_{i}^{2/3})} \ \ ,
 \end{equation}
@@ -325,9 +325,9 @@ volume of star i.
 </div>
 
 
-<div id="outline-container-org54a7f23" class="outline-2">
-<h2 id="org54a7f23"><a href="#org54a7f23">Type of binary interactions</a></h2>
-<div class="outline-text-2" id="text-org54a7f23">
+<div id="outline-container-org5d9ca54" class="outline-2">
+<h2 id="org5d9ca54"><a href="#org5d9ca54">Type of binary interactions</a></h2>
+<div class="outline-text-2" id="text-org5d9ca54">
 <p>
 As we will see in the next in class activity, stars tend to grow
 bigger as the evolve: even a binary system that stars as detached may
@@ -345,9 +345,9 @@ or <i>dynamically unstable common envelope</i>.
 </p>
 </div>
 
-<div id="outline-container-orgf7c6db8" class="outline-3">
-<h3 id="orgf7c6db8"><a href="#orgf7c6db8">Dynamically stable mass-transfer</a></h3>
-<div class="outline-text-3" id="text-orgf7c6db8">
+<div id="outline-container-org4569647" class="outline-3">
+<h3 id="org4569647"><a href="#org4569647">Dynamically stable mass-transfer</a></h3>
+<div class="outline-text-3" id="text-org4569647">
 <p>
 If Roche lobe overflow does not hit a runaway response of the orbit
 (causing more and more overflow), then it is dynamically stable.
@@ -361,9 +361,9 @@ by this interaction (see below).
 </div>
 </div>
 
-<div id="outline-container-org6edcb1b" class="outline-3">
-<h3 id="org6edcb1b"><a href="#org6edcb1b">Dynamically unstable common envelope</a></h3>
-<div class="outline-text-3" id="text-org6edcb1b">
+<div id="outline-container-org7dae0d1" class="outline-3">
+<h3 id="org7dae0d1"><a href="#org7dae0d1">Dynamically unstable common envelope</a></h3>
+<div class="outline-text-3" id="text-org7dae0d1">
 <p>
 Sometimes, the orbit and or the evolution of the stars respond to mass
 transfer increasing the amount of overflow, leading to an unstable
@@ -399,9 +399,9 @@ white dwarf, binary white dwarfs, gravitational wave mergers, etc.).
 </div>
 
 
-<div id="outline-container-org86bee21" class="outline-3">
-<h3 id="org86bee21"><a href="#org86bee21">Nomenclature: Case A, B, and C</a></h3>
-<div class="outline-text-3" id="text-org86bee21">
+<div id="outline-container-org3cf8f64" class="outline-3">
+<h3 id="org3cf8f64"><a href="#org3cf8f64">Nomenclature: Case A, B, and C</a></h3>
+<div class="outline-text-3" id="text-org3cf8f64">
 <p>
 Depending on when mass transfer starts, we can have three different
 categories (defined by <a href="https://ui.adsabs.harvard.edu/abs/1967ZA.....66...58K/abstract">Kippenhahn et al. 1967</a> and <a href="https://ui.adsabs.harvard.edu/abs/1970A%26A.....7..150L/abstract">Lauterborn 1970</a>):
@@ -424,7 +424,7 @@ core He depletion.</li>
 
 <p>
 Because of the different L and &phi; factors for each nuclear burning
-phase (<a href="./notes-lecture-nuclear-burning.html#orgbdf7cdf">see lecture on nuclear burning for notation</a>), the timescales
+phase (<a href="./notes-lecture-nuclear-burning.html#orgc18f9d1">see lecture on nuclear burning for notation</a>), the timescales
 for mass transfer and therefore responses of both stars and the orbit
 to mass transfer can be very different for these three, leading to
 divergent evolution of the binaries and the outcome: case A typically
@@ -436,9 +436,9 @@ shorter), though this may also be metallicity dependent .
 </div>
 </div>
 
-<div id="outline-container-org7bf8da5" class="outline-2">
-<h2 id="org7bf8da5"><a href="#org7bf8da5">Orbital evolution during mass transfer</a></h2>
-<div class="outline-text-2" id="text-org7bf8da5">
+<div id="outline-container-org0edb6f3" class="outline-2">
+<h2 id="org0edb6f3"><a href="#org0edb6f3">Orbital evolution during mass transfer</a></h2>
+<div class="outline-text-2" id="text-org0edb6f3">
 <p>
 Because of the evolution of the stellar radius R(t), many stellar
 binaries will evolve from an initially <i>detached</i> state (i.e., the mass
@@ -474,7 +474,7 @@ To study the evolution of the orbit, it is useful to consider the
 total orbital angular momentum of the binary:
 </p>
 
-<div class="latex" id="org1f0e980">
+<div class="latex" id="org085b5a8">
 \begin{equation}
 J_\mathrm{tot} = J_\mathrm{orb}+J_{1}+J_{2} \ \ ,
 \end{equation}
@@ -485,7 +485,7 @@ with J<sub>i</sub> = I<sub>i</sub> &omega;<sub>i</sub> spin angular momentum of 
 orbital angular momentum. A simple order of magnitude calculation can
 show that
 </p>
-<div class="latex" id="org8629bdb">
+<div class="latex" id="org957a441">
 \begin{equation}\label{eq:J_ordering}
 J_{i} \simeq M_{i} R_{i}^{2} \omega_{i} \ll J_\mathrm{orb} \simeq \frac{M_{1}M_{2}}{M_{1}+M_{2}} a^{2} n \ \ ,
 \end{equation}
@@ -509,7 +509,7 @@ compared to the orbital angular momentum</i>.
 For the orbital term, using Kepler's 3<sup>rd</sup> law and a<sub>1</sub>M<sub>1</sub>
 = a<sub>2</sub>M<sub>2</sub> = a M<sub>1</sub>M<sub>2</sub>/(M<sub>1</sub>+M<sub>2</sub>) we can write:
 </p>
-<div class="latex" id="orga02fccc">
+<div class="latex" id="org40d80c6">
 \begin{equation}
 J_\mathrm{orb} = M_{1} a_{1}^{2} v_{1} + M_{2} a_{2}^{2} v_{2} = \sqrt{\frac{GM_{1}^{2}M_{2}^{2} a(1-e^{2})}{M_{1}+M_{2}}} \ \ .
 \end{equation}
@@ -518,7 +518,7 @@ J_\mathrm{orb} = M_{1} a_{1}^{2} v_{1} + M_{2} a_{2}^{2} v_{2} = \sqrt{\frac{GM_
 <p>
 and thus taking a logarithmic derivative obtain:
 </p>
-<div class="latex" id="orgd49aafa">
+<div class="latex" id="org0aa76c4">
 \begin{equation}\label{eq:am_balance}
 \frac{\dot{a}}{a} = 2 \frac{\dot{J_\mathrm{orb}}}{J_\mathrm{orb}}-2\frac{\dot{M_{1}}}{M_{1}}-2\frac{\dot{M_{2}}}{M_{2}}+\frac{\dot{M_{1}}+\dot{M_{2}}}{M_{1}+M_{2}} +2\frac{e\dot{e}}{1-e^{2}} \ \ ,
 \end{equation}
@@ -583,9 +583,9 @@ orbital evolution.
 </p>
 </div>
 
-<div id="outline-container-org3418a30" class="outline-3">
-<h3 id="org3418a30"><a href="#org3418a30">Stellar wind mass loss</a></h3>
-<div class="outline-text-3" id="text-org3418a30">
+<div id="outline-container-org332f651" class="outline-3">
+<h3 id="org332f651"><a href="#org332f651">Stellar wind mass loss</a></h3>
+<div class="outline-text-3" id="text-org332f651">
 <p>
 Consider for simplicity a circular binary (e=0) where the only mass
 lost is due to stellar winds (no mass exchange).
@@ -596,7 +596,7 @@ The winds have velocity v<sub>wind,i </sub>&ge; v<sub>esc,i</sub> &sim;(2GM<sub>
 star, while the orbital velocity of the binary is set by Kepler's 3<sup>rd</sup>
 law, and each individual star has
 </p>
-<div class="latex" id="org8727067">
+<div class="latex" id="org41621ed">
 \begin{equation}
 v_{1} = \frac{M_{2}}{M_{1}+M_{2}}\sqrt{\frac{G(M_{1}+M_{2})}{a}} \ \ ,\\
 v_{2} = \frac{M_{1}}{M_{1}+M_{2}}\sqrt{\frac{G(M_{1}+M_{2})}{a}} \ \ ,\\
@@ -612,7 +612,7 @@ come from momentum balance in the center of mass frame of the system.
 <p>
 Thus, taking the ratio, we see that:
 </p>
-<div class="latex" id="org935babb">
+<div class="latex" id="orga7594d8">
 \begin{equation}
 \frac{v_\mathrm{wind, 1}}{v_\mathrm{orb,1}} \geq \frac{v_\mathrm{esc, 1}}{v_\mathrm{orb, 1}} = \sqrt{2\frac{M_{1}(M_{1}+M_{2})}{M_{2}^{2}}\frac{a}{R_{1}}} \gg 1 \ \ , \\
 \frac{v_\mathrm{wind, 2}}{v_\mathrm{orb,2}} \geq \frac{v_\mathrm{esc, 2}}{v_\mathrm{orb, 2}} = \sqrt{2\frac{M_{2}(M_{1}+M_{2})}{M_{1}^{2}}\frac{a}{R_{2}}} \gg 1 \ \ , \\
@@ -627,7 +627,7 @@ In this case, the material lost to winds will carry the specific
 angular momentum (per unit mass) of the wind-losing star moving on its
 orbit:
 </p>
-<div class="latex" id="orgf6ba5ec">
+<div class="latex" id="orgb492117">
 \begin{equation}
 dJ_\mathrm{orb} = \frac{J_\mathrm{orb, 1}}{M_{1}}dM_{1} + \frac{J_\mathrm{orb, 2}}{M_{2}}dM_{2} \equiv \frac{M_{1} J_\mathrm{orb}}{M_{2} (M_{1}+M_{2})}dM_{1} + \frac{M_{2} J_\mathrm{orb}}{M_{1}(M_{1}+M_{2})}dM_{2} \ \ ,
 \end{equation}
@@ -638,7 +638,7 @@ where in the last we used J<sub>orb, i</sub> M<sub>i</sub> = J<sub>orb</sub> M<s
 momentum conservation in the center of mass frame) and dM<sub>i</sub>&lt;0 in both
 cases. The Eq. \ref{eq:am_balance} reduces to
 </p>
-<div class="latex" id="org9a648d6">
+<div class="latex" id="org6cf8267">
 \begin{equation}
 \frac{\dot{a}}{a} = - \frac{\dot{M_{1}}+\dot{M_{2}}}{M_{1}+M_{2}} \ \ ,
 \end{equation}
@@ -657,14 +657,14 @@ as "Jeans mode".
 </div>
 </div>
 
-<div id="outline-container-orge1b9544" class="outline-3">
-<h3 id="orge1b9544"><a href="#orge1b9544">Conservative mass transfer evolution</a></h3>
-<div class="outline-text-3" id="text-orge1b9544">
+<div id="outline-container-orgbcf3635" class="outline-3">
+<h3 id="orgbcf3635"><a href="#orgbcf3635">Conservative mass transfer evolution</a></h3>
+<div class="outline-text-3" id="text-orgbcf3635">
 <p>
 Another case that allows for analytic consideration is the case of
 <i>conservative</i> mass transfer, that is
 </p>
-<div class="latex" id="org003747d">
+<div class="latex" id="orgf316ffc">
 \begin{equation}
 \dot{M_{1}} = - \dot{M_{2}} \ \ \mathrm{and}\ \  \dot{J_\mathrm{orb}}=0 \ \,
 \end{equation}
@@ -679,7 +679,7 @@ lost.
 <p>
 In this case Eq. \ref{eq:am_balance} becomes:
 </p>
-<div class="latex" id="orgc45bff8">
+<div class="latex" id="org9761edd">
 \begin{equation}
 \frac{\dot{a}}{a} = 2\left(\frac{M_{1}}{M_{2}}-1\right)\frac{\dot{M_{1}}}{M_{1}} \ \ ,
 \end{equation}
@@ -700,9 +700,9 @@ the mass ratio flips from q=M<sub>2</sub>/M<sub>1</sub>&lt;1 to q&gt;1.
 </div>
 </div>
 
-<div id="outline-container-orgdba6d5b" class="outline-3">
-<h3 id="orgdba6d5b"><a href="#orgdba6d5b">General case</a></h3>
-<div class="outline-text-3" id="text-orgdba6d5b">
+<div id="outline-container-org3559de0" class="outline-3">
+<h3 id="org3559de0"><a href="#org3559de0">General case</a></h3>
+<div class="outline-text-3" id="text-org3559de0">
 <p>
 In general, we can assume that a fraction &beta;<sub>RLOF</sub> of the mass lost by
 the donor star ends up on the accretor star (thus a fraction 1-&beta;<sub>RLOF</sub>
@@ -713,7 +713,7 @@ by the poorly known parameter &beta;<sub>ROLF</sub>) and angular momentum losses
 (represented by &gamma;<sub>RLOF</sub>) we can re-write Eq. \ref{eq:am_balance} for a
 circular system (e=0) as:
 </p>
-<div class="latex" id="org2c79a7e">
+<div class="latex" id="org802aa4a">
 \begin{equation}
 \frac{\dot{a}}{a} =-2\frac{\dot{M_{1}}}{M_{1}}\left[1-\beta_{RLOF}\frac{M_{1}}{M_{2}}-(1-\beta_{RLOF})\left(\gamma_{RLOF}+\frac{1}{2}\right)\frac{M_{1}}{M_{1}+M_{2}}\right] \ \ ,
 \end{equation}
@@ -737,9 +737,9 @@ disk (see for example <a href="https://ui.adsabs.harvard.edu/abs/1975ApJ...198..
 </div>
 </div>
 
-<div id="outline-container-orga4c53ec" class="outline-2">
-<h2 id="orga4c53ec"><a href="#orga4c53ec">Modifications to the structure of stars because of mass transfer</a></h2>
-<div class="outline-text-2" id="text-orga4c53ec">
+<div id="outline-container-org47f09bf" class="outline-2">
+<h2 id="org47f09bf"><a href="#org47f09bf">Modifications to the structure of stars because of mass transfer</a></h2>
+<div class="outline-text-2" id="text-org47f09bf">
 <iframe width="600" height="400" src="https://www.youtube.com/embed/Zn1E23saY-A?si=w0m_yOw7DRnEqX7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p>
@@ -753,9 +753,9 @@ through mass transfer.
 </p>
 </div>
 
-<div id="outline-container-org1fb3b7d" class="outline-3">
-<h3 id="org1fb3b7d"><a href="#org1fb3b7d">Donor: loss of the envelope, revealing the core</a></h3>
-<div class="outline-text-3" id="text-org1fb3b7d">
+<div id="outline-container-orgde57ca2" class="outline-3">
+<h3 id="orgde57ca2"><a href="#orgde57ca2">Donor: loss of the envelope, revealing the core</a></h3>
+<div class="outline-text-3" id="text-orgde57ca2">
 <p>
 The donor will lose (most of) its hydrogen rich envelope, becoming a
 low opacity, high temperature, small in radius, helium enriched star.
@@ -772,9 +772,9 @@ photons!) the interior of a star.
 </div>
 </div>
 
-<div id="outline-container-org627f5f6" class="outline-3">
-<h3 id="org627f5f6"><a href="#org627f5f6">Accretor: Spin up, pollution, rejuvenation</a></h3>
-<div class="outline-text-3" id="text-org627f5f6">
+<div id="outline-container-org1ed68ea" class="outline-3">
+<h3 id="org1ed68ea"><a href="#org1ed68ea">Accretor: Spin up, pollution, rejuvenation</a></h3>
+<div class="outline-text-3" id="text-org1ed68ea">
 <p>
 The mass transferred comes with angular momentum and will easily spin
 up the accretor star, making it fast rotating up to the point where at
@@ -808,9 +808,9 @@ lifetime of the star.
 </div>
 </div>
 
-<div id="outline-container-org9c64978" class="outline-2">
-<h2 id="org9c64978"><a href="#org9c64978">Mass transfer rate calculation</a></h2>
-<div class="outline-text-2" id="text-org9c64978">
+<div id="outline-container-orgc521180" class="outline-2">
+<h2 id="orgc521180"><a href="#orgc521180">Mass transfer rate calculation</a></h2>
+<div class="outline-text-2" id="text-orgc521180">
 <p>
 Say we have a binary that is starting to transfer mass through the L<sub>1</sub>
 Lagrangian point: how can we decide the mass transfer <i>rate</i> per unit
@@ -826,7 +826,7 @@ The classic approach is to <i>postulate</i> that the mass transfer rate is a
 function of the amount of overflow in radius. If the donor is star 1:
 </p>
 
-<div class="latex" id="org640cdc9">
+<div class="latex" id="org6943d49">
 \begin{equation}
 \dot{M_{1}} \equiv \dot{M_{1}}(\Delta R_{1}/R_{RL,1}) \equiv \dot{M_{1}}(\frac{R_{1}-R_{RL,1}}{R_{RL,1}}) \ \ .
 \end{equation}
@@ -841,7 +841,7 @@ the nozzle of gas across the plane perpendicular to the axis
 connecting the two stars and going through L<sub>1</sub>
 </p>
 
-<div class="latex" id="org179cc5e">
+<div class="latex" id="org1942adf">
 \begin{equation}
 \dot{M_{1}} = \rho_{L_{1}} v_{L_{1}} A_{L_{1}} \ \ .
 \end{equation}
@@ -866,7 +866,7 @@ we can do a Taylor approximation along the y-direction the plane of
 interest and get:
 </p>
 
-<div class="latex" id="org61d9cb4">
+<div class="latex" id="org4cfc653">
 \begin{equation}
 \Delta \Phi \simeq \frac{\partial \Phi}{\partial y}\rvert_{L_{1}} y + \frac{1}{2}\frac{\partial^{2} \Phi}{\partial y^{2}}\rvert_{L_{1}}y^{2} \ \ ,
 \end{equation}
@@ -876,7 +876,7 @@ interest and get:
 where &part;<sub>x</sub>&Phi;(L<sub>1</sub>)=&part;<sub>y</sub>&Phi;(L<sub>1</sub>)0, and using the Roche potential plus Kepler's 3<sup>rd</sup>
 law this gives:
 </p>
-<div class="latex" id="orga2a0beb">
+<div class="latex" id="org618eec6">
 \begin{equation}
 \Delta \Phi \simeq \frac{1}{2}{n^{2}}y^{2} \ \ ,
 \end{equation}
@@ -889,7 +889,7 @@ related by looking at a point far from L<sub>1</sub>'s direction where the
 gravity of the companion does not distort the equipotential surfaces
 too much, resulting in &Phi; &sim; GM<sub>1</sub>/(R<sub>1</sub>), and thus:
 </p>
-<div class="latex" id="org9fa2d73">
+<div class="latex" id="org42b710d">
 \begin{equation}
 \Delta \Phi \simeq \frac{GM_{1}}{R_{1}}\frac{\Delta R}{R} \ \ ,
 \end{equation}
@@ -898,7 +898,7 @@ too much, resulting in &Phi; &sim; GM<sub>1</sub>/(R<sub>1</sub>), and thus:
 <p>
 and putting things together:
 </p>
-<div class="latex" id="org6ac79f1">
+<div class="latex" id="org874e794">
 \begin{equation}
 A_{L_{1}} \simeq y^{2}(\Delta R) = \frac{2GM_{1}}{n^{2}R_{1}}\frac{\Delta R}{R_{1}} \ \ ,
 \end{equation}
@@ -931,7 +931,7 @@ Note that a lot of the physics at play here may happen while the stars
 are <i>not</i> in gravothermal equilibrium, something that is neglected in
 <i>rapid</i> binary population synthesis calculations based on pre-computed
 single star models (where the single stars were always in gravothermal
-equilibrium themselves), cf. <a href="./notes-lecture-neutrinos.html#orga94eeac">notes on codes</a>.
+equilibrium themselves), cf. <a href="./notes-lecture-neutrinos.html#org59e529c">notes on codes</a>.
 </p>
 
 
@@ -942,9 +942,9 @@ location (<b>Hint</b>: think of what force drives the instability)?</li>
 </div>
 </div>
 
-<div id="outline-container-org9860980" class="outline-2">
-<h2 id="org9860980"><a href="#org9860980">Homework</a></h2>
-<div class="outline-text-2" id="text-org9860980">
+<div id="outline-container-org81a4ebf" class="outline-2">
+<h2 id="org81a4ebf"><a href="#org81a4ebf">Homework</a></h2>
+<div class="outline-text-2" id="text-org81a4ebf">
 <ul class="org-ul">
 <li>Assuming that star 1 in a binary is filling its Roche lobe and
 transferring mass, find a relation between it's average density and
@@ -960,7 +960,7 @@ measure the average density of stars during mass transfer!</li>
   <hr>
   <a href="notes-lecture-winds.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-in-class-evol.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 15 January 2025 <br>
+  Last updated on 19 January 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>
