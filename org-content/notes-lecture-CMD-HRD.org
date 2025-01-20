@@ -437,7 +437,8 @@ the observed stars and the processes determining them.
 This video shows how /HST/ observations of the Globular cluster \Omega
 Centauri can be sorted in color and magnitude to create...a
 color-magnitude diagram, where all the stars end up along an
-isochrone.
+isochrone (credits NASA/ESA, J. Anderson, R. van der Marel, G. Bacon, M.
+Estacion, STScI).
 
 An *isochrone* (from iso = "same" + chronos = "time") is the locus of
 points occupied by a population of different stars at a given time.
