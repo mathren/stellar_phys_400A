@@ -72,8 +72,8 @@ One term that instead is still widely present in the literature is:
 One of the main tools used in stellar physics to study a "population"
 of stars (e.g., I and II defined above, or a group of stars selected
 because of some criterion, such as location in the sky or others) is
-the observational color-magnitude diagram, which is interpreted
-through the lens of theoretical Hertzsprung-Russell diagrams.
+the observational color-magnitude diagram (CMD), which is interpreted
+through the lens of theoretical Hertzsprung-Russell diagram (HRD).
 
 These two diagrams plot different, but related, quantities on the
 axes, and they are so complementary that sometimes the name are used
@@ -86,9 +86,9 @@ interchangeably.
 
 This is an example of an observational color-magnitude diagram from
 the second /Gaia/ data release, /Gaia/ DR2 in 2018. The bottom and left
-axis are the observational quantities (the "color-magnitude diagram"),
+axis are the observational quantities (the CMD),
 while the top and right axis show corresponding theoretical quantities
-(the "Hertzsprung-Russell diagram").
+(the HRD).
 
 *N.B.:* /Gaia/ is an ESA space mission measuring with great accuracy and
 precision the parallax and proper motion of >1 billion stars in the
@@ -131,9 +131,18 @@ the total mass of the star (though this took several decades to be
 established, because it is not something easy to empirically
 measure, as we will see in the [[./notes-lecture-BIN.org][next lecture]]).
 
+To see this even more clearly, it may be useful to consider the CMD of
+selected group of stars, that we know to be related. The figure below
+shows the same dataset from /Gaia/ DR2, but only for stars in two
+"clusters". This means that these stars have presumably the same age
+(within a few \sim Myr possibly), and they formed from the same molecular
+cloud, that is they also all have the same composition. In this case
+the apparence of a very tight relation between apparent magnitude and
+color index is even more clear.
+
 #+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] zoom-in on the  color magnitude diagram of two clusters of similar ages Hyades and Praesepe. When selecting only "related" stars, It is much more evident than most are along one line on this diagram (the so-called "Main sequence"), and that this line agrees fairly well across different clusters of similar ages. The few points offset by up to 0.75 mag above the main sequence are unresolved binaries where the light of two stars adds up in the signal.
 #+ATTR_HTML: :width 100%
-#+ATTR_HTML: :alt /Gaia/ zoom-in on the HR diagram of two clusters, Hyades and Praesepe
+#+ATTR_HTML: :alt /Gaia/ zoom-in on the CMD diagram of two clusters, Hyades and Praesepe
 [[./images/MS_hayades_praesepe.png]]
 
 
