@@ -41,12 +41,13 @@ if [ $? -eq 0 ]; then
     fi
 
     if [ "$pushed" == true ] ; then
+	pulled=false
 	read -p "rsync to remote server?" yn
 	if [ "$yn" = "y" ] || [ "$yn" = "Y" ]; then
 	    rsync -rz --exclude="*~" html-content/* lavinia:~/public_html/courses/
-	    pulled=true
-	else
-	    pulled=false
+	    if [ $? -eq 0 ]; then
+		pulled=true
+	    fi
 	fi
     else
 	read -p "Open website home locally?" yn
