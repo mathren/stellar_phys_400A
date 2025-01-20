@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-20 Mon 11:07 -->
+<!-- 2025-01-20 Mon 11:31 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - CMD &amp; HRD</title>
@@ -188,7 +188,7 @@ interchangeably.
 </p>
 
 
-<figure id="orgbae165a">
+<figure id="orgf0a92de">
 <img src="./images/Gaia_DR2_HRD_Gaia.png" alt="[[https://sci.esa.int/web/gaia/-/60198-gaia-hertzsprung-russell-diagram][Gaia DR2 CMD]]" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span><i>Gaia</i> <a href="https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract">DR2</a> (second data release) color magnitude diagram, containing about ~1.3 billion Galactic stars. Only ~4.2 millions are plotted here (because of data quality cuts).</figcaption>
@@ -265,7 +265,7 @@ color index is even more clear.
 </p>
 
 
-<figure id="org058cd65">
+<figure id="org3a79339">
 <img src="./images/MS_hayades_praesepe.png" alt="/Gaia/ zoom-in on the CMD diagram of two clusters, Hyades and Praesepe" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span><i>Gaia</i> <a href="https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract">DR2</a> zoom-in on the  color magnitude diagram of two clusters of similar ages Hyades and Praesepe. When selecting only "related" stars, It is much more evident than most are along one line on this diagram (the so-called "Main sequence"), and that this line agrees fairly well across different clusters of similar ages. The few points offset by up to 0.75 mag above the main sequence are unresolved binaries where the light of two stars adds up in the signal.</figcaption>
@@ -297,14 +297,16 @@ all stars.
 <h3 id="org802edc7"><a href="#org802edc7">Digression: Spectral types and the letters OBAFGKM(LTY)</a></h3>
 <div class="outline-text-3" id="text-org802edc7">
 <p>
-This is one of the many nonsense names in astronomy that exist only
-for historical reason. Astronomy is a very ancient science (it's
-needed to follow the passage of time and decide when planting things
-and how to navigate), but it remained separated from physics (i.e.,
-trying to understand the functioning of the natural world) for a very
-long time, with the Aristotelian idea that the "sub-lunar" world and
-the super-lunar world were fundamentally different. This idea was
-progressively eroded with the "scientific revolution" of the
+To explain the physical meaning of the x axes (bottom, and top), we
+need to do a detour and talk about stellar spectra and spectral types.
+The latter are one of the many astronomical nomenclature quirks that
+exist only for historical reason. Astronomy is a very ancient science
+(it's needed to follow the passage of time and decide when planting
+things and how to navigate), but it remained separated from physics
+(i.e., trying to understand the functioning of the natural world) for
+a very long time, with the Aristotelian idea that the "sub-lunar"
+world and the super-lunar world were fundamentally different. This
+idea was progressively eroded with the "scientific revolution" of the
 16<sup>th</sup>-17<sup>th</sup> century, and finally astronomy and physics converged into
 <b>astrophysics</b> with two major breakthroughs:
 </p>
@@ -344,7 +346,7 @@ the light.
 </p>
 
 
-<figure id="org60568d2">
+<figure id="org7cc1b62">
 <img src="./images/solar-spectrum.jpg" alt="Solar spectrum" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Spectrum of the Sun from the /Fourier Transform Spectrometer at McMath-Pierce Solar Facility at the National Solar Observatory on Kitt Peak</figcaption>
@@ -397,26 +399,26 @@ most astrophysicists look at spectra nowadays.
 </p>
 
 <p>
-At zeroth-order <span class="underline">approximation</span> a star is a black-body with the
+At zeroth-order <i>approximation</i>, a star is a black-body with the
 characteristic spectrum, that is flux F<sub>&lambda;</sub> as a function of the
 wavelength &lambda; (or equivalently F<sub>&nu;</sub>&equiv; F<sub>&nu;</sub>(&nu;) with &nu; =
 c/&lambda; frequency), given by Planck's function:
 </p>
 
-<div class="latex" id="org2fe1306">
+<div class="latex" id="org77215c6">
 \begin{equation}
 F_{\lambda} d\lambda = \frac{2\pi
-hc^{2}}{\lambda^{5}}\frac{d\lambda}{e^{hc/\lambda k_{B} T} -1}
+hc^{2}}{\lambda^{5}}\frac{d\lambda}{e^{hc/\lambda k_{B} T} -1} \ \ ,
 \end{equation}
 
 </div>
-
 <p>
-Note that this only depends on the temperature T. One can also rewrite
-this in terms of frequency using &nu; = c/&lambda; (we will also use the form as
-a function of &nu; later in the course). Integrating it across all
-wavelengths one obtain the total flux F &equiv; &int; F<sub>&lambda;</sub> d&lambda; = &sigma;
-T<sup>4</sup>, which is the so called <i>Stefan-Boltzmann law</i>.
+where k<sub>B</sub> is the Boltzmann constant, h is Planck's constant, c the
+speed of light, and the flux only depends on the temperature T. One
+can also rewrite this in terms of frequency using &nu; = c/&lambda; (we will
+also use the form as a function of &nu; later in the course). Integrating
+it across all wavelengths one obtain the total flux F &equiv; &int; F<sub>&lambda;</sub>
+d&lambda; = &sigma; T<sup>4</sup>, which is the so called <i>Stefan-Boltzmann law</i>.
 </p>
 
 <p>
@@ -445,7 +447,7 @@ know yet &#x2013; but we will derive and write down during this course.
 
 
 
-<figure id="orge09c331">
+<figure id="org6351d0a">
 <img src="./images/Blackbody.png" alt="Blackbody.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Example of black-body spectrum. Credits: Rich Townsend.</figcaption>
@@ -466,22 +468,22 @@ close to each other in energy/frequency/wavelength).
 </p>
 
 
-<figure id="org9c3ab45">
+<figure id="orgf82a8bb">
 <img src="./images/sun-SED.jpg" alt="sun-SED.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Schematic representation of the Sun spectral energy distribution from <a href="https://www.sciencedirect.com/science/article/pii/B9780443187865000020?via%3Dihub">Wang et al. 2023</a>.</figcaption>
 </figure>
 
 <p>
-Typically, data reduction pipelines are used to remove the "slope" due
-to the underlying continuum and focus only on the absorption lines.
-This is usually referred to as "continuum normalization". An example
-of the final product for the Sun, with some of the ions responsible
-for the visible absorption lines annotated is
+Typically, data reduction pipelines are used to remove the "black body
+slope" due to the underlying continuum and focus only on the
+absorption lines. This is usually referred to as "continuum
+normalization". An example of the final product for the Sun, with some
+of the ions responsible for the visible absorption lines annotated is
 </p>
 
 
-<figure id="org25f9fb1">
+<figure id="orgcc8e5e6">
 <img src="./images/sun-normalized.png" alt="sun-normalized.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Example of reduced (portion of the) solar spectrum modified from <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...919..100V/abstract">Vejar et al. 2021</a></figcaption>
@@ -530,7 +532,8 @@ displacement law": &lambda;<sub>max</sub>&prop; 1/T, the higher the temperature 
 shorter the wavelength of the maximum flux. This in turn means that
 the change in T<sub>eff</sub> translates in a change in the "color" of the star,
 because the wavelengths around &lambda;<sub>max</sub> will dominate the perception of
-the star (in naked eye observations).
+the star (originally for naked eye observations, but this can be
+generalized).
 </p>
 
 <p>
@@ -542,7 +545,7 @@ telescope used to make the diagram above:
 </p>
 
 
-<figure id="orgf3db3f2">
+<figure id="orgb759443">
 <img src="./images/GaiaEDR3_ExtPhotSystem.png" alt="https://www.cosmos.esa.int/web/gaia/edr3-passbands" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>The coloured lines in the figure show the transmission function T(&lambda;) of the G, G<sub>BP</sub> and G<sub>RP</sub> passbands (green: G; blue: G<sub>BP</sub>; red: G<sub>RP</sub>), defining the Gaia EDR3 photometric system. The thin, grey lines show the nominal, pre-launch passbands published in Jordi et al. 2010, used for Gaia DR1. Credits: ESA/Gaia/DPAC, P. Montegriffo, F. De Angeli, M. Bellazzini, E. Pancino, C. Cacciari, D. W. Evans, and CU5/PhotPipe team.</figcaption>
@@ -564,11 +567,11 @@ body distribution.
 <h3 id="org5bcff65"><a href="#org5bcff65">Theoretical Hertzsprung-Russel diagram</a></h3>
 <div class="outline-text-3" id="text-org5bcff65">
 <p>
-Let's get back to the main topic of the lecture, color-magnitude and
-Hertzsprung-Russel (HR) diagrams. The <i>Gaia</i> color-magnitude diagram on the
-top shows on the right y-axis and top x-axis the quantities that
-typically stellar modelers use, effective temperature (T<sub>eff</sub>) on the
-x-axis and luminosity L on the y-axis.
+Let's now get back to the main topic of the lecture, CMD and HRD. The
+<i>Gaia</i> color-magnitude diagram on the top shows on the right y-axis and
+top x-axis the quantities that typically stellar modelers use,
+effective temperature (T<sub>eff</sub>) on the x-axis and luminosity L on the
+y-axis.
 </p>
 
 <p>
@@ -581,14 +584,11 @@ By dimensional analysis the integrated flux F=&int; F<sub>&lambda;</sub> d&lambd
 units of energy per unit time and area: [E]/[t][A]. We also know that
 the stellar luminosity is the amount of energy lost (to photons) per
 unit time by the stellar surface. Assuming that the star is a sphere
-(a good approximation in absence of perturbing factors such as
-magnetic fields, companion stars, or fast rotation, since these are
-self-gravitating objects and gravity is a central force), we can thus
-write F = L/(stellar surface) = L/(4&pi; R<sup>2</sup>) and putting this together
-with Stefan-Boltzmann's law we finally arrive at L=4&pi; R<sup>2</sup> &sigma; T<sub>eff</sub><sup>4</sup>,
-with R the radius of the star, &sigma;=2&pi;<sup>5</sup> k<sub>B</sub><sup>4</sup>/15c<sup>2</sup>h<sup>3</sup> Stefan-Boltzmann
-constant (k<sub>B</sub> is the Boltzmann constant, c the speed of light, and h is
-Planck's constant).
+(a good approximation since these are self-gravitating objects and
+gravity is a central force), we can thus write F = L/(stellar surface)
+= L/(4&pi; R<sup>2</sup>) and putting this together with Stefan-Boltzmann's law we
+finally arrive at L=4&pi; R<sup>2</sup> &sigma; T<sub>eff</sub><sup>4</sup>, with R the radius of the star,
+&sigma;=2&pi;<sup>5</sup> k<sub>B</sub><sup>4</sup>/15c<sup>2</sup>h<sup>3</sup> Stefan-Boltzmann constant.
 </p>
 
 <p>
@@ -609,7 +609,7 @@ core-collapse and thus the point where it will go supernova.
 </p>
 
 
-<figure id="org86c42d7">
+<figure id="orgeed3654">
 <img src="./images/15Msun_thesis.png" alt="15M_{☉} single stellar evolution track" width="100%">
 
 <figcaption><span class="figure-number">Figure 8: </span>Hertzsprung-Russell diagram of a 15M<sub>☉</sub> stellar model from <a href="https://www.as.arizona.edu/%5Csimmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf">Renzo 2015</a>. Note that this is the evolution of <b>one</b> star throughout time!</figcaption>
@@ -637,8 +637,8 @@ We have effectively introduced two types of related diagram:
 <ul class="org-ul">
 <li>Color-magnitude diagram &sim; a "family picture" at a given time of
 many different stars;</li>
-<li>Theoretical HR diagram &sim; a "movie" of the life of one (or possibly
-few) same star as it evolves across time.</li>
+<li>Theoretical HR diagram &sim; a "movie" of the life of one star (or possibly
+few) as it evolves across time.</li>
 </ul>
 
 <p>
@@ -646,7 +646,7 @@ The important point here is that we can put together on the same (or
 tightly related) axes information for an observed population of stars
 (e.g., the <i>Gaia</i> CMD above) and for a theoretical model of individual
 stars (e.g., the Hertzsprung-Russel evolutionary diagram here). This
-mixes two ontologically different elements (models and observations),
+mixes two ontologically different elements (observations and models),
 but provides a powerful tool to interpret the observations. By
 comparing theoretical tracks from computer-simulated stellar models
 and observed samples one can infer the physical properties of
@@ -657,6 +657,8 @@ the observed stars and the processes determining them.
 <div id="outline-container-org6509253" class="outline-4">
 <h4 id="org6509253"><a href="#org6509253">Example: cluster with isochrone</a></h4>
 <div class="outline-text-4" id="text-org6509253">
+<iframe width="600" height="400" src="https://www.youtube.com/watch?v=PsS80huL47c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
 <p>
 <a href="https://www.youtube.com/watch?v=PsS80huL47c">This video</a> shows how <i>HST</i> observations of the Globular cluster &Omega;
 Centauri can be sorted in color and magnitude to create&#x2026;a
@@ -688,7 +690,7 @@ nothing forbids one to make isochrones on other planes.
 </p>
 
 
-<figure id="org212f895">
+<figure id="org9b12d03">
 <img src="./images/Wang_NGC1818.png" alt="/HST/ observations of NGC1818 with isochrone fitting" width="100%">
 
 <figcaption><span class="figure-number">Figure 9: </span>Example of isochrone fitting with different stellar models for <i>HST</i> observations of the cluster NGC1818 from <a href="https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..43W/abstract">Wang et al. 2023</a></figcaption>
@@ -717,14 +719,14 @@ those stars were not around when dinosaurs were roaming the Earth!
 </p>
 
 
-<figure id="org74242f3">
+<figure id="org1b94356">
 <img src="./images/JWST_30Dor_R136.jpg" alt="JWST_30Dor_R136.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 10: </span><i>JWST</i> image of the cluster R136 in the core of 30 Doradus</figcaption>
 </figure>
 
 
-<figure id="org89211d1">
+<figure id="orgb0a8472">
 <img src="./images/tarantula2_hst_1280.jpg" alt="tarantula2_hst_1280.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 11: </span>Broader image of the whole 30Dor nebula. Note the different orientation from above, the multiple clusters of stars.</figcaption>
@@ -738,7 +740,7 @@ e.g., <a href="https://ui.adsabs.harvard.edu/abs/2022A%26A...663A..36B/abstract"
 </p>
 
 
-<figure id="org501d7cf">
+<figure id="org1e7be2e">
 <img src="./images/30Dor_Schneider30_HRD.png" alt="VLT/FLAMES observations of 30 Doradus with theoretical stellar evolution tracks and isochrones" width="100%">
 
 <figcaption><span class="figure-number">Figure 12: </span>Color-magnitude diagram of the 30 Doradus region in the LMC overlayed with theoretical stellar tracks (solid black lines), and isochrones (dashed black lines) from <a href="https://www.aanda.org/10.1051/0004-6361/201833433">Schneider et al. 2018</a></figcaption>
