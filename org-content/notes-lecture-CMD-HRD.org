@@ -79,19 +79,20 @@ These two diagrams plot different, but related, quantities on the
 axes, and they are so complementary that sometimes the name are used
 interchangeably.
 
-
 #+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] (second data release) color magnitude diagram, containing about ~1.3 billion Galactic stars. Only ~4.2 millions are plotted here (because of quality cuts).
 #+ATTR_HTML: :width 100%
 #+ATTR_HTML: :alt [[https://sci.esa.int/web/gaia/-/60198-gaia-hertzsprung-russell-diagram][Gaia DR2 CMD]]
 [[./images/Gaia_DR2_HRD_Gaia.png]]
 
 This is an example of an observational color-magnitude diagram from
-the second /Gaia/ data release, /Gaia/ DR2 in 2018. /Gaia/ is an ESA space
-mission to detect with great accuracy parallax and proper motion of >1
-billion stars in the Galaxy. This is a very "classical" astrophysics
-task, but the precision and size of the datasets from this mission are
-unprecedented and are revolutionizing this field (see for example [[https://ui.adsabs.harvard.edu/abs/2024NewAR..9801694E/abstract][El
-Badry 2024 review]]).
+the second /Gaia/ data release, /Gaia/ DR2 in 2018.
+
+*N.B.:* /Gaia/ is an ESA space mission measuring with great accuracy and
+precision the parallax and proper motion of >1 billion stars in the
+Galaxy. This is a very "classical" astrophysics task, but the
+precision and size of the datasets from this mission are unprecedented
+and are revolutionizing this field (see for example [[https://ui.adsabs.harvard.edu/abs/2024NewAR..9801694E/abstract][El Badry 2024
+review]]).
 
 The y-axis is the *absolute* magnitude in the =G= band of the telescope on
 board of the /Gaia/ space-craft.
