@@ -79,13 +79,16 @@ These two diagrams plot different, but related, quantities on the
 axes, and they are so complementary that sometimes the name are used
 interchangeably.
 
-#+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] (second data release) color magnitude diagram, containing about ~1.3 billion Galactic stars. Only ~4.2 millions are plotted here (because of quality cuts).
+#+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] (second data release) color magnitude diagram, containing about ~1.3 billion Galactic stars. Only ~4.2 millions are plotted here (because of data quality cuts).
 #+ATTR_HTML: :width 100%
 #+ATTR_HTML: :alt [[https://sci.esa.int/web/gaia/-/60198-gaia-hertzsprung-russell-diagram][Gaia DR2 CMD]]
 [[./images/Gaia_DR2_HRD_Gaia.png]]
 
 This is an example of an observational color-magnitude diagram from
-the second /Gaia/ data release, /Gaia/ DR2 in 2018.
+the second /Gaia/ data release, /Gaia/ DR2 in 2018. The bottom and left
+axis are the observational quantities (the "color-magnitude diagram"),
+while the top and right axis show corresponding theoretical quantities
+(the "Hertzsprung-Russell diagram").
 
 *N.B.:* /Gaia/ is an ESA space mission measuring with great accuracy and
 precision the parallax and proper motion of >1 billion stars in the
@@ -94,14 +97,14 @@ precision and size of the datasets from this mission are unprecedented
 and are revolutionizing this field (see for example [[https://ui.adsabs.harvard.edu/abs/2024NewAR..9801694E/abstract][El Badry 2024
 review]]).
 
-The y-axis is the *absolute* magnitude in the =G= band of the telescope on
+The left y-axis is the *absolute* magnitude in the =G= band of the telescope on
 board of the /Gaia/ space-craft.
 
-The x-axis is the "color index", obtained as the difference in flux
-between two filters of the /Gaia/ telescope =Bp-Rp=. The "color index" on
-the x-axis is generally obtained as difference between the flux in
-different bands (i.e., different photometric filters, e.g. B-V): we'll
-discuss why in a second.
+The bottom x-axis is the "color index", obtained as the difference in flux
+between two filters of the /Gaia/ telescope =Bp-Rp=. Other color indexes
+can be as difference between the flux in different bands (i.e.,
+different photometric filters, e.g. B-V): we'll discuss why in a
+second.
 
 Each dot in this plot is a different star, but there are so many (\sim1.8
 billions in /Gaia/ DR2), that in the most crowded region what is plotted
@@ -126,7 +129,7 @@ line is one dimensional, there should probably be *one* parameter that
 determines the position of the star on this diagram. This parameter is
 the total mass of the star (though this took several decades to be
 established, because it is not something easy to empirically
-measure, as we will see in the next lecture!).
+measure, as we will see in the [[./notes-lecture-BIN.org][next lecture]]).
 
 #+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] zoom-in on the  color magnitude diagram of two clusters of similar ages Hyades and Praesepe. When selecting only "related" stars, It is much more evident than most are along one line on this diagram (the so-called "Main sequence"), and that this line agrees fairly well across different clusters of similar ages. The few points offset by up to 0.75 mag above the main sequence are unresolved binaries where the light of two stars adds up in the signal.
 #+ATTR_HTML: :width 100%
