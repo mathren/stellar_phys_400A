@@ -431,9 +431,10 @@ the observed stars and the processes determining them.
 
 *** Example: cluster with isochrone
 
-#+HTML: <iframe width="600" height="400" src="https://www.youtube.com/watch?v=PsS80huL47c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+#+HTML: <iframe width="600" height="400" src="https://www.youtube.com/embed/PsS80huL47c?si=YskiNYKgn5wS5NN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # [[https://www.youtube.com/watch?v=PsS80huL47c]]
-[[https://www.youtube.com/watch?v=PsS80huL47c][This video]] shows how /HST/ observations of the Globular cluster \Omega
+
+This video shows how /HST/ observations of the Globular cluster \Omega
 Centauri can be sorted in color and magnitude to create...a
 color-magnitude diagram, where all the stars end up along an
 isochrone.
