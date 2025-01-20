@@ -23,7 +23,7 @@ composition and dynamical status (w.r.t. the Galactic potential)
    0.0146) stars in the galactic disk. They are all dynamically cold
    (meaning their orbital velocity follows closely the Keplerian
    rotation curve around the Galactic center, with very small
-   deviations from this). These are forming form gas enriched in
+   deviations from this). These are forming from gas enriched in
    metals by previous generations of stars.
  - *Population II*: these are typically stars in the Galactic halo with
    lower metallicity, but higher dynamical temperature, meaning their
@@ -53,19 +53,32 @@ One term that instead is still widely present in the literature is:
    the [[https://ui.adsabs.harvard.edu/abs/2022ApJ...940L...1W/abstract][record holder]] in distance has redshift z\simeq6.2 (still not high
    enough for Pop III), and it is debated whether the signal is from
    individual stars or aggregated light from multiple sources in a
-   cluster. Because of the quasi-complete lack of metals, Pop III
-   stars are expected to *possibly be more massive* on average (so
-   called top-heavy initial mass function). Although they have not
-   been observed, these are still receiving much theoretical attention
+   cluster. "Third generation" gravitational-wave detectors (planned
+   for after LIGO/Virgo and LISA) will be able to detect the signals
+   from mergers of the compact object remnants of these stars up to
+   redshift \sim20, well beyond the formation of the first stars.
+
+   Because of the quasi-complete lack of metals, Pop III stars are
+   expected to *possibly be more massive* on average (so called
+   top-heavy initial mass function). Although they have not been
+   observed, these are still receiving much theoretical attention
    because of their *potential role during the epoch of reionization*,
    as *parents of the super-massive black holes* in the center of
    Galaxies, and as the *stars that kick started the production of
-   chemical elements*. "Third generation" gravitational-wave detectors
-   currently planned will be able to detect the signals from mergers
-   of the compact object remnants of these stars up to redshift \sim20,
-   well beyond the formation of the first stars.
+   chemical elements*.
 
 ** Observational color-magnitude diagram
+
+One of the main tools used in stellar physics to study a "population"
+of stars (e.g., I and II defined above, or a group of stars selected
+because of some criterion, such as location in the sky or others) is
+the observational color-magnitude diagram, which is interpreted
+through the lens of theoretical Hertzsprung-Russell diagrams.
+
+These two diagrams plot different, but related, quantities on the
+axes, and they are so complementary that sometimes the name are used
+interchangeably.
+
 
 #+CAPTION: /Gaia/ [[https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract][DR2]] (second data release) color magnitude diagram, containing about ~1.3 billion Galactic stars. Only ~4.2 millions are plotted here (because of quality cuts).
 #+ATTR_HTML: :width 100%

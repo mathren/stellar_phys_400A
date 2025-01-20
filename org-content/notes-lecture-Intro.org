@@ -129,6 +129,15 @@ about 100 years old! A lot can be learned about stars without knowing
 anything about nuclear fusion, which we will treat, but much later in
 the course.
 
+*N.B.:* Definitions often try to "pidgeon-hole" nature into specific
+categories, but often nature is more elusive. In the case of the
+"modern" definition of star above, there is the boundary case of Brown
+Dwarfs, which are self-gravitating amount of gas that early in their
+life may do some deuterium burning. This burning does not release a
+lot of energy (the deuterium nucleus, a proton and a neutron bound
+together, has very low nuclear binding energy), thus these objects sit
+at the boundary between planets and stars.
+
 ** What determines the properties of a (single) star?
 1. *Mass*
 2. Chemical composition
