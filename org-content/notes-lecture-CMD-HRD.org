@@ -516,21 +516,25 @@ is most likely not the same): once again, you are going to be using
 real tools used by researcher in the field! Challenges encountered in
 this exercise are the kind researchers face in their everyday life!
 
+*N.B.:* If you identify a problem (e.g., with the data, or the plotting)
+and cannot find a fix for it, it is ok to describe the problem in your
+text for the purpose of this exercise.
+
 *** Deliverables
   - Color-magnitude diagram/Hertzsprung-Russell diagram.
-  - One paragraph of description (i.e., we want you to /interpret/ your
+  - One paragraph of description (i.e., I want you to /interpret/ your
     plot, not just make it!). Make sure to include the source of the
     data, what one should see in the plot, and what it means. Take
     care in distinguishing what is observational data what is
     theoretical modeling.
-  - Script to reproduce the plot (we will not run the script, but you
+  - Script to reproduce the plot (I will not run the script, but you
     should make it an habit to "show your code" - it's only science if
     it is reproducible!). If your script has dependencies on other
-    files you wrote, we want those too, but mark /clearly/ which file is
+    files you wrote, Iwant those too, but mark /clearly/ which file is
     the main one producing the script.
 
 *** Instructions
-We will use the latest data release from ESA's /Gaia/ mission, you will
+You will use the latest data release from ESA's /Gaia/ mission, you will
 be using a bleeding-edge dataset! These are publicly available in the
 [[https://gea.esac.esa.int/archive/][Gaia archive]] or any of the [[https://www.cosmos.esa.int/web/gaia/data-access#PartnerDataCentres][partner data centers]].
 
@@ -556,7 +560,9 @@ be using a bleeding-edge dataset! These are publicly available in the
     billions of stars, you most likely don't want that.
   - Plot the color-magnitude diagram (suggestion: G-band magnitude on
     the y-axis, BP-RP color on the x-axis, like the plot shown in
-    class).
+    class). *Hint:* be careful whether you have the *absolute* or the
+    *relative* magnitude in the data you downloaded, and do the
+    appropriate conversion
   - Skim [[https://ui.adsabs.harvard.edu/abs/2016ApJ...823..102C/abstract][Choi et al. 2016]] describing the MIST project (it's ok if you
     don't understand everything, you will have a much better
     understanding by the end of the semester!).
