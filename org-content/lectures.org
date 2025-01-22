@@ -113,20 +113,11 @@ and population synthesis.
 
 [[./notes-lecture-radTrans.org][Notes]]
 
-** <2025-03-06 Thu> - *Guest lecture*: Neutrinos in stars
-Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
-
-- [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
-- [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
-
-** TODO <2025-03-20 Tue> - Stellar winds
-** <2025-03-25 Thu> - Roche geometry and binary interactions
-*Aim*: Introduce the Roche approximation and its limitations and binary
-mass transfer
-
+** <2025-03-06 Tue> - Roche lobe overflow
+*Aim*: introduce binary mass transfer
 [[./notes-lecture-RLOF.org][Notes]]
 
-** SPRING BREAK
+** <2025-03-10 Mon> - <2025-03-14 Fri>SPRING BREAK
 ** TODO <2025-03-18 Tue> - *Guest Lecture TBD*
 Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
 ** <2025-03-20 Thu> - *Special Guest Lecture*: Asteroseismology
@@ -147,8 +138,13 @@ Participation from Steward Observatory and NOIR lab will be encouraged
 =MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
+** <2025-04-01 Tue> - In class activity: Evolution 2
+*Aim*: discuss the evolution of stars in an in-class activity based on
+=MESA-web= models precomputed by the students
 
-** <2025-04-08 Tue> - In class activity: Evolution 3
+[[./notes-in-class-evol.org][Notes]]
+
+** <2025-04-03 Tue> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
 
@@ -156,6 +152,12 @@ Participation from Steward Observatory and NOIR lab will be encouraged
 
 ** TODO <2025-04-01 Thu> - In class activity: Evolution 4
 ** TODO <2025-04-03 Thu> - In class activity: Evolution 5
+** <2025-04-08 Thu> - *Guest lecture*: Neutrinos in stars
+Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
+
+- [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
+- [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
+
 ** <2025-04-15 Thu> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
 core-collapse and the formation of compact objects
