@@ -113,9 +113,11 @@ and population synthesis.
 
 [[./notes-lecture-radTrans.org][Notes]]
 
-** <2025-03-06 Tue> - Roche lobe overflow
-*Aim*: introduce binary mass transfer
-[[./notes-lecture-RLOF.org][Notes]]
+** <2025-03-06 Thu> - *Guest lecture*: Neutrinos in stars
+Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
+
+- [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
+- [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
 
 ** <2025-03-10 Mon> - <2025-03-14 Fri>SPRING BREAK
 ** TODO <2025-03-18 Tue> - *Guest Lecture TBD*
@@ -152,12 +154,9 @@ Participation from Steward Observatory and NOIR lab will be encouraged
 
 ** TODO <2025-04-01 Thu> - In class activity: Evolution 4
 ** TODO <2025-04-03 Thu> - In class activity: Evolution 5
-** <2025-04-08 Thu> - *Guest lecture*: Neutrinos in stars
-Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
-
-- [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
-- [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
-
+** <2025-04-08 Tue> - Mass transfer stability, Roche lobe overflow and common envelope
+*Aim*: introduce binary mass transfer
+[[./notes-lecture-RLOF.org][Notes]]
 ** <2025-04-15 Thu> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
 core-collapse and the formation of compact objects
