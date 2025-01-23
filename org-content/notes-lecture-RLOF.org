@@ -181,7 +181,6 @@ R_{RL,i}= a \frac{0.49 q_{i}^{2/3}}{0.6q_{i}^{2/3}+\ln(1+q_{i}^{2/3})} \ \ ,
 where a is the orbital separation, q_{i} = M_{i}/M_{j}, and 4\pi R_{RL,i}^{3}/3 \sim Roche
 volume of star i.
 
-
 * Type of binary interactions
 As we will see in the next in class activity, stars tend to grow
 bigger as the evolve: even a binary system that stars as detached may

@@ -11,8 +11,10 @@ book, Chapter 3 in Prsa's book.
 * Measuring masses
 
 This is typically a very hard problem: as we have seen, on the HRD/CMD
-there is a tight correlation between a star's magnitude and color at
-least during the longest phase of its evolution, and there is one
+there is a tight correlation between a star's magnitude and color.
+This holds for the majority (>90%) of stars, and thus for the longest
+phase of evolution. The linear relation between color and magnitude
+(that is effective temperature and luminosity) suggests there is one
 single parameter that determines the position on a star on this
 diagram. However, how do we determine what this parameter is, having
 only these observational data? It is generally not possible without
@@ -21,12 +23,22 @@ relying on models. However, binaries can help!
 ** Binaries are common
 
 The Sun is clearly not in a binary system. However, it is *not* uncommon
-for stars to have gravitationally bound companions orbiting around
+for stars to have gravitationally bound companion(s) orbiting around
 them, which can be of great help to determine their properties.
 
 In fact, in this case we have two stars presumably born at roughly the
 same time, presumably with the same initial composition, and we can
 derive physical properties comparing them to each other.
+
+The figure below shows as a function of stellar mass (bottom x-axis)
+or as a function of stellar spectroscopic type (top x-axis, we will
+see that these are related soon!) the fraction of stars that have at
+least one companion (so binaries, triples, etc., bold symbols) and the
+fraction that has two or more companions (so triples, quadruples,
+etc., thinner symbols). While this figure doesn't tell us how big and
+how close the companion(s) are, it is increasingly harder to observe
+companions next to bright stars, and observational bias favor higher
+mass and closer companions.
 
 #+CAPTION: Fraction of binaries and higher multiplicity as a function of mass (bottom x-axis) or spectral type (top x-axis), modified from [[https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract][Offner et al. 2023]].
 #+ATTR_HTML: :width 75%
@@ -36,14 +48,15 @@ Let's review some types of binaries.
 
 *** Visual binaries
 
-These are binaries that can be seen by naked eye. Typically this means
+These are binaries that can be resolved (i.e., one can identify two
+/distinct/ point sources) by naked eye. Typically, this means
 astrophysically very wide binaries that are unlikely to interact
 beyond the fact that they are gravitationally bound and they orbit
 each other. Nevertheless, they have an important historical role,
 since Hershel observation of their motion of the sky over decades
 proved that Kepler's law are valid beyond the Solar system.
 
-Mitchell 1768 also used statistical argument that all the visual
+[[https://ui.adsabs.harvard.edu/abs/1767RSPT...57..234M/abstract][Mitchell 1767]] also used statistical argument that all the visual
 binaries visible at the time could not be just chance alignment, and
 instead had to be somehow physically related to each other.
 
@@ -51,9 +64,9 @@ A classic example are Mizar & Alcor in the Big Dipper: the ability of
 finding the "double star" in this asterism was used as an eyesight
 test to become an astronomer in Hellenistic times. The name Alcor
 comes from the arabic for "hard to see"! Nowadays with modern
-telescopes we can see that Mizar and Alcor are actually at least a
-triple system, and there have been claims that it may be a quintuplet
-even
+telescopes we can see that Mizar is itself a quadruple system made of
+two binaries orbiting each other, and Alcor may itself be a binary,
+for a total of maybe 6 stars (e.g., [[https://iopscience.iop.org/article/10.1088/0004-6256/139/3/919][Mamjek et al. 2010]])!
 
 #+CAPTION: Zoom in on Mizar & Alcor from [[http://hdl.handle.net/11245.1/ee92e82a-13e8-4add-a4ce-f2d3613e42c3][Renzo 2019]]
 #+ATTR_HTML: :width 75%
@@ -167,7 +180,7 @@ and
 \end{equation}
 #+end_latex
 
-These equations allow to calculate R_{j}_{}/a and if also the masses are
+These equations allow to calculate R_{j}/a and if also the masses are
 known also the individual radii R_{j} using Kepler's laws to get rid of
 the orbital semi-major axis a.
 

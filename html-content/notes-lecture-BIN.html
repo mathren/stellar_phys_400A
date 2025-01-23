@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-19 Sun 15:15 -->
+<!-- 2025-01-23 Thu 09:56 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Binaries and dynamical masses</title>
@@ -86,13 +86,15 @@ Tauris &amp; Van den Heuvel 2023 book, Chapter 7 of Carroll &amp; Ostie's
 book, Chapter 3 in Prsa's book.
 </p>
 
-<div id="outline-container-org300c9e8" class="outline-2">
-<h2 id="org300c9e8"><a href="#org300c9e8">Measuring masses</a></h2>
-<div class="outline-text-2" id="text-org300c9e8">
+<div id="outline-container-org2ab656c" class="outline-2">
+<h2 id="org2ab656c"><a href="#org2ab656c">Measuring masses</a></h2>
+<div class="outline-text-2" id="text-org2ab656c">
 <p>
 This is typically a very hard problem: as we have seen, on the HRD/CMD
-there is a tight correlation between a star's magnitude and color at
-least during the longest phase of its evolution, and there is one
+there is a tight correlation between a star's magnitude and color.
+This holds for the majority (&gt;90%) of stars, and thus for the longest
+phase of evolution. The linear relation between color and magnitude
+(that is effective temperature and luminosity) suggests there is one
 single parameter that determines the position on a star on this
 diagram. However, how do we determine what this parameter is, having
 only these observational data? It is generally not possible without
@@ -100,12 +102,12 @@ relying on models. However, binaries can help!
 </p>
 </div>
 
-<div id="outline-container-orge41bc19" class="outline-3">
-<h3 id="orge41bc19"><a href="#orge41bc19">Binaries are common</a></h3>
-<div class="outline-text-3" id="text-orge41bc19">
+<div id="outline-container-org5f086c9" class="outline-3">
+<h3 id="org5f086c9"><a href="#org5f086c9">Binaries are common</a></h3>
+<div class="outline-text-3" id="text-org5f086c9">
 <p>
 The Sun is clearly not in a binary system. However, it is <b>not</b> uncommon
-for stars to have gravitationally bound companions orbiting around
+for stars to have gravitationally bound companion(s) orbiting around
 them, which can be of great help to determine their properties.
 </p>
 
@@ -115,8 +117,20 @@ same time, presumably with the same initial composition, and we can
 derive physical properties comparing them to each other.
 </p>
 
+<p>
+The figure below shows as a function of stellar mass (bottom x-axis)
+or as a function of stellar spectroscopic type (top x-axis, we will
+see that these are related soon!) the fraction of stars that have at
+least one companion (so binaries, triples, etc., bold symbols) and the
+fraction that has two or more companions (so triples, quadruples,
+etc., thinner symbols). While this figure doesn't tell us how big and
+how close the companion(s) are, it is increasingly harder to observe
+companions next to bright stars, and observational bias favor higher
+mass and closer companions.
+</p>
 
-<figure id="org346a667">
+
+<figure id="org0464bea">
 <img src="./images/bin-frac.png" alt="bin-frac.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Fraction of binaries and higher multiplicity as a function of mass (bottom x-axis) or spectral type (top x-axis), modified from <a href="https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract">Offner et al. 2023</a>.</figcaption>
@@ -127,11 +141,12 @@ Let's review some types of binaries.
 </p>
 </div>
 
-<div id="outline-container-org822cdd8" class="outline-4">
-<h4 id="org822cdd8"><a href="#org822cdd8">Visual binaries</a></h4>
-<div class="outline-text-4" id="text-org822cdd8">
+<div id="outline-container-org166edbd" class="outline-4">
+<h4 id="org166edbd"><a href="#org166edbd">Visual binaries</a></h4>
+<div class="outline-text-4" id="text-org166edbd">
 <p>
-These are binaries that can be seen by naked eye. Typically this means
+These are binaries that can be resolved (i.e., one can identify two
+<i>distinct</i> point sources) by naked eye. Typically, this means
 astrophysically very wide binaries that are unlikely to interact
 beyond the fact that they are gravitationally bound and they orbit
 each other. Nevertheless, they have an important historical role,
@@ -140,7 +155,7 @@ proved that Kepler's law are valid beyond the Solar system.
 </p>
 
 <p>
-Mitchell 1768 also used statistical argument that all the visual
+<a href="https://ui.adsabs.harvard.edu/abs/1767RSPT...57..234M/abstract">Mitchell 1767</a> also used statistical argument that all the visual
 binaries visible at the time could not be just chance alignment, and
 instead had to be somehow physically related to each other.
 </p>
@@ -150,13 +165,13 @@ A classic example are Mizar &amp; Alcor in the Big Dipper: the ability of
 finding the "double star" in this asterism was used as an eyesight
 test to become an astronomer in Hellenistic times. The name Alcor
 comes from the arabic for "hard to see"! Nowadays with modern
-telescopes we can see that Mizar and Alcor are actually at least a
-triple system, and there have been claims that it may be a quintuplet
-even
+telescopes we can see that Mizar is itself a quadruple system made of
+two binaries orbiting each other, and Alcor may itself be a binary,
+for a total of maybe 6 stars (e.g., <a href="https://iopscience.iop.org/article/10.1088/0004-6256/139/3/919">Mamjek et al. 2010</a>)!
 </p>
 
 
-<figure id="org5138aab">
+<figure id="orga0ce9ea">
 <img src="./images/zoom2.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Zoom in on Mizar &amp; Alcor from <a href="http://hdl.handle.net/11245.1/ee92e82a-13e8-4add-a4ce-f2d3613e42c3">Renzo 2019</a></figcaption>
@@ -164,9 +179,9 @@ even
 </div>
 </div>
 
-<div id="outline-container-org58b0d16" class="outline-4">
-<h4 id="org58b0d16"><a href="#org58b0d16">Astrometric binaries</a></h4>
-<div class="outline-text-4" id="text-org58b0d16">
+<div id="outline-container-org4fb5d2a" class="outline-4">
+<h4 id="org4fb5d2a"><a href="#org4fb5d2a">Astrometric binaries</a></h4>
+<div class="outline-text-4" id="text-org4fb5d2a">
 <p>
 Wide binaries where one of the two stars is too faint to be seen can
 still be found by looking at the peculiar motion of the star that can
@@ -199,7 +214,7 @@ faint stars, and possibly even massive planets!</li>
 </ul>
 
 
-<figure id="org3e87772">
+<figure id="org17791d1">
 <img src="./images/siriusAB.png" alt="siriusAB.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Path on the sky for Sirius A (thick line), Sirius B (thin line), and the center of mass (dashed line). Top right: absolute orbits around the center of mass. From <a href="https://ui.adsabs.harvard.edu/abs/1961ASPL....8..311L/abstract">Lippincott 1961</a>.</figcaption>
@@ -207,11 +222,11 @@ faint stars, and possibly even massive planets!</li>
 </div>
 </div>
 
-<div id="outline-container-orgd544421" class="outline-4">
-<h4 id="orgd544421"><a href="#orgd544421">Spectroscopic binaries</a></h4>
-<div class="outline-text-4" id="text-orgd544421">
+<div id="outline-container-orgfe9ecac" class="outline-4">
+<h4 id="orgfe9ecac"><a href="#orgfe9ecac">Spectroscopic binaries</a></h4>
+<div class="outline-text-4" id="text-orgfe9ecac">
 
-<figure id="org39d7c66">
+<figure id="orgfbcf085">
 <img src="./images/RV_scheme.png" alt="RV_scheme.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Schematic representation of the Doppler shift of spectral lines in binaries from which one can calculate radial velocities. Fig. 7.3 in Carrol &amp; Ostie 2007 or 2.3 in Tauris &amp; van den Heuvel 2023 books.</figcaption>
@@ -219,8 +234,8 @@ faint stars, and possibly even massive planets!</li>
 </div>
 
 <ul class="org-ul">
-<li><a id="org223a555"></a><a href="#org223a555">SB1</a><br>
-<div class="outline-text-5" id="text-org223a555">
+<li><a id="orgc801e9c"></a><a href="#orgc801e9c">SB1</a><br>
+<div class="outline-text-5" id="text-orgc801e9c">
 <p>
 In a spectrum, one star of the binary dominates, but we can see its
 orbital motion as Doppler shifting of the spectral lines. Even if we
@@ -235,8 +250,8 @@ are effectively finding SB1 binaries made of a star and a planet!
 </div>
 </li>
 
-<li><a id="org7532549"></a><a href="#org7532549">SB2</a><br>
-<div class="outline-text-5" id="text-org7532549">
+<li><a id="org14b9e7a"></a><a href="#org14b9e7a">SB2</a><br>
+<div class="outline-text-5" id="text-org14b9e7a">
 <p>
 These are spectroscopic binaries where both stars are contributing
 light to the spectrum, meaning there will be two sets of spectral
@@ -247,9 +262,9 @@ lines that are periodically Doppler shifted in couter-phase.
 </ul>
 </div>
 
-<div id="outline-container-orgb0b1582" class="outline-4">
-<h4 id="orgb0b1582"><a href="#orgb0b1582">Eclipsing binaries</a></h4>
-<div class="outline-text-4" id="text-orgb0b1582">
+<div id="outline-container-orgbc5e7e3" class="outline-4">
+<h4 id="orgbc5e7e3"><a href="#orgbc5e7e3">Eclipsing binaries</a></h4>
+<div class="outline-text-4" id="text-orgbc5e7e3">
 <p>
 These are binaries when at some point in the orbit one star passes in
 front of the other. This blocks some of the light from one of the two
@@ -266,7 +281,7 @@ to the plane of the sky by definition) has an angle &varphi; = &pi;/2 - <i>i</i>
 the orbital plane. To have an eclipse, at least partial,
 </p>
 
-<div class="latex" id="org3a5ddf1">
+<div class="latex" id="orgd668dc0">
 \begin{equation}
 \sin(\varphi) \leq \frac{R_{1} + R_{2}}{a} \ \ ,
 \end{equation}
@@ -280,7 +295,7 @@ with R<sub>i</sub> stellar radii, leads to an eclipse. The eclipse will be total
 if
 </p>
 
-<div class="latex" id="org8cfb16b">
+<div class="latex" id="org98b119e">
 \begin{equation}
 \sin(\varphi) \leq \frac{R_{1} - R_{2}}{a}
 \end{equation}
@@ -293,7 +308,7 @@ the two stars. Consider the following figure:
 </p>
 
 
-<figure id="orgdf643d2">
+<figure id="org75945e6">
 <img src="./images/EB.png" alt="EB.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Light cuve (visual magnitude as function of time) for an eclipsing binary with i=&pi;/2, figure 7.9 in Carrol &amp; Ostie's book</figcaption>
@@ -306,7 +321,7 @@ one can see that, labeling with 2 the geometrically smaller star
 axis to be a and the period P:
 </p>
 
-<div class="latex" id="org671dd32">
+<div class="latex" id="org7420504">
 \begin{equation}
  \frac{t_{d} -t_{a}}{P} = \frac{2(R_{1}+R_{2})}{2\pi a} \ \ ,
 \end{equation}
@@ -317,7 +332,7 @@ axis to be a and the period P:
 and
 </p>
 
-<div class="latex" id="org063ee2b">
+<div class="latex" id="orgc44f51a">
 \begin{equation}
  \frac{t_{c} -t_{b}}{P}_{} = \frac{2(R_{1}-R_{2})}{2\pi a} \ \ .
 \end{equation}
@@ -325,7 +340,7 @@ and
 </div>
 
 <p>
-These equations allow to calculate R<sub>j</sub><sub>nil</sub>/a and if also the masses are
+These equations allow to calculate R<sub>j</sub>/a and if also the masses are
 known also the individual radii R<sub>j</sub> using Kepler's laws to get rid of
 the orbital semi-major axis a.
 </p>
@@ -339,13 +354,13 @@ inclination of the binary orbit w.r.t. the plane of the sky?</li>
 </div>
 </div>
 
-<div id="outline-container-org018ee1f" class="outline-3">
-<h3 id="org018ee1f"><a href="#org018ee1f">Dynamical mass determination</a></h3>
-<div class="outline-text-3" id="text-org018ee1f">
+<div id="outline-container-org7e4918f" class="outline-3">
+<h3 id="org7e4918f"><a href="#org7e4918f">Dynamical mass determination</a></h3>
+<div class="outline-text-3" id="text-org7e4918f">
 </div>
-<div id="outline-container-orge471b0c" class="outline-4">
-<h4 id="orge471b0c"><a href="#orge471b0c">Visual binaries</a></h4>
-<div class="outline-text-4" id="text-orge471b0c">
+<div id="outline-container-org321e929" class="outline-4">
+<h4 id="org321e929"><a href="#org321e929">Visual binaries</a></h4>
+<div class="outline-text-4" id="text-org321e929">
 <p>
 Using Kepler's laws, we can use binaries to measure observationally
 masses without relying on hard, expensive, and uncertain stellar
@@ -356,7 +371,7 @@ models.
 In particular the third law can be written as
 </p>
 
-<div class="latex" id="org131aaed">
+<div class="latex" id="orgd8c0bbe">
 \begin{equation}
 \label{eq:Kepler3}
    G(M_{1}+M_{2}) = n^{2} a^{3} \ \ ,
@@ -377,7 +392,7 @@ axes a<sub>i</sub> of both stars around the center of mass, we also have another
 equation that follows from the definition of center of mass:
 </p>
 
-<div class="latex" id="org37c5c00">
+<div class="latex" id="org69d2134">
 \begin{equation}
 \label{eq:semimajor_axes}
  M_{1} a_{1} = M_{2} a_{2} \ \ ,
@@ -405,9 +420,9 @@ Eq. \ref{eq:semimajor_axes} one can still determine the mass ratio q=M<sub>2</su
 </div>
 </div>
 
-<div id="outline-container-org2074bd5" class="outline-4">
-<h4 id="org2074bd5"><a href="#org2074bd5">Spectroscopic (and eclipsing) binaries</a></h4>
-<div class="outline-text-4" id="text-org2074bd5">
+<div id="outline-container-org6b169fa" class="outline-4">
+<h4 id="org6b169fa"><a href="#org6b169fa">Spectroscopic (and eclipsing) binaries</a></h4>
+<div class="outline-text-4" id="text-org6b169fa">
 <p>
 In this case, we have access to more information thanks to the
 variable "radial velocity/ies" (RV) of the stars, that is the
@@ -434,7 +449,7 @@ orbit intersect) and the direction of periastron.
 </p>
 
 
-<figure id="org0b10da0">
+<figure id="orga1c6e56">
 <img src="./images/bin_orbit.png" alt="bin_orbit.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Geometry of a binary orbit. This is Fig. 3.3 in Tauris &amp; van den Heuvel 2023 book.</figcaption>
@@ -448,7 +463,7 @@ factor projects it on the plane of the sky and the sin(&nu;+&omega;) projects
 on the line of sight. The radial velocity is therefore:
 </p>
 
-<div class="latex" id="orgfd89b96">
+<div class="latex" id="orge2a4fae">
 \begin{equation}\label{dzdt}
 \frac{dz}{dt} = \left(r \cos(\nu+\omega)\frac{d\nu}{dt}+\frac{dr}{dt}\sin(\nu+\omega)\right)\sin(i)
 \end{equation}
@@ -459,7 +474,7 @@ on the line of sight. The radial velocity is therefore:
 which using Kepler's second law
 </p>
 
-<div class="latex" id="orgdb382ae">
+<div class="latex" id="orga4977f7">
 \begin{equation}
 \label{eq:Kepler2}
 \frac{1}{2}r^{2}\frac{d\nu}{dt} = \frac{\pi ab}{P} = \frac{\pi a^{2} \sqrt{1-e^2}}{P} \ \ ,
@@ -471,7 +486,7 @@ where P is the orbital period, a and b are semi-major and semi-minor
 axes, and
 </p>
 
-<div class="latex" id="orgf23bb76">
+<div class="latex" id="org37f5d99">
 \begin{equation}
 e = \sqrt{1-b^{2}/a^{2}} \ \ ,
 \end{equation}
@@ -482,7 +497,7 @@ e = \sqrt{1-b^{2}/a^{2}} \ \ ,
 is the eccentricity, and the relation between r&equiv; r(&nu;) for an ellipse:
 </p>
 
-<div class="latex" id="orgb6f1dcd">
+<div class="latex" id="org485f635">
 \begin{equation}
 r = \frac{a(1-e^{2})}{1+e\cos(\nu)} \ \ ,
 \end{equation}
@@ -493,7 +508,7 @@ r = \frac{a(1-e^{2})}{1+e\cos(\nu)} \ \ ,
 one can finally rewrite the radial velocity from Eq. \ref{dzdt} as
 </p>
 
-<div class="latex" id="orga887237">
+<div class="latex" id="orgcf5f563">
 \begin{equation}\label{eq:vrad}
 v_\mathrm{rad} = \frac{dz}{dt} = K (ecos(\omega)+cos(\omega+\nu)) \ \
 \end{equation}
@@ -503,7 +518,7 @@ v_\mathrm{rad} = \frac{dz}{dt} = K (ecos(\omega)+cos(\omega+\nu)) \ \
 <p>
 where
 </p>
-<div class="latex" id="org144541a">
+<div class="latex" id="org5e551b1">
 \begin{equation}
  K = \frac{2\pi a\sin(i)}{P\sqrt{1-e^{2}}} \ \,
 \end{equation}
@@ -543,7 +558,7 @@ each j=1,2 star, and we can determine K<sub>1</sub> and K<sub>2</sub>. using Eq.
 the semi-major axis of the orbit on the line of sight, a &times; sin(i):
 </p>
 
-<div class="latex" id="orgf9a1be9">
+<div class="latex" id="org44191dd">
 \begin{equation}
    G(M_{1}+M_{2})\sin^{3}(i) = n^{2} a^{3} \sin^{3}(i) \ \ ,
 \end{equation}
@@ -554,7 +569,7 @@ the semi-major axis of the orbit on the line of sight, a &times; sin(i):
 and using \ref{eq:semimajor_axes} rewritten as
 </p>
 
-<div class="latex" id="org08fe26e">
+<div class="latex" id="orgcd1a4bd">
 \begin{equation}
   \frac{a_{1} \sin(i)}{a_{2} \sin(i)} = \frac{M_{2}}{M_{1}} \ \ ,
 \end{equation}
@@ -576,7 +591,7 @@ In the case of an SB1 binary, when only one spectrum is visible, we
 can write
 </p>
 
-<div class="latex" id="org305cc4b">
+<div class="latex" id="orge626264">
 \begin{equation}
 a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{1}}{M_{2}}) = a_{1} \frac{(M_{1}+M_{2})}{M_{2}} \ \ .
 \end{equation}
@@ -587,7 +602,7 @@ a = a_{1} +a_{2} = a_{1}(1 + \frac{a_{2}}{a_{1}}) = a_{1} (1 + \frac{M_{1}}{M_{2
 Thus, we can rewrite Eq. \ref{eq:Kepler3} &times; sin<sup>3</sup>(i) as
 </p>
 
-<div class="latex" id="org4a02300">
+<div class="latex" id="org948de55">
 \begin{equation}
  (M_{1} +M_{2}) \sin^{3}(i) \frac{M_{2}^{3}}{(M_{1} +M_{2})^{3}} = \frac{n^{2}}{G}a_{1}^{3} \sin^{3}(i) \ \,
 \end{equation}
@@ -599,7 +614,7 @@ where the r.h.s. depends only on observables, and thus this allow us
 to derive observationally the mass function
 </p>
 
-<div class="latex" id="orgdff27fc">
+<div class="latex" id="org3eb448e">
 \begin{equation}
 f(M_{1}, M_{2}) = \frac{M_{2}^{3 }\sin^{3}(i)}{(M_{1} + M_{2})^{2}} \ \ ,
 \end{equation}
@@ -613,9 +628,9 @@ which together with an estimate of the mass-ratio provides a limit on M<sub>2</s
 </div>
 </div>
 
-<div id="outline-container-orgf1e8b25" class="outline-3">
-<h3 id="orgf1e8b25"><a href="#orgf1e8b25">Mass-luminosity relation</a></h3>
-<div class="outline-text-3" id="text-orgf1e8b25">
+<div id="outline-container-org560abee" class="outline-3">
+<h3 id="org560abee"><a href="#org560abee">Mass-luminosity relation</a></h3>
+<div class="outline-text-3" id="text-org560abee">
 <p>
 Using systems for which this mass and radius measurements are
 possible, we can derive empirical mass-luminosity and mass-radius
@@ -623,7 +638,7 @@ relations:
 </p>
 
 
-<figure id="orgb7ef360">
+<figure id="org962a364">
 <img src="./images/mass_lum_mass_r_rel_pols.png" alt="mass_lum_mass_r_rel_pols.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>Mass-luminosity and Mass-radius empirical relations for a set of well measured SB2 eclipsing binaries. This is Fig. 1.3 in Onno Pols' lecture notes</figcaption>
@@ -636,7 +651,7 @@ powerlaw, but as the range of stellar masses explored grew, this
 became a broken powerlaw:
 </p>
 
-<div class="latex" id="org9dd09fa">
+<div class="latex" id="org4584ab8">
 \begin{equation}
  L \propto M^{x}
 \end{equation}
@@ -656,13 +671,13 @@ problem!
 </div>
 </div>
 
-<div id="outline-container-orgcc04a0a" class="outline-2">
-<h2 id="orgcc04a0a"><a href="#orgcc04a0a">Homework</a></h2>
-<div class="outline-text-2" id="text-orgcc04a0a">
+<div id="outline-container-org1b54364" class="outline-2">
+<h2 id="org1b54364"><a href="#org1b54364">Homework</a></h2>
+<div class="outline-text-2" id="text-org1b54364">
 </div>
-<div id="outline-container-orga11e312" class="outline-3">
-<h3 id="orga11e312"><a href="#orga11e312">Exercise 7.4 on Carroll &amp; Ostie</a></h3>
-<div class="outline-text-3" id="text-orga11e312">
+<div id="outline-container-org4205482" class="outline-3">
+<h3 id="org4205482"><a href="#org4205482">Exercise 7.4 on Carroll &amp; Ostie</a></h3>
+<div class="outline-text-3" id="text-org4205482">
 <p>
 Sirius is a visual binary with a period of 49.94 yr. Its measured
 trigonometric parallax is 0.37921" &plusmn; 0.00158" and, assuming that the
@@ -685,9 +700,9 @@ of the Sun and Earth. What kind of star is that hot with that radius?</li>
 </div>
 </div>
 
-<div id="outline-container-org179091e" class="outline-3">
-<h3 id="org179091e"><a href="#org179091e">Exercise 7.6 on Carroll &amp; Ostie</a></h3>
-<div class="outline-text-3" id="text-org179091e">
+<div id="outline-container-org78d0318" class="outline-3">
+<h3 id="org78d0318"><a href="#org78d0318">Exercise 7.6 on Carroll &amp; Ostie</a></h3>
+<div class="outline-text-3" id="text-org78d0318">
 <p>
 From the light and velocity curves of an eclipsing, spectroscopic
 binary star system, it is determined that the orbital period is 6.31
@@ -716,7 +731,7 @@ find:
   <hr>
   <a href="notes-lecture-CMD-HRD.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-HSE.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 19 January 2025 <br>
+  Last updated on 23 January 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>
