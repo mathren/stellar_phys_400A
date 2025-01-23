@@ -341,10 +341,14 @@ along the line of sight due to the motion of the Earth around the Sun,
 and the peculiar motion of the Sun (i.e., v_{rad} from Eq. \ref{eq:vrad}
 \rightarrow v_{rad}-\gamma with \gamma peculiar velocity of the observer).
 
-#+CAPTION: Example of a radial velocity curve for a /circular/ (e=0) binary in the SMC from the presently ongoing BLOeM survey ([[https://ui.adsabs.harvard.edu/abs/2024A%26A...690A.289S/abstract][Shenar et al. 2024]]). Credits: Dr. N. Britavskiy.
+#+CAPTION: Example of a radial velocity curve for a /circular/ (e=0) binary in the SMC from the presently ongoing BLOeM survey ([[https://ui.adsabs.harvard.edu/abs/2024A%26A...690A.289S/abstract][Shenar et al. 2024]]). Black data points are measurements of the radial velocity from one spectrum (one epoch), these are phase-folded (from the inferred period one can determine the phase of the binary at each epoch and use it as x-axis). The red curve is a best fit model with the gray band showing a 3\sigma uncertainty. The bottom panel shows the residuals between the models and the observations. Credits: Dr. N. Britavskiy.
 #+ATTR_HTML: :width 100%
 [[./images/example_RV_curve.png]]
 
+:Question:
+*Q*: - how would the radial velocity curve above change qualitatively if
+the orbit had an eccentricity (e\neq0)?
+:end:
 
 Therefore, for an SB2 binary we can observe dz_{j}/dt = v_{rad, j} for
 each j=1,2 star, and we can determine K_{1} and K_{2}. using Eq.
@@ -372,6 +376,10 @@ direct measurement of the masses. These are the most precise mass
 measurements (so-called "dynamical masses", because they are based on
 orbital dynamics). They are only possible thanks to the occurrence in
 nature of stellar binaries!
+
+*N.B.:* The highest stellar masses measured with these method are about
+\sim80M_{\odot} in the eclipsing SB2 binary WR20a (e.g., [[https://ui.adsabs.harvard.edu/abs/2004A%26A...420L...9R/abstract][Raauw 2004]],
+[[https://ui.adsabs.harvard.edu/abs/2004ApJ...611L..33B/abstract][Bonannos 2004]]).
 
 In the case of an SB1 binary, when only one spectrum is visible, we
 can write
