@@ -155,6 +155,10 @@ if
 \end{equation}
 #+end_latex
 
+Note that in either case, the occurrence of an eclipse puts an
+upper limit on sin(\varphi), that is a direct observational constrain on the
+inclination angle i.
+
 The time duration of an eclipse can be used to determine the radii of
 the two stars. Consider the following figure:
 
@@ -210,6 +214,10 @@ where M_{i} are the masses of the stars, n= 2\pi/P is the angular velocity
 (a.k.a. "true anomaly") and a is the semimajor axis of the orbit (of the
 orbit of the reduced mass point \mu = M_{1}M_{2}/(M_{1}+M_{2}) around the center of
 mass).
+
+*N.B.:* Often for solar-system application M_{2} \ll M_{1} = M_{\odot}, so M_{2} can
+be neglected (e.g., if M_{2} = M_{\oplus}). This is generally /not/ the case
+with star+star binaries.
 
 For a visual binary (see above) where we can measure the semi-major
 axes a_{i} of both stars around the center of mass, we also have another
@@ -268,11 +276,12 @@ on the line of sight. The radial velocity is therefore:
 
 #+begin_latex
 \begin{equation}\label{dzdt}
-\frac{dz}{dt} = \left(r \cos(\nu+\omega)\frac{d\nu}{dt}+\frac{dr}{dt}\sin(\nu+\omega)\right)\sin(i)
+\frac{dz}{dt} = \left(r \cos(\nu+\omega)\frac{d\nu}{dt}+\frac{dr}{dt}\sin(\nu+\omega)\right)\sin(i) \ \ .
 \end{equation}
 #+end_latex
+*N.B.:* For a Keplerian, non-precessing, unperturbed orbit, \omega is a constant.
 
-which using Kepler's second law
+Using Kepler's second law
 
 #+begin_latex
 \begin{equation}
@@ -331,6 +340,11 @@ for a decent fit to all these parameters):
 along the line of sight due to the motion of the Earth around the Sun,
 and the peculiar motion of the Sun (i.e., v_{rad} from Eq. \ref{eq:vrad}
 \rightarrow v_{rad}-\gamma with \gamma peculiar velocity of the observer).
+
+#+CAPTION: Example of a radial velocity curve for a /circular/ (e=0) binary in the SMC from the presently ongoing BLOeM survey ([[https://ui.adsabs.harvard.edu/abs/2024A%26A...690A.289S/abstract][Shenar et al. 2024]]). Credits: Dr. N. Britavskiy.
+#+ATTR_HTML: :width 100%
+[[./images/example_RV_curve.png]]
+
 
 Therefore, for an SB2 binary we can observe dz_{j}/dt = v_{rad, j} for
 each j=1,2 star, and we can determine K_{1} and K_{2}. using Eq.
