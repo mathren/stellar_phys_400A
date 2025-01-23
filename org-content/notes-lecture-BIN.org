@@ -78,7 +78,8 @@ for a total of maybe 6 stars (e.g., [[https://iopscience.iop.org/article/10.1088
 Wide binaries where one of the two stars is too faint to be seen can
 still be found by looking at the peculiar motion of the star that can
 be seen on the sky. What matters is its /proper motion/ (not the
-apparent motion due to the Earth rotation) with respect to background
+apparent motion due to the Earth rotation around its axis and
+revolution around the Sun) with respect to background
 stars too far to be moving. For a single star, this is usually a
 straight line (because the timescale for it to turn around the
 Galactic center is typically \sim hundreds of millions of years).

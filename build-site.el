@@ -16,12 +16,6 @@
 ;; Load the publishing system
 (require 'ox-publish)
 
-;; fix latex export errors
-(require 'ox-latex)
-(setq org-latex-listings 'minted) ;; Optional: Enables listings or minted packages
-(setq org-latex-packages-alist '(("" "minted"))) ;; Minted block support includes \tex Latex-Alternalatives.
-
-
 (defun mr/get-modified-org-files ()
   "Return a list of Org files modified since the last commit."
   (let* ((default-directory (expand-file-name "./org-content"))
