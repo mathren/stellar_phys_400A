@@ -341,7 +341,7 @@ along the line of sight due to the motion of the Earth around the Sun,
 and the peculiar motion of the Sun (i.e., v_{rad} from Eq. \ref{eq:vrad}
 \rightarrow v_{rad}-\gamma with \gamma peculiar velocity of the observer).
 
-#+CAPTION: Example of a radial velocity curve for a /circular/ (e=0) binary in the SMC from the presently ongoing BLOeM survey ([[https://ui.adsabs.harvard.edu/abs/2024A%26A...690A.289S/abstract][Shenar et al. 2024]]). Black data points are measurements of the radial velocity from one spectrum (one epoch), these are phase-folded (from the inferred period one can determine the phase of the binary at each epoch and use it as x-axis). The red curve is a best fit model with the gray band showing a 3\sigma uncertainty. The bottom panel shows the residuals between the models and the observations. Credits: Dr. N. Britavskiy.
+#+CAPTION: Example of a radial velocity curve for a /circular/ (e=0) binary in the SMC from the presently ongoing BLOeM survey ([[https://ui.adsabs.harvard.edu/abs/2024A%26A...690A.289S/abstract][Shenar et al. 2024]]). Black data points are measurements of the radial velocity from one spectrum (one epoch), these are phase-folded (from the inferred period one can determine the phase of the binary at each epoch and use it as x-axis). The red curve is a best fit model with the gray band showing a 3\sigma uncertainty. The bottom panel shows the residuals between the models and the observations. Credits: Dr. N. Britavskiy. For more examples, see also Fig. 1 and 2 in [[https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.159M/abstract][Mahy et al. 2022]].
 #+ATTR_HTML: :width 100%
 [[./images/example_RV_curve.png]]
 
