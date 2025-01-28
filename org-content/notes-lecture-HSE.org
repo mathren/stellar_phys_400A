@@ -37,16 +37,17 @@ described it.
 
 *** Eulerian description
 In a Eulerian description the fields are described as a function of
-space (and time): \Psi \equiv \Psi(x, y, z, t) in Cartesian coordinates or \Psi(r, \theta,
-\varphi, t) in spherical-polar coordinates (of course, one could use any
-other spatial coordinate system as well, the point is the field is
-expressed as a function of a fixed location in space-time).
+position in space (and time): \Psi \equiv \Psi(x, y, z, t) in Cartesian
+coordinates or \Psi(r, \theta, \varphi, t) in spherical-polar coordinates (of
+course, one could use any other spatial coordinate system as well, the
+point is the field is expressed as a function of a fixed location in
+space-time).
 
 This is like looking at the flow from on top of a bridge at a fixed
 position, describing the variables at that specific position.
 
-#+CAPTION: Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge
-#+ATTR_HTML: :width 50%  :alt https://www.flinilckr.com/photos/frixan/114822407/
+#+CAPTION: Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge.
+#+ATTR_HTML: :width 75%  :alt https://www.flinilckr.com/photos/frixan/114822407/
 [[./images/Eulerian-bridge.jpg]]
 
 For a star assuming spherical symmetry (as we already did to relate
@@ -62,8 +63,8 @@ element, t).
 This is like hopping on a boat that moves with the fluid, and
 describing the properties of the fluid as the boat moves with it.
 
-#+CAPTION: Lagrangian description is like following the fluid on a boat and describe what goes on as a function of the fluid particle being followed
-#+ATTR_HTML: :width 50% :alt https://www.snowaddiction.org/2015/10/the-zen-of-kayaking-i-photograph-the-fjords-of-norway-from-the-kayak-seat.html?m=1
+#+CAPTION: Lagrangian description is like following the fluid on a boat and describe what goes on as a function of the fluid particle being followed.
+#+ATTR_HTML: :width 75% :alt https://www.snowaddiction.org/2015/10/the-zen-of-kayaking-i-photograph-the-fjords-of-norway-from-the-kayak-seat.html?m=1
 [[./images/Lagrangian_kayak.jpg]]
 
 In a Lagrangian system of coordinates, the total time derivative can
