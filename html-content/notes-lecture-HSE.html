@@ -155,7 +155,7 @@ position, describing the variables at that specific position.
 </p>
 
 
-<figure id="org49685a3">
+<figure id="orgf0fdfb0">
 <img src="./images/Eulerian-bridge.jpg" alt="https://www.flinilckr.com/photos/frixan/114822407/" width="75%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge.</figcaption>
@@ -185,7 +185,7 @@ describing the properties of the fluid as the boat moves with it.
 </p>
 
 
-<figure id="org77d3da2">
+<figure id="orge808a70">
 <img src="./images/Lagrangian_kayak.jpg" alt="https://www.snowaddiction.org/2015/10/the-zen-of-kayaking-i-photograph-the-fjords-of-norway-from-the-kayak-seat.html?m=1" width="75%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Lagrangian description is like following the fluid on a boat and describe what goes on as a function of the fluid particle being followed.</figcaption>
@@ -196,7 +196,7 @@ In a Lagrangian system of coordinates, the total time derivative can
 be written using the "chain rule" as:
 </p>
 
-<div class="latex" id="org9816b96">
+<div class="latex" id="org8bf8f68">
 \begin{equation}
  \frac{d}{dt} = \frac{\partial}{\partial t} + \frac{\partial x}{\partial t}\frac{\partial}{\partial x} + \frac{\partial y}{\partial t}\frac{\partial}{\partial y} +\frac{\partial z}{\partial t}\frac{\partial}{\partial z} \equiv \frac{\partial}{\partial t} + v\cdot\nabla \ \,
 \end{equation}
@@ -224,7 +224,7 @@ given radius m&equiv; m(r), thus express &Psi;(r,t) =&Psi;(r(m), t)&rarr; &Psi;(
 <p>
 Derivatives can then be expressed with the chain rule:
 </p>
-<div class="latex" id="org765f8f4">
+<div class="latex" id="org3b1888c">
 \begin{equation}
  \frac{\partial}{\partial m} = \frac{\partial r}{\partial m} \frac{\partial}{\partial r} \ \ .
 \end{equation}
@@ -279,7 +279,7 @@ the center of the star. This allows for the calculation of
 </p>
 
 
-<figure id="org70e49d1">
+<figure id="org95d3e14">
 <img src="./images/QR-HSE.png" alt="QR-HSE.png" width="20%">
 
 <figcaption><span class="figure-number">Figure 3: </span><a href="https://uarizona.co1.qualtrics.com/jfe/form/SV_0j0MKbOTgowDkVg">Link</a> to survey on spherical symmetry</figcaption>
@@ -297,7 +297,7 @@ depend on the local gas density \(\rho(r, t)\) (or equivalently in the
 Lagrangian formalism \(\rho(m, t)\)!) and the amount of volume in the shell
 </p>
 
-<div class="latex" id="orgfafb196">
+<div class="latex" id="org93e8fba">
 \begin{equation}
 dm = \rho dAdr
 \end{equation}
@@ -309,7 +309,7 @@ where dA is the element base area, and dr its radial thickness. We can
 integrate over the base to get the parcel to be a spherical shell
 </p>
 
-<div class="latex" id="orge5e76ef">
+<div class="latex" id="orgf63b5fe">
 \begin{equation}
 \int dA = 4\pi r^{2}
 \end{equation}
@@ -320,7 +320,7 @@ integrate over the base to get the parcel to be a spherical shell
 where r is the radius of the shell, therefore
 </p>
 
-<div class="latex" id="org17de42e">
+<div class="latex" id="orgccd7db3">
 \begin{equation}
 dm = 4\pi \rho r^{2} dr \ \ .
 \end{equation}
@@ -334,7 +334,7 @@ dt an amount \(-\rho v dA dt\) flows out (for \(v>0\), the quantity is negative)
 or in (\(v<0\)). Again integrating over \(dA\):
 </p>
 
-<div class="latex" id="org1ed87ea">
+<div class="latex" id="org3a21063">
 \begin{equation}
 \label{eq:mass_continuity}
 dm = 4\pi \rho r^{2} dr - 4\pi r^{2} \rho v dt \ \ .
@@ -348,7 +348,7 @@ From this complete form we can take the partial derivatives w.r.t. \(r\)
 (at fixed \(t\)) and \(t\) (at fixed \(r\)):
 </p>
 
-<div class="latex" id="org70d0093">
+<div class="latex" id="org10ca6c7">
 \begin{equation}\label{eq:mass_continuity_rt}
  \frac{\partial m}{\partial r} = 4\pi r^{2} \rho \ \ , \\
  \frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \ \ .
@@ -362,7 +362,7 @@ w.r.t \(r\), and demand the two forms are the same. Since \(r\) and \(t\) are th
 independent variables here (i.e., \(\partial r/\partial t = 0\)) we obtain:
 </p>
 
-<div class="latex" id="org498d476">
+<div class="latex" id="org6dfd236">
 \begin{equation}
 \frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial (r^{2}\rho v)}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \ ,
 \end{equation}
@@ -380,7 +380,7 @@ structure, just take the first equation in \ref{eq:mass_continuity_rt}
 and express it with \(m\) as independent variable:
 </p>
 
-<div class="latex" id="orged9a332">
+<div class="latex" id="org63bafa0">
 \begin{equation}\label{eq:mass_conservation}
 \frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho} \ \ ,
 \end{equation}
@@ -423,7 +423,7 @@ This can be obtained as the gradient of the gravitational potential &Phi;
 which is a solution of the Poisson equation:
 </p>
 
-<div class="latex" id="org4f56a87">
+<div class="latex" id="org0f0394d">
 \begin{equation}
 \nabla^{2} \Phi = 4\pi G\rho \Rightarrow \frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial \Phi}{\partial r} \right) = 4\pi G\rho \ \ ,
 \end{equation}
@@ -443,7 +443,7 @@ spherical symmetry only has a non-zero radial component &rArr; \(g = - d\Phi/dr\
 which from Newton's theory of gravity we know to be
 </p>
 
-<div class="latex" id="org10fb95f">
+<div class="latex" id="orgda1e8e2">
 \begin{equation}
 - \nabla \Phi = g \equiv g(m(r))= \frac{Gm(r)}{r^{2}} \ \ ,
 \end{equation}
@@ -471,7 +471,7 @@ from the pressure. We could already use dimensional analysis to guess
 in what form pressure can enter the l.h.s. of the equation:
 </p>
 
-<div class="latex" id="org198d09d">
+<div class="latex" id="orgf391f22">
 \begin{equation}
 [P] = [\mathrm{force}]/[\mathrm{area}] \Rightarrow [P]/[\mathrm{length}] = [\mathrm{force}]/[\mathrm{volume}] \equiv [f]
 \end{equation}
@@ -486,7 +486,7 @@ turn suggests that maybe what we need is the pressure <i>gradient</i>!
 
 
 
-<figure id="org3f02831">
+<figure id="orga9bf547">
 <img src="./images/HSE-sketch.png" alt="HSE-sketch.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Sketch of the force balance for an internal layer of a spherically symmetric star. Modified from Onno Pols' lecture notes Fig. 2.1</figcaption>
@@ -528,7 +528,7 @@ cases, that is \(a=0\). <i>Stars are generally in hydrostatic equilibrium</i>. I
 this case the conservation of momentum becomes
 </p>
 
-<div class="latex" id="org069dc8b">
+<div class="latex" id="org4b180bc">
 \begin{equation}
 \frac{dP}{dr} = -g\rho = -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
@@ -540,7 +540,7 @@ or changing to have \(m\) has the independent variable, to have a
 Lagrangian treatment:
 </p>
 
-<div class="latex" id="orgbf65ac3">
+<div class="latex" id="orgbe06667">
 \begin{equation}
 \frac{dP}{dr} = \frac{dP}{dm}\frac{dm}{dr} = \frac{dP}{dm}4\pi r^{2}\rho
 \end{equation}
@@ -551,7 +551,7 @@ Lagrangian treatment:
 and thus
 </p>
 
-<div class="latex" id="org5d96ace">
+<div class="latex" id="orgf16da2b">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -653,7 +653,7 @@ mass M and radius R. For the sake of simplicity, let's take the
 fraction to be 1 and drop the 4&pi;:
 </p>
 
-<div class="latex" id="org87254c6">
+<div class="latex" id="org78ee933">
 \begin{equation}
 P_\mathrm{center} = \frac{GM^{2}}{R^{4}}\ \ ,
 \end{equation}
@@ -680,7 +680,7 @@ spherically symmetric. Returning to the general form for the momentum
 conservation \(f = \rho a \equiv \rho \partial^{2}r/\partial t^{2}\) we have
 </p>
 
-<div class="latex" id="orga73c7cd">
+<div class="latex" id="org53d4bb6">
 \begin{equation}\label{eq:dyn}
 \rho \frac{\partial^{2} r}{\partial t^{2}} = -\frac{dP}{dr} -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
@@ -718,7 +718,7 @@ following rough substitution in the dynamical equation above:
 and we obtain:
 </p>
 
-<div class="latex" id="org784ac0c">
+<div class="latex" id="orgf5e6bcc">
 \begin{equation}
 \tau_\mathrm{expl} \simeq \frac{R}{\sqrt{\frac{P_{avg}}{\rho_{avg}}_{}}} \simeq \frac{R}{c_{s}}\ \ .
 \end{equation}
@@ -751,7 +751,7 @@ gradient \(dP/dr\rightarrow0\). Then, as above:
 we get:
 </p>
 
-<div class="latex" id="org416dc47">
+<div class="latex" id="orgca08136">
 \begin{equation}
 \tau_\mathrm{ff} \simeq \sqrt{\frac{R^{3}}{GM}} \simeq \sqrt{\frac{1}{G\rho_\mathrm{avg}}}\ \ ,
 \end{equation}
@@ -843,7 +843,7 @@ surface of a star of mass \(M\) and radius \(R\) and compare it to the free
 fall timescale of the star.</li>
 <li>Calculate the free fall timescale for the Sun, for a Red Supergiant
 with \(M=10M_{☉}\) and \(R=1000R_{☉}\) and a White Dwarf with \(M=1M_{☉}\)
-and \(R=1000km\), and a Neutron star with \(M=1M_{☉}\) and radius \(R=10km\).
+and \(R=1000\) km, and a Neutron star with \(M=1M_{☉}\) and radius \(R=10km\).
 Compare also their average densities.</li>
 <li>Skim <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230915930F/abstract">MESA-web paper by Fields et al. 2022</a>.</li>
 <li>Using <a href="http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit">MESA-web</a> make a 1 \(M_{☉}\) star until age 4.5&times;10<sup>9</sup> years (a
