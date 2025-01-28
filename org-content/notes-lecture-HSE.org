@@ -479,7 +479,7 @@ we get:
 \tau_\mathrm{ff} \simeq \sqrt{\frac{R^{3}}{GM}} \simeq \sqrt{\frac{1}{G\rho_\mathrm{avg}}}\ \ ,
 \end{equation}
 #+end_latex
-with $\rho_{avg} = 3M/(4\pi R^{3})$ average density of the star. Note that here we
+with $\rho_\mathrm{avg} = 3M/(4\pi R^{3})$ average density of the star. Note that here we
 have been very loose with the \pi factors and averages.
 
 :Question:
@@ -534,23 +534,23 @@ show you how you can obtain numerical stellar models.
 
 * Homework
 - Calculate the Keplerian period of a point mass orbiting at the
-  surface of a star of mass M and radius R and compare it to the free
+  surface of a star of mass $M$ and radius $R$ and compare it to the free
   fall timescale of the star.
 - Calculate the free fall timescale for the Sun, for a Red Supergiant
-  with M=10M_{\odot} and R=1000R_{\odot} and a White Dwarf with M=1M_{\odot}
-  and R=1000km, and a Neutron star with M=1M_{\odot} and radius R=10km.
+  with $M=10M_{\odot$} and $R=1000R_{\odot}$ and a White Dwarf with $M=1M_{\odot}$
+  and $R=1000km$, and a Neutron star with $M=1M_{\odot$} and radius $R=10km$.
   Compare also their average densities.
 - Skim [[https://ui.adsabs.harvard.edu/abs/2023arXiv230915930F/abstract][MESA-web paper by Fields et al. 2022]].
-- Using [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]] make a 1 M_{\odot} star until age 4.5\times10^{9} years (a
-  very rough model of the Sun as it is today!). Plot m(r), make sure
+- Using [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]] make a 1 $M_{\odot}$ star until age 4.5\times10^{9} years (a
+  very rough model of the Sun as it is today!). Plot $m(r)$, make sure
   to label your axes properly (including units!). Are there other
   variables with a qualitatively similar behavior that one could use
   as independent coordinate for the stellar structure? Try to make
   other plots to find some, and explain what is the mathematical
-  property that allows to use m(r) and or any other variable you found
+  property that allows to use $m(r)$ and or any other variable you found
   as a coordinate.
 - With the model above, check the central pressure of the star (you
-  can also plot P(m) and P(r), or look at the final frame in the
+  can also plot $P(m)$ and $P(r)$, or look at the final frame in the
   movie made by MESA-web for you) and compare it with the estimate
   above and the one provided in Onno Pols' lecture notes.
 - Check also the outer luminosity: is it the value you expected?
