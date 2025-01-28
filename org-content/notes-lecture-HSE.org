@@ -436,7 +436,7 @@ conservation $f = \rho a \equiv \rho \partial^{2}r/\partial t^{2}$ we have
 \end{equation}
 #+end_latex
 
-where since P decreases inwards, dP/dr<0, so the first term on the
+where since P decreases inwards, $dP/dr<0$, so the first term on the
 l.h.s. pushes outwards (positive radial acceleration), while gravity
 pulls inward, as one would expect.
 
@@ -444,14 +444,14 @@ Normally, for a star, we expect these two terms to balance each other,
 but what happens if we turn one off?
 
 *** Explosion timescale
-Let's turn off gravity, setting g = - Gm/r^{2 }\rightarrow 0! To estimate how long it takes for the pressure
-gradient to push the gas out to a radius comparable to the radius of
-the star we can do the following rough substitution in the dynamical
-equation above:
- - \partial^{2} r \rightarrow R (outer radius of the star)
- - \partial t^{2} \rightarrow \tau_{expl}^{2} (what we want to estimate)
- - dP/dr\rightarrow P_{avg}/R with P_{avg} some averaged pressure in the star
- - \rho \rightarrow \rho_{avg} some averaged density of the star
+Let's turn off gravity, setting $g = - Gm/r^{2 }\rightarrow 0$! To
+estimate how long it takes for the pressure gradient to push the gas
+out to a radius comparable to the radius of the star we can do the
+following rough substitution in the dynamical equation above:
+ - $\partial^{2} r \rightarrow R$ (outer radius of the star)
+ - $\partial t^{2} \rightarrow \tau_mathrm{expl}^{2}$ (what we want to estimate)
+ - $dP/dr\rightarrow P_\mathrm{avg}/R$ with $P_\mathrm{avg}$ some averaged pressure in the star
+ - $\rho \rightarrow \rho_\mathrm{avg}$ some averaged density of the star
 and we obtain:
 
 #+begin_latex
@@ -460,16 +460,18 @@ and we obtain:
 \end{equation}
 #+end_latex
 
-where, if we interpret P and \rho as some average values throughout the
-star the sound speed c_{s}^{2} = P/\rho appears!
+where, if we interpret $P$ and $\rho$ as some average values throughout the
+star the sound speed $c_{s}^{2} = P/\rho$ appears! The timescale for the
+internal pressure of the stellar gas to "blow up" the star is of the
+order of the sound-crossing time.
 
 *** Free fall timescale
 Almost by definition, this is how the star would collapse if there
 were no forces other than gravity, so let's turn off the pressure
-gradient dP/dr\rightarrow0. Then, as above:
- - \partial^{2} r \rightarrow R (outer radius of the star)
- - \partial t^{2} \rightarrow \tau_{ff}^{2} (what we want to estimate)
- - m \rightarrow M (total mass)
+gradient $dP/dr\rightarrow0$. Then, as above:
+ - $\partial^{2} r \rightarrow R$ (outer radius of the star)
+ - $\partial t^{2} \rightarrow \tau_{ff}^{2}$ (what we want to estimate)
+ - $m \rightarrow M$ (total mass)
 we get:
 
 #+begin_latex
@@ -477,7 +479,7 @@ we get:
 \tau_\mathrm{ff} \simeq \sqrt{\frac{R^{3}}{GM}} \simeq \sqrt{\frac{1}{G\rho_\mathrm{avg}}}\ \ ,
 \end{equation}
 #+end_latex
-with \rho_{avg} = 3M/(4\pi R^{3}) average density of the star. Note that here we
+with $\rho_{avg} = 3M/(4\pi R^{3})$ average density of the star. Note that here we
 have been very loose with the \pi factors and averages.
 
 :Question:

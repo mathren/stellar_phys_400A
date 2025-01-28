@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-28 Tue 10:10 -->
+<!-- 2025-01-28 Tue 10:16 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Hydrostatic equilibrium</title>
@@ -155,7 +155,7 @@ position, describing the variables at that specific position.
 </p>
 
 
-<figure id="org95e9215">
+<figure id="orgdc1d2fa">
 <img src="./images/Eulerian-bridge.jpg" alt="https://www.flinilckr.com/photos/frixan/114822407/" width="75%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge.</figcaption>
@@ -185,7 +185,7 @@ describing the properties of the fluid as the boat moves with it.
 </p>
 
 
-<figure id="orgaa736ea">
+<figure id="orgfc2a584">
 <img src="./images/Lagrangian_kayak.jpg" alt="https://www.snowaddiction.org/2015/10/the-zen-of-kayaking-i-photograph-the-fjords-of-norway-from-the-kayak-seat.html?m=1" width="75%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Lagrangian description is like following the fluid on a boat and describe what goes on as a function of the fluid particle being followed.</figcaption>
@@ -196,7 +196,7 @@ In a Lagrangian system of coordinates, the total time derivative can
 be written using the "chain rule" as:
 </p>
 
-<div class="latex" id="orgc560e6d">
+<div class="latex" id="org83a633b">
 \begin{equation}
  \frac{d}{dt} = \frac{\partial}{\partial t} + \frac{\partial x}{\partial t}\frac{\partial}{\partial x} + \frac{\partial y}{\partial t}\frac{\partial}{\partial y} +\frac{\partial z}{\partial t}\frac{\partial}{\partial z} \equiv \frac{\partial}{\partial t} + v\cdot\nabla \ \,
 \end{equation}
@@ -224,7 +224,7 @@ given radius m&equiv; m(r), thus express &Psi;(r,t) =&Psi;(r(m), t)&rarr; &Psi;(
 <p>
 Derivatives can then be expressed with the chain rule:
 </p>
-<div class="latex" id="orgc798e35">
+<div class="latex" id="org050dfcd">
 \begin{equation}
  \frac{\partial}{\partial m} = \frac{\partial r}{\partial m} \frac{\partial}{\partial m} \ \ .
 \end{equation}
@@ -279,7 +279,7 @@ the center of the star. This allows for the calculation of
 </p>
 
 
-<figure id="orgefd6815">
+<figure id="org3e27af3">
 <img src="./images/QR-HSE.png" alt="QR-HSE.png" width="20%">
 
 <figcaption><span class="figure-number">Figure 3: </span><a href="https://uarizona.co1.qualtrics.com/jfe/form/SV_0j0MKbOTgowDkVg">Link</a> to survey on spherical symmetry</figcaption>
@@ -297,7 +297,7 @@ depend on the local gas density \(\rho(r, t)\) (or equivalently in the
 Lagrangian formalism \(\rho(m, t)\)!) and the amount of volume in the shell
 </p>
 
-<div class="latex" id="orgf424ae6">
+<div class="latex" id="orgce2a2c5">
 \begin{equation}
 dm = \rho dAdr
 \end{equation}
@@ -309,7 +309,7 @@ where dA is the element base area, and dr its radial thickness. We can
 integrate over the base to get the parcel to be a spherical shell
 </p>
 
-<div class="latex" id="org94ef4c5">
+<div class="latex" id="org18db6f2">
 \begin{equation}
 \int dA = 4\pi r^{2}
 \end{equation}
@@ -320,7 +320,7 @@ integrate over the base to get the parcel to be a spherical shell
 where r is the radius of the shell, therefore
 </p>
 
-<div class="latex" id="org9fcc12c">
+<div class="latex" id="orgb381649">
 \begin{equation}
 dm = 4\pi \rho r^{2} dr \ \ .
 \end{equation}
@@ -334,7 +334,7 @@ dt an amount \(-\rho v dA dt\) flows out (for \(v>0\), the quantity is negative)
 or in (\(v<0\)). Again integrating over \(dA\):
 </p>
 
-<div class="latex" id="orgbc595b4">
+<div class="latex" id="orgacddf59">
 \begin{equation}
 \label{eq:mass_continuity}
 dm = 4\pi \rho r^{2} dr - 4\pi r^{2} \rho v dt \ \ .
@@ -348,7 +348,7 @@ From this complete form we can take the partial derivatives w.r.t. \(r\)
 (at fixed \(t\)) and \(t\) (at fixed \(r\)):
 </p>
 
-<div class="latex" id="orgb10549a">
+<div class="latex" id="orgd4bfd14">
 \begin{equation}\label{eq:mass_continuity_rt}
  \frac{\partial m}{\partial r} = 4\pi r^{2} \rho \ \ , \\
  \frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \ \ .
@@ -362,7 +362,7 @@ w.r.t \(r\), and demand the two forms are the same. Since \(r\) and \(t\) are th
 independent variables here (i.e., \(\partial r/\partial t = 0\)) we obtain:
 </p>
 
-<div class="latex" id="orgcafa9cf">
+<div class="latex" id="orgaff40be">
 \begin{equation}
 \frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial (r^{2}\rho v)}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \ ,
 \end{equation}
@@ -380,7 +380,7 @@ structure, just take the first equation in \ref{eq:mass_continuity_rt}
 and express it with \(m\) as independent variable:
 </p>
 
-<div class="latex" id="orga633166">
+<div class="latex" id="orgc710d91">
 \begin{equation}\label{eq:mass_conservation}
 \frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho} \ \ ,
 \end{equation}
@@ -423,7 +423,7 @@ This can be obtained as the gradient of the gravitational potential &Phi;
 which is a solution of the Poisson equation:
 </p>
 
-<div class="latex" id="org9df7333">
+<div class="latex" id="org2eec90c">
 \begin{equation}
 \nabla^{2} \Phi = 4\pi G\rho \Rightarrow \frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial \Phi}{\partial r} \right) = 4\pi G\rho \ \ ,
 \end{equation}
@@ -443,7 +443,7 @@ spherical symmetry only has a non-zero radial component &rArr; \(g = - d\Phi/dr\
 which from Newton's theory of gravity we know to be
 </p>
 
-<div class="latex" id="orgc95bfe0">
+<div class="latex" id="org7da041d">
 \begin{equation}
 - \nabla \Phi = g \equiv g(m(r))= \frac{Gm(r)}{r^{2}} \ \ ,
 \end{equation}
@@ -471,7 +471,7 @@ from the pressure. We could already use dimensional analysis to guess
 in what form pressure can enter the l.h.s. of the equation:
 </p>
 
-<div class="latex" id="org06dadef">
+<div class="latex" id="org18c9608">
 \begin{equation}
 [P] = [\mathrm{force}]/[\mathrm{area}] \Rightarrow [P]/[\mathrm{length}] = [\mathrm{force}]/[\mathrm{volume}] \equiv [f]
 \end{equation}
@@ -486,7 +486,7 @@ turn suggests that maybe what we need is the pressure <i>gradient</i>!
 
 
 
-<figure id="org28d6e7c">
+<figure id="org0b05478">
 <img src="./images/HSE-sketch.png" alt="HSE-sketch.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Sketch of the force balance for an internal layer of a spherically symmetric star. Modified from Onno Pols' lecture notes Fig. 2.1</figcaption>
@@ -528,7 +528,7 @@ cases, that is \(a=0\). <i>Stars are generally in hydrostatic equilibrium</i>. I
 this case the conservation of momentum becomes
 </p>
 
-<div class="latex" id="orgcab3dc8">
+<div class="latex" id="org373460a">
 \begin{equation}
 \frac{dP}{dr} = -g\rho = -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
@@ -540,7 +540,7 @@ or changing to have \(m\) has the independent variable, to have a
 Lagrangian treatment:
 </p>
 
-<div class="latex" id="orgf8edbe9">
+<div class="latex" id="orgb5acfca">
 \begin{equation}
 \frac{dP}{dr} = \frac{dP}{dm}\frac{dm}{dr} = \frac{dP}{dm}4\pi r^{2}\rho
 \end{equation}
@@ -551,7 +551,7 @@ Lagrangian treatment:
 and thus
 </p>
 
-<div class="latex" id="org85fc440">
+<div class="latex" id="org2bad47e">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -653,7 +653,7 @@ mass M and radius R. For the sake of simplicity, let's take the
 fraction to be 1 and drop the 4&pi;:
 </p>
 
-<div class="latex" id="orgb1037a2">
+<div class="latex" id="orgb5b99da">
 \begin{equation}
 P_\mathrm{center} = \frac{GM^{2}}{R^{4}}\ \ ,
 \end{equation}
@@ -680,7 +680,7 @@ spherically symmetric. Returning to the general form for the momentum
 conservation \(f = \rho a \equiv \rho \partial^{2}r/\partial t^{2}\) we have
 </p>
 
-<div class="latex" id="orgb24f96c">
+<div class="latex" id="org1bef892">
 \begin{equation}\label{eq:dyn}
 \rho \frac{\partial^{2} r}{\partial t^{2}} = -\frac{dP}{dr} -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
@@ -688,7 +688,7 @@ conservation \(f = \rho a \equiv \rho \partial^{2}r/\partial t^{2}\) we have
 </div>
 
 <p>
-where since P decreases inwards, dP/dr&lt;0, so the first term on the
+where since P decreases inwards, \(dP/dr<0\), so the first term on the
 l.h.s. pushes outwards (positive radial acceleration), while gravity
 pulls inward, as one would expect.
 </p>
@@ -703,22 +703,22 @@ but what happens if we turn one off?
 <h4 id="orgd49d0e3"><a href="#orgd49d0e3">Explosion timescale</a></h4>
 <div class="outline-text-4" id="text-orgd49d0e3">
 <p>
-Let's turn off gravity, setting g = - Gm/r<sup>2 </sup>&rarr; 0! To estimate how long it takes for the pressure
-gradient to push the gas out to a radius comparable to the radius of
-the star we can do the following rough substitution in the dynamical
-equation above:
+Let's turn off gravity, setting \(g = - Gm/r^{2 }\rightarrow 0\)! To
+estimate how long it takes for the pressure gradient to push the gas
+out to a radius comparable to the radius of the star we can do the
+following rough substitution in the dynamical equation above:
 </p>
 <ul class="org-ul">
-<li>&part;<sup>2</sup> r &rarr; R (outer radius of the star)</li>
-<li>&part; t<sup>2</sup> &rarr; &tau;<sub>expl</sub><sup>2</sup> (what we want to estimate)</li>
-<li>dP/dr&rarr; P<sub>avg</sub>/R with P<sub>avg</sub> some averaged pressure in the star</li>
-<li>&rho; &rarr; &rho;<sub>avg</sub> some averaged density of the star</li>
+<li>\(\partial^{2} r \rightarrow R\) (outer radius of the star)</li>
+<li>\(\partial t^{2} \rightarrow \tau_mathrm{expl}^{2}\) (what we want to estimate)</li>
+<li>\(dP/dr\rightarrow P_\mathrm{avg}/R\) with \(P_\mathrm{avg}\) some averaged pressure in the star</li>
+<li>\(\rho \rightarrow \rho_\mathrm{avg}\) some averaged density of the star</li>
 </ul>
 <p>
 and we obtain:
 </p>
 
-<div class="latex" id="org640f81f">
+<div class="latex" id="org082bcc1">
 \begin{equation}
 \tau_\mathrm{expl} \simeq \frac{R}{\sqrt{\frac{P_{avg}}{\rho_{avg}}_{}}} \simeq \frac{R}{c_{s}}\ \ .
 \end{equation}
@@ -726,8 +726,10 @@ and we obtain:
 </div>
 
 <p>
-where, if we interpret P and &rho; as some average values throughout the
-star the sound speed c<sub>s</sub><sup>2</sup> = P/&rho; appears!
+where, if we interpret \(P\) and \(\rho\) as some average values throughout the
+star the sound speed \(c_{s}^{2} = P/\rho\) appears! The timescale for the
+internal pressure of the stellar gas to "blow up" the star is of the
+order of the sound-crossing time.
 </p>
 </div>
 </div>
@@ -738,25 +740,25 @@ star the sound speed c<sub>s</sub><sup>2</sup> = P/&rho; appears!
 <p>
 Almost by definition, this is how the star would collapse if there
 were no forces other than gravity, so let's turn off the pressure
-gradient dP/dr&rarr;0. Then, as above:
+gradient \(dP/dr\rightarrow0\). Then, as above:
 </p>
 <ul class="org-ul">
-<li>&part;<sup>2</sup> r &rarr; R (outer radius of the star)</li>
-<li>&part; t<sup>2</sup> &rarr; &tau;<sub>ff</sub><sup>2</sup> (what we want to estimate)</li>
-<li>m &rarr; M (total mass)</li>
+<li>\(\partial^{2} r \rightarrow R\) (outer radius of the star)</li>
+<li>\(\partial t^{2} \rightarrow \tau_{ff}^{2}\) (what we want to estimate)</li>
+<li>\(m \rightarrow M\) (total mass)</li>
 </ul>
 <p>
 we get:
 </p>
 
-<div class="latex" id="org8f59daf">
+<div class="latex" id="org2347def">
 \begin{equation}
 \tau_\mathrm{ff} \simeq \sqrt{\frac{R^{3}}{GM}} \simeq \sqrt{\frac{1}{G\rho_\mathrm{avg}}}\ \ ,
 \end{equation}
 
 </div>
 <p>
-with &rho;<sub>avg</sub> = 3M/(4&pi; R<sup>3</sup>) average density of the star. Note that here we
+with \(\rho_{avg} = 3M/(4\pi R^{3})\) average density of the star. Note that here we
 have been very loose with the &pi; factors and averages.
 </p>
 
