@@ -68,7 +68,7 @@ describing the properties of the fluid as the boat moves with it.
 [[./images/Lagrangian_kayak.jpg]]
 
 In a Lagrangian system of coordinates, the total time derivative can
-be written as:
+be written using the "chain rule" as:
 
 #+begin_latex
 \begin{equation}
@@ -127,8 +127,9 @@ the center of the star. This allows for the calculation of
 :Question:
  - *Q*: can you think of cases where a star  may not be spherical?
 
+   #+CAPTION: [[https://uarizona.co1.qualtrics.com/jfe/form/SV_0j0MKbOTgowDkVg][Link]] to survey on spherical symmetry
    #+ATTR_HTML: :width 20%
-   [[./images/HSE-QR.png]]
+   [[./images/QR-HSE.png]]
 
 :end:
 
