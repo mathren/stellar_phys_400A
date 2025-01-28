@@ -101,7 +101,7 @@ given radius m\equiv m(r), thus express \Psi(r,t) =\Psi(r(m), t)\rightarrow \Psi
 Derivatives can then be expressed with the chain rule:
 #+begin_latex
 \begin{equation}
- \frac{\partial}{\partial m} = \frac{\partial r}{\partial m} \frac{\partial}{\partial m} \ \ .
+ \frac{\partial}{\partial m} = \frac{\partial r}{\partial m} \frac{\partial}{\partial r} \ \ .
 \end{equation}
 #+end_latex
 
@@ -436,7 +436,7 @@ conservation $f = \rho a \equiv \rho \partial^{2}r/\partial t^{2}$ we have
 \end{equation}
 #+end_latex
 
-where since P decreases inwards, $dP/dr<0$, so the first term on the
+where since P decreases outwards, $dP/dr<0$, so the first term on the
 l.h.s. pushes outwards (positive radial acceleration), while gravity
 pulls inward, as one would expect.
 

@@ -330,16 +330,16 @@ for a decent fit to all these parameters):
    of time (i.e., radial velocity curve)
  - \omega \rightarrow similarly as e, it influences the shape of the radial velocity
    curve and can be deduced from it
- - asin(i) \rightarrow if the binary is SB2, then we can measure K_{1}\equiv K_{1}(a_{1})
-   and K_{2}\equiv K_{2} (a_{2}) and use the relation between a_{1}+a_{2} = a to work
+ - $a\sin(i)$ \rightarrow if the binary is SB2, then we can measure $K_{1}\equiv K_{1}(a_{1})$
+   and $K_{2 }\equiv K_{2} (a_{2})$ and use the relation between $a_{1}+a_{2} = a$ to work
    out asin(i)
  - \nu \rightarrow this is less directly obtained by performing an orbital fit
    using other orbital parameters (mean anomaly and eccentric anomaly)
 
 *N.B.:* In a real observation, one also needs to remove the component
 along the line of sight due to the motion of the Earth around the Sun,
-and the peculiar motion of the Sun (i.e., v_{rad} from Eq. \ref{eq:vrad}
-\rightarrow v_{rad}-\gamma with \gamma peculiar velocity of the observer).
+and the peculiar motion of the Sun (i.e., $v_\mathrm{rad}$ from Eq. \ref{eq:vrad}
+$\rightarrow v_\mathrm{rad}-\gamma$ with \gamma peculiar velocity of the observer).
 
 #+CAPTION: Example of a radial velocity curve for a /circular/ (e=0) binary in the SMC from the presently ongoing BLOeM survey ([[https://ui.adsabs.harvard.edu/abs/2024A%26A...690A.289S/abstract][Shenar et al. 2024]]). Black data points are measurements of the radial velocity from one spectrum (one epoch), these are phase-folded (from the inferred period one can determine the phase of the binary at each epoch and use it as x-axis). The red curve is a best fit model with the gray band showing a 3\sigma uncertainty. The bottom panel shows the residuals between the models and the observations. Credits: Dr. N. Britavskiy. For more examples, see also Fig. 1 and 2 in [[https://ui.adsabs.harvard.edu/abs/2022A%26A...664A.159M/abstract][Mahy et al. 2022]].
 #+ATTR_HTML: :width 100%
@@ -462,8 +462,8 @@ problem!
  binary star system, it is determined that the orbital period is 6.31
  yr, and the maximum radial velocities of Stars A and B are 5.4 km s^{-1}
  and 22.4 km s^{−1}, respectively. Furthermore, the time period between
- first contact and minimum light (t_{b} − t_{a}) is 0.58 d, the length
- of the primary minimum (t_{c}− t_{b}) is 0.64 d, and the apparent
+ first contact and minimum light (t_{b} − t_{a}) is 0.58 days, the length
+ of the primary minimum (t_{c}− t_{b}) is 0.64 days, and the apparent
  bolometric magnitudes of maximum, primary minimum, and secondary
  minimum are 5.40 magnitudes, 9.20 magnitudes, and 5.44 magnitudes,
  respectively. From this information, and assuming circular orbits,
