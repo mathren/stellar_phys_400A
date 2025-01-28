@@ -420,7 +420,7 @@ P_\mathrm{center} = \frac{GM^{2}}{R^{4}}\ \ ,
 #+end_latex
 
 Plugging in the numbers for the Sun this gives $P_{center}\simeq 10^{16}
-dyne cm^{-2}\simeq 10^{10$} atmospheres. Although this a is very imprecise
+dyne cm^{-2}\simeq 10^{10}$ atmospheres. Although this a is very imprecise
 estimate, it already gives the idea that the pressure in the center of
 the Sun must be extremely high. See Onno Pols chapter 2 for more
 precise estimates and lower bounds.
@@ -428,7 +428,7 @@ precise estimates and lower bounds.
 ** Dynamical timescale estimates
 Let's say that the star was not in hydrostatic equilibrium, but still
 spherically symmetric. Returning to the general form for the momentum
-conservation $f = \rho a \equiv \rho \partial^{2}r/\partial t^{2$} we have
+conservation $f = \rho a \equiv \rho \partial^{2}r/\partial t^{2}$ we have
 
 #+begin_latex
 \begin{equation}\label{eq:dyn}
