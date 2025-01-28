@@ -266,7 +266,7 @@ already encountered. Thanks to the spherical symmetry assumption, we
 don't even need to really solve Poisson's equation to make a stellar
 model! The gravitational force acting on a spherical shell of mass $dm
 = 4\pi r^{2}\rho dr$ is thus just $-gdm = -Gmdm/r^{2$}, or per unit volume $f_\mathrm{grav}
-= -g\rho = -Gm\rho/r^{2$}, where the minus sign is to explicitly indicate that
+= -g\rho = -Gm\rho/r^{2}$, where the minus sign is to explicitly indicate that
 this force points towards the center of the star.
 
 *** Pressure gradient
