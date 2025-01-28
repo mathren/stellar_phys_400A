@@ -20,9 +20,17 @@ evolve in time. This will take a few lectures to construct, and it
 will require several approximations - I will try to highlight these
 when we encounter them.
 
-Note that this will take us away from directly observable phenomena,
-and push us into theoretical modeling based on physical understanding
-that needs to be /indirectly/ validated on observations.
+These equations express the conservation of mass, momentum, and
+energy, plus equations that describe the changes in chemical
+composition, and an equation that relates thermodynamic quantities to
+each other. These are typically expressed in a specific form for
+stellar evolution applications, to make the problem of determining the
+/internal structure/ of a star and how it evolves tractable.
+
+Note that deriving these equations will take us away from directly
+observable phenomena, and push us into theoretical modeling based on
+physical understanding that needs to be /indirectly/ validated on
+observations.
 
 Before we get into arguments specific to stars, let's review briefly
 hydrodynamical coordinate systems that we will be using to describe
@@ -194,7 +202,7 @@ independent variables here (i.e., \partial r/\partial t = 0) we obtain:
 \frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial (r^{2}\rho v)}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \ ,
 \end{equation}
 #+end_latex
-with \partial_{\theta}\equiv\partial_{\varphi}\equiv 0 for the last one, that is
+with \partial_{\theta}\equiv\partial_{\phi}\equiv 0 for the last one, that is
 the typical form of the mass continuity equation in spherical
 symmetry.
 
