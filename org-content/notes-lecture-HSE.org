@@ -230,8 +230,8 @@ Consider the equation of motion of a parcel of stellar gas, $F = dp/dt
 = ma$ (for constant $m$), or often more conveniently in fluid dynamics,
 work per unit volume with $f = dF/dV$ and thus $f=\rho a$ with $\rho = dm/dV$ and
 $dV=dAdr \Rightarrow V=\int dAdr$ the volume. Let's start by writing down explicitly
-the forces that we think are important for an isolated, non-rotating,
-non-magnetic star.
+the forces that we think are important for an *isolated*, *non-rotating*,
+*non-magnetic* star.
 
 *** Gravity
 Since by definition a star is a self-gravitating body (*N.B.:* so is a
@@ -248,11 +248,11 @@ which is a solution of the Poisson equation:
 
 where the second form assumes already spherical symmetry. Note how
 this equation does not make the problem worse: we have a new variable
-\Phi but the r.h.s. only depends on the density \rho which is already
+$\Phi$ but the r.h.s. only depends on the density $\rho$ which is already
 appearing in Eq. \ref{eq:mass_conservation}.
 
-We can introduce the gravitational acceleration g = - \nabla\Phi, which in
-spherical symmetry only has a non-zero radial component \Rightarrow g = - d\Phi/dr
+We can introduce the gravitational acceleration $g = - \nabla\Phi$, which in
+spherical symmetry only has a non-zero radial component \Rightarrow $g = - d\Phi/dr$
 which from Newton's theory of gravity we know to be
 
 #+begin_latex
@@ -261,20 +261,24 @@ which from Newton's theory of gravity we know to be
 \end{equation}
 #+end_latex
 
-where m\equiv m(r) is the mass enclosed within a certain radius r, which we
+where $m\equiv m(r)$ is the mass enclosed within a certain radius $r$, which we
 already encountered. Thanks to the spherical symmetry assumption, we
 don't even need to really solve Poisson's equation to make a stellar
-model! The gravitational force acting on a spherical shell of mass dm
-= 4\pi r^{2}\rho dr is thus just -gdm = -Gmdm/r^{2}, or per unit volume f_{grav}
-= -g\rho = -Gm\rho/r^{2}, where the minus sign is to explicitly indicate that
+model! The gravitational force acting on a spherical shell of mass $dm
+= 4\pi r^{2}\rho dr$ is thus just $-gdm = -Gmdm/r^{2$}, or per unit volume $f_\mathrm{grav}
+= -g\rho = -Gm\rho/r^{2$}, where the minus sign is to explicitly indicate that
 this force points towards the center of the star.
 
 *** Pressure gradient
-The other contribution we need to include in our f = \rho a equation is
+The other contribution we need to include in our $f = \rho a$ equation is
 from the pressure. We could already use dimensional analysis to guess
 in what form pressure can enter the l.h.s. of the equation:
 
+#+begin_latex
+\begin{equation}
 [P] = [force]/[area] \Rightarrow [P]/[length] = [force]/[volume] \equiv [f]
+\end{equation}
+#+end_latex
 
 This suggests that the pressure divided an appropriate length scale
 has the right dimension to enter the force per unit volume f. This in
