@@ -276,7 +276,7 @@ in what form pressure can enter the l.h.s. of the equation:
 
 #+begin_latex
 \begin{equation}
-[P] = [force]/[area] \Rightarrow [P]/[length] = [force]/[volume] \equiv [f]
+[P] = [\mathrm{force}]/[\mathrm{area}] \Rightarrow [P]/[\mathrm{length}] = [\mathrm{force}]/[\mathrm{volume}] \equiv [f]
 \end{equation}
 #+end_latex
 
@@ -290,28 +290,28 @@ turn suggests that maybe what we need is the pressure /gradient/!
 [[./images/HSE-sketch.png]]
 
 
-Let's have a slightly more formal look at how this may work. Because of
+Let's now have a slightly more formal look. Because of
 spherical symmetry, the pressure in the horizontal direction (which in
 stellar context always means in the plane orthogonal to the radial
 direction) is perfectly balanced, and the pressure only depends on the
-radius P\equiv P(r) (\equiv P(r(m)) \equiv P(m)).
+radius $P\equiv P(r) (\equiv P(r(m)) \equiv P(m))$.
 
 The net force per unit area on each side of a spherical shell of gas
-of thickness dr is P(r) at the inner boundary and P(r+dr) at the outer
-boundary. Therefore, dF_{press} = P(r)dA - P(r+dr)dA \simeq dP/dr dA where we
-used P(r+dr)\simeq P(r)+(dP/dr)dr. Now using dm = \rho drdA and dividing by dV
-= drdA we finally obtain f_{press} = - dP/dr.
+of thickness dr is $P(r)$ at the inner boundary and $P(r+dr)$ at the outer
+boundary. Therefore, $dF_\mathrm{press} = P(r)dA - P(r+dr)dA \simeq dP/dr dA$ where we
+used $P(r+dr)\simeq P(r)+(dP/dr)dr$. Now using $dm = \rho drdA$ and dividing by $dV
+= drdA$ we finally obtain $f_\mathrm{press} = - dP/dr$.
 
 *** Combining the two
 
 We have now an explicit form for the two most important forces in a
-(isolated, non-rotating, non-magnetic) star f = f_{grav} + f_{pres} = -g\rho - dP/dr \equiv \rho
-a.
+(isolated, non-rotating, non-magnetic) star $f = f_{grav} + f_{pres} = -g\rho -
+dP/dr \equiv \rho a$.
 
 Since stars don't change that much on short timescales (we will see
 exceptions later, and define relevant timescales too), we can assume
 that overall the acceleration a of each parcel of gas is zero in most
-cases, that is a=0. /Stars are generally in hydrostatic equilibrium/. In
+cases, that is $a=0$. /Stars are generally in hydrostatic equilibrium/. In
 this case the conservation of momentum becomes
 
 #+begin_latex
@@ -320,7 +320,7 @@ this case the conservation of momentum becomes
 \end{equation}
 #+end_latex
 
-or changing to have m has the independent variable, to have a
+or changing to have $m$ has the independent variable, to have a
 Lagrangian treatment:
 
 #+begin_latex
@@ -342,8 +342,8 @@ that the gravitational pull of the stellar gas is compensated by the
 pressure gradient inside the star. This also means that it is the
 gravity of the star that imposes the pressure stratification of the
 star and ultimately its structure: the pressure in each layer is just
-what is needed to support the weight of the layer above. And finally,
-the fact that dP/dm<0, that is the pressure decreases as the enclose
+what is needed to support the weight of the layer(s) above. And finally,
+the fact that $dP/dm<0$, that is the pressure decreases as the enclose
 mass increases, or equivalently, the pressure increases towards the
 center (smaller radii, smaller amount of enclosed mass) makes sense,
 if the gradient has to compensate the gravitational pull.
@@ -395,9 +395,9 @@ both observationally and theoretically.
 
 Equations Eq. \ref{eq:mass_conservation} and \ref{eq:HSE} are two
 differential equations, that under the assumption of spherical
-symmetry are ordinary differential equations (\partial_{r} \rightarrow d/dr),
-for the function m\equiv m(r) that depend on P, \rho. We thus have three
-variables (m, P, \rho) and two equations: we cannot yet solve for the
+symmetry are ordinary differential equations ($\partial_{r} \rightarrow d/dr$),
+for the function $m\equiv m(r)$ that depend on $P$, $\rho$. We thus have three
+variables $(m, P, \rho)$ and two equations: we cannot yet solve for the
 structure of a star. We will close the system of equations (meaning,
 obtain as many equations as variables, so we can solve for the stellar
 structure) later in the course.
@@ -406,9 +406,9 @@ structure) later in the course.
 
 A first estimate for the central pressure can be obtained substituting
 the local gradient with the difference from surface to the core across
-the entire mass of the star dP/dm \rightarrow (P_{surface} - P_{center})/M \simeq
--P_{center}/M, where we also use P increases inwards and thus it is
-legitimate to expect P_{center}\gg P_{surface}. Then, on the l.h.s. of Eq.
+the entire mass of the star $dP/dm \rightarrow (P_{surface} - P_{center})/M \simeq
+-P_{center}/M$, where we also use $P$ increases inwards and thus it is
+legitimate to expect $P_{center}\gg P_{surface}$. Then, on the l.h.s. of Eq.
 \ref{eq:HSE}, we should take as estimates some fraction of the total
 mass M and radius R. For the sake of simplicity, let's take the
 fraction to be 1 and drop the 4\pi:
@@ -419,8 +419,8 @@ P_\mathrm{center} = \frac{GM^{2}}{R^{4}}\ \ ,
 \end{equation}
 #+end_latex
 
-Plugging in the numbers for the Sun this gives P_{center}\simeq 10^{16}
-dyne cm^{-2}\simeq 10^{10} atmospheres. Although this a is very imprecise
+Plugging in the numbers for the Sun this gives $P_{center}\simeq 10^{16}
+dyne cm^{-2}\simeq 10^{10$} atmospheres. Although this a is very imprecise
 estimate, it already gives the idea that the pressure in the center of
 the Sun must be extremely high. See Onno Pols chapter 2 for more
 precise estimates and lower bounds.
@@ -428,7 +428,7 @@ precise estimates and lower bounds.
 ** Dynamical timescale estimates
 Let's say that the star was not in hydrostatic equilibrium, but still
 spherically symmetric. Returning to the general form for the momentum
-conservation f = \rho a \equiv \rho \partial^{2}r/\partial t^{2} we have
+conservation $f = \rho a \equiv \rho \partial^{2}r/\partial t^{2$} we have
 
 #+begin_latex
 \begin{equation}\label{eq:dyn}
