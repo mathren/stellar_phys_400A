@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-30 Thu 10:25 -->
+<!-- 2025-01-30 Thu 10:27 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - EOS (polytropic &amp; ideal gas)</title>
@@ -107,7 +107,7 @@ any other variable as independent.
 <p>
 <b>Mass continuity:</b>
 </p>
-<div class="latex" id="org3ee73b1">
+<div class="latex" id="orgaa5cf22">
 \begin{equation}\label{eq:mass_cont}
 \frac{dm}{dr} = 4\pi r^{2}\rho \Leftrightarrow  \frac{dr}{dm} = \frac{1}{4\pi r^{2} \rho}\ \ ,
 \end{equation}
@@ -120,7 +120,7 @@ where we implicitly are assuming static equilibrium (&part;<sub>t</sub> = 0).
 <p>
 <b>Hydrostatic equilibrium:</b>
 </p>
-<div class="latex" id="orgd1f281e">
+<div class="latex" id="org84dd6ad">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \Leftrightarrow \frac{dP}{dm}=-\frac{Gm}{4\pi r^{4}}\ \ .
 \end{equation}
@@ -149,7 +149,7 @@ composition, that is the ensemble of fraction by mass of elements (\(X_{i}\)
 = mass of $i$-th element/total mass):
 </p>
 
-<div class="latex" id="orgc5db054">
+<div class="latex" id="org34489ae">
 \begin{equation}\label{eq:general_EOS}
 P\equiv P(\rho, T, \{X_{i}\})
 \end{equation}
@@ -218,7 +218,7 @@ establish <i>local</i> thermal equilibrium within the layer of thickness dr.
 Let's consider the mean-free-path for particle-photon interactions first:
 </p>
 
-<div class="latex" id="orgbe3771b">
+<div class="latex" id="org9fcdeb4">
 \begin{equation}
 \ell_{\gamma} = \frac{1}{n\sigma} \equiv \frac{1}{\kappa\rho} \ \ ,
 \end{equation}
@@ -254,7 +254,7 @@ has infinite range, in principle all charged particles feel all other
 conservatively ask what is the temperature variation across &ell;<sub>&gamma;</sub>:
 </p>
 
-<div class="latex" id="org9c6fd83">
+<div class="latex" id="org672cdd9">
 \begin{equation}
 \Delta T \simeq \ell_{\gamma} \frac{dT}{dr} \le \ell_{\gamma} \frac{T_\mathrm{center} - T_\mathrm{surface}}{R} \simeq \ell_{\gamma} \frac{T_\mathrm{center}}{R}
 \end{equation}
@@ -322,7 +322,7 @@ powerlaw, although usually written (following the general form of Eq.
 \ref{eq:general_EOS}):
 </p>
 
-<div class="latex" id="orgc2d4a01">
+<div class="latex" id="orgf088591">
 \begin{equation}\label{eq:polytrope}
 P = C\rho^{\Gamma} \equiv C\rho^{1+1/n}\ \ ,
 \end{equation}
@@ -382,7 +382,7 @@ as that the energy exchanged in the particle-particle interactions is
 much small than their kinetic energy (due to their thermal motion)
 </p>
 
-<div class="latex" id="org5e6b364">
+<div class="latex" id="org6ac3647">
 \begin{equation}
 \Delta E_\mathrm{interaction} \ll k_{B} T \ \ ,
 \end{equation}
@@ -411,7 +411,7 @@ distribution. The number of particles with momentum between \(p\) and
 \(p+dp\) is
 </p>
 
-<div class="latex" id="org9507a4e">
+<div class="latex" id="org9daa3ec">
 \begin{equation}\label{eq:Maxwellian}
 n(p)dp = \frac{n}{(2\pi m k_{B} T)^{3/2}} \exp\left(-\frac{p^{2}}{2mk_{B}T}\right)4\pi p^{2}dp \ \ ,
 \end{equation}
@@ -451,7 +451,7 @@ collision will change its momentum from (\(p_{x}\), \(p_{y}\), \(p_{z}\)) to (\(
 sign. Thus
 </p>
 
-<div class="latex" id="orgbb054ca">
+<div class="latex" id="org3384289">
 \begin{equation}
 \Delta p = 2 p \cos(\theta)\  \mathrm{with}\  p=\sqrt{p_{x}^{2} + p_{y}^{2} +p_{z}^{2}}
 \end{equation}
@@ -462,7 +462,7 @@ sign. Thus
 The time between two collisions of a particle on the same wall is
 </p>
 
-<div class="latex" id="org3e2f32e">
+<div class="latex" id="orgec8653f">
 \begin{equation}
 \Delta t = \frac{2L}{v\cos(\theta)} = \frac{2}{v\cos(\theta)} \ \ ,
 \end{equation}
@@ -479,7 +479,7 @@ have
 </p>
 
 
-<div class="latex" id="org49eb5df">
+<div class="latex" id="org5e0f406">
 \begin{equation}
 dP = vp\cos^{2}(\theta)n(\theta,p)d\theta dp \ \ ,
 \end{equation}
@@ -491,7 +491,7 @@ But we can assume that the motion of the particles is isotropic, so
 \(n(\theta,p)d\theta = n(p)sin(\theta)d\theta\), and thus
 </p>
 
-<div class="latex" id="org2861ecb">
+<div class="latex" id="org7d36398">
 \begin{equation}\label{eq:P_statistic}
 dP = vp\cos^{2}(\theta)n(p)\sin(\theta)d\theta dp \Rightarrow P = \frac{1}{3}\int_{0}^{+\infty} n(p)p v dp \ \ ,
 \end{equation}
@@ -513,7 +513,7 @@ interaction!). Carrying out the integral above using the
 Maxwell-Boltzmann distribution for \(n(p)\) and \(v=p^{}/m\) gives
 </p>
 
-<div class="latex" id="org17f2cb9">
+<div class="latex" id="orgc33d204">
 \begin{equation}
 P = n k_{B} T \ \ .
 \end{equation}
@@ -533,7 +533,7 @@ where \(n_{i}\) is the number density of the ions \(i\), which have mass \(m_{u}
 with \(m_{u}\) the <i>atomic mass unit</i>:
 </p>
 
-<div class="latex" id="org4371f3a">
+<div class="latex" id="org918ae70">
 \begin{equation}
 m_{u} = 1 / N_{A} \,\mathrm{g} \simeq 1.66 \times 10^{-24} \,\mathrm{g} \ \ .
 \end{equation}
@@ -549,12 +549,12 @@ that everything has the same T because of the assumption of LTE!
 
 <p>
 We can re-write the total contribution of the ions defining the
-ion <i>mean molecular weight</i> such that \(\mu_{ion} \times m_{u}\) = "average mass of
-ions", that is \(\mu_{ion} n_{ion} = \rho/m_{u} or n_{ion} = \sum_{i} n_{i} = \sum_{i} X_{i}\rho/(A_{i}m_{u}) \equiv
-\rho/(\mu_{ion}m_{u})\) and:
+ion <i>mean molecular weight</i> such that \(\mu_\mathrm{ion} \times m_{u}\) = "average mass of
+ions", that is \(\mu_\mathrm{ion} n_\mathrm{ion} = \rho/m_{u}\) or \(n_\mathrm{ion} = \sum_{i} n_{i} = \sum_{i} X_{i}\rho/(A_{i}m_{u}) \equiv
+\rho/(\mu_\mathrm{ion}m_{u})\) and:
 </p>
 
-<div class="latex" id="orged2ab1d">
+<div class="latex" id="orgc15f572">
 \begin{equation}
 \frac{1}{\mu_\mathrm{ion}} = \sum_{i}\frac{X_{i}\rho}{A_{i}} \ \ .
 \end{equation}
@@ -568,7 +568,7 @@ ion carries charge \(+Z_{i}e\) and each electron as charge \(-e\): \((\sum_{i} Z
 n_{e})e = 0\). Thus
 </p>
 
-<div class="latex" id="org9dd08d5">
+<div class="latex" id="org9d7a7b8">
 \begin{equation}
 \frac{1}{\mu_\mathrm{e}} = \sum_{i}\frac{Z_{i}X_{i}\rho}{A_{i}} \ \ .
 \end{equation}
@@ -579,7 +579,7 @@ n_{e})e = 0\). Thus
 and we can define a combined mean molecular weight:
 </p>
 
-<div class="latex" id="orgd79d856">
+<div class="latex" id="org6f4f4a6">
 \begin{equation}
 \frac{1}{\mu} = \frac{1}{\mu_\mathrm{ion}}+\frac{1}{\mu_{e}} \ \ ,
 \end{equation}
@@ -590,7 +590,7 @@ So that the total pressure of a mixture of ideal, classical and
 non-relativistic gas is
 </p>
 
-<div class="latex" id="org6dd1f9f">
+<div class="latex" id="org06da108">
 \begin{equation}\label{eq:ideal_gas_EOS}
 P = \frac{\rho}{\mu m_{u}}k_{B}T
 \end{equation}
@@ -615,7 +615,7 @@ ideal, non-relativistic, classical gas.
 <p>
 The <i>mean molecular weight</i> we have introduced above may seem a bit
 arbitrary, but it has a clear physical interpretation: it is the
-average number of particles per unit atomic mass \(m_{u\)}.
+average number of particles per unit atomic mass \(m_{u}\).
 </p>
 
 <p>
@@ -623,7 +623,7 @@ For a fully ionized gas (i.e., where every ion is stripped of <i>all</i> its
 electrons):
 </p>
 
-<div class="latex" id="orgaa7cf41">
+<div class="latex" id="org1ab4e20">
 \begin{equation}
 \mu = \frac{1}{\sum_{i}X_{i}\left(\frac{Z_{i}+1}{A_{i}}\right)} \ \ ,
 \end{equation}
@@ -653,7 +653,7 @@ typically half as many as the nucleons). Therefore, for fully ionized
 gas, we can simplify the mean molecular weight to:
 </p>
 
-<div class="latex" id="orgddff554">
+<div class="latex" id="org2704fd8">
 \begin{equation}
 \mu \simeq \frac{1}{2X + \frac{3Y}{4} + \frac{Z}{2}} \ \ ,
 \end{equation}
@@ -675,7 +675,7 @@ Eq. \ref{eq:P_statistic} can be used to relate \(P\) to the internal
 energy density of a gas. This can be defined as:
 </p>
 
-<div class="latex" id="org5dc841d">
+<div class="latex" id="orge3b208a">
 \begin{equation}\label{eq:E_statistic}
 du_\mathrm{int} = \varepsilon(p)n(p)dp  \ \ ,
 \end{equation}
@@ -691,7 +691,7 @@ If the particles in the (ideal) gas are non-relativistic, then
 and thus:
 </p>
 
-<div class="latex" id="org49130af">
+<div class="latex" id="org14b74e4">
 \begin{equation}
 P = \frac{2}{3} u_\mathrm{int} \ \ .
 \end{equation}
@@ -703,7 +703,7 @@ If instead the gas is ultra-relativistic, then \(\varepsilon = pc\) (neglecting 
 mass term in the energy since \(pc \gg mc^{2}\)), and thus:
 </p>
 
-<div class="latex" id="org8a0bd24">
+<div class="latex" id="orgaf966c3">
 \begin{equation}
 P=\frac{u_\mathrm{int}}{3} \ \ .
 \end{equation}
@@ -722,7 +722,7 @@ interaction between the particles (ions and electrons) is going to be
 through the Coulomb force, leading to energy exchanges of the order of:
 </p>
 
-<div class="latex" id="org0c37048">
+<div class="latex" id="org697f2d0">
 \begin{equation}
 \varepsilon_\mathrm{Coulomb} \simeq \frac{Z^{2}e^{2}}{d} \ \ ,
 \end{equation}
@@ -737,7 +737,7 @@ The ratio of these two is often called the Coulomb parameter
 (neglecting constants of order unity):
 </p>
 
-<div class="latex" id="org5819ad8">
+<div class="latex" id="org13e5fe0">
 \begin{equation}
 \Gamma_{C} = \frac{\varepsilon_\mathrm{Coulomb}}{\varepsilon_\mathrm{thermal}} \simeq \frac{Z^{2}e^{2}}{dk_{B}T} \simeq \frac{(Ze)^{2}}{k_{B}T}\left(\frac{\rho}{Am_{u}}\right)^{1/3} \simeq 2.275\times 10^{5} Z^{2} A^{-1/3}\left(\frac{\rho}{\mathrm{g\ cm^{-3}}}\right)^{1/3 }\left(\frac{T}{\mathrm{K}}\right)^{-1}\ \ .
 \end{equation}

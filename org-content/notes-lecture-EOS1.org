@@ -353,9 +353,9 @@ with $n_{i} = X_{i}\rho/(A_{i} m_{u})$. Note that we are implicitly using the fa
 that everything has the same T because of the assumption of LTE!
 
 We can re-write the total contribution of the ions defining the
-ion /mean molecular weight/ such that $\mu_{ion} \times m_{u}$ = "average mass of
-ions", that is $\mu_{ion} n_{ion} = \rho/m_{u} or n_{ion} = \sum_{i} n_{i} = \sum_{i} X_{i}\rho/(A_{i}m_{u}) \equiv
-\rho/(\mu_{ion}m_{u})$ and:
+ion /mean molecular weight/ such that $\mu_\mathrm{ion} \times m_{u}$ = "average mass of
+ions", that is $\mu_\mathrm{ion} n_\mathrm{ion} = \rho/m_{u}$ or $n_\mathrm{ion} = \sum_{i} n_{i} = \sum_{i} X_{i}\rho/(A_{i}m_{u}) \equiv
+\rho/(\mu_\mathrm{ion}m_{u})$ and:
 
 #+begin_latex
 \begin{equation}
@@ -399,7 +399,7 @@ ideal, non-relativistic, classical gas.
 *** Physical interpretation of $\mu$
 The /mean molecular weight/ we have introduced above may seem a bit
 arbitrary, but it has a clear physical interpretation: it is the
-average number of particles per unit atomic mass $m_{u$}.
+average number of particles per unit atomic mass $m_{u}$.
 
 For a fully ionized gas (i.e., where every ion is stripped of /all/ its
 electrons):
