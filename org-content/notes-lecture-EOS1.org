@@ -409,7 +409,7 @@ electrons):
 \mu = \frac{1}{\sum_{i}X_{i}\left(\frac{Z_{i}+1}{A_{i}}\right)} \ \ ,
 \end{equation}
 #+end_latex
-In fact, for every $i$-th species that corresponds to a fraction $X_{i$}
+In fact, for every $i$-th species that corresponds to a fraction $X_{i}$
 of the total mass, that is $X_{i}/A_{i}$ in number density, we have $Z_{i}$
 electrons plus one nucleus that contribute. This approximation is
 usually good in the stellar interior, but as one moves outwards in the
