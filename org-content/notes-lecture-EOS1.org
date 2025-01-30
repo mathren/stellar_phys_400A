@@ -86,8 +86,8 @@ photon-particles interactions).
   realistic?
 :end:
 
-*Stars are not in global thermal equilibrium*. They are in
-"/gravothermal equilibrium/": the hydrostatic requirement and the
+*Stars are not in global thermal equilibrium*. They are in "/gravothermal
+equilibrium/": the hydrostatic equilibrium requirement and the
 self-gravity determine the thermal state of each layer so that the
 pressure gradient can balance gravity.
 
@@ -147,7 +147,7 @@ Thus, we can define layers of the star with $\ell_\mathrm{b} \ll \ell_{\gamma}
 \ll dr \ll R$ where locally the temperature variation across the layer is
 negligible, and the assumption of /local thermal equilibrium/ (LTE)
 holds well. (*N.B.:* you can revise this a posteriori once we have an
-EOS and a way to estimate of T_{center}!)
+EOS and a way to estimate of $T_\mathrm{center}$!)
 
 This may not be true close to the surface, where \ell_{\gamma} progressively
 increases (because \rho decreases). There we may need to care about the
@@ -166,18 +166,18 @@ the /local/ thermal timescale, which can be estimate in multiple ways,
 but it is usually very short compared to the star evolutionary
 timescale (we will see this in more detail later). Thus the assumption
 of LTE holds locally (as the "L" indicates) at any time! Therefore,
-while we cannot really define a physically meaningful T for the entire
-star (beyond some rough averaged quantity), we can meaningfully define
-a /local/ T(r) or T(m) temperature that characterizes the gas /and/ the
-radiation at that radius/mass coordinate. The local validity of the
-LTE assumption allows us to define thermodynamic quantities from
-statistical mechanics and look for a relation between them, that is an
-EOS.
+while we cannot really define a physically meaningful $T$ for the
+entire star (beyond some rough averaged quantity), we can meaningfully
+define a /local/ $T(r)$ or $T(m)$ temperature that characterizes the gas
+/and/ the radiation at that radius/mass coordinate. The local validity
+of the LTE assumption allows us to define thermodynamic quantities
+from statistical mechanics and look for a relation between them, that
+is an EOS.
 
 ** Polytropic EOS
 Polytropic EOS as a special case of /barotropic/ EOS, which are all the
 EOSs for which /the density depends only on the pressure and not on
-the temperature or composition/: \rho\equiv\rho(P). These have applications
+the temperature or composition/: $ \rho\equiv\rho(P)$. These have applications
 beyond stellar physics (e.g., for atmospheric physics). A polytropic
 EOS is thus a barotropic EOS where the \rho\equiv\rho(P) is in the form of a
 powerlaw, although usually written (following the general form of Eq.
@@ -185,21 +185,22 @@ powerlaw, although usually written (following the general form of Eq.
 
 #+begin_latex
 \begin{equation}\label{eq:polytrope}
-P = K\rho^{\Gamma} \equiv K\rho^{1+1/n}\ \ ,
+P = C\rho^{\Gamma} \equiv C\rho^{1+1/n}\ \ ,
 \end{equation}
 #+end_latex
 
-where K is a constant, and by definition \Gamma=\partial ln P /\partial ln \rho = 1+1/n. The
-form of the EOS in Eq. \ref{eq:polytrope} may seem particularly
+where C is a constant, and by definition $\Gamma=\partial ln P /\partial ln \rho = 1+1/n$.
+The form of the EOS in Eq. \ref{eq:polytrope} may seem particularly
 artificial, but it is helpful because it does not introduce any new
 variable, and thus "closes" (together with Eq. \ref{eq:mass_cont} and
 Eq. \ref{eq:HSE}) the system of equations describing a star! This is
 the system of equations used to create, for example, analytic stellar
 models (e.g., the Lane-Emden equation), which is one of the topics for
 the projects. These can be useful to initialize roughly correct
-stellar structures in multi-D hydrodynamic codes for particular
-applications (e.g., a common envelope evolution simulation!), but they
-are usually insufficient for modern stellar physics application.
+stellar structures in multi-dimensional hydrodynamic codes for
+particular applications (e.g., a common envelope evolution
+simulation!), but they are usually insufficient for modern stellar
+physics application.
 
 More importantly, there are various /physical/ situations (as we will
 return on during [[./notes-lecture-EOS2.org][the second lecture on EOSs]]) in which EOS of this form
@@ -212,20 +213,29 @@ occur, and are useful to describe real observed stars.
 Often, different polytropes in the form of Eq. \ref{eq:polytrope} can
 be used for different layers of the stars (piece-wise polytropes) as
 useful approximation. In this cases, it is important to ensure the
-/continuity/ of P at the points where different polytropes are stitched
-together.
+/continuity/ of $P$ at the points where different polytropes are
+stitched together.
 
 :Question:
 - *Q*: why do we want P to be a continuous function in stars?
 :end:
 
 ** Ideal gas
-In general, it is not possible to have an EOS independent of T and/or
-the composition {X_{i}}. Let's consider a /perfect gas/, that is a gas of
-particles that do interact (otherwise they could never exchange energy
-and be in thermal equilibrium!), but such as that the energy exchanged
-in the particle-particle interactions is much small than their kinetic
-energy (due to their thermal motion).
+In general, it is not possible to have an EOS independent of $T$
+and/or the composition ${X_{i}}$. Let's consider a /perfect gas/, that is a
+gas of particles that do interact with each other (otherwise they
+could never exchange energy and be in thermal equilibrium!), but such
+as that the energy exchanged in the particle-particle interactions is
+much small than their kinetic energy (due to their thermal motion)
+
+#+begin_latex
+\begin{equation}
+\Delta E_\mathrm{interaction} \ll k_{B} T \ \ ,
+\end{equation}
+#+end_latex
+
+and other than these interaction between particles, they are free to
+move (no external potential).
 
 To obtain the pressure of such gas, we may need to consider the
 distribution in velocity space of these particles. Let's for a moment

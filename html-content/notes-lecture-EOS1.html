@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-30 Thu 10:07 -->
+<!-- 2025-01-30 Thu 10:14 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - EOS (polytropic &amp; ideal gas)</title>
@@ -107,7 +107,7 @@ any other variable as independent.
 <p>
 <b>Mass continuity:</b>
 </p>
-<div class="latex" id="org1af8a81">
+<div class="latex" id="org61eb6d1">
 \begin{equation}\label{eq:mass_cont}
 \frac{dm}{dr} = 4\pi r^{2}\rho \Leftrightarrow  \frac{dr}{dm} = \frac{1}{4\pi r^{2} \rho}\ \ ,
 \end{equation}
@@ -120,7 +120,7 @@ where we implicitly are assuming static equilibrium (&part;<sub>t</sub> = 0).
 <p>
 <b>Hydrostatic equilibrium:</b>
 </p>
-<div class="latex" id="org6f6a1b7">
+<div class="latex" id="org2653623">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \Leftrightarrow \frac{dP}{dm}=-\frac{Gm}{4\pi r^{4}}\ \ .
 \end{equation}
@@ -149,7 +149,7 @@ composition, that is the ensemble of fraction by mass of elements (\(X_{i}\)
 = mass of $i$-th element/total mass):
 </p>
 
-<div class="latex" id="orgb2fba14">
+<div class="latex" id="orge5638b2">
 \begin{equation}\label{eq:general_EOS}
 P\equiv P(\rho, T, \{X_{i}\})
 \end{equation}
@@ -200,8 +200,8 @@ realistic?</li>
 </ul>
 
 <p>
-<b>Stars are not in global thermal equilibrium</b>. They are in
-"<i>gravothermal equilibrium</i>": the hydrostatic requirement and the
+<b>Stars are not in global thermal equilibrium</b>. They are in "<i>gravothermal
+equilibrium</i>": the hydrostatic equilibrium requirement and the
 self-gravity determine the thermal state of each layer so that the
 pressure gradient can balance gravity.
 </p>
@@ -218,7 +218,7 @@ establish <i>local</i> thermal equilibrium within the layer of thickness dr.
 Let's consider the mean-free-path for particle-photon interactions first:
 </p>
 
-<div class="latex" id="org4576dfe">
+<div class="latex" id="org37aa859">
 \begin{equation}
 \ell_{\gamma} = \frac{1}{n\sigma} \equiv \frac{1}{\kappa\rho} \ \ ,
 \end{equation}
@@ -254,7 +254,7 @@ has infinite range, in principle all charged particles feel all other
 conservatively ask what is the temperature variation across &ell;<sub>&gamma;</sub>:
 </p>
 
-<div class="latex" id="orgaf7adea">
+<div class="latex" id="org67d56e6">
 \begin{equation}
 \Delta T \simeq \ell_{\gamma} \frac{dT}{dr} \le \ell_{\gamma} \frac{T_\mathrm{center} - T_\mathrm{surface}}{R} \simeq \ell_{\gamma} \frac{T_\mathrm{center}}{R}
 \end{equation}
@@ -273,7 +273,7 @@ Thus, we can define layers of the star with \(\ell_\mathrm{b} \ll \ell_{\gamma}
 \ll dr \ll R\) where locally the temperature variation across the layer is
 negligible, and the assumption of <i>local thermal equilibrium</i> (LTE)
 holds well. (<b>N.B.:</b> you can revise this a posteriori once we have an
-EOS and a way to estimate of T<sub>center</sub>!)
+EOS and a way to estimate of \(T_\mathrm{center}\)!)
 </p>
 
 <p>
@@ -298,13 +298,13 @@ the <i>local</i> thermal timescale, which can be estimate in multiple ways,
 but it is usually very short compared to the star evolutionary
 timescale (we will see this in more detail later). Thus the assumption
 of LTE holds locally (as the "L" indicates) at any time! Therefore,
-while we cannot really define a physically meaningful T for the entire
-star (beyond some rough averaged quantity), we can meaningfully define
-a <i>local</i> T(r) or T(m) temperature that characterizes the gas <i>and</i> the
-radiation at that radius/mass coordinate. The local validity of the
-LTE assumption allows us to define thermodynamic quantities from
-statistical mechanics and look for a relation between them, that is an
-EOS.
+while we cannot really define a physically meaningful \(T\) for the
+entire star (beyond some rough averaged quantity), we can meaningfully
+define a <i>local</i> \(T(r)\) or \(T(m)\) temperature that characterizes the gas
+<i>and</i> the radiation at that radius/mass coordinate. The local validity
+of the LTE assumption allows us to define thermodynamic quantities
+from statistical mechanics and look for a relation between them, that
+is an EOS.
 </p>
 </div>
 </div>
@@ -315,32 +315,33 @@ EOS.
 <p>
 Polytropic EOS as a special case of <i>barotropic</i> EOS, which are all the
 EOSs for which <i>the density depends only on the pressure and not on
-the temperature or composition</i>: &rho;&equiv;&rho;(P). These have applications
+the temperature or composition</i>: $ &rho;&equiv;&rho;(P)$. These have applications
 beyond stellar physics (e.g., for atmospheric physics). A polytropic
 EOS is thus a barotropic EOS where the &rho;&equiv;&rho;(P) is in the form of a
 powerlaw, although usually written (following the general form of Eq.
 \ref{eq:general_EOS}):
 </p>
 
-<div class="latex" id="orgadd3eb1">
+<div class="latex" id="orgb359004">
 \begin{equation}\label{eq:polytrope}
-P = K\rho^{\Gamma} \equiv K\rho^{1+1/n}\ \ ,
+P = C\rho^{\Gamma} \equiv C\rho^{1+1/n}\ \ ,
 \end{equation}
 
 </div>
 
 <p>
-where K is a constant, and by definition &Gamma;=&part; ln P /&part; ln &rho; = 1+1/n. The
-form of the EOS in Eq. \ref{eq:polytrope} may seem particularly
+where C is a constant, and by definition \(\Gamma=\partial ln P /\partial ln \rho = 1+1/n\).
+The form of the EOS in Eq. \ref{eq:polytrope} may seem particularly
 artificial, but it is helpful because it does not introduce any new
 variable, and thus "closes" (together with Eq. \ref{eq:mass_cont} and
 Eq. \ref{eq:HSE}) the system of equations describing a star! This is
 the system of equations used to create, for example, analytic stellar
 models (e.g., the Lane-Emden equation), which is one of the topics for
 the projects. These can be useful to initialize roughly correct
-stellar structures in multi-D hydrodynamic codes for particular
-applications (e.g., a common envelope evolution simulation!), but they
-are usually insufficient for modern stellar physics application.
+stellar structures in multi-dimensional hydrodynamic codes for
+particular applications (e.g., a common envelope evolution
+simulation!), but they are usually insufficient for modern stellar
+physics application.
 </p>
 
 <p>
@@ -359,8 +360,8 @@ occur, and are useful to describe real observed stars.
 Often, different polytropes in the form of Eq. \ref{eq:polytrope} can
 be used for different layers of the stars (piece-wise polytropes) as
 useful approximation. In this cases, it is important to ensure the
-<i>continuity</i> of P at the points where different polytropes are stitched
-together.
+<i>continuity</i> of \(P\) at the points where different polytropes are
+stitched together.
 </p>
 
 <ul class="org-ul">
@@ -373,12 +374,24 @@ together.
 <h3 id="org8a462d6"><a href="#org8a462d6">Ideal gas</a></h3>
 <div class="outline-text-3" id="text-org8a462d6">
 <p>
-In general, it is not possible to have an EOS independent of T and/or
-the composition {X<sub>i</sub>}. Let's consider a <i>perfect gas</i>, that is a gas of
-particles that do interact (otherwise they could never exchange energy
-and be in thermal equilibrium!), but such as that the energy exchanged
-in the particle-particle interactions is much small than their kinetic
-energy (due to their thermal motion).
+In general, it is not possible to have an EOS independent of \(T\)
+and/or the composition \({X_{i}}\). Let's consider a <i>perfect gas</i>, that is a
+gas of particles that do interact with each other (otherwise they
+could never exchange energy and be in thermal equilibrium!), but such
+as that the energy exchanged in the particle-particle interactions is
+much small than their kinetic energy (due to their thermal motion)
+</p>
+
+<div class="latex" id="org1b607f0">
+\begin{equation}
+\Delta E_\mathrm{interaction} \ll k_{B} T \ \ ,
+\end{equation}
+
+</div>
+
+<p>
+and other than these interaction between particles, they are free to
+move (no external potential).
 </p>
 
 <p>
@@ -398,7 +411,7 @@ distribution. The number of particles with momentum between p and p+dp
 is
 </p>
 
-<div class="latex" id="org0b6bc2f">
+<div class="latex" id="orgec16f29">
 \begin{equation}\label{eq:Maxwellian}
 n(p)dp = \frac{n}{(2\pi m k_{B} T)^{3/2}} \exp\left(-\frac{p^{2}}{2mk_{B}T}\right)4\pi p^{2}dp \ \ ,
 \end{equation}
@@ -437,7 +450,7 @@ collision will change its momentum from (p<sub>x</sub>, p<sub>y</sub>, p<sub>z</
 only the component perpendicular to the wall changes sign. Thus
 </p>
 
-<div class="latex" id="orgab49f2f">
+<div class="latex" id="orgef3f165">
 \begin{equation}
 \Delta p = 2 p \cos(\theta)\  \mathrm{with}\  p=\sqrt{p_{x}^{2} + p_{y}^{2} +p_{z}^{2}}
 \end{equation}
@@ -448,7 +461,7 @@ only the component perpendicular to the wall changes sign. Thus
 The time between two collisions of a particle on the same wall is
 </p>
 
-<div class="latex" id="orgdec61d9">
+<div class="latex" id="org84f6818">
 \begin{equation}
 \Delta t = \frac{2L}{v\cos(\theta)} = \frac{2}{v\cos(\theta)} \ \ ,
 \end{equation}
@@ -465,7 +478,7 @@ have
 </p>
 
 
-<div class="latex" id="orgf3f324f">
+<div class="latex" id="org74a2f83">
 \begin{equation}
 dP =
 vp\cos^{2}(\theta)n(\theta,p)d\theta dp \ \ ,
@@ -479,7 +492,7 @@ n(&theta;,p)d&theta; = n(p)sin(&theta;)d&theta;, and thus
 </p>
 
 
-<div class="latex" id="orgfb75b66">
+<div class="latex" id="orgfd0a0e8">
 \begin{equation}\label{eq:P_statistic}
 dP = vp\cos^{2}(\theta)n(p)\sin(\theta)d\theta dp = \frac{1}{3}\int_{0}^{+\infty} n(p)p v dp \ \ ,
 \end{equation}
@@ -501,7 +514,7 @@ interaction!). Carrying out the integral above using the
 Maxwell-Boltzmann distribution for n(p) and v=p<sup>nil</sup>/m gives
 </p>
 
-<div class="latex" id="org8e014c4">
+<div class="latex" id="org83cc0ba">
 \begin{equation}
 P = n k_{B} T \ \ .
 \end{equation}
@@ -521,7 +534,7 @@ where n<sub>i</sub> is the number density of the ions i, which have mass m<sub>u
 with m<sub>u</sub> the <i>atomic mass unit</i>:
 </p>
 
-<div class="latex" id="org0b3aa4d">
+<div class="latex" id="orgda4ae8b">
 \begin{equation}
 m_{u} = 1 / N_{A} \,\mathrm{g} \simeq 1.66 \times 10^{-24} \,\mathrm{g} \ \ .
 \end{equation}
@@ -542,7 +555,7 @@ ions", that is &mu;<sub>ion</sub> n<sub>ion</sub> = &rho;/m<sub>u</sub> or n<sub
 &rho;/(&mu;<sub>ion</sub>m<sub>u</sub>) and:
 </p>
 
-<div class="latex" id="orgfe67a28">
+<div class="latex" id="org92425a0">
 \begin{equation}
 \frac{1}{\mu_\mathrm{ion}} = \sum_{i}\frac{X_{i}\rho}{A_{i}} \ \ .
 \end{equation}
@@ -556,7 +569,7 @@ ion carries charge +Z<sub>i</sub>e and each electron as charge -e: (&sum;<sub>i<
 n<sub>e</sub>)e = 0. Thus
 </p>
 
-<div class="latex" id="org2960306">
+<div class="latex" id="org165b372">
 \begin{equation}
 \frac{1}{\mu_\mathrm{e}} = \sum_{i}\frac{Z_{i}X_{i}\rho}{A_{i}} \ \ .
 \end{equation}
@@ -567,7 +580,7 @@ n<sub>e</sub>)e = 0. Thus
 and we can define a combined mean molecular weight:
 </p>
 
-<div class="latex" id="orgb1d6340">
+<div class="latex" id="org931ccdb">
 \begin{equation}
 \frac{1}{\mu} = \frac{1}{\mu_\mathrm{ion}}+\frac{1}{\mu_{e}} \ \ ,
 \end{equation}
@@ -578,7 +591,7 @@ So that the total pressure of a mixture of ideal, classical and
 non-relativistic gas is
 </p>
 
-<div class="latex" id="orgb737b3e">
+<div class="latex" id="org7ee4571">
 \begin{equation}\label{eq:ideal_gas_EOS}
 P = \frac{\rho}{\mu m_{u}}k_{B}T
 \end{equation}
@@ -611,7 +624,7 @@ For a fully ionized gas (i.e., where every ion is stripped of <i>all</i> its
 electrons):
 </p>
 
-<div class="latex" id="org9ba25ea">
+<div class="latex" id="orgea0618f">
 \begin{equation}
 \mu = \frac{1}{\sum_{i}X_{i}\left(\frac{Z_{i}+1}{A_{i}}\right)} \ \ ,
 \end{equation}
@@ -641,7 +654,7 @@ typically half as many as the nucleons). Therefore, for fully ionized
 gas, we can simplify the mean molecular weight to:
 </p>
 
-<div class="latex" id="org083616e">
+<div class="latex" id="org01d1e40">
 \begin{equation}
 \mu \simeq \frac{1}{2X + \frac{3Y}{4} + \frac{Z}{2}} \ \ ,
 \end{equation}
@@ -663,7 +676,7 @@ Eq. \ref{eq:P_statistic} can be used to relate P to the internal
 energy density of a gas. This can be defined as:
 </p>
 
-<div class="latex" id="org0fd412b">
+<div class="latex" id="orga972804">
 \begin{equation}\label{eq:E_statistic}
 du_\mathrm{int} = \varepsilon(p)n(p)dp  \ \ ,
 \end{equation}
@@ -679,7 +692,7 @@ If the particles in the (ideal) gas are non-relativistic, then
 and thus:
 </p>
 
-<div class="latex" id="org94b8d92">
+<div class="latex" id="org6c1d56f">
 \begin{equation}
 P = \frac{2}{3} u_\mathrm{int} \ \ .
 \end{equation}
@@ -691,7 +704,7 @@ If instead the gas is ultra-relativistic, then &epsilon; = pc (neglecting the
 mass term in the energy since pc &Gt; mc<sup>2</sup>), and thus:
 </p>
 
-<div class="latex" id="org8842b20">
+<div class="latex" id="org267942a">
 \begin{equation}
 P=\frac{u_\mathrm{int}}{3} \ \ .
 \end{equation}
@@ -710,7 +723,7 @@ interaction between the particles (ions and electrons) is going to be
 through the Coulomb force, leading to energy exchanges of the order of:
 </p>
 
-<div class="latex" id="orgd24d06f">
+<div class="latex" id="org5f01949">
 \begin{equation}
 \varepsilon_\mathrm{Coulomb} \simeq \frac{Z^{2}e^{2}}{d} \ \ ,
 \end{equation}
@@ -725,7 +738,7 @@ The ratio of these two is often called the Coulomb parameter
 (neglecting constants of order unity):
 </p>
 
-<div class="latex" id="orge8c6d73">
+<div class="latex" id="org924085f">
 \begin{equation}
 \Gamma_{C} = \frac{\varepsilon_\mathrm{Coulomb}}{\varepsilon_\mathrm{thermal}} \simeq \frac{Z^{2}e^{2}}{dk_{B}T} \simeq \frac{(Ze)^{2}}{k_{B}T}\left(\frac{\rho}{Am_{u}}\right)^{1/3} \simeq 2.275\times 10^{5} Z^{2} A^{-1/3}\left(\frac{\rho}{\mathrm{g\ cm^{-3}}}\right)^{1/3 }\left(\frac{T}{\mathrm{K}}\right)^{-1}\ \ .
 \end{equation}
