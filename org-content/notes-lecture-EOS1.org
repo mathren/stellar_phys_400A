@@ -189,7 +189,7 @@ P = C\rho^{\Gamma} \equiv C\rho^{1+1/n}\ \ ,
 \end{equation}
 #+end_latex
 
-where C is a constant, and by definition $\Gamma=\partial ln P /\partial ln \rho = 1+1/n$.
+where C is a constant, and by definition $\Gamma=\partial \ln P /\partial \ln \rho = 1+1/n$.
 The form of the EOS in Eq. \ref{eq:polytrope} may seem particularly
 artificial, but it is helpful because it does not introduce any new
 variable, and thus "closes" (together with Eq. \ref{eq:mass_cont} and
