@@ -279,7 +279,7 @@ Let's call the imaginary wall the xy plane and assume the collisions
 to be elastic (because we are considering an ideal gas, by definition
 any exchange of energy is negligible). For a generic particle of the
 gas, it will collide with the wall at an angle $\theta \in [0, \pi/2]$ and the
-collision will change its momentum from ($p_{x}}$, $p_{y}$, $p_{z}$) to ($p_{x}$,
+collision will change its momentum from ($p_{x}$, $p_{y}$, $p_{z}$) to ($p_{x}$,
 $p_{y}$, $-p_{z}$): only the component perpendicular to the wall changes
 sign. Thus
 
@@ -326,7 +326,7 @@ Let's consider a non-relativistic gas of classical particles (no
 quantum effects). Then $p= mv \Leftrightarrow v=p/m$ (*N.B.:* we are considering an
 ideal gas, so each particle is freely moving, no potential of
 interaction!). Carrying out the integral above using the
-Maxwell-Boltzmann distribution for $n(p) and v=p^{}/m$ gives
+Maxwell-Boltzmann distribution for $n(p)$ and $v=p^{}/m$ gives
 
 #+begin_latex
 \begin{equation}
@@ -338,8 +338,8 @@ P = n k_{B} T \ \ .
 Let's now say that we have multiple gas mixed, for example, a gas of
 ions of various species and electrons. Each gas will contribute to the
 pressure: $P_{tot} = P_{ion, tot} + P_{e} = \sum_{i} P_{ion, i} + P_{e} = (\sum_{i}n_{i} +n_{e}) k_{B}T$,
-where $n_{i}$ is the number density of the ions $i$, which have mass m_{u} A_{i}
-with m_{u} the /atomic mass unit/:
+where $n_{i}$ is the number density of the ions $i$, which have mass $m_{u} A_{i}$
+with $m_{u}$ the /atomic mass unit/:
 
 #+begin_latex
 \begin{equation}
@@ -349,13 +349,13 @@ m_{u} = 1 / N_{A} \,\mathrm{g} \simeq 1.66 \times 10^{-24} \,\mathrm{g} \ \ .
 
 Thus, we can relate the number density of the ions of species i with
 the mass density that already appears in the equations we already have
-with n_{i} = X_{i}\rho/(A_{i} m_{u}). Note that we are implicitly using the fact
+with $n_{i} = X_{i}\rho/(A_{i} m_{u})$. Note that we are implicitly using the fact
 that everything has the same T because of the assumption of LTE!
 
 We can re-write the total contribution of the ions defining the
-ion /mean molecular weight/ such that \mu_{ion} \times m_{u }= "average mass of
-ions", that is \mu_{ion} n_{ion} = \rho/m_{u} or n_{ion} = \sum_{i} n_{i} = \sum_{i} X_{i}\rho/(A_{i}m_{u}) \equiv
-\rho/(\mu_{ion}m_{u}) and:
+ion /mean molecular weight/ such that $\mu_{ion} \times m_{u}$ = "average mass of
+ions", that is $\mu_{ion} n_{ion} = \rho/m_{u} or n_{ion} = \sum_{i} n_{i} = \sum_{i} X_{i}\rho/(A_{i}m_{u}) \equiv
+\rho/(\mu_{ion}m_{u})$ and:
 
 #+begin_latex
 \begin{equation}
@@ -365,8 +365,8 @@ ions", that is \mu_{ion} n_{ion} = \rho/m_{u} or n_{ion} = \sum_{i} n_{i} = \sum
 
 Similarly, we can define an electron mean molecular weight noticing
 that to maintain a total charge of zero per unit volume, since each
-ion carries charge +Z_{i}e and each electron as charge -e: (\sum_{i} Z_{i}n_{i} -
-n_{e})e = 0. Thus
+ion carries charge $+Z_{i}e$ and each electron as charge $-e$: $(\sum_{i} Z_{i}n_{i} -
+n_{e})e = 0$. Thus
 
 #+begin_latex
 \begin{equation}
@@ -396,10 +396,10 @@ mixture of gases (assumed to be in LTE) as a single gas!
 *N.B.:* this holds as long as every species satisfies our assumption of
 ideal, non-relativistic, classical gas.
 
-*** Physical interpretation of \mu
+*** Physical interpretation of $\mu$
 The /mean molecular weight/ we have introduced above may seem a bit
 arbitrary, but it has a clear physical interpretation: it is the
-average number of particles per unit atomic mass m_{u}.
+average number of particles per unit atomic mass $m_{u$}.
 
 For a fully ionized gas (i.e., where every ion is stripped of /all/ its
 electrons):
@@ -409,23 +409,23 @@ electrons):
 \mu = \frac{1}{\sum_{i}X_{i}\left(\frac{Z_{i}+1}{A_{i}}\right)} \ \ ,
 \end{equation}
 #+end_latex
-In fact, for every i-th species that corresponds to a fraction X_{i} of
-the total mass, that is X_{i}/A_{i} in number density, we have Z_{i} electrons
-plus one nucleus that contribute. This approximation is usually good
-in the stellar interior, but as one moves outwards in the star, P
-decreases, therefore by Eq. \ref{eq:ideal_gas_EOS}, T decreases, and
-elements recombine, meaning the term Z_{i} +1 is reduced. This can have
-important consequences in certain layers of the stars ("partial
-ionization layers").
+In fact, for every $i$-th species that corresponds to a fraction $X_{i$}
+of the total mass, that is $X_{i}/A_{i}$ in number density, we have $Z_{i}$
+electrons plus one nucleus that contribute. This approximation is
+usually good in the stellar interior, but as one moves outwards in the
+star, $P$ decreases, therefore by Eq. \ref{eq:ideal_gas_EOS}, $T$
+decreases, and elements recombine, meaning the term $Z_{i}+1$ is reduced.
+This can have important consequences in certain layers of the stars
+("partial ionization layers").
 
-We can further simplify the expression for \mu by noting that for
-hydrogen (Z_{i} +1)/A_{i} = 2 (i.e., hydrogen contributes 2 particles per
-unit atomic mass, one proton and one electron), for helium (Z_{i} +1)/A_{i}
-= 3/4 (we are actually considering only the stable isotope of helium
+We can further simplify the expression for $\mu$ by noting that for
+hydrogen $(Z_{i} +1)/A_{i} = 2$ (i.e., hydrogen contributes 2 particles per
+unit atomic mass, one proton and one electron), for helium $(Z_{i} +1)/A_{i}
+= 3/4$ (we are actually considering only the stable isotope of helium
 that contributes 3 particles every 4 atomic mass units, one nucleus
-and 2 electrons), and for the vast majority of stable metals Z_{i} \gg 1
-and Z_{i} \simeq A_{i}/2 (i.e., most metals contribute per each A_{i} atomic mass
-units roughly A_{i}/2 particles which are the electrons that are
+and 2 electrons), and for the vast majority of stable metals $Z_{i} \gg 1$
+and $Z_{i} \simeq A_{i}/2$ (i.e., most metals contribute per each $A_{i}$ atomic
+mass units roughly $A_{i}/2$ particles which are the electrons that are
 typically half as many as the nucleons). Therefore, for fully ionized
 gas, we can simplify the mean molecular weight to:
 
@@ -434,12 +434,12 @@ gas, we can simplify the mean molecular weight to:
 \mu \simeq \frac{1}{2X + \frac{3Y}{4} + \frac{Z}{2}} \ \ ,
 \end{equation}
 #+end_latex
-where X, Y, Z are the mass fraction of hydrogen, helium, and the
+where $X$, $Y$, $Z$ are the mass fraction of hydrogen, helium, and the
 metallicity, respectively.
 
 ** Relation between pressure and internal density
 
-Eq. \ref{eq:P_statistic} can be used to relate P to the internal
+Eq. \ref{eq:P_statistic} can be used to relate $P$ to the internal
 energy density of a gas. This can be defined as:
 
 #+begin_latex
@@ -450,7 +450,7 @@ du_\mathrm{int} = \varepsilon(p)n(p)dp  \ \ ,
 with \varepsilon(p) the energy per particle.
 
 If the particles in the (ideal) gas are non-relativistic, then
-\varepsilon=p^{2}/2m, thus in the term pv in Eq. \ref{eq:P_statistic} is pv = 2\varepsilon,
+$\varepsilon=p^{2}/2m$, thus in the term $pv$ in Eq. \ref{eq:P_statistic} is $pv = 2\varepsilon$,
 and thus:
 
 #+begin_latex
@@ -459,8 +459,8 @@ P = \frac{2}{3} u_\mathrm{int} \ \ .
 \end{equation}
 #+end_latex
 
-If instead the gas is ultra-relativistic, then \varepsilon = pc (neglecting the
-mass term in the energy since pc \gg mc^{2}), and thus:
+If instead the gas is ultra-relativistic, then $\varepsilon = pc$ (neglecting the
+mass term in the energy since $pc \gg mc^{2}$), and thus:
 
 #+begin_latex
 \begin{equation}
@@ -481,9 +481,9 @@ through the Coulomb force, leading to energy exchanges of the order of:
 \end{equation}
 #+end_latex
 
-for particles of charge Ze (the ions) and average distance d \simeq (4\pi
-n/3)^{-1/3} with n\simeq\rho/Am_{u} number density. We want to compare this with the
-kinetic energy, which for point-like particles is \varepsilon_{thermal} = 3k_{b}T/2.
+for particles of charge $Ze$ (the ions) and average distance $d \simeq (4\pi
+n/3)^{-1/3}$ with $n\simeq\rho/Am_{u}$ number density. We want to compare this with the
+kinetic energy, which for point-like particles is $\varepsilon_\mathrm{thermal} = 3k_{b}T/2$.
 The ratio of these two is often called the Coulomb parameter
 (neglecting constants of order unity):
 
@@ -492,8 +492,8 @@ The ratio of these two is often called the Coulomb parameter
 \Gamma_{C} = \frac{\varepsilon_\mathrm{Coulomb}}{\varepsilon_\mathrm{thermal}} \simeq \frac{Z^{2}e^{2}}{dk_{B}T} \simeq \frac{(Ze)^{2}}{k_{B}T}\left(\frac{\rho}{Am_{u}}\right)^{1/3} \simeq 2.275\times 10^{5} Z^{2} A^{-1/3}\left(\frac{\rho}{\mathrm{g\ cm^{-3}}}\right)^{1/3 }\left(\frac{T}{\mathrm{K}}\right)^{-1}\ \ .
 \end{equation}
 #+end_latex
-We can assume the ideal gas situation if \Gamma_{C} \ll 1, which is the case
-for the average T and \rho of the Sun (we will estimate the average
+We can assume the ideal gas situation if $\Gamma_{C} \ll 1$, which is the case
+for the average $T$ and \rho of the Sun (we will estimate the average
 temperature of the Sun in the [[file:notes-lecture-VirTheo.org::+title: 400A - Virial theorem][next lecture]]). We also see that at
 progressively lower temperature the Coulomb interaction start to
 matter (this is important for the crystallization of WDs for
