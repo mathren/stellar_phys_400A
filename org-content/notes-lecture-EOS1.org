@@ -13,38 +13,41 @@
 We have introduced now two equations of the stellar structure (*N.B.:*
 at the end of the course we'll need 5 to close the system and get a
 solvable model), and we know we can write them using the Lagrangian
-mass coordinate as independent variable. But to reason conceptually
-about the problem, we can stick to writing them as a function of r:
-the Lagrangian formalism is important when doing numerical work, but
-less so for analytic reasoning, when we can easily switch back and
-forth between r, m, or any other variable as independent.
+mass coordinate, that is the mass enclosed in a certain radius, as
+independent variable. But to reason conceptually about the problem, we
+can stick to writing them as a function of r: the Lagrangian formalism
+is important when doing numerical work, but less so for analytic
+reasoning, when we can easily switch back and forth between r, m, or
+any other variable as independent.
 
 *Mass continuity:*
 #+begin_latex
 \begin{equation}\label{eq:mass_cont}
-\frac{dm}{dr} = 4\pi r^{2}\rho\ \ .
+\frac{dm}{dr} = 4\pi r^{2}\rho \Leftrightarrow  \frac{dr}{dm} = \frac{1}{4\pi r^{2} \rho}\ \ ,
 \end{equation}
 #+end_latex
+where we implicitly are assuming static equilibrium (\partial_{t} = 0).
 
 *Hydrostatic equilibrium:*
 #+begin_latex
 \begin{equation}\label{eq:HSE}
-\frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \ ,
+\frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \Leftrightarrow \frac{dP}{dm}=-\frac{Gm}{4\pi r^{4}}\ \ .
 \end{equation}
 #+end_latex
 
 These two equations express the conservation of mass and momentum,
 respectively (*N.B.:* it is often useful to write all equations in the
 form of conservation laws to solve them numerically), and have as
-variables the function m \equiv m(r) (or equivalently r\equiv r(m)), P and \rho. So
-clearly we cannot yet solve them, we need some relation between the
-pressure and the density - a so-called /equation of state/ (EOS).
+variables the function $m \equiv m(r)$ (or equivalently $r\equiv r(m)$), $P$ and
+$\rho$. So clearly we cannot yet solve them, we need some relation
+between the pressure and the density - a so-called /equation of state/
+(EOS).
 
 ** General consideration on the EOS
-In general, this is a relation between the /local/ value of pressure P,
-density \rho, and temperature T, which may also depend on the
-composition, that is the ensemble of fraction by mass of elements (X_{i}
-= mass of i-th element/total mass):
+In general, this is a relation between the /local/ value of pressure $P$,
+density $\rho$, and temperature $T$, which may also depend on the
+composition, that is the ensemble of fraction by mass of elements ($X_{i}$
+= mass of $i$-th element/total mass):
 
 #+begin_latex
 \begin{equation}\label{eq:general_EOS}
@@ -52,8 +55,8 @@ P\equiv P(\rho, T, \{X_{i}\})
 \end{equation}
 #+end_latex
 
-For a given composition {X_{i}}, given two out of three between P, \rho, T,
-one can obtain the third using the EOS.
+For a given composition ${X_{i}}$, given two out of three between $P, \rho,
+T$, one can obtain the third using the EOS.
 
 The aim of this lecture is to introduce first simple EOS which do not
 introduce any other variables (so independent of T), and then go over
@@ -65,12 +68,12 @@ radiation-dominated gas) in a [[./notes-lecture-EOS2][future lecture]].
 Before we get into the EOS though, we have to ask ourselves whether we
 can use thermodynamics/statistical mechanics to describe the
 /microscopic/ properties of the stellar gas and find some relationship
-between P, \rho (and other thermodynamic quantities such as T, entropy,
+between $P$, $\rho$ (and other thermodynamic quantities such as $T$, entropy,
 etc). Are these even well defined?
 
 Thermal equilibrium means by definition that all the particles in a
 system (including photons, if there is radiation) have the same
-temperature T, and their velocity distribution are described by a
+temperature $T$, and their velocity distribution are described by a
 Maxwell-Boltzmann distribution (for particles) and the black-body
 spectrum (for radiation). This situation can only be achieved if there
 are sufficient interactions so each particle can exchange energy with
@@ -89,9 +92,9 @@ self-gravity determine the thermal state of each layer so that the
 pressure gradient can balance gravity.
 
 However, /locally/, we can still assume that there are stellar layers
-with a thickness dr\ll R that are in thermal equilibrium (with R outer
+with a thickness $dr\ll R$ that are in thermal equilibrium (with $R$ outer
 radius of the star, which we have seen to be an idealization, since in
-reality R\equiv R(\lambda) depends on the wavelength \lambda at which one observes).
+reality $R\equiv R(\lambda)$ depends on the wavelength \lambda at which one observes).
 For this to happen, this layer needs still to be much larger than the
 mean-free-path for particle-particle and particle-photon interactions.
 This allows for many interactions between the particles to occur and
@@ -104,7 +107,7 @@ Let's consider the mean-free-path for particle-photon interactions first:
 \end{equation}
 #+end_latex
 
-where n is the number density of particles ([n] = cm^{-3}) and \sigma is the
+where n is the number density of particles ([$n$] = cm^{-3}) and \sigma is the
 interaction cross section ([\sigma] = cm^{2}), or equivalently, \rho is the mass
 density (appearing in the two equations we already have), and \kappa is the
 "opacity", which is a way to measure the probability of a photon to
@@ -119,7 +122,7 @@ result first derived ~100 years ago by Cecilia Payne in her PhD thesis
 in 1925). Let's also assume that it is fully ionized (i.e., protons
 and electrons are separated from each other). The very minimum opacity
 in this case is given by scattering of photons onto the electrons and
-is: \kappa = 0.2(1+X) cm^{2} g^{-1} (see also [[./notes-lecture-kappa.org][lecture on opacities]]), where X is
+is: $\kappa = 0.2(1+X)$ cm^{2} g^{-1} (see also [[./notes-lecture-kappa.org][lecture on opacities]]), where $X$ is
 the mass fraction hydrogen, so for our rough approximation, \kappa\simeq0.4. The
 average density of the Sun is \rho_{\odot, avg}\simeq1.4 g cm^{-3}, therefore
 \ell_{\gamma} \simeq 2 cm. The mean-free-path for particle-particle
@@ -135,16 +138,16 @@ is the temperature variation across \ell_{\gamma}:
 \end{equation}
 #+end_latex
 
-(where we neglect T_{surface} because we expect it much lower than
-T_{center}, since we already know P_{center} \gg P_{surface}). For the Sun we
-will see that we can estimate T_{center}\simeq 10^{7} K, and we know
-R_{\odot}\simeq 10^{11} cm, so \Delta T\simeq 10^{-4} K \ll T_{surf} \ll T_{center}.
+(where we neglect $T_\mathrm{surface}$ because we expect it much lower
+than $T_{center}$, since we already know $P_{center} \gg P_{surface}$). For the Sun
+we will see that we can estimate $T_\mathrm{center}\simeq 10^{7}$ K, and we know
+$R_{\odot}\simeq 10^{11}$ cm, so $\Delta T\simeq 10^{-4} K \ll T_{surf} \ll T_{center}$.
 
-Thus, we can define layers of the star with \ell_{\gamma} \ll dr \ll R where
-locally the temperature variation across the layer is negligible, and
-the assumption of /local thermal equilibrium/ (LTE) holds well. (*N.B.:*
-you can revise this a posteriori once we have an EOS and a way to
-estimate of T_{center}!)
+Thus, we can define layers of the star with $\ell_\mathrm{b} \ll \ell_{\gamma}
+\ll dr \ll R$ where locally the temperature variation across the layer is
+negligible, and the assumption of /local thermal equilibrium/ (LTE)
+holds well. (*N.B.:* you can revise this a posteriori once we have an
+EOS and a way to estimate of T_{center}!)
 
 This may not be true close to the surface, where \ell_{\gamma} progressively
 increases (because \rho decreases). There we may need to care about the
