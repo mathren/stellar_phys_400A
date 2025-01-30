@@ -122,15 +122,15 @@ result first derived ~100 years ago by Cecilia Payne in her PhD thesis
 in 1925). Let's also assume that it is fully ionized (i.e., protons
 and electrons are separated from each other). The very minimum opacity
 in this case is given by scattering of photons onto the electrons and
-is: $\kappa = 0.2(1+X)$ cm^{2} g^{-1} (see also [[./notes-lecture-kappa.org][lecture on opacities]]), where $X$ is
-the mass fraction hydrogen, so for our rough approximation, \kappa\simeq0.4. The
-average density of the Sun is \rho_{\odot, avg}\simeq1.4 g cm^{-3}, therefore
-\ell_{\gamma} \simeq 2 cm. The mean-free-path for particle-particle
-interactions is much smaller (because the cross section \sigma is larger):
-the interaction is electromagnetic and has infinite range, in
-principle all charged particles feel all other (we will return on this
-at the end of this lecture). Therefore, we can conservatively ask what
-is the temperature variation across \ell_{\gamma}:
+is: $\kappa = 0.2(1+X)$ cm^{2} g^{-1} (see also [[./notes-lecture-kappa.org][lecture on opacities]]), where $X$
+is the mass fraction hydrogen, so for our rough approximation, \kappa\simeq0.4.
+The average density of the Sun is \rho_{\odot, avg}\simeq1.4 g cm^{-3},
+therefore \ell_{\gamma} \simeq 2 cm. The mean-free-path for
+particle-particle interactions $\ell_\mathrm{b}$ is much smaller (because
+the cross section \sigma is larger): the interaction is electromagnetic and
+has infinite range, in principle all charged particles feel all other
+(we will return on this at the end of this lecture). Therefore, we can
+conservatively ask what is the temperature variation across \ell_{\gamma}:
 
 #+begin_latex
 \begin{equation}
