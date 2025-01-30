@@ -118,7 +118,7 @@ interact with a certain amount of mass.
 :end:
 
 Let's for simplicity assume that a star is all made of hydrogen (a
-result first derived ~100 years ago by Cecilia Payne in her PhD thesis
+result first derived \sim100 years ago by Cecilia Payne in her PhD thesis
 in 1925). Let's also assume that it is fully ionized (i.e., protons
 and electrons are separated from each other). The very minimum opacity
 in this case is given by scattering of photons onto the electrons and
@@ -177,9 +177,9 @@ is an EOS.
 ** Polytropic EOS
 Polytropic EOS as a special case of /barotropic/ EOS, which are all the
 EOSs for which /the density depends only on the pressure and not on
-the temperature or composition/: $ \rho\equiv\rho(P)$. These have applications
+the temperature or composition/: $\rho\equiv\rho(P)$. These have applications
 beyond stellar physics (e.g., for atmospheric physics). A polytropic
-EOS is thus a barotropic EOS where the \rho\equiv\rho(P) is in the form of a
+EOS is thus a barotropic EOS where the $\rho\equiv\rho(P)$ is in the form of a
 powerlaw, although usually written (following the general form of Eq.
 \ref{eq:general_EOS}):
 
@@ -217,7 +217,7 @@ useful approximation. In this cases, it is important to ensure the
 stitched together.
 
 :Question:
-- *Q*: why do we want P to be a continuous function in stars?
+- *Q*: why do we want $P$ to be a continuous function in stars?
 :end:
 
 ** Ideal gas
@@ -237,7 +237,7 @@ much small than their kinetic energy (due to their thermal motion)
 and other than these interaction between particles, they are free to
 move (no external potential).
 
-To obtain the pressure of such gas, we may need to consider the
+To obtain the pressure of such gas, we need to consider the
 distribution in velocity space of these particles. Let's for a moment
 consider particles that all have the same mass m, we can then
 equivalently consider the distribution in momentum p=mv of the
@@ -247,8 +247,8 @@ with particles m_{i}) further down.
 
 Since the particles of the ideal gas move isotropically within their
 volume, the momentum distribution of particles is a Maxwell-Boltzmann
-distribution. The number of particles with momentum between p and p+dp
-is
+distribution. The number of particles with momentum between $p$ and
+$p+dp$ is
 
 #+begin_latex
 \begin{equation}\label{eq:Maxwellian}
@@ -256,14 +256,14 @@ n(p)dp = \frac{n}{(2\pi m k_{B} T)^{3/2}} \exp\left(-\frac{p^{2}}{2mk_{B}T}\righ
 \end{equation}
 #+end_latex
 
-where on the r.h.s., n is the total number density, the prefactor of
+where on the r.h.s., $n$ is the total number density, the prefactor of
 the exponential is the normalization constant, and the exponential
 comes from assuming a Gaussian distribution of kinetic energies for
 each momentum component (you can demonstrate that a Maxwellian
-distribution is equivalent to a Gaussian in each direction p_{x}, p_{y}, p_{z},
-by going to spherical-polar coordinates in momentum space, thus
+distribution is equivalent to a Gaussian in each direction $p_{x}$, $p_{y}$,
+$p_{z}$, by going to spherical-polar coordinates in momentum space, thus
 introducing a Jacobian for the change of variables, and integrating
-over the p_{\theta}, p_{\varphi} components).
+over the $p_{\theta}$, $p_{\varphi}$ components).
 
 From this, we can calculate the pressure of the gas. By definition
 this will be isotropic, and so we can imagine to put a "box" with unit
@@ -278,9 +278,10 @@ get the whole pressure.
 Let's call the imaginary wall the xy plane and assume the collisions
 to be elastic (because we are considering an ideal gas, by definition
 any exchange of energy is negligible). For a generic particle of the
-gas, it will collide with the wall at an angle \theta \in [0, \pi/2] and the
-collision will change its momentum from (p_{x}, p_{y}, p_{z}) to (p_{x}, p_{y}, -p_{z}):
-only the component perpendicular to the wall changes sign. Thus
+gas, it will collide with the wall at an angle $\theta \in [0, \pi/2]$ and the
+collision will change its momentum from ($p_{x}}$, $p_{y}$, $p_{z}$) to ($p_{x}$,
+$p_{y}$, $-p_{z}$): only the component perpendicular to the wall changes
+sign. Thus
 
 #+begin_latex
 \begin{equation}
@@ -296,9 +297,9 @@ The time between two collisions of a particle on the same wall is
 \end{equation}
 #+end_latex
 
-where we used the L=1 assumption. Thus the force exerted on this
-imaginary wall of a unit box is F=\Delta p/\Delta t = vp cos^{2}(\theta), dividing
-by L^{2} = 1 we obtain the contribution to the pressure from one particle
+where we used the $L=1$ assumption. Thus the force exerted on this
+imaginary wall of a unit box is $F=\Delta p/\Delta t = vp cos^{2}(\theta)$, dividing
+by $L^{2} = 1$ we obtain the contribution to the pressure from one particle
 coming from one specific direction \theta (w.r.t. the wall of the box), and
 introducing the distribution of particles in angle and momentum we
 have
@@ -306,28 +307,26 @@ have
 
 #+begin_latex
 \begin{equation}
-dP =
-vp\cos^{2}(\theta)n(\theta,p)d\theta dp \ \ ,
+dP = vp\cos^{2}(\theta)n(\theta,p)d\theta dp \ \ ,
 \end{equation}
 #+end_latex
 
 But we can assume that the motion of the particles is isotropic, so
-n(\theta,p)d\theta = n(p)sin(\theta)d\theta, and thus
-
+$n(\theta,p)d\theta = n(p)sin(\theta)d\theta$, and thus
 
 #+begin_latex
 \begin{equation}\label{eq:P_statistic}
-dP = vp\cos^{2}(\theta)n(p)\sin(\theta)d\theta dp = \frac{1}{3}\int_{0}^{+\infty} n(p)p v dp \ \ ,
+dP = vp\cos^{2}(\theta)n(p)\sin(\theta)d\theta dp \Rightarrow P = \frac{1}{3}\int_{0}^{+\infty} n(p)p v dp \ \ ,
 \end{equation}
 #+end_latex
-which combined with Eq. \ref{eq:Maxwellian} gives the pressure.
+where we integrated over $\theta$. Combining Eq. \ref{eq:P_statistic} with Eq. \ref{eq:Maxwellian} gives the pressure.
 
 *** Non-relativistic, classical gas
 Let's consider a non-relativistic gas of classical particles (no
-quantum effects). Then p= mv \Leftrightarrow v=p/m (*N.B.:* we are considering an
+quantum effects). Then $p= mv \Leftrightarrow v=p/m$ (*N.B.:* we are considering an
 ideal gas, so each particle is freely moving, no potential of
 interaction!). Carrying out the integral above using the
-Maxwell-Boltzmann distribution for n(p) and v=p^{}/m gives
+Maxwell-Boltzmann distribution for $n(p) and v=p^{}/m$ gives
 
 #+begin_latex
 \begin{equation}
@@ -338,8 +337,8 @@ P = n k_{B} T \ \ .
 *** Mixture of (non-relativistic, classical) gases
 Let's now say that we have multiple gas mixed, for example, a gas of
 ions of various species and electrons. Each gas will contribute to the
-pressure: P_{tot} = P_{ion, tot} + P_{e} = \sum_{i} P_{ion, i} + P_{e} = (\sum_{i}n_{i} +n_{e}) k_{B}T,
-where n_{i} is the number density of the ions i, which have mass m_{u} A_{i}
+pressure: $P_{tot} = P_{ion, tot} + P_{e} = \sum_{i} P_{ion, i} + P_{e} = (\sum_{i}n_{i} +n_{e}) k_{B}T$,
+where $n_{i}$ is the number density of the ions $i$, which have mass m_{u} A_{i}
 with m_{u} the /atomic mass unit/:
 
 #+begin_latex
