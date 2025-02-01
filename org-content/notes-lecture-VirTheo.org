@@ -20,8 +20,8 @@ thermodynamics which will allow us to get some crucial facts about
 stars.
 
 /The virial theorem connects gravitational physics and thermodynamics/.
-It is a statistical statement on mutually interacting (e.g., because
-of self-gravity!) particles, and thus it is very general. The
+It is a statistical statement on mutually interacting particles (e.g.,
+because of their mutual gravity!), and thus it is very general. The
 etymology of the name comes from "vir" which is latin for "forces".
 
 ** Complete derivation
@@ -33,43 +33,45 @@ is equal to the total force they are subject to:
 
 #+begin_latex
 \begin{equation}
- m_{i} \ddot{r_{i}} = F_{i} \ \, .
+ m_{i} \ddot{\mathbf{r_{}}_{i}} = \mathbf{F}_{i} \ \, .
 \end{equation}
 #+end_latex
 
-Note that here r_{i} and F_{i} are vector quantities. We take the
-first-order spatial moment of this distribution, which means we take
-the dot product of each term by the position of the particles and sum
-over all the particles. Why? The reason is /to make something like the
-work done by forces (and thus the potential energy) appear in the second term/:
+Note that here $\mathbf{r}_{i}$ and $\mathbf{F}_{i}$ are vector quantities.
+We take the /first-order spatial moment of this distribution/, which
+means we take the dot product of each term by the position of the
+particles and sum over all the particles. Why? The reason is to make
+/something like the work done by forces (and thus the potential energy)
+appear in the second term/:
 
 #+begin_latex
 \begin{equation}\label{eq:first_moment_second_law}
-\sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i} = \sum_{i} F_{i} \cdot r_{i}
+\sum_{i} m_{i}\ddot{\mathbf{r}_{i}} \cdot \mathbf{r}_{i} = \sum_{i} \mathbf{F}_{i} \cdot \mathbf{r}_{i} \ \ .
 \end{equation}
 #+end_latex
 
 The r.h.s. looks like a sum of work done by the total foce on each
-particle: \sum_{i} F_{i} \cdot r_{i} \equiv W. This is the so called "virial",
-which contains only long-range forces between the particles
-(collisions cancel out in the sum). This by conservation of energy
-has to be equal to the net potential energy available E_{pot}.
+particle: $\sum_{i} \mathbf{F}_{i} \cdot \mathbf{r}_{i} \equiv W$. This is the so
+called "virial", which contains only long-range forces between the
+particles (collisions cancel out in the sum). This by conservation of
+energy has to be equal to the net potential energy available $E_\mathrm{pot}$.
 
-The l.h.s. can be re-written using the chain rule for the second time
-derivative:
+The l.h.s. can be re-written using the chain rule for the second
+time-derivative:
 
 #+begin_latex
 \begin{equation}
-\sum_{i} m_{i}\ddot{r_{i}} \cdot r_{i}  = \sum_{i} \frac{1}{2} m_{i} \frac{d^{2}}{dt^{2}}r_{i}^{2} - \sum_{i} m_{i} \cdot \dot{r_{i}}^{2}
+\sum_{i} m_{i}\ddot{\mathbf{r}_{i}} \cdot \mathbf{r}_{i}  = \sum_{i} \frac{1}{2} m_{i} \frac{d^{2}}{dt^{2}}r_{i}^{2} - \sum_{i} m_{i} \cdot \dot{r_{i}}^{2}
 \end{equation}
 #+end_latex
 
 And now we have on the right hand side (assuming the mass of the
 particles to be constant) twice the second time derivative of the
-moment of inertia I = \sum_{i} m_{i} r_{i}^{2} and twice the kinetic energy E_{kin} = \sum_{i
-}m_{i} v_{i}^{2}/2 (because of course v_{i} = dr_{i}/dt). So putting the r.h.s. of
-this last equation in the first spatial moment of Newton's second law
-(Eq. \ref{eq:first_moment_second_law}) we obtain:
+moment of inertia $I = \sum_{i} m_{i} r_{i}^{2}$ and twice the kinetic energy
+$E_\mathrm{kin} = \sum_{i }m_{i} v_{i}^{2}/2$ (because of course $v_{i} = dr_{i}/dt$).
+So putting the r.h.s. of this last equation in the first spatial
+moment of Newton's second law (Eq. \ref{eq:first_moment_second_law})
+we obtain:
 
 #+begin_latex
 \begin{equation}
@@ -83,21 +85,23 @@ moment of inertia on the r.h.s., which is often forgotten. We did not
 specify almost anything about the system (see Goldstein for a
 momentum-based derivation where the assumption of constant masses m_{i}
 of the particles implicit in the way we wrote Newton's second law is
-not even needed). It effectively says that /for a bound system of
+not even needed).
+
+The virial theorem effectively says that /for a bound system of
 self-interacting particles/, /there is a limited amount of potential
-energy that can be extracted/, because part of the /potential will need
+energy that can be extracted/, because part of the potential will need
 to go into the kinetic terms and the acceleration of the moment of
-inertia/.
+inertia.
 
 So far, this general form doesn't give us much intuition on its
 meaning. We have a relation between the kinetic energy of a collection
 of particles, its potential energy, and the second time-derivative of
 its moment of inertia. But in the frame of the center of mass of such
 collection, the kinetic energy of the particles is a measure of their
-thermal energy, and this is absolutely non-trivial: why would the
-thermal energy know about the potential energy! This statement is
-however very general and its implication for stellar structure and
-evolution are profound.
+thermal energy, and this is non-trivial: why would the thermal energy
+know about the potential energy! This statement is however very
+general and its implication for stellar structure and evolution are
+profound.
 
 ** Derivation for binary orbits
 
@@ -114,8 +118,8 @@ E_\mathrm{tot} = \mathrm{E_\mathrm{kin}}_{1} + \mathrm{E_\mathrm{kin}}_{2} + \ma
 \end{equation}
 #+end_latex
 where in the last term we are using Kepler's laws. The gravitational
-potential energy is E_{pot} = -GM_{1}M_{2}/a, thus making it explicit we
-obtain: E_{kin} = |E_{pot}|/2. Since Keplerian orbits in Newtonian gravity
+potential energy is $E_\mathrm{pot} = -GM_{1}M_{2}/a$, thus making it explicit we
+obtain: $E_{kin} = |E_{pot}|/2$. Since Keplerian orbits in Newtonian gravity
 are stable (radiation of energy through gravitational waves make this
 statement not physically true, but this is only relevant for close
 binaries of compact objects), this implies that the second (and first)
@@ -124,8 +128,8 @@ thus this /is/ the virial theorem! /Keplerian binary orbits are
 "virialized"/.
 
 *N.B.:* Here we considered the case of just 2 particles, but nothing
-stops us to consider i=2...N with N that can reach \sim 10^{6} and apply the
-virial theorem to /clusters/ of stars. Indeed, the virial theorem is
+stops us to consider $i=2...N$ with $N$ that can reach \sim 10^{6} and apply
+the virial theorem to /clusters/ of stars. Indeed, the virial theorem is
 useful to initialize the positions and velocities of stars in a
 simulated self-gravitating cluster such as globular clusters (the
 question usually is whether the second-time derivative of the
@@ -145,24 +149,24 @@ shell dr of gas (cf. hydrostatic momentum balance [[file:notes-lecture-HSE.org::
 
 By analogy with what is done in the general derivation above, we want
 to make the gravitational potential appear on the r.h.s., which can be
-done by multiplying by 4\pi r^{3} and integrating in dm over the entire
-mass of the star (from 0 to M).
+done by multiplying by $4\pi r^{3}$ and integrating in $dm$ over the entire
+mass of the star (from 0 to $M$).
 
 #+begin_latex
 \begin{equation}\label{eq:pot}
 \int_{0}^{M} -\frac{Gm}{4\pi r^{4}} \times 4\pi r^{3} dm  = \int_{0}^{M} -\frac{Gm}{r}dm \equiv - \mathrm{E}_\mathrm{pot} \ \ .
 \end{equation}
 #+end_latex
-(so that E_{pot}=|\int_{0}^{M} -Gm/r dm| >0). The l.h.s. becomes integrating per parts
+(so that $E_{_\mathrm{pot}}=|\int_{0}^{M} -Gm/r dm| >0$). The l.h.s. becomes integrating per parts
 
 #+begin_latex
 \begin{equation}
 \int_{0}^{M} \frac{dP}{dm} 4\pi r^{3} dm = \left[ 4\pi r^{3}P \right]^{M}_{0}- 3\int_{0}^{M}4\pi r^{2} \frac{\partial r}{\partial m} Pdm \ \ ,
 \end{equation}
 #+end_latex
-where the first term is zero: P(M)=0 at the outer surface of the star,
-and in the center r=0 by definition. For the second term, we can use
-the mass continuity equation and obtain -3\int_{0}^{M} P/\rho dm, thus, putting
+where the first term is zero: $P(M)=0$ at the outer surface of the star,
+and in the center $r=0$ by definition. For the second term, we can use
+the mass continuity equation and obtain $-3\int_{0}^{M} P/\rho dm$, thus, putting
 back the pieces together:
 
 #+begin_latex
@@ -170,27 +174,27 @@ back the pieces together:
 \int_{0}^{M }\frac{Gmdm}{r} = 3\int_{0}^{M} \frac{P}{\rho} dm \ \ .
 \end{equation}
 #+end_latex
-Note that if we had kept a non-zero \rho \times a term in Eq. \ref{eq:HSE}, we
-would again obtain a term depending on the moment of inertia and the
-bulk kinetic energy of the stellar gas (see for example sec. 4.2.1 in
-Shore's "Tapestry of modern astrophysics"). We have already
-interpreted the l.h.s. as the gravitational potential energy
-(normalized to zero at infinity) in Eq. \ref{eq:pot}.
+Note that if we had kept a non-zero $\rho \ddot{\mathbf{r}}$ term in Eq.
+\ref{eq:HSE}, we would again obtain a term depending on the moment of
+inertia and the bulk kinetic energy of the stellar gas (see for
+example sec. 4.2.1 in Shore's "Tapestry of modern astrophysics"). We
+have already interpreted the l.h.s. as the gravitational potential
+energy (normalized to zero at infinity) in Eq. \ref{eq:pot}.
 
 Let's interpret the r.h.s., which in the general derivation would be
-part of the \sum_{i} F\cdot r_{i} term. By dimensional analysis we know it has
-to have the dimension of an energy. In fact, still by dimensional
-analysis we can infer that [P/\rho] = [E]/[L^{3}] / [M]/[L^{3}] = [E]/[M] has
-the units of a specific energy (i.e., energy per unit mass), and thus
-P/\rho \prop u with u specific internal energy. Let's rewrite this as u = \Phi
-P/\rho.
+part of the $\sum_{i} \mathbf{F}_{}\cdot \mathbf{r}_{i}$ term. By dimensional
+analysis we know it has to have the dimension of an energy. In fact,
+still by dimensional analysis we can infer that [P/\rho] = [E]/[L^{3}] /
+[M]/[L^{3}] = [E]/[M] has the units of a specific energy (i.e., energy
+per unit mass), and thus $P/\rho \propto u$ with $u$ specific internal energy.
+Let's rewrite this as $u = \Phi P/\rho$.
 
 To specify \Phi, let's consider the second law of thermodynamics per unit
-mass: /the heat exchanged by a gas/ (dq) /is equal to the change in
-internal energy/ (du) /plus the work done/ (pdv, with v the specific
+mass: /the heat exchanged by a gas/ ($dq$) /is equal to the change in
+internal energy/ ($du$) /plus the work done/ ($Pdv$, with $v$ the specific
 volume, i.e. the volume per unit mass). We can use this to /define/ the
-specific entropy s, and also re-write this in terms of density instead
-of specific volume v=(1 mass unit)/\rho \Rightarrow dv = -d\rho/\rho^{2}:
+specific entropy $s$, and also re-write this in terms of density instead
+of specific volume $v$=(1 mass unit)/\rho \Rightarrow $dv = -d\rho/\rho^{2}$:
 
 #+begin_latex
 \begin{equation}\label{eq:second_thermodynamics_law}
@@ -198,20 +202,20 @@ dq = Tds = du + Pdv =du -\frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
 #+end_latex
 
-To derive a relation between u, P, and \rho, and because we are
+To derive a relation between $u$, $P$, and \rho, and because we are
 considering the momentum conservation to begin with, so something
 related to dynamics (which acts fast compared to thermal processes!),
 let's consider an adiabatic process where by definition there is no
-heat exchange. Thus, dq=0 and du = P/\rho^{2} d\rho.
+heat exchange. Thus, $dq=0$ and $du = P/\rho^{2} d\rho$.
 
-Now by differentiating u = \Phi P/\rho we get du = \Phi (dP/\rho - P/\rho^{2} d\rho)
-\equiv P/\rho^{2} d\rho (where we use Eq. \ref{eq:second_thermodynamics_law} with
-dq=0 in the last step), that can be re-arranged into \Phi/(1+\Phi) dP/P =
-d\rho/\rho, or in other words (1+\Phi)/\Phi = d log(P)/d log(\rho) \equiv \Gamma_{1} because the
+Now by differentiating $u = \Phi P/\rho$ we get $du = \Phi (dP/\rho - P/\rho^{2} d\rho)
+\equiv P/\rho^{2} d\rho$ (where we use Eq. \ref{eq:second_thermodynamics_law} with
+$dq=0$ in the last step), that can be re-arranged into $\Phi/(1+\Phi) dP/P =
+d\rho/\rho$, or in other words $(1+\Phi)/\Phi = d log(P)/d log(\rho) \equiv \Gamma_{1}$ because the
 derivative has to be taken assuming no heat exchange, that is at
 constant entropy, so that is by definition the first adiabatic index
-\Gamma_{1}. Ultimately, we can put all this together and write P/\rho = (\Gamma-1)u,
-where \Gamma\equiv\Gamma_{1} is the first adiabatic index.
+$\Gamma_{1}$. Ultimately, we can put all this together and write $P/\rho = (\Gamma-1)u$,
+where $\Gamma\equiv\Gamma_{1}$ is the first adiabatic index.
 
 Finally, substituting in the first-order moment of the hydrostatic
 equilibrium equation we have:
@@ -222,9 +226,9 @@ equilibrium equation we have:
 \end{equation}
 #+end_latex
 
-Assuming that \Gamma is constant throughout the star, we can take the
-parenthesis out of the integral. We can define E_{int} = \int_{0}^{M} u dm
-and rewrite the above as 3(\Gamma-1)E_{int}, and thus
+Assuming that $\Gamma$ is constant throughout the star, we can take the
+parenthesis out of the integral. We can define $E_\mathrm{int} = \int_{0}^{M} u dm$
+and rewrite the above as $3(\Gamma-1)E-\mathrm{int}$, and thus
 
 #+begin_latex
 \begin{equation}\label{eq:virial_star}
@@ -234,37 +238,40 @@ and rewrite the above as 3(\Gamma-1)E_{int}, and thus
 
 For a monoatomic gas where each particle has 3 degrees of freedom
 (motion in 3 direction, no internal degrees of freedom for
-point-particles), \Gamma = 5/3, and we obtain E_{pot} = 2 E_{int} where the
-internal energy is due to the thermal motion of gas, in agreement with
-the general form assuming hydro-/static/ equilibrium (\Rightarrow d^{2} I/dt^{2} =0).
+point-particles), $\Gamma = 5/3$, and we obtain $E_\mathrm{pot} = 2
+E_\mathrm{int}$ where the internal energy is due to the thermal motion
+of gas, in agreement with the general form assuming hydro-/static/
+equilibrium (\Rightarrow $d^{2} I/dt^{2} =0$).
 
-Now lets define the total energy of the gas: E_{tot} = E_{pot} + E_{int}. For a
-star to be bound, E_{tot}<0.
-Because of the virial theorem in Eq. \ref{eq:virial_star}, we can
-rewrite this as
+Now lets define the total energy of the gas: $E_\mathrm{tot} =
+E_\mathrm{pot} + E_\mathrm{int}$. For a star to be bound,
+$E_\mathrm{tot}<0$. Because of the virial theorem in Eq.
+\ref{eq:virial_star}, we can rewrite this as
 
 #+begin_latex
 \begin{equation}
 \mathrm{E}_\mathrm{tot} = \mathrm{E}_\mathrm{pot}\frac{3\Gamma-4}{3(\Gamma-1)} \equiv -(3\Gamma-4)\mathrm{E}_\mathrm{int}\ \ .
 \end{equation}
 #+end_latex
-Again, for a monoatomic gas with \Gamma=5/3 we recover E_{tot} = E_{pot}/2, the
-total energy is half of the gravitational binding energy!
+Again, for a monoatomic gas with $\Gamma=5/3$ we recover $E_\mathrm{tot} =
+E_\mathrm{pot}/2$, the total energy is half of the gravitational
+binding energy!
 
 *** Stability criterion
-From the form of E_{tot}\equiv E_{tot}(E_{int}), since E_{int} is a quantity that
-is always non-negative by definition (think thermal energy!), we see
-that for the star to be bound, that is E_{tot}<0, then a necessary
-condition is \Gamma>4/3. One can immediately see that if \Gamma <4/3, then E_{tot}
-changes sign. If E_{tot}>0 the stellar gas is unbound: the kinetic energy
-is sufficient to overcome the gravitational potential and the gas will
-fly out.
+From the form of $E_\mathrm{tot}\equiv E_\mathrm{tot}(E_\mathrm{int})$,
+since $E_\mathrm{int}$ is a quantity that is always non-negative by
+definition (think thermal energy!), we see that for the star to be
+bound, that is $E_\mathrm{tot}<0$, then a necessary condition is
+$\Gamma>4/3$. One can immediately see that if $\Gamma <4/3$, then
+$E_\mathrm{tot}$ changes sign. If $E_\mathrm{tot}>0$ the stellar gas
+is unbound: the kinetic energy due to thermal motion is sufficient to
+overcome the gravitational potential and the gas will fly out.
 
-One can encounter cases in stellar evolution where \Gamma\le 4/3 (e.g.,
+One can encounter cases in stellar evolution where $\Gamma\le 4/3$ (e.g.,
 because of recombination that changes the mean molecular weight or
-pair-production). In general though \Gamma is /not/ constant throughout the
-star as we assumed to pull the \Gamma-1 factor out of the integral. In
-physical situations where \Gamma\leq 4/3 this typically occurs first /locally/
+pair-production). In general though $\Gamma$ is /not/ constant throughout the
+star as we assumed to pull the $\Gamma-1$ factor out of the integral. In
+physical situations where $\Gamma\leq 4/3$ this typically occurs first /locally/
 somewhere in the star, and there can be a /local/ rearrangement of the
 stellar gas that prevents catastrophic consequences. However, this
 local rearrangements are not always sufficient or even possible, and
@@ -274,25 +281,25 @@ where a (very) massive star is completely obliterated and leaves
 behind no black hole.
 
 :Question:
-- *Q*: for a star made only of photons, what is \Gamma?
+- *Q*: for a star made only of photons, what is $\Gamma$?
 :end:
 
 *** Use of gravitational energy in a star: negative heat capacity
-Let's consider a star made of a perfect monoatomic gas with \Gamma=5/3.
+Let's consider a star made of a perfect monoatomic gas with $\Gamma=5/3$.
 Let's say that for some reason this star is contracting (e.g., because
 it is in its formation process). Let's assume this contraction is
 quasi-static, meaning that at any point in time the hydrostatic
 equilibrium assumption holds, and all the bulk motion of the gas is
-very slow compared to thermal velocities, that is v\ll v_{th} = (2k_{B}T/m)^{1/2},
-and thus also highly sub-sonic, v\ll c_{sound}.
+very slow compared to thermal velocities, that is $v\ll v_{th} = (2k_{B}T/m)^{1/2}$,
+and thus also highly sub-sonic, $v\ll c_\mathrm{sound}$.
 
-The contraction increases the gravitational potential energy E_{pot}
-\prop - GM^{2}/R since M is by assumption constant and R decreases. The total
-energy E_{tot} also increases, but only by half the amount that the
-gravitational potential increases. The other half goes into internal
-thermal energy of the gas because of the Virial theorem! This is the
-limit in the amount of work that can be extracted set by the virial
-theorem mentioned above.
+The contraction increases the gravitational potential energy
+$E_\mathrm{pot} \propto - GM^{2}/R$ since $M$ is by assumption constant and $R$
+decreases. The total energy $E_\mathrm{tot}$ also increases, but only
+by half the amount that the gravitational potential increases. The
+other half goes into internal thermal energy of the gas because of the
+Virial theorem! This is the limit in the amount of work that can be
+extracted set by the virial theorem mentioned above.
 
 For an ideal  gas, the internal energy is related to the
 mean temperature by
@@ -301,33 +308,33 @@ mean temperature by
 E_\mathrm{int} = \frac{\# \mathrm{degrees\ of\ freedom}}{2}Nk_{B}\langle T \rangle
 \end{equation}
 #+end_latex
-where N = \int \rho/(\mu m_{u})dV = M/(\mu m_{u)} is the number of particles, with \mu
-mean molecular weight assumed to be constant, \langle T \rangle is the average
-temperature in the star, and the number of degrees of freedom is 3 for
-a monoatomic gas. From the Virial theorem it follows that:
+where $N = \int \rho/(\mu m_{u})dV = M/(\mu m_{u})$ is the number of particles, with
+$\mu$ mean molecular weight assumed to be constant, $\langle T \rangle$ is the
+average temperature in the star, and the number of degrees of freedom
+is 3 for a monoatomic gas. From the Virial theorem it follows that:
 
 #+begin_latex
 \begin{equation}
 E_\mathrm{int} = - \frac{E_\mathrm{pot}}{2} \Rightarrow \frac{3}{2} \frac{M}{\mu m_{u}} k_{B}\langle T \rangle = C \frac{GM^{2}}{R} \ \ ,
 \end{equation}
 #+end_latex
-where C = {\int_{0}^{M} Gmdm/r}/{GM^{2}/R} is a constant of O(1) that depends on
-the mass distribution in the star. Thus:
+where $C = {\int_{0}^{M} Gmdm/r}/{GM^{2}/R}$ is a constant of $\mathcal{O}(1)$
+that depends on the mass distribution in the star. Thus:
 #+begin_latex
 \begin{equation}
 \langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
 \end{equation}
 #+end_latex
 From this equation, several important facts follow:
-- the mean temperature of a star depends only on its mass M and radius R
+- the mean temperature of a star depends only on its mass $M$ and radius $R$
   (and chemical composition through \mu);
-- /as a star contracts/ (R decreases at constant mass M), /the
+- /as a star contracts/ ($R$ decreases at constant mass $M$), /the
   temperature must rise/! This, as we will see, governs the evolution
   of stars.
 - A self-gravitating collection of particle with finite temperature
   must radiate away energy, thus it will lose energy. This energy
-  loss, since E_{tot} = E_{pot}/2 = - CGM^{2}/2R <0 implies that R must
-  decrease. But then, \langle T \rangle must increase! This is the "gravothermal"
+  loss, since $E_\mathrm{tot} = E_\mathrm{pot}/2 = - CGM^{2}/2R <0$ implies that $R$ must
+  decrease. But then, $\langle T \rangle$ must increase! This is the "gravothermal"
   collapse of a cloud/star. As thermal energy is lost to radiation at
   the surface, the (average) temperature raises! This is why stars can
   be thought of objects with /negative/ heat capacity: it heats up as it
@@ -375,14 +382,14 @@ Then by definition:
 \frac{\mathrm{E}_\mathrm{pot}}{2L} \simeq \frac{GM^{2}}{2RL} \ \ ,
 \end{equation}
 #+end_latex
-where we have used the virial theorem and set C\simeq1. We can scale all
+where we have used the virial theorem and set $C\simeq1$. We can scale all
 the quantities to Solar values and obtain:
 #+begin_latex
 \begin{equation}\label{eq:KH_timescale_scaling}
 \tau_{KH} \simeq 1.57 \times 10^{7} \mathrm{years} \times \left(\frac{M}{M_{\odot}}\right)^{2} \left(\frac{R}{R_{\odot}}\right)^{-1 }\left(\frac{L}{L_{\odot}}\right)^{-1} \ \ .
 \end{equation}
 #+end_latex
-Clearly \tau_{KH} \gg \tau_{ff}, and also \gg {human timescales}: it is hard to
+Clearly $\tau_{KH} \gg \tau_{ff}$, and also $\gg$ {human timescales}: it is hard to
 get direct observational evidence that stars are in thermal
 equilibrium. In fact, the name of this timescale comes from proposals
 in the late 19^{th} century by Kelvin and Helmholtz that the Sun may be

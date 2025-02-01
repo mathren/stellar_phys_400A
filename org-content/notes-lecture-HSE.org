@@ -135,9 +135,9 @@ the center of the star. This allows for the calculation of
 :Question:
  - *Q*: can you think of cases where a star  may not be spherical?
 
-   #+CAPTION: [[https://uarizona.co1.qualtrics.com/jfe/form/SV_0j0MKbOTgowDkVg][Link]] to survey on spherical symmetry
-   #+ATTR_HTML: :width 20%
-   [[./images/QR-HSE.png]]
+   # #+CAPTION: [[https://uarizona.co1.qualtrics.com/jfe/form/SV_0j0MKbOTgowDkVg][Link]] to survey on spherical symmetry
+   # #+ATTR_HTML: :width 20%
+   # # [[./images/QR-HSE.png]]
 
 :end:
 
@@ -542,7 +542,9 @@ show you how you can obtain numerical stellar models.
   Compare also their average densities.
 - Skim [[https://ui.adsabs.harvard.edu/abs/2023arXiv230915930F/abstract][MESA-web paper by Fields et al. 2022]].
 - Using [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit][MESA-web]] make a 1 M_{\odot} star until age 4.5\times10^{9} years (a
-  very rough model of the Sun as it is today!). Plot m(r), make sure
+  very rough model of the Sun as it is today!). *Hint:* look a the
+  =Custom Stopping condition= menu for possible definitions of "end of
+  the simulation". Plot m(r), make sure
   to label your axes properly (including units!). Are there other
   variables with a qualitatively similar behavior that one could use
   as independent coordinate for the stellar structure? Try to make

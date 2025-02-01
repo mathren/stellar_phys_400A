@@ -311,8 +311,8 @@ dP = vp\cos^{2}(\theta)n(\theta,p)d\theta dp \ \ ,
 \end{equation}
 #+end_latex
 
-But we can assume that the motion of the particles is isotropic, so
-$n(\theta,p)d\theta = n(p)sin(\theta)d\theta$, and thus
+But we can assume that the motion of the particles is isotropic
+(spherical symmetry), so $n(\theta,p)d\theta = n(p)sin(\theta)d\theta$, and thus
 
 #+begin_latex
 \begin{equation}\label{eq:P_statistic}
@@ -326,7 +326,7 @@ Let's consider a non-relativistic gas of classical particles (no
 quantum effects). Then $p= mv \Leftrightarrow v=p/m$ (*N.B.:* we are considering an
 ideal gas, so each particle is freely moving, no potential of
 interaction!). Carrying out the integral above using the
-Maxwell-Boltzmann distribution for $n(p)$ and $v=p^{}/m$ gives
+Maxwell-Boltzmann distribution for $n(p)$ and $v=p/m$ gives
 
 #+begin_latex
 \begin{equation}
