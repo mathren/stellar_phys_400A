@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-19 Sun 15:15 -->
+<!-- 2025-02-01 Sat 16:34 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A Syllabus - Stellar Evolution</title>
 <meta name="author" content="Mathieu Renzo" />
 <meta name="generator" content="Org Mode" />
-<meta charset="UTF-8" />
 <link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./css/style-dark.css" id="dark-theme" disabled> <!-- Dark theme CSS -->
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
 			       stellar evolution, 400A, University of
@@ -34,7 +34,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="myHamburgerMenu()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -48,7 +48,7 @@
 
 <!-- The hamburger menu  -->
 <script>
-  function myFunction() {
+  function myHamburgerMenu() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -57,12 +57,36 @@
       }
   }
 </script>
+
+
+
+<script>
+    const themeToggleIcon = document.getElementById('theme-toggle');
+    const darkThemeLink = document.getElementById('dark-theme');
+
+    // Check the current theme from localStorage on page load
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+        darkThemeLink.removeAttribute('disabled'); // Enable dark theme
+    }
+
+    // Toggle theme when icon is clicked
+    themeToggleIcon.addEventListener('click', () => {
+        if (darkThemeLink.disabled) {
+            darkThemeLink.removeAttribute('disabled'); // Enable dark theme
+            localStorage.setItem('theme', 'dark');
+        } else {
+            darkThemeLink.setAttribute('disabled', 'true'); // Disable dark theme
+            localStorage.setItem('theme', 'light');
+        }
+    });
+</script>
 </div>
 <div id="content" class="content">
 
-<div id="outline-container-org2acfaee" class="outline-2">
-<h2 id="org2acfaee"><a href="#org2acfaee">Description of the course</a></h2>
-<div class="outline-text-2" id="text-org2acfaee">
+<div id="outline-container-org9ca2ba7" class="outline-2">
+<h2 id="org9ca2ba7"><a href="#org9ca2ba7">Description of the course</a></h2>
+<div class="outline-text-2" id="text-org9ca2ba7">
 <p>
 The main topic of the course is stellar structure, a field of
 astronomy that brings together many different branches of physics
@@ -72,28 +96,28 @@ objects of astronomical study: stars.
 </p>
 
 <p>
-See also <a href="./lectures.html">here</a> for a breakdown of the main topics covered and <a href="projects.html#org769967e">here</a> for
+See also <a href="./lectures.html">here</a> for a breakdown of the main topics covered and <a href="projects.html#org95e4afd">here</a> for
 a tentative list of topics covered by student presentations.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgfeb68c0" class="outline-2">
-<h2 id="orgfeb68c0"><a href="#orgfeb68c0">Where and when</a></h2>
-<div class="outline-text-2" id="text-orgfeb68c0">
+<div id="outline-container-orgcfbd987" class="outline-2">
+<h2 id="orgcfbd987"><a href="#orgcfbd987">Where and when</a></h2>
+<div class="outline-text-2" id="text-orgcfbd987">
 <p>
 Steward Observatory room <b>204</b>, Tuesday and Thursday 11:00 am-12:15 pm.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4cd9998" class="outline-2">
-<h2 id="org4cd9998"><a href="#org4cd9998">Instructor</a></h2>
-<div class="outline-text-2" id="text-org4cd9998">
+<div id="outline-container-orgd2bf772" class="outline-2">
+<h2 id="orgd2bf772"><a href="#orgd2bf772">Instructor</a></h2>
+<div class="outline-text-2" id="text-orgd2bf772">
 </div>
-<div id="outline-container-org623d4a2" class="outline-3">
-<h3 id="org623d4a2"><a href="#org623d4a2">Prof. <a href="https://www.as.arizona.edu/~mrenzo/index.html">Mathieu Renzo</a></a></h3>
-<div class="outline-text-3" id="text-org623d4a2">
+<div id="outline-container-org3617699" class="outline-3">
+<h3 id="org3617699"><a href="#org3617699">Prof. <a href="https://www.as.arizona.edu/~mrenzo/index.html">Mathieu Renzo</a></a></h3>
+<div class="outline-text-3" id="text-org3617699">
 <ul class="org-ul">
 <li>Office: N506</li>
 <li>Email: <a href="mailto:mrenzo@arizona.edu">mrenzo@arizona.edu</a></li>
@@ -111,9 +135,9 @@ a full business day. Please plan ahead.
 </div>
 </div>
 
-<div id="outline-container-orgbda6302" class="outline-2">
-<h2 id="orgbda6302"><a href="#orgbda6302">Expected learning outcomes</a></h2>
-<div class="outline-text-2" id="text-orgbda6302">
+<div id="outline-container-org75614c1" class="outline-2">
+<h2 id="org75614c1"><a href="#org75614c1">Expected learning outcomes</a></h2>
+<div class="outline-text-2" id="text-org75614c1">
 <p>
 By the end of the course, students will be able to:
 </p>
@@ -141,9 +165,9 @@ possible topics.
 </div>
 </div>
 
-<div id="outline-container-org7235f9e" class="outline-2">
-<h2 id="org7235f9e"><a href="#org7235f9e">Course format and teaching methods</a></h2>
-<div class="outline-text-2" id="text-org7235f9e">
+<div id="outline-container-org3662709" class="outline-2">
+<h2 id="org3662709"><a href="#org3662709">Course format and teaching methods</a></h2>
+<div class="outline-text-2" id="text-org3662709">
 <p>
 This course relies on frontal lectures, homework, and in-class problem
 solving activities (individual and in group), and student
@@ -158,9 +182,9 @@ as part of homework and the final presentation.
 </div>
 </div>
 
-<div id="outline-container-org3a58b3e" class="outline-2">
-<h2 id="org3a58b3e"><a href="#org3a58b3e">Recommended textbooks and resources</a></h2>
-<div class="outline-text-2" id="text-org3a58b3e">
+<div id="outline-container-org96a1e4b" class="outline-2">
+<h2 id="org96a1e4b"><a href="#org96a1e4b">Recommended textbooks and resources</a></h2>
+<div class="outline-text-2" id="text-org96a1e4b">
 <p>
 Most stellar physics text books will contain most of the information
 covered in this course, although order and presentation vary. You can
@@ -188,9 +212,9 @@ evolution simulations with the open-source, community-developed, code
 </div>
 </div>
 
-<div id="outline-container-org9d45068" class="outline-2">
-<h2 id="org9d45068"><a href="#org9d45068">Exams and grading</a></h2>
-<div class="outline-text-2" id="text-org9d45068">
+<div id="outline-container-org8960fa9" class="outline-2">
+<h2 id="org8960fa9"><a href="#org8960fa9">Exams and grading</a></h2>
+<div class="outline-text-2" id="text-org8960fa9">
 <p>
 The course grade will be based on:
 </p>
@@ -213,9 +237,9 @@ between final percentages and letter grades:
 </ul>
 </div>
 
-<div id="outline-container-orgc9e9f00" class="outline-3">
-<h3 id="orgc9e9f00"><a href="#orgc9e9f00">Participation</a></h3>
-<div class="outline-text-3" id="text-orgc9e9f00">
+<div id="outline-container-org4885f45" class="outline-3">
+<h3 id="org4885f45"><a href="#org4885f45">Participation</a></h3>
+<div class="outline-text-3" id="text-org4885f45">
 <p>
 Your engagement, quality of contributions, and interactions with the
 instructors and with your peers will contribute to your final grade.
@@ -229,9 +253,9 @@ condition to guarantee a good participation grade.
 </p>
 </div>
 
-<div id="outline-container-org265c106" class="outline-4">
-<h4 id="org265c106"><a href="#org265c106">Rubric for in class participation</a></h4>
-<div class="outline-text-4" id="text-org265c106">
+<div id="outline-container-org5223e1c" class="outline-4">
+<h4 id="org5223e1c"><a href="#org5223e1c">Rubric for in class participation</a></h4>
+<div class="outline-text-4" id="text-org5223e1c">
 <p>
 The rubric used to evaluate the in class participation is given below.
 I will keep track of relevant and/or insightful questions/comments in
@@ -446,9 +470,9 @@ your participation in class.
 </div>
 </div>
 
-<div id="outline-container-orgc3fd2c9" class="outline-3">
-<h3 id="orgc3fd2c9"><a href="#orgc3fd2c9">Homework</a></h3>
-<div class="outline-text-3" id="text-orgc3fd2c9">
+<div id="outline-container-org01ed98c" class="outline-3">
+<h3 id="org01ed98c"><a href="#org01ed98c">Homework</a></h3>
+<div class="outline-text-3" id="text-org01ed98c">
 <p>
 There will be regular homework assignments, including
 order-of-magnitude, quantitative, computational and/or more
@@ -475,9 +499,9 @@ and progress.
 </div>
 </div>
 
-<div id="outline-container-orga18f693" class="outline-3">
-<h3 id="orga18f693"><a href="#orga18f693">Literature review project and presentation</a></h3>
-<div class="outline-text-3" id="text-orga18f693">
+<div id="outline-container-org1275a63" class="outline-3">
+<h3 id="org1275a63"><a href="#org1275a63">Literature review project and presentation</a></h3>
+<div class="outline-text-3" id="text-org1275a63">
 <p>
 You will be assigned a topic relevant to the course to explain to your
 peers. You will search the literature and prepare a written text plus
@@ -490,9 +514,9 @@ will be graded, see <a href="./projects.html">here</a>.
 </div>
 </div>
 
-<div id="outline-container-orgf99fa9f" class="outline-3">
-<h3 id="orgf99fa9f"><a href="#orgf99fa9f">Incomplete (I) or Withdrawal (W):</a></h3>
-<div class="outline-text-3" id="text-orgf99fa9f">
+<div id="outline-container-orge273491" class="outline-3">
+<h3 id="orge273491"><a href="#orge273491">Incomplete (I) or Withdrawal (W):</a></h3>
+<div class="outline-text-3" id="text-orge273491">
 <p>
 Requests for incomplete (I) or withdrawal (W) must be made in
 accordance with University policies, which are available at
@@ -505,9 +529,9 @@ respectively.
 </div>
 </div>
 
-<div id="outline-container-org1c6000c" class="outline-2">
-<h2 id="org1c6000c"><a href="#org1c6000c">Classroom Behavior</a></h2>
-<div class="outline-text-2" id="text-org1c6000c">
+<div id="outline-container-orgbf6f09d" class="outline-2">
+<h2 id="orgbf6f09d"><a href="#orgbf6f09d">Classroom Behavior</a></h2>
+<div class="outline-text-2" id="text-orgbf6f09d">
 <p>
 To foster a positive learning environment, students and instructors
 have a shared responsibility. We want a safe, welcoming, and inclusive
@@ -538,9 +562,9 @@ inclusive environments.
 </p>
 </div>
 
-<div id="outline-container-orge4db155" class="outline-3">
-<h3 id="orge4db155"><a href="#orge4db155">Nondiscrimination and Anti-harassment Policy</a></h3>
-<div class="outline-text-3" id="text-orge4db155">
+<div id="outline-container-org8723ae6" class="outline-3">
+<h3 id="org8723ae6"><a href="#org8723ae6">Nondiscrimination and Anti-harassment Policy</a></h3>
+<div class="outline-text-3" id="text-org8723ae6">
 <p>
 The University of Arizona is committed to creating and maintaining an
 environment free of discrimination. In support of this commitment, the
@@ -554,9 +578,9 @@ For more information, including how to report a concern, please see
 </div>
 </div>
 
-<div id="outline-container-orgfcc3f13" class="outline-3">
-<h3 id="orgfcc3f13"><a href="#orgfcc3f13">Accessibility and accommodations</a></h3>
-<div class="outline-text-3" id="text-orgfcc3f13">
+<div id="outline-container-org01bd710" class="outline-3">
+<h3 id="org01bd710"><a href="#org01bd710">Accessibility and accommodations</a></h3>
+<div class="outline-text-3" id="text-org01bd710">
 <p>
 At the University of Arizona, we strive to make learning
 experiences as accessible as possible. If you anticipate or
@@ -567,9 +591,9 @@ contact the Disability Resource Center (520-621-3268,
 </div>
 </div>
 
-<div id="outline-container-org6744081" class="outline-3">
-<h3 id="org6744081"><a href="#org6744081">Class recordings</a></h3>
-<div class="outline-text-3" id="text-org6744081">
+<div id="outline-container-org545fd47" class="outline-3">
+<h3 id="org545fd47"><a href="#org545fd47">Class recordings</a></h3>
+<div class="outline-text-3" id="text-org545fd47">
 <p>
 To facilitate everyone's participation, audio and/or video recording
 of in class activities is not allowed unless explicitly agreed upon by
@@ -579,9 +603,9 @@ platforms of the recordings will be allowed.
 </div>
 </div>
 
-<div id="outline-container-org576c23d" class="outline-3">
-<h3 id="org576c23d"><a href="#org576c23d">Preferred Name and Pronoun</a></h3>
-<div class="outline-text-3" id="text-org576c23d">
+<div id="outline-container-orgc22cdfc" class="outline-3">
+<h3 id="orgc22cdfc"><a href="#orgc22cdfc">Preferred Name and Pronoun</a></h3>
+<div class="outline-text-3" id="text-orgc22cdfc">
 <p>
 This course affirms people of all gender expressions and gender
 identities. If you prefer to be called a different name than what is
@@ -592,9 +616,9 @@ instructors on your preferred gender pronoun.
 </div>
 </div>
 
-<div id="outline-container-org42687cf" class="outline-2">
-<h2 id="org42687cf"><a href="#org42687cf">Attendance Policy</a></h2>
-<div class="outline-text-2" id="text-org42687cf">
+<div id="outline-container-org72e67e7" class="outline-2">
+<h2 id="org72e67e7"><a href="#org72e67e7">Attendance Policy</a></h2>
+<div class="outline-text-2" id="text-org72e67e7">
 <p>
 All holidays or special events observed by organized religions will be
 honored for those students who show affiliation with that particular
@@ -611,9 +635,9 @@ information you missed.
 </div>
 </div>
 
-<div id="outline-container-orga7a6d03" class="outline-2">
-<h2 id="orga7a6d03"><a href="#orga7a6d03">Academic Integrity</a></h2>
-<div class="outline-text-2" id="text-orga7a6d03">
+<div id="outline-container-org072def3" class="outline-2">
+<h2 id="org072def3"><a href="#org072def3">Academic Integrity</a></h2>
+<div class="outline-text-2" id="text-org072def3">
 <p>
 Integrity is expected of every student in all academic work. The
 guiding principle of academic integrity is that a student’s submitted
@@ -641,18 +665,18 @@ integrity violation, etc. <a href="http://deanofstudents.arizona.edu/policies%E2
 </div>
 </div>
 
-<div id="outline-container-org18c0f3d" class="outline-2">
-<h2 id="org18c0f3d"><a href="#org18c0f3d">Additional resources for students</a></h2>
-<div class="outline-text-2" id="text-org18c0f3d">
+<div id="outline-container-orgd533818" class="outline-2">
+<h2 id="orgd533818"><a href="#orgd533818">Additional resources for students</a></h2>
+<div class="outline-text-2" id="text-orgd533818">
 <p>
 UA Academic policies and procedures are available at
 <a href="http://catalog.arizona.edu/policies">http://catalog.arizona.edu/policies</a>
 </p>
 </div>
 
-<div id="outline-container-orga2977fd" class="outline-3">
-<h3 id="orga2977fd"><a href="#orga2977fd">Campus Health</a></h3>
-<div class="outline-text-3" id="text-orga2977fd">
+<div id="outline-container-orgd3de80b" class="outline-3">
+<h3 id="orgd3de80b"><a href="#orgd3de80b">Campus Health</a></h3>
+<div class="outline-text-3" id="text-orgd3de80b">
 <p>
 <a href="http://www.health.arizona.edu/">http://www.health.arizona.edu/</a>
 </p>
@@ -668,9 +692,9 @@ through virtual and in-person care.
 </div>
 </div>
 
-<div id="outline-container-org6e53eb5" class="outline-3">
-<h3 id="org6e53eb5"><a href="#org6e53eb5">Counseling and Psych Services (CAPS)</a></h3>
-<div class="outline-text-3" id="text-org6e53eb5">
+<div id="outline-container-orga5e6712" class="outline-3">
+<h3 id="orga5e6712"><a href="#orga5e6712">Counseling and Psych Services (CAPS)</a></h3>
+<div class="outline-text-3" id="text-orga5e6712">
 <p>
 <a href="https://health.arizona.edu/counseling-psych-services">https://health.arizona.edu/counseling-psych-services</a>
 </p>
@@ -686,9 +710,9 @@ services.
 </div>
 </div>
 
-<div id="outline-container-orgfc6514e" class="outline-3">
-<h3 id="orgfc6514e"><a href="#orgfc6514e">The Dean of Students Office’s Student Assistance Program</a></h3>
-<div class="outline-text-3" id="text-orgfc6514e">
+<div id="outline-container-orgecff1ea" class="outline-3">
+<h3 id="orgecff1ea"><a href="#orgecff1ea">The Dean of Students Office’s Student Assistance Program</a></h3>
+<div class="outline-text-3" id="text-orgecff1ea">
 <p>
 <a href="http://deanofstudents.arizona.edu/student-assistance/students/student-assistance">http://deanofstudents.arizona.edu/student-assistance/students/student-assistance</a>
 </p>
@@ -709,9 +733,9 @@ and follow up services.
 </div>
 </div>
 
-<div id="outline-container-orgb169b4e" class="outline-3">
-<h3 id="orgb169b4e"><a href="#orgb169b4e">Survivor Advocacy Program</a></h3>
-<div class="outline-text-3" id="text-orgb169b4e">
+<div id="outline-container-org29c9af9" class="outline-3">
+<h3 id="org29c9af9"><a href="#org29c9af9">Survivor Advocacy Program</a></h3>
+<div class="outline-text-3" id="text-org29c9af9">
 <p>
 <a href="https://survivoradvocacy.arizona.edu/">https://survivoradvocacy.arizona.edu/</a>
 </p>
@@ -730,9 +754,9 @@ resources available within the local community for support.
 </div>
 </div>
 
-<div id="outline-container-orga57a40e" class="outline-3">
-<h3 id="orga57a40e"><a href="#orga57a40e">Support Outreach Success (SOS)</a></h3>
-<div class="outline-text-3" id="text-orga57a40e">
+<div id="outline-container-org27c6797" class="outline-3">
+<h3 id="org27c6797"><a href="#org27c6797">Support Outreach Success (SOS)</a></h3>
+<div class="outline-text-3" id="text-org27c6797">
 <p>
 <a href="https://sos.arizona.edu/about">https://sos.arizona.edu/about</a>
 </p>
@@ -756,18 +780,18 @@ SOS for support.
 </div>
 </div>
 
-<div id="outline-container-orgeba692d" class="outline-2">
-<h2 id="orgeba692d"><a href="#orgeba692d">Confidentiality of Student Records</a></h2>
-<div class="outline-text-2" id="text-orgeba692d">
+<div id="outline-container-org2621b3d" class="outline-2">
+<h2 id="org2621b3d"><a href="#org2621b3d">Confidentiality of Student Records</a></h2>
+<div class="outline-text-2" id="text-org2621b3d">
 <p>
 <a href="http://www.registrar.arizona.edu/ferpa">http://www.registrar.arizona.edu/ferpa</a>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb8f2272" class="outline-2">
-<h2 id="orgb8f2272"><a href="#orgb8f2272">Safety on Campus and in the Classroom</a></h2>
-<div class="outline-text-2" id="text-orgb8f2272">
+<div id="outline-container-orgd8b0dbe" class="outline-2">
+<h2 id="orgd8b0dbe"><a href="#orgd8b0dbe">Safety on Campus and in the Classroom</a></h2>
+<div class="outline-text-2" id="text-orgd8b0dbe">
 <p>
 For a list of emergency procedures for all types of incidents, please visit the website of the Critical
 Incident Response Team (CIRT): <a href="https://cirt.arizona.edu/case-emergency/overview">https://cirt.arizona.edu/case-emergency/overview</a>
@@ -780,9 +804,9 @@ Also watch the video available at
 </div>
 </div>
 
-<div id="outline-container-orgab33636" class="outline-2">
-<h2 id="orgab33636"><a href="#orgab33636">Subject to change statement</a></h2>
-<div class="outline-text-2" id="text-orgab33636">
+<div id="outline-container-org388304c" class="outline-2">
+<h2 id="org388304c"><a href="#org388304c">Subject to change statement</a></h2>
+<div class="outline-text-2" id="text-org388304c">
 <p>
 The information contained in this syllabus, other than the grade and absence
 policies, may be subject to change with reasonable advance notice, as deemed
@@ -794,9 +818,9 @@ appropriate by the instructor.
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="index.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="projects.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <i id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i>&emsp;&emsp;&emsp;&emsp;<a href="index.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="projects.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 19 January 2025 <br>
+  Last updated on 1 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>
