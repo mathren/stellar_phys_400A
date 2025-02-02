@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-01 Sat 20:06 -->
+<!-- 2025-02-01 Sat 20:08 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Hydrostatic equilibrium</title>
@@ -67,6 +67,7 @@
 </div>
 
 <!-- scripts -->
+<script>
   function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
@@ -112,9 +113,9 @@
 Kippenhahn's book.
 </p>
 
-<div id="outline-container-org8e65202" class="outline-2">
-<h2 id="org8e65202"><a href="#org8e65202">The first two equations of stellar structure</a></h2>
-<div class="outline-text-2" id="text-org8e65202">
+<div id="outline-container-orgc3323ed" class="outline-2">
+<h2 id="orgc3323ed"><a href="#orgc3323ed">The first two equations of stellar structure</a></h2>
+<div class="outline-text-2" id="text-orgc3323ed">
 <p>
 So far we have mostly been discussing astronomical facts on stars
 (e.g., use of populations to understand phenomena too slow to observe,
@@ -152,9 +153,9 @@ the star.
 </p>
 </div>
 
-<div id="outline-container-org40765cd" class="outline-3">
-<h3 id="org40765cd"><a href="#org40765cd">Lagrangian and Eulerian coordinates</a></h3>
-<div class="outline-text-3" id="text-org40765cd">
+<div id="outline-container-org5f9e9f2" class="outline-3">
+<h3 id="org5f9e9f2"><a href="#org5f9e9f2">Lagrangian and Eulerian coordinates</a></h3>
+<div class="outline-text-3" id="text-org5f9e9f2">
 <p>
 In hydrodynamics one is typically interested in describing fields of
 variables that take one value for each point in the fluid (e.g.,
@@ -164,9 +165,9 @@ described it.
 </p>
 </div>
 
-<div id="outline-container-orgd94a2ad" class="outline-4">
-<h4 id="orgd94a2ad"><a href="#orgd94a2ad">Eulerian description</a></h4>
-<div class="outline-text-4" id="text-orgd94a2ad">
+<div id="outline-container-org1552c03" class="outline-4">
+<h4 id="org1552c03"><a href="#org1552c03">Eulerian description</a></h4>
+<div class="outline-text-4" id="text-org1552c03">
 <p>
 In a Eulerian description the fields are described as a function of
 position in space (and time): &Psi; &equiv; &Psi;(x, y, z, t) in Cartesian
@@ -182,7 +183,7 @@ position, describing the variables at that specific position.
 </p>
 
 
-<figure id="orgdeca6e3">
+<figure id="org426552d">
 <img src="./images/Eulerian-bridge.jpg" alt="https://www.flinilckr.com/photos/frixan/114822407/" width="75%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge.</figcaption>
@@ -197,9 +198,9 @@ we would have no dependence on the angular variables &part;<sub>&theta;</sub> &P
 </div>
 </div>
 
-<div id="outline-container-orgc9ff3ca" class="outline-4">
-<h4 id="orgc9ff3ca"><a href="#orgc9ff3ca">Lagrangian description</a></h4>
-<div class="outline-text-4" id="text-orgc9ff3ca">
+<div id="outline-container-org15da776" class="outline-4">
+<h4 id="org15da776"><a href="#org15da776">Lagrangian description</a></h4>
+<div class="outline-text-4" id="text-org15da776">
 <p>
 In a Lagrangian description the fields are described as a function of
 the fluid element, following the fluid element itself: &Psi; &equiv;&Psi;(fluid
@@ -212,7 +213,7 @@ describing the properties of the fluid as the boat moves with it.
 </p>
 
 
-<figure id="org3e8934d">
+<figure id="org2ec3c95">
 <img src="./images/Lagrangian_kayak.jpg" alt="https://www.snowaddiction.org/2015/10/the-zen-of-kayaking-i-photograph-the-fjords-of-norway-from-the-kayak-seat.html?m=1" width="75%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Lagrangian description is like following the fluid on a boat and describe what goes on as a function of the fluid particle being followed.</figcaption>
@@ -223,7 +224,7 @@ In a Lagrangian system of coordinates, the total time derivative can
 be written using the "chain rule" as:
 </p>
 
-<div class="latex" id="orgef21141">
+<div class="latex" id="orgccf983b">
 \begin{equation}
  \frac{d}{dt} = \frac{\partial}{\partial t} + \frac{\partial x}{\partial t}\frac{\partial}{\partial x} + \frac{\partial y}{\partial t}\frac{\partial}{\partial y} +\frac{\partial z}{\partial t}\frac{\partial}{\partial z} \equiv \frac{\partial}{\partial t} + v\cdot\nabla \ \,
 \end{equation}
@@ -251,7 +252,7 @@ given radius m&equiv; m(r), thus express &Psi;(r,t) =&Psi;(r(m), t)&rarr; &Psi;(
 <p>
 Derivatives can then be expressed with the chain rule:
 </p>
-<div class="latex" id="org787a717">
+<div class="latex" id="orgd5d09eb">
 \begin{equation}
  \frac{\partial}{\partial m} = \frac{\partial r}{\partial m} \frac{\partial}{\partial r} \ \ .
 \end{equation}
@@ -274,9 +275,9 @@ approaches, see for example <a href="https://ui.adsabs.harvard.edu/abs/2020ApJS.
 </div>
 </div>
 
-<div id="outline-container-org9c29458" class="outline-3">
-<h3 id="org9c29458"><a href="#org9c29458">Spherical symmetry and one dimensional approximation</a></h3>
-<div class="outline-text-3" id="text-org9c29458">
+<div id="outline-container-orgb7bbb1f" class="outline-3">
+<h3 id="orgb7bbb1f"><a href="#orgb7bbb1f">Spherical symmetry and one dimensional approximation</a></h3>
+<div class="outline-text-3" id="text-orgb7bbb1f">
 <p>
 We have defined a star to be a <i>self-gravitating mass of gas that can
 produce energy through internal sources</i>. Thus, from the
@@ -306,16 +307,16 @@ the center of the star. This allows for the calculation of
 </div>
 </div>
 
-<div id="outline-container-org1c6c602" class="outline-3">
-<h3 id="org1c6c602"><a href="#org1c6c602">Mass conservation</a></h3>
-<div class="outline-text-3" id="text-org1c6c602">
+<div id="outline-container-orgb48046a" class="outline-3">
+<h3 id="orgb48046a"><a href="#orgb48046a">Mass conservation</a></h3>
+<div class="outline-text-3" id="text-orgb48046a">
 <p>
 Let's consider the amount of mass in a parcel of stellar gas. This will
 depend on the local gas density \(\rho(r, t)\) (or equivalently in the
 Lagrangian formalism \(\rho(m, t)\)!) and the amount of volume in the shell
 </p>
 
-<div class="latex" id="org117592c">
+<div class="latex" id="orge41cb90">
 \begin{equation}
 dm = \rho dAdr
 \end{equation}
@@ -327,7 +328,7 @@ where dA is the element base area, and dr its radial thickness. We can
 integrate over the base to get the parcel to be a spherical shell
 </p>
 
-<div class="latex" id="org7480995">
+<div class="latex" id="orga96a5d6">
 \begin{equation}
 \int dA = 4\pi r^{2}
 \end{equation}
@@ -338,7 +339,7 @@ integrate over the base to get the parcel to be a spherical shell
 where r is the radius of the shell, therefore
 </p>
 
-<div class="latex" id="org8296254">
+<div class="latex" id="org337fba9">
 \begin{equation}
 dm = 4\pi \rho r^{2} dr \ \ .
 \end{equation}
@@ -352,7 +353,7 @@ dt an amount \(-\rho v dA dt\) flows out (for \(v>0\), the quantity is negative)
 or in (\(v<0\)). Again integrating over \(dA\):
 </p>
 
-<div class="latex" id="org6330755">
+<div class="latex" id="org0d832aa">
 \begin{equation}
 \label{eq:mass_continuity}
 dm = 4\pi \rho r^{2} dr - 4\pi r^{2} \rho v dt \ \ .
@@ -366,7 +367,7 @@ From this complete form we can take the partial derivatives w.r.t. \(r\)
 (at fixed \(t\)) and \(t\) (at fixed \(r\)):
 </p>
 
-<div class="latex" id="orga339342">
+<div class="latex" id="orgaaf7ee0">
 \begin{equation}\label{eq:mass_continuity_rt}
  \frac{\partial m}{\partial r} = 4\pi r^{2} \rho \ \ , \\
  \frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \ \ .
@@ -380,7 +381,7 @@ w.r.t \(r\), and demand the two forms are the same. Since \(r\) and \(t\) are th
 independent variables here (i.e., \(\partial r/\partial t = 0\)) we obtain:
 </p>
 
-<div class="latex" id="org95a3826">
+<div class="latex" id="org213666c">
 \begin{equation}
 \frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial (r^{2}\rho v)}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \ ,
 \end{equation}
@@ -398,7 +399,7 @@ structure, just take the first equation in \ref{eq:mass_continuity_rt}
 and express it with \(m\) as independent variable:
 </p>
 
-<div class="latex" id="orge7c4ad3">
+<div class="latex" id="orga99370a">
 \begin{equation}\label{eq:mass_conservation}
 \frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho} \ \ ,
 \end{equation}
@@ -417,9 +418,9 @@ and it depends on a yet unknown variable, the gas density \(\rho\).
 </div>
 </div>
 
-<div id="outline-container-org2aa199b" class="outline-3">
-<h3 id="org2aa199b"><a href="#org2aa199b">Momentum conservation and hydrostatic equilibrium</a></h3>
-<div class="outline-text-3" id="text-org2aa199b">
+<div id="outline-container-org3ae65f8" class="outline-3">
+<h3 id="org3ae65f8"><a href="#org3ae65f8">Momentum conservation and hydrostatic equilibrium</a></h3>
+<div class="outline-text-3" id="text-org3ae65f8">
 <p>
 Consider the equation of motion of a parcel of stellar gas, \(F = dp/dt
 = ma\) (for constant \(m\)), or often more conveniently in fluid dynamics,
@@ -430,9 +431,9 @@ the forces that we think are important for an <b>isolated</b>, <b>non-rotating</
 </p>
 </div>
 
-<div id="outline-container-orgc826b3c" class="outline-4">
-<h4 id="orgc826b3c"><a href="#orgc826b3c">Gravity</a></h4>
-<div class="outline-text-4" id="text-orgc826b3c">
+<div id="outline-container-org1678fcc" class="outline-4">
+<h4 id="org1678fcc"><a href="#org1678fcc">Gravity</a></h4>
+<div class="outline-text-4" id="text-org1678fcc">
 <p>
 Since by definition a star is a self-gravitating body (<b>N.B.:</b> so is a
 planet, that's not the whole definition of a star!), we want to
@@ -441,7 +442,7 @@ This can be obtained as the gradient of the gravitational potential &Phi;
 which is a solution of the Poisson equation:
 </p>
 
-<div class="latex" id="orgc326c08">
+<div class="latex" id="orgac05013">
 \begin{equation}
 \nabla^{2} \Phi = 4\pi G\rho \Rightarrow \frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial \Phi}{\partial r} \right) = 4\pi G\rho \ \ ,
 \end{equation}
@@ -461,7 +462,7 @@ spherical symmetry only has a non-zero radial component &rArr; \(g = - d\Phi/dr\
 which from Newton's theory of gravity we know to be
 </p>
 
-<div class="latex" id="org851e932">
+<div class="latex" id="org98063d5">
 \begin{equation}
 - \nabla \Phi = g \equiv g(m(r))= \frac{Gm(r)}{r^{2}} \ \ ,
 \end{equation}
@@ -480,16 +481,16 @@ this force points towards the center of the star.
 </div>
 </div>
 
-<div id="outline-container-org25c709e" class="outline-4">
-<h4 id="org25c709e"><a href="#org25c709e">Pressure gradient</a></h4>
-<div class="outline-text-4" id="text-org25c709e">
+<div id="outline-container-orge08e7c0" class="outline-4">
+<h4 id="orge08e7c0"><a href="#orge08e7c0">Pressure gradient</a></h4>
+<div class="outline-text-4" id="text-orge08e7c0">
 <p>
 The other contribution we need to include in our \(f = \rho a\) equation is
 from the pressure. We could already use dimensional analysis to guess
 in what form pressure can enter the l.h.s. of the equation:
 </p>
 
-<div class="latex" id="org18785d3">
+<div class="latex" id="org46e7e4e">
 \begin{equation}
 [P] = [\mathrm{force}]/[\mathrm{area}] \Rightarrow [P]/[\mathrm{length}] = [\mathrm{force}]/[\mathrm{volume}] \equiv [f]
 \end{equation}
@@ -504,7 +505,7 @@ turn suggests that maybe what we need is the pressure <i>gradient</i>!
 
 
 
-<figure id="org3eea1a5">
+<figure id="org6803ddc">
 <img src="./images/HSE-sketch.png" alt="HSE-sketch.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Sketch of the force balance for an internal layer of a spherically symmetric star. Modified from Onno Pols' lecture notes Fig. 2.1</figcaption>
@@ -529,9 +530,9 @@ used \(P(r+dr)\simeq P(r)+(dP/dr)dr\). Now using \(dm = \rho drdA\) and dividing
 </div>
 </div>
 
-<div id="outline-container-org27ce390" class="outline-4">
-<h4 id="org27ce390"><a href="#org27ce390">Combining the two</a></h4>
-<div class="outline-text-4" id="text-org27ce390">
+<div id="outline-container-orgec26a98" class="outline-4">
+<h4 id="orgec26a98"><a href="#orgec26a98">Combining the two</a></h4>
+<div class="outline-text-4" id="text-orgec26a98">
 <p>
 We have now an explicit form for the two most important forces in a
 (isolated, non-rotating, non-magnetic) star \(f = f_{grav} + f_{pres} = -g\rho -
@@ -546,7 +547,7 @@ cases, that is \(a=0\). <i>Stars are generally in hydrostatic equilibrium</i>. I
 this case the conservation of momentum becomes
 </p>
 
-<div class="latex" id="orgb254e68">
+<div class="latex" id="org954648c">
 \begin{equation}
 \frac{dP}{dr} = -g\rho = -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
@@ -558,7 +559,7 @@ or changing to have \(m\) has the independent variable, to have a
 Lagrangian treatment:
 </p>
 
-<div class="latex" id="org725cfc4">
+<div class="latex" id="org8a1275c">
 \begin{equation}
 \frac{dP}{dr} = \frac{dP}{dm}\frac{dm}{dr} = \frac{dP}{dm}4\pi r^{2}\rho
 \end{equation}
@@ -569,7 +570,7 @@ Lagrangian treatment:
 and thus
 </p>
 
-<div class="latex" id="org50dc7f1">
+<div class="latex" id="org4c73781">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -657,9 +658,9 @@ structure) later in the course.
 </div>
 </div>
 
-<div id="outline-container-org3c65fcb" class="outline-4">
-<h4 id="org3c65fcb"><a href="#org3c65fcb">Estimate for the central pressure</a></h4>
-<div class="outline-text-4" id="text-org3c65fcb">
+<div id="outline-container-org5fc59da" class="outline-4">
+<h4 id="org5fc59da"><a href="#org5fc59da">Estimate for the central pressure</a></h4>
+<div class="outline-text-4" id="text-org5fc59da">
 <p>
 A first estimate for the central pressure can be obtained substituting
 the local gradient with the difference from surface to the core across
@@ -671,7 +672,7 @@ mass M and radius R. For the sake of simplicity, let's take the
 fraction to be 1 and drop the 4&pi;:
 </p>
 
-<div class="latex" id="org6fa4545">
+<div class="latex" id="org741d663">
 \begin{equation}
 P_\mathrm{center} = \frac{GM^{2}}{R^{4}}\ \ ,
 \end{equation}
@@ -689,16 +690,16 @@ precise estimates and lower bounds.
 </div>
 </div>
 
-<div id="outline-container-org128e0c5" class="outline-3">
-<h3 id="org128e0c5"><a href="#org128e0c5">Dynamical timescale estimates</a></h3>
-<div class="outline-text-3" id="text-org128e0c5">
+<div id="outline-container-orgf122c06" class="outline-3">
+<h3 id="orgf122c06"><a href="#orgf122c06">Dynamical timescale estimates</a></h3>
+<div class="outline-text-3" id="text-orgf122c06">
 <p>
 Let's say that the star was not in hydrostatic equilibrium, but still
 spherically symmetric. Returning to the general form for the momentum
 conservation \(f = \rho a \equiv \rho \partial^{2}r/\partial t^{2}\) we have
 </p>
 
-<div class="latex" id="orgd317483">
+<div class="latex" id="org191851d">
 \begin{equation}\label{eq:dyn}
 \rho \frac{\partial^{2} r}{\partial t^{2}} = -\frac{dP}{dr} -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
@@ -717,9 +718,9 @@ but what happens if we turn one off?
 </p>
 </div>
 
-<div id="outline-container-org8615cea" class="outline-4">
-<h4 id="org8615cea"><a href="#org8615cea">Explosion timescale</a></h4>
-<div class="outline-text-4" id="text-org8615cea">
+<div id="outline-container-org0975c45" class="outline-4">
+<h4 id="org0975c45"><a href="#org0975c45">Explosion timescale</a></h4>
+<div class="outline-text-4" id="text-org0975c45">
 <p>
 Let's turn off gravity, setting \(g = - Gm/r^{2 }\rightarrow 0\)! To
 estimate how long it takes for the pressure gradient to push the gas
@@ -736,7 +737,7 @@ following rough substitution in the dynamical equation above:
 and we obtain:
 </p>
 
-<div class="latex" id="org7928833">
+<div class="latex" id="orgee0135d">
 \begin{equation}
 \tau_\mathrm{expl} \simeq \frac{R}{\sqrt{\frac{P_{avg}}{\rho_{avg}}_{}}} \simeq \frac{R}{c_{s}}\ \ .
 \end{equation}
@@ -752,9 +753,9 @@ order of the sound-crossing time.
 </div>
 </div>
 
-<div id="outline-container-org0d718c4" class="outline-4">
-<h4 id="org0d718c4"><a href="#org0d718c4">Free fall timescale</a></h4>
-<div class="outline-text-4" id="text-org0d718c4">
+<div id="outline-container-org7c1546b" class="outline-4">
+<h4 id="org7c1546b"><a href="#org7c1546b">Free fall timescale</a></h4>
+<div class="outline-text-4" id="text-org7c1546b">
 <p>
 Almost by definition, this is how the star would collapse if there
 were no forces other than gravity, so let's turn off the pressure
@@ -769,7 +770,7 @@ gradient \(dP/dr\rightarrow0\). Then, as above:
 we get:
 </p>
 
-<div class="latex" id="org401962e">
+<div class="latex" id="orgd80225f">
 \begin{equation}
 \tau_\mathrm{ff} \simeq \sqrt{\frac{R^{3}}{GM}} \simeq \sqrt{\frac{1}{G\rho_\mathrm{avg}}}\ \ ,
 \end{equation}
@@ -791,9 +792,9 @@ observationally?</li>
 </div>
 </div>
 
-<div id="outline-container-org72b1521" class="outline-3">
-<h3 id="org72b1521"><a href="#org72b1521">Introduction to <code>MESA_web</code></a></h3>
-<div class="outline-text-3" id="text-org72b1521">
+<div id="outline-container-org123b8d9" class="outline-3">
+<h3 id="org123b8d9"><a href="#org123b8d9">Introduction to <code>MESA_web</code></a></h3>
+<div class="outline-text-3" id="text-org123b8d9">
 <p>
 We will discuss in detail stellar evolution codes, numerical
 strategies for solving the stellar structure equations, and what goes
@@ -852,9 +853,9 @@ just plain text, so you can also write your own.</li>
 </div>
 </div>
 
-<div id="outline-container-org70d59cd" class="outline-2">
-<h2 id="org70d59cd"><a href="#org70d59cd">Homework</a></h2>
-<div class="outline-text-2" id="text-org70d59cd">
+<div id="outline-container-orgd4dc2c8" class="outline-2">
+<h2 id="orgd4dc2c8"><a href="#orgd4dc2c8">Homework</a></h2>
+<div class="outline-text-2" id="text-orgd4dc2c8">
 <ul class="org-ul">
 <li>Calculate the Keplerian period of a point mass orbiting at the
 surface of a star of mass M and radius R and compare it to the free
