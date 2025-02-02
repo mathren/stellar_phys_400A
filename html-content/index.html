@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-01 Sat 16:34 -->
+<!-- 2025-02-01 Sat 19:34 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A Stellar Evolution</title>
 <meta name="author" content="Mathieu Renzo" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="./css/style-dark.css" id="dark-theme" disabled> <!-- Dark theme CSS -->
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
 			       stellar evolution, 400A, University of
@@ -34,7 +33,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myHamburgerMenu()">
+    <a href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -46,9 +45,9 @@
   </div>
 </div>
 
-<!-- The hamburger menu  -->
+<!-- scripts -->
 <script>
-  function myHamburgerMenu() {
+  function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -58,35 +57,38 @@
   }
 </script>
 
-
-
 <script>
-    const themeToggleIcon = document.getElementById('theme-toggle');
-    const darkThemeLink = document.getElementById('dark-theme');
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      // const body = document.body;
+      const html = document.html;
 
-    // Check the current theme from localStorage on page load
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-        darkThemeLink.removeAttribute('disabled'); // Enable dark theme
-    }
 
-    // Toggle theme when icon is clicked
-    themeToggleIcon.addEventListener('click', () => {
-        if (darkThemeLink.disabled) {
-            darkThemeLink.removeAttribute('disabled'); // Enable dark theme
-            localStorage.setItem('theme', 'dark');
-        } else {
-            darkThemeLink.setAttribute('disabled', 'true'); // Disable dark theme
-            localStorage.setItem('theme', 'light');
-        }
-    });
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
 </script>
+<!-- end scripts-->
 </div>
 <div id="content" class="content">
 
-<div id="outline-container-org7c4702b" class="outline-2">
-<h2 id="org7c4702b"><a href="#org7c4702b">400A Theoretical Astrophysics - Stellar Evolution</a></h2>
-<div class="outline-text-2" id="text-org7c4702b">
+<div id="outline-container-orgc34c219" class="outline-2">
+<h2 id="orgc34c219"><a href="#orgc34c219">400A Theoretical Astrophysics - Stellar Evolution</a></h2>
+<div class="outline-text-2" id="text-orgc34c219">
 <p>
 Material developed for the 400A course at the Department of Astronomy
 and Steward Observatory of the University of Arizona (Spring 2025 semester).
@@ -121,9 +123,9 @@ For students at the University of Arizona only: <a href="https://d2l.arizona.edu
 </p>
 </div>
 
-<div id="outline-container-orgb7e6d70" class="outline-3">
-<h3 id="orgb7e6d70"><a href="#orgb7e6d70">Disclaimer</a></h3>
-<div class="outline-text-3" id="text-orgb7e6d70">
+<div id="outline-container-orgb540928" class="outline-3">
+<h3 id="orgb540928"><a href="#orgb540928">Disclaimer</a></h3>
+<div class="outline-text-3" id="text-orgb540928">
 <p>
 All the pages of this website are under active construction, may
 contain errors and change without notice. If you find an error please
@@ -136,7 +138,7 @@ let me know and feel free to open an issue/PR on <a href="https://github.com/mat
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <i id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i>&emsp;&emsp;&emsp;&emsp;<a href="index.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="syllabus.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="index.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="syllabus.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
   Last updated on 1 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2

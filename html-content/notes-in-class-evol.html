@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-01 Sat 16:34 -->
+<!-- 2025-02-01 Sat 19:34 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Evolution of stars</title>
 <meta name="author" content="Mathieu Renzo" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="./css/style-dark.css" id="dark-theme" disabled> <!-- Dark theme CSS -->
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
 			       stellar evolution, 400A, University of
@@ -34,7 +33,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myHamburgerMenu()">
+    <a href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -46,9 +45,9 @@
   </div>
 </div>
 
-<!-- The hamburger menu  -->
+<!-- scripts -->
 <script>
-  function myHamburgerMenu() {
+  function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -58,29 +57,32 @@
   }
 </script>
 
-
-
 <script>
-    const themeToggleIcon = document.getElementById('theme-toggle');
-    const darkThemeLink = document.getElementById('dark-theme');
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      // const body = document.body;
+      const html = document.html;
 
-    // Check the current theme from localStorage on page load
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-        darkThemeLink.removeAttribute('disabled'); // Enable dark theme
-    }
 
-    // Toggle theme when icon is clicked
-    themeToggleIcon.addEventListener('click', () => {
-        if (darkThemeLink.disabled) {
-            darkThemeLink.removeAttribute('disabled'); // Enable dark theme
-            localStorage.setItem('theme', 'dark');
-        } else {
-            darkThemeLink.setAttribute('disabled', 'true'); // Disable dark theme
-            localStorage.setItem('theme', 'light');
-        }
-    });
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
 </script>
+<!-- end scripts-->
 </div>
 <div id="content" class="content">
 <p>
@@ -89,13 +91,13 @@ Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2,
 <a href="http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web">MESA-web</a>.
 </p>
 
-<div id="outline-container-org868372b" class="outline-2">
-<h2 id="org868372b"><a href="#org868372b">In class activity: evolution of stars</a></h2>
-<div class="outline-text-2" id="text-org868372b">
+<div id="outline-container-orgefc7b7e" class="outline-2">
+<h2 id="orgefc7b7e"><a href="#orgefc7b7e">In class activity: evolution of stars</a></h2>
+<div class="outline-text-2" id="text-orgefc7b7e">
 </div>
-<div id="outline-container-org1ab1ff8" class="outline-3">
-<h3 id="org1ab1ff8"><a href="#org1ab1ff8">Aims</a></h3>
-<div class="outline-text-3" id="text-org1ab1ff8">
+<div id="outline-container-org89bbeda" class="outline-3">
+<h3 id="org89bbeda"><a href="#org89bbeda">Aims</a></h3>
+<div class="outline-text-3" id="text-org89bbeda">
 <p>
 In this class activity, you will work together in groups of three to
 piece together all the things we have learned so far and describe the
@@ -126,9 +128,9 @@ understanding!
 </div>
 
 
-<div id="outline-container-org6f813a7" class="outline-3">
-<h3 id="org6f813a7"><a href="#org6f813a7">Brief description of pgstar movies created by <code>MESA-web</code></a></h3>
-<div class="outline-text-3" id="text-org6f813a7">
+<div id="outline-container-org924140e" class="outline-3">
+<h3 id="org924140e"><a href="#org924140e">Brief description of pgstar movies created by <code>MESA-web</code></a></h3>
+<div class="outline-text-3" id="text-org924140e">
 <p>
 Since you downloaded your models from <a href="http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit">MESA-web</a>, it makes sense to
 start trying to understand your model using the <code>*.mp4</code> movie it
@@ -136,7 +138,7 @@ produces for you.
 </p>
 
 
-<figure id="orgc445796">
+<figure id="orgb497bc3">
 <img src="./images/MESA-web_pgstar.png" alt="MESA-web_pgstar.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>snapshot of a <code>MESA-web</code> generated movie for the evolution of a 1M<sub>☉</sub> star.</figcaption>
@@ -161,9 +163,9 @@ large variations on these plots!
 </p>
 </div>
 
-<div id="outline-container-org1eb1472" class="outline-4">
-<h4 id="org1eb1472"><a href="#org1eb1472">Top right panel: abundance panel</a></h4>
-<div class="outline-text-4" id="text-org1eb1472">
+<div id="outline-container-org21018af" class="outline-4">
+<h4 id="org21018af"><a href="#org21018af">Top right panel: abundance panel</a></h4>
+<div class="outline-text-4" id="text-org21018af">
 <p>
 This shows log<sub>10</sub>(X<sub>i</sub>) with X<sub>i</sub> the mass fraction of the i-th isotope as
 a function of mass coordinate (m=0 is the center, m=M the surface).
@@ -171,18 +173,18 @@ a function of mass coordinate (m=0 is the center, m=M the surface).
 </div>
 </div>
 
-<div id="outline-container-org844209f" class="outline-4">
-<h4 id="org844209f"><a href="#org844209f">Bottom right panel: HR diagram</a></h4>
-<div class="outline-text-4" id="text-org844209f">
+<div id="outline-container-orga42f6d5" class="outline-4">
+<h4 id="orga42f6d5"><a href="#orga42f6d5">Bottom right panel: HR diagram</a></h4>
+<div class="outline-text-4" id="text-orga42f6d5">
 <p>
 Showing absolute bolometric luminosity vs. effective temperature.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb59a790" class="outline-4">
-<h4 id="orgb59a790"><a href="#orgb59a790">Middle top panel: Kippenhahn diagram</a></h4>
-<div class="outline-text-4" id="text-orgb59a790">
+<div id="outline-container-org9f8521b" class="outline-4">
+<h4 id="org9f8521b"><a href="#org9f8521b">Middle top panel: Kippenhahn diagram</a></h4>
+<div class="outline-text-4" id="text-org9f8521b">
 <p>
 This shows the internal mixing processes and the energy generation as
 a function of "time" (on the x-axis) and mass coordinate (y-axis):
@@ -208,9 +210,9 @@ time and timestep number!
 </div>
 </div>
 
-<div id="outline-container-org36f7557" class="outline-4">
-<h4 id="org36f7557"><a href="#org36f7557">Middle bottom panel: T(&rho;)</a></h4>
-<div class="outline-text-4" id="text-org36f7557">
+<div id="outline-container-orge223a7d" class="outline-4">
+<h4 id="orge223a7d"><a href="#orge223a7d">Middle bottom panel: T(&rho;)</a></h4>
+<div class="outline-text-4" id="text-orge223a7d">
 <p>
 Annotated log-log plot of the temperature and density. The line color
 indicates mixing at that location in the star, the yellow/orange/red
@@ -225,9 +227,9 @@ lines corresponding to the ignition of various fuels.
 </div>
 </div>
 
-<div id="outline-container-org0465687" class="outline-4">
-<h4 id="org0465687"><a href="#org0465687">Right panel: various profiles</a></h4>
-<div class="outline-text-4" id="text-org0465687">
+<div id="outline-container-org3608ca4" class="outline-4">
+<h4 id="org3608ca4"><a href="#org3608ca4">Right panel: various profiles</a></h4>
+<div class="outline-text-4" id="text-org3608ca4">
 <p>
 These three panels show P, &rho;, and T as a function of mass coordinate.
 </p>
@@ -236,13 +238,13 @@ These three panels show P, &rho;, and T as a function of mass coordinate.
 </div>
 
 
-<div id="outline-container-orgb6feea6" class="outline-3">
-<h3 id="orgb6feea6"><a href="#orgb6feea6">Mass-luminosity relation revisited with models</a></h3>
-<div class="outline-text-3" id="text-orgb6feea6">
+<div id="outline-container-org373e755" class="outline-3">
+<h3 id="org373e755"><a href="#org373e755">Mass-luminosity relation revisited with models</a></h3>
+<div class="outline-text-3" id="text-org373e755">
 <p>
 We have already discussed <i>empirical</i> L &equiv; L(M) relations based on
 <i>dynamical</i> mass measurements in SB2 eclipsing binaries, and you have
-derived an analytic relation for fully radiative stars (see <a href="notes-lecture-ETransport.html#orgcadac02">homework
+derived an analytic relation for fully radiative stars (see <a href="notes-lecture-ETransport.html#org4e6b747">homework
 on radiative energy transport</a>). Let's now see if our models agree and
 if we can understand why if they don't!
 </p>
@@ -265,7 +267,7 @@ initial stellar structure. You can find the variable <code>center_h1</code> in y
 
 
 
-<figure id="org1339464">
+<figure id="orgfe20936">
 <img src="./images/LM_crowdsourced.png" alt="LM_crowdsourced.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>L(M) relation obtained in class. The red points assume homogeneous stars in hydrostatic equilibrium and fully radiative, the orange points are the results reported by the students based on <code>MESA-web</code> results. Deviations at large and small masses (related to violations of the theoretical assumptions) are expected.</figcaption>
@@ -293,9 +295,9 @@ implicated in the discussion for what is the maximum mass of a star.</li>
 </div>
 </div>
 
-<div id="outline-container-org7a5c946" class="outline-3">
-<h3 id="org7a5c946"><a href="#org7a5c946">Discuss with your "mass" group</a></h3>
-<div class="outline-text-3" id="text-org7a5c946">
+<div id="outline-container-org4559e64" class="outline-3">
+<h3 id="org4559e64"><a href="#org4559e64">Discuss with your "mass" group</a></h3>
+<div class="outline-text-3" id="text-org4559e64">
 <p>
 Compare your model to the models of people nearby you and explore the
 data you have. You probably want to start from the movie <code>MESA-web</code>
@@ -322,9 +324,9 @@ Pay attention to:
 </ul>
 </div>
 
-<div id="outline-container-org803dbab" class="outline-4">
-<h4 id="org803dbab"><a href="#org803dbab">Some guiding questions for inspiration</a></h4>
-<div class="outline-text-4" id="text-org803dbab">
+<div id="outline-container-org902d295" class="outline-4">
+<h4 id="org902d295"><a href="#org902d295">Some guiding questions for inspiration</a></h4>
+<div class="outline-text-4" id="text-org902d295">
 <ol class="org-ol">
 <li>where does the evolution start?</li>
 <li>what is the energy source providing the luminosity L before
@@ -347,9 +349,9 @@ main sequence?</li>
 </div>
 </div>
 
-<div id="outline-container-orgee92cdb" class="outline-2">
-<h2 id="orgee92cdb"><a href="#orgee92cdb">Clean examples</a></h2>
-<div class="outline-text-2" id="text-orgee92cdb">
+<div id="outline-container-org2d66821" class="outline-2">
+<h2 id="org2d66821"><a href="#org2d66821">Clean examples</a></h2>
+<div class="outline-text-2" id="text-org2d66821">
 <p>
 Because <code>MESA-web</code> is a simple configuration meant for didactic
 applications, it may produce in certain configurations a lot of
@@ -369,7 +371,7 @@ stars of various mass.
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <i id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
   Last updated on 1 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2

@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-01 Sat 16:34 -->
+<!-- 2025-02-01 Sat 19:34 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Introduction</title>
 <meta name="author" content="Mathieu Renzo" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="./css/style-dark.css" id="dark-theme" disabled> <!-- Dark theme CSS -->
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
 			       stellar evolution, 400A, University of
@@ -55,7 +54,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myHamburgerMenu()">
+    <a href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -67,9 +66,9 @@
   </div>
 </div>
 
-<!-- The hamburger menu  -->
+<!-- scripts -->
 <script>
-  function myHamburgerMenu() {
+  function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -79,40 +78,43 @@
   }
 </script>
 
-
-
 <script>
-    const themeToggleIcon = document.getElementById('theme-toggle');
-    const darkThemeLink = document.getElementById('dark-theme');
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      // const body = document.body;
+      const html = document.html;
 
-    // Check the current theme from localStorage on page load
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-        darkThemeLink.removeAttribute('disabled'); // Enable dark theme
-    }
 
-    // Toggle theme when icon is clicked
-    themeToggleIcon.addEventListener('click', () => {
-        if (darkThemeLink.disabled) {
-            darkThemeLink.removeAttribute('disabled'); // Enable dark theme
-            localStorage.setItem('theme', 'dark');
-        } else {
-            darkThemeLink.setAttribute('disabled', 'true'); // Disable dark theme
-            localStorage.setItem('theme', 'light');
-        }
-    });
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
 </script>
+<!-- end scripts-->
 </div>
 <div id="content" class="content">
 <p>
 <b>Materials</b>: chapter 1 of Onno Pols' lecture notes.
 </p>
 
-<div id="outline-container-org4e387b4" class="outline-2">
-<h2 id="org4e387b4"><a href="#org4e387b4">Introduction to the course</a></h2>
-<div class="outline-text-2" id="text-org4e387b4">
+<div id="outline-container-org7c445a2" class="outline-2">
+<h2 id="org7c445a2"><a href="#org7c445a2">Introduction to the course</a></h2>
+<div class="outline-text-2" id="text-org7c445a2">
 
-<figure id="orgcba7093">
+<figure id="org60952b8">
 <img src="./images/word_cloud20250116.png" alt="word_cloud20250116.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Word cloud of the students' expectations for what they are going to learn in this class (Spring 2025 semester).</figcaption>
@@ -120,9 +122,9 @@
 </div>
 </div>
 
-<div id="outline-container-org117c460" class="outline-2">
-<h2 id="org117c460"><a href="#org117c460">Who am I?</a></h2>
-<div class="outline-text-2" id="text-org117c460">
+<div id="outline-container-org1268833" class="outline-2">
+<h2 id="org1268833"><a href="#org1268833">Who am I?</a></h2>
+<div class="outline-text-2" id="text-org1268833">
 <p>
 My name is Mathieu Renzo, I have been an assistant professor here at
 Steward since last year. Before, I was a postdoc in New York city (at
@@ -161,9 +163,9 @@ own computer models too.
 </div>
 </div>
 
-<div id="outline-container-orgb0c3cf7" class="outline-2">
-<h2 id="orgb0c3cf7"><a href="#orgb0c3cf7">Aim of the course</a></h2>
-<div class="outline-text-2" id="text-orgb0c3cf7">
+<div id="outline-container-orge55183d" class="outline-2">
+<h2 id="orge55183d"><a href="#orge55183d">Aim of the course</a></h2>
+<div class="outline-text-2" id="text-orge55183d">
 <p>
 <b>To understand the structure and evolution of stars and their
 observational properties using known laws of physics.</b>
@@ -171,9 +173,9 @@ observational properties using known laws of physics.</b>
 </div>
 </div>
 
-<div id="outline-container-orga7a03dc" class="outline-2">
-<h2 id="orga7a03dc"><a href="#orga7a03dc">Expectations</a></h2>
-<div class="outline-text-2" id="text-orga7a03dc">
+<div id="outline-container-org37458de" class="outline-2">
+<h2 id="org37458de"><a href="#org37458de">Expectations</a></h2>
+<div class="outline-text-2" id="text-org37458de">
 <p>
 This is a core course during your 4<sup>th</sup> year, so you are approaching the
 academic threshold beyond which you will be <b>expected</b> to carry out
@@ -234,11 +236,11 @@ may be. We will do this through a project, that we will discuss later.
 </div>
 </div>
 
-<div id="outline-container-orge8e4beb" class="outline-2">
-<h2 id="orge8e4beb"><a href="#orge8e4beb">Discuss syllabus</a></h2>
-<div class="outline-text-2" id="text-orge8e4beb">
+<div id="outline-container-orgf403eda" class="outline-2">
+<h2 id="orgf403eda"><a href="#orgf403eda">Discuss syllabus</a></h2>
+<div class="outline-text-2" id="text-orgf403eda">
 
-<figure id="orgbeca95d">
+<figure id="org468abf7">
 <img src="./images/QR-syllabus.png" alt="QR-syllabus.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Link to <a href="./syllabus.html">syllabus</a></figcaption>
@@ -246,13 +248,13 @@ may be. We will do this through a project, that we will discuss later.
 </div>
 </div>
 
-<div id="outline-container-org87d54a8" class="outline-2">
-<h2 id="org87d54a8"><a href="#org87d54a8">Let's start finally talking about stars!</a></h2>
-<div class="outline-text-2" id="text-org87d54a8">
+<div id="outline-container-org2a45baa" class="outline-2">
+<h2 id="org2a45baa"><a href="#org2a45baa">Let's start finally talking about stars!</a></h2>
+<div class="outline-text-2" id="text-org2a45baa">
 </div>
-<div id="outline-container-org1b40383" class="outline-3">
-<h3 id="org1b40383"><a href="#org1b40383">What is a star?</a></h3>
-<div class="outline-text-3" id="text-org1b40383">
+<div id="outline-container-org9f6e80f" class="outline-3">
+<h3 id="org9f6e80f"><a href="#org9f6e80f">What is a star?</a></h3>
+<div class="outline-text-3" id="text-org9f6e80f">
 <ul class="org-ul">
 <li>Historical definition: <i>flickering light source in the sky with no
 intrinsic motion</i> (where flickering excludes planets, and no
@@ -282,9 +284,9 @@ at the boundary between planets and stars.
 </div>
 </div>
 
-<div id="outline-container-org8c0c1b7" class="outline-3">
-<h3 id="org8c0c1b7"><a href="#org8c0c1b7">What determines the properties of a (single) star?</a></h3>
-<div class="outline-text-3" id="text-org8c0c1b7">
+<div id="outline-container-orge9cc9a9" class="outline-3">
+<h3 id="orge9cc9a9"><a href="#orge9cc9a9">What determines the properties of a (single) star?</a></h3>
+<div class="outline-text-3" id="text-orge9cc9a9">
 <ol class="org-ol">
 <li><b>Mass</b></li>
 <li>Chemical composition</li>
@@ -300,9 +302,9 @@ else? Mention <a href="https://en.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin">C
 </div>
 </div>
 
-<div id="outline-container-org7e33d27" class="outline-3">
-<h3 id="org7e33d27"><a href="#org7e33d27">Observations</a></h3>
-<div class="outline-text-3" id="text-org7e33d27">
+<div id="outline-container-org42f0877" class="outline-3">
+<h3 id="org42f0877"><a href="#org42f0877">Observations</a></h3>
+<div class="outline-text-3" id="text-org42f0877">
 <ul class="org-ul">
 <li>Photometry</li>
 <li>Spectroscopy</li>
@@ -312,9 +314,9 @@ else? Mention <a href="https://en.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin">C
 </ul>
 </div>
 
-<div id="outline-container-org9e9d4c9" class="outline-4">
-<h4 id="org9e9d4c9"><a href="#org9e9d4c9">Parallax</a></h4>
-<div class="outline-text-4" id="text-org9e9d4c9">
+<div id="outline-container-org67e62a8" class="outline-4">
+<h4 id="org67e62a8"><a href="#org67e62a8">Parallax</a></h4>
+<div class="outline-text-4" id="text-org67e62a8">
 <p>
 In astrophysics (and in stellar physics in particular) we still use
 quantities and units that have mostly a historical justification (one
@@ -341,9 +343,9 @@ with relatively small distances to the Solar system.
 </div>
 </div>
 
-<div id="outline-container-org030d28b" class="outline-4">
-<h4 id="org030d28b"><a href="#org030d28b">Proper motion and radial velocity</a></h4>
-<div class="outline-text-4" id="text-org030d28b">
+<div id="outline-container-org355e1b9" class="outline-4">
+<h4 id="org355e1b9"><a href="#org355e1b9">Proper motion and radial velocity</a></h4>
+<div class="outline-text-4" id="text-org355e1b9">
 <p>
 We can also see how stars move in the sky, but we need two different
 techniques to measure the velocity <i>on the plane of the sky</i> (so called
@@ -358,7 +360,7 @@ motions due to the Earth rotation:
 </p>
 
 
-<figure id="org2b0bdd7">
+<figure id="orgab898bd">
 <img src="./images/night_rotation.jpg" alt="night_rotation.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Long exposure picture showing circular tracks along the north direction. These are just the reflected motion due to the rotation of the Earth. Note the stars have different colors! Credits: G. Inchingolo.</figcaption>
@@ -390,7 +392,7 @@ very accurate instruments.
 </p>
 
 
-<figure id="orge2af899">
+<figure id="org80d3467">
 <img src="./images/Proper_motion.JPG" alt="Proper_motion.JPG" width="50%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Schematic representation of the proper motion</figcaption>
@@ -411,7 +413,7 @@ electrons across energy levels of a specific ion).
 </p>
 
 
-<figure id="org09c4412">
+<figure id="org49942e9">
 <img src="./images/Halpha_shift.png" alt="Halpha_shift.png" width="50%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Schematic representation of radial velocity shifts. Credits: Y. Gotberg.</figcaption>
@@ -420,9 +422,9 @@ electrons across energy levels of a specific ion).
 </div>
 
 
-<div id="outline-container-orgb2b41d0" class="outline-4">
-<h4 id="orgb2b41d0"><a href="#orgb2b41d0">Magnitudes</a></h4>
-<div class="outline-text-4" id="text-orgb2b41d0">
+<div id="outline-container-org29a5e85" class="outline-4">
+<h4 id="org29a5e85"><a href="#org29a5e85">Magnitudes</a></h4>
+<div class="outline-text-4" id="text-org29a5e85">
 <p>
 The magnitude scale is a logarithmic scale first introduces by
 <a href="https://en.wikipedia.org/wiki/Hipparchus">Hipparchus</a>, who clearly was only able to do naked-eye observations.
@@ -441,7 +443,7 @@ integrating over a range of frequencies (photometry!) accounting for
 the response of a filter as a function of wavelength T(&lambda;):
 </p>
 
-<div class="latex" id="org0f27380">
+<div class="latex" id="org4a5a897">
 \begin{equation}
 m = -2.5\log_{10}\left(\frac{\int T(\lambda)F_{\lambda}d\lambda}{\int T(\lambda) d\lambda}\right) + m_{0} \ \ ,
 \end{equation}
@@ -473,7 +475,7 @@ the apparent magnitude a star would have if it were at a distance of
 absolute magnitude M is
 </p>
 
-<div class="latex" id="org409aeec">
+<div class="latex" id="org6330579">
 \begin{equation}\label{eq:abs_magn}
 M - m = -2.5\log_{10}\left[\left(\frac{d}{10\mathrm{pc}}\right)^{2}\right] \ \,
 \end{equation}
@@ -505,9 +507,9 @@ erg cm<sup>-2</sup> s<sup>-1</sup> Hz<sup>-1</sup> corresponding to a photon flu
 </div>
 </div>
 
-<div id="outline-container-org438818c" class="outline-2">
-<h2 id="org438818c"><a href="#org438818c">Relevant physical scales</a></h2>
-<div class="outline-text-2" id="text-org438818c">
+<div id="outline-container-org2c286ba" class="outline-2">
+<h2 id="org2c286ba"><a href="#org2c286ba">Relevant physical scales</a></h2>
+<div class="outline-text-2" id="text-org2c286ba">
 <p>
 The star we can observe best is the closest one, the Sun (☉), so a
 lot of quantities are scaled to those of the Sun in stellar physics
@@ -515,22 +517,22 @@ and in astronomy more generally.
 </p>
 </div>
 
-<div id="outline-container-orgde47eff" class="outline-3">
-<h3 id="orgde47eff"><a href="#orgde47eff">Solar radius: R<sub>☉</sub> = 6.957&times;10<sup>10</sup> cm &cong; 7&times;10<sup>10</sup> cm &cong; 10<sup>11</sup> cm</a></h3>
-<div class="outline-text-3" id="text-orgde47eff">
+<div id="outline-container-orgf535652" class="outline-3">
+<h3 id="orgf535652"><a href="#orgf535652">Solar radius: R<sub>☉</sub> = 6.957&times;10<sup>10</sup> cm &cong; 7&times;10<sup>10</sup> cm &cong; 10<sup>11</sup> cm</a></h3>
+<div class="outline-text-3" id="text-orgf535652">
 <ul class="org-ul">
 <li><b>Q</b>: How many R<sub>☉</sub> are in 1 AU?</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5e9c74b" class="outline-3">
-<h3 id="org5e9c74b"><a href="#org5e9c74b">Solar mass: M<sub>☉</sub> = 1.98&times;10<sup>33</sup> g &cong; 2&times;10<sup>33</sup> g</a></h3>
+<div id="outline-container-org5a3c1a7" class="outline-3">
+<h3 id="org5a3c1a7"><a href="#org5a3c1a7">Solar mass: M<sub>☉</sub> = 1.98&times;10<sup>33</sup> g &cong; 2&times;10<sup>33</sup> g</a></h3>
 </div>
 
-<div id="outline-container-orgef705c2" class="outline-3">
-<h3 id="orgef705c2"><a href="#orgef705c2">Solar luminosity: L<sub>☉</sub> = 3.82&times;10<sup>33</sup> erg s<sup>-1</sup> &cong; 2&times; M<sub>☉</sub> in cgs units!</a></h3>
-<div class="outline-text-3" id="text-orgef705c2">
+<div id="outline-container-orgeb7c802" class="outline-3">
+<h3 id="orgeb7c802"><a href="#orgeb7c802">Solar luminosity: L<sub>☉</sub> = 3.82&times;10<sup>33</sup> erg s<sup>-1</sup> &cong; 2&times; M<sub>☉</sub> in cgs units!</a></h3>
+<div class="outline-text-3" id="text-orgeb7c802">
 <p>
 This may be one of the reasons why we still use <code>cgs</code> in astronomy,
 the other one being that the constants in electromagnetism are a
@@ -538,9 +540,9 @@ bit simpler.
 </p>
 </div>
 </div>
-<div id="outline-container-org38aec46" class="outline-3">
-<h3 id="org38aec46"><a href="#org38aec46">Solar effective temperature: T<sub>☉</sub> &cong; 5900K &cong; 6000K</a></h3>
-<div class="outline-text-3" id="text-org38aec46">
+<div id="outline-container-org84eaaed" class="outline-3">
+<h3 id="org84eaaed"><a href="#org84eaaed">Solar effective temperature: T<sub>☉</sub> &cong; 5900K &cong; 6000K</a></h3>
+<div class="outline-text-3" id="text-org84eaaed">
 <p>
 This is the "effective temperature" of the Sun, which we will discuss
 in the <a href="notes-lecture-CMD-HRD.html">next lecture</a>. It is an approximation for the temperature of the
@@ -553,9 +555,9 @@ the positive r direction). Stars don't really have a well defined
 </p>
 </div>
 </div>
-<div id="outline-container-orgd10c58f" class="outline-3">
-<h3 id="orgd10c58f"><a href="#orgd10c58f">Solar metallicity: Z<sub>☉</sub> = 0.0146 &cong; 0.02 (older but still widely used value)</a></h3>
-<div class="outline-text-3" id="text-orgd10c58f">
+<div id="outline-container-org6201ad8" class="outline-3">
+<h3 id="org6201ad8"><a href="#org6201ad8">Solar metallicity: Z<sub>☉</sub> = 0.0146 &cong; 0.02 (older but still widely used value)</a></h3>
+<div class="outline-text-3" id="text-org6201ad8">
 <p>
 The "metallicity" is the fraction by mass of gas that is <i>not</i> hydrogen
 nor helium. This includes many elements (e.g., C, N, O, Si) that a
@@ -572,7 +574,7 @@ particles bound together where &alpha; particle = nucleus of helium 4).
 </p>
 
 
-<figure id="orgb67cfa2">
+<figure id="org9c04da7">
 <img src="./images/solar_abundance_pattern.png" alt="solar_abundance_pattern.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Solar abundance pattern from <a href="https://ui.adsabs.harvard.edu/abs/1989AIPC..183....1G/abstract">Anders &amp; Grevesse 1989</a>. This shows the number of atoms normalized to 10<sup>6</sup> atoms of Silicon as a function of atomic number A. Often, for lack of better knowledge, this (or more recent updates to it) is the abundance pattern that is rescaled when changing the metallicity in a model.</figcaption>
@@ -592,9 +594,9 @@ the metallicity (i.e., taking X=Fe).
 </div>
 </div>
 
-<div id="outline-container-orgc42a7de" class="outline-3">
-<h3 id="orgc42a7de"><a href="#orgc42a7de">Lifetimes: ~3 Myr to &Gt; age of the Universe (&cong; 13.7 Gyr)</a></h3>
-<div class="outline-text-3" id="text-orgc42a7de">
+<div id="outline-container-org127a0a3" class="outline-3">
+<h3 id="org127a0a3"><a href="#org127a0a3">Lifetimes: ~3 Myr to &Gt; age of the Universe (&cong; 13.7 Gyr)</a></h3>
+<div class="outline-text-3" id="text-org127a0a3">
 <ul class="org-ul">
 <li><b>Q</b>: How old is the Sun? How long will it live? How do we know?</li>
 </ul>
@@ -602,20 +604,20 @@ the metallicity (i.e., taking X=Fe).
 </div>
 </div>
 
-<div id="outline-container-org71210fc" class="outline-2">
-<h2 id="org71210fc"><a href="#org71210fc">Discuss projects</a></h2>
-<div class="outline-text-2" id="text-org71210fc">
+<div id="outline-container-org012383e" class="outline-2">
+<h2 id="org012383e"><a href="#org012383e">Discuss projects</a></h2>
+<div class="outline-text-2" id="text-org012383e">
 <ul class="org-ul">
 <li>Projects will cover topics that are important and or timely, but
 hard to fit in the main body of the course</li>
 <li>Occasion for you to dig deeper and teach to your peers</li>
-<li>You should look over the <a href="projects.html#org95e4afd">proposed project</a>, and give us a ranked list
+<li>You should look over the <a href="projects.html#orgbeb244e">proposed project</a>, and give us a ranked list
 of 5 projects you'd like to do (see <a href="https://d2l.arizona.edu/d2l/home/1463376">D2L</a> for updated deadline).</li>
 <li>After receiving your preferences, we will assign to each a project
 trying to maximize happiness (though it may not be possible to
 accommodate everyone), and for each project we will assign two peer
 referees.</li>
-<li>Look over also <a href="projects.html#orgcf9fa7a">how the grading of the project will work</a>: in short,
+<li>Look over also <a href="projects.html#orgf3fcf1a">how the grading of the project will work</a>: in short,
 we will evaluate your written summary (together with 2 of your
 classmates!), your oral presentation in class (again, with your
 peers!), and how you give feedback to others.</li>
@@ -623,13 +625,13 @@ peers!), and how you give feedback to others.</li>
 </div>
 </div>
 
-<div id="outline-container-org61bfaef" class="outline-2">
-<h2 id="org61bfaef"><a href="#org61bfaef">Homework</a></h2>
-<div class="outline-text-2" id="text-org61bfaef">
+<div id="outline-container-org5ff44e2" class="outline-2">
+<h2 id="org5ff44e2"><a href="#org5ff44e2">Homework</a></h2>
+<div class="outline-text-2" id="text-org5ff44e2">
 </div>
-<div id="outline-container-org21baa5f" class="outline-3">
-<h3 id="org21baa5f"><a href="#org21baa5f">General considerations</a></h3>
-<div class="outline-text-3" id="text-org21baa5f">
+<div id="outline-container-org84a28db" class="outline-3">
+<h3 id="org84a28db"><a href="#org84a28db">General considerations</a></h3>
+<div class="outline-text-3" id="text-org84a28db">
 <ul class="org-ul">
 <li>As per the syllabus, homework should be your own production,
 though you can discuss with your peers. Science is made of
@@ -645,13 +647,13 @@ keep in mind that it's only an opportunity to grow and improve!</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org6ea8b5b" class="outline-3">
-<h3 id="org6ea8b5b"><a href="#org6ea8b5b">Specific assignments for today</a></h3>
-<div class="outline-text-3" id="text-org6ea8b5b">
+<div id="outline-container-org83582a7" class="outline-3">
+<h3 id="org83582a7"><a href="#org83582a7">Specific assignments for today</a></h3>
+<div class="outline-text-3" id="text-org83582a7">
 <ul class="org-ul">
 <li>Calculate the average density of the Sun and compare it with the
 density of something familiar on Earth.</li>
-<li>Start looking over the <a href="projects.html#org95e4afd">list of final projects</a>, you will need to
+<li>Start looking over the <a href="projects.html#orgbeb244e">list of final projects</a>, you will need to
 provide a ranked list of 5 preferences. Feel free to search
 the web/literature to decide. Based on this list, I will try to
 assign projects and peer-referees, but it may not be possible to
@@ -666,7 +668,7 @@ to talk to me to get them approved before they can be on your list!</li>
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <i id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i>&emsp;&emsp;&emsp;&emsp;<a href="index.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-CMD-HRD.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="index.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-CMD-HRD.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
   Last updated on 1 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2

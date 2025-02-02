@@ -7,34 +7,26 @@
     --line-height: 50px;
     --padding-horizontal: 25px;
     --padding-vertical: 25px;
-    --background: whitesmoke;
-    --color: #333333;
-    --hover-color: gray;
+    --background: ; /* Dark background */
+    --color: #E0E0E0; /* Light text color */
+    --hover-color: #888; /* Lighter hover effect */
 }
 
 * {
-    /* margin: 0; */
     background: var(--background);
     color: var(--color);
-    /* padding: 0;
+    margin: 0;
+    padding: 0;
     /* box-sizing: border-box; */
 }
 
-html, body {
-    background: var(--background);
-    color: var(--color);
-}
-
-
 .header {
-    /* overflow: hidden; */
     position: relative;
     max-width: var(--header-max-width);
     margin-left: auto;
     margin-right: auto;
     padding-left: var(--padding-horizontal);
     padding-right: var(--padding-horizontal);
-    /* height: 100px; */
     background: var(--background);
 }
 
@@ -44,10 +36,9 @@ html, body {
 }
 
 .header a:hover {
-    color: var(--color);
+    color: var(--hover-color);
     text-decoration: underline;
 }
-
 
 .site-name {
     display: inline-block;
@@ -56,81 +47,74 @@ html, body {
 }
 
 .right-img {
- float: right;
- padding: 0pt 0pt 0pt 5pt;
- text-padding: 0pt 0pt 0pt 0pt;
- text-align: justify;
+    float: right;
+    padding: 0pt 0pt 0pt 5pt;
+    text-align: justify;
 }
 
 @media (max-width: 850px) {
     .navbar {
-	display: none;
+        display: none;
     }
 
     .hamburger #myLinks {
-	display: none;
+        display: none;
     }
 
     .hamburger a.icon {
-	font-size: var(--icon-size);
-	position: absolute;
-	top: calc(0.5*var(--header-height) - 0.6*var(--icon-size));
-	right: 0pxg;
-	padding-right: var(--padding-horizontal);
+        font-size: var(--icon-size);
+        position: absolute;
+        top: calc(0.5*var(--header-height) - 0.6*var(--icon-size));
+        right: 0px;
+        padding-right: var(--padding-horizontal);
     }
 
-
     .menu {
-	padding-bottom: var(--padding-horizontal);
+        padding-bottom: var(--padding-horizontal);
     }
 
     .menu a {
-	text-decoration: font;
-	none-size: var(--header-navbar-font-size);
-	display: block;
-	line-height: 50px;
+        font-size: var(--header-navbar-font-size);
+        display: block;
+        line-height: 50px;
     }
 
     .menu a:hover {
-	color: var(--hover-color);
+        color: var(--hover-color);
     }
-
 }
 
 @media (min-width: 850px) {
     .menu a {
-	display: none;
+        display: none;
     }
 
     .hamburger {
-	display: none;
+        display: none;
     }
 
     .hamburger #myLinks {
-	display: none;
+        display: none;
     }
 
     .navbar {
-	float: right;
-	width: 500px;
-	display: flex;
-	justify-content: space-between;
-	position: relative;
-	top: calc(0.5*var(--header-height) - 0.6*var(--icon-size));
-	/* right: 5px; */
+        float: right;
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: calc(0.5*var(--header-height) - 0.6*var(--icon-size));
     }
 
     .navbar a {
-	text-decoration: none;
-	display: inline-block;
-	margin: 3pt;
+        text-decoration: none;
+        display: inline-block;
+        margin: 3pt;
     }
 
     .navbar a:hover {
-	color: var(--hover-color);
+        color: var(--hover-color);
     }
-
-
 }
 
 /* Banner image */
@@ -162,48 +146,44 @@ html, body {
 }
 
 .content a{
-    color: #4099FF;
+    color: #1E90FF; /* Bright blue for links */
     text-decoration: none;
 }
 
-.content a:hover{
-    color:  #4099FF;
+.content a:hover {
+    color: #1E90FF;
     text-decoration: underline;
 }
 
-.content a:visited{
-    color: #4099AA;
+.content a:visited {
+    color: #3A8FB3; /* Slightly darker visited links */
 }
 
-.content a:visited:hover{
-    color: #4099AA;
+.content a:visited:hover {
+    color: #3A8FB3;
     text-decoration: underline;
 }
-
 
 /* Latex */
-
 .latex {
-  overflow: visible; /* Prevents content clipping */
+  overflow: visible;
 }
 
-/* Ensure all MathJax containers do not clip content */
+/* MathJax */
 .mathjax-container {
   overflow: visible !important;
 }
 
-/* Ensure MathJax spans allow proper rendering */
 .MathJax {
   overflow: visible !important;
-  display: inline-block; /* Prevent constraints */
+  display: inline-block;
 }
-
 
 /* Footer */
 hr {
     width: 100%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
     height: 1.5px;
     color: var(--color);
@@ -212,10 +192,9 @@ hr {
 
 .footer {
     max-width: 900px;
-    color: var(--color);
+    color: #B0B0B0; /* Lighter gray text for footer */
     margin-left: auto;
     margin-right: auto;
-    /* padding-top: var(--padding-vertical); */
     padding-bottom: var(--padding-vertical);
     padding-left: var(--padding-horizontal);
     padding-right: var(--padding-horizontal);
@@ -237,15 +216,14 @@ hr {
 }
 
 table {
-    /* width: 100%; */
     text-align: left;
     border-top: 1px solid var(--color);
     border-top-width: 2px;
     border-collapse: collapse;
     margin: 0 0 1em 0;
     caption-side: bottom;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 14px;
 }
 
@@ -277,45 +255,92 @@ th.location {
 
 tfoot {
     text-align: center;
-    color: ; #555;
+    color: #888;
     font-size: 0.8em;
 }
 
 /* fix header links */
-.content h1 a,
-.content h2 a,
-.content h3 a,
-.content h4 a,
-.content h5 a,
-.content h6 a  {
-    color:  var(--color);
+.content h1 a {
+    color: var(--color);
     text-decoration: none;
 }
 
+.content h2 a {
+    color: var(--color);
+    text-decoration: none;
+}
 
-.content h1 a:hover,
-.content h2 a:hover,
-.content h3 a:hover,
-.content h4 a:hover,
-.content h5 a:hover,
+.content h3 a {
+    color: var(--color);
+    text-decoration: none;
+}
+
+.content h4 a {
+    color: var(--color);
+    text-decoration: none;
+}
+
+.content h5 a {
+    color: var(--color);
+    text-decoration: none;
+}
+
+.content h6 a  {
+    color: var(--color);
+    text-decoration: none;
+}
+
+.content h1 a:hover {
+    color: var(--color);
+    text-decoration: underline;
+}
+
+.content h2 a:hover {
+    color: var(--color);
+    text-decoration: underline;
+}
+
+.content h3 a:hover {
+    color: var(--color);
+    text-decoration: underline;
+}
+
+.content h4 a:hover {
+    color: var(--color);
+    text-decoration: underline;
+}
+
+.content h5 a:hover {
+    color: var(--color);
+    text-decoration: underline;
+}
+
 .content h6 a:hover {
     color: var(--color);
     text-decoration: underline;
 }
 
-.content h1 a:visited,
-.content h2 a:visited,
-.content h3 a:visited,
-.content h4 a:visited,
-.content h5 a:visited,
+.content h1 a:visited {
+    color: var(--color);
+}
+
+.content h2 a:visited {
+    color: var(--color);
+}
+
+.content h3 a:visited {
+    color: var(--color);
+}
+
+.content h4 a:visited {
+    color: var(--color);
+}
+
+.content h5 a:visited {
+    color: var(--color);
+}
+
 .content h6 a:visited {
-    color:  var(--color);
+    color: var(--color);
 }
 /* end fix */
-
-/* Dark Mode */
-.dark-mode {
-    --background: #121212; /* Dark background */
-    --color: #949494; /* Main text color */
-    --hover-color: #7b7b7b; /* Hover effect color */
-}

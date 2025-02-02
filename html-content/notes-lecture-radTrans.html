@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-01 Sat 16:34 -->
+<!-- 2025-02-01 Sat 19:34 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Radiative transfer</title>
 <meta name="author" content="Mathieu Renzo" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="./css/style-dark.css" id="dark-theme" disabled> <!-- Dark theme CSS -->
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
 			       stellar evolution, 400A, University of
@@ -55,7 +54,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myHamburgerMenu()">
+    <a href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -67,9 +66,9 @@
   </div>
 </div>
 
-<!-- The hamburger menu  -->
+<!-- scripts -->
 <script>
-  function myHamburgerMenu() {
+  function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -79,29 +78,32 @@
   }
 </script>
 
-
-
 <script>
-    const themeToggleIcon = document.getElementById('theme-toggle');
-    const darkThemeLink = document.getElementById('dark-theme');
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      // const body = document.body;
+      const html = document.html;
 
-    // Check the current theme from localStorage on page load
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-        darkThemeLink.removeAttribute('disabled'); // Enable dark theme
-    }
 
-    // Toggle theme when icon is clicked
-    themeToggleIcon.addEventListener('click', () => {
-        if (darkThemeLink.disabled) {
-            darkThemeLink.removeAttribute('disabled'); // Enable dark theme
-            localStorage.setItem('theme', 'dark');
-        } else {
-            darkThemeLink.setAttribute('disabled', 'true'); // Disable dark theme
-            localStorage.setItem('theme', 'light');
-        }
-    });
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
 </script>
+<!-- end scripts-->
 </div>
 <div id="content" class="content">
 <p>
@@ -110,9 +112,9 @@
 <i>Astrophysical Hydrodynamics</i> book, Lamers &amp; Cassinelli 1994 book.
 </p>
 
-<div id="outline-container-org2a07caa" class="outline-2">
-<h2 id="org2a07caa"><a href="#org2a07caa">Stellar atmospheres</a></h2>
-<div class="outline-text-2" id="text-org2a07caa">
+<div id="outline-container-org43a0d04" class="outline-2">
+<h2 id="org43a0d04"><a href="#org43a0d04">Stellar atmospheres</a></h2>
+<div class="outline-text-2" id="text-org43a0d04">
 <p>
 So far in this course we have mostly dealt with the <i>interior</i> of stars
 and derived equation to determine the stellar <i>structure</i> and what
@@ -152,9 +154,9 @@ to calculate a stellar model.
 </p>
 </div>
 
-<div id="outline-container-orgb277830" class="outline-3">
-<h3 id="orgb277830"><a href="#orgb277830">Definition</a></h3>
-<div class="outline-text-3" id="text-orgb277830">
+<div id="outline-container-org66d4e22" class="outline-3">
+<h3 id="org66d4e22"><a href="#org66d4e22">Definition</a></h3>
+<div class="outline-text-3" id="text-org66d4e22">
 <p>
 The <i>stellar atmosphere</i> is by definition the layer where the radiation
 field is <i>not</i> isotropic, but the photon flux has a net <i>radial</i>
@@ -196,7 +198,7 @@ By definition, the bottom layer of the atmosphere is the <i>photosphere</i>,
 that is this fictional surface that has T<sub>eff</sub> such that a black body of
 this temperature would emits the same energy per unit time as the star
 does. This is from where the bulk of the stellar radiation comes from
-<i>by definition</i> (recall the <a href="notes-lecture-CMD-HRD.html#org925e559">discussion on spectral types!</a>).
+<i>by definition</i> (recall the <a href="notes-lecture-CMD-HRD.html#orgdd696d1">discussion on spectral types!</a>).
 </p>
 
 <p>
@@ -209,9 +211,9 @@ equilibrium, so &epsilon;<sub>grav</sub> &prop; ds/dt = 0, so L is constant.
 </div>
 </div>
 
-<div id="outline-container-org8dd5e11" class="outline-2">
-<h2 id="org8dd5e11"><a href="#org8dd5e11">Basics of radiative transfer</a></h2>
-<div class="outline-text-2" id="text-org8dd5e11">
+<div id="outline-container-org62d5da6" class="outline-2">
+<h2 id="org62d5da6"><a href="#org62d5da6">Basics of radiative transfer</a></h2>
+<div class="outline-text-2" id="text-org62d5da6">
 <p>
 The problem we need to consider in the stellar atmosphere is how
 radiation coming from the <i>photosphere</i> flows through the overlaying
@@ -240,7 +242,7 @@ around the direction \(\mathbf{n}\) with frequency in the range between
 &nu; and &nu;+d&nu;:
 </p>
 
-<div class="latex" id="org59a17fc">
+<div class="latex" id="org6b8ee15">
 \begin{equation}
 I_{\nu} \equiv I_{\nu}(\theta) = \frac{dI}{d\nu} = \frac{dE_{\nu}}{d\nu dt dA d\Omega} \mathbf{n} \ \ ,
 \end{equation}
@@ -270,7 +272,7 @@ is not the case for stellar atmosphere), so we can write down the
 equation of radiative transfer as
 </p>
 
-<div class="latex" id="org00ffd44">
+<div class="latex" id="orgfea1557">
 \begin{equation}\label{eq:radTrans}
 \frac{dI_{\nu}}{ds} = \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \mathbf{n}\cdot\nabla I_{\nu} = -\kappa_{\nu}\rho I_{\nu} + j_{\nu}\rho \ \ ,
 \end{equation}
@@ -304,7 +306,7 @@ The specific intensity at the bottom of the atmosphere is related to
 the photospheric emission by:
 </p>
 
-<div class="latex" id="orgf2ee224">
+<div class="latex" id="org6d174a0">
 \begin{equation}
 F \equiv \int_{0}^{+\infty} d\nu F_{\nu} \equiv \sigma T_\mathrm{eff}^{4} =  \int_{0}^{+\infty} d\nu \int d \Omega \cos(\theta) I_{\nu} \ \ ,
 \end{equation}
@@ -325,13 +327,13 @@ have a flux &sigma; T<sub>eff</sub><sup>4</sup>.
 </p>
 </div>
 
-<div id="outline-container-orgbf3ffbb" class="outline-3">
-<h3 id="orgbf3ffbb"><a href="#orgbf3ffbb">Simple solutions of the steady state radiative transfer equation</a></h3>
-<div class="outline-text-3" id="text-orgbf3ffbb">
+<div id="outline-container-orgad02123" class="outline-3">
+<h3 id="orgad02123"><a href="#orgad02123">Simple solutions of the steady state radiative transfer equation</a></h3>
+<div class="outline-text-3" id="text-orgad02123">
 </div>
-<div id="outline-container-org080ee7d" class="outline-4">
-<h4 id="org080ee7d"><a href="#org080ee7d">Steady state without emission</a></h4>
-<div class="outline-text-4" id="text-org080ee7d">
+<div id="outline-container-org7a82f05" class="outline-4">
+<h4 id="org7a82f05"><a href="#org7a82f05">Steady state without emission</a></h4>
+<div class="outline-text-4" id="text-org7a82f05">
 <p>
 In absence of an explicit time dependence (&part;<sub>t</sub> I<sub>&nu;</sub> =0) and emission
 processes (j<sub>&nu;</sub>=0), this equation is easily solved calling s the
@@ -339,7 +341,7 @@ length element along the direction \(\mathbf{n}\) so that \(\mathbf{n}\cdot\nabl
 \equiv d/ds\), and the solution becomes:
 </p>
 
-<div class="latex" id="orgf4fd7df">
+<div class="latex" id="org976e4a7">
 \begin{equation}
 I_{\nu} = I_{\nu,0} e^{-\kappa_{\nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
 \end{equation}
@@ -357,15 +359,15 @@ coordinate for the propagation of photons of frequency between &nu; and
 </div>
 </div>
 
-<div id="outline-container-org4757079" class="outline-4">
-<h4 id="org4757079"><a href="#org4757079">Steady state with emission and absorption canceling each other</a></h4>
-<div class="outline-text-4" id="text-org4757079">
+<div id="outline-container-org3787d59" class="outline-4">
+<h4 id="org3787d59"><a href="#org3787d59">Steady state with emission and absorption canceling each other</a></h4>
+<div class="outline-text-4" id="text-org3787d59">
 <p>
 With the definition of d&tau;<sub>&nu;</sub>, we can re-write Eq. \ref{eq:radTrans}
 (still assuming no explicit time dependence, &part;<sub>t</sub>I<sub>&nu;</sub> = 0) as:
 </p>
 
-<div class="latex" id="org25272d3">
+<div class="latex" id="orgf73aaf3">
 \begin{equation}\label{eq:rad_trans_tau}
 \frac{dI_{\nu}}{d\tau_{\nu}} = \frac{j_{\nu}}{\kappa_{\nu}} - I_{\nu} \equiv S_{\nu} - I_{\nu} \ \ ,
 \end{equation}
@@ -389,9 +391,9 @@ out of the direction of interest all cancel each other out.
 </div>
 </div>
 
-<div id="outline-container-org739c54b" class="outline-3">
-<h3 id="org739c54b"><a href="#org739c54b">Eddington atmosphere</a></h3>
-<div class="outline-text-3" id="text-org739c54b">
+<div id="outline-container-org0436f6e" class="outline-3">
+<h3 id="org0436f6e"><a href="#org0436f6e">Eddington atmosphere</a></h3>
+<div class="outline-text-3" id="text-org0436f6e">
 <p>
 The simplest stellar atmosphere model that allows to define
 non-trivial outer boundary conditions is the so called "Eddington gray
@@ -413,7 +415,7 @@ one-dimensional problem along the vertical direction, and ds =
 and rewrite the steady state (&part;<sub>t</sub> = 0) radiative transfer equation as:
 </p>
 
-<div class="latex" id="org547f43c">
+<div class="latex" id="org0990b3b">
 \begin{equation}
 \cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = - (S_{\nu}-I_{\nu}) \ \ .
 \end{equation}
@@ -435,7 +437,7 @@ these hypotheses we can now integrate this in d&nu; from 0 to +&infin; and
 obtain:
 </p>
 
-<div class="latex" id="orge15d457">
+<div class="latex" id="org7f70fcc">
 \begin{equation}\label{eq:gray_eq}
 \cos(\theta) \frac{dI}{d\tau} = - (S-I) \ \ ,
 \end{equation}
@@ -446,7 +448,7 @@ which can be solved analytically (multiply by e<sup>-&tau;/cos(&theta;)</sup>,
 rewrite the l.h.s. as a total derivative and integrate in d&tau;) getting
 </p>
 
-<div class="latex" id="orgd76724e">
+<div class="latex" id="org5697006">
 \begin{equation}
 I(\tau,\theta) = \frac{\exp(\tau/\cos(\theta))}{\cos(\theta)} \int_{\tau}^{+\infty} S\exp(-\tau/\cos(\theta))d\tau \ \ ,
 \end{equation}
@@ -465,7 +467,7 @@ cos(&theta;) (since &theta; always appears in a cosine, it is usual to change
 variable to cos(&theta;)=&mu; in radiative transfer calculations):
 </p>
 
-<div class="latex" id="org6607673">
+<div class="latex" id="org4a7a11b">
 \begin{equation}\label{eq:momenta_rad}
 u \equiv u(\tau) = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
 F \equiv F(\tau) = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
@@ -481,7 +483,7 @@ I(&tau;)d&Omega; &equiv; 0.5&int;<sub>-1</sub><sup>+1</sup> I(&tau;)dcos(&theta;
 have
 </p>
 
-<div class="latex" id="org26b8f47">
+<div class="latex" id="org1ab934e">
 \begin{equation}\label{eq:J_S}
 \frac{1}{4\pi}\frac{d F}{d\tau} = J-S \ \ .
 \end{equation}
@@ -499,7 +501,7 @@ We can also take Eq. \ref{eq:gray_eq} and multiply it by cos<sup>2</sup>(&theta;
 and integrate between -1 and 1 in cos(&theta;) to obtain:
 </p>
 
-<div class="latex" id="org5170de6">
+<div class="latex" id="orgec13c83">
 \begin{equation}\label{eq:sol_S}
 \frac{dP}{d\tau} = \frac{F}{c} \ \ .
 \end{equation}
@@ -515,7 +517,7 @@ P=u/3 &equiv; 4&pi; J/3c (using the definition of J and its relation with the
 radiation energy density u). Putting all these findings together:
 </p>
 
-<div class="latex" id="orgba42b0f">
+<div class="latex" id="org5ac7ae4">
 \begin{equation}
 S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right) \ \ ,
 \end{equation}
@@ -525,7 +527,7 @@ S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right
 that is we have an expression for the source function!
 Substituting for S in the solution for I we get:
 </p>
-<div class="latex" id="org9b1bceb">
+<div class="latex" id="orgfbd9cee">
 \begin{equation}
 I(\tau, \cos(\theta)) = \frac{3F}{4\pi}\frac{\exp(\tau/\cos(\theta))}{\cos(\theta)}\int_{\tau}^{+\infty} \left(\tau+\mathrm{constant}\right) \exp\left(-\frac{\tau}{\cos(\theta)}\right)d\tau \Rightarrow I(0,\cos(\theta)) = \frac{3F}{4\pi}(\cos(\theta)+\mathrm{constant}) \ \ .
 \end{equation}
@@ -538,7 +540,7 @@ Eq. \ref{eq:momenta_rad} which defines F using the solution for
 I(&tau;=0,cos(&theta;)) in the integral:
 </p>
 
-<div class="latex" id="org0a75c9f">
+<div class="latex" id="orgd6c83f8">
 \begin{equation}
 F = 2\pi\int_{-1}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{-1}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2})\\
  \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
@@ -555,14 +557,14 @@ I(&tau;) and use it to calculate the pressure!
 </p>
 </div>
 
-<div id="outline-container-orgce5f6c1" class="outline-4">
-<h4 id="orgce5f6c1"><a href="#orgce5f6c1">Outer boundary conditions of the stellar problem: T<sub>eff</sub> and P</a></h4>
-<div class="outline-text-4" id="text-orgce5f6c1">
+<div id="outline-container-org145b4d5" class="outline-4">
+<h4 id="org145b4d5"><a href="#org145b4d5">Outer boundary conditions of the stellar problem: T<sub>eff</sub> and P</a></h4>
+<div class="outline-text-4" id="text-org145b4d5">
 <p>
 From Eq. \ref{eq:J_S} and \ref{eq:sol_S} we now have:
 </p>
 
-<div class="latex" id="org2d2cd63">
+<div class="latex" id="orgfd6bcff">
 \begin{equation}
 J = S =  \frac{3F}{4\pi}\left(\tau+\frac{2}{3}\right)  \ \ ,
 \end{equation}
@@ -575,7 +577,7 @@ radiation!), J=S=B(&nu;,T)=&sigma; T<sup>4</sup>/&pi;, so using that F=&sigma; T
 obtain:
 </p>
 
-<div class="latex" id="orged70ceb">
+<div class="latex" id="org77893be">
 \begin{equation}
 T^{4} = \frac{3}{4}T_\mathrm{eff}^{4}(\tau+\frac{2}{3}) \ \ ,
 \end{equation}
@@ -629,7 +631,7 @@ throughout the atmosphere, an oversimplification that allows for an
 analytic calculation which yields:
 </p>
 
-<div class="latex" id="org539b032">
+<div class="latex" id="orgadcf777">
 \begin{equation}
 P(\tau) = \frac{GM}{R^{2}\kappa}\tau \Rightarrow P(\tau=2/3) = \frac{2}{3}\frac{GM}{R^{2}\kappa}\ \ ,
 \end{equation}
@@ -668,16 +670,16 @@ generic class of gray atmospheres where the constant of integration is
 </div>
 </div>
 
-<div id="outline-container-org4b11dbe" class="outline-2">
-<h2 id="org4b11dbe"><a href="#org4b11dbe">Saha equation</a></h2>
-<div class="outline-text-2" id="text-org4b11dbe">
+<div id="outline-container-orga6cb667" class="outline-2">
+<h2 id="orga6cb667"><a href="#orga6cb667">Saha equation</a></h2>
+<div class="outline-text-2" id="text-orga6cb667">
 <p>
 Let's also assume that LTE holds in the stellar atmosphere, therefore,
 the rate at which atoms are ionized I matches the rate at which there
 are recombinations R (principle of detailed balance). Therefore:
 </p>
 
-<div class="latex" id="org7d4190c">
+<div class="latex" id="org0b8a0d2">
 \begin{equation}
  n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}} = \frac{I}{R}\ \ ,
 \end{equation}
@@ -692,7 +694,7 @@ calculate using Maxwell-Boltzmann statistics! The momentum terms of
 the ions and neutral atoms cancel each other in the ratio (neglecting
 the small mass difference between these 2), and we are left with
 </p>
-<div class="latex" id="orgaf0e0d1">
+<div class="latex" id="org352c50b">
 \begin{equation}
 \frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
 \end{equation}
@@ -731,9 +733,9 @@ zones of the stars!
 </div>
 </div>
 
-<div id="outline-container-org18ce835" class="outline-2">
-<h2 id="org18ce835"><a href="#org18ce835">Spectral line formation</a></h2>
-<div class="outline-text-2" id="text-org18ce835">
+<div id="outline-container-org98934e4" class="outline-2">
+<h2 id="org98934e4"><a href="#org98934e4">Spectral line formation</a></h2>
+<div class="outline-text-2" id="text-org98934e4">
 <p>
 Lines form because the black body spectrum coming from the photosphere
 (by definition) filter through the overlaying <i>atmospheres</i> where atomic
@@ -762,9 +764,9 @@ review <a href="https://ui.adsabs.harvard.edu/abs/2014ARA%26A..52..487S/abstract
 </p>
 </div>
 
-<div id="outline-container-org49f422d" class="outline-3">
-<h3 id="org49f422d"><a href="#org49f422d">Broadening mechanisms</a></h3>
-<div class="outline-text-3" id="text-org49f422d">
+<div id="outline-container-org8123fe2" class="outline-3">
+<h3 id="org8123fe2"><a href="#org8123fe2">Broadening mechanisms</a></h3>
+<div class="outline-text-3" id="text-org8123fe2">
 <p>
 While treating in detail all these processes would require an entire
 course on its own, we can give a brief qualitative description of some
@@ -780,9 +782,9 @@ all the surface at the same time!
 </p>
 </div>
 
-<div id="outline-container-org05dd747" class="outline-4">
-<h4 id="org05dd747"><a href="#org05dd747">Intrinsic width of lines</a></h4>
-<div class="outline-text-4" id="text-org05dd747">
+<div id="outline-container-orgbd72dbd" class="outline-4">
+<h4 id="orgbd72dbd"><a href="#orgbd72dbd">Intrinsic width of lines</a></h4>
+<div class="outline-text-4" id="text-orgbd72dbd">
 <p>
 Because of the uncertainty principle, an electron in an ion allowing
 for a bound-bound or bound-free transition is not perfectly localized.
@@ -794,9 +796,9 @@ Lorentzian profile with an intrinsic width.
 </div>
 </div>
 
-<div id="outline-container-orge20106a" class="outline-4">
-<h4 id="orge20106a"><a href="#orge20106a">Rotational broadening</a></h4>
-<div class="outline-text-4" id="text-orge20106a">
+<div id="outline-container-org41ea447" class="outline-4">
+<h4 id="org41ea447"><a href="#org41ea447">Rotational broadening</a></h4>
+<div class="outline-text-4" id="text-org41ea447">
 <p>
 If the star is rotating, some parts of the disk will be moving away
 from the observer (at a velocity v<sub>rot</sub> &times; sin(i) with i inclination
@@ -819,9 +821,9 @@ after <a href="https://en.wikipedia.org/wiki/Woldemar_Voigt">Woldermar Voigt</a>
 </div>
 </div>
 
-<div id="outline-container-orgd011cf2" class="outline-4">
-<h4 id="orgd011cf2"><a href="#orgd011cf2">Pressure broadening</a></h4>
-<div class="outline-text-4" id="text-orgd011cf2">
+<div id="outline-container-org57dfa82" class="outline-4">
+<h4 id="org57dfa82"><a href="#org57dfa82">Pressure broadening</a></h4>
+<div class="outline-text-4" id="text-org57dfa82">
 <p>
 In a star, even in the relatively low &rho; atmosphere, ions/atoms
 interacting with radiation are <i>not</i> in isolation! The presence of
@@ -839,9 +841,9 @@ resolved) shift in frequency that are observed as a broadened line.
 </div>
 </div>
 
-<div id="outline-container-orgbe7bde9" class="outline-4">
-<h4 id="orgbe7bde9"><a href="#orgbe7bde9">P Cygni profiles</a></h4>
-<div class="outline-text-4" id="text-orgbe7bde9">
+<div id="outline-container-org0db0fcb" class="outline-4">
+<h4 id="org0db0fcb"><a href="#org0db0fcb">P Cygni profiles</a></h4>
+<div class="outline-text-4" id="text-org0db0fcb">
 <p>
 If the atmosphere is "moving", for example because there is a wind
 outflow, a particular shape of the spectral lines will form. This is
@@ -860,7 +862,7 @@ a specific shape of the line:
 </p>
 
 
-<figure id="org3e9c494">
+<figure id="org940beb4">
 <img src="./images/P_Cygni.png" alt="P_Cygni.png">
 
 </figure>
@@ -869,9 +871,9 @@ a specific shape of the line:
 </div>
 
 
-<div id="outline-container-orgf560704" class="outline-3">
-<h3 id="orgf560704"><a href="#orgf560704">Emission lines</a></h3>
-<div class="outline-text-3" id="text-orgf560704">
+<div id="outline-container-org22a4391" class="outline-3">
+<h3 id="org22a4391"><a href="#org22a4391">Emission lines</a></h3>
+<div class="outline-text-3" id="text-org22a4391">
 <p>
 Some stars not only show <i>absorption</i> lines (i.e., "lack" of photons at
 certain wavelengths compared to the underlying black body spectrum
@@ -884,9 +886,9 @@ behavior between these two regimes.
 </p>
 </div>
 
-<div id="outline-container-orgbdbae05" class="outline-4">
-<h4 id="orgbdbae05"><a href="#orgbdbae05">Be stars</a></h4>
-<div class="outline-text-4" id="text-orgbdbae05">
+<div id="outline-container-org8616a2d" class="outline-4">
+<h4 id="org8616a2d"><a href="#org8616a2d">Be stars</a></h4>
+<div class="outline-text-4" id="text-org8616a2d">
 <p>
 These are stars of spectral class B (recall the <a href="./note-lecture-CMD-HRD.html">lecture on CMD/HRD</a>),
 so fairly hot and massive, which show <i>emission</i> lines, typically H&alpha;. A
@@ -907,7 +909,7 @@ morphology of the H&alpha; emission:
 </p>
 
 
-<figure id="org75206b2">
+<figure id="org5165a61">
 <img src="./images/Alcyone_Halpha.png" alt="Alcyone_Halpha.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Spectrum of Alcyone (&eta; Tau) on March 18<sup>th</sup> 2019 centered around H&alpha; (&lambda;&sim;6562 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer <a href="https://www.astronomie.be/erik.bryssinck/aboutme.html">E. Bryssinck</a>.</figcaption>
@@ -933,9 +935,9 @@ also the review by <a href="https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...
 </div>
 </div>
 
-<div id="outline-container-orgd6b54b9" class="outline-4">
-<h4 id="orgd6b54b9"><a href="#orgd6b54b9">B[e] stars</a></h4>
-<div class="outline-text-4" id="text-orgd6b54b9">
+<div id="outline-container-orga2efa43" class="outline-4">
+<h4 id="orga2efa43"><a href="#orga2efa43">B[e] stars</a></h4>
+<div class="outline-text-4" id="text-orga2efa43">
 <p>
 These are also B-type stars showing emission lines, but <i>forbidden</i>
 emission lines, that is radiative transitions where the angular
@@ -955,9 +957,9 @@ two classes is presently unclear.
 </div>
 </div>
 
-<div id="outline-container-org542ad3c" class="outline-4">
-<h4 id="org542ad3c"><a href="#org542ad3c">Wolf-Rayet stars</a></h4>
-<div class="outline-text-4" id="text-org542ad3c">
+<div id="outline-container-org470e1f4" class="outline-4">
+<h4 id="org470e1f4"><a href="#org470e1f4">Wolf-Rayet stars</a></h4>
+<div class="outline-text-4" id="text-org470e1f4">
 <p>
 Wolf-Rayet stars are a spectroscopic class <i>defined</i> by the presence of
 emission lines and the deficiency (but not necessarily total lack) of
@@ -985,7 +987,7 @@ line.
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <i id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-neutrinos.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-neutrinos.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
   Last updated on 1 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2

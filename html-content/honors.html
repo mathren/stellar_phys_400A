@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-01 Sat 16:34 -->
+<!-- 2025-02-01 Sat 19:34 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Honors project</title>
 <meta name="author" content="Mathieu Renzo" />
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" href="./css/style.css" />
-<link rel="stylesheet" href="./css/style-dark.css" id="dark-theme" disabled> <!-- Dark theme CSS -->
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
 			       stellar evolution, 400A, University of
@@ -34,7 +33,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myHamburgerMenu()">
+    <a href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -46,9 +45,9 @@
   </div>
 </div>
 
-<!-- The hamburger menu  -->
+<!-- scripts -->
 <script>
-  function myHamburgerMenu() {
+  function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -58,35 +57,38 @@
   }
 </script>
 
-
-
 <script>
-    const themeToggleIcon = document.getElementById('theme-toggle');
-    const darkThemeLink = document.getElementById('dark-theme');
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      // const body = document.body;
+      const html = document.html;
 
-    // Check the current theme from localStorage on page load
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-        darkThemeLink.removeAttribute('disabled'); // Enable dark theme
-    }
 
-    // Toggle theme when icon is clicked
-    themeToggleIcon.addEventListener('click', () => {
-        if (darkThemeLink.disabled) {
-            darkThemeLink.removeAttribute('disabled'); // Enable dark theme
-            localStorage.setItem('theme', 'dark');
-        } else {
-            darkThemeLink.setAttribute('disabled', 'true'); // Disable dark theme
-            localStorage.setItem('theme', 'light');
-        }
-    });
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
 </script>
+<!-- end scripts-->
 </div>
 <div id="content" class="content">
 
-<div id="outline-container-org27089a2" class="outline-2">
-<h2 id="org27089a2"><a href="#org27089a2">Examples of past honor's projects</a></h2>
-<div class="outline-text-2" id="text-org27089a2">
+<div id="outline-container-orgbaac53a" class="outline-2">
+<h2 id="orgbaac53a"><a href="#orgbaac53a">Examples of past honor's projects</a></h2>
+<div class="outline-text-2" id="text-orgbaac53a">
 <p>
 The honor's project consist in installing on your machine <a href="https://docs.mesastar.org/en/latest/">MESA</a>, and
 use it to investigate something we will barely touch upon in class.
@@ -99,9 +101,9 @@ scope that best fits your interests <i>and</i> the content of this class.
 </p>
 </div>
 
-<div id="outline-container-org722315b" class="outline-3">
-<h3 id="org722315b"><a href="#org722315b">Main sequence burning in massive population III stars</a></h3>
-<div class="outline-text-3" id="text-org722315b">
+<div id="outline-container-orgb32d8fd" class="outline-3">
+<h3 id="orgb32d8fd"><a href="#orgb32d8fd">Main sequence burning in massive population III stars</a></h3>
+<div class="outline-text-3" id="text-orgb32d8fd">
 <p>
 Nuclear burning in massive stars occurs through the CNO cycle, which
 uses metals (Carbon, Nitrogen, and Oxygen) as catalysts to stick
@@ -129,9 +131,9 @@ interior structure, and interpret the differences.
 </p>
 </div>
 
-<div id="outline-container-orgb323028" class="outline-4">
-<h4 id="orgb323028"><a href="#orgb323028">Instructions</a></h4>
-<div class="outline-text-4" id="text-orgb323028">
+<div id="outline-container-orge55ecb3" class="outline-4">
+<h4 id="orge55ecb3"><a href="#orge55ecb3">Instructions</a></h4>
+<div class="outline-text-4" id="text-orge55ecb3">
 <ul class="org-ul">
 <li>Follow the <a href="https://docs.mesastar.org/en/latest/">MESA</a> documentation to install the code</li>
 <li>Follow the tutorial to run MESA: this will be your Z<sub>☉</sub> 15M<sub>☉</sub> star!</li>
@@ -155,7 +157,7 @@ them in the context of the course material.</li>
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <i id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
   Last updated on 1 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
