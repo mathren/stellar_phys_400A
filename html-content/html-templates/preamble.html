@@ -15,7 +15,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myHamburgerMenu()">
+    <a href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -27,9 +27,8 @@
   </div>
 </div>
 
-<!-- The hamburger menu  -->
-<script>
-  function myHamburgerMenu() {
+<!-- scripts -->
+  function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -38,3 +37,32 @@
       }
   }
 </script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+<!-- end scripts-->

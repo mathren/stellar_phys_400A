@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-19 Sun 15:15 -->
+<!-- 2025-02-01 Sat 20:02 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Diffusive energy transport</title>
 <meta name="author" content="Mathieu Renzo" />
 <meta name="generator" content="Org Mode" />
-<meta charset="UTF-8" />
 <link rel="stylesheet" href="./css/style.css" />
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
@@ -55,7 +54,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -67,9 +66,9 @@
   </div>
 </div>
 
-<!-- The hamburger menu  -->
+<!-- scripts -->
 <script>
-  function myFunction() {
+  function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -78,6 +77,35 @@
       }
   }
 </script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+<!-- end scripts-->
 </div>
 <div id="content" class="content">
 <p>
@@ -85,18 +113,18 @@
 Kippenhan &amp; Weigert's book.
 </p>
 
-<div id="outline-container-orgd4c262b" class="outline-2">
-<h2 id="orgd4c262b"><a href="#orgd4c262b">Energy transport in stars</a></h2>
-<div class="outline-text-2" id="text-orgd4c262b">
+<div id="outline-container-org30f7ecf" class="outline-2">
+<h2 id="org30f7ecf"><a href="#org30f7ecf">Energy transport in stars</a></h2>
+<div class="outline-text-2" id="text-org30f7ecf">
 </div>
-<div id="outline-container-orgea49352" class="outline-3">
-<h3 id="orgea49352"><a href="#orgea49352">Summary of where we are</a></h3>
-<div class="outline-text-3" id="text-orgea49352">
+<div id="outline-container-orgf440156" class="outline-3">
+<h3 id="orgf440156"><a href="#orgf440156">Summary of where we are</a></h3>
+<div class="outline-text-3" id="text-orgf440156">
 </div>
-<div id="outline-container-org9cd8485" class="outline-4">
-<h4 id="org9cd8485"><a href="#org9cd8485">Mass conservation:</a></h4>
-<div class="outline-text-4" id="text-org9cd8485">
-<div class="latex" id="org46f7aef">
+<div id="outline-container-orgdb6a000" class="outline-4">
+<h4 id="orgdb6a000"><a href="#orgdb6a000">Mass conservation:</a></h4>
+<div class="outline-text-4" id="text-orgdb6a000">
+<div class="latex" id="org0c29387">
 \begin{equation}\label{eq:mass_cont}
 \frac{dm}{dr} = 4\pi \rho r^{2} \ \ .
 \end{equation}
@@ -105,10 +133,10 @@ Kippenhan &amp; Weigert's book.
 </div>
 </div>
 
-<div id="outline-container-orgf748c3c" class="outline-4">
-<h4 id="orgf748c3c"><a href="#orgf748c3c">Hydrostatic equilibrium:</a></h4>
-<div class="outline-text-4" id="text-orgf748c3c">
-<div class="latex" id="org5a7f923">
+<div id="outline-container-org64ee212" class="outline-4">
+<h4 id="org64ee212"><a href="#org64ee212">Hydrostatic equilibrium:</a></h4>
+<div class="outline-text-4" id="text-org64ee212">
+<div class="latex" id="orge6a1f09">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \ ,
 \end{equation}
@@ -122,10 +150,10 @@ on timescales comparable to the dynamical timescale
 </div>
 </div>
 
-<div id="outline-container-org1bae720" class="outline-4">
-<h4 id="org1bae720"><a href="#org1bae720">Equation of state:</a></h4>
-<div class="outline-text-4" id="text-org1bae720">
-<div class="latex" id="org970e43a">
+<div id="outline-container-org68e2a90" class="outline-4">
+<h4 id="org68e2a90"><a href="#org68e2a90">Equation of state:</a></h4>
+<div class="outline-text-4" id="text-org68e2a90">
+<div class="latex" id="org12947e5">
 \begin{equation}\label{eq:EOS}
 P \equiv P(\rho, \mu, T) = P_\mathrm{rad} + P_\mathrm{gas} = \frac{1}{3}aT^{4} + \frac{\rho}{\mu m_{u}}k_{B}T + P_\mathrm{QM}\ \ .
 \end{equation}
@@ -146,9 +174,9 @@ in stars.
 </div>
 </div>
 
-<div id="outline-container-orgf91a612" class="outline-3">
-<h3 id="orgf91a612"><a href="#orgf91a612">Energy flow in stars</a></h3>
-<div class="outline-text-3" id="text-orgf91a612">
+<div id="outline-container-orgdf74125" class="outline-3">
+<h3 id="orgdf74125"><a href="#orgdf74125">Energy flow in stars</a></h3>
+<div class="outline-text-3" id="text-orgdf74125">
 <p>
 To find another equation, we can consider how energy flows in a star.
 We have already seen that the surface temperature (e.g., of the Sun),
@@ -196,9 +224,9 @@ energy.
 </div>
 </div>
 
-<div id="outline-container-org12527c4" class="outline-3">
-<h3 id="org12527c4"><a href="#org12527c4">Diffusion processes</a></h3>
-<div class="outline-text-3" id="text-org12527c4">
+<div id="outline-container-orgc4dd586" class="outline-3">
+<h3 id="orgc4dd586"><a href="#orgc4dd586">Diffusion processes</a></h3>
+<div class="outline-text-3" id="text-orgc4dd586">
 <p>
 In general, the "diffusion approximation" is useful to describe the
 net flux of "something" when the average path of the carrier of said
@@ -212,7 +240,7 @@ In this approximation, the net flux of this "something" is related to
 the density of "something" by Fick's law:
 </p>
 
-<div class="latex" id="org176c0fc">
+<div class="latex" id="orga253fc9">
 \begin{equation}\label{eq:diff}
 \mathbf{J} = - D\nabla n \ \ ,
 \end{equation}
@@ -250,7 +278,7 @@ particles have a mean free path &ell; and an average velocity v, then the
 number that crosses a given coordinate z with a positive &delta; z as a
 function of time is:
 </p>
-<div class="latex" id="org8d5202d">
+<div class="latex" id="org6fa8c51">
 \begin{equation}
 \frac{dN}{dt}(z) =\frac{1}{2} n \frac{1}{3}v \ \ ,
 \end{equation}
@@ -261,7 +289,7 @@ where the first 1/2 factor comes from the fact that their motion is
 random, so half the particles have negative &delta; z and half have a
 positive one, and we just want to count the latter, and the factor of
 1/3 in front of their average velocity comes from the fact that the
-motion is isotropic (see <a href="notes-lecture-EOS1.html#org0877120">derivation of the pressure</a>).
+motion is isotropic (see <a href="notes-lecture-EOS1.html#org7f7d045">derivation of the pressure</a>).
 </p>
 
 <p>
@@ -271,7 +299,7 @@ while those moving with the negative &delta; z  come from n(z+&ell;), so the net
 flux across z is
 </p>
 
-<div class="latex" id="org66b3842">
+<div class="latex" id="orgaf0185f">
 \begin{equation}
 J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)\simeq\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ ,
 \end{equation}
@@ -286,11 +314,11 @@ generalization in 3 dimensions of the above, where &nabla; = (&part;<sub>x</sub>
 </p>
 </div>
 
-<div id="outline-container-org162474c" class="outline-4">
-<h4 id="org162474c"><a href="#org162474c">Energy transport by radiative diffusion</a></h4>
-<div class="outline-text-4" id="text-org162474c">
+<div id="outline-container-orge925073" class="outline-4">
+<h4 id="orge925073"><a href="#orge925073">Energy transport by radiative diffusion</a></h4>
+<div class="outline-text-4" id="text-orge925073">
 <p>
-We have already calculated that <a href="notes-lecture-EOS1.html#orgd6cb96d">mean free path for photons</a> and
+We have already calculated that <a href="notes-lecture-EOS1.html#orgcb7f4d0">mean free path for photons</a> and
 estimated that it is very small compared to the typical size of stars
 (and the typical size of a resolution element in a numerical
 simulation of a star!). Therefore, we can treat the energy transport
@@ -326,7 +354,7 @@ the one impeding the diffusion of photons.
 <p>
 Thus, the radiative diffusion equation is
 </p>
-<div class="latex" id="org8344c1c">
+<div class="latex" id="orge7d60a3">
 \begin{equation}
 F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \ ,
 \end{equation}
@@ -339,7 +367,7 @@ density is u=aT<sup>4</sup>. We can then explicit these into our equation
 obtaining:
 </p>
 
-<div class="latex" id="org9b7f47a">
+<div class="latex" id="org5ecfe3a">
 \begin{equation}
 F_\mathrm{rad} = -\frac{4ac}{3c\rho T^{3}} \frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
 \end{equation}
@@ -352,7 +380,7 @@ This is a <i>local</i> quantity and it is valid in a region of the star where
 the dominant energy transport is radiative diffusion only:
 </p>
 
-<div class="latex" id="orge503829">
+<div class="latex" id="org72fda9a">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa_\mathrm{rad} F_\mathrm{rad} \propto \kappa_\mathrm{rad} F_\mathrm{rad}.\ \ .
 \end{equation}
@@ -371,7 +399,7 @@ radius r within the star (or in other words, the "power" that is in
 the photon field at the location r):
 </p>
 
-<div class="latex" id="org565668f">
+<div class="latex" id="org31ea98d">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa_\mathrm{rad}}{r^{2}}\frac{L_\mathrm{rad}}{T^{3}} \ \ .
 \end{equation}
@@ -418,9 +446,9 @@ motion of particles, that is <b>conduction</b>.
 </div>
 </div>
 
-<div id="outline-container-orgec3befd" class="outline-4">
-<h4 id="orgec3befd"><a href="#orgec3befd">Energy transport by conduction</a></h4>
-<div class="outline-text-4" id="text-orgec3befd">
+<div id="outline-container-org73146ec" class="outline-4">
+<h4 id="org73146ec"><a href="#org73146ec">Energy transport by conduction</a></h4>
+<div class="outline-text-4" id="text-org73146ec">
 <p>
 Energy transport by diffusion, and especially conduction that is
 diffusion of energy through particle motion, is not limited to stars.
@@ -470,7 +498,7 @@ cannot neglect conduction, and it can dominate over radiative
 diffusion even! To consider it, we can follow the same reasoning as
 above and write an equation for the conductive flux
 </p>
-<div class="latex" id="orgb41ba24">
+<div class="latex" id="org85c4ea6">
 \begin{equation}
 F_\mathrm{cond} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{cond}\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -485,7 +513,7 @@ to LTE, so we can define a local T). With this implicit definition of
 radiative diffusion and conduction: F = F<sub>rad</sub> + F<sub>cond</sub> and
 </p>
 
-<div class="latex" id="org64743a1">
+<div class="latex" id="orgac8b6e5">
 \begin{equation}
 F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -494,7 +522,7 @@ F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 <p>
 where now
 </p>
-<div class="latex" id="orgbc49898">
+<div class="latex" id="orgbce107f">
 \begin{equation}\label{eq:kappas}
 \frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
 \end{equation}
@@ -525,7 +553,7 @@ has the same form as the radiative flux, we can (using Eq.
 write down:
 </p>
 
-<div class="latex" id="orgce2ab19">
+<div class="latex" id="org52e712e">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa}{r^{2}}\frac{L}{T^{3}} \ \ ,
 \end{equation}
@@ -554,9 +582,9 @@ electrons!
 </div>
 </div>
 
-<div id="outline-container-org3134f5e" class="outline-3">
-<h3 id="org3134f5e"><a href="#org3134f5e">Local energy conservation</a></h3>
-<div class="outline-text-3" id="text-org3134f5e">
+<div id="outline-container-org930ed0b" class="outline-3">
+<h3 id="org930ed0b"><a href="#org930ed0b">Local energy conservation</a></h3>
+<div class="outline-text-3" id="text-org930ed0b">
 <p>
 Let's finally write an equation for the <i>local</i> luminosity in a star L
 that we have introduced above. Since the luminosity is just the local
@@ -567,7 +595,7 @@ specific internal energy) is equal to the heat added/extracted d q plus
 the work done on the unit mass Pd v with v=1/&rho; the specific volume:
 </p>
 
-<div class="latex" id="org3e01152">
+<div class="latex" id="org8ed783f">
 \begin{equation}
 d u = d q + Pd v \equiv d q - \frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
@@ -611,7 +639,7 @@ per unit time leaking from above is L(m+dm).</li>
 <p>
 Putting all these together we have, at a given mass location m
 </p>
-<div class="latex" id="org984843b">
+<div class="latex" id="orga5a9285">
 \begin{equation}
 dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
 \end{equation}
@@ -620,7 +648,7 @@ dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt 
 <p>
 Thus, substituting in the local energy conservation we obtain:
 </p>
-<div class="latex" id="org2e7e49c">
+<div class="latex" id="org5e2c584">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc}(m) -\varepsilon_{\nu}(m) - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} \ \ .
 \end{equation}
@@ -629,7 +657,7 @@ Thus, substituting in the local energy conservation we obtain:
 <p>
 Often the last two terms are combined together to define:
 </p>
-<div class="latex" id="org19317d1">
+<div class="latex" id="orgd2061fb">
 \begin{equation}
 \varepsilon_\mathrm{grav} = - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} = -T\frac{ds}{dt} \ \ .
 \end{equation}
@@ -648,7 +676,7 @@ of the gas. With this definition, the next equation of stellar
 structure becomes
 </p>
 
-<div class="latex" id="org8bf9d3c">
+<div class="latex" id="org11dd359">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
@@ -694,13 +722,13 @@ evolution due to nuclear burning, but we are getting close!
 </div>
 </div>
 
-<div id="outline-container-orgafbae96" class="outline-2">
-<h2 id="orgafbae96"><a href="#orgafbae96">Homework</a></h2>
-<div class="outline-text-2" id="text-orgafbae96">
+<div id="outline-container-orgc8d0705" class="outline-2">
+<h2 id="orgc8d0705"><a href="#orgc8d0705">Homework</a></h2>
+<div class="outline-text-2" id="text-orgc8d0705">
 </div>
-<div id="outline-container-org3d9da86" class="outline-3">
-<h3 id="org3d9da86"><a href="#org3d9da86">Eddington Luminosity</a></h3>
-<div class="outline-text-3" id="text-org3d9da86">
+<div id="outline-container-org860ec4b" class="outline-3">
+<h3 id="org860ec4b"><a href="#org860ec4b">Eddington Luminosity</a></h3>
+<div class="outline-text-3" id="text-org860ec4b">
 <p>
 Consider an optically thick, hot, and stratified gas: this could be
 (some layers of) a star, or a sufficiently dense accretion or
@@ -746,9 +774,9 @@ optically thick environment is necessary.
 </div>
 
 
-<div id="outline-container-org1b59c58" class="outline-3">
-<h3 id="org1b59c58"><a href="#org1b59c58">Exercise 5.3 in Onno Pols' lecture notes</a></h3>
-<div class="outline-text-3" id="text-org1b59c58">
+<div id="outline-container-org89ff5f5" class="outline-3">
+<h3 id="org89ff5f5"><a href="#org89ff5f5">Exercise 5.3 in Onno Pols' lecture notes</a></h3>
+<div class="outline-text-3" id="text-org89ff5f5">
 <p>
 Without solving the stellar structure equations, we can already derive
 useful scaling relations. In this question you will use the equation
@@ -784,9 +812,9 @@ by how fast it can be transported to the surface!
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="notes-lecture-EOS2.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-kappa.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-EOS2.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-kappa.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 19 January 2025 <br>
+  Last updated on 1 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>

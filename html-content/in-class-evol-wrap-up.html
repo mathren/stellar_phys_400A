@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-19 Sun 15:15 -->
+<!-- 2025-02-01 Sat 20:02 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Qualitative evolution</title>
 <meta name="author" content="Mathieu Renzo" />
 <meta name="generator" content="Org Mode" />
-<meta charset="UTF-8" />
 <link rel="stylesheet" href="./css/style.css" />
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
@@ -55,7 +54,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -67,9 +66,9 @@
   </div>
 </div>
 
-<!-- The hamburger menu  -->
+<!-- scripts -->
 <script>
-  function myFunction() {
+  function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -78,6 +77,35 @@
       }
   }
 </script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+<!-- end scripts-->
 </div>
 <div id="content" class="content">
 <p>
@@ -87,21 +115,21 @@ book Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2,
 </p>
 
 
-<div id="outline-container-org8f2059b" class="outline-2">
-<h2 id="org8f2059b"><a href="#org8f2059b">Pre-main sequence and Hayashi track</a></h2>
-<div class="outline-text-2" id="text-org8f2059b">
+<div id="outline-container-org820f59e" class="outline-2">
+<h2 id="org820f59e"><a href="#org820f59e">Pre-main sequence and Hayashi track</a></h2>
+<div class="outline-text-2" id="text-org820f59e">
 <p>
 We have developed a set of 4 non-linear, coupled ODEs to describe the
 <i>structure</i> and <i>evolution</i> of stars (with physical approximations
 built-in), with an EOS for closure conditions plus a set of equations
 that describe the changes in composition due to nuclear processing and
-mixing (see for example <a href="./notes-lecture-neutrinos.html#org93edbc3">this summary</a>).
+mixing (see for example <a href="./notes-lecture-neutrinos.html#org53cc4e6">this summary</a>).
 </p>
 
 <p>
 We have also worked out the ordering of timescales of the problem:
 </p>
-<div class="latex" id="orgc9e1183">
+<div class="latex" id="org8d7f4b1">
 \begin{equation}
 \tau_\mathrm{nuc} \gg \tau_\mathrm{KH} \gg \tau_\mathrm{free\ fall} \ \ ,
 \end{equation}
@@ -169,9 +197,9 @@ structure is fully determined by the composition!
 </p>
 </div>
 
-<div id="outline-container-orgd6ef134" class="outline-3">
-<h3 id="orgd6ef134"><a href="#orgd6ef134">Pre-main sequence stellar structure</a></h3>
-<div class="outline-text-3" id="text-orgd6ef134">
+<div id="outline-container-org64242b7" class="outline-3">
+<h3 id="org64242b7"><a href="#org64242b7">Pre-main sequence stellar structure</a></h3>
+<div class="outline-text-3" id="text-org64242b7">
 <p>
 If the gravothermal collapse of the mass of gas considered ends with
 the ignition of nuclear fuel (option 2. above), that is, if we make a
@@ -234,7 +262,7 @@ quasi-static collapse.
 <b>The Hayashi line effectively determines a right, low-T<sub>eff</sub> boundary
 on the HRD for stars in hydrostatic equilibrium</b>: if a star were to be
 colder, it would have a steeper-than-adiabatic gradient somewhere,
-which would imply a higher convective flux (cf. <a href="notes-lecture-convection.html#org197e573">convective energy
+which would imply a higher convective flux (cf. <a href="notes-lecture-convection.html#org7bda783">convective energy
 flux</a>)) and thus increase the luminosity of the star, moving the star
 upwards back onto the Hayashi track.
 </p>
@@ -264,9 +292,9 @@ light-elements burning chaging &kappa; and &mu;)!
 </div>
 </div>
 
-<div id="outline-container-orgdf4858d" class="outline-2">
-<h2 id="orgdf4858d"><a href="#orgdf4858d">Main sequence</a></h2>
-<div class="outline-text-2" id="text-orgdf4858d">
+<div id="outline-container-org86de8fe" class="outline-2">
+<h2 id="org86de8fe"><a href="#org86de8fe">Main sequence</a></h2>
+<div class="outline-text-2" id="text-org86de8fe">
 <p>
 As the gravothermal collapse continues and &lang; T &rang; increases, at some
 point, if we are making a star, by <i>definition</i> nuclear burning turns on
@@ -284,9 +312,9 @@ first fuel to ignite, see also <a href="./notes-lecture-nuclear-burning.html">nu
 </p>
 </div>
 
-<div id="outline-container-org0bf330b" class="outline-3">
-<h3 id="org0bf330b"><a href="#org0bf330b">Structure during the main sequence</a></h3>
-<div class="outline-text-3" id="text-org0bf330b">
+<div id="outline-container-org1a53a57" class="outline-3">
+<h3 id="org1a53a57"><a href="#org1a53a57">Structure during the main sequence</a></h3>
+<div class="outline-text-3" id="text-org1a53a57">
 <p>
 As we discussed in the <a href="./notes-lecture-nuclear-cycles.html">nuclear reaction cycles lecture</a>, hydrogen
 burning can occur in two different ways: pp-cycle and CN-NO bi-cycle.
@@ -297,7 +325,7 @@ Looking at <code>MESA-web</code> models, we can see that the pp-cycle is suffici
 to achieve the equilibrium condition L<sub>nuc</sub>=&int; dm &epsilon;<sub>nuc</sub>
 &equiv; L in low mass stars (<b>N.B.:</b> L&prop; M<sup>x</sup> with x&ge;1). This is because the
 pp-cycle has lower Coulomb barriers (shallower relation between &epsilon;<sub>nuc</sub>
-and T) but a higher normalization (cf. <a href="notes-lecture-nuclear-cycles.html#org201ee06">pp &rarr; CNO transition</a>).
+and T) but a higher normalization (cf. <a href="notes-lecture-nuclear-cycles.html#orgf5dc773">pp &rarr; CNO transition</a>).
 </p>
 
 <ul class="org-ul">
@@ -351,7 +379,7 @@ becomes radiative.
 </p>
 
 
-<figure id="orgccb6053">
+<figure id="orga1e9b11">
 <img src="./images/conv_ZAMS.png" alt="conv_ZAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>The "initial" gravothermal equilibrium structure of a star is determined only by mass M and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn &amp; Weigert) shows in gray the region in mass coordinate y=m/M that are convective as a function of the total mass M=&int; dm for Z=0.02 models. Red lines indicate where 50 and 90 % of the luminosity L is generated (the "burning region") and the blue dashed lines show r(m)=0.25M and r(m)=0.5M.</figcaption>
@@ -371,16 +399,16 @@ sequence core?</li>
 </div>
 </div>
 
-<div id="outline-container-org676e7c0" class="outline-3">
-<h3 id="org676e7c0"><a href="#org676e7c0">Evolution during the main sequence</a></h3>
-<div class="outline-text-3" id="text-org676e7c0">
+<div id="outline-container-orge78e32b" class="outline-3">
+<h3 id="orge78e32b"><a href="#orge78e32b">Evolution during the main sequence</a></h3>
+<div class="outline-text-3" id="text-orge78e32b">
 <p>
 During the main sequence L steadily increases on &tau;&sim;&tau;<sub>nuc</sub>. This is
 because the conversion of hydrogen into helium decreases X (and
 increases Y), which enter in two key quantities, mean molecular weight
 and electron scattering opacity:
 </p>
-<div class="latex" id="orgb70d600">
+<div class="latex" id="orga466264">
 \begin{equation}\label{eq:microphysics_XY}
 \mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2}} \ \ , \\
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}} \ \ \ .
@@ -392,7 +420,7 @@ Assuming a star to be in gravothermal equilibrium and assuming
 radiative energy transport (which we have just seen is not verified
 everywhere by <code>MESA-web</code> models!), we know that:
 </p>
-<div class="latex" id="org5706b15">
+<div class="latex" id="org83d8a85">
 \begin{equation}\label{eq:L_scaling}
 L\propto \frac{\mu^{4} M^{3}}{\kappa} \ \ ,
 \end{equation}
@@ -419,7 +447,7 @@ M<sub>ZAMS</sub>&le;2M<sub>☉</sub>.</li>
 </ul>
 
 
-<figure id="org1258cee">
+<figure id="org95aefd4">
 <img src="./images/stellar_lifetimes.png" alt="stellar_lifetimes.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Stellar lifetime as a function of initial masses from <a href="https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..29Z/abstract">Zapartas et al. 2017</a>. <code>MESA</code> and <code>GENEC</code> models are shown, focusing on masses that result in a final core-collapse event. The bottom panel shows the deviations between the analytic fit and the numerical models.</figcaption>
@@ -497,7 +525,7 @@ receeds in mass coordinate</i>.
 </p>
 
 
-<figure id="org0b5d2d1">
+<figure id="org4f98bb3">
 <img src="./images/1Msun_X_M.png" alt="1Msun_X_M.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 1M<sub>☉</sub>, Z=0.02 <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS).</figcaption>
@@ -505,7 +533,7 @@ receeds in mass coordinate</i>.
 
 
 
-<figure id="org25de89e">
+<figure id="orga47cbc1">
 <img src="./images/20Msun_H_profile.png" alt="20Msun_H_profile.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 20M<sub>☉</sub>, Z=0.001 <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS), and as time passes the core recedes because of the change in &kappa;.</figcaption>
@@ -514,13 +542,13 @@ receeds in mass coordinate</i>.
 </div>
 </div>
 
-<div id="outline-container-org8ddb550" class="outline-2">
-<h2 id="org8ddb550"><a href="#org8ddb550">End of the main sequence</a></h2>
-<div class="outline-text-2" id="text-org8ddb550">
+<div id="outline-container-orgfd487a7" class="outline-2">
+<h2 id="orgfd487a7"><a href="#orgfd487a7">End of the main sequence</a></h2>
+<div class="outline-text-2" id="text-orgfd487a7">
 </div>
-<div id="outline-container-orgac01d8a" class="outline-4">
-<h4 id="orgac01d8a"><a href="#orgac01d8a">"Low" mass stars with radiative cores</a></h4>
-<div class="outline-text-4" id="text-orgac01d8a">
+<div id="outline-container-org40e4d87" class="outline-4">
+<h4 id="org40e4d87"><a href="#org40e4d87">"Low" mass stars with radiative cores</a></h4>
+<div class="outline-text-4" id="text-org40e4d87">
 <p>
 Very low mass stars smoothly evolve off the main sequence: if you look
 at the T(&rho;) diagram in the movie produced by <code>MESA-web</code>, from the
@@ -528,7 +556,7 @@ outlines of the track you can see where the nuclear burning moves.
 </p>
 
 
-<figure id="org01b96cc">
+<figure id="org333bbed">
 <img src="./images/1Msun_TAMS.png" alt="1Msun_TAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Screenshot of a <code>MESA-web</code> calculation of a 1M<sub>☉</sub> star shortly after the main sequence. The HRD (bottom left) shows a smooth end of the main sequence, and the Kippenhahn diagram and T(&rho;) tracks (middle) show that all the burning is in a shell surrouding the inert He core. The bottom right panel shows that the inner region as a flattening T profile because of conduction efficiently transporting energy and erasing the dT/dr.</figcaption>
@@ -563,9 +591,9 @@ cycle even for a low mass star.
 </div>
 </div>
 
-<div id="outline-container-org7cefa30" class="outline-4">
-<h4 id="org7cefa30"><a href="#org7cefa30">"High" mass stars with convective cores</a></h4>
-<div class="outline-text-4" id="text-org7cefa30">
+<div id="outline-container-org18bd41a" class="outline-4">
+<h4 id="org18bd41a"><a href="#org18bd41a">"High" mass stars with convective cores</a></h4>
+<div class="outline-text-4" id="text-org18bd41a">
 <p>
 Increasing the mass above the threshold for activating the CN-NO
 bi-cycle (somewhere &sim;1.1-1.3M<sub>☉</sub> depending on assumptions), the
@@ -573,7 +601,7 @@ morphology of the end of the main sequence changes.
 </p>
 
 
-<figure id="org04cbaa1">
+<figure id="org33e5274">
 <img src="./images/30Msun_TAMS.png" alt="30Msun_TAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Screenshot of a <code>MESA-web</code> calculation of a 30M<sub>☉</sub> star shortly after the main sequence. The HRD (bottom left) shows the "Henyey hook" feature, the Kippenhahn diagran and T(&rho;) track shows that there is an off-center H-burning shell but the He in the core ignites promptly too. The core is not degenerate, but convective again, and mantains a nearly adiabatic temperature gradient.</figcaption>
@@ -605,9 +633,9 @@ reaction, driving core convection!
 </div>
 </div>
 
-<div id="outline-container-org528a83d" class="outline-2">
-<h2 id="org528a83d"><a href="#org528a83d">H-shell and He burning</a></h2>
-<div class="outline-text-2" id="text-org528a83d">
+<div id="outline-container-org8f4d49c" class="outline-2">
+<h2 id="org8f4d49c"><a href="#org8f4d49c">H-shell and He burning</a></h2>
+<div class="outline-text-2" id="text-org8f4d49c">
 <p>
 "[The post main sequence acts as a] <i>sort of magnifying glass, also
 revealing relentlessly the faults of calculations of earlier phases</i>" -
@@ -615,9 +643,9 @@ Kippenhahn.
 </p>
 </div>
 
-<div id="outline-container-org8016873" class="outline-3">
-<h3 id="org8016873"><a href="#org8016873">Low mass star "flashes"</a></h3>
-<div class="outline-text-3" id="text-org8016873">
+<div id="outline-container-org007177f" class="outline-3">
+<h3 id="org007177f"><a href="#org007177f">Low mass star "flashes"</a></h3>
+<div class="outline-text-3" id="text-org007177f">
 <p>
 For low mass stars the He core is sufficiently small to be
 electron-degeneracy supported, and there is H-rich fuel available
@@ -706,9 +734,9 @@ luminosity.
 </p>
 </div>
 
-<div id="outline-container-orgb6c9cef" class="outline-4">
-<h4 id="orgb6c9cef"><a href="#orgb6c9cef">He flash</a></h4>
-<div class="outline-text-4" id="text-orgb6c9cef">
+<div id="outline-container-org42878ba" class="outline-4">
+<h4 id="org42878ba"><a href="#org42878ba">He flash</a></h4>
+<div class="outline-text-4" id="text-org42878ba">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2_Km4RTdkPw?si=ZkacE_zcP7g67kIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p>
@@ -759,9 +787,9 @@ convection.
 </div>
 </div>
 
-<div id="outline-container-org9ad6ea9" class="outline-4">
-<h4 id="org9ad6ea9"><a href="#org9ad6ea9">Red clump and Horizontal branch</a></h4>
-<div class="outline-text-4" id="text-org9ad6ea9">
+<div id="outline-container-org4345b79" class="outline-4">
+<h4 id="org4345b79"><a href="#org4345b79">Red clump and Horizontal branch</a></h4>
+<div class="outline-text-4" id="text-org4345b79">
 <p>
 During He core burning, low mass stars have a convective core burning
 thought the 3&alpha; (and later \(^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}\)), surrounded
@@ -788,15 +816,15 @@ stars whose coolest end is the red clump.
 </p>
 
 <p>
-(continuing reading about the evolution of low mass <a href="#org11dbb99">here</a>)
+(continuing reading about the evolution of low mass <a href="#org70e61e0">here</a>)
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orga422df0" class="outline-3">
-<h3 id="orga422df0"><a href="#orga422df0">High mass stars and "Hertzsprung gap"</a></h3>
-<div class="outline-text-3" id="text-orga422df0">
+<div id="outline-container-org3b9fb6b" class="outline-3">
+<h3 id="org3b9fb6b"><a href="#org3b9fb6b">High mass stars and "Hertzsprung gap"</a></h3>
+<div class="outline-text-3" id="text-org3b9fb6b">
 <p>
 Stars with masses sufficiently high for the core to be convective
 during the hydrogen core burning main sequence (M&ge;1.2M<sub>☉{}</sub> roughly,
@@ -829,9 +857,9 @@ burning time in a blue loop appearing hotter than a typical RSG.
 </p>
 </div>
 
-<div id="outline-container-orgd53b303" class="outline-4">
-<h4 id="orgd53b303"><a href="#orgd53b303">Mass loss and single-star evolution path to Wolf-Rayet</a></h4>
-<div class="outline-text-4" id="text-orgd53b303">
+<div id="outline-container-orgc964985" class="outline-4">
+<h4 id="orgc964985"><a href="#orgc964985">Mass loss and single-star evolution path to Wolf-Rayet</a></h4>
+<div class="outline-text-4" id="text-orgc964985">
 <p>
 As M increases (and consequently even more so L), mass loss becomes a
 progressively more important ingredient for the evolution of stars.
@@ -877,13 +905,13 @@ observed and require binary interactions to form, see <a href="https://ui.adsabs
 </div>
 </div>
 
-<div id="outline-container-org93f13d1" class="outline-2">
-<h2 id="org93f13d1"><a href="#org93f13d1">Late evolution</a></h2>
-<div class="outline-text-2" id="text-org93f13d1">
+<div id="outline-container-org1cbb7cf" class="outline-2">
+<h2 id="org1cbb7cf"><a href="#org1cbb7cf">Late evolution</a></h2>
+<div class="outline-text-2" id="text-org1cbb7cf">
 </div>
-<div id="outline-container-org11dbb99" class="outline-3">
-<h3 id="org11dbb99"><a href="#org11dbb99">Low mass stars: AGB thermal pulses and WD cooling</a></h3>
-<div class="outline-text-3" id="text-org11dbb99">
+<div id="outline-container-org70e61e0" class="outline-3">
+<h3 id="org70e61e0"><a href="#org70e61e0">Low mass stars: AGB thermal pulses and WD cooling</a></h3>
+<div class="outline-text-3" id="text-org70e61e0">
 <p>
 After the end of He core burning, the <i>vast</i> majority of stars (&sim; 98% of
 all stars integrating over the birth-mass distribution for M<sub>ZAMS</sub>&le;
@@ -932,7 +960,7 @@ massive stars!
 </p>
 
 
-<figure id="org3eb35c4">
+<figure id="org3780cad">
 <img src="./images/Trho_TPAGB.png" alt="Trho_TPAGB.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>T(&rho;) diagram of a 1M<sub>☉</sub> <code>MESA-web</code> model during an AGB thermal pulse. Note the temperature inversion in the core, the presence of 2 burning shells in this snapshot (the He shell marked by the orange outline and the H shell marked by the yellow outline).</figcaption>
@@ -979,9 +1007,9 @@ larger R</i>, thus for a given T<sub>eff</sub>, they also have <i>higher L</i>.
 </p>
 </div>
 
-<div id="outline-container-org7c5c138" class="outline-4">
-<h4 id="org7c5c138"><a href="#org7c5c138">The <i>Gaia</i> spur: observational evidence for crystallization</a></h4>
-<div class="outline-text-4" id="text-org7c5c138">
+<div id="outline-container-orgcab84f1" class="outline-4">
+<h4 id="orgcab84f1"><a href="#orgcab84f1">The <i>Gaia</i> spur: observational evidence for crystallization</a></h4>
+<div class="outline-text-4" id="text-orgcab84f1">
 <p>
 As the WD cools, its core density increases, and its degenerate plasma
 will at some point crystallize. This phase transition releases latent
@@ -993,7 +1021,7 @@ the <i>Gaia</i> DR2 dataset for WDs within 100pc from Earth (<a href="https://ui
 </p>
 
 
-<figure id="orga7fa696">
+<figure id="org5fec281">
 <img src="./images/Gaia_spur.png" alt="Gaia_spur.png">
 
 <figcaption><span class="figure-number">Figure 8: </span>HR diagram for a WD sample within 100pc from <i>Gaia</i> DR2. The color of points indicates spectroscopically determined masses based on SDSS, red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract">Tremblay et al. 2019</a></figcaption>
@@ -1027,9 +1055,9 @@ paradoxical! Can you think of any solution to this apparent paradox?</li>
 </div>
 
 
-<div id="outline-container-org6555b02" class="outline-3">
-<h3 id="org6555b02"><a href="#org6555b02">High mass stars: &nu; speedup the evolution</a></h3>
-<div class="outline-text-3" id="text-org6555b02">
+<div id="outline-container-orgc623e87" class="outline-3">
+<h3 id="orgc623e87"><a href="#orgc623e87">High mass stars: &nu; speedup the evolution</a></h3>
+<div class="outline-text-3" id="text-orgc623e87">
 <p>
 As we discussed in the <a href="./notes-lecture-nuclear-burning.html">nuclear burning</a> and <a href="./notes-lecture-neutrinos.html">neutrino lectures</a>, for
 initially sufficiently massive stars (M&ge;7-8M<sub>☉</sub>) the electron
@@ -1062,9 +1090,9 @@ presently (see for example the review by <a href="https://ui.adsabs.harvard.edu/
 </p>
 </div>
 
-<div id="outline-container-org8145792" class="outline-4">
-<h4 id="org8145792"><a href="#org8145792">super-AGB stars</a></h4>
-<div class="outline-text-4" id="text-org8145792">
+<div id="outline-container-org66d6218" class="outline-4">
+<h4 id="org66d6218"><a href="#org66d6218">super-AGB stars</a></h4>
+<div class="outline-text-4" id="text-org66d6218">
 <p>
 In the transition regime between intermediate mass stars (burning H
 convectively in their main sequence core but forming a WD at the end
@@ -1087,9 +1115,9 @@ sustaining the core leading to a so-called "electron capture SN".
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 19 January 2025 <br>
+  Last updated on 1 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>

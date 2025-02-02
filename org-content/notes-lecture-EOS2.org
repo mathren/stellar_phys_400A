@@ -203,7 +203,7 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   electrons for a fully degenerate electron gas/.
 
   We can now calculate the pressure exactly like we did for the
-  classical ideal gas (cf. Eq. 10 in [[file:notes-lecture-EOS1.org::*Ideal gas][the Ideal gas section]]), we just
+  classical ideal gas (cf. Eq. 12 in [[file:notes-lecture-EOS1.org::*Ideal gas][the Ideal gas section]]), we just
   need the appropriate p\equiv p(\varepsilon) relaton
 
 *** Non-relativistic electron gas

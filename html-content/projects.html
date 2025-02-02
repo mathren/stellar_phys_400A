@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-19 Sun 15:15 -->
+<!-- 2025-02-01 Sat 20:02 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A Projects</title>
 <meta name="author" content="Mathieu Renzo" />
 <meta name="generator" content="Org Mode" />
-<meta charset="UTF-8" />
 <link rel="stylesheet" href="./css/style.css" />
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
@@ -34,7 +33,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -46,9 +45,9 @@
   </div>
 </div>
 
-<!-- The hamburger menu  -->
+<!-- scripts -->
 <script>
-  function myFunction() {
+  function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -57,12 +56,41 @@
       }
   }
 </script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+<!-- end scripts-->
 </div>
 <div id="content" class="content">
 
-<div id="outline-container-org045105d" class="outline-2">
-<h2 id="org045105d"><a href="#org045105d">Literature review project/presentation</a></h2>
-<div class="outline-text-2" id="text-org045105d">
+<div id="outline-container-orgcf0d453" class="outline-2">
+<h2 id="orgcf0d453"><a href="#orgcf0d453">Literature review project/presentation</a></h2>
+<div class="outline-text-2" id="text-orgcf0d453">
 <p>
 The aim of this literature review project is for each student to
 engage in a bit more depth with an important topic in modern stellar
@@ -100,9 +128,9 @@ presentation.
 </div>
 
 
-<div id="outline-container-org4b1648e" class="outline-3">
-<h3 id="org4b1648e"><a href="#org4b1648e">Timeline</a></h3>
-<div class="outline-text-3" id="text-org4b1648e">
+<div id="outline-container-org27cf213" class="outline-3">
+<h3 id="org27cf213"><a href="#org27cf213">Timeline</a></h3>
+<div class="outline-text-3" id="text-org27cf213">
 <ul class="org-ul">
 <li><b>Presentation day minus 3 lectures</b>: submission of manuscript to peer-referees</li>
 <li><b>Presentation day minus 2 lectures</b>: referees submit feedback</li>
@@ -119,9 +147,9 @@ Any deviations need to be agreed upon by all parties.
 </div>
 </div>
 
-<div id="outline-container-org5153153" class="outline-3">
-<h3 id="org5153153"><a href="#org5153153">Procedure to assign projects</a></h3>
-<div class="outline-text-3" id="text-org5153153">
+<div id="outline-container-orgbcf115c" class="outline-3">
+<h3 id="orgbcf115c"><a href="#orgbcf115c">Procedure to assign projects</a></h3>
+<div class="outline-text-3" id="text-orgbcf115c">
 <p>
 Each student will be asked identify 5 topics of interest from the list
 below, and I will assign the research topic and the peer referees from
@@ -130,9 +158,9 @@ preferences.
 </p>
 </div>
 
-<div id="outline-container-org769967e" class="outline-4">
-<h4 id="org769967e"><a href="#org769967e">List of possible projects/presentations</a></h4>
-<div class="outline-text-4" id="text-org769967e">
+<div id="outline-container-orgacfac45" class="outline-4">
+<h4 id="orgacfac45"><a href="#orgacfac45">List of possible projects/presentations</a></h4>
+<div class="outline-text-4" id="text-orgacfac45">
 <p>
 If you have some other topic in mind, please come talk to me early on,
 as we may be able to accommodate it.
@@ -183,9 +211,9 @@ as we may be able to accommodate it.
 </div>
 </div>
 
-<div id="outline-container-org7112048" class="outline-3">
-<h3 id="org7112048"><a href="#org7112048">Recommended sources</a></h3>
-<div class="outline-text-3" id="text-org7112048">
+<div id="outline-container-org6732cf8" class="outline-3">
+<h3 id="org6732cf8"><a href="#org6732cf8">Recommended sources</a></h3>
+<div class="outline-text-3" id="text-org6732cf8">
 <p>
 You are encouraged to do your own research, but in the final
 manuscript (and when appropriate in the oral presentation) you need to
@@ -199,9 +227,9 @@ source from Wikipedia, and so on&#x2026;).
 </div>
 </div>
 
-<div id="outline-container-org7c1eb3c" class="outline-3">
-<h3 id="org7c1eb3c"><a href="#org7c1eb3c">Grading</a></h3>
-<div class="outline-text-3" id="text-org7c1eb3c">
+<div id="outline-container-org186556f" class="outline-3">
+<h3 id="org186556f"><a href="#org186556f">Grading</a></h3>
+<div class="outline-text-3" id="text-org186556f">
 <p>
 <i>This part is worth 40% of your final grade &#x2013; as much as all the
 homework combined, so you want to do it well!</i>
@@ -245,9 +273,9 @@ The breakdown of the  project/presentation grade is as follows:
 </p>
 </div>
 
-<div id="outline-container-org47fbf36" class="outline-4">
-<h4 id="org47fbf36"><a href="#org47fbf36">Evaluation rubric</a></h4>
-<div class="outline-text-4" id="text-org47fbf36">
+<div id="outline-container-org0ae49b1" class="outline-4">
+<h4 id="org0ae49b1"><a href="#org0ae49b1">Evaluation rubric</a></h4>
+<div class="outline-text-4" id="text-org0ae49b1">
 <p>
 Remember to appreciate the time and effort others have put in their
 work and be kind and constructive in providing feedback. The aim is to
@@ -258,8 +286,8 @@ something that can be improved!
 </div>
 
 <ul class="org-ul">
-<li><a id="org95b8b27"></a><a href="#org95b8b27">Written summary</a><br>
-<div class="outline-text-5" id="text-org95b8b27">
+<li><a id="orgd6f2bc9"></a><a href="#orgd6f2bc9">Written summary</a><br>
+<div class="outline-text-5" id="text-orgd6f2bc9">
 <p>
 This counts for 40% of this assignment, corresponding to 16% of the
 total grade.
@@ -431,8 +459,8 @@ total grade.
 </div>
 </li>
 
-<li><a id="org4095615"></a><a href="#org4095615">Oral presentation</a><br>
-<div class="outline-text-5" id="text-org4095615">
+<li><a id="org78671d5"></a><a href="#org78671d5">Oral presentation</a><br>
+<div class="outline-text-5" id="text-org78671d5">
 <p>
 This counts for 50% of this assignment, corresponding to 20% of the
 total grade.
@@ -626,8 +654,8 @@ topic.
 </div>
 </li>
 
-<li><a id="org15f8502"></a><a href="#org15f8502">Providing feedback</a><br>
-<div class="outline-text-5" id="text-org15f8502">
+<li><a id="org9d5c61b"></a><a href="#org9d5c61b">Providing feedback</a><br>
+<div class="outline-text-5" id="text-org9d5c61b">
 <p>
 This counts for 10% of this assignment, corresponding to 4% of total grade.
 </p>
@@ -710,9 +738,9 @@ clear and constructive criticism focusing on helping the presenter.
 </div>
 </div>
 
-<div id="outline-container-orgc782bff" class="outline-2">
-<h2 id="orgc782bff"><a href="#orgc782bff">Honors project</a></h2>
-<div class="outline-text-2" id="text-orgc782bff">
+<div id="outline-container-org588c5c8" class="outline-2">
+<h2 id="org588c5c8"><a href="#org588c5c8">Honors project</a></h2>
+<div class="outline-text-2" id="text-org588c5c8">
 <p>
 To get honors credits for this class, on top of the project described
 above, you will do a stellar evolution theory project using the <a href="https://docs.mesastar.org/en/latest/">MESA</a>
@@ -726,9 +754,9 @@ example honors project</a>.
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="syllabus.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="lectures.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="syllabus.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="lectures.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 19 January 2025 <br>
+  Last updated on 1 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>

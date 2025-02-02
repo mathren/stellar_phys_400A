@@ -6,9 +6,8 @@
 
 * 400A Theoretical Astrophysics - Stellar Evolution
 
-Material developed for the 400A course at the Department of Astronomy
-and Steward Observatory of the University of Arizona (Spring 2025 semester).
-
+Material developed for a one-semester course at the Department of
+Astronomy and Steward Observatory of the University of Arizona.
 
 A. Eddington, 1927: /Someday, we should be able to understand something
 as simple as a star/
@@ -25,14 +24,28 @@ parsecs!/"
  </div>
 #+end_export
 
- - [[./syllabus.org][Syllabus]]
- - [[./lectures.org][Lectures topic-by-topic]]
- - [[./projects.org][Projects and presentations]]
-
-For students at the University of Arizona only: [[https://d2l.arizona.edu/d2l/home/1561844][D2L website]]
 
 ** Disclaimer
 
 All the pages of this website are under active construction, may
 contain errors and change without notice. If you find an error please
 let me know and feel free to open an issue/PR on [[https://github.com/mathren/stellar_phys_400A][GitHub]].
+
+** How to use this website
+
+This are my notes for lectures, and are intended to *complement* [[./syllabus.org::*Recommended textbooks and resources][other resources]].
+
+At the top, the "[[./index.org][Stellar Evolution]]" link takes back to this home page.
+On the right, you can access:
+ - [[./syllabus.org][Syllabus]]: updated version
+ - [[./lectures.org][Lectures]]: detailed schedule, with link to materials for each lecture
+ - [[./projects.org][Projects]]: rules for literature review project including list of topics
+
+At the bottom below, there is a light/dark mode toggle, a link to the
+previous lecture, top of the page, and next lecture, and the link to
+the repository of this website.
+
+*** Only for students at University of Arizona
+
+Homework assignments and other official communications
+will be on [[https://d2l.arizona.edu/d2l/home/1561844][D2L]].

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-01-19 Sun 15:15 -->
+<!-- 2025-02-01 Sat 20:02 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A Stellar Evolution</title>
 <meta name="author" content="Mathieu Renzo" />
 <meta name="generator" content="Org Mode" />
-<meta charset="UTF-8" />
 <link rel="stylesheet" href="./css/style.css" />
 <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
 <meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
@@ -34,7 +33,7 @@
       <a href="./lectures.html">Lectures</a>
       <a href="./projects.html">Projects</a>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -46,9 +45,9 @@
   </div>
 </div>
 
-<!-- The hamburger menu  -->
+<!-- scripts -->
 <script>
-  function myFunction() {
+  function HamburgerMenuFunction() {
       var x = document.getElementById("myLinks");
       if (x.style.display === "block") {
 	  x.style.display = "none";
@@ -57,17 +56,45 @@
       }
   }
 </script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+<!-- end scripts-->
 </div>
 <div id="content" class="content">
 
-<div id="outline-container-org742a653" class="outline-2">
-<h2 id="org742a653"><a href="#org742a653">400A Theoretical Astrophysics - Stellar Evolution</a></h2>
-<div class="outline-text-2" id="text-org742a653">
+<div id="outline-container-org0a65200" class="outline-2">
+<h2 id="org0a65200"><a href="#org0a65200">400A Theoretical Astrophysics - Stellar Evolution</a></h2>
+<div class="outline-text-2" id="text-org0a65200">
 <p>
-Material developed for the 400A course at the Department of Astronomy
-and Steward Observatory of the University of Arizona (Spring 2025 semester).
+Material developed for a one-semester course at the Department of
+Astronomy and Steward Observatory of the University of Arizona.
 </p>
-
 
 <p>
 A. Eddington, 1927: <i>Someday, we should be able to understand something
@@ -85,21 +112,12 @@ parsecs!</i>"
 <div class="banner_container">
   <a href="https://sci.esa.int/web/gaia/-/60198-gaia-hertzsprung-russell-diagram"><img width="900vw" alt="Gaia DR2 Hertzsprung-Russel diagram" src="./images/Gaia_DR2_HRD_Gaia.png"/></a>
 </div>
-
-<ul class="org-ul">
-<li><a href="./syllabus.html">Syllabus</a></li>
-<li><a href="./lectures.html">Lectures topic-by-topic</a></li>
-<li><a href="./projects.html">Projects and presentations</a></li>
-</ul>
-
-<p>
-For students at the University of Arizona only: <a href="https://d2l.arizona.edu/d2l/home/1561844">D2L website</a>
-</p>
 </div>
 
-<div id="outline-container-orga46f251" class="outline-3">
-<h3 id="orga46f251"><a href="#orga46f251">Disclaimer</a></h3>
-<div class="outline-text-3" id="text-orga46f251">
+
+<div id="outline-container-org715b5e4" class="outline-3">
+<h3 id="org715b5e4"><a href="#org715b5e4">Disclaimer</a></h3>
+<div class="outline-text-3" id="text-org715b5e4">
 <p>
 All the pages of this website are under active construction, may
 contain errors and change without notice. If you find an error please
@@ -107,14 +125,49 @@ let me know and feel free to open an issue/PR on <a href="https://github.com/mat
 </p>
 </div>
 </div>
+
+<div id="outline-container-org960b1c2" class="outline-3">
+<h3 id="org960b1c2"><a href="#org960b1c2">How to use this website</a></h3>
+<div class="outline-text-3" id="text-org960b1c2">
+<p>
+This are my notes for lectures, and are intended to <b>complement</b> <a href="./syllabus.html#org4a72221">other resources</a>.
+</p>
+
+<p>
+At the top, the "<a href="./index.html">Stellar Evolution</a>" link takes back to this home page.
+On the right, you can access:
+</p>
+<ul class="org-ul">
+<li><a href="./syllabus.html">Syllabus</a>: updated version</li>
+<li><a href="./lectures.html">Lectures</a>: detailed schedule, with link to materials for each lecture</li>
+<li><a href="./projects.html">Projects</a>: rules for literature review project including list of topics</li>
+</ul>
+
+<p>
+At the bottom below, there is a light/dark mode toggle, a link to the
+previous lecture, top of the page, and next lecture, and the link to
+the repository of this website.
+</p>
+</div>
+
+<div id="outline-container-org56f131d" class="outline-4">
+<h4 id="org56f131d"><a href="#org56f131d">Only for students at University of Arizona</a></h4>
+<div class="outline-text-4" id="text-org56f131d">
+<p>
+Homework assignments and other official communications
+will be on <a href="https://d2l.arizona.edu/d2l/home/1561844">D2L</a>.
+</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="index.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="syllabus.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="index.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="syllabus.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 19 January 2025 <br>
+  Last updated on 1 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>
