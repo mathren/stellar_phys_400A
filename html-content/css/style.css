@@ -75,7 +75,7 @@ html, body {
 	font-size: var(--icon-size);
 	position: absolute;
 	top: calc(0.5*var(--header-height) - 0.6*var(--icon-size));
-	right: 0pxg;
+	right: 0;
 	padding-right: var(--padding-horizontal);
     }
 

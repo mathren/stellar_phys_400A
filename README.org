@@ -3,7 +3,7 @@
 
 * Theoretical Astrophysics - Stellar Evolution
 
-Material developed for the =AST400A= course at the Department of
+Material developed for the =AST400A= course (one semester) at the Department of
 Astronomy and Steward Observatory of the University of Arizona (Fall
 semester 2024/Spring semester 2025).
 
