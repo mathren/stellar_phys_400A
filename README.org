@@ -1,6 +1,8 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
+[[https://www.as.arizona.edu/~mrenzo/courses/index.html][https://img.shields.io/website-up-down-green-red/http/shields.io.svg]]
+
 * Theoretical Astrophysics - Stellar Evolution
 
 Material developed for the =AST400A= course (one semester) at the Department of
