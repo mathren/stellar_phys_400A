@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-01 Sat 19:34 -->
+<!-- 2025-02-01 Sat 20:02 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Neutrinos &amp; computational stellar evolution</title>
@@ -81,18 +81,20 @@
 <script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
-      // const body = document.body;
-      const html = document.html;
+      const body = document.body;
+      const html = document.documentElement;
 
 
       // Check localStorage for user preference
       if (localStorage.getItem("theme") === "dark") {
           body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
       }
 
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -112,9 +114,9 @@
 </p>
 
 
-<div id="outline-container-org82d8e5e" class="outline-2">
-<h2 id="org82d8e5e"><a href="#org82d8e5e">Neutrino physics in stars</a></h2>
-<div class="outline-text-2" id="text-org82d8e5e">
+<div id="outline-container-org31868ce" class="outline-2">
+<h2 id="org31868ce"><a href="#org31868ce">Neutrino physics in stars</a></h2>
+<div class="outline-text-2" id="text-org31868ce">
 <p>
 We have almost seen all the pieces needed to make a one-dimensional
 hydrostatic model of a star, including the input physics in the
@@ -124,14 +126,14 @@ connects stellar physics with neutrino physics: &epsilon;<sub>&nu;.</sub>
 </p>
 </div>
 
-<div id="outline-container-orgb5d8d26" class="outline-3">
-<h3 id="orgb5d8d26"><a href="#orgb5d8d26">Summary of equations we have derived</a></h3>
-<div class="outline-text-3" id="text-orgb5d8d26">
+<div id="outline-container-org53cc4e6" class="outline-3">
+<h3 id="org53cc4e6"><a href="#org53cc4e6">Summary of equations we have derived</a></h3>
+<div class="outline-text-3" id="text-org53cc4e6">
 </div>
-<div id="outline-container-org2303a1b" class="outline-4">
-<h4 id="org2303a1b"><a href="#org2303a1b">Mass conservation</a></h4>
-<div class="outline-text-4" id="text-org2303a1b">
-<div class="latex" id="org03a62ad">
+<div id="outline-container-orgc960789" class="outline-4">
+<h4 id="orgc960789"><a href="#orgc960789">Mass conservation</a></h4>
+<div class="outline-text-4" id="text-orgc960789">
+<div class="latex" id="orgf00453f">
 \begin{equation}\label{eq:mass_cont}
 \frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
 \end{equation}
@@ -140,10 +142,10 @@ connects stellar physics with neutrino physics: &epsilon;<sub>&nu;.</sub>
 </div>
 </div>
 
-<div id="outline-container-orge14aa54" class="outline-4">
-<h4 id="orge14aa54"><a href="#orge14aa54">Hydrostatic equilibrium</a></h4>
-<div class="outline-text-4" id="text-orge14aa54">
-<div class="latex" id="org6026308">
+<div id="outline-container-org7ae2d52" class="outline-4">
+<h4 id="org7ae2d52"><a href="#org7ae2d52">Hydrostatic equilibrium</a></h4>
+<div class="outline-text-4" id="text-org7ae2d52">
+<div class="latex" id="orgb70098d">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -157,10 +159,10 @@ relaxed to add an extra term in this equation analogous to ma in F=ma.
 </div>
 </div>
 
-<div id="outline-container-org8d5b863" class="outline-4">
-<h4 id="org8d5b863"><a href="#org8d5b863">Equation of state</a></h4>
-<div class="outline-text-4" id="text-org8d5b863">
-<div class="latex" id="orgd427dc8">
+<div id="outline-container-org9773b5f" class="outline-4">
+<h4 id="org9773b5f"><a href="#org9773b5f">Equation of state</a></h4>
+<div class="outline-text-4" id="text-org9773b5f">
+<div class="latex" id="org11cc1b7">
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T + P_{QM} + \frac{1}{3}aT^{4}  \ \ .
 \end{equation}
@@ -169,10 +171,10 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 </div>
 </div>
 
-<div id="outline-container-orgbaf8650" class="outline-4">
-<h4 id="orgbaf8650"><a href="#orgbaf8650">Energy transport</a></h4>
-<div class="outline-text-4" id="text-orgbaf8650">
-<div class="latex" id="org30df727">
+<div id="outline-container-org560b9a0" class="outline-4">
+<h4 id="org560b9a0"><a href="#org560b9a0">Energy transport</a></h4>
+<div class="outline-text-4" id="text-org560b9a0">
+<div class="latex" id="org0478af0">
 \begin{equation}
 \frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
 \end{equation}
@@ -182,7 +184,7 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 where &nabla; =&part; log(T)/&part; log(P) is the local temperature gradient, equal to
 the radiative gradient in stably stratified regions:
 </p>
-<div class="latex" id="org1af7c97">
+<div class="latex" id="org109914a">
 \begin{equation}
 \nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
 \end{equation}
@@ -198,10 +200,10 @@ precision) for convective regions. We also have a criterion
 </div>
 </div>
 
-<div id="outline-container-orge640d08" class="outline-4">
-<h4 id="orge640d08"><a href="#orge640d08">Energy conservation</a></h4>
-<div class="outline-text-4" id="text-orge640d08">
-<div class="latex" id="orgd346e7d">
+<div id="outline-container-orgf513e0f" class="outline-4">
+<h4 id="orgf513e0f"><a href="#orgf513e0f">Energy conservation</a></h4>
+<div class="outline-text-4" id="text-orgf513e0f">
+<div class="latex" id="org99c2cd6">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
@@ -215,10 +217,10 @@ with &epsilon;<sub>grav</sub> = T&part; s/&part; t the change in internal energy
 </div>
 </div>
 
-<div id="outline-container-orge5f96ad" class="outline-4">
-<h4 id="orge5f96ad"><a href="#orge5f96ad">Composition evolution</a></h4>
-<div class="outline-text-4" id="text-orge5f96ad">
-<div class="latex" id="orga44f09b">
+<div id="outline-container-org2e7b1c1" class="outline-4">
+<h4 id="org2e7b1c1"><a href="#org2e7b1c1">Composition evolution</a></h4>
+<div class="outline-text-4" id="text-org2e7b1c1">
+<div class="latex" id="org3daf9c2">
 \begin{equation}
 \frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) + D_\mathrm{mix}\frac{dX_{i}}{dr} \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
 \end{equation}
@@ -234,9 +236,9 @@ by various instabilities treated in diffusion approximation.
 </div>
 </div>
 
-<div id="outline-container-orga395c6a" class="outline-3">
-<h3 id="orga395c6a"><a href="#orga395c6a">Two types of neutrinos</a></h3>
-<div class="outline-text-3" id="text-orga395c6a">
+<div id="outline-container-org2b88f3d" class="outline-3">
+<h3 id="org2b88f3d"><a href="#org2b88f3d">Two types of neutrinos</a></h3>
+<div class="outline-text-3" id="text-org2b88f3d">
 <p>
 For the density typical in stellar interior (think of &lang;&rho;<sub>☉</sub>&rang; and the other
 average densities you estimated in the various homeworks), neutrinos
@@ -279,9 +281,9 @@ explosion, we encounter two "classes" of neutrinos.
 </p>
 </div>
 
-<div id="outline-container-orgc1ac953" class="outline-4">
-<h4 id="orgc1ac953"><a href="#orgc1ac953">Nuclear neutrinos</a></h4>
-<div class="outline-text-4" id="text-orgc1ac953">
+<div id="outline-container-org1f2aef4" class="outline-4">
+<h4 id="org1f2aef4"><a href="#org1f2aef4">Nuclear neutrinos</a></h4>
+<div class="outline-text-4" id="text-org1f2aef4">
 <p>
 We have already encountered processes producing neutrinos occurring in
 stars: <i>weak nuclear reactions</i>! These are needed since the main
@@ -314,7 +316,7 @@ neutrinos from the so-called <i>URCA processes</i> (named after a casino in
 Rio de Janeiro because when these processes kick in the energy of the
 nuclear reaction goes the same way as the money in the casino!):
 </p>
-<div class="latex" id="orga159996">
+<div class="latex" id="orgb23ebb8">
 \begin{equation}
  ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e  }\\
  ^{A}(Z-1)\rightarrow ^{A}Z+ e^{+} +\bar{\nu_{e}}
@@ -340,9 +342,9 @@ screening effectively makes the Coulomb barrier negligible).
 </div>
 </div>
 
-<div id="outline-container-org53b20e8" class="outline-4">
-<h4 id="org53b20e8"><a href="#org53b20e8">Thermal neutrinos</a></h4>
-<div class="outline-text-4" id="text-org53b20e8">
+<div id="outline-container-org9dec451" class="outline-4">
+<h4 id="org9dec451"><a href="#org9dec451">Thermal neutrinos</a></h4>
+<div class="outline-text-4" id="text-org9dec451">
 <p>
 After helium core burning, the density in the stellar cores become
 sufficiently high (because of the gravothermal collapse) that
@@ -354,7 +356,7 @@ layer: <i>evolved massive stars are neutrino stars</i> L<sub>&nu;</sub>
 </p>
 
 
-<figure id="org05f6c86">
+<figure id="orgcb323b9">
 <img src="./images/neutrino_HRD.png" alt="neutrino_HRD.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Left: evolutionary tracks on a photon HR diagram. Right: corresponding evolutionary tracks on a "neutrino" HR diagram. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...893..133F/abstract">Farag et al. 2020</a>. Note the y-axis scale in both panels.</figcaption>
@@ -413,7 +415,7 @@ typically e):
 </ul>
 
 
-<figure id="org675a33b">
+<figure id="orgd8f8a3b">
 <img src="./images/feynman_diagram_neutrinos.png" alt="feynman_diagram_neutrinos.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from <a href="https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract">Aufderheide 1993</a>, and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W<sup>&plusmn;</sup>.</figcaption>
@@ -449,7 +451,7 @@ tabulated in stellar physics codes (see especially the widely used
 </p>
 
 
-<figure id="org14f7630">
+<figure id="org5f51962">
 <img src="./images/Trho_neutrinos.png" alt="Trho_neutrinos.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Neutrino energy losses on the T(&rho;) plane. White lines mark the separation between regions where different neutrino emission processes dominate, the colored lines mark the T(&rho;) tracks of helium cores of the labeled masses (in M<sub>☉</sub> units) computed with MESA. Credits: R. Farmer.</figcaption>
@@ -459,9 +461,9 @@ tabulated in stellar physics codes (see especially the widely used
 </div>
 </div>
 
-<div id="outline-container-org31969cf" class="outline-2">
-<h2 id="org31969cf"><a href="#org31969cf">Principles of computational stellar evolution</a></h2>
-<div class="outline-text-2" id="text-org31969cf">
+<div id="outline-container-orgbc843da" class="outline-2">
+<h2 id="orgbc843da"><a href="#orgbc843da">Principles of computational stellar evolution</a></h2>
+<div class="outline-text-2" id="text-orgbc843da">
 <p>
 "<i>Traditional scientific knowledge has generally taken the form of</i>
 <i>either theory or experimental data. However, where theory and</i>
@@ -501,9 +503,9 @@ some general principles behind these computational techniques.
 </p>
 </div>
 
-<div id="outline-container-orgaf9d38e" class="outline-3">
-<h3 id="orgaf9d38e"><a href="#orgaf9d38e">The most important thing: <i>Computer simulations are not empirical evidence</i></a></h3>
-<div class="outline-text-3" id="text-orgaf9d38e">
+<div id="outline-container-org16719c7" class="outline-3">
+<h3 id="org16719c7"><a href="#org16719c7">The most important thing: <i>Computer simulations are not empirical evidence</i></a></h3>
+<div class="outline-text-3" id="text-org16719c7">
 <p>
 Computational techniques take a system of equations describing a
 physical model (for example the equations we have derived), which
@@ -554,9 +556,9 @@ atmospheric physics, by <a href="https://en.wikipedia.org/wiki/Edward_Norton_Lor
 </div>
 </div>
 
-<div id="outline-container-orga7f463e" class="outline-3">
-<h3 id="orga7f463e"><a href="#orga7f463e">Why did we limit ourselves to spherical symmetry?</a></h3>
-<div class="outline-text-3" id="text-orga7f463e">
+<div id="outline-container-org6599a11" class="outline-3">
+<h3 id="org6599a11"><a href="#org6599a11">Why did we limit ourselves to spherical symmetry?</a></h3>
+<div class="outline-text-3" id="text-org6599a11">
 <p>
 Throughout the course so far we have explicitly assumed spherical
 symmetry, although since the beginning we have discussed some
@@ -590,9 +592,9 @@ capabilities.
 </p>
 </div>
 
-<div id="outline-container-orgee50630" class="outline-4">
-<h4 id="orgee50630"><a href="#orgee50630">Spatial scale limitations</a></h4>
-<div class="outline-text-4" id="text-orgee50630">
+<div id="outline-container-orgd8d3e42" class="outline-4">
+<h4 id="orgd8d3e42"><a href="#orgd8d3e42">Spatial scale limitations</a></h4>
+<div class="outline-text-4" id="text-orgd8d3e42">
 <p>
 Consider the convective envelope in the Sun. It has a Reynolds number
 Re= v<sub>conv</sub> &ell;/&nu; &sim; 10<sup>12</sup>, which, using Kolmogorov's model of
@@ -604,9 +606,9 @@ each direction</i>, meaning &sim;10<sup>27</sup> points.
 </div>
 </div>
 
-<div id="outline-container-orga516a9b" class="outline-4">
-<h4 id="orga516a9b"><a href="#orga516a9b">Temporal scale limitations</a></h4>
-<div class="outline-text-4" id="text-orga516a9b">
+<div id="outline-container-org7862f13" class="outline-4">
+<h4 id="org7862f13"><a href="#org7862f13">Temporal scale limitations</a></h4>
+<div class="outline-text-4" id="text-org7862f13">
 <p>
 Consider again the Sun. The free fall timescale is generously
 &tau;<sub>ff</sub>&sim;1h, and its thermal timescale is &tau;<sub>KH</sub>&sim;1.5&times;10<sup>7</sup> years,
@@ -620,9 +622,9 @@ timesteps for a nuclear timescale.
 </div>
 </div>
 
-<div id="outline-container-org2802c97" class="outline-4">
-<h4 id="org2802c97"><a href="#org2802c97">Present day and future prospects</a></h4>
-<div class="outline-text-4" id="text-org2802c97">
+<div id="outline-container-org7028e89" class="outline-4">
+<h4 id="org7028e89"><a href="#org7028e89">Present day and future prospects</a></h4>
+<div class="outline-text-4" id="text-org7028e89">
 <p>
 The largest present day multi-dimensional stellar hydrodynamics
 simulations reach maybe up to 10<sup>12</sup> resolution points, and about 10<sup>8</sup>
@@ -654,9 +656,9 @@ possibilities (see e.g., <a href="https://ui.adsabs.harvard.edu/abs/2023A%26A...
 </div>
 </div>
 
-<div id="outline-container-orge36243b" class="outline-3">
-<h3 id="orge36243b"><a href="#orge36243b">Boundary conditions</a></h3>
-<div class="outline-text-3" id="text-orge36243b">
+<div id="outline-container-org866a16e" class="outline-3">
+<h3 id="org866a16e"><a href="#org866a16e">Boundary conditions</a></h3>
+<div class="outline-text-3" id="text-org866a16e">
 <p>
 So, for the foreseeable future we will need 1D stellar structure and
 evolution calculation using the set of equations we derived. To solve
@@ -670,9 +672,9 @@ locations.
 </p>
 </div>
 
-<div id="outline-container-orga3be5d3" class="outline-4">
-<h4 id="orga3be5d3"><a href="#orga3be5d3">Center</a></h4>
-<div class="outline-text-4" id="text-orga3be5d3">
+<div id="outline-container-orgeadd682" class="outline-4">
+<h4 id="orgeadd682"><a href="#orgeadd682">Center</a></h4>
+<div class="outline-text-4" id="text-orgeadd682">
 <p>
 These are fairly intuitive:
 </p>
@@ -691,9 +693,9 @@ enough!).
 </div>
 </div>
 
-<div id="outline-container-orgbc16b85" class="outline-4">
-<h4 id="orgbc16b85"><a href="#orgbc16b85">Surface</a></h4>
-<div class="outline-text-4" id="text-orgbc16b85">
+<div id="outline-container-org57c966c" class="outline-4">
+<h4 id="org57c966c"><a href="#org57c966c">Surface</a></h4>
+<div class="outline-text-4" id="text-org57c966c">
 <p>
 We need to turn to the surface to get observationally informed
 boundary conditions. Remember that from the point of view of a
@@ -734,9 +736,9 @@ far, and consequently the equations we wrote do not hold.
 </div>
 </div>
 
-<div id="outline-container-org22dbc0a" class="outline-3">
-<h3 id="org22dbc0a"><a href="#org22dbc0a">Solving strategies</a></h3>
-<div class="outline-text-3" id="text-org22dbc0a">
+<div id="outline-container-org91d0de6" class="outline-3">
+<h3 id="org91d0de6"><a href="#org91d0de6">Solving strategies</a></h3>
+<div class="outline-text-3" id="text-org91d0de6">
 <p>
 Let's assume we have a way to specify P(r=R), and postpone the
 discussion of stellar atmosphere to a <a href="./notes-lecture-radTrans.html">future lecture</a>.
@@ -746,9 +748,9 @@ condition. How can we solve them numerically?
 </p>
 </div>
 
-<div id="outline-container-org8ee5cbf" class="outline-4">
-<h4 id="org8ee5cbf"><a href="#org8ee5cbf">Discretization</a></h4>
-<div class="outline-text-4" id="text-org8ee5cbf">
+<div id="outline-container-orgf65340b" class="outline-4">
+<h4 id="orgf65340b"><a href="#orgf65340b">Discretization</a></h4>
+<div class="outline-text-4" id="text-orgf65340b">
 <p>
 First, to represent the system of equations in a computer we want to
 discretize them, that is convert every derivative into a <i>finite
@@ -757,7 +759,7 @@ advantages and disadvantages. The simplest is a first-order forward
 discretization of the form:
 </p>
 
-<div class="latex" id="org0828584">
+<div class="latex" id="org48c4413">
 \begin{equation}
 \frac{df}{dx} \rightarrow \frac{f(x_{k+1})-f(x_{k})}{x_{k+1}-x_{k}} \ \ ,
 \end{equation}
@@ -790,7 +792,7 @@ this!
 </p>
 
 
-<figure id="org1aa826c">
+<figure id="orgd9cd96c">
 <img src="./images/mesh.png" alt="mesh.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Schematic representation of the spatial mesh in MESA. Intensive quantities (T, &rho;, P) that do not depend on the amount matter are defined at the cell "center", while extensive quantities (m, L) are defined at the cell "boundaries". This is Figure 9 in <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract">Paxton et al. 2011</a>.</figcaption>
@@ -800,7 +802,7 @@ this!
 By discretizing the ODEs we can rewrite them as algebraic equations:
 </p>
 
-<div class="latex" id="org39f798d">
+<div class="latex" id="orgf745642">
 \begin{equation}
 \frac{dm}{dr}=4\pi r^2\rho   \Leftrightarrow   \ln(r_k) = \frac{1}{3}\ln\left( r_{k+1}^{3} +\frac{3}{4\pi}\frac{dm_k}{\rho_k}\right)
 \end{equation}
@@ -838,7 +840,7 @@ Where, when going from the physical model to the
 numerical implementation:
 </p>
 <ul class="org-ul">
-<li>we use m rather than r as independent coordinate <a href="./notes-lecture-HSE.html#org565b33b">as expected</a>;</li>
+<li>we use m rather than r as independent coordinate <a href="./notes-lecture-HSE.html#org44bd18c">as expected</a>;</li>
 <li>the mass continuity if re-formulated in terms of natural logarithm
 or r instead or r itself (to keep numbers smaller);</li>
 <li>the EOS, &kappa;, &epsilon;<sub>nuc,</sub>, and &epsilon;<sub>&nu;</sub> represent input physics that we borrow
@@ -853,7 +855,7 @@ solving a matrix equation:
 </p>
 
 
-<figure id="org0192539">
+<figure id="org060a665">
 <img src="./images/matrix_mesa.png" alt="matrix_mesa.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Section of an example of the matrix to solve. Black dots are non-zero entries, meaning the variables are coupled by an equation. Vertical dashed lines denote blocks of the matrix for cell <code>k-1</code>, <code>k</code>, and <code>k+1</code> respectively, red dotted lines separate structural variables and compositional variables. This is Fig. 47 of <a href="https://ui.adsabs.harvard.edu/abs/2013ApJS..208....4P/abstract">Paxton et al. 2013</a>.</figcaption>
@@ -884,9 +886,9 @@ crossing time.</li>
 </div>
 </div>
 
-<div id="outline-container-org1058cab" class="outline-4">
-<h4 id="org1058cab"><a href="#org1058cab">Solver</a></h4>
-<div class="outline-text-4" id="text-org1058cab">
+<div id="outline-container-org61d6904" class="outline-4">
+<h4 id="org61d6904"><a href="#org61d6904">Solver</a></h4>
+<div class="outline-text-4" id="text-org61d6904">
 <p>
 For each of these methods, we still need to specify a numerical
 solver. Typically stellar evolution codes rely on generalized first
@@ -896,7 +898,7 @@ create a better second guess:
 </p>
 
 
-<figure id="org0c687da">
+<figure id="orged6e6b2">
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif" alt="NewtonIteration_Ani.gif" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Animation of the Newton-Raphson method to find the zero of a function y=f(x) in one dimension through tangent approximations (from <a href="https://en.wikipedia.org/wiki/Newton's_method">Wikipedia</a>).</figcaption>
@@ -904,9 +906,9 @@ create a better second guess:
 </div>
 </div>
 
-<div id="outline-container-orgdf17a81" class="outline-4">
-<h4 id="orgdf17a81"><a href="#orgdf17a81">Shooting method vs. Henyey method</a></h4>
-<div class="outline-text-4" id="text-orgdf17a81">
+<div id="outline-container-org30e50da" class="outline-4">
+<h4 id="org30e50da"><a href="#org30e50da">Shooting method vs. Henyey method</a></h4>
+<div class="outline-text-4" id="text-org30e50da">
 <p>
 There is a peculiarity in the way we built the system of equations to
 be solved: we have two boundary conditions at one edge of the (one dimensional) domain
@@ -942,9 +944,9 @@ field, see this <a href="https://www.aip.org/history-programs/niels-bohr-library
 </div>
 </div>
 
-<div id="outline-container-org28049d1" class="outline-4">
-<h4 id="org28049d1"><a href="#org28049d1">Evolution splitting</a></h4>
-<div class="outline-text-4" id="text-org28049d1">
+<div id="outline-container-org9618d65" class="outline-4">
+<h4 id="org9618d65"><a href="#org9618d65">Evolution splitting</a></h4>
+<div class="outline-text-4" id="text-org9618d65">
 <p>
 One final peculiarity of the stellar structure and evolution problem
 is that the evolution is <i>slow</i> and driven by nuclear physics, which
@@ -971,9 +973,9 @@ problem and can make it more tractable.
 </div>
 
 
-<div id="outline-container-orgc205cac" class="outline-3">
-<h3 id="orgc205cac"><a href="#orgc205cac">Open science: <a href="https://docs.mesastar.org/en/latest/">MESA</a> and <code>MESA-web</code></a></h3>
-<div class="outline-text-3" id="text-orgc205cac">
+<div id="outline-container-org60fdcd5" class="outline-3">
+<h3 id="org60fdcd5"><a href="#org60fdcd5">Open science: <a href="https://docs.mesastar.org/en/latest/">MESA</a> and <code>MESA-web</code></a></h3>
+<div class="outline-text-3" id="text-org60fdcd5">
 <p>
 "<i>An algorithm must be seen to be believed</i>" - D. Knuth
 </p>
@@ -1045,9 +1047,9 @@ other codes in this problem space!
 </div>
 </div>
 
-<div id="outline-container-org05426cf" class="outline-3">
-<h3 id="org05426cf"><a href="#org05426cf">Summary</a></h3>
-<div class="outline-text-3" id="text-org05426cf">
+<div id="outline-container-orgd32d15e" class="outline-3">
+<h3 id="orgd32d15e"><a href="#orgd32d15e">Summary</a></h3>
+<div class="outline-text-3" id="text-orgd32d15e">
 <ol class="org-ol">
 <li>take a star, which is a complex multi-scale, multi-physics,
 multi-dimensional object</li>
@@ -1067,9 +1069,9 @@ any of steps 2-5</b>.</li>
 </div>
 </div>
 
-<div id="outline-container-org5748575" class="outline-2">
-<h2 id="org5748575"><a href="#org5748575">Population synthesis</a></h2>
-<div class="outline-text-2" id="text-org5748575">
+<div id="outline-container-orgb59fde3" class="outline-2">
+<h2 id="orgb59fde3"><a href="#orgb59fde3">Population synthesis</a></h2>
+<div class="outline-text-2" id="text-orgb59fde3">
 <p>
 As we saw since the <a href="./notes-lecture-CMD-HRD.html">lecture on the CMD/HRD</a>, in stellar physics it is
 often necessary to rely on <i>population studies</i> to infer something about
@@ -1131,9 +1133,9 @@ Below is an (incomplete, biased) list of some of these codes.
 </p>
 </div>
 
-<div id="outline-container-org2b092cd" class="outline-3">
-<h3 id="org2b092cd"><a href="#org2b092cd">Semi-analytic approach to population synthesis</a></h3>
-<div class="outline-text-3" id="text-org2b092cd">
+<div id="outline-container-org9ba48a5" class="outline-3">
+<h3 id="org9ba48a5"><a href="#org9ba48a5">Semi-analytic approach to population synthesis</a></h3>
+<div class="outline-text-3" id="text-org9ba48a5">
 <ul class="org-ul">
 <li>BSE: the forefather of many, see <a href="https://ui.adsabs.harvard.edu/abs/2002MNRAS.329..897H/abstract">Hurley 2002</a> and references therein (<b>N.B.:</b> not <i>all</i> rapid population synthesis codes)</li>
 <li><a href="https://cosmic-popsynth.github.io/">COSMIC</a>: Open source and open development, <code>pip</code> installable</li>
@@ -1144,9 +1146,9 @@ Below is an (incomplete, biased) list of some of these codes.
 </div>
 </div>
 
-<div id="outline-container-orga9cbec3" class="outline-3">
-<h3 id="orga9cbec3"><a href="#orga9cbec3">Pre-computed and tabulated or hybrid codes</a></h3>
-<div class="outline-text-3" id="text-orga9cbec3">
+<div id="outline-container-org3b38696" class="outline-3">
+<h3 id="org3b38696"><a href="#org3b38696">Pre-computed and tabulated or hybrid codes</a></h3>
+<div class="outline-text-3" id="text-org3b38696">
 <ul class="org-ul">
 <li><a href="https://posydon.org/">POSYDON</a> (<code>MESA</code> tables of models, open source)</li>
 <li>BPASS (Based on models from "the Cambridge code")</li>
@@ -1160,9 +1162,9 @@ Below is an (incomplete, biased) list of some of these codes.
 </div>
 </div>
 
-<div id="outline-container-orgd07db92" class="outline-2">
-<h2 id="orgd07db92"><a href="#orgd07db92">Homework: preparation for in class activity</a></h2>
-<div class="outline-text-2" id="text-orgd07db92">
+<div id="outline-container-orge74fe26" class="outline-2">
+<h2 id="orge74fe26"><a href="#orge74fe26">Homework: preparation for in class activity</a></h2>
+<div class="outline-text-2" id="text-orge74fe26">
 <p>
 In two weeks from now we are going to do a class activity to piece
 together all the things we have learned so far and describe the
@@ -1222,17 +1224,17 @@ in class activity.
 </p>
 </div>
 
-<div id="outline-container-org402fda7" class="outline-3">
-<h3 id="org402fda7"><a href="#org402fda7">Initial mass M&le; 7M<sub>☉</sub></a></h3>
-<div class="outline-text-3" id="text-org402fda7">
+<div id="outline-container-orgc38df96" class="outline-3">
+<h3 id="orgc38df96"><a href="#orgc38df96">Initial mass M&le; 7M<sub>☉</sub></a></h3>
+<div class="outline-text-3" id="text-orgc38df96">
 <ul class="org-ul">
 <li><b>Nuclear Reaction Network</b>: <code>approx21</code></li>
 </ul>
 </div>
 
-<div id="outline-container-org391ede8" class="outline-4">
-<h4 id="org391ede8"><a href="#org391ede8">Stopping condition log(&rho;<sub>center</sub>/([g cm<sup>-3</sup>]))&ge;10</a></h4>
-<div class="outline-text-4" id="text-org391ede8">
+<div id="outline-container-orgefb5ffd" class="outline-4">
+<h4 id="orgefb5ffd"><a href="#orgefb5ffd">Stopping condition log(&rho;<sub>center</sub>/([g cm<sup>-3</sup>]))&ge;10</a></h4>
+<div class="outline-text-4" id="text-orgefb5ffd">
 <p>
 Not all models may successfully reach this condition. We will have
 a chance to discuss "failed" models!
@@ -1241,9 +1243,9 @@ a chance to discuss "failed" models!
 </div>
 </div>
 
-<div id="outline-container-org6181db3" class="outline-3">
-<h3 id="org6181db3"><a href="#org6181db3">Initial mass M&gt;7M<sub>☉</sub></a></h3>
-<div class="outline-text-3" id="text-org6181db3">
+<div id="outline-container-org671f9ca" class="outline-3">
+<h3 id="org671f9ca"><a href="#org671f9ca">Initial mass M&gt;7M<sub>☉</sub></a></h3>
+<div class="outline-text-3" id="text-org671f9ca">
 <ul class="org-ul">
 <li><b>Nuclear Reaction Network</b>: <code>approx21</code></li>
 <li><b>Semi-Convection Alpha</b>: 0</li>
@@ -1255,9 +1257,9 @@ a chance to discuss "failed" models!
 </ul>
 </div>
 
-<div id="outline-container-org761bf47" class="outline-4">
-<h4 id="org761bf47"><a href="#org761bf47">Stopping condition: iron core collapse (default) value <code>1e8</code></a></h4>
-<div class="outline-text-4" id="text-org761bf47">
+<div id="outline-container-org2755155" class="outline-4">
+<h4 id="org2755155"><a href="#org2755155">Stopping condition: iron core collapse (default) value <code>1e8</code></a></h4>
+<div class="outline-text-4" id="text-org2755155">
 <p>
 The value specified the speed of collapse that the iron core needs
 to reach before the model stops. Usually by this point of the

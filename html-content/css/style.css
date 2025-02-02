@@ -316,6 +316,6 @@ tfoot {
 /* Dark Mode */
 .dark-mode {
     --background: #121212; /* Dark background */
-    --color: #949494; /* Main text color */
+    --color: #909090; /* Main text color */
     --hover-color: #7b7b7b; /* Hover effect color */
 }

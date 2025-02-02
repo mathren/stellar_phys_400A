@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-01 Sat 19:34 -->
+<!-- 2025-02-01 Sat 20:02 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Honors project</title>
@@ -60,18 +60,20 @@
 <script>
   window.onload = () => {
       const toggleButton = document.getElementById("light-dark-toggle");
-      // const body = document.body;
-      const html = document.html;
+      const body = document.body;
+      const html = document.documentElement;
 
 
       // Check localStorage for user preference
       if (localStorage.getItem("theme") === "dark") {
           body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
       }
 
       // Toggle theme on click
       toggleButton.addEventListener("click", () => {
           body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
 
           // Save user preference
           if (body.classList.contains("dark-mode")) {
@@ -86,9 +88,9 @@
 </div>
 <div id="content" class="content">
 
-<div id="outline-container-orgbaac53a" class="outline-2">
-<h2 id="orgbaac53a"><a href="#orgbaac53a">Examples of past honor's projects</a></h2>
-<div class="outline-text-2" id="text-orgbaac53a">
+<div id="outline-container-org62fd89f" class="outline-2">
+<h2 id="org62fd89f"><a href="#org62fd89f">Examples of past honor's projects</a></h2>
+<div class="outline-text-2" id="text-org62fd89f">
 <p>
 The honor's project consist in installing on your machine <a href="https://docs.mesastar.org/en/latest/">MESA</a>, and
 use it to investigate something we will barely touch upon in class.
@@ -101,9 +103,9 @@ scope that best fits your interests <i>and</i> the content of this class.
 </p>
 </div>
 
-<div id="outline-container-orgb32d8fd" class="outline-3">
-<h3 id="orgb32d8fd"><a href="#orgb32d8fd">Main sequence burning in massive population III stars</a></h3>
-<div class="outline-text-3" id="text-orgb32d8fd">
+<div id="outline-container-org05e23a1" class="outline-3">
+<h3 id="org05e23a1"><a href="#org05e23a1">Main sequence burning in massive population III stars</a></h3>
+<div class="outline-text-3" id="text-org05e23a1">
 <p>
 Nuclear burning in massive stars occurs through the CNO cycle, which
 uses metals (Carbon, Nitrogen, and Oxygen) as catalysts to stick
@@ -131,9 +133,9 @@ interior structure, and interpret the differences.
 </p>
 </div>
 
-<div id="outline-container-orge55ecb3" class="outline-4">
-<h4 id="orge55ecb3"><a href="#orge55ecb3">Instructions</a></h4>
-<div class="outline-text-4" id="text-orge55ecb3">
+<div id="outline-container-org4496b95" class="outline-4">
+<h4 id="org4496b95"><a href="#org4496b95">Instructions</a></h4>
+<div class="outline-text-4" id="text-org4496b95">
 <ul class="org-ul">
 <li>Follow the <a href="https://docs.mesastar.org/en/latest/">MESA</a> documentation to install the code</li>
 <li>Follow the tutorial to run MESA: this will be your Z<sub>☉</sub> 15M<sub>☉</sub> star!</li>
