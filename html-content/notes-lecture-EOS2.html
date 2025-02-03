@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-03 Mon 11:52 -->
+<!-- 2025-02-03 Mon 13:58 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - EOS (QM effects)</title>
@@ -141,11 +141,11 @@ stellar physics.
 From the wave-nature of the solutions of Schroedinger's equation, we
 know that there is a limit on the precision to which position and
 velocity of a particle can be known ("Heisenberg's uncertainty
-principle"): &Delta; x &Delta; p &ge; h with h Planck's constant. This naturally
+principle"): \(\Delta x \Delta p \ge h\) with \(h\) Planck's constant. This naturally
 translates in three spatial dimension to
 </p>
 
-<div class="latex" id="org02dca61">
+<div class="latex" id="org7a8997b">
 \begin{equation}
 \Delta x \Delta y \Delta z \Delta p_{x} \Delta p_{y} \Delta p_{z} \ge h^{3} \ \,
 \end{equation}
@@ -153,30 +153,30 @@ translates in three spatial dimension to
 </div>
 
 <p>
-where h<sup>3</sup> is the volume of a quantized cell in phase-space! Thus the
-available number of quantized states with momentum between p+dp within
-a volume dV = dxdydz &equiv; d<sup>3</sup>x is
+where \(h^{3}\) is the volume of a quantized cell in phase-space! Thus the
+available number of quantized states with momentum between \(p+dp\) within
+a volume \(dV = dxdydz \equiv d^{3}x\) is
 </p>
 
-<div class="latex" id="orgcb105e0">
+<div class="latex" id="orgb748575">
 \begin{equation}
 g(p)dpdV = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
 \end{equation}
 
 </div>
 <p>
-In the equation above, the factor g<sub>s</sub> allows to account for "internal
+In the equation above, the factor \(g_{s}\) allows to account for "internal
 degrees of freedom" of particles, e.g., their spin, polarization, or
-isospin. The key point here is f(p)&prop; p<sup>2</sup> to satisfy QM. <b>N.B.:</b> the p<sup>2</sup>
-factor in g(p) comes from the Jacobian from going from Cartesian to
+isospin. The key point here is \(f(p)\propto p^{2}\) to satisfy QM. <b>N.B.:</b> the \(p^{2}\)
+factor in \(g(p)\) comes from the Jacobian from going from Cartesian to
 spherical polar coordinates in momentum space and assuming an
-isotropic momentum distribution (dp<sub>x</sub>dp<sub>y</sub>dp<sub>z</sub> &equiv; d<sup>3</sup>p = 4&pi; p<sup>2</sup> dp).
+isotropic momentum distribution (\(dp_{x}dp_{y}dp_{z} \equiv d^{3}p = 4\pi p^{2} dp\)).
 </p>
 
 <p>
 Let's start by considering a non-extreme situation. Then the particles
-are distributed according to a Maxwell-Boltzmann distribution n(p), but
-whenever n(p)&gt; g(p), we know this is going to violate QM!
+are distributed according to a Maxwell-Boltzmann distribution \(n(p)\), but
+whenever \(n(p)> g(p)\), we know this is going to violate QM!
 </p>
 
 <p>
@@ -184,7 +184,7 @@ From the <a href="notes-lecture-EOS1.html#orgade2197">previous lecture on EOS</a
 distribution
 </p>
 
-<div class="latex" id="orgd4da84b">
+<div class="latex" id="orgc3ab0eb">
 \begin{equation}
 n(p)\propto \frac{n}{(mT)^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }\ \ ,
 \end{equation}
@@ -192,11 +192,11 @@ n(p)\propto \frac{n}{(mT)^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }
 </div>
 
 <p>
-where n is the number density, T the temperature, and m the mass of
+where \(n\) is the number density, \(T\) the temperature, and \(m\) the mass of
 the particles. Therefore:
 </p>
 
-<div class="latex" id="orga227ef4">
+<div class="latex" id="org255b041">
 \begin{equation}\label{eq:momentum_ratios}
 \frac{n(p)}{g(p)}\propto n (mT)^{-3/2}\exp(\frac{-p^{2}}{2mk_{B}T}) \ \ .
 \end{equation}
@@ -208,12 +208,12 @@ We can see that:
 </p>
 
 <ul class="org-ul">
-<li>at fixed temperature T, for very high number densities n, this ratio
+<li>at fixed temperature \(T\), for very high number densities \(n\), this ratio
 is going to be larger than one in violation of QM</li>
-<li>at fixed number density n, for very low temperatures, this ratio
+<li>at fixed number density \(n\), for very low temperatures \(T\), this ratio
 will be larger than 1 in violation of QM (because every term in the
 Taylor expansion of the exponential is proportional to a negative
-power of T).</li>
+power of \(T\)).</li>
 <li>the smaller mass particle will violate QM earlier than the higher
 mass particles</li>
 </ul>
@@ -236,11 +236,11 @@ neutrons (and protons and neutrons can be seen as two different
 isospin states of a generic nucleon, this is useful for example to
 discuss the interior composition of neutron stars). In this case,
 the distribution function that determines the occupation of quantum
-states of energy between &epsilon;&equiv;&epsilon;(p) and &epsilon;+d&epsilon; is the Fermi-Dirac
+states of energy between \(\varepsilon\equiv\varepsilon(p)\) and \(\varepsilon+d\varepsilon\) is the Fermi-Dirac
 distribution:
 </p>
 
-<div class="latex" id="orgd8abd21">
+<div class="latex" id="org4dcf59b">
 \begin{equation}\label{eq:Fermi-Dirac}
  f_{FD}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T - \eta)}+1} \le 1 \ \,
 \end{equation}
@@ -248,7 +248,7 @@ distribution:
 </div>
 
 <p>
-where &eta;=&mu;/k<sub>b</sub>T is the "degeneracy parameter" dependent on the
+where \(\eta=\mu/k_{b}T\) is the "degeneracy parameter" dependent on the
 <i>chemical potential &mu;</i>, that is how much energy you need to "spend" to
 create a new particle in an available energy level (<b>N.B.:</b> do not
 confuse this with the mean molecular weight which has the same
@@ -264,7 +264,7 @@ at most one fermion.
 case the relevant distribution is the Bose-Einstein's distribution:
 </p>
 
-<div class="latex" id="org3f7bad4">
+<div class="latex" id="org45d5ec9">
 \begin{equation}\label{eq:Bose-Einstein}
  f_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T-\eta)}-1} \ \,
 \end{equation}
@@ -274,20 +274,21 @@ case the relevant distribution is the Bose-Einstein's distribution:
 <p>
 which can be &ge; 1, meaning more than one boson can occupy the same
 energy level (e.g., in the extreme case of a Bose-Einstein
-condensate all particles occupy the level with lowest &epsilon; - this may
+condensate all particles occupy the level with lowest \(\varepsilon\) - this may
 be relevant in the interior structure of neutron stars for example).
 </p></li>
 </ul>
 
 <p>
-The total number of particles with momentum between p and p+dp is
-thus given by f(&epsilon;(p))g(p)dp for an appropriate choice of f depending
-on the particle considered (f=f<sub>FD</sub> or f=f<sub>BE</sub>). To determine the
-chemical potential &mu; one can impose the normalization following
-from the total number density of particles:
+The total number of particles with momentum between \(p\) and \(p+dp\) is
+thus given by \(f(\varepsilon(p))g(p)dp\) for an appropriate choice of \(f\)
+depending on the particle considered (\(f=f_\mathrm{FD}\) or
+\(f=f_\mathrm{BE}\)). To determine the chemical potential &mu; one can
+impose the normalization following from the total number density of
+particles:
 </p>
 
-<div class="latex" id="org4d8a90d">
+<div class="latex" id="org1c8f7c5">
 \begin{equation}
 n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ .
 \end{equation}
@@ -297,17 +298,17 @@ n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ .
 <p>
 Let's now consider a gas of electrons. These are the particles in the
 ionized gas of the star that will first start feeling QM effects,
-since m<sub>e</sub> &Lt; m<sub>ion</sub> (in fact m<sub>e</sub> &cong; m<sub>proton</sub>/1836.15 &cong;
-m<sub>proton</sub>/2000), cf. Eq. \ref{eq:momentum_ratios}.
+since \(m_{e} \ll m_{ion\)} (in fact \(m_{e} \simeq m_\mathrm{proton}/1836.15 \simeq
+m_{proton}/2000\)), cf. Eq. \ref{eq:momentum_ratios}.
 </p>
 
 <p>
 In practice, the pressure provided by the <i>ions</i> never becomes
-affected by QM directly: because of the m<sup>-3/2</sup> term in the
+affected by QM directly: because of the \(m^{-3/2\)} term in the
 Maxwell-Boltzmann distribution, this would require densities so high
 that the ions would not exist as ions anymore. Instead the high
 density would allow for electron captures onto the protons of the
-ions turning them in neutrons (e<sup>-</sup> + p &rarr; n + &nu;<sub>e</sub>). As we will see this
+ions turning them in neutrons (\(e^{-} + p \rightarrow n + \nu_{e}\)). As we will see this
 is what happens at the very end of the evolution of massive stars
 that end their life exploding and leaving a neutron-star: those
 electron capture reactions are where the neutrons come from! The
@@ -320,7 +321,7 @@ Because the pressure term from electrons (which in the ideal gas EOS
 is accounted for thanks to our definition of the mean molecular
 weight) changes because of QM effects first, let's now consider a
 gas made of electrons only. These particles have spin 1/2, thus they
-are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and q<sub>s</sub> = 2 in it
+are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and \(q_{s} = 2\) in it
 (each quantum cell of the phase space 4&pi; p<sup>2</sup>dp dV can be occupied by
 2 electrons, one with spin up and one with spin down).
 </p>
@@ -350,7 +351,7 @@ the electrons occupy a sphere in momentum space with a radius p<sub>F</sub>
 called the "Fermi" momentum:
 </p>
 
-<div class="latex" id="org9051b6b">
+<div class="latex" id="org2ddcb94">
   \begin{equation}
   g_{e}(p)dp = q_{s}\frac{4\pi p^{2}}{h^{3}}dp \equiv \frac{8\pi p^{2}}{h^{3}}dp \ \  \mathrm{for} \ \
 p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
@@ -362,7 +363,7 @@ and we used q<sub>s</sub>=2 for electrons. To find the value of p<sub>f</sub> we
 the normalization coming from the total number density of electrons
 </p>
 
-<div class="latex" id="org63e5cb1">
+<div class="latex" id="org8526d07">
 \begin{equation}
 n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{f}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8\pi}n_{e}\right)^{1/3} \ \ .
 \end{equation}
@@ -387,7 +388,7 @@ need the appropriate p&equiv; p(&epsilon;) relaton
 In this case &epsilon; = p<sup>2</sup>/2m is the energy of the electrons (still ideal
 gas) and v=p/m, thus from the previous lecture on EOS we have:
 </p>
-<div class="latex" id="orgc55c68a">
+<div class="latex" id="org4e559f1">
 \begin{equation}
 P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{f}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \ \ .
 \end{equation}
@@ -425,7 +426,7 @@ gas, the EOS will again be a polytrope with exponent now &Gamma;=4/3</i>.
 <p>
 Specifically the calculation yields:
 </p>
-<div class="latex" id="org692b055">
+<div class="latex" id="org769a5aa">
 \begin{equation}
 P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \ \ .
 \end{equation}
@@ -446,7 +447,7 @@ One can estimate the density at the transition with the
 condition p<sub>F</sub> &cong; m<sub>e</sub> c:
 </p>
 
-<div class="latex" id="orgfd8aa5a">
+<div class="latex" id="org464b7b6">
 \begin{equation}
  \rho_{NR \rightarrow UR} \simeq \mu_{e} m_{u} \frac{8\pi}{3} \left(\frac{m_{e}c}{h}\right)^{3} \ \ .
 \end{equation}
@@ -533,7 +534,7 @@ We can then calculate the internal energy density of the photon gas
 as u<sub>int</sub> = a T<sup>4</sup> with a the radiation constant:
 </p>
 
-<div class="latex" id="orgdbe0068">
+<div class="latex" id="org08d5eea">
 \begin{equation}
 a = \frac{8\pi^{5} k_{B}^4}{15h^{3}c^{3}} = 7.56\times10^{-15} \mathrm{erg} \ \mathrm{cm}^{-3} \ \mathrm{K}^{-4} \ \ ,
 \end{equation}
@@ -549,7 +550,7 @@ Relying again on the ultra-relativistic nature of photons, we know
 that P=u<sub>int</sub>/3 and therefore the radiation pressure is:
 </p>
 
-<div class="latex" id="org0b5d2f7">
+<div class="latex" id="org815dd5f">
 \begin{equation}
 P_\mathrm{rad} =\frac{1}{3}aT^{4} \ \ .
 \end{equation}
@@ -611,7 +612,7 @@ Similarly we can define &mu;<sub>0</sub> as the mean molecular weight per nucleu
 and &mu;<sub>e</sub> as the mean molecular weight per electron, and thus
 </p>
 
-<div class="latex" id="org00c1bf3">
+<div class="latex" id="org249d7bb">
 \begin{equation}
 \rho = (n+n_{e})\mu m_{u}\equiv n\mu_{o}m_{u} \equiv n_{e}\mu_{e} m_{u} \ \ .
 \end{equation}
@@ -625,7 +626,7 @@ density of massive ions regarless of their ionization state), and thus
 rewrite the above as
 </p>
 
-<div class="latex" id="org95ba74e">
+<div class="latex" id="org6938661">
 \begin{equation}
 \mu = \frac{\rho}{m_{u}n}\frac{1}{1+E} \equiv \frac{\mu_{0}}{1+E} \equiv \mu_{e}\frac{E}{1+E} \ \ .
 \end{equation}
@@ -648,7 +649,7 @@ calculate E as a function of T, and &rho;.
 Putting all things together:
 </p>
 
-<div class="latex" id="org4df197e">
+<div class="latex" id="org51dc2e3">
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T +
 P_{QM} + \frac{1}{3}aT^{4}  \ \ ,
@@ -669,7 +670,7 @@ mechanics:
 </p>
 
 
-<figure id="org429f691">
+<figure id="org4d3662b">
 <img src="./images/EOS_blend_paxton18.png" alt="EOS_blend_paxton18.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Blend of tabulated EOS on the T(&rho;) plane used in MESA (Fig. 50 in <a href="https://ui.adsabs.harvard.edu/abs/2018ApJS..234...34P/abstract">Paxton et al. 2018</a>), see also <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstract">Jermyn et al. 2021</a> for updates relevant to large portions of this plane. The blue and purple tracks correspond to evolved stellar models of the mass labeled.</figcaption>

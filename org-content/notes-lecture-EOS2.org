@@ -26,7 +26,7 @@ stellar physics.
 From the wave-nature of the solutions of Schroedinger's equation, we
 know that there is a limit on the precision to which position and
 velocity of a particle can be known ("Heisenberg's uncertainty
-principle"): \Delta x \Delta p \ge h with h Planck's constant. This naturally
+principle"): $\Delta x \Delta p \ge h$ with $h$ Planck's constant. This naturally
 translates in three spatial dimension to
 
 #+begin_latex
@@ -35,25 +35,25 @@ translates in three spatial dimension to
 \end{equation}
 #+end_latex
 
-where h^{3} is the volume of a quantized cell in phase-space! Thus the
-available number of quantized states with momentum between p+dp within
-a volume dV = dxdydz \equiv d^{3}x is
+where $h^{3}$ is the volume of a quantized cell in phase-space! Thus the
+available number of quantized states with momentum between $p+dp$ within
+a volume $dV = dxdydz \equiv d^{3}x$ is
 
 #+begin_latex
 \begin{equation}
 g(p)dpdV = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
 \end{equation}
 #+end_latex
-In the equation above, the factor g_{s} allows to account for "internal
+In the equation above, the factor $g_{s}$ allows to account for "internal
 degrees of freedom" of particles, e.g., their spin, polarization, or
-isospin. The key point here is f(p)\propto p^{2} to satisfy QM. *N.B.:* the p^{2}
-factor in g(p) comes from the Jacobian from going from Cartesian to
+isospin. The key point here is $f(p)\propto p^{2}$ to satisfy QM. *N.B.:* the $p^{2}$
+factor in $g(p)$ comes from the Jacobian from going from Cartesian to
 spherical polar coordinates in momentum space and assuming an
-isotropic momentum distribution (dp_{x}dp_{y}dp_{z} \equiv d^{3}p = 4\pi p^{2} dp).
+isotropic momentum distribution ($dp_{x}dp_{y}dp_{z} \equiv d^{3}p = 4\pi p^{2} dp$).
 
 Let's start by considering a non-extreme situation. Then the particles
-are distributed according to a Maxwell-Boltzmann distribution n(p), but
-whenever n(p)> g(p), we know this is going to violate QM!
+are distributed according to a Maxwell-Boltzmann distribution $n(p)$, but
+whenever $n(p)> g(p)$, we know this is going to violate QM!
 
 From the [[file:notes-lecture-EOS1.org::*Ideal gas][previous lecture on EOS]] we have already seen the Maxwell-Boltzmann
 distribution
@@ -64,7 +64,7 @@ n(p)\propto \frac{n}{(mT)^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }
 \end{equation}
 #+end_latex
 
-where n is the number density, T the temperature, and m the mass of
+where $n$ is the number density, $T$ the temperature, and $m$ the mass of
 the particles. Therefore:
 
 #+begin_latex
@@ -75,12 +75,12 @@ the particles. Therefore:
 
 We can see that:
 
-- at fixed temperature T, for very high number densities n, this ratio
+- at fixed temperature $T$, for very high number densities $n$, this ratio
   is going to be larger than one in violation of QM
-- at fixed number density n, for very low temperatures, this ratio
+- at fixed number density $n$, for very low temperatures $T$, this ratio
   will be larger than 1 in violation of QM (because every term in the
   Taylor expansion of the exponential is proportional to a negative
-  power of T).
+  power of $T$).
 - the smaller mass particle will violate QM earlier than the higher
   mass particles
 
@@ -96,7 +96,7 @@ particles making up the star, which can be either
   isospin states of a generic nucleon, this is useful for example to
   discuss the interior composition of neutron stars). In this case,
   the distribution function that determines the occupation of quantum
-  states of energy between \varepsilon\equiv\varepsilon(p) and \varepsilon+d\varepsilon is the Fermi-Dirac
+  states of energy between $\varepsilon\equiv\varepsilon(p)$ and $\varepsilon+d\varepsilon$ is the Fermi-Dirac
   distribution:
 
   #+begin_latex
@@ -105,7 +105,7 @@ particles making up the star, which can be either
   \end{equation}
   #+end_latex
 
-  where \eta=\mu/k_{b}T is the "degeneracy parameter" dependent on the
+  where $\eta=\mu/k_{b}T$ is the "degeneracy parameter" dependent on the
   /chemical potential \mu/, that is how much energy you need to "spend" to
   create a new particle in an available energy level (*N.B.:* do not
   confuse this with the mean molecular weight which has the same
@@ -126,14 +126,15 @@ particles making up the star, which can be either
 
   which can be \ge 1, meaning more than one boson can occupy the same
   energy level (e.g., in the extreme case of a Bose-Einstein
-  condensate all particles occupy the level with lowest \varepsilon - this may
+  condensate all particles occupy the level with lowest $\varepsilon$ - this may
   be relevant in the interior structure of neutron stars for example).
 
-The total number of particles with momentum between p and p+dp is
-thus given by f(\varepsilon(p))g(p)dp for an appropriate choice of f depending
-on the particle considered (f=f_{FD} or f=f_{BE}). To determine the
-chemical potential \mu one can impose the normalization following
-from the total number density of particles:
+The total number of particles with momentum between $p$ and $p+dp$ is
+thus given by $f(\varepsilon(p))g(p)dp$ for an appropriate choice of $f$
+depending on the particle considered ($f=f_\mathrm{FD}$ or
+$f=f_\mathrm{BE}$). To determine the chemical potential \mu one can
+impose the normalization following from the total number density of
+particles:
 
 #+begin_latex
 \begin{equation}
@@ -143,15 +144,15 @@ n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ .
 
 Let's now consider a gas of electrons. These are the particles in the
 ionized gas of the star that will first start feeling QM effects,
-since m_{e} \ll m_{ion} (in fact m_{e} \simeq m_{proton}/1836.15 \simeq
-m_{proton}/2000), cf. Eq. \ref{eq:momentum_ratios}.
+since $m_{e} \ll m_{ion$} (in fact $m_{e} \simeq m_\mathrm{proton}/1836.15 \simeq
+m_{proton}/2000$), cf. Eq. \ref{eq:momentum_ratios}.
 
 In practice, the pressure provided by the /ions/ never becomes
-affected by QM directly: because of the m^{-3/2} term in the
+affected by QM directly: because of the $m^{-3/2$} term in the
 Maxwell-Boltzmann distribution, this would require densities so high
 that the ions would not exist as ions anymore. Instead the high
 density would allow for electron captures onto the protons of the
-ions turning them in neutrons (e^{-} + p \rightarrow n + \nu_{e}). As we will see this
+ions turning them in neutrons ($e^{-} + p \rightarrow n + \nu_{e}$). As we will see this
 is what happens at the very end of the evolution of massive stars
 that end their life exploding and leaving a neutron-star: those
 electron capture reactions are where the neutrons come from! The
@@ -162,7 +163,7 @@ Because the pressure term from electrons (which in the ideal gas EOS
 is accounted for thanks to our definition of the mean molecular
 weight) changes because of QM effects first, let's now consider a
 gas made of electrons only. These particles have spin 1/2, thus they
-are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and q_{s} = 2 in it
+are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and $q_{s} = 2$ in it
 (each quantum cell of the phase space 4\pi p^{2}dp dV can be occupied by
 2 electrons, one with spin up and one with spin down).
 
