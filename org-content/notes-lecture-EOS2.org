@@ -144,11 +144,11 @@ n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ .
 
 Let's now consider a gas of electrons. These are the particles in the
 ionized gas of the star that will first start feeling QM effects,
-since $m_{e} \ll m_{ion$} (in fact $m_{e} \simeq m_\mathrm{proton}/1836.15 \simeq
+since $m_{e} \ll m_{ion}$ (in fact $m_{e} \simeq m_\mathrm{proton}/1836.15 \simeq
 m_{proton}/2000$), cf. Eq. \ref{eq:momentum_ratios}.
 
 In practice, the pressure provided by the /ions/ never becomes
-affected by QM directly: because of the $m^{-3/2$} term in the
+affected by QM directly: because of the $m^{-3/2}$ term in the
 Maxwell-Boltzmann distribution, this would require densities so high
 that the ions would not exist as ions anymore. Instead the high
 density would allow for electron captures onto the protons of the
