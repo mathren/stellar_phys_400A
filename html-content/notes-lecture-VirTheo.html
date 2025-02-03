@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-03 Mon 12:04 -->
+<!-- 2025-02-03 Mon 12:18 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Virial theorem</title>
@@ -148,7 +148,7 @@ mass \(m_{i}\), Netwon's second law states that the change in their
 momentum is equal to the total force they are subject to:
 </p>
 
-<div class="latex" id="orgc8f0664">
+<div class="latex" id="org1188a56">
 \begin{equation}
  m_{i} \ddot{\mathbf{r_{}}_{i}} = \mathbf{F}_{i} \ \, .
 \end{equation}
@@ -164,7 +164,7 @@ particles and sum over all the particles. Why? The reason is to make
 appear in the second term</i>:
 </p>
 
-<div class="latex" id="orgc565208">
+<div class="latex" id="orga808a44">
 \begin{equation}\label{eq:first_moment_second_law}
 \sum_{i} m_{i}\ddot{\mathbf{r}_{i}} \cdot \mathbf{r}_{i} = \sum_{i} \mathbf{F}_{i} \cdot \mathbf{r}_{i} \ \ .
 \end{equation}
@@ -185,7 +185,7 @@ The l.h.s. can be re-written using the chain rule for the second
 time-derivative:
 </p>
 
-<div class="latex" id="org92f41b4">
+<div class="latex" id="orge941249">
 \begin{equation}
 \sum_{i} m_{i}\ddot{\mathbf{r}_{i}} \cdot \mathbf{r}_{i}  = \sum_{i} \frac{1}{2} m_{i} \frac{d^{2}}{dt^{2}}r_{i}^{2} - \sum_{i} m_{i} \cdot \dot{r_{i}}^{2}
 \end{equation}
@@ -202,7 +202,7 @@ moment of Newton's second law (Eq. \ref{eq:first_moment_second_law})
 we obtain:
 </p>
 
-<div class="latex" id="org1654702">
+<div class="latex" id="org5349581">
 \begin{equation}
  2\mathrm{E}_\mathrm{kin}+\mathrm{E}_\mathrm{pot} = \frac{1}{2}\ddot{I}
 \end{equation}
@@ -255,7 +255,7 @@ point-mass stars on a Keplerian orbit!
 One can write the total energy of the binary as:
 </p>
 
-<div class="latex" id="org03c0b89">
+<div class="latex" id="orgd18add8">
 \begin{equation}
 E_\mathrm{tot} = \mathrm{E_\mathrm{kin}}_{1} + \mathrm{E_\mathrm{kin}}_{2} + \mathrm{E}_\mathrm{pot} \equiv \mathrm{E_\mathrm{kin}} + \mathrm{E}_\mathrm{pot}  \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
 \end{equation}
@@ -295,7 +295,7 @@ spherical symmetry, and write explicitly the forces acting on each
 shell \(dr\) of gas (cf. hydrostatic momentum balance <a href="notes-lecture-HSE.html#orgd36fcd9">seen before</a>):
 </p>
 
-<div class="latex" id="orgf66d0f5">
+<div class="latex" id="org591ab10">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}}
 \end{equation}
@@ -309,7 +309,7 @@ done by multiplying by \(4\pi r^{3}\) and integrating in \(dm\) over the entire
 mass of the star (from \(0\) to \(M\)).
 </p>
 
-<div class="latex" id="orgd9b1d36">
+<div class="latex" id="org82def32">
 \begin{equation}\label{eq:pot}
 \int_{0}^{M} -\frac{Gm}{4\pi r^{4}} \times 4\pi r^{3} dm  = \int_{0}^{M} -\frac{Gm}{r}dm \equiv - \mathrm{E}_\mathrm{pot} \ \ .
 \end{equation}
@@ -319,7 +319,7 @@ mass of the star (from \(0\) to \(M\)).
 (so that \(E_{_\mathrm{pot}}=|\int_{0}^{M} -Gm/r dm| >0\)). The l.h.s. becomes integrating per parts
 </p>
 
-<div class="latex" id="orgd477a8e">
+<div class="latex" id="orgccd3d0c">
 \begin{equation}
 \int_{0}^{M} \frac{dP}{dm} 4\pi r^{3} dm = \left[ 4\pi r^{3}P \right]^{M}_{0}- 3\int_{0}^{M}4\pi r^{2} \frac{\partial r}{\partial m} Pdm \ \ ,
 \end{equation}
@@ -332,7 +332,7 @@ the mass continuity equation and obtain \(-3\int_{0}^{M} P/\rho dm\), thus, putt
 back the pieces together:
 </p>
 
-<div class="latex" id="orgec9edbe">
+<div class="latex" id="org9a0042e">
 \begin{equation}\label{eq:vir}
 \int_{0}^{M }\frac{Gmdm}{r} = 3\int_{0}^{M} \frac{P}{\rho} dm \ \ .
 \end{equation}
@@ -368,7 +368,7 @@ specific entropy \(s\), and also re-write this in terms of density instead
 of specific volume $v$=(1 mass unit)/&rho; &rArr; \(dv = -d\rho/\rho^{2}\):
 </p>
 
-<div class="latex" id="org93f66e2">
+<div class="latex" id="org52f97c7">
 \begin{equation}\label{eq:second_thermodynamics_law}
 dq = Tds = du + Pdv = du -\frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
@@ -395,7 +395,7 @@ constant entropy, so that is by definition the first adiabatic index
 \(\Gamma_{1}\). Ultimately, we can put all this together and write
 </p>
 
-<div class="latex" id="orga6a3774">
+<div class="latex" id="org7c9873b">
 \begin{equation}
 \frac{P}{\rho} = (\Gamma-1)u \ \ ,
 \end{equation}
@@ -411,7 +411,7 @@ Finally, substituting in the first-order moment of the hydrostatic
 equilibrium Eq. \ref{eq:vir} equation we have:
 </p>
 
-<div class="latex" id="orgd818779">
+<div class="latex" id="org05780b9">
 \begin{equation}
 3\int_{0}^{M} \frac{P}{\rho} dm = 3\int_{0}^{M} (\Gamma-1)u dm \ \ .
 \end{equation}
@@ -424,7 +424,7 @@ parenthesis out of the integral. We can define \(E_\mathrm{int} = \int_{0}^{M} u
 and rewrite the above as \(3(\Gamma-1)E-\mathrm{int}\), and thus
 </p>
 
-<div class="latex" id="orgbda7f38">
+<div class="latex" id="org19be0c8">
 \begin{equation}\label{eq:virial_star}
 - E_\mathrm{pot} = 3(\Gamma-1)E_\mathrm{int}
 \end{equation}
@@ -447,7 +447,7 @@ E_\mathrm{pot} + E_\mathrm{int}\). For a star to be bound,
 \ref{eq:virial_star}, we can rewrite this as
 </p>
 
-<div class="latex" id="orgcca5bd1">
+<div class="latex" id="org702fa09">
 \begin{equation}
 \mathrm{E}_\mathrm{tot} = \mathrm{E}_\mathrm{pot}\frac{3\Gamma-4}{3(\Gamma-1)} \equiv -(3\Gamma-4)\mathrm{E}_\mathrm{int}\ \ .
 \end{equation}
@@ -511,7 +511,7 @@ and thus also highly sub-sonic, \(v\ll c_\mathrm{sound}\).
 
 <p>
 The contraction increases the gravitational potential energy
-\(E_\mathrm{pot} \propto - GM^{2}/R\) since \(M\) is by assumption constant and \(R\)
+\(E_\mathrm{pot} \propto GM^{2}/R\) since \(M\) is by assumption constant and \(R\)
 decreases. The total energy \(E_\mathrm{tot}\) also increases, but only
 by half the amount that the gravitational potential increases. The
 other half goes into internal thermal energy of the gas because of the
@@ -523,7 +523,7 @@ extracted set by the virial theorem mentioned above.
 For an ideal  gas, the internal energy is related to the
 mean temperature by
 </p>
-<div class="latex" id="org75ffb4f">
+<div class="latex" id="org6be2e91">
 \begin{equation}
 E_\mathrm{int} = \frac{\# \mathrm{degrees\ of\ freedom}}{2}Nk_{B}\langle T \rangle
 \end{equation}
@@ -536,25 +536,27 @@ average temperature in the star, and the number of degrees of freedom
 is 3 for a monoatomic gas. From the Virial theorem it follows that:
 </p>
 
-<div class="latex" id="orgb69d6f0">
+<div class="latex" id="orgaf57350">
 \begin{equation}
 E_\mathrm{int} = - \frac{E_\mathrm{pot}}{2} \Rightarrow \frac{3}{2} \frac{M}{\mu m_{u}} k_{B}\langle T \rangle = C \frac{GM^{2}}{R} \ \ ,
 \end{equation}
 
 </div>
 <p>
-where \(C = {\int_{0}^{M} Gmdm/r}/{GM^{2}/R}\) is a constant of \(\mathcal{O}(1)\)
+where \(C = \{\int_{0}^{M} Gmdm/r\}/\{GM^{2}/R\}\) is a constant of \(\mathcal{O}(1)\)
 that depends on the mass distribution in the star. Thus:
 </p>
-<div class="latex" id="org269cc92">
+<div class="latex" id="orgb6738e2">
 \begin{equation}
 \langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
 \end{equation}
 
 </div>
 <p>
-From this equation, several important facts follow:
+From this equation, several important facts follow for any
+self-gravitating star in hydrostatic equilibrium:
 </p>
+
 <ul class="org-ul">
 <li>the mean temperature of a star depends only on its mass \(M\) and radius \(R\)
 (and chemical composition through &mu;);</li>
@@ -563,7 +565,7 @@ temperature must rise</i>! This, as we will see, governs the evolution
 of stars.</li>
 <li>A self-gravitating collection of particle with finite temperature
 must radiate away energy, thus it will lose energy. This energy
-loss, since \(E_\mathrm{tot} = E_\mathrm{pot}/2 = - CGM^{2}/2R <0\) implies that \(R\) must
+loss, since \(E_\mathrm{tot} = |E_\mathrm{pot}|/2 = - CGM^{2}/2R <0\) implies that \(R\) must
 decrease. But then, \(\langle T \rangle\) must increase! This is the "gravothermal"
 collapse of a cloud/star. As thermal energy is lost to radiation at
 the surface, the (average) temperature raises! This is why stars can
@@ -587,15 +589,16 @@ mechanical effects stop the collapse.
 </ul>
 
 <p>
-Thus, <i>gravity determines the evolution of a star</i>. It dictates that as
-the star loses energy, it heats up. Because of this, at some point
-nuclear fusion can occur (as we will discuss later): <i>stars don't shine
-because they burn, stars burn because they shine</i>. Without the loss of
-(internal/thermal) energy by radiation they would not contract,
-without contracting they would not reach temperatures high enough to
-do nuclear fusion. <b>The nuclear fusion is a consequence of the fact
-that stars shine, and not the cause</b>. Stars shine as any object with
-finite temperature must do.
+Thus, <i>gravity determines not only the structure (through the
+hydrostatic equilibrium equation) but also the evolution of a star</i>. It
+dictates that as the star loses energy, it must heat up. Because of
+this, at some point nuclear fusion can occur (as we will discuss
+later): <i>stars don't shine because they burn, stars burn because they
+shine</i>. Without the loss of (internal/thermal) energy by radiation they
+would not contract, without contracting they would not reach
+temperatures high enough to do nuclear fusion. <b>The nuclear fusion is a
+consequence of the fact that stars shine, and not the cause</b>. Stars
+shine as any object with finite temperature must do.
 </p>
 
 <p>
@@ -628,7 +631,7 @@ L has the units of power [L] = [E]/[t].
 <p>
 Then by definition:
 </p>
-<div class="latex" id="org43c5631">
+<div class="latex" id="orga220b68">
 \begin{equation}\label{eq:tau_KH}
 \tau_\mathrm{KH} = \frac{\mathrm{E}_\mathrm{int}}{L} \equiv
 \frac{\mathrm{E}_\mathrm{pot}}{2L} \simeq \frac{GM^{2}}{2RL} \ \ ,
@@ -639,7 +642,7 @@ Then by definition:
 where we have used the virial theorem and set \(C\simeq1\). We can scale all
 the quantities to Solar values and obtain:
 </p>
-<div class="latex" id="org0a704c5">
+<div class="latex" id="org95d533b">
 \begin{equation}\label{eq:KH_timescale_scaling}
 \tau_{KH} \simeq 1.57 \times 10^{7} \mathrm{years} \times \left(\frac{M}{M_{☉}}\right)^{2} \left(\frac{R}{R_{☉}}\right)^{-1 }\left(\frac{L}{L_{☉}}\right)^{-1} \ \ .
 \end{equation}
