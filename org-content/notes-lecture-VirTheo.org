@@ -188,9 +188,9 @@ part of the $\sum_{i} \mathbf{F}_{}\cdot \mathbf{r}_{i}$ term. By dimensional
 analysis we know it has to have the dimension of an energy. In fact,
 still by dimensional analysis we can infer that [P/\rho] = [E]/[L^{3}] /
 [M]/[L^{3}] = [E]/[M] has the units of a specific energy (i.e., energy
-per unit mass), and thus $P/\rho \propto u$ with $u$ specific internal energy.
-Let's rewrite this as $u = \Phi P/\rho$ with $\Phi$ unknown dimensionless
-constant.
+per unit mass), and thus $P/\rho \propto u$ with $u \equiv u_\mathrm{int}$ specific
+internal energy. Let's rewrite this as $u = \Phi P/\rho$ with $\Phi$ unknown
+dimensionless constant.
 
 To specify \Phi, let's consider the second law of thermodynamics per unit
 mass: /the heat exchanged by a gas/ ($dq$) /is equal to the change in
@@ -201,7 +201,7 @@ of specific volume $v$=(1 mass unit)/\rho \Rightarrow $dv = -d\rho/\rho^{2}$:
 
 #+begin_latex
 \begin{equation}\label{eq:second_thermodynamics_law}
-dq = Tds = du + Pdv =du -\frac{P}{\rho^{2}}d\rho \ \ ,
+dq = Tds = du + Pdv = du -\frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
 #+end_latex
 
@@ -293,7 +293,8 @@ where a (very) massive star is completely obliterated and leaves
 behind no black hole.
 
 :Question:
-- *Q*: for a star made only of photons, what is $\Gamma$?
+- *Q*: for a star made only of photons, what is $\Gamma$? *Hint*: think of the
+  $P\equiv P(u_{})$ relation!
 :end:
 
 *** Use of gravitational energy in a star: negative heat capacity
