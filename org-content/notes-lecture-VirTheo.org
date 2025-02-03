@@ -223,14 +223,14 @@ $\Gamma_{1}$. Ultimately, we can put all this together and write
 
 #+begin_latex
 \begin{equation}
-P/\rho = (\Gamma-1)u \ \ ,
+\frac{P}{\rho} = (\Gamma-1)u \ \ ,
 \end{equation}
 #+end_latex
 
 where $\Gamma\equiv\Gamma_{1}$ is the first adiabatic index.
 
 Finally, substituting in the first-order moment of the hydrostatic
-equilibrium equation we have:
+equilibrium Eq. \ref{eq:vir} equation we have:
 
 #+begin_latex
 \begin{equation}
@@ -250,7 +250,7 @@ and rewrite the above as $3(\Gamma-1)E-\mathrm{int}$, and thus
 
 For a monoatomic gas where each particle has 3 degrees of freedom
 (motion in 3 direction, no internal degrees of freedom for
-point-particles), $\Gamma = 5/3$, and we obtain $E_\mathrm{pot} = 2
+point-particles), $\Gamma = 5/3$, and we obtain $|E_\mathrm{pot}| = 2
 E_\mathrm{int}$ where the internal energy is due to the thermal motion
 of gas, in agreement with the general form assuming hydro-/static/
 equilibrium (\Rightarrow $d^{2} I/dt^{2} =0$).
