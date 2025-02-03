@@ -3,7 +3,7 @@
 # check if we want to build all the files of not
 contains_all_flag() {
     for arg in "$@"; do
-        if [ "$arg" == "all" ]; then
+        if [ "$arg" == "--all" ]; then
             return 0  # all found
         fi
     done

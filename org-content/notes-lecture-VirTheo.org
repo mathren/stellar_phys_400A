@@ -28,8 +28,8 @@ etymology of the name comes from "vir" which is latin for "forces".
 Let's start with a very general derivation (see for example
 Goldstein's classical mechanics book or Shore's Tapesty of Modern
 Astrophysics Sec. 1.5). For a collection of particles with (constant)
-mass m_{i}, Netwon's second law states that the change in their momentum
-is equal to the total force they are subject to:
+mass $m_{i}$, Netwon's second law states that the change in their
+momentum is equal to the total force they are subject to:
 
 #+begin_latex
 \begin{equation}
@@ -53,8 +53,9 @@ appear in the second term/:
 The r.h.s. looks like a sum of work done by the total foce on each
 particle: $\sum_{i} \mathbf{F}_{i} \cdot \mathbf{r}_{i} \equiv W$. This is the so
 called "virial", which contains only long-range forces between the
-particles (collisions cancel out in the sum). This by conservation of
-energy has to be equal to the net potential energy available $E_\mathrm{pot}$.
+particles (collisions cancel out in the sum because of Netwon's 3^{rd}
+law). This by conservation of energy has to be equal to the net
+potential energy available $E_\mathrm{pot}$.
 
 The l.h.s. can be re-written using the chain rule for the second
 time-derivative:
@@ -68,7 +69,7 @@ time-derivative:
 And now we have on the right hand side (assuming the mass of the
 particles to be constant) twice the second time derivative of the
 moment of inertia $I = \sum_{i} m_{i} r_{i}^{2}$ and twice the kinetic energy
-$E_\mathrm{kin} = \sum_{i }m_{i} v_{i}^{2}/2$ (because of course $v_{i} = dr_{i}/dt$).
+$E_\mathrm{kin} = \sum_{i }m_{i} v_{i}^{2}/2$ (because of course $v_{i} = \dot{r_{i}}$).
 So putting the r.h.s. of this last equation in the first spatial
 moment of Newton's second law (Eq. \ref{eq:first_moment_second_law})
 we obtain:
@@ -118,14 +119,14 @@ E_\mathrm{tot} = \mathrm{E_\mathrm{kin}}_{1} + \mathrm{E_\mathrm{kin}}_{2} + \ma
 \end{equation}
 #+end_latex
 where in the last term we are using Kepler's laws. The gravitational
-potential energy is $E_\mathrm{pot} = -GM_{1}M_{2}/a$, thus making it explicit we
-obtain: $E_{kin} = |E_{pot}|/2$. Since Keplerian orbits in Newtonian gravity
-are stable (radiation of energy through gravitational waves make this
-statement not physically true, but this is only relevant for close
-binaries of compact objects), this implies that the second (and first)
-time-derivative of the moment of inertia of the orbit is zero, and
-thus this /is/ the virial theorem! /Keplerian binary orbits are
-"virialized"/.
+potential energy is $E_\mathrm{pot} = -GM_{1}M_{2}/a$, thus making it
+explicit we obtain: $E_{kin} = |E_{pot}|/2$. Since Keplerian orbits in
+Newtonian gravity are stable (energy losses through gravitational
+waves make this statement not physically true, but this is only
+relevant for close binaries of compact objects), this implies that the
+second (and first) time-derivative of the moment of inertia of the
+orbit is zero, and thus this /is/ the virial theorem! /Keplerian binary
+orbits are "virialized"/.
 
 *N.B.:* Here we considered the case of just 2 particles, but nothing
 stops us to consider $i=2...N$ with $N$ that can reach \sim 10^{6} and apply
@@ -139,7 +140,7 @@ cluster's moment of inertia can or cannot be approximated with zero).
 Let's now re-derive the Virial theorem for a star. Let's assume a
 continuous description of the stellar gas, hydrostatic equilibrium and
 spherical symmetry, and write explicitly the forces acting on each
-shell dr of gas (cf. hydrostatic momentum balance [[file:notes-lecture-HSE.org::*Combining the two][seen before]]):
+shell $dr$ of gas (cf. hydrostatic momentum balance [[file:notes-lecture-HSE.org::*Combining the two][seen before]]):
 
 #+begin_latex
 \begin{equation}\label{eq:HSE}
@@ -150,7 +151,7 @@ shell dr of gas (cf. hydrostatic momentum balance [[file:notes-lecture-HSE.org::
 By analogy with what is done in the general derivation above, we want
 to make the gravitational potential appear on the r.h.s., which can be
 done by multiplying by $4\pi r^{3}$ and integrating in $dm$ over the entire
-mass of the star (from 0 to $M$).
+mass of the star (from $0$ to $M$).
 
 #+begin_latex
 \begin{equation}\label{eq:pot}
@@ -170,16 +171,17 @@ the mass continuity equation and obtain $-3\int_{0}^{M} P/\rho dm$, thus, puttin
 back the pieces together:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:vir}
 \int_{0}^{M }\frac{Gmdm}{r} = 3\int_{0}^{M} \frac{P}{\rho} dm \ \ .
 \end{equation}
 #+end_latex
 Note that if we had kept a non-zero $\rho \ddot{\mathbf{r}}$ term in Eq.
 \ref{eq:HSE}, we would again obtain a term depending on the moment of
 inertia and the bulk kinetic energy of the stellar gas (see for
-example sec. 4.2.1 in Shore's "Tapestry of modern astrophysics"). We
-have already interpreted the l.h.s. as the gravitational potential
-energy (normalized to zero at infinity) in Eq. \ref{eq:pot}.
+example sec. 4.2.1 in Shore's "Tapestry of modern astrophysics"). From
+Eq. \ref{eq:pot}, we have already interpreted the l.h.s. of Eq.
+\ref{eq:vir} as the gravitational potential energy normalized to zero
+at infinity.
 
 Let's interpret the r.h.s., which in the general derivation would be
 part of the $\sum_{i} \mathbf{F}_{}\cdot \mathbf{r}_{i}$ term. By dimensional
@@ -187,7 +189,8 @@ analysis we know it has to have the dimension of an energy. In fact,
 still by dimensional analysis we can infer that [P/\rho] = [E]/[L^{3}] /
 [M]/[L^{3}] = [E]/[M] has the units of a specific energy (i.e., energy
 per unit mass), and thus $P/\rho \propto u$ with $u$ specific internal energy.
-Let's rewrite this as $u = \Phi P/\rho$.
+Let's rewrite this as $u = \Phi P/\rho$ with $\Phi$ unknown dimensionless
+constant.
 
 To specify \Phi, let's consider the second law of thermodynamics per unit
 mass: /the heat exchanged by a gas/ ($dq$) /is equal to the change in
@@ -202,19 +205,28 @@ dq = Tds = du + Pdv =du -\frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
 #+end_latex
 
-To derive a relation between $u$, $P$, and \rho, and because we are
-considering the momentum conservation to begin with, so something
-related to dynamics (which acts fast compared to thermal processes!),
-let's consider an adiabatic process where by definition there is no
-heat exchange. Thus, $dq=0$ and $du = P/\rho^{2} d\rho$.
+We want to derive a relation between $u$, $P$, and \rho. We are
+considering the momentum conservation (Eq. \ref{eq:HSE}), so something
+related to dynamics (which acts fast compared to thermal processes --
+you can verify this comparing timescales after the end of this
+lecture!), therefore let's consider an adiabatic process where by
+definition there is no heat exchange. Thus, $dq=0$ and $du = P/\rho^{2}
+d\rho$.
 
 Now by differentiating $u = \Phi P/\rho$ we get $du = \Phi (dP/\rho - P/\rho^{2} d\rho)
 \equiv P/\rho^{2} d\rho$ (where we use Eq. \ref{eq:second_thermodynamics_law} with
 $dq=0$ in the last step), that can be re-arranged into $\Phi/(1+\Phi) dP/P =
-d\rho/\rho$, or in other words $(1+\Phi)/\Phi = d log(P)/d log(\rho) \equiv \Gamma_{1}$ because the
+d\rho/\rho$, or in other words $(1+\Phi)/\Phi = d \log(P)/d \log(\rho) \equiv \Gamma_{1}$ because the
 derivative has to be taken assuming no heat exchange, that is at
 constant entropy, so that is by definition the first adiabatic index
-$\Gamma_{1}$. Ultimately, we can put all this together and write $P/\rho = (\Gamma-1)u$,
+$\Gamma_{1}$. Ultimately, we can put all this together and write
+
+#+begin_latex
+\begin{equation}
+P/\rho = (\Gamma-1)u \ \ ,
+\end{equation}
+#+end_latex
+
 where $\Gamma\equiv\Gamma_{1}$ is the first adiabatic index.
 
 Finally, substituting in the first-order moment of the hydrostatic
@@ -285,7 +297,7 @@ behind no black hole.
 :end:
 
 *** Use of gravitational energy in a star: negative heat capacity
-Let's consider a star made of a perfect monoatomic gas with $\Gamma=5/3$.
+Let's consider a star made of a perfect mono-atomic gas with $\Gamma=5/3$.
 Let's say that for some reason this star is contracting (e.g., because
 it is in its formation process). Let's assume this contraction is
 quasi-static, meaning that at any point in time the hydrostatic
@@ -398,7 +410,7 @@ lifetime of the order of \sim 10 million years -- this was in contrast
 with geological evidence (and with the timescale necessary for
 Darwinian evolution), leading to a great debate that was ultimately
 settled with the discovery of nuclear energy as a potential source of
-energy in the 1930s (by primarily Bethe and collaborators), see G.
+energy in the 1930s (by primarily [[https://en.wikipedia.org/wiki/Hans_Bethe][Hans Bethe]] and collaborators), see G.
 Shaviv "Life of stars" for a detailed discussion.
 
 :Question:
