@@ -175,7 +175,6 @@ html, body {
 
 .content a{
     color: #4099FF;
-    text-decoration: none;
 }
 
 .content a:hover{
@@ -190,6 +189,11 @@ html, body {
 .content a:visited:hover{
     color: #4099AA;
     text-decoration: underline;
+}
+
+
+i, em {
+    font-style: italic;
 }
 
 
