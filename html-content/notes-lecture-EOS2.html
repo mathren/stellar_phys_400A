@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-06 Thu 09:49 -->
+<!-- 2025-02-06 Thu 09:55 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - EOS (QM effects)</title>
@@ -146,7 +146,7 @@ principle"): \(\Delta x \Delta p \ge h\) with \(h\) Planck's constant. This natu
 translates in three spatial dimension to
 </p>
 
-<div class="latex" id="org6dea6f2">
+<div class="latex" id="org6b7dbf7">
 \begin{equation}
 \Delta x \Delta y \Delta z \Delta p_{x} \Delta p_{y} \Delta p_{z} \ge h^{3} \ \,
 \end{equation}
@@ -159,7 +159,7 @@ available number of quantized states with momentum between \(p+dp\) within
 a volume \(dV = dxdydz \equiv d^{3}x\) is
 </p>
 
-<div class="latex" id="orga495e89">
+<div class="latex" id="org6edca85">
 \begin{equation}
 g(p)d^{3}pd^{3}x = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
 \end{equation}
@@ -186,7 +186,7 @@ From the <a href="notes-lecture-EOS1.html#org753adea">previous lecture on EOS</a
 Maxwell-Boltzmann distribution
 </p>
 
-<div class="latex" id="org0c28328">
+<div class="latex" id="org3b5fb61">
 \begin{equation}
 n(p)\propto \frac{n}{(mT)^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }\ \ ,
 \end{equation}
@@ -198,7 +198,7 @@ where \(n\) is the number density, \(T\) the temperature, and \(m\) the mass of
 the particles. Therefore:
 </p>
 
-<div class="latex" id="org660b7e4">
+<div class="latex" id="orgfbd14a3">
 \begin{equation}\label{eq:momentum_ratios}
 \frac{n(p)}{g(p)}\propto n (mT)^{-3/2}\exp(\frac{-p^{2}}{2mk_{B}T}) \ \ .
 \end{equation}
@@ -242,7 +242,7 @@ states of energy between \(\varepsilon\equiv\varepsilon(p)\) and \(\varepsilon+d
 distribution:
 </p>
 
-<div class="latex" id="org86420ef">
+<div class="latex" id="orgfe5c13b">
 \begin{equation}\label{eq:Fermi-Dirac}
  f_{FD}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T - \eta)}+1} \le 1 \ \,
 \end{equation}
@@ -266,7 +266,7 @@ at most one fermion.
 case the relevant distribution is the Bose-Einstein's distribution:
 </p>
 
-<div class="latex" id="org7e075fc">
+<div class="latex" id="org1fd3f4d">
 \begin{equation}\label{eq:Bose-Einstein}
  f_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T-\eta)}-1} \ \,
 \end{equation}
@@ -288,7 +288,7 @@ depending on the particle considered (\(f=f_\mathrm{FD}\) or
 \(f=f_\mathrm{BE}\)). To determine the chemical potential &mu; one can
 impose the normalization following from:
 </p>
-<div class="latex" id="orge895b58">
+<div class="latex" id="orge3f9358">
 \begin{equation}
 n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ ,
 \end{equation}
@@ -356,7 +356,7 @@ the electrons occupy a sphere in momentum space with a radius p<sub>F</sub>
 called the "Fermi" momentum:
 </p>
 
-<div class="latex" id="orgaf7993b">
+<div class="latex" id="org747b047">
   \begin{equation}
   g_{e}(p)dp = q_{s}\frac{4\pi p^{2}}{h^{3}}dp \equiv \frac{8\pi p^{2}}{h^{3}}dp \ \  \mathrm{for} \ \
 p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
@@ -368,7 +368,7 @@ and we used q<sub>s</sub>=2 for electrons. To find the value of p<sub>F</sub> we
 the normalization coming from the total number density of electrons
 </p>
 
-<div class="latex" id="orgcb7b4d0">
+<div class="latex" id="orgc900d7b">
 \begin{equation}
 n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{F}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8\pi}n_{e}\right)^{1/3} \ \ .
 \end{equation}
@@ -393,7 +393,7 @@ need the appropriate p&equiv; p(&epsilon;) relaton
 In this case \(\varepsilon = p^{2}/2m\) is the energy of the electrons (still ideal
 gas) and \(v=p/m\), thus from the previous lecture on EOS we have:
 </p>
-<div class="latex" id="orgb0da795">
+<div class="latex" id="org00565ae">
 \begin{equation}
 P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{F}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \Rightarrow P_{e} \propto \rho^{5/3}\ \ .
 \end{equation}
@@ -408,9 +408,8 @@ polytropic EOS with exponent</i> \(\Gamma=5/3\).
 </p>
 
 <p>
-(to see this more explicitly you can use the definition of the
-electron mean molecular weight \(\mu_{e} n_{e} = \rho/m_{u}\) to substitute \(n_{e}\) for
-the mass density \(\rho\)).
+<b>N.B.:</b> \(n_{e} \propto \rho\) with the definition of the electrons mean
+molecular weight such that \(n_{e} \mu_{e} m_{u} = \rho\).
 </p>
 </div>
 </div>
@@ -432,9 +431,9 @@ with exponent now/ \(\Gamma=4/3\).
 <p>
 Specifically the calculation yields:
 </p>
-<div class="latex" id="org6dcc48b">
+<div class="latex" id="org4ea6317">
 \begin{equation}
-P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \Rightarrow P_{e} \propto \rho^{4/3}^{} \ \ .
+P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \Rightarrow P_{e} \propto \rho^{4/3} \ \ .
 \end{equation}
 
 </div>
@@ -444,7 +443,7 @@ In general, we should expect a <b>smooth</b> transition between these two
 polytopes as \(n_{e}\) increases. Since the density in a star increases
 towards the center, we can expect this transition to occur as we
 move inwards in a star where these effects matter. In this case, we
-need to use the relativistic formula \(p^{2} = \varepsilon^{2}-m_{e}c^{2\)} to solve the
+need to use the relativistic formula \(p^{2} = \varepsilon^{2}-m_{e}c^{2}\) to solve the
 integral and obtain the pressure.
 </p>
 
@@ -453,7 +452,7 @@ One can estimate the density at the transition with the
 condition \(p_{F} \simeq m_{e} c\):
 </p>
 
-<div class="latex" id="org51cb54e">
+<div class="latex" id="org155dfa6">
 \begin{equation}
  \rho_{NR \rightarrow UR} \simeq \mu_{e} m_{u} \frac{8\pi}{3} \left(\frac{m_{e}c}{h}\right)^{3} \ \ .
 \end{equation}
@@ -474,7 +473,7 @@ fundamental constants!
 <p>
 The equations derived above are valid in the strict limit of \(T=0\),
 necessary for <b>full</b> degeneracy. In reality it is sufficient to have
-\(k_{B}T \ll \varepsilon_{F} = p_{F}_{}^{2}/2m\) (which defines what is "cold" enough
+\(k_{B}T \ll \varepsilon_{F} = p_{F}^{2}/2m\) (which defines what is "cold" enough
 to get QM effects on the pressure contribution for non-relativistic
 electrons). This is equivalent to asking \(\eta\gg 1\) with \(\eta\) electron
 degeneracy parameter (cf. Eq. \ref{eq:Fermi-Dirac}).
@@ -496,18 +495,17 @@ one recovers the ideal gas equation of state.
 <p>
 So, in summary, because electrons are Fermions that need to obey
 Pauli's principle at very low \(T\) (comparing their kinetic energy to
-the Fermi energy) and/or very high \(\rho\) (<b>N.B.:</b> \(n_{e} \propto \rho\) with
-the definition of the electrons mean molecular weight \(n_{e} \mu_{e} m_{u} =
-  \rho\)), they can exert a much larger pressure than predicted by the
-classical ideal gas. Moreover, in those situation, the pressure is a
-polytrope, independent of temperature T! The decoupling between
-mechanical (hydrostatic structure) and radiative (energy transport)
-properties of the star afforded by degeneracy of the gas greatly
-simplifies the problem. This also means the stars do not need to
-heat up anymore in order to sustain themselves against their own
-gravity (breaking the conclusion we obtained from the Virial
-theorem). This is the situation of a "white dwarf" (WD), which are
-the remnants for the vast majority of stars, including the Sun.
+the Fermi energy) and/or very high \(\rho\), they can exert a much larger
+pressure than predicted by the classical ideal gas. Moreover, in
+those situation, the pressure is a polytrope, independent of
+temperature T! The decoupling between mechanical (hydrostatic
+structure) and radiative (energy transport) properties of the star
+afforded by degeneracy of the gas greatly simplifies the problem.
+This also means the stars do not need to heat up anymore in order to
+sustain themselves against their own gravity (breaking the
+conclusion we obtained from the Virial theorem). This is the
+situation of a "white dwarf" (WD), which are the remnants for the
+vast majority of stars, including the Sun.
 </p>
 
 <p>
@@ -547,7 +545,7 @@ We can then calculate the internal energy density of the photon gas
 as u<sub>int</sub> = a T<sup>4</sup> with a the radiation constant:
 </p>
 
-<div class="latex" id="org11603e0">
+<div class="latex" id="orgd7fbb52">
 \begin{equation}
 a = \frac{8\pi^{5} k_{B}^4}{15h^{3}c^{3}} = 7.56\times10^{-15} \mathrm{erg} \ \mathrm{cm}^{-3} \ \mathrm{K}^{-4} \ \ ,
 \end{equation}
@@ -563,7 +561,7 @@ Relying again on the ultra-relativistic nature of photons, we know
 that P=u<sub>int</sub>/3 and therefore the radiation pressure is:
 </p>
 
-<div class="latex" id="orga0daf0f">
+<div class="latex" id="orgee30b27">
 \begin{equation}
 P_\mathrm{rad} =\frac{1}{3}aT^{4} \ \ .
 \end{equation}
@@ -625,7 +623,7 @@ Similarly we can define &mu;<sub>0</sub> as the mean molecular weight per nucleu
 and &mu;<sub>e</sub> as the mean molecular weight per electron, and thus
 </p>
 
-<div class="latex" id="org1f001d3">
+<div class="latex" id="org113cf3d">
 \begin{equation}
 \rho = (n+n_{e})\mu m_{u}\equiv n\mu_{o}m_{u} \equiv n_{e}\mu_{e} m_{u} \ \ .
 \end{equation}
@@ -639,7 +637,7 @@ density of massive ions regarless of their ionization state), and thus
 rewrite the above as
 </p>
 
-<div class="latex" id="orga860d1d">
+<div class="latex" id="org8486f69">
 \begin{equation}
 \mu = \frac{\rho}{m_{u}n}\frac{1}{1+E} \equiv \frac{\mu_{0}}{1+E} \equiv \mu_{e}\frac{E}{1+E} \ \ .
 \end{equation}
@@ -662,7 +660,7 @@ calculate E as a function of T, and &rho;.
 Putting all things together:
 </p>
 
-<div class="latex" id="orgeb79830">
+<div class="latex" id="org731ff71">
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T +
 P_{QM} + \frac{1}{3}aT^{4}  \ \ ,
@@ -683,7 +681,7 @@ mechanics:
 </p>
 
 
-<figure id="org038f10c">
+<figure id="org3b4cc61">
 <img src="./images/EOS_blend_paxton18.png" alt="EOS_blend_paxton18.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Blend of tabulated EOS on the T(&rho;) plane used in MESA (Fig. 50 in <a href="https://ui.adsabs.harvard.edu/abs/2018ApJS..234...34P/abstract">Paxton et al. 2018</a>), see also <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstract">Jermyn et al. 2021</a> for updates relevant to large portions of this plane. The blue and purple tracks correspond to evolved stellar models of the mass labeled.</figcaption>

@@ -225,9 +225,8 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
  polytropes. /A fully degenerate classical electron gas has a
  polytropic EOS with exponent/ $\Gamma=5/3$.
 
- (to see this more explicitly you can use the definition of the
- electron mean molecular weight $\mu_{e} n_{e} = \rho/m_{u}$ to substitute $n_{e}$ for
- the mass density $\rho$).
+ *N.B.:* $n_{e} \propto \rho$ with the definition of the electrons mean
+ molecular weight such that $n_{e} \mu_{e} m_{u} = \rho$.
 
 *** Ultra-relativistic electron gas
   As the number density of electrons increases, $p_{F}$ increases, and
@@ -242,7 +241,7 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   Specifically the calculation yields:
   #+begin_latex
   \begin{equation}
-  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \Rightarrow P_{e} \propto \rho^{4/3}^{} \ \ .
+  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \Rightarrow P_{e} \propto \rho^{4/3} \ \ .
   \end{equation}
   #+end_latex
 
@@ -250,7 +249,7 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   polytopes as $n_{e}$ increases. Since the density in a star increases
   towards the center, we can expect this transition to occur as we
   move inwards in a star where these effects matter. In this case, we
-  need to use the relativistic formula $p^{2} = \varepsilon^{2}-m_{e}c^{2$} to solve the
+  need to use the relativistic formula $p^{2} = \varepsilon^{2}-m_{e}c^{2}$ to solve the
   integral and obtain the pressure.
 
   One can estimate the density at the transition with the
@@ -269,7 +268,7 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
 
   The equations derived above are valid in the strict limit of $T=0$,
   necessary for *full* degeneracy. In reality it is sufficient to have
-  $k_{B}T \ll \varepsilon_{F} = p_{F}_{}^{2}/2m$ (which defines what is "cold" enough
+  $k_{B}T \ll \varepsilon_{F} = p_{F}^{2}/2m$ (which defines what is "cold" enough
   to get QM effects on the pressure contribution for non-relativistic
   electrons). This is equivalent to asking $\eta\gg 1$ with $\eta$ electron
   degeneracy parameter (cf. Eq. \ref{eq:Fermi-Dirac}).
@@ -285,18 +284,17 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
 
   So, in summary, because electrons are Fermions that need to obey
   Pauli's principle at very low $T$ (comparing their kinetic energy to
-  the Fermi energy) and/or very high $\rho$ (*N.B.:* $n_{e} \propto \rho$ with
-  the definition of the electrons mean molecular weight $n_{e} \mu_{e} m_{u} =
-  \rho$), they can exert a much larger pressure than predicted by the
-  classical ideal gas. Moreover, in those situation, the pressure is a
-  polytrope, independent of temperature T! The decoupling between
-  mechanical (hydrostatic structure) and radiative (energy transport)
-  properties of the star afforded by degeneracy of the gas greatly
-  simplifies the problem. This also means the stars do not need to
-  heat up anymore in order to sustain themselves against their own
-  gravity (breaking the conclusion we obtained from the Virial
-  theorem). This is the situation of a "white dwarf" (WD), which are
-  the remnants for the vast majority of stars, including the Sun.
+  the Fermi energy) and/or very high $\rho$, they can exert a much larger
+  pressure than predicted by the classical ideal gas. Moreover, in
+  those situation, the pressure is a polytrope, independent of
+  temperature T! The decoupling between mechanical (hydrostatic
+  structure) and radiative (energy transport) properties of the star
+  afforded by degeneracy of the gas greatly simplifies the problem.
+  This also means the stars do not need to heat up anymore in order to
+  sustain themselves against their own gravity (breaking the
+  conclusion we obtained from the Virial theorem). This is the
+  situation of a "white dwarf" (WD), which are the remnants for the
+  vast majority of stars, including the Sun.
 
   These compact objects contract and cool until they fully crystallize
   (releasing further latent heat), becoming "planet-sized diamond-like
