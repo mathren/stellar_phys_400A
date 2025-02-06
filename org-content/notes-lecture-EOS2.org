@@ -42,7 +42,7 @@ a volume $dV = dxdydz \equiv d^{3}x$ is
 
 #+begin_latex
 \begin{equation}
-g(p)dpdV = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
+g(p)d^{3}pd^{3}x = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
 \end{equation}
 #+end_latex
 In the equation above, the factor $g_{s}$ allows to account for "internal
