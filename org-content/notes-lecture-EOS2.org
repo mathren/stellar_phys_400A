@@ -13,15 +13,16 @@ classical, non-relativistic, ideal gas. The latter is an accurate
 description of the stellar gas in most, but importantly not /all/ the
 astrophysical cases.
 
-We will consider now cases that don't verify the hypothesis we took
+Now, we will consider cases that don't verify the hypothesis we took
 previously and discuss briefly some stars for which we need to go
 beyond those.
 
-A star is "big", why do we need to care about quantum mechanics (QM)?
-Besides its central role in allowing for nuclear burning, [[./notes-lecture-nuclear-burning.org][which we
-will see later]], QM effects can matter also at extremely low
-temperatures and/or high densities, which can be encountered in
-stellar physics.
+Let's start by relaxing the hypothesis that the gas behaves
+"classically". A star is "big", why do we need to care about quantum
+mechanics (QM)? Besides its central role in allowing for nuclear
+burning, [[./notes-lecture-nuclear-burning.org][which we will see later]], QM effects can matter also at
+extremely "low" temperatures and/or "high" densities, which can be
+encountered in stellar physics.
 
 From the wave-nature of the solutions of Schroedinger's equation, we
 know that there is a limit on the precision to which position and
