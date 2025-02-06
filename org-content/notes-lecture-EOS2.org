@@ -47,17 +47,18 @@ g(p)d^{3}pd^{3}x = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt
 #+end_latex
 In the equation above, the factor $g_{s}$ allows to account for "internal
 degrees of freedom" of particles, e.g., their spin, polarization, or
-isospin. The key point here is $f(p)\propto p^{2}$ to satisfy QM. *N.B.:* the $p^{2}$
+isospin. The key point here is $g(p)\propto p^{2}$ to satisfy QM. *N.B.:* the $p^{2}$
 factor in $g(p)$ comes from the Jacobian from going from Cartesian to
 spherical polar coordinates in momentum space and assuming an
 isotropic momentum distribution ($dp_{x}dp_{y}dp_{z} \equiv d^{3}p = 4\pi p^{2} dp$).
 
-Let's start by considering a non-extreme situation. Then the particles
-are distributed according to a Maxwell-Boltzmann distribution $n(p)$, but
-whenever $n(p)> g(p)$, we know this is going to violate QM!
+Let's start by considering a classical gas in non-extreme regime. Then
+the particles are distributed according to a Maxwell-Boltzmann
+distribution $n(p)$, but whenever $n(p)> g(p)$, we know this is going
+to violate QM!
 
-From the [[file:notes-lecture-EOS1.org::*Ideal gas][previous lecture on EOS]] we have already seen the Maxwell-Boltzmann
-distribution
+From the [[file:notes-lecture-EOS1.org::*Ideal gas][previous lecture on EOS]] we have already seen the
+Maxwell-Boltzmann distribution
 
 #+begin_latex
 \begin{equation}
@@ -85,8 +86,8 @@ We can see that:
 - the smaller mass particle will violate QM earlier than the higher
   mass particles
 
-Thus, we can expect that for very "cold" stars (we will define what is
-the relevant scale here) or very dense stars the ideal gas EOS will not
+Thus, we can expect that for "very cold" stars (we will define what is
+the relevant scale here) or "very dense" stars the ideal gas EOS will not
 be appropriate.
 
 To account for QM effects, we need to consider the nature of the
@@ -134,19 +135,19 @@ The total number of particles with momentum between $p$ and $p+dp$ is
 thus given by $f(\varepsilon(p))g(p)dp$ for an appropriate choice of $f$
 depending on the particle considered ($f=f_\mathrm{FD}$ or
 $f=f_\mathrm{BE}$). To determine the chemical potential \mu one can
-impose the normalization following from the total number density of
-particles:
-
+impose the normalization following from:
 #+begin_latex
 \begin{equation}
-n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ .
+n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ ,
 \end{equation}
 #+end_latex
+that is integrating the phase space distribution in momentum one
+should find the spatial density $n$ of particles.
 
 Let's now consider a gas of electrons. These are the particles in the
 ionized gas of the star that will first start feeling QM effects,
 since $m_{e} \ll m_{ion}$ (in fact $m_{e} \simeq m_\mathrm{proton}/1836.15 \simeq
-m_{proton}/2000$), cf. Eq. \ref{eq:momentum_ratios}.
+m_\mathrm{proton}/2000$), cf. Eq. \ref{eq:momentum_ratios}.
 
 In practice, the pressure provided by the /ions/ never becomes
 affected by QM directly: because of the $m^{-3/2}$ term in the
