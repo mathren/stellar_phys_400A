@@ -107,7 +107,7 @@ particles making up the star, which can be either
   \end{equation}
   #+end_latex
 
-  where $\eta=\mu/k_{b}T$ is the "degeneracy parameter" dependent on the
+  where $\eta=\mu/k_{B}T$ is the "degeneracy parameter" dependent on the
   /chemical potential \mu/, that is how much energy you need to "spend" to
   create a new particle in an available energy level (*N.B.:* do not
   confuse this with the mean molecular weight which has the same
@@ -180,7 +180,7 @@ electrons, one with spin up and one with spin down).
   taking the $T\rightarrow0$ limit is that the thermal energy of the particles
   is very small compared to the Fermi energy, i.e. the maximum energy
   level that particles occupy (assuming to set the ground-level to
-  $\varepsilon=0$): $k_{b}T \ll \varepsilon_{F$}. In this limit /the thermal and
+  $\varepsilon=0$): $k_{B}_{}T \ll \varepsilon_{F}$. In this limit /the thermal and
   mechanical properties of the gas decouple from each other/, and we
   can assume $T \simeq 0$ to discuss the mechanical properties, and
   consider $T$ only for the radiative properties.
@@ -195,12 +195,12 @@ electrons, one with spin up and one with spin down).
 p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   \end{equation}
   #+end_latex
-  and we used q_{s}=2 for electrons. To find the value of p_{f} we can use
+  and we used q_{s}=2 for electrons. To find the value of p_{F} we can use
   the normalization coming from the total number density of electrons
 
   #+begin_latex
   \begin{equation}
-  n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{f}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8\pi}n_{e}\right)^{1/3} \ \ .
+  n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{F}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8\pi}n_{e}\right)^{1/3} \ \ .
   \end{equation}
   #+end_latex
   Therefore, the /Fermi momentum depends only on the density of
@@ -216,27 +216,28 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   gas) and $v=p/m$, thus from the previous lecture on EOS we have:
   #+begin_latex
   \begin{equation}
-  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{f}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \Rightarrow P_{e} \propto \rho^{5/3}\ \ .
+  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{F}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \Rightarrow P_{e} \propto \rho^{5/3}\ \ .
   \end{equation}
   #+end_latex
 
  Note the functional form $P_{e}\equiv P_{e}(n_{e})$: it's a powerlaw, like we
  arbitrarily assumed would be a decent guess when discussing
  polytropes. /A fully degenerate classical electron gas has a
- polytropic EOS with exponent \Gamma=5/3/.
+ polytropic EOS with exponent/ $\Gamma=5/3$.
 
  (to see this more explicitly you can use the definition of the
- electron mean molecular weight $\mu_{e} n_{e} = \rho/m_{u}$ to substitute $n_{e$} for
+ electron mean molecular weight $\mu_{e} n_{e} = \rho/m_{u}$ to substitute $n_{e}$ for
  the mass density $\rho$).
 
 *** Ultra-relativistic electron gas
-  As the number density of electrons increases, p_{F} increases, and thus
-  at some point the v=p/m we used above will not hold anymore, because
-  the electrons become relativistic. In the extremely relativistic
-  limit, we can assume v=c (i.e. neglect the rest energy of the
-  electrons in the p(\varepsilon) relation), and then we lose one power of p in
-  the integral above. Thus, in the /fully degenerate ultrarelativistic
-  gas, the EOS will again be a polytrope with exponent now \Gamma=4/3/.
+  As the number density of electrons increases, $p_{F}$ increases, and
+  thus at some point the $v=p/m$ we used above will not hold anymore,
+  because the electrons become relativistic. In the extremely
+  relativistic limit, we can assume $v=c$ (i.e. neglect the rest
+  energy of the electrons in the $p(\varepsilon)$ relation), and then we lose
+  one power of $p$ in the integral above. Thus, in the /fully
+  degenerate ultra-relativistic gas, the EOS will again be a polytrope
+  with exponent now/ $\Gamma=4/3$.
 
   Specifically the calculation yields:
   #+begin_latex
@@ -246,14 +247,14 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   #+end_latex
 
   In general, we should expect a *smooth* transition between these two
-  polytopes as n_{e} increases. Since the density in a star increases
+  polytopes as $n_{e}$ increases. Since the density in a star increases
   towards the center, we can expect this transition to occur as we
   move inwards in a star where these effects matter. In this case, we
-  need to use the relativistic formula p^{2} = \varepsilon^{2}-m_{e}c^{2} to solve the
+  need to use the relativistic formula $p^{2} = \varepsilon^{2}-m_{e}c^{2$} to solve the
   integral and obtain the pressure.
 
   One can estimate the density at the transition with the
-  condition p_{F} \simeq m_{e} c:
+  condition $p_{F} \simeq m_{e} c$:
 
   #+begin_latex
   \begin{equation}
@@ -261,35 +262,41 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   \end{equation}
   #+end_latex
 
+  *N.B.:* the density around which we expect a transition from
+  non-relativistic to ultra-relativistic gas only depends on $\mu_{e}$ and
+  fundamental constants!
 ** Partial degeneracy
 
-  The equations derived above are valid in the strict limit of T=0,
+  The equations derived above are valid in the strict limit of $T=0$,
   necessary for *full* degeneracy. In reality it is sufficient to have
-  k_{b}T \ll \varepsilon_{F} = p_{f}^{2}/2m (for non-relativistic electrons). This
-  is equivalent to asking \eta\gg 1 with \eta electron degeneracy parameter.
+  $k_{B}T \ll \varepsilon_{F} = p_{F}_{}^{2}/2m$ (which defines what is "cold" enough
+  to get QM effects on the pressure contribution for non-relativistic
+  electrons). This is equivalent to asking $\eta\gg 1$ with $\eta$ electron
+  degeneracy parameter (cf. Eq. \ref{eq:Fermi-Dirac}).
 
   The transition between ideal gas and fully degenerate gas goes
   through partially degenerate gas, and in that case the degeneracy
   pressure is harder to calculate analytically, and one needs to
-  calculate P = 1/3 \times \int n(p)pvdp using n(p) = g(p)f(\varepsilon(p))dp with the
-  Fermi-Dirac distribution for f (in the case of electrons).
+  calculate $P = 1/3 \times \int n(p)pvdp$ using $n(p) = g(p)f(\varepsilon(p))dp$ with
+  the Fermi-Dirac distribution for $f$ (in the case of electrons).
 
-  For \eta \ll1 the Fermi-Dirac distribution can be Taylor expanded and one
-  recovers the ideal gas equation of state.
+  For $\eta \ll 1$ the Fermi-Dirac distribution can be Taylor expanded and
+  one recovers the ideal gas equation of state.
 
   So, in summary, because electrons are Fermions that need to obey
-  Pauli's principle at very low T (comparing their kinetic energy to
-  the Fermi energy) and/or very high \rho, they can exert a much larger
-  pressure than predicted by the classical ideal gas. Moreover, in
-  those situation, the pressure is a polytrope, independent of
-  temperature T! The decoupling between mechanical (hydrostatic
-  structure) and radiative (energy transport) properties of the star
-  afforded by degeneracy of the gas greatly simplifies the problem.
-  This also means the stars do not need to heat up anymore in order to
-  sustain themselves against their own gravity (breaking the
-  conclusion we obtained from the Virial theorem). This is the
-  situation of a "white dwarf" (WD), which are the remnants for the
-  vast majority of stars, including the Sun.
+  Pauli's principle at very low $T$ (comparing their kinetic energy to
+  the Fermi energy) and/or very high $\rho$ (*N.B.:* $n_{e} \propto \rho$ with
+  the definition of the electrons mean molecular weight $n_{e} \mu_{e} m_{u} =
+  \rho$), they can exert a much larger pressure than predicted by the
+  classical ideal gas. Moreover, in those situation, the pressure is a
+  polytrope, independent of temperature T! The decoupling between
+  mechanical (hydrostatic structure) and radiative (energy transport)
+  properties of the star afforded by degeneracy of the gas greatly
+  simplifies the problem. This also means the stars do not need to
+  heat up anymore in order to sustain themselves against their own
+  gravity (breaking the conclusion we obtained from the Virial
+  theorem). This is the situation of a "white dwarf" (WD), which are
+  the remnants for the vast majority of stars, including the Sun.
 
   These compact objects contract and cool until they fully crystallize
   (releasing further latent heat), becoming "planet-sized diamond-like
@@ -371,7 +378,7 @@ temperature gradient).
 
 By definition the mean molecular weight \mu is such that
 \rho = m_{u}\mu(n+n_{e}). This is what we used in the ideal gas equation
-to get P=\rho k_{b}T/(\mu m_{u}) combining the electrons and ions pressure.
+to get P=\rho k_{B}T/(\mu m_{u}) combining the electrons and ions pressure.
 Similarly we can define \mu_{0} as the mean molecular weight per nucleus,
 and \mu_{e} as the mean molecular weight per electron, and thus
 
