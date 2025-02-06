@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-06 Thu 09:21 -->
+<!-- 2025-02-06 Thu 09:35 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - EOS (QM effects)</title>
@@ -146,7 +146,7 @@ principle"): \(\Delta x \Delta p \ge h\) with \(h\) Planck's constant. This natu
 translates in three spatial dimension to
 </p>
 
-<div class="latex" id="orgfd4bf00">
+<div class="latex" id="orgaa082f4">
 \begin{equation}
 \Delta x \Delta y \Delta z \Delta p_{x} \Delta p_{y} \Delta p_{z} \ge h^{3} \ \,
 \end{equation}
@@ -159,7 +159,7 @@ available number of quantized states with momentum between \(p+dp\) within
 a volume \(dV = dxdydz \equiv d^{3}x\) is
 </p>
 
-<div class="latex" id="orgdadf2ce">
+<div class="latex" id="orgbcaa8d1">
 \begin{equation}
 g(p)d^{3}pd^{3}x = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
 \end{equation}
@@ -186,7 +186,7 @@ From the <a href="notes-lecture-EOS1.html#org753adea">previous lecture on EOS</a
 Maxwell-Boltzmann distribution
 </p>
 
-<div class="latex" id="org7bcbac6">
+<div class="latex" id="org6134824">
 \begin{equation}
 n(p)\propto \frac{n}{(mT)^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }\ \ ,
 \end{equation}
@@ -198,7 +198,7 @@ where \(n\) is the number density, \(T\) the temperature, and \(m\) the mass of
 the particles. Therefore:
 </p>
 
-<div class="latex" id="orgf912b7e">
+<div class="latex" id="org63a727c">
 \begin{equation}\label{eq:momentum_ratios}
 \frac{n(p)}{g(p)}\propto n (mT)^{-3/2}\exp(\frac{-p^{2}}{2mk_{B}T}) \ \ .
 \end{equation}
@@ -242,7 +242,7 @@ states of energy between \(\varepsilon\equiv\varepsilon(p)\) and \(\varepsilon+d
 distribution:
 </p>
 
-<div class="latex" id="org17f2d4f">
+<div class="latex" id="orgaca9a6e">
 \begin{equation}\label{eq:Fermi-Dirac}
  f_{FD}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T - \eta)}+1} \le 1 \ \,
 \end{equation}
@@ -266,7 +266,7 @@ at most one fermion.
 case the relevant distribution is the Bose-Einstein's distribution:
 </p>
 
-<div class="latex" id="orgcedd4e5">
+<div class="latex" id="org0b5aa8e">
 \begin{equation}\label{eq:Bose-Einstein}
  f_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T-\eta)}-1} \ \,
 \end{equation}
@@ -288,7 +288,7 @@ depending on the particle considered (\(f=f_\mathrm{FD}\) or
 \(f=f_\mathrm{BE}\)). To determine the chemical potential &mu; one can
 impose the normalization following from:
 </p>
-<div class="latex" id="org0152987">
+<div class="latex" id="orgd4d2d0c">
 \begin{equation}
 n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ ,
 \end{equation}
@@ -307,7 +307,7 @@ m_\mathrm{proton}/2000\)), cf. Eq. \ref{eq:momentum_ratios}.
 </p>
 
 <p>
-In practice, the pressure provided by the <i>ions</i> never becomes
+<b>N.B.:</b> In practice, the pressure provided by the <i>ions</i> never becomes
 affected by QM directly: because of the \(m^{-3/2}\) term in the
 Maxwell-Boltzmann distribution, this would require densities so high
 that the ions would not exist as ions anymore. Instead the high
@@ -323,14 +323,13 @@ is what sustains the structure of the neutron stars!
 <p>
 Because the pressure term from electrons (which in the ideal gas EOS
 is accounted for thanks to our definition of the mean molecular
-weight) changes because of QM effects first, let's now consider a
-gas made of electrons only. These particles have spin 1/2, thus they
-are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and \(q_{s} = 2\) in it
-(each quantum cell of the phase space 4&pi; p<sup>2</sup>dp dV can be occupied by
-2 electrons, one with spin up and one with spin down).
+weight) changes because of QM effects first, let's now consider a gas
+made of electrons only. These particles have spin 1/2, thus they are
+fermions, and obey Eq. \ref{eq:Fermi-Dirac} with \(q_{s} = 2\) (each
+quantum cell of the phase space 4&pi; p<sup>2</sup>dp dV can be occupied by 2
+electrons, one with spin up and one with spin down).
 </p>
 </div>
-
 
 <div id="outline-container-orgc893a70" class="outline-3">
 <h3 id="orgc893a70"><a href="#orgc893a70">Fully degenerate electron gas</a></h3>
@@ -338,15 +337,17 @@ are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and \(q_{s} = 2\) in it
 <p>
 By definition, a fully degenerate gas is one where all the particles
 are in the lowest possible energy state, corresponding to the limit
-T&rarr;0. Of course, if T&equiv;0 there would be no cooling through radiation,
-the object would not be a <i>star</i> anymore (it would be if one wants a
-"black dwarf", a theoretical idea the Universe is too young to have
-produced, e.g., <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4357C/abstract">Caplan 2020</a>). What we really mean by taking the T&rarr;0
-limit is that the thermal energy of the particles is very small
-compared to the Fermi energy: k<sub>b</sub>T &Lt; &epsilon;<sub>F</sub>. In this limit
-<i>the thermal and mechanical properties of the gas decouple from each
-other</i>, and we can assume T&cong; 0 to discuss the mechanical properties,
-and consider T only for the radiative properties.
+\(T\rightarrow0\). Of course, if \(T\equiv0\) there would be no cooling through
+radiation, the object would not be a <i>star</i> anymore (it would be if
+one wants a "black dwarf", a theoretical idea the Universe is too
+young to have produced, e.g., <a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4357C/abstract">Caplan 2020</a>). What we really mean by
+taking the \(T\rightarrow0\) limit is that the thermal energy of the particles
+is very small compared to the Fermi energy, i.e. the maximum energy
+level that particles occupy (assuming to set the ground-level to
+\(\varepsilon=0\)): \(k_{b}T \ll \varepsilon_{F\)}. In this limit <i>the thermal and
+mechanical properties of the gas decouple from each other</i>, and we
+can assume \(T \simeq 0\) to discuss the mechanical properties, and
+consider \(T\) only for the radiative properties.
 </p>
 
 <p>
@@ -355,7 +356,7 @@ the electrons occupy a sphere in momentum space with a radius p<sub>F</sub>
 called the "Fermi" momentum:
 </p>
 
-<div class="latex" id="org9509bce">
+<div class="latex" id="org800361f">
   \begin{equation}
   g_{e}(p)dp = q_{s}\frac{4\pi p^{2}}{h^{3}}dp \equiv \frac{8\pi p^{2}}{h^{3}}dp \ \  \mathrm{for} \ \
 p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
@@ -367,7 +368,7 @@ and we used q<sub>s</sub>=2 for electrons. To find the value of p<sub>f</sub> we
 the normalization coming from the total number density of electrons
 </p>
 
-<div class="latex" id="orge48a4e9">
+<div class="latex" id="orgfa97370">
 \begin{equation}
 n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{f}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8\pi}n_{e}\right)^{1/3} \ \ .
 \end{equation}
@@ -389,18 +390,18 @@ need the appropriate p&equiv; p(&epsilon;) relaton
 <h4 id="org742687a"><a href="#org742687a">Non-relativistic electron gas</a></h4>
 <div class="outline-text-4" id="text-org742687a">
 <p>
-In this case &epsilon; = p<sup>2</sup>/2m is the energy of the electrons (still ideal
-gas) and v=p/m, thus from the previous lecture on EOS we have:
+In this case \(\varepsilon = p^{2}/2m\) is the energy of the electrons (still ideal
+gas) and \(v=p/m\), thus from the previous lecture on EOS we have:
 </p>
-<div class="latex" id="org65bff0d">
+<div class="latex" id="org671562f">
 \begin{equation}
-P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{f}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \ \ .
+P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{f}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \Rightarrow P_{e} \propto \rho^{5/3}\ \ .
 \end{equation}
 
 </div>
 
 <p>
-Note the functional form P<sub>e</sub>&equiv; P<sub>e</sub>(n<sub>e</sub>)! It's a powerlaw, like we
+Note the functional form \(P_{e}\equiv P_{e}(n_{e})\): it's a powerlaw, like we
 arbitrarily assumed would be a decent guess when discussing
 polytropes. <i>A fully degenerate classical electron gas has a
 polytropic EOS with exponent &Gamma;=5/3</i>.
@@ -408,8 +409,8 @@ polytropic EOS with exponent &Gamma;=5/3</i>.
 
 <p>
 (to see this more explicitly you can use the definition of the
-electron mean molecular weight &mu;<sub>e</sub> n<sub>e</sub> = &rho;/m<sub>u</sub> to substitute n<sub>e</sub> for the
-mass density &rho;).
+electron mean molecular weight \(\mu_{e} n_{e} = \rho/m_{u}\) to substitute \(n_{e\)} for
+the mass density \(\rho\)).
 </p>
 </div>
 </div>
@@ -430,9 +431,9 @@ gas, the EOS will again be a polytrope with exponent now &Gamma;=4/3</i>.
 <p>
 Specifically the calculation yields:
 </p>
-<div class="latex" id="orgc89a538">
+<div class="latex" id="org6e16512">
 \begin{equation}
-P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \ \ .
+P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \Rightarrow P_{e} \propto \rho^{4/3}^{}\ \ .
 \end{equation}
 
 </div>
@@ -451,7 +452,7 @@ One can estimate the density at the transition with the
 condition p<sub>F</sub> &cong; m<sub>e</sub> c:
 </p>
 
-<div class="latex" id="org6d37c66">
+<div class="latex" id="org308221e">
 \begin{equation}
  \rho_{NR \rightarrow UR} \simeq \mu_{e} m_{u} \frac{8\pi}{3} \left(\frac{m_{e}c}{h}\right)^{3} \ \ .
 \end{equation}
@@ -460,7 +461,6 @@ condition p<sub>F</sub> &cong; m<sub>e</sub> c:
 </div>
 </div>
 </div>
-
 
 <div id="outline-container-orga50282e" class="outline-3">
 <h3 id="orga50282e"><a href="#orga50282e">Partial degeneracy</a></h3>
@@ -538,7 +538,7 @@ We can then calculate the internal energy density of the photon gas
 as u<sub>int</sub> = a T<sup>4</sup> with a the radiation constant:
 </p>
 
-<div class="latex" id="org489f620">
+<div class="latex" id="org3c05c6f">
 \begin{equation}
 a = \frac{8\pi^{5} k_{B}^4}{15h^{3}c^{3}} = 7.56\times10^{-15} \mathrm{erg} \ \mathrm{cm}^{-3} \ \mathrm{K}^{-4} \ \ ,
 \end{equation}
@@ -554,7 +554,7 @@ Relying again on the ultra-relativistic nature of photons, we know
 that P=u<sub>int</sub>/3 and therefore the radiation pressure is:
 </p>
 
-<div class="latex" id="org5c919f3">
+<div class="latex" id="org6e68e28">
 \begin{equation}
 P_\mathrm{rad} =\frac{1}{3}aT^{4} \ \ .
 \end{equation}
@@ -616,7 +616,7 @@ Similarly we can define &mu;<sub>0</sub> as the mean molecular weight per nucleu
 and &mu;<sub>e</sub> as the mean molecular weight per electron, and thus
 </p>
 
-<div class="latex" id="org25f8701">
+<div class="latex" id="org126db87">
 \begin{equation}
 \rho = (n+n_{e})\mu m_{u}\equiv n\mu_{o}m_{u} \equiv n_{e}\mu_{e} m_{u} \ \ .
 \end{equation}
@@ -630,7 +630,7 @@ density of massive ions regarless of their ionization state), and thus
 rewrite the above as
 </p>
 
-<div class="latex" id="orgb14f3c0">
+<div class="latex" id="orgcf0be37">
 \begin{equation}
 \mu = \frac{\rho}{m_{u}n}\frac{1}{1+E} \equiv \frac{\mu_{0}}{1+E} \equiv \mu_{e}\frac{E}{1+E} \ \ .
 \end{equation}
@@ -653,7 +653,7 @@ calculate E as a function of T, and &rho;.
 Putting all things together:
 </p>
 
-<div class="latex" id="org2fa578d">
+<div class="latex" id="org679af46">
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T +
 P_{QM} + \frac{1}{3}aT^{4}  \ \ ,
@@ -674,7 +674,7 @@ mechanics:
 </p>
 
 
-<figure id="orgb380e35">
+<figure id="orgc7343aa">
 <img src="./images/EOS_blend_paxton18.png" alt="EOS_blend_paxton18.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Blend of tabulated EOS on the T(&rho;) plane used in MESA (Fig. 50 in <a href="https://ui.adsabs.harvard.edu/abs/2018ApJS..234...34P/abstract">Paxton et al. 2018</a>), see also <a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstract">Jermyn et al. 2021</a> for updates relevant to large portions of this plane. The blue and purple tracks correspond to evolved stellar models of the mass labeled.</figcaption>

@@ -149,7 +149,7 @@ ionized gas of the star that will first start feeling QM effects,
 since $m_{e} \ll m_{ion}$ (in fact $m_{e} \simeq m_\mathrm{proton}/1836.15 \simeq
 m_\mathrm{proton}/2000$), cf. Eq. \ref{eq:momentum_ratios}.
 
-In practice, the pressure provided by the /ions/ never becomes
+*N.B.:* In practice, the pressure provided by the /ions/ never becomes
 affected by QM directly: because of the $m^{-3/2}$ term in the
 Maxwell-Boltzmann distribution, this would require densities so high
 that the ions would not exist as ions anymore. Instead the high
@@ -163,26 +163,27 @@ is what sustains the structure of the neutron stars!
 
 Because the pressure term from electrons (which in the ideal gas EOS
 is accounted for thanks to our definition of the mean molecular
-weight) changes because of QM effects first, let's now consider a
-gas made of electrons only. These particles have spin 1/2, thus they
-are fermions, and obey Eq. \ref{eq:Fermi-Dirac} and $q_{s} = 2$ in it
-(each quantum cell of the phase space 4\pi p^{2}dp dV can be occupied by
-2 electrons, one with spin up and one with spin down).
-
+weight) changes because of QM effects first, let's now consider a gas
+made of electrons only. These particles have spin 1/2, thus they are
+fermions, and obey Eq. \ref{eq:Fermi-Dirac} with $q_{s} = 2$ (each
+quantum cell of the phase space 4\pi p^{2}dp dV can be occupied by 2
+electrons, one with spin up and one with spin down).
 
 ** Fully degenerate electron gas
 
   By definition, a fully degenerate gas is one where all the particles
   are in the lowest possible energy state, corresponding to the limit
-  T\rightarrow0. Of course, if T\equiv0 there would be no cooling through radiation,
-  the object would not be a /star/ anymore (it would be if one wants a
-  "black dwarf", a theoretical idea the Universe is too young to have
-  produced, e.g., [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4357C/abstract][Caplan 2020]]). What we really mean by taking the T\rightarrow0
-  limit is that the thermal energy of the particles is very small
-  compared to the Fermi energy: k_{b}T \ll \varepsilon_{F}. In this limit
-  /the thermal and mechanical properties of the gas decouple from each
-  other/, and we can assume T\simeq 0 to discuss the mechanical properties,
-  and consider T only for the radiative properties.
+  $T\rightarrow0$. Of course, if $T\equiv0$ there would be no cooling through
+  radiation, the object would not be a /star/ anymore (it would be if
+  one wants a "black dwarf", a theoretical idea the Universe is too
+  young to have produced, e.g., [[https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4357C/abstract][Caplan 2020]]). What we really mean by
+  taking the $T\rightarrow0$ limit is that the thermal energy of the particles
+  is very small compared to the Fermi energy, i.e. the maximum energy
+  level that particles occupy (assuming to set the ground-level to
+  $\varepsilon=0$): $k_{b}T \ll \varepsilon_{F$}. In this limit /the thermal and
+  mechanical properties of the gas decouple from each other/, and we
+  can assume $T \simeq 0$ to discuss the mechanical properties, and
+  consider $T$ only for the radiative properties.
 
   For fermions (like the electrons we are focusing on), this means that
   the electrons occupy a sphere in momentum space with a radius p_{F}
@@ -211,22 +212,22 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
 
 *** Non-relativistic electron gas
 
-  In this case \varepsilon = p^{2}/2m is the energy of the electrons (still ideal
-  gas) and v=p/m, thus from the previous lecture on EOS we have:
+  In this case $\varepsilon = p^{2}/2m$ is the energy of the electrons (still ideal
+  gas) and $v=p/m$, thus from the previous lecture on EOS we have:
   #+begin_latex
   \begin{equation}
-  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{f}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \ \ .
+  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{f}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \Rightarrow P_{e} \propto \rho^{5/3}\ \ .
   \end{equation}
   #+end_latex
 
- Note the functional form P_{e}\equiv P_{e}(n_{e})! It's a powerlaw, like we
+ Note the functional form $P_{e}\equiv P_{e}(n_{e})$: it's a powerlaw, like we
  arbitrarily assumed would be a decent guess when discussing
  polytropes. /A fully degenerate classical electron gas has a
  polytropic EOS with exponent \Gamma=5/3/.
 
  (to see this more explicitly you can use the definition of the
- electron mean molecular weight \mu_{e} n_{e} = \rho/m_{u} to substitute n_{e} for the
- mass density \rho).
+ electron mean molecular weight $\mu_{e} n_{e} = \rho/m_{u}$ to substitute $n_{e$} for
+ the mass density $\rho$).
 
 *** Ultra-relativistic electron gas
   As the number density of electrons increases, p_{F} increases, and thus
@@ -240,7 +241,7 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   Specifically the calculation yields:
   #+begin_latex
   \begin{equation}
-  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \ \ .
+  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \Rightarrow P_{e} \propto \rho^{4/3}^{}\ \ .
   \end{equation}
   #+end_latex
 
@@ -259,7 +260,6 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
    \rho_{NR \rightarrow UR} \simeq \mu_{e} m_{u} \frac{8\pi}{3} \left(\frac{m_{e}c}{h}\right)^{3} \ \ .
   \end{equation}
   #+end_latex
-
 
 ** Partial degeneracy
 
