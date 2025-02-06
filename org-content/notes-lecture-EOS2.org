@@ -307,7 +307,7 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   In some stars, the radiation field is so strong that is has a
   non-negligible contribution to the pressure. The particles providing
   that pressure are photons, which are *bosons* with 2 possible
-  polarization states, so $q_{S} = 2$ (using an analogy with classical
+  polarization states, so $g_{s}= 2$ (using an analogy with classical
   electromagnetic wave language, this is because for a fixed
   propagation direction of a wave the electric field can still be in
   two directions, the two defining the plane orthogonal to the
