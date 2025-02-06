@@ -180,7 +180,7 @@ electrons, one with spin up and one with spin down).
   taking the $T\rightarrow0$ limit is that the thermal energy of the particles
   is very small compared to the Fermi energy, i.e. the maximum energy
   level that particles occupy (assuming to set the ground-level to
-  $\varepsilon=0$): $k_{B}_{}T \ll \varepsilon_{F}$. In this limit /the thermal and
+  $\varepsilon=0$): $k_{B}T \ll \varepsilon_{F}$. In this limit /the thermal and
   mechanical properties of the gas decouple from each other/, and we
   can assume $T \simeq 0$ to discuss the mechanical properties, and
   consider $T$ only for the radiative properties.
@@ -242,7 +242,7 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   Specifically the calculation yields:
   #+begin_latex
   \begin{equation}
-  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \Rightarrow P_{e} \propto \rho^{4/3}^{}\ \ .
+  P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \Rightarrow P_{e} \propto \rho^{4/3}^{} \ \ .
   \end{equation}
   #+end_latex
 
