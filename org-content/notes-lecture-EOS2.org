@@ -307,10 +307,12 @@ p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
   In some stars, the radiation field is so strong that is has a
   non-negligible contribution to the pressure. The particles providing
   that pressure are photons, which are *bosons* with 2 possible
-  polarization states, so $q_{S} = 2$ (in a classical electromagnetic wave
-  language, this is because for a fixed propagation direction of a
-  wave the electric field can still be in two directions, the two
-  defining the plane orthogonal to the propagation direction).
+  polarization states, so $q_{S} = 2$ (using an analogy with classical
+  electromagnetic wave language, this is because for a fixed
+  propagation direction of a wave the electric field can still be in
+  two directions, the two defining the plane orthogonal to the
+  propagation direction - this can be formally demonstrated using
+  relativistic quantum field theory).
 
   Moreover, the number of photons does not need to be conserved,
   radiative processes will destroy/create photons as needed to achieve
@@ -352,33 +354,35 @@ the atmosphere charging a cloud and preparing it for lightning
 discharge) or *radiative* (e.g., photoionization in the photoelectric
 effect that won Einstein the Nobel prize).
 
-For an element with Z electrons there are Z+1 possible ions, from the
-neutral atom to the fully stripped nucleus with no electrons attached
-to it. For historical reasons, these are often indicated with the
-element symbol followed by a roman number from I - for the neutral
-atom to Z+1 in roman numbers for the fully ionized ion, e.g., HII for
-fully ionized hydrogen (cf. [[file:notes-lecture-CMD-HRD.org::*A modern view on spectra][digression on spectra in the CMD/HRD lecture]]).
+For an element with $Z$ electrons there are $Z+1$ possible ions, from
+the neutral atom to the fully stripped nucleus with no electrons
+attached to it. For historical reasons, these are often indicated with
+the element symbol followed by a roman number from I - for the neutral
+atom to $Z+1$ in roman numbers for the fully ionized ion, e.g., HII for
+fully ionized hydrogen (cf. [[file:notes-lecture-CMD-HRD.org::*A modern view on spectra][digression on spectra in the CMD/HRD
+lecture]]).
 
 So far in our discussion of the EOS, we have considered always this
 last case of full ionization. Since the atomic binding energies are of
-order of \sim1-10 eV (think of the Rydberg, \chi=13.6eV to strip Hydrogen of
-its electron from the fundamental state), that is 1eV/k_{B} \sim 10^{4} K, and
-most of the stellar material is hotter than this, this was probably
-not a bad approximation: the (thermal) kinetic energy of the particles
-flying around in the stellar gas are much larger than what is needed
-to separate electrons and ions, so probably this will happen a lot.
+order of \sim1-10 eV (think of the Rydberg, $\chi=13.6$ eV to strip Hydrogen
+of its electron from the fundamental state), that is 1 eV/$k_{B}$ \sim
+10^{4} $K$, and most of the stellar material is hotter than this, this
+was probably not a bad approximation: the (thermal) kinetic energy of
+the particles flying around in the stellar gas are much larger than
+what is needed to separate electrons and ions, so probably this will
+happen a lot.
 
-However, in the layers where T decreases, we can have partial
+However, in the layers where $T$ decreases, we can have partial
 ionization, which /will change the number of particles per unit atomic
 mass/, so you can expect this to /impact the mean molecular weight \mu/,
 and thus the pressure from the EOS (and we will see [[./notes-lecture-ETransport.org][later]] also the
 temperature gradient).
 
-By definition the mean molecular weight \mu is such that
-\rho = m_{u}\mu(n+n_{e}). This is what we used in the ideal gas equation
-to get P=\rho k_{B}T/(\mu m_{u}) combining the electrons and ions pressure.
-Similarly we can define \mu_{0} as the mean molecular weight per nucleus,
-and \mu_{e} as the mean molecular weight per electron, and thus
+By definition the mean molecular weight $\mu$ is such that $\rho =
+m_{u}\mu(n+n_{e})$. This is what we used in the ideal gas equation to get
+$P=\rho k_{B}T/(\mu m_{u})$ combining the electrons and ions pressure. Similarly we
+can define $\mu_{0}$ as the mean molecular weight per nucleus, and $\mu_{e}$ as the
+mean molecular weight per electron, and thus
 
 #+begin_latex
 \begin{equation}
@@ -386,8 +390,8 @@ and \mu_{e} as the mean molecular weight per electron, and thus
 \end{equation}
 #+end_latex
 
-We can also define the number of free electrons per ion/atom
-E=n_{e}/n (where n_{e} is the number density of electrons and n the number
+We can also define the number of free electrons per ion/atom $E=n_{e}/n$
+(where $n_{e}$ is the number density of electrons and $n$ the number
 density of massive ions regarless of their ionization state), and thus
 rewrite the above as
 
@@ -399,7 +403,7 @@ rewrite the above as
 
 which gives the relation between the mean molecular weight(s) and the
 number of free electrons. We will see in a [[./notes-lecture-radTrans.org][later lecture]] how to
-calculate E as a function of T, and \rho.
+calculate $E$ as a function of $T$, and $\rho$.
 
 * Total pressure in a generic star
 
@@ -408,11 +412,13 @@ Putting all things together:
 #+begin_latex
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T +
-P_{QM} + \frac{1}{3}aT^{4}  \ \ ,
+P_\mathrm{QM} + \frac{1}{3}aT^{4}  \ \ ,
 \end{equation}
 #+end_latex
 where we have decomposed the gas pressure into a degeneracy term due
-to quantum effects and a classical term.
+to quantum effects and a classical term. $P_\mathrm{QM}$ then depends
+on whether the electron gas is non-relativistic, mildly relativistic,
+or ultra-relativistic, while ions do not contribute to $P_\mathrm{QM}$
 
 Note that in practice, stellar evolution code often rely on /tabulated/
 EOS, which account for many non-ideal effects that we have only
