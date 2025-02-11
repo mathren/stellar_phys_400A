@@ -434,32 +434,39 @@ the next equation of stellar structure becomes
 #+end_latex
 
 *N.B.:* In regions where no energy is produced ($\varepsilon_\mathrm{nuc} = 0$), there are no
-neutrino losses ($\varepsilon_{\nu}=0$) and in thermal equilibrium ($\varepsilon_{grav} =
+neutrino losses ($\varepsilon_{\nu}=0$) and in thermal equilibrium ($\varepsilon_\mathrm{grav} =
 T\partial s/\partial t = 0$), the luminosity is constant as one moves inward or
 outward in mass coordinate: $dL/dm = 0 \Rightarrow L = constant$.
 
-*N.B.:* Once again, we found another equation but it comes with new
-unknowns. \varepsilon_{grav} is fortunately only dependent on the thermodynamics of
-the gas, so with the EOS we can calculate that (the specific entropy
-is yet a function of \rho and T). The other two terms instead are input
-physics for the star. We will [[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][later]] unpack more \varepsilon_\mathrm{nuc} by discussing
-nuclear energy generation -- but ultimately it will depend on cross
-sections for nuclear interactions which in stellar physics are taken
-as known input physics (again coming often from military research).
-Similarly, \varepsilon_{\nu} depends on neutrino physics and contains many neutrino
-loss terms. We will discuss also these a bit more later on, but
-effectively in stellar physics \varepsilon_{\nu} is also a quantity that we assume
-to know as a function of T and \rho, borrowing the work of neutrino
-physicists.
+:Question:
+- *Q*: can you think of a region of the Sun with constant $L(m)$?
+:end:
 
-So, in total at this point, we have \kappa, \varepsilon_{\nu}, \varepsilon_\mathrm{nuc} assumed to
-be known input physics, and we have an equation for the local
-conservation of energy, and the energy transport in the case of
-diffusion (mediated by photons or particles, i.e. conduction).
+
+*N.B.:* Once again, we found another equation but it comes with new
+unknowns. $\varepsilon_\mathrm{grav}$ is fortunately only dependent on the thermodynamics
+of the gas, so with the EOS we can calculate that (the specific
+entropy is also a function of $\rho$ and $T$). The other two terms
+instead are input physics for the star. We will [[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][later]] unpack more
+$\varepsilon_\mathrm{nuc}$ by discussing nuclear energy generation -- but
+ultimately it will depend on cross sections for nuclear interactions
+which in stellar physics are taken as known input physics (again
+coming often from military research). Similarly, $\varepsilon_{\nu}$ depends on
+neutrino physics and contains many neutrino loss terms. We will
+discuss also these a bit more later on, but effectively in stellar
+physics $\varepsilon_{\nu}$ is also a quantity that we assume to know as a function
+of $T$ and $\rho$, borrowing the work of neutrino and particle physicists.
+
+So, in total at this point, we have $\kappa$, $\varepsilon_{\nu}$,
+$\varepsilon_\mathrm{nuc}$ assumed to be known input physics, and we have an
+equation for the local conservation of energy, and the energy
+transport in the case of diffusion (mediated by photons or particles,
+i.e. conduction).
 
 We still need an equation for the convective energy transport, and
-while unpacking \varepsilon_\mathrm{nuc} we will write a set of equations for the chemical
-evolution due to nuclear burning, but we are getting close!
+while unpacking $\varepsilon_\mathrm{nuc}$ we will write a set of equations for
+the chemical evolution due to nuclear burning, but we are getting
+close!
 
 * Homework
 
@@ -468,36 +475,34 @@ Consider an optically thick, hot, and stratified gas: this could be
 (some layers of) a star, or a sufficiently dense accretion or
 decretion flow to/from a compact object. Because of the assumption of
 optical thickness, we can assume that the layer is in LTE and the
-radiation field is well approximated by a black body, thus we know
-that the radiation pressure is P_{rad} = aT^{4}/3. If the gas is
-sufficiently hot, this is the only pressure term we need to consider
-(P_{rad} \gg P_{gas}).
-1. Write dP_{rad}/dr as a function of L, \kappa, and \rho and r expressing dT/dr
-   assuming energy is transported throughout our layer of gas by
-   radiative diffusion.
+radiation field is well approximated by a black body. If the gas is
+sufficiently hot, radiation pressure is the dominant term
+($P_\mathrm{rad} \gg P_\mathrm{gas}$).
+1. Write $dP_\mathrm{rad}/dr$ as a function of $L$, $\kappa$, and $\rho$ and
+   $r$ expressing $dT/dr$ assuming energy is transported throughout
+   our layer of gas by radiative diffusion.
 2. Impose hydrostatic equilibrium for this gas, and derive the
-   functional form for the luminosity (call it L_{Edd}) required for
-   radiation pressure in an optically thick gas to balance out
-   gravity.
+   functional form for the luminosity (call it $L_\mathrm{Edd}$)
+   required for radiation pressure in an optically thick gas to
+   balance out gravity.
 
 The expression that you found was first derived by [[https://en.wikipedia.org/wiki/Arthur_Eddington][Arthur Eddington]],
-assuming that \kappa \equiv \kappa_{es} = 0.2(1+X) g cm^{-2}. In this derivation you did
-not need to assume anything for \kappa: the expression you derived is
+assuming that $\kappa \equiv \kappa_{es} = 0.2(1+X)$ g cm^{-2}. In this derivation you did
+not need to assume anything for $\kappa$: the expression you derived is
 sometimes referred to as "modified Eddington Luminosity". Because of
-its dependence on \kappa, which we will see can vary throughout the star,
-it can occasionally occur that L_{Edd} <L: in this case radiative energy
-transport and hydrostatic equilibrium cannot be simultaneously
-satisfied - and this occurs in the envelope of massive stars for
-example. For an (optically thick) accretion flow, this luminosity
-corresponds to the limit when the in-falling material liberates
-gravitational potential in the form of heat to the point that the
-photons produced balance out the gravitational pull that brings in the
-in-falling material in the first place.
+its dependence on $\kappa$, which we will see can vary throughout the star,
+it can occasionally occur that $L_\mathrm{Edd} <L$: in this case
+radiative energy transport and hydrostatic equilibrium cannot be
+simultaneously satisfied - and this occurs in the envelope of massive
+stars for example. For an (optically thick) accretion flow, this
+luminosity corresponds to the limit when the in-falling material
+liberates gravitational potential in the form of heat to the point
+that the photons produced balance out the gravitational pull that
+brings in the in-falling material in the first place.
 
 *N.B.:* the only central hypothesis necessary to derive the Eddington
 luminosity here is that the photons are a black body, that is an
 optically thick environment is necessary.
-
 
 ** Exercise 5.3 in Onno Pols' lecture notes
 Without solving the stellar structure equations, we can already derive
@@ -505,20 +510,22 @@ useful scaling relations. In this question you will use the equation
 for radiative energy transport with the equation for hydrostatic
 equilibrium to derive a scaling relation between the mass and the
 luminosity of a star.
-1. Derive how the central temperature, T_{center}, scales with the mass,
-   M, radius, R, and luminosity, L, for a star in which the energy
-   transport is by radiation. To do this, use the stellar structure
-   equation for the temperature gradient in radiative equilibrium
-   (*hint:* use the dT/dr form).
-2. Assume that r \sim R and that the temperature is proportional to
-   T_{center}, L(m) \sim L and estimating dT/dr ∼ −T_{center} /R.
-3. Derive how T_{center} scales with M and R, using the hydrostatic
+1. Derive how the central temperature, $T_\mathrm{center}$, scales
+   with the total mass $M$, outer radius $R$, and luminosity $L$, for
+   a star in which the energy transport is by radiation. To do this,
+   use the stellar structure equation for the temperature gradient in
+   radiative equilibrium (*hint:* use the $dT/dr$ form).
+2. Assume that $r \sim R$ and that the temperature is proportional to
+   $T_\mathrm{center}$, $L(m) \sim L$ and estimating $dT/dr ∼ −T_{center}
+   /R$.
+3. Derive how $T_\mathrm{center}$ scales with $M$ and $R$, using the hydrostatic
    equilibrium equation, and assuming that the ideal gas EOS holds.
-4. Combine the results obtained in 1. and 2., to derive how L scales
-   with M and R for a star whose energy transport is radiative.
+4. Combine the results obtained in 1. and 2., to derive how $L$ scales
+   with $M$ and $R$ for a star whose energy transport is radiative throughout.
 
 You have arrived at a mass-luminosity relation /without assuming
 anything about how the energy is produced/, only about how it is
 transported (by radiation). This shows that the luminosity of a star
 is not determined by the rate of energy production in the centre, but
-by how fast it can be transported to the surface!
+by how fast it can be transported to the surface: stars don't shine
+because they burn, conversely they burn because they shine!

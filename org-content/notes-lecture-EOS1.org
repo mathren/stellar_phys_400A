@@ -139,7 +139,7 @@ conservatively ask what is the temperature variation across \ell_{\gamma}:
 #+end_latex
 
 (where we neglect $T_\mathrm{surface}$ because we expect it much lower
-than $T_\mathrm{center}$, since we already know $P_\mathrm{center} \gg
+than $T_\mathrm${center}$, since we already know $P_\mathrm{center} \gg
 P_\mathrm{surface}$). For the Sun we will see that we can estimate
 $T_\mathrm{center}\simeq 10^{7}$ K, and we know $R_{\odot}\simeq 10^{11}$ cm, so
 $\Delta T\simeq 10^{-4} K \ll T_{surf} \ll T_{center}$.

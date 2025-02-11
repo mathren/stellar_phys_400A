@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-11 Tue 10:13 -->
+<!-- 2025-02-11 Tue 10:25 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Diffusive energy transport</title>
@@ -124,7 +124,7 @@ Kippenhan &amp; Weigert's book.
 <div id="outline-container-orgda0b8a5" class="outline-4">
 <h4 id="orgda0b8a5"><a href="#orgda0b8a5">Mass conservation:</a></h4>
 <div class="outline-text-4" id="text-orgda0b8a5">
-<div class="latex" id="orge49c07e">
+<div class="latex" id="org94f22c5">
 \begin{equation}\label{eq:mass_cont}
 \frac{dm}{dr} = 4\pi \rho r^{2} \ \ .
 \end{equation}
@@ -136,7 +136,7 @@ Kippenhan &amp; Weigert's book.
 <div id="outline-container-orgbfadb02" class="outline-4">
 <h4 id="orgbfadb02"><a href="#orgbfadb02">Hydrostatic equilibrium:</a></h4>
 <div class="outline-text-4" id="text-orgbfadb02">
-<div class="latex" id="org5b6baaa">
+<div class="latex" id="org4dd90a7">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \Leftrightarrow \ \frac{dP}{dm} = - \frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -158,7 +158,7 @@ on timescales comparable to the dynamical timescale
 <div id="outline-container-org17b1656" class="outline-4">
 <h4 id="org17b1656"><a href="#org17b1656">Equation of state:</a></h4>
 <div class="outline-text-4" id="text-org17b1656">
-<div class="latex" id="org0743156">
+<div class="latex" id="orgf7f108b">
 \begin{equation}\label{eq:EOS}
 P \equiv P(\rho, \mu, T) = P_\mathrm{rad} + P_\mathrm{gas} = \frac{1}{3}aT^{4} + \frac{\rho}{\mu m_{u}}k_{B}T + P_\mathrm{QM}\ \ .
 \end{equation}
@@ -246,7 +246,7 @@ In this approximation, the net flux of this "something" is related to
 the density of "something" by Fick's law:
 </p>
 
-<div class="latex" id="orge58aa6a">
+<div class="latex" id="org8122a42">
 \begin{equation}\label{eq:diff}
 \mathbf{J} = - D\nabla n \ \ ,
 \end{equation}
@@ -284,7 +284,7 @@ these particles have a mean free path \(\ell\) and an average velocity \(v\),
 then the number that crosses a given coordinate \(z\) with a positive \(\delta
 z\) as a function of time is:
 </p>
-<div class="latex" id="org34a7ba8">
+<div class="latex" id="orgbbaf328">
 \begin{equation}
 \frac{dN}{dt}(z) =\frac{1}{2} n \frac{1}{3}v \ \ ,
 \end{equation}
@@ -305,7 +305,7 @@ while those moving with the negative \(\delta z\)  come from \(n(z+\ell)\), so t
 flux across \(z\) is
 </p>
 
-<div class="latex" id="orgf8587d7">
+<div class="latex" id="org17f284c">
 \begin{equation}
 J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)\simeq\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ ,
 \end{equation}
@@ -360,7 +360,7 @@ the one impeding the diffusion of photons.
 <p>
 Thus, the radiative diffusion equation is
 </p>
-<div class="latex" id="orgd502b28">
+<div class="latex" id="orgc1d7f39">
 \begin{equation}
 F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \ ,
 \end{equation}
@@ -373,7 +373,7 @@ density is \(u=aT^{4}\). We can then explicit these into our equation
 obtaining:
 </p>
 
-<div class="latex" id="org46718f0">
+<div class="latex" id="org7948c70">
 \begin{equation}
 F_\mathrm{rad} = -\frac{4ac}{3c\rho T^{3}} \frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
 \end{equation}
@@ -386,7 +386,7 @@ This is a <i>local</i> quantity and it is valid in a region of the star where
 the dominant energy transport is radiative diffusion only:
 </p>
 
-<div class="latex" id="orge86c8e5">
+<div class="latex" id="orge6f1597">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa_\mathrm{rad} F_\mathrm{rad} \propto \kappa_\mathrm{rad} F_\mathrm{rad}.\ \ .
 \end{equation}
@@ -405,7 +405,7 @@ of radius \(r\) within the star (or in other words, the "power" that is
 in the photon field at the location r):
 </p>
 
-<div class="latex" id="orgc96923a">
+<div class="latex" id="orgc5646b3">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa_\mathrm{rad}}{r^{2}}\frac{L_\mathrm{rad}}{T^{3}} \ \ .
 \end{equation}
@@ -507,7 +507,7 @@ cannot neglect conduction, and it can dominate over radiative
 diffusion even! To consider it, we can follow the same reasoning as
 above and write an equation for the conductive flux
 </p>
-<div class="latex" id="orgb4d1c07">
+<div class="latex" id="orgcddd7c7">
 \begin{equation}
 F_\mathrm{cond} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{cond}\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -523,7 +523,7 @@ contribution to the energy flux from radiative diffusion and
 conduction: \(F = F_\mathrm{rad} + F_\mathrm{cond}\) and
 </p>
 
-<div class="latex" id="orgee2ca00">
+<div class="latex" id="orgc380e65">
 \begin{equation}
 F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -532,7 +532,7 @@ F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 <p>
 where now
 </p>
-<div class="latex" id="orga2691af">
+<div class="latex" id="org1106636">
 \begin{equation}\label{eq:kappas}
 \frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
 \end{equation}
@@ -564,7 +564,7 @@ Eq. \ref{eq:kappas} and \(L(r) = L_\mathrm{rad} + L_\mathrm{cond}\))
 continue the analogy and write down:
 </p>
 
-<div class="latex" id="orga058ce0">
+<div class="latex" id="org6f274cc">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa}{r^{2}}\frac{L}{T^{3}} \ \ ,
 \end{equation}
@@ -607,7 +607,7 @@ plus the work done on the unit mass \(Pd v\) with \(v=1/\rho\) the specific
 volume:
 </p>
 
-<div class="latex" id="orgcb3b5c7">
+<div class="latex" id="org1362b78">
 \begin{equation}
 d u = d q + Pd v \equiv d q - \frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
@@ -651,7 +651,7 @@ and the energy per unit time leaking from above is \(L(m+dm)\).</li>
 <p>
 Putting all these together we have, at a given mass location m
 </p>
-<div class="latex" id="org3f418f2">
+<div class="latex" id="org095ea34">
 \begin{equation}
 dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
 \end{equation}
@@ -660,7 +660,7 @@ dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt 
 <p>
 Thus, substituting in the local energy conservation we obtain:
 </p>
-<div class="latex" id="org591e961">
+<div class="latex" id="org09c2de5">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc}(m) -\varepsilon_{\nu}(m) - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} \ \ .
 \end{equation}
@@ -669,7 +669,7 @@ Thus, substituting in the local energy conservation we obtain:
 <p>
 Often the last two terms are combined together to define:
 </p>
-<div class="latex" id="org7bf2422">
+<div class="latex" id="orga8dca9d">
 \begin{equation}
 \varepsilon_\mathrm{grav} = - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} = -T\frac{ds}{dt} \ \ .
 \end{equation}
@@ -688,7 +688,7 @@ more to do with the internal energy of the gas. With this definition,
 the next equation of stellar structure becomes
 </p>
 
-<div class="latex" id="orgc6df2a9">
+<div class="latex" id="org985119d">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
@@ -697,38 +697,45 @@ the next equation of stellar structure becomes
 
 <p>
 <b>N.B.:</b> In regions where no energy is produced (\(\varepsilon_\mathrm{nuc} = 0\)), there are no
-neutrino losses (\(\varepsilon_{\nu}=0\)) and in thermal equilibrium (\(\varepsilon_{grav} =
+neutrino losses (\(\varepsilon_{\nu}=0\)) and in thermal equilibrium (\(\varepsilon_\mathrm{grav} =
 T\partial s/\partial t = 0\)), the luminosity is constant as one moves inward or
 outward in mass coordinate: \(dL/dm = 0 \Rightarrow L = constant\).
 </p>
 
+<ul class="org-ul">
+<li><b>Q</b>: can you think of a region of the Sun with constant \(L(m)\)?</li>
+</ul>
+
+
 <p>
 <b>N.B.:</b> Once again, we found another equation but it comes with new
-unknowns. &epsilon;<sub>grav</sub> is fortunately only dependent on the thermodynamics of
-the gas, so with the EOS we can calculate that (the specific entropy
-is yet a function of &rho; and T). The other two terms instead are input
-physics for the star. We will <a href="https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf">later</a> unpack more &epsilon;<sub>\mathrm</sub>{nuc} by discussing
-nuclear energy generation &#x2013; but ultimately it will depend on cross
-sections for nuclear interactions which in stellar physics are taken
-as known input physics (again coming often from military research).
-Similarly, &epsilon;<sub>&nu;</sub> depends on neutrino physics and contains many neutrino
-loss terms. We will discuss also these a bit more later on, but
-effectively in stellar physics &epsilon;<sub>&nu;</sub> is also a quantity that we assume
-to know as a function of T and &rho;, borrowing the work of neutrino
-physicists.
+unknowns. \(\varepsilon_\mathrm{grav}\) is fortunately only dependent on the thermodynamics
+of the gas, so with the EOS we can calculate that (the specific
+entropy is also a function of \(\rho\) and \(T\)). The other two terms
+instead are input physics for the star. We will <a href="https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf">later</a> unpack more
+\(\varepsilon_\mathrm{nuc}\) by discussing nuclear energy generation &#x2013; but
+ultimately it will depend on cross sections for nuclear interactions
+which in stellar physics are taken as known input physics (again
+coming often from military research). Similarly, \(\varepsilon_{\nu}\) depends on
+neutrino physics and contains many neutrino loss terms. We will
+discuss also these a bit more later on, but effectively in stellar
+physics \(\varepsilon_{\nu}\) is also a quantity that we assume to know as a function
+of \(T\) and \(\rho\), borrowing the work of neutrino and particle physicists.
 </p>
 
 <p>
-So, in total at this point, we have &kappa;, &epsilon;<sub>&nu;</sub>, &epsilon;<sub>\mathrm</sub>{nuc} assumed to
-be known input physics, and we have an equation for the local
-conservation of energy, and the energy transport in the case of
-diffusion (mediated by photons or particles, i.e. conduction).
+So, in total at this point, we have \(\kappa\), \(\varepsilon_{\nu}\),
+\(\varepsilon_\mathrm{nuc}\) assumed to be known input physics, and we have an
+equation for the local conservation of energy, and the energy
+transport in the case of diffusion (mediated by photons or particles,
+i.e. conduction).
 </p>
 
 <p>
 We still need an equation for the convective energy transport, and
-while unpacking &epsilon;<sub>\mathrm</sub>{nuc} we will write a set of equations for the chemical
-evolution due to nuclear burning, but we are getting close!
+while unpacking \(\varepsilon_\mathrm{nuc}\) we will write a set of equations for
+the chemical evolution due to nuclear burning, but we are getting
+close!
 </p>
 </div>
 </div>
@@ -746,35 +753,34 @@ Consider an optically thick, hot, and stratified gas: this could be
 (some layers of) a star, or a sufficiently dense accretion or
 decretion flow to/from a compact object. Because of the assumption of
 optical thickness, we can assume that the layer is in LTE and the
-radiation field is well approximated by a black body, thus we know
-that the radiation pressure is P<sub>rad</sub> = aT<sup>4</sup>/3. If the gas is
-sufficiently hot, this is the only pressure term we need to consider
-(P<sub>rad</sub> &Gt; P<sub>gas</sub>).
+radiation field is well approximated by a black body. If the gas is
+sufficiently hot, radiation pressure is the dominant term
+(\(P_\mathrm{rad} \gg P_\mathrm{gas}\)).
 </p>
 <ol class="org-ol">
-<li>Write dP<sub>rad</sub>/dr as a function of L, &kappa;, and &rho; and r expressing dT/dr
-assuming energy is transported throughout our layer of gas by
-radiative diffusion.</li>
+<li>Write \(dP_\mathrm{rad}/dr\) as a function of \(L\), \(\kappa\), and \(\rho\) and
+\(r\) expressing \(dT/dr\) assuming energy is transported throughout
+our layer of gas by radiative diffusion.</li>
 <li>Impose hydrostatic equilibrium for this gas, and derive the
-functional form for the luminosity (call it L<sub>Edd</sub>) required for
-radiation pressure in an optically thick gas to balance out
-gravity.</li>
+functional form for the luminosity (call it \(L_\mathrm{Edd}\))
+required for radiation pressure in an optically thick gas to
+balance out gravity.</li>
 </ol>
 
 <p>
 The expression that you found was first derived by <a href="https://en.wikipedia.org/wiki/Arthur_Eddington">Arthur Eddington</a>,
-assuming that &kappa; &equiv; &kappa;<sub>es</sub> = 0.2(1+X) g cm<sup>-2</sup>. In this derivation you did
-not need to assume anything for &kappa;: the expression you derived is
+assuming that \(\kappa \equiv \kappa_{es} = 0.2(1+X)\) g cm<sup>-2</sup>. In this derivation you did
+not need to assume anything for \(\kappa\): the expression you derived is
 sometimes referred to as "modified Eddington Luminosity". Because of
-its dependence on &kappa;, which we will see can vary throughout the star,
-it can occasionally occur that L<sub>Edd</sub> &lt;L: in this case radiative energy
-transport and hydrostatic equilibrium cannot be simultaneously
-satisfied - and this occurs in the envelope of massive stars for
-example. For an (optically thick) accretion flow, this luminosity
-corresponds to the limit when the in-falling material liberates
-gravitational potential in the form of heat to the point that the
-photons produced balance out the gravitational pull that brings in the
-in-falling material in the first place.
+its dependence on \(\kappa\), which we will see can vary throughout the star,
+it can occasionally occur that \(L_\mathrm{Edd} <L\): in this case
+radiative energy transport and hydrostatic equilibrium cannot be
+simultaneously satisfied - and this occurs in the envelope of massive
+stars for example. For an (optically thick) accretion flow, this
+luminosity corresponds to the limit when the in-falling material
+liberates gravitational potential in the form of heat to the point
+that the photons produced balance out the gravitational pull that
+brings in the in-falling material in the first place.
 </p>
 
 <p>
@@ -784,7 +790,6 @@ optically thick environment is necessary.
 </p>
 </div>
 </div>
-
 
 <div id="outline-container-org48f5345" class="outline-3">
 <h3 id="org48f5345"><a href="#org48f5345">Exercise 5.3 in Onno Pols' lecture notes</a></h3>
@@ -797,17 +802,18 @@ equilibrium to derive a scaling relation between the mass and the
 luminosity of a star.
 </p>
 <ol class="org-ol">
-<li>Derive how the central temperature, T<sub>center</sub>, scales with the mass,
-M, radius, R, and luminosity, L, for a star in which the energy
-transport is by radiation. To do this, use the stellar structure
-equation for the temperature gradient in radiative equilibrium
-(<b>hint:</b> use the dT/dr form).</li>
-<li>Assume that r &sim; R and that the temperature is proportional to
-T<sub>center</sub>, L(m) &sim; L and estimating dT/dr ∼ −T<sub>center</sub> /R.</li>
-<li>Derive how T<sub>center</sub> scales with M and R, using the hydrostatic
+<li>Derive how the central temperature, \(T_\mathrm{center}\), scales
+with the total mass \(M\), outer radius \(R\), and luminosity \(L\), for
+a star in which the energy transport is by radiation. To do this,
+use the stellar structure equation for the temperature gradient in
+radiative equilibrium (<b>hint:</b> use the \(dT/dr\) form).</li>
+<li>Assume that \(r \sim R\) and that the temperature is proportional to
+\(T_\mathrm{center}\), \(L(m) \sim L\) and estimating \(dT/dr ∼ −T_{center}
+   /R\).</li>
+<li>Derive how \(T_\mathrm{center}\) scales with \(M\) and \(R\), using the hydrostatic
 equilibrium equation, and assuming that the ideal gas EOS holds.</li>
-<li>Combine the results obtained in 1. and 2., to derive how L scales
-with M and R for a star whose energy transport is radiative.</li>
+<li>Combine the results obtained in 1. and 2., to derive how \(L\) scales
+with \(M\) and \(R\) for a star whose energy transport is radiative throughout.</li>
 </ol>
 
 <p>
@@ -815,7 +821,8 @@ You have arrived at a mass-luminosity relation <i>without assuming
 anything about how the energy is produced</i>, only about how it is
 transported (by radiation). This shows that the luminosity of a star
 is not determined by the rate of energy production in the centre, but
-by how fast it can be transported to the surface!
+by how fast it can be transported to the surface: stars don't shine
+because they burn, conversely they burn because they shine!
 </p>
 </div>
 </div>
