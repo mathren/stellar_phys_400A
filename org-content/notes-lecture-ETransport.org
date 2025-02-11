@@ -22,7 +22,7 @@ Kippenhan & Weigert's book.
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \Leftrightarrow \ \frac{dP}{dm} = - \frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
 #+end_latex
-where we use Eq. \ref{{eq:mass_cont} to use a Lagrangian mass
+where we use Eq. \ref{eq:mass_cont} to use a Lagrangian mass
 coordinate as independent functional variable.
 
 *N.B.:* This is the particular form that momentum conservation takes
@@ -202,8 +202,8 @@ the dominant energy transport is radiative diffusion only:
 \frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa_\mathrm{rad} F_\mathrm{rad} \propto \kappa_\mathrm{rad} F_\mathrm{rad}.\ \ .
 \end{equation}
 #+end_latex
-/In a radiative region the temperature is proportional to the opacity
-$\kappa_\mathrm{rad}$ times the radiative energy flux!/
+*In a radiative region the temperature is proportional to the opacity
+$\kappa_\mathrm{rad}$ times the radiative energy flux!*
 
 We can further rewrite the flux $F_\mathrm{rad} = L_\mathrm{rad}/(4\pi r^{2})$. This introduces
 the /local/ luminosity $L_\mathrm{rad}\equiv L_\mathrm{rad}(r)$ which is the rate (that is
@@ -270,7 +270,7 @@ there is some.
 
 The other thing to consider is the mean free path \ell, but since the
 collisional (Coulomb-scattering) $\sigma \leq 10^{-18} cm^{2}$, the mean free path
-$\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma $}. Thus, since $v\le c$ and
+$\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma} $. Thus, since $v\le c$ and
 $\ell\ll\ell_{\gamma}$ for most stars energy conduction by particle (electron)
 collisions is sub-dominant compared to radiative energy.
 
@@ -321,13 +321,14 @@ is the total energy flux.
 
 From Eq. \ref{eq:kappas} we can infer an interpretation of these
 radiative and conductive opacities, which is corroborating the
-definition of \kappa: the equation corresponds to the combination of two
-resistances in parallel! \kappa_{i} is the "resistance" to the flow of energy
-carried by radiation (i=rad) or particle collisions (i=cond). The
-lowest resistance allows for the largest energy flux, and the star
-will use that mechanism as the dominant energy transport.
+definition of $\kappa$: the equation corresponds to the combination of two
+resistances in parallel! $\kappa_{i}$ is the "resistance" to the flow of
+energy carried by radiation ($i=\mathrm{rad}$) or particle collisions
+($i=\mathrm{cond}$). The lowest resistance allows for the largest
+energy flux, and the star will use that mechanism as the dominant
+energy transport.
 
-Moreover, since we have /defined/ \kappa_\mathrm{cond} so that the
+Moreover, since we have /defined/ $\kappa_\mathrm{cond}$ so that the
 conductive flux has the same form as the radiative flux, we can (using
 Eq. \ref{eq:kappas} and $L(r) = L_\mathrm{rad} + L_\mathrm{cond}$)
 continue the analogy and write down:
@@ -339,29 +340,30 @@ continue the analogy and write down:
 #+end_latex
 
 which is the radiative+conductive energy transport equation that
-related T, \rho, and the new variable L we introduced and depends on the
-opacity (radiative and conductive combined in parallel) \kappa, which we
-treat as a parameter dependent on atomic and condensed matter physics
-(\kappa\equiv\kappa(T,\rho)).
+related $T$, $\rho$, and the new variable $L\equiv L(r)\equiv L(m)$ we introduced and
+depends on the opacity (radiative and conductive combined in parallel)
+$\kappa$, which we treat as a parameter dependent on atomic and condensed
+matter physics ($\kappa\equiv\kappa(T,\rho)$).
 
 *N.B.:* For conduction, we have considered the motion of electrons as
-the ions are "frozen in place" since v_{e} \gg v_{ions}. However, this will
-quickly lead to a /local/ charge imbalance! In stars where conduction is
-important (typically at least partially degenerate) there will be a
-small but non-zero electric field created by this charge imbalance
-that slows down the electrons, until their motion is such that there
-is a net transfer of their thermal energy without any net motion of
-electrons!
+the ions are "frozen in place" since $v_{e} \gg v_\mathrm{ions}$.
+However, this will quickly lead to a /local/ charge imbalance! In stars
+where conduction is important (typically at least partially
+degenerate) there will be a small but non-zero electric field created
+by this charge imbalance that slows down the electrons, until their
+motion is such that there is a net transfer of their thermal energy
+without any net motion of electrons!
 
 ** Local energy conservation
 
-Let's finally write an equation for the /local/ luminosity in a star L
+Let's finally write an equation for the /local/ luminosity in a star $L$
 that we have introduced above. Since the luminosity is just the local
 "power", it makes sense to look into the /local/ energy conservation to
 derive such equation. For a unit mass, the "first law of
-thermodynamics" states that the change d u in internal energy (the
-specific internal energy) is equal to the heat added/extracted d q plus
-the work done on the unit mass Pd v with v=1/\rho the specific volume:
+thermodynamics" states that the change $d u$ in internal energy (the
+specific internal energy) is equal to the heat added/extracted $d q$
+plus the work done on the unit mass $Pd v$ with $v=1/\rho$ the specific
+volume:
 
 #+begin_latex
 \begin{equation}
@@ -372,8 +374,8 @@ where we express things as a function of the density \rho which already
 appears in the other equations.
 
 :Question:
-- *Q*: if we compress the gas (d\rho > 0 because \rho increases), without
-  adding/extracting heat (d q = 0) what happens to the internal
+- *Q*: if we compress the gas ($d\rho > 0$ because $\rho$ increases), without
+  adding/extracting heat ($d q = 0$) what happens to the internal
   energy?
 :end:
 
