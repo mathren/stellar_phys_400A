@@ -269,8 +269,7 @@ this means the electrons are going to dominate conduction whenever
 there is some.
 
 The other thing to consider is the mean free path \ell, but since the
-collisional (Coulomb-scattering) $\sigma \leq 10^{-18} cm^{2}$, the mean free path
-$\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma} $. Thus, since $v\le c$ and
+collisional (Coulomb-scattering) $\sigma \leq 10^{-18} cm^{2}$, the mean free path $\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}$ . Thus, since $v\le c$ and
 $\ell\ll\ell_{\gamma}$ for most stars energy conduction by particle (electron)
 collisions is sub-dominant compared to radiative energy.
 
@@ -417,16 +416,16 @@ Often the last two terms are combined together to define:
 \varepsilon_\mathrm{grav} = - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} = -T\frac{ds}{dt} \ \ .
 \end{equation}
 #+end_latex
-which being a term dependent on dt it is usually small for a star in a
-static (\partial_{t} \equiv 0) configuration. However, a star may occasionally
-be out of thermal equilibrium (du/dt \neq 0) and/or expanding or
-contracting (d\rho/dt\neq0). This will change the internal state of the gas,
-and that is why it is often convenient to write things in terms of the
-(specific) entropy s. Moreover, since most often this occurs because
-of contraction/expansion of a star, historically this has been called
-\varepsilon "grav", although it really has more to do with the internal energy
-of the gas. With this definition, the next equation of stellar
-structure becomes
+which being a term dependent on $dt$ it is usually small for a star in
+a static ($\partial_{t} \simeq 0$) configuration. However, a star may
+occasionally be out of thermal equilibrium ($du/dt \neq 0$) and/or
+expanding or contracting ($d\rho/dt\neq0$). This will change the internal
+state of the gas, and that is why it is often convenient to write
+things in terms of the (specific) entropy $s$. Moreover, since most
+often this occurs because of contraction/expansion of a star,
+historically this has been called $\varepsilon$ "grav", although it really has
+more to do with the internal energy of the gas. With this definition,
+the next equation of stellar structure becomes
 
 #+begin_latex
 \begin{equation}
@@ -434,10 +433,10 @@ structure becomes
 \end{equation}
 #+end_latex
 
-*N.B.:* In regions where no energy is produced (\varepsilon_\mathrm{nuc} = 0), there are no
-neutrino losses (\varepsilon_{\nu}=0) and in thermal equilibrium (\varepsilon_{grav} =
-T\partial s/\partial t = 0), the luminosity is constant as one moves inward or
-outward in mass coordinate: dL/dm = 0 \Rightarrow L = constant.
+*N.B.:* In regions where no energy is produced ($\varepsilon_\mathrm{nuc} = 0$), there are no
+neutrino losses ($\varepsilon_{\nu}=0$) and in thermal equilibrium ($\varepsilon_{grav} =
+T\partial s/\partial t = 0$), the luminosity is constant as one moves inward or
+outward in mass coordinate: $dL/dm = 0 \Rightarrow L = constant$.
 
 *N.B.:* Once again, we found another equation but it comes with new
 unknowns. \varepsilon_{grav} is fortunately only dependent on the thermodynamics of
