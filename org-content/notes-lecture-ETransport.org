@@ -168,12 +168,12 @@ down an EOS, it is also big enough to introduce a non-negligible flux
 of energy in the stars!
 
 If the "something" that we are considering in our diffusion equation
-is energy, then in Eq. \ref{eq:diff} J\rightarrow F_{rad} is a energy flux of
-radiative energy, and n\rightarrow u is the energy density. Moreover, in the
-diffusion coefficient D the mean velocity of photons is v\rightarrow c, and we
-have already written \ell_{\gamma} = 1/\kappa_{rad}\rho as a function of \rho.
+is energy, then in Eq. \ref{eq:diff} $J\rightarrow F_\mathrm{rad}$ is a energy flux of
+radiative energy, and $n\rightarrow u$ is the energy density. Moreover, in the
+diffusion coefficient $D$ the mean velocity of photons is $v\rightarrow c$, and we
+have already written $\ell_{\gamma} = 1/\kappa_\mathrm{rad}\rho$ as a function of $\rho$.
 
-*N.B.:* today we will introduce different kinds of opacity \kappa, \kappa_{rad} is
+*N.B.:* today we will introduce different kinds of opacity $\kappa$, $\kappa_\mathrm{rad}$ is
 the one impeding the diffusion of photons.
 
 Thus, the radiative diffusion equation is
@@ -184,7 +184,7 @@ F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \
 #+end_latex
 where we use the spherical symmetry of the problem to explicit the
 gradient and turn it into a total derivative. The radiation energy
-density is u=aT^{4}. We can then explicit these into our equation
+density is $u=aT^{4}$. We can then explicit these into our equation
 obtaining:
 
 #+begin_latex
@@ -203,13 +203,13 @@ the dominant energy transport is radiative diffusion only:
 \end{equation}
 #+end_latex
 /In a radiative region the temperature is proportional to the opacity
-\kappa_{rad} times the radiative energy flux!/
+$\kappa_\mathrm{rad}$ times the radiative energy flux!/
 
-We can further rewrite the flux F_{rad} = L_{rad}/(4\pi r^{2}). This introduces
-the /local/ luminosity L_{rad}\equiv L_{rad}(r) which is the rate (that is per
-unit time) at which radiation transports energy through a surface of
-radius r within the star (or in other words, the "power" that is in
-the photon field at the location r):
+We can further rewrite the flux $F_\mathrm{rad} = L_\mathrm{rad}/(4\pi r^{2})$. This introduces
+the /local/ luminosity $L_\mathrm{rad}\equiv L_\mathrm{rad}(r)$ which is the rate (that is
+per unit time) at which radiation transports energy through a surface
+of radius $r$ within the star (or in other words, the "power" that is
+in the photon field at the location r):
 
 #+begin_latex
 \begin{equation}
@@ -219,29 +219,32 @@ the photon field at the location r):
 
 This is, for the case of radiative energy transport only, the extra
 differential equation relating T and \rho, but unfortunately it also
-brings in a new variable, the local radiative luminosity L_{rad}.
+brings in a new variable, the local radiative luminosity $L_\mathrm{rad}$.
 
 *N.B.:* If radiative energy transport is the *only* energy transport
-mechanism at radius r, then L_{rad}(r)\equiv L(r) where L(r) is the /total/
-luminosity. This is in general not true because of the contribution
-by neutrinos and convection: L(r) = L_{rad} + L_{\nu} +L_{conv}.
+mechanism at radius $r$ (that is no convection, no neutrino emission
+and no electron conduction), then $L_\mathrm{rad}(r)\equiv L(r)$ where
+$L(r)$ is the /total/ luminosity at that location in the star. This is
+in general not true because of the contribution by neutrinos and
+convection: $L(r) = L_\mathrm{rad} (r)+ L_\mathrm{cond} (r) + L_{\nu}
+(r)+L_\mathrm{conv}(r)$.
 
-*N.B.:* Yes, we are introducing yet two other variables, L_{rad} and \kappa_{rad}
-here. We will have to write an equation for the former, but
-fortunately for us \kappa_{rad} is determined by atomic physics, as [[file:notes-lecture-kappa.org][we will
-see in the next lecture]]. While this is an active topic of research
-(including classified research for military purposes...), for stellar
-physics application we have lookup tables for
-\kappa_{rad}\equiv\kappa_{rad}(T,\rho), and thus we will not count it as a new
-variable after discussing the physics it represents.
+*N.B.:* Yes, we are introducing yet two other variables, $L_\mathrm{rad}$ and
+$\kappa_\mathrm{rad}$ here. We will have to write an equation for the former, but
+fortunately for us $\kappa_\mathrm{rad}$ is determined by atomic and particle
+physics, as [[file:notes-lecture-kappa.org][we will see in the next lecture]]. While this is an active
+topic of research (including classified research for military
+purposes...), for stellar physics application we have lookup tables
+for $\kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,\rho)$, and thus we will not count it as a
+new variable after discussing the physics it represents.
 
 Because of the assumption underpinning the diffusion approximation,
-this is /not/ the right equation whenever \ell_{}_{\gamma} is not negligible
+this is /not/ the right equation whenever $\ell_{\gamma}$ is not negligible
 compared to the scale over which one wants to consider the gradient:
 in the stellar atmosphere we need a more detailed approach requiring
 to treat the radiative transfer.
 
-Now, before looking at the equation for L_{rad}, it is useful to consider
+Now, before looking at the equation for $L_\mathrm{rad}$, it is useful to consider
 next the case where energy is carried not by photons, but by the local
 motion of particles, that is *conduction*.
 
@@ -256,30 +259,31 @@ metallic energy bands.
 
 Conduction, although always present, is important only in certain kind
 of stars. To demonstrate this, we can consider the diffusion
-coefficient D\simeq v\ell/3 and compare it to the radiative diffusion
-coefficient D_{rad} = c\ell_{\gamma}/3 =c/(3\kappa\rho). In the diffusion
-coefficient D, the velocity that appears is the thermal velocity of
-the particles (v^{2}\simeq 2k_{B}T/m for a non-relativistic gas): at a given
-temperature T, the least massive particles are faster, and will
-contribute more to the conduction of thermal energy. In a star, this
-means the electrons are going to dominate conduction whenever there is
-some.
+coefficient $D\simeq v\ell/3$ and compare it to the radiative diffusion
+coefficient $D_\mathrm{rad} = c\ell_{\gamma}/3 =c/(3\kappa\rho)$. In the diffusion
+coefficient $D$, the velocity that appears is the thermal velocity of
+the particles ($v^{2}\simeq 2k_{B}T/m$ for a non-relativistic gas): at a
+given temperature $T$, the least massive particles are faster, and
+will contribute more to the conduction of thermal energy. In a star,
+this means the electrons are going to dominate conduction whenever
+there is some.
 
 The other thing to consider is the mean free path \ell, but since the
-collisional (Coulomb-scattering) \sigma \leq 10^{-18} cm^{2}, the mean free path \ell =
-1/(n_{e}\sigma) \ll \ell_{\gamma }. Thus, since v\le c and \ell\ll\ell_{\gamma}
-for most stars energy conduction by particle (electron) collisions is
-sub-dominant compared to radiative energy.
+collisional (Coulomb-scattering) $\sigma \leq 10^{-18} cm^{2}$, the mean free path
+$\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma $}. Thus, since $v\le c$ and
+$\ell\ll\ell_{\gamma}$ for most stars energy conduction by particle (electron)
+collisions is sub-dominant compared to radiative energy.
 
 Things are different though for degenerate electron gas (so inside
 white dwarfs and neutron stars, but also evolved stellar cores that
 are dense enough for degeneracy to occur). In the case of degeneracy,
-the thermal velocities increase (up to v \simeq c for an degenerate gas of
-ultra-relativistic electrons!), and the mean-free path for
+the thermal velocities increase (up to $v \simeq c$ for an degenerate gas
+of ultra-relativistic electrons!), and the mean-free path for
 electron-electron scattering also increases, because for such a
 scattering to be possible the final state must be available for an
 electron to populate it, but in the case of (partial) degeneracy
-(most) states in the "Fermi sea", with \varepsilon\le \varepsilon_{Fermi} are *not* available.
+(most) states in the "Fermi sea", with $\varepsilon\le \varepsilon_\mathrm{Fermi}$ are *not*
+available.
 
 In general though, in (partially) degenerate layers of the star we
 cannot neglect conduction, and it can dominate over radiative
@@ -290,12 +294,13 @@ above and write an equation for the conductive flux
 F_\mathrm{cond} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{cond}\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
 #+end_latex
-where we are implicitly defining a "conductive opacity" \kappa_{cond} and
-assuming that the energy density of the gas is proportional to the
-temperature T (not a big assumption, since we know we are very close
-to LTE, so we can define a local T). With this implicit definition of
-\kappa_{cond} then we can just sum the contribution to the energy flux from
-radiative diffusion and conduction: F = F_{rad} + F_{cond} and
+where we are implicitly defining a "conductive opacity"
+$\kappa_\mathrm{cond}$ and assuming that the energy density of the gas is
+proportional to the temperature $T$ (not a big assumption, since we
+know we are very close to LTE, so we can define a local $T$). With
+this implicit definition of $\kappa_\mathrm{cond}$ then we can just sum the
+contribution to the energy flux from radiative diffusion and
+conduction: $F = F_\mathrm{rad} + F_\mathrm{cond}$ and
 
 #+begin_latex
 \begin{equation}
@@ -311,8 +316,8 @@ where now
 
 In the absence of convection (which we will treat [[https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf][later]]) and neutrinos
 (which leave the star instantaneously without further interaction,
-unless it's a neutron star), this F_{rad} + F_{conv} is the total energy
-flux.
+unless it's a neutron star), this $F_\mathrm{rad} + F_\mathrm{conv}$
+is the total energy flux.
 
 From Eq. \ref{eq:kappas} we can infer an interpretation of these
 radiative and conductive opacities, which is corroborating the
@@ -322,10 +327,10 @@ carried by radiation (i=rad) or particle collisions (i=cond). The
 lowest resistance allows for the largest energy flux, and the star
 will use that mechanism as the dominant energy transport.
 
-Moreover, since we have /defined/ \kappa_{cond} so that the conductive flux
-has the same form as the radiative flux, we can (using Eq.
-\ref{eq:kappas} and L(r) = L_{rad} + L_{cond}) continue the analogy and
-write down:
+Moreover, since we have /defined/ \kappa_\mathrm{cond} so that the
+conductive flux has the same form as the radiative flux, we can (using
+Eq. \ref{eq:kappas} and $L(r) = L_\mathrm{rad} + L_\mathrm{cond}$)
+continue the analogy and write down:
 
 #+begin_latex
 \begin{equation}

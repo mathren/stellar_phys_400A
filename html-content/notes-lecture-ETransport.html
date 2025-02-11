@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-11 Tue 09:38 -->
+<!-- 2025-02-11 Tue 09:59 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Diffusive energy transport</title>
@@ -124,7 +124,7 @@ Kippenhan &amp; Weigert's book.
 <div id="outline-container-orgda0b8a5" class="outline-4">
 <h4 id="orgda0b8a5"><a href="#orgda0b8a5">Mass conservation:</a></h4>
 <div class="outline-text-4" id="text-orgda0b8a5">
-<div class="latex" id="org99e6eb1">
+<div class="latex" id="orga15eccf">
 \begin{equation}\label{eq:mass_cont}
 \frac{dm}{dr} = 4\pi \rho r^{2} \ \ .
 \end{equation}
@@ -136,7 +136,7 @@ Kippenhan &amp; Weigert's book.
 <div id="outline-container-orgbfadb02" class="outline-4">
 <h4 id="orgbfadb02"><a href="#orgbfadb02">Hydrostatic equilibrium:</a></h4>
 <div class="outline-text-4" id="text-orgbfadb02">
-<div class="latex" id="org65f50f7">
+<div class="latex" id="orge53abb4">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \Leftrightarrow \ \frac{dP}{dm} = - \frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -158,7 +158,7 @@ on timescales comparable to the dynamical timescale
 <div id="outline-container-org17b1656" class="outline-4">
 <h4 id="org17b1656"><a href="#org17b1656">Equation of state:</a></h4>
 <div class="outline-text-4" id="text-org17b1656">
-<div class="latex" id="org14a253b">
+<div class="latex" id="org79bfb07">
 \begin{equation}\label{eq:EOS}
 P \equiv P(\rho, \mu, T) = P_\mathrm{rad} + P_\mathrm{gas} = \frac{1}{3}aT^{4} + \frac{\rho}{\mu m_{u}}k_{B}T + P_\mathrm{QM}\ \ .
 \end{equation}
@@ -246,7 +246,7 @@ In this approximation, the net flux of this "something" is related to
 the density of "something" by Fick's law:
 </p>
 
-<div class="latex" id="org02de95c">
+<div class="latex" id="orgb4182a5">
 \begin{equation}\label{eq:diff}
 \mathbf{J} = - D\nabla n \ \ ,
 \end{equation}
@@ -284,7 +284,7 @@ these particles have a mean free path \(\ell\) and an average velocity \(v\),
 then the number that crosses a given coordinate \(z\) with a positive \(\delta
 z\) as a function of time is:
 </p>
-<div class="latex" id="org01c2137">
+<div class="latex" id="orgb9b7eb4">
 \begin{equation}
 \frac{dN}{dt}(z) =\frac{1}{2} n \frac{1}{3}v \ \ ,
 \end{equation}
@@ -305,7 +305,7 @@ while those moving with the negative \(\delta z\)  come from \(n(z+\ell)\), so t
 flux across \(z\) is
 </p>
 
-<div class="latex" id="orge5187a1">
+<div class="latex" id="org5d2016d">
 \begin{equation}
 J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)\simeq\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ ,
 \end{equation}
@@ -346,21 +346,21 @@ of energy in the stars!
 
 <p>
 If the "something" that we are considering in our diffusion equation
-is energy, then in Eq. \ref{eq:diff} J&rarr; F<sub>rad</sub> is a energy flux of
-radiative energy, and n&rarr; u is the energy density. Moreover, in the
-diffusion coefficient D the mean velocity of photons is v&rarr; c, and we
-have already written &ell;<sub>&gamma;</sub> = 1/&kappa;<sub>rad</sub>&rho; as a function of &rho;.
+is energy, then in Eq. \ref{eq:diff} \(J\rightarrow F_\mathrm{rad}\) is a energy flux of
+radiative energy, and \(n\rightarrow u\) is the energy density. Moreover, in the
+diffusion coefficient \(D\) the mean velocity of photons is \(v\rightarrow c\), and we
+have already written \(\ell_{\gamma} = 1/\kappa_\mathrm{rad}\rho\) as a function of \(\rho\).
 </p>
 
 <p>
-<b>N.B.:</b> today we will introduce different kinds of opacity &kappa;, &kappa;<sub>rad</sub> is
+<b>N.B.:</b> today we will introduce different kinds of opacity \(\kappa\), \(\kappa_\mathrm{rad}\) is
 the one impeding the diffusion of photons.
 </p>
 
 <p>
 Thus, the radiative diffusion equation is
 </p>
-<div class="latex" id="org23ee145">
+<div class="latex" id="orge9c5fa5">
 \begin{equation}
 F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \ ,
 \end{equation}
@@ -369,11 +369,11 @@ F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \
 <p>
 where we use the spherical symmetry of the problem to explicit the
 gradient and turn it into a total derivative. The radiation energy
-density is u=aT<sup>4</sup>. We can then explicit these into our equation
+density is \(u=aT^{4}\). We can then explicit these into our equation
 obtaining:
 </p>
 
-<div class="latex" id="orgdc465eb">
+<div class="latex" id="org25ce5a6">
 \begin{equation}
 F_\mathrm{rad} = -\frac{4ac}{3c\rho T^{3}} \frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
 \end{equation}
@@ -386,7 +386,7 @@ This is a <i>local</i> quantity and it is valid in a region of the star where
 the dominant energy transport is radiative diffusion only:
 </p>
 
-<div class="latex" id="orgfdf15d2">
+<div class="latex" id="org64d76a4">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa_\mathrm{rad} F_\mathrm{rad} \propto \kappa_\mathrm{rad} F_\mathrm{rad}.\ \ .
 \end{equation}
@@ -394,18 +394,18 @@ the dominant energy transport is radiative diffusion only:
 </div>
 <p>
 <i>In a radiative region the temperature is proportional to the opacity
-&kappa;<sub>rad</sub> times the radiative energy flux!</i>
+\(\kappa_\mathrm{rad}\) times the radiative energy flux!</i>
 </p>
 
 <p>
-We can further rewrite the flux F<sub>rad</sub> = L<sub>rad</sub>/(4&pi; r<sup>2</sup>). This introduces
-the <i>local</i> luminosity L<sub>rad</sub>&equiv; L<sub>rad</sub>(r) which is the rate (that is per
-unit time) at which radiation transports energy through a surface of
-radius r within the star (or in other words, the "power" that is in
-the photon field at the location r):
+We can further rewrite the flux \(F_\mathrm{rad} = L_\mathrm{rad}/(4\pi r^{2})\). This introduces
+the <i>local</i> luminosity \(L_\mathrm{rad}\equiv L_\mathrm{rad}(r)\) which is the rate (that is
+per unit time) at which radiation transports energy through a surface
+of radius \(r\) within the star (or in other words, the "power" that is
+in the photon field at the location r):
 </p>
 
-<div class="latex" id="orgecd8bcb">
+<div class="latex" id="org6e60981">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa_\mathrm{rad}}{r^{2}}\frac{L_\mathrm{rad}}{T^{3}} \ \ .
 \end{equation}
@@ -415,37 +415,40 @@ the photon field at the location r):
 <p>
 This is, for the case of radiative energy transport only, the extra
 differential equation relating T and &rho;, but unfortunately it also
-brings in a new variable, the local radiative luminosity L<sub>rad</sub>.
+brings in a new variable, the local radiative luminosity \(L_\mathrm{rad}\).
 </p>
 
 <p>
 <b>N.B.:</b> If radiative energy transport is the <b>only</b> energy transport
-mechanism at radius r, then L<sub>rad</sub>(r)&equiv; L(r) where L(r) is the <i>total</i>
-luminosity. This is in general not true because of the contribution
-by neutrinos and convection: L(r) = L<sub>rad</sub> + L<sub>&nu;</sub> +L<sub>conv</sub>.
+mechanism at radius \(r\) (that is no convection, no neutrino emission
+and no electron conduction), then \(L_\mathrm{rad}(r)\equiv L(r)\) where
+\(L(r)\) is the <i>total</i> luminosity at that location in the star. This is
+in general not true because of the contribution by neutrinos and
+convection: \(L(r) = L_\mathrm{rad} (r)+ L_\mathrm{cond} (r) + L_{\nu}
+(r)+L_\mathrm{conv}(r)\).
 </p>
 
 <p>
-<b>N.B.:</b> Yes, we are introducing yet two other variables, L<sub>rad</sub> and &kappa;<sub>rad</sub>
-here. We will have to write an equation for the former, but
-fortunately for us &kappa;<sub>rad</sub> is determined by atomic physics, as <a href="notes-lecture-kappa.html">we will
-see in the next lecture</a>. While this is an active topic of research
-(including classified research for military purposes&#x2026;), for stellar
-physics application we have lookup tables for
-&kappa;<sub>rad</sub>&equiv;&kappa;<sub>rad</sub>(T,&rho;), and thus we will not count it as a new
-variable after discussing the physics it represents.
+<b>N.B.:</b> Yes, we are introducing yet two other variables, \(L_\mathrm{rad}\) and
+\(\kappa_\mathrm{rad}\) here. We will have to write an equation for the former, but
+fortunately for us \(\kappa_\mathrm{rad}\) is determined by atomic and particle
+physics, as <a href="notes-lecture-kappa.html">we will see in the next lecture</a>. While this is an active
+topic of research (including classified research for military
+purposes&#x2026;), for stellar physics application we have lookup tables
+for \(\kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,\rho)\), and thus we will not count it as a
+new variable after discussing the physics it represents.
 </p>
 
 <p>
 Because of the assumption underpinning the diffusion approximation,
-this is <i>not</i> the right equation whenever &ell;<sub>nil</sub><sub>&gamma;</sub> is not negligible
+this is <i>not</i> the right equation whenever \(\ell_{\gamma}\) is not negligible
 compared to the scale over which one wants to consider the gradient:
 in the stellar atmosphere we need a more detailed approach requiring
 to treat the radiative transfer.
 </p>
 
 <p>
-Now, before looking at the equation for L<sub>rad</sub>, it is useful to consider
+Now, before looking at the equation for \(L_\mathrm{rad}\), it is useful to consider
 next the case where energy is carried not by photons, but by the local
 motion of particles, that is <b>conduction</b>.
 </p>
@@ -468,34 +471,35 @@ metallic energy bands.
 <p>
 Conduction, although always present, is important only in certain kind
 of stars. To demonstrate this, we can consider the diffusion
-coefficient D&cong; v&ell;/3 and compare it to the radiative diffusion
-coefficient D<sub>rad</sub> = c&ell;<sub>&gamma;</sub>/3 =c/(3&kappa;&rho;). In the diffusion
-coefficient D, the velocity that appears is the thermal velocity of
-the particles (v<sup>2</sup>&cong; 2k<sub>B</sub>T/m for a non-relativistic gas): at a given
-temperature T, the least massive particles are faster, and will
-contribute more to the conduction of thermal energy. In a star, this
-means the electrons are going to dominate conduction whenever there is
-some.
+coefficient \(D\simeq v\ell/3\) and compare it to the radiative diffusion
+coefficient \(D_\mathrm{rad} = c\ell_{\gamma}/3 =c/(3\kappa\rho)\). In the diffusion
+coefficient \(D\), the velocity that appears is the thermal velocity of
+the particles (\(v^{2}\simeq 2k_{B}T/m\) for a non-relativistic gas): at a
+given temperature \(T\), the least massive particles are faster, and
+will contribute more to the conduction of thermal energy. In a star,
+this means the electrons are going to dominate conduction whenever
+there is some.
 </p>
 
 <p>
 The other thing to consider is the mean free path &ell;, but since the
-collisional (Coulomb-scattering) &sigma; &le; 10<sup>-18</sup> cm<sup>2</sup>, the mean free path &ell; =
-1/(n<sub>e</sub>&sigma;) &Lt; &ell;<sub>&gamma; </sub>. Thus, since v&le; c and &ell;&Lt;&ell;<sub>&gamma;</sub>
-for most stars energy conduction by particle (electron) collisions is
-sub-dominant compared to radiative energy.
+collisional (Coulomb-scattering) \(\sigma \leq 10^{-18} cm^{2}\), the mean free path
+$&ell; = 1/(n<sub>e</sub>&sigma;) &Lt; &ell;<sub>&gamma; $</sub>. Thus, since \(v\le c\) and
+\(\ell\ll\ell_{\gamma}\) for most stars energy conduction by particle (electron)
+collisions is sub-dominant compared to radiative energy.
 </p>
 
 <p>
 Things are different though for degenerate electron gas (so inside
 white dwarfs and neutron stars, but also evolved stellar cores that
 are dense enough for degeneracy to occur). In the case of degeneracy,
-the thermal velocities increase (up to v &cong; c for an degenerate gas of
-ultra-relativistic electrons!), and the mean-free path for
+the thermal velocities increase (up to \(v \simeq c\) for an degenerate gas
+of ultra-relativistic electrons!), and the mean-free path for
 electron-electron scattering also increases, because for such a
 scattering to be possible the final state must be available for an
 electron to populate it, but in the case of (partial) degeneracy
-(most) states in the "Fermi sea", with &epsilon;&le; &epsilon;<sub>Fermi</sub> are <b>not</b> available.
+(most) states in the "Fermi sea", with \(\varepsilon\le \varepsilon_\mathrm{Fermi}\) are <b>not</b>
+available.
 </p>
 
 <p>
@@ -504,22 +508,23 @@ cannot neglect conduction, and it can dominate over radiative
 diffusion even! To consider it, we can follow the same reasoning as
 above and write an equation for the conductive flux
 </p>
-<div class="latex" id="org7fd5003">
+<div class="latex" id="org5851b59">
 \begin{equation}
 F_\mathrm{cond} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{cond}\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
 
 </div>
 <p>
-where we are implicitly defining a "conductive opacity" &kappa;<sub>cond</sub> and
-assuming that the energy density of the gas is proportional to the
-temperature T (not a big assumption, since we know we are very close
-to LTE, so we can define a local T). With this implicit definition of
-&kappa;<sub>cond</sub> then we can just sum the contribution to the energy flux from
-radiative diffusion and conduction: F = F<sub>rad</sub> + F<sub>cond</sub> and
+where we are implicitly defining a "conductive opacity"
+\(\kappa_\mathrm{cond}\) and assuming that the energy density of the gas is
+proportional to the temperature \(T\) (not a big assumption, since we
+know we are very close to LTE, so we can define a local \(T\)). With
+this implicit definition of \(\kappa_\mathrm{cond}\) then we can just sum the
+contribution to the energy flux from radiative diffusion and
+conduction: \(F = F_\mathrm{rad} + F_\mathrm{cond}\) and
 </p>
 
-<div class="latex" id="org7e620a0">
+<div class="latex" id="orged4de47">
 \begin{equation}
 F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -528,7 +533,7 @@ F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 <p>
 where now
 </p>
-<div class="latex" id="orgf3de76a">
+<div class="latex" id="org9b181cc">
 \begin{equation}\label{eq:kappas}
 \frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
 \end{equation}
@@ -538,8 +543,8 @@ where now
 <p>
 In the absence of convection (which we will treat <a href="https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf">later</a>) and neutrinos
 (which leave the star instantaneously without further interaction,
-unless it's a neutron star), this F<sub>rad</sub> + F<sub>conv</sub> is the total energy
-flux.
+unless it's a neutron star), this \(F_\mathrm{rad} + F_\mathrm{conv}\)
+is the total energy flux.
 </p>
 
 <p>
@@ -553,13 +558,13 @@ will use that mechanism as the dominant energy transport.
 </p>
 
 <p>
-Moreover, since we have <i>defined</i> &kappa;<sub>cond</sub> so that the conductive flux
-has the same form as the radiative flux, we can (using Eq.
-\ref{eq:kappas} and L(r) = L<sub>rad</sub> + L<sub>cond</sub>) continue the analogy and
-write down:
+Moreover, since we have <i>defined</i> &kappa;<sub>\mathrm</sub>{cond} so that the
+conductive flux has the same form as the radiative flux, we can (using
+Eq. \ref{eq:kappas} and \(L(r) = L_\mathrm{rad} + L_\mathrm{cond}\))
+continue the analogy and write down:
 </p>
 
-<div class="latex" id="org38dc138">
+<div class="latex" id="org22245bc">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa}{r^{2}}\frac{L}{T^{3}} \ \ ,
 \end{equation}
@@ -601,7 +606,7 @@ specific internal energy) is equal to the heat added/extracted d q plus
 the work done on the unit mass Pd v with v=1/&rho; the specific volume:
 </p>
 
-<div class="latex" id="org1ca25eb">
+<div class="latex" id="org27c6f76">
 \begin{equation}
 d u = d q + Pd v \equiv d q - \frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
@@ -645,7 +650,7 @@ per unit time leaking from above is L(m+dm).</li>
 <p>
 Putting all these together we have, at a given mass location m
 </p>
-<div class="latex" id="orgbf77b99">
+<div class="latex" id="orgc47b01d">
 \begin{equation}
 dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
 \end{equation}
@@ -654,7 +659,7 @@ dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt 
 <p>
 Thus, substituting in the local energy conservation we obtain:
 </p>
-<div class="latex" id="orgf6a09da">
+<div class="latex" id="org853dbef">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc}(m) -\varepsilon_{\nu}(m) - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} \ \ .
 \end{equation}
@@ -663,7 +668,7 @@ Thus, substituting in the local energy conservation we obtain:
 <p>
 Often the last two terms are combined together to define:
 </p>
-<div class="latex" id="org70c05a6">
+<div class="latex" id="orgffea5ee">
 \begin{equation}
 \varepsilon_\mathrm{grav} = - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} = -T\frac{ds}{dt} \ \ .
 \end{equation}
@@ -682,7 +687,7 @@ of the gas. With this definition, the next equation of stellar
 structure becomes
 </p>
 
-<div class="latex" id="org6cd04f2">
+<div class="latex" id="org219c8d8">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
