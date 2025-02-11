@@ -381,23 +381,23 @@ appears in the other equations.
 
 The heat term in a star can only be due to:
 - energy generation by an internal source (nuclear fusion!), which can
-  release per unit mass and time energy equal to \varepsilon_{nuc} ([\varepsilon_{nuc}] =[E]/([t][M])).
+  release per unit mass and time energy equal to $\varepsilon_\mathrm{nuc}$ ([$\varepsilon_\mathrm{nuc}$] =[E]/([t][M])).
 - energy loss by some particle escaping, this can be for example
   neutrinos \nu. Neutrinos in a star can come from nuclear reactions and
-  they effectively just reduce \varepsilon_{nuc} \rightarrow \varepsilon_{nuc} -
-  \varepsilon_{\nu, nuc}, or they can come from so-called *cooling processes*, for
-  example e^{-} +\gamma \rightarrow e^{-} + \nu + anti-\nu, which really
-  decrease the energy by extracting internal energy, since as soon as
-  they are produced neutrinos will leave the star with no further
-  interaction (with the exception of neutron stars). The neutrino
-  energy cooling rate per unit mass is indicated by \varepsilon_{\nu} and it has
-  always a *negative* contribution to the heat (it's a loss term for the
-  star)
+  they effectively just reduce $\varepsilon_\mathrm{nuc} \rightarrow \varepsilon_\mathrm{nuc} -
+  \varepsilon_{\nu, \mathrm{nuc}}$, or they can come from so-called *cooling
+  processes*, for example $e^{-} +\gamma \rightarrow e^{-} + \nu + \bar{\nu}$,
+  which really decrease the energy by extracting internal energy,
+  since as soon as they are produced neutrinos will leave the star
+  with no further interaction (with the exception of neutron stars).
+  The neutrino energy cooling rate per unit mass is indicated by $\varepsilon_{\nu}$
+  and it has always a *negative* contribution to the heat (it's a loss
+  term for the star)
 - energy can flow in and out from the boundary of a thin shell of
-  matter. Above, we have defined: L = 4\pi r^{2} F (where now both L and F
-  include the contribution from conduction and radiation). Therefore,
-  the energy per unit time coming from below is L\equiv L(m) and the energy
-  per unit time leaking from above is L(m+dm).
+  matter. Above, we have defined: $L = 4\pi r^{2} F$ (where now both $L$
+  and $F$ include the contribution from conduction and radiation).
+  Therefore, the energy per unit time coming from below is $L\equiv L(m)$
+  and the energy per unit time leaking from above is $L(m+dm)$.
 
 Putting all these together we have, at a given mass location m
 #+begin_latex
@@ -434,7 +434,7 @@ structure becomes
 \end{equation}
 #+end_latex
 
-*N.B.:* In regions where no energy is produced (\varepsilon_{nuc} = 0), there are no
+*N.B.:* In regions where no energy is produced (\varepsilon_\mathrm{nuc} = 0), there are no
 neutrino losses (\varepsilon_{\nu}=0) and in thermal equilibrium (\varepsilon_{grav} =
 T\partial s/\partial t = 0), the luminosity is constant as one moves inward or
 outward in mass coordinate: dL/dm = 0 \Rightarrow L = constant.
@@ -443,7 +443,7 @@ outward in mass coordinate: dL/dm = 0 \Rightarrow L = constant.
 unknowns. \varepsilon_{grav} is fortunately only dependent on the thermodynamics of
 the gas, so with the EOS we can calculate that (the specific entropy
 is yet a function of \rho and T). The other two terms instead are input
-physics for the star. We will [[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][later]] unpack more \varepsilon_{nuc} by discussing
+physics for the star. We will [[https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf][later]] unpack more \varepsilon_\mathrm{nuc} by discussing
 nuclear energy generation -- but ultimately it will depend on cross
 sections for nuclear interactions which in stellar physics are taken
 as known input physics (again coming often from military research).
@@ -453,13 +453,13 @@ effectively in stellar physics \varepsilon_{\nu} is also a quantity that we assu
 to know as a function of T and \rho, borrowing the work of neutrino
 physicists.
 
-So, in total at this point, we have \kappa, \varepsilon_{\nu}, \varepsilon_{nuc} assumed to
+So, in total at this point, we have \kappa, \varepsilon_{\nu}, \varepsilon_\mathrm{nuc} assumed to
 be known input physics, and we have an equation for the local
 conservation of energy, and the energy transport in the case of
 diffusion (mediated by photons or particles, i.e. conduction).
 
 We still need an equation for the convective energy transport, and
-while unpacking \varepsilon_{nuc} we will write a set of equations for the chemical
+while unpacking \varepsilon_\mathrm{nuc} we will write a set of equations for the chemical
 evolution due to nuclear burning, but we are getting close!
 
 * Homework
