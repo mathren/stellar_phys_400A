@@ -518,8 +518,8 @@ luminosity of a star.
    use the stellar structure equation for the temperature gradient in
    radiative equilibrium (*hint:* use the $dT/dr$ form).
 2. Assume that $r \sim R$ and that the temperature is proportional to
-   $T_\mathrm{center}$, $L(m) \sim L$ and estimating $dT/dr ∼ −T_{center}
-   /R$.
+   $T_\mathrm{center}$, $L(m) \sim L$ and estimating $dT/dr ∼
+   −T_\mathrm{center} /R$.
 3. Derive how $T_\mathrm{center}$ scales with $M$ and $R$, using the hydrostatic
    equilibrium equation, and assuming that the ideal gas EOS holds.
 4. Combine the results obtained in 1. and 2., to derive how $L$ scales
