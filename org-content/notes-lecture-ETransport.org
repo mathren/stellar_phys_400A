@@ -269,7 +269,7 @@ this means the electrons are going to dominate conduction whenever
 there is some.
 
 The other thing to consider is the mean free path \ell, but since the
-collisional (Coulomb-scattering) $\sigma \leq 10^{-18} cm^{2}$, the mean free path $\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}$ . Thus, since $v\le c$ and
+collisional (Coulomb-scattering) $\sigma \leq 10^{-18}$ cm^{2}, the mean free path $\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}$ . Thus, since $v\le c$ and
 $\ell\ll\ell_{\gamma}$ for most stars energy conduction by particle (electron)
 collisions is sub-dominant compared to radiative energy.
 
@@ -527,5 +527,5 @@ You have arrived at a mass-luminosity relation /without assuming
 anything about how the energy is produced/, only about how it is
 transported (by radiation). This shows that the luminosity of a star
 is not determined by the rate of energy production in the centre, but
-by how fast it can be transported to the surface: stars don't shine
-because they burn, conversely they burn because they shine!
+by how fast it can be transported to the surface: *stars don't shine
+because they burn, conversely they burn because they shine!*

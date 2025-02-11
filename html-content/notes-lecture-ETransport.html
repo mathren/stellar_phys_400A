@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-11 Tue 10:25 -->
+<!-- 2025-02-11 Tue 10:26 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Diffusive energy transport</title>
@@ -124,7 +124,7 @@ Kippenhan &amp; Weigert's book.
 <div id="outline-container-orgda0b8a5" class="outline-4">
 <h4 id="orgda0b8a5"><a href="#orgda0b8a5">Mass conservation:</a></h4>
 <div class="outline-text-4" id="text-orgda0b8a5">
-<div class="latex" id="org94f22c5">
+<div class="latex" id="orga09952b">
 \begin{equation}\label{eq:mass_cont}
 \frac{dm}{dr} = 4\pi \rho r^{2} \ \ .
 \end{equation}
@@ -136,7 +136,7 @@ Kippenhan &amp; Weigert's book.
 <div id="outline-container-orgbfadb02" class="outline-4">
 <h4 id="orgbfadb02"><a href="#orgbfadb02">Hydrostatic equilibrium:</a></h4>
 <div class="outline-text-4" id="text-orgbfadb02">
-<div class="latex" id="org4dd90a7">
+<div class="latex" id="orgb4bb85c">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \Leftrightarrow \ \frac{dP}{dm} = - \frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -158,7 +158,7 @@ on timescales comparable to the dynamical timescale
 <div id="outline-container-org17b1656" class="outline-4">
 <h4 id="org17b1656"><a href="#org17b1656">Equation of state:</a></h4>
 <div class="outline-text-4" id="text-org17b1656">
-<div class="latex" id="orgf7f108b">
+<div class="latex" id="org1fc6197">
 \begin{equation}\label{eq:EOS}
 P \equiv P(\rho, \mu, T) = P_\mathrm{rad} + P_\mathrm{gas} = \frac{1}{3}aT^{4} + \frac{\rho}{\mu m_{u}}k_{B}T + P_\mathrm{QM}\ \ .
 \end{equation}
@@ -246,7 +246,7 @@ In this approximation, the net flux of this "something" is related to
 the density of "something" by Fick's law:
 </p>
 
-<div class="latex" id="org8122a42">
+<div class="latex" id="org6d02f3c">
 \begin{equation}\label{eq:diff}
 \mathbf{J} = - D\nabla n \ \ ,
 \end{equation}
@@ -284,7 +284,7 @@ these particles have a mean free path \(\ell\) and an average velocity \(v\),
 then the number that crosses a given coordinate \(z\) with a positive \(\delta
 z\) as a function of time is:
 </p>
-<div class="latex" id="orgbbaf328">
+<div class="latex" id="org399bb80">
 \begin{equation}
 \frac{dN}{dt}(z) =\frac{1}{2} n \frac{1}{3}v \ \ ,
 \end{equation}
@@ -305,7 +305,7 @@ while those moving with the negative \(\delta z\)  come from \(n(z+\ell)\), so t
 flux across \(z\) is
 </p>
 
-<div class="latex" id="org17f284c">
+<div class="latex" id="orgf832fff">
 \begin{equation}
 J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)\simeq\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ ,
 \end{equation}
@@ -360,7 +360,7 @@ the one impeding the diffusion of photons.
 <p>
 Thus, the radiative diffusion equation is
 </p>
-<div class="latex" id="orgc1d7f39">
+<div class="latex" id="org6995c88">
 \begin{equation}
 F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \ ,
 \end{equation}
@@ -373,7 +373,7 @@ density is \(u=aT^{4}\). We can then explicit these into our equation
 obtaining:
 </p>
 
-<div class="latex" id="org7948c70">
+<div class="latex" id="orgc8ddd36">
 \begin{equation}
 F_\mathrm{rad} = -\frac{4ac}{3c\rho T^{3}} \frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
 \end{equation}
@@ -386,7 +386,7 @@ This is a <i>local</i> quantity and it is valid in a region of the star where
 the dominant energy transport is radiative diffusion only:
 </p>
 
-<div class="latex" id="orge6f1597">
+<div class="latex" id="orgf80bcd5">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa_\mathrm{rad} F_\mathrm{rad} \propto \kappa_\mathrm{rad} F_\mathrm{rad}.\ \ .
 \end{equation}
@@ -405,7 +405,7 @@ of radius \(r\) within the star (or in other words, the "power" that is
 in the photon field at the location r):
 </p>
 
-<div class="latex" id="orgc5646b3">
+<div class="latex" id="orge483d9c">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa_\mathrm{rad}}{r^{2}}\frac{L_\mathrm{rad}}{T^{3}} \ \ .
 \end{equation}
@@ -483,7 +483,7 @@ there is some.
 
 <p>
 The other thing to consider is the mean free path &ell;, but since the
-collisional (Coulomb-scattering) \(\sigma \leq 10^{-18} cm^{2}\), the mean free path \(\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}\) . Thus, since \(v\le c\) and
+collisional (Coulomb-scattering) \(\sigma \leq 10^{-18}\) cm<sup>2</sup>, the mean free path \(\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}\) . Thus, since \(v\le c\) and
 \(\ell\ll\ell_{\gamma}\) for most stars energy conduction by particle (electron)
 collisions is sub-dominant compared to radiative energy.
 </p>
@@ -507,7 +507,7 @@ cannot neglect conduction, and it can dominate over radiative
 diffusion even! To consider it, we can follow the same reasoning as
 above and write an equation for the conductive flux
 </p>
-<div class="latex" id="orgcddd7c7">
+<div class="latex" id="org7347457">
 \begin{equation}
 F_\mathrm{cond} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{cond}\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -523,7 +523,7 @@ contribution to the energy flux from radiative diffusion and
 conduction: \(F = F_\mathrm{rad} + F_\mathrm{cond}\) and
 </p>
 
-<div class="latex" id="orgc380e65">
+<div class="latex" id="org529d0bc">
 \begin{equation}
 F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -532,7 +532,7 @@ F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 <p>
 where now
 </p>
-<div class="latex" id="org1106636">
+<div class="latex" id="org48e067a">
 \begin{equation}\label{eq:kappas}
 \frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
 \end{equation}
@@ -564,7 +564,7 @@ Eq. \ref{eq:kappas} and \(L(r) = L_\mathrm{rad} + L_\mathrm{cond}\))
 continue the analogy and write down:
 </p>
 
-<div class="latex" id="org6f274cc">
+<div class="latex" id="orga0767c3">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa}{r^{2}}\frac{L}{T^{3}} \ \ ,
 \end{equation}
@@ -607,7 +607,7 @@ plus the work done on the unit mass \(Pd v\) with \(v=1/\rho\) the specific
 volume:
 </p>
 
-<div class="latex" id="org1362b78">
+<div class="latex" id="orga61717b">
 \begin{equation}
 d u = d q + Pd v \equiv d q - \frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
@@ -651,7 +651,7 @@ and the energy per unit time leaking from above is \(L(m+dm)\).</li>
 <p>
 Putting all these together we have, at a given mass location m
 </p>
-<div class="latex" id="org095ea34">
+<div class="latex" id="orgfd13084">
 \begin{equation}
 dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
 \end{equation}
@@ -660,7 +660,7 @@ dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt 
 <p>
 Thus, substituting in the local energy conservation we obtain:
 </p>
-<div class="latex" id="org09c2de5">
+<div class="latex" id="org07d2bae">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc}(m) -\varepsilon_{\nu}(m) - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} \ \ .
 \end{equation}
@@ -669,7 +669,7 @@ Thus, substituting in the local energy conservation we obtain:
 <p>
 Often the last two terms are combined together to define:
 </p>
-<div class="latex" id="orga8dca9d">
+<div class="latex" id="org587fc7c">
 \begin{equation}
 \varepsilon_\mathrm{grav} = - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} = -T\frac{ds}{dt} \ \ .
 \end{equation}
@@ -688,7 +688,7 @@ more to do with the internal energy of the gas. With this definition,
 the next equation of stellar structure becomes
 </p>
 
-<div class="latex" id="org985119d">
+<div class="latex" id="orgf166e33">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
@@ -821,8 +821,8 @@ You have arrived at a mass-luminosity relation <i>without assuming
 anything about how the energy is produced</i>, only about how it is
 transported (by radiation). This shows that the luminosity of a star
 is not determined by the rate of energy production in the centre, but
-by how fast it can be transported to the surface: stars don't shine
-because they burn, conversely they burn because they shine!
+by how fast it can be transported to the surface: <b>stars don't shine
+because they burn, conversely they burn because they shine!</b>
 </p>
 </div>
 </div>
