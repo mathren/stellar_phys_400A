@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-11 Tue 10:26 -->
+<!-- 2025-02-11 Tue 12:23 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Diffusive energy transport</title>
@@ -124,7 +124,7 @@ Kippenhan &amp; Weigert's book.
 <div id="outline-container-orgda0b8a5" class="outline-4">
 <h4 id="orgda0b8a5"><a href="#orgda0b8a5">Mass conservation:</a></h4>
 <div class="outline-text-4" id="text-orgda0b8a5">
-<div class="latex" id="orga09952b">
+<div class="latex" id="org07a247a">
 \begin{equation}\label{eq:mass_cont}
 \frac{dm}{dr} = 4\pi \rho r^{2} \ \ .
 \end{equation}
@@ -136,7 +136,7 @@ Kippenhan &amp; Weigert's book.
 <div id="outline-container-orgbfadb02" class="outline-4">
 <h4 id="orgbfadb02"><a href="#orgbfadb02">Hydrostatic equilibrium:</a></h4>
 <div class="outline-text-4" id="text-orgbfadb02">
-<div class="latex" id="orgb4bb85c">
+<div class="latex" id="org9e17f33">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \Leftrightarrow \ \frac{dP}{dm} = - \frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -158,7 +158,7 @@ on timescales comparable to the dynamical timescale
 <div id="outline-container-org17b1656" class="outline-4">
 <h4 id="org17b1656"><a href="#org17b1656">Equation of state:</a></h4>
 <div class="outline-text-4" id="text-org17b1656">
-<div class="latex" id="org1fc6197">
+<div class="latex" id="orge9a4609">
 \begin{equation}\label{eq:EOS}
 P \equiv P(\rho, \mu, T) = P_\mathrm{rad} + P_\mathrm{gas} = \frac{1}{3}aT^{4} + \frac{\rho}{\mu m_{u}}k_{B}T + P_\mathrm{QM}\ \ .
 \end{equation}
@@ -246,7 +246,7 @@ In this approximation, the net flux of this "something" is related to
 the density of "something" by Fick's law:
 </p>
 
-<div class="latex" id="org6d02f3c">
+<div class="latex" id="orgdcb35a1">
 \begin{equation}\label{eq:diff}
 \mathbf{J} = - D\nabla n \ \ ,
 \end{equation}
@@ -284,7 +284,7 @@ these particles have a mean free path \(\ell\) and an average velocity \(v\),
 then the number that crosses a given coordinate \(z\) with a positive \(\delta
 z\) as a function of time is:
 </p>
-<div class="latex" id="org399bb80">
+<div class="latex" id="org0b3d2e4">
 \begin{equation}
 \frac{dN}{dt}(z) =\frac{1}{2} n \frac{1}{3}v \ \ ,
 \end{equation}
@@ -305,7 +305,7 @@ while those moving with the negative \(\delta z\)  come from \(n(z+\ell)\), so t
 flux across \(z\) is
 </p>
 
-<div class="latex" id="orgf832fff">
+<div class="latex" id="org1cf0c4f">
 \begin{equation}
 J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)\simeq\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ ,
 \end{equation}
@@ -360,7 +360,7 @@ the one impeding the diffusion of photons.
 <p>
 Thus, the radiative diffusion equation is
 </p>
-<div class="latex" id="org6995c88">
+<div class="latex" id="orgab82221">
 \begin{equation}
 F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \ ,
 \end{equation}
@@ -373,9 +373,9 @@ density is \(u=aT^{4}\). We can then explicit these into our equation
 obtaining:
 </p>
 
-<div class="latex" id="orgc8ddd36">
+<div class="latex" id="orgf0ae14d">
 \begin{equation}
-F_\mathrm{rad} = -\frac{4ac}{3c\rho T^{3}} \frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
+F_\mathrm{rad} = -\frac{4ac}{3\rho T^{3}} \frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
 \end{equation}
 
 </div>
@@ -386,7 +386,7 @@ This is a <i>local</i> quantity and it is valid in a region of the star where
 the dominant energy transport is radiative diffusion only:
 </p>
 
-<div class="latex" id="orgf80bcd5">
+<div class="latex" id="org3f811e7">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa_\mathrm{rad} F_\mathrm{rad} \propto \kappa_\mathrm{rad} F_\mathrm{rad}.\ \ .
 \end{equation}
@@ -405,7 +405,7 @@ of radius \(r\) within the star (or in other words, the "power" that is
 in the photon field at the location r):
 </p>
 
-<div class="latex" id="orge483d9c">
+<div class="latex" id="org146c884">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa_\mathrm{rad}}{r^{2}}\frac{L_\mathrm{rad}}{T^{3}} \ \ .
 \end{equation}
@@ -483,7 +483,8 @@ there is some.
 
 <p>
 The other thing to consider is the mean free path &ell;, but since the
-collisional (Coulomb-scattering) \(\sigma \leq 10^{-18}\) cm<sup>2</sup>, the mean free path \(\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}\) . Thus, since \(v\le c\) and
+collisional (Coulomb-scattering) \(\sigma \leq 10^{-18}\) cm<sup>2</sup>, the mean free path
+\(\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}\) . Thus, since \(v\le c\) and
 \(\ell\ll\ell_{\gamma}\) for most stars energy conduction by particle (electron)
 collisions is sub-dominant compared to radiative energy.
 </p>
@@ -507,7 +508,7 @@ cannot neglect conduction, and it can dominate over radiative
 diffusion even! To consider it, we can follow the same reasoning as
 above and write an equation for the conductive flux
 </p>
-<div class="latex" id="org7347457">
+<div class="latex" id="org980cd35">
 \begin{equation}
 F_\mathrm{cond} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{cond}\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -523,7 +524,7 @@ contribution to the energy flux from radiative diffusion and
 conduction: \(F = F_\mathrm{rad} + F_\mathrm{cond}\) and
 </p>
 
-<div class="latex" id="org529d0bc">
+<div class="latex" id="org7b560b6">
 \begin{equation}
 F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -532,7 +533,7 @@ F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 <p>
 where now
 </p>
-<div class="latex" id="org48e067a">
+<div class="latex" id="org62d7f19">
 \begin{equation}\label{eq:kappas}
 \frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
 \end{equation}
@@ -564,7 +565,7 @@ Eq. \ref{eq:kappas} and \(L(r) = L_\mathrm{rad} + L_\mathrm{cond}\))
 continue the analogy and write down:
 </p>
 
-<div class="latex" id="orga0767c3">
+<div class="latex" id="org0a35825">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa}{r^{2}}\frac{L}{T^{3}} \ \ ,
 \end{equation}
@@ -607,7 +608,7 @@ plus the work done on the unit mass \(Pd v\) with \(v=1/\rho\) the specific
 volume:
 </p>
 
-<div class="latex" id="orga61717b">
+<div class="latex" id="orga93e8a0">
 \begin{equation}
 d u = d q + Pd v \equiv d q - \frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
@@ -645,22 +646,23 @@ term for the star)</li>
 matter. Above, we have defined: \(L = 4\pi r^{2} F\) (where now both \(L\)
 and \(F\) include the contribution from conduction and radiation).
 Therefore, the energy per unit time coming from below is \(L\equiv L(m)\)
-and the energy per unit time leaking from above is \(L(m+dm)\).</li>
+and the energy per unit time leaking from above is \(L(m+dm)\), to
+obtain the specific energy per unit mass we just divide by \(dm\).</li>
 </ul>
 
 <p>
 Putting all these together we have, at a given mass location m
 </p>
-<div class="latex" id="orgfd13084">
+<div class="latex" id="org987530b">
 \begin{equation}
-dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
+dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt/dm \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
 \end{equation}
 
 </div>
 <p>
 Thus, substituting in the local energy conservation we obtain:
 </p>
-<div class="latex" id="org07d2bae">
+<div class="latex" id="org23aee8e">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc}(m) -\varepsilon_{\nu}(m) - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} \ \ .
 \end{equation}
@@ -669,7 +671,7 @@ Thus, substituting in the local energy conservation we obtain:
 <p>
 Often the last two terms are combined together to define:
 </p>
-<div class="latex" id="org587fc7c">
+<div class="latex" id="org9e7bfd9">
 \begin{equation}
 \varepsilon_\mathrm{grav} = - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} = -T\frac{ds}{dt} \ \ .
 \end{equation}
@@ -688,7 +690,7 @@ more to do with the internal energy of the gas. With this definition,
 the next equation of stellar structure becomes
 </p>
 
-<div class="latex" id="orgf166e33">
+<div class="latex" id="orgbf1064b">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}

@@ -189,7 +189,7 @@ obtaining:
 
 #+begin_latex
 \begin{equation}
-F_\mathrm{rad} = -\frac{4ac}{3c\rho T^{3}} \frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
+F_\mathrm{rad} = -\frac{4ac}{3\rho T^{3}} \frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -269,7 +269,8 @@ this means the electrons are going to dominate conduction whenever
 there is some.
 
 The other thing to consider is the mean free path \ell, but since the
-collisional (Coulomb-scattering) $\sigma \leq 10^{-18}$ cm^{2}, the mean free path $\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}$ . Thus, since $v\le c$ and
+collisional (Coulomb-scattering) $\sigma \leq 10^{-18}$ cm^{2}, the mean free path
+$\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}$ . Thus, since $v\le c$ and
 $\ell\ll\ell_{\gamma}$ for most stars energy conduction by particle (electron)
 collisions is sub-dominant compared to radiative energy.
 
@@ -396,12 +397,13 @@ The heat term in a star can only be due to:
   matter. Above, we have defined: $L = 4\pi r^{2} F$ (where now both $L$
   and $F$ include the contribution from conduction and radiation).
   Therefore, the energy per unit time coming from below is $L\equiv L(m)$
-  and the energy per unit time leaking from above is $L(m+dm)$.
+  and the energy per unit time leaking from above is $L(m+dm)$, to
+  obtain the specific energy per unit mass we just divide by $dm$.
 
 Putting all these together we have, at a given mass location m
 #+begin_latex
 \begin{equation}
-dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
+dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt/dm \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
 \end{equation}
 #+end_latex
 Thus, substituting in the local energy conservation we obtain:
