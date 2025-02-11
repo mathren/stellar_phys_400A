@@ -449,13 +449,16 @@ problem!
  a a_{A} /a_{B} = 0.466.
 
   1. Find the mass of each member of the system.
+     # m_{A} \simeq 2.2M_{\odot}; m_{B} \simeq 1.03M_{\odot}
   2. The absolute bolometric magnitude of Sirius A is 1.36, and Sirius B
      has an absolute bolometric magnitude of 8.79. Determine their
      luminosities. Express your answers in terms of the luminosity of
      the luminosity of the Sun
+     # L_{A} = 22.5L_{\odot} ; L_{B} = 0.02L_{\odot}
   3. The effective temperature of Sirius B is approximately 24790 K \pm
      100 K. Estimate its radius, and compare your answer to the radii
      of the Sun and Earth. What kind of star is that hot with that radius?
+     # R_{B} \simeq 0.9R_{\Earth}
 
 ** Exercise 7.6 on Carroll & Ostie
  From the light and velocity curves of an eclipsing, spectroscopic
@@ -469,7 +472,12 @@ problem!
  respectively. From this information, and assuming circular orbits,
  find:
  1. Ratio of stellar masses
+    # 0.241
  2. Sum of the masses (assume i = 90 degrees)
+    # 5.07M_{\odot}
  3. Individual masses
+    # M_{A} = 3.8M_{\odot} ; M_{B} = 1.21M_{\odot}
  4. Individual radii (assume that the orbits are circular)
+    # 1 Rsun ; 2 Rsun
  5. Ratio of the effective temperatures of the two stars
+    # 3.122

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-06 Thu 09:04 -->
+<!-- 2025-02-11 Tue 09:38 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Diffusive energy transport</title>
@@ -124,7 +124,7 @@ Kippenhan &amp; Weigert's book.
 <div id="outline-container-orgda0b8a5" class="outline-4">
 <h4 id="orgda0b8a5"><a href="#orgda0b8a5">Mass conservation:</a></h4>
 <div class="outline-text-4" id="text-orgda0b8a5">
-<div class="latex" id="org58aab95">
+<div class="latex" id="org99e6eb1">
 \begin{equation}\label{eq:mass_cont}
 \frac{dm}{dr} = 4\pi \rho r^{2} \ \ .
 \end{equation}
@@ -136,12 +136,17 @@ Kippenhan &amp; Weigert's book.
 <div id="outline-container-orgbfadb02" class="outline-4">
 <h4 id="orgbfadb02"><a href="#orgbfadb02">Hydrostatic equilibrium:</a></h4>
 <div class="outline-text-4" id="text-orgbfadb02">
-<div class="latex" id="org9aaf046">
+<div class="latex" id="org65f50f7">
 \begin{equation}\label{eq:HSE}
-\frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \ ,
+\frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \Leftrightarrow \ \frac{dP}{dm} = - \frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
 
 </div>
+<p>
+where we use Eq. \ref{{eq:mass<sub>cont</sub>} to use a Lagrangian mass
+coordinate as independent functional variable.
+</p>
+
 <p>
 <b>N.B.:</b> This is the particular form that momentum conservation takes
 since we can assume accelerations are &sim;0 because stars do not evolve
@@ -153,7 +158,7 @@ on timescales comparable to the dynamical timescale
 <div id="outline-container-org17b1656" class="outline-4">
 <h4 id="org17b1656"><a href="#org17b1656">Equation of state:</a></h4>
 <div class="outline-text-4" id="text-org17b1656">
-<div class="latex" id="orgc2002f4">
+<div class="latex" id="org14a253b">
 \begin{equation}\label{eq:EOS}
 P \equiv P(\rho, \mu, T) = P_\mathrm{rad} + P_\mathrm{gas} = \frac{1}{3}aT^{4} + \frac{\rho}{\mu m_{u}}k_{B}T + P_\mathrm{QM}\ \ .
 \end{equation}
@@ -167,8 +172,9 @@ composition of the star which enters in the mean molecular weight &mu;),
 in the general case, we have also added a new variable T, so the
 system is not close again, and we need to look for one more equation
 to be able to solve it! In today's lecture we will actually derive
-two, but one of them does not cover all possible physical situations
-in stars.
+two: energy transport and energy conservation. However, today for the
+former we will not cover yet all possible physical situations in
+stars.
 </p>
 </div>
 </div>
@@ -179,7 +185,7 @@ in stars.
 <div class="outline-text-3" id="text-orge7cb4a8">
 <p>
 To find another equation, we can consider how energy flows in a star.
-We have already seen that the surface temperature (e.g., of the Sun),
+We have already seen that the "surface" temperature (e.g., of the Sun),
 and the average temperature (estimated using the <a href="./notes-lecture-VirTheo.html">virial theorem</a>) are
 <i>not</i> the same, so we know that the star is <i>not</i> in global thermal
 equilibrium. We also know, from similar arguments, that the average
@@ -231,8 +237,8 @@ energy.
 In general, the "diffusion approximation" is useful to describe the
 net flux of "something" when the average path of the carrier of said
 "something" is small compared to the lengthscale over which the
-"something" is transported, that is the mean free path &ell; is much smaller
-than the size L of the region &ell; &Lt; L.
+"something" is transported, that is the mean free path \(\ell\) is much smaller
+than the size \(L\) of the region \(\ell \ll L\).
 </p>
 
 <p>
@@ -240,7 +246,7 @@ In this approximation, the net flux of this "something" is related to
 the density of "something" by Fick's law:
 </p>
 
-<div class="latex" id="orgf9181c1">
+<div class="latex" id="org02de95c">
 \begin{equation}\label{eq:diff}
 \mathbf{J} = - D\nabla n \ \ ,
 \end{equation}
@@ -248,37 +254,37 @@ the density of "something" by Fick's law:
 </div>
 
 <p>
-where J is the flux (which is in general a vector quantity), D is the
-so called "diffusion coefficient", and &nabla; n is the gradient of the
-volumetric density of the "something" we are considering. The negative
-sign appears because the flux is opposite to the gradient ("something"
-flows from where there is a lot to where there is less!). By
-dimensional analysis, regardless of what "something" is (and what are
-its dimensions), you can see that:
+where \(\mathbf{J}\) is the flux (which is in general a vector
+quantity), \(D\) is the so called "diffusion coefficient", and \(\nabla n\) is
+the gradient of the volumetric density of the "something" we are
+considering. The negative sign appears because the flux is opposite to
+the gradient ("something" flows from where there is a lot to where
+there is less!). By dimensional analysis, regardless of what
+"something" is (and what are its dimensions), you can see that:
 </p>
 <ul class="org-ul">
-<li>[J] = [something]/(L<sup>2</sup>t) with L length dimension and t time;</li>
-<li>[&nabla;] &equiv; [d/dx] = 1/L;</li>
-<li>[n] = [something]/L<sup>3</sup></li>
+<li>[\(J\)] = [something]/(L<sup>2</sup>t) with L length dimension and t time;</li>
+<li>[\(\nabla\)] &equiv; [\(d/dx\)] = 1/L;</li>
+<li>[\(n\)] = [something]/L<sup>3</sup></li>
 </ul>
 
 <p>
-Therefore, the diffusion coefficient has the dimensions of [D] = L<sup>2</sup>/t
-&equiv; v &times; L, so we can expect D to be proportional to the average velocity
-of the "something" that is diffusing times the length scale for the
-motion of this something (which by hypothesis is small compared to the
-length scale over which we want to study the motion of this
-"something"). In fact this is almost correct!
+Therefore, the diffusion coefficient has the dimensions of [\(D\)] =
+L<sup>2</sup>/t &equiv; v &times; L, so we can expect \(D\) to be proportional to the average
+velocity of the "something" that is diffusing times the length scale
+for the motion of this something (which by hypothesis is small
+compared to the length scale over which we want to study the motion of
+this "something"). In fact this is almost all there is to know!
 </p>
 
 <p>
 To get the correct pre-factor, let's say "something" are particles
-moving in 3 dimensions and focus on one direction, say z. If all these
-particles have a mean free path &ell; and an average velocity v, then the
-number that crosses a given coordinate z with a positive &delta; z as a
-function of time is:
+moving in 3 dimensions and focus on one direction, say \(z\). If all
+these particles have a mean free path \(\ell\) and an average velocity \(v\),
+then the number that crosses a given coordinate \(z\) with a positive \(\delta
+z\) as a function of time is:
 </p>
-<div class="latex" id="orgbbbe6a9">
+<div class="latex" id="org01c2137">
 \begin{equation}
 \frac{dN}{dt}(z) =\frac{1}{2} n \frac{1}{3}v \ \ ,
 \end{equation}
@@ -286,20 +292,20 @@ function of time is:
 </div>
 <p>
 where the first 1/2 factor comes from the fact that their motion is
-random, so half the particles have negative &delta; z and half have a
+random, so half the particles have negative \(\delta z\) and half have a
 positive one, and we just want to count the latter, and the factor of
 1/3 in front of their average velocity comes from the fact that the
 motion is isotropic (see <a href="notes-lecture-EOS1.html#org753adea">derivation of the pressure</a>).
 </p>
 
 <p>
-If there is a gradient &part; n /&part; z of particles along the z direction,
-the particles moving with positive &delta; z  come from n(z-&ell;)
-while those moving with the negative &delta; z  come from n(z+&ell;), so the net
-flux across z is
+If there is a gradient \(\partial n /\partial z\) of particles along the \(z\) direction,
+the particles moving with positive \(\delta z\)  come from \(n(z-\ell)\)
+while those moving with the negative \(\delta z\)  come from \(n(z+\ell)\), so the net
+flux across \(z\) is
 </p>
 
-<div class="latex" id="orgee21dd7">
+<div class="latex" id="orge5187a1">
 \begin{equation}
 J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)\simeq\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ ,
 \end{equation}
@@ -307,10 +313,10 @@ J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n
 </div>
 <p>
 where the only approximation we use is a first order Taylor expansion
-of the density n(z) assuming that the mean free path &ell; is small
+of the density \(n(z)\) assuming that the mean free path &ell; is small
 compared to the scale of interest! Eq. \ref{eq:diff} is the
-generalization in 3 dimensions of the above, where &nabla; = (&part;<sub>x</sub>, &part;<sub>y</sub>,
-&part;<sub>z</sub>) for Cartesian coordinates, and D=v&ell;/3.
+generalization in 3 dimensions of the above, where \(\nabla = (\partial_{x}, \partial_{y},
+\partial_{z})\) for Cartesian coordinates, and \(D=v\ell/3\).
 </p>
 </div>
 
@@ -318,11 +324,11 @@ generalization in 3 dimensions of the above, where &nabla; = (&part;<sub>x</sub>
 <h4 id="orgcae4028"><a href="#orgcae4028">Energy transport by radiative diffusion</a></h4>
 <div class="outline-text-4" id="text-orgcae4028">
 <p>
-We have already calculated that <a href="notes-lecture-EOS1.html#orgbed9b53">mean free path for photons</a> and
-estimated that it is very small compared to the typical size of stars
-(and the typical size of a resolution element in a numerical
-simulation of a star!). Therefore, we can treat the energy transport
-by photons in the diffusion approximation.
+We have already calculated that <a href="notes-lecture-EOS1.html#orgbed9b53">mean free path for photons</a>
+\(\ell_{\gamma}\) and estimated that it is very small compared to the typical
+size of stars (and the typical size of a resolution element in a
+numerical simulation of a star!). Therefore, we can treat the energy
+transport by photons in the diffusion approximation.
 </p>
 
 <p>
@@ -330,12 +336,12 @@ by photons in the diffusion approximation.
 transport of energy by photons, because by definition the radiation
 field would be isotropic, and the gradient of photon energy density
 would be zero! In reality, we have already seen that stars are <i>not</i>
-black bodies at the surface (in the atmospheric layers where &ell;<sub>&gamma;</sub>
+black bodies at the surface (in the atmospheric layers where \(\ell_{\gamma}\)
 is not small) and neither they are in the interior because there is a
-small deviation from LTE of the order of &ell;<sub>&gamma;</sub> dT/dr~10<sup>-11</sup>. While
-this is a small enough deviation that we can assume LTE to write down
-an EOS, it is also big enough to introduce a non-negligible flux of
-energy in the stars!
+small deviation from LTE of the order of \(\ell_{\gamma} dT/dr\sim10^{-4}\) K.
+While this is a small enough deviation that we can assume LTE to write
+down an EOS, it is also big enough to introduce a non-negligible flux
+of energy in the stars!
 </p>
 
 <p>
@@ -354,7 +360,7 @@ the one impeding the diffusion of photons.
 <p>
 Thus, the radiative diffusion equation is
 </p>
-<div class="latex" id="org2107664">
+<div class="latex" id="org23ee145">
 \begin{equation}
 F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \ ,
 \end{equation}
@@ -367,7 +373,7 @@ density is u=aT<sup>4</sup>. We can then explicit these into our equation
 obtaining:
 </p>
 
-<div class="latex" id="org7591b2e">
+<div class="latex" id="orgdc465eb">
 \begin{equation}
 F_\mathrm{rad} = -\frac{4ac}{3c\rho T^{3}} \frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
 \end{equation}
@@ -380,7 +386,7 @@ This is a <i>local</i> quantity and it is valid in a region of the star where
 the dominant energy transport is radiative diffusion only:
 </p>
 
-<div class="latex" id="orga60e7c6">
+<div class="latex" id="orgfdf15d2">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa_\mathrm{rad} F_\mathrm{rad} \propto \kappa_\mathrm{rad} F_\mathrm{rad}.\ \ .
 \end{equation}
@@ -399,7 +405,7 @@ radius r within the star (or in other words, the "power" that is in
 the photon field at the location r):
 </p>
 
-<div class="latex" id="org9dab5a5">
+<div class="latex" id="orgecd8bcb">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa_\mathrm{rad}}{r^{2}}\frac{L_\mathrm{rad}}{T^{3}} \ \ .
 \end{equation}
@@ -498,7 +504,7 @@ cannot neglect conduction, and it can dominate over radiative
 diffusion even! To consider it, we can follow the same reasoning as
 above and write an equation for the conductive flux
 </p>
-<div class="latex" id="org116d04a">
+<div class="latex" id="org7fd5003">
 \begin{equation}
 F_\mathrm{cond} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{cond}\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -513,7 +519,7 @@ to LTE, so we can define a local T). With this implicit definition of
 radiative diffusion and conduction: F = F<sub>rad</sub> + F<sub>cond</sub> and
 </p>
 
-<div class="latex" id="orgdcd4c8a">
+<div class="latex" id="org7e620a0">
 \begin{equation}
 F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 \end{equation}
@@ -522,7 +528,7 @@ F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
 <p>
 where now
 </p>
-<div class="latex" id="org8f158ba">
+<div class="latex" id="orgf3de76a">
 \begin{equation}\label{eq:kappas}
 \frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
 \end{equation}
@@ -553,7 +559,7 @@ has the same form as the radiative flux, we can (using Eq.
 write down:
 </p>
 
-<div class="latex" id="orgf0deaa7">
+<div class="latex" id="org38dc138">
 \begin{equation}
 \frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa}{r^{2}}\frac{L}{T^{3}} \ \ ,
 \end{equation}
@@ -595,7 +601,7 @@ specific internal energy) is equal to the heat added/extracted d q plus
 the work done on the unit mass Pd v with v=1/&rho; the specific volume:
 </p>
 
-<div class="latex" id="orgf357ca6">
+<div class="latex" id="org1ca25eb">
 \begin{equation}
 d u = d q + Pd v \equiv d q - \frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
@@ -639,7 +645,7 @@ per unit time leaking from above is L(m+dm).</li>
 <p>
 Putting all these together we have, at a given mass location m
 </p>
-<div class="latex" id="org99a3a13">
+<div class="latex" id="orgbf77b99">
 \begin{equation}
 dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
 \end{equation}
@@ -648,7 +654,7 @@ dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt 
 <p>
 Thus, substituting in the local energy conservation we obtain:
 </p>
-<div class="latex" id="org46adced">
+<div class="latex" id="orgf6a09da">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc}(m) -\varepsilon_{\nu}(m) - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} \ \ .
 \end{equation}
@@ -657,7 +663,7 @@ Thus, substituting in the local energy conservation we obtain:
 <p>
 Often the last two terms are combined together to define:
 </p>
-<div class="latex" id="org822c9e6">
+<div class="latex" id="org70c05a6">
 \begin{equation}
 \varepsilon_\mathrm{grav} = - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} = -T\frac{ds}{dt} \ \ .
 \end{equation}
@@ -676,7 +682,7 @@ of the gas. With this definition, the next equation of stellar
 structure becomes
 </p>
 
-<div class="latex" id="orgadde911">
+<div class="latex" id="org6cd04f2">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
@@ -814,7 +820,7 @@ by how fast it can be transported to the surface!
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-EOS2.html"><i class="fa-solid fa-arrow-left"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-kappa.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 6 February 2025 <br>
+  Last updated on 11 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>
