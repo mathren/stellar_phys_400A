@@ -326,7 +326,7 @@ At very high densities, the electron mean-free path are very long
 (since collisions are forbidden by not having any level available
 below the Fermi energy), making conduction very efficient and allowing
 high density degenerate cores to become effectively isothermal
-($T$=constant, $dT/dr = 0$).
+($T$ = constant, $dT/dr = 0$).
 
 
 * Combining all these sources together
