@@ -297,7 +297,7 @@ itself! An approximate relation for its opacity is
 
 #+begin_latex
 \begin{equation}
-\kappa_\mathrm{H^{-}} = 2.5\times10^{-31} \frac{Z}{Z_{\odot}} \rho^{1/2} T^{9} \ \mathrm{cm^{2} \ g} \ \ .
+\kappa_\mathrm{H^{-}} = 2.5\times10^{-31} \frac{Z}{Z_{\odot}} \rho^{1/2} T^{9} \ \mathrm{cm^{2} \ g^{-1}} \ \ .
 \end{equation}
 #+end_latex
 
