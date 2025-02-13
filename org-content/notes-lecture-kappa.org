@@ -122,8 +122,8 @@ Rosseland]].
 ** Physical interpretation
 This may seem like a bunch of math that did not advance us much: we
 still have \kappa_{\nu} (which in practice comes from atomic physics
-experimental and theoretical work), and the Rosseland mean opacity may
-seem to not have a straightforward physical interpretation.
+experimental and theoretical work), and the physical interpretation of
+the Rosseland mean opacity may not be immediately apparent.
 
 However, consider that to a good approximation we can consider the
 stellar interior to be in LTE with a single temperature and a photon
