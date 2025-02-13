@@ -247,8 +247,8 @@ bound electrons), which greatly simplifies the $\kappa_\mathrm{rad}(T,\rho)$ dep
 
 The scattering of a classical electromagnetic wave off-an electron can
 be described by the Thomson scattering cross section, which divided by
-the $\mu_{e}m_{u}$ gives the corresponding opacity. Therefore, for $T\geq10^{6$} K, $\kappa_\mathrm{rad}
-\equiv \kappa_{es$}:
+the $\mu_{e}m_{u}$ gives the corresponding opacity. Therefore, for $T\geq10^{6}$ K, $\kappa_\mathrm{rad}
+\equiv \kappa_{es}$:
 #+begin_latex
 \begin{equation}
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2} \ g} \ \ ,
@@ -304,10 +304,11 @@ itself! An approximate relation for its opacity is
 :Question:
 - *Q*: since H^{-} is the dominant source of opacity in cool stars, such as
   the Sun, red giants and supergiants, but for this ion to form metals
-  able to lose an electron are required, do we expect red giants and
-  supergiants for pop III stars? (The question is maybe less
-  interesting for Sun-like stars since they are less luminous and thus
-  even harder to detect, but still holds theoretically).
+  able to lose an electron are required ($\kappa_\mathrm{H^{-}}\propto Z$), do
+  we expect red giants and supergiants for pop III stars? (The
+  question is maybe less interesting for Sun-like stars since they are
+  less luminous and thus even harder to detect, but still holds
+  theoretically).
 :end:
 
 ** Conductive opacity
