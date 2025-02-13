@@ -189,7 +189,7 @@ obtaining:
 
 #+begin_latex
 \begin{equation}
-F_\mathrm{rad} = -\frac{4ac}{3\rho} \frac{T^{3}^{}}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
+F_\mathrm{rad} = -\frac{4ac}{3\rho} \frac{T^{3}}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
 \end{equation}
 #+end_latex
 
