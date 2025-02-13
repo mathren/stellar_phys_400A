@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-13 Thu 10:08 -->
+<!-- 2025-02-13 Thu 10:14 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - opacity</title>
@@ -125,7 +125,7 @@ of energy by diffusion. This was the analogy that comes out from the
 combination of the radiative opacity and conductive opacity
 </p>
 
-<div class="latex" id="orgaf8e33e">
+<div class="latex" id="orgc9041d8">
 \begin{equation}\label{eq:kappas}
 \frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
 \end{equation}
@@ -179,7 +179,7 @@ happened to that dependence in our stellar structure equations?
 In the <a href="./notes-lecture-ETransport.html#orgcae4028">previous lecture</a> we have written for the radiative energy flux
 </p>
 
-<div class="latex" id="orga961bec">
+<div class="latex" id="orgcc02890">
 \begin{equation}\label{eq:f_rad}
 F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \equiv -\frac{4ac}{3c\rho T^{3}}\frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ .
 \end{equation}
@@ -197,7 +197,7 @@ specific flux, we also should put in the equation the specific opacity
 \(\nu\) and \(\nu+d\nu\):
 </p>
 
-<div class="latex" id="org054899c">
+<div class="latex" id="org0b60315">
 \begin{equation}\label{eq:specific_flux}
 F_{\nu} = - \frac{1}{3}\frac{c}{\kappa_{\nu}\rho}\frac{du_{\nu}}{dr} \ \ .
 \end{equation}
@@ -213,7 +213,7 @@ to a black body distribution for the intensity in the stellar
 interior:
 </p>
 
-<div class="latex" id="org2e367e4">
+<div class="latex" id="org5b44132">
 \begin{equation}
 u_{\nu} = \frac{4\pi}{c}B(\nu, T) = \frac{8\pi h}{c^{3}}\frac{\nu^{3}}{e^{h\nu/k_{B}T} -1} \ \ .
 \end{equation}
@@ -224,7 +224,7 @@ u_{\nu} = \frac{4\pi}{c}B(\nu, T) = \frac{8\pi h}{c^{3}}\frac{\nu^{3}}{e^{h\nu/k
 Thus \(du_{\nu}/dr = 4\pi/c \times \partial B(\nu, T)/\partial T \times dT/dr\), and performing the integral over the frequencies:
 </p>
 
-<div class="latex" id="org7f8c0e9">
+<div class="latex" id="org246a004">
 \begin{equation}\label{eq:int_flux}
 F_\mathrm{rad} = \int_{0}^{+\infty} F_{\nu}d\nu = - \frac{1}{3}\frac{c}{\rho}\int_{0}^{+\infty} \frac{1}{\kappa_{\nu}}\frac{du_{\nu}}{dr} =
 -\frac{4\pi}{3\rho}  \frac{dT}{dr} \int_{0}^{+\infty}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} d\nu\ \ .
@@ -237,7 +237,7 @@ Comparing this with Eq. \ref{eq:f_rad} we obtain that the
 \(\kappa_\mathrm{rad}\) appearing there must be:
 </p>
 
-<div class="latex" id="org7f157dc">
+<div class="latex" id="org98037e8">
 \begin{equation}
 \frac{1}{\kappa_\mathrm{rad}} = \frac{\pi}{acT^{3}}\int_{0}^{+\infty} d\nu \frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} \ \ ,
 \end{equation}
@@ -247,7 +247,7 @@ Comparing this with Eq. \ref{eq:f_rad} we obtain that the
 which we can rewrite as
 </p>
 
-<div class="latex" id="orgb6bcf91">
+<div class="latex" id="orgf7443e9">
 \begin{equation}
 \frac{1}{\kappa_\mathrm{rad}} = \frac{\int_{0}^{+\infty} d\nu \frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T}}{\int_{0}^{+\infty} d\nu \frac{\partial B(\nu, T)}{\partial T}} \ \ ,
 \end{equation}
@@ -278,7 +278,7 @@ gas described by a black body. We can rewrite Eq.
 \ref{eq:specific_flux} (using Eq. \ref{eq:int_flux}) as:
 </p>
 
-<div class="latex" id="org2f4e75c">
+<div class="latex" id="orgb304ad5">
 \begin{equation}
 F_{\nu} = - \frac{4\pi}{3\rho}\frac{dT}{dr}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} \Rightarrow F_{\nu} \propto \frac{\partial B(\nu, T)}{\partial T} \ \ ,
 \end{equation}
@@ -369,7 +369,7 @@ so still quite deep in the stars.
 </p>
 
 
-<figure id="orgc99d162">
+<figure id="org9406d7b">
 <img src="./images/bound_bound.png" alt="bound_bound.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Cartoon of a bound-bound transition. The photon (orange wiggly line) is absorbed by the ion (nucleus in blue, electron in green) where an electron jumps to a higher energy level, represented by the dashed black line. Credits: R. Townsend. <b>N.B.:</b> the orbit of the electron is not a little circle like this, which would be unstable! It is instead an <a href="https://en.wikipedia.org/wiki/Atomic_orbital#/media/File:Atomic-orbital-clouds_spdf_m0.png">orbital</a> which describes the spatial <i>probability distribution</i> of finding the electron there in accordance to quantum-mechanics.</figcaption>
@@ -394,7 +394,7 @@ absent.
 </p>
 
 
-<figure id="org6e3f7e4">
+<figure id="org48a4bc3">
 <img src="./images/bound_free.png" alt="bound_free.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Cartoon of a bound-free transition. Credits: R. Townsend.</figcaption>
@@ -418,7 +418,7 @@ at very low temperatures.
 </p>
 
 
-<figure id="org34e393a">
+<figure id="org3962967">
 <img src="./images/free_free.png" alt="free_free.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Cartoon of a free-free transition. Credits: R. Townsend.</figcaption>
@@ -445,7 +445,7 @@ ability to carry flux.
 </p>
 
 
-<figure id="org733473b">
+<figure id="org896f28c">
 <img src="./images/scattering.png" alt="scattering.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Cartoon of the scattering of a photon on an electron. Credits: R. Townsend.</figcaption>
@@ -463,7 +463,7 @@ be described by the Thomson scattering cross section, which divided by
 the \(\mu_{e}m_{u}\) gives the corresponding opacity. Therefore, for \(T\geq10^{6}\) K, \(\kappa_\mathrm{rad}
 \equiv \kappa_{es}\):
 </p>
-<div class="latex" id="org520697c">
+<div class="latex" id="orgc06f8a4">
 \begin{equation}
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2} \ g} \ \ ,
 \end{equation}
@@ -531,7 +531,7 @@ envelope of non-metal-free cool stars, e.g., red giants or the Sun
 itself! An approximate relation for its opacity is
 </p>
 
-<div class="latex" id="org09592a7">
+<div class="latex" id="org496d3d3">
 \begin{equation}
 \kappa_\mathrm{H^{-}} = 2.5\times10^{-31} \frac{Z}{Z_{☉}} \rho^{1/2} T^{9} \ \mathrm{cm^{2} \ g} \ \ .
 \end{equation}
@@ -582,53 +582,56 @@ high density degenerate cores to become effectively isothermal
 <h2 id="org37903ab"><a href="#org37903ab">Combining all these sources together</a></h2>
 <div class="outline-text-2" id="text-org37903ab">
 <p>
-<b>N.B.:</b> Ultimately in stellar evolution we use tabulated &kappa;<sub>\mathrm</sub>{rad} &equiv;
-&kappa;<sub>\mathrm</sub>{rad}(&rho;, T) that (try to) account for all these effects without
+<b>N.B.:</b> Ultimately in stellar evolution we use tabulated \(\kappa_\mathrm{rad} \equiv
+\kappa_\mathrm{rad}(\rho, T)\) that (try to) account for all these effects without
 needing to calculate them on the fly while dealing with the star.
 </p>
 
 
 
-<figure id="orgb6bf6b6">
+<figure id="org3aaf67c">
 <img src="./images/kappa_farag24.png" alt="kappa_farag24.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 5: </span>&kappa;&equiv;&kappa;(T,&rho;) combining all the sources of opacities we discussed (and more) from <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract">Farag et al. 2024</a>. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the <code>kap</code> module of the MESA code. See also <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract">Paxton et al. 2011</a>.</figcaption>
+<figcaption><span class="figure-number">Figure 5: </span>\(\kappa\equiv\kappa(T,\rho)\) combining all the sources of opacities we discussed (and more) from <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract">Farag et al. 2024</a>. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the <code>kap</code> module of the MESA code. See also <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract">Paxton et al. 2011</a>.</figcaption>
 </figure>
 
 
 <p>
-Ultimately, the metallicity (Z) or more specifically the detailed
-composition {X<sub>i</sub>} can have a large impact on &kappa;<sub>\mathrm</sub>{rad} and &kappa;, together with
-the thermodynamic state of the gas (T,&rho;), which determines which
-process dominates the blocking of photons
+Ultimately, the composition {\(X_{i}\)} (or more approximately the
+metallicity \(Z\) which accounts for the heaviest elements with most
+electrons and energy levels) can have a large impact on
+\(\kappa_\mathrm{rad}\) and \(\kappa\), together with the thermodynamic state of the
+gas \((T,\rho)\), which determines which process dominates the blocking of
+photons
 </p>
 
 <p>
-As you can see from the plot above, at fixed Z, there is maybe more
-structure as a function of T (because T determines the ionization
+As you can see from the plot above, at fixed \(Z\), there is more
+structure as a function of \(T\) (because \(T\) determines the ionization
 levels, and thus the bound-bound and bound-free). The solid black line
-represents the T(&rho;) profile of a stellar model.
+represents the \(T(\rho)\) profile of a stellar model.
 </p>
 
 <p>
 Opacity "bumps" in the stellar interior and surface can lead to a
-steepening of the radiative gradient (recall dT/dr &prop; &kappa; &times; Flux), and
+steepening of the radiative gradient (recall \(dT/dr \prop \kappa \times F\)), and
 cause the onset of other energy transport mechanisms and possibly
 stellar eruptions.
 </p>
 
 <p>
-By "projecting" the plot above on either axes, one can obtain the &kappa;(T)
-at fixed &rho; (or &kappa;(&rho;) at fixed T) and find that there are regimes where
-powerlaw approximations may be sufficient (e.g., the "Kramers" opacity
-law which gives &kappa;&prop; T<sup>-7/2</sup>&rho;, or the formula above for H<sup>-</sup> opacity), but in practice to compute
-a stellar model one needs to use tabulated opacities from complex
-models and/or experiments carried out at LANL, Livermore, and other
-big, often military funded, laboratories.
+By "projecting" the plot above on either axes, one can obtain the
+\(\kappa(T)\) at fixed \(\rho\) (or \(\kappa(\rho)\) at fixed \(T\)) and find that there are
+regimes where powerlaw approximations may be sufficient (e.g., the
+"Kramers" opacity law which gives \(\kappa\propto T^{-7/2}\rho\), or the formula above
+for H<sup>-</sup> opacity), but in practice to compute a stellar model one needs
+to use tabulated opacities from complex models and/or experiments
+carried out at LANL, Livermore, and other big, often military funded,
+laboratories.
 </p>
 
 
-<figure id="org8b9a7f9">
+<figure id="orgd065aa5">
 <img src="./images/kappa_T_farag24.png" alt="kappa_T_farag24.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>&kappa;<sub>\mathrm</sub>{rad} &equiv; &kappa;<sub>\mathrm</sub>{rad}(T) for various fixed densities &rho; (as indicated by the colorbar). This plot effectively shows various "slices" of the &kappa;<sub>\mathrm</sub>{rad}&equiv;&kappa;<sub>\mathrm</sub>{rad}(T,&rho;) and allows one to see how powerlaw approximations can be used in certain regimes, but do not capture the full picture. Note the shaded background indicating ionization levels of important elements. Also from <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract">Farag et al. 2024</a></figcaption>
@@ -645,13 +648,13 @@ big, often military funded, laboratories.
 <h3 id="org157bbce"><a href="#org157bbce">The Eddington Luminosity again</a></h3>
 <div class="outline-text-3" id="text-org157bbce">
 <p>
-Using <code>MESA-web</code>, compute a &ge;30 M<sub>☉</sub> star until the maximum central
-temperature reaches above &ge; 10<sup>8.5</sup> K. Make sure to save multiple
-profile files. Plot a series of &kappa;(m) and/or &kappa;(T) for the outer layers,
-and identify peaks that occur (<b>Hint</b>: this may be more easily done
-looking at &kappa;(T)). Plot also L(m) and L<sub>edd</sub>(m, &kappa;) and, using your model,
-try to identify what happens in layers where L exceeds L<sub>edd</sub>. We will
-discuss this in more detail in the next lecture.
+Using <code>MESA-web</code>, compute a \(\ge30 M_{☉}\) star until the maximum central
+temperature reaches above \(\ge 10^{8.5}\) K. Make sure to save multiple
+profile files. Plot a series of \(\kappa(m)\) and/or \(\kappa(T)\) for the outer
+layers, and identify peaks that occur (<b>Hint</b>: this may be more easily
+done looking at \(\kappa(T)\)). Plot also \(L(m)\) and \(L_{edd}(m, \kappa)\) and, using
+your model, try to identify what happens in layers where \(L\) exceeds
+\(L_{edd}\).
 </p>
 </div>
 </div>

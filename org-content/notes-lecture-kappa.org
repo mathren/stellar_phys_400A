@@ -331,38 +331,41 @@ high density degenerate cores to become effectively isothermal
 
 * Combining all these sources together
 
-*N.B.:* Ultimately in stellar evolution we use tabulated \kappa_\mathrm{rad} \equiv
-\kappa_\mathrm{rad}(\rho, T) that (try to) account for all these effects without
+*N.B.:* Ultimately in stellar evolution we use tabulated $\kappa_\mathrm{rad} \equiv
+\kappa_\mathrm{rad}(\rho, T)$ that (try to) account for all these effects without
 needing to calculate them on the fly while dealing with the star.
 
 
-#+CAPTION: \kappa\equiv\kappa(T,\rho) combining all the sources of opacities we discussed (and more) from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the =kap= module of the MESA code. See also [[https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract][Paxton et al. 2011]].
+#+CAPTION: $\kappa\equiv\kappa(T,\rho)$ combining all the sources of opacities we discussed (and more) from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the =kap= module of the MESA code. See also [[https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract][Paxton et al. 2011]].
 #+ATTR_HTML: :width 100%
 [[./images/kappa_farag24.png]]
 
 
-Ultimately, the metallicity (Z) or more specifically the detailed
-composition {X_{i}} can have a large impact on \kappa_\mathrm{rad} and \kappa, together with
-the thermodynamic state of the gas (T,\rho), which determines which
-process dominates the blocking of photons
+Ultimately, the composition {$X_{i}$} (or more approximately the
+metallicity $Z$ which accounts for the heaviest elements with most
+electrons and energy levels) can have a large impact on
+$\kappa_\mathrm{rad}$ and $\kappa$, together with the thermodynamic state of the
+gas $(T,\rho)$, which determines which process dominates the blocking of
+photons
 
-As you can see from the plot above, at fixed Z, there is maybe more
-structure as a function of T (because T determines the ionization
+As you can see from the plot above, at fixed $Z$, there is more
+structure as a function of $T$ (because $T$ determines the ionization
 levels, and thus the bound-bound and bound-free). The solid black line
-represents the T(\rho) profile of a stellar model.
+represents the $T(\rho)$ profile of a stellar model.
 
 Opacity "bumps" in the stellar interior and surface can lead to a
-steepening of the radiative gradient (recall dT/dr \prop \kappa \times Flux), and
+steepening of the radiative gradient (recall $dT/dr \prop \kappa \times F$), and
 cause the onset of other energy transport mechanisms and possibly
 stellar eruptions.
 
-By "projecting" the plot above on either axes, one can obtain the \kappa(T)
-at fixed \rho (or \kappa(\rho) at fixed T) and find that there are regimes where
-powerlaw approximations may be sufficient (e.g., the "Kramers" opacity
-law which gives \kappa\propto T^{-7/2}\rho, or the formula above for H^{-} opacity), but in practice to compute
-a stellar model one needs to use tabulated opacities from complex
-models and/or experiments carried out at LANL, Livermore, and other
-big, often military funded, laboratories.
+By "projecting" the plot above on either axes, one can obtain the
+$\kappa(T)$ at fixed $\rho$ (or $\kappa(\rho)$ at fixed $T$) and find that there are
+regimes where powerlaw approximations may be sufficient (e.g., the
+"Kramers" opacity law which gives $\kappa\propto T^{-7/2}\rho$, or the formula above
+for H^{-} opacity), but in practice to compute a stellar model one needs
+to use tabulated opacities from complex models and/or experiments
+carried out at LANL, Livermore, and other big, often military funded,
+laboratories.
 
 #+CAPTION: \kappa_\mathrm{rad} \equiv \kappa_\mathrm{rad}(T) for various fixed densities \rho (as indicated by the colorbar). This plot effectively shows various "slices" of the \kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,\rho) and allows one to see how powerlaw approximations can be used in certain regimes, but do not capture the full picture. Note the shaded background indicating ionization levels of important elements. Also from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]
 #+ATTR_HTML: :width 100%
@@ -373,10 +376,10 @@ big, often military funded, laboratories.
 
 ** The Eddington Luminosity again
 
-Using =MESA-web=, compute a \ge30 M_{\odot} star until the maximum central
-temperature reaches above \ge 10^{8.5} K. Make sure to save multiple
-profile files. Plot a series of \kappa(m) and/or \kappa(T) for the outer layers,
-and identify peaks that occur (*Hint*: this may be more easily done
-looking at \kappa(T)). Plot also L(m) and L_{edd}(m, \kappa) and, using your model,
-try to identify what happens in layers where L exceeds L_{edd}. We will
-discuss this in more detail in the next lecture.
+Using =MESA-web=, compute a $\ge30 M_{\odot}$ star until the maximum central
+temperature reaches above $\ge 10^{8.5}$ K. Make sure to save multiple
+profile files. Plot a series of $\kappa(m)$ and/or $\kappa(T)$ for the outer
+layers, and identify peaks that occur (*Hint*: this may be more easily
+done looking at $\kappa(T)$). Plot also $L(m)$ and $L_{edd}(m, \kappa)$ and, using
+your model, try to identify what happens in layers where $L$ exceeds
+$L_{edd}$.
