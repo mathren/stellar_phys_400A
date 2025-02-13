@@ -1,8 +1,8 @@
 #+Title: 400A - Mass transfer
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
-#+PREVIOUS_PAGE: notes-lecture-winds.org
-#+NEXT_PAGE: notes-in-class-evol.org
+#+PREVIOUS_PAGE: notes-inclass-evol.org
+#+NEXT_PAGE: notes-lecture-SNe.org
 
 *Materials*: Onno Pols' lecture notes Chapter 7,8, Tauris & van den
 Heuvel book chapter 4.

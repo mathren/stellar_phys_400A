@@ -119,7 +119,7 @@ Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Gric
 - [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
 - [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
 
-** <2025-03-10 Mon> - <2025-03-14 Fri>SPRING BREAK
+** <2025-03-10 Mon> - <2025-03-14 Fri> - SPRING BREAK
 ** TODO <2025-03-18 Tue> - *Guest Lecture TBD*
 Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
 ** <2025-03-20 Thu> - *Special Guest Lecture*: Asteroseismology
@@ -164,6 +164,11 @@ core-collapse and the formation of compact objects
 [[./notes-lecture-SNe.org][Notes]]
 
 ** TODO <2025-04-10 Tue> - Gravitational wave progenitors
+*Aim*: introduce gravitational wave formation scenario (isolated binary
+and dynamical assembly), discuss some known uncertainties.
+
+[[./notes-lecture-GWprog.org][Notes]]
+
 ** <2025-04-17 Tue> - Two student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
 The details of the schedule will be communicated on D2L

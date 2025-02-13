@@ -1,0 +1,83 @@
+#+title: 400A - GW progenitors
+#+author: Mathieu Renzo
+#+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-SNe.org
+#+NEXT_PAGE: projects.org
+
+*Materials:* Chapter 15 in Tauris & Van den Heuvel 2023 book, [[https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract][Schutz
+1984]].
+
+
+* Photons, neutrinos, and gravitational-wave astronomy
+
+Astronomy since its inception lost in history is based on observations
+of (visible) light from sources in the Sky. As mentioned in [[./notes-lecture-CMD-HRD.org][at the
+beginning]], between the 17^{th} and 19^{th} century astronomy was unified
+with physics (universal law of gravitation and spectra). In the 20^{th}
+century, the wavelength range accessible to telescopes greatly
+increased (from high-energy \gamma-rays to long radio wavelengths), making
+astronomy a /multi-wavelength/ science.
+
+With the detection of neutrinos (first solar, then from SN1987A, and
+most recently very high-energy neutrinos), astronomy became
+"multi-messenger" (photons+neutrinos), a buzz word that is highly used
+presently.
+
+The addition of gravitational waves discussed today adds a completely
+new way to look at astrophysical sources, probing optically thick and
+thus inaccessible regions, and regimes where gravity is /strong/ (i.e.,
+a full general relativistic treatment of the interaction of matter
+with space-time becomes necessary).
+
+
+* GW basics
+
+
+
+
+** Indirect detection of GWs
+
+  [[https://ui.adsabs.harvard.edu/abs/1975ApJ...195L..51H/abstract][Hulse & Taylor 1975]] discovered the first pulsar (radio source
+  repeating with very high precision interpreted physically as a
+  neutron star rotating fast) in a binary system, PSR B1913+16 (a.k.a.
+  "Hulse-Taylor pulsar"). They showed a radial velocity curve (recall
+  [[./notes-lecture-BIN.org][the lecture on binary orbital motion]]) which demonstrated the orbit
+  is eccentric and the companion is another compact object.
+
+  Monitoring this system, and measuring the delay between periastron
+  passage observed and the periastron passage predicted with a
+  Keplerian orbit, one can see that the period is progressively
+  speeding up, or, in other words, the orbit is shrinking in time.
+
+  #+CAPTION: Dots are the measured cumulative time shift in periastron passage w.r.t. a Keplerian orbit with constant period for PSR B1913+16. The solid line is the prediction assuming the period is changing due to GW emission as predicted by general relativity. Note that this is *not* a fit! From [[https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract][Weisberg & Huang 2016]]
+  #+ATTR_HTML: :width 100%
+  [[./images/GW-decay.jpg]]
+
+  The measured agreement between the period decay of the Hulse-Taylor
+  pulsar and general relativity prediction of the energy loss due to
+  GW emission is considered the first /indirect/ evidence for GW (and
+  was awarded the Nobel prize in 1993).
+
+
+* Direct detection through interferometry
+
+ - strain $h \ll 10^{-15} cm$ \sim size of nucleus
+ - GW150914
+ - increase rate of discovery
+
+* The future of GW astronomy
+
+ - LISA/TianQin
+ - PTA
+ - 3^{rd} Generation detectors (BBO/Einstein telescope)
+
+* The problem: how do compact objects get so close to each other?
+
+
+* Isolated binary evolution
+
+* Dynamical channels
+ - cluster
+ - nuclear star cluster
+ - AGN disk
+ - connection to runaways?

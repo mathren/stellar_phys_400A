@@ -22,23 +22,23 @@ combination of the radiative opacity and conductive opacity
 \end{equation}
 #+end_latex
 
-Since we also saw that dT/dr \propto \kappa F, it is clear that the opacity \kappa is
+Since we also saw that $dT/dr \propto \kappa F$, it is clear that the opacity $\kappa$ is
 an extremely important parameter for the structure of the star.
 Effectively, what that proportionality means is that given an opacity
-profile \kappa\equiv\kappa(r(m)), the stellar structure will adjust in such a way
-that the temperature gradient dT/dr is sufficient to carry out the
-flux F that is necessary to maintain energy conservation
+profile $\kappa\equiv\kappa(r(m)$), the stellar structure will adjust in such a way
+that the temperature gradient $dT/dr$ is sufficient to carry out the
+flux $F$ that is necessary to maintain energy conservation
 layer-by-layer (accounting for the energy losses at the surface and
 throughout because of e.g., neutrinos)!
 
 *N.B.:* The structure of each layer of the star is determined by (i) the
-microscopic properties of matter (e.g., \kappa_{rad}) and, more importantly,
-(ii) the energy losses by the outward flux F. The latter is the way
-the star compensates for the energy losses (its luminosity L).
+microscopic properties of matter (e.g., $\kappa_\mathrm{rad}$) and, more importantly,
+(ii) the energy losses by the outward flux $F$. The latter is the way
+the star compensates for the energy losses (its luminosity $L$).
 
-The purpose of this lecture is to focus on \kappa_{rad} and understand what
-physically determines it, and understand how \kappa_{rad}\equiv\kappa_{rad}(T,
-\rho, {X_{i}}) can be expressed as a function of the thermodynamics and
+The purpose of this lecture is to focus on $\kappa_\mathrm{rad}$ and understand what
+physically determines it, and understand how $\kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,
+\rho, {X_{i}})$ can be expressed as a function of the thermodynamics and
 composition of the stellar gas.
 
 
@@ -50,8 +50,8 @@ frequency of the radiation! Optical radiation clearly penetrates the
 Earth atmosphere, while X-rays don't; the small fraction of UV
 radiation that does penetrate the atmosphere and cause Sun burns does
 not penetrate the windshield of a car, but the optical wavelengths do,
-etc. So clearly in general \kappa_{rad} \equiv \kappa_{rad}(\nu) is a function of
-the frequency of the light we are considering with \nu = c/\lambda. What
+etc. So clearly in general $\kappa_\mathrm{rad} \equiv \kappa_\mathrm{rad}(\nu)$ is a function of
+the frequency of the light we are considering with $\nu = c/\lambda$. What
 happened to that dependence in our stellar structure equations?
 
 In the [[./notes-lecture-ETransport.org::*Energy transport by radiative diffusion][previous lecture]] we have written for the radiative energy flux
@@ -101,7 +101,7 @@ F_\mathrm{rad} = \int_{0}^{+\infty} F_{\nu}d\nu = - \frac{1}{3}\frac{c}{\rho}\in
 #+end_latex
 
 Comparing this with Eq. \ref{eq:f_rad} from the previous lecture we obtain that the
-\kappa_{rad} appearing there must be:
+\kappa_\mathrm{rad} appearing there must be:
 
 #+begin_latex
 \begin{equation}
@@ -149,7 +149,7 @@ means that the Rosseland mean tends to "upweight" where most of the
 radiation energy is, and "down weight" the very low and very high
 frequencies.
 
-In other words, 1/\kappa_{rad} is smallest where most of the radiation energy
+In other words, 1/\kappa_\mathrm{rad} is smallest where most of the radiation energy
 can get through (which makes sense since we are developing an
 understanding for how energy is transported, and not for how energy is
 trapped!).
@@ -241,11 +241,11 @@ ability to carry flux.
 
 At very high temperatures, scattering off free electrons is the main
 source of opacity (no bound-bound and bound-free processes without
-bound electrons), which greatly simplifies the \kappa_{rad}(T,\rho) dependence.
+bound electrons), which greatly simplifies the \kappa_\mathrm{rad}(T,\rho) dependence.
 
 The scattering of a classical electromagnetic wave off-an electron can
 be described by the Thomson scattering cross section, which divided by
-the \mu_{e}m_{u} gives the corresponding opacity. Therefore, for T\geq10^{6} K, \kappa_{rad}
+the \mu_{e}m_{u} gives the corresponding opacity. Therefore, for T\geq10^{6} K, \kappa_\mathrm{rad}
 \equiv \kappa_{es}:
 #+begin_latex
 \begin{equation}
@@ -265,8 +265,8 @@ exchange between radiation and the electron (Thomson \rightarrow Compton
 scattering), which decreases the opacity. At even higher energies of
 the photons, one may need to use the Klein-Nishina formula.
 
-*N.B.:* Ultimately in stellar evolution we use tabulated \kappa_{rad} \equiv
-\kappa_{rad}(\rho, T) that (try to) account for all these effects without
+*N.B.:* Ultimately in stellar evolution we use tabulated \kappa_\mathrm{rad} \equiv
+\kappa_\mathrm{rad}(\rho, T) that (try to) account for all these effects without
 needing to calculate them on the fly while dealing with the star.
 
 ** Molecules and dust
@@ -281,7 +281,7 @@ molecular bands).
 
 *N.B.:* molecular opacity is a field of research in /laboratory/
 astrophysics, when the relevant molecules can be synthesized and kept
-at the relevant T and \rho one can experimentally measure their \kappa_{rad}
+at the relevant T and \rho one can experimentally measure their \kappa_\mathrm{rad}
 which is extremely complicated to calculate from first principles.
 
 ** H^{-}
@@ -313,7 +313,7 @@ itself! An approximate relation for its opacity is
 
 ** Conductive opacity
 
-For an ideal gas, \kappa_{cond} \gg \kappa_{rad} making conduction irrelevant in
+For an ideal gas, \kappa_\mathrm{cond} \gg \kappa_\mathrm{rad} making conduction irrelevant in
 the combined opacity. This is because the Coulomb scattering cross
 section among charged particles in a plasma is larger than the cross
 section for interactions with photons.
@@ -327,6 +327,7 @@ At very high densities, the electron mean-free path are very long
 below the Fermi energy), making conduction very efficient and allowing
 high density degenerate cores to become effectively isothermal
 (T=constant, dT/dr = 0).
+
 
 * Combining all these sources together
 
@@ -358,7 +359,7 @@ a stellar model one needs to use tabulated opacities from complex
 models and/or experiments carried out at LANL, Livermore, and other
 big, often military funded, laboratories.
 
-#+CAPTION: \kappa_{rad} \equiv \kappa_{rad}(T) for various fixed densities \rho (as indicated by the colorbar). This plot effectively shows various "slices" of the \kappa_{rad}\equiv\kappa_{rad}(T,\rho) and allows one to see how powerlaw approximations can be used in certain regimes, but do not capture the full picture. Note the shaded background indicating ionization levels of important elements. Also from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]
+#+CAPTION: \kappa_\mathrm{rad} \equiv \kappa_\mathrm{rad}(T) for various fixed densities \rho (as indicated by the colorbar). This plot effectively shows various "slices" of the \kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,\rho) and allows one to see how powerlaw approximations can be used in certain regimes, but do not capture the full picture. Note the shaded background indicating ionization levels of important elements. Also from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]
 #+ATTR_HTML: :width 100%
 [[./images/kappa_T_farag24.png]]
 
