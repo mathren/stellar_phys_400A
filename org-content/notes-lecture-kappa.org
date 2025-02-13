@@ -136,26 +136,28 @@ F_{\nu} = - \frac{4\pi}{3\rho}\frac{dT}{dr}\frac{1}{\kappa_{\nu}}\frac{\partial 
 \end{equation}
 #+end_latex
 
-Therefore at a location in the star of given \rho and dT/dr, the integral
+Therefore at a location in the star of given $\rho$ and $dT/dr$, the integral
 in the numerator of the Rosseland mean opacity is proportional to the
-flux F_{\nu}: the Rosseland mean opacity weights the specific opacity
-(per unit frequency \nu) with the available flux F_{\nu} according to a
+flux $F_{\nu}$: the Rosseland mean opacity weights the specific opacity
+(per unit frequency $\nu$) with the available flux $F_{\nu}$ according to a
 black body distribution.
 
-The frequency \nu at which most of the photon energy is found by solving
-\partial u_{\nu} / \partial T = 0, which yields a maximum at h\nu = 4k_{B}T. This
+The frequency $\nu$ at which most of the photon energy is found by solving
+$\partial u_{\nu} / \partial T = 0$, which yields a maximum at $h\nu = 4k_{B}T$. This
 means that the Rosseland mean tends to "upweight" where most of the
 radiation energy is, and "down weight" the very low and very high
 frequencies.
 
-In other words, 1/\kappa_\mathrm{rad} is smallest where most of the radiation energy
+In other words, $1/\kappa_\mathrm{rad}$ is smallest where most of the radiation energy
 can get through (which makes sense since we are developing an
 understanding for how energy is transported, and not for how energy is
 trapped!).
 
 An unfortunate consequence of the harmonic nature of the Rosseland
 mean opacity is that it is not trivial to combine opacity of different
-gasses, the specific \kappa_{\nu} have to be summed /before/ taking the average.
+gasses, the specific $\kappa_{\nu}$ from each component of the gas have to be
+summed /before/ taking the average over frequencies: $\kappa_{\nu}^{}^\mathrm{tot}
+= \sum_\mathrm{gas} \kappa_{\nu,i}_{} X_{i}$.
 
 
 * Sources of radiative opacity
