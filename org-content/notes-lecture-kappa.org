@@ -156,8 +156,8 @@ trapped!).
 An unfortunate consequence of the harmonic nature of the Rosseland
 mean opacity is that it is not trivial to combine opacity of different
 gasses, the specific $\kappa_{\nu}$ from each component of the gas have to be
-summed /before/ taking the average over frequencies: $\kappa_{\nu}^{}^\mathrm{tot}
-= \sum_\mathrm{gas} \kappa_{\nu,i}_{} X_{i}$.
+summed /before/ taking the average over frequencies: $\kappa_{\nu}^\mathrm{tot}
+= \sum_\mathrm{gas} \kappa_{\nu,i}X_{i}$.
 
 
 * Sources of radiative opacity
