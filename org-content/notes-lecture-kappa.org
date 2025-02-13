@@ -156,8 +156,10 @@ trapped!).
 An unfortunate consequence of the harmonic nature of the Rosseland
 mean opacity is that it is not trivial to combine opacity of different
 gasses, the specific $\kappa_{\nu}$ from each component of the gas have to be
-summed /before/ taking the average over frequencies: $\kappa_{\nu}^\mathrm{tot}
-= \sum_\mathrm{i} \kappa_{\nu,i}X_{i}$.
+summed /before/ taking the average over frequencies: first we need to
+calculate $\kappa_{\nu}^\mathrm{tot} = \sum_\mathrm{i} \kappa_{\nu,i}X_{i}$ as a sum
+weighted with the mass fraction $X_{i}$ of each species and then plug
+$\kappa_{\nu}^\mathrm{tot}$ into the Rosseland mean.
 
 * Sources of radiative opacity
 
@@ -168,14 +170,14 @@ Rosseland mean opacity to obtain $\kappa_\mathrm{rad}$).
 ** Bound-bound
 Photons (orange wiggly line) can interact with the electrons in an
 atom/ion (especially if they have the "right" frequency close to
-\nu\simeq\Delta E/h with \Delta E the energy difference between the two levels for the
+$\nu\simeq\Delta E/h$ with $\Delta E$ the energy difference between the two levels for the
 electron). In this case the photon is absorbed by the ion and its
 energy goes into the energy level of the electron, which was bound to
 the nucleus before and after the interaction with the photon (hence
 the bound-bound name).
 
 Because every atom/ion has specific energy levels, this opacity source
-may have a very complex frequency (i.e. photon energy) dependency. The
+may have a very complex frequency (i.e., photon energy) dependency. The
 transition energies must be determined solving the Hamiltonian for the
 electrons in the potential for the specific atom/ion, which can be
 extremely complicated and/or computationally unfeasible: for this
@@ -189,7 +191,7 @@ they are not fully ionized.
 This opacity source matters only until there are bound electrons to
 their respective ions in the stellar gas, which at very high T becomes
 more and more rare (since collisions between atoms would strip away
-the electrons). However, this term starts playing a role for T\le10^{6} K,
+the electrons). However, this term starts playing a role for $T\le10^{6}$ K,
 so still quite deep in the stars.
 
 #+CAPTION: Cartoon of a bound-bound transition. The photon (orange wiggly line) is absorbed by the ion (nucleus in blue, electron in green) where an electron jumps to a higher energy level, represented by the dashed black line. Credits: R. Townsend. *N.B.:* the orbit of the electron is not a little circle like this, which would be unstable! It is instead an [[https://en.wikipedia.org/wiki/Atomic_orbital#/media/File:Atomic-orbital-clouds_spdf_m0.png][orbital]] which describes the spatial /probability distribution/ of finding the electron there in accordance to quantum-mechanics.
@@ -225,7 +227,7 @@ at very low temperatures.
 
 
 Note that in the cartoon an ion/atom is still represented. The process
-of absorption of a photon by a single electron (\gamma+e \rightarrow e) would violate
+of absorption of a photon by a single electron ($\gamma+e \rightarrow e$) would violate
 conservation of the four-momentum, and it is not possible, but it is
 possible for an electron in the electromagnetic field of an ion.
 
@@ -241,23 +243,23 @@ ability to carry flux.
 
 At very high temperatures, scattering off free electrons is the main
 source of opacity (no bound-bound and bound-free processes without
-bound electrons), which greatly simplifies the \kappa_\mathrm{rad}(T,\rho) dependence.
+bound electrons), which greatly simplifies the $\kappa_\mathrm{rad}(T,\rho)$ dependence.
 
 The scattering of a classical electromagnetic wave off-an electron can
 be described by the Thomson scattering cross section, which divided by
-the \mu_{e}m_{u} gives the corresponding opacity. Therefore, for T\geq10^{6} K, \kappa_\mathrm{rad}
-\equiv \kappa_{es}:
+the $\mu_{e}m_{u}$ gives the corresponding opacity. Therefore, for $T\geq10^{6$} K, $\kappa_\mathrm{rad}
+\equiv \kappa_{es$}:
 #+begin_latex
 \begin{equation}
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2} \ g} \ \ ,
 \end{equation}
 #+end_latex
-which does /not/ depend on T or \rho, but only on the mass fraction of
-Hydrogen X (recall that \mu_{e} = 2/(1+X) for fully ionized gas). If the
-gas is not fully ionized the expression here does not old.
+which does /not/ depend on $T$ or $\rho$, but only on the mass fraction of
+Hydrogen $X$ (recall that $\mu_{e} = 2/(1+X)$ for fully ionized gas). If
+the gas is not fully ionized the expression here does not old.
 
 Note that this opacity does /not/ depend on the electromagnetic
-wave/photon frequency \nu, so in the Rosseland mean, it comes out of the
+wave/photon frequency $\nu$, so in the Rosseland mean, it comes out of the
 integral!
 
 For very high energy, one needs to account also for the momentum
@@ -265,24 +267,21 @@ exchange between radiation and the electron (Thomson \rightarrow Compton
 scattering), which decreases the opacity. At even higher energies of
 the photons, one may need to use the Klein-Nishina formula.
 
-*N.B.:* Ultimately in stellar evolution we use tabulated \kappa_\mathrm{rad} \equiv
-\kappa_\mathrm{rad}(\rho, T) that (try to) account for all these effects without
-needing to calculate them on the fly while dealing with the star.
-
 ** Molecules and dust
 
-At T\le4000K, atoms may bound together and form molecules, and even
-lower (T\le1500K) dust grains may form. These are not the same dust you find on
-Earth (mostly small crystals, dead skin, etc.) but large agglomeration
-of molecules. These structures cause a very large increase in the
-opacity: the electrons in them can have many degrees of freedom that
-can be used to absorb and scatter photons (e.g., roto-vibrational
-molecular bands).
+At $T\le4000$ K, atoms may bound together and form molecules, and even
+lower ($T\le1500$ K) dust grains may form. These are not the same dust
+you find on Earth (mostly small crystals, dead skin, etc.) but large
+agglomeration of molecules. These structures cause a very large
+increase in the opacity: the electrons in them can have many degrees
+of freedom that can be used to absorb and scatter photons (e.g.,
+roto-vibrational molecular bands).
 
 *N.B.:* molecular opacity is a field of research in /laboratory/
 astrophysics, when the relevant molecules can be synthesized and kept
-at the relevant T and \rho one can experimentally measure their \kappa_\mathrm{rad}
-which is extremely complicated to calculate from first principles.
+at the relevant $T$ and $\rho$ one can experimentally measure their
+$\kappa_\mathrm{rad}$ which is extremely complicated to calculate from
+first principles.
 
 ** H^{-}
 At low temperature hydrogen may capture an extra electron forming an
@@ -313,10 +312,10 @@ itself! An approximate relation for its opacity is
 
 ** Conductive opacity
 
-For an ideal gas, \kappa_\mathrm{cond} \gg \kappa_\mathrm{rad} making conduction irrelevant in
-the combined opacity. This is because the Coulomb scattering cross
-section among charged particles in a plasma is larger than the cross
-section for interactions with photons.
+For an ideal gas, $\kappa_\mathrm{cond} \gg \kappa_\mathrm{rad}$ making conduction
+irrelevant in the combined opacity. This is because the Coulomb
+scattering cross section among charged particles in a plasma is larger
+than the cross section for interactions with photons.
 
 Only for degenerate gas (at least partially), diffusion of energy
 through the thermal motion of particles (electrons, because of their
@@ -326,10 +325,15 @@ At very high densities, the electron mean-free path are very long
 (since collisions are forbidden by not having any level available
 below the Fermi energy), making conduction very efficient and allowing
 high density degenerate cores to become effectively isothermal
-(T=constant, dT/dr = 0).
+($T$=constant, $dT/dr = 0$).
 
 
 * Combining all these sources together
+
+*N.B.:* Ultimately in stellar evolution we use tabulated \kappa_\mathrm{rad} \equiv
+\kappa_\mathrm{rad}(\rho, T) that (try to) account for all these effects without
+needing to calculate them on the fly while dealing with the star.
+
 
 #+CAPTION: \kappa\equiv\kappa(T,\rho) combining all the sources of opacities we discussed (and more) from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the =kap= module of the MESA code. See also [[https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract][Paxton et al. 2011]].
 #+ATTR_HTML: :width 100%

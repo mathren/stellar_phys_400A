@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-13 Thu 09:46 -->
+<!-- 2025-02-13 Thu 10:06 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - opacity</title>
@@ -125,7 +125,7 @@ of energy by diffusion. This was the analogy that comes out from the
 combination of the radiative opacity and conductive opacity
 </p>
 
-<div class="latex" id="org3dec359">
+<div class="latex" id="orgec7b5cd">
 \begin{equation}\label{eq:kappas}
 \frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
 \end{equation}
@@ -179,7 +179,7 @@ happened to that dependence in our stellar structure equations?
 In the <a href="./notes-lecture-ETransport.html#orgcae4028">previous lecture</a> we have written for the radiative energy flux
 </p>
 
-<div class="latex" id="org45771ca">
+<div class="latex" id="org8fe0899">
 \begin{equation}\label{eq:f_rad}
 F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \equiv -\frac{4ac}{3c\rho T^{3}}\frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ .
 \end{equation}
@@ -197,7 +197,7 @@ specific flux, we also should put in the equation the specific opacity
 \(\nu\) and \(\nu+d\nu\):
 </p>
 
-<div class="latex" id="orgc0cf478">
+<div class="latex" id="org5c14fa1">
 \begin{equation}\label{eq:specific_flux}
 F_{\nu} = - \frac{1}{3}\frac{c}{\kappa_{\nu}\rho}\frac{du_{\nu}}{dr} \ \ .
 \end{equation}
@@ -213,7 +213,7 @@ to a black body distribution for the intensity in the stellar
 interior:
 </p>
 
-<div class="latex" id="org4eaf0e4">
+<div class="latex" id="org862e3f6">
 \begin{equation}
 u_{\nu} = \frac{4\pi}{c}B(\nu, T) = \frac{8\pi h}{c^{3}}\frac{\nu^{3}}{e^{h\nu/k_{B}T} -1} \ \ .
 \end{equation}
@@ -224,7 +224,7 @@ u_{\nu} = \frac{4\pi}{c}B(\nu, T) = \frac{8\pi h}{c^{3}}\frac{\nu^{3}}{e^{h\nu/k
 Thus \(du_{\nu}/dr = 4\pi/c \times \partial B(\nu, T)/\partial T \times dT/dr\), and performing the integral over the frequencies:
 </p>
 
-<div class="latex" id="org5d78799">
+<div class="latex" id="org62ab61f">
 \begin{equation}\label{eq:int_flux}
 F_\mathrm{rad} = \int_{0}^{+\infty} F_{\nu}d\nu = - \frac{1}{3}\frac{c}{\rho}\int_{0}^{+\infty} \frac{1}{\kappa_{\nu}}\frac{du_{\nu}}{dr} =
 -\frac{4\pi}{3\rho}  \frac{dT}{dr} \int_{0}^{+\infty}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} d\nu\ \ .
@@ -237,7 +237,7 @@ Comparing this with Eq. \ref{eq:f_rad} we obtain that the
 \(\kappa_\mathrm{rad}\) appearing there must be:
 </p>
 
-<div class="latex" id="org88842c0">
+<div class="latex" id="orgc79f154">
 \begin{equation}
 \frac{1}{\kappa_\mathrm{rad}} = \frac{\pi}{acT^{3}}\int_{0}^{+\infty} d\nu \frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} \ \ ,
 \end{equation}
@@ -247,7 +247,7 @@ Comparing this with Eq. \ref{eq:f_rad} we obtain that the
 which we can rewrite as
 </p>
 
-<div class="latex" id="org815b11e">
+<div class="latex" id="org28da3cf">
 \begin{equation}
 \frac{1}{\kappa_\mathrm{rad}} = \frac{\int_{0}^{+\infty} d\nu \frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T}}{\int_{0}^{+\infty} d\nu \frac{\partial B(\nu, T)}{\partial T}} \ \ ,
 \end{equation}
@@ -278,7 +278,7 @@ gas described by a black body. We can rewrite Eq.
 \ref{eq:specific_flux} (using Eq. \ref{eq:int_flux}) as:
 </p>
 
-<div class="latex" id="org00e198c">
+<div class="latex" id="orgd30d24d">
 \begin{equation}
 F_{\nu} = - \frac{4\pi}{3\rho}\frac{dT}{dr}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} \Rightarrow F_{\nu} \propto \frac{\partial B(\nu, T)}{\partial T} \ \ ,
 \end{equation}
@@ -312,8 +312,10 @@ trapped!).
 An unfortunate consequence of the harmonic nature of the Rosseland
 mean opacity is that it is not trivial to combine opacity of different
 gasses, the specific \(\kappa_{\nu}\) from each component of the gas have to be
-summed <i>before</i> taking the average over frequencies: \(\kappa_{\nu}^\mathrm{tot}
-= \sum_\mathrm{i} \kappa_{\nu,i}X_{i}\).
+summed <i>before</i> taking the average over frequencies: first we need to
+calculate \(\kappa_{\nu}^\mathrm{tot} = \sum_\mathrm{i} \kappa_{\nu,i}X_{i}\) as a sum
+weighted with the mass fraction \(X_{i}\) of each species and then plug
+\(\kappa_{\nu}^\mathrm{tot}\) into the Rosseland mean.
 </p>
 </div>
 </div>
@@ -335,7 +337,7 @@ Rosseland mean opacity to obtain \(\kappa_\mathrm{rad}\)).
 <p>
 Photons (orange wiggly line) can interact with the electrons in an
 atom/ion (especially if they have the "right" frequency close to
-&nu;&cong;&Delta; E/h with &Delta; E the energy difference between the two levels for the
+\(\nu\simeq\Delta E/h\) with \(\Delta E\) the energy difference between the two levels for the
 electron). In this case the photon is absorbed by the ion and its
 energy goes into the energy level of the electron, which was bound to
 the nucleus before and after the interaction with the photon (hence
@@ -344,7 +346,7 @@ the bound-bound name).
 
 <p>
 Because every atom/ion has specific energy levels, this opacity source
-may have a very complex frequency (i.e. photon energy) dependency. The
+may have a very complex frequency (i.e., photon energy) dependency. The
 transition energies must be determined solving the Hamiltonian for the
 electrons in the potential for the specific atom/ion, which can be
 extremely complicated and/or computationally unfeasible: for this
@@ -362,12 +364,12 @@ they are not fully ionized.
 This opacity source matters only until there are bound electrons to
 their respective ions in the stellar gas, which at very high T becomes
 more and more rare (since collisions between atoms would strip away
-the electrons). However, this term starts playing a role for T&le;10<sup>6</sup> K,
+the electrons). However, this term starts playing a role for \(T\le10^{6}\) K,
 so still quite deep in the stars.
 </p>
 
 
-<figure id="org68abc41">
+<figure id="orgd5cbc8d">
 <img src="./images/bound_bound.png" alt="bound_bound.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Cartoon of a bound-bound transition. The photon (orange wiggly line) is absorbed by the ion (nucleus in blue, electron in green) where an electron jumps to a higher energy level, represented by the dashed black line. Credits: R. Townsend. <b>N.B.:</b> the orbit of the electron is not a little circle like this, which would be unstable! It is instead an <a href="https://en.wikipedia.org/wiki/Atomic_orbital#/media/File:Atomic-orbital-clouds_spdf_m0.png">orbital</a> which describes the spatial <i>probability distribution</i> of finding the electron there in accordance to quantum-mechanics.</figcaption>
@@ -392,7 +394,7 @@ absent.
 </p>
 
 
-<figure id="org66b30fa">
+<figure id="orgf1ccfe3">
 <img src="./images/bound_free.png" alt="bound_free.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Cartoon of a bound-free transition. Credits: R. Townsend.</figcaption>
@@ -416,7 +418,7 @@ at very low temperatures.
 </p>
 
 
-<figure id="org2e993e8">
+<figure id="orga203718">
 <img src="./images/free_free.png" alt="free_free.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Cartoon of a free-free transition. Credits: R. Townsend.</figcaption>
@@ -425,7 +427,7 @@ at very low temperatures.
 
 <p>
 Note that in the cartoon an ion/atom is still represented. The process
-of absorption of a photon by a single electron (&gamma;+e &rarr; e) would violate
+of absorption of a photon by a single electron (\(\gamma+e \rightarrow e\)) would violate
 conservation of the four-momentum, and it is not possible, but it is
 possible for an electron in the electromagnetic field of an ion.
 </p>
@@ -443,7 +445,7 @@ ability to carry flux.
 </p>
 
 
-<figure id="org67236d0">
+<figure id="orgdf60046">
 <img src="./images/scattering.png" alt="scattering.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Cartoon of the scattering of a photon on an electron. Credits: R. Townsend.</figcaption>
@@ -452,30 +454,30 @@ ability to carry flux.
 <p>
 At very high temperatures, scattering off free electrons is the main
 source of opacity (no bound-bound and bound-free processes without
-bound electrons), which greatly simplifies the &kappa;<sub>\mathrm</sub>{rad}(T,&rho;) dependence.
+bound electrons), which greatly simplifies the \(\kappa_\mathrm{rad}(T,\rho)\) dependence.
 </p>
 
 <p>
 The scattering of a classical electromagnetic wave off-an electron can
 be described by the Thomson scattering cross section, which divided by
-the &mu;<sub>e</sub>m<sub>u</sub> gives the corresponding opacity. Therefore, for T&ge;10<sup>6</sup> K, &kappa;<sub>\mathrm</sub>{rad}
-&equiv; &kappa;<sub>es</sub>:
+the \(\mu_{e}m_{u}\) gives the corresponding opacity. Therefore, for \(T\geq10^{6\)} K, \(\kappa_\mathrm{rad}
+\equiv \kappa_{es\)}:
 </p>
-<div class="latex" id="org7b6fe2e">
+<div class="latex" id="org401577e">
 \begin{equation}
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2} \ g} \ \ ,
 \end{equation}
 
 </div>
 <p>
-which does <i>not</i> depend on T or &rho;, but only on the mass fraction of
-Hydrogen X (recall that &mu;<sub>e</sub> = 2/(1+X) for fully ionized gas). If the
-gas is not fully ionized the expression here does not old.
+which does <i>not</i> depend on \(T\) or \(\rho\), but only on the mass fraction of
+Hydrogen \(X\) (recall that \(\mu_{e} = 2/(1+X)\) for fully ionized gas). If
+the gas is not fully ionized the expression here does not old.
 </p>
 
 <p>
 Note that this opacity does <i>not</i> depend on the electromagnetic
-wave/photon frequency &nu;, so in the Rosseland mean, it comes out of the
+wave/photon frequency \(\nu\), so in the Rosseland mean, it comes out of the
 integral!
 </p>
 
@@ -485,12 +487,6 @@ exchange between radiation and the electron (Thomson &rarr; Compton
 scattering), which decreases the opacity. At even higher energies of
 the photons, one may need to use the Klein-Nishina formula.
 </p>
-
-<p>
-<b>N.B.:</b> Ultimately in stellar evolution we use tabulated &kappa;<sub>\mathrm</sub>{rad} &equiv;
-&kappa;<sub>\mathrm</sub>{rad}(&rho;, T) that (try to) account for all these effects without
-needing to calculate them on the fly while dealing with the star.
-</p>
 </div>
 </div>
 
@@ -498,20 +494,21 @@ needing to calculate them on the fly while dealing with the star.
 <h3 id="orgbb3c0c8"><a href="#orgbb3c0c8">Molecules and dust</a></h3>
 <div class="outline-text-3" id="text-orgbb3c0c8">
 <p>
-At T&le;4000K, atoms may bound together and form molecules, and even
-lower (T&le;1500K) dust grains may form. These are not the same dust you find on
-Earth (mostly small crystals, dead skin, etc.) but large agglomeration
-of molecules. These structures cause a very large increase in the
-opacity: the electrons in them can have many degrees of freedom that
-can be used to absorb and scatter photons (e.g., roto-vibrational
-molecular bands).
+At \(T\le4000\) K, atoms may bound together and form molecules, and even
+lower (\(T\le1500\) K) dust grains may form. These are not the same dust
+you find on Earth (mostly small crystals, dead skin, etc.) but large
+agglomeration of molecules. These structures cause a very large
+increase in the opacity: the electrons in them can have many degrees
+of freedom that can be used to absorb and scatter photons (e.g.,
+roto-vibrational molecular bands).
 </p>
 
 <p>
 <b>N.B.:</b> molecular opacity is a field of research in <i>laboratory</i>
 astrophysics, when the relevant molecules can be synthesized and kept
-at the relevant T and &rho; one can experimentally measure their &kappa;<sub>\mathrm</sub>{rad}
-which is extremely complicated to calculate from first principles.
+at the relevant \(T\) and \(\rho\) one can experimentally measure their
+\(\kappa_\mathrm{rad}\) which is extremely complicated to calculate from
+first principles.
 </p>
 </div>
 </div>
@@ -534,7 +531,7 @@ envelope of non-metal-free cool stars, e.g., red giants or the Sun
 itself! An approximate relation for its opacity is
 </p>
 
-<div class="latex" id="org80bc05c">
+<div class="latex" id="org5c696ce">
 \begin{equation}
 \kappa_\mathrm{H^{-}} = 2.5\times10^{-31} \frac{Z}{Z_{☉}} \rho^{1/2} T^{9} \ \mathrm{cm^{2} \ g} \ \ .
 \end{equation}
@@ -556,10 +553,10 @@ even harder to detect, but still holds theoretically).</li>
 <h3 id="orgea411b3"><a href="#orgea411b3">Conductive opacity</a></h3>
 <div class="outline-text-3" id="text-orgea411b3">
 <p>
-For an ideal gas, &kappa;<sub>\mathrm</sub>{cond} &Gt; &kappa;<sub>\mathrm</sub>{rad} making conduction irrelevant in
-the combined opacity. This is because the Coulomb scattering cross
-section among charged particles in a plasma is larger than the cross
-section for interactions with photons.
+For an ideal gas, \(\kappa_\mathrm{cond} \gg \kappa_\mathrm{rad}\) making conduction
+irrelevant in the combined opacity. This is because the Coulomb
+scattering cross section among charged particles in a plasma is larger
+than the cross section for interactions with photons.
 </p>
 
 <p>
@@ -573,7 +570,7 @@ At very high densities, the electron mean-free path are very long
 (since collisions are forbidden by not having any level available
 below the Fermi energy), making conduction very efficient and allowing
 high density degenerate cores to become effectively isothermal
-(T=constant, dT/dr = 0).
+($T$=constant, \(dT/dr = 0\)).
 </p>
 </div>
 </div>
@@ -583,8 +580,15 @@ high density degenerate cores to become effectively isothermal
 <div id="outline-container-org37903ab" class="outline-2">
 <h2 id="org37903ab"><a href="#org37903ab">Combining all these sources together</a></h2>
 <div class="outline-text-2" id="text-org37903ab">
+<p>
+<b>N.B.:</b> Ultimately in stellar evolution we use tabulated &kappa;<sub>\mathrm</sub>{rad} &equiv;
+&kappa;<sub>\mathrm</sub>{rad}(&rho;, T) that (try to) account for all these effects without
+needing to calculate them on the fly while dealing with the star.
+</p>
 
-<figure id="org6bdfa4e">
+
+
+<figure id="orgfc04e1f">
 <img src="./images/kappa_farag24.png" alt="kappa_farag24.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>&kappa;&equiv;&kappa;(T,&rho;) combining all the sources of opacities we discussed (and more) from <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract">Farag et al. 2024</a>. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the <code>kap</code> module of the MESA code. See also <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract">Paxton et al. 2011</a>.</figcaption>
@@ -623,7 +627,7 @@ big, often military funded, laboratories.
 </p>
 
 
-<figure id="org166ca5a">
+<figure id="orgbf49de3">
 <img src="./images/kappa_T_farag24.png" alt="kappa_T_farag24.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>&kappa;<sub>\mathrm</sub>{rad} &equiv; &kappa;<sub>\mathrm</sub>{rad}(T) for various fixed densities &rho; (as indicated by the colorbar). This plot effectively shows various "slices" of the &kappa;<sub>\mathrm</sub>{rad}&equiv;&kappa;<sub>\mathrm</sub>{rad}(T,&rho;) and allows one to see how powerlaw approximations can be used in certain regimes, but do not capture the full picture. Note the shaded background indicating ionization levels of important elements. Also from <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract">Farag et al. 2024</a></figcaption>
