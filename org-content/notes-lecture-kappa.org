@@ -62,14 +62,14 @@ F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \eq
 \end{equation}
 #+end_latex
 
-Here \kappa_{rad} should be interpreted as an "appropriate mean value". In
+Here $\kappa_\mathrm{rad}$ should be interpreted as an "appropriate mean value". In
 reality, we should have written an equation like this for the specific
-flux (i.e., the radiative flux F_{\nu} carried by radiation with
-frequency between \nu and \nu+d\nu) and integrate over frequencies to get
-the total radiative flux F_{rad} =\int_{0}^{+\infty} F_{\nu} d\nu. For the
+flux (i.e., the radiative flux $F_{\nu}$ carried by radiation with
+frequency between $\nu$ and $\nu+d\nu$) and integrate over frequencies to get
+the total radiative flux $F_\mathrm{rad} =\int_{0}^{+\infty} F_{\nu} d\nu$. For the
 specific flux, we also should put in the equation the specific opacity
-\kappa_{\nu} and consider only the energy density of radiation u_{\nu} between
-\nu and \nu+d\nu:
+$\kappa_{\nu}$ and consider only the energy density of radiation $u_{\nu}$ between
+$\nu$ and $\nu+d\nu$:
 
 #+begin_latex
 \begin{equation}\label{eq:specific_flux}
@@ -77,7 +77,7 @@ F_{\nu} = - \frac{1}{3}\frac{c}{\kappa_{\nu}\rho}\frac{du_{\nu}}{dr} \ \ .
 \end{equation}
 #+end_latex
 
-Recall that u_{\nu} = h\nu n(\nu), with n(\nu) number density of photons
+Recall that $u_{\nu} = h\nu n(\nu)$, with $n(\nu)$ number density of photons
 ad a function of frequency determined by the condition of LTE (which
 is /approximately/ correct in the stellar interior). The LTE
 approximation effectively means the photons are distributed according
@@ -90,8 +90,7 @@ u_{\nu} = \frac{4\pi}{c}B(\nu, T) = \frac{8\pi h}{c^{3}}\frac{\nu^{3}}{e^{h\nu/k
 \end{equation}
 #+end_latex
 
-Thus du_{\nu}/dr = 4\pi/c \times \partial B(\nu, T)/\partial T \times
-dT/dr, and performing the integral over the frequencies:
+Thus $du_{\nu}/dr = 4\pi/c \times \partial B(\nu, T)/\partial T \times dT/dr$, and performing the integral over the frequencies:
 
 #+begin_latex
 \begin{equation}\label{eq:int_flux}
@@ -100,8 +99,8 @@ F_\mathrm{rad} = \int_{0}^{+\infty} F_{\nu}d\nu = - \frac{1}{3}\frac{c}{\rho}\in
 \end{equation}
 #+end_latex
 
-Comparing this with Eq. \ref{eq:f_rad} from the previous lecture we obtain that the
-\kappa_\mathrm{rad} appearing there must be:
+Comparing this with Eq. \ref{eq:f_rad} we obtain that the
+$\kappa_\mathrm{rad}$ appearing there must be:
 
 #+begin_latex
 \begin{equation}
@@ -337,7 +336,7 @@ high density degenerate cores to become effectively isothermal
 
 
 Ultimately, the metallicity (Z) or more specifically the detailed
-composition {X_{i}} can have a large impact on \kappa_{rad} and \kappa, together with
+composition {X_{i}} can have a large impact on \kappa_\mathrm{rad} and \kappa, together with
 the thermodynamic state of the gas (T,\rho), which determines which
 process dominates the blocking of photons
 
