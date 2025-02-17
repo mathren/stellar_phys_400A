@@ -200,9 +200,9 @@ displaces a volume of fluid heavier than its own weight!):
 
 #+begin_latex
 \begin{equation}\label{eq:instability_crit}
-\mathrm{Instability\ if:} \ \rho_\mathrm\mathrm{bubble} \leq \rho_{2}  \Rightarrow
+\mathrm{Instability\ if:} \ \rho_\mathrm{bubble} \leq \rho_{2}  \Rightarrow
 \left(\frac{d\rho}{dr}\right)_\mathrm{ad} \leq
-\left(\frac{d\rho}{dr}\right)_\mathrm{env} \equiv \left(\frac{d\rho}{dr}\right)_\mathrm\mathrm{rad} \ \ .
+\left(\frac{d\rho}{dr}\right)_\mathrm{env} \equiv \left(\frac{d\rho}{dr}\right)_\mathrm{rad} \ \ .
 \end{equation}
 #+end_latex
 
@@ -262,7 +262,7 @@ form most commonly called Schwarzschild criterion:
 
 #+begin_latex
 \begin{equation}\label{eq:schwarzschild_crit}
-\mathrm{Instability\ if:} \ \frac{\partial \log(T)}{\partial \log(P)}_\mathrm\mathrm{rad} = \nabla_\mathrm\mathrm{rad} > \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{ad} = \nabla_\mathrm{ad} \ \ ,
+\mathrm{Instability\ if:} \ \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{rad} = \nabla_\mathrm{rad} > \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{ad} = \nabla_\mathrm{ad} \ \ ,
 \end{equation}
 #+end_latex
 with $\mu$ = constant. Note that from the radiative transport equation we
@@ -270,7 +270,7 @@ can directly obtain $\nabla_\mathrm{rad}$.
 
 #+begin_latex
 \begin{equation}\label{eq:nabla_rad}
-\nabla_\mathrm\mathrm{rad} = \frac{3\kappa L P}{64\pi G m \sigma T^{4}} \propto \kappa L\ \ ,
+\nabla_\mathrm{rad} = \frac{3\kappa L P}{64\pi G m \sigma T^{4}} \propto \kappa L\ \ ,
 \end{equation}
 #+end_latex
 
@@ -303,7 +303,7 @@ We can then rewrite \ref{eq:instability_crit} as
 
 #+begin_latex
 \begin{equation}\label{eq:ledoux_crit}
-\mathrm{Instability\ if:} \nabla_\mathrm\mathrm{rad} \geq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
+\mathrm{Instability\ if:} \nabla_\mathrm{rad} \geq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
 \end{equation}
 #+end_latex
 with $\nabla_{\mu} = \partial log(\mu)/\partial\log(P)$. Eq.
@@ -317,7 +317,7 @@ defined them above, that is
 
 #+begin_latex
 \begin{equation}\label{eq:semiconv_crit}
-\nabla_\mathrm{ad} \le \nabla_\mathrm\mathrm{rad}  \leq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
+\nabla_\mathrm{ad} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
 \end{equation}
 #+end_latex
 
@@ -333,7 +333,7 @@ the chemical composition):
 
 #+begin_latex
 \begin{equation}\label{eq:thermohaline_crit}
-\nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \le \nabla_\mathrm\mathrm{rad}  \leq \nabla_\mathrm{ad} \ \ ,
+\nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} \ \ ,
 \end{equation}
 #+end_latex
 then the mean molecular weight gradient acts to /destabilize/ the layer.
@@ -446,19 +446,19 @@ w.r.t. the surrounding environment:
 
 #+begin_latex
 \begin{equation}
-\Delta T = T_\mathrm\mathrm{bubble} - T_\mathrm{env} = \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm\mathrm{bubble}\ell \right) - \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{env}\ell \right) = \left(\frac{dT}{dr}\rvert_\mathrm\mathrm{bubble} - \frac{dT}{dr}\rvert_\mathrm{env} \right)\ell \ \ .
+\Delta T = T_\mathrm{bubble} - T_\mathrm{env} = \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{bubble}\ell \right) - \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{env}\ell \right) = \left(\frac{dT}{dr}\rvert_\mathrm{bubble} - \frac{dT}{dr}\rvert_\mathrm{env} \right)\ell \ \ .
 \end{equation}
 #+end_latex
 
 To put this in the form of the gradients that we have defined above
-for the stability, we notice that $dT/dr = T \times d log(T)/ dlog(P) \times d
-log(P)/dr$, and assume that $T_\mathrm{bubble} \simeq T_{env} \equiv T$, that
+for the stability, we notice that $dT/dr = T \times d \log(T)/ d \log(P) \times d
+\log(P)/dr$, and assume that $T_\mathrm{bubble} \simeq T_{env} \equiv T$, that
 is effectively consider only the zeroth order of the Taylor series of
 the temperature expansion, and rewrite for the temperature difference:
 
 #+begin_latex
 \begin{equation}
-\Delta T = \frac{\ell}{H_{p}} T \left(\nabla_\mathrm\mathrm{rad} - \nabla_\mathrm{ad}\right) \ \ ,
+\Delta T = \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right) \ \ ,
 \end{equation}
 #+end_latex
 where we use the assumption that the environment is characterized by a
@@ -478,7 +478,7 @@ pressure. Multiplying by the velocity of the bubble we get the
 
 #+begin_latex
 \begin{equation}
-F_\mathrm{conv} = c_{p} \rho \frac{\ell}{H_{p}} T \left(\nabla_\mathrm\mathrm{rad} - \nabla_\mathrm{ad}\right) v_\mathrm{conv} \ \ .
+F_\mathrm{conv} = c_{p} \rho \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right) v_\mathrm{conv} \ \ .
 \end{equation}
 #+end_latex
 
@@ -522,7 +522,7 @@ expansion and keeping only the first order in \ell we have:
 
 #+begin_latex
 \begin{equation}
-\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}\rvert_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}\rvert_\mathrm\mathrm{rad} \ell\right) \ \ ,
+\Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}\rvert_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}\rvert_\mathrm{rad} \ell\right) \ \ ,
 \end{equation}
 #+end_latex
 
@@ -539,7 +539,7 @@ which is what we will use to make $v_\mathrm{conv}$ appear:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT}
-E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho v_\mathrm{conv}^{2} = \frac{\rho}{4H_{p}}(\nabla_\mathrm\mathrm{rad}-\nabla_\mathrm{ad})\ell^{2}g \ \ .
+E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho v_\mathrm{conv}^{2} = \frac{\rho}{4H_{p}}(\nabla_\mathrm{rad}-\nabla_\mathrm{ad})\ell^{2}g \ \ .
 \end{equation}
 #+end_latex
 *N.B.:* the buoyancy force and the displacement vector are antiparallel,
@@ -553,7 +553,7 @@ and $\ell$, which allows us to eliminate one for the other:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT_estimate}
- v_\mathrm{conv} = \sqrt{\frac{\ell^{2}g}{2H_{P}} (\nabla_\mathrm\mathrm{rad} - \nabla_\mathrm{ad})}\ \ ,
+ v_\mathrm{conv} = \sqrt{\frac{\ell^{2}g}{2H_{P}} (\nabla_\mathrm{rad} - \nabla_\mathrm{ad})}\ \ ,
 \end{equation}
 #+end_latex
 
@@ -590,7 +590,7 @@ $\alpha_\mathrm{MLT}$:
 
 #+begin_latex
 \begin{equation}\label{eq:conv_flux_MLT}
-F_\mathrm{conv} = \rho c_{P} T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2} g H_{P}} (\nabla_\mathrm\mathrm{rad}-\nabla_\mathrm{ad})^{3/2} \ \ .
+F_\mathrm{conv} = \rho c_{P} T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2} g H_{P}} (\nabla_\mathrm{rad}-\nabla_\mathrm{ad})^{3/2} \ \ .
 \end{equation}
 #+end_latex
 
@@ -623,7 +623,7 @@ r^{2} \sim L/R^{2}$ we obtain:
 
 #+begin_latex
 \begin{equation}
-\nabla_\mathrm\mathrm{rad} - \nabla_\mathrm{ad} \simeq \left(\frac{LR}{M}\right)^{2/3}\frac{R}{GM} \simeq 10^{-8} \ \ ,
+\nabla_\mathrm{rad} - \nabla_\mathrm{ad} \simeq \left(\frac{LR}{M}\right)^{2/3}\frac{R}{GM} \simeq 10^{-8} \ \ ,
 \end{equation}
 #+end_latex
 where in the last one we use the numerical values for the Sun. This of
