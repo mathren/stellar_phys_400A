@@ -367,7 +367,7 @@ to use tabulated opacities from complex models and/or experiments
 carried out at LANL, Livermore, and other big, often military funded,
 laboratories.
 
-#+CAPTION: \kappa_\mathrm{rad} \equiv \kappa_\mathrm{rad}(T) for various fixed densities \rho (as indicated by the colorbar). This plot effectively shows various "slices" of the \kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,\rho) and allows one to see how powerlaw approximations can be used in certain regimes, but do not capture the full picture. Note the shaded background indicating ionization levels of important elements. Also from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]
+#+CAPTION: $\kappa_\mathrm{rad} \equiv \kappa_\mathrm{rad}(T)$ for various fixed densities \rho (as indicated by the colorbar). This plot effectively shows various "slices" of the $\kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,\rho)$ and allows one to see how powerlaw approximations can be used in certain regimes, but do not capture the full picture. Note the shaded background indicating ionization levels of important elements. Also from [[https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract][Farag et al. 2024]]
 #+ATTR_HTML: :width 100%
 [[./images/kappa_T_farag24.png]]
 
@@ -380,6 +380,6 @@ Using =MESA-web=, compute a $\ge30 M_{\odot}$ star until the maximum central
 temperature reaches above $\ge 10^{8.5}$ K. Make sure to save multiple
 profile files. Plot a series of $\kappa(m)$ and/or $\kappa(T)$ for the outer
 layers, and identify peaks that occur (*Hint*: this may be more easily
-done looking at $\kappa(T)$). Plot also $L(m)$ and $L_{edd}(m, \kappa)$ and, using
+done looking at $\kappa(T)$). Plot also $L(m)$ and $L_\mathrm{Edd}(m, \kappa)$ and, using
 your model, try to identify what happens in layers where $L$ exceeds
-$L_{edd}$.
+$L_\mathrm{Edd}$.

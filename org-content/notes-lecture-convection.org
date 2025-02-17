@@ -98,13 +98,13 @@ fraction of $^{20}$Ne, and is taken from [[http://www.fen.upc.edu/users/jjose/][
 * The timescale for convection
 
 We can define a timescale associated to the macroscopic motion of
-matter with net zero flux that is carrying energy \tau_{conv} = \Delta r/v_{conv}.
+matter with net zero flux that is carrying energy \tau_\mathrm{conv} = \Delta r/v_\mathrm{conv}.
 This is the "convective turnover timescale", where \Delta r is the spatial
-extent of a convective region, and v_{conv} is the velocity of the blobs
+extent of a convective region, and v_\mathrm{conv} is the velocity of the blobs
 of matter moving around.
 
 In the following we will see how to find \Delta r and get an estimate of
-v_{conv}.
+v_\mathrm{conv}.
 
 :Question:
 - *Q*: We have already encountered two /global/ timescales relevant to
@@ -129,7 +129,7 @@ of the instability. Hopefully, stellar /evolution/ timescales are long
 enough that describing the averaged steady state resulting from
 convection is sufficient for our purposes (but there are exceptions,
 for example during explosions of when looking at phenomena on
-timescales shorter than \tau_{conv}).
+timescales shorter than \tau_\mathrm{conv}).
 
 * Convective stability criterion: Schwarzschild & Ledoux criterion
 
@@ -499,12 +499,12 @@ the sinking bubbles.
 
 ** Convective velocity
 
-To estimate the convective velocity v_{conv} we can consider the work
+To estimate the convective velocity v_\mathrm{conv} we can consider the work
 done by the buoyancy forces (per unit volume) on the bubble.
 
 :Question:
 - *Q*: before we even do this calculation, can you imagine an
-  upper-limit for v_{conv} in the approximated picture we are developing?
+  upper-limit for v_\mathrm{conv} in the approximated picture we are developing?
   (*Hint*: we have assumed that any pressure imbalance between the
   bubble and the environment would be quickly be washed out)
 :end:
@@ -531,7 +531,7 @@ density gradients as a function of \nabla_{i} = \partial log(T)/\partial log(P).
 
 By energy conservation, the work done by buoyancy on the bubble is
 equal to the kinetic energy (per unit volume) acquired by the bubble,
-which is what we will use to make v_{conv} appear:
+which is what we will use to make v_\mathrm{conv} appear:
 
 #+begin_latex
 \begin{equation}\label{eq:v_conv_MLT}
@@ -541,10 +541,10 @@ E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho v_\mathrm{conv}^
 *N.B.:* the buoyancy force and the displacement vector are antiparallel,
 which, together with the definition of H_{p}, adjusts the minus signs.
 
-Conveniently in Eq. \ref{eq:v_conv_MLT} both v_{conv} and \ell are squared: the same
+Conveniently in Eq. \ref{eq:v_conv_MLT} both v_\mathrm{conv} and \ell are squared: the same
 exact reasoning applies to the bubbles sinking and those rising!
 Eq. \ref{eq:v_conv_MLT} is a relation between the two unknowns we have
-in the convective energy flux, v_{conv} and \ell, which allows us to
+in the convective energy flux, v_\mathrm{conv} and \ell, which allows us to
 eliminate one for the other:
 
 #+begin_latex
@@ -601,7 +601,7 @@ growth phase (see also [[*Time-dependence of convection][below]]), and found an 
 for the steady state depending on a free parameter \alpha_{MLT}. We can now
 ask, in such steady state, how big is the superadiabaticity needed
 such that the convective flux carries /all/ the energy? We can estimate
-this equating the convective flux F_{conv} to the entire flux that needs
+this equating the convective flux F_\mathrm{conv} to the entire flux that needs
 to be carried throughout a layer at radius r:
 
 #+begin_latex
@@ -610,7 +610,7 @@ F_\mathrm{conv} \equiv \frac{L(r)}{4\pi r^{2}} \ \ .
 \end{equation}
 #+end_latex
 
-To obtain an order of magnitude estimate, we can substitute in F_{conv}
+To obtain an order of magnitude estimate, we can substitute in F_\mathrm{conv}
 the average density of the star, T from the virial theorem estimate,
 assume a monoatomic gas for c_{P}, and using L(r)/4\pi r^{2} \sim L/R^{2} we
 obtain:
@@ -640,7 +640,7 @@ and dynamical stability of mass transfer in binaries.
 
 ** On the convective velocity and chemical mixing
 
-Eq. \ref{eq:v_conv_MLT_estimate} derived above tells us that v_{conv}
+Eq. \ref{eq:v_conv_MLT_estimate} derived above tells us that v_\mathrm{conv}
 \propto (\nabla_{rad} - \nabla_{ad})^{1/2} \times (gH_{P})^{1/2} \simeq (\nabla_{rad} - \nabla_{ad})^{1/2}
 c_{sound} \simeq (\nabla_{rad} - \nabla_{ad})^{1/2} v_{Thermal}. We have just seen
 that for efficient convection, the superadiabaticity is small,
@@ -649,7 +649,7 @@ implying that the convective velocities are much smaller than the
 verified along the path \ell), and, equivalently, the local /thermal/
 velocity.
 
-Nevertheless, even a velocity of v_{conv} \simeq 10^{-4} c_{sound} is
+Nevertheless, even a velocity of v_\mathrm{conv} \simeq 10^{-4} c_{sound} is
 sufficient to mix material very efficiently over the evolutionary
 timescales (*N.B.:* the sound crossing time of a star is \sim \tau_{ff} \ll
 evolutionary timescales by a factor smaller than 10^{-4}. For the Sun
@@ -671,7 +671,7 @@ this determines qualitative morphological differences in the end of
 the main sequence evolution of massive stars w.r.t. low mass stars.
 
 One can derive from MLT a diffusion coefficient for the mixing of
-chemicals by convection D_{conv} = 1/3 \times v_{conv} \ell = 1/3 \times v_{conv}
+chemicals by convection D_\mathrm{conv} = 1/3 \times v_\mathrm{conv} \ell = 1/3 \times v_\mathrm{conv}
 \alpha_{MLT} H_{p} (and similarly for thermohaline and semiconvective mixing),
 allowing for a diffusive approximation of convective mixing. In
 reality convective mixing is an advective process: the macroscopic
@@ -717,11 +717,11 @@ and mixing processes active in these regions.
 By construction MLT (attempts to, arguably successfully) describe the
 /steady state reached at the saturation point of the convective
 instability/. This is usually sufficient for stars since the evolution
-takes much longer than the convective turnover timescale \tau_{conv}.
+takes much longer than the convective turnover timescale \tau_\mathrm{conv}.
 
 However, there are short phases and/or specific problems in stellar
 physics when one is concerned with timescales short or comparable to
-\tau_{conv}. For example:
+\tau_\mathrm{conv}. For example:
 
  - during explosions (e.g., helium flash, pulsational-pair instability).
  - when looking at the interplay between convection and stellar
@@ -729,7 +729,7 @@ physics when one is concerned with timescales short or comparable to
  - ...
 
 In this case, we need to model how convection turns on/off (having a
-model for d v_{conv} / dt, see e.g., [[https://ui.adsabs.harvard.edu/abs/1969ApJ...157..339A/abstract][Arnett 1969]], [[https://ui.adsabs.harvard.edu/abs/1974ApJ...190..609W/abstract][Wood 1974]], [[https://ui.adsabs.harvard.edu/abs/1977ApJ...214..196G/abstract][Gough 1977]],
+model for d v_\mathrm{conv} / dt, see e.g., [[https://ui.adsabs.harvard.edu/abs/1969ApJ...157..339A/abstract][Arnett 1969]], [[https://ui.adsabs.harvard.edu/abs/1974ApJ...190..609W/abstract][Wood 1974]], [[https://ui.adsabs.harvard.edu/abs/1977ApJ...214..196G/abstract][Gough 1977]],
 and more recently [[https://ui.adsabs.harvard.edu/abs/2023ApJS..265...15J/abstract][Jermyn 2023]]).
 
 ** Efficiency of semiconvection/thermohaline mixing
@@ -756,7 +756,7 @@ estimate the Reynolds number:
 
 #+begin_latex
 \begin{equation}
-\mathrm{Re} = \frac{\ell v_{conv}}{\nu} \ \ ,
+\mathrm{Re} = \frac{\ell v_\mathrm{conv}}{\nu} \ \ ,
 \end{equation}
 #+end_latex
 
