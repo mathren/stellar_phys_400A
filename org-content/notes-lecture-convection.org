@@ -647,7 +647,7 @@ stars, and dynamical stability of mass transfer in binaries.
 ** On the convective velocity and chemical mixing
 
 Eq. \ref{eq:v_conv_MLT_estimate} derived above tells us that
-$v_\mathrm{conv} \propto (\nabla_\mathrm{rad} - \nabla_{ad})^{1/2} \times (gH_{P})^{1/2} \simeq
+$v_\mathrm{conv} \propto (\nabla_\mathrm{rad} - \nabla_\mathrm{ad})^{1/2} \times (gH_{P})^{1/2} \simeq
 (\nabla_\mathrm{rad} - \nabla_\mathrm{ad})^{1/2} c_\mathrm{sound} \simeq
 (\nabla_\mathrm{rad} - \nabla_\mathrm{ad})^{1/2} v_\mathrm{Thermal}$. We have just
 seen that for efficient convection, the superadiabaticity is small,
@@ -656,7 +656,7 @@ implying that the convective velocities are much smaller than the
 verified along the path $\ell$), and, equivalently, the local /thermal/
 velocity.
 
-Nevertheless, even a velocity of $v_\mathrm{conv} \simeq 10^{-4} c_{sound}$ is
+Nevertheless, even a velocity of $v_\mathrm{conv} \simeq 10^{-4} c_\mathrm{sound}$ is
 sufficient to mix material very efficiently over the evolutionary
 timescales (*N.B.:* the sound crossing time of a star is $\sim \tau_{ff} \ll$
 evolutionary timescales by a factor smaller than 10^{-4}. For the Sun
