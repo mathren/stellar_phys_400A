@@ -382,6 +382,10 @@ therefore erasing the ingredient that differentiates the two (see for
 instance [[https://ui.adsabs.harvard.edu/abs/2022ApJ...928L..10A/abstract][Anders et al. 2022a]]). This is an active topic of debate in
 the recent literature!
 
+Nevertheless, once either the Schwarzschild or Ledoux criterion is
+assumed, given the $T(m)$ profile of a star one can determine the
+radial extent $\Delta r$ of the unstable region.
+
 * Mixing length theory
 
 Let's now consider what happens in an unstable layer: we need to model
