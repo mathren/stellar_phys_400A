@@ -407,12 +407,12 @@ flux is zero, but the net energy flux is non-zero. Moreover this
 typically leads to turbulence in the flow which is an inherently
 multi-dimensional problem.
 
-[[https://en.wikipedia.org/wiki/Erika_B%C3%B6hm-Vitense][Erika Bohm-Vitense]] developed in 1957 an effective mean-field theory to
-describe the space- and time-averaged steady state at which convective
-energy transport would saturate. This is the so-called /mixing length
-theory/ (MLT) that is widely applied in stellar evolution still today,
-and is based on the simplified "bubble picture" from Prandtl we
-already used to derive a stability criterion.
+[[https://en.wikipedia.org/wiki/Erika_B%C3%B6hm-Vitense][Erika Bohm-Vitense]] developed in the late 1950s an effective mean-field
+theory to describe the space- and time-averaged steady state at which
+convective energy transport would saturate. This is the so-called
+/mixing length theory/ (MLT) that is widely applied in stellar evolution
+still today, and is based on the simplified "bubble picture" from
+Prandtl we already used to derive a stability criterion.
 
 Before deriving the energy flux in a convective region according to
 MLT, let's try to get an intuition for why this is very successful,
