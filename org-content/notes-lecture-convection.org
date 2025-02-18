@@ -163,6 +163,11 @@ moves /adiabatically/: there is no time for heat exchange, $dq=0$, and the
 specific entropy of the bubble remains constant $ds = 0$ (recall
 thermodynamics!).
 
+*N.B.:* We can expect that convection occurs when it is energetically
+convenient for a parcel of gas to keep its internal energy ($dq=0$)
+and move elsewhere to deposit that internal energy. We will revisit at
+the end of this lecture this assumption.
+
 We want to compare $\rho_\mathrm{bubble}$ after the displacement by $\Delta$
 to the environment density. Once again we can use a first order
 approximation, but for the environment we have assumed an initially
@@ -641,10 +646,12 @@ have used implicitly assumptions of LTE, and used averaged values).
 The fact that the superadiabaticity is so small implies that /when
 convection is efficient/, /the temperature gradient in the star can be
 approximated with adiabatic/. This comes from a relatively rough
-estimate, and validates a posteriori many of the questionable assumptions
-we have made in this lecture: since in the end the gradient is very
-nearly adiabatic when convection is efficient, the details do not
-matter that much.
+estimate, and validates a posteriori many of the questionable
+assumptions we have made in this lecture: since in the end the
+gradient is very nearly adiabatic when convection is efficient, the
+details do not matter that much and our assumption that the gradient
+of $T$ or $\rho$ in the "bubble" are /adiabatic/ ($dq=0$) is justifiable a
+posteriori.
 
 *N.B.:* In the outer layers of the star, where $\rho \ll \langle \rho \rangle$ and $T\ll \langle T
 \rangle$, this estimate breaks down, convection is not necessarily efficient
