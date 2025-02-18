@@ -450,7 +450,7 @@ w.r.t. the surrounding environment:
 
 #+begin_latex
 \begin{equation}
-\Delta T = T_\mathrm{bubble} - T_\mathrm{env} = \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{bubble}\ell \right) - \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{env}\ell \right) = \left(\frac{dT}{dr}\rvert_\mathrm{bubble} - \frac{dT}{dr}\rvert_\mathrm{env} \right)\ell \ \ .
+\Delta T = T_\mathrm{bubble} - T_\mathrm{env} \simeq \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{bubble}\ell \right) - \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{env}\ell \right) = \left(\frac{dT}{dr}\rvert_\mathrm{bubble} - \frac{dT}{dr}\rvert_\mathrm{env} \right)\ell \ \ .
 \end{equation}
 #+end_latex
 
@@ -459,10 +459,10 @@ $\Delta$ to perform a linear stability analysis and obtain a stability
 criterion. Now $\Delta\rightarrow\ell$ does not need to be small a priori.
 
 To put this in the form of the gradients that we have defined above
-for the stability, we notice that $dT/dr = T \times d \log(T)/ d \log(P) \times d
-\log(P)/dr$, and assume that $T_\mathrm{bubble} \simeq T_{env} \equiv T$, that
-is effectively consider only the zeroth order of the Taylor series of
-the temperature expansion, and rewrite for the temperature difference:
+for the stability, we notice that $dT/dr = T \times d \log(T)/ d \log(P) \times
+d \log(P)/dr$, and assume that $T_\mathrm{bubble} \simeq T_{env} \equiv T$,
+that is effectively consider only the zeroth order of the Taylor
+series in temperature, and rewrite for the temperature difference:
 
 #+begin_latex
 \begin{equation}
