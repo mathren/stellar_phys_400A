@@ -323,6 +323,9 @@ will /not/ be a full blown instability, but rather, in the approximate
 toy model we have used to derive the instability criterion, the gas
 parcels will experience small oscillations where the \mu gradient acts
 as a damping force. This is the so called *semiconvection*.
+If during the oscillations gas with different $\mu$ mix, this will
+decrease $\nabla\mu$ which is the ingredient damping the oscillation:
+semiconvection oscillation will slowly grow in amplitude.
 
 Viceversa, if a layer is Schwarzschild stable but Ledoux unstable
 (this can occur depending on \delta and \phi, that is depending on the EOS and
