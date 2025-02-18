@@ -324,7 +324,7 @@ toy model we have used to derive the instability criterion, the gas
 parcels will experience small oscillations where the \mu gradient acts
 as a damping force. This is the so called *semiconvection*.
 If during the oscillations gas with different $\mu$ mix, this will
-decrease $\nabla\mu$ which is the ingredient damping the oscillation:
+decrease $\nabla_{\mu}$ which is the ingredient damping the oscillation:
 semiconvection oscillation will slowly grow in amplitude.
 
 Viceversa, if a layer is Schwarzschild stable but Ledoux unstable
@@ -338,7 +338,7 @@ the chemical composition):
 #+end_latex
 then the mean molecular weight gradient acts to /destabilize/ the layer.
 In this case, in our simplistic picture, a blob of gas will slowly
-start slowly moving because of $\nabla_{\mu}$ but there will be no restoring forces,
+start moving because of $\nabla_{\mu}$ but there will be no restoring forces,
 and we obtain the so called *thermohaline mixing* or *double diffusion
 instability*. The name double diffusion comes from the fact that for
 the gas parcel to move it has to diffuse thermal energy to its
@@ -375,12 +375,12 @@ we have already seen is generally short compared to the evolutionary
 timescale.
 
 Especially for convection in the stellar cores (where we will see
-energy is generated, therefore L can be very large, especially in
-massive stars and drive convection), convection may flatten the \mu
+energy is generated, therefore L can be very large and drive
+convection, especially in massive stars), convection may flatten the \mu
 gradient on a timescale short compared to the main sequence lifetime,
 therefore erasing the ingredient that differentiates the two (see for
-instance [[https://ui.adsabs.harvard.edu/abs/2022ApJ...928L..10A/abstract][Anders et al. 2022a]]). This is an active topic of debate in the
-recent literature!
+instance [[https://ui.adsabs.harvard.edu/abs/2022ApJ...928L..10A/abstract][Anders et al. 2022a]]). This is an active topic of debate in
+the recent literature!
 
 * Mixing length theory
 
