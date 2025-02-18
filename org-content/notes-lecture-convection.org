@@ -414,11 +414,11 @@ theory/ (MLT) that is widely applied in stellar evolution still today,
 and is based on the simplified "bubble picture" from Prandtl we
 already used to derive a stability criterion.
 
-Before deriving the energy flux, and ultimately temperature gradient
-in a convective region according to MLT, let's try to get an intuition
-for what this very successful, albeit very approximate picture tries
-to describe. We can consider a more familiar example of convection for
-that, such as a self-sustaining flame:
+Before deriving the energy flux in a convective region according to
+MLT, let's try to get an intuition for why this is very successful,
+despite being a very rough approximation of what it tries to describe.
+We can consider a more familiar example of convection for that, such
+as a self-sustaining flame:
 
 #+CAPTION: A flame sustains itself by driving convection that brings in more oxygen to allow combustion to happen.
 #+ATTR_HTML: :width 50%
@@ -453,6 +453,10 @@ w.r.t. the surrounding environment:
 \Delta T = T_\mathrm{bubble} - T_\mathrm{env} = \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{bubble}\ell \right) - \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{env}\ell \right) = \left(\frac{dT}{dr}\rvert_\mathrm{bubble} - \frac{dT}{dr}\rvert_\mathrm{env} \right)\ell \ \ .
 \end{equation}
 #+end_latex
+
+*N.B.*: Earlier we have considered an infinitesimal radial displacement
+$\Delta$ to perform a linear stability analysis and obtain a stability
+criterion. Now $\Delta\rightarrow\ell$ does not need to be small a priori.
 
 To put this in the form of the gradients that we have defined above
 for the stability, we notice that $dT/dr = T \times d \log(T)/ d \log(P) \times d

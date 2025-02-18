@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-18 Tue 09:41 -->
+<!-- 2025-02-18 Tue 09:54 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Convection &amp; MLT</title>
@@ -287,7 +287,7 @@ timescales shorter than \(\tau_\mathrm{conv}\)).
 <h2 id="orgc7bf8ee"><a href="#orgc7bf8ee">Convective stability criterion: Schwarzschild &amp; Ledoux criterion</a></h2>
 <div class="outline-text-2" id="text-orgc7bf8ee">
 
-<figure id="orga819876">
+<figure id="orgb5f8c70">
 <img src="./images/conv_blobs.png" alt="conv_blobs.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Skematic picture of the convective stability based on Prandtl oversimplified "bubble picture". The right panel shows schematically the \(\rho(P)\) track, in the left panel the bubble is moved upwards (i.e. towards lower pressure), so we expect adiabatic expansion of the bubble to maintain pressure equilibrium with the environment. The This is Fig. 5.3 in Onno Pols' lecture notes.</figcaption>
@@ -372,7 +372,7 @@ displaces a volume of fluid heavier than its own weight!):
 </p>
 
 
-<div class="latex" id="org2128855">
+<div class="latex" id="orgb0db1c6">
 \begin{equation}\label{eq:instability_crit}
 \mathrm{Instability\ if:} \ \rho_\mathrm{bubble} \leq \rho_{2}  \Rightarrow
 \left(\frac{d\rho}{dr}\right)_\mathrm{ad} \leq
@@ -415,7 +415,7 @@ defining the pressure scale height as the e-folding length of the
 pressure:
 </p>
 
-<div class="latex" id="org1b72a42">
+<div class="latex" id="org3c9fb6e">
 \begin{equation}
  H_{p} = - \frac{dr}{d \log(P)} \Leftrightarrow P(r) \simeq P_{0} e^{-r/H_{p}} \ \ ,
 \end{equation}
@@ -426,7 +426,7 @@ pressure:
 we can rewrite:
 </p>
 
-<div class="latex" id="org7d8cb9f">
+<div class="latex" id="orgfabea0a">
 \begin{equation}
 \frac{d\rho}{dr}= -\frac{P}{H_{p}} \frac{d\rho}{dP} \ \ .
 \end{equation}
@@ -447,7 +447,7 @@ to re-write the instability condition \ref{eq:instability_crit} in the
 form most commonly called Schwarzschild criterion:
 </p>
 
-<div class="latex" id="org8708325">
+<div class="latex" id="org55498ca">
 \begin{equation}\label{eq:schwarzschild_crit}
 \mathrm{Instability\ if:} \ \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{rad} = \nabla_\mathrm{rad} > \frac{\partial \log(T)}{\partial \log(P)}_\mathrm{ad} = \nabla_\mathrm{ad} \ \ ,
 \end{equation}
@@ -458,7 +458,7 @@ with \(\mu\) = constant. Note that from the radiative transport equation we
 can directly obtain \(\nabla_\mathrm{rad}\).
 </p>
 
-<div class="latex" id="org39ee8a4">
+<div class="latex" id="org18428b9">
 \begin{equation}\label{eq:nabla_rad}
 \nabla_\mathrm{rad} = \frac{3\kappa L P}{64\pi G m \sigma T^{4}} \propto \kappa L\ \ ,
 \end{equation}
@@ -492,7 +492,7 @@ in a very general form \(P\equiv P(\rho, T, {X_{i}}) \equiv P(\rho, T, \mu)\). B
 differentiating this we obtain
 </p>
 
-<div class="latex" id="org7665082">
+<div class="latex" id="org2ba2b70">
 \begin{equation}
 \frac{d\rho}{\rho} = \alpha \frac{dP}{P} -\delta \frac{dT}{T} + \varphi \frac{d\mu}{\mu} \ \ ,
 \end{equation}
@@ -507,7 +507,7 @@ the EOS, but known as long as the EOS is known.
 We can then rewrite \ref{eq:instability_crit} as
 </p>
 
-<div class="latex" id="org2f3902f">
+<div class="latex" id="org54a480c">
 \begin{equation}\label{eq:ledoux_crit}
 \mathrm{Instability\ if:} \nabla_\mathrm{rad} \geq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
 \end{equation}
@@ -530,7 +530,7 @@ but unstable according to the Schwarzschild criterion as we have
 defined them above, that is
 </p>
 
-<div class="latex" id="orgebb8301">
+<div class="latex" id="org72d424e">
 \begin{equation}\label{eq:semiconv_crit}
 \nabla_\mathrm{ad} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \ \ ,
 \end{equation}
@@ -554,7 +554,7 @@ Viceversa, if a layer is Schwarzschild stable but Ledoux unstable
 the chemical composition):
 </p>
 
-<div class="latex" id="org1ffda9d">
+<div class="latex" id="org4b9c143">
 \begin{equation}\label{eq:thermohaline_crit}
 \nabla_\mathrm{ad} + \frac{\varphi}{\delta} \nabla_{\mu} \le \nabla_\mathrm{rad}  \leq \nabla_\mathrm{ad} \ \ ,
 \end{equation}
@@ -573,7 +573,7 @@ long "fingers", as you can <a href="https://www.stellarphysics.org/thermohaline-
 </p>
 
 
-<figure id="orged37d08">
+<figure id="orgf8228d7">
 <img src="./images/thermohaline.jpg" alt="thermohaline.jpg" width="40%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Double-diffusive fingers in hot salty water on top of cold fresh water. Credits: <a href="https://www.stellarphysics.org/">M. Cantiello</a>.</figcaption>
@@ -669,15 +669,15 @@ already used to derive a stability criterion.
 </p>
 
 <p>
-Before deriving the energy flux, and ultimately temperature gradient
-in a convective region according to MLT, let's try to get an intuition
-for what this very successful, albeit very approximate picture tries
-to describe. We can consider a more familiar example of convection for
-that, such as a self-sustaining flame:
+Before deriving the energy flux in a convective region according to
+MLT, let's try to get an intuition for why this is very successful,
+despite being a very rough approximation of what it tries to describe.
+We can consider a more familiar example of convection for that, such
+as a self-sustaining flame:
 </p>
 
 
-<figure id="org3c33360">
+<figure id="org368770b">
 <img src="./images/fire.jpg" alt="fire.jpg" width="50%">
 
 <figcaption><span class="figure-number">Figure 3: </span>A flame sustains itself by driving convection that brings in more oxygen to allow combustion to happen.</figcaption>
@@ -714,12 +714,18 @@ a bubble that is displaced upwards by an amount &ell; in an unstable layer
 w.r.t. the surrounding environment:
 </p>
 
-<div class="latex" id="orgc594cd4">
+<div class="latex" id="org8cfe650">
 \begin{equation}
 \Delta T = T_\mathrm{bubble} - T_\mathrm{env} = \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{bubble}\ell \right) - \left(T_{1} + \frac{dT}{dr}\rvert_\mathrm{env}\ell \right) = \left(\frac{dT}{dr}\rvert_\mathrm{bubble} - \frac{dT}{dr}\rvert_\mathrm{env} \right)\ell \ \ .
 \end{equation}
 
 </div>
+
+<p>
+<b>N.B.</b>: Earlier we have considered an infinitesimal radial displacement
+\(\Delta\) to perform a linear stability analysis and obtain a stability
+criterion. Now \(\Delta\rightarrow\ell\) does not need to be small a priori.
+</p>
 
 <p>
 To put this in the form of the gradients that we have defined above
@@ -729,7 +735,7 @@ is effectively consider only the zeroth order of the Taylor series of
 the temperature expansion, and rewrite for the temperature difference:
 </p>
 
-<div class="latex" id="org09e7fae">
+<div class="latex" id="org01684dd">
 \begin{equation}
 \Delta T = \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right) \ \ ,
 \end{equation}
@@ -756,7 +762,7 @@ pressure. Multiplying by the velocity of the bubble we get the
 <b>convective flux</b> (as you can verify by dimensional analysis!):
 </p>
 
-<div class="latex" id="orgbef3a63">
+<div class="latex" id="orgb31284f">
 \begin{equation}
 F_\mathrm{conv} = c_{p} \rho \frac{\ell}{H_{p}} T \left(\nabla_\mathrm{rad} - \nabla_\mathrm{ad}\right) v_\mathrm{conv} \ \ .
 \end{equation}
@@ -812,7 +818,7 @@ between the rising fluid element and the environment. Doing a Taylor
 expansion and keeping only the first order in &ell; we have:
 </p>
 
-<div class="latex" id="orgcdc38c8">
+<div class="latex" id="orgbc9ec73">
 \begin{equation}
 \Delta\rho \simeq \left(\rho_{1} +\frac{d\rho}{dr}\rvert_\mathrm{ad} \ell\right) - \left(\rho_{1} +\frac{d\rho}{dr}\rvert_\mathrm{rad} \ell\right) \ \ ,
 \end{equation}
@@ -834,7 +840,7 @@ equal to the kinetic energy (per unit volume) acquired by the bubble,
 which is what we will use to make \(v_\mathrm{conv}\) appear:
 </p>
 
-<div class="latex" id="org3b36b82">
+<div class="latex" id="orge883eca">
 \begin{equation}\label{eq:v_conv_MLT}
 E_\mathrm{kin, Bubble} = B\cdot\ell \Rightarrow \frac{1}{2}\rho v_\mathrm{conv}^{2} = \frac{\rho}{4H_{p}}(\nabla_\mathrm{rad}-\nabla_\mathrm{ad})\ell^{2}g \ \ .
 \end{equation}
@@ -853,7 +859,7 @@ two unknowns we have in the convective energy flux, \(v_\mathrm{conv}\)
 and \(\ell\), which allows us to eliminate one for the other:
 </p>
 
-<div class="latex" id="orged2889b">
+<div class="latex" id="org0d64ad5">
 \begin{equation}\label{eq:v_conv_MLT_estimate}
  v_\mathrm{conv} = \sqrt{\frac{\ell^{2}g}{2H_{P}} (\nabla_\mathrm{rad} - \nabla_\mathrm{ad})}\ \ ,
 \end{equation}
@@ -879,7 +885,7 @@ energy when diffusion is insufficient, and it is still very widely
 used today. It gives us the central hypothesis of MLT:
 </p>
 
-<div class="latex" id="orgc008eb3">
+<div class="latex" id="org01dd73d">
 \begin{equation}\label{eq:alpha_MLT}
 \ell = \alpha_{MLT} H_{p}
 \end{equation}
@@ -901,7 +907,7 @@ flux as a function of known quantities and this free parameter
 \(\alpha_\mathrm{MLT}\):
 </p>
 
-<div class="latex" id="orgce801c6">
+<div class="latex" id="org9e6377f">
 \begin{equation}\label{eq:conv_flux_MLT}
 F_\mathrm{conv} = \rho c_{P} T \alpha_\mathrm{MLT}^{2} \sqrt{\frac{1}{2} g H_{P}} (\nabla_\mathrm{rad}-\nabla_\mathrm{ad})^{3/2} \ \ .
 \end{equation}
@@ -932,7 +938,7 @@ this equating the convective flux \(F_\mathrm{conv}\) to the entire flux that ne
 to be carried throughout a layer at radius \(r\):
 </p>
 
-<div class="latex" id="orga6aca06">
+<div class="latex" id="orgc33e0ef">
 \begin{equation}
 F_\mathrm{conv} \equiv \frac{L(r)}{4\pi r^{2}} \ \ .
 \end{equation}
@@ -946,7 +952,7 @@ theorem estimate, assume a monoatomic gas for \(c_{P}\), and using \(L(r)/4\pi
 r^{2} \sim L/R^{2}\) we obtain:
 </p>
 
-<div class="latex" id="org34b6f1b">
+<div class="latex" id="orgeda75d9">
 \begin{equation}
 \nabla_\mathrm{rad} - \nabla_\mathrm{ad} \simeq \left(\frac{LR}{M}\right)^{2/3}\frac{R}{GM} \simeq 10^{-8} \ \ ,
 \end{equation}
@@ -1058,7 +1064,7 @@ extending further the convective mixing.
 </p>
 
 
-<figure id="org80d6d55">
+<figure id="org5792460">
 <img src="./images/overshooting_top.jpg" alt="overshooting_top.jpg">
 
 <figcaption><span class="figure-number">Figure 4: </span>Overshooting top in a thunderstorm on Earth seen from the ISS. Convection carries energy, generates turbulence (think of when an airplane crosses clouds!), and facilitates condensation of water into drops forming the cloud and raining down below this thunderstorm. The "anvil" spreads at the stability boundary, but in the center you can see the overshooting top.</figcaption>
@@ -1149,7 +1155,7 @@ should expect a subsonic but highly turbulent flow. We can in fact
 estimate the Reynolds number:
 </p>
 
-<div class="latex" id="org088e02b">
+<div class="latex" id="orgb511f84">
 \begin{equation}
 \mathrm{Re} = \frac{\ell v_\mathrm{conv}}{\nu} \ \ ,
 \end{equation}
