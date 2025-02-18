@@ -383,7 +383,7 @@ instance [[https://ui.adsabs.harvard.edu/abs/2022ApJ...928L..10A/abstract][Ander
 the recent literature!
 
 Nevertheless, once either the Schwarzschild or Ledoux criterion is
-assumed, given the $T(m)$ profile of a star one can determine the
+assumed, given the $T(m) \equiv T(m(P)) = T(P)$ profile of a star one can determine the
 radial extent $\Delta r$ of the unstable region.
 
 * Mixing length theory
