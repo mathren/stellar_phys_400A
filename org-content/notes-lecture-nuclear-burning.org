@@ -235,7 +235,7 @@ nuclear (strong) interactions needs to explain:
   energy per nucleon of \sim 7.5MeV/nucleon;
 - there are peaks for nuclei with A divisible by 4 and N=Z, that is
   nuclei that can be approximately thought as bound collections of \alpha
-  particles (for example $^{12}\mathr{C}$ \sim 3 \alpha particles bound together,
+  particles (for example $^{12}\mathrm{C}$ \sim 3 \alpha particles bound together,
   $^{16}\mathrm{O}$ \sim4 \alpha particles, etc..);
 - the nuclear binding energy is roughly constant at about \sim
   8MeV/nucleon for most heavy nuclei;
@@ -244,7 +244,7 @@ nuclear (strong) interactions needs to explain:
   why those nuclei require a higher number of neutrons than protons to
   hold together, N>Z.
 - there is a local /maximum/ of the binding energy per nucleon at the
-  iron group, around $^{56}\mathr{Fe}$/$^{62}\mathrm{Ni}$.
+  iron group, around $^{56}\mathrm{Fe}$ and $^{62}\mathrm{Ni}$.
 
 The presence of a maximum implies that there cannot be energy release
 from the /fusion/ of nuclei heavier than iron: indeed those heavy nuclei
