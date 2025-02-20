@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-06 Thu 09:04 -->
+<!-- 2025-02-20 Thu 09:45 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Nuclear burning</title>
@@ -123,14 +123,14 @@ Chapter 4, <a href="https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstra
 <div class="outline-text-3" id="text-orgbae2050">
 <p>
 We have four equations of the stellar <i>structure</i> assuming spherical
-symmetry, LTE, and hydrostatic (&part; t &equiv; 0) equilibrium:
+symmetry, LTE, and hydrostatic (\(\partial t \equiv 0\)) equilibrium:
 </p>
 </div>
 
 <div id="outline-container-orgc721979" class="outline-4">
 <h4 id="orgc721979"><a href="#orgc721979">Mass conservation</a></h4>
 <div class="outline-text-4" id="text-orgc721979">
-<div class="latex" id="org28f39e4">
+<div class="latex" id="org7802be0">
 \begin{equation}\label{eq:mass_cont}
 \frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
 \end{equation}
@@ -142,7 +142,7 @@ symmetry, LTE, and hydrostatic (&part; t &equiv; 0) equilibrium:
 <div id="outline-container-orgd6e4d33" class="outline-4">
 <h4 id="orgd6e4d33"><a href="#orgd6e4d33">Hydrostatic equilibrium</a></h4>
 <div class="outline-text-4" id="text-orgd6e4d33">
-<div class="latex" id="org41a1949">
+<div class="latex" id="org9c60944">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -157,7 +157,7 @@ which follows from the momentum conservation equation.
 <div id="outline-container-org62916c2" class="outline-4">
 <h4 id="org62916c2"><a href="#org62916c2">Equation of state</a></h4>
 <div class="outline-text-4" id="text-org62916c2">
-<div class="latex" id="orgc2cd06b">
+<div class="latex" id="org827b2c0">
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T + P_{QM} + \frac{1}{3}aT^{4}  \ \ .
 \end{equation}
@@ -169,28 +169,29 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 <div id="outline-container-orga92cdb2" class="outline-4">
 <h4 id="orga92cdb2"><a href="#orga92cdb2">Energy transport</a></h4>
 <div class="outline-text-4" id="text-orga92cdb2">
-<div class="latex" id="orgea984c4">
+<div class="latex" id="orgfc6792c">
 \begin{equation}
 \frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
 \end{equation}
 
 </div>
 <p>
-where &nabla; =&part; log(T)/&part; log(P) is the local temperature gradient, equal to
+where \(\nabla =\partial log(T)/\partial log(P)\) is the local temperature gradient, equal to
 the radiative gradient in stably stratified regions:
 </p>
-<div class="latex" id="orge174931">
+<div class="latex" id="org119ef19">
 \begin{equation}
 \nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{16\pi acGm T^{4}}\kappa L
 \end{equation}
 
 </div>
 <p>
-with &kappa; = (1/&kappa;<sub>rad</sub> + 1/&kappa;<sub>cond</sub>)<sup>-1</sup> the combination "in parallel" of the
-radiative and conductive opacity (assumed to be known from atomic
-physics), and &nabla; &equiv; &nabla;<sub>ad</sub> the adiabatic gradient (within &sim;10<sup>-7-8</sup>
-precision) for convective regions. We also have a criterion
-(Schwarzschild or Ledoux) to determine which region is which.
+with \(\kappa = (1/\kappa_\mathrm{rad} + 1/\kappa_\mathrm{cond})^{-1}\) the combination
+"in parallel" of the radiative and conductive opacity (assumed to be
+known from atomic physics), and \(\nabla \equiv \nabla_\mathrm{ad}\) the adiabatic
+gradient (within &sim;10<sup>-7-8</sup> precision) for convective regions. We also
+have a criterion (Schwarzschild or Ledoux) to determine which region
+is which.
 </p>
 </div>
 </div>
@@ -198,16 +199,16 @@ precision) for convective regions. We also have a criterion
 <div id="outline-container-org3752f52" class="outline-4">
 <h4 id="org3752f52"><a href="#org3752f52">Energy conservation</a></h4>
 <div class="outline-text-4" id="text-org3752f52">
-<div class="latex" id="org021efed">
+<div class="latex" id="org9943fbb">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
 
 </div>
 <p>
-with &epsilon;<sub>grav</sub> = T&part; s/&part; t the change in internal energy (typically &cong; 0 in
+with \(\varepsilon_\mathrm{grav} = T\partial s/\partial t\) the change in internal energy (typically &cong; 0 in
 gravothermal equilibrium, that is for phases when the evolution is
-much slower than &tau;<sub>KH</sub>), and &epsilon;<sub>&nu;</sub>&gt;0.
+much slower than \(\tau_{KH}\)), and \(\varepsilon_{\nu}>0\) (neutrinos are an energy loss term).
 </p>
 </div>
 </div>
@@ -219,17 +220,18 @@ much slower than &tau;<sub>KH</sub>), and &epsilon;<sub>&nu;</sub>&gt;0.
 <p>
 With all the equations above we almost have a complete set of solvable
 differential equations. What is left to discuss is the specific energy
-generation per unit time &epsilon;<sub>nuc</sub> due to nuclear burning (which will
-occupy us in this and <a href="./notes-lecture-nuclear-cycles.html">the next lecture</a>) and the specific energy loss
-&epsilon;<sub>&nu;</sub> due to neutrino losses (which we will treat <a href="./notes-lecture-neutrinos.html">later</a>).
+generation per unit time \(\varepsilon_\mathrm{nuc}\) due to nuclear burning
+(which will occupy us in this and <a href="./notes-lecture-nuclear-cycles.html">the next lecture</a>) and the specific
+energy loss rate \(\varepsilon_{\nu}\) due to neutrino losses (which we will treat
+<a href="./notes-lecture-neutrinos.html">later</a>).
 </p>
 
 <p>
 In doing so, we will introduce another time-dependent equation
-(besides the implicit dependence in &epsilon;<sub>grav</sub>): as nuclear burning
-proceeds, the chemical composition changes, on a timescale that we
-will see is extremely long compared to the thermal and dynamical
-timescales.
+(besides the implicit dependence in \(\varepsilon_\mathrm{grav}\)): as nuclear
+burning proceeds, the chemical composition changes, on a timescale
+that we will see is extremely long compared to the thermal and
+dynamical timescales.
 </p>
 </div>
 </div>
@@ -242,7 +244,7 @@ We have seen in the <a href="./notes-lecture-VirTheo.html">virial theorem lectur
 first principle that stars have a "negative heat capacity" and obtain
 a scaling between mass, radius and average temperature:
 </p>
-<div class="latex" id="org5520176">
+<div class="latex" id="org4275a42">
 \begin{equation}
 \langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ ,
 \end{equation}
@@ -255,12 +257,12 @@ distribution.
 
 <p>
 The star has a finite temperature, thus it radiates away thermal
-energy at the surface in the form of a luminosity L. This means the
+energy at the surface in the form of a luminosity \(L\). This means the
 gravitational potential energy is decreasing (because of the virial
-theorem!), thus it must contract leading to an increase in T. For the
-Sun this would go on for &sim; 15 Myrs before it runs out of all of its
-internal energy, which is way too short a timescale to explain many
-Earthly observables.
+theorem!), thus it must contract leading to an increase in \(T\). For
+the Sun this would go on for &sim; 15 Myrs before it runs out of all of
+its internal energy, which is way too short a timescale to explain
+many Earthly observables.
 </p>
 
 <p>
@@ -279,7 +281,7 @@ insufficient.
 
 <ul class="org-ul">
 <li><b>Q</b>: how would you show that these sources are insufficient? (<b>Hint</b>:
-consider the &phi; factor for the amount of mass released in the
+consider the \(\phi\) factor for the amount of mass released in the
 equations below)</li>
 </ul>
 
@@ -298,19 +300,20 @@ also implies that nuclear burning in a star is a <i>self-regulating</i>
 process: because nuclear reactions are a consequence of the energy
 losses, during long-lived equilibrium phases of the stellar life, they
 produce just enough energy to balance the losses! In other words,
-L<sub>nuc</sub> = L ( + L<sub>&nu;</sub>).
+\(L_\mathrm{nuc} = L ( + L_{\nu})\).
 </p>
 
 <p>
 If a star were to not produce enough energy to verify that (i.e.,
-L&gt;L<sub>nuc</sub>), then it will lose too much energy, meaning it will contract,
-and increase it's temperature because of the virial theorem, which in
-turn regulates the energy generation by nuclear reactions (as we will
-see in a moment), until L<sub>nuc</sub> reaches L.
-Viceversa, if L<sub>nuc</sub> &gt; L for some reason (e.g., there is a thermonuclear
-explosion in the star), than the extra energy release will cause an
-expansion of the star and by the virial theorem lower the mean
-temperature until L<sub>nuc</sub> = L.
+\(L>L_\mathrm{nuc}\)), then it will lose too much energy, meaning it
+will contract, and increase it's temperature because of the virial
+theorem, which in turn regulates the energy generation by nuclear
+reactions (as we will see in a moment), until \(L_\mathrm{nuc}\) reaches
+\(L\). Viceversa, if \(L_\mathrm{nuc} > L\) for some reason (e.g., there
+is a thermonuclear explosion in the star), than the extra energy
+release will do work on the stellar gas and cause an expansion of the
+star: by the virial theorem, an increase in \(R\) lowers the mean
+temperature until \(L_\mathrm{nuc} = L\).
 </p>
 </div>
 </div>
@@ -320,17 +323,18 @@ temperature until L<sub>nuc</sub> = L.
 <div class="outline-text-3" id="text-org8a824df">
 <p>
 Naturally, nuclear energy generation consumes nuclear fuel: to provide
-L<sub>nuc</sub> the composition of the star slightly changes in time. This drives
-the <i>evolution</i> of star.
+\(L_\mathrm{nuc}\) the composition of the star slightly changes in time.
+This drives the <i>evolution</i> of star.
 </p>
 
 <p>
 We can estimate the timescale for this assuming the star is in
-gravothermal equilibrium, so L=L<sub>nuc</sub>. The <i>nuclear timescale</i> is the time
-it takes to lose the energy generated by nuclear reactions:
+gravothermal equilibrium, so \(L=L_\mathrm{nuc}\). The <i>nuclear timescale</i>
+is the time it takes to lose the energy generated by nuclear
+reactions:
 </p>
 
-<div class="latex" id="orgb67426a">
+<div class="latex" id="org1a0527c">
 \begin{equation}
 \tau_\mathrm{nuc} = \varphi f_\mathrm{burn} \frac{Mc^{2}}{L_\mathrm{nuc}} \equiv \varphi f_\mathrm{burn} \frac{Mc^{2}}{L_{}} \ \ ,
 \end{equation}
@@ -338,37 +342,42 @@ it takes to lose the energy generated by nuclear reactions:
 </div>
 
 <p>
-where &phi; is the fraction of rest mass of nuclei converted in energy by
-nuclear burning, f<sub>burn</sub> is the fraction of the stellar mass M that is
-affected by burning (we need a stellar model to estimate that).
-For the Sun, f<sub>burn</sub> &cong; 0.1 from detailed models (as you can verify
-with your <code>MESA-web</code> model!).
+where \(\phi\) is the fraction of rest mass of nuclei converted in energy
+by nuclear burning, \(f_\mathrm{burn}\) is the fraction of the stellar
+mass \(M\) that is affected by burning (we need a stellar model to
+estimate that). For the Sun, \(f_\mathrm{burn} \simeq 0.1\) from detailed
+models (as you can verify with your <code>MESA-web</code> model!).
 </p>
 
 <p>
-&phi; depends on the nuclear physics details. For hydrogen burning into
-helium (the two lightest elements), the proton mass is m<sub>p</sub> = 1.0081 m<sub>u</sub>
-(where the atomic mass unit m<sub>u</sub> is defined in such a way that the mass
-of \(^{12}\mathrm{C}\) is exactly 12m<sub>u</sub> - this is more convenient to measure
-experimentally to make a standard), and the mass of helium 4 is m(<sup>4</sup>He)
-= 4.0039m<sub>u</sub>, so the fraction of rest mass of 4 protons turning into a
-helium nucleus is:
+The fraction \(\phi\) depends on the nuclear physics details. For hydrogen
+burning into helium (the two lightest elements), the proton mass is \(m_{p}
+= 1.0081 m_{u}\) (where the atomic mass unit \(m_{u}\) is defined in such a way
+that the mass of \(^{12}\mathrm{C}\) is exactly 12\(m_{u}\) - this is more
+convenient to measure experimentally to make a standard), and the mass
+of helium 4 is \(m(^{4}He) = 4.0039 m_{u}\), so the fraction of rest mass of 4
+protons turning into a helium nucleus is:
 </p>
 
-<div class="latex" id="org11c32d4">
+<div class="latex" id="org6df39dc">
 \begin{equation}\label{eq:mass_defect}
 \varphi = \frac{4m_{p} - m(^{4}\mathrm{He})}{4m_{p}} = \frac{2.85 \times 10^{-2} m_{u} c^{2}}{4m_{p}} \simeq 0.007 \ \ .
 \end{equation}
 
 </div>
+
 <p>
-Note that to turn 4 protons into a helium, because of charge and
+<b>N.B.:</b> to turn 4 protons into a helium nucleus, because of charge and
 leptonic number conservation, there needs to be 2 positrons and 2
-neutrinos produced! Plugging in &phi; and M<sub>☉</sub> and L<sub>☉</sub> we get for the nuclear
+neutrinos produced!
+</p>
+
+<p>
+Plugging in \(\phi\) and \(M_{☉}\) and \(L_{☉}\) we get for the nuclear
 timescale:
 </p>
 
-<div class="latex" id="org9f8c48d">
+<div class="latex" id="orgd7e7726">
 \begin{equation}\label{eq:tau_nuc_scaling}
 \tau_\mathrm{nuc} \simeq 10^{10} \frac{f_\mathrm{burn}}{0.1} \frac{M}{M_{☉}} \frac{L}{L_{☉}} \ \mathrm{yr} \ \ .
 \end{equation}
@@ -380,7 +389,7 @@ So we now have estimates that allow us to see the complete
 ordering for the main <i>global</i> timescales for stellar evolution:
 </p>
 
-<div class="latex" id="org7f78fad">
+<div class="latex" id="orgecf86ae">
 \begin{equation}\label{eq:timescale_ordering}
 \tau_\mathrm{ff} \ll \tau_\mathrm{KH} \ll \tau_\mathrm{nuc} \ \ .
 \end{equation}
@@ -391,12 +400,12 @@ ordering for the main <i>global</i> timescales for stellar evolution:
 Moreover, Eq. \ref{eq:tau_nuc_scaling} shows that when accounting for
 nuclear energy generation (which we have implicitly assumed here to
 give a value of &phi;), the nuclear timescale matches the timescale found
-from geological evidence on Earth, and the ordering \ref{eq:timescale_ordering}
-tells us that the evolution of the Sun is on a very slow timescale
-compared to thermal and dynamical timescale, validating the
-assumptions we made so far to derive the equations for stellar
-<i>structure</i> and allowing for a <i>quasi-static</i> approximation to deal with
-the stellar <i>evolution</i>.
+from geological evidence on Earth, and the ordering in
+\ref{eq:timescale_ordering} tells us that the evolution of the Sun is
+on a very slow timescale compared to thermal and dynamical timescale,
+validating the assumptions we made so far to derive the equations for
+stellar <i>structure</i> and allowing for a <i>quasi-static</i> approximation to
+deal with the stellar <i>evolution</i>.
 </p>
 
 <p>
@@ -418,10 +427,10 @@ nucleon of all nuclei in the periodic table:
 </p>
 
 
-<figure id="orgfb74904">
+<figure id="orgc572df5">
 <img src="./images/nuclear_binding.png" alt="nuclear_binding.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 1: </span>Nuclear binding energy per nucleon as a function of atomic mass A. From <a href="https://etd.adm.unipi.it/theses/available/etd-05062015-125630/unrestricted/Thesis_colored_10052015.pdf">Renzo 2015</a>.</figcaption>
+<figcaption><span class="figure-number">Figure 1: </span>Nuclear binding energy per nucleon as a function of atomic mass \(A=Z+N\), where \(Z\) is the number of protons and \(N\) the number of neutrons (therefore \(A\) is the total number of baryons in a given nucleus, and \(A\times m_{u}\) the mass). From <a href="https://etd.adm.unipi.it/theses/available/etd-05062015-125630/unrestricted/Thesis_colored_10052015.pdf">Renzo 2015</a>.</figcaption>
 </figure>
 
 <p>
@@ -479,7 +488,7 @@ of the masses of the Z protons (m<sub>p</sub>) and N=A-Z neutrons (m<sub>n</sub>
 mass of the nucleus (measured experimentally):
 </p>
 
-<div class="latex" id="org1c7e36c">
+<div class="latex" id="org7b7937b">
 \begin{equation}
 B = \left(Zm_{p}+(A-Z)m_{n} - m_\mathrm{nucleus}\right)c^{2} \simeq \left(Zm_{H}+(A-Z)m_{n} - m_\mathrm{nucleus}\right)c^{2} >0 \ \ ,
 \end{equation}
@@ -504,16 +513,16 @@ most abundant chemicals in the Universe</i>.
 <p>
 Moreover, from the fact that there is a sharp jump form H to He, and
 then the curve rapidly flattens, we know that the rate at which nuclei
-are converted to achieve the equilibrium condition L<sub>nuc</sub> = L will be
+are converted to achieve the equilibrium condition L<sub>\mathrm</sub>{nuc} = L will be
 slower when H is converted into He, and then it will need to rapidly
 speed up when He is converted in carbon and onwards (because the
 energy release per nucleon significantly drops lowering the factor &phi;
-in &tau;<sub>nuc</sub>).
+in &tau;<sub>\mathrm</sub>{nuc}).
 </p>
 
 <p>
 In the very late evolutionary phases (post helium burning), the
-required burning rate may become so high that &tau;<sub>nuc</sub> becomes shorter
+required burning rate may become so high that &tau;<sub>\mathrm</sub>{nuc} becomes shorter
 than the <i>global</i> thermal timescale (but luckily not of the <i>local</i>
 thermal timescale, so all the equations we have derived so far still
 hold, since they are differential equations that describe <i>local</i>
@@ -530,7 +539,7 @@ generic particles, it is useful to define the so called Q-value as the
 mass difference between the reagents and the products:
 </p>
 
-<div class="latex" id="orgac0febb">
+<div class="latex" id="org7f35de2">
 \begin{equation}
 Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A}\right) \ \ ,
 \end{equation}
@@ -556,7 +565,7 @@ The energy release by nuclear reaction per unit time and unit mass is
 just:
 </p>
 
-<div class="latex" id="org4d8053f">
+<div class="latex" id="orgba4f314">
 \begin{equation}\label{eq:eps_nuc}
 \varepsilon_\mathrm{nuc} = \sum_{i} \frac{Q_{i} r_{i}}{\rho} \ \ ,
 \end{equation}
@@ -566,7 +575,7 @@ just:
 <p>
 where the sum runs over all the possible reactions, r<sub>i</sub> is the rate per
 unit time and volume of the reactions, and the division by the mass
-density &rho; gives the right dimensions [&epsilon;<sub>nuc</sub>] = [E]/([t][M]).
+density &rho; gives the right dimensions [&epsilon;<sub>\mathrm</sub>{nuc}] = [E]/([t][M]).
 </p>
 
 <p>
@@ -606,7 +615,7 @@ resonant or not (the distinction will come back later).
 <p>
 Example:
 </p>
-<div class="latex" id="org515d66c">
+<div class="latex" id="org82a2499">
 \begin{equation}
  ^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}
 \end{equation}
@@ -663,7 +672,7 @@ viceversa).
 <p>
 Example:
 </p>
-<div class="latex" id="orga81002e">
+<div class="latex" id="orgbd3bee7">
 \begin{equation}
 p+e^{-} \rightarrow n+\nu_{e} \ \mathrm{or} \ p(e^{-},\nu_{e})n
 \end{equation}
@@ -687,7 +696,7 @@ moments of massive star evolution.
 <p>
 Example:
 </p>
-<div class="latex" id="org31ea985">
+<div class="latex" id="orgd08f577">
 \begin{equation}
 ^{56}\mathrm{Fe}+\gamma \rightarrow 14\alpha
 \end{equation}
@@ -706,7 +715,7 @@ some point in the evolution (and explosion!) of stars. For example,
 during hydrogen core burning (which we have used to estimate &phi; and
 thus &tau;<sub>nuc</sub>) the star burns 4 protons into &alpha; particles:
 </p>
-<div class="latex" id="org7a0aa6e">
+<div class="latex" id="org3791300">
 \begin{equation}\label{eq:overall_h_burn}
 4p \rightarrow ^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ ,
 \end{equation}
@@ -786,7 +795,7 @@ X(a,b)Y as if it went through an intermediate step of forming a
 compound nucleus C:
 </p>
 
-<div class="latex" id="org0145e6d">
+<div class="latex" id="org8e1be08">
 \begin{equation}
 X + a \rightarrow C^{\star} \rightarrow Y + b \ \ ,
 \end{equation}
@@ -822,7 +831,7 @@ the experimental result on the size of nuclei (something that also
 needs to be explained by models of the strong force):
 </p>
 
-<div class="latex" id="org6e418de">
+<div class="latex" id="org3d907ce">
 \begin{equation}
 r_\mathrm{n} = r_{0} A^{1/3} \simeq 1.4 \times 10^{-13} A^{1/3} \ \mathrm{cm} \Rightarrow \tau_\mathrm{light\ cross} = \frac{r_\mathrm{n}}{c} \simeq 10^{-23} A^{1/3} \ \mathrm{s} \ \ .
 \end{equation}
@@ -859,7 +868,7 @@ within r<sub>n</sub>, we need to consider the potential governing their
 interaction:
 </p>
 
-<div class="latex" id="org37743eb">
+<div class="latex" id="orge75c6e6">
 \begin{equation}
 V \equiv V(r) = V_\mathrm{EM} + V_\mathrm{nuc} + \frac{\ell(\ell+1)\hbar^{2}}{2m_{aX}r^{2}} \ \ ,
 \end{equation}
@@ -884,7 +893,7 @@ have &ell; = 0, that is head-on collisions between a and X.
 <p>
 For the electromagnetic term we can write:
 </p>
-<div class="latex" id="orgc159e8d">
+<div class="latex" id="orge1ffaa1">
 \begin{equation}
 V_\mathrm{EM} = \frac{Z_{a}Z_{X}e^{2}}{r} - \{\mathrm{electron\ screening\ term}\} \ \ ,
 \end{equation}
@@ -899,7 +908,7 @@ plasma we expect each nucleus to be statistically surrounded by a
 plasma:
 </p>
 
-<div class="latex" id="org3e37b1b">
+<div class="latex" id="org9180551">
 \begin{equation}
 r_\mathrm{Debye} = \sqrt{\frac{k_{B}T}{4\pi e N\chi}} \ \ ,
 \end{equation}
@@ -934,8 +943,8 @@ textbooks such as "<i>Introductory nuclear physics</i>" by K. Krane.
 <p>
 Besides the nuclear physics details here, the important point is that
 the nuclear potential is going to be attractive at short range
-(V<sub>nuc</sub>(r&le; r<sub>n</sub>)&lt;0), but it has a repulsive core (that is there is a
-certain r<sub>nuc,core</sub> below which V<sub>nuc</sub> becomes very large and positive),
+(V<sub>\mathrm</sub>{nuc}(r&le; r<sub>n</sub>)&lt;0), but it has a repulsive core (that is there is a
+certain r<sub>nuc,core</sub> below which V<sub>\mathrm</sub>{nuc} becomes very large and positive),
 otherwise the nuclei would not have a finite approximately constant
 density, and goes to zero at large distances (the strong force has a
 short range).
@@ -970,7 +979,7 @@ barrier.</li>
 </ul>
 
 
-<figure id="org061f019">
+<figure id="orge86f658">
 <img src="./images/nuc_pot.png" alt="nuc_pot.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Top: Interaction potential generated by the nucleus X and felt by the nucleus a considering nuclear and electromagnetic interactions. For r&gt;r<sub>Debye</sub> the potential deviates from a r<sup>-1</sup> Coulomb potential (sketched in red) because of electron screening. The gray vertical band marks the repulsive core of the nuclear force (necessary to obtain a constant nuclear density), purple shading marks metastable states of the compound nucleus C<sup>*</sup> where a is trapped inside the nuclear potential well of X. Bottom: qualitative sketch of the wave function of particle a in the potential caused by particle X (blue). The region between r<sub>n</sub> and r<sub>c</sub> is the "classically forbidden region". The wavefunction needs to be smooth at both those radii and the solution where quantum tunnelling succeeds allow for a large amplitude of the wave function inside r&lt;r<sub>n</sub>. Modified from Fig. 6.2 of Onno Pols' lecture notes.</figcaption>
@@ -990,7 +999,7 @@ at infinity higher than the maximum of the Coulomb barrier, so that r<sub>c</sub
 the gas:
 </p>
 
-<div class="latex" id="org6db71c0">
+<div class="latex" id="org81834b8">
 \begin{equation}
 E \simeq k_{B} T \geq E_{C} = \frac{Z_{a}Z_{X}e^{2}}{r_{n}} \geq \frac{e^{2}}{r_{0}} \Rightarrow T\geq \frac{e^{2}}{r_{0} k_{B}} \simeq 10^{10} \ \mathrm{K} \ \ ,
 \end{equation}
@@ -1087,7 +1096,7 @@ of a Lorentzian with width determined by the energy width of the
 metastable state C<sup>*</sup>:
 </p>
 
-<div class="latex" id="org1291304">
+<div class="latex" id="org6b8cdb9">
 \begin{equation}
 \sigma_\mathrm{nuc} \propto \frac{1}{(E-E_\mathrm{metastable})^{2} +\left(\frac{\Gamma}{2}\right)^{2}} \ \ .
 \end{equation}
@@ -1103,14 +1112,14 @@ metastable state and h Planck's constant.
 <p>
 Conversely, for non-resonant reactions, since the thermal energies are
 of order of 100 of eV while the nuclear scale is at &sim;10MeV we can
-neglect the energy dependence of &sigma;<sub>nuc</sub>.
+neglect the energy dependence of &sigma;<sub>\mathrm</sub>{nuc}.
 </p>
 
 <p>
 Finally, actually carrying out the calculation give a probability of tunneling
 </p>
 
-<div class="latex" id="org5e33400">
+<div class="latex" id="orgd78fed8">
 \begin{equation}
 P\propto \exp\left(-\int_{r_{n}}^{r_c} \frac{\sqrt{2m_{aX} (V(r) - E)}}{\hbar} dr \right) \equiv P_{0} \exp\left(-\frac{b}{\sqrt{E}}\right) \ \ ,
 \end{equation}
@@ -1176,7 +1185,7 @@ With these ingredients we can make a rate of the number of reactions
 X(a,b)Y per unit time and volume with:
 </p>
 
-<div class="latex" id="orge8bcb61">
+<div class="latex" id="orgd682a03">
 \begin{equation}
 r_{aX} = \sigma(v) v n_{a} n_{X}  \ \ ,
 \end{equation}
@@ -1188,7 +1197,7 @@ there are reactions among identical particles (for example the weak
 reaction p+p&rarr; D+e<sup>+</sup> +&nu;<sub>e</sub>). In such cases we should make sure to not
 double count particle pairs, so we can write more generally:
 </p>
-<div class="latex" id="org4fa825b">
+<div class="latex" id="org21f89c3">
 \begin{equation}
 r_{aX} = \frac{1}{1+\delta_{aX}} \sigma(v) v n_{a} n_{X}  \ \ ,
 \end{equation}
@@ -1210,7 +1219,7 @@ the phase space densities n<sub>i</sub> &rarr; &int; dn<sub>i</sub>(v) (<b>N.B.<
 already done this many times when deriving the EOS, just in momentum
 instead of velocity), our expression for the rate becomes:
 </p>
-<div class="latex" id="org38f8de9">
+<div class="latex" id="org5636d51">
 \begin{equation}
 r_{aX} = \frac{1}{1+\delta_{aX}}\int\int dn_{a}(v_{a}) dn_{X}(v_{X}) \sigma(v)v  \ \ ,
 \end{equation}
@@ -1235,7 +1244,7 @@ that the product of two Maxwell-Boltzmann distribution keeps the same
 functional form by changing variables to express things in the center
 of mass frame of the a+X system, yielding:
 </p>
-<div class="latex" id="orgabafeb1">
+<div class="latex" id="org1905e48">
 \begin{equation}
 r_{aX} = \frac{1}{1+\delta_{aX}}4\pi N_{a}N_{X} \left(\frac{m_{aX}}{2\pi k_{B}T}\right)^{3/2}\int_{0}^{+\infty}\exp\left(-\frac{m_{aX}v^{2}}{k_{B}T}\right) \sigma(v)v v^{2}dv  \ \ .
 \end{equation}
@@ -1263,7 +1272,7 @@ velocities of &lang;&sigma;(v)v&rang;, which has the dimension of [L<sup>2</sup>
 Often, this average quantity is approximated as a powerlaw from the
 known value at a certain temperature T<sub>0</sub>.
 </p>
-<div class="latex" id="org8bb35e0">
+<div class="latex" id="orgabfc9d3">
 \begin{equation}
 \langle \sigma(v)v \rangle = \langle \sigma(v)v \rangle_{T_{0}} \left(\frac{T}{T_{0}}\right)^{\beta}
 \end{equation}
@@ -1293,7 +1302,7 @@ to zero faster than r<sup>-2</sup> because of electron screening!). Thus
 v=(2E/m<sub>aX</sub>)<sup>1/2</sup>, and we can also use that the cross section &sigma; is
 proportional to the tunneling probability so &sigma;(E)&prop; exp(-b/E<sup>1/2</sup>):
 </p>
-<div class="latex" id="org15f98b2">
+<div class="latex" id="org064d75e">
 \begin{equation}
 r_{aX} \propto \frac{N_{a}N_{X}}{1+\delta_{aX}}\sqrt{\frac{2}{\pi}}\frac{1}{k_{B}T}\int_{0}^{+\infty}\exp\left(-\frac{E}{k_{B}T}-\frac{b}{\sqrt{E}}\right)  \ \ .
 \end{equation}
@@ -1306,7 +1315,7 @@ is going to peak:
 </p>
 
 
-<figure id="org0dcddb0">
+<figure id="org246bb55">
 <img src="./images/gamow_peak.png" alt="gamow_peak.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Sketch of the "Gamow peak" resulting from the combination of the Maxwell-Boltzmann distribution of particles in (thermal) energy and the tunneling probability through the Coulomb repulsion. Credits: L. Trache.</figcaption>
@@ -1373,7 +1382,7 @@ reactions j+k&rarr; i+&#x2026; that have i as an outgoing particle, minus the <i
 rate i+j&rarr; something:
 </p>
 
-<div class="latex" id="orgcd8e598">
+<div class="latex" id="org5568cad">
 \begin{equation}
 \frac{dn_{i}}{dt} = \sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij} \ \,
 \end{equation}
@@ -1390,7 +1399,7 @@ the rates r<sub>ij</sub> and r<sub>kl</sub> we can rewrite this as a function of
 that already appear in our stellar structure equations:
 </p>
 
-<div class="latex" id="org638c6f1">
+<div class="latex" id="org95f9612">
 \begin{equation}
 \frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
 \end{equation}
@@ -1435,7 +1444,7 @@ determined parameters like this model.
 In the liquid drop model, the nuclear binding energy can be expressed
 as:
 </p>
-<div class="latex" id="org862996a">
+<div class="latex" id="org7ad448b">
 \begin{equation}
 \mathrm{BE}_\mathrm{nuc} = a_\mathrm{vol} A - a_\mathrm{surf} A^{2/3} - a_\mathrm{Coulomb} \frac{Z^{2}}{A^{1/3}} - a_\mathrm{sym} \frac{(N-Z)^{2}}{A} - a_\mathrm{coupling} \ \ ,
 \end{equation}
@@ -1473,9 +1482,9 @@ nucleons for which nuclei are particularly stable, these are the
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-convection.html"><i class="fa-solid fa-arrow-left"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-nuclear-cycles.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-convection.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-nuclear-cycles.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 6 February 2025 <br>
+  Last updated on 20 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>
