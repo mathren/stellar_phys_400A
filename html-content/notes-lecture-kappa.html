@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-17 Mon 13:44 -->
+<!-- 2025-02-20 Thu 09:47 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - opacity</title>
@@ -113,11 +113,11 @@
 Kippenhahn's book.
 </p>
 
-<div id="outline-container-org2490d7f" class="outline-2">
-<h2 id="org2490d7f"><a href="#org2490d7f">Opacity</a></h2>
-<div class="outline-text-2" id="text-org2490d7f">
+<div id="outline-container-orgf76eb8d" class="outline-2">
+<h2 id="orgf76eb8d"><a href="#orgf76eb8d">Opacity</a></h2>
+<div class="outline-text-2" id="text-orgf76eb8d">
 <p>
-We have seen in <a href="notes-lecture-ETransport.html#org021e33e">the previous lecture</a> that in the equation for the
+We have seen in <a href="notes-lecture-ETransport.html#org5a5cf4b">the previous lecture</a> that in the equation for the
 energy transport by diffusion (either of photons or electrons, that is
 either radiative or conductive energy transport) there is a parameter
 &kappa; that determines the "resistance" of the stellar gas to the passage
@@ -125,7 +125,7 @@ of energy by diffusion. This was the analogy that comes out from the
 combination of the radiative opacity and conductive opacity
 </p>
 
-<div class="latex" id="org8eeb9f6">
+<div class="latex" id="orgc54dea3">
 \begin{equation}\label{eq:kappas}
 \frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
 \end{equation}
@@ -160,9 +160,9 @@ composition of the stellar gas.
 </div>
 
 
-<div id="outline-container-orgb5d79c9" class="outline-2">
-<h2 id="orgb5d79c9"><a href="#orgb5d79c9">Rosseland mean opacity</a></h2>
-<div class="outline-text-2" id="text-orgb5d79c9">
+<div id="outline-container-orgfe54052" class="outline-2">
+<h2 id="orgfe54052"><a href="#orgfe54052">Rosseland mean opacity</a></h2>
+<div class="outline-text-2" id="text-orgfe54052">
 <p>
 But even before we discuss the microphysics, you know that the
 "resistance" of a material to the passage of light is dependent on the
@@ -176,10 +176,10 @@ happened to that dependence in our stellar structure equations?
 </p>
 
 <p>
-In the <a href="./notes-lecture-ETransport.html#orgcae4028">previous lecture</a> we have written for the radiative energy flux
+In the <a href="./notes-lecture-ETransport.html#org6890f80">previous lecture</a> we have written for the radiative energy flux
 </p>
 
-<div class="latex" id="orgee036a7">
+<div class="latex" id="org0768703">
 \begin{equation}\label{eq:f_rad}
 F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \equiv -\frac{4ac}{3c\rho T^{3}}\frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ .
 \end{equation}
@@ -197,7 +197,7 @@ specific flux, we also should put in the equation the specific opacity
 \(\nu\) and \(\nu+d\nu\):
 </p>
 
-<div class="latex" id="orgd06b2ec">
+<div class="latex" id="org20376f2">
 \begin{equation}\label{eq:specific_flux}
 F_{\nu} = - \frac{1}{3}\frac{c}{\kappa_{\nu}\rho}\frac{du_{\nu}}{dr} \ \ .
 \end{equation}
@@ -213,7 +213,7 @@ to a black body distribution for the intensity in the stellar
 interior:
 </p>
 
-<div class="latex" id="orgab73f7e">
+<div class="latex" id="orgc0be213">
 \begin{equation}
 u_{\nu} = \frac{4\pi}{c}B(\nu, T) = \frac{8\pi h}{c^{3}}\frac{\nu^{3}}{e^{h\nu/k_{B}T} -1} \ \ .
 \end{equation}
@@ -224,7 +224,7 @@ u_{\nu} = \frac{4\pi}{c}B(\nu, T) = \frac{8\pi h}{c^{3}}\frac{\nu^{3}}{e^{h\nu/k
 Thus \(du_{\nu}/dr = 4\pi/c \times \partial B(\nu, T)/\partial T \times dT/dr\), and performing the integral over the frequencies:
 </p>
 
-<div class="latex" id="org19df632">
+<div class="latex" id="org8fcc6b0">
 \begin{equation}\label{eq:int_flux}
 F_\mathrm{rad} = \int_{0}^{+\infty} F_{\nu}d\nu = - \frac{1}{3}\frac{c}{\rho}\int_{0}^{+\infty} \frac{1}{\kappa_{\nu}}\frac{du_{\nu}}{dr} =
 -\frac{4\pi}{3\rho}  \frac{dT}{dr} \int_{0}^{+\infty}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} d\nu\ \ .
@@ -237,7 +237,7 @@ Comparing this with Eq. \ref{eq:f_rad} we obtain that the
 \(\kappa_\mathrm{rad}\) appearing there must be:
 </p>
 
-<div class="latex" id="org4469a77">
+<div class="latex" id="orgd351ac7">
 \begin{equation}
 \frac{1}{\kappa_\mathrm{rad}} = \frac{\pi}{acT^{3}}\int_{0}^{+\infty} d\nu \frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} \ \ ,
 \end{equation}
@@ -247,7 +247,7 @@ Comparing this with Eq. \ref{eq:f_rad} we obtain that the
 which we can rewrite as
 </p>
 
-<div class="latex" id="org703846f">
+<div class="latex" id="org66f49d1">
 \begin{equation}
 \frac{1}{\kappa_\mathrm{rad}} = \frac{\int_{0}^{+\infty} d\nu \frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T}}{\int_{0}^{+\infty} d\nu \frac{\partial B(\nu, T)}{\partial T}} \ \ ,
 \end{equation}
@@ -261,9 +261,9 @@ Rosseland</a>.
 </p>
 </div>
 
-<div id="outline-container-org4be2956" class="outline-3">
-<h3 id="org4be2956"><a href="#org4be2956">Physical interpretation</a></h3>
-<div class="outline-text-3" id="text-org4be2956">
+<div id="outline-container-orge35a9e7" class="outline-3">
+<h3 id="orge35a9e7"><a href="#orge35a9e7">Physical interpretation</a></h3>
+<div class="outline-text-3" id="text-orge35a9e7">
 <p>
 This may seem like a bunch of math that did not advance us much: we
 still have &kappa;<sub>&nu;</sub> (which in practice comes from atomic physics
@@ -278,7 +278,7 @@ gas described by a black body. We can rewrite Eq.
 \ref{eq:specific_flux} (using Eq. \ref{eq:int_flux}) as:
 </p>
 
-<div class="latex" id="org360abf7">
+<div class="latex" id="org44ec2e2">
 \begin{equation}
 F_{\nu} = - \frac{4\pi}{3\rho}\frac{dT}{dr}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} \Rightarrow F_{\nu} \propto \frac{\partial B(\nu, T)}{\partial T} \ \ ,
 \end{equation}
@@ -321,9 +321,9 @@ weighted with the mass fraction \(X_{i}\) of each species and then plug
 </div>
 </div>
 
-<div id="outline-container-org16f9771" class="outline-2">
-<h2 id="org16f9771"><a href="#org16f9771">Sources of radiative opacity</a></h2>
-<div class="outline-text-2" id="text-org16f9771">
+<div id="outline-container-org12f4b1a" class="outline-2">
+<h2 id="org12f4b1a"><a href="#org12f4b1a">Sources of radiative opacity</a></h2>
+<div class="outline-text-2" id="text-org12f4b1a">
 <p>
 Now, let's consider the radiation-matter interactions that can be
 source of opacity (i.e., determine the \(\kappa_{\nu}\) that we put in the
@@ -331,9 +331,9 @@ Rosseland mean opacity to obtain \(\kappa_\mathrm{rad}\)).
 </p>
 </div>
 
-<div id="outline-container-org58986ed" class="outline-3">
-<h3 id="org58986ed"><a href="#org58986ed">Bound-bound</a></h3>
-<div class="outline-text-3" id="text-org58986ed">
+<div id="outline-container-org0f657d6" class="outline-3">
+<h3 id="org0f657d6"><a href="#org0f657d6">Bound-bound</a></h3>
+<div class="outline-text-3" id="text-org0f657d6">
 <p>
 Photons (orange wiggly line) can interact with the electrons in an
 atom/ion (especially if they have the "right" frequency close to
@@ -369,7 +369,7 @@ so still quite deep in the stars.
 </p>
 
 
-<figure id="org0c7f2ff">
+<figure id="org3df1330">
 <img src="./images/bound_bound.png" alt="bound_bound.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Cartoon of a bound-bound transition. The photon (orange wiggly line) is absorbed by the ion (nucleus in blue, electron in green) where an electron jumps to a higher energy level, represented by the dashed black line. Credits: R. Townsend. <b>N.B.:</b> the orbit of the electron is not a little circle like this, which would be unstable! It is instead an <a href="https://en.wikipedia.org/wiki/Atomic_orbital#/media/File:Atomic-orbital-clouds_spdf_m0.png">orbital</a> which describes the spatial <i>probability distribution</i> of finding the electron there in accordance to quantum-mechanics.</figcaption>
@@ -377,9 +377,9 @@ so still quite deep in the stars.
 </div>
 </div>
 
-<div id="outline-container-orgeaaa8df" class="outline-3">
-<h3 id="orgeaaa8df"><a href="#orgeaaa8df">Bound-free</a></h3>
-<div class="outline-text-3" id="text-orgeaaa8df">
+<div id="outline-container-orgdbb4c6b" class="outline-3">
+<h3 id="orgdbb4c6b"><a href="#orgdbb4c6b">Bound-free</a></h3>
+<div class="outline-text-3" id="text-orgdbb4c6b">
 <p>
 An incoming photon may have sufficient energy to photoionize an
 atom/ion. That is the absorption of the photon makes an electron jump
@@ -394,7 +394,7 @@ absent.
 </p>
 
 
-<figure id="org069acc8">
+<figure id="org949d2b4">
 <img src="./images/bound_free.png" alt="bound_free.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Cartoon of a bound-free transition. Credits: R. Townsend.</figcaption>
@@ -402,9 +402,9 @@ absent.
 </div>
 </div>
 
-<div id="outline-container-org6f9cdaf" class="outline-3">
-<h3 id="org6f9cdaf"><a href="#org6f9cdaf">Free-free</a></h3>
-<div class="outline-text-3" id="text-org6f9cdaf">
+<div id="outline-container-org74bb8c9" class="outline-3">
+<h3 id="org74bb8c9"><a href="#org74bb8c9">Free-free</a></h3>
+<div class="outline-text-3" id="text-org74bb8c9">
 <p>
 Even unbound electrons can absorb a photon transitioning between two
 unbound energy levels of the continuum. This is effectively the
@@ -418,7 +418,7 @@ at very low temperatures.
 </p>
 
 
-<figure id="org029aaed">
+<figure id="org6a63b4f">
 <img src="./images/free_free.png" alt="free_free.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Cartoon of a free-free transition. Credits: R. Townsend.</figcaption>
@@ -434,9 +434,9 @@ possible for an electron in the electromagnetic field of an ion.
 </div>
 </div>
 
-<div id="outline-container-org8f811df" class="outline-3">
-<h3 id="org8f811df"><a href="#org8f811df">Scattering</a></h3>
-<div class="outline-text-3" id="text-org8f811df">
+<div id="outline-container-org9f2f2be" class="outline-3">
+<h3 id="org9f2f2be"><a href="#org9f2f2be">Scattering</a></h3>
+<div class="outline-text-3" id="text-org9f2f2be">
 <p>
 Another source of opacity is scattering, which unlike the processes
 above does not lead to the "disappearance" of a photon, but can still
@@ -445,7 +445,7 @@ ability to carry flux.
 </p>
 
 
-<figure id="org9688174">
+<figure id="org037d9c5">
 <img src="./images/scattering.png" alt="scattering.png" width="40%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Cartoon of the scattering of a photon on an electron. Credits: R. Townsend.</figcaption>
@@ -463,7 +463,7 @@ be described by the Thomson scattering cross section, which divided by
 the \(\mu_{e}m_{u}\) gives the corresponding opacity. Therefore, for \(T\geq10^{6}\) K, \(\kappa_\mathrm{rad}
 \equiv \kappa_{es}\):
 </p>
-<div class="latex" id="org4189d67">
+<div class="latex" id="orgfce6547">
 \begin{equation}
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2} \ g} \ \ ,
 \end{equation}
@@ -490,9 +490,9 @@ the photons, one may need to use the Klein-Nishina formula.
 </div>
 </div>
 
-<div id="outline-container-orgbb3c0c8" class="outline-3">
-<h3 id="orgbb3c0c8"><a href="#orgbb3c0c8">Molecules and dust</a></h3>
-<div class="outline-text-3" id="text-orgbb3c0c8">
+<div id="outline-container-org387c454" class="outline-3">
+<h3 id="org387c454"><a href="#org387c454">Molecules and dust</a></h3>
+<div class="outline-text-3" id="text-org387c454">
 <p>
 At \(T\le4000\) K, atoms may bound together and form molecules, and even
 lower (\(T\le1500\) K) dust grains may form. These are not the same dust
@@ -513,9 +513,9 @@ first principles.
 </div>
 </div>
 
-<div id="outline-container-orgd7ebfc7" class="outline-3">
-<h3 id="orgd7ebfc7"><a href="#orgd7ebfc7">H<sup>-</sup></a></h3>
-<div class="outline-text-3" id="text-orgd7ebfc7">
+<div id="outline-container-orgc9503fb" class="outline-3">
+<h3 id="orgc9503fb"><a href="#orgc9503fb">H<sup>-</sup></a></h3>
+<div class="outline-text-3" id="text-orgc9503fb">
 <p>
 At low temperature hydrogen may capture an extra electron forming an
 H<sup>-</sup> ion (i.e., a proton with 2 bound electrons). This is a fragile
@@ -531,7 +531,7 @@ envelope of non-metal-free cool stars, e.g., red giants or the Sun
 itself! An approximate relation for its opacity is
 </p>
 
-<div class="latex" id="org63c2b95">
+<div class="latex" id="orgce815c7">
 \begin{equation}
 \kappa_\mathrm{H^{-}} = 2.5\times10^{-31} \frac{Z}{Z_{☉}} \rho^{1/2} T^{9} \ \mathrm{cm^{2} \ g^{-1}} \ \ .
 \end{equation}
@@ -550,9 +550,9 @@ theoretically).</li>
 </div>
 </div>
 
-<div id="outline-container-orgea411b3" class="outline-3">
-<h3 id="orgea411b3"><a href="#orgea411b3">Conductive opacity</a></h3>
-<div class="outline-text-3" id="text-orgea411b3">
+<div id="outline-container-orgf59f3e2" class="outline-3">
+<h3 id="orgf59f3e2"><a href="#orgf59f3e2">Conductive opacity</a></h3>
+<div class="outline-text-3" id="text-orgf59f3e2">
 <p>
 For an ideal gas, \(\kappa_\mathrm{cond} \gg \kappa_\mathrm{rad}\) making conduction
 irrelevant in the combined opacity. This is because the Coulomb
@@ -578,9 +578,9 @@ high density degenerate cores to become effectively isothermal
 </div>
 
 
-<div id="outline-container-org37903ab" class="outline-2">
-<h2 id="org37903ab"><a href="#org37903ab">Combining all these sources together</a></h2>
-<div class="outline-text-2" id="text-org37903ab">
+<div id="outline-container-orgdde5ea1" class="outline-2">
+<h2 id="orgdde5ea1"><a href="#orgdde5ea1">Combining all these sources together</a></h2>
+<div class="outline-text-2" id="text-orgdde5ea1">
 <p>
 <b>N.B.:</b> Ultimately in stellar evolution we use tabulated \(\kappa_\mathrm{rad} \equiv
 \kappa_\mathrm{rad}(\rho, T)\) that (try to) account for all these effects without
@@ -589,7 +589,7 @@ needing to calculate them on the fly while dealing with the star.
 
 
 
-<figure id="org0f6785b">
+<figure id="org62c3b46">
 <img src="./images/kappa_farag24.png" alt="kappa_farag24.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>\(\kappa\equiv\kappa(T,\rho)\) combining all the sources of opacities we discussed (and more) from <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract">Farag et al. 2024</a>. This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the <code>kap</code> module of the MESA code. See also <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract">Paxton et al. 2011</a>.</figcaption>
@@ -631,7 +631,7 @@ laboratories.
 </p>
 
 
-<figure id="org18f2135">
+<figure id="orgb0b4e8e">
 <img src="./images/kappa_T_farag24.png" alt="kappa_T_farag24.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>\(\kappa_\mathrm{rad} \equiv \kappa_\mathrm{rad}(T)\) for various fixed densities &rho; (as indicated by the colorbar). This plot effectively shows various "slices" of the \(\kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,\rho)\) and allows one to see how powerlaw approximations can be used in certain regimes, but do not capture the full picture. Note the shaded background indicating ionization levels of important elements. Also from <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract">Farag et al. 2024</a>.</figcaption>
@@ -640,13 +640,13 @@ laboratories.
 </div>
 
 
-<div id="outline-container-orga8231f1" class="outline-2">
-<h2 id="orga8231f1"><a href="#orga8231f1">Homeworks</a></h2>
-<div class="outline-text-2" id="text-orga8231f1">
+<div id="outline-container-org530a6ed" class="outline-2">
+<h2 id="org530a6ed"><a href="#org530a6ed">Homeworks</a></h2>
+<div class="outline-text-2" id="text-org530a6ed">
 </div>
-<div id="outline-container-org157bbce" class="outline-3">
-<h3 id="org157bbce"><a href="#org157bbce">The Eddington Luminosity again</a></h3>
-<div class="outline-text-3" id="text-org157bbce">
+<div id="outline-container-orgf57f92e" class="outline-3">
+<h3 id="orgf57f92e"><a href="#orgf57f92e">The Eddington Luminosity again</a></h3>
+<div class="outline-text-3" id="text-orgf57f92e">
 <p>
 Using <code>MESA-web</code>, compute a \(\ge30 M_{☉}\) star until the maximum central
 temperature reaches above \(\ge 10^{8.5}\) K. Make sure to save multiple
@@ -663,9 +663,9 @@ your model, try to identify what happens in layers where \(L\) exceeds
 <div id="postamble" class="status">
 <div class="footer">
   <hr>
-  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-ETransport.html"><i class="fa-solid fa-arrow-left"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-convection.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-ETransport.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-convection.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 17 February 2025 <br>
+  Last updated on 20 February 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>
