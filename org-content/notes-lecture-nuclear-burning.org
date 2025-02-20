@@ -229,20 +229,20 @@ nucleon of all nuclei in the periodic table:
 This plot shows empirical data, and there are several notable features
 coming from the internal structure of the nuclei that any model of
 nuclear (strong) interactions needs to explain:
-- the binding energy per nucleon raises sharply with A among the light
+- the binding energy per nucleon raises sharply with $A$ among the light
   nuclei;
 - the helium nucleus ($\alpha$ particle) has an exceptionally high binding
   energy per nucleon of \sim 7.5MeV/nucleon;
-- there are peaks for nuclei with A divisible by 4 and N=Z, that is
-  nuclei that can be approximately thought as bound collections of \alpha
-  particles (for example $^{12}\mathrm{C}$ \sim 3 $\alpha$ particles bound together,
-  $^{16}\mathrm{O}$ \sim4 $\alpha$ particles, etc..);
+- there are peaks for nuclei with $A$ divisible by 4 and $N=Z$, that
+  is nuclei that can be approximately thought as bound collections of
+  $\alpha$ particles (for example $^{12}\mathrm{C}$ \sim 3 $\alpha$ particles bound
+  together, $^{16}\mathrm{O}$ \sim4 $\alpha$ particles, etc..);
 - the nuclear binding energy is roughly constant at about \sim
   8MeV/nucleon for most heavy nuclei;
-- the slight drop in B/A after the maximum is caused by the
-  Coulomb repulsion between the protons in heavy nuclei, and this is
-  why those nuclei require a higher number of neutrons than protons to
-  hold together, N>Z.
+- the slight drop in $B/A$ after the maximum is caused by the Coulomb
+  repulsion between the protons in heavy nuclei, and this is why those
+  nuclei require a higher number of neutrons than protons to hold
+  together, $N>Z$.
 - there is a local /maximum/ of the binding energy per nucleon at the
   iron group, around $^{56}\mathrm{Fe}$ and $^{62}\mathrm{Ni}$.
 
@@ -315,7 +315,8 @@ Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A
 which, if $Q>0$ is the energy /released/ by the reaction which is thus
 /exoenergetic/ - of the kind that stars need to generate energy and
 sustain themselves against gravity, or if $Q<0$ is the energy input
-needed to get the /endoenergetic/ reaction going.
+needed to get the /endoenergetic/ reaction going (e.g. thermonuclear
+fusion of iron).
 
 *N.B.:* In exoenergetic nuclear reactions, the energy release comes from
 the /mass defect/, caused by the increase in binding energy per nucleon:
@@ -341,19 +342,19 @@ that can occur in a star.
 
 ** Variety of possible nuclear reactions
 
-A generic nuclear reaction X+a \rightarrow Y+b is often written as X(a,b)Y to
-make it easy to express chains of reactions, e.g.,
-X(a,b)Y(c,d)Z(e,f)A...
+A generic nuclear reaction $X+a \rightarrow Y+b$ is often written as $X(a,b)Y$
+to make it easy to express chains of reactions, e.g.,
+$X(a,b)Y(c,d)Z(e,f)A$...
 
-Depending on the nature of the incoming particle (X and a in our
+Depending on the nature of the incoming particle ($X$ and $a$ in our
 generic reaction), or in other words on the microphysics that
 determines the interaction, there can be of various kinds of
 reactions.
 
 *** Charged-particles reactions
-When X and a are charged nuclei, then the reaction can only occur if
-something allows them to overcome the Coulomb repulsion. These can be
-resonant or not (the distinction will come back later).
+When $X$ and $a$ are charged nuclei, then the reaction can only occur
+if something allows them to overcome the Coulomb repulsion. These can
+be resonant or not (the distinction will come back later).
 
 Example:
 #+begin_latex
@@ -366,11 +367,11 @@ Example:
 In this case the force involved is the strong force, and there is no
 Coulomb repulsion to overcome. However, these require an environment
 that is neutron rich, which is astrophysically a rare occurrence,
-since the neutron is an unstable particle that decays in \sim15min to
-a proton n\rightarrow p+e^{-}+$\bar{\nu_{e}}$. This half-life however can significantly
+since the neutron is an unstable particle that decays in \sim15 min to a
+proton $n\rightarrow p+e^{-}+\bar{\nu_{e}}$. This half-life however can significantly
 change for neutrons bound in nuclei as opposed to free neutrons, that
-is the \beta^{-} decay time of a neutron rich nucleus can be much longer than
-the half-life of a free neutron.
+is the $\beta^{-}$ decay time of a neutron rich nucleus can be much longer
+than the half-life of a free neutron.
 
 Depending on the available flux of neutrons in the environment, we
 distinguish:
@@ -383,25 +384,26 @@ distinguish:
 These processes are involved in the formation of  elements heavier
 than iron, but they require particular astrophysical environment
 (e.g., the merger of two neutron stars or a neutron star with the core
-of another star, or the envelope of an AGB star).
+of another star, or the envelope of an AGB star or the core of a fast
+rotating massive star).
 
 *** Weak reactions
 These can typically be spotted by the presence of a neutrino and/or
 the conversion of a nucleon from one eigenstate of isospin to another
-(in simpler words, the conversion of a proton into a neutron or
+(in simpler words: the conversion of a proton into a neutron or
 viceversa).
 
 Example:
 #+begin_latex
 \begin{equation}
-p+e^{-} \rightarrow n+\nu_{e} \ \mathrm{or} \ p(e^{-},\nu_{e})n
+p+e^{-} \rightarrow n+\nu_{e} \ \ \mathrm{or} \ \ p(e^{-},\nu_{e})n
 \end{equation}
 #+end_latex
 
 *** Photodisintegrations
 When one of the particles is a photon and the outgoing particles can
 be seen as "fragments" of the ingoing nucleus. These can occur when
-very energetic \gamma ray photons, because their energy needs to be
+very energetic $\gamma$ ray photons, because their energy needs to be
 comparable to the binding energy of nuclei, of the order of \sim8MeV \times A,
 can encounter particles. This can occur for example at the very late
 moments of massive star evolution.
