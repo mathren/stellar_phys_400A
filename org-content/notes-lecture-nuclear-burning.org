@@ -300,7 +300,7 @@ quantities). We will return on this [[https://www.as.arizona.edu/~mrenzo/materia
 
 *** Q-value
 For any nuclear reaction that may happen $a+X \rightarrow b+Y$ with $a, b, X, Y$
-generic particles, it is useful to define the so called $Q$-value as the
+generic particles, it is useful to define the so called $Q$ value as the
 mass difference between the reagents and the products:
 
 #+begin_latex
@@ -449,14 +449,14 @@ From Eq. \ref{eq:overall_h_burn} we can see that:
    process will necessarily involve charged particle reactions.
  - $\nu_{e}$ appear \Rightarrow there will be weak reactions involved
  - as already seen earlier, we can calculate the $\phi$ factor (cf. Eq.
-   \ref{eq:mass_defect}), and thus the $Q$-value for the overall
-   reaction $Q_\mathrm{H burn} \simeq 26.5$ MeV. Note that the $Q$-value
+   \ref{eq:mass_defect}), and thus the $Q$ value for the overall
+   reaction $Q_\mathrm{H burn} \simeq 26.5$ MeV. Note that the $Q$ value
    does not really depend on the details of the burning process.
 
 *N.B.:* we discuss Eq. \ref{eq:overall_h_burn} because H is the most
 abundant element in the Universe, that most stars are made of, and
 thus this is (typically) the first process occurring in stars. It is
-also the one with the highest $Q$-value (cf. $B/A$ vs. $A$ plot!),
+also the one with the highest $Q$ value (cf. $B/A$ vs. $A$ plot!),
 thus the one that for a given luminosity $L$ of the star can proceed at
 the slowest rate and last the longest.
 
