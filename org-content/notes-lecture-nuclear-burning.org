@@ -179,10 +179,6 @@ protons turning into a helium nucleus is:
 \end{equation}
 #+end_latex
 
-*N.B.:* to turn 4 protons into a helium nucleus, because of charge and
-leptonic number conservation, there needs to be 2 positrons and 2
-neutrinos produced!
-
 Plugging in $\phi$ and $M_{\odot}$ and $L_{\odot}$ we get for the nuclear
 timescale:
 
@@ -435,13 +431,14 @@ $\tau^{+}$ and the corresponding antineutrinos).
 
 *N.B.:* because of the phenomenon of neutrino oscillations (i.e., the
 conversion of $\nu_{e} \leftrightarrow \nu_{\mu}$ or $\nu_{\tau}$) the leptonic
-number conservation is not exact in nature, or in other words, the
-symmetry associated to this conservation law is not exact. While this
-was discovered through the "[[https://www.nobelprize.org/prizes/themes/solving-the-mystery-of-the-missing-neutrinos/][missing solar neutrinos problem]]", and it
-is thus related to stellar/solar physics, it requires the propagation
-of neutrinos over distances much longer than the size of nuclei,
-therefore, for the purpose of treating nuclear reactions we can assume
-conservation of the leptonic number.
+number conservation of each flavor ($e$, $\mu$, and $\tau$) is not exact in
+nature, or in other words, the symmetry associated to this
+conservation law is not exact. While this was discovered through the
+"[[https://www.nobelprize.org/prizes/themes/solving-the-mystery-of-the-missing-neutrinos/][missing solar neutrinos problem]]", and it is thus related to
+stellar/solar physics, it requires the propagation of neutrinos over
+distances much longer than the size of nuclei, therefore, for the
+purpose of treating nuclear reactions we can assume conservation of
+the leptonic number.
 
 From Eq. \ref{eq:overall_h_burn} we can see that:
  - protons need to encounter each other. Statistically, 4 protons are

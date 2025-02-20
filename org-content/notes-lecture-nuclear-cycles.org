@@ -9,36 +9,37 @@ book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, Clayton,
 Chapter 5, [[https://journals.aps.org/pr/abstract/10.1103/PhysRev.55.434][Bethe 1939]]
 
 * Nuclear burning cycles
-** Heuristic summary and S-factor
+** Heuristic summary and $S$-factor
 In the [[./notes-lecture-nuclear-burning.org][previous lecture]] we have developed some idea of the physics
 involved in thermonuclear reactions. We can have a heuristic
-derivation of the main results we obtained for a generic charged particle
-reaction X(a,b)Y by writing the cross section for the reaction as:
+derivation of the main results we obtained for a generic charged
+particle reaction $X(a,b)Y$ by writing the cross section for the
+reaction as:
 #+begin_latex
 \begin{equation}
 \sigma = \pi \lambda_{X}^{2} \times \{ \mathrm{Probability\ of\ Tunneling}\} \times \{\mathrm{Probability\ of\ C^{\star}\ decay\ in\ Y+b}\}\ \ ,
 \end{equation}
 #+end_latex
 where the first term is akin to a geometric cross section using the de
-Broglie wavelength of the target nucleus X. The product of the two
+Broglie wavelength of the target nucleus $X$. The product of the two
 terms in curly brackets appears because of Bohr's approximation (so
-that the two probabilities are independent of each other). Since \lambda_{X} = h/p = h/E^{1/2} \Rightarrow \lambda_{X}^{2 }\propto
-E^{-1} and thus:
+that the two probabilities are independent of each other). Since $\lambda_{X} =
+h/p = h/E^{1/2} \Rightarrow \lambda_{X}^{2 }\propto E^{-1}$ and thus:
 #+begin_latex
 \begin{equation}\label{eq:heuristic_summary}
 \sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
 \end{equation}
 #+end_latex
-where S(E) is the so called "/astrophysical S-factor/" that contains the
+where $S(E)$ is the so called "/astrophysical $S$-factor/" that contains the
 intrinsic cross section that depends on the shape of the nuclear
 potential well. This can be influenced strongly by nuclear resonances
-(when E \sim energy of a metastable state of C^{\star{}}).
+(when $E$ \sim energy of a metastable state of $C^{\star{}}$).
 
-In practice, often one relies on laboratory measurements (at high E\gg
+In practice, often one relies on laboratory measurements (at high $E\gg$
 thermal energy in stars), and extrapolation to low energies to obtain
-S(E), which is a risky business precisely because of the resonances!
-In absence of resonances though, one expects S(E) to be only slowly
-varying (unlike \sigma(E) which depends on the Coulomb penetration
+$S(E)$, which is a risky business precisely because of the resonances!
+In absence of resonances though, one expects $S(E)$ to be only slowly
+varying (unlike $\sigma(E)$ which depends on the Coulomb penetration
 probability).
 
 To obtain a /thermo/-nuclear reaction rate, the cross section above has
@@ -47,10 +48,10 @@ between the tunneling probability and the exponential factor of the
 Maxwell-Boltzmann distribution produces the "Gamow peak" making
 thermonuclear reaction rates strongly peaked functions of the
 temperature whether there are resonances (included in the
-astrophysical factor S(E)) or not.
+astrophysical factor $S(E)$) or not.
 
-We already know from the B/A vs. A curve that the most energy is
-released by hydrogen burning into helium (because \alpha particles have
+We already know from the $B/A$ vs. $A$ curve that the most energy is
+released by hydrogen burning into helium (because $\alpha$ particles have
 such a high binding energy), and using conservation of charge and
 leptonic number we have already written the overall reaction as:
 #+begin_latex
@@ -58,14 +59,15 @@ leptonic number we have already written the overall reaction as:
 4p \rightarrow ^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ .
 \end{equation}
 #+end_latex
-And we know that a fraction \phi=0.007 of the rest mass of the 4 incoming
-protons (i.e., hydrogen positive ions) is converted into energy,
-corresponding to a total energy released is Q_{H burn}= 26.5 MeV.
+And we know that a fraction $\phi=0.007$ of the rest mass of the 4
+incoming protons (i.e., hydrogen positive ions) is converted into
+energy, corresponding to a total energy released is $Q_{H burn}= 26.5$
+MeV.
 
 From the overall reaction \ref{eq:overall_reaction} we know that the
 conversion of hydrogen nuclei into helium requires two weak reactions
-to explain the two \nu_{e}, necessary to conserve leptonic number. This is
-needed since we need to produce two positrons e^{+} to conserve the
+to explain the two $\nu_{e}$, necessary to conserve leptonic number. This
+is needed since we need to produce two positrons e^{+} to conserve the
 charge.
 
 As you may expect from the name the weak interactions are weak,
