@@ -231,12 +231,12 @@ coming from the internal structure of the nuclei that any model of
 nuclear (strong) interactions needs to explain:
 - the binding energy per nucleon raises sharply with A among the light
   nuclei;
-- the helium nucleus (\alpha particle) has an exceptionally high binding
+- the helium nucleus ($\alpha$ particle) has an exceptionally high binding
   energy per nucleon of \sim 7.5MeV/nucleon;
 - there are peaks for nuclei with A divisible by 4 and N=Z, that is
   nuclei that can be approximately thought as bound collections of \alpha
-  particles (for example $^{12}\mathrm{C}$ \sim 3 \alpha particles bound together,
-  $^{16}\mathrm{O}$ \sim4 \alpha particles, etc..);
+  particles (for example $^{12}\mathrm{C}$ \sim 3 $\alpha$ particles bound together,
+  $^{16}\mathrm{O}$ \sim4 $\alpha$ particles, etc..);
 - the nuclear binding energy is roughly constant at about \sim
   8MeV/nucleon for most heavy nuclei;
 - the slight drop in B/A after the maximum is caused by the
@@ -256,20 +256,19 @@ lifetime. The question of the formation of elements heavier than iron
 (which clearly exist!) is something that is actively worked on and
 requires out-of-equilibrium processes that can only occur in the
 presence of a neutron rich environment (e.g., AGB stellar winds,
-neutron stars interacting with something else, etc.). We may have a
-guest lecture on this later on, and there are projects related to
-these.
+neutron stars interacting with something else, etc.) - see also
+[[./projects.org][possible literature review projects]].
 
-Conversely, moving leftward on this chart, by fusing together light
+Conversely, moving rightward on this chart, by fusing together light
 nuclei, stars can release nuclear binding energy and sustain
 themselves. This is also convenient since stars are mostly made of H
 and He, so they have a lot of light elements available as energy
 sources.
 
-The change in binding energy per nucleon \Delta(B/A) is what powers stars,
-and we can write the binding energy as the difference between the sum
-of the masses of the Z protons (m_{p}) and N=A-Z neutrons (m_{n}) minus the
-mass of the nucleus (measured experimentally):
+The change in binding energy per nucleon $\Delta(B/A)$ is what powers
+stars, and we can write the binding energy as the difference between
+the sum of the masses of the $Z$ protons ($m_{p}$) and $N=A-Z$ neutrons
+($m_{n}$) minus the mass of the nucleus (measured experimentally):
 
 #+begin_latex
 \begin{equation}
@@ -283,29 +282,29 @@ mistake of the order of \sim 10 eV by neglecting the binding energy of
 the electron (which is acceptable since we are dealing with MeV =
 10^{6}eV as the relevant nuclear scale).
 
-Because of the apparent peaks in the B/A vs. A curve, stars will tend
-to produce more of the elements with the most tight nuclei, whose
+Because of the apparent peaks in the $B/A$ vs. $A$ curve, stars will
+tend to produce more of the elements with the most tight nuclei, whose
 production releases more energy! /The nuclear structure determines the
 most abundant chemicals in the Universe/.
 
 Moreover, from the fact that there is a sharp jump form H to He, and
 then the curve rapidly flattens, we know that the rate at which nuclei
-are converted to achieve the equilibrium condition L_\mathrm{nuc} = L will be
+are converted to achieve the equilibrium condition $L_\mathrm{nuc} = L$ will be
 slower when H is converted into He, and then it will need to rapidly
 speed up when He is converted in carbon and onwards (because the
-energy release per nucleon significantly drops lowering the factor \phi
-in \tau_\mathrm{nuc}).
+energy release per nucleon significantly drops lowering the factor $\phi$
+in $\tau_\mathrm{nuc}$).
 
 In the very late evolutionary phases (post helium burning), the
-required burning rate may become so high that \tau_\mathrm{nuc} becomes shorter
+required burning rate may become so high that $\tau_\mathrm{nuc}$ becomes shorter
 than the /global/ thermal timescale (but luckily not of the /local/
 thermal timescale, so all the equations we have derived so far still
 hold, since they are differential equations that describe /local/
 quantities). We will return on this [[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][later]].
 
 *** Q-value
-For any nuclear reaction that may happen a+X \rightarrow b+Y with a,b,X,Y
-generic particles, it is useful to define the so called Q-value as the
+For any nuclear reaction that may happen $a+X \rightarrow b+Y$ with $a, b, X, Y$
+generic particles, it is useful to define the so called $Q$-value as the
 mass difference between the reagents and the products:
 
 #+begin_latex
@@ -313,9 +312,9 @@ mass difference between the reagents and the products:
 Q = \left((m_{a} + m_{X}) -(m_{b} + m_{Y}) \right)c^{2} = \Delta\left(\frac{B}{A}\right) \ \ ,
 \end{equation}
 #+end_latex
-which, if Q>0 is the energy /released/ by the reaction which is thus
-/exoenergetic/ - of the kind that stars need to generate energy
-and sustain themselves against gravity, or if Q<0 is the energy input
+which, if $Q>0$ is the energy /released/ by the reaction which is thus
+/exoenergetic/ - of the kind that stars need to generate energy and
+sustain themselves against gravity, or if $Q<0$ is the energy input
 needed to get the /endoenergetic/ reaction going.
 
 *N.B.:* In exoenergetic nuclear reactions, the energy release comes from
@@ -333,11 +332,11 @@ just:
 \end{equation}
 #+end_latex
 
-where the sum runs over all the possible reactions, r_{i} is the rate per
+where the sum runs over all the possible reactions, $r_{i$} is the rate per
 unit time and volume of the reactions, and the division by the mass
-density \rho gives the right dimensions [\varepsilon_\mathrm{nuc}] = [E]/([t][M]).
+density $\rho$ gives the right dimensions [$\varepsilon_\mathrm{nuc}$] = [E]/([t][M]).
 
-So, what is left to do is calculate the volumetric reaction rate r_{i}
+So, what is left to do is calculate the volumetric reaction rate $r_{i}$
 that can occur in a star.
 
 ** Variety of possible nuclear reactions
