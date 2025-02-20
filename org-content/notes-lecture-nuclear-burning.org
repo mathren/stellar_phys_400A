@@ -438,7 +438,8 @@ conservation law is not exact. While this was discovered through the
 stellar/solar physics, it requires the propagation of neutrinos over
 distances much longer than the size of nuclei, therefore, for the
 purpose of treating nuclear reactions we can assume conservation of
-the leptonic number.
+the leptonic number of each species individually (while in the general
+case only the /total/ leptonic number is conserved).
 
 From Eq. \ref{eq:overall_h_burn} we can see that:
  - protons need to encounter each other. Statistically, 4 protons are
