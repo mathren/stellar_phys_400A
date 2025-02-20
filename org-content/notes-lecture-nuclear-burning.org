@@ -655,60 +655,58 @@ the particles involved here are waves!
 
 From QM, we know that in the "classically forbidden region", where $E<V$
 (so the classical kinetic energy term in $E=K+V$ would be $K<0$), the wave
-function can still be non-zero. To calculate the wave-function \Psi of
-particle a in the potential of X, we can make the following ansatz:
- - in the classically allowed region r\geq r_{c} the wave function will have
-   the form of a propagating wave with phase dependent on (E-V(r))^{1/2};
- - in the classically allowed region with r\leq r_{n}, we assume the same
+function can still be non-zero. To calculate the wave-function $\Psi$ of
+particle $a$ in the potential of $X$, we can make the following ansatz:
+ - in the classically allowed region $r\geq r_{c}$ the wave function will have
+   the form of a propagating wave with phase dependent on $(E-V(r))^{1/2}$;
+ - in the classically allowed region with $r\leq r_{n}$, we assume the same
    functional form;
  - in the classically forbidden region, we will have a superposition
    of evanescent waves with exponentially decaying amplitude
 
 
 *N.B.:* The math simplifies significantly using the WKB
-approximation, that is writing \Psi = exp(\Phi) and solving for \Phi instead of
-\Psi.
+approximation, that is writing $\Psi = \exp(\Phi)$ and solving for $\Phi$ instead of
+$\Psi$.
 
-By imposing that the wave function \Psi and its derivative \partial_{r}\Psi are
-continuous at the boundaries r_{c} and r_{n} one can find solutions that
-have a non-zero amplitude /inside/ r_{n}, that is tunneling solutions! The
-continuity of \Psi depends on the phase at the boundaries, for specific
-values of E it is possible to obtain solutions, these typically
+By imposing that the wave function $\Psi$ and its derivative $\partial_{r}\Psi$ are
+continuous at the boundaries $r_{c}$ and $r_{n}$ one can find solutions that
+have a non-zero amplitude /inside/ $r_{n}$, that is tunneling solutions! The
+continuity of $\Psi$ depends on the phase at the boundaries, for specific
+values of $E$ it is possible to obtain solutions, these typically
 correspond to metastable energy levels of the potential, with energy
-E_{metastable} \pm \Delta E and \Delta E \sim h/\tau the "width" in
-energy depending on the \tau the half-life of the metastable state. *N.B.:*
-the width \Delta E of the levels is set by the uncertainty principle.
+$E_\mathrm{metastable} \pm \Delta E$ and $\Delta E \sim h/\tau$ the "width" in
+energy depending on the $\tau$ the half-life of the metastable state.
 
-
-These states are metastable because a bound system between a and X
-(i.e., C^{\star}) can result in the tunneling of a out of the potential
-of X (the decay C^{\star} \rightarrow a+X).
+These states are metastable because a bound system between $a$ and $X$
+(i.e., $C^{\star}$) can result in the tunneling of a out of the potential
+of $X$ (the decay $C^{\star} \rightarrow a+X$).
 
 Therefore, the nuclear reaction rates are going to be extremely
-sensitive to the relative energy of a and X: if this relative energy E
-hits a /resonance/ of the compound state C^{\star}, that is if E\sim
-E_{metastable}, the wave function of the system has non-zero amplitude
-inside the nucleus, and since the probability of finding a within r\le
-r_{n} is \prop ||\Psi||^{2}, this means there will be a non-zero probability of
-forming the compound nucleus.
+sensitive to the relative energy of $a$ and $X$: if this relative
+energy $E$ hits a /resonance/ of the compound state $C^{\star}$, that is if
+$E \sim E_\mathrm{metastable}$, the wave function of the system has
+non-zero amplitude inside the nucleus, and since the probability of
+finding a within $r\le r_{n}$ is proportional to $||\Psi||^{2}$, this means there
+will be a non-zero probability of forming the compound nucleus.
 
 In proximity of a resonance the cross section takes the typical shape
 of a Lorentzian with width determined by the energy width of the
-metastable state C^{\star{}}:
+metastable state $C^{\star{}}$:
 
 #+begin_latex
 \begin{equation}
-\sigma_\mathrm{nuc} \propto \frac{1}{(E-E_\mathrm{metastable})^{2} +\left(\frac{\Gamma}{2}\right)^{2}} \ \ .
+\sigma_\mathrm{nuc} \propto \frac{1}{(E-E_\mathrm{metastable})^{2} +\left(\frac{\Delta E}{2}\right)^{2}} \ \ .
 \end{equation}
 #+end_latex
 
-where \Gamma is the "width" in energy of the metastable level, determined
-by the uncertainty principle: \Gamma\tau \sim h with \tau half-life of the
-metastable state and h Planck's constant.
+where $\Delta E$ is the "width" in energy of the metastable level,
+determined by the uncertainty principle: $\Delta E \times \tau \sim h$ with $\tau$
+half-life of the metastable state and $h$ Planck's constant.
 
 Conversely, for non-resonant reactions, since the thermal energies are
 of order of 100 of eV while the nuclear scale is at \sim10MeV we can
-neglect the energy dependence of \sigma_\mathrm{nuc}.
+neglect the energy dependence of $\sigma_\mathrm{nuc}$.
 
 Finally, actually carrying out the calculation give a probability of tunneling
 
@@ -717,7 +715,7 @@ Finally, actually carrying out the calculation give a probability of tunneling
 P\propto \exp\left(-\int_{r_{n}}^{r_c} \frac{\sqrt{2m_{aX} (V(r) - E)}}{\hbar} dr \right) \equiv P_{0} \exp\left(-\frac{b}{\sqrt{E}}\right) \ \ ,
 \end{equation}
 #+end_latex
-with b = 2\pi Z_{a} Z_{X} e^{2} (m_{aX}/2)^{1/2} / \hbar.
+with $b = 2\pi Z_{a} Z_{X} e^{2} (m_{aX}/2)^{1/2} / \hbar$.
 
 *N.B.:* Nuclear resonances allow stars to work, and for example the
 existence of a specific resonance in the nucleus of $^{12}\mathrm{C}$
@@ -732,11 +730,11 @@ that would change significantly the rate.
 ** Thermonuclear reaction rates
 Now that we have discussed how a charged particle nuclear reaction is
 possible through quantum tunneling through the Coulomb barrier, to
-complete our quest for \varepsilon_{nuc} we need to obtain the rate per unit volume
-and time of each possible nuclear reaction.
+complete our quest for $\varepsilon_\mathrm{nuc}$ we need to obtain the rate per
+unit volume and time of each possible nuclear reaction.
 
-What brings together the generic nuclei a and X, giving them the
-energy E such as the probability of tunneling through the Coulomb
+What brings together the generic nuclei $a$ and $X$, giving them the
+energy $E$ such as the probability of tunneling through the Coulomb
 barrier is not negligible is the thermal motion of the gas they
 compose: this is why we talk about /thermonuclear/ reactions in a star
 (and why the energy scale for these reactions is much lower than the
@@ -748,38 +746,39 @@ available pieces:
 - number density of reactants [n_{a}] = [n_{X}] = [L]^{-3}
 - their relative velocity [v] = [L]/[t] (which is related to their
   relative energy at infinity E which is of the order of the thermal
-  energy, v\sim(2k_{B}T/m_{aX})^{1/2})
-- the cross section for the reaction [\sigma] = [L^{2}] (whose calculation will depend on
-  the details of the QM problem outlined above and we know will depend
-  on the relative energy of the particles, and thus ultimately their
-  relative - thermal - velocity at infinity): \sigma \equiv \sigma(v)
+  energy, $v\sim(2k_{B}T/m_{aX})^{1/2}$)
+- the cross section for the reaction [$\sigma$] = [L^{2}] (whose calculation
+  will depend on the details of the QM problem outlined above and we
+  know will depend on the relative energy of the particles, and thus
+  ultimately their relative - thermal - velocity at infinity): 4\sigma \equiv
+  \sigma(v)$
 With these ingredients we can make a rate of the number of reactions
-X(a,b)Y per unit time and volume with:
+$X(a,b)Y$ per unit time and volume with:
 
 #+begin_latex
 \begin{equation}
 r_{aX} = \sigma(v) v n_{a} n_{X}  \ \ ,
 \end{equation}
 #+end_latex
-where we implicitly assumes that a \neq X. However, in a star sometimes
+where we implicitly assumes that $a \neq X$. However, in a star sometimes
 there are reactions among identical particles (for example the weak
-reaction p+p\rightarrow D+e^{+} +\nu_{e}). In such cases we should make sure to not
+reaction $p+p\rightarrow D+e^{+} +\nu_{e}$). In such cases we should make sure to not
 double count particle pairs, so we can write more generally:
 #+begin_latex
 \begin{equation}
 r_{aX} = \frac{1}{1+\delta_{aX}} \sigma(v) v n_{a} n_{X}  \ \ ,
 \end{equation}
 #+end_latex
-where \delta_{aX} = 1 \Leftrightarrow a=X. This would be the expression if all particles had
-the same relative velocity v. In reality, we know the stellar gas is
-pretty close to LTE and thus the distribution in energy of particles
-is given by the Maxwell-Boltzmann distribution, and to get the
-effective rate of reactions we need to integrate over that.
+where $\delta_{aX} = 1 \Leftrightarrow a=X$. This would be the expression if all particles
+had the same relative velocity v. In reality, we know the stellar gas
+is pretty close to LTE and thus the distribution in energy of
+particles is given by the Maxwell-Boltzmann distribution, and to get
+the effective rate of reactions we need to integrate over that.
 
-The relative velocity is v=|v_{a} - v_{X}| (the velocities of the two
+The relative velocity is $v=|v_{a} - v_{X}|$ (the velocities of the two
 species can be different if they have different masses), and
 substituting to the number density the integral over the velocities of
-the phase space densities n_{i} \rightarrow \int dn_{i}(v) (*N.B.*: we have
+the phase space densities $n_{i} \rightarrow \int dn_{i}(v)$ (*N.B.*: we have
 already done this many times when deriving the EOS, just in momentum
 instead of velocity), our expression for the rate becomes:
 #+begin_latex
@@ -787,7 +786,7 @@ instead of velocity), our expression for the rate becomes:
 r_{aX} = \frac{1}{1+\delta_{aX}}\int\int dn_{a}(v_{a}) dn_{X}(v_{X}) \sigma(v)v  \ \ ,
 \end{equation}
 #+end_latex
-where dn_{i}(v_{i}) are Maxwell-Boltzmann distributions, unless we are
+where $dn_{i}(v_{i})$ are Maxwell-Boltzmann distributions, unless we are
 considering thermo-nuclear burning in a (partially) degenerate
 environment.
 
@@ -798,52 +797,53 @@ environment.
 
 We can explicit the Maxwell-Boltzmann distribution assuming that the
 nuclei are non-relativistic, since their thermal kinetic energy is of
-the order of k_{b}T \ll GeV \sim m_{u}/c^{2}, and you can analytically verify
+the order of $k_{B}_{}T \ll GeV \sim m_{u}/c^{2}$, and you can analytically verify
 that the product of two Maxwell-Boltzmann distribution keeps the same
 functional form by changing variables to express things in the center
-of mass frame of the a+X system, yielding:
+of mass frame of the $a+X$ system, yielding:
 #+begin_latex
 \begin{equation}
 r_{aX} = \frac{1}{1+\delta_{aX}}4\pi N_{a}N_{X} \left(\frac{m_{aX}}{2\pi k_{B}T}\right)^{3/2}\int_{0}^{+\infty}\exp\left(-\frac{m_{aX}v^{2}}{k_{B}T}\right) \sigma(v)v v^{2}dv  \ \ .
 \end{equation}
 #+end_latex
-where again m_{aX} = m_{a} m_{X} / (m_{a} + m_{X}) is the reduced mass between a and
-X, v their relative velocity, N_{a} and N_{X} are the total number of
-particles, and we get a factor of v^{2} from assuming isotropic motion
-and using spherical-polar coordinates in velocity space, so d^{3}v = 4\pi
-v^{2}dv.
+where again $m_{aX} = m_{a} m_{X} / (m_{a} + m_{X})$ is the reduced mass between $a$
+and $X$, $v$ their relative velocity, $N_{a}$ and $N_{X}$ are the total
+number of particles, and we get a factor of $v^{2}$ from assuming
+isotropic motion and using spherical-polar coordinates in velocity
+space, so $d^{3}v = 4\pi v^{2}dv$.
 
 The term in the integral is the average over the distribution of
-velocities of \langle\sigma(v)v\rangle, which has the dimension of [L^{2}]\times[L]/[t] =
-[L^{3}]/[t].
+velocities of $\langle\sigma(v)v\rangle$, which has the dimension of [L^{2}]\times[L]/[t]
+= [L^{3}]/[t].
 
-*N.B.:* this does /not/ depend on the density \rho!
+*N.B.:* this does /not/ depend on the density $\rho$!
 
 Often, this average quantity is approximated as a powerlaw from the
-known value at a certain temperature T_{0}.
+known value at a certain temperature $T_{0}$.
 #+begin_latex
 \begin{equation}
-\langle \sigma(v)v \rangle = \langle \sigma(v)v \rangle_{T_{0}} \left(\frac{T}{T_{0}}\right)^{\beta}
+\langle \sigma(v)v \rangle = \langle \sigma(v)v \rangle_{T_{0}} \left(\frac{T}{T_{0}}\right)^{\xi}
 \end{equation}
 #+end_latex
 this is convenient because powerlaw dependencies are intuitive, and
-often people will quote the exponent \beta in arguments - be aware it is a
-big oversimplification: in reality \beta\equiv\beta(T) itself, but since \sigma(v) is
-non-zero only for a small range of T, taking \beta\simeq constant is not that
-problematic.
+often people will quote the exponent $\xi$ in arguments - be aware it is
+a big oversimplification: in reality $\xi\equiv\xi(T)$ itself, but since $\sigma(v)$
+is non-zero only for a small range of $T$, taking $\xi$ \simeq constant is not
+that problematic.
 
 *N.B.:* thermonuclear reaction rates, because of the probability of
-tunneling through the Coulomb barrier are extremely sensitive to T.
+tunneling through the Coulomb barrier are extremely sensitive to $T$.
 This makes nuclear physics equations very /stiff/ numerically and can be
 a problem when computing stellar models.
 
 Since velocity is not a great quantity to use in QM problems, and we
 have seen above that to get nuclear reactions we do need to account
-for QM effects, we can rewrite the rate above using that for r\rightarrow +\infty the
-relative energy between a and X is purely kinetic (the potential goes
-to zero faster than r^{-2} because of electron screening!). Thus
-v=(2E/m_{aX})^{1/2}, and we can also use that the cross section \sigma is
-proportional to the tunneling probability so \sigma(E)\propto exp(-b/E^{1/2}):
+for QM effects, we can rewrite the rate above using that for $r\rightarrow +\infty$
+the relative energy between $a$ and $X$ is purely kinetic (the
+potential goes to zero faster than $r^{-2}$ because of electron
+screening!). Thus $v=(2E/m_{aX})^{1/2}$, and we can also use that the cross
+section $\sigma$ is proportional to the tunneling probability so $\sigma(E)\propto
+exp(-b/E^{1/2})$:
 #+begin_latex
 \begin{equation}
 r_{aX} \propto \frac{N_{a}N_{X}}{1+\delta_{aX}}\sqrt{\frac{2}{\pi}}\frac{1}{k_{B}T}\int_{0}^{+\infty}\exp\left(-\frac{E}{k_{B}T}-\frac{b}{\sqrt{E}}\right)  \ \ .
@@ -858,57 +858,59 @@ is going to peak:
 [[./images/gamow_peak.png]]
 
 The product of an exponentially decreasing Maxwell-Boltzmann
-distribution \propto exp(-E) times the exponentially growing tunneling
-probability \propto exp(-1/E^{1/2}) will result in a very peaked integrand, the
-so called Gamow peak: even without nuclear resonances making the cross
-section \sigma peak (because E is within the width of a metastable energy
-level), the nuclear reaction rate is still very peaked around a
+distribution $\propto exp(-E)$ times the exponentially growing tunneling
+probability $\propto exp(-1/E^{1/2})$ will result in a very peaked integrand,
+the so called Gamow peak: even without nuclear resonances making the
+cross section $\sigma$ peak (because $E$ is within the width of a metastable
+energy level), the nuclear reaction rate is still very peaked around a
 specific energy!
 
 * Nuclear physics in stellar evolution codes
 When trying to model the structure and evolution of a star, we cannot
-carry out all the integrals we wrote down here on the fly. Instead, we
-rely on tabulated nuclear reaction rates as a function of T and \rho.
+carry out all the integrals we wrote down here on-the-fly. Instead, we
+rely on tabulated nuclear reaction rates as a function of $T$ and $\rho$.
+Open-source nuclear reaction rates tables are available from the
+[[https://reaclib.jinaweb.org/index.php][JINA/REACLIB database]].
 
 This is a topic of active research, with certain reactions being
-particularly uncertain (e.g.,^{12}C(\alpha,\gamma)^{16}O which determines
-the C/O ratio in the Universe, or even the 3\alpha reaction that determines
-the formation of carbon in the first place). See for example [[https://ui.adsabs.harvard.edu/abs/2023ApJ...945...41S/abstract][Shen et
-al. 2023]].
+particularly uncertain (e.g., $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$ which
+determines the C/O ratio in the Universe, or even the $3\alpha$ reaction
+that determines the formation of carbon in the first place). See for
+example [[https://ui.adsabs.harvard.edu/abs/2023ApJ...945...41S/abstract][Shen et al. 2023]].
 
 * Composition changes and stellar /evolution/ term
 
 We already wrote Eq. \ref{eq:eps_nuc} for the energy generation term
-\varepsilon_{nuc} entering in the stellar structure equation describing energy
-conservation (dL/dm = \varepsilon_{nuc} - \varepsilon_{\nu} + \varepsilon_{grav}). With a theory
-(and experimental data) to calculate the nuclear reaction rates r_{i} for
-each possible reaction, we have now a complete set of equations for
-the /structure/ of a star at any given point in time under the
-assumption of spherical symmetry (which in nature can and is broken
-occasionally!).
+$\varepsilon_\mathrm{nuc}$ entering in the stellar structure equation describing
+energy conservation ($dL/dm = \varepsilon_\mathrm{nuc} - \varepsilon_{\nu} +
+\varepsilon_\mathrm{grav}$). With a theory (and experimental data) to calculate
+the nuclear reaction rates $r_{i}$ for each possible reaction, we have
+now a complete set of equations for the /structure/ of a star at any
+given point in time under the assumption of spherical symmetry (which
+in nature can and is broken occasionally!).
 
 However, because of nuclear reactions, the nuclei in the stellar
-plasma progressively change (on a timescale \sim \tau_{nuc}, which is long
-compared to all other timescales, but short compared to the age of the
-Universe!). This introduces the equations that drive the /evolution/ of
-stars.
+plasma progressively change (on a timescale $\sim \tau_\mathrm{nuc}$, which
+is long compared to all other timescales, but short compared to the
+age of the Universe!). This introduces the equations that drive the
+/evolution/ of stars.
 
-The change in number density of each nuclear species i per unit time
+The change in number density of each nuclear species $i$ per unit time
 is determined by its /production/ rate through all possible nuclear
-reactions j+k\rightarrow i+... that have i as an outgoing particle, minus the /destruction/
-rate i+j\rightarrow something:
+reactions $j+k\rightarrow i+...$ that have $i$ as an outgoing particle, minus
+the /destruction/ rate $i+j\rightarrow \cdots$:
 
 #+begin_latex
 \begin{equation}
 \frac{dn_{i}}{dt} = \sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij} \ \,
 \end{equation}
 #+end_latex
-where the \delta_{i,j} expresses that if i=j (reaction of two nuclei of the
+where the $\delta_{i,j}$ expresses that if $i=j$ (reaction of two nuclei of the
 same species), then two nuclei are destroyed.
 
-Using that n_{i} = X_{i}\rho/(A_{i}m_{u}) and what we have learned to determine
-the rates r_{ij} and r_{kl} we can rewrite this as a function of variables
-that already appear in our stellar structure equations:
+Using that $n_{i} = X_{i}\rho/(A_{i}m_{u})$ and what we have learned to determine
+the rates $r_{ij}$ and $r_{kl}$ we can rewrite this as a function of
+variables that already appear in our stellar structure equations:
 
 #+begin_latex
 \begin{equation}
@@ -916,9 +918,10 @@ that already appear in our stellar structure equations:
 \end{equation}
 #+end_latex
 
-and we have one such equation for each species i to consider. In case
-there is also mixing (for example due to convection), then we need to
-add to each of these equation a mixing term (advective or diffusive).
+and we have one such equation for each species $i$ to consider. In
+case there is also mixing (for example due to convection), then we
+need to add to each of these equation a mixing term (advective or
+diffusive).
 
 This effectively completes the set of equations we need to study not
 only the /structure/ of stars but also their long-term /evolution/.
@@ -929,8 +932,8 @@ In the 1930s Gamow, and later Bethe, Weiszacker and collaborators
 developed a model of the nuclear interactions based on the analogy
 with a liquid drop, which explains most of the observed features
 available at the time (e.g., the constant density of the nuclei, the
-preference for N=Z=A/2, the existence of particularly bound nuclei
-with certain even N and Z numbers).
+preference for $N=Z=A/2$, the existence of particularly bound nuclei
+with certain even $N$ and $Z$ numbers).
 
 *N.B.:* this is still a rough approximation that has been updated by
 other models since then, but paints a physically intuitive picture
@@ -948,23 +951,24 @@ as:
 #+end_latex
 where the coefficients a_{i} are experimentally derived. Each term has a
 specific interpretation, keeping in mind the empirical relation for
-the nuclear radius r_{n} \equiv r_{n}(A) \propto A^{1/3}:
-- a_{vol} is the coefficient for a volume term, that is negative and
-  expresses the fact that on short range nucleons attract (F_{n}=- \nabla V_{n})
-  each other and nuclei hold together.
-- a_{surf} is a surface correction on the previous term, and expresses
-  the fact that nucleons at the edge of the nucleus feel the
+the nuclear radius $r_{n} \equiv r_{n}(A) \propto A^{1/3}$:
+- $a_\mathrm{vol}$ is the coefficient for a volume term, that is
+  negative and expresses the fact that on short range nucleons attract
+  ($F_{n}=- \nabla V_{n}$) each other and nuclei hold together.
+- $a_\mathrm{surf}$ is a surface correction on the previous term, and
+  expresses the fact that nucleons at the edge of the nucleus feel the
   interaction with fewer other nucleons.
-- a_{Coulomb} expresses the electromagnetic repulsion between protons
-- a_{sym} expresses the fact that stable nuclei prefer to have N=Z (unless N>Z
-  is necessary to increase A without increasing the Coulomb term for
-  heavy nuclei)
-- a_{coupling} \propto \pm A^{-3/4} which is >0 if both N and Z are even, <0
-  if both are odd, and zero otherwise. This term expresses the fact
-  that stable nuclei tend to prefer filling the energy levels for
-  protons and neutrons (think by analogy with atoms wanting to fill
-  their electron levels to be stable), so they tend to prefer having
-  an even number for each, one spin up and one spin down in each
-  energy level. (*N.B.:* this means that there are some number of
+- $a_\mathrm{Coulomb}$ expresses the electromagnetic repulsion between
+  protons
+- $a_\mathrm{sym}$ expresses the fact that stable nuclei prefer to
+  have $N=Z$ (unless $N>Z$ is necessary to increase $A$ without
+  increasing the Coulomb term for heavy nuclei)
+- $a_\mathrm{coupling} \propto \pm A^{-3/4}$ which is >0 if both $N$ and $Z$ are
+  even, <0 if both are odd, and zero otherwise. This term expresses
+  the fact that stable nuclei tend to prefer filling the energy levels
+  for protons and neutrons (think by analogy with atoms wanting to
+  fill their electron levels to be stable), so they tend to prefer
+  having an even number for each, one spin up and one spin down in
+  each energy level. (*N.B.:* this means that there are some number of
   nucleons for which nuclei are particularly stable, these are the
   "magic numbers" that will come back in the [[./notes-lecture-nuclear-cycles.org::*Neon ignition and nuclear "magic numbers"][next lecture]])
