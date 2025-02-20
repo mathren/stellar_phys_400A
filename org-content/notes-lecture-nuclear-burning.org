@@ -11,7 +11,7 @@ Chapter 4, [[https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstract][Gam
 * Microphysics of nuclear burning
 ** Summary of where we are
 We have four equations of the stellar /structure/ assuming spherical
-symmetry, LTE, and hydrostatic (\partial t \equiv 0) equilibrium:
+symmetry, LTE, and hydrostatic ($\partial t \equiv 0$) equilibrium:
 
 *** Mass conservation
 #+begin_latex
@@ -41,18 +41,19 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 \frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
 \end{equation}
 #+end_latex
-where \nabla =\partial log(T)/\partial log(P) is the local temperature gradient, equal to
+where $\nabla =\partial log(T)/\partial log(P)$ is the local temperature gradient, equal to
 the radiative gradient in stably stratified regions:
 #+begin_latex
 \begin{equation}
 \nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{16\pi acGm T^{4}}\kappa L
 \end{equation}
 #+end_latex
-with \kappa = (1/\kappa_{rad} + 1/\kappa_{cond})^{-1} the combination "in parallel" of the
-radiative and conductive opacity (assumed to be known from atomic
-physics), and \nabla \equiv \nabla_{ad} the adiabatic gradient (within \sim10^{-7-8}
-precision) for convective regions. We also have a criterion
-(Schwarzschild or Ledoux) to determine which region is which.
+with $\kappa = (1/\kappa_\mathrm{rad} + 1/\kappa_\mathrm{cond})^{-1}$ the combination
+"in parallel" of the radiative and conductive opacity (assumed to be
+known from atomic physics), and $\nabla \equiv \nabla_\mathrm{ad}$ the adiabatic
+gradient (within \sim10^{-7-8} precision) for convective regions. We also
+have a criterion (Schwarzschild or Ledoux) to determine which region
+is which.
 
 *** Energy conservation
 #+begin_latex
@@ -60,23 +61,23 @@ precision) for convective regions. We also have a criterion
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
 #+end_latex
-with \varepsilon_{grav} = T\partial s/\partial t the change in internal energy (typically \simeq 0 in
+with $\varepsilon_\mathrm{grav} = T\partial s/\partial t$ the change in internal energy (typically \simeq 0 in
 gravothermal equilibrium, that is for phases when the evolution is
-much slower than \tau_{KH}), and \varepsilon_{\nu}>0.
+much slower than $\tau_{KH}$), and $\varepsilon_{\nu}>0$ (neutrinos are an energy loss term).
 
 ** The next step
 
 With all the equations above we almost have a complete set of solvable
 differential equations. What is left to discuss is the specific energy
-generation per unit time \varepsilon_{nuc} due to nuclear burning (which will
+generation per unit time $\varepsilon_\mathrm{nuc}$ due to nuclear burning (which will
 occupy us in this and [[./notes-lecture-nuclear-cycles.org][the next lecture]]) and the specific energy loss
-\varepsilon_{\nu} due to neutrino losses (which we will treat [[./notes-lecture-neutrinos.org][later]]).
+$\varepsilon_{\nu}$ due to neutrino losses (which we will treat [[./notes-lecture-neutrinos.org][later]]).
 
 In doing so, we will introduce another time-dependent equation
-(besides the implicit dependence in \varepsilon_{grav}): as nuclear burning
-proceeds, the chemical composition changes, on a timescale that we
-will see is extremely long compared to the thermal and dynamical
-timescales.
+(besides the implicit dependence in $\varepsilon_\mathrm{grav}$): as nuclear
+burning proceeds, the chemical composition changes, on a timescale
+that we will see is extremely long compared to the thermal and
+dynamical timescales.
 
 ** Energy generation as a self-regulating process
 
@@ -127,17 +128,17 @@ also implies that nuclear burning in a star is a /self-regulating/
 process: because nuclear reactions are a consequence of the energy
 losses, during long-lived equilibrium phases of the stellar life, they
 produce just enough energy to balance the losses! In other words,
-L_{nuc} = L ( + L_{\nu}).
+L_\mathrm{nuc} = L ( + L_{\nu}).
 
 If a star were to not produce enough energy to verify that (i.e.,
-L>L_{nuc}), then it will lose too much energy, meaning it will contract,
+L>L_\mathrm{nuc}), then it will lose too much energy, meaning it will contract,
 and increase it's temperature because of the virial theorem, which in
 turn regulates the energy generation by nuclear reactions (as we will
-see in a moment), until L_{nuc} reaches L.
-Viceversa, if L_{nuc} > L for some reason (e.g., there is a thermonuclear
+see in a moment), until L_\mathrm{nuc} reaches L.
+Viceversa, if L_\mathrm{nuc} > L for some reason (e.g., there is a thermonuclear
 explosion in the star), than the extra energy release will cause an
 expansion of the star and by the virial theorem lower the mean
-temperature until L_{nuc} = L.
+temperature until L_\mathrm{nuc} = L.
 
 ** The nuclear timescale
 
@@ -283,14 +284,14 @@ most abundant chemicals in the Universe/.
 
 Moreover, from the fact that there is a sharp jump form H to He, and
 then the curve rapidly flattens, we know that the rate at which nuclei
-are converted to achieve the equilibrium condition L_{nuc} = L will be
+are converted to achieve the equilibrium condition L_\mathrm{nuc} = L will be
 slower when H is converted into He, and then it will need to rapidly
 speed up when He is converted in carbon and onwards (because the
 energy release per nucleon significantly drops lowering the factor \phi
-in \tau_{nuc}).
+in \tau_\mathrm{nuc}).
 
 In the very late evolutionary phases (post helium burning), the
-required burning rate may become so high that \tau_{nuc} becomes shorter
+required burning rate may become so high that \tau_\mathrm{nuc} becomes shorter
 than the /global/ thermal timescale (but luckily not of the /local/
 thermal timescale, so all the equations we have derived so far still
 hold, since they are differential equations that describe /local/
@@ -328,7 +329,7 @@ just:
 
 where the sum runs over all the possible reactions, r_{i} is the rate per
 unit time and volume of the reactions, and the division by the mass
-density \rho gives the right dimensions [\varepsilon_{nuc}] = [E]/([t][M]).
+density \rho gives the right dimensions [\varepsilon_\mathrm{nuc}] = [E]/([t][M]).
 
 So, what is left to do is calculate the volumetric reaction rate r_{i}
 that can occur in a star.
@@ -579,8 +580,8 @@ textbooks such as "/Introductory nuclear physics/" by K. Krane.
 
 Besides the nuclear physics details here, the important point is that
 the nuclear potential is going to be attractive at short range
-(V_{nuc}(r\le r_{n})<0), but it has a repulsive core (that is there is a
-certain r_{nuc,core} below which V_{nuc} becomes very large and positive),
+(V_\mathrm{nuc}(r\le r_{n})<0), but it has a repulsive core (that is there is a
+certain r_{nuc,core} below which V_\mathrm{nuc} becomes very large and positive),
 otherwise the nuclei would not have a finite approximately constant
 density, and goes to zero at large distances (the strong force has a
 short range).
@@ -699,7 +700,7 @@ metastable state and h Planck's constant.
 
 Conversely, for non-resonant reactions, since the thermal energies are
 of order of 100 of eV while the nuclear scale is at \sim10MeV we can
-neglect the energy dependence of \sigma_{nuc}.
+neglect the energy dependence of \sigma_\mathrm{nuc}.
 
 Finally, actually carrying out the calculation give a probability of tunneling
 
