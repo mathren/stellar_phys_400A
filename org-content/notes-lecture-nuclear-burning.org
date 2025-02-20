@@ -402,11 +402,11 @@ p+e^{-} \rightarrow n+\nu_{e} \ \ \mathrm{or} \ \ p(e^{-},\nu_{e})n
 
 *** Photodisintegrations
 When one of the particles is a photon and the outgoing particles can
-be seen as "fragments" of the ingoing nucleus. These can occur when
-very energetic $\gamma$ ray photons, because their energy needs to be
-comparable to the binding energy of nuclei, of the order of \sim8MeV \times A,
-can encounter particles. This can occur for example at the very late
-moments of massive star evolution.
+be seen as "fragments" of the ingoing nucleus. These require very
+energetic incoming $\gamma$ ray photons, because their energy needs to be
+comparable to the binding energy of nuclei, of the order of \sim8MeV \times A.
+This can occur for example at the very late moments of massive star
+evolution.
 
 Example:
 #+begin_latex
@@ -420,7 +420,7 @@ Example:
 All of the types of reactions listed above (and more) can occur at
 some point in the evolution (and explosion!) of stars. For example,
 during hydrogen core burning (which we have used to estimate \phi and
-thus \tau_{nuc}) the star burns 4 protons into \alpha particles:
+thus $\tau_\mathrm{nuc}$) the star burns 4 protons into \alpha particles:
 #+begin_latex
 \begin{equation}\label{eq:overall_h_burn}
 4p \rightarrow ^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ ,
@@ -428,18 +428,18 @@ thus \tau_{nuc}) the star burns 4 protons into \alpha particles:
 #+end_latex
 where the positrons need to be there to conserve electric charge
 throughout the process, and the neutrinos need to be there for
-conserving the leptonic number (+1 for the leptons electron e^{-}, muon
-\mu^{-}, tau \tau^{-} and the corresponding neutrinos \nu_{e}, \nu_{\mu}, \nu_{\tau} and -1
-for their antiparticles positron e^{+}, positive muon \mu^{+}, and positive
-\tau^{+} and the corresponding antineutrinos).
+conserving the leptonic number (+1 for the leptons electron $e^{-}$, muon
+$\mu^{-}$, tau $\tau^{-}$ and the corresponding neutrinos $\nu_{e}$, $\nu_{\mu}$, $\nu_{\tau}$ and -1
+for their antiparticles positron $e^{+}$, positive muon $\mu^{+}$, and positive
+$\tau^{+}$ and the corresponding antineutrinos).
 
 *N.B.:* because of the phenomenon of neutrino oscillations (i.e., the
-conversion of \nu_{e} \leftrightarrow \nu_{\mu} or \nu_{\tau}) the leptonic number
-conservation is not exact in nature, or in other words, the symmetry
-associated to this conservation law is not exact. While this was
-discovered through the "[[https://www.nobelprize.org/prizes/themes/solving-the-mystery-of-the-missing-neutrinos/][missing solar neutrinos problem]]", and it is
-thus related to stellar/solar physics, it requires the propagation of
-neutrinos over distances much longer than the size of nuclei,
+conversion of $\nu_{e} \leftrightarrow \nu_{\mu}$ or $\nu_{\tau}$) the leptonic
+number conservation is not exact in nature, or in other words, the
+symmetry associated to this conservation law is not exact. While this
+was discovered through the "[[https://www.nobelprize.org/prizes/themes/solving-the-mystery-of-the-missing-neutrinos/][missing solar neutrinos problem]]", and it
+is thus related to stellar/solar physics, it requires the propagation
+of neutrinos over distances much longer than the size of nuclei,
 therefore, for the purpose of treating nuclear reactions we can assume
 conservation of the leptonic number.
 
@@ -450,18 +450,18 @@ From Eq. \ref{eq:overall_h_burn} we can see that:
    compound reaction that "summarizes" the more complex burning
    process of H into He that we will detail later. Nevertheless, the
    process will necessarily involve charged particle reactions.
- - \nu_{e} appear \Rightarrow there will be weak reactions involved
- - as already seen earlier, we can calculate the \phi factor (cf. Eq.
-   \ref{eq:mass_defect}), and thus the Q-value for the overall reaction
-   Q_{H burn} \simeq 26.5 MeV. Note that the Q-value does not really depend on
-   the details of the burning process.
+ - $\nu_{e}$ appear \Rightarrow there will be weak reactions involved
+ - as already seen earlier, we can calculate the $\phi$ factor (cf. Eq.
+   \ref{eq:mass_defect}), and thus the $Q$-value for the overall
+   reaction $Q_\mathrm{H burn} \simeq 26.5$ MeV. Note that the $Q$-value
+   does not really depend on the details of the burning process.
 
 *N.B.:* we discuss Eq. \ref{eq:overall_h_burn} because H is the most
 abundant element in the Universe, that most stars are made of, and
 thus this is (typically) the first process occurring in stars. It is
-also the one with the highest Q-value (cf. B/A vs. A plot!), thus the
-one that for a given luminosity L of the star can proceed at the
-slowest rate and last the longest.
+also the one with the highest $Q$-value (cf. $B/A$ vs. $A$ plot!),
+thus the one that for a given luminosity $L$ of the star can proceed at
+the slowest rate and last the longest.
 
 ** Charged particle reactions
 
@@ -478,30 +478,30 @@ To discuss them, we will implicitly use /Bohr's approximation/, which is
 not a completely accurate physical picture, but it is intuitive and
 allows to describe the main processes occurring in nuclei. In this
 approximation, we treat the generic reaction between charged particles
-X(a,b)Y as if it went through an intermediate step of forming a
-compound nucleus C:
+$X(a,b)Y$ as if it went through an intermediate step of forming a
+compound nucleus $C$:
 
 #+begin_latex
 \begin{equation}
 X + a \rightarrow C^{\star} \rightarrow Y + b \ \ ,
 \end{equation}
 #+end_latex
-where the nucleus C is formed in an excited state C^{\star} since in
-the reference frame of X the particle a arrives with its own kinetic
-energy and internal binding energy that (together with X's internal
-energy) are generally not exactly the total energy for the compound
-nucleus C.
+where the nucleus $C$ is formed in an excited state $C^{\star}$ since in
+the reference frame of $X$ the particle $a$ arrives with its own
+kinetic energy and internal binding energy that (together with $X$'s
+internal energy) are generally not exactly the total energy for the
+compound nucleus $C$.
 
 The second step is the decay of this fictional compound excited
-particle C^{\star} in the products Y and b.
+particle $C^{\star}$ in the products $Y$ and $b$.
 
 In this approximation, the second step of the decay does /not/ depend on
-the first step (in other words, C^{\star} loses the memory of how it
-formed) as long as the half-life of C^{\star} is long compared to the
-light-crossing time of C^{\star} itself. This is because we consider
+the first step (in other words, $C^{\star}$ loses the memory of how it
+formed) as long as the half-life of $C^{\star}$ is long compared to the
+light-crossing time of $C^{\star}$ itself. This is because we consider
 charged particles by hypothesis, so electromagnetic forces mediated by
 photons are what determines the interactions of the building blocks of
-C^{\star}, and on a timescale long compared to the light-crossing time
+$C^{\star}$, and on a timescale long compared to the light-crossing time
 they will equilibrate and lose memory of how they came to be.
 
 The light crossing time of a nucleus can be estimated starting from
@@ -510,31 +510,31 @@ needs to be explained by models of the strong force):
 
 #+begin_latex
 \begin{equation}
-r_\mathrm{n} = r_{0} A^{1/3} \simeq 1.4 \times 10^{-13} A^{1/3} \ \mathrm{cm} \Rightarrow \tau_\mathrm{light\ cross} = \frac{r_\mathrm{n}}{c} \simeq 10^{-23} A^{1/3} \ \mathrm{s} \ \ .
+r_{n} = r_{0} A^{1/3} \simeq 1.4 \times 10^{-13} A^{1/3} \ \mathrm{cm} \Rightarrow \tau_\mathrm{light\ cross} = \frac{r_{n}}{c} \simeq 10^{-23} A^{1/3} \ \mathrm{s} \ \ .
 \end{equation}
 #+end_latex
-Any compound nucleus C^{\star }with lifetime longer than this allows us
-to use this two step approximation to treat the problem, where the two
-incoming particles X and a come "into contact" (i.e., within their
-r_{n}), form an excited compound nucleus C^{\star}, which then de-excites
-in the final products Y and b independently of how it formed.
+Any compound nucleus $C^{\star }$ with lifetime longer than this allows
+us to use this two step approximation to treat the problem, where the
+two incoming particles $X$ and $a$ come "into contact" (i.e., within their
+$r_{n}$), form an excited compound nucleus $C^{\star}$, which then de-excites in
+the final products $Y$ and $b$ independently of how it formed.
 
-*N.B.:* the nuclear radius dependence on A can be flipped around to
-infer that the average density of nuclei is constant as A increases:
-\rho_{n} \simeq Am_{u} / (4\pi/3 \times r_{n}^{3}) \simeq 2\times10^{14} A g cm^{-3}.
+*N.B.:* the nuclear radius dependence on $A$ can be flipped around to
+infer that the average density of nuclei is constant as $A$ increases:
+$\rho_{n} \simeq Am_{u} / (4\pi/3 \times r_{n}^{3}) \simeq 2\times10^{14} A$ g cm^{-3}.
 
 *N.B.:* this is necessarily an oversimplified picture, since nuclei are
-described by QM and don't have a "hard" boundary at r_{n}, but rather
+described by QM and don't have a "hard" boundary at $r_{n}$, but rather
 their constituent nucleons have decaying wave-functions that solve the
 Schrodinger equation with the nuclear potential for their
 interactions. In reality, each particle can be described as a wave
-with De Broglie wavelength \lambda = h/p, and a physically more accurate
+with De Broglie wavelength $\lambda = h/p$, and a physically more accurate
 picture should treat all the particles involved accounting for their
 wave nature.
 
-To understand how two charged nuclei, both with positive charge, can "come into contact"
-within r_{n}, we need to consider the potential governing their
-interaction:
+To understand how two charged nuclei, both with positive charge, can
+"come into contact" within $r_{n}$, we need to consider the potential
+governing their interaction:
 
 #+begin_latex
 \begin{equation}
@@ -542,13 +542,13 @@ V \equiv V(r) = V_\mathrm{EM} + V_\mathrm{nuc} + \frac{\ell(\ell+1)\hbar^{2}}{2m
 \end{equation}
 #+end_latex
 where the last term is the centrifugal potential in the rest-frame of
-the target nucleus X which depends on the reduced mass m_{aX} =
-m_{a}m_{X}/(m_{a}+m_{X}) and quantum number \ell which determines the order of the
-wave-function of the system a+X. For simplicity, we can limit ourselves to
-consider \ell=0: we already have a repulsive Coulomb term to win over,
-and any extra repulsive term such a centrifugal barrier is only going
-to lower the reaction rate. The most important reactions are going to
-have \ell = 0, that is head-on collisions between a and X.
+the target nucleus $X$ which depends on the reduced mass $m_{aX} =
+m_{a}m_{X}/(m_{a}+m_{X})$ and quantum number $\ell$ which determines the order of the
+wave-function of the system $a+X$. For simplicity, we can limit
+ourselves to consider $\ell=0$: we already have a repulsive Coulomb term
+to win over, and any extra repulsive term such a centrifugal barrier
+is only going to lower the reaction rate. The most important reactions
+are going to have $\ell = 0$, that is head-on collisions between $a$ and $X$.
 
 *** Electromagnetic potential term
 For the electromagnetic term we can write:
@@ -557,24 +557,24 @@ For the electromagnetic term we can write:
 V_\mathrm{EM} = \frac{Z_{a}Z_{X}e^{2}}{r} - \{\mathrm{electron\ screening\ term}\} \ \ ,
 \end{equation}
 #+end_latex
-where the first part is >0 and describes the Coulomb repulsion between
-the two nuclei of chage Z_{a}e and Z_{X}e (both positive), and the electron
-screening term /reduces/ the repulsion of the nuclei: in the stellar
-plasma we expect each nucleus to be statistically surrounded by a
-"cloud" of electrons of radius of the order of the Debye length of the
-plasma:
+where the first part is positive and describes the Coulomb repulsion
+between the two nuclei of charge $Z_{a}e$ and $Z_{X}e$ (both positive), and
+the electron screening term /reduces/ the repulsion of the nuclei: in
+the stellar plasma we expect each nucleus to be statistically
+surrounded by a "cloud" of electrons of radius of the order of the
+Debye length of the plasma:
 
 #+begin_latex
 \begin{equation}
 r_\mathrm{Debye} = \sqrt{\frac{k_{B}T}{4\pi e N\chi}} \ \ ,
 \end{equation}
 #+end_latex
-where N is the total number of particles in absence of screening
-(nuclei/ions+electrons), and \chi = \sum_{i} Z_{i}^{2} (N_{i}/N) + N_{e}/N with N_{i} and N_{e}
-number of ions and electrons in absence of screening.
+where $N$ is the total number of particles in absence of screening
+(nuclei/ions+electrons), and $\chi = \sum_{i} Z_{i}^{2} (N_{i}/N) + N_{e}/N$ with $N_{i}$ and
+$N_{e}$ number of ions and electrons in absence of screening.
 
-For distances between a and X larger than r_{Debye} the electron
-screening reduces the Coulomb repulsion between the nuclei.
+For distances between $a$ and $X$ larger than $r \gg r_\mathrm{Debye}$ the
+electron screening reduces the Coulomb repulsion between the nuclei.
 
 *** Nuclear potential term
 Finally, for the nuclear potential, there isn't a well known
