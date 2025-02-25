@@ -419,7 +419,7 @@ during hydrogen core burning (which we have used to estimate \phi and
 thus $\tau_\mathrm{nuc}$) the star burns 4 protons into \alpha particles:
 #+begin_latex
 \begin{equation}\label{eq:overall_h_burn}
-4p \rightarrow ^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ ,
+4^{1}\mathrm{H}\rightarrow^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ ,
 \end{equation}
 #+end_latex
 where the positrons need to be there to conserve electric charge
@@ -439,14 +439,15 @@ stellar/solar physics, it requires the propagation of neutrinos over
 distances much longer than the size of nuclei, therefore, for the
 purpose of treating nuclear reactions we can assume conservation of
 the leptonic number of each species individually (while in the general
-case only the /total/ leptonic number is conserved).
+case only the /total/ leptonic number summed over all flavors $e$, $\mu$,
+and $\tau$, is conserved).
 
 From Eq. \ref{eq:overall_h_burn} we can see that:
  - protons need to encounter each other. Statistically, 4 protons are
    unlikely to meet each other at a point in space for reaction Eq.
    \ref{eq:overall_h_burn} to occur. Eq. \ref{eq:overall_h_burn} is a
    compound reaction that "summarizes" the more complex burning
-   process of H into He that we will detail later. Nevertheless, the
+   process of H into He that we will detail [[./notes-lecture-nuclear-cycles.org][later]]. Nevertheless, the
    process will necessarily involve charged particle reactions.
  - $\nu_{e}$ appear \Rightarrow there will be weak reactions involved
  - as already seen earlier, we can calculate the $\phi$ factor (cf. Eq.
@@ -491,7 +492,8 @@ internal energy) are generally not exactly the total energy for the
 compound nucleus $C$.
 
 The second step is the decay of this fictional compound excited
-particle $C^{\star}$ in the products $Y$ and $b$.
+particle $C^{\star}$ in the products $Y$ and $b$ (Gamow actually focused
+on this second step in his 1928 work).
 
 In this approximation, the second step of the decay does /not/ depend on
 the first step (in other words, $C^{\star}$ loses the memory of how it
@@ -599,8 +601,8 @@ electromagnetic force by particle $X$:
 - at distances $r \gg r_\mathrm{Debye}$ electron screening nullifies the
   repulsive Coulomb potential
 - for a relative energy at infinity of $E$, there is a distance of
-  classical minimum approach $r_{c}$
-- just outside $r_{n}\equiv r_{n}$ there is the maximum height of the Coulomb barrier
+  classical minimum approach $r_{c }\equiv r_{c}(E)$
+- just outside $r_{n }\equiv r_{n}(A)$ there is the maximum height of the Coulomb barrier
   $E_{C} = Z_{a} Z_{X} e^{2}/r_{n}$.
 - inside $r_{n}$ (the nuclear radius of particle X), the potential is
   attractive, and allows for bound states with quantized energy levels.
@@ -608,7 +610,7 @@ electromagnetic force by particle $X$:
   core of the nuclear force that dominates over any electromagnetic
   effect.
 - For $0<E<E_{c}$, there are /metastable/ energy level possible (represented
-  in the figure by the gray bands). What makes them metastable is also
+  in the figure by the purple bands). What makes them metastable is also
   what allows nuclear burning: quantum tunnelling through the Coulomb
   barrier.
 
@@ -618,11 +620,10 @@ electromagnetic force by particle $X$:
 
 
 *** Impossibility of nuclear reactions without QM
-Without QM, for a nuclear reaction to happen (assuming Bohr's
-approximation), the two charged particles would need a relative energy
-at infinity higher than the maximum of the Coulomb barrier, so that
-$r_{c} \leq r_{n}$. Assuming the energy is just coming from the thermal
-energy of the gas:
+Without QM, for a nuclear reaction to happen the two charged particles
+would need a relative energy at infinity higher than the maximum of
+the Coulomb barrier, so that $r_{c} \leq r_{n}$. Assuming the energy is just
+coming from the thermal energy of the gas:
 
 #+begin_latex
 \begin{equation}
