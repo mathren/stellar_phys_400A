@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-25 Tue 10:02 -->
+<!-- 2025-02-25 Tue 10:06 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Nuclear cycles</title>
@@ -128,7 +128,7 @@ derivation of the main results we obtained for a generic charged
 particle reaction \(X(a,b)Y\) by writing the cross section for the
 reaction as:
 </p>
-<div class="latex" id="org245831b">
+<div class="latex" id="orgb6bc18c">
 \begin{equation}
 \sigma = \pi \lambda_{X}^{2} \times \{ \mathrm{Probability\ of\ Tunneling}\} \times \{\mathrm{Probability\ of\ C^{\star}\ decay\ in\ Y+b}\}\ \ ,
 \end{equation}
@@ -141,7 +141,7 @@ terms in curly brackets appears because of Bohr's approximation (so
 that the two probabilities are independent of each other). Since \(\lambda_{X} =
 h/p \propto h/E^{1/2} \Rightarrow \lambda_{X}^{2 }\propto E^{-1}\) and thus:
 </p>
-<div class="latex" id="org4f6cfb6">
+<div class="latex" id="orgce4eee0">
 \begin{equation}\label{eq:heuristic_summary}
 \sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
 \end{equation}
@@ -179,7 +179,7 @@ released by hydrogen burning into helium (because \(\alpha\) particles have
 such a high binding energy), and using conservation of charge and
 leptonic number we have already written the overall reaction as:
 </p>
-<div class="latex" id="org96c1376">
+<div class="latex" id="org62b3c28">
 \begin{equation}\label{eq:overall_reaction}
 4^{1}\mathrm{H}\rightarrow^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ .
 \end{equation}
@@ -188,7 +188,7 @@ leptonic number we have already written the overall reaction as:
 <p>
 And we know that a fraction \(\phi=0.007\) of the rest mass of the 4
 incoming protons (i.e., hydrogen positive ions) is converted into
-energy, corresponding to a total energy released is \(Q_\mathrm{H burn}= 26.5\)
+energy, corresponding to a total energy released is \(Q_\mathrm{H\ burn}= 26.5\)
 MeV.
 </p>
 
@@ -208,14 +208,14 @@ interactions are the bottleneck for nuclear burning in stars</i>.
 </p>
 
 <p>
-Moreover, since the nucleus of helium (i.e., &alpha; particle) is made of 4
-nucleons (2p and 2n), the reaction \ref{eq:overall_reaction} seems to
-require the encounter of 4 protons (i.e., hydrogen ions) in one point
-in space (within r<sub>nuc</sub>&sim; 10<sup>-13</sup> cm) and with the right relative
-energies. The statistical probability of this is vanishingly small,
-and that <i>cannot</i> be how the process works in nature, the rate would
-effectively be zero. <a href="https://en.wikipedia.org/wiki/Hans_Bethe">Hans Bethe</a> was the person who worked out the way
-this could actually happen.
+Moreover, since the nucleus of helium (i.e., \(\alpha\) particle) is made of
+4 nucleons (2\(p\) and 2\(n\)), the reaction \ref{eq:overall_reaction}
+seems to require the encounter of 4 protons (i.e., hydrogen ions) in
+one point in space (within \(r_\mathrm{nuc}\sim 10^{-13\)} cm) and with the
+right relative energies. The statistical probability of this is
+vanishingly small, and that <i>cannot</i> be how the process works in nature,
+the rate would effectively be zero. <a href="https://en.wikipedia.org/wiki/Hans_Bethe">Hans Bethe</a> was the person who
+worked out the way this could actually happen.
 </p>
 
 <p>
@@ -253,7 +253,7 @@ stars, like the Sun:
 </p>
 
 
-<figure id="org261bece">
+<figure id="org5e23be0">
 <img src="./images/pp_cycle.png" alt="pp_cycle.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Schematic representation of the pp chain. The right branch is the so called pp1, the rarer left branch is the so called pp2, which further has a rarer pp3 branch ending up with the formation and decay of a \(^{8}\mathrm{Be}\) nucleus.</figcaption>
@@ -267,10 +267,13 @@ Important thing to notice:
 <li>there are three branches (pp1, pp2 which further branches off into pp3)
 with different "branching ratios" (86% and 14% for pp1 and pp2,
 respectively, with 0.01% of pp2 ending in pp3) determined by the
-resonances in the daughter nuclei C<sup>*</sup> which are \(^{7}\mathrm{Be}\),
-\(^{7}\mathrm{Li}\), and ^{8}\mathrm{B}$ respectively here.</li>
-<li>the overall reaction produces two neutrinos &nu;<sub>e</sub>, as expected from the
-overall reaction \ref{eq:overall_reaction}.</li>
+resonances in the daughter nuclei \(C^{\star}\) which are \(^{7}\mathrm{Be}\),
+\(^{7}\mathrm{Li}\), and \(^{8}\mathrm{B}\) respectively here.</li>
+<li>the overall reaction produces two neutrinos \(\nu_{e}\), as expected from the
+overall reaction \ref{eq:overall_reaction} (<b>N.B.</b>: the top two reactions
+have to happen twice in the pp1 chain to allow for two
+\(^{3}\mathrm{He}\), thus two \(\nu_{e}\) will be produced per each
+\(^{4}\mathrm{He}\) as expected).</li>
 <li>the first reaction, the weak reaction producing Deuterium (D) is the
 main bottleneck, which can also be understood in terms of the
 nuclear physics: it requires the interaction of two protons (A=1 &rArr;
@@ -294,7 +297,7 @@ reaction \ref{eq:overall_reaction}).</li>
 
 <p>
 Fitting the temperature dependence for the overall cycle one obtains
-&epsilon;<sub>nuc</sub> &prop; &lang; &sigma;(v)v &rang; &prop; T<sup>4</sup>. This is a fairly
+&epsilon;<sub>\mathrm</sub>{nuc} &prop; &lang; &sigma;(v)v &rang; &prop; T<sup>4</sup>. This is a fairly
 steep powerlaw, therefore one should expect the nuclear burning to
 be <i>very concentrated</i> inside the star in temperature coordinate.
 </p>
@@ -307,7 +310,7 @@ be <i>very concentrated</i> inside the star in temperature coordinate.
 <p>
 When the luminosity of a star is high (recall for a fully radiative star L&prop;
 M<sup>x</sup>&mu;<sup>4</sup> with x &equiv; x(M)&ge;0), the bottleneck reaction p+p&rarr; D+e<sup>+</sup>
-+&nu;<sub>e</sub> prevents the stars from reaching L=L<sub>nuc</sub> through the pp chain: its rate
++&nu;<sub>e</sub> prevents the stars from reaching L=L<sub>\mathrm</sub>{nuc} through the pp chain: its rate
 is too low. Another mechanism to achieve the overall reaction
 \ref{eq:overall_reaction} is needed.
 </p>
@@ -320,7 +323,7 @@ catalysts for the reactions.
 </p>
 
 
-<figure id="org50d92d5">
+<figure id="org6cb8e96">
 <img src="./images/CN-NO.png" alt="CN-NO.png">
 
 <figcaption><span class="figure-number">Figure 2: </span>Schematic representation of the CN-NO bi cycle.</figcaption>
@@ -354,7 +357,7 @@ massive stars.</li>
 <p>
 Because of the higher Coulomb barriers involved one can expect a
 steeper temperature dependence of this hydrogen burning mode, and in
-fact one finds for the CNO cycle &epsilon;<sub>nuc</sub> &prop; T<sup>16</sup>.
+fact one finds for the CNO cycle &epsilon;<sub>\mathrm</sub>{nuc} &prop; T<sup>16</sup>.
 </p>
 
 <p>
@@ -403,10 +406,10 @@ CNO cycle takes over as dominant energy production mechanism.
 </p>
 
 
-<figure id="orgd08bdb7">
+<figure id="org4e8451b">
 <img src="./images/pp_vs_CNO.png" alt="pp_vs_CNO.png" width="75%">
 
-<figcaption><span class="figure-number">Figure 3: </span>&epsilon;<sub>nuc</sub>/&rho; as a function of central temperature T<sub>c</sub> (bottom axis) or initial mass (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning. Dashed lines are linear fits. Modified from a figure by R. Townsend.</figcaption>
+<figcaption><span class="figure-number">Figure 3: </span>&epsilon;<sub>\mathrm</sub>{nuc}/&rho; as a function of central temperature T<sub>c</sub> (bottom axis) or initial mass (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning. Dashed lines are linear fits. Modified from a figure by R. Townsend.</figcaption>
 </figure>
 
 
@@ -474,7 +477,7 @@ to meet in the same place within their nuclear radii because of
 thermal motion is negligibly small). The \(3\alpha\rightarrow^{12}\mathrm{C}\) compound
 reaction is actually:
 </p>
-<div class="latex" id="org32ab61b">
+<div class="latex" id="orge017108">
 <p>
 \(\alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma\) <br>
 \(^{8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star}}\rightarrow^{12}\mathrm{C}+\gamma\)
@@ -589,7 +592,7 @@ positive Q values (thus exo-energetic and of interest for the star to
 sustain itself):
 </p>
 
-<div class="latex" id="orgff755ca">
+<div class="latex" id="orgeb50284">
 <p>
 \(^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{24}\mathrm{Mg}+\gamma\) (Q&sim;13.93MeV)<br>
 \(^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{20}\mathrm{Ne}+\alpha\) (Q&sim;4.616MeV)<br>
@@ -680,7 +683,7 @@ finally ignites. The dominant reaction has multiple branching ratios with
 positive Q value that produce sulfur and silicon primarily:
 </p>
 
-<div class="latex" id="orgdd6deee">
+<div class="latex" id="orgfedd061">
 <p>
 \(^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{32}\mathrm{S}+\gamma\) (Q&sim;16.53MeV)<br>
 \(^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{28}\mathrm{Si}+\alpha\) (Q&sim;9.593MeV)<br>
@@ -736,7 +739,7 @@ as "silicon group elements" with A&sim;28 and Z&sim;14) are photodisintegrated
 and re-created at very high and nearly canceling rates:
 </p>
 
-<div class="latex" id="org99e2c5c">
+<div class="latex" id="org68c6ae9">
 <p>
 \(\gamma + ^{A}Z \rightarrow ^{A'}Z' +{p,n,\alpha}\)
 </p>
@@ -750,7 +753,7 @@ to form heavier "iron group nuclei" (which are also photodisintegrated
 and recreated constantly):
 </p>
 
-<div class="latex" id="org0ede49b">
+<div class="latex" id="org12cda86">
 <p>
 \(\{p, n,\alpha\} + \{ ^{A}Z,^{A'}Z' \} \rightarrow \{ \mathrm{Fe \ group \ nuclei} \} + \dots\)
 </p>
@@ -768,7 +771,7 @@ quickly thermalize in the plasma see <a href="https://ui.adsabs.harvard.edu/abs/
 
 
 
-<figure id="org25ac6d0">
+<figure id="org1a6ac9b">
 <img src="./images/QSE.png" alt="QSE.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Schematic representation of quasi statistical equilibrium on the nuclear chart. The two filled circle represent the Si (red) and Fe (blue) groups. The abundance of nuclei within each group reach NSE. The links connecting specific isotopes within each group represent the few reactions out of equilibrium, which progressively result in the depletion of the number of isotopes in the Si group in favor of those in the Fe group.</figcaption>
@@ -828,10 +831,10 @@ lecture</a>.
 <h2 id="orgbc735da"><a href="#orgbc735da">Summary of energy scaling</a></h2>
 <div class="outline-text-2" id="text-orgbc735da">
 
-<figure id="org035f4e7">
+<figure id="orgd174cb3">
 <img src="./images/Nuclear_energy_generation.png" alt="Nuclear_energy_generation.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 5: </span>&epsilon;<sub>nuc</sub> &equiv; &epsilon;<sub>nuc</sub>(T) dependence on a log-log plot for the burning cycles that cover &ge;99% of the stellar lifetime (H and He core burning). From <a href="https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg">wikipedia</a>.</figcaption>
+<figcaption><span class="figure-number">Figure 5: </span>&epsilon;<sub>\mathrm</sub>{nuc} &equiv; &epsilon;<sub>\mathrm</sub>{nuc}(T) dependence on a log-log plot for the burning cycles that cover &ge;99% of the stellar lifetime (H and He core burning). From <a href="https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg">wikipedia</a>.</figcaption>
 </figure>
 
 <p>
@@ -844,14 +847,14 @@ them from their spectrum), see <a href="https://www.nature.com/articles/s41586-0
 
 <p>
 Because of the higher and higher Coulomb barriers, the temperature
-dependence of &epsilon;<sub>nuc</sub> gets steeper for heavier nuclear fuel, so
-post-helium core burning &epsilon;<sub>nuc</sub> is more and more concentrated towards
+dependence of &epsilon;<sub>\mathrm</sub>{nuc} gets steeper for heavier nuclear fuel, so
+post-helium core burning &epsilon;<sub>\mathrm</sub>{nuc} is more and more concentrated towards
 the center, leaving the outer layers unburned and allowing for the so
 called "onion layer" structure of stars:
 </p>
 
 
-<figure id="org31a3bc0">
+<figure id="org065dc35">
 <img src="./images/onion.png" alt="onion.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Layer structure for an initially 15M<sub>☉</sub> star at the end of its nuclear burning lifetime in mass coordinate from <a href="https://www.as.arizona.edu/%5Csimmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf">Renzo 2015</a>. Note the final total mass is <i>not</i> 15M<sub>☉</sub> because stars this massive lose mass through radiatively driven winds.</figcaption>
@@ -874,7 +877,7 @@ the matter inside the shell, which slightly complicates the
 <p>
 Each layer of heavier material requires
 a higher T to burn (to have a non-zero tunneling probability), so it
-is more centralized in mass and radius. However, moving inward &epsilon;<sub>nuc</sub>
+is more centralized in mass and radius. However, moving inward &epsilon;<sub>\mathrm</sub>{nuc}
 depends more steeply on T, which implies the dT/dr becomes steeper,
 and thus we have convection, the extent of which determines where fuel
 is depleted. At high masses (M&ge;20M<sub>☉</sub>), the inner layers start
@@ -927,7 +930,7 @@ consumption of a given fuel take in a star, that is the nuclear
 timescale for a given fuel:
 </p>
 
-<div class="latex" id="org5ddcc10">
+<div class="latex" id="orgf1fedb6">
 \begin{equation}
 \tau_\mathrm{nuc} = \varphi f_\mathrm{burn} \frac{Mc^{2}}{L_{}} \ \ .
 \end{equation}
@@ -985,7 +988,7 @@ massive stars, silicon &rarr; iron only lasts order of <i>days</i>.
 </p>
 
 
-<figure id="orgbc066bc">
+<figure id="org0238421">
 <img src="./images/durations.png" alt="durations.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>example of durations of burning phases for a few massive stars from <a href="https://www.as.arizona.edu/%5Csimmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf">Renzo 2015</a>.</figcaption>

@@ -61,7 +61,7 @@ leptonic number we have already written the overall reaction as:
 #+end_latex
 And we know that a fraction $\phi=0.007$ of the rest mass of the 4
 incoming protons (i.e., hydrogen positive ions) is converted into
-energy, corresponding to a total energy released is $Q_\mathrm{H burn}= 26.5$
+energy, corresponding to a total energy released is $Q_\mathrm{H\ burn}= 26.5$
 MeV.
 
 From the overall reaction \ref{eq:overall_reaction} we know that the
@@ -75,14 +75,14 @@ meaning the coupling constant is small compared to the coupling
 constant for the strong force and electromagnetic force: /weak
 interactions are the bottleneck for nuclear burning in stars/.
 
-Moreover, since the nucleus of helium (i.e., \alpha particle) is made of 4
-nucleons (2p and 2n), the reaction \ref{eq:overall_reaction} seems to
-require the encounter of 4 protons (i.e., hydrogen ions) in one point
-in space (within r_{nuc}\sim 10^{-13} cm) and with the right relative
-energies. The statistical probability of this is vanishingly small,
-and that /cannot/ be how the process works in nature, the rate would
-effectively be zero. [[https://en.wikipedia.org/wiki/Hans_Bethe][Hans Bethe]] was the person who worked out the way
-this could actually happen.
+Moreover, since the nucleus of helium (i.e., $\alpha$ particle) is made of
+4 nucleons (2$p$ and 2$n$), the reaction \ref{eq:overall_reaction}
+seems to require the encounter of 4 protons (i.e., hydrogen ions) in
+one point in space (within $r_\mathrm{nuc}\sim 10^{-13$} cm) and with the
+right relative energies. The statistical probability of this is
+vanishingly small, and that /cannot/ be how the process works in nature,
+the rate would effectively be zero. [[https://en.wikipedia.org/wiki/Hans_Bethe][Hans Bethe]] was the person who
+worked out the way this could actually happen.
 
 The solution to the prohibitively small probability that nature finds
 in stars is to go through intermediate steps instead of doing the
@@ -115,45 +115,50 @@ Important thing to notice:
 - there are three branches (pp1, pp2 which further branches off into pp3)
   with different "branching ratios" (86% and 14% for pp1 and pp2,
   respectively, with 0.01% of pp2 ending in pp3) determined by the
-  resonances in the daughter nuclei C^{\star} which are $^{7}\mathrm{Be}$,
-  $^{7}\mathrm{Li}$, and ^{8}\mathrm{B}$ respectively here.
-- the overall reaction produces two neutrinos \nu_{e}, as expected from the
-  overall reaction \ref{eq:overall_reaction}.
-- the first reaction, the weak reaction producing Deuterium (D) is the
+  resonances in the daughter nuclei $C^{\star}$ which are $^{7}\mathrm{Be}$,
+  $^{7}\mathrm{Li}$, and $^{8}\mathrm{B}$ respectively here.
+- the overall reaction produces two neutrinos $\nu_{e}$, as expected from the
+  overall reaction \ref{eq:overall_reaction} (*N.B.*: the top two reactions
+  have to happen twice in the pp1 chain to allow for two
+  $^{3}\mathrm{He}$, thus two $\nu_{e}$ will be produced per each
+  $^{4}\mathrm{He}$ as expected).
+- the first reaction, the weak reaction producing Deuterium ($D$) is the
   main bottleneck, which can also be understood in terms of the
-  nuclear physics: it requires the interaction of two protons (A=1 \Rightarrow
-  r_{nuc} = r_{0} = 1.5\times10^{-13} cm) with a Coulomb barrier.
-- the \gamma particle produced in certain reactions (i.e., photons needed for
-  the conservation of the four-momentum, which are \gamma rays because of the
-  1-10MeV energy scale of nuclear interactions) will quickly scatter around
-  off electrons and "thermalize" providing the energy to the star
-- viceversa, the \nu_{e} leave directly the star. In fact the Earth is
-  constantly bombarded by a flux of \nu_{e} from (primarily) the Sun, with a
+  nuclear physics: it requires the interaction of two protons ($A=1 \Rightarrow
+  r_{nuc} = r_{0} = 1.5\times10^{-13}$ cm) with a Coulomb barrier.
+- the $\gamma$ particle produced in certain reactions (i.e., photons needed
+  for the conservation of the four-momentum, which are $\gamma$ rays
+  because of the 1-10 MeV energy scale of nuclear interactions) will
+  quickly scatter around off electrons and "thermalize" providing the
+  energy to the star
+- viceversa, the $\nu_{e}$ leave directly the star. In fact the Earth is
+  constantly bombarded by a flux of $\nu_{e}$ from (primarily) the Sun, with a
   flux of \sim10^{9} neutrinos per s^{-1} cm^{-2}.
 - the $^{3}\mathrm{He}+^{3}\mathrm{He}\rightarrow^{4}\mathrm{He}+p+p$ turns two nuclei into 3,
   this will impact the number of particles per unit baryonic mass (which
-  remains \sim6m_{u} at zeroth-order, neglecting the small fraction \phi going into
-  energy): this will impact the mean molecular \mu and thus the temperature
+  remains $\sim 6m_{u}$ at zeroth-order, neglecting the small fraction $\phi$ going into
+  energy): this will impact the mean molecular $\mu$ and thus the temperature
   gradient and the mixing!
 - note from the pp1 cycle we get two 2 protons out at the end as well
-  (but 6 went in, 4 went into the \alpha particle as expected in the overall
+  (but 6 went in, 4 went into the $\alpha$ particle as expected in the overall
   reaction \ref{eq:overall_reaction}).
 
 Fitting the temperature dependence for the overall cycle one obtains
-\varepsilon_{nuc} \propto \langle \sigma(v)v \rangle \propto T^{4}. This is a fairly
+$\varepsilon_\mathrm{nuc} \propto \langle \sigma(v)v \rangle \propto T^{4}$. This is a fairly
 steep powerlaw, therefore one should expect the nuclear burning to
 be /very concentrated/ inside the star in temperature coordinate.
 
 *** CN-NO bi-cycle
-When the luminosity of a star is high (recall for a fully radiative star L\propto
-M^{x}\mu^{4} with x \equiv x(M)\ge0), the bottleneck reaction p+p\rightarrow D+e^{+}
-+\nu_{e} prevents the stars from reaching L=L_{nuc} through the pp chain: its rate
-is too low. Another mechanism to achieve the overall reaction
+When the luminosity of a star is high (recall for a fully radiative
+star $L\propto M^{x}\mu^{4}$ with $x \equiv x(M)\ge0$), the bottleneck reaction
+$p+p\rightarrow D+e^{+} +\nu_{e}$ prevents the stars from reaching the equilibrium
+condition $L=L_\mathrm{nuc}$ through the pp chain: its rate is too
+low. Another mechanism to achieve the overall reaction
 \ref{eq:overall_reaction} is needed.
 
 Therefore, for masses larger than a certain threshold, hydrogen core
 burning occurs through the CN-NO bi-cycle, where the "trick" to bypass the
-bottleneck of the weak reaction in the pp chain is to use metal ions as
+bottleneck of the weak reion in the pp chain is to use metal ions as
 catalysts for the reactions.
 
 #+CAPTION: Schematic representation of the CN-NO bi cycle.
@@ -182,7 +187,7 @@ Important things to notice:
 
 Because of the higher Coulomb barriers involved one can expect a
 steeper temperature dependence of this hydrogen burning mode, and in
-fact one finds for the CNO cycle \varepsilon_{nuc} \propto T^{16}.
+fact one finds for the CNO cycle \varepsilon_\mathrm{nuc} \propto T^{16}.
 
 This very steep energy dependence produces a very large temperature
 gradient in the core of massive stars (by releasing energy in a very
@@ -217,7 +222,7 @@ by the virial theorem, hydrogen burning through the pp-chain will
 dominate. However, increasing M (and thus \langle T \rangle), at some point the
 CNO cycle takes over as dominant energy production mechanism.
 
-#+CAPTION: \varepsilon_{nuc}/\rho as a function of central temperature T_{c} (bottom axis) or initial mass (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning. Dashed lines are linear fits. Modified from a figure by R. Townsend.
+#+CAPTION: \varepsilon_\mathrm{nuc}/\rho as a function of central temperature T_{c} (bottom axis) or initial mass (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning. Dashed lines are linear fits. Modified from a figure by R. Townsend.
 #+ATTR_HTML: :width 75%
 [[./images/pp_vs_CNO.png]]
 
@@ -508,7 +513,7 @@ lecture]].
 
 * Summary of energy scaling
 
-#+CAPTION: \varepsilon_{nuc} \equiv \varepsilon_{nuc}(T) dependence on a log-log plot for the burning cycles that cover \ge99% of the stellar lifetime (H and He core burning). From [[https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg][wikipedia]].
+#+CAPTION: \varepsilon_\mathrm{nuc} \equiv \varepsilon_\mathrm{nuc}(T) dependence on a log-log plot for the burning cycles that cover \ge99% of the stellar lifetime (H and He core burning). From [[https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg][wikipedia]].
 #+ATTR_HTML: :width 100%
 [[./images/Nuclear_energy_generation.png]]
 
@@ -519,8 +524,8 @@ the decay of $^{13}N$ have been experimentally detected (one can recognize
 them from their spectrum), see [[https://www.nature.com/articles/s41586-020-2934-0][Borexino collaboration 2020]].
 
 Because of the higher and higher Coulomb barriers, the temperature
-dependence of \varepsilon_{nuc} gets steeper for heavier nuclear fuel, so
-post-helium core burning \varepsilon_{nuc} is more and more concentrated towards
+dependence of \varepsilon_\mathrm{nuc} gets steeper for heavier nuclear fuel, so
+post-helium core burning \varepsilon_\mathrm{nuc} is more and more concentrated towards
 the center, leaving the outer layers unburned and allowing for the so
 called "onion layer" structure of stars:
 
@@ -542,7 +547,7 @@ the matter inside the shell, which slightly complicates the
 
 Each layer of heavier material requires
 a higher T to burn (to have a non-zero tunneling probability), so it
-is more centralized in mass and radius. However, moving inward \varepsilon_{nuc}
+is more centralized in mass and radius. However, moving inward \varepsilon_\mathrm{nuc}
 depends more steeply on T, which implies the dT/dr becomes steeper,
 and thus we have convection, the extent of which determines where fuel
 is depleted. At high masses (M\geq20M_{\odot}), the inner layers start
