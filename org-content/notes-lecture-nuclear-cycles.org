@@ -240,7 +240,7 @@ stellar lifetimes inferred from population analyses, etc.
 
 The initial mass $M$ at which the transition happens needs to be
 determined with stellar models and is around $M_{pp \rightarrow CNO} \sim
-1.1-1.2M_{\odot}$, where the imprecision comes from the systematic
+1.1-1.3M_{\odot}$, where the imprecision comes from the systematic
 uncertainties in stellar models (in terms of input physics and
 algorithmic representation of the processes in the code, that we will
 discuss in more detail in the [[./notes-lecture-neutrinos.org][next lecture]]). To some extent, this is a
@@ -250,59 +250,64 @@ meaningful threshold exist: the term "massive star" is typically
 context dependent.
 
 ** Helium burning
-Once hydrogen fuel runs out in the core of a star (i.e., anywhere with mass
-coordinate $m \le f_\mathrm{burn} M_\mathrm{tot}$), the next fuel to burn is going to be helium.
-First of all, this is always available since it was produced in the Big
-Bang and also /locally brewed/ by the burning of hydrogen that just ended,
-and secondly, it's the energetically second-best fuel in terms of energy
-release per nucleon.
+Once hydrogen fuel runs out in the core of a star (i.e., anywhere with
+mass coordinate $m \le f_\mathrm{burn} M_\mathrm{tot}$ where all the
+hydrogen has turned to helium, so the composition is $Y=1-Z$), the
+next fuel to burn is going to be helium. First of all, this is always
+available since it was produced in the Big Bang and also /locally
+brewed/ by the burning of hydrogen that just ended, and secondly, it's
+the energetically second-best fuel in terms of energy release per
+nucleon.
 
-However, there is a nuclear physics problem: there are no stable nuclei
-with A=5 and A=8 and the few A=7 produced during hydrogen burning are very
-fragile and easy to break, so they don't survive the hydrogen burning phase
-either. So how can one do thermonuclear reactions of helium?
+However, there is a nuclear physics problem: there are no stable
+nuclei with $A=5$ and $A=8$ and the few $A=7$ produced during hydrogen
+burning are very fragile and easy to break, so they don't survive the
+hydrogen burning phase either. So how can one do thermonuclear
+reactions of helium?
 
 This was solved by [[https://en.wikipedia.org/wiki/Fred_Hoyle][Fred Hoyle]], who predicted that there would be a
-metastable state of carbon (as a C^{\star} compound nucleus in Bohr's
-approximation) that would allow to consume helium, using astrophysics to
-understand nuclear structure!
+metastable state of carbon (as a $C^{\star}$ compound nucleus in Bohr's
+approximation) that would allow to consume helium, using astrophysics
+to understand nuclear structure!
 
 *** "Triple \alpha" reaction
-The easiest way to consume helium is through the so called "tiple \alpha
+The easiest way to consume helium is through the so called "triple $\alpha$
 reaction", which is actually a /compound/ reaction with a very short
-lived intermediate state (*N.B.:* the probability of 3 alpha particles
+lived intermediate state (*N.B.:* the probability of 3 $\alpha$ particles
 to meet in the same place within their nuclear radii because of
 thermal motion is negligibly small). The $3\alpha\rightarrow^{12}\mathrm{C}$ compound
 reaction is actually:
 #+begin_latex
+\begin{equation}
 $\alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma$ \\
 $^{8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star}}\rightarrow^{12}\mathrm{C}+\gamma$
+\end{equation}
 #+end_latex
 
-As mentioned above, the A=8 nucleus of Beryllium is unstable, and
-decays with a half life of \tau_{Be}\sim8\times10^{-17} seconds (*N.B.:* this is
-still much longer than the light crossing time \sim2\times10^{-23}sec, so Bohr's
-approximation holds!). Therefore, the first reaction can go both ways,
-with the beryllium decaying back in two \alpha particles. However, if the
-temperature is such that /before/ it can decay, a third \alpha particle will
-interact with the beryllium, then one can consume three nuclei of
-helium to make a carbon. This requires T\sim10^{8} K \gg T_{center,\odot}\simeq10^{7}
-\sim T_{H burn}.
+As mentioned above, the $A=8$ nucleus of Beryllium is unstable, and
+decays with a half life of $\tau_\mathrm{Be}\sim8\times10^{-17}$ seconds (*N.B.:* this
+is still much longer than the light crossing time $\sim10^{-23}$ sec, so
+Bohr's approximation holds!). Therefore, the first reaction can go
+both ways, with the beryllium decaying back in two $\alpha$ particles.
+However, if the temperature is such that /before/ it can decay, a third
+$\alpha$ particle will interact with the beryllium, then one can consume
+three nuclei of helium to make a carbon. This requires $T\sim10^{8} K \gg
+T_\mathrm{center,\odot}\simeq10^{7} \sim T_\mathrm{H\ burn}$.
 
 
 The insight of F. Hoyle was that this would happen, and for this to
 happen there /needs/ to be an excited (actually doubly-excited) state of
 carbon 12 which was theoretically predicted from the astrophysical
 evidence that carbon is the next most abundant element after H and He:
-stellar observations were used to correctly predict something on the
-structure of nuclei!
+stellar observations were used to correctly predict excited states
+of nuclei and thus nuclear resonances!
 
-*N.B.*: In practice $^{8}\mathrm{Be}$ is so short lived that often it is not
-included in stellar evolution simulation and what we use is a reaction rate
-for the /compound/ 3\alpha process with a temperature dependence that makes
-the rate non-zero only for T\geq10^{8}K allowing \alpha+$^{8}\mathrm{Be}$ to occur. This
-allows to not have to track the isotope of $^{8}\mathrm{Be}$ saving
-computational time.
+*N.B.*: In practice $^{8}\mathrm{Be}$ is so short lived that often it is
+not included in stellar evolution simulation and what we use is a
+reaction rate for the /compound/ $3\alpha$ process with a temperature
+dependence that makes the rate non-zero only for $T\geq10^{8}$K allowing
+$\alpha+^{8}\mathrm{Be}$ to occur. This allows to not have to track the
+isotope of $^{8}\mathrm{Be}$ saving computational time.
 
 *** The nuclear astrophysics "holy grail": $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$
 Once some carbon is produced, a new avenue for consuming \alpha particles

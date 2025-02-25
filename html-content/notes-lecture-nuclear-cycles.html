@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-25 Tue 10:25 -->
+<!-- 2025-02-25 Tue 10:35 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Nuclear cycles</title>
@@ -128,7 +128,7 @@ derivation of the main results we obtained for a generic charged
 particle reaction \(X(a,b)Y\) by writing the cross section for the
 reaction as:
 </p>
-<div class="latex" id="orgd3bd286">
+<div class="latex" id="org463ce56">
 \begin{equation}
 \sigma = \pi \lambda_{X}^{2} \times \{ \mathrm{Probability\ of\ Tunneling}\} \times \{\mathrm{Probability\ of\ C^{\star}\ decay\ in\ Y+b}\}\ \ ,
 \end{equation}
@@ -141,7 +141,7 @@ terms in curly brackets appears because of Bohr's approximation (so
 that the two probabilities are independent of each other). Since \(\lambda_{X} =
 h/p \propto h/E^{1/2} \Rightarrow \lambda_{X}^{2 }\propto E^{-1}\) and thus:
 </p>
-<div class="latex" id="orgb6506b5">
+<div class="latex" id="orgcc7f4f9">
 \begin{equation}\label{eq:heuristic_summary}
 \sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
 \end{equation}
@@ -179,7 +179,7 @@ released by hydrogen burning into helium (because \(\alpha\) particles have
 such a high binding energy), and using conservation of charge and
 leptonic number we have already written the overall reaction as:
 </p>
-<div class="latex" id="orgcc7ab17">
+<div class="latex" id="org59831b9">
 \begin{equation}\label{eq:overall_reaction}
 4^{1}\mathrm{H}\rightarrow^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ .
 \end{equation}
@@ -253,7 +253,7 @@ stars, like the Sun:
 </p>
 
 
-<figure id="org252643e">
+<figure id="orge83dbf3">
 <img src="./images/pp_cycle.png" alt="pp_cycle.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Schematic representation of the pp chain. The right branch is the so called pp1, the rarer left branch is the so called pp2, which further has a rarer pp3 branch ending up with the formation and decay of a \(^{8}\mathrm{Be}\) nucleus.</figcaption>
@@ -325,7 +325,7 @@ catalysts for the reactions.
 </p>
 
 
-<figure id="orga61b5b4">
+<figure id="org4bef1ed">
 <img src="./images/CN-NO.png" alt="CN-NO.png">
 
 <figcaption><span class="figure-number">Figure 2: </span>Schematic representation of the CN-NO bi cycle.</figcaption>
@@ -410,7 +410,7 @@ the CNO cycle takes over as dominant energy production mechanism.
 </p>
 
 
-<figure id="orgc727f93">
+<figure id="org04f374a">
 <img src="./images/pp_vs_CNO.png" alt="pp_vs_CNO.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 3: </span>\(\varepsilon_\mathrm{nuc}/\rho\) as a function of central temperature \(T_{c}\) (bottom axis) or initial mass \(M\) (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning once equilibrium (\(L\simeq L_\mathrm{nuc}\)) is established. Dashed lines are linear fits. Modified from a figure by R. Townsend.</figcaption>
@@ -432,7 +432,7 @@ stellar lifetimes inferred from population analyses, etc.
 <p>
 The initial mass \(M\) at which the transition happens needs to be
 determined with stellar models and is around \(M_{pp \rightarrow CNO} \sim
-1.1-1.2M_{☉}\), where the imprecision comes from the systematic
+1.1-1.3M_{☉}\), where the imprecision comes from the systematic
 uncertainties in stellar models (in terms of input physics and
 algorithmic representation of the processes in the code, that we will
 discuss in more detail in the <a href="./notes-lecture-neutrinos.html">next lecture</a>). To some extent, this is a
@@ -449,26 +449,29 @@ context dependent.
 <h3 id="orgd4e578b"><a href="#orgd4e578b">Helium burning</a></h3>
 <div class="outline-text-3" id="text-orgd4e578b">
 <p>
-Once hydrogen fuel runs out in the core of a star (i.e., anywhere with mass
-coordinate \(m \le f_\mathrm{burn} M_\mathrm{tot}\)), the next fuel to burn is going to be helium.
-First of all, this is always available since it was produced in the Big
-Bang and also <i>locally brewed</i> by the burning of hydrogen that just ended,
-and secondly, it's the energetically second-best fuel in terms of energy
-release per nucleon.
+Once hydrogen fuel runs out in the core of a star (i.e., anywhere with
+mass coordinate \(m \le f_\mathrm{burn} M_\mathrm{tot}\) where all the
+hydrogen has turned to helium, so the composition is \(Y=1-Z\)), the
+next fuel to burn is going to be helium. First of all, this is always
+available since it was produced in the Big Bang and also <i>locally
+brewed</i> by the burning of hydrogen that just ended, and secondly, it's
+the energetically second-best fuel in terms of energy release per
+nucleon.
 </p>
 
 <p>
-However, there is a nuclear physics problem: there are no stable nuclei
-with A=5 and A=8 and the few A=7 produced during hydrogen burning are very
-fragile and easy to break, so they don't survive the hydrogen burning phase
-either. So how can one do thermonuclear reactions of helium?
+However, there is a nuclear physics problem: there are no stable
+nuclei with \(A=5\) and \(A=8\) and the few \(A=7\) produced during hydrogen
+burning are very fragile and easy to break, so they don't survive the
+hydrogen burning phase either. So how can one do thermonuclear
+reactions of helium?
 </p>
 
 <p>
 This was solved by <a href="https://en.wikipedia.org/wiki/Fred_Hoyle">Fred Hoyle</a>, who predicted that there would be a
-metastable state of carbon (as a C<sup>*</sup> compound nucleus in Bohr's
-approximation) that would allow to consume helium, using astrophysics to
-understand nuclear structure!
+metastable state of carbon (as a \(C^{\star}\) compound nucleus in Bohr's
+approximation) that would allow to consume helium, using astrophysics
+to understand nuclear structure!
 </p>
 </div>
 
@@ -476,31 +479,31 @@ understand nuclear structure!
 <h4 id="org26a438e"><a href="#org26a438e">"Triple &alpha;" reaction</a></h4>
 <div class="outline-text-4" id="text-org26a438e">
 <p>
-The easiest way to consume helium is through the so called "tiple &alpha;
+The easiest way to consume helium is through the so called "triple \(\alpha\)
 reaction", which is actually a <i>compound</i> reaction with a very short
-lived intermediate state (<b>N.B.:</b> the probability of 3 alpha particles
+lived intermediate state (<b>N.B.:</b> the probability of 3 \(\alpha\) particles
 to meet in the same place within their nuclear radii because of
 thermal motion is negligibly small). The \(3\alpha\rightarrow^{12}\mathrm{C}\) compound
 reaction is actually:
 </p>
-<div class="latex" id="org04b693f">
-<p>
-\(\alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma\) <br>
-\(^{8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star}}\rightarrow^{12}\mathrm{C}+\gamma\)
-</p>
+<div class="latex" id="org11955d5">
+\begin{equation}
+$\alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma$ \\
+$^{8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star}}\rightarrow^{12}\mathrm{C}+\gamma$
+\end{equation}
 
 </div>
 
 <p>
-As mentioned above, the A=8 nucleus of Beryllium is unstable, and
-decays with a half life of &tau;<sub>Be</sub>&sim;8&times;10<sup>-17</sup> seconds (<b>N.B.:</b> this is
-still much longer than the light crossing time &sim;2&times;10<sup>-23</sup>sec, so Bohr's
-approximation holds!). Therefore, the first reaction can go both ways,
-with the beryllium decaying back in two &alpha; particles. However, if the
-temperature is such that <i>before</i> it can decay, a third &alpha; particle will
-interact with the beryllium, then one can consume three nuclei of
-helium to make a carbon. This requires T&sim;10<sup>8</sup> K &Gt; T<sub>center,☉</sub>&cong;10<sup>7</sup>
-&sim; T<sub>H burn</sub>.
+As mentioned above, the \(A=8\) nucleus of Beryllium is unstable, and
+decays with a half life of \(\tau_\mathrm{Be}\sim8\times10^{-17}\) seconds (<b>N.B.:</b> this
+is still much longer than the light crossing time \(\sim10^{-23}\) sec, so
+Bohr's approximation holds!). Therefore, the first reaction can go
+both ways, with the beryllium decaying back in two \(\alpha\) particles.
+However, if the temperature is such that <i>before</i> it can decay, a third
+\(\alpha\) particle will interact with the beryllium, then one can consume
+three nuclei of helium to make a carbon. This requires \(T\sim10^{8} K \gg
+T_\mathrm{center,☉}\simeq10^{7} \sim T_\mathrm{H\ burn}\).
 </p>
 
 
@@ -509,17 +512,17 @@ The insight of F. Hoyle was that this would happen, and for this to
 happen there <i>needs</i> to be an excited (actually doubly-excited) state of
 carbon 12 which was theoretically predicted from the astrophysical
 evidence that carbon is the next most abundant element after H and He:
-stellar observations were used to correctly predict something on the
-structure of nuclei!
+stellar observations were used to correctly predict excited states
+of nuclei and thus nuclear resonances!
 </p>
 
 <p>
-<b>N.B.</b>: In practice \(^{8}\mathrm{Be}\) is so short lived that often it is not
-included in stellar evolution simulation and what we use is a reaction rate
-for the <i>compound</i> 3&alpha; process with a temperature dependence that makes
-the rate non-zero only for T&ge;10<sup>8</sup>K allowing &alpha;+\(^{8}\mathrm{Be}\) to occur. This
-allows to not have to track the isotope of \(^{8}\mathrm{Be}\) saving
-computational time.
+<b>N.B.</b>: In practice \(^{8}\mathrm{Be}\) is so short lived that often it is
+not included in stellar evolution simulation and what we use is a
+reaction rate for the <i>compound</i> \(3\alpha\) process with a temperature
+dependence that makes the rate non-zero only for $T&ge;10<sup>8</sup>$K allowing
+\(\alpha+^{8}\mathrm{Be}\) to occur. This allows to not have to track the
+isotope of \(^{8}\mathrm{Be}\) saving computational time.
 </p>
 </div>
 </div>
@@ -598,7 +601,7 @@ positive Q values (thus exo-energetic and of interest for the star to
 sustain itself):
 </p>
 
-<div class="latex" id="org361fe25">
+<div class="latex" id="org80723f6">
 <p>
 \(^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{24}\mathrm{Mg}+\gamma\) (Q&sim;13.93MeV)<br>
 \(^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{20}\mathrm{Ne}+\alpha\) (Q&sim;4.616MeV)<br>
@@ -689,7 +692,7 @@ finally ignites. The dominant reaction has multiple branching ratios with
 positive Q value that produce sulfur and silicon primarily:
 </p>
 
-<div class="latex" id="org54d05f5">
+<div class="latex" id="org84dcf01">
 <p>
 \(^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{32}\mathrm{S}+\gamma\) (Q&sim;16.53MeV)<br>
 \(^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{28}\mathrm{Si}+\alpha\) (Q&sim;9.593MeV)<br>
@@ -745,7 +748,7 @@ as "silicon group elements" with A&sim;28 and Z&sim;14) are photodisintegrated
 and re-created at very high and nearly canceling rates:
 </p>
 
-<div class="latex" id="org3769687">
+<div class="latex" id="orgbf3b434">
 <p>
 \(\gamma + ^{A}Z \rightarrow ^{A'}Z' +{p,n,\alpha}\)
 </p>
@@ -759,7 +762,7 @@ to form heavier "iron group nuclei" (which are also photodisintegrated
 and recreated constantly):
 </p>
 
-<div class="latex" id="org23ba64d">
+<div class="latex" id="org25c684a">
 <p>
 \(\{p, n,\alpha\} + \{ ^{A}Z,^{A'}Z' \} \rightarrow \{ \mathrm{Fe \ group \ nuclei} \} + \dots\)
 </p>
@@ -777,7 +780,7 @@ quickly thermalize in the plasma see <a href="https://ui.adsabs.harvard.edu/abs/
 
 
 
-<figure id="org7f5aa43">
+<figure id="org8c89a4c">
 <img src="./images/QSE.png" alt="QSE.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Schematic representation of quasi statistical equilibrium on the nuclear chart. The two filled circle represent the Si (red) and Fe (blue) groups. The abundance of nuclei within each group reach NSE. The links connecting specific isotopes within each group represent the few reactions out of equilibrium, which progressively result in the depletion of the number of isotopes in the Si group in favor of those in the Fe group.</figcaption>
@@ -837,7 +840,7 @@ lecture</a>.
 <h2 id="orgbc735da"><a href="#orgbc735da">Summary of energy scaling</a></h2>
 <div class="outline-text-2" id="text-orgbc735da">
 
-<figure id="org1f80f21">
+<figure id="org1f61dc9">
 <img src="./images/Nuclear_energy_generation.png" alt="Nuclear_energy_generation.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>&epsilon;<sub>\mathrm</sub>{nuc} &equiv; &epsilon;<sub>\mathrm</sub>{nuc}(T) dependence on a log-log plot for the burning cycles that cover &ge;99% of the stellar lifetime (H and He core burning). From <a href="https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg">wikipedia</a>.</figcaption>
@@ -860,7 +863,7 @@ called "onion layer" structure of stars:
 </p>
 
 
-<figure id="org2c53c9e">
+<figure id="org3f0f743">
 <img src="./images/onion.png" alt="onion.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Layer structure for an initially 15M<sub>☉</sub> star at the end of its nuclear burning lifetime in mass coordinate from <a href="https://www.as.arizona.edu/%5Csimmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf">Renzo 2015</a>. Note the final total mass is <i>not</i> 15M<sub>☉</sub> because stars this massive lose mass through radiatively driven winds.</figcaption>
@@ -936,7 +939,7 @@ consumption of a given fuel take in a star, that is the nuclear
 timescale for a given fuel:
 </p>
 
-<div class="latex" id="org55a4c30">
+<div class="latex" id="orga5c474c">
 \begin{equation}
 \tau_\mathrm{nuc} = \varphi f_\mathrm{burn} \frac{Mc^{2}}{L_{}} \ \ .
 \end{equation}
@@ -994,7 +997,7 @@ massive stars, silicon &rarr; iron only lasts order of <i>days</i>.
 </p>
 
 
-<figure id="orgf11b789">
+<figure id="org7d34942">
 <img src="./images/durations.png" alt="durations.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>example of durations of burning phases for a few massive stars from <a href="https://www.as.arizona.edu/%5Csimmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf">Renzo 2015</a>.</figcaption>
