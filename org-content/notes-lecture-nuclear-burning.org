@@ -586,11 +586,11 @@ textbooks such as "/Introductory nuclear physics/" by K. Krane.
 
 Besides the nuclear physics details here, the important point is that
 the nuclear potential is going to be attractive at short range
-(V_\mathrm{nuc}(r\le r_{n})<0), but it has a repulsive core (that is there is a
-certain r_{nuc,core} below which V_\mathrm{nuc} becomes very large and positive),
-otherwise the nuclei would not have a finite approximately constant
-density, and goes to zero at large distances (the strong force has a
-short range).
+($V_\mathrm{nuc}(r\le r_{n})<0$), but it has a repulsive core (that is
+there is a certain $r_\mathrm{nuc,core}$ below which $V_\mathrm{nuc}$
+becomes very large and positive), otherwise the nuclei would not have
+a finite approximately constant density, and goes to zero at large
+distances (the strong force has a short range).
 
 *** Combining electromagnetic and nuclear potential
 Putting things together we can sketch the following graph for the
