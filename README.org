@@ -1,9 +1,10 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 
-[[https://www.as.arizona.edu/~mrenzo/courses/index.html][https://img.shields.io/website-up-down-green-red/http/shields.io.svg]]
-
 * Theoretical Astrophysics - Stellar Evolution
+
+
+[[https://www.as.arizona.edu/~mrenzo/courses/index.html][https://img.shields.io/website-up-down-green-red/http/shields.io.svg]]
 
 Material developed for the =AST400A= course (one semester) at the Department of
 Astronomy and Steward Observatory of the University of Arizona (Fall
@@ -24,7 +25,7 @@ annotating before I give a lecture.
 ** How to build it?
 
 The script =build.sh= is the main script to build the website. It first
-checks if the flag =all= was passed as an argument, in which case it
+checks if the flag =--all= was passed as an argument, in which case it
 will build all the =org= files, otherwise it will look for the =org=-files
 that have been modified using =git diff= and only build those.
 

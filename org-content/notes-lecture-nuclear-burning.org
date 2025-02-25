@@ -329,7 +329,7 @@ just:
 \end{equation}
 #+end_latex
 
-where the sum runs over all the possible reactions, $r_{i$} is the rate per
+where the sum runs over all the possible reactions, $r_{i}$ is the rate per
 unit time and volume of the reactions, and the division by the mass
 density $\rho$ gives the right dimensions [$\varepsilon_\mathrm{nuc}$] = [E]/([t][M]).
 
