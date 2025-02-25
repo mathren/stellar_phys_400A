@@ -659,8 +659,9 @@ particle $a$ in the potential of $X$, we can make the following ansatz:
    the form of a propagating wave with phase dependent on $(E-V(r))^{1/2}$;
  - in the classically allowed region with $r\leq r_{n}$, we assume the same
    functional form;
- - in the classically forbidden region $r_{n}<r<r_{c}$, we will have a superposition
-   of evanescent waves with exponentially decaying amplitude
+ - in the classically forbidden region $r_{n}<r<r_{c}$, we will have a
+   superposition of evanescent waves with exponentially decaying
+   amplitude
 
 
 *N.B.:* The math simplifies significantly using the WKB
