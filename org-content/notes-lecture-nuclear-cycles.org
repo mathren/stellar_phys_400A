@@ -201,7 +201,7 @@ white dwarf during a nova explosion: in those cases the temperature of the
 gas is set by the structure of the star independently of the requirement of
 thermonuclear burning! For novae explosions, the burning is not even
 hydrostatic: can have the "hot CNO" cycle, where reaction rates do /not/ need
-to wait for $\beta$-decays to occur. This is a general feature of explosive
+to wait for \beta-decays to occur. This is a general feature of explosive
 burning: in that case we don't need to wait for the slowest nuclear
 reaction in the cycle, as the high temperatures can allow to bypass Coulomb
 barriers more easily.
@@ -279,8 +279,8 @@ thermal motion is negligibly small). The $3\alpha\rightarrow^{12}\mathrm{C}$ com
 reaction is actually:
 #+begin_latex
 \begin{equation}
-$\alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma$ \\
-$^{8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star}}\rightarrow^{12}\mathrm{C}+\gamma$
+\alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma \\
+8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star}}\rightarrow^{12}\mathrm{C}+\gamma
 \end{equation}
 #+end_latex
 
