@@ -792,7 +792,7 @@ environment.
 
 We can explicit the Maxwell-Boltzmann distribution assuming that the
 nuclei are non-relativistic, since their thermal kinetic energy is of
-the order of $k_{B}_{}T \ll GeV \sim m_{u}/c^{2}$, and you can analytically verify
+the order of $k_{B}T \ll GeV \sim m_{u}/c^{2}$, and you can analytically verify
 that the product of two Maxwell-Boltzmann distribution keeps the same
 functional form by changing variables to express things in the center
 of mass frame of the $a+X$ system, yielding:
@@ -835,7 +835,7 @@ Since velocity is not a great quantity to use in QM problems, and we
 have seen above that to get nuclear reactions we do need to account
 for QM effects, we can rewrite the rate above using that for $r\rightarrow +\infty$
 the relative energy between $a$ and $X$ is purely kinetic (the
-potential goes to zero faster than $r^{-2}$ because of electron
+potential goes to zero faster than $r^{-1}$ because of electron
 screening!). Thus $v=(2E/m_{aX})^{1/2}$, and we can also use that the cross
 section $\sigma$ is proportional to the tunneling probability so $\sigma(E)\propto
 exp(-b/E^{1/2})$:
@@ -853,8 +853,8 @@ is going to peak:
 [[./images/gamow_peak.png]]
 
 The product of an exponentially decreasing Maxwell-Boltzmann
-distribution $\propto exp(-E)$ times the exponentially growing tunneling
-probability $\propto exp(-1/E^{1/2})$ will result in a very peaked integrand,
+distribution $\propto \exp(-E)$ times the exponentially growing tunneling
+probability $\propto \exp(-1/E^{1/2})$ will result in a very peaked integrand,
 the so called Gamow peak: even without nuclear resonances making the
 cross section $\sigma$ peak (because $E$ is within the width of a metastable
 energy level), the nuclear reaction rate is still very peaked around a
