@@ -305,8 +305,8 @@ of nuclei and thus nuclear resonances!
 *N.B.*: In practice $^{8}\mathrm{Be}$ is so short lived that often it is
 not included in stellar evolution simulation and what we use is a
 reaction rate for the /compound/ $3\alpha$ process with a temperature
-dependence that makes the rate non-zero only for $T\geq10^{8}$K allowing
-$\alpha+^{8}\mathrm{Be}$ to occur. This allows to not have to track the
+dependence that makes the rate non-zero only for $T\geq10^{8}$ K allowing
+for $\alpha+^{8}\mathrm{Be}$ to occur. This allows to not have to track the
 isotope of $^{8}\mathrm{Be}$ saving computational time.
 
 *** The nuclear astrophysics "holy grail": $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$
