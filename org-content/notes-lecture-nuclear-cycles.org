@@ -532,23 +532,24 @@ lecture]].
 
 * Summary of energy scaling
 
-#+CAPTION: \varepsilon_\mathrm{nuc} \equiv \varepsilon_\mathrm{nuc}(T) dependence on a log-log plot for the burning cycles that cover \ge99% of the stellar lifetime (H and He core burning). From [[https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg][wikipedia]].
+#+CAPTION: $\varepsilon_\mathrm{nuc} \equiv \varepsilon_\mathrm{nuc}(T)$ dependence on a log-log plot for the burning cycles that cover \ge99% of the stellar lifetime (H and He core burning). From [[https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg][wikipedia]].
 #+ATTR_HTML: :width 100%
 [[./images/Nuclear_energy_generation.png]]
 
-*N.B.:* The central temperature of the Sun correspond to the higher range
-where the pp chain dominates the energy production. This means that in the
-Sun we expect some CNO burning at a sub-dominant level, and indeed \nu_{e} from
-the decay of $^{13}N$ have been experimentally detected (one can recognize
-them from their spectrum), see [[https://www.nature.com/articles/s41586-020-2934-0][Borexino collaboration 2020]].
+*N.B.:* The central temperature of the Sun correspond to the higher
+range where the pp chain dominates the energy production. This means
+that in the Sun we expect some CNO burning at a sub-dominant level,
+and indeed $\nu_{e}$ from the decay of $^{13}N$ have been experimentally
+detected (one can recognize them from their spectrum), see [[https://www.nature.com/articles/s41586-020-2934-0][Borexino
+collaboration 2020]].
 
 Because of the higher and higher Coulomb barriers, the temperature
-dependence of \varepsilon_\mathrm{nuc} gets steeper for heavier nuclear fuel, so
-post-helium core burning \varepsilon_\mathrm{nuc} is more and more concentrated towards
-the center, leaving the outer layers unburned and allowing for the so
-called "onion layer" structure of stars:
+dependence of $\varepsilon_\mathrm{nuc}$ gets steeper for heavier nuclear fuel,
+so post-helium core burning $\varepsilon_\mathrm{nuc}$ is more and more
+concentrated towards the center, leaving the outer layers unburned and
+allowing for the so called "onion layer" structure of stars:
 
-#+CAPTION: Layer structure for an initially 15M_{\odot} star at the end of its nuclear burning lifetime in mass coordinate from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note the final total mass is /not/ 15M_{\odot} because stars this massive lose mass through radiatively driven winds.
+#+CAPTION: Layer structure for an initially $15M_{\odot}$ star at the end of its nuclear burning lifetime in mass coordinate from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]]. Note the final total mass is /not/ 15M_{\odot} because stars this massive lose mass through radiatively driven winds.
 #+ATTR_HTML: :width 100%
 [[./images/onion.png]]
 
@@ -564,12 +565,12 @@ the presence of burning shells, the core burning only needs to sustain
 the matter inside the shell, which slightly complicates the
 /gravothermal/ argument we have used.
 
-Each layer of heavier material requires
-a higher T to burn (to have a non-zero tunneling probability), so it
-is more centralized in mass and radius. However, moving inward \varepsilon_\mathrm{nuc}
-depends more steeply on T, which implies the dT/dr becomes steeper,
-and thus we have convection, the extent of which determines where fuel
-is depleted. At high masses (M\geq20M_{\odot}), the inner layers start
+Each layer of heavier material requires a higher $T$ to burn (to have
+a non-zero tunneling probability), so it is more centralized in mass
+and radius. However, moving inward $\varepsilon_\mathrm{nuc}$ depends more
+steeply on $T$, which implies the $dT/dr$ becomes steeper, and thus we
+have convection, the extent of which determines where fuel is
+depleted. At high masses ($M\geq20M_{\odot}$), the inner layers start
 cooling through neutrinos, which may take away enough energy to
 prevent convection from occurring (*N.B.:* convection kicks in only if
 needed to transport the energy flux).
@@ -580,6 +581,7 @@ end of their life, and whether they form a neutron star or a black
 hole, in ways that are still poorly understood (see for example
 [[https://ui.adsabs.harvard.edu/abs/2014ApJ...783...10S/abstract][Sukhbold & Woosley 2014]], [[https://ui.adsabs.harvard.edu/abs/2024arXiv240902058L/abstract][Laplace et al. 2024]]).
 
+
 * Duration of each burning phase
 
 As we have seen (cf. [[./notes-lecture-VirTheo.org][virial theorem lecture]]) stars shine as anything
@@ -589,7 +591,7 @@ potential and drives a decrease in the radius. All this happens (by
 definition) at the Kelvin-Helmholtz timescale if one assumes constant
 luminosity.
 
-However, since the virial theorem implies \langle T \rangle \propto R^{-1} as the star
+However, since the virial theorem implies $\langle T \rangle \propto R^{-1}$ as the star
 loses energy at the surface, it's average temperature must increase:
 this is often phrased by saying that self-gravitating bodies have a
 /negative heat capacity/. It is because of this temperature increase
@@ -599,9 +601,9 @@ burn, viceversa, they burn because they shine/.
 Therefore, thermonuclear burning in stars exists only to compensate
 the energy losses (to photons at the surface and to neutrinos
 throughout the volume that can emit neutrinos), and at equilibrium
-L_{nuc} \equiv L making the nuclear burning a [[./notes-lecture-nuclear-burning.org::*Energy generation as a self-regulating process][self-regulating process]].
+$L_\mathrm{nuc} \equiv L$ making the nuclear burning a [[./notes-lecture-nuclear-burning.org::*Energy generation as a self-regulating process][self-regulating process]].
 
-Under the assumption that L_{nuc} = L, we can ask how long does the
+Under the assumption that $L_\mathrm{nuc} = L$, we can ask how long does the
 consumption of a given fuel take in a star, that is the nuclear
 timescale for a given fuel:
 
@@ -611,42 +613,44 @@ timescale for a given fuel:
 \end{equation}
 #+end_latex
 
-As we saw in the [[./notes-lecture-nuclear-burning.org::*The nuclear timescale][the previous lecture]], f_{burn} is a quantity that
-requires computing full stellar evolution models (we now have all the
-equations to do so under the classic approximations, it's just a
-matter to tell a computer how to solve them!), but clearly 0 <
-f_{burn}<1. For a give star of mass M, the important factor here is \phi,
-which we can estimate from the nuclear binding energy per nucleon.
+As we saw in the [[./notes-lecture-nuclear-burning.org::*The nuclear timescale][the previous lecture]], $f_\mathrm{burn}$ is a quantity
+that requires computing full stellar evolution models (we now have all
+the equations to do so under the classic approximations, it's just a
+matter to tell a computer how to solve them!), but clearly $0 <
+f_\mathrm{burn}<1$. For a give star of mass $M$, the important factor
+here is $\phi$, which we can estimate from the nuclear binding energy per
+nucleon.
 
-Hydrogen burning into helium releases a lot of energy (26.5MeV/4 protons \sim
-6.625 MeV/nucleon) because if forms one of the most bound nuclei in nature,
-the \alpha particle (which is also a double-magic nucleus!). This large energy
-release, means a large \phi and long nuclear burning timescale. In fact,
-pretty much for any star, /hydrogen core burning covers \sim90% of the stellar
-lifetime/. This independently on whether H burning happens through the pp
-chain or CNO cycle. For this reason, while the "main sequence" is
-technically an observationally defined feature on the color-magnitude
-diagram, it is common to refer to hydrogen core burning models as "main
-sequence" models: observed stars on the observed main sequence are so
-numerous because they are in the by far longest phase of their evolution,
+Hydrogen burning into helium releases a lot of energy (26.5MeV/4
+protons \sim 6.625 MeV/nucleon) because if forms one of the most bound
+nuclei in nature, the $\alpha$ particle (which is also a double-magic
+nucleus!). This large energy release, means a large $\phi$ and long
+nuclear burning timescale. In fact, pretty much for any star, /hydrogen
+core burning covers \sim90% of the stellar lifetime/. This independently
+on whether H burning happens through the pp chain or CNO cycle. For
+this reason, while the "main sequence" is technically an
+observationally defined feature on the color-magnitude diagram, it is
+common to refer to hydrogen core burning models as "main sequence"
+models: observed stars on the observed main sequence are so numerous
+because they are in the by far longest phase of their evolution,
 during which they are burning hydrogen in their core.
 
-The burning of Helium into a mixture of carbon and oxygen is the
+The  burning of  Helium into  a mixture  of carbon  and oxygen  is the
 second most energetic burning: this is the reason why it occurs once a
-star runs out of hydrogen fuel. Again, we get a high \phi factor because
-helium fusion climbs the B/A vs. A curve, and helium core burning
-usually last 10% of the hydrogen core burning time (\phi_{He} \simeq 0.1
-\phi_{H}), so /hydrogen and helium core burning together cover 99% of the
-stellar lifetime/.
+star  runs out  of hydrogen  fuel.  Again, we  get a  high $\phi$  factor
+because helium fusion climbs the $B/A$  vs. $A$ curve, and helium core
+burning  usually   last  10%  of   the  hydrogen  core   burning  time
+($\phi_\mathrm{He}  \simeq 0.1  \phi_\mathrm{H}$),  so /hydrogen  and helium  core
+burning together cover 99% of the stellar lifetime/.
 
 All the other burning phases /collectively/ are only \leq 1% of a star
 lifetime! Although they are /crucial/ for the chemical evolution of the
 Universe, they are only a "blip" in the lifetime of the stars, because
-B/A vs. A roughly flattens (and f_{burn} also decreases): each subsequent
-fuel produces less and less energy per barion, thus the burning must
-be faster and faster to compensate for the surface losses (and L also
-typically increases). This also makes these phases more rare to
-observe and thus harder to study.
+$B/A$ vs. $A$ roughly flattens (and $f_\mathrm{burn}$ also decreases):
+each subsequent fuel produces less and less energy per barion, thus
+the burning must be faster and faster to compensate for the surface
+losses (and $L$ also typically increases). This also makes these
+phases more rare to observe and thus harder to study.
 
 For instance, the timescale for the last possible burning phase in
 massive stars, silicon \rightarrow iron only lasts order of /days/.
@@ -661,12 +665,13 @@ Lithium is a relatively rare element which has a low nuclear binding energy
 and is thus easily broken without releasing much energy. Therefore, lithium
 burning is never energetically important.
 
-*N.B.:* similarly deuterium (D=hydrogen with an extra neutron) is very
-loosely bound and its burning is not energetically important, to the point
-that both can happen in sub-stellar mass objects such as brown-dwarfs
-(where the virial theorem imposes a collapse, but \langle T \rangle is never high
-enough to generate enough energy through nuclear reaction to sustain the
-structure and their collapse is interrupted by degeneracy pressure).
+*N.B.:* similarly deuterium ($D$=hydrogen with an extra neutron) is very
+loosely bound and its burning is not energetically important, to the
+point that both can happen in sub-stellar mass objects such as
+brown-dwarfs (where the virial theorem imposes a collapse, but $\langle T \rangle$
+is never high enough to generate enough energy through nuclear
+reaction to sustain the structure and their collapse is interrupted by
+degeneracy pressure).
 
 Traces of Lithium are produced in the Big Bang nucleosynthesis, so some of
 it exists in stars at the beginning of their evolution. Because of its
