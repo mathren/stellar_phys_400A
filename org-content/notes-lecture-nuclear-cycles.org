@@ -185,7 +185,7 @@ Important things to notice:
   slowest reaction, this means that C and O are converted into
   $^{14}\mathrm{N}$ in the core of massive stars with the sum of their
   mass fractions remaining constant
-  $X(^{12}\mathrm{C})+X(^{14}\mathrm{N})+X(^{16}\mathrm{O}) = $ constant.
+  $X(^{12}\mathrm{C})+X(^{14}\mathrm{N})+X(^{16}\mathrm{O})$ =  constant.
 
 Because of the higher Coulomb barriers involved one can expect a
 steeper temperature dependence of this hydrogen burning mode, and in
