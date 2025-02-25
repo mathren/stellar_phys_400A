@@ -492,8 +492,7 @@ internal energy) are generally not exactly the total energy for the
 compound nucleus $C$.
 
 The second step is the decay of this fictional compound excited
-particle $C^{\star}$ in the products $Y$ and $b$ (Gamow actually focused
-on this second step in his 1928 work).
+particle $C^{\star}$ in the products $Y$ and $b$.
 
 In this approximation, the second step of the decay does /not/ depend on
 the first step (in other words, $C^{\star}$ loses the memory of how it
@@ -643,7 +642,7 @@ however, the beams are /not/ in thermal equilibrium. The key point is
 /laboratory nuclear physics experiment occur at much higher energies
 than nuclear reactions in stars/.
 
-*** Charged particles nuclear reaction tunneling through the Coulomb barrier
+*** Charged particles reactions tunneling through the Coulomb barrier
 The piece of puzzle that allows for charged particles nuclear
 reactions in stars is the QM /tunnel effect/, which was studied in the
 context of the $C^{\star} \rightarrow Y+b$ decay in [[https://ui.adsabs.harvard.edu/abs/1928Natur.122..805G/abstract][Gamow 1928]].
@@ -660,7 +659,7 @@ particle $a$ in the potential of $X$, we can make the following ansatz:
    the form of a propagating wave with phase dependent on $(E-V(r))^{1/2}$;
  - in the classically allowed region with $r\leq r_{n}$, we assume the same
    functional form;
- - in the classically forbidden region, we will have a superposition
+ - in the classically forbidden region $r_{n}<r<r_{c}$, we will have a superposition
    of evanescent waves with exponentially decaying amplitude
 
 
@@ -698,10 +697,6 @@ metastable state $C^{\star{}}$:
 \sigma_\mathrm{nuc} \propto \frac{1}{(E-E_\mathrm{metastable})^{2} +\left(\frac{\Delta E}{2}\right)^{2}} \ \ .
 \end{equation}
 #+end_latex
-
-where $\Delta E$ is the "width" in energy of the metastable level,
-determined by the uncertainty principle: $\Delta E \times \tau \sim h$ with $\tau$
-half-life of the metastable state and $h$ Planck's constant.
 
 Conversely, for non-resonant reactions, since the thermal energies are
 of order of 100 of eV while the nuclear scale is at \sim10MeV we can
