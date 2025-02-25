@@ -158,7 +158,7 @@ low. Another mechanism to achieve the overall reaction
 
 Therefore, for masses larger than a certain threshold, hydrogen core
 burning occurs through the CN-NO bi-cycle, where the "trick" to bypass the
-bottleneck of the weak reion in the pp chain is to use metal ions as
+bottleneck of the weak reaction in the pp chain is to use metal ions as
 catalysts for the reactions.
 
 #+CAPTION: Schematic representation of the CN-NO bi cycle.
@@ -167,7 +167,7 @@ catalysts for the reactions.
 
 Important things to notice:
 - C, N, and O are not /destroyed/ here, they just act as nuclear
-  catalyst. Protons momentarily "stick" to them, and then \alpha particles
+  catalyst. Protons momentarily "stick" to them, and then $\alpha$ particles
   are produced re-making the original C, N, and O
 - the bottleneck of the weak reactions is now bypassed by forming an
   unstable isotope of a metal and having that decay: in a sense /massive
@@ -175,19 +175,21 @@ Important things to notice:
   isolated proton+proton reaction which is hard, but within nuclei.
 - There are really two main cycles, the CN cycle and the NO (the figure
   shows also minor branching out points). The second involves oxygen, which
-  has a higher Z and slightly higher Coulomb barriers, so it kicks in at
+  has a higher $Z$ and slightly higher Coulomb barriers, so it kicks in at
   slightly higher temperatures, but typically a star going through the CN
   cycle will also do the NO cycle, and they are often referred to jointly
   as CNO cycle.
-- $^{14}\mathrm{N}$ is a stable isotope (N=Z=A/2), and the $^{14}\mathrm{N}$+p
-  reaction is the bottleneck of the bi-cycle: since at equilibrium all
-  these reactions occur at the same rate set by the slowest reaction, this
-  means that C and O are converted into $^{14}\mathrm{N}$ in the core of
-  massive stars.
+- $^{14}\mathrm{N}$ is a stable isotope ($N=Z=A/2$), and the
+  $^{14}\mathrm{N}+p$ reaction is the bottleneck of the bi-cycle: since
+  at equilibrium all these reactions occur at the same rate set by the
+  slowest reaction, this means that C and O are converted into
+  $^{14}\mathrm{N}$ in the core of massive stars with the sum of their
+  mass fractions remaining constant
+  $X(^{12}\mathrm{C})+X(^{14}\mathrm{N})+X(^{16}\mathrm{O}) = $ constant.
 
 Because of the higher Coulomb barriers involved one can expect a
 steeper temperature dependence of this hydrogen burning mode, and in
-fact one finds for the CNO cycle \varepsilon_\mathrm{nuc} \propto T^{16}.
+fact one finds for the CNO cycle $\varepsilon_\mathrm{nuc} \propto T^{16}$.
 
 This very steep energy dependence produces a very large temperature
 gradient in the core of massive stars (by releasing energy in a very
@@ -199,14 +201,13 @@ white dwarf during a nova explosion: in those cases the temperature of the
 gas is set by the structure of the star independently of the requirement of
 thermonuclear burning! For novae explosions, the burning is not even
 hydrostatic: can have the "hot CNO" cycle, where reaction rates do /not/ need
-to wait for \beta-decays to occur. This is a general feature of explosive
+to wait for $\beta$-decays to occur. This is a general feature of explosive
 burning: in that case we don't need to wait for the slowest nuclear
 reaction in the cycle, as the high temperatures can allow to bypass Coulomb
 barriers more easily.
 
 :Question:
-- *Q*: How did population III stars do this? This is the topic of the [[./honors.org::*Main sequence burning in massive population III
-  stars][honors project]]!
+- *Q*: How did population III stars do this? See also [[./honors.org::*Main sequence burning in massive population III  stars][honors project]]
 :end:
 
 *** pp \rightarrow CNO transition
@@ -214,41 +215,43 @@ barriers more easily.
 Because of the higher Coulomb barriers involved in the CNO cycle (i.e.
 the higher charge of $^{12}\mathrm{C}$), it has a more sensitive
 temperature dependence:
- - \varepsilon_{nuc, pp} \propto T^{4}
- - \varepsilon_{nuc, CNO} \propto T^{16}
+ - $\varepsilon_\mathrm{nuc, pp} \propto T^{4}$
+ - $\varepsilon_\mathrm{nuc, CNO} \propto T^{16}$
 However, the proportionality constant is larger for the pp cycle (see
-figure), therefore, for stars with lower mass M, that is lower \langle T \rangle
-by the virial theorem, hydrogen burning through the pp-chain will
-dominate. However, increasing M (and thus \langle T \rangle), at some point the
-CNO cycle takes over as dominant energy production mechanism.
+figure), therefore, for stars with lower mass $M$, that is lower $\langle T
+\rangle$ by the virial theorem, hydrogen burning through the pp-chain will
+dominate. However, increasing $M$ (and thus $\langle T \rangle$), at some point
+the CNO cycle takes over as dominant energy production mechanism.
 
-#+CAPTION: \varepsilon_\mathrm{nuc}/\rho as a function of central temperature T_{c} (bottom axis) or initial mass (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning. Dashed lines are linear fits. Modified from a figure by R. Townsend.
+#+CAPTION: $\varepsilon_\mathrm{nuc}/\rho$ as a function of central temperature $T_{c}$ (bottom axis) or initial mass $M$ (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning once equilibrium ($L\simeq L_\mathrm{nuc}$) is established. Dashed lines are linear fits. Modified from a figure by R. Townsend.
 #+ATTR_HTML: :width 75%
 [[./images/pp_vs_CNO.png]]
 
 
-Because of the steepness of the \varepsilon_{nuc, CNO} we expect that at higher
-initial total mass M the core will be /convective/ (recall that if \nabla_{rad}
-\propto \kappa L > \nabla_{ad} we expect convection), while if M is sufficiently low that
-the pp chain dominates, the core is stable against convection and
-remains radiative. This is something that is /indirectly/ confirmed by
-studying the eigenfrequencies of stars that can be observed as
-pulsational frequencies (i.e., asteroseismology), stellar lifetimes
-inferred from population analyses, etc.
+Because of the steepness of the $\varepsilon_\mathrm{_{nuc, CNO}}$ we expect that
+at higher initial total mass $M$ the core will be /convective/ (recall
+that if $\nabla_\mathrm{rad} \propto \kappa L > \nabla_\mathrm{ad}$ we expect convection),
+while if $M$ is sufficiently low that the pp chain dominates, the core
+is stable against convection and remains radiative. This is something
+that is /indirectly/ confirmed by studying the eigenfrequencies of stars
+that can be observed as pulsational frequencies (i.e.,
+asteroseismology - see also guest lecture by Prof. Conny Aerts),
+stellar lifetimes inferred from population analyses, etc.
 
-The initial mass M at which the transition happens needs to be determined
-with stellar models and is around M_{pp \rightarrow CNO} \sim 1.1-1.2M_{\odot}, where the
-imprecision comes from the systematic uncertainties in stellar models (in
-terms of input physics and algorithmic representation of the processes in
-the code, that we will discuss in more detail in the [[./notes-lecture-neutrinos.org][next lecture]]). To some
-extent, this is a physically motivated threshold to /define/ what a "massive"
-star is (for example this is typical in asteroseismology context), though
-other meaningful threshold exist: the term "massive star" is typically
+The initial mass $M$ at which the transition happens needs to be
+determined with stellar models and is around $M_{pp \rightarrow CNO} \sim
+1.1-1.2M_{\odot}$, where the imprecision comes from the systematic
+uncertainties in stellar models (in terms of input physics and
+algorithmic representation of the processes in the code, that we will
+discuss in more detail in the [[./notes-lecture-neutrinos.org][next lecture]]). To some extent, this is a
+physically motivated threshold to /define/ what a "massive" star is (for
+example this is typical in asteroseismology context), though other
+meaningful threshold exist: the term "massive star" is typically
 context dependent.
 
 ** Helium burning
 Once hydrogen fuel runs out in the core of a star (i.e., anywhere with mass
-coordinate m \le f_{burn} M_{tot}), the next fuel to burn is going to be helium.
+coordinate $m \le f_\mathrm{burn} M_\mathrm{tot}$), the next fuel to burn is going to be helium.
 First of all, this is always available since it was produced in the Big
 Bang and also /locally brewed/ by the burning of hydrogen that just ended,
 and secondly, it's the energetically second-best fuel in terms of energy
