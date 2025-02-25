@@ -737,14 +737,14 @@ energy scale in laboratory experiments).
 Once again, to put together an expression for the nuclear reaction
 rate we can start from dimensional analysis trying to combine the
 available pieces:
-- number density of reactants [n_{a}] = [n_{X}] = [L]^{-3}
-- their relative velocity [v] = [L]/[t] (which is related to their
-  relative energy at infinity E which is of the order of the thermal
+- number density of reactants [$n_{a}$] = [$n_{X}$] = [L]^{-3}
+- their relative velocity [$v$] = [L]/[t] (which is related to their
+  relative energy at infinity $E$ which is of the order of the thermal
   energy, $v\sim(2k_{B}T/m_{aX})^{1/2}$)
 - the cross section for the reaction [$\sigma$] = [L^{2}] (whose calculation
   will depend on the details of the QM problem outlined above and we
   know will depend on the relative energy of the particles, and thus
-  ultimately their relative - thermal - velocity at infinity): 4\sigma \equiv
+  ultimately their relative - thermal - velocity at infinity): $\sigma \equiv
   \sigma(v)$
 With these ingredients we can make a rate of the number of reactions
 $X(a,b)Y$ per unit time and volume with:
