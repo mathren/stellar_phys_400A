@@ -30,7 +30,7 @@ h/p \propto h/E^{1/2} \Rightarrow \lambda_{X}^{2 }\propto E^{-1}$ and thus:
 \sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
 \end{equation}
 #+end_latex
-where $S(E)$ is the so called "/astrophysical $S$-factor/" that contains the
+where $S(E)$ is the so called "/astrophysical $S$ factor/" that contains the
 intrinsic cross section that depends on the shape of the nuclear
 potential well. This can be influenced strongly by nuclear resonances
 (when $E$ \sim energy of a metastable state of $C^{\star{}}$).
@@ -61,14 +61,14 @@ leptonic number we have already written the overall reaction as:
 #+end_latex
 And we know that a fraction $\phi=0.007$ of the rest mass of the 4
 incoming protons (i.e., hydrogen positive ions) is converted into
-energy, corresponding to a total energy released is $Q_{H burn}= 26.5$
+energy, corresponding to a total energy released is $Q_\mathrm{H burn}= 26.5$
 MeV.
 
 From the overall reaction \ref{eq:overall_reaction} we know that the
 conversion of hydrogen nuclei into helium requires two weak reactions
-to explain the two $\nu_{e}$, necessary to conserve leptonic number. This
-is needed since we need to produce two positrons e^{+} to conserve the
-charge.
+to explain the two $\nu_{e}$, necessary to conserve the electron leptonic
+number. This is needed since we need to produce two positrons e^{+} to
+conserve the charge.
 
 As you may expect from the name the weak interactions are weak,
 meaning the coupling constant is small compared to the coupling
@@ -93,8 +93,12 @@ lead to the development of new neutrino physics), and chemical
 observations across astronomical sources.
 
 *N.B.:* all the reactions we will write down today can be inferred using
-the conservation law for baryonic number, leptonic number, and
-four-momentum (i.e., energy and momentum).
+the conservation law for baryonic number (=total number of baryons,
+equivalent to the conservation of mass, but mass is /not/ conserved
+since part of the rest energy is released as heat by the reactions),
+electron leptonic number ($\tau$ and $\mu$ leptons are unstable and not
+usually present in the star), and four-momentum (i.e., energy and
+momentum).
 
 ** Hydrogen burning
 
