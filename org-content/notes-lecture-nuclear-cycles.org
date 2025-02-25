@@ -310,12 +310,12 @@ for $\alpha+^{8}\mathrm{Be}$ to occur. This allows to not have to track the
 isotope of $^{8}\mathrm{Be}$ saving computational time.
 
 *** The nuclear astrophysics "holy grail": $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$
-Once some carbon is produced, a new avenue for consuming \alpha particles
+Once some carbon is produced, a new avenue for consuming $\alpha$ particles
 opens up, the (in)famous $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$ reaction.
 This still consumes \alpha, but of course requires overcoming a higher
-Coulomb barrier (\propto Z_{c}Z_{He} >Z_{He}^{2}): it becomes convenient for the star
-when \alpha particles are getting scarse towards the end of helium core
-burning.
+Coulomb barrier ($\propto Z_\mathrm{C}Z_\mathrm{He} >Z_\mathrm{He}^{2}$): it
+becomes convenient for the star when $\alpha$ particles are getting scarse
+towards the end of helium core burning.
 
 This reaction regulates the C/O ratio in stars, and ultimately in the
 Universe, clearly something of interest for biology (among other
@@ -323,7 +323,7 @@ things). However, its rate is notoriously uncertain, because of the
 possible presence of unknown resonances in the compound nucleus.
 In fact, here elements are getting sufficiently heavy that the energy
 gap between laboratory experiments and the stellar conditions grows
-and extrapolation of the astrophysical S-factor gets more and more
+and extrapolation of the astrophysical $S$ factor gets more and more
 uncertain.
 
 This reaction ultimately regulates the composition of the most common
@@ -340,24 +340,24 @@ contracts further, resulting in an increase in temperature until the
 next fuel can ignite.
 
 Because the end of helium core burning occurs through the
-$^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$ reaction, the composition of the core is now a mixture
-of carbon and oxygen (plus some primordial metals there since
-formation, which have so far been untouched by nuclear processes,
-except maybe conversion of some primordial C and O into N by the CNO
-cycle). The next fuel is thus carbon, because it has the lowest
-Coulomb barrier.
+$^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$ reaction, the composition of the core
+is now a mixture of carbon and oxygen (plus some primordial metals
+there since formation, which have so far been untouched by nuclear
+processes, except maybe conversion of some primordial C and O into N
+by the CNO cycle). The next fuel is thus carbon, because it has the
+lowest Coulomb barrier.
 
 *N.B.:* Recall that not all stars need to do all burning phases
-possible: if electron degeneracy kicks in before T_{center} is high
-enough to start reactions, the gravothermal collapse imposed by the
-virial theorem interrupts because of the EOS. Since we also know from
-the virial theorem that \langle T \rangle \propto M, we know that lower mass stars are
-on average cooler and will stop burning earlier.
+possible: if electron degeneracy kicks in before $T_\mathrm{center}$
+is high enough to start reactions, the gravothermal collapse imposed
+by the virial theorem interrupts because of the EOS. Since we also
+know from the virial theorem that $\langle T \rangle \propto M$, we know that lower mass
+stars are on average cooler and will stop burning earlier.
 
 *** Carbon burning
 The carbon+carbon reaction can have several branching ratios with
-positive Q values (thus exo-energetic and of interest for the star to
-sustain itself):
+positive $Q$ values (thus exo-energetic and of interest for the star
+to sustain itself):
 
 #+begin_latex
 $^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{24}\mathrm{Mg}+\gamma$ (Q\sim13.93MeV)\\
@@ -366,60 +366,65 @@ $^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{23}\mathrm{Na}+p$ (Q\sim2.238MeV)\
 \cdots
 #+end_latex
 
-These require T\geq10^{8.5} K, and produce a mixture of Neon, Magnesium (*N.B.:*
-an \alpha-nucleus!) and Sodium.
+These require $T\geq10^{8.5}$ K, and produce a mixture of Neon, Magnesium
+(*N.B.:* an $\alpha$ nucleus that can be thought of as 6 $\alpha$ particles bound
+together!) and Sodium.
 
-*N.B.*: the \alpha particle released by the second reaction listed, and the proton
- released by the third will immediately start reacting with the other
- particles present at the temperatures necessary for
- $^{12}\mathrm{C}+^{12}\mathrm{C}$ to be activated. Actually at these T, the
- reactions rates for reactions involving these light particles are going to
- be extremely high!
-
+*N.B.*: the $\alpha$ particle released by the second reaction listed, and the
+ proton released by the third will immediately start reacting with the
+ other particles present at the temperatures necessary for
+ $^{12}\mathrm{C}+^{12}\mathrm{C}$ to be activated. Actually at these $T$,
+ the reactions rates for reactions involving these light particles are
+ going to be extremely high!
 
 *** Neon ignition and nuclear "magic numbers"
 Because of carbon burning, a significant amount of neon is produced.
-Although neon has A=20 and Z=10 so it is heavier and more charged than
-oxygen (produced by the end of helium core burning and still untouched
-by carbon burning at this point), it will ignite before.
+Although neon has $A=20$ and $Z=10$ so it is heavier and more charged
+than oxygen with $A=16$ and $Z=8$ (produced by the end of helium core
+burning and still untouched by carbon burning at this point), it will
+ignite before.
 
-The reason has to do with a nuclear physics property: one can make a direct
-analogy between nuclei and atoms, and like atoms of "noble gases" which
-have electrons in all their shells are very stable and don't like to do
-chemical interactions with other atoms/molecules, nuclei with nucleons
-filling all their shells are also particularly stable. This gives the
-nuclear "magic numbers" of nucleons that are particularly stable: Z or N =
-2, 8, 20, 28, 52 (and there are higher numbers theoretically predicted from
-nuclear structure calculations).
+The reason has to do with a nuclear physics property: one can make a
+direct analogy between nuclei and atoms, and like atoms of "noble
+gases" which have electrons in all their shells are very stable and
+don't like to do chemical interactions with other atoms/molecules,
+nuclei with nucleons filling all their shells are also particularly
+stable. This gives the nuclear "magic numbers" of nucleons that are
+particularly stable: $Z$ or $N = 2, 8, 20, 28, 52$ (and there are
+higher numbers theoretically predicted from nuclear structure
+calculations).
 
-$^{16}\mathrm{O}$ has Z=8 and N=8, so it is a "double magic nucleus", that from
-the nuclear interaction perspective is like a noble gas from the
-chemical perspective: it is extremely stable and does not want to
-interact.
+$^{16}\mathrm{O}$ has $Z=8$ and $N=A-Z=8$, so it is a "double magic
+nucleus", that from the nuclear interaction perspective is like a
+noble gas from the chemical perspective: it is extremely stable and
+does not want to interact.
 
-*N.B.:* \alpha particles have Z=N=2 and are also a "double magic" nucleus,
-and in fact they have an extremely high binding energy per nucleon!
-$^{16}\mathrm{O}$ is the second-lightest double magic nucleus.
+*N.B.:* $\alpha$ particles have $Z=N=2$ and are also a "double magic"
+nucleus, and in fact they have an extremely high binding energy per
+nucleon! $^{16}\mathrm{O}$ is the second-lightest double magic nucleus.
 
-Therefore, the gravothermal collapse reaches temperatures sufficient to
-/photodisintegrate/ the heavier (but not magic) nucleus of $^{20}\mathrm{Ne}$
-before oxygen burns: photodisintegration reactions are in fact not affected
-by the Coulomb barriers. This photodisintegration produce \alpha particles and
-protons that stick to the existing nuclei changing the composition
-typically increasing the mass fractions of \alpha-nuclei ($^{16}^{}\mathrm{O}$ and
-$^{24}\mathrm{Mg}$, primarily). While unimportant for the energy generation,
-secondary reactions producing $^{22}\mathrm{Ne}$ can be important for the
-synthesis of elements heavier than iron through the s-process.
+Therefore, the gravothermal collapse reaches temperatures sufficient
+to /photodisintegrate/ the heavier (but not magic) nucleus of
+$^{20}\mathrm{Ne}$ before oxygen burns: photodisintegration reactions are
+in fact not affected by the Coulomb barriers. This photodisintegration
+produce $\alpha$ particles and protons that stick to the existing nuclei
+changing the composition typically increasing the mass fractions of
+$\alpha$ nuclei ($^{16}^{}\mathrm{O}$ and $^{24}\mathrm{Mg}$, primarily). While
+unimportant for the energy generation, secondary reactions producing
+$^{22}\mathrm{Ne}$ can be important for the synthesis of elements heavier
+than iron through the s-process.
 
-However, the fact that the photodisintegration of neon is easy relative to
-oxygen ignition is a direct consequence that the nucleus of neon is not
-very bound (compared to oxygen, or carbon) and its burning does not release
-very much energy, resulting in a brief phase of stellar evolution only.
+However, the fact that the photodisintegration of neon is easy
+relative to oxygen ignition is a direct consequence that the nucleus
+of neon is not very bound (compared to oxygen, or carbon) and its
+burning does not release very much energy, resulting in a brief phase
+of stellar evolution only.
 
 *** Oxygen
 As T further increases because of the gravothermal collapse the oxygen
-finally ignites. The dominant reaction has multiple branching ratios with
-positive Q value that produce sulfur and silicon primarily:
+finally ignites. The dominant reaction has multiple branching ratios
+with positive $Q$ value that produce sulfur and silicon primarily (two
+other $\alpha$ nuclei!):
 
 #+begin_latex
 $^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{32}\mathrm{S}+\gamma$ (Q\sim16.53MeV)\\
@@ -448,27 +453,33 @@ The next burning phase is typically referred to as "silicon burning",
 although it physically proceeds in a slightly different fashion than
 all the burning phases we have seen so far.
 
-It typically requires T\sim2-5\times10^{9} K and densities \rho\sim10^{7}-10^{10} g cm^{-3} and only
-lasts order of \tau_{nuc, Si}\sim days-weeks since the energy release per nucleon
-is /only/ 0.1MeV/nucleon (cf. \sim Q_{H-burn}/4\simeq6.6 MeV/nucleon for H
-burning!).
+It typically requires $T\sim2-5\times10^{9}$ K and densities $\rho\sim10^{7}-10^{10$} g cm^{-3}
+and only lasts order of $\tau_\mathrm{nuc, Si}$ \sim days-weeks since the
+energy release per nucleon is /only/ $0.1$ MeV/nucleon (cf. \sim
+$Q_\mathrm{H-burn}$/4\simeq6.6 MeV/nucleon for H burning!).
 
 At such temperatures, we reach a "quasi statistical equilibrium"
 between nuclei: the silicon, sulfur, and other elements (referred to
-as "silicon group elements" with A\sim28 and Z\sim14) are photodisintegrated
-and re-created at very high and nearly canceling rates:
+as "silicon group elements" with $A\sim28$ and $Z\sim14$) are
+photodisintegrated and re-created at very high and nearly canceling
+rates:
 
 #+begin_latex
-$\gamma + ^{A}Z \rightarrow ^{A'}Z' +{p,n,\alpha}$
+\begin{equation}
+\gamma + ^{A}Z \rightarrow ^{A'}Z' +{p,n,\alpha}
+\end{equation}
 #+end_latex
 
 This produces also a variety of light particles (protons, neutrons,
-and \alpha particles), which can be captured on the silicon group elements
-to form heavier "iron group nuclei" (which are also photodisintegrated
-and recreated constantly):
+and $\alpha$ particles), which can be captured on the silicon group
+elements to form heavier "iron group nuclei" (which are also
+photodisintegrated and recreated constantly):
 
 #+begin_latex
-$\{p, n,\alpha\} + \{ ^{A}Z,^{A'}Z' \} \rightarrow \{ \mathrm{Fe \ group \ nuclei} \} + \dots$
+\begin{equation}
+\{p, n,\alpha\} + \{ ^{A}Z,^{A'}Z' \} \rightarrow \{ \mathrm{Fe \ group \ nuclei} \} +
+\dots
+\end{equation}
 #+end_latex
 
 Moreover, many $^{A'}Z'$ nuclei produced by photo-disintegrations and
