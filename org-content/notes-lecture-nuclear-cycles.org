@@ -298,10 +298,10 @@ T_\mathrm{center,\odot}\simeq10^{7} \sim T_\mathrm{H\ burn}$.
 
 The insight of F. Hoyle was that this would happen, and for this to
 happen there /needs/ to be an excited (actually doubly-excited) state of
-carbon 12 which was theoretically predicted from the astrophysical
-evidence that carbon is the next most abundant element after H and He:
-stellar observations were used to correctly predict excited states
-of nuclei and thus nuclear resonances!
+$^{12}\mathrm{C}$ with $\ell=0$ which was theoretically predicted from the
+astrophysical evidence that carbon is the next most abundant element
+after H and He: stellar observations were used to correctly predict
+excited states of nuclei and thus nuclear resonances!
 
 *N.B.*: In practice $^{8}\mathrm{Be}$ is so short lived that often it is
 not included in stellar evolution simulation and what we use is a
@@ -419,7 +419,7 @@ However, the fact that the photodisintegration of neon is easy
 relative to oxygen ignition is a direct consequence that the nucleus
 of neon is not very bound (compared to oxygen, or carbon) and its
 burning does not release very much energy, resulting in a brief phase
-of stellar evolution only.
+of stellar evolution only (but numerically challenging to simulate!).
 
 *** Oxygen
 As T further increases because of the gravothermal collapse the oxygen
