@@ -65,7 +65,7 @@ incoming protons (i.e., hydrogen positive ions) is converted into
 energy, corresponding to a total energy released is $Q_\mathrm{H\ burn}= 26.5$
 MeV.
 
-From the overall reaction \ref{eq:overall_reaction} we know that the
+From the overall reaction (\ref{eq:overall_reaction}) we know that the
 conversion of hydrogen nuclei into helium requires two weak reactions
 to explain the two $\nu_{e}$, necessary to conserve the electron leptonic
 number. This is needed since we need to produce two positrons e^{+} to
@@ -77,7 +77,7 @@ constant for the strong force and electromagnetic force: /weak
 interactions are the bottleneck for nuclear burning in stars/.
 
 Moreover, since the nucleus of helium (i.e., $\alpha$ particle) is made of
-4 nucleons (2$p$ and 2$n$), the reaction \ref{eq:overall_reaction}
+4 nucleons (2$p$ and 2$n$), the reaction (\ref{eq:overall_reaction})
 seems to require the encounter of 4 protons (i.e., hydrogen ions) in
 one point in space (within $r_\mathrm{nuc}\sim 10^{-13}$ cm) and with the
 right relative energies. The statistical probability of this is
@@ -87,7 +87,7 @@ worked out the way this could actually happen.
 
 The solution to the prohibitively small probability that nature finds
 in stars is to go through intermediate steps instead of doing the
-reaction \ref{eq:overall_reaction} in one single step, in other words,
+reaction (\ref{eq:overall_reaction}) in one single step, in other words,
 to use /thermonuclear reaction chains/.This theorized solution has been
 directly confirmed through solar neutrino observations (which also
 lead to the development of new neutrino physics), and chemical
@@ -119,14 +119,14 @@ Important thing to notice:
   resonances in the daughter nuclei $C^{\star}$ which are $^{7}\mathrm{Be}$,
   $^{7}\mathrm{Li}$, and $^{8}\mathrm{B}$ respectively here.
 - the overall reaction produces two neutrinos $\nu_{e}$, as expected from the
-  overall reaction \ref{eq:overall_reaction} (*N.B.*: the top two reactions
+  overall reaction (\ref{eq:overall_reaction}) (*N.B.*: the top two reactions
   have to happen twice in the pp1 chain to allow for two
   $^{3}\mathrm{He}$, thus two $\nu_{e}$ will be produced per each
   $^{4}\mathrm{He}$ as expected).
 - the first reaction, the weak reaction producing Deuterium ($D$) is the
   main bottleneck, which can also be understood in terms of the
   nuclear physics: it requires the interaction of two protons ($A=1 \Rightarrow
-  r_{nuc} = r_{0} = 1.5\times10^{-13}$ cm) with a Coulomb barrier.
+  r_{nuc} = r_{0} = 1.\times10^{-13}$ cm) with a Coulomb barrier.
 - the $\gamma$ particle produced in certain reactions (i.e., photons needed
   for the conservation of the four-momentum, which are $\gamma$ rays
   because of the 1-10 MeV energy scale of nuclear interactions) will
@@ -142,7 +142,7 @@ Important thing to notice:
   gradient and the mixing!
 - note from the pp1 cycle we get two 2 protons out at the end as well
   (but 6 went in, 4 went into the $\alpha$ particle as expected in the overall
-  reaction \ref{eq:overall_reaction}).
+  reaction (\ref{eq:overall_reaction})).
 
 Fitting the temperature dependence for the overall cycle one obtains
 $\varepsilon_\mathrm{nuc} \propto \langle \sigma(v)v \rangle \propto T^{4}$. This is a fairly
@@ -155,7 +155,7 @@ star $L\propto M^{x}\mu^{4}$ with $x \equiv x(M)\ge0$), the bottleneck reaction
 $p+p\rightarrow D+e^{+} +\nu_{e}$ prevents the stars from reaching the equilibrium
 condition $L=L_\mathrm{nuc}$ through the pp chain: its rate is too
 low. Another mechanism to achieve the overall reaction
-\ref{eq:overall_reaction} is needed.
+(\ref{eq:overall_reaction}) is needed.
 
 Therefore, for masses larger than a certain threshold, hydrogen core
 burning occurs through the CN-NO bi-cycle, where the "trick" to bypass the
