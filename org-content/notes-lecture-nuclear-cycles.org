@@ -24,7 +24,7 @@ where the first term is akin to a geometric cross section using the de
 Broglie wavelength of the target nucleus $X$. The product of the two
 terms in curly brackets appears because of Bohr's approximation (so
 that the two probabilities are independent of each other). Since $\lambda_{X} =
-h/p \propto h/E^{1/2}$ (for non-relativistic ions) \Rightarrow \lambda_{X}^{2 }\propto E^{-1}$ and thus:
+h/p \propto h/E^{1/2}$ (for non-relativistic ions) $\Rightarrow \lambda_{X}^{2 }\propto E^{-1}$ and thus:
 #+begin_latex
 \begin{equation}\label{eq:heuristic_summary}
 \sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
