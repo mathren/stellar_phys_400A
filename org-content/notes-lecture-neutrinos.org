@@ -231,16 +231,14 @@ the quantum field theory calculation of the cross section), the
 particles that are not "free legs" are mediators and not real
 particles, do not over-interpret these diagrams as physical pictures!
 
-*N.B.:* The thermal energy is of order $k_{B}T\leq MeV$, so we expect
-thermal neutrinos to have lower energies than nuclear neutrinos.
-
 Neutrino cooling processes are mostly sensitive to the core density \rho.
 The typical energy carried away per neutrino-antineutrino pair is of
-the order of the thermal energy of the electrons (i.e., their Fermi
-energy if the region from where the neutrinos are emitted is partially
-degenerate).
+the order of the thermal energy of the electrons (i.e.,$\sim k_{B}T$ or
+their Fermi energy if the region from where the neutrinos are emitted
+is partially degenerate). Thus typically thermal neutrinos will have
+lower energies than the nuclear neutrinos.
 
-Lke \kappa and \varepsilon_{nuc}, the energy losses to thermal neutrinos are usually
+Like \kappa and \varepsilon_{nuc}, the energy losses to thermal neutrinos are usually
 tabulated in stellar physics codes (see especially the widely used
 [[https://ui.adsabs.harvard.edu/abs/1996ApJS..102..411I/abstract][Itoh et al. 1996]]), and the figure below shows the |\varepsilon_{\nu}|
 \equiv |\varepsilon_{\nu}|(T,\rho) resulting from these tables:
