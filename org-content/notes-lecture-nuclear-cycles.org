@@ -281,7 +281,7 @@ reaction is actually:
 #+begin_latex
 \begin{equation}
 \alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma \\
-^{8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star}}\rightarrow^{12}\mathrm{C}+\gamma
+^{8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star\star}}\rightarrow^{12}\mathrm{C}+\gamma
 \end{equation}
 #+end_latex
 
