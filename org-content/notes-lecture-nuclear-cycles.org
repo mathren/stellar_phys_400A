@@ -603,7 +603,10 @@ burn, viceversa, they burn because they shine/.
 Therefore, thermonuclear burning in stars exists only to compensate
 the energy losses (to photons at the surface and to neutrinos
 throughout the volume that can emit neutrinos), and at equilibrium
-$L_\mathrm{nuc} \equiv L$ making the nuclear burning a [[./notes-lecture-nuclear-burning.org::*Energy generation as a self-regulating process][self-regulating process]].
+$L_\mathrm{nuc} \equiv L$ making the nuclear burning a [[./notes-lecture-nuclear-burning.org::*Energy generation as a self-regulating process][self-regulating
+process]] where it is $L$ (the energy loss rate) that determines
+$L_\mathrm{nuc}$ (the energy generation rate), and /not/ the other way
+around.
 
 Under the assumption that $L_\mathrm{nuc} = L$, we can ask how long does the
 consumption of a given fuel take in a star, that is the nuclear
