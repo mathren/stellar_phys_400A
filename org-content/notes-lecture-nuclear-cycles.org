@@ -9,7 +9,7 @@ book Chapter 9 and 18, Cox & Giuli vol. I, Chapter 17.7, Clayton,
 Chapter 5, [[https://journals.aps.org/pr/abstract/10.1103/PhysRev.55.434][Bethe 1939]]
 
 * Nuclear burning cycles
-** Heuristic summary and $S$-factor
+** Heuristic summary and $S$ factor
 In the [[./notes-lecture-nuclear-burning.org][previous lecture]] we have developed some idea of the physics
 involved in thermonuclear reactions. We can have a heuristic
 derivation of the main results we obtained for a generic charged
@@ -78,7 +78,7 @@ interactions are the bottleneck for nuclear burning in stars/.
 Moreover, since the nucleus of helium (i.e., $\alpha$ particle) is made of
 4 nucleons (2$p$ and 2$n$), the reaction \ref{eq:overall_reaction}
 seems to require the encounter of 4 protons (i.e., hydrogen ions) in
-one point in space (within $r_\mathrm{nuc}\sim 10^{-13$} cm) and with the
+one point in space (within $r_\mathrm{nuc}\sim 10^{-13}$ cm) and with the
 right relative energies. The statistical probability of this is
 vanishingly small, and that /cannot/ be how the process works in nature,
 the rate would effectively be zero. [[https://en.wikipedia.org/wiki/Hans_Bethe][Hans Bethe]] was the person who
