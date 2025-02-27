@@ -121,7 +121,9 @@ sequence (both in the pp chain and CNO) to convert some protons into
 neutrons for the helium nuclei. On the scale of r_{nuc}, the neutrino
 crossing time (that is the light crossing time) is so short that we
 can neglect neutrino oscillations and assume conservation of leptonic
-number to write down the equations.
+number (for each flavor, but a star will make mostly electron-flavor
+leptons, since muons and $\tau$ leptons are short lived) to write down
+the equations.
 
 These neutrinos do carry away energy as described above, /but/ that is
 just some of the energy that the exo-energetic thermonuclear reaction
