@@ -149,11 +149,12 @@ nuclear reaction goes the same way as the money in the casino!):
 #+end_latex
 
 which produce one neutrino and one anti-neutrino without changing the
-composition of the star. This requires that the nucleus $^{A}(Z-1)$ is
-unstable to \beta^{-}-decay and the cross section for electron capture on
-$^AZ$ is non-negligible, which can happen during Si core burning and
-the subsequent gravitational collapse of the core once the nuclear
-fuel runs out.
+composition of the star because of an electron capture followed by a
+\beta^{+} decay. This requires that the nucleus $^{A}(Z-1)$ is unstable to
+\beta^{-}-decay and the cross section for electron capture on $^AZ$ is
+non-negligible, which can happen during Si core burning and the
+subsequent gravitational collapse of the core once the nuclear fuel
+runs out.
 
 The nuclear neutrinos are mostly sensitive to the core temperature for
 the activation of certain thermonuclear reaction chains (except for

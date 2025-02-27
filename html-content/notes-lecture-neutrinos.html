@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-27 Thu 10:39 -->
+<!-- 2025-02-27 Thu 10:42 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Neutrinos &amp; computational stellar evolution</title>
@@ -133,7 +133,7 @@ connects stellar physics with neutrino physics: &epsilon;<sub>&nu;.</sub>
 <div id="outline-container-orgbb848d0" class="outline-4">
 <h4 id="orgbb848d0"><a href="#orgbb848d0">Mass conservation</a></h4>
 <div class="outline-text-4" id="text-orgbb848d0">
-<div class="latex" id="org3378949">
+<div class="latex" id="org554ca76">
 \begin{equation}\label{eq:mass_cont}
 \frac{dr}{dm} = \frac{1}{4\pi r^{2}\rho}\ \ .
 \end{equation}
@@ -145,7 +145,7 @@ connects stellar physics with neutrino physics: &epsilon;<sub>&nu;.</sub>
 <div id="outline-container-org7794fa6" class="outline-4">
 <h4 id="org7794fa6"><a href="#org7794fa6">Hydrostatic equilibrium</a></h4>
 <div class="outline-text-4" id="text-org7794fa6">
-<div class="latex" id="orgdeb5170">
+<div class="latex" id="org2667510">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
 \end{equation}
@@ -162,7 +162,7 @@ relaxed to add an extra term in this equation analogous to ma in F=ma.
 <div id="outline-container-org241638f" class="outline-4">
 <h4 id="org241638f"><a href="#org241638f">Equation of state</a></h4>
 <div class="outline-text-4" id="text-org241638f">
-<div class="latex" id="orgd892230">
+<div class="latex" id="org2c0988c">
 \begin{equation}
 P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T + P_{QM} + \frac{1}{3}aT^{4}  \ \ .
 \end{equation}
@@ -174,7 +174,7 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 <div id="outline-container-org66bcbae" class="outline-4">
 <h4 id="org66bcbae"><a href="#org66bcbae">Energy transport</a></h4>
 <div class="outline-text-4" id="text-org66bcbae">
-<div class="latex" id="org7125db2">
+<div class="latex" id="org1fbd3d5">
 \begin{equation}
 \frac{dT}{dm} = \frac{T}{P}\frac{dP}{dm}\nabla
 \end{equation}
@@ -184,7 +184,7 @@ P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T 
 where &nabla; =&part; log(T)/&part; log(P) is the local temperature gradient, equal to
 the radiative gradient in stably stratified regions:
 </p>
-<div class="latex" id="orgb6a9975">
+<div class="latex" id="orgec0d565">
 \begin{equation}
 \nabla \equiv \nabla_\mathrm{rad} = \frac{3 P}{14\pi acGm T^{4}}\kappa L
 \end{equation}
@@ -203,7 +203,7 @@ precision) for convective regions. We also have a criterion
 <div id="outline-container-orgcec715d" class="outline-4">
 <h4 id="orgcec715d"><a href="#orgcec715d">Energy conservation</a></h4>
 <div class="outline-text-4" id="text-orgcec715d">
-<div class="latex" id="org1d5f869">
+<div class="latex" id="orgf24a0bf">
 \begin{equation}
 \frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
 \end{equation}
@@ -220,7 +220,7 @@ with &epsilon;<sub>grav</sub> = T&part; s/&part; t the change in internal energy
 <div id="outline-container-org599b654" class="outline-4">
 <h4 id="org599b654"><a href="#org599b654">Composition evolution</a></h4>
 <div class="outline-text-4" id="text-org599b654">
-<div class="latex" id="org74bc15c">
+<div class="latex" id="orgc5067e4">
 \begin{equation}
 \frac{dX_{i}}{dt} = A_{i}\frac{m_{u}}{\rho}\left(\sum_{k,l} r_{k,l} - \sum_{i,j} (1+\delta_{ij})r_{ij}\right) + D_\mathrm{mix}\frac{dX_{i}}{dr} \equiv \frac{dX_{i}}{dt}(T,\rho, {X_{j}}) \ \ ,
 \end{equation}
@@ -318,7 +318,7 @@ neutrinos from the so-called <i>URCA processes</i> (named after a casino in
 Rio de Janeiro because when these processes kick in the energy of the
 nuclear reaction goes the same way as the money in the casino!):
 </p>
-<div class="latex" id="org3c1c9a6">
+<div class="latex" id="org585c279">
 \begin{equation}
  ^{A}Z+e^{-}\rightarrow^{A}(Z-1) + \nu_{e  }\\
  ^{A}(Z-1)\rightarrow ^{A}Z+ e^{+} +\bar{\nu_{e}}
@@ -328,11 +328,12 @@ nuclear reaction goes the same way as the money in the casino!):
 
 <p>
 which produce one neutrino and one anti-neutrino without changing the
-composition of the star. This requires that the nucleus \(^{A}(Z-1)\) is
-unstable to &beta;<sup>-</sup>-decay and the cross section for electron capture on
-\(^AZ\) is non-negligible, which can happen during Si core burning and
-the subsequent gravitational collapse of the core once the nuclear
-fuel runs out.
+composition of the star because of an electron capture followed by a
+&beta;<sup>+</sup> decay. This requires that the nucleus \(^{A}(Z-1)\) is unstable to
+&beta;<sup>-</sup>-decay and the cross section for electron capture on \(^AZ\) is
+non-negligible, which can happen during Si core burning and the
+subsequent gravitational collapse of the core once the nuclear fuel
+runs out.
 </p>
 
 <p>
@@ -358,7 +359,7 @@ layer: <i>evolved massive stars are neutrino stars</i> L<sub>&nu;</sub>
 </p>
 
 
-<figure id="org96bf12a">
+<figure id="orgc8d0209">
 <img src="./images/neutrino_HRD.png" alt="neutrino_HRD.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Left: evolutionary tracks on a photon HR diagram. Right: corresponding evolutionary tracks on a "neutrino" HR diagram. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...893..133F/abstract">Farag et al. 2020</a>. Note the y-axis scale in both panels.</figcaption>
@@ -417,7 +418,7 @@ typically e):
 </ul>
 
 
-<figure id="org2709e37">
+<figure id="orga2771c7">
 <img src="./images/feynman_diagram_neutrinos.png" alt="feynman_diagram_neutrinos.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Feynman diagrams for the dominant neutrino cooling processes. The top row shows the photo-emission processes, the middle row shows the e± annihilation processes, the bottom row shows the plasmon processes. The neutral (charged) current ractions are in the left (right) column. This is Figure 1 from <a href="https://ui.adsabs.harvard.edu/abs/1993ApJ...411..813A/abstract">Aufderheide 1993</a>, and Z and W represent the boson that mediate weak interactions: the left column shows interactions mediated by the neutral boson Z, while the right column shows interactions mediated by the charged boson W<sup>&plusmn;</sup>.</figcaption>
@@ -453,7 +454,7 @@ tabulated in stellar physics codes (see especially the widely used
 </p>
 
 
-<figure id="org356d0cc">
+<figure id="org7ceeb26">
 <img src="./images/Trho_neutrinos.png" alt="Trho_neutrinos.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Neutrino energy losses on the T(&rho;) plane. White lines mark the separation between regions where different neutrino emission processes dominate, the colored lines mark the T(&rho;) tracks of helium cores of the labeled masses (in M<sub>☉</sub> units) computed with MESA. Credits: R. Farmer.</figcaption>
@@ -761,7 +762,7 @@ advantages and disadvantages. The simplest is a first-order forward
 discretization of the form:
 </p>
 
-<div class="latex" id="org6089fdd">
+<div class="latex" id="org147500a">
 \begin{equation}
 \frac{df}{dx} \rightarrow \frac{f(x_{k+1})-f(x_{k})}{x_{k+1}-x_{k}} \ \ ,
 \end{equation}
@@ -794,7 +795,7 @@ this!
 </p>
 
 
-<figure id="orgf047a95">
+<figure id="org3c7cdce">
 <img src="./images/mesh.png" alt="mesh.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Schematic representation of the spatial mesh in MESA. Intensive quantities (T, &rho;, P) that do not depend on the amount matter are defined at the cell "center", while extensive quantities (m, L) are defined at the cell "boundaries". This is Figure 9 in <a href="https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract">Paxton et al. 2011</a>.</figcaption>
@@ -804,7 +805,7 @@ this!
 By discretizing the ODEs we can rewrite them as algebraic equations:
 </p>
 
-<div class="latex" id="org31ea394">
+<div class="latex" id="org838b451">
 \begin{equation}
 \frac{dm}{dr}=4\pi r^2\rho   \Leftrightarrow   \ln(r_k) = \frac{1}{3}\ln\left( r_{k+1}^{3} +\frac{3}{4\pi}\frac{dm_k}{\rho_k}\right)
 \end{equation}
@@ -857,7 +858,7 @@ solving a matrix equation:
 </p>
 
 
-<figure id="orgc13edd9">
+<figure id="org8847479">
 <img src="./images/matrix_mesa.png" alt="matrix_mesa.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Section of an example of the matrix to solve. Black dots are non-zero entries, meaning the variables are coupled by an equation. Vertical dashed lines denote blocks of the matrix for cell <code>k-1</code>, <code>k</code>, and <code>k+1</code> respectively, red dotted lines separate structural variables and compositional variables. This is Fig. 47 of <a href="https://ui.adsabs.harvard.edu/abs/2013ApJS..208....4P/abstract">Paxton et al. 2013</a>.</figcaption>
@@ -900,7 +901,7 @@ create a better second guess:
 </p>
 
 
-<figure id="org609c1b1">
+<figure id="org9ace7da">
 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/NewtonIteration_Ani.gif" alt="NewtonIteration_Ani.gif" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Animation of the Newton-Raphson method to find the zero of a function y=f(x) in one dimension through tangent approximations (from <a href="https://en.wikipedia.org/wiki/Newton's_method">Wikipedia</a>).</figcaption>
