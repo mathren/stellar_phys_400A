@@ -641,7 +641,7 @@ second most energetic burning: this is the reason why it occurs once a
 star  runs out  of hydrogen  fuel.  Again, we  get a  high $\phi$  factor
 because helium fusion climbs the $B/A$  vs. $A$ curve, and helium core
 burning  usually   last  10%  of   the  hydrogen  core   burning  time
-($\phi_\mathrm{He}  \simeq 0.1  \phi_\mathrm{H}$),  so /hydrogen  and helium  core
+($\varphi_\mathrm{He}  \simeq 0.1 \varphi_\mathrm{H}$),  so /hydrogen  and helium  core
 burning together cover 99% of the stellar lifetime/.
 
 All the other burning phases /collectively/ are only \leq 1% of a star
@@ -666,7 +666,7 @@ Lithium is a relatively rare element which has a low nuclear binding energy
 and is thus easily broken without releasing much energy. Therefore, lithium
 burning is never energetically important.
 
-*N.B.:* similarly deuterium ($D$=hydrogen with an extra neutron) is very
+*N.B.:* similarly deuterium ($D$ = hydrogen with an extra neutron) is very
 loosely bound and its burning is not energetically important, to the
 point that both can happen in sub-stellar mass objects such as
 brown-dwarfs (where the virial theorem imposes a collapse, but $\langle T \rangle$
