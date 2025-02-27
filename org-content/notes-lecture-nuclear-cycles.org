@@ -126,7 +126,7 @@ Important thing to notice:
 - the first reaction, the weak reaction producing Deuterium ($D$) is the
   main bottleneck, which can also be understood in terms of the
   nuclear physics: it requires the interaction of two protons ($A=1 \Rightarrow
-  r_{nuc} = r_{0} = 1.\times10^{-13}$ cm) with a Coulomb barrier.
+  r_\mathrm{nuc} = r_{0} = 1.\times10^{-13}$ cm) with a Coulomb barrier.
 - the $\gamma$ particle produced in certain reactions (i.e., photons needed
   for the conservation of the four-momentum, which are $\gamma$ rays
   because of the 1-10 MeV energy scale of nuclear interactions) will
@@ -162,7 +162,7 @@ burning occurs through the CN-NO bi-cycle, where the "trick" to bypass the
 bottleneck of the weak reaction in the pp chain is to use metal ions as
 catalysts for the reactions.
 
-#+CAPTION: Schematic representation of the CN-NO bi cycle.
+#+CAPTION: Schematic representation of the CN-NO bi cycle. The branches on the left of the figure are secondary channels less relevant for the energy release (smaller rates \Rightarrow smaller contribution to $\varepsilon_\mathrm{nuc}$).
 [[./images/CN-NO.png]]
 
 
