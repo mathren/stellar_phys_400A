@@ -620,7 +620,7 @@ timescale for a given fuel:
 
 As we saw in the [[./notes-lecture-nuclear-burning.org::*The nuclear timescale][the previous lecture]], $f_\mathrm{burn}$ is a quantity
 that requires computing full stellar evolution models (we now have all
-the equations to do so under the classic approximations, it's just a
+the equations to do so under typical assumptions, it's just a
 matter to tell a computer how to solve them!), but clearly $0 <
 f_\mathrm{burn}<1$. For a give star of mass $M$, the important factor
 here is $\phi$, which we can estimate from the nuclear binding energy per
