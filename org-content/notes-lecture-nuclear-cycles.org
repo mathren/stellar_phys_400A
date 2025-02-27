@@ -224,7 +224,7 @@ figure), therefore, for stars with lower mass $M$, that is lower $\langle T
 dominate. However, increasing $M$ (and thus $\langle T \rangle$), at some point
 the CNO cycle takes over as dominant energy production mechanism.
 
-#+CAPTION: $\varepsilon_\mathrm{nuc}/\rho$ as a function of central temperature $T_{c}$ (bottom axis) or initial mass $M$ (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning once equilibrium ($L\simeq L_\mathrm{nuc}$) is established. Dashed lines are linear fits. Modified from a figure by R. Townsend.
+#+CAPTION: $\varepsilon_\mathrm{nuc}/\rho$ as a function of temperature $T$ all calculated in the center of stellar models (bottom axis) or initial mass $M$ (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning once equilibrium ($L\simeq L_\mathrm{nuc}$) is established. Dashed lines are linear fits. Modified from a figure by R. Townsend.
 #+ATTR_HTML: :width 75%
 [[./images/pp_vs_CNO.png]]
 
