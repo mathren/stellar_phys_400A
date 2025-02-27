@@ -53,7 +53,8 @@ astrophysical factor $S(E)$) or not.
 We already know from the $B/A$ vs. $A$ curve that the most energy is
 released by hydrogen burning into helium (because $\alpha$ particles have
 such a high binding energy), and using conservation of charge and
-leptonic number we have already written the overall reaction as:
+electron leptonic number we have already written the overall reaction
+as:
 #+begin_latex
 \begin{equation}\label{eq:overall_reaction}
 4^{1}\mathrm{H}\rightarrow^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ .
@@ -106,7 +107,7 @@ momentum).
 The "pp chain" is the dominant hydrogen burning mode in low mass
 stars, like the Sun:
 
-#+CAPTION: Schematic representation of the pp chain. The right branch is the so called pp1, the rarer left branch is the so called pp2, which further has a rarer pp3 branch ending up with the formation and decay of a $^{8}\mathrm{Be}$ nucleus.
+#+CAPTION: Schematic representation of the pp chain. Blue boxes highlight the weak reactions producing $\nu_{e}$. The right branch is the so called pp1, the rarer left branch is the so called pp2, which further has a rarer pp3 branch ending up with the formation and decay of a $^{8}\mathrm{Be}$ nucleus.
 #+ATTR_HTML: :width 100%
 [[./images/pp_cycle.png]]
 
