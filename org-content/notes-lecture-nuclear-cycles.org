@@ -454,7 +454,7 @@ The next burning phase is typically referred to as "silicon burning",
 although it physically proceeds in a slightly different fashion than
 all the burning phases we have seen so far.
 
-It typically requires $T\sim2-5\times10^{9}$ K and densities $\rho\sim10^{7}-10^{10$} g cm^{-3}
+It typically requires $T\sim2-5\times10^{9}$ K and densities $\rho\sim10^{7}-10^{10}$ g cm^{-3}
 and only lasts order of $\tau_\mathrm{nuc, Si}$ \sim days-weeks since the
 energy release per nucleon is /only/ $0.1$ MeV/nucleon (cf. \sim
 $Q_\mathrm{H-burn}$/4\simeq6.6 MeV/nucleon for H burning!).
@@ -587,8 +587,8 @@ hole, in ways that are still poorly understood (see for example
 * Duration of each burning phase
 
 As we have seen (cf. [[./notes-lecture-VirTheo.org][virial theorem lecture]]) stars shine as anything
-with a finite temperature does. This eats at their internal thermal
-energy, which by the virial theorem is related to their gravitational
+with a finite temperature does. This consumes internal thermal energy,
+which by the virial theorem is related to their gravitational
 potential and drives a decrease in the radius. All this happens (by
 definition) at the Kelvin-Helmholtz timescale if one assumes constant
 luminosity.
