@@ -137,6 +137,9 @@ calculated from nuclear physics, determining the spectrum of the
 neutrino produced by a given reaction (a non-trivial task which
 stellar physics leaves to neutrinos and nuclear physicists).
 
+*N.B.:* The nuclear energy scale is 1-10 MeV, we expect nuclear
+neutrinos energy to be of this order of magnitude too!
+
 Particularly important for the late evolution of massive stars are
 neutrinos from the so-called /URCA processes/ (named after a casino in
 Rio de Janeiro because when these processes kick in the energy of the
@@ -227,6 +230,9 @@ illustrating the processes (and the various pieces that contribute in
 the quantum field theory calculation of the cross section), the
 particles that are not "free legs" are mediators and not real
 particles, do not over-interpret these diagrams as physical pictures!
+
+*N.B.:* The thermal energy is of order $k_{B}T\leq MeV$, so we expect
+thermal neutrinos to have lower energies than nuclear neutrinos.
 
 Neutrino cooling processes are mostly sensitive to the core density \rho.
 The typical energy carried away per neutrino-antineutrino pair is of
