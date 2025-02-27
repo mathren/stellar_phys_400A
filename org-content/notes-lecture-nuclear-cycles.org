@@ -410,7 +410,7 @@ $^{20}\mathrm{Ne}$ before oxygen burns: photodisintegration reactions are
 in fact not affected by the Coulomb barriers. This photodisintegration
 produce $\alpha$ particles and protons that stick to the existing nuclei
 changing the composition typically increasing the mass fractions of
-$\alpha$ nuclei ($^{16}^{}\mathrm{O}$ and $^{24}\mathrm{Mg}$, primarily). While
+$\alpha$ nuclei ($^{16}\mathrm{O}$ and $^{24}\mathrm{Mg}$, primarily). While
 unimportant for the energy generation, secondary reactions producing
 $^{22}\mathrm{Ne}$ can be important for the synthesis of elements heavier
 than iron through the s-process.
@@ -515,14 +515,15 @@ reached, an assumption that can simplify the calculations that we will
 use in atomic (rather than nuclear) context [[./notes-lecture-radTrans.org][later]].
 
 Note however that /weak reaction are never balanced by their reverse
-reaction/: the cross section for neutrino captures is too small at
-this stage. Strong and electromagnetic mediated nuclear reactions need
-to compensate also the weak reactions for the isotopes that can
-\beta-decay or capture electrons. Therefore this is not a true
-statistical equilibrium regime, and the "principle of detailed
-balance" does not hold strictly. Some widely used stellar evolution
-codes therefore do not rely on the approximation of "quasi
-equilibrium" and instead calculate directly all the reactions.
+reaction/: the cross section for neutrino captures is too small at this
+stage. Strong and electromagnetic mediated nuclear reactions need to
+compensate also the weak reactions for the isotopes that can \beta-decay
+or capture electrons. Therefore this is not a true statistical
+equilibrium regime, and the "principle of detailed balance" (meaning
+each reaction is canceled out by the opposite corresponding reaction)
+does not hold strictly. Some widely used stellar evolution codes
+therefore do not rely on the approximation of "quasi equilibrium" and
+instead calculate directly all the reactions.
 
 This process ends with the formation of an Iron core, made of nuclei
 at the maximum of the B/A vs. A curve that the star cannot burn to
