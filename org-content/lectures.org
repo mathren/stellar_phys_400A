@@ -110,6 +110,7 @@ Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Gric
 - [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
 - [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
 
+
 ** <2025-03-10 Mon> - <2025-03-14 Fri> - SPRING BREAK
 
 ** <2025-03-18 Tue> - *Guest Lecture*: Roche potential
@@ -152,8 +153,12 @@ Participation from Steward Observatory and NOIR lab will be encouraged
 
 [[./notes-in-class-evol.org][Notes]]
 
-** TODO <2025-04-08 Tue> - Mass transfer stability, Roche lobe overflow and common envelope
-*
+** TODO <2025-04-08 Tue> - In class activity: Evolution 4
+*Aim*: discuss the evolution of stars in an in-class activity based on
+=MESA-web= models precomputed by the students
+
+[[./notes-in-class-evol.org][Notes]]
+
 ** <2025-04-10 Thu> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
 core-collapse and the formation of compact objects
