@@ -609,7 +609,6 @@ fixed structure (meaning T, and \rho), and iterate computing a new
 structure with the updated composition. This allows to separate the
 problem and can make it more tractable.
 
-
 ** Open science: [[https://docs.mesastar.org/en/latest/][MESA]] and =MESA-web=
 
 :Quote:

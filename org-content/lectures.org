@@ -104,7 +104,28 @@ and population synthesis.
 
 [[./notes-lecture-neutrinos.org][Notes]]
 
-** <2025-03-04 Tue> - Stellar atmospheres and outer boundary conditions
+** <2025-03-06 Thu> - *Guest lecture*: Neutrinos in stars
+Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
+
+- [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
+- [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
+
+** <2025-03-10 Mon> - <2025-03-14 Fri> - SPRING BREAK
+
+** <2025-03-18 Tue> - *Guest Lecture*: Roche potential
+Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
+
+
+(Notes from previous semester: [[./notes-lecture-RLOF.org][Notes]])
+
+** <2025-03-20 Thu> - *Special Guest Lecture*: Asteroseismology
+Guest Lecturer: [[https://fys.kuleuven.be/ster/staff/conny-aerts][Prof. Conny Aerts]] from KU Leuven
+
+ - [[https://www.aanda.org/articles/aa/full_html/2024/12/aa48575-23/aa48575-23.html][Recent review article]]
+
+Participation from Steward Observatory and NOIR lab will be encouraged
+
+** <2025-03-25 Tue> - Stellar atmospheres and outer boundary conditions
 *Aims*: discuss in more detail the following:
 - outer boundary conditions
 - Saha equation
@@ -113,63 +134,39 @@ and population synthesis.
 
 [[./notes-lecture-radTrans.org][Notes]]
 
-** <2025-03-06 Thu> - *Guest lecture*: Neutrinos in stars
-Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
-
-- [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
-- [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
-
-** <2025-03-10 Mon> - <2025-03-14 Fri> - SPRING BREAK
-** TODO <2025-03-18 Tue> - *Guest Lecture TBD*
-Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
-** <2025-03-20 Thu> - *Special Guest Lecture*: Asteroseismology
-Guest Lecturer: [[https://fys.kuleuven.be/ster/staff/conny-aerts][Prof. Conny Aerts]] from KU Leuven
-
- - [[https://www.aanda.org/articles/aa/full_html/2024/12/aa48575-23/aa48575-23.html][Recent review article]]
-
-Participation from Steward Observatory and NOIR lab will be encouraged
-
-** <2025-03-25 Thu> - In class activity: Evolution 1
+** <2025-03-27 Thu> - In class activity: Evolution 1
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
 
-** <2025-03-27 Tue> - In class activity: Evolution 2
-*Aim*: discuss the evolution of stars in an in-class activity based on
-=MESA-web= models precomputed by the students
-
-[[./notes-in-class-evol.org][Notes]]
 ** <2025-04-01 Tue> - In class activity: Evolution 2
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
 
-** <2025-04-03 Tue> - In class activity: Evolution 3
+** <2025-04-03 Thu> - In class activity: Evolution 3
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
 
 [[./notes-in-class-evol.org][Notes]]
 
-** TODO <2025-04-01 Thu> - In class activity: Evolution 4
-** TODO <2025-04-03 Thu> - In class activity: Evolution 5
-** <2025-04-08 Tue> - Mass transfer stability, Roche lobe overflow and common envelope
-*Aim*: introduce binary mass transfer
-[[./notes-lecture-RLOF.org][Notes]]
-** <2025-04-15 Thu> - Supernovae
+** TODO <2025-04-08 Tue> - Mass transfer stability, Roche lobe overflow and common envelope
+*
+** <2025-04-10 Thu> - Supernovae
 *Aim*: Introduce the nomenclature for supernovae, discuss the physics of
 core-collapse and the formation of compact objects
 
 [[./notes-lecture-SNe.org][Notes]]
 
-** TODO <2025-04-10 Tue> - Gravitational wave progenitors
+** TODO <2025-04-15 Tue> - Gravitational wave progenitors
 *Aim*: introduce gravitational wave formation scenario (isolated binary
 and dynamical assembly), discuss some known uncertainties.
 
 [[./notes-lecture-GWprog.org][Notes]]
 
-** <2025-04-17 Tue> - Two student presentations
+** <2025-04-17 Thu> - Two student presentations
 *Aim*: students will present a topic in stellar evolution to the class.
 The details of the schedule will be communicated on D2L
 
