@@ -261,9 +261,10 @@ necessary to compute a stellar /structure/ model, treat its nuclear
 energy generation and thus driving its /evolution/.
 
 The description we have obtained for a spherically symmetric star is
-made of *four non-linear, coupled, ordinary differential equations*
+made of *five non-linear, coupled, ordinary differential equations*
 (ODE) *plus the equation of state that acts as closure condition* for
-the system. Solving these equations we can:
+the system (counting as one the differential equation for each ion
+$dX_{i}/dt$). Solving these equations we can:
  1. study the interior structure of modelled stars and try to learn about
     the parts of the star that are not accessible to direct
     observations (hidden inside the photosphere)
@@ -375,9 +376,9 @@ timesteps and using lower-than-realistic Reynolds number and/or
 boosting the luminosity to drive dynamical effects faster than in
 reality (see [[https://ui.adsabs.harvard.edu/abs/2022ApJ...928L..10A/abstract][Anders et al. 2022]] or [[https://ui.adsabs.harvard.edu/abs/2024MNRAS.531.1316T/abstract][Thompson et al. 2024]]).
 
-Assuming that Moore's law (the number of transistors in a CPU roughly
-doubles every year) - an assumptions that may clash with the
-engineering reality, it will take several decades to have a
+Extrapolating Moore's law (the number of transistors in a CPU roughly
+doubles every year) - an assumptions that is already clashing with the
+engineering reality - it will take several decades to have a
 numerically resolved 3D simulation of convection in a star for a
 convective turnover timescale, and longer for thermal and nuclear
 timescale: 1D will remain necessary, and we need to keep representing
@@ -407,10 +408,11 @@ These are fairly intuitive:
  - L(m=0) = 0. This is necessary to keep the energy generation per
    unit volume finite (as the volume goes to zero)
 
-However, we have 4 ODEs and these are only two boundary conditions, so
-the system is still undetermined. The central pressure and density are
-not a priori known (we can estimate them, but that is not precise
-enough!).
+However, we have 4 ODEs (plus the equations for the composition where
+with the initial values of the mass fractions $X_{i}$) and these are only
+two boundary conditions, so the system is still undetermined. The
+central pressure and density are not a priori known (we can estimate
+them, but that is not precise enough!).
 
 *** Surface
 
@@ -445,10 +447,12 @@ far, and consequently the equations we wrote do not hold.
 
 ** Solving strategies
 Let's assume we have a way to specify P(r=R), and postpone the
-discussion of stellar atmosphere to a [[./notes-lecture-radTrans.org][future lecture]].
-We then have 4 coupled non-linear ODEs with 4 boundary conditions (2
-at the center and 2 at the surface), and the EOS as a closure
-condition. How can we solve them numerically?
+discussion of stellar atmosphere to a [[./notes-lecture-radTrans.org][future lecture]]. We then have 4
+coupled non-linear ODEs with 4 boundary conditions (2 at the center
+and 2 at the surface), and the EOS as a closure condition. We also
+have a set of equations for the composition with initial values
+assumed to be known $X_{i}(t=0)$. How can we solve this coupled
+non-linear system numerically?
 
 *** Discretization
 First, to represent the system of equations in a computer we want to
