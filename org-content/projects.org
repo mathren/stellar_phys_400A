@@ -32,13 +32,12 @@ earlier the better!) before your written presentation is due to
 discuss materials that you found and the structure and content of the
 presentation.
 
-
 ** Timeline
 
- - *Presentation day minus 3 lectures*: submission of manuscript to peer-referees
- - *Presentation day minus 2 lectures*: referees submit feedback
- - *Presentation day minus 1 lecture*: edited manuscript is submitted
- - *Presentation day*: Oral presentation (slides or whiteboard)
+ - *Presentation day minus 2 lectures*: submission of manuscript to peer-referees
+ - *Presentation day minus 1 lectures*: referees submit feedback
+ - *Presentation day*: Oral presentation (slides or whiteboard) +
+   submission of final manuscript
 
 All files should be exchanged *in pdf* format, via email copying the instructor.
 To make sure that your peers have time to read, provide feedback, and
