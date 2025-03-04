@@ -512,8 +512,8 @@ P\equiv P(\rho,\mu,T)  \Leftrightarrow  P\equiv P(\rho,\mu,T)
 \end{equation}
 
 \begin{equation}
-\frac{dX_i}{dt}\bigg|_{r} = \left[ \sum\limits_j \mathcal{P}_{j,i}(T,\rho)
-    -\sum\limits_k \mathcal{D}_{i,k}(T,\rho)\right] + \left( D_i
+\frac{dX_i}{dt}\bigg|_{r} = \left[ \sum\limits_{j,k} \mathcal{P}_{j,k \rightarrow i}(T,\rho)
+    -\sum\limits_{k} \mathcal{D}_{i,k}(T,\rho)\right] + \left( D_i
     \nabla^2X_i\phantom{\bigg|} \right)\\
 \Updownarrow \\
    X_{i,k}(t_n+\Delta t_{n+1}) = X_{i,k}(t_n) + \Delta
