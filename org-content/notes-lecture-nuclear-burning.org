@@ -50,8 +50,9 @@ the radiative gradient in stably stratified regions:
 #+end_latex
 with $\kappa = (1/\kappa_\mathrm{rad} + 1/\kappa_\mathrm{cond})^{-1}$ the combination
 "in parallel" of the radiative and conductive opacity (assumed to be
-known from atomic physics), and $\nabla \equiv \nabla_\mathrm{ad}$ the adiabatic
-gradient (within \sim10^{-7-8} precision) for convective regions. We also
+known from atomic physics), and $L$ total luminosity in a radiative
+region. In convective regions, $\nabla \equiv \nabla_\mathrm{ad}$ is the adiabatic
+gradient (within \sim10^{-7-8} precision). We also
 have a criterion (Schwarzschild or Ledoux) to determine which region
 is which.
 
