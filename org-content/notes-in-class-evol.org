@@ -128,6 +128,7 @@ is not bad! We can barely notice two expected significant deviations:
   expect a progressive flattening until L(M)\propto M. This may also be
   implicated in the discussion for what is the maximum mass of a star.
 
+
 ** Discuss with your "mass" group
 Compare your model to the models of people nearby you and explore the
 data you have. You probably want to start from the movie =MESA-web=
@@ -162,6 +163,7 @@ Pay attention to:
    main sequence?
 8. where does He core burning start?
 9. is there any other nuclear burning during He core burning? And before?
+
 
 * Clean examples
 

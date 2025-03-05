@@ -525,7 +525,7 @@ P\equiv P(\rho,\mu,T)  \Leftrightarrow  P\equiv P(\rho,\mu,T)
 Where, when going from the physical model to the
 numerical implementation:
 - we use m rather than r as independent coordinate [[./notes-lecture-HSE.org::*Lagrangian and Eulerian coordinates][as expected]];
-- the mass continuity if re-formulated in terms of natural logarithm
+- the mass continuity is re-formulated in terms of natural logarithm
   or r instead or r itself (to keep numbers smaller);
 - the EOS, \kappa, \varepsilon_{nuc,}, and \varepsilon_{\nu} represent input physics that we borrow
   from other fields, and typically are /tabulated/ as a function of T,
@@ -578,7 +578,7 @@ Historically, the first computations of stellar models would use a
 verify how far from the outer boundary conditions the solution lands,
 based on the distance, calculate a correction on the initial guess,
 and iterate. This was computationally expensive, and would require
-many iterations before the solution build "inside out" would be
+many iterations before the solution built "inside out" would be
 sufficiently good.
 
 In the late 1960s, [[https://en.wikipedia.org/wiki/Louis_G._Henyey][L. Henyey]] designed an alternative solving strategy,
@@ -639,7 +639,7 @@ from the publish-or-perish academic mentality named [[https://en.wikipedia.org/w
 the collaboration of a large group of theoretical and computational
 astrophysicists (notably, P. Eggleton who provided his code as a
 starting point), developed a new open-source, multi-purpose, and
-community driven stellar structure and evolution code, called =MESA=.
+community-driven stellar structure and evolution code, called =MESA=.
 Because this is the tool I use, and the only one I can really inspect,
 a lot of my intuition on the numerical methods and computational
 aspects is tied to this particular code. The =MESA-web= interface you
@@ -661,9 +661,9 @@ identified with the institution where they are mainly developed is an
 indication of the secrecy behind the computational aspects: you had to
 be at the right place to get a handle on all the details!
 
-This openness allows finally to check /systematic modeling errors/ that
-arise from algorithmic and numerical choices that may differ even for
-the same physical assumptions and input physics. This has enabled
+This openness finally allows for checking /systematic modeling errors/
+that arise from algorithmic and numerical choices that may differ even
+for the same physical assumptions and input physics. This has enabled
 progress, revealed (always existing) bugs in MESA and in other codes,
 and overall improved the state of this field.
 
@@ -704,7 +704,7 @@ equations of stellar structure (e.g., MESA, KEPLER, FRANEC, PARSEC,
 HOSHI, etc.).
 
 *N.B.:* These codes being 1D typically are /relatively/ cheap to run,
-about ~1-10\times CPUh per model.
+about \sim10-100 CPUh per model.
 
 However, often there are many things one may want to change for /fixed/
 stellar evolution (e.g., the initial distribution of stars, or their

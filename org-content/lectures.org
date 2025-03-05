@@ -104,11 +104,12 @@ and population synthesis.
 
 [[./notes-lecture-neutrinos.org][Notes]]
 
-** <2025-03-06 Thu> - *Guest lecture*: Neutrinos in stars
+** <2025-03-06 Thu> - *Guest lecture*: Neutrinos in stars and using neural networks for Si burning
 Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Grichener]]
 
-- [[./images/GuestLectureAldanaGrichenerNeutrinosNotesForStudents.pdf][Notes]]
-- [[./images/SlidesNeutrinosAldanaGrichener.pdf][Slides]]
+- [[https://drive.google.com/file/d/1AjrG15hWyWJdA9pg5cUYCm1ubIr3IiDx/view?usp=drive_link][Notes]] (Neutrinos)
+- [[https://drive.google.com/file/d/1EpWOF-hU87DjrZwdmVOgm2MuDkS_CD9v/view?usp=drive_link][Slides]] (Neutrinos)
+- [[https://drive.google.com/file/d/19BX64zOuuAxZZHW8mV5Uul4kk3wSfr0v/view?usp=drive_link][Slides]] (Neural network and burning)
 
 
 ** <2025-03-10 Mon> - <2025-03-14 Fri> - SPRING BREAK
