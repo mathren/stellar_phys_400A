@@ -1,0 +1,57 @@
+#+title: Mid-course participation feedback template emails
+#+author: [[mrenzo@arizona.edu][Mathieu Renzo]]
+
+Roughly half-way through the course I divide the students in three
+tiers based on their participation so far and send each tier some
+variation of the emails below to encourage continuing or stimulate
+more participation.
+
+* Top-tier
+Subject: Mid-course Participation Feedback - Keep up the good work!
+
+I wanted to reach out and express my appreciation for your engagement
+in class and/or office hours so far. Your consistent level of
+engagement, thoughtful questions, and insights have contributed to
+making lectures more dynamic and interesting. It's clear that you come
+prepared and think critically about the materials. Keep up this great
+level of engagement!
+
+Best regards,
+
+
+* Mid-tier
+Subject: Mid-course Participation Feedback - We'd love to hear more from you!
+
+I'm reaching out regarding your participation in our class discussions
+this semester. I notice that you've been quite reserved during our
+lectures, and I wanted to encourage you to share your thoughts and
+questions more openly. Please remember that active participation is an
+important part of the learning process, and your perspective is
+valuable to your peers and to me. There are no "wrong" questions – in
+fact, questions you have might help clarify concepts for others as
+well. If you feel hesitant about speaking up, I'm happy to discuss
+strategies to help you feel more comfortable participating in class.
+If there are any specific concerns or barriers that are holding you
+back from participating more actively, please don't hesitate to meet
+with me during office hours to discuss them.
+
+Best regards,
+
+
+* Bottom-tier
+
+Subject: Mid-course Participation Feedback - Your contributions matter!
+
+I'm writing to thank you for your contributions to the course so far.
+When you participate, your insights add value to our conversations. I
+would love to hear even more from you during our lectures, as I
+believe you have valuable perspectives to share and insightful
+questions. Please feel free to voice your thoughts and questions more
+frequently – your contributions help create a richer learning
+environment for everyone. If you feel hesitant about speaking up, I'm
+happy to discuss strategies to help you feel more comfortable
+participating in class. If there are any specific concerns or barriers
+that are holding you back from participating more actively, please
+don't hesitate to meet with me during office hours to discuss them.
+
+Best regards,
