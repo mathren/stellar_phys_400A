@@ -2,7 +2,7 @@
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
 #+NEXT_PAGE: notes-lecture-GWprog.org
-#+PREVIOUS_PAGE: notes-lecture-RLOF.org
+#+PREVIOUS_PAGE: notes-in-class-evol.org
 
 
 *Materials*: [[https://ui.adsabs.harvard.edu/abs/2012ARNPS..62..407J][Janka 2012]], [[https://ui.adsabs.harvard.edu/abs/2024OJAp....7E..31S/abstract][Soker 2023]], [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.510.4689V][Burrows et al. 2023]], see also [[https://www.as.arizona.edu/~mrenzo/materials/cores_of_massive_stars.pdf][my

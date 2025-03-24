@@ -1,6 +1,10 @@
 #+Title: 400A - Evolution of stars
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-lecture-radTrans.org
+#+NEXT_PAGE: notes-lecture-SNe.org
+
+
 
 *Materials*: Onno Pols' lecture notes Chapters 7-9-11, Kippenhahn's book
 Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2,
