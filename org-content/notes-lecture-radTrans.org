@@ -280,7 +280,7 @@ change variable to $\cos(\theta)=\mu$ in radiative transfer calculations):
 \begin{equation}\label{eq:momenta_rad}
 u \equiv u(\tau) = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
 F \equiv F(\tau) = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
-P \equiv P(\tau) = \frac{2\pi}{c}\int_{-1}^{1} I(\tau, \theta)\cos^{2}(\theta)d\cos(\theta) \ \ .
+P_\mathrm{rad} \equiv P_\mathrm{rad}(\tau) = \frac{2\pi}{c}\int_{-1}^{1} I(\tau, \theta)\cos^{2}(\theta)d\cos(\theta) \ \ .
 \end{equation}
 #+end_latex
 
