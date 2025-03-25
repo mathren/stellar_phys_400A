@@ -12,8 +12,8 @@
 
 So far in this course we have mostly dealt with the /interior/ of stars
 and derived equation to determine the stellar /structure/ and what
-drives their /evolution/ (which is typically "slow", \tau_{nuc} \gg \tau_{KH} \gg
-\tau_{ff}).
+drives their /evolution/ (which is typically "slow", $\tau_{nuc} \gg \tau_{KH}
+\gg \tau_{ff}$).
 
 The picture we have derived is that gravity drives a contraction of
 the (hot) stellar gas, which, because it has a finite temperature,
@@ -59,8 +59,8 @@ This means that /by definition/ the stellar atmosphere is /not/ a black
 body, and it is /partially/ transparent to photons (resulting in a
 positive radial component of the photon flux). We /cannot/ use the
 diffusion approximation to treat radiative transport here, since the
-mean free path of photons \ell_{\gamma} are becoming comparable to the
-thickness of the atmosphere (\rho decreases moving outward!).
+mean free path of photons $\ell_{\gamma}$ are becoming comparable to the
+thickness of the atmosphere ($\rho$ decreases moving outward!).
 
 To make models of stellar /spectra/ and determine the outer boundary
 conditions we need to consider how radiation from the bottom flows
@@ -78,10 +78,10 @@ this temperature would emits the same energy per unit time as the star
 does. This is from where the bulk of the stellar radiation comes from
 /by definition/ (recall the [[file:notes-lecture-CMD-HRD.org::*Digression: Spectral types and the letters OBAFGKM(LTY)][discussion on spectral types!]]).
 
-*N.B.:* dL/dm = \varepsilon_{nuc} - \varepsilon_{\nu} + \varepsilon_{grav} \equiv 0 in the outer
-layers of the star where T is not high enough for nuclear burning, \rho
-is not high enough for \nu emission, and we assume gravothermal
-equilibrium, so \varepsilon_{grav} \propto ds/dt = 0, so L is constant.
+*N.B.:* $dL/dm = \varepsilon_{nuc} - \varepsilon_{\nu} + \varepsilon_{grav} \equiv 0$ in the outer
+layers of the star where $T$ is not high enough for nuclear burning, $\rho$
+is not high enough for neutrino emission, and we assume gravothermal
+equilibrium, so $\varepsilon_{grav} \propto ds/dt = 0$, so $L$ is constant.
 
 * Basics of radiative transfer
 
@@ -103,9 +103,9 @@ below may come at an angle $\theta$ w.r.t. the slab.
 
 We can define the specific intensity (per unit frequency or
 wavelength) $I_{\nu}$ as the amount of energy flowing through a surface
-element $dA$ in a time interval dt and coming within a solid angle $d\Omega$
-around the direction $\mathbf{n}$ with frequency in the range between
-$\nu$ and $\nu+d\nu$:
+element $dA$ in a time interval $dt$ and coming within a solid angle
+$d\Omega$ around the direction $\mathbf{n}$ with frequency in the range
+between $\nu$ and $\nu+d\nu$:
 
 #+begin_latex
 \begin{equation}

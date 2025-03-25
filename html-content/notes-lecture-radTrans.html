@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-03-25 Tue 09:37 -->
+<!-- 2025-03-25 Tue 09:40 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Radiative transfer</title>
@@ -120,8 +120,8 @@
 <p>
 So far in this course we have mostly dealt with the <i>interior</i> of stars
 and derived equation to determine the stellar <i>structure</i> and what
-drives their <i>evolution</i> (which is typically "slow", &tau;<sub>nuc</sub> &Gt; &tau;<sub>KH</sub> &Gt;
-&tau;<sub>ff</sub>).
+drives their <i>evolution</i> (which is typically "slow", \(\tau_{nuc} \gg \tau_{KH}
+\gg \tau_{ff}\)).
 </p>
 
 <p>
@@ -181,8 +181,8 @@ This means that <i>by definition</i> the stellar atmosphere is <i>not</i> a blac
 body, and it is <i>partially</i> transparent to photons (resulting in a
 positive radial component of the photon flux). We <i>cannot</i> use the
 diffusion approximation to treat radiative transport here, since the
-mean free path of photons &ell;<sub>&gamma;</sub> are becoming comparable to the
-thickness of the atmosphere (&rho; decreases moving outward!).
+mean free path of photons \(\ell_{\gamma}\) are becoming comparable to the
+thickness of the atmosphere (\(\rho\) decreases moving outward!).
 </p>
 
 <p>
@@ -208,10 +208,10 @@ does. This is from where the bulk of the stellar radiation comes from
 </p>
 
 <p>
-<b>N.B.:</b> dL/dm = &epsilon;<sub>nuc</sub> - &epsilon;<sub>&nu;</sub> + &epsilon;<sub>grav</sub> &equiv; 0 in the outer
-layers of the star where T is not high enough for nuclear burning, &rho;
-is not high enough for &nu; emission, and we assume gravothermal
-equilibrium, so &epsilon;<sub>grav</sub> &prop; ds/dt = 0, so L is constant.
+<b>N.B.:</b> \(dL/dm = \varepsilon_{nuc} - \varepsilon_{\nu} + \varepsilon_{grav} \equiv 0\) in the outer
+layers of the star where \(T\) is not high enough for nuclear burning, \(\rho\)
+is not high enough for neutrino emission, and we assume gravothermal
+equilibrium, so \(\varepsilon_{grav} \propto ds/dt = 0\), so \(L\) is constant.
 </p>
 </div>
 </div>
@@ -245,12 +245,12 @@ below may come at an angle \(\theta\) w.r.t. the slab.
 <p>
 We can define the specific intensity (per unit frequency or
 wavelength) \(I_{\nu}\) as the amount of energy flowing through a surface
-element \(dA\) in a time interval dt and coming within a solid angle \(d\Omega\)
-around the direction \(\mathbf{n}\) with frequency in the range between
-\(\nu\) and \(\nu+d\nu\):
+element \(dA\) in a time interval \(dt\) and coming within a solid angle
+\(d\Omega\) around the direction \(\mathbf{n}\) with frequency in the range
+between \(\nu\) and \(\nu+d\nu\):
 </p>
 
-<div class="latex" id="org81e624d">
+<div class="latex" id="org98187a8">
 \begin{equation}
 I_{\nu} \equiv I_{\nu}(\theta) = \frac{dI}{d\nu} = \frac{dE_{\nu}}{d\nu dt dA d\Omega} \mathbf{n} \ \ ,
 \end{equation}
@@ -280,7 +280,7 @@ this is not the case for stellar atmosphere), so we can write down the
 equation of radiative transfer as
 </p>
 
-<div class="latex" id="org276589c">
+<div class="latex" id="org35a1a05">
 \begin{equation}\label{eq:radTrans}
 \frac{dI_{\nu}}{ds} = \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \mathbf{n}\cdot\nabla I_{\nu} = -\kappa_{\nu}\rho I_{\nu} + j_{\nu}\rho \ \ ,
 \end{equation}
@@ -314,7 +314,7 @@ The specific intensity at the bottom of the atmosphere is related to
 the photospheric emission by:
 </p>
 
-<div class="latex" id="org2c8b493">
+<div class="latex" id="org5945f83">
 \begin{equation}\label{eq:flux_BB}
 F \equiv \int_{0}^{+\infty} d\nu F_{\nu} \equiv \sigma T_\mathrm{eff}^{4} =  \int_{0}^{+\infty} d\nu \int d \Omega \cos(\theta) I_{\nu} \ \ ,
 \end{equation}
@@ -356,7 +356,7 @@ length element along the direction \(\mathbf{n}\) so that \(\mathbf{n}\cdot\nabl
 \equiv d/ds\), and the solution becomes:
 </p>
 
-<div class="latex" id="orgecc6c60">
+<div class="latex" id="orgfbbb820">
 \begin{equation}
 I_{\nu} = I_{\nu,0} e^{-\kappa_{\nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
 \end{equation}
@@ -382,7 +382,7 @@ With the definition of \(d\tau_{\nu}\), we can re-write Eq. \ref{eq:radTrans}
 (still assuming no explicit time dependence, \(\partial_{t}I_{\nu} = 0\)) as:
 </p>
 
-<div class="latex" id="orge06a654">
+<div class="latex" id="orge2f027c">
 \begin{equation}\label{eq:rad_trans_tau}
 \frac{dI_{\nu}}{d\tau_{\nu}} = \frac{j_{\nu}}{\kappa_{\nu}} - I_{\nu} \equiv S_{\nu} - I_{\nu} \ \ ,
 \end{equation}
@@ -431,7 +431,7 @@ one-dimensional problem along the vertical direction, and ds =
 and rewrite the steady state (&part;<sub>t</sub> = 0) radiative transfer equation as:
 </p>
 
-<div class="latex" id="orgc1f018b">
+<div class="latex" id="org06c4ed2">
 \begin{equation}
 \cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = - (S_{\nu}-I_{\nu}) \ \ .
 \end{equation}
@@ -453,7 +453,7 @@ these hypotheses we can now integrate this in d&nu; from 0 to +&infin; and
 obtain:
 </p>
 
-<div class="latex" id="orge341a11">
+<div class="latex" id="org65ae9db">
 \begin{equation}\label{eq:gray_eq}
 \cos(\theta) \frac{dI}{d\tau} = - (S-I) \ \ ,
 \end{equation}
@@ -464,7 +464,7 @@ which can be solved analytically (multiply by e<sup>-&tau;/cos(&theta;)</sup>,
 rewrite the l.h.s. as a total derivative and integrate in d&tau;) getting
 </p>
 
-<div class="latex" id="org349a55f">
+<div class="latex" id="orga7482b8">
 \begin{equation}
 I(\tau,\theta) = \frac{\exp(\tau/\cos(\theta))}{\cos(\theta)} \int_{\tau}^{+\infty} S\exp(-\tau/\cos(\theta))d\tau \ \ ,
 \end{equation}
@@ -483,7 +483,7 @@ cos(&theta;) (since &theta; always appears in a cosine, it is usual to change
 variable to cos(&theta;)=&mu; in radiative transfer calculations):
 </p>
 
-<div class="latex" id="org19c1623">
+<div class="latex" id="orgff999f7">
 \begin{equation}\label{eq:momenta_rad}
 u \equiv u(\tau) = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
 F \equiv F(\tau) = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
@@ -499,7 +499,7 @@ I(&tau;)d&Omega; &equiv; 0.5&int;<sub>-1</sub><sup>+1</sup> I(&tau;)dcos(&theta;
 have
 </p>
 
-<div class="latex" id="org70c3d2c">
+<div class="latex" id="org10c37a2">
 \begin{equation}\label{eq:J_S}
 \frac{1}{4\pi}\frac{d F}{d\tau} = J-S \ \ .
 \end{equation}
@@ -517,7 +517,7 @@ We can also take Eq. \ref{eq:gray_eq} and multiply it by cos<sup>2</sup>(&theta;
 and integrate between -1 and 1 in cos(&theta;) to obtain:
 </p>
 
-<div class="latex" id="orgc9f7716">
+<div class="latex" id="org4f65bbd">
 \begin{equation}\label{eq:sol_S}
 \frac{dP}{d\tau} = \frac{F}{c} \ \ .
 \end{equation}
@@ -533,7 +533,7 @@ P=u/3 &equiv; 4&pi; J/3c (using the definition of J and its relation with the
 radiation energy density u). Putting all these findings together:
 </p>
 
-<div class="latex" id="orga72e84b">
+<div class="latex" id="org057ab3a">
 \begin{equation}
 S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right) \ \ ,
 \end{equation}
@@ -543,7 +543,7 @@ S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right
 that is we have an expression for the source function!
 Substituting for S in the solution for I we get:
 </p>
-<div class="latex" id="org0ed8240">
+<div class="latex" id="org741595d">
 \begin{equation}
 I(\tau, \cos(\theta)) = \frac{3F}{4\pi}\frac{\exp(\tau/\cos(\theta))}{\cos(\theta)}\int_{\tau}^{+\infty} \left(\tau+\mathrm{constant}\right) \exp\left(-\frac{\tau}{\cos(\theta)}\right)d\tau \Rightarrow I(0,\cos(\theta)) = \frac{3F}{4\pi}(\cos(\theta)+\mathrm{constant}) \ \ .
 \end{equation}
@@ -556,7 +556,7 @@ Eq. \ref{eq:momenta_rad} which defines F using the solution for
 I(&tau;=0,cos(&theta;)) in the integral:
 </p>
 
-<div class="latex" id="orgd41dce4">
+<div class="latex" id="orgaa8bbd5">
 \begin{equation}
 F = 2\pi\int_{-1}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{-1}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2})\\
  \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
@@ -580,7 +580,7 @@ I(&tau;) and use it to calculate the pressure!
 From Eq. \ref{eq:J_S} and \ref{eq:sol_S} we now have:
 </p>
 
-<div class="latex" id="org580bdeb">
+<div class="latex" id="org1a2670b">
 \begin{equation}
 J = S =  \frac{3F}{4\pi}\left(\tau+\frac{2}{3}\right)  \ \ ,
 \end{equation}
@@ -593,7 +593,7 @@ radiation!), J=S=B(&nu;,T)=&sigma; T<sup>4</sup>/&pi;, so using that F=&sigma; T
 obtain:
 </p>
 
-<div class="latex" id="orgc8bbc81">
+<div class="latex" id="org3a2b046">
 \begin{equation}
 T^{4} = \frac{3}{4}T_\mathrm{eff}^{4}(\tau+\frac{2}{3}) \ \ ,
 \end{equation}
@@ -647,7 +647,7 @@ throughout the atmosphere, an oversimplification that allows for an
 analytic calculation which yields:
 </p>
 
-<div class="latex" id="org1ab3b76">
+<div class="latex" id="org7d6b477">
 \begin{equation}
 P(\tau) = \frac{GM}{R^{2}\kappa}\tau \Rightarrow P(\tau=2/3) = \frac{2}{3}\frac{GM}{R^{2}\kappa}\ \ ,
 \end{equation}
@@ -695,7 +695,7 @@ the rate at which atoms are ionized I matches the rate at which there
 are recombinations R (principle of detailed balance). Therefore:
 </p>
 
-<div class="latex" id="org88d3294">
+<div class="latex" id="org76ca1d3">
 \begin{equation}
  n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}} = \frac{I}{R}\ \ ,
 \end{equation}
@@ -710,7 +710,7 @@ calculate using Maxwell-Boltzmann statistics! The momentum terms of
 the ions and neutral atoms cancel each other in the ratio (neglecting
 the small mass difference between these 2), and we are left with
 </p>
-<div class="latex" id="org13b44a4">
+<div class="latex" id="orgb8746c5">
 \begin{equation}
 \frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
 \end{equation}
@@ -878,7 +878,7 @@ a specific shape of the line:
 </p>
 
 
-<figure id="org5c493d0">
+<figure id="org48f436a">
 <img src="./images/P_Cygni.png" alt="P_Cygni.png">
 
 </figure>
@@ -925,7 +925,7 @@ morphology of the H&alpha; emission:
 </p>
 
 
-<figure id="org1f1960c">
+<figure id="orga26ebe2">
 <img src="./images/Alcyone_Halpha.png" alt="Alcyone_Halpha.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Spectrum of Alcyone (&eta; Tau) on March 18<sup>th</sup> 2019 centered around H&alpha; (&lambda;&sim;6562 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer <a href="https://www.astronomie.be/erik.bryssinck/aboutme.html">E. Bryssinck</a>.</figcaption>
