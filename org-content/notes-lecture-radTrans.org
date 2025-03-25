@@ -78,10 +78,10 @@ this temperature would emits the same energy per unit time as the star
 does. This is from where the bulk of the stellar radiation comes from
 /by definition/ (recall the [[file:notes-lecture-CMD-HRD.org::*Digression: Spectral types and the letters OBAFGKM(LTY)][discussion on spectral types!]]).
 
-*N.B.:* $dL/dm = \varepsilon_{nuc} - \varepsilon_{\nu} + \varepsilon_{grav} \equiv 0$ in the outer
+*N.B.:* $dL/dm = \varepsilon_\mathrm{nuc} - \varepsilon_{\nu} + \varepsilon_\mathrm{grav} \equiv 0$ in the outer
 layers of the star where $T$ is not high enough for nuclear burning, $\rho$
 is not high enough for neutrino emission, and we assume gravothermal
-equilibrium, so $\varepsilon_{grav} \propto ds/dt = 0$, so $L$ is constant.
+equilibrium, so $\varepsilon_\mathrm{grav} \propto ds/dt = 0$, so $L$ is constant.
 
 * Basics of radiative transfer
 
