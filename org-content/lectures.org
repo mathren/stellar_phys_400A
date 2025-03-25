@@ -118,8 +118,8 @@ Guest lecturer: [[https://sites.google.com/view/aldanagrichener][Dr. Aldana Gric
 ** <2025-03-18 Tue> - *Guest Lecture*: Roche potential
 Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
 
-[[https://koushiksen1995.github.io/#resources][Notes from Dr. Sen available here]]
-(Notes from previous semester: [[./notes-lecture-RLOF.org][Notes]])
+ - [[https://koushiksen1995.github.io/#resources][Notes from Dr. Sen available here]]
+ - (Notes from previous semester: [[./notes-lecture-RLOF.org][Notes]])
 
 ** <2025-03-20 Thu> - *Special Guest Lecture*: Asteroseismology
 Guest Lecturer: [[https://fys.kuleuven.be/ster/staff/conny-aerts][Prof. Conny Aerts]] from KU Leuven
