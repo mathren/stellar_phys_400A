@@ -221,20 +221,20 @@ out of the direction of interest all cancel each other out.
 
 The simplest stellar atmosphere model that allows to define
 non-trivial outer boundary conditions is the so called "Eddington gray
-atmosphere", which provides an analytic T(\tau) relation in the
+atmosphere", which provides an analytic $T(\tau)$ relation in the
 atmosphere that can be smoothly attached to the stellar interior where
-T \equiv T_{eff} and used to calculate the pressure needed at such boundary to
-have hydrostatic equilibrium. In other words, the Eddington gray
-atmosphere allows one to define (non-trivial) outer boundary
-conditions for the stellar interior problem.
+$T \equiv T_\mathrm{eff}$ and used to calculate the pressure needed at such
+boundary to have hydrostatic equilibrium. In other words, the
+Eddington gray atmosphere allows one to define (non-trivial) outer
+boundary conditions for the stellar interior problem.
 
 Let's start with the assumption of a /plane parallel atmosphere/, that
 is we neglect the /curvature/ of the stellar atmosphere, which is
 acceptable if its radius is much larger than the length scale of
 interest at any point in it. This assumption reduces the problem to a
-one-dimensional problem along the vertical direction, and ds =
--dz/cos(\theta) for the element of length along a generic photon path ds,
-and rewrite the steady state (\partial_{t} = 0) radiative transfer equation as:
+one-dimensional problem along the vertical direction, and $ds =
+-dz/cos(\theta)$ for the element of length along a generic photon path $ds$,
+and rewrite the steady state ($\partial_{t} = 0$) radiative transfer equation as:
 
 #+begin_latex
 \begin{equation}
@@ -242,38 +242,39 @@ and rewrite the steady state (\partial_{t} = 0) radiative transfer equation as:
 \end{equation}
 #+end_latex
 
-*N.B.:* we define ds and dz to be antiparallel (introducing a minus
-sign), because we want d\tau to be positive moving inwards toward
-negative z.
+*N.B.:* we define ds and $dz$ to be antiparallel (introducing a minus
+sign), because we want $d\tau$ to be positive moving inwards toward
+negative $z$.
 
 The second approximation of the Eddington atmosphere is that we assume
 a "gray" radiative transfer, meaning the opacity is /independent of
-frequency/ \kappa_{\nu}\rightarrow\kappa, thus \tau_{\nu}\rightarrow\tau. We
-also neglect the frequency dependence of the source term S_{\nu}. With
-these hypotheses we can now integrate this in d\nu from 0 to +\infty and
-obtain:
+frequency/ $\kappa_{\nu}\rightarrow\kappa$, thus $\tau_{\nu}\rightarrow\tau$.
+We also neglect the frequency dependence of the source term $S_{\nu}$.
+With these hypotheses we can now integrate this in $d\nu$ from 0 to +\infty
+and obtain:
 
 #+begin_latex
 \begin{equation}\label{eq:gray_eq}
 \cos(\theta) \frac{dI}{d\tau} = - (S-I) \ \ ,
 \end{equation}
 #+end_latex
-which can be solved analytically (multiply by e^{-\tau/cos(\theta)},
-rewrite the l.h.s. as a total derivative and integrate in d\tau) getting
+which can be solved analytically (multiply by $e^{-\tau/cos(\theta)}$,
+rewrite the l.h.s. as a total derivative and integrate in $d\tau$)
+getting
 
 #+begin_latex
 \begin{equation}
 I(\tau,\theta) = \frac{\exp(\tau/\cos(\theta))}{\cos(\theta)} \int_{\tau}^{+\infty} S\exp(-\tau/\cos(\theta))d\tau \ \ ,
 \end{equation}
 #+end_latex
-where the r.h.s. is integrated from a certain optical depth \tau
-outwards. We can recover the \nu dependence of S as an optical depth
-dependence in this integral.
+where the r.h.s. is integrated from a certain optical depth $\tau$
+outwards. We can recover the $\nu$ dependence of $S \rightarrow S(\tau)$ as an
+optical depth dependence in this integral.
 
-We can also define the radiation energy density u, the total flux F,
-and the radiation pressure as moments of the intensity I(\tau,\theta) w.r.t.
-cos(\theta) (since \theta always appears in a cosine, it is usual to change
-variable to cos(\theta)=\mu in radiative transfer calculations):
+We can also define the radiation energy density $u$, the total flux
+$F$, and the radiation pressure as moments of the intensity $I(\tau,\theta)$
+w.r.t. $\cos(\theta)$ (since $\theta$ always appears in a cosine, it is usual to
+change variable to $\cos(\theta)=\mu$ in radiative transfer calculations):
 
 #+begin_latex
 \begin{equation}\label{eq:momenta_rad}
