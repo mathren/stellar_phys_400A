@@ -12,8 +12,8 @@
 
 So far in this course we have mostly dealt with the /interior/ of stars
 and derived equation to determine the stellar /structure/ and what
-drives their /evolution/ (which is typically "slow", $\tau_{nuc} \gg \tau_{KH}
-\gg \tau_{ff}$).
+drives their /evolution/ (which is typically "slow", $\tau_\mathrm{nuc} \gg \tau_\mathrm{KH}
+\gg \tau_\mathrm{ff}$).
 
 The picture we have derived is that gravity drives a contraction of
 the (hot) stellar gas, which, because it has a finite temperature,
