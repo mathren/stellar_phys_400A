@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-20 Thu 09:47 -->
+<!-- 2025-03-25 Tue 09:05 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Virial theorem</title>
@@ -139,9 +139,9 @@ of the name comes from "vir" which is latin for "forces".
 </p>
 </div>
 
-<div id="outline-container-org1131438" class="outline-3">
-<h3 id="org1131438"><a href="#org1131438">Complete derivation</a></h3>
-<div class="outline-text-3" id="text-org1131438">
+<div id="outline-container-org15416bf" class="outline-3">
+<h3 id="org15416bf"><a href="#org15416bf">(Almost fully) General derivation</a></h3>
+<div class="outline-text-3" id="text-org15416bf">
 <p>
 Let's start with a very general derivation (see for example
 Goldstein's classical mechanics book or Shore's Tapesty of Modern
@@ -150,7 +150,7 @@ mass \(m_{i}\), Netwon's second law states that the change in their
 momentum is equal to the total force they are subject to:
 </p>
 
-<div class="latex" id="org3c6120c">
+<div class="latex" id="orgd9c9127">
 \begin{equation}
  m_{i} \ddot{\mathbf{r_{}}_{i}} = \mathbf{F}_{i} \ \, .
 \end{equation}
@@ -166,7 +166,7 @@ particles and sum over all the particles. Why? The reason is to make
 appear in the second term</i>:
 </p>
 
-<div class="latex" id="org2d93b17">
+<div class="latex" id="orgf96a327">
 \begin{equation}\label{eq:first_moment_second_law}
 \sum_{i} m_{i}\ddot{\mathbf{r}_{i}} \cdot \mathbf{r}_{i} = \sum_{i} \mathbf{F}_{i} \cdot \mathbf{r}_{i} \ \ .
 \end{equation}
@@ -187,7 +187,7 @@ The l.h.s. can be re-written using the chain rule for the second
 time-derivative:
 </p>
 
-<div class="latex" id="org2e2f57c">
+<div class="latex" id="org2a263a3">
 \begin{equation}
 \sum_{i} m_{i}\ddot{\mathbf{r}_{i}} \cdot \mathbf{r}_{i}  = \sum_{i} \frac{1}{2} m_{i} \frac{d^{2}}{dt^{2}}r_{i}^{2} - \sum_{i} m_{i} \cdot \dot{r_{i}}^{2}
 \end{equation}
@@ -204,7 +204,7 @@ moment of Newton's second law (Eq. \ref{eq:first_moment_second_law})
 we obtain:
 </p>
 
-<div class="latex" id="orgc05b476">
+<div class="latex" id="orgf5fe15e">
 \begin{equation}
  2\mathrm{E}_\mathrm{kin}+\mathrm{E}_\mathrm{pot} = \frac{1}{2}\ddot{I}
 \end{equation}
@@ -257,7 +257,7 @@ point-mass stars on a Keplerian orbit!
 One can write the total energy of the binary as:
 </p>
 
-<div class="latex" id="orga88845d">
+<div class="latex" id="org0be66be">
 \begin{equation}
 E_\mathrm{tot} = \mathrm{E_\mathrm{kin}}_{1} + \mathrm{E_\mathrm{kin}}_{2} + \mathrm{E}_\mathrm{pot} \equiv \mathrm{E_\mathrm{kin}} + \mathrm{E}_\mathrm{pot}  \equiv -\frac{GM_{1}M_{2}}{2a}  \ \ ,
 \end{equation}
@@ -297,7 +297,7 @@ spherical symmetry, and write explicitly the forces acting on each
 shell \(dr\) of gas (cf. hydrostatic momentum balance <a href="notes-lecture-HSE.html#org4af41ad">seen before</a>):
 </p>
 
-<div class="latex" id="orgf9ad669">
+<div class="latex" id="org90c2bf3">
 \begin{equation}\label{eq:HSE}
 \frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}}
 \end{equation}
@@ -311,7 +311,7 @@ done by multiplying by \(4\pi r^{3}\) and integrating in \(dm\) over the entire
 mass of the star (from \(0\) to \(M\)).
 </p>
 
-<div class="latex" id="orgcab6568">
+<div class="latex" id="org05da2f7">
 \begin{equation}\label{eq:pot}
 \int_{0}^{M} -\frac{Gm}{4\pi r^{4}} \times 4\pi r^{3} dm  = \int_{0}^{M} -\frac{Gm}{r}dm \equiv - \mathrm{E}_\mathrm{pot} \ \ .
 \end{equation}
@@ -321,7 +321,7 @@ mass of the star (from \(0\) to \(M\)).
 (so that \(E_{_\mathrm{pot}}=|\int_{0}^{M} -Gm/r dm| >0\)). The l.h.s. becomes integrating per parts
 </p>
 
-<div class="latex" id="orga0580e6">
+<div class="latex" id="org214d5bd">
 \begin{equation}
 \int_{0}^{M} \frac{dP}{dm} 4\pi r^{3} dm = \left[ 4\pi r^{3}P \right]^{M}_{0}- 3\int_{0}^{M}4\pi r^{2} \frac{\partial r}{\partial m} Pdm \ \ ,
 \end{equation}
@@ -334,7 +334,7 @@ the mass continuity equation and obtain \(-3\int_{0}^{M} P/\rho dm\), thus, putt
 back the pieces together:
 </p>
 
-<div class="latex" id="org3317319">
+<div class="latex" id="orgc24e54c">
 \begin{equation}\label{eq:vir}
 \int_{0}^{M }\frac{Gmdm}{r} = 3\int_{0}^{M} \frac{P}{\rho} dm \ \ .
 \end{equation}
@@ -370,7 +370,7 @@ specific entropy \(s\), and also re-write this in terms of density instead
 of specific volume $v$=(1 mass unit)/&rho; &rArr; \(dv = -d\rho/\rho^{2}\):
 </p>
 
-<div class="latex" id="org8ba1092">
+<div class="latex" id="org2c493f4">
 \begin{equation}\label{eq:second_thermodynamics_law}
 dq = Tds = du + Pdv = du -\frac{P}{\rho^{2}}d\rho \ \ ,
 \end{equation}
@@ -397,7 +397,7 @@ constant entropy, so that is by definition the first adiabatic index
 \(\Gamma_{1}\). Ultimately, we can put all this together and write
 </p>
 
-<div class="latex" id="org5757dd7">
+<div class="latex" id="org19516f8">
 \begin{equation}
 \frac{P}{\rho} = (\Gamma-1)u \ \ ,
 \end{equation}
@@ -413,7 +413,7 @@ Finally, substituting in the first-order moment of the hydrostatic
 equilibrium Eq. \ref{eq:vir} equation we have:
 </p>
 
-<div class="latex" id="orgd96c8ff">
+<div class="latex" id="orgeeccea8">
 \begin{equation}
 3\int_{0}^{M} \frac{P}{\rho} dm = 3\int_{0}^{M} (\Gamma-1)u dm \ \ .
 \end{equation}
@@ -426,7 +426,7 @@ parenthesis out of the integral. We can define \(E_\mathrm{int} = \int_{0}^{M} u
 and rewrite the above as \(3(\Gamma-1)E-\mathrm{int}\), and thus
 </p>
 
-<div class="latex" id="org3075105">
+<div class="latex" id="org97099b8">
 \begin{equation}\label{eq:virial_star}
 - E_\mathrm{pot} = 3(\Gamma-1)E_\mathrm{int}
 \end{equation}
@@ -449,7 +449,7 @@ E_\mathrm{pot} + E_\mathrm{int}\). For a star to be bound,
 \ref{eq:virial_star}, we can rewrite this as
 </p>
 
-<div class="latex" id="org778536f">
+<div class="latex" id="org7931517">
 \begin{equation}
 \mathrm{E}_\mathrm{tot} = \mathrm{E}_\mathrm{pot}\frac{3\Gamma-4}{3(\Gamma-1)} \equiv -(3\Gamma-4)\mathrm{E}_\mathrm{int}\ \ .
 \end{equation}
@@ -525,7 +525,7 @@ extracted set by the virial theorem mentioned above.
 For an ideal  gas, the internal energy is related to the
 mean temperature by
 </p>
-<div class="latex" id="org5d5d756">
+<div class="latex" id="org1d41dc3">
 \begin{equation}
 E_\mathrm{int} = \frac{\# \mathrm{degrees\ of\ freedom}}{2}Nk_{B}\langle T \rangle
 \end{equation}
@@ -538,7 +538,7 @@ average temperature in the star, and the number of degrees of freedom
 is 3 for a monoatomic gas. From the Virial theorem it follows that:
 </p>
 
-<div class="latex" id="orgfa00d99">
+<div class="latex" id="org9cacfaa">
 \begin{equation}
 E_\mathrm{int} = - \frac{E_\mathrm{pot}}{2} \Rightarrow \frac{3}{2} \frac{M}{\mu m_{u}} k_{B}\langle T \rangle = C \frac{GM^{2}}{R} \ \ ,
 \end{equation}
@@ -548,9 +548,9 @@ E_\mathrm{int} = - \frac{E_\mathrm{pot}}{2} \Rightarrow \frac{3}{2} \frac{M}{\mu
 where \(C = \{\int_{0}^{M} Gmdm/r\}/\{GM^{2}/R\}\) is a constant of \(\mathcal{O}(1)\)
 that depends on the mass distribution in the star. Thus:
 </p>
-<div class="latex" id="orgf22f34e">
+<div class="latex" id="org550c8b7">
 \begin{equation}
-\langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
+\langle T \rangle = \frac{2\mu m_{u}}{3 k_{B}} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
 \end{equation}
 
 </div>
@@ -633,7 +633,7 @@ L has the units of power [L] = [E]/[t].
 <p>
 Then by definition:
 </p>
-<div class="latex" id="org30ac804">
+<div class="latex" id="orgf3cde74">
 \begin{equation}\label{eq:tau_KH}
 \tau_\mathrm{KH} = \frac{\mathrm{E}_\mathrm{int}}{L} \equiv
 \frac{\mathrm{E}_\mathrm{pot}}{2L} \simeq \frac{GM^{2}}{2RL} \ \ ,
@@ -644,7 +644,7 @@ Then by definition:
 where we have used the virial theorem and set \(C\simeq1\). We can scale all
 the quantities to Solar values and obtain:
 </p>
-<div class="latex" id="orgebe6162">
+<div class="latex" id="org8b0e541">
 \begin{equation}\label{eq:KH_timescale_scaling}
 \tau_{KH} \simeq 1.57 \times 10^{7} \mathrm{years} \times \left(\frac{M}{M_{☉}}\right)^{2} \left(\frac{R}{R_{☉}}\right)^{-1 }\left(\frac{L}{L_{☉}}\right)^{-1} \ \ .
 \end{equation}
@@ -737,7 +737,7 @@ the input!
 </p>
 
 <p>
-Write up a short paragraph answering the following:
+Write a short paragraph answering the following:
 </p>
 <ul class="org-ul">
 <li>Which agrees better with the observation of the real Sun at the
@@ -757,7 +757,7 @@ the outermost radius from the last <code>profile*.data</code> file you saved)</l
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-EOS1.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-EOS2.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 20 February 2025 <br>
+  Last updated on 25 March 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>

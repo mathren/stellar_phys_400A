@@ -125,6 +125,7 @@ Guest Lecturer: [[https://koushiksen1995.github.io/][Dr. Koushik Sen]]
 Guest Lecturer: [[https://fys.kuleuven.be/ster/staff/conny-aerts][Prof. Conny Aerts]] from KU Leuven
 
  - [[https://www.aanda.org/articles/aa/full_html/2024/12/aa48575-23/aa48575-23.html][Recent review article]]
+ - Slides are available on [[https://d2l.arizona.edu/d2l/le/news/1561844/2547588/view][d2l (enrolled students only)]]
 
 Participation from Steward Observatory and NOIR lab will be encouraged
 

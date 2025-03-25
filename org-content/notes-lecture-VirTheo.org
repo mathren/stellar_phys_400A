@@ -26,7 +26,7 @@ statistical statement on mutually interacting particles (e.g., because
 of their mutual gravity!), and thus it is very general. The etymology
 of the name comes from "vir" which is latin for "forces".
 
-** Complete derivation
+** (Almost fully) General derivation
 Let's start with a very general derivation (see for example
 Goldstein's classical mechanics book or Shore's Tapesty of Modern
 Astrophysics Sec. 1.5). For a collection of particles with (constant)
@@ -337,7 +337,7 @@ where $C = \{\int_{0}^{M} Gmdm/r\}/\{GM^{2}/R\}$ is a constant of $\mathcal{O}(1
 that depends on the mass distribution in the star. Thus:
 #+begin_latex
 \begin{equation}
-\langle T \rangle = \frac{2\mu m_{u}}{3} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
+\langle T \rangle = \frac{2\mu m_{u}}{3 k_{B}} C \frac{GM^{}}{R} \propto \frac{\mu M}{R} \ \ .
 \end{equation}
 #+end_latex
 From this equation, several important facts follow for any
@@ -471,7 +471,7 @@ have included the nuclear energy release and chemical evolution).
 computer simulations as ground truth, they are /at best/ only as good as
 the input!
 
-Write up a short paragraph answering the following:
+Write a short paragraph answering the following:
 - Which agrees better with the observation of the real Sun at the
   Earth's age?
 - What is its radius and how does it compare to the measured R_{\odot}?
