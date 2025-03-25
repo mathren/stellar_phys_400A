@@ -28,8 +28,7 @@ The nuclear burning can be seen just as an attempt by the star to
 /delay/ its gravitational collapse: as nuclear fuel is depleted the star
 is forced to evolve (until either gravity "wins" or the EOS deviates
 from the classical ideal gas, and quantum mechanical effects provide
-sufficient pressure that win over gravity, we will see these in more
-detail in the coming lectures).
+sufficient pressure that win over gravity).
 
 However, many of the assumptions we have made to derive these
 equations and the picture of stellar evolution described above /do not
@@ -39,6 +38,11 @@ more details the physics of the stellar atmosphere which are crucial
 to obtain empirical evidence to test the picture of stellar evolution
 we now can build, and to provide the outer boundary conditions needed
 to calculate a stellar model.
+
+:Question:
+ - *Q*: which assumptions that hold in the stellar interior don't apply
+   to the atmosphere?
+:end:
 
 ** Definition
 
