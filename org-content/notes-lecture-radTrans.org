@@ -490,7 +490,7 @@ zones of the stars!
 * Spectral line formation
 
 Lines form because the black body spectrum coming from the photosphere
-(by definition) filter through the overlaying /atmospheres/ where atomic
+(by definition) filters through the overlaying /atmospheres/ where atomic
 radiative processes (mainly bound-bound and bound-free transitions)
 can /remove/ some photons from the spectrum.
 
@@ -512,8 +512,8 @@ review [[https://ui.adsabs.harvard.edu/abs/2014ARA%26A..52..487S/abstract][Smith
 
 ** Broadening mechanisms
 While treating in detail all these processes would require an entire
-course on its own, we can give a brief qualitative description of some
-key effects here.
+course on its own (see for example [[https://staff.fnwi.uva.nl/a.dekoter/ARTv1.103.00.pdf][the notes by Prof. de Koter]]), we
+can give a brief qualitative description of some key effects here.
 
 While considering these remember that for virtually all stars (except
 the Sun), the projected disk on the sky is /unresolved/ (the size of the
