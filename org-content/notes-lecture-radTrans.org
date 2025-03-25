@@ -166,7 +166,7 @@ surface element $dA$.
 
 This last expression is going to be useful to connect the physics in
 the atmosphere with the interior, since we /define/ the photosphere to
-have a flux $\sigma T_{eff}^{4}$.
+have a flux $\sigma T_\mathrm{eff}^{4}$.
 
 *N.B.:* Because of Eq. \ref{eq:flux_BB} the photosphere flux acts as
 inner boundary condition for the problem of the radiative transfer
@@ -284,9 +284,9 @@ P_\mathrm{rad} \equiv P_\mathrm{rad}(\tau) = \frac{2\pi}{c}\int_{-1}^{1} I(\tau,
 \end{equation}
 #+end_latex
 
-We can also define the average specific intensity as J(\tau) = (4\pi)^{-1}\int
-I(\tau)d\Omega \equiv 0.5\int_{-1}^{+1} I(\tau)dcos(\theta), so that J=c u/4\pi. and dividing Eq.
-\ref{eq:gray_eq} by two and integrating between -1 and 1 in cos(\theta) we
+We can also define the average specific intensity as $J(\tau) = (4\pi)^{-1}\int
+I(\tau)d\Omega \equiv 0.5\int_{-1}^{+1} I(\tau)dcos(\theta)$, so that $J=c u/4\pi$. and dividing Eq.
+\ref{eq:gray_eq} by two and integrating between -1 and 1 in $\cos(\theta)$ we
 have
 
 #+begin_latex
@@ -296,24 +296,26 @@ have
 #+end_latex
 
 Now the total radiative gray flux in the atmosphere has to be
-constant, dF/d\tau = 0: there is radiative equilibrium and what goes in
-must come out! So this equations tells us J=S.
+constant, $dF/d\tau = 0$: there is radiative equilibrium and what goes in
+must come out! So this equations tells us $J=S$.
 
-We can also take Eq. \ref{eq:gray_eq} and multiply it by cos^{2}(\theta)
-and integrate between -1 and 1 in cos(\theta) to obtain:
+We can also take Eq. \ref{eq:gray_eq} and multiply it by $\cos^{2}(\theta)$
+and integrate between -1 and 1 in $\cos(\theta)$ to obtain:
 
 #+begin_latex
 \begin{equation}\label{eq:sol_S}
-\frac{dP}{d\tau} = \frac{F}{c} \ \ .
+\frac{dP_\mathrm{rad}}{d\tau} = \frac{F}{c} \ \ .
 \end{equation}
 #+end_latex
 
-The r.h.s. is constant, so this can be integrated to give P = F\tau/c +
-constant. One more hypothesis of the Eddington approximation is to
-/assume/ that the gas is radiation pressure dominated (this was to allow
-him to proceed further): then we also know from thermodynamics that
-P=u/3 \equiv 4\pi J/3c (using the definition of J and its relation with the
-radiation energy density u). Putting all these findings together:
+The r.h.s. is constant, so this can be integrated to give
+$P_\mathrm{rad} = F\tau/c + \mathrm{constant}$. One more hypothesis of
+the Eddington approximation is to /assume/ that the gas is radiation
+pressure dominated $P_\mathrm{rad} \gg P_\mathrm{gas}$ (this was to
+allow him to proceed further): then we also know from thermodynamics
+that $P_\mathrm{rad}=u/3 \equiv 4\pi J/3c$ (using the definition of $J$ and
+its relation with the radiation energy density $u$). Putting all these
+findings together:
 
 #+begin_latex
 \begin{equation}
@@ -338,10 +340,10 @@ F = 2\pi\int_{-1}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{-1}^{1}\left
  \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
 \end{equation}
 #+end_latex
-With this specification of the constant that we obtained imposing the
-flux to come from \tau=0 \Rightarrow \kappa = 0, so from the layer after which there is
-nothing impeding the photons anymore (*N.B.:* the only other option is
-\rho=0, so there is nothing, or ds=0, so the photons have not moved!), we
+We obtained this constant imposing the flux to come from \tau=0 \Rightarrow \kappa = 0,
+so from the layer after which there is nothing impeding the photons
+anymore (*N.B.:* the only other option is \rho=0, so there is nothing, or
+ds=0, so the photons have not moved!). With this constant, we
 completely specified the source function S \equiv S(\tau) and we can obtain I\equiv
 I(\tau) and use it to calculate the pressure!
 
@@ -363,7 +365,7 @@ J = S =  \frac{3F}{4\pi}\left(\tau+\frac{2}{3}\right)  \ \ ,
 # law F=\sigma T^{4} we get:
 
 but also, assuming that the atmosphere is also in LTE (including
-radiation!), J=S=B(\nu,T)=\sigma T^{4}/\pi, so using that F=\sigma T_{eff}^{4} we
+radiation!), $J=S=B(\nu,T)=\sigma T^{4}/\pi$, so using that $F=\sigma T_\mathrm{eff}^{4}$ we
 obtain:
 
 #+begin_latex
@@ -372,8 +374,8 @@ T^{4} = \frac{3}{4}T_\mathrm{eff}^{4}(\tau+\frac{2}{3}) \ \ ,
 \end{equation}
 #+end_latex
 
-which is the Eddington T(\tau) relation which connects the effective
-temperature of the black body to the outer temperature T(\tau) under the
+which is the Eddington $T(\tau)$ relation which connects the effective
+temperature of the black body to the outer temperature $T(\tau)$ under the
 approximations for the atmosphere:
 1. plane parallel
 2. gray (i.e., independent on frequency \nu)
@@ -381,31 +383,32 @@ approximations for the atmosphere:
 4. Local thermal equilibrium.
 
 
-*N.B.:* In the stellar atmosphere, T is a steep function of \tau in this
+*N.B.:* In the stellar atmosphere, $T$ is a steep function of $\tau$ in this
 approximation!
 
-*N.B.:* in this approach the photosphere correspond to \tau=2/3, this
-factor comes from imposing T=T_{eff} in the radiation dominated, gray,
-plane parallel atmosphere. This number is a direct consequence of
-these specific approximations, and it makes sense that it is of order
-\sim1: the black body radiation from the stellar interior comes from the
-region where \tau goes from \le1 (where the optical depth is low and we
-cannot assume black body) to \tau\gg1 (where I_{\nu} = S_{\nu} and we have a
-black body distribution for radiation). Once again, it is important to remember that the
-photosphere is an idealization, and nothing that special occurs at
-\tau=2/3, it's just a convenient location where we can stitch the
-Eddington gray atmospheric model to the interior model.
+*N.B.:* in this approach the photosphere correspond to $\tau=2/3$, this
+factor comes from imposing $T=T\mathrm{eff}$ in the radiation
+dominated, gray, plane parallel atmosphere. This number is a direct
+consequence of these specific approximations, and it makes sense that
+it is of order \sim1: the black body radiation from the stellar interior
+comes from the region where \tau goes from $\tau\gg1$ (where $I_{\nu} = S_{\nu}$ and
+we have a black body distribution for radiation) to $\tau\le1$ (where the
+optical depth is low and we cannot assume black body) to . Once again,
+it is important to remember that the photosphere is an idealization,
+and nothing that special occurs at $\tau=2/3$, it's just a convenient
+location where we can stitch the Eddington gray atmospheric model to
+the interior model.
 
 
 Finally, to find the outer boundary pressure, we need to integrate
-downward from \tau=0 to \tau(T=T_{eff})\simeq2/3 the hydrostatic equilibrium
-equation. We typically assume that the atmosphere is in hydrostatic
-equilibrium, however /can/ be a big assumption, depending on the star
-and whether it loses mass and whether the interaction between
+downward from $\tau=0$ to $\tau(T=T_\mathrm{eff})\simeq2/3$ the hydrostatic
+equilibrium equation. We typically assume that the atmosphere is in
+hydrostatic equilibrium, however /can/ be a big assumption, depending on
+the star and whether it loses mass and whether the interaction between
 radiation and the gas drives non-trivial dynamics. Furthermore, we
 usually assume that the gravity is constant, or in other words, we
 neglect the atmosphere's "self-gravity" since the bulk of the mass is
-inside its inner boundary. One can just assume that \kappa is constant
+inside its inner boundary. One can just assume that $\kappa$ is constant
 throughout the atmosphere, an oversimplification that allows for an
 analytic calculation which yields:
 
@@ -414,45 +417,48 @@ analytic calculation which yields:
 P(\tau) = \frac{GM}{R^{2}\kappa}\tau \Rightarrow P(\tau=2/3) = \frac{2}{3}\frac{GM}{R^{2}\kappa}\ \ ,
 \end{equation}
 #+end_latex
-where M is the total mass of the star, R is the radius such that L/(4\pi
-R^{2}) = \sigma T_{eff}, \kappa is the opacity assumed constant in the
-atmosphere, and we /define/ the bottom of the atmosphere at \tau=2/3
-because of the Eddington T(\tau) relation. Alternatively, one could use
-tabulated values of \kappa and a T(\tau) to perform the integral.
+where $M$ is the total mass of the star, $R$ is the radius such that
+$L/(4\pi R^{2}) = \sigma T_\mathrm{eff}^{4}$, $\kappa$ is the opacity assumed constant
+in the atmosphere, and we /define/ the bottom of the atmosphere at
+$\tau=2/3$ because of the Eddington $T(\tau)$ relation. Alternatively, one
+could use tabulated values of $\kappa$ and a $T(\tau)$ to perform the
+integral.
 
-Together with T=T_{eff}, we now have specified the outer boundary
-conditions fixing T and P at \tau=2/3 and completely determined the
-mathematical problem of the structure and evolution of a single,
-non-rotating, non-magnetic star of known total (initial) mass M and
-composition.
+Together with $T=T_\mathrm{eff}$, we now have specified the outer
+boundary conditions fixing $T$ and $P$ at $\tau=2/3$ and completely
+determined the mathematical problem of the structure and evolution of
+a single, non-rotating, non-magnetic star of known total (initial)
+mass $M$ and composition.
 
 *N.B.:* While Eddington atmosphere are the simplest non-trivial case, it
 is still on approximations which can (and sometimes are) relaxed in
-stellar evolution modeling: this can move the outer boundary in \tau
-location too!
+stellar evolution modeling: this can move the outer boundary in $\tau$
+location too by changing some of the assumptions of the Eddington gray
+atmosphere!
 
 *N.B.:* A "classic" generalization of this atmospheric model is the
 generic class of gray atmospheres where the constant of integration is
-/not/ a constant, but a function of \tau itself.
+/not/ a constant, but a function of $\tau$ itself.
 
 * Saha equation
 
 Let's also assume that LTE holds in the stellar atmosphere, therefore,
-the rate at which atoms are ionized I matches the rate at which there
-are recombinations R (principle of detailed balance). Therefore:
+the rate at which atoms are ionized $I$ matches the rate at which there
+are recombinations $R$ (principle of detailed balance). Therefore:
 
 #+begin_latex
 \begin{equation}
  n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}} = \frac{I}{R}\ \ ,
 \end{equation}
 #+end_latex
-where n_{e}, n_{+}, and n_{0} are the number densities of electrons, positive
-ions, and neutral atoms respectively (so we are imposing a balance per
-unit volume). But that must also be equal to the ratio of available
-states to all these particles, which in the limit of ideal gas we can
-calculate using Maxwell-Boltzmann statistics! The momentum terms of
-the ions and neutral atoms cancel each other in the ratio (neglecting
-the small mass difference between these 2), and we are left with
+where $n_{e}$, $n_{+}$, and $n_{0}$ are the number densities of electrons,
+positive ions, and neutral atoms respectively (so we are imposing a
+balance per unit volume). But that must also be equal to the ratio of
+available states to all these particles, which in the limit of ideal
+gas we can calculate using Maxwell-Boltzmann statistics! The momentum
+terms of the ions and neutral atoms cancel each other in the ratio
+(neglecting the small mass difference between these 2), and we are
+left with
 #+begin_latex
 \begin{equation}
 \frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
@@ -460,18 +466,18 @@ the small mass difference between these 2), and we are left with
 #+end_latex
 where the first term comes from the momentum phase space of the
 electron (with 2 factor for its spin) and the exponential depends on
-the ionization potential \chi. This is the so called Saha equation named
+the ionization potential $\chi$. This is the so called Saha equation named
 after [[https://en.wikipedia.org/wiki/Meghnad_Saha][Megnhad Saha]], which under the assumption of LTE (sometimes
 questionable in stellar atmospheres) allows to calculate the free
 electron and ion densities.
 
 *N.B.:* The exponential factor comes from the Maxwell-Boltzmann
-statistical distribution of dn_{0} and dn_{e} dn_{+}!
+statistical distribution of $dn_{0}$, $dn_{e}$, and $dn_{+}$!
 
 For any ion/atom for which we can calculate (or empirically determine
-in a lab) the ionization potential \chi, or more in general the
+in a lab) the ionization potential $\chi$, or more in general the
 difference in their energy levels, we can write a similar equation!
-Thus once the temperature T of a gas is specified this allows us to
+Thus once the temperature $T$ of a gas is specified this allows us to
 predict what the photons filtering through the atmosphere will
 encounter, and thus what we expect will be "removed" from the
 distribution of photons coming out of the photosphere and the
