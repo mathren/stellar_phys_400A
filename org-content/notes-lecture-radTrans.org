@@ -526,15 +526,15 @@ Because of the uncertainty principle, an electron in an ion allowing
 for a bound-bound or bound-free transition is not perfectly localized.
 A consequence of this is that the spectral lines formed by one
 particular ion in a particular energy state is not an infinitely sharp
-delta function \delta(\nu_{0}) centered at \nu_{0}=\Delta E/h, but instead it is a
+delta function $\delta(\nu_{0})$ centered at $\nu_{0}=\Delta E/h$, but instead it is a
 Lorentzian profile with an intrinsic width.
 
 *** Rotational broadening
 If the star is rotating, some parts of the disk will be moving away
-from the observer (at a velocity v_{rot} \times sin(i) with i inclination
-angle to the line of sight), and some parts will be moving towards the
-observer (unless i=0, i.e. the star is seen rotation pole on, as seems
-to be the case for the North Star!).
+from the observer (at a velocity $v_\mathrm{rot} \times sin(i)$ with $i$
+inclination angle to the line of sight), and some parts will be moving
+towards the observer (unless $i=0$, i.e. the star is seen rotation
+pole on, as seems to be the case for the North Star!).
 
 This will introduce a Doppler shift from each part of the disk: this
 /rotational broadening/ is usually described by a Gaussian, that needs
@@ -545,15 +545,15 @@ The /convolution/ of a Lorentzian and a Gaussian gives a Voigt profile
 after [[https://en.wikipedia.org/wiki/Woldemar_Voigt][Woldermar Voigt]].
 
 *** Pressure broadening
-In a star, even in the relatively low \rho atmosphere, ions/atoms
+In a star, even in the relatively low $\rho$ atmosphere, ions/atoms
 interacting with radiation are /not/ in isolation! The presence of
 external forces (due to other ions/atoms, or global magnetic field,
 etc.) can modify the energy levels of each atom's Hamiltonian, and
-thus the central frequency \nu_{0} /and/ the width of specific bound-bound
+thus the central frequency $\nu_{0}$ /and/ the width of specific bound-bound
 transition. Collectively this is referred to as "pressure broadening".
 
 As a concrete example, Zeeman splitting of the degenerate (in absence
-of magnetic field) \ell=1, m=0,\pm1 triplet can result in small (non
+of magnetic field) $\ell=1$, $m=0,\pm1$ triplet can result in small (non
 resolved) shift in frequency that are observed as a broadened line.
 
 *** P Cygni profiles
@@ -594,9 +594,9 @@ thus the nature of these objects (see [[http://basebe.obspm.fr/basebe/][BeSS cat
 professionally taken and amateur spectra of many bright Be stars!).
 
 These stars are interpreted as being /fast rotating/
-(\omega\ge0.7\omega_{crit}) which shed a "decretion disk": the emission lines are not
-from the star directly, but from the disk of the star! A clear
-indication of the presence of the disk is the "double peaked"
+($\omega\ge0.7\omega_\mathrm{crit}$) which shed a "decretion disk": the emission
+lines are not from the star directly, but from the disk of the star! A
+clear indication of the presence of the disk is the "double peaked"
 morphology of the H\alpha emission:
 
 #+CAPTION: Spectrum of Alcyone (\eta Tau) on March 18^{th} 2019 centered around H\alpha (\lambda\sim6562 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer [[https://www.astronomie.be/erik.bryssinck/aboutme.html][E. Bryssinck]].
@@ -624,8 +624,8 @@ These are also B-type stars showing emission lines, but /forbidden/
 emission lines, that is radiative transitions where the angular
 momentum of the electron changes which are exponentially disfavored.
 These can only occur in low-density environments: if the density was
-high, the atoms/ions would much rather de-excite collisionally than with
-a radiative transition with \Delta \ell >0.
+high, the atoms/ions would much rather de-excite collisionally than
+with a radiative transition with $\Delta \ell >0$.
 
 Thus, the presence of a forbidden line (indicated by the squared
 brackets) suggests a very low density environment surrounding these
@@ -644,7 +644,7 @@ it's nitorgen, WC for carbon, WO for oxygen). These are massive stars
 which have somehow shed a large portion of their H-rich envelopes
 (either because of winds of binary interactions) and are bright enough
 to drive strong outflows that are so dense that they are optically
-thick (remember \tau(r)=\int_{0}^{r }\kappa\rho dr'). In these dense winds
+thick (remember $\tau(r)=\int_{0}^{r }\kappa\rho dr'$). In these dense winds
 collisional excitation of atoms/ions is possible followed by radiative
 de-excitation producing an /excess/ of photons at the specific frequency
 of the atom/ion and transition considered, resulting in the emission

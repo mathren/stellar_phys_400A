@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-03-25 Tue 10:26 -->
+<!-- 2025-03-25 Tue 10:40 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Radiative transfer</title>
@@ -250,7 +250,7 @@ element \(dA\) in a time interval \(dt\) and coming within a solid angle
 between \(\nu\) and \(\nu+d\nu\):
 </p>
 
-<div class="latex" id="orgce3625c">
+<div class="latex" id="orgc2e99a2">
 \begin{equation}
 I_{\nu} \equiv I_{\nu}(\theta) = \frac{dI}{d\nu} = \frac{dE_{\nu}}{d\nu dt dA d\Omega} \mathbf{n} \ \ ,
 \end{equation}
@@ -280,7 +280,7 @@ this is not the case for stellar atmosphere), so we can write down the
 equation of radiative transfer as
 </p>
 
-<div class="latex" id="orge2ae246">
+<div class="latex" id="orgf03ac97">
 \begin{equation}\label{eq:radTrans}
 \frac{dI_{\nu}}{ds} = \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \mathbf{n}\cdot\nabla I_{\nu} = -\kappa_{\nu}\rho I_{\nu} + j_{\nu}\rho \ \ ,
 \end{equation}
@@ -314,7 +314,7 @@ The specific intensity at the bottom of the atmosphere is related to
 the photospheric emission by:
 </p>
 
-<div class="latex" id="orgb4cd40b">
+<div class="latex" id="orgd82264c">
 \begin{equation}\label{eq:flux_BB}
 F \equiv \int_{0}^{+\infty} d\nu F_{\nu} \equiv \sigma T_\mathrm{eff}^{4} =  \int_{0}^{+\infty} d\nu \int d \Omega \cos(\theta) I_{\nu} \ \ ,
 \end{equation}
@@ -356,7 +356,7 @@ length element along the direction \(\mathbf{n}\) so that \(\mathbf{n}\cdot\nabl
 \equiv d/ds\), and the solution becomes:
 </p>
 
-<div class="latex" id="org8f3d9aa">
+<div class="latex" id="orgc3d1b5b">
 \begin{equation}
 I_{\nu} = I_{\nu,0} e^{-\kappa_{\nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
 \end{equation}
@@ -382,7 +382,7 @@ With the definition of \(d\tau_{\nu}\), we can re-write Eq. \ref{eq:radTrans}
 (still assuming no explicit time dependence, \(\partial_{t}I_{\nu} = 0\)) as:
 </p>
 
-<div class="latex" id="orgfc4efff">
+<div class="latex" id="orgb33dc17">
 \begin{equation}\label{eq:rad_trans_tau}
 \frac{dI_{\nu}}{d\tau_{\nu}} = \frac{j_{\nu}}{\kappa_{\nu}} - I_{\nu} \equiv S_{\nu} - I_{\nu} \ \ ,
 \end{equation}
@@ -431,7 +431,7 @@ one-dimensional problem along the vertical direction, and \(ds =
 and rewrite the steady state (\(\partial_{t} = 0\)) radiative transfer equation as:
 </p>
 
-<div class="latex" id="org9232948">
+<div class="latex" id="orga7966ca">
 \begin{equation}
 \cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = - (S_{\nu}-I_{\nu}) \ \ .
 \end{equation}
@@ -453,7 +453,7 @@ With these hypotheses we can now integrate this in \(d\nu\) from 0 to +&infin;
 and obtain:
 </p>
 
-<div class="latex" id="orgf516ef7">
+<div class="latex" id="org6a6aae9">
 \begin{equation}\label{eq:gray_eq}
 \cos(\theta) \frac{dI}{d\tau} = - (S-I) \ \ ,
 \end{equation}
@@ -465,7 +465,7 @@ rewrite the l.h.s. as a total derivative and integrate in \(d\tau\))
 getting
 </p>
 
-<div class="latex" id="org58d91c4">
+<div class="latex" id="orgc0a4d90">
 \begin{equation}
 I(\tau,\theta) = \frac{\exp(\tau/\cos(\theta))}{\cos(\theta)} \int_{\tau}^{+\infty} S\exp(-\tau/\cos(\theta))d\tau \ \ ,
 \end{equation}
@@ -484,7 +484,7 @@ w.r.t. \(\cos(\theta)\) (since \(\theta\) always appears in a cosine, it is usua
 change variable to \(\cos(\theta)=\mu\) in radiative transfer calculations):
 </p>
 
-<div class="latex" id="org97c563d">
+<div class="latex" id="orga7717c5">
 \begin{equation}\label{eq:momenta_rad}
 u \equiv u(\tau) = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
 F \equiv F(\tau) = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
@@ -500,7 +500,7 @@ I(\tau)d\Omega \equiv 0.5\int_{-1}^{+1} I(\tau)dcos(\theta)\), so that \(J=c u/4
 have
 </p>
 
-<div class="latex" id="orgeeea8be">
+<div class="latex" id="org5cc9db8">
 \begin{equation}\label{eq:J_S}
 \frac{1}{4\pi}\frac{d F}{d\tau} = J-S \ \ .
 \end{equation}
@@ -518,7 +518,7 @@ We can also take Eq. \ref{eq:gray_eq} and multiply it by \(\cos^{2}(\theta)\)
 and integrate between -1 and 1 in \(\cos(\theta)\) to obtain:
 </p>
 
-<div class="latex" id="orgd5d9fa5">
+<div class="latex" id="org002760c">
 \begin{equation}\label{eq:sol_S}
 \frac{dP_\mathrm{rad}}{d\tau} = \frac{F}{c} \ \ .
 \end{equation}
@@ -536,7 +536,7 @@ its relation with the radiation energy density \(u\)). Putting all these
 findings together:
 </p>
 
-<div class="latex" id="orge7e687a">
+<div class="latex" id="orgbb69020">
 \begin{equation}
 S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right) \ \ ,
 \end{equation}
@@ -546,7 +546,7 @@ S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right
 that is we have an expression for the source function!
 Substituting for S in the solution for I we get:
 </p>
-<div class="latex" id="orgc7d4c00">
+<div class="latex" id="org476c740">
 \begin{equation}
 I(\tau, \cos(\theta)) = \frac{3F}{4\pi}\frac{\exp(\tau/\cos(\theta))}{\cos(\theta)}\int_{\tau}^{+\infty} \left(\tau+\mathrm{constant}\right) \exp\left(-\frac{\tau}{\cos(\theta)}\right)d\tau \Rightarrow I(0,\cos(\theta)) = \frac{3F}{4\pi}(\cos(\theta)+\mathrm{constant}) \ \ .
 \end{equation}
@@ -559,7 +559,7 @@ Eq. \ref{eq:momenta_rad} which defines F using the solution for
 I(&tau;=0,cos(&theta;)) in the integral:
 </p>
 
-<div class="latex" id="org04876ef">
+<div class="latex" id="org071dc2d">
 \begin{equation}
 F = 2\pi\int_{-1}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{-1}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2})\\
  \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
@@ -583,7 +583,7 @@ I(&tau;) and use it to calculate the pressure!
 From Eq. \ref{eq:J_S} and \ref{eq:sol_S} we now have:
 </p>
 
-<div class="latex" id="orgc45f0b5">
+<div class="latex" id="org7736580">
 \begin{equation}
 J = S =  \frac{3F}{4\pi}\left(\tau+\frac{2}{3}\right)  \ \ ,
 \end{equation}
@@ -596,7 +596,7 @@ radiation!), \(J=S=B(\nu,T)=\sigma T^{4}/\pi\), so using that \(F=\sigma T_\math
 obtain:
 </p>
 
-<div class="latex" id="orgab0de01">
+<div class="latex" id="org425c31a">
 \begin{equation}
 T^{4} = \frac{3}{4}T_\mathrm{eff}^{4}(\tau+\frac{2}{3}) \ \ ,
 \end{equation}
@@ -651,7 +651,7 @@ throughout the atmosphere, an oversimplification that allows for an
 analytic calculation which yields:
 </p>
 
-<div class="latex" id="org8d89e26">
+<div class="latex" id="orgfb2381f">
 \begin{equation}
 P(\tau) = \frac{GM}{R^{2}\kappa}\tau \Rightarrow P(\tau=2/3) = \frac{2}{3}\frac{GM}{R^{2}\kappa}\ \ ,
 \end{equation}
@@ -701,7 +701,7 @@ the rate at which atoms are ionized \(I\) matches the rate at which there
 are recombinations \(R\) (principle of detailed balance). Therefore:
 </p>
 
-<div class="latex" id="orgf85b7e1">
+<div class="latex" id="org14f5b98">
 \begin{equation}
  n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}} = \frac{I}{R}\ \ ,
 \end{equation}
@@ -717,7 +717,7 @@ terms of the ions and neutral atoms cancel each other in the ratio
 (neglecting the small mass difference between these 2), and we are
 left with
 </p>
-<div class="latex" id="org275c49a">
+<div class="latex" id="org064732a">
 \begin{equation}
 \frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
 \end{equation}
@@ -813,7 +813,7 @@ Because of the uncertainty principle, an electron in an ion allowing
 for a bound-bound or bound-free transition is not perfectly localized.
 A consequence of this is that the spectral lines formed by one
 particular ion in a particular energy state is not an infinitely sharp
-delta function &delta;(&nu;<sub>0</sub>) centered at &nu;<sub>0</sub>=&Delta; E/h, but instead it is a
+delta function \(\delta(\nu_{0})\) centered at \(\nu_{0}=\Delta E/h\), but instead it is a
 Lorentzian profile with an intrinsic width.
 </p>
 </div>
@@ -824,10 +824,10 @@ Lorentzian profile with an intrinsic width.
 <div class="outline-text-4" id="text-orga21cd07">
 <p>
 If the star is rotating, some parts of the disk will be moving away
-from the observer (at a velocity v<sub>rot</sub> &times; sin(i) with i inclination
-angle to the line of sight), and some parts will be moving towards the
-observer (unless i=0, i.e. the star is seen rotation pole on, as seems
-to be the case for the North Star!).
+from the observer (at a velocity \(v_\mathrm{rot} \times sin(i)\) with \(i\)
+inclination angle to the line of sight), and some parts will be moving
+towards the observer (unless \(i=0\), i.e. the star is seen rotation
+pole on, as seems to be the case for the North Star!).
 </p>
 
 <p>
@@ -848,17 +848,17 @@ after <a href="https://en.wikipedia.org/wiki/Woldemar_Voigt">Woldermar Voigt</a>
 <h4 id="orgdf798b3"><a href="#orgdf798b3">Pressure broadening</a></h4>
 <div class="outline-text-4" id="text-orgdf798b3">
 <p>
-In a star, even in the relatively low &rho; atmosphere, ions/atoms
+In a star, even in the relatively low \(\rho\) atmosphere, ions/atoms
 interacting with radiation are <i>not</i> in isolation! The presence of
 external forces (due to other ions/atoms, or global magnetic field,
 etc.) can modify the energy levels of each atom's Hamiltonian, and
-thus the central frequency &nu;<sub>0</sub> <i>and</i> the width of specific bound-bound
+thus the central frequency \(\nu_{0}\) <i>and</i> the width of specific bound-bound
 transition. Collectively this is referred to as "pressure broadening".
 </p>
 
 <p>
 As a concrete example, Zeeman splitting of the degenerate (in absence
-of magnetic field) &ell;=1, m=0,&plusmn;1 triplet can result in small (non
+of magnetic field) \(\ell=1\), \(m=0,\pm1\) triplet can result in small (non
 resolved) shift in frequency that are observed as a broadened line.
 </p>
 </div>
@@ -885,7 +885,7 @@ a specific shape of the line:
 </p>
 
 
-<figure id="org202c27b">
+<figure id="orgfc280ab">
 <img src="./images/P_Cygni.png" alt="P_Cygni.png">
 
 </figure>
@@ -925,14 +925,14 @@ professionally taken and amateur spectra of many bright Be stars!).
 
 <p>
 These stars are interpreted as being <i>fast rotating</i>
-(&omega;&ge;0.7&omega;<sub>crit</sub>) which shed a "decretion disk": the emission lines are not
-from the star directly, but from the disk of the star! A clear
-indication of the presence of the disk is the "double peaked"
+(\(\omega\ge0.7\omega_\mathrm{crit}\)) which shed a "decretion disk": the emission
+lines are not from the star directly, but from the disk of the star! A
+clear indication of the presence of the disk is the "double peaked"
 morphology of the H&alpha; emission:
 </p>
 
 
-<figure id="org31ec32f">
+<figure id="orge2209c2">
 <img src="./images/Alcyone_Halpha.png" alt="Alcyone_Halpha.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Spectrum of Alcyone (&eta; Tau) on March 18<sup>th</sup> 2019 centered around H&alpha; (&lambda;&sim;6562 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer <a href="https://www.astronomie.be/erik.bryssinck/aboutme.html">E. Bryssinck</a>.</figcaption>
@@ -966,8 +966,8 @@ These are also B-type stars showing emission lines, but <i>forbidden</i>
 emission lines, that is radiative transitions where the angular
 momentum of the electron changes which are exponentially disfavored.
 These can only occur in low-density environments: if the density was
-high, the atoms/ions would much rather de-excite collisionally than with
-a radiative transition with &Delta; &ell; &gt;0.
+high, the atoms/ions would much rather de-excite collisionally than
+with a radiative transition with \(\Delta \ell >0\).
 </p>
 
 <p>
@@ -996,7 +996,7 @@ it's nitorgen, WC for carbon, WO for oxygen). These are massive stars
 which have somehow shed a large portion of their H-rich envelopes
 (either because of winds of binary interactions) and are bright enough
 to drive strong outflows that are so dense that they are optically
-thick (remember &tau;(r)=&int;<sub>0</sub><sup>r </sup>&kappa;&rho; dr'). In these dense winds
+thick (remember \(\tau(r)=\int_{0}^{r }\kappa\rho dr'\)). In these dense winds
 collisional excitation of atoms/ions is possible followed by radiative
 de-excitation producing an <i>excess</i> of photons at the specific frequency
 of the atom/ion and transition considered, resulting in the emission
