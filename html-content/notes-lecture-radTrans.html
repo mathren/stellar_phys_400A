@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-03-25 Tue 09:13 -->
+<!-- 2025-03-25 Tue 09:37 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Radiative transfer</title>
@@ -224,7 +224,9 @@ equilibrium, so &epsilon;<sub>grav</sub> &prop; ds/dt = 0, so L is constant.
 The problem we need to consider in the stellar atmosphere is how
 radiation coming from the <i>photosphere</i> flows through the overlaying
 gas, and how this impact the observable radiation itself, and the
-structure of this gas.
+structure of these gas layers (thus determining the pressure at the
+base of the atmosphere, which is the outer boundary condition for the
+interior!).
 </p>
 
 <p>
@@ -236,19 +238,19 @@ detector!
 <p>
 Since by definition the radiation coming out from the photosphere is a
 black body, it is isotropic, so if you think of the atmosphere as a
-slab of gas with a thickness dr, the radiation illuminating it from
-below may come at an angle &theta; w.r.t. the slab.
+slab of gas with a thickness \(dr\), the radiation illuminating it from
+below may come at an angle \(\theta\) w.r.t. the slab.
 </p>
 
 <p>
 We can define the specific intensity (per unit frequency or
-wavelength) I<sub>&nu;</sub> as the amount of energy flowing through a surface
-element dA in a time interval dt and coming within a solid angle d&Omega;
+wavelength) \(I_{\nu}\) as the amount of energy flowing through a surface
+element \(dA\) in a time interval dt and coming within a solid angle \(d\Omega\)
 around the direction \(\mathbf{n}\) with frequency in the range between
-&nu; and &nu;+d&nu;:
+\(\nu\) and \(\nu+d\nu\):
 </p>
 
-<div class="latex" id="orgecc2235">
+<div class="latex" id="org81e624d">
 \begin{equation}
 I_{\nu} \equiv I_{\nu}(\theta) = \frac{dI}{d\nu} = \frac{dE_{\nu}}{d\nu dt dA d\Omega} \mathbf{n} \ \ ,
 \end{equation}
@@ -262,23 +264,23 @@ direction \(\mathbf{n}\), however there can be processes that add
 photons:
 </p>
 <ul class="org-ul">
-<li>scattering from another direction onto the direction of interest,</li>
-<li>emission processes,</li>
+<li>scattering from another direction onto the direction of interest;</li>
+<li>emission processes;</li>
 </ul>
 <p>
 and process that can remove photons:
 </p>
 <ul class="org-ul">
-<li>scattering from the direction of propagation onto another direction</li>
+<li>scattering from the direction of propagation onto another direction;</li>
 <li>absorption processes.</li>
 </ul>
 <p>
-Moreover, I<sub>&nu;</sub> itself may in general be time dependent (although this
-is not the case for stellar atmosphere), so we can write down the
+Moreover, \(I_{\nu}\) itself may in general be time dependent (although
+this is not the case for stellar atmosphere), so we can write down the
 equation of radiative transfer as
 </p>
 
-<div class="latex" id="orgfd88c58">
+<div class="latex" id="org276589c">
 \begin{equation}\label{eq:radTrans}
 \frac{dI_{\nu}}{ds} = \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \mathbf{n}\cdot\nabla I_{\nu} = -\kappa_{\nu}\rho I_{\nu} + j_{\nu}\rho \ \ ,
 \end{equation}
@@ -287,23 +289,23 @@ equation of radiative transfer as
 
 <p>
 where the l.h.s. expresses the total change in specific intensity
-along the direction \(\mathbf{n}\) due to the intrinsic time-dependence (&part;<sub>t</sub>)
-of I<sub>&nu;</sub> and the spatial dependence along the direction we are
+along the direction \(\mathbf{n}\) due to the intrinsic time-dependence
+(\(\partial_{t}\)) of \(I_{\nu}\) and the spatial dependence along the direction we are
 considering (\(\mathbf{n}\cdot\nabla\)), and the r.h.s. expresses the loss of
 radiation intensity due to scattering <i>and</i> absorption processes, which
-depends on &kappa;<sub>&nu;</sub> (the specific opacity we have already encountered) and
-is proportional to I<sub>&nu;</sub> itself (you can't lose photons you don't
+depends on \(\kappa_{\nu}\) (the specific opacity we have already encountered) and
+is proportional to \(I_{\nu}\) itself (you can't lose photons you don't
 have!), and the addition of radiation intensity from emission
 processes and scattering along the line of sight which depends on the
-emission coefficient j<sub>&nu;</sub>.
+emission coefficient \(j_{\nu}\).
 </p>
 
 <p>
 <b>N.B.:</b> dimensional analysis reveals that each side has the units of
-[I<sub>&nu;</sub>]/[L], this equation describes how the intensity changes along
+[\(I_{\nu}\)]/[L], this equation describes how the intensity changes along
 its path. The fact that photons propagate at the speed of light c make
-the leftmost factor of 1/c appear: \(d/ds = c\partial_{t} + \mathbf{n}\cdot\nabla\). The
-density &rho; on the l.h.s. expresses that the more matter there is (per
+the leftmost factor of \(1/c\) appear: \(d/ds = c\partial_{t} + \mathbf{n}\cdot\nabla\). The
+density \(\rho\) on the l.h.s. expresses that the more matter there is (per
 unit volume), the more likely there will be absorption and emission.
 </p>
 
@@ -312,24 +314,31 @@ The specific intensity at the bottom of the atmosphere is related to
 the photospheric emission by:
 </p>
 
-<div class="latex" id="org4b9ef82">
-\begin{equation}
+<div class="latex" id="org2c8b493">
+\begin{equation}\label{eq:flux_BB}
 F \equiv \int_{0}^{+\infty} d\nu F_{\nu} \equiv \sigma T_\mathrm{eff}^{4} =  \int_{0}^{+\infty} d\nu \int d \Omega \cos(\theta) I_{\nu} \ \ ,
 \end{equation}
 
 </div>
 
 <p>
-that is the black body flux F is obtained by integrating the specific
-intensity over the solid angles. Note the factor cos(&theta;) that arises
-because I<sub>&nu;</sub> is a vector and we only want the component normal to the
-surface element dA.
+that is the black body flux \(F\) is obtained by integrating the specific
+intensity over the solid angles. Note the factor \(\cos(\theta)\) that arises
+because \(I_{\nu}\) is a vector and we only want the component normal to the
+surface element \(dA\).
 </p>
 
 <p>
 This last expression is going to be useful to connect the physics in
 the atmosphere with the interior, since we <i>define</i> the photosphere to
-have a flux &sigma; T<sub>eff</sub><sup>4</sup>.
+have a flux \(\sigma T_{eff}^{4}\).
+</p>
+
+<p>
+<b>N.B.:</b> Because of Eq. \ref{eq:flux_BB} the photosphere flux acts as
+inner boundary condition for the problem of the radiative transfer
+through the atmosphere. We have already seen that it acts as outer
+boundary condition for the stellar interior.
 </p>
 </div>
 
@@ -341,26 +350,26 @@ have a flux &sigma; T<sub>eff</sub><sup>4</sup>.
 <h4 id="orgffd5b09"><a href="#orgffd5b09">Steady state without emission</a></h4>
 <div class="outline-text-4" id="text-orgffd5b09">
 <p>
-In absence of an explicit time dependence (&part;<sub>t</sub> I<sub>&nu;</sub> =0) and emission
-processes (j<sub>&nu;</sub>=0), this equation is easily solved calling s the
+In absence of an explicit time dependence (\(\partial_{t} I_{\nu} =0\)) and emission
+processes (\(j_{\nu}=0\)), this equation is easily solved calling s the
 length element along the direction \(\mathbf{n}\) so that \(\mathbf{n}\cdot\nabla
 \equiv d/ds\), and the solution becomes:
 </p>
 
-<div class="latex" id="org4ea1fdc">
+<div class="latex" id="orgecc6c60">
 \begin{equation}
 I_{\nu} = I_{\nu,0} e^{-\kappa_{\nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
 \end{equation}
 
 </div>
 <p>
-where we introduce the definition of specific optical depth d&tau;<sub>&nu;</sub> =
-&kappa;<sub>&nu;</sub>&rho; ds. This variable is useful because it gives the scale-length
-of the problem as depending on &kappa;<sub>&nu;</sub>&rho; = 1/&ell;<sub>&gamma;,&nu;</sub> with
-&ell;<sub>&gamma;,&nu;</sub> the mean free path for a photon of frequency between &nu;
-and &nu;+d&nu;. Effectively, this allows us to use &tau;<sub>&nu;</sub> as the independent
-coordinate for the propagation of photons of frequency between &nu; and
-&nu;+d&nu;.
+where we introduce the definition of specific optical depth \(d\tau_{\nu} =
+\kappa_{\nu}\rho ds\). This variable is useful because it gives the
+scale-length of the problem as depending on \(\kappa_{\nu}\rho =
+1/\ell_{\gamma,\nu}\) with \(\ell_{\gamma,\nu}\) the mean free path for a photon
+of frequency between \(\nu\) and \(\nu+d\nu\). Effectively, this allows us to
+use \(\tau_{\nu}\) as the independent coordinate for the propagation of photons
+of frequency between \(\nu\) and \(\nu+d\nu\).
 </p>
 </div>
 </div>
@@ -369,11 +378,11 @@ coordinate for the propagation of photons of frequency between &nu; and
 <h4 id="org87a17d9"><a href="#org87a17d9">Steady state with emission and absorption canceling each other</a></h4>
 <div class="outline-text-4" id="text-org87a17d9">
 <p>
-With the definition of d&tau;<sub>&nu;</sub>, we can re-write Eq. \ref{eq:radTrans}
-(still assuming no explicit time dependence, &part;<sub>t</sub>I<sub>&nu;</sub> = 0) as:
+With the definition of \(d\tau_{\nu}\), we can re-write Eq. \ref{eq:radTrans}
+(still assuming no explicit time dependence, \(\partial_{t}I_{\nu} = 0\)) as:
 </p>
 
-<div class="latex" id="org16df409">
+<div class="latex" id="orge06a654">
 \begin{equation}\label{eq:rad_trans_tau}
 \frac{dI_{\nu}}{d\tau_{\nu}} = \frac{j_{\nu}}{\kappa_{\nu}} - I_{\nu} \equiv S_{\nu} - I_{\nu} \ \ ,
 \end{equation}
@@ -381,11 +390,12 @@ With the definition of d&tau;<sub>&nu;</sub>, we can re-write Eq. \ref{eq:radTra
 </div>
 
 <p>
-where in the last step we define the source function S<sub>&nu;</sub>. In thermal
-equilibrium and at high optical depth, for instance in the interior
-region of a star, dI<sub>&nu;</sub>/d&tau;<sub>&nu;</sub>=0 and I<sub>&nu;</sub> = B(&nu;,T) is the black
-body function for the intensity, and this equation states S<sub>&nu;</sub> = I<sub>&nu;</sub>
-&equiv; B(&nu;, T).
+where in the last step we define the source function
+\(S_{\nu}=j_{\nu}/\kappa_{\nu}\). In thermal equilibrium and at high optical
+depth, for instance in the interior region of a star,
+\(dI_{\nu}/d\tau_{\nu}=0\) and \(I_{\nu} = B(\nu,T)\) is the black body function
+for the intensity, and this equation states \(S_{\nu} = I_{\nu} \equiv B(\nu,
+T)\).
 </p>
 
 <p>
@@ -421,7 +431,7 @@ one-dimensional problem along the vertical direction, and ds =
 and rewrite the steady state (&part;<sub>t</sub> = 0) radiative transfer equation as:
 </p>
 
-<div class="latex" id="org20c8766">
+<div class="latex" id="orgc1f018b">
 \begin{equation}
 \cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = - (S_{\nu}-I_{\nu}) \ \ .
 \end{equation}
@@ -443,7 +453,7 @@ these hypotheses we can now integrate this in d&nu; from 0 to +&infin; and
 obtain:
 </p>
 
-<div class="latex" id="org9d3aefe">
+<div class="latex" id="orge341a11">
 \begin{equation}\label{eq:gray_eq}
 \cos(\theta) \frac{dI}{d\tau} = - (S-I) \ \ ,
 \end{equation}
@@ -454,7 +464,7 @@ which can be solved analytically (multiply by e<sup>-&tau;/cos(&theta;)</sup>,
 rewrite the l.h.s. as a total derivative and integrate in d&tau;) getting
 </p>
 
-<div class="latex" id="org4c4b480">
+<div class="latex" id="org349a55f">
 \begin{equation}
 I(\tau,\theta) = \frac{\exp(\tau/\cos(\theta))}{\cos(\theta)} \int_{\tau}^{+\infty} S\exp(-\tau/\cos(\theta))d\tau \ \ ,
 \end{equation}
@@ -473,7 +483,7 @@ cos(&theta;) (since &theta; always appears in a cosine, it is usual to change
 variable to cos(&theta;)=&mu; in radiative transfer calculations):
 </p>
 
-<div class="latex" id="org8a9b955">
+<div class="latex" id="org19c1623">
 \begin{equation}\label{eq:momenta_rad}
 u \equiv u(\tau) = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
 F \equiv F(\tau) = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
@@ -489,7 +499,7 @@ I(&tau;)d&Omega; &equiv; 0.5&int;<sub>-1</sub><sup>+1</sup> I(&tau;)dcos(&theta;
 have
 </p>
 
-<div class="latex" id="org011606b">
+<div class="latex" id="org70c3d2c">
 \begin{equation}\label{eq:J_S}
 \frac{1}{4\pi}\frac{d F}{d\tau} = J-S \ \ .
 \end{equation}
@@ -507,7 +517,7 @@ We can also take Eq. \ref{eq:gray_eq} and multiply it by cos<sup>2</sup>(&theta;
 and integrate between -1 and 1 in cos(&theta;) to obtain:
 </p>
 
-<div class="latex" id="org13cbc26">
+<div class="latex" id="orgc9f7716">
 \begin{equation}\label{eq:sol_S}
 \frac{dP}{d\tau} = \frac{F}{c} \ \ .
 \end{equation}
@@ -523,7 +533,7 @@ P=u/3 &equiv; 4&pi; J/3c (using the definition of J and its relation with the
 radiation energy density u). Putting all these findings together:
 </p>
 
-<div class="latex" id="org327534d">
+<div class="latex" id="orga72e84b">
 \begin{equation}
 S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right) \ \ ,
 \end{equation}
@@ -533,7 +543,7 @@ S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right
 that is we have an expression for the source function!
 Substituting for S in the solution for I we get:
 </p>
-<div class="latex" id="orgf24e48b">
+<div class="latex" id="org0ed8240">
 \begin{equation}
 I(\tau, \cos(\theta)) = \frac{3F}{4\pi}\frac{\exp(\tau/\cos(\theta))}{\cos(\theta)}\int_{\tau}^{+\infty} \left(\tau+\mathrm{constant}\right) \exp\left(-\frac{\tau}{\cos(\theta)}\right)d\tau \Rightarrow I(0,\cos(\theta)) = \frac{3F}{4\pi}(\cos(\theta)+\mathrm{constant}) \ \ .
 \end{equation}
@@ -546,7 +556,7 @@ Eq. \ref{eq:momenta_rad} which defines F using the solution for
 I(&tau;=0,cos(&theta;)) in the integral:
 </p>
 
-<div class="latex" id="orgd3d8a75">
+<div class="latex" id="orgd41dce4">
 \begin{equation}
 F = 2\pi\int_{-1}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{-1}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2})\\
  \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
@@ -570,7 +580,7 @@ I(&tau;) and use it to calculate the pressure!
 From Eq. \ref{eq:J_S} and \ref{eq:sol_S} we now have:
 </p>
 
-<div class="latex" id="orgedf453e">
+<div class="latex" id="org580bdeb">
 \begin{equation}
 J = S =  \frac{3F}{4\pi}\left(\tau+\frac{2}{3}\right)  \ \ ,
 \end{equation}
@@ -583,7 +593,7 @@ radiation!), J=S=B(&nu;,T)=&sigma; T<sup>4</sup>/&pi;, so using that F=&sigma; T
 obtain:
 </p>
 
-<div class="latex" id="org0143ba5">
+<div class="latex" id="orgc8bbc81">
 \begin{equation}
 T^{4} = \frac{3}{4}T_\mathrm{eff}^{4}(\tau+\frac{2}{3}) \ \ ,
 \end{equation}
@@ -637,7 +647,7 @@ throughout the atmosphere, an oversimplification that allows for an
 analytic calculation which yields:
 </p>
 
-<div class="latex" id="orge1294e0">
+<div class="latex" id="org1ab3b76">
 \begin{equation}
 P(\tau) = \frac{GM}{R^{2}\kappa}\tau \Rightarrow P(\tau=2/3) = \frac{2}{3}\frac{GM}{R^{2}\kappa}\ \ ,
 \end{equation}
@@ -685,7 +695,7 @@ the rate at which atoms are ionized I matches the rate at which there
 are recombinations R (principle of detailed balance). Therefore:
 </p>
 
-<div class="latex" id="org3898a7f">
+<div class="latex" id="org88d3294">
 \begin{equation}
  n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}} = \frac{I}{R}\ \ ,
 \end{equation}
@@ -700,7 +710,7 @@ calculate using Maxwell-Boltzmann statistics! The momentum terms of
 the ions and neutral atoms cancel each other in the ratio (neglecting
 the small mass difference between these 2), and we are left with
 </p>
-<div class="latex" id="org5c3679f">
+<div class="latex" id="org13b44a4">
 \begin{equation}
 \frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
 \end{equation}
@@ -868,7 +878,7 @@ a specific shape of the line:
 </p>
 
 
-<figure id="org8efa5dd">
+<figure id="org5c493d0">
 <img src="./images/P_Cygni.png" alt="P_Cygni.png">
 
 </figure>
@@ -915,7 +925,7 @@ morphology of the H&alpha; emission:
 </p>
 
 
-<figure id="orge436ea1">
+<figure id="org1f1960c">
 <img src="./images/Alcyone_Halpha.png" alt="Alcyone_Halpha.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Spectrum of Alcyone (&eta; Tau) on March 18<sup>th</sup> 2019 centered around H&alpha; (&lambda;&sim;6562 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer <a href="https://www.astronomie.be/erik.bryssinck/aboutme.html">E. Bryssinck</a>.</figcaption>

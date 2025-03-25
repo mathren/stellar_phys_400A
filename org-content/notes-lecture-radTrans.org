@@ -88,7 +88,9 @@ equilibrium, so \varepsilon_{grav} \propto ds/dt = 0, so L is constant.
 The problem we need to consider in the stellar atmosphere is how
 radiation coming from the /photosphere/ flows through the overlaying
 gas, and how this impact the observable radiation itself, and the
-structure of this gas.
+structure of these gas layers (thus determining the pressure at the
+base of the atmosphere, which is the outer boundary condition for the
+interior!).
 
 *N.B.:* a useful thing for this problem is to "think like a photon", and
 imagine the physics it will encounter during its trip towards the
@@ -96,14 +98,14 @@ detector!
 
 Since by definition the radiation coming out from the photosphere is a
 black body, it is isotropic, so if you think of the atmosphere as a
-slab of gas with a thickness dr, the radiation illuminating it from
-below may come at an angle \theta w.r.t. the slab.
+slab of gas with a thickness $dr$, the radiation illuminating it from
+below may come at an angle $\theta$ w.r.t. the slab.
 
 We can define the specific intensity (per unit frequency or
-wavelength) I_{\nu} as the amount of energy flowing through a surface
-element dA in a time interval dt and coming within a solid angle d\Omega
+wavelength) $I_{\nu}$ as the amount of energy flowing through a surface
+element $dA$ in a time interval dt and coming within a solid angle $d\Omega$
 around the direction $\mathbf{n}$ with frequency in the range between
-\nu and \nu+d\nu:
+$\nu$ and $\nu+d\nu$:
 
 #+begin_latex
 \begin{equation}
@@ -115,13 +117,13 @@ which has the dimensions of [E]/([L^{2}][t][\nu][solid angle]). This would
 be constant as photons propagate along a path of length ds along the
 direction $\mathbf{n}$, however there can be processes that add
 photons:
-- scattering from another direction onto the direction of interest,
-- emission processes,
+- scattering from another direction onto the direction of interest;
+- emission processes;
 and process that can remove photons:
-- scattering from the direction of propagation onto another direction
+- scattering from the direction of propagation onto another direction;
 - absorption processes.
-Moreover, I_{\nu} itself may in general be time dependent (although this
-is not the case for stellar atmosphere), so we can write down the
+Moreover, $I_{\nu}$ itself may in general be time dependent (although
+this is not the case for stellar atmosphere), so we can write down the
 equation of radiative transfer as
 
 #+begin_latex
@@ -131,47 +133,52 @@ equation of radiative transfer as
 #+end_latex
 
 where the l.h.s. expresses the total change in specific intensity
-along the direction $\mathbf{n}$ due to the intrinsic time-dependence (\partial_{t})
-of I_{\nu} and the spatial dependence along the direction we are
+along the direction $\mathbf{n}$ due to the intrinsic time-dependence
+($\partial_{t}$) of $I_{\nu}$ and the spatial dependence along the direction we are
 considering ($\mathbf{n}\cdot\nabla$), and the r.h.s. expresses the loss of
 radiation intensity due to scattering /and/ absorption processes, which
-depends on \kappa_{\nu} (the specific opacity we have already encountered) and
-is proportional to I_{\nu} itself (you can't lose photons you don't
+depends on $\kappa_{\nu}$ (the specific opacity we have already encountered) and
+is proportional to $I_{\nu}$ itself (you can't lose photons you don't
 have!), and the addition of radiation intensity from emission
 processes and scattering along the line of sight which depends on the
-emission coefficient j_{\nu}.
+emission coefficient $j_{\nu}$.
 
 *N.B.:* dimensional analysis reveals that each side has the units of
-[I_{\nu}]/[L], this equation describes how the intensity changes along
+[$I_{\nu}$]/[L], this equation describes how the intensity changes along
 its path. The fact that photons propagate at the speed of light c make
-the leftmost factor of 1/c appear: $d/ds = c\partial_{t} + \mathbf{n}\cdot\nabla$. The
-density \rho on the l.h.s. expresses that the more matter there is (per
+the leftmost factor of $1/c$ appear: $d/ds = c\partial_{t} + \mathbf{n}\cdot\nabla$. The
+density $\rho$ on the l.h.s. expresses that the more matter there is (per
 unit volume), the more likely there will be absorption and emission.
 
 The specific intensity at the bottom of the atmosphere is related to
 the photospheric emission by:
 
 #+begin_latex
-\begin{equation}
+\begin{equation}\label{eq:flux_BB}
 F \equiv \int_{0}^{+\infty} d\nu F_{\nu} \equiv \sigma T_\mathrm{eff}^{4} =  \int_{0}^{+\infty} d\nu \int d \Omega \cos(\theta) I_{\nu} \ \ ,
 \end{equation}
 #+end_latex
 
-that is the black body flux F is obtained by integrating the specific
-intensity over the solid angles. Note the factor cos(\theta) that arises
-because I_{\nu} is a vector and we only want the component normal to the
-surface element dA.
+that is the black body flux $F$ is obtained by integrating the specific
+intensity over the solid angles. Note the factor $\cos(\theta)$ that arises
+because $I_{\nu}$ is a vector and we only want the component normal to the
+surface element $dA$.
 
 This last expression is going to be useful to connect the physics in
 the atmosphere with the interior, since we /define/ the photosphere to
-have a flux \sigma T_{eff}^{4}.
+have a flux $\sigma T_{eff}^{4}$.
+
+*N.B.:* Because of Eq. \ref{eq:flux_BB} the photosphere flux acts as
+inner boundary condition for the problem of the radiative transfer
+through the atmosphere. We have already seen that it acts as outer
+boundary condition for the stellar interior.
 
 ** Simple solutions of the steady state radiative transfer equation
 
 *** Steady state without emission
 
-In absence of an explicit time dependence (\partial_{t} I_{\nu} =0) and emission
-processes (j_{\nu}=0), this equation is easily solved calling s the
+In absence of an explicit time dependence ($\partial_{t} I_{\nu} =0$) and emission
+processes ($j_{\nu}=0$), this equation is easily solved calling s the
 length element along the direction $\mathbf{n}$ so that $\mathbf{n}\cdot\nabla
 \equiv d/ds$, and the solution becomes:
 
@@ -180,18 +187,18 @@ length element along the direction $\mathbf{n}$ so that $\mathbf{n}\cdot\nabla
 I_{\nu} = I_{\nu,0} e^{-\kappa_{\nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
 \end{equation}
 #+end_latex
-where we introduce the definition of specific optical depth d\tau_{\nu} =
-\kappa_{\nu}\rho ds. This variable is useful because it gives the scale-length
-of the problem as depending on \kappa_{\nu}\rho = 1/\ell_{\gamma,\nu} with
-\ell_{\gamma,\nu} the mean free path for a photon of frequency between \nu
-and \nu+d\nu. Effectively, this allows us to use \tau_{\nu} as the independent
-coordinate for the propagation of photons of frequency between \nu and
-\nu+d\nu.
+where we introduce the definition of specific optical depth $d\tau_{\nu} =
+\kappa_{\nu}\rho ds$. This variable is useful because it gives the
+scale-length of the problem as depending on $\kappa_{\nu}\rho =
+1/\ell_{\gamma,\nu}$ with $\ell_{\gamma,\nu}$ the mean free path for a photon
+of frequency between $\nu$ and $\nu+d\nu$. Effectively, this allows us to
+use $\tau_{\nu}$ as the independent coordinate for the propagation of photons
+of frequency between $\nu$ and $\nu+d\nu$.
 
 *** Steady state with emission and absorption canceling each other
 
-With the definition of d\tau_{\nu}, we can re-write Eq. \ref{eq:radTrans}
-(still assuming no explicit time dependence, \partial_{t}I_{\nu} = 0) as:
+With the definition of $d\tau_{\nu}$, we can re-write Eq. \ref{eq:radTrans}
+(still assuming no explicit time dependence, $\partial_{t}I_{\nu} = 0$) as:
 
 #+begin_latex
 \begin{equation}\label{eq:rad_trans_tau}
@@ -199,11 +206,12 @@ With the definition of d\tau_{\nu}, we can re-write Eq. \ref{eq:radTrans}
 \end{equation}
 #+end_latex
 
-where in the last step we define the source function S_{\nu}. In thermal
-equilibrium and at high optical depth, for instance in the interior
-region of a star, dI_{\nu}/d\tau_{\nu}=0 and I_{\nu} = B(\nu,T) is the black
-body function for the intensity, and this equation states S_{\nu} = I_{\nu}
-\equiv B(\nu, T).
+where in the last step we define the source function
+$S_{\nu}=j_{\nu}/\kappa_{\nu}$. In thermal equilibrium and at high optical
+depth, for instance in the interior region of a star,
+$dI_{\nu}/d\tau_{\nu}=0$ and $I_{\nu} = B(\nu,T)$ is the black body function
+for the intensity, and this equation states $S_{\nu} = I_{\nu} \equiv B(\nu,
+T)$.
 
 This effectively is a statement that at thermal equilibrium, the
 emission processes, the absorption processes, and scattering in and
