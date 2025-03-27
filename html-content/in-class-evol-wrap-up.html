@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-03-27 Thu 10:40 -->
+<!-- 2025-03-27 Thu 10:48 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Qualitative evolution</title>
@@ -128,7 +128,7 @@ mixing (see for example <a href="./notes-lecture-neutrinos.html#orgad5bb9b">this
 <p>
 We have also worked out the ordering of timescales of the problem:
 </p>
-<div class="latex" id="org96f827e">
+<div class="latex" id="orgb55809c">
 \begin{equation}
 \tau_\mathrm{nuc} \gg \tau_\mathrm{KH} \gg \tau_\mathrm{free\ fall} \ \ ,
 \end{equation}
@@ -397,7 +397,7 @@ higher \(T_\mathrm{eff}\) and the envelope becomes radiative.
 </p>
 
 
-<figure id="org7ccb596">
+<figure id="org6e64906">
 <img src="./images/conv_ZAMS.png" alt="conv_ZAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>The "initial" gravothermal equilibrium structure of a star is determined only by mass \(M\) and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn &amp; Weigert) shows in gray the region in mass coordinate \(y=m/M\) that are convective as a function of the total mass \(M=\int dm\) for \(Z=0.02\) models. Red lines indicate where 50 and 90 % of the luminosity \(L\) is generated (the "burning region") and the blue dashed lines show \(r(m)=0.25M\) and \(r(m)=0.5M\).</figcaption>
@@ -426,7 +426,7 @@ This is because the conversion of hydrogen into helium decreases \(X\)
 (and increases \(Y\)), which enter in two key quantities, mean molecular
 weight and electron scattering opacity:
 </p>
-<div class="latex" id="orgb1a6c49">
+<div class="latex" id="org6aca779">
 \begin{equation}\label{eq:microphysics_XY}
 \mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2}} \ \ , \\
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}} \ \ \ .
@@ -438,7 +438,7 @@ Assuming a star to be in gravothermal equilibrium and assuming
 radiative energy transport (which we have just seen is not verified
 everywhere by <code>MESA-web</code> models!), we know that:
 </p>
-<div class="latex" id="org5da664f">
+<div class="latex" id="org1a247b5">
 \begin{equation}\label{eq:L_scaling}
 L\propto \frac{\mu^{4} M^{3}}{\kappa} \ \ ,
 \end{equation}
@@ -465,7 +465,7 @@ years for \(M_\mathrm{ZAMS}\le2M_{☉}\).</li>
 </ul>
 
 
-<figure id="orgd6c541f">
+<figure id="org7bdf060">
 <img src="./images/stellar_lifetimes.png" alt="stellar_lifetimes.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Stellar lifetime as a function of initial masses from <a href="https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..29Z/abstract">Zapartas et al. 2017</a>. <code>MESA</code> and <code>GENEC</code> models are shown, focusing on masses that result in a final core-collapse event. The bottom panel shows the deviations between the analytic fit and the numerical models.</figcaption>
@@ -480,53 +480,55 @@ baryonic mass), the higher the luminosity.</li>
 <p>
 Using Eq. \ref{eq:L_scaling} we can infer that the high power of &mu;
 drives the luminosity evolution of the stars during the main sequence:
-because hydrogen is converted into helium (X &rarr; Y), the <b>mass-weighted
-average &lang; &mu; &rang; = &int; dm &mu;(m)/&int; dm increases and thus L increases</b>.
+because hydrogen is converted into helium (\(X \rightarrow Y\)), the <b>mass-weighted
+average \(\langle \mu \rangle = \int dm \mu(m)/\int dm\) increases and thus L increases</b>.
 </p>
 
 <p>
 <b>N.B.:</b> massive and low mass stars however have a very different
 morphology of the main sequence. For stars with radiative cores
-(burning through the pp-chain, M&le;1.2M<sub>☉</sub>), L increases, R varies
-little, thus since L=4&pi; R<sup>2</sup>&sigma; T<sub>\mathrm</sub>{eff}<sup>4</sup> in equilibrium, we also see a
-slight increase in temperature of the star during the main sequence.
-Conversely, massive stars with convective cores (burning through the
-CNO cycle, M&ge;1.2M<sub>☉</sub>) increase in radius and actually become <i>cooler</i>
-as they evolve during the main sequence. One can derive (see Onno
-Pols' notes chapter 7) analytic R(M) relations assuming a specific
-scaling for the energy generation to qualitatively explain this. In
-reality, the details of the core evolution (influenced by uncertain
-processes such as convective boundary mixing) and envelope (influenced
-by wind uncertainties) matter for the details.
+(burning through the pp-chain, \(M\le1.2M_{☉}\)), \(L\) increases, \(R\)
+varies little, thus since \(L=4\pi R^{2}\sigma T_\mathrm{eff}^{4}\) in
+equilibrium, we also see a slight increase in temperature of the star
+during the main sequence. Conversely, massive stars with convective
+cores (burning through the CNO cycle, \(M\geq1.2M_{☉}\)) increase in
+radius and actually become <i>cooler</i> as they evolve during the main
+sequence. One can derive (see Onno Pols' notes chapter 7) analytic
+\(R(M)\) relations assuming a specific scaling for the energy generation
+to qualitatively explain this. In reality, the details of the core
+evolution (influenced by uncertain processes such as convective
+boundary mixing) and envelope (influenced by wind uncertainties)
+matter for the details.
 </p>
 
 <p>
-<b>N.B.:</b> The relative role of &mu; and &kappa; is slightly sensitive to
-metallicity too (because at lower Z the approximation &kappa;&cong;&kappa;<sub>es</sub> is
-progressively better since fewer bound-bound and bound-free
-transitions are available, see also <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.5816X/abstract">Xin et al. 2022</a>). The opacity &kappa; is
-dominant in determining the L and R at ZAMS for Z&cong;0.02, but the change
-in &mu; is determining their <i>evolution</i> along the main sequence.
+<b>N.B.:</b> The relative role of \(\mu\) and \(\kappa\) is slightly sensitive to
+metallicity too (because at lower \(Z\) the approximation
+\(\kappa\simeq\kappa-\mathrm{es}\) is progressively better since fewer bound-bound and
+bound-free transitions are available, see also <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.5816X/abstract">Xin et al. 2022</a>). The
+opacity \(\kappa\) is dominant in determining the \(L\) and \(R\) at ZAMS for
+\(Z\simeq0.02\), but the change in \(\mu\) is determining their <i>evolution</i> along
+the main sequence.
 </p>
 
 <ul class="org-ul">
 <li><b>Q</b>: based on the scaling in Eq. \ref{eq:L_scaling}, how does the
-luminosity of two identical stars differing only in Z compare? Which
-star has the highest L? (<b>Hint</b>: you can compute more <code>MESA-web</code> models
-of your mass varying Z to check your answer!)</li>
+luminosity of two identical stars differing only in \(Z\) compare?
+Which star has the highest \(L\)? (<b>Hint</b>: you can compute more <code>MESA-web</code>
+models of your mass varying \(Z\) to check your answer!)</li>
 </ul>
 
 <p>
 Looking at the Kippenhahn diagrams and composition diagrams from
 <code>MESA-web</code> we can also see what the model does in the core (something
 not <i>directly</i> accessible to observations - if not through neutrinos).
-For low mass stars with radiative cores and high &rho;<sub>center</sub> (something
-you can derive from the virial theorem + hydrostatic equilibrium +
-EOS), partial degeneracy already plays a role in sustaining the
-structure during the main sequence, and as the central burning region
-converts hydrogen into helium, the helium core becomes hot and
-degenerate - thus sustaining itself against gravitational collapse
-with the quantum effects due to the Fermi-Dirac statistics of
+For low mass stars with radiative cores and high \(\rho_\mathrm{center}\)
+(something you can derive from the virial theorem + hydrostatic
+equilibrium + EOS), partial degeneracy already plays a role in
+sustaining the structure during the main sequence, and as the central
+burning region converts hydrogen into helium, the helium core becomes
+hot and degenerate - thus sustaining itself against gravitational
+collapse with the quantum effects due to the Fermi-Dirac statistics of
 electrons.
 </p>
 
@@ -535,26 +537,26 @@ Conversely, high mass stars have a convective core: convective mixing
 connects the innermost burning region with a larger fuel reservoir.
 The progressive burning of hydrogen changes the center opacity (well
 approximated by electron scattering only in the hot, fully ionized
-interior) &kappa;&cong;&kappa;<sub>es</sub>=0.2(1+X) cm<sup>2</sup> g<sup>-1</sup>. Specifically, as X decreases, so
-does &kappa;, and since &nabla; = &part; ln(T)/&part; ln(&rho;) &prop; &kappa; L, the temperature gradient
-becomes "less steep", meaning there is less need for convection:
-<i>during the main sequence of massive stars, the convective core
-receeds in mass coordinate</i>.
+interior) \(\kappa\simeq\kappa_\mathrm{es}=0.2(1+X)\) cm<sup>2</sup> g<sup>-1</sup>. Specifically, as \(X\)
+decreases, so does \(\kappa\), and since \(\nabla = \partial ln(T)/\partial ln(\rho) \propto \kappa L\), the
+temperature gradient becomes "less steep", meaning there is less need
+for convection: <i>during the main sequence of massive stars, the
+convective core receeds in mass coordinate</i>.
 </p>
 
 
-<figure id="org4fe7987">
+<figure id="org3471546">
 <img src="./images/1Msun_X_M.png" alt="1Msun_X_M.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 3: </span>Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 1M<sub>☉</sub>, Z=0.02 <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS).</figcaption>
+<figcaption><span class="figure-number">Figure 3: </span>Hydrogen mass fraction \(X\) as a function of mass coordinate \(m\) for a single, non-rotating, \(1M_{☉}\), \(Z=0.02\) <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS).</figcaption>
 </figure>
 
 
 
-<figure id="org58911dd">
+<figure id="org8706c01">
 <img src="./images/20Msun_H_profile.png" alt="20Msun_H_profile.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 4: </span>Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 20M<sub>☉</sub>, Z=0.001 <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS), and as time passes the core recedes because of the change in &kappa;.</figcaption>
+<figcaption><span class="figure-number">Figure 4: </span>Hydrogen mass fraction \(X\) as a function of mass coordinate \(m\) for a single, non-rotating, \(20M_{☉}\), \(Z=0.001\) <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS), and as time passes the core recedes because of the change in \(\kappa\).</figcaption>
 </figure>
 </div>
 </div>
@@ -569,15 +571,15 @@ receeds in mass coordinate</i>.
 <div class="outline-text-4" id="text-orgbaee632">
 <p>
 Very low mass stars smoothly evolve off the main sequence: if you look
-at the T(&rho;) diagram in the movie produced by <code>MESA-web</code>, from the
+at the \(T(\rho)\) diagram in the movie produced by <code>MESA-web</code>, from the
 outlines of the track you can see where the nuclear burning moves.
 </p>
 
 
-<figure id="orge8bca64">
+<figure id="orgf416b6b">
 <img src="./images/1Msun_TAMS.png" alt="1Msun_TAMS.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 5: </span>Screenshot of a <code>MESA-web</code> calculation of a 1M<sub>☉</sub> star shortly after the main sequence. The HRD (bottom left) shows a smooth end of the main sequence, and the Kippenhahn diagram and T(&rho;) tracks (middle) show that all the burning is in a shell surrouding the inert He core. The bottom right panel shows that the inner region as a flattening T profile because of conduction efficiently transporting energy and erasing the dT/dr.</figcaption>
+<figcaption><span class="figure-number">Figure 5: </span>Screenshot of a <code>MESA-web</code> calculation of a \(1M_{☉}\) star shortly after the main sequence. The HRD (bottom left) shows a smooth end of the main sequence, and the Kippenhahn diagram and \(T(\rho)\) tracks (middle) show that all the burning is in a shell surrounding the inert He core. The bottom right panel shows that the inner region as a flattening \(T\) profile because of conduction efficiently transporting energy and erasing the \(dT/dr\).</figcaption>
 </figure>
 
 <p>
@@ -590,8 +592,8 @@ available that has not been mixed in the burning region. Therefore,
 </p>
 
 <p>
-Because of the gap in T to bridge the Coulomb barriers for
-hydrogen-burning and 3&alpha;, Helium core burning does <i>not</i> ignite
+Because of the gap in \(T\) to bridge the Coulomb barriers for
+hydrogen-burning and \(3\alpha\), Helium core burning does <i>not</i> ignite
 immediately: the Helium core sits inert, contracts, degeneracy
 pressure starts to matter and conduction becomes important, leading to
 an almost <i>isothermal</i> He core sitting below the H shell.
@@ -614,15 +616,15 @@ cycle even for a low mass star.
 <div class="outline-text-4" id="text-org63f2057">
 <p>
 Increasing the mass above the threshold for activating the CN-NO
-bi-cycle (somewhere &sim;1.1-1.3M<sub>☉</sub> depending on assumptions), the
+bi-cycle (somewhere \(\sim1.1-1.3M_{☉}\) depending on assumptions), the
 morphology of the end of the main sequence changes.
 </p>
 
 
-<figure id="org88f1ac0">
+<figure id="orgdc9c147">
 <img src="./images/30Msun_TAMS.png" alt="30Msun_TAMS.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 6: </span>Screenshot of a <code>MESA-web</code> calculation of a 30M<sub>☉</sub> star shortly after the main sequence. The HRD (bottom left) shows the "Henyey hook" feature, the Kippenhahn diagran and T(&rho;) track shows that there is an off-center H-burning shell but the He in the core ignites promptly too. The core is not degenerate, but convective again, and mantains a nearly adiabatic temperature gradient.</figcaption>
+<figcaption><span class="figure-number">Figure 6: </span>Screenshot of a <code>MESA-web</code> calculation of a \(30M_{☉}\) star shortly after the main sequence. The HRD (bottom left) shows the "Henyey hook" feature, the Kippenhahn diagram and \(T(\rho)\) track shows that there is an off-center H-burning shell but the He in the core ignites promptly too. The core is not degenerate, but convective again, and maintains a nearly adiabatic temperature gradient.</figcaption>
 </figure>
 
 <p>
@@ -631,7 +633,7 @@ centralized in mass and radius coordinate than for lower-mass
 pp-chain-sustained stars, but that drives <i>convection</i>. Therefore,
 convective mixing refuels the burning region from a larger reservoir,
 and when the fuel runs out, it means that there is a gap in the star
-between where T is hot enough for nuclear reactions and where viable
+between where \(T\) is hot enough for nuclear reactions and where viable
 fuel is. This causes an "overall contraction phase", also known as
 "Henyey hook", where the star, out of energy sources resumes its
 gravothermal collapse and shrinks in radius.
@@ -643,7 +645,7 @@ left at the edge of the convective core ignites in a shell. However,
 the He core below, whose mass is set by the extent of convection
 (+convective boundary mixing) during the main sequence, is too big to
 be sustained by electron degeneracy pressure and too hot to be
-degenerate (recall that &lang; T &rang; &prop; &mu; M/R): below the shell the
+degenerate (recall that \(\langle T \rangle \propto \mu M/R\)): below the shell the
 contraction continues until He also promptly ignites through the 3&alpha;
 reaction, driving core convection!
 </p>
@@ -978,7 +980,7 @@ massive stars!
 </p>
 
 
-<figure id="org887e5f5">
+<figure id="orgc7ebe4b">
 <img src="./images/Trho_TPAGB.png" alt="Trho_TPAGB.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>T(&rho;) diagram of a 1M<sub>☉</sub> <code>MESA-web</code> model during an AGB thermal pulse. Note the temperature inversion in the core, the presence of 2 burning shells in this snapshot (the He shell marked by the orange outline and the H shell marked by the yellow outline).</figcaption>
@@ -1039,7 +1041,7 @@ the <i>Gaia</i> DR2 dataset for WDs within 100pc from Earth (<a href="https://ui
 </p>
 
 
-<figure id="org8c425ed">
+<figure id="org38863c7">
 <img src="./images/Gaia_spur.png" alt="Gaia_spur.png">
 
 <figcaption><span class="figure-number">Figure 8: </span>HR diagram for a WD sample within 100pc from <i>Gaia</i> DR2. The color of points indicates spectroscopically determined masses based on SDSS, red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract">Tremblay et al. 2019</a></figcaption>
