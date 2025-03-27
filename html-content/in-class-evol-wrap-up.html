@@ -128,7 +128,7 @@ mixing (see for example <a href="./notes-lecture-neutrinos.html#orgad5bb9b">this
 <p>
 We have also worked out the ordering of timescales of the problem:
 </p>
-<div class="latex" id="org540232d">
+<div class="latex" id="org904ebfe">
 \begin{equation}
 \tau_\mathrm{nuc} \gg \tau_\mathrm{KH} \gg \tau_\mathrm{free\ fall} \ \ ,
 \end{equation}
@@ -338,10 +338,10 @@ burning can occur in two different ways: pp-cycle and CN-NO bi-cycle.
 
 <p>
 Looking at <code>MESA-web</code> models, we can see that the pp-cycle is sufficient
-to achieve the equilibrium condition \(L_\mathmr{nuc}=\int dm
-\varepsilon_\mathmr{nuc} \equiv L\) in low mass stars (<b>N.B.:</b> \(L\propto M^{x}\) with \(x\geq1\)). This
+to achieve the equilibrium condition \(L_\mathrm{nuc}=\int dm
+\varepsilon_\mathrm{nuc} \equiv L\) in low mass stars (<b>N.B.:</b> \(L\propto M^{x}\) with \(x\geq1\)). This
 is because the pp-cycle has lower Coulomb barriers (shallower relation
-between \(\varepsilon_\mathmr{nuc}\) and \(T\)) but a higher normalization (cf. <a href="notes-lecture-nuclear-cycles.html#orgb97b34c">pp
+between \(\varepsilon_\mathrm{nuc}\) and \(T\)) but a higher normalization (cf. <a href="notes-lecture-nuclear-cycles.html#orgb97b34c">pp
 &rarr; CNO transition</a>).
 </p>
 
@@ -386,18 +386,18 @@ Onno Pols' lecture notes sec. 7.2.3).
 
 <p>
 Increasing \(M \Leftrightarrow T_\mathrm{eff}\) further, the equilibrium condition
-\(L=L_\mathmr{nuc}\) cannot be satisfied anymore with the pp-chain, and
+\(L=L_\mathrm{nuc}\) cannot be satisfied anymore with the pp-chain, and
 the CN-NO bi-cycle kicks in. Because of its higher Coulomb barriers,
 it has a steeper temperature dependence: the energy release is even
 more concentrated, implying that \(\nabla\) in the core is very steep (recall
-\(\nabla\propto \kappa L \propto \kappa L_\mathmr{nuc}\)), thus <i>the core becomes convective</i>. This
+\(\nabla\propto \kappa L \propto \kappa L_\mathrm{nuc}\)), thus <i>the core becomes convective</i>. This
 means that convective mixing makes a larger mass of hydrogen available
 to the very central burning zone. At the same time, higher \(M\) &rArr;
 higher \(T_\mathrm{eff}\) and the envelope becomes radiative.
 </p>
 
 
-<figure id="org40be2ec">
+<figure id="org42fb77c">
 <img src="./images/conv_ZAMS.png" alt="conv_ZAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>The "initial" gravothermal equilibrium structure of a star is determined only by mass \(M\) and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn &amp; Weigert) shows in gray the region in mass coordinate \(y=m/M\) that are convective as a function of the total mass \(M=\int dm\) for \(Z=0.02\) models. Red lines indicate where 50 and 90 % of the luminosity \(L\) is generated (the "burning region") and the blue dashed lines show \(r(m)=0.25M\) and \(r(m)=0.5M\).</figcaption>
@@ -426,7 +426,7 @@ because the conversion of hydrogen into helium decreases X (and
 increases Y), which enter in two key quantities, mean molecular weight
 and electron scattering opacity:
 </p>
-<div class="latex" id="org982da39">
+<div class="latex" id="orgd5b31cc">
 \begin{equation}\label{eq:microphysics_XY}
 \mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2}} \ \ , \\
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}} \ \ \ .
@@ -438,7 +438,7 @@ Assuming a star to be in gravothermal equilibrium and assuming
 radiative energy transport (which we have just seen is not verified
 everywhere by <code>MESA-web</code> models!), we know that:
 </p>
-<div class="latex" id="orgc5f9a1e">
+<div class="latex" id="org848b547">
 \begin{equation}\label{eq:L_scaling}
 L\propto \frac{\mu^{4} M^{3}}{\kappa} \ \ ,
 \end{equation}
@@ -465,7 +465,7 @@ M<sub>ZAMS</sub>&le;2M<sub>☉</sub>.</li>
 </ul>
 
 
-<figure id="orgc7690b0">
+<figure id="org903e636">
 <img src="./images/stellar_lifetimes.png" alt="stellar_lifetimes.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Stellar lifetime as a function of initial masses from <a href="https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..29Z/abstract">Zapartas et al. 2017</a>. <code>MESA</code> and <code>GENEC</code> models are shown, focusing on masses that result in a final core-collapse event. The bottom panel shows the deviations between the analytic fit and the numerical models.</figcaption>
@@ -543,7 +543,7 @@ receeds in mass coordinate</i>.
 </p>
 
 
-<figure id="org43141cb">
+<figure id="org58bf965">
 <img src="./images/1Msun_X_M.png" alt="1Msun_X_M.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 1M<sub>☉</sub>, Z=0.02 <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS).</figcaption>
@@ -551,7 +551,7 @@ receeds in mass coordinate</i>.
 
 
 
-<figure id="orgdd09c3c">
+<figure id="orgc78bd08">
 <img src="./images/20Msun_H_profile.png" alt="20Msun_H_profile.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 20M<sub>☉</sub>, Z=0.001 <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS), and as time passes the core recedes because of the change in &kappa;.</figcaption>
@@ -574,7 +574,7 @@ outlines of the track you can see where the nuclear burning moves.
 </p>
 
 
-<figure id="orga963c1b">
+<figure id="orge82c5c7">
 <img src="./images/1Msun_TAMS.png" alt="1Msun_TAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Screenshot of a <code>MESA-web</code> calculation of a 1M<sub>☉</sub> star shortly after the main sequence. The HRD (bottom left) shows a smooth end of the main sequence, and the Kippenhahn diagram and T(&rho;) tracks (middle) show that all the burning is in a shell surrouding the inert He core. The bottom right panel shows that the inner region as a flattening T profile because of conduction efficiently transporting energy and erasing the dT/dr.</figcaption>
@@ -619,7 +619,7 @@ morphology of the end of the main sequence changes.
 </p>
 
 
-<figure id="org318a591">
+<figure id="org9190867">
 <img src="./images/30Msun_TAMS.png" alt="30Msun_TAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Screenshot of a <code>MESA-web</code> calculation of a 30M<sub>☉</sub> star shortly after the main sequence. The HRD (bottom left) shows the "Henyey hook" feature, the Kippenhahn diagran and T(&rho;) track shows that there is an off-center H-burning shell but the He in the core ignites promptly too. The core is not degenerate, but convective again, and mantains a nearly adiabatic temperature gradient.</figcaption>
@@ -735,9 +735,9 @@ onto the core), it will encounter a layer mixed by convection in the
 first dredge up. The outward mixing of nuclearly processed material
 also corresponds to inward mixing of H-rich envelope material: the
 shell thus reaches a region that is <i>more fuel rich</i> than before! This
-makes the shell briefly exceed the L<sub>\mathmr</sub>{nuc} = L condition, the
+makes the shell briefly exceed the L<sub>\mathrm</sub>{nuc} = L condition, the
 overproduction of energy pushes the envelope to higher L, lower T<sub>\mathrm</sub>{eff},
-and lowers the &rho; in the shell, causing a decrease of L<sub>\mathmr</sub>{nuc}. This
+and lowers the &rho; in the shell, causing a decrease of L<sub>\mathrm</sub>{nuc}. This
 process ultimately results in stars crossing a certain luminosity
 threshold 3 times: observationally this produces a cumulation of stars
 at a certain luminosity or in other words a "bump" in the luminosity
@@ -978,7 +978,7 @@ massive stars!
 </p>
 
 
-<figure id="org00504e8">
+<figure id="org1445173">
 <img src="./images/Trho_TPAGB.png" alt="Trho_TPAGB.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>T(&rho;) diagram of a 1M<sub>☉</sub> <code>MESA-web</code> model during an AGB thermal pulse. Note the temperature inversion in the core, the presence of 2 burning shells in this snapshot (the He shell marked by the orange outline and the H shell marked by the yellow outline).</figcaption>
@@ -1039,7 +1039,7 @@ the <i>Gaia</i> DR2 dataset for WDs within 100pc from Earth (<a href="https://ui
 </p>
 
 
-<figure id="org339f11c">
+<figure id="orgac211da">
 <img src="./images/Gaia_spur.png" alt="Gaia_spur.png">
 
 <figcaption><span class="figure-number">Figure 8: </span>HR diagram for a WD sample within 100pc from <i>Gaia</i> DR2. The color of points indicates spectroscopically determined masses based on SDSS, red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract">Tremblay et al. 2019</a></figcaption>
@@ -1064,7 +1064,7 @@ pushed upwards by radiation.
 <li><b>Q</b>: Consider the formation of Helium WDs. These are observed,
 however, to form from a single star not-massive-enough to ignite He
 burning, it would take longer than the current age of the Universe
-(because low M &rArr; much lower L &rArr; L<sub>\mathmr</sub>{nuc} = L drives a very slow
+(because low M &rArr; much lower L &rArr; L<sub>\mathrm</sub>{nuc} = L drives a very slow
 evolution). Therefore, apparently, the existence of He WDs is
 paradoxical! Can you think of any solution to this apparent paradox?</li>
 </ul>

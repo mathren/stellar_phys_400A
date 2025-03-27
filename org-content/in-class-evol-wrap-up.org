@@ -169,10 +169,10 @@ As we discussed in the [[./notes-lecture-nuclear-cycles.org][nuclear reaction cy
 burning can occur in two different ways: pp-cycle and CN-NO bi-cycle.
 
 Looking at =MESA-web= models, we can see that the pp-cycle is sufficient
-to achieve the equilibrium condition $L_\mathmr{nuc}=\int dm
-\varepsilon_\mathmr{nuc} \equiv L$ in low mass stars (*N.B.:* $L\propto M^{x}$ with $x\geq1$). This
+to achieve the equilibrium condition $L_\mathrm{nuc}=\int dm
+\varepsilon_\mathrm{nuc} \equiv L$ in low mass stars (*N.B.:* $L\propto M^{x}$ with $x\geq1$). This
 is because the pp-cycle has lower Coulomb barriers (shallower relation
-between $\varepsilon_\mathmr{nuc}$ and $T$) but a higher normalization (cf. [[file:notes-lecture-nuclear-cycles.org::*pp \rightarrow CNO transition][pp
+between $\varepsilon_\mathrm{nuc}$ and $T$) but a higher normalization (cf. [[file:notes-lecture-nuclear-cycles.org::*pp \rightarrow CNO transition][pp
 \rightarrow CNO transition]]).
 
 - *Very low M main sequence \Rightarrow fully convective*
@@ -203,11 +203,11 @@ Onno Pols' lecture notes sec. 7.2.3).
 - *High M main sequence \Rightarrow convective core, radiative envelope*
 
 Increasing $M \Leftrightarrow T_\mathrm{eff}$ further, the equilibrium condition
-$L=L_\mathmr{nuc}$ cannot be satisfied anymore with the pp-chain, and
+$L=L_\mathrm{nuc}$ cannot be satisfied anymore with the pp-chain, and
 the CN-NO bi-cycle kicks in. Because of its higher Coulomb barriers,
 it has a steeper temperature dependence: the energy release is even
 more concentrated, implying that $\nabla$ in the core is very steep (recall
-$\nabla\propto \kappa L \propto \kappa L_\mathmr{nuc}$), thus /the core becomes convective/. This
+$\nabla\propto \kappa L \propto \kappa L_\mathrm{nuc}$), thus /the core becomes convective/. This
 means that convective mixing makes a larger mass of hydrogen available
 to the very central burning zone. At the same time, higher $M$ \Rightarrow
 higher $T_\mathrm{eff}$ and the envelope becomes radiative.
@@ -461,9 +461,9 @@ onto the core), it will encounter a layer mixed by convection in the
 first dredge up. The outward mixing of nuclearly processed material
 also corresponds to inward mixing of H-rich envelope material: the
 shell thus reaches a region that is /more fuel rich/ than before! This
-makes the shell briefly exceed the L_\mathmr{nuc} = L condition, the
+makes the shell briefly exceed the L_\mathrm{nuc} = L condition, the
 overproduction of energy pushes the envelope to higher L, lower T_\mathrm{eff},
-and lowers the \rho in the shell, causing a decrease of L_\mathmr{nuc}. This
+and lowers the \rho in the shell, causing a decrease of L_\mathrm{nuc}. This
 process ultimately results in stars crossing a certain luminosity
 threshold 3 times: observationally this produces a cumulation of stars
 at a certain luminosity or in other words a "bump" in the luminosity
@@ -705,7 +705,7 @@ pushed upwards by radiation.
  - *Q*: Consider the formation of Helium WDs. These are observed,
    however, to form from a single star not-massive-enough to ignite He
    burning, it would take longer than the current age of the Universe
-   (because low M \Rightarrow much lower L \Rightarrow L_\mathmr{nuc} = L drives a very slow
+   (because low M \Rightarrow much lower L \Rightarrow L_\mathrm{nuc} = L drives a very slow
    evolution). Therefore, apparently, the existence of He WDs is
    paradoxical! Can you think of any solution to this apparent paradox?
 :end:
