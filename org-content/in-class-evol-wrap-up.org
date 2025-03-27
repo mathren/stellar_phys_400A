@@ -6,7 +6,6 @@
 book Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2,
 [[https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.4116F/abstract][Farrell et al. 2022]].
 
-
 * Pre-main sequence and Hayashi track
 We have developed a set of 4 non-linear, coupled ODEs to describe the
 /structure/ and /evolution/ of stars (with physical approximations

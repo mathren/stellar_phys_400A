@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-03-24 Mon 10:37 -->
+<!-- 2025-03-27 Thu 09:35 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Evolution of stars</title>
@@ -13,6 +13,27 @@
 			       stellar evolution, 400A, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -101,9 +122,9 @@ Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2,
 <h3 id="org02ab19c"><a href="#org02ab19c">Aims</a></h3>
 <div class="outline-text-3" id="text-org02ab19c">
 <p>
-In this class activity, you will work together in groups of three to
-piece together all the things we have learned so far and describe the
-evolution of single, non-rotating stars with <i>your</i> <code>MESA-web</code> models!
+In this class activity, you will work together in groups to piece
+together all the things we have learned so far and describe the
+evolution of single non-rotating stars with <i>your</i> <code>MESA-web</code> models!
 </p>
 
 <p>
@@ -140,7 +161,7 @@ produces for you.
 </p>
 
 
-<figure id="org3cf9404">
+<figure id="orgce8132b">
 <img src="./images/MESA-web_pgstar.png" alt="MESA-web_pgstar.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>snapshot of a <code>MESA-web</code> generated movie for the evolution of a 1M<sub>☉</sub> star.</figcaption>
@@ -169,8 +190,8 @@ large variations on these plots!
 <h4 id="orgb382c2a"><a href="#orgb382c2a">Top right panel: abundance panel</a></h4>
 <div class="outline-text-4" id="text-orgb382c2a">
 <p>
-This shows log<sub>10</sub>(X<sub>i</sub>) with X<sub>i</sub> the mass fraction of the i-th isotope as
-a function of mass coordinate (m=0 is the center, m=M the surface).
+This shows \(\log_{10}(X_{i})\) with \(X_{i}\) the mass fraction of the $i$-th isotope as
+a function of mass coordinate (\(m=0\) is the center, \(m=M\) the surface).
 </p>
 </div>
 </div>
@@ -179,7 +200,9 @@ a function of mass coordinate (m=0 is the center, m=M the surface).
 <h4 id="orgcac7c4a"><a href="#orgcac7c4a">Bottom right panel: HR diagram</a></h4>
 <div class="outline-text-4" id="text-orgcac7c4a">
 <p>
-Showing absolute bolometric luminosity vs. effective temperature.
+Showing absolute bolometric luminosity vs. effective temperature on a
+log-log scale with the x-axis increasing leftward.
+<b>N.B.:</b> This shows the evolutionary track of one star as a function of time.
 </p>
 </div>
 </div>
@@ -190,41 +213,45 @@ Showing absolute bolometric luminosity vs. effective temperature.
 <p>
 This shows the internal mixing processes and the energy generation as
 a function of "time" (on the x-axis) and mass coordinate (y-axis):
-each vertical line is effectively a snapshot at fixed time, the bottom
-is the center, and the top is the surface.
+each vertical line is effectively a snapshot of the internal structure
+of the star at fixed time, the bottom is the center, and the top is
+the surface.
 </p>
 
 <p>
 Light blue indicates regions of the star where there is convection,
-white shows convective boundary mixing (a.k.a. "overshooting",)
-purple indicates thermohaline mixing, gray (if any) indicates
-semiconvection. Red regions (which <i>can</i> be hidden behind the mixing)
-indicate &epsilon;<sub>nuc</sub>&gt;0, dark blue region indicate regions of strong neutrino
-cooling (&epsilon;<sub>&nu;</sub> &ge; &epsilon;<sub>nuc</sub>). Some lines plotting M<sub>tot</sub>, and mass
-of the Helium, CO etc. cores may also be ploted.
+white shows convective boundary mixing (a.k.a. "overshooting",) purple
+indicates thermohaline mixing, gray (if any) indicates semiconvection.
+Red regions (which <i>can</i> be hidden behind the mixing) indicate
+\(\varepsilon_\mathrm{nuc}>0\), dark blue region indicate regions of strong
+neutrino cooling (\(\varepsilon_{\nu} \ge \varepsilon_\mathrm{nuc}\)). Some lines
+plotting \(M_\mathrm{tot}\), and mass of the Helium, CO etc. cores may
+also be plotted.
 </p>
 
 <p>
-The x-axis here is actually the timestep number. <b>N.B.:</b> &Delta; t<sub>n</sub> can
-vary a lot with n, so this is not a linear mapping between physical
+The x-axis here is actually the timestep number. <b>N.B.:</b> \(\Delta t_{n}\) can
+vary a lot with \(n\), so this is not a linear mapping between physical
 time and timestep number!
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgf90af2a" class="outline-4">
-<h4 id="orgf90af2a"><a href="#orgf90af2a">Middle bottom panel: T(&rho;)</a></h4>
-<div class="outline-text-4" id="text-orgf90af2a">
+<div id="outline-container-org13889c4" class="outline-4">
+<h4 id="org13889c4"><a href="#org13889c4">Middle bottom panel: \(T(\rho)\)</a></h4>
+<div class="outline-text-4" id="text-org13889c4">
 <p>
 Annotated log-log plot of the temperature and density. The line color
 indicates mixing at that location in the star, the yellow/orange/red
-outline indicates the level of energy generation.
+outline indicates the level of energy generation. This is also a
+snapshot of the star structure at fixed time (in each frame of the
+movie).
 </p>
 
 <p>
-The annotations behind indicate regions of &Gamma;&lt;4/3 (&rArr; dynamical
-instability), full degeneracy (&rArr; &epsilon;<sub>Fermi</sub>&cong; 4 K<sub>B</sub>T), and T(&rho;)
-lines corresponding to the ignition of various fuels.
+The annotations indicate regions of \(\Gamma<4/3\) (&rArr; dynamical instability),
+full degeneracy (\(\Rightarrow \varepsilon_\mathrm{Fermi}\simeq 4 k_{B}T\)), and \(T(\rho)\) lines
+corresponding to the ignition of various fuels.
 </p>
 </div>
 </div>
@@ -233,18 +260,18 @@ lines corresponding to the ignition of various fuels.
 <h4 id="org5fe32d3"><a href="#org5fe32d3">Right panel: various profiles</a></h4>
 <div class="outline-text-4" id="text-org5fe32d3">
 <p>
-These three panels show P, &rho;, and T as a function of mass coordinate.
+These three panels show \(P\), \(\rho\), and \(T\) as a function of Lagrangian
+mass coordinate.
 </p>
 </div>
 </div>
 </div>
 
-
 <div id="outline-container-org282d126" class="outline-3">
 <h3 id="org282d126"><a href="#org282d126">Mass-luminosity relation revisited with models</a></h3>
 <div class="outline-text-3" id="text-org282d126">
 <p>
-We have already discussed <i>empirical</i> L &equiv; L(M) relations based on
+We have already discussed <i>empirical</i> \(L \equiv L(M)\) relations based on
 <i>dynamical</i> mass measurements in SB2 eclipsing binaries, and you have
 derived an analytic relation for fully radiative stars (see <a href="notes-lecture-ETransport.html#org3ffadc3">homework
 on radiative energy transport</a>). Let's now see if our models agree and
@@ -253,9 +280,9 @@ if we can understand why if they don't!
 
 <p>
 Find the "beginning of the main sequence" of your star, as in the
-point where gravothermal equilibrium is achieved and L<sub>nuc</sub> = L thanks
-to hydrogen core burning and report on <a href="https://docs.google.com/spreadsheets/d/17HdroCGDeq5wl5l60erJ_-Vstz5JTujuxsz1BQhns0M/edit?gid=0#gid=0">this spreadsheet</a> your mass and
-luminosity at that point.
+point where gravothermal equilibrium is achieved and \(L_\mathrm{nuc} =
+L\) thanks to hydrogen core burning and report on <a href="https://docs.google.com/spreadsheets/d/17HdroCGDeq5wl5l60erJ_-Vstz5JTujuxsz1BQhns0M/edit?gid=0#gid=0">this spreadsheet</a> your
+mass and luminosity at that point.
 </p>
 
 <p>
@@ -269,34 +296,34 @@ initial stellar structure. You can find the variable <code>center_h1</code> in y
 
 
 
-<figure id="orgfb731df">
+<figure id="org7959bfe">
 <img src="./images/LM_crowdsourced.png" alt="LM_crowdsourced.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 2: </span>L(M) relation obtained in class. The red points assume homogeneous stars in hydrostatic equilibrium and fully radiative, the orange points are the results reported by the students based on <code>MESA-web</code> results. Deviations at large and small masses (related to violations of the theoretical assumptions) are expected.</figcaption>
+<figcaption><span class="figure-number">Figure 2: </span>\(L(M)\) relation obtained in class. The red points assume homogeneous stars in hydrostatic equilibrium and fully radiative, the orange points are the results reported by the students based on <code>MESA-web</code> results. Deviations at large and small masses (related to violations of the theoretical assumptions) are expected.</figcaption>
 </figure>
 
 <p>
-The red dots here correspond to log<sub>10</sub>[(M/M<sub>☉</sub>)<sup>3</sup>], the L(M) relation
-that can be obtained assuming hydrostatic equilibrium <i>and</i> purely
-radiative energy transport. Despite this assumption, which is <i>not</i>
-verified for most of the stars, the agreement between these relations
-is not bad! We can barely notice two expected significant deviations:
+The red dots here correspond to \(\log_{10}[(M/M_{☉})^{3}]\), the \(L(M)\)
+relation that can be obtained assuming hydrostatic equilibrium <i>and</i>
+purely radiative energy transport. Despite this assumption, which is
+<i>not</i> verified for most of the stars, the agreement between these
+relations is not bad! We can barely notice two expected significant
+deviations:
 </p>
 
 <ul class="org-ul">
 <li>at low masses we have a <i>steepening</i> of the relation: the portion of
 these stars being convective is progressively larger. Assuming fully
 convective transport of energy (i.e., assuming an adiabatic
-temperature gradient), one can in fact derive L(M) &prop; M<sup>4</sup>, steeper
+temperature gradient), one can in fact derive \(L(M) \propto M^{4}\), steeper
 than the theoretical scaling represented here</li>
 <li>at the high masses we have a <i>flattening</i>: this is because for very
-massive stars their luminosity L &rarr; L<sub>Edd</sub>&prop; M, therefore we
-expect a progressive flattening until L(M)&prop; M. This may also be
+massive stars their luminosity \(L \rightarrow L_\mathrm{Edd}\propto M\), therefore we
+expect a progressive flattening until \(L(M)\propto M\). This may also be
 implicated in the discussion for what is the maximum mass of a star.</li>
 </ul>
 </div>
 </div>
-
 
 <div id="outline-container-orga79fc2d" class="outline-3">
 <h3 id="orga79fc2d"><a href="#orga79fc2d">Discuss with your "mass" group</a></h3>
@@ -321,7 +348,7 @@ Pay attention to:
 <ul class="org-ul">
 <li>timescales <i>and</i> timestep size</li>
 <li>HR diagram</li>
-<li>behavior on the T(&rho;) diagram</li>
+<li>behavior on the \(T(\rho)\) diagram</li>
 <li>composition (at surface and core)</li>
 <li>Kippenhahn diagram</li>
 </ul>
@@ -352,7 +379,6 @@ main sequence?</li>
 </div>
 </div>
 
-
 <div id="outline-container-org0265c69" class="outline-2">
 <h2 id="org0265c69"><a href="#org0265c69">Clean examples</a></h2>
 <div class="outline-text-2" id="text-org0265c69">
@@ -360,8 +386,8 @@ main sequence?</li>
 Because <code>MESA-web</code> is a simple configuration meant for didactic
 applications, it may produce in certain configurations a lot of
 numerical noise. See <a href="https://www.stellarphysics.org/research">here</a> (scroll down to "Stellar Evolution Videos")
-some clean examples for a representative low-mass star (1M<sub>☉</sub>), high
-mass star (15M<sub>☉</sub>). These were also produced with MESA, but likely
+some clean examples for a representative low-mass star (\(1M_{☉}\)), high
+mass star (\(15M_{☉}\)). These were also produced with MESA, but likely
 configured differently than <code>MESA-web</code>.
 </p>
 
@@ -377,7 +403,7 @@ stars of various mass.
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-radTrans.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-SNe.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 24 March 2025 <br>
+  Last updated on 27 March 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>

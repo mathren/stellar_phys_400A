@@ -4,8 +4,6 @@
 #+PREVIOUS_PAGE: notes-lecture-radTrans.org
 #+NEXT_PAGE: notes-lecture-SNe.org
 
-
-
 *Materials*: Onno Pols' lecture notes Chapters 7-9-11, Kippenhahn's book
 Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2,
 [[http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web][MESA-web]].
@@ -13,9 +11,9 @@ Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2,
 * In class activity: evolution of stars
 
 ** Aims
-In this class activity, you will work together in groups of three to
-piece together all the things we have learned so far and describe the
-evolution of single, non-rotating stars with /your/ =MESA-web= models!
+In this class activity, you will work together in groups to piece
+together all the things we have learned so far and describe the
+evolution of single non-rotating stars with /your/ =MESA-web= models!
 
 The aim is for you to be able to:
  1. *distinguish physical features from numerical artifacts*
@@ -55,54 +53,60 @@ long-duration phases may take few large timesteps and /not/ produce
 large variations on these plots!
 
 *** Top right panel: abundance panel
-This shows log_{10}(X_{i}) with X_{i} the mass fraction of the i-th isotope as
-a function of mass coordinate (m=0 is the center, m=M the surface).
+This shows $\log_{10}(X_{i})$ with $X_{i}$ the mass fraction of the $i$-th isotope as
+a function of mass coordinate ($m=0$ is the center, $m=M$ the surface).
 
 *** Bottom right panel: HR diagram
-Showing absolute bolometric luminosity vs. effective temperature.
+Showing absolute bolometric luminosity vs. effective temperature on a
+log-log scale with the x-axis increasing leftward.
+*N.B.:* This shows the evolutionary track of one star as a function of time.
 
 *** Middle top panel: Kippenhahn diagram
 This shows the internal mixing processes and the energy generation as
 a function of "time" (on the x-axis) and mass coordinate (y-axis):
-each vertical line is effectively a snapshot at fixed time, the bottom
-is the center, and the top is the surface.
+each vertical line is effectively a snapshot of the internal structure
+of the star at fixed time, the bottom is the center, and the top is
+the surface.
 
 Light blue indicates regions of the star where there is convection,
-white shows convective boundary mixing (a.k.a. "overshooting",)
-purple indicates thermohaline mixing, gray (if any) indicates
-semiconvection. Red regions (which /can/ be hidden behind the mixing)
-indicate \varepsilon_{nuc}>0, dark blue region indicate regions of strong neutrino
-cooling (\varepsilon_{\nu} \ge \varepsilon_{nuc}). Some lines plotting M_{tot}, and mass
-of the Helium, CO etc. cores may also be ploted.
+white shows convective boundary mixing (a.k.a. "overshooting",) purple
+indicates thermohaline mixing, gray (if any) indicates semiconvection.
+Red regions (which /can/ be hidden behind the mixing) indicate
+$\varepsilon_\mathrm{nuc}>0$, dark blue region indicate regions of strong
+neutrino cooling ($\varepsilon_{\nu} \ge \varepsilon_\mathrm{nuc}$). Some lines
+plotting $M_\mathrm{tot}$, and mass of the Helium, CO etc. cores may
+also be plotted.
 
-The x-axis here is actually the timestep number. *N.B.:* \Delta t_{n} can
-vary a lot with n, so this is not a linear mapping between physical
+The x-axis here is actually the timestep number. *N.B.:* $\Delta t_{n}$ can
+vary a lot with $n$, so this is not a linear mapping between physical
 time and timestep number!
 
-*** Middle bottom panel: T(\rho)
+*** Middle bottom panel: $T(\rho)$
 Annotated log-log plot of the temperature and density. The line color
 indicates mixing at that location in the star, the yellow/orange/red
-outline indicates the level of energy generation.
+outline indicates the level of energy generation. This is also a
+snapshot of the star structure at fixed time (in each frame of the
+movie).
 
-The annotations behind indicate regions of \Gamma<4/3 (\Rightarrow dynamical
-instability), full degeneracy (\Rightarrow \varepsilon_{Fermi}\simeq 4 K_{B}T), and T(\rho)
-lines corresponding to the ignition of various fuels.
+The annotations indicate regions of $\Gamma<4/3$ (\Rightarrow dynamical instability),
+full degeneracy ($\Rightarrow \varepsilon_\mathrm{Fermi}\simeq 4 k_{B}T$), and $T(\rho)$ lines
+corresponding to the ignition of various fuels.
 
 *** Right panel: various profiles
-These three panels show P, \rho, and T as a function of mass coordinate.
-
+These three panels show $P$, $\rho$, and $T$ as a function of Lagrangian
+mass coordinate.
 
 ** Mass-luminosity relation revisited with models
-We have already discussed /empirical/ L \equiv L(M) relations based on
+We have already discussed /empirical/ $L \equiv L(M)$ relations based on
 /dynamical/ mass measurements in SB2 eclipsing binaries, and you have
 derived an analytic relation for fully radiative stars (see [[file:notes-lecture-ETransport.org::*Exercise 5.3 in Onno Pols' lecture notes][homework
 on radiative energy transport]]). Let's now see if our models agree and
 if we can understand why if they don't!
 
 Find the "beginning of the main sequence" of your star, as in the
-point where gravothermal equilibrium is achieved and L_{nuc} = L thanks
-to hydrogen core burning and report on [[https://docs.google.com/spreadsheets/d/17HdroCGDeq5wl5l60erJ_-Vstz5JTujuxsz1BQhns0M/edit?gid=0#gid=0][this spreadsheet]] your mass and
-luminosity at that point.
+point where gravothermal equilibrium is achieved and $L_\mathrm{nuc} =
+L$ thanks to hydrogen core burning and report on [[https://docs.google.com/spreadsheets/d/17HdroCGDeq5wl5l60erJ_-Vstz5JTujuxsz1BQhns0M/edit?gid=0#gid=0][this spreadsheet]] your
+mass and luminosity at that point.
 
 *Hint*: A very simple approximate criterion we can adopt here is
 =center_h1= \le 99% =center_h1= at the beginning of the evolution: this
@@ -112,26 +116,26 @@ initial stellar structure. You can find the variable =center_h1= in your
 =trimmed_history.data,= in which every line contains a timestep.
 
 
-#+CAPTION: L(M) relation obtained in class. The red points assume homogeneous stars in hydrostatic equilibrium and fully radiative, the orange points are the results reported by the students based on =MESA-web= results. Deviations at large and small masses (related to violations of the theoretical assumptions) are expected.
+#+CAPTION: $L(M)$ relation obtained in class. The red points assume homogeneous stars in hydrostatic equilibrium and fully radiative, the orange points are the results reported by the students based on =MESA-web= results. Deviations at large and small masses (related to violations of the theoretical assumptions) are expected.
 #+ATTR_HTML: :width 100%
 [[./images/LM_crowdsourced.png]]
 
-The red dots here correspond to log_{10}[(M/M_{\odot})^{3}], the L(M) relation
-that can be obtained assuming hydrostatic equilibrium /and/ purely
-radiative energy transport. Despite this assumption, which is /not/
-verified for most of the stars, the agreement between these relations
-is not bad! We can barely notice two expected significant deviations:
+The red dots here correspond to $\log_{10}[(M/M_{\odot})^{3}]$, the $L(M)$
+relation that can be obtained assuming hydrostatic equilibrium /and/
+purely radiative energy transport. Despite this assumption, which is
+/not/ verified for most of the stars, the agreement between these
+relations is not bad! We can barely notice two expected significant
+deviations:
 
 - at low masses we have a /steepening/ of the relation: the portion of
   these stars being convective is progressively larger. Assuming fully
   convective transport of energy (i.e., assuming an adiabatic
-  temperature gradient), one can in fact derive L(M) \propto M^{4}, steeper
+  temperature gradient), one can in fact derive $L(M) \propto M^{4}$, steeper
   than the theoretical scaling represented here
 - at the high masses we have a /flattening/: this is because for very
-  massive stars their luminosity L \rightarrow L_{Edd}\propto M, therefore we
-  expect a progressive flattening until L(M)\propto M. This may also be
+  massive stars their luminosity $L \rightarrow L_\mathrm{Edd}\propto M$, therefore we
+  expect a progressive flattening until $L(M)\propto M$. This may also be
   implicated in the discussion for what is the maximum mass of a star.
-
 
 ** Discuss with your "mass" group
 Compare your model to the models of people nearby you and explore the
@@ -147,7 +151,7 @@ remember the python module available to read the data: [[http://user.astro.wisc.
 Pay attention to:
  - timescales /and/ timestep size
  - HR diagram
- - behavior on the T(\rho) diagram
+ - behavior on the $T(\rho)$ diagram
  - composition (at surface and core)
  - Kippenhahn diagram
 
@@ -168,14 +172,13 @@ Pay attention to:
 8. where does He core burning start?
 9. is there any other nuclear burning during He core burning? And before?
 
-
 * Clean examples
 
 Because =MESA-web= is a simple configuration meant for didactic
 applications, it may produce in certain configurations a lot of
 numerical noise. See [[https://www.stellarphysics.org/research][here]] (scroll down to "Stellar Evolution Videos")
-some clean examples for a representative low-mass star (1M_{\odot}), high
-mass star (15M_{\odot}). These were also produced with MESA, but likely
+some clean examples for a representative low-mass star ($1M_{\odot}$), high
+mass star ($15M_{\odot}$). These were also produced with MESA, but likely
 configured differently than =MESA-web=.
 
 *Spoiler alert*: find [[./in-class-evol-wrap-up.org][here]] some (partial) discussion of the evolution of
