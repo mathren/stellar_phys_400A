@@ -26,22 +26,22 @@ composition decouple from the 4 ODEs+EOS that describe the /structure/ of
 the star.
 
 The =MESA-web= stellar models at start at the /top right/ of the
-Herzsprung-Russell diagram (so high L low T_{eff}) as a uniform sphere of
-gas with set composition that is in hydrostatic but not /necessarily/
-thermal equilibrium /yet/.
+Herzsprung-Russell diagram (so high $L$ low $T_\mathrm{eff}$) as a
+uniform sphere of gas with set composition that is in hydrostatic but
+not /necessarily/ thermal equilibrium /yet/.
 
 *N.B.:* there may also be short initial numerical transients lasting a
 few timesteps and irrelevantly short simulated physical time.
 
 *N.B.:* the expression /top right/ above is relative, in its future
-evolution the mode may evolve at even higher L later on (but not lower
-T_{eff}!)
+evolution the mode may evolve at even higher $L$ later on (but not lower
+$T_\mathrm{eff}$!)
 
-These models thus evolve on a thermal timescale \sim\tau_{KH} losing energy (L
-goes down) and contracting -- picture lines of constant R=(L/(4\pi\sigma
-T_{eff}^{4)}))^{1/2}! This /is/ the gravothermal KH contraction which leads to
-the increase in average \langle T \rangle by the virial theorem, and it goes on
-until either:
+These models thus evolve on a thermal timescale $\sim\tau_\mathrm{KH}$
+losing energy ($L$ goes down) and contracting -- picture lines of
+constant $R=(L/(4\pi\sigma T_{eff}^{4)}))^{1/2}$! This /is/ the gravothermal
+Kelvin-Helmholtz contraction which leads to the increase in average $\langle
+T \rangle$ by the virial theorem, and it goes on until either:
 1. *degeneracy pressure stops this process by changing the EOS, tapping
    into quantum mechanical effects to provide extra pressure*: this
    should not happen to any of your models, but it is how you form a
@@ -53,29 +53,41 @@ until either:
    a lot of energy.
 2. *an energy source (namely nuclear burning) stops the collapse*. This
    is what happens to your stars, where H burning (as the lightest and
-   most energy-releasing fuel) starts. The point where L=L_{nuc} because
-   of H core burning is referred to as *Zero Age Main Sequence* (ZAMS),
-   since the "main sequence" of the color magnitude diagram containing
-   most stars is made of stars during their longest phase of evolution,
-   hydrogen core burning.
+   most energy-releasing fuel) starts. The point where
+   $L=L_\mathrm{nuc}$ because of H core burning is referred to as *Zero
+   Age Main Sequence* (ZAMS), since the "main sequence" of the color
+   magnitude diagram containing most stars is made of stars during
+   their longest phase of evolution, hydrogen core burning.
 
-From the ignition of H in the core onwards, for timescales \tau \ll \tau_{nuc},
-once the composition is decided (i.e., for fixed mass fractions {X_{i}})
-the structure is determined by those 4 ODEs+EOS. This means that the
-/initial/ structure of the star is /not/ sensitive to the (complex,
-not-yet-fully understood) star formation process, and the ZAMS
-structure is fully determined by the composition!
+*N.B.:* An isochrone at $t=0$ containing the stellar structures at
+various masses when they reach the equilibrium condition
+$L=L_\mathrm{nuc}$ is also referred to as ZAMS isochrone. For an
+example, see the hottest, leftmost dashed isochrone on the HR diagram
+from [[https://www.aanda.org/10.1051/0004-6361/201833433][Schneider et al. 2018]] used [[file:notes-lecture-CMD-HRD.org::*Example: 30 Doradus region][here]].
+
+From the ignition of H in the core onwards, for timescales $t \ll
+\tau_\mathrm{nuc}$, once the composition is decided (i.e., for fixed mass
+fractions ${X_{i}}$) the structure is determined by those 4 ODEs+EOS.
+This means that the /initial/ structure of the star is /not/ sensitive to
+the (complex, not-yet-fully understood) star formation process, and
+the ZAMS structure is fully determined by the composition! This is
+why, although the star formation process does not proceed starting
+with a ball of known composition $\{X_{i}\}$ and fixed total mass $M$, we
+can make stellar models starting from this idealized conditions, and
+let them relax to a thermal equilibrium status solving the structure
+equations.
+
 
 ** Pre-main sequence stellar structure
 
 If the gravothermal collapse of the mass of gas considered ends with
 the ignition of nuclear fuel (option 2. above), that is, if we make a
-star (recall \langle T \rangle \prop \mu M/R, so the mass determines whether we get
+star (recall $\langle T \rangle \prop \mu M/R$, so the mass determines whether we get
 here), then the phase from the beginning of the simulation until ZAMS
 is called /pre-main-sequence/ (pre-MS).
 
 During this phase the models start from the top-right of the diagram
-at high L, large R (\Rightarrow low \langle T \rangle), and progressively contract and heat
+at high $L$, large $R$ (\Rightarrow low $\langle T \rangle$), and progressively contract and heat
 up. This is an idealization: often as stars are doing that, they still
 accrete mass, in the most massive stars (which have shorter KH
 timescales and pre-MS phases), accretion may not be over until even
@@ -85,12 +97,13 @@ after ZAMS! See for instance the recent review by [[https://ui.adsabs.harvard.ed
 can be "dusty" and thus opaque, making the pre-main sequence evolution
 /embedded/ and hard to directly observe.
 
-The \langle T \rangle is initially low (the gas that is collapsing is coming from
-the interstellar medium), and increasing. Since \nabla = \partial ln(T)/\partial ln(P) \propto \kappa L and \kappa
-generally increases at low T, initially the stars have steep
-temperature gradient and are /fully convective/! This homogenizes their
-composition (but deuterium burning during the pre-MS can change this),
-and also determines that \nabla\simeq\nabla_{ad} to very good approximation.
+The $\langle T \rangle$ is initially low (the gas that is collapsing is coming
+from the interstellar medium), and increasing. Since $\nabla = \partial ln(T)/\partial
+ln(P) \propto \kappa L$ and $\kappa$ generally increases at low $T$, initially the
+stars have steep temperature gradient and are /fully convective/! This
+homogenizes their composition (but deuterium burning during the pre-MS
+can change this), and also determines that $\nabla\simeq\nabla_\mathrm{ad}$ to very
+good approximation.
 
 Since almost arbitrarily high energy flux can be carried by
 (efficient) convection maintaining an adiabatic gradient, this means
@@ -105,26 +118,28 @@ Sec. 9.1.1. of Onno Pols' lecture notes for an analytic approximation)
 after [[https://en.wikipedia.org/wiki/Chushiro_Hayashi][Chushiro Hayashi]]. The Hayashi track corresponds to solutions for
 fully [[./notes-lecture-convection.org][convective]] stars. Wiggles around this vertical line are due to
 recombination and partial ionization zones leading to deviations of
-the temperature gradient \nabla from adiabatic and burning of light
-elements (^{2}H,^{7}Li) that releases some energy.
+the temperature gradient $\nabla$ from adiabatic and burning of light
+elements ($^{2}\mathrm{H}$, $^{7}\mathrm{Li}$) that releases some small
+amount of energy.
 
 *N.B.:* The energy release per nucleon of the burning of light elements
 is very low and does not manage to alt the thermal-timescale
 quasi-static collapse.
 
-*The Hayashi line effectively determines a right, low-T_{eff} boundary
-on the HRD for stars in hydrostatic equilibrium*: if a star were to be
-colder, it would have a steeper-than-adiabatic gradient somewhere,
-which would imply a higher convective flux (cf. [[file:notes-lecture-convection.org::*Convective energy flux][convective energy
-flux]])) and thus increase the luminosity of the star, moving the star
-upwards back onto the Hayashi track.
+*The Hayashi line effectively determines a right, low-$T_\mathrm{eff}$
+boundary on the HRD for stars in hydrostatic equilibrium*: if a star
+were to be colder, it would have a steeper-than-adiabatic gradient
+somewhere, which would imply a higher convective flux (cf. [[file:notes-lecture-convection.org::*Convective energy flux][convective
+energy flux]])) and thus increase the luminosity of the star, moving the
+star upwards back onto the Hayashi track.
 
 *N.B.:* for these cool temperatures, we already know that the opacity is
-dominated by H^{-}, molecules, and dust, and we have approximate powerlaw
-scalings with T_{eff} for analytic considerations, but =MESA-web= uses
-tabulated values (cf. [[./notes-lecture-kappa.org][opacity lecture]] and references therein).
+dominated by $\mathrm{H}^{-}$, molecules, and dust, and we have
+approximate powerlaw scalings with $T_\mathrm{eff}$ for analytic
+considerations, but =MESA-web= uses tabulated values (cf. [[./notes-lecture-kappa.org][opacity
+lecture]] and references therein).
 
-The location in T_{eff} of the Hayashi track is dependent on the mass M
+The location in $T_\mathrm{eff}$ of the Hayashi track is dependent on the mass M
 of the star: more massive stars are hotter since the very beginning.
 This can be analytically derived imposing \nabla=\nabla_{ad} and solving the
 remaining 3 ODEs assuming some form for \kappa\equiv\kappa(T,\rho) at the photosphere:
