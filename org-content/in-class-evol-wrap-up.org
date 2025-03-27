@@ -39,7 +39,7 @@ $T_\mathrm{eff}$!)
 
 These models thus evolve on a thermal timescale $\sim\tau_\mathrm{KH}$
 losing energy ($L$ goes down) and contracting -- picture lines of
-constant $R=(L/(4\pi\sigma T_{eff}^{4)}))^{1/2}$! This /is/ the gravothermal
+constant $R=(L/(4\pi\sigma T_\mathrm{eff}^{4)}))^{1/2}$! This /is/ the gravothermal
 Kelvin-Helmholtz contraction which leads to the increase in average $\langle
 T \rangle$ by the virial theorem, and it goes on until either:
 1. *degeneracy pressure stops this process by changing the EOS, tapping
@@ -82,7 +82,7 @@ equations.
 
 If the gravothermal collapse of the mass of gas considered ends with
 the ignition of nuclear fuel (option 2. above), that is, if we make a
-star (recall $\langle T \rangle \prop \mu M/R$, so the mass determines whether we get
+star (recall $\langle T \rangle \propto \mu M/R$, so the mass determines whether we get
 here), then the phase from the beginning of the simulation until ZAMS
 is called /pre-main-sequence/ (pre-MS).
 
@@ -139,78 +139,80 @@ approximate powerlaw scalings with $T_\mathrm{eff}$ for analytic
 considerations, but =MESA-web= uses tabulated values (cf. [[./notes-lecture-kappa.org][opacity
 lecture]] and references therein).
 
-The location in $T_\mathrm{eff}$ of the Hayashi track is dependent on the mass M
-of the star: more massive stars are hotter since the very beginning.
-This can be analytically derived imposing \nabla=\nabla_{ad} and solving the
-remaining 3 ODEs assuming some form for \kappa\equiv\kappa(T,\rho) at the photosphere:
-effectively the outer boundary condition and atmospheric physics
-determines this.
+The location in $T_\mathrm{eff}$ of the Hayashi track is dependent on
+the mass $M$ of the star: more massive stars are hotter since the very
+beginning. This can be analytically derived imposing $\nabla=\nabla_\mathrm{ad}$
+and solving the remaining 3 ODEs assuming some form for $\kappa\equiv\kappa(T,\rho)$ at
+the photosphere: effectively the outer boundary condition and
+atmospheric physics determines this.
 
 Stars to the left, hotter side of the Hayashi track instead must /not
 be /fully convective/ and have some radiative layers (recombination and
-light-elements burning chaging \kappa and \mu)!
+light-elements burning changing $\kappa$ and $\mu$)!
 
 * Main sequence
 
-As the gravothermal collapse continues and \langle T \rangle increases, at some
+As the gravothermal collapse continues and $\langle T \rangle$ increases, at some
 point, if we are making a star, by /definition/ nuclear burning turns on
 (option 2. above). This is when the central temperature (which at this
-stage is the highest temperature in the star), is sufficient to obtain
-enough tunneling through the Coulomb barriers.
+stage is the highest temperature in the star), is sufficiently high to
+obtain enough tunneling through the Coulomb barriers.
 
 Because it is abundant, and its burning releases a lot of energy per
 nucleon (\sim 6.5MeV/nucleon) because it produces the double-magic
-nucleus $^{4}\mathrm{He} \equiv \alpha$ (neutrons /and/ protons fill their nuclear "shells",
-by analogy with electron shells in atomic physics), hydrogen is the
-first fuel to ignite, see also [[./notes-lecture-nuclear-burning.org][nuclear burning lecture]].
+nucleus $^{4}\mathrm{He} \equiv \alpha$ (neutrons /and/ protons fill their nuclear
+"shells", by analogy with electron shells in atomic physics), hydrogen
+is the first fuel to ignite, see also [[./notes-lecture-nuclear-burning.org][nuclear burning lecture]].
 
 ** Structure during the main sequence
 As we discussed in the [[./notes-lecture-nuclear-cycles.org][nuclear reaction cycles lecture]], hydrogen
 burning can occur in two different ways: pp-cycle and CN-NO bi-cycle.
 
 Looking at =MESA-web= models, we can see that the pp-cycle is sufficient
-to achieve the equilibrium condition L_{nuc}=\int dm \varepsilon_{nuc}
-\equiv L in low mass stars (*N.B.:* L\prop M^{x} with x\geq1). This is because the
-pp-cycle has lower Coulomb barriers (shallower relation between \varepsilon_{nuc}
-and T) but a higher normalization (cf. [[file:notes-lecture-nuclear-cycles.org::*pp \rightarrow CNO transition][pp \rightarrow CNO transition]]).
+to achieve the equilibrium condition $L_\mathmr{nuc}=\int dm
+\varepsilon_\mathmr{nuc} \equiv L$ in low mass stars (*N.B.:* $L\propto M^{x}$ with $x\geq1$). This
+is because the pp-cycle has lower Coulomb barriers (shallower relation
+between $\varepsilon_\mathmr{nuc}$ and $T$) but a higher normalization (cf. [[file:notes-lecture-nuclear-cycles.org::*pp \rightarrow CNO transition][pp
+\rightarrow CNO transition]]).
 
 - *Very low M main sequence \Rightarrow fully convective*
 
-For the lowest-mass stars, T_{eff} remains cold and the opacity remains
-high: they burn through the pp cycle, but remain /convective/ throughout
-the main sequence. In this case, /all/ of the stellar material is
-available to burn, there is no core/envelope structure at all! These
-stars however have (relatively speaking) very low L, thus they evolve
-very slowly. All these stars in the Universe are still on the
-main-sequence! This is the case of the 0.3M_{\odot} star you computed for
-a homework, which has an approximately polytropic EOS because it is
-fully convective, thus has \nabla=\nabla_{ad} \Rightarrow P\propto\rho^{\Gamma_{1}}.
+For the lowest-mass stars, $T_\mathrm{eff}$ remains cold and the
+opacity remains high: they burn through the pp cycle, but remain
+/convective/ throughout the main sequence. In this case, /all/ of the
+stellar material is available to burn, there is no core/envelope
+structure at all! These stars however have (relatively speaking) very
+low $L$, thus they evolve very slowly. All these stars in the Universe
+are still on the main-sequence! This is the case of the $0.3M_{\odot}$
+star you computed for a homework, which has an approximately
+polytropic EOS because it is fully convective, thus has
+$\nabla=\nabla_\mathrm{ad} \Rightarrow P\propto\rho^{\Gamma_{1}}$.
 
 - *Low M main sequence \Rightarrow radiative core, convective envelope*
 
-Moving slightly higher in mass, meaning also to higher T_{eff}, a
+Moving slightly higher in mass, meaning also to higher $T_\mathrm{eff}$, a
 radiative core appears. the burning is very concentrated in the
 innermost region, but they are cool enough to have high \kappa at the
 surface, and thus retain a convective /envelope/:
 
-*N.B.:* we are seeing that the cooler T_{eff} is the deeper the convective
-envelope! Increasing T_{eff} the convective layer disappear in the
-deepest layers. This can be shown analytically (see Onno Pols' lecture
-notes sec. 7.2.3).
+*N.B.:* we are seeing that the cooler $T_\mathrm{eff}$ is the deeper the
+convective envelope! Increasing $T_\mathrm{eff}$ the convective layer
+disappear in the deepest layers. This can be shown analytically (see
+Onno Pols' lecture notes sec. 7.2.3).
 
 - *High M main sequence \Rightarrow convective core, radiative envelope*
 
-Increasing M \Leftrightarrow T_{eff} further, the equilibrium condition L=L_{nuc} cannot
-be satisfied anymore with the pp-chain, and the CN-NO bi-cycle kicks
-in. Because of its higher Coulomb barriers, it has a steeper
-temperature dependence: the energy release is even more concentrated,
-implying that \nabla in the core is very steep (recall \nabla\prop \kappa L \prop \kappa L_{nuc}),
-thus /the core becomes convective/. This means that convective mixing
-makes a larger mass of hydrogen available to the very central burning
-zone. At the same time, higher M \Rightarrow higher T_{eff} and the envelope
-becomes radiative.
+Increasing $M \Leftrightarrow T_\mathrm{eff}$ further, the equilibrium condition
+$L=L_\mathmr{nuc}$ cannot be satisfied anymore with the pp-chain, and
+the CN-NO bi-cycle kicks in. Because of its higher Coulomb barriers,
+it has a steeper temperature dependence: the energy release is even
+more concentrated, implying that $\nabla$ in the core is very steep (recall
+$\nabla\propto \kappa L \propto \kappa L_\mathmr{nuc}$), thus /the core becomes convective/. This
+means that convective mixing makes a larger mass of hydrogen available
+to the very central burning zone. At the same time, higher $M$ \Rightarrow
+higher $T_\mathrm{eff}$ and the envelope becomes radiative.
 
-#+CAPTION: The "initial" gravothermal equilibrium structure of a star is determined only by mass M and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn & Weigert) shows in gray the region in mass coordinate y=m/M that are convective as a function of the total mass M=\int dm for Z=0.02 models. Red lines indicate where 50 and 90 % of the luminosity L is generated (the "burning region") and the blue dashed lines show r(m)=0.25M and r(m)=0.5M.
+#+CAPTION: The "initial" gravothermal equilibrium structure of a star is determined only by mass $M$ and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn & Weigert) shows in gray the region in mass coordinate $y=m/M$ that are convective as a function of the total mass $M=\int dm$ for $Z=0.02$ models. Red lines indicate where 50 and 90 % of the luminosity $L$ is generated (the "burning region") and the blue dashed lines show $r(m)=0.25M$ and $r(m)=0.5M$.
 #+ATTR_HTML: :width 100%
 [[./images/conv_ZAMS.png]]
 
@@ -252,7 +254,7 @@ accurate!), but it tells that:
   nuclear burning rate for a given fuel!), and since the mass exponent
   is larger than 1, this implies that /more massive stars have shorter
   lifetimes w.r.t. lower mass stars/. They do have more fuel available
-  (\propto M), but they burn through it at a higher rate (\prop M^{3})! In fact
+  (\propto M), but they burn through it at a higher rate (\propto M^{3})! In fact
   single-star lifetimes of stars that burn all the way to iron is only
   \sim10-50Myr (M_{ZAMS}\ge7.5M_{\odot}, with the exact lower limit depending
   on Z, rotation, binary interactions, cf. for example [[https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D/abstract][Doherty et al.
@@ -275,7 +277,7 @@ average \langle \mu \rangle = \int dm \mu(m)/\int dm increases and thus L increa
 *N.B.:* massive and low mass stars however have a very different
 morphology of the main sequence. For stars with radiative cores
 (burning through the pp-chain, M\le1.2M_{\odot}), L increases, R varies
-little, thus since L=4\pi R^{2}\sigma T_{eff}^{4} in equilibrium, we also see a
+little, thus since L=4\pi R^{2}\sigma T_\mathrm{eff}^{4} in equilibrium, we also see a
 slight increase in temperature of the star during the main sequence.
 Conversely, massive stars with convective cores (burning through the
 CNO cycle, M\geq1.2M_{\odot}) increase in radius and actually become /cooler/
@@ -389,7 +391,7 @@ left at the edge of the convective core ignites in a shell. However,
 the He core below, whose mass is set by the extent of convection
 (+convective boundary mixing) during the main sequence, is too big to
 be sustained by electron degeneracy pressure and too hot to be
-degenerate (recall that \langle T \rangle \prop \mu M/R): below the shell the
+degenerate (recall that \langle T \rangle \propto \mu M/R): below the shell the
 contraction continues until He also promptly ignites through the 3\alpha
 reaction, driving core convection!
 
@@ -445,8 +447,8 @@ the core mass and the luminosity of the star.
 
 As the evolution proceeds, the shell "climbs up in mass coordinate"
 (though its radius may stay constant or decrease even as the
-underlying inert He core contracts). The T_{eff} decreases and the
-convective envelope deepens (T_{eff} drops, T_{shell} is set by the core
+underlying inert He core contracts). The T_\mathrm{eff} decreases and the
+convective envelope deepens (T_\mathrm{eff} drops, T_{shell} is set by the core
 contraction and locked by nuclear reactions, thus \nabla steepens), this
 can reach the inner most layers (partially enriched in He, especially
 $^{3}\mathrm{He}$, and possibly $^{14}\mathrm{N}$ if the star experienced
@@ -459,9 +461,9 @@ onto the core), it will encounter a layer mixed by convection in the
 first dredge up. The outward mixing of nuclearly processed material
 also corresponds to inward mixing of H-rich envelope material: the
 shell thus reaches a region that is /more fuel rich/ than before! This
-makes the shell briefly exceed the L_{nuc} = L condition, the
-overproduction of energy pushes the envelope to higher L, lower T_{eff},
-and lowers the \rho in the shell, causing a decrease of L_{nuc}. This
+makes the shell briefly exceed the L_\mathmr{nuc} = L condition, the
+overproduction of energy pushes the envelope to higher L, lower T_\mathrm{eff},
+and lowers the \rho in the shell, causing a decrease of L_\mathmr{nuc}. This
 process ultimately results in stars crossing a certain luminosity
 threshold 3 times: observationally this produces a cumulation of stars
 at a certain luminosity or in other words a "bump" in the luminosity
@@ -653,8 +655,8 @@ burning.
 
 After losing their envelopes to thermal pulses (possibly accompanied
 by a late enhancement of their stellar winds), low mass stars rapidly
-move from the top right (high L low T_{eff}) corner of the HR diagram to
-the lower left (low L high T_{eff}) corner becoming white dwarfs (WD):
+move from the top right (high L low T_\mathrm{eff}) corner of the HR diagram to
+the lower left (low L high T_\mathrm{eff}) corner becoming white dwarfs (WD):
 this process of contraction occurs on a thermal timescale. In WDs the
 gravothermal collapse stops because of the electron degeneracy
 pressure: the degeneracy decoupled their structure (which can be
@@ -665,14 +667,14 @@ These sit in the bottom left corner of the HR diagram: they actually
 have /hotter/ surface temperatures compared to a main sequence star!
 This high T means they do radiate and lose energy, but because of the
 small radius (R\simeq0.01R_{\odot}\simeq 1000km) they have a low luminosity
-L=4\pi R^{2} \sigma T_{eff}: their radiative cooling is very slow (timescale
+L=4\pi R^{2} \sigma T_\mathrm{eff}: their radiative cooling is very slow (timescale
 of billions of years). The WD will just "slide down slowly" on a
 cooling track. The WD cooling sequence provides a /clock/ for stellar
 populations!
 
 *N.B.:* Because of the M(R) relation for non-relativistic electron
 degeneracy gas in hydrostatic equilibrium, the /lower mass WDs have
-larger R/, thus for a given T_{eff}, they also have /higher L/.
+larger R/, thus for a given T_\mathrm{eff}, they also have /higher L/.
 
 *** The /Gaia/ spur: observational evidence for crystallization
 
@@ -703,7 +705,7 @@ pushed upwards by radiation.
  - *Q*: Consider the formation of Helium WDs. These are observed,
    however, to form from a single star not-massive-enough to ignite He
    burning, it would take longer than the current age of the Universe
-   (because low M \Rightarrow much lower L \Rightarrow L_{nuc} = L drives a very slow
+   (because low M \Rightarrow much lower L \Rightarrow L_\mathmr{nuc} = L drives a very slow
    evolution). Therefore, apparently, the existence of He WDs is
    paradoxical! Can you think of any solution to this apparent paradox?
 :end:
