@@ -227,10 +227,10 @@ assumptions.
 :end:
 
 ** Evolution during the main sequence
-During the main sequence L steadily increases on \tau\sim\tau_{nuc}. This is
-because the conversion of hydrogen into helium decreases X (and
-increases Y), which enter in two key quantities, mean molecular weight
-and electron scattering opacity:
+During the main sequence $L$ steadily increases on $\tau\sim\tau_\mathrm{nuc}$.
+This is because the conversion of hydrogen into helium decreases $X$
+(and increases $Y$), which enter in two key quantities, mean molecular
+weight and electron scattering opacity:
 #+begin_latex
 \begin{equation}\label{eq:microphysics_XY}
 \mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2}} \ \ , \\
@@ -248,24 +248,24 @@ L\propto \frac{\mu^{4} M^{3}}{\kappa} \ \ ,
 This scaling relation is approximate and does not exactly hold if a
 star is not fully radiative (which we have already seen is not
 accurate!), but it tells that:
-- the higher \kappa, that is, the harder it is for photons to get out, the
+- the higher $\kappa$, that is, the harder it is for photons to get out, the
   lower the luminosity
 - the higher the mass, the higher the luminosity (\Rightarrow the higher the
   nuclear burning rate for a given fuel!), and since the mass exponent
   is larger than 1, this implies that /more massive stars have shorter
   lifetimes w.r.t. lower mass stars/. They do have more fuel available
-  (\propto M), but they burn through it at a higher rate (\propto M^{3})! In fact
+  ($\propto M$), but they burn through it at an even higher rate ($\propto M^{3}$)! In fact
   single-star lifetimes of stars that burn all the way to iron is only
-  \sim10-50Myr (M_{ZAMS}\ge7.5M_{\odot}, with the exact lower limit depending
-  on Z, rotation, binary interactions, cf. for example [[https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D/abstract][Doherty et al.
-  2017]] and [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]]), compared to \gt 10^{9} years for
-  M_{ZAMS}\le2M_{\odot}.
+  \sim10-50Myr ($M_\mathrm{ZAMS}\ge7.5M_{\odot}$, with the exact lower limit
+  depending on $Z$, rotation, binary interactions, cf. for example
+  [[https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D/abstract][Doherty et al. 2017]] and [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]]), compared to \gt 10^{9}
+  years for $M_\mathrm{ZAMS}\le2M_{\odot}$.
 
 #+CAPTION: Stellar lifetime as a function of initial masses from [[https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..29Z/abstract][Zapartas et al. 2017]]. =MESA= and =GENEC= models are shown, focusing on masses that result in a final core-collapse event. The bottom panel shows the deviations between the analytic fit and the numerical models.
 #+ATTR_HTML: :width 100%
 [[./images/stellar_lifetimes.png]]
 
-- the higher the mean molecular weight \mu (= number of particles per
+- the higher the mean molecular weight $\mu$ (= number of particles per
   baryonic mass), the higher the luminosity.
 
 

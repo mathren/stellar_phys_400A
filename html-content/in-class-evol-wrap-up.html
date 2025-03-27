@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-03-27 Thu 10:32 -->
+<!-- 2025-03-27 Thu 10:40 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Qualitative evolution</title>
@@ -128,7 +128,7 @@ mixing (see for example <a href="./notes-lecture-neutrinos.html#orgad5bb9b">this
 <p>
 We have also worked out the ordering of timescales of the problem:
 </p>
-<div class="latex" id="org904ebfe">
+<div class="latex" id="org96f827e">
 \begin{equation}
 \tau_\mathrm{nuc} \gg \tau_\mathrm{KH} \gg \tau_\mathrm{free\ fall} \ \ ,
 \end{equation}
@@ -397,7 +397,7 @@ higher \(T_\mathrm{eff}\) and the envelope becomes radiative.
 </p>
 
 
-<figure id="org42fb77c">
+<figure id="org7ccb596">
 <img src="./images/conv_ZAMS.png" alt="conv_ZAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>The "initial" gravothermal equilibrium structure of a star is determined only by mass \(M\) and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn &amp; Weigert) shows in gray the region in mass coordinate \(y=m/M\) that are convective as a function of the total mass \(M=\int dm\) for \(Z=0.02\) models. Red lines indicate where 50 and 90 % of the luminosity \(L\) is generated (the "burning region") and the blue dashed lines show \(r(m)=0.25M\) and \(r(m)=0.5M\).</figcaption>
@@ -421,12 +421,12 @@ sequence core?</li>
 <h3 id="org475f385"><a href="#org475f385">Evolution during the main sequence</a></h3>
 <div class="outline-text-3" id="text-org475f385">
 <p>
-During the main sequence L steadily increases on &tau;&sim;&tau;<sub>nuc</sub>. This is
-because the conversion of hydrogen into helium decreases X (and
-increases Y), which enter in two key quantities, mean molecular weight
-and electron scattering opacity:
+During the main sequence \(L\) steadily increases on \(\tau\sim\tau_\mathrm{nuc}\).
+This is because the conversion of hydrogen into helium decreases \(X\)
+(and increases \(Y\)), which enter in two key quantities, mean molecular
+weight and electron scattering opacity:
 </p>
-<div class="latex" id="orgd5b31cc">
+<div class="latex" id="orgb1a6c49">
 \begin{equation}\label{eq:microphysics_XY}
 \mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2}} \ \ , \\
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}} \ \ \ .
@@ -438,7 +438,7 @@ Assuming a star to be in gravothermal equilibrium and assuming
 radiative energy transport (which we have just seen is not verified
 everywhere by <code>MESA-web</code> models!), we know that:
 </p>
-<div class="latex" id="org848b547">
+<div class="latex" id="org5da664f">
 \begin{equation}\label{eq:L_scaling}
 L\propto \frac{\mu^{4} M^{3}}{\kappa} \ \ ,
 \end{equation}
@@ -450,29 +450,29 @@ star is not fully radiative (which we have already seen is not
 accurate!), but it tells that:
 </p>
 <ul class="org-ul">
-<li>the higher &kappa;, that is, the harder it is for photons to get out, the
+<li>the higher \(\kappa\), that is, the harder it is for photons to get out, the
 lower the luminosity</li>
 <li>the higher the mass, the higher the luminosity (&rArr; the higher the
 nuclear burning rate for a given fuel!), and since the mass exponent
 is larger than 1, this implies that <i>more massive stars have shorter
 lifetimes w.r.t. lower mass stars</i>. They do have more fuel available
-(&prop; M), but they burn through it at a higher rate (&prop; M<sup>3</sup>)! In fact
+(\(\propto M\)), but they burn through it at an even higher rate (\(\propto M^{3}\))! In fact
 single-star lifetimes of stars that burn all the way to iron is only
-&sim;10-50Myr (M<sub>ZAMS</sub>&ge;7.5M<sub>☉</sub>, with the exact lower limit depending
-on Z, rotation, binary interactions, cf. for example <a href="https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D/abstract">Doherty et al.
-2017</a> and <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract">Poelarends et al. 2017</a>), compared to &gt; 10<sup>9</sup> years for
-M<sub>ZAMS</sub>&le;2M<sub>☉</sub>.</li>
+&sim;10-50Myr (\(M_\mathrm{ZAMS}\ge7.5M_{☉}\), with the exact lower limit
+depending on \(Z\), rotation, binary interactions, cf. for example
+<a href="https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D/abstract">Doherty et al. 2017</a> and <a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract">Poelarends et al. 2017</a>), compared to &gt; 10<sup>9</sup>
+years for \(M_\mathrm{ZAMS}\le2M_{☉}\).</li>
 </ul>
 
 
-<figure id="org903e636">
+<figure id="orgd6c541f">
 <img src="./images/stellar_lifetimes.png" alt="stellar_lifetimes.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Stellar lifetime as a function of initial masses from <a href="https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..29Z/abstract">Zapartas et al. 2017</a>. <code>MESA</code> and <code>GENEC</code> models are shown, focusing on masses that result in a final core-collapse event. The bottom panel shows the deviations between the analytic fit and the numerical models.</figcaption>
 </figure>
 
 <ul class="org-ul">
-<li>the higher the mean molecular weight &mu; (= number of particles per
+<li>the higher the mean molecular weight \(\mu\) (= number of particles per
 baryonic mass), the higher the luminosity.</li>
 </ul>
 
@@ -543,7 +543,7 @@ receeds in mass coordinate</i>.
 </p>
 
 
-<figure id="org58bf965">
+<figure id="org4fe7987">
 <img src="./images/1Msun_X_M.png" alt="1Msun_X_M.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 1M<sub>☉</sub>, Z=0.02 <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS).</figcaption>
@@ -551,7 +551,7 @@ receeds in mass coordinate</i>.
 
 
 
-<figure id="orgc78bd08">
+<figure id="org58911dd">
 <img src="./images/20Msun_H_profile.png" alt="20Msun_H_profile.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Hydrogen mass fraction X as a function of mass coordinate m for a single, non-rotating, 20M<sub>☉</sub>, Z=0.001 <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS), and as time passes the core recedes because of the change in &kappa;.</figcaption>
@@ -574,7 +574,7 @@ outlines of the track you can see where the nuclear burning moves.
 </p>
 
 
-<figure id="orge82c5c7">
+<figure id="orge8bca64">
 <img src="./images/1Msun_TAMS.png" alt="1Msun_TAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Screenshot of a <code>MESA-web</code> calculation of a 1M<sub>☉</sub> star shortly after the main sequence. The HRD (bottom left) shows a smooth end of the main sequence, and the Kippenhahn diagram and T(&rho;) tracks (middle) show that all the burning is in a shell surrouding the inert He core. The bottom right panel shows that the inner region as a flattening T profile because of conduction efficiently transporting energy and erasing the dT/dr.</figcaption>
@@ -619,7 +619,7 @@ morphology of the end of the main sequence changes.
 </p>
 
 
-<figure id="org9190867">
+<figure id="org88f1ac0">
 <img src="./images/30Msun_TAMS.png" alt="30Msun_TAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Screenshot of a <code>MESA-web</code> calculation of a 30M<sub>☉</sub> star shortly after the main sequence. The HRD (bottom left) shows the "Henyey hook" feature, the Kippenhahn diagran and T(&rho;) track shows that there is an off-center H-burning shell but the He in the core ignites promptly too. The core is not degenerate, but convective again, and mantains a nearly adiabatic temperature gradient.</figcaption>
@@ -978,7 +978,7 @@ massive stars!
 </p>
 
 
-<figure id="org1445173">
+<figure id="org887e5f5">
 <img src="./images/Trho_TPAGB.png" alt="Trho_TPAGB.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>T(&rho;) diagram of a 1M<sub>☉</sub> <code>MESA-web</code> model during an AGB thermal pulse. Note the temperature inversion in the core, the presence of 2 burning shells in this snapshot (the He shell marked by the orange outline and the H shell marked by the yellow outline).</figcaption>
@@ -1039,7 +1039,7 @@ the <i>Gaia</i> DR2 dataset for WDs within 100pc from Earth (<a href="https://ui
 </p>
 
 
-<figure id="orgac211da">
+<figure id="org8c425ed">
 <img src="./images/Gaia_spur.png" alt="Gaia_spur.png">
 
 <figcaption><span class="figure-number">Figure 8: </span>HR diagram for a WD sample within 100pc from <i>Gaia</i> DR2. The color of points indicates spectroscopically determined masses based on SDSS, red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract">Tremblay et al. 2019</a></figcaption>
