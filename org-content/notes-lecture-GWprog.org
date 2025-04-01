@@ -41,12 +41,12 @@ space-based GW observatories).
 * GW basics
 
 The fact that there is a finite speed $c$ for the propagation of
-interaction fields allows for the existence of unbound /gravitational/
-fields. An oscillating unbound gravitational field is by definition a
-gravitational wave. GWs, as any /wave/, are the solution of a linear
-perturbation on a state. In the GW case, the state is the flat
-space-time metric $g_{\mu\nu}$ describing space-time far away from any
-mass, and the perturbation, often indicated with $h_{\mu\nu}$.
+interaction fields allows for the existence of /gravitational/ fields
+unbound from matter. An oscillating unbound gravitational field is by
+definition a gravitational wave. GWs, as any /wave/, are the solution of
+a linear perturbation on a state. In the GW case, the state is the
+flat space-time metric $g_{\mu\nu}$ describing space-time far away from
+any mass, and the perturbation, often indicated with $h_{\mu\nu}$.
 
 Let's start from Einstein's field equation:
 #+begin_latex
@@ -65,8 +65,8 @@ to it: $g_{\mu\nu}\rightarrow g_{\mu\nu} + h_{\mu\nu}$. Keeping only terms
 linear in $h_{\mu\nu}$ (which is our new functional variable) we can
 rewrite Eq. \ref{eq:EFE} as:
 #+begin_latex
-\begin{equation} \label{eq:EFE}
-a
+\begin{equation}\label{eq:GW_wave}
+\left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = 0 \ \ ,
 \end{equation}
 #+end_latex
 which is a wave equation in three dimensions for $h_{\mu\nu}$ with speed
