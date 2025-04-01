@@ -63,7 +63,7 @@ linear in $h_{\mu\nu}$ (which is our new functional variable) we can
 rewrite Eq. \ref{eq:EFE} as:
 #+begin_latex
 \begin{equation} \label{eq:EFE}
-\nabla^{2} -\frac{\partial^{2}}{\partial t^{2}} h_{\mu\nu} = 0 \ \ ,
+\left(\nabla^{2} -\frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = 0 \ \ ,
 \end{equation}
 #+end_latex
 which is a wave equation in three dimensions for $h_{\mu\nu}$ with speed
