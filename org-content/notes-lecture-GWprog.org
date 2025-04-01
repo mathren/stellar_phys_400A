@@ -23,11 +23,11 @@ most recently very high-energy neutrinos), astronomy became
 "multi-messenger" (photons+neutrinos), a buzz word that is highly used
 presently.
 
-The addition of gravitational waves (GW) discussed today adds a completely
-new way to look at astrophysical sources, probing optically thick and
-thus inaccessible regions, and regimes where gravity is /strong/ (i.e.,
-a full general relativistic treatment of the interaction of matter
-with space-time becomes necessary).
+The addition of gravitational waves (GW) adds a completely new way to
+study astrophysical sources, probing optically thick and thus
+inaccessible regions, and regimes where gravity is /strong/ (i.e., a
+full general relativistic treatment of the interaction of matter with
+space-time becomes necessary).
 
 Because the wavelength range for GWs (which are /not/ EM waves nor sound
 waves!) accessible to presently available ground-base detectors such
@@ -63,7 +63,7 @@ linear in $h_{\mu\nu}$ (which is our new functional variable) we can
 rewrite Eq. \ref{eq:EFE} as:
 #+begin_latex
 \begin{equation} \label{eq:EFE}
-\left(\nabla^{2} -\frac{\partial^{2}}{\partial t^{2}}\right)% h_{\mu\nu} = 0 \ \ ,
+\left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = 0 \ \ ,
 \end{equation}
 #+end_latex
 which is a wave equation in three dimensions for $h_{\mu\nu}$ with speed
