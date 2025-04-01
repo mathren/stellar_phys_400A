@@ -5,7 +5,7 @@
 #+NEXT_PAGE: projects.org
 
 *Materials:* Chapter 15 in Tauris & Van den Heuvel 2023 book, [[https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract][Schutz
-1984]].
+1984]], Landau & Lifschitz vol. 2, [[https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209][LVK Collaboration 2017]].
 
 
 * Photons, neutrinos, and gravitational-wave astronomy
@@ -59,7 +59,15 @@ $T_{\mu\nu}$ is the stress-energy tensor that describes the distribution
 of matter/energy that shapes space-time (i.e., the source term which
 determines $g_{\mu\nu}$), and $G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\nu}$ is
 Einstein's tensor, and the indexes $\mu$ and $\nu=0,1,2,3$ span the
-temporal and three spatial dimensions. In vacuum $T_{\mu\nu} = 0$, and we
+temporal and three spatial dimensions. Eq. \ref{eq:EFE} is the one
+that describes simultaneously how matter (represented by the
+stress-energy tensor $T_{\mu\nu}$) "bends" space-time (represented by the
+metric tensor $g_{\mu\nu}$) and viceversa how the structure of space-time
+shapes the motion of matter along the geodesics defined by the
+curvature of space-time (see any textbook on general relativity for
+more information).
+
+In vacuum $T_{\mu\nu} = 0$, and we
 can assume to have a solution $g_{\mu\nu}$ and apply a small perturbation
 to it: $g_{\mu\nu}\rightarrow g_{\mu\nu} + h_{\mu\nu}$. Keeping only terms
 linear in $h_{\mu\nu}$ (which is our new functional variable) we can
