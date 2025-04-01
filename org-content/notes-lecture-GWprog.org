@@ -33,7 +33,10 @@ Because the wavelength range for GWs (which are /not/ EM waves nor sound
 waves!) accessible to presently available ground-base detectors such
 as LIGO/Virgo/Kagra is in the 10-1000Hz range -- corresponding roughly
 to the auditory range for typical human hears, it is often
-metaphorically said that GWs allow us to "hear" the Universe.
+metaphorically said that GWs allow us to "hear" the Universe. However,
+this metafore is bound to become obsolete as multi-wavelength GW
+observations become available (e.g., from "pulsar timing arrays" and
+space-based GW observatories).
 
 * GW basics
 
@@ -63,7 +66,7 @@ linear in $h_{\mu\nu}$ (which is our new functional variable) we can
 rewrite Eq. \ref{eq:EFE} as:
 #+begin_latex
 \begin{equation} \label{eq:EFE}
-\left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = 0 \ \ ,
+a
 \end{equation}
 #+end_latex
 which is a wave equation in three dimensions for $h_{\mu\nu}$ with speed
