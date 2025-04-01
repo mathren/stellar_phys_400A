@@ -23,17 +23,64 @@ most recently very high-energy neutrinos), astronomy became
 "multi-messenger" (photons+neutrinos), a buzz word that is highly used
 presently.
 
-The addition of gravitational waves discussed today adds a completely
+The addition of gravitational waves (GW) discussed today adds a completely
 new way to look at astrophysical sources, probing optically thick and
 thus inaccessible regions, and regimes where gravity is /strong/ (i.e.,
 a full general relativistic treatment of the interaction of matter
 with space-time becomes necessary).
 
+Because the wavelength range for GWs (which are /not/ EM waves nor sound
+waves!) accessible to presently available ground-base detectors such
+as LIGO/Virgo/Kagra is in the 10-1000Hz range -- corresponding roughly
+to the auditory range for typical human hears, it is often
+metaphorically said that GWs allow us to "hear" the Universe.
 
 * GW basics
 
+The fact that there is a finite speed $c$ for the propagation of
+interaction fields allows for the existence of unbound /gravitational/
+fields. An oscillating unbound gravitational field is by definition a
+gravitational wave. GWs, as any /wave/, are the solution of a linear
+perturbation on a state. In the GW case, the state is the flat
+space-time metric $g_{\mu\nu}$ describing space-time far away from any
+mass, and the perturbation, often indicated with $h_{\mu\nu$}$.
 
+Let's start from Einstein's field equation:
+#+begin_latex
+\begin{equation}\label{eq:EFE}
+G_{\mu\nu }_{}+ \Lambda g_{\mu\nu{}} = T_{\mu\nu} \ \ ,
+\end{equation}
+#+end_latex
+where $g_{\mu\nu}$ is the metric (the unknown functional variable),
+$T_{\mu\nu}$ is the stress-energy tensor that describes the distribution
+of matter/energy that shapes space-time (i.e., the source term which
+determines $g_{\mu\nu}$), and $G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\n}u$ is
+Einstein's tensor, and the indexes $\mu$ and $\nu=0,1,2,3$ span the
+temporal and three spatial dimensions. In vacuum $T_{\mu\nu} = 0$, and we
+can assume to have a solution $g_{\mu\nu}$ and apply a small perturbation
+to it: $g_{\mu\nu}\rightarrow g_{\mu\nu} + h_{\mu\nu}$. Keeping only terms
+linear in $h_{\mu\nu}$ (which is our new functional variable) we can
+rewrite Eq. \ref{eq:EFE} as:
+#+begin_latex
+\begin{equation}\label{eq:EFE}
+\nabla^{2} -\frac{\partial^{2}}{\partial t^{2}} h_{\mu\nu} = 0 \ \ ,
+\end{equation}
+#+end_latex
+which is a wave equation in three dimensions for $h_{\mu\nu}$ with speed
+of propagation $c$. Consequently, $h_{\mu\nu}$ admits oscillating
+solutions! These are the "ripple in space-time" (i.e., in the metric
+tensor describing the properties of space-time in general relativity)
+as GWs are often described.
 
+** Sources of GWs
+
+ - Source terms require at least the second-order moment of the mass
+   distribution (first order is momentum of the source and can be set
+   to zero with a choice of reference frame, order zero is the mass
+   which is constant): binaries or asymmetric mass distributions
+ - GW amplitude $\propto 1/r$ (vs. EM amplitude $\propto 1/r^{2}$), we can detect GWs
+   from a much wider volume
+ - GW amplitude scales with chirp mass \mathcal{M}\equiv\mathcal{M}(M_{1}, M_{2})
 
 ** Indirect detection of GWs
 
@@ -57,7 +104,6 @@ with space-time becomes necessary).
   pulsar and general relativity prediction of the energy loss due to
   GW emission is considered the first /indirect/ evidence for GW (and
   was awarded the Nobel prize in 1993).
-
 
 * Direct detection through interferometry
 

@@ -349,9 +349,9 @@ outlines of the track you can see where the nuclear burning moves.
 
 Since these are stars that were burning radiatively (the fully
 convective ones have not yet finished their main sequence even if they
-had been burning since the birth of the Universe!), they have just
-outside the region hot enough for hydrogen burning fresh fuel
-available that has not been mixed in the burning region. Therefore,
+had been burning since the birth of the Universe!), they have fresh
+fuel available that has not been mixed in the burning region just
+outside the region hot enough for hydrogen burning. Therefore,
 *hydrogen ignites in a shell* around the now H-depleted, He-rich core.
 
 Because of the gap in $T$ to bridge the Coulomb barriers for

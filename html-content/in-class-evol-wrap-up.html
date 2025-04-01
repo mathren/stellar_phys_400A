@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-03-27 Thu 10:48 -->
+<!-- 2025-04-01 Tue 09:44 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Qualitative evolution</title>
@@ -128,7 +128,7 @@ mixing (see for example <a href="./notes-lecture-neutrinos.html#orgad5bb9b">this
 <p>
 We have also worked out the ordering of timescales of the problem:
 </p>
-<div class="latex" id="orgb55809c">
+<div class="latex" id="orga16ab8c">
 \begin{equation}
 \tau_\mathrm{nuc} \gg \tau_\mathrm{KH} \gg \tau_\mathrm{free\ fall} \ \ ,
 \end{equation}
@@ -397,7 +397,7 @@ higher \(T_\mathrm{eff}\) and the envelope becomes radiative.
 </p>
 
 
-<figure id="org6e64906">
+<figure id="orgb739cd0">
 <img src="./images/conv_ZAMS.png" alt="conv_ZAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>The "initial" gravothermal equilibrium structure of a star is determined only by mass \(M\) and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn &amp; Weigert) shows in gray the region in mass coordinate \(y=m/M\) that are convective as a function of the total mass \(M=\int dm\) for \(Z=0.02\) models. Red lines indicate where 50 and 90 % of the luminosity \(L\) is generated (the "burning region") and the blue dashed lines show \(r(m)=0.25M\) and \(r(m)=0.5M\).</figcaption>
@@ -426,7 +426,7 @@ This is because the conversion of hydrogen into helium decreases \(X\)
 (and increases \(Y\)), which enter in two key quantities, mean molecular
 weight and electron scattering opacity:
 </p>
-<div class="latex" id="org6aca779">
+<div class="latex" id="org9685021">
 \begin{equation}\label{eq:microphysics_XY}
 \mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2}} \ \ , \\
 \kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}} \ \ \ .
@@ -438,7 +438,7 @@ Assuming a star to be in gravothermal equilibrium and assuming
 radiative energy transport (which we have just seen is not verified
 everywhere by <code>MESA-web</code> models!), we know that:
 </p>
-<div class="latex" id="org1a247b5">
+<div class="latex" id="orgd37f224">
 \begin{equation}\label{eq:L_scaling}
 L\propto \frac{\mu^{4} M^{3}}{\kappa} \ \ ,
 \end{equation}
@@ -465,7 +465,7 @@ years for \(M_\mathrm{ZAMS}\le2M_{☉}\).</li>
 </ul>
 
 
-<figure id="org7bdf060">
+<figure id="orgc9dd9c9">
 <img src="./images/stellar_lifetimes.png" alt="stellar_lifetimes.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Stellar lifetime as a function of initial masses from <a href="https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..29Z/abstract">Zapartas et al. 2017</a>. <code>MESA</code> and <code>GENEC</code> models are shown, focusing on masses that result in a final core-collapse event. The bottom panel shows the deviations between the analytic fit and the numerical models.</figcaption>
@@ -545,7 +545,7 @@ convective core receeds in mass coordinate</i>.
 </p>
 
 
-<figure id="org3471546">
+<figure id="orgac23315">
 <img src="./images/1Msun_X_M.png" alt="1Msun_X_M.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>Hydrogen mass fraction \(X\) as a function of mass coordinate \(m\) for a single, non-rotating, \(1M_{☉}\), \(Z=0.02\) <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS).</figcaption>
@@ -553,7 +553,7 @@ convective core receeds in mass coordinate</i>.
 
 
 
-<figure id="org8706c01">
+<figure id="org8014c7d">
 <img src="./images/20Msun_H_profile.png" alt="20Msun_H_profile.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Hydrogen mass fraction \(X\) as a function of mass coordinate \(m\) for a single, non-rotating, \(20M_{☉}\), \(Z=0.001\) <code>MESA</code> model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS), and as time passes the core recedes because of the change in \(\kappa\).</figcaption>
@@ -576,7 +576,7 @@ outlines of the track you can see where the nuclear burning moves.
 </p>
 
 
-<figure id="orgf416b6b">
+<figure id="orgc1e4b11">
 <img src="./images/1Msun_TAMS.png" alt="1Msun_TAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>Screenshot of a <code>MESA-web</code> calculation of a \(1M_{☉}\) star shortly after the main sequence. The HRD (bottom left) shows a smooth end of the main sequence, and the Kippenhahn diagram and \(T(\rho)\) tracks (middle) show that all the burning is in a shell surrounding the inert He core. The bottom right panel shows that the inner region as a flattening \(T\) profile because of conduction efficiently transporting energy and erasing the \(dT/dr\).</figcaption>
@@ -585,9 +585,9 @@ outlines of the track you can see where the nuclear burning moves.
 <p>
 Since these are stars that were burning radiatively (the fully
 convective ones have not yet finished their main sequence even if they
-had been burning since the birth of the Universe!), they have just
-outside the region hot enough for hydrogen burning fresh fuel
-available that has not been mixed in the burning region. Therefore,
+had been burning since the birth of the Universe!), they have fresh
+fuel available that has not been mixed in the burning region just
+outside the region hot enough for hydrogen burning. Therefore,
 <b>hydrogen ignites in a shell</b> around the now H-depleted, He-rich core.
 </p>
 
@@ -621,7 +621,7 @@ morphology of the end of the main sequence changes.
 </p>
 
 
-<figure id="orgdc9c147">
+<figure id="org4529424">
 <img src="./images/30Msun_TAMS.png" alt="30Msun_TAMS.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Screenshot of a <code>MESA-web</code> calculation of a \(30M_{☉}\) star shortly after the main sequence. The HRD (bottom left) shows the "Henyey hook" feature, the Kippenhahn diagram and \(T(\rho)\) track shows that there is an off-center H-burning shell but the He in the core ignites promptly too. The core is not degenerate, but convective again, and maintains a nearly adiabatic temperature gradient.</figcaption>
@@ -980,7 +980,7 @@ massive stars!
 </p>
 
 
-<figure id="orgc7ebe4b">
+<figure id="org353b9bc">
 <img src="./images/Trho_TPAGB.png" alt="Trho_TPAGB.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>T(&rho;) diagram of a 1M<sub>☉</sub> <code>MESA-web</code> model during an AGB thermal pulse. Note the temperature inversion in the core, the presence of 2 burning shells in this snapshot (the He shell marked by the orange outline and the H shell marked by the yellow outline).</figcaption>
@@ -1041,7 +1041,7 @@ the <i>Gaia</i> DR2 dataset for WDs within 100pc from Earth (<a href="https://ui
 </p>
 
 
-<figure id="org38863c7">
+<figure id="org50c7072">
 <img src="./images/Gaia_spur.png" alt="Gaia_spur.png">
 
 <figcaption><span class="figure-number">Figure 8: </span>HR diagram for a WD sample within 100pc from <i>Gaia</i> DR2. The color of points indicates spectroscopically determined masses based on SDSS, red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from <a href="https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract">Tremblay et al. 2019</a></figcaption>
@@ -1137,7 +1137,7 @@ sustaining the core leading to a so-called "electron capture SN".
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 27 March 2025 <br>
+  Last updated on 1 April 2025 <br>
   Made with Emacs 28.1 - Org mode 9.5.2
   <br>
 </div>

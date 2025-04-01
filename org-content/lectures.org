@@ -156,9 +156,11 @@ Participation from Steward Observatory and NOIR lab will be encouraged
 
 [[./notes-in-class-evol.org][Notes]]
 
-** TODO <2025-04-08 Tue> - In class activity: Evolution 4
+** <2025-04-08 Tue> - In class activity: Evolution 4
 *Aim*: discuss the evolution of stars in an in-class activity based on
 =MESA-web= models precomputed by the students
+
+Discuss written and oral presentations, and refereeing process.
 
 [[./notes-in-class-evol.org][Notes]]
 
