@@ -449,31 +449,32 @@ the core mass and the luminosity of the star.
 
 As the evolution proceeds, the shell "climbs up in mass coordinate"
 (though its radius may stay constant or decrease even as the
-underlying inert He core contracts). The T_\mathrm{eff} decreases and the
-convective envelope deepens (T_\mathrm{eff} drops, T_{shell} is set by the core
-contraction and locked by nuclear reactions, thus \nabla steepens), this
-can reach the inner most layers (partially enriched in He, especially
-$^{3}\mathrm{He}$, and possibly $^{14}\mathrm{N}$ if the star experienced
-some CN cycle), leading to the "first dredge up": material from the
-inner layers above the H-shell is mixed outwards by convection and
-becomes visible in the stellar atmosphere.
+underlying inert He core contracts). The $T_\mathrm{eff}$ decreases
+and the convective envelope deepens ($T_\mathrm{eff}$ drops,
+$T_\mathrm{shell}$ is set by the core contraction and locked by
+nuclear reactions, thus $\nabla$ steepens), this can reach the inner most
+layers (partially enriched in He, especially $^{3}\mathrm{He}$, and
+possibly $^{14}\mathrm{N}$ if the star experienced some CN cycle),
+leading to the "first dredge up": material from the inner layers above
+the H-shell is mixed outwards by convection and becomes visible in the
+stellar atmosphere.
 
 As the shell moves upwards by consuming H fuel (and dumping He ashes
 onto the core), it will encounter a layer mixed by convection in the
 first dredge up. The outward mixing of nuclearly processed material
 also corresponds to inward mixing of H-rich envelope material: the
 shell thus reaches a region that is /more fuel rich/ than before! This
-makes the shell briefly exceed the L_\mathrm{nuc} = L condition, the
-overproduction of energy pushes the envelope to higher L, lower T_\mathrm{eff},
-and lowers the \rho in the shell, causing a decrease of L_\mathrm{nuc}. This
-process ultimately results in stars crossing a certain luminosity
-threshold 3 times: observationally this produces a cumulation of stars
-at a certain luminosity or in other words a "bump" in the luminosity
-distribution.
+makes the shell briefly exceed the $L_\mathrm{nuc} = L$ condition, the
+overproduction of energy pushes the envelope to higher $L$, lower
+$T_\mathrm{eff}$, and lowers the \rho in the shell, causing a decrease of
+$L_\mathrm{nuc}$. This process ultimately results in stars crossing a
+certain luminosity threshold 3 times: observationally this produces a
+cumulation of stars at a certain luminosity or in other words a "bump"
+in the luminosity distribution.
 
 *N.B.:* for massive stars, discussed below, the "first dredge up" may
 not occur as described here, but the H-shell will also move outwards
-towards more H-rich fuel causing a 3\times crossing of a certain
+towards more H-rich fuel causing a $3\times$ crossing of a certain
 luminosity.
 
 *** He flash
@@ -481,26 +482,27 @@ luminosity.
 #+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/2_Km4RTdkPw?si=ZkacE_zcP7g67kIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 # https://www.youtube.com/embed/2_Km4RTdkPw?si=ZkacE_zcP7g67kIN
 
-Above is a =pgstar= movie of the He flash(es) in a 1M_{\odot} star computed
+Above is a =pgstar= movie of the He flash(es) in a $1M_{\odot}$ star computed
 with =MESA= by [[https://www.stellarphysics.org/][M. Cantiello]]. Note the panels are /different/ than in the
 =MESA-web= configuration, and the HRD does /not/ show the pre-main
 sequence.
 
 As the H burning shell adds nuclear ashes to the underlying inert He
 core, until it reaches a mass that cannot be sustained by degeneracy
-pressure anymore, and He ignites. This typically occurs for M_{He}\simeq0.45M_{\odot}.
+pressure anymore, and He ignites. This typically occurs for
+$M_\mathrm{He}\simeq0.45M_{\odot}$.
 
-This ignition however happens in a degenerate environment where P does
-/not/ depend on T! Therefore the energy released by the burning of He
-initially does not increase dP/dr and does not cause an expansion of
-the core, instead it all remains as internal energy, raising the
-temperature and increasing the nuclear burning rate: this situation
-(which presents itself any time there is a nuclear ignition in a
-degenerate environment) is clearly unstable and leads to the so called
-"Helium flash". Burning rises T until P transitions from being mostly
-due to electron degeneracy to being ideal gas again: this causes an
-abrupt change in pressure and a temporarily /dynamical/ phase of the
-evolution!
+This ignition however happens in a degenerate environment where $P$
+does /not/ depend on $T$! Therefore the energy released by the burning
+of He initially does not increase $dP/dr$ and does not cause an
+expansion of the core, instead it all remains as internal energy,
+raising the temperature and increasing the nuclear burning rate: this
+situation (which presents itself any time there is a nuclear ignition
+in a degenerate environment) is clearly unstable and leads to the so
+called "Helium flash". Burning rises $T$ until $P$ transitions from
+being mostly due to electron degeneracy to being ideal gas again: this
+causes an abrupt change in pressure and a temporarily /dynamical/ phase
+of the evolution!
 
 Because this requires a specific He core mass, and the He core mass
 before the flashes is determining the total luminosity of the red
@@ -520,12 +522,12 @@ convection.
 *** Red clump and Horizontal branch
 
 During He core burning, low mass stars have a convective core burning
-thought the 3\alpha (and later $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$), surrounded
-by an inert He layer, and a H-burning shell wherever H becomes
-available. Above the H-burning shell, if there is a substantial H-rich
-envelope, it will be convective: these stars are close to the Hayashi
-track (by radius they are mostly convective), but on the hotter side
-(because of the existing radiative layers).
+thought the $3\alpha$ (and later $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$),
+surrounded by an inert He layer, and a H-burning shell wherever H
+becomes available. Above the H-burning shell, if there is a
+substantial H-rich envelope, it will be convective: these stars are
+close to the Hayashi track (by radius they are mostly convective), but
+on the hotter side (because of the existing radiative layers).
 
 Since the He flash occurs as soon as the He core mass reaches a
 sufficient mass, all these stars have similar luminosities, and form
@@ -533,33 +535,33 @@ the so-called "red clump" on the HR diagram, a noticeable feature in
 cluster and galaxy populations that can also be used for distance and
 age estimates (see also for example [[https://www.annualreviews.org/content/journals/10.1146/annurev-astro-081915-023354][Girardi 2016]]). Since the mass of
 the He core at ignition for low mass stars is set by the He flash at
-\sim0.45M_{\odot}, the lower mass stars will have less envelope at this
+$\sim0.45M_{\odot}$, the lower mass stars will have less envelope at this
 point (more has been processed into He to reach the threshold mass for
 the flash): from the red clump a there is a continuous almost
 horizontal line (they all have roughly the same luminosity set by the
 core mass) of stars in the HR diagram for low mass core-He burning
 stars whose coolest end is the red clump.
 
-(continuing reading about the evolution of low mass [[*Low mass stars: AGB thermal pulses and WD cooling][here]])
+(continuing reading about the evolution of low mass stars [[*Low mass stars: AGB thermal pulses and WD cooling][here]])
 
 ** High mass stars and "Hertzsprung gap"
 
 Stars with masses sufficiently high for the core to be convective
-during the hydrogen core burning main sequence (M\geq1.2M_{\odot{}} roughly,
-depending on assumptions) will /not/ have a phase of evolution with an
-inert, isothermal He core: the core is too big for degeneracy pressure
-to sustain it and after the main sequence it continues contracting
-until the 3\alpha reaction activates and He burns. The prompt post "Henyey
-hook" appearance of two nuclear energy sources (He core and H shell)
-drives the star towards the cool side of the HR diagram very quickly
-(\sim \tau_{KH}), becoming red supergiants (RSG)
+during the hydrogen core burning main sequence ($M\geq1.2M_{\odot{}}$
+roughly, depending on assumptions) will /not/ have a phase of evolution
+with an inert, isothermal He core: the core is too big for degeneracy
+pressure to sustain it and after the main sequence it continues
+contracting until the 3\alpha reaction activates and He burns. The prompt
+post "Henyey hook" appearance of two nuclear energy sources (He core
+and H shell) drives the star towards the cool side of the HR diagram
+very quickly ($\sim \tau_\mathrm{KH}$), becoming red supergiants (RSG)
 
 Thus, in the HRD of a coeval stellar population, there will be many
-stars on the main sequence (\tau\sim\tau_{nuc,H}) and close to the Hayashi track
-as RSG (\tau\sim\tau_{nuc,He}), but very few in between: this is often referred to
-as the "Hertzsprung gap". *N.B.:* the scarcity of stars in the gap is
-only due to the timescales of evolution, it is not a forbidden region
-of the HRD.
+stars on the main sequence ($\tau\sim\tau_\mathrm{nuc,H}$) and close to the
+Hayashi track as RSG ($\tau\sim\tau_\mathrm{nuc,He}$), but very few in between:
+this is often referred to as the "Hertzsprung gap". *N.B.:* the scarcity
+of stars in the gap is only due to the timescales of evolution, it is
+not a forbidden region of the HRD.
 
 Some stars may experience "blue loops" as their H-shell climbs upward
 in mass coordinate and encounters layers with more H (see for example
@@ -570,8 +572,9 @@ on metallicity, some stars may even spend most of their He core
 burning time in a blue loop appearing hotter than a typical RSG.
 
 *** Mass loss and single-star evolution path to Wolf-Rayet
-As M increases (and consequently even more so L), mass loss becomes a
-progressively more important ingredient for the evolution of stars.
+As $M$ increases (and consequently even more so $L$), mass loss
+becomes a progressively more important ingredient for the evolution of
+stars.
 
 Stars can lose mass through:
  - stellar winds (pressure driven for low mass stars, radiation driven
