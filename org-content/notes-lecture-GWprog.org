@@ -43,18 +43,18 @@ fields. An oscillating unbound gravitational field is by definition a
 gravitational wave. GWs, as any /wave/, are the solution of a linear
 perturbation on a state. In the GW case, the state is the flat
 space-time metric $g_{\mu\nu}$ describing space-time far away from any
-mass, and the perturbation, often indicated with $h_{\mu\nu$}$.
+mass, and the perturbation, often indicated with $h_{\mu\nu}$.
 
 Let's start from Einstein's field equation:
 #+begin_latex
 \begin{equation}\label{eq:EFE}
-G_{\mu\nu }_{}+ \Lambda g_{\mu\nu{}} = T_{\mu\nu} \ \ ,
+G_{\mu\nu }_{}+ \Lambda g_{\mu\nu} = T_{\mu\nu} \ \ ,
 \end{equation}
 #+end_latex
 where $g_{\mu\nu}$ is the metric (the unknown functional variable),
 $T_{\mu\nu}$ is the stress-energy tensor that describes the distribution
 of matter/energy that shapes space-time (i.e., the source term which
-determines $g_{\mu\nu}$), and $G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\n}u$ is
+determines $g_{\mu\nu}$), and $G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\nu}$ is
 Einstein's tensor, and the indexes $\mu$ and $\nu=0,1,2,3$ span the
 temporal and three spatial dimensions. In vacuum $T_{\mu\nu} = 0$, and we
 can assume to have a solution $g_{\mu\nu}$ and apply a small perturbation
