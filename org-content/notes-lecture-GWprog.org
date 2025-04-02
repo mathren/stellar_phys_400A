@@ -39,21 +39,21 @@ this metafore is bound to become obsolete as multi-wavelength GW
 observations become available (e.g., from "pulsar timing arrays" and
 space-based GW observatories).
 
-To give a complete overview of GW physics we would need to have a full
-course of general relativity (GR) first just as a start. I will not
-attempt to be complete or exhaustive here, but just to give some
-elements necessary to understand the astrophysical problem of the
+*Disclaimer:* to give a complete overview of GW physics we would need to
+have a full course of general relativity (GR) first just as a start. I
+will not attempt to be complete or exhaustive here, but just to give
+some elements necessary to understand the astrophysical problem of the
 formation of GW sources for ground and space-based detectors.
 
 * GR and GW basics
 
-General relativity is a /geometric/ theory of gravity that explains how
-space-time is a /dynamical/ entity described by a tensor, the metric.
-The dynamics of this entity is dictated by the distribution of mass
-(or better energy density) within it, which determines the curvature
-of space time. In turn that curvature determines the /geodesics/ that
-the energy density will follow in absence of other (non-gravitational)
-forces.
+General relativity is a /geometric/ theory of gravity that treats
+space-time as /dynamical/ entity described by a tensor, the metric
+$g_{\mu\nu}$. The dynamics of this entity is dictated by the distribution
+of mass (or better energy density) within it, which determines the
+curvature of space time. In turn that curvature determines the
+/geodesics/ that the energy density will follow in absence of other
+(non-gravitational) forces.
 
 This is formally described by Einstein's field equation:
 #+begin_latex
