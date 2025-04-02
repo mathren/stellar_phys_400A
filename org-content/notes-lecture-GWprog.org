@@ -5,8 +5,8 @@
 #+NEXT_PAGE: projects.org
 
 *Materials:* Chapter 15 in Tauris & Van den Heuvel 2023 book, [[https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract][Schutz
-1984]], Landau & Lifschitz vol. 2, [[https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209][LVK Collaboration 2017]], [[https://astrobites.org/2023/11/08/guide-to-gravitational-waves/][Astrobites
-post on GW]] (and references therein!).
+1984]], Landau & Lifschitz vol. 2, [[https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209][LVK Collaboration 2017]], [[https://www.sciencedirect.com/science/article/pii/S057790731630572X][Chen et al.
+2017]], [[https://astrobites.org/2023/11/08/guide-to-gravitational-waves/][Astrobites post on GW]] (and references therein!).
 
 
 * Photons, neutrinos, and gravitational-wave astronomy
@@ -164,10 +164,11 @@ h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 where $r$ is the luminosity distance and
 #+begin_latex
 \begin{equation} \label{eq:quadrupole_def}
-Q_{\mu\nu} = \int d^{3} x \rho(\mathbf{x})\left(x_{\mu}x_{\nu}-\frac{1}{3}r^{2}\delta_{\mu\nu}\right) \ \ ,
+Q_{\mu\nu} = \int d^{3} x T_{00}x_{\mu}x_{\nu} \ \ ,
 \end{equation}
 #+end_latex
-is the quadrupole of the mass distribution.
+is the quadrupole of the mass distribution, with $T_{00}\equiv\rho$ the
+mass density.
 
 From Eq. \ref{eq:quad} we can see several important facts:
 1. the amplitude of GWs scales with $1/r$, as opposed to $1/r^{2}$ for EM
@@ -227,7 +228,8 @@ For the Hulse-Taylor pulsar, we have:
  - $M_{1} = 1.441M_{\odot}$ for the mass of the detectable radio-pulsar
  - $M_{2} = 1.387M_{\odot}$ for the mass of the unseen object
  - $P=0.323$ days for the orbit
- - $e = 0.61$
+ - $e = 0.61$ for the orbit (likely a product of the [[file:notes-lecture-SNe.org::*Neutron star kicks][natal kick]] of the
+   second-born NS)
 
 Approximating the orbit as Keplerian (which we know is a mistake,
 but the energy lost to GW in one orbit is fairly small and we are only
@@ -243,13 +245,76 @@ The take home point is that the compact objects (WD, NS or BH)
 have to have separations $\le\mathrm{few} \times 10R_{\odot}$ to generate
 significant amounts of GWs.
 
+The amount of energy that goes in emitted GWs is a strong function of
+the orbital separation $a$, the orbital eccentricity $e$, and the
+masses of the systems in a binary: one can also ask what should the
+separation be such that the timescale to shrink the orbital separation
+to zero by GW emission (that is: how long it takes to obtain a
+GW-driven inspiral and merger) is shorter than the age of the
+Universe. Using the [[https://doi.org/10.1103/PhysRev.136.B1224][Peters 1964]] formulae (which assume the compact
+objects to be point-masses), one can again estimate that the
+separation at the formation of the second compact object in a binary
+needs to be below a few tens of $R_{\odot}$ to obtain GW-driven mergers
+within the age of the Universe.
+
 :Question:
 - *Q*: How big do the stellar progenitors of these compact objects get
-  during their evolution?
+  during their evolution? How does that compare to the loose
+  requirement we have derived above?
 :end:
 
-
 * Direct detection through interferometry
+
+Although impressive, the observations of the Hulse-Taylor pulsar (and
+other systems since then) only prove that the orbit of this binary NS
+loses energy at a rate that matches impressively well predictions
+based on assuming that the energy is lost to the emission of GWs.
+
+From before the discovery of this system and for decades after, the
+quest for a /direct/ detection continued -- with controversial claims
+and rebuttals (see for example [[https://www.sciencedirect.com/science/article/pii/S057790731630572X][Chen et al. 2017]] for an historical
+overview). Skipping ahead to the 21^{st} century, the first direct
+detection came from ground-based interferometric observations
+performed by the /Laser Interferometry gravitational observatory/ (LIGO)
+laboratory -- after $\sim50$ years of continued effort.
+
+On September 14^{th} 2015, the first direct detection of a binary BH
+(BBH) merger, GW150914 occurred. And just two years later the first
+binary NS (BNS) merger was detected in GW first (GW170817), and
+through followup observations informed on the sky location by the GWs,
+also in EM observations.
+
+#+CAPTION: Detection of the first GW signal from the inspiral and merger of two BHs from [[https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract][LVK collaboration 2016]]. Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain $h=\Delta L/L$, that is the relative change in size of the detector caused by the passage of the GW. Note the units! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to \sim10 seconds for a BNS)
+#+ATTR_HTML: :width 100%
+[[./images/GW150914.png]]
+
+
+This was such a long process because this detection really pushed the
+limits of technological capabilities. Without entering in the details
+of the detection strategy, a successful detection requires to measure
+a change in position of mirrors bouncing laser light of $\sim10^{-21}$ cm
+(over $\ge4$ km size of the detectors), as shown in the figure above:
+*this is 1/1000 of the characteristic size of a nucleus*!
+
+#+CAPTION: "Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see [[https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract][LVK collaboration 2023]] and [[https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract][LVK Collaboration 2023b]]. The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in $M_{\odot}$ units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).
+#+ATTR_HTML: :width 100%
+[[./images/GWTC-3_stellar_graveyard.jpg]]
+
+
+Today, we know of $\sim100$ BBH mergers, still only one BNS merger, and
+we have a few BH-NS mergers (but unfortunately all too far for the
+detection of EM counterparts): we already know more stellar-mass BH
+from GWs than any other EM signature!
+
+
+
+
+
+
+
+
+
+
 
  - strain $h \ll 10^{-15} cm$ \sim size of nucleus
  - GW150914

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-04-02 Wed 14:01 -->
+<!-- 2025-04-02 Wed 14:54 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - GW progenitors</title>
@@ -110,8 +110,8 @@
 <div id="content" class="content">
 <p>
 <b>Materials:</b> Chapter 15 in Tauris &amp; Van den Heuvel 2023 book, <a href="https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract">Schutz
-1984</a>, Landau &amp; Lifschitz vol. 2, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209">LVK Collaboration 2017</a>, <a href="https://astrobites.org/2023/11/08/guide-to-gravitational-waves/">Astrobites
-post on GW</a> (and references therein!).
+1984</a>, Landau &amp; Lifschitz vol. 2, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209">LVK Collaboration 2017</a>, <a href="https://www.sciencedirect.com/science/article/pii/S057790731630572X">Chen et al.
+2017</a>, <a href="https://astrobites.org/2023/11/08/guide-to-gravitational-waves/">Astrobites post on GW</a> (and references therein!).
 </p>
 
 
@@ -180,7 +180,7 @@ curvature of space time. In turn, that curvature determines the
 <p>
 This is formally described by Einstein's field equation:
 </p>
-<div class="latex" id="orge6d1b99">
+<div class="latex" id="orga455432">
 \begin{equation}\label{eq:EFE}
 G_{\mu\nu} + \Lambda g_{\mu\nu} = T_{\mu\nu} \ \ ,
 \end{equation}
@@ -222,7 +222,7 @@ apply a small perturbation to it substituting \(g_{\mu\nu}\rightarrow
 g_{\mu\nu} + h_{\mu\nu}\). Keeping only terms linear in \(h_{\mu\nu}\) (which is
 our new functional variable) we can rewrite Eq. \ref{eq:EFE} as:
 </p>
-<div class="latex" id="org705c3f1">
+<div class="latex" id="orga75d4be">
 \begin{equation}\label{eq:GW_wave}
 \left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = -16\pi T_{\mu\nu} \ \ .
 \end{equation}
@@ -306,7 +306,7 @@ mass at leading order.
 <p>
 One can obtain, at leading order, the so called quadrupole formula:
 </p>
-<div class="latex" id="org2db298a">
+<div class="latex" id="org38c8f0a">
 \begin{equation}\label{eq:quad}
 h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 \end{equation}
@@ -315,14 +315,15 @@ h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 <p>
 where \(r\) is the luminosity distance and
 </p>
-<div class="latex" id="org4577322">
+<div class="latex" id="orgb3be0d0">
 \begin{equation} \label{eq:quadrupole_def}
-Q_{\mu\nu} = \int d^{3} x \rho(\mathbf{x})\left(x_{\mu}x_{\nu}-\frac{1}{3}r^{2}\delta_{\mu\nu}\right) \ \ ,
+Q_{\mu\nu} = \int d^{3} x T_{00}x_{\mu}x_{\nu} \ \ ,
 \end{equation}
 
 </div>
 <p>
-is the quadrupole of the mass distribution.
+is the quadrupole of the mass distribution, with \(T_{00}\equiv\rho\) the
+mass density.
 </p>
 
 <p>
@@ -373,7 +374,7 @@ orbit!
 </p>
 
 
-<figure id="org21dae47">
+<figure id="org9b8f4da">
 <img src="./images/GW-decay.jpg" alt="GW-decay.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Dots are the measured cumulative time shift in periastron passage w.r.t. a Keplerian orbit with constant period for PSR B1913+16. The solid line is the prediction assuming the period is changing due to GW emission as predicted by general relativity. Note that this is <b>not</b> a fit! From <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract">Weisberg &amp; Huang 2016</a></figcaption>
@@ -411,7 +412,8 @@ For the Hulse-Taylor pulsar, we have:
 <li>\(M_{1} = 1.441M_{☉}\) for the mass of the detectable radio-pulsar</li>
 <li>\(M_{2} = 1.387M_{☉}\) for the mass of the unseen object</li>
 <li>\(P=0.323\) days for the orbit</li>
-<li>\(e = 0.61\)</li>
+<li>\(e = 0.61\) for the orbit (likely a product of the <a href="notes-lecture-SNe.html#org8c6fa09">natal kick</a> of the
+second-born NS)</li>
 </ul>
 
 <p>
@@ -434,18 +436,99 @@ have to have separations \(\le\mathrm{few} \times 10R_{☉}\) to generate
 significant amounts of GWs.
 </p>
 
+<p>
+The amount of energy that goes in emitted GWs is a strong function of
+the orbital separation \(a\), the orbital eccentricity \(e\), and the
+masses of the systems in a binary: one can also ask what should the
+separation be such that the timescale to shrink the orbital separation
+to zero by GW emission (that is: how long it takes to obtain a
+GW-driven inspiral and merger) is shorter than the age of the
+Universe. Using the <a href="https://doi.org/10.1103/PhysRev.136.B1224">Peters 1964</a> formulae (which assume the compact
+objects to be point-masses), one can again estimate that the
+separation at the formation of the second compact object in a binary
+needs to be below a few tens of \(R_{☉}\) to obtain GW-driven mergers
+within the age of the Universe.
+</p>
+
 <ul class="org-ul">
 <li><b>Q</b>: How big do the stellar progenitors of these compact objects get
-during their evolution?</li>
+during their evolution? How does that compare to the loose
+requirement we have derived above?</li>
 </ul>
 </div>
 </div>
 </div>
 
-
 <div id="outline-container-org8e18fc1" class="outline-2">
 <h2 id="org8e18fc1"><a href="#org8e18fc1">Direct detection through interferometry</a></h2>
 <div class="outline-text-2" id="text-org8e18fc1">
+<p>
+Although impressive, the observations of the Hulse-Taylor pulsar (and
+other systems since then) only prove that the orbit of this binary NS
+loses energy at a rate that matches impressively well predictions
+based on assuming that the energy is lost to the emission of GWs.
+</p>
+
+<p>
+From before the discovery of this system and for decades after, the
+quest for a <i>direct</i> detection continued &#x2013; with controversial claims
+and rebuttals (see for example <a href="https://www.sciencedirect.com/science/article/pii/S057790731630572X">Chen et al. 2017</a> for an historical
+overview). Skipping ahead to the 21<sup>st</sup> century, the first direct
+detection came from ground-based interferometric observations
+performed by the <i>Laser Interferometry gravitational observatory</i> (LIGO)
+laboratory &#x2013; after \(\sim50\) years of continued effort.
+</p>
+
+<p>
+On September 14<sup>th</sup> 2015, the first direct detection of a binary BH
+(BBH) merger, GW150914 occurred. And just two years later the first
+binary NS (BNS) merger was detected in GW first (GW170817), and
+through followup observations informed on the sky location by the GWs,
+also in EM observations.
+</p>
+
+
+<figure id="org9f323d9">
+<img src="./images/GW150914.png" alt="GW150914.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 2: </span>Detection of the first GW signal from the inspiral and merger of two BHs from <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract">LVK collaboration 2016</a>. Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain \(h=\Delta L/L\), that is the relative change in size of the detector caused by the passage of the GW. Note the units! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to &sim;10 seconds for a BNS)</figcaption>
+</figure>
+
+
+<p>
+This was such a long process because this detection really pushed the
+limits of technological capabilities. Without entering in the details
+of the detection strategy, a successful detection requires to measure
+a change in position of mirrors bouncing laser light of \(\sim10^{-21}\) cm
+(over \(\ge4\) km size of the detectors), as shown in the figure above:
+<b>this is 1/1000 of the characteristic size of a nucleus</b>!
+</p>
+
+
+<figure id="orgbea50ed">
+<img src="./images/GWTC-3_stellar_graveyard.jpg" alt="GWTC-3_stellar_graveyard.jpg" width="100%">
+
+<figcaption><span class="figure-number">Figure 3: </span>"Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract">LVK collaboration 2023</a> and <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract">LVK Collaboration 2023b</a>. The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in \(M_{☉}\) units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).</figcaption>
+</figure>
+
+
+<p>
+Today, we know of \(\sim100\) BBH mergers, still only one BNS merger, and
+we have a few BH-NS mergers (but unfortunately all too far for the
+detection of EM counterparts): we already know more stellar-mass BH
+from GWs than any other EM signature!
+</p>
+
+
+
+
+
+
+
+
+
+
+
 <ul class="org-ul">
 <li>strain \(h \ll 10^{-15} cm\) &sim; size of nucleus</li>
 <li>GW150914</li>
