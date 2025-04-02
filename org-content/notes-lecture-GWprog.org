@@ -180,13 +180,14 @@ From Eq. \ref{eq:quad} we can see several important facts:
    objects, or objects moving in a straight line don't produce GWs.
 
 In astrophysical context, what could be the sources? The most common
-ones considered and searched for are *non-spherical compact stars* (for
-example a spinning neutron star with a mountain not aligned to the
-rotation axis), *binary systems made of neutron stars and/or black
-holes*, and echoes of the Big Bang in GWs (this is a target for pulsar
-timing arrays and beyond the scope of this course).
-
-
+ones considered and searched for are *non-spherical rotating compact
+objects* (for example a spinning neutron star with a mountain not
+aligned to the rotation axis would produce a GW with constant
+frequency equal to the rotation frequency of the source), *binary
+systems made of compact objects* (which would lose energy to GWs and
+progressively shrink the orbit until a final merger of the two compact
+objects) and echoes of the Big Bang in GWs (this is a target for
+pulsar timing arrays and beyond the scope of this course).
 
 ** Indirect detection of GWs
 
@@ -211,7 +212,7 @@ timing arrays and beyond the scope of this course).
   The measured agreement between the period decay of the Hulse-Taylor
   pulsar and general relativity prediction of the energy loss due to
   GW emission is considered the first /indirect/ evidence for GW (and
-  was awarded the Nobel prize in 1993).
+  [[https://www.nobelprize.org/prizes/physics/1993/summary/][was awarded the Nobel prize in physics in 1993]]).
 
 ** Minimum orbital separation for significant GW emission
 
@@ -307,10 +308,36 @@ and all BH-NS mergers have been too far for the detection of EM
 counterparts): we already know more stellar-mass BH from GWs than any
 other EM signature!
 
+Thanks to the direct detections of GWs we now know several
+astrophysical facts that had been hypothesized before, but were
+lacking empirical confirmation:
+- BBH exist!
+- stellar mass BHs with masses $\gg 10M_{\odot}$ exist!
+- BH-NS binary exist!
+- we have some constrain on the rate at which these form with a
+  "final" (from the stellar evolution point of view)/"initial" (from
+  the GW-driven inspiral point of view) separation sufficient to merge
+  within the age of the Universe
+
+*N.B.:* GWs also offer cosmological facts, e.g., the non-detection (as
+of yet) of a stochastic background, unique constraints on GR in strong
+gravity (e.g., from the "ring-down" phase just after the merger, when
+the new formed BH "shakes away its hairs"), and nuclear physics
+(GW170817 confirmed that BNS mergers are one site for r-process
+nucleosynthesis and formation of element heavier than Iron).
+Ultimately, GW astronomy is a completely new way to explore the
+Universe. The discussion here is far from complete and focused on the
+aspects related to stellar physics only.
+
 * The problem: how do compact objects get so close to each other?
 
+- two classes: isolated systems (binary/triples/quadruples) and
+  dynamical systems (globular clusters, nuclear star clusters) and
+  exotic channels (AGN gas-assisted inspirals, multiple compact
+  objects from a single star)
 
 ** Isolated binary evolution
+
 
 ** Dynamical channels
  - cluster
@@ -319,6 +346,10 @@ other EM signature!
  - connection to runaways?
 
 * The future of GW astronomy
+
+
+
+
 
  - LISA/TianQin
  - PTA
