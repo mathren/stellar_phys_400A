@@ -13,10 +13,10 @@
 Astronomy since its inception lost in history is based on observations
 of (visible) light from sources in the Sky. As mentioned in [[./notes-lecture-CMD-HRD.org][at the
 beginning]], between the 17^{th} and 19^{th} century astronomy was unified
-with physics (universal law of gravitation and spectra). In the 20^{th}
-century, the wavelength range accessible to telescopes greatly
-increased (from high-energy \gamma-rays to long radio wavelengths), making
-astronomy a /multi-wavelength/ science.
+with physics (universal law of gravitation and interpretation of
+spectra). In the 20^{th} century, the wavelength range accessible to
+telescopes greatly increased (from high-energy \gamma-rays to long radio
+wavelengths), making astronomy a /multi-wavelength/ science.
 
 With the detection of neutrinos (first solar, then from SN1987A, and
 most recently very high-energy neutrinos), astronomy became
@@ -38,41 +38,52 @@ this metafore is bound to become obsolete as multi-wavelength GW
 observations become available (e.g., from "pulsar timing arrays" and
 space-based GW observatories).
 
-* GW basics
+* GR and GW basics
 
-The fact that there is a finite speed $c$ for the propagation of
-interaction fields allows for the existence of /gravitational/ fields
-unbound from matter. An oscillating unbound gravitational field is by
-definition a gravitational wave. GWs, as any /wave/, are the solution of
-a linear perturbation on a state. In the GW case, the state is the
-flat space-time metric $g_{\mu\nu}$ describing space-time far away from
-any mass, and the perturbation, often indicated with $h_{\mu\nu}$.
+General relativity is a /geometric/ theory of gravity that explains how
+space-time is a /dynamical/ entity described by a tensor, the metric.
+The dynamics of this entity is dictated by the distribution of mass
+(or better energy density) within it, which determines the curvature
+of space time. In turn that curvature determines the /geodesics/ that
+the energy density will follow in absence of other (non-gravitational)
+forces.
 
-Let's start from Einstein's field equation:
+This is formally described by Einstein's field equation:
 #+begin_latex
 \begin{equation}\label{eq:EFE}
 G_{\mu\nu} + \Lambda g_{\mu\nu} = T_{\mu\nu} \ \ ,
 \end{equation}
 #+end_latex
-where $g_{\mu\nu}$ is the metric (the unknown functional variable),
-$T_{\mu\nu}$ is the stress-energy tensor that describes the distribution
-of matter/energy that shapes space-time (i.e., the source term which
-determines $g_{\mu\nu}$), and $G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\nu}$ is
-Einstein's tensor (R=R^{\mu}_{\mu} is the trace of the Ricci tensor
-R_{\mu\nu}), and the indexes $\mu$ and $\nu=0,1,2,3$ span the temporal
-and three spatial dimensions. Eq. \ref{eq:EFE} is the one that
-describes simultaneously how matter (represented by the stress-energy
-tensor $T_{\mu\nu}$) "bends" space-time (represented by the metric tensor
-$g_{\mu\nu}$) and viceversa how the structure of space-time shapes the
-motion of matter along the geodesics defined by the curvature of
-space-time (see any textbook on general relativity for more
-information).
+where $g_{\mu\nu}$ is the metric (the unknown functional variable that
+describes the dynamical space-time), $T_{\mu\nu}$ is the stress-energy
+tensor that describes the distribution of matter/energy that shapes
+space-time (i.e., the source term which determines $g_{\mu\nu}$), and
+$G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\nu}$ is Einstein's tensor (R=R^{\mu}_{\mu} is the
+trace of the Ricci tensor R_{\mu\nu} which describes how different from
+flat is the space-time described by g_{\mu\nu} and it is a function of
+g_{\mu\nu} itself). The indexes $\mu$ and $\nu=0,1,2,3$ span the
+temporal and three spatial dimensions. Eq. \ref{eq:EFE} is the one
+that describes simultaneously how matter (represented by the
+stress-energy tensor $T_{\mu\nu}$) "bends" space-time (represented by the
+metric tensor $g_{\mu\nu}$) and viceversa how the structure of space-time
+shapes the motion of matter along the geodesics defined by the
+curvature of space-time (see any textbook on general relativity for
+more information).
 
-Say that we know a solution $g_{\mu\nu}$ (e.g., $g_{\mu\nu} = \eta_{\mu\nu}$
-the Minkowskian metric describing a flat space-time), we can apply a
-small perturbation to it: $g_{\mu\nu}\rightarrow g_{\mu\nu} + h_{\mu\nu}$.
-Keeping only terms linear in $h_{\mu\nu}$ (which is our new functional
-variable) we can rewrite Eq. \ref{eq:EFE} as:
+The fact that there is a finite speed $c$ for the propagation of
+interaction fields (including space-time itself) allows for the
+existence of /gravitational/ fields unbound from matter. An oscillating
+unbound gravitational field is by definition a gravitational wave.
+
+GWs, as any /wave/, are the solution of a linear perturbation on a
+state. In the GW case, the state is the flat space-time metric
+$g_{\mu\nu}$ describing space-time far away from any mass, and the
+perturbation, often indicated with $h_{\mu\nu}$. Say that we know a
+solution $g_{\mu\nu}$ (e.g., $g_{\mu\nu} = \eta_{\mu\nu}$ the Minkowskian
+metric describing a flat space-time), we can apply a small
+perturbation to it: $g_{\mu\nu}\rightarrow g_{\mu\nu} + h_{\mu\nu}$. Keeping
+only terms linear in $h_{\mu\nu}$ (which is our new functional variable)
+we can rewrite Eq. \ref{eq:EFE} as:
 #+begin_latex
 \begin{equation}\label{eq:GW_wave}
 \left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = -16\pi T_{\mu\nu} \ \ .
@@ -86,6 +97,24 @@ A_{\mu\nu}\exp(i k_{\alpha}x^{\alpha})$! These are the "ripple in space-time"
 general relativity) as GWs are often described.
 
 ** Sources of GWs
+
+Before narrowing down what could be (mathematically and
+astrophysically) the sources of GWs, let's consider when are General
+relativity effects most relevant? A typical quantity to look at the
+the so-called "compactness" $M/R$ with $M$ mass of a source and $R$
+its linear dimension. Note that in natural units ($G=c=1$), this is a
+dimensionless number.
+
+For low values of $M/R$, General Relativity reduces to Newtonian
+gravity, and in Newtonian gravity the gravitational field is fixed and
+any change propagates instantly: there are no gravitational waves. For
+general relativity effects to matter, $M/R$ needs to be large: either
+extremely large masses regardless of the scale (see the very first
+ideas of what today we call a black hole from Mitchell and Laplace),
+or for very dense matter. In the "stellar regime", we expect the
+densest stars, also known collectively as "compact objects" to be
+involved, namely white dwarfs (WD), neutron stars (NS), and black
+holes (BHs).
 
 :Question:
 - *Q*: what is the lowest order source term for electromagnetic
@@ -120,7 +149,7 @@ h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 where $r$ is the luminosity distance and
 #+begin_latex
 \begin{equation}
-Q_{\mu\nu} = \int d^{3} x \rho(\mathbf{x})\left(x_{\mu}_{}x_{\nu}-\frac{1}{3}r^{2}\delta_{\mu\nu}\right) \ \ ,
+Q_{\mu\nu} = \int d^{3} x \rho(\mathbf{x})\left(x_{\mu}x_{\nu}-\frac{1}{3}r^{2}\delta_{\mu\nu}\right) \ \ ,
 \end{equation}
 #+end_latex
 is the quadrupole of the mass distribution.
