@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-04-02 Wed 16:16 -->
+<!-- 2025-04-02 Wed 16:36 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - GW progenitors</title>
@@ -180,7 +180,7 @@ curvature of space time. In turn, that curvature determines the
 <p>
 This is formally described by Einstein's field equation:
 </p>
-<div class="latex" id="org06eca69">
+<div class="latex" id="org5a28b74">
 \begin{equation}\label{eq:EFE}
 G_{\mu\nu} + \Lambda g_{\mu\nu} = T_{\mu\nu} \ \ ,
 \end{equation}
@@ -222,19 +222,19 @@ apply a small perturbation to it substituting \(g_{\mu\nu}\rightarrow
 g_{\mu\nu} + h_{\mu\nu}\). Keeping only terms linear in \(h_{\mu\nu}\) (which is
 our new functional variable) we can rewrite Eq. \ref{eq:EFE} as:
 </p>
-<div class="latex" id="orgb43c048">
+<div class="latex" id="org3fcd8be">
 \begin{equation}\label{eq:GW_wave}
-\left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = -16\pi T_{\mu\nu} \ \ .
+\left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} \propto T_{\mu\nu} \ \ .
 \end{equation}
 
 </div>
 <p>
 which is a wave equation in three dimensions for \(h_{\mu\nu}\) with speed
-of propagation \(c\), source term \(T_{\mu\nu}\). In vacuum (\(T_{\mu\nu}=0\)),
-and consequently \(h_{\mu\nu}\) admits oscillating solutions \(h_{\mu\nu} =
-A_{\mu\nu}\exp(i k_{\alpha}x^{\alpha})\)! These are the "ripple in space-time"
-(i.e., in the metric tensor describing the properties of space-time in
-general relativity) as GWs are often described.
+of propagation \(c\), source term proportional to \(T_{\mu\nu}\). In vacuum
+(\(T_{\mu\nu}=0\)), and consequently \(h_{\mu\nu}\) admits oscillating solutions
+\(h_{\mu\nu} = A_{\mu\nu}\exp(i k_{\alpha}x^{\alpha})\)! These are the "ripple in
+space-time" (i.e., in the metric tensor describing the properties of
+space-time in general relativity) as GWs are often described.
 </p>
 </div>
 
@@ -306,7 +306,7 @@ mass at leading order.
 <p>
 One can obtain, at leading order, the so called quadrupole formula:
 </p>
-<div class="latex" id="org0b88a34">
+<div class="latex" id="org86947d2">
 \begin{equation}\label{eq:quad}
 h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 \end{equation}
@@ -315,7 +315,7 @@ h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 <p>
 where \(r\) is the luminosity distance and
 </p>
-<div class="latex" id="orgd9ec95e">
+<div class="latex" id="org7e058f2">
 \begin{equation} \label{eq:quadrupole_def}
 Q_{\mu\nu} = \int d^{3} x T_{00}x_{\mu}x_{\nu} \ \ ,
 \end{equation}
@@ -375,7 +375,7 @@ orbit!
 </p>
 
 
-<figure id="org032281a">
+<figure id="org463c8a0">
 <img src="./images/GW-decay.jpg" alt="GW-decay.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Dots are the measured cumulative time shift in periastron passage w.r.t. a Keplerian orbit with constant period for PSR B1913+16. The solid line is the prediction assuming the period is changing due to GW emission as predicted by general relativity. Note that this is <b>not</b> a fit! From <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract">Weisberg &amp; Huang 2016</a></figcaption>
@@ -489,7 +489,7 @@ also in EM observations.
 </p>
 
 
-<figure id="orgff40f45">
+<figure id="org664dbdb">
 <img src="./images/GW150914.png" alt="GW150914.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Detection of the first GW signal from the inspiral and merger of two BHs from <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract">LVK collaboration 2016</a>. Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain \(h=\Delta L/L\), that is the relative change in size of the detector caused by the passage of the GW. Note the units! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to &sim;10 seconds for a BNS)</figcaption>
@@ -506,7 +506,7 @@ a change in position of mirrors bouncing laser light of \(\sim10^{-21}\) cm
 </p>
 
 
-<figure id="orgc735ab7">
+<figure id="org4af9a21">
 <img src="./images/GWTC-3_stellar-graveyard.jpg" alt="GWTC-3_stellar-graveyard.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>"Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract">LVK collaboration 2023</a> and <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract">LVK Collaboration 2023b</a>. The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in \(M_{☉}\) units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).</figcaption>
@@ -561,8 +561,8 @@ objects from a single star)</li>
 </ul>
 </div>
 
-<div id="outline-container-org249b4b8" class="outline-3">
-<h3 id="org249b4b8"><a href="#org249b4b8">Isolated binary evolution</a></h3>
+<div id="outline-container-org0683f76" class="outline-3">
+<h3 id="org0683f76"><a href="#org0683f76">Isolated evolution channels</a></h3>
 </div>
 
 
@@ -582,11 +582,42 @@ objects from a single star)</li>
 <div id="outline-container-org0433e02" class="outline-2">
 <h2 id="org0433e02"><a href="#org0433e02">The future of GW astronomy</a></h2>
 <div class="outline-text-2" id="text-org0433e02">
+</div>
+<div id="outline-container-org027fb9a" class="outline-3">
+<h3 id="org027fb9a"><a href="#org027fb9a">Ground-based detectors</a></h3>
+<div class="outline-text-3" id="text-org027fb9a">
+<p>
+The current rate of GW detection within the frequency range of LIGO,
+VIRGO, KAGRA is very high, and by the end-of-life of these
+most-precise machines ever built, we expect to have a sizeable
+population of GW-driven mergers of compact objects.
+</p>
+
 <ul class="org-ul">
-<li>LISA/TianQin</li>
-<li>PTA</li>
-<li>3<sup>rd</sup> Generation detectors (BBO/Einstein telescope)</li>
+<li>mention 3rd gen plans</li>
 </ul>
+</div>
+</div>
+
+<div id="outline-container-org61a9ddc" class="outline-3">
+<h3 id="org61a9ddc"><a href="#org61a9ddc">Space-based detectors</a></h3>
+<div class="outline-text-3" id="text-org61a9ddc">
+<p>
+Mention DWD here
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0bbedf6" class="outline-3">
+<h3 id="org0bbedf6"><a href="#org0bbedf6">Galaxy-wide detectors: Pulsar Timing Arrays</a></h3>
+<div class="outline-text-3" id="text-org0bbedf6">
+
+<figure id="org2c309ca">
+<img src="./images/GWdetectors.png" alt="GWdetectors.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 4: </span>Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. From <a href="https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract">Moore et al. 2015</a></figcaption>
+</figure>
+</div>
 </div>
 </div>
 </div>

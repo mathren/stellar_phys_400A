@@ -93,15 +93,15 @@ g_{\mu\nu} + h_{\mu\nu}$. Keeping only terms linear in $h_{\mu\nu}$ (which is
 our new functional variable) we can rewrite Eq. \ref{eq:EFE} as:
 #+begin_latex
 \begin{equation}\label{eq:GW_wave}
-\left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = -16\pi T_{\mu\nu} \ \ .
+\left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} \propto T_{\mu\nu} \ \ .
 \end{equation}
 #+end_latex
 which is a wave equation in three dimensions for $h_{\mu\nu}$ with speed
-of propagation $c$, source term $T_{\mu\nu}$. In vacuum ($T_{\mu\nu}=0$),
-and consequently $h_{\mu\nu}$ admits oscillating solutions $h_{\mu\nu} =
-A_{\mu\nu}\exp(i k_{\alpha}x^{\alpha})$! These are the "ripple in space-time"
-(i.e., in the metric tensor describing the properties of space-time in
-general relativity) as GWs are often described.
+of propagation $c$, source term proportional to $T_{\mu\nu}$. In vacuum
+($T_{\mu\nu}=0$), and consequently $h_{\mu\nu}$ admits oscillating solutions
+$h_{\mu\nu} = A_{\mu\nu}\exp(i k_{\alpha}x^{\alpha})$! These are the "ripple in
+space-time" (i.e., in the metric tensor describing the properties of
+space-time in general relativity) as GWs are often described.
 
 ** Sources of GWs
 
@@ -336,7 +336,7 @@ aspects related to stellar physics only.
   exotic channels (AGN gas-assisted inspirals, multiple compact
   objects from a single star)
 
-** Isolated binary evolution
+** Isolated evolution channels
 
 
 ** Dynamical channels
@@ -347,10 +347,24 @@ aspects related to stellar physics only.
 
 * The future of GW astronomy
 
+** Ground-based detectors
+
+The current rate of GW detection within the frequency range of LIGO,
+VIRGO, KAGRA is very high, and by the end-of-life of these
+most-precise machines ever built, we expect to have a sizeable
+population of GW-driven mergers of compact objects.
+
+- mention 3rd gen plans
+
+** Space-based detectors
+
+Mention DWD here
+
+** Galaxy-wide detectors: Pulsar Timing Arrays
 
 
 
 
- - LISA/TianQin
- - PTA
- - 3^{rd} Generation detectors (BBO/Einstein telescope)
+#+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]]
+#+ATTR_HTML: :width 100%
+[[./images/GWdetectors.png]]
