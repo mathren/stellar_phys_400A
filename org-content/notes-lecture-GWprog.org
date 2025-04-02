@@ -88,9 +88,9 @@ $g_{\mu\nu}$ describing space-time far away from any mass, and the
 perturbation is often indicated with $h_{\mu\nu}$. Say that we know a
 solution $g_{\mu\nu}$ (e.g., $g_{\mu\nu} = \eta_{\mu\nu} = \mathrm{diag}(1, -1,
 -1, -1)$ Minkowski's metric describing a flat space-time), we can
-apply a small perturbation to it: $g_{\mu\nu}\rightarrow g_{\mu\nu} +
-h_{\mu\nu}$. Keeping only terms linear in $h_{\mu\nu}$ (which is our new
-functional variable) we can rewrite Eq. \ref{eq:EFE} as:
+apply a small perturbation to it substituting $g_{\mu\nu}\rightarrow
+g_{\mu\nu} + h_{\mu\nu}$. Keeping only terms linear in $h_{\mu\nu}$ (which is
+our new functional variable) we can rewrite Eq. \ref{eq:EFE} as:
 #+begin_latex
 \begin{equation}\label{eq:GW_wave}
 \left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = -16\pi T_{\mu\nu} \ \ .
@@ -106,22 +106,29 @@ general relativity) as GWs are often described.
 ** Sources of GWs
 
 Before narrowing down what could be (mathematically and
-astrophysically) the sources of GWs, let's consider when are General
-relativity effects most relevant? A typical quantity to look at the
-the so-called "compactness" $M/R$ with $M$ mass of a source and $R$
-its linear dimension. Note that in natural units ($G=c=1$), this is a
-dimensionless number.
+astrophysically) the sources of GWs, let's consider when are GR
+effects most relevant? A typical quantity to look at the so-called
+"compactness" $M/R$ with $M$ mass of a source and $R$ its linear
+dimension. Note that in natural units ($G=c=1$ typically used to
+simplify the formalism in GR), this is a dimensionless number.
 
 For low values of $M/R$, General Relativity reduces to Newtonian
-gravity, and in Newtonian gravity the gravitational field is fixed and
-any change propagates instantly: there are no gravitational waves. For
-general relativity effects to matter, $M/R$ needs to be large: either
-extremely large masses regardless of the scale (see the very first
-ideas of what today we call a black hole from Mitchell and Laplace),
-or for very dense matter. In the "stellar regime", we expect the
-densest stars, also known collectively as "compact objects" to be
-involved, namely white dwarfs (WD), neutron stars (NS), and black
-holes (BHs).
+gravity -- as it should being an extension of this theory, and in
+Newtonian gravity the gravitational field is fixed and any change
+propagates instantly: there are no gravitational waves.
+
+*N.B.:* Just introducing the postulate that "gravity" has a finite speed
+of propagation in Newtonian physics, one can build a lot of intuition
+and quantitative results correct to order of magnitude for GW physics,
+see [[https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract][Schutz 1984]] and  [[https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209][LVK Collaboration 2017]].
+
+For general relativity effects to matter, $M/R$ needs to be "large":
+either extremely large masses regardless of the scale (see the very
+first ideas of what today we call a black hole from [[https://ui.adsabs.harvard.edu/abs/1784RSPT...74...35M/abstract][Michell 1784]] and
+[[https://ui.adsabs.harvard.edu/abs/1799AllGE...4....1L/abstract][Laplace 1799]]), or for very dense matter limited to a very small linear
+scale $R$. In the "stellar regime", we expect the densest stars, also
+known collectively as "compact objects" to be involved, namely white
+dwarfs (WD), neutron stars (NS), and black holes (BHs).
 
 :Question:
 - *Q*: what is the lowest order source term for electromagnetic
