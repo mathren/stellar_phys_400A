@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2025-04-02 Wed 13:13 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>400A - GW progenitors</title>
+<meta name="author" content="Mathieu Renzo" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="./css/style.css" />
+<link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+<meta name="keywords" content="Mathieu, Renzo, Mathieu Renzo,
+			       stellar evolution, 400A, University of
+			       Arizona, Steward Observatory, stars,
+			       theoretical astrophysics">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<!-- Preamble -->
+<!-- The header -->
+<div class="header">
+
+  <!-- The site name -->
+  <div class="site-name">
+    <a id="top" href="./index.html">Stellar Evolution</a>
+  </div>
+
+  <!-- The hamburger -->
+  <div class="hamburger">
+    <div id="myLinks" class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./syllabus.html">Syllabus</a>
+      <a href="./lectures.html">Lectures</a>
+      <a href="./projects.html">Projects</a>
+    </div>
+    <a  href="javascript:void(0);" class="icon" onclick="HamburgerMenuFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="navbar">
+    <a href="./syllabus.html">Syllabus</a>
+    <a href="./lectures.html">Lectures</a>
+    <a href="./projects.html">Projects</a>
+  </div>
+</div>
+
+<!-- scripts -->
+<script>
+  function HamburgerMenuFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+	  x.style.display = "none";
+      } else {
+	  x.style.display = "block";
+      }
+  }
+</script>
+
+<script>
+  window.onload = () => {
+      const toggleButton = document.getElementById("light-dark-toggle");
+      const body = document.body;
+      const html = document.documentElement;
+
+
+      // Check localStorage for user preference
+      if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+	  html.classList.toggle("dark-mode");
+      }
+
+      // Toggle theme on click
+      toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+	  html.classList.toggle("dark-mode");
+
+          // Save user preference
+          if (body.classList.contains("dark-mode")) {
+              localStorage.setItem("theme", "dark");
+          } else {
+              localStorage.setItem("theme", "light");
+          }
+      });
+  };
+</script>
+<!-- end scripts-->
+</div>
+<div id="content" class="content">
+<p>
+<b>Materials:</b> Chapter 15 in Tauris &amp; Van den Heuvel 2023 book, <a href="https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract">Schutz
+1984</a>, Landau &amp; Lifschitz vol. 2, <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209">LVK Collaboration 2017</a>, <a href="https://astrobites.org/2023/11/08/guide-to-gravitational-waves/">Astrobites
+post on GW</a> (and references therein!).
+</p>
+
+
+<div id="outline-container-orgf624744" class="outline-2">
+<h2 id="orgf624744"><a href="#orgf624744">Photons, neutrinos, and gravitational-wave astronomy</a></h2>
+<div class="outline-text-2" id="text-orgf624744">
+<p>
+Astronomy since its inception lost in history is based on observations
+of (visible) light from sources in the Sky. As mentioned in <a href="./notes-lecture-CMD-HRD.html">at the
+beginning</a>, between the 17<sup>th</sup> and 19<sup>th</sup> century astronomy was unified
+with physics (universal law of gravitation and interpretation of
+spectra). In the 20<sup>th</sup> century, the wavelength range accessible to
+telescopes greatly increased (from high-energy &gamma;-rays to long radio
+wavelengths), making astronomy a <i>multi-wavelength</i> science.
+</p>
+
+<p>
+With the detection of neutrinos (first solar, then from SN1987A, and
+most recently very high-energy neutrinos), astronomy became
+"multi-messenger" (photons+neutrinos), a buzz word that is highly used
+presently.
+</p>
+
+<p>
+The addition of gravitational waves (GW) adds a completely new way to
+study astrophysical sources, probing optically thick and thus
+inaccessible regions, and regimes where gravity is <i>strong</i> (i.e., a
+full general relativistic treatment of the interaction of matter with
+space-time becomes necessary).
+</p>
+
+<p>
+Because the wavelength range for GWs (which are <i>not</i> EM waves nor sound
+waves!) accessible to presently available ground-base detectors such
+as LIGO/Virgo/Kagra is in the 10-1000Hz range &#x2013; corresponding roughly
+to the auditory range for typical human hears, it is often
+metaphorically said that GWs allow us to "hear" the Universe. However,
+this metafore is bound to become obsolete as multi-wavelength GW
+observations become available (e.g., from "pulsar timing arrays" and
+space-based GW observatories).
+</p>
+
+<p>
+To give a complete overview of GW physics we would need to have a full
+course of general relativity (GR) first just as a start. I will not
+attempt to be complete or exhaustive here, but just to give some
+elements necessary to understand the astrophysical problem of the
+formation of GW sources for ground and space-based detectors.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfa6f3e6" class="outline-2">
+<h2 id="orgfa6f3e6"><a href="#orgfa6f3e6">GR and GW basics</a></h2>
+<div class="outline-text-2" id="text-orgfa6f3e6">
+<p>
+General relativity is a <i>geometric</i> theory of gravity that explains how
+space-time is a <i>dynamical</i> entity described by a tensor, the metric.
+The dynamics of this entity is dictated by the distribution of mass
+(or better energy density) within it, which determines the curvature
+of space time. In turn that curvature determines the <i>geodesics</i> that
+the energy density will follow in absence of other (non-gravitational)
+forces.
+</p>
+
+<p>
+This is formally described by Einstein's field equation:
+</p>
+<div class="latex" id="org13f1b65">
+\begin{equation}\label{eq:EFE}
+G_{\mu\nu} + \Lambda g_{\mu\nu} = T_{\mu\nu} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where \(g_{\mu\nu}\) is the metric (the unknown functional variable that
+describes the dynamical space-time), \(T_{\mu\nu}\) is the stress-energy
+tensor that describes the distribution of matter/energy that shapes
+space-time (i.e., the source term which determines \(g_{\mu\nu}\)), and
+\(G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\nu}\) is Einstein's tensor (R=R<sup>&mu;</sup><sub>&mu;</sub> is the
+trace of the Ricci tensor R<sub>&mu;&nu;</sub> which describes how different from
+flat is the space-time described by g<sub>&mu;&nu;</sub> and it is a function of
+g<sub>&mu;&nu;</sub> itself). The indexes \(\mu\) and \(\nu=0,1,2,3\) span the
+temporal and three spatial dimensions. Eq. \ref{eq:EFE} is the one
+that describes simultaneously how matter (represented by the
+stress-energy tensor \(T_{\mu\nu}\)) "bends" space-time (represented by the
+metric tensor \(g_{\mu\nu}\)) and viceversa how the structure of space-time
+shapes the motion of matter along the geodesics defined by the
+curvature of space-time (see any textbook on general relativity for
+more information).
+</p>
+
+<p>
+The fact that there is a finite speed \(c\) for the propagation of
+interaction fields (including space-time itself) allows for the
+existence of <i>gravitational</i> fields unbound from matter. An oscillating
+unbound gravitational field is by definition a gravitational wave.
+</p>
+
+<p>
+GWs, as any <i>wave</i>, are the solution of a linear perturbation on a
+state. In the GW case, the state is the flat space-time metric
+\(g_{\mu\nu}\) describing space-time far away from any mass, and the
+perturbation, often indicated with \(h_{\mu\nu}\). Say that we know a
+solution \(g_{\mu\nu}\) (e.g., \(g_{\mu\nu} = \eta_{\mu\nu}\) the Minkowskian
+metric describing a flat space-time), we can apply a small
+perturbation to it: \(g_{\mu\nu}\rightarrow g_{\mu\nu} + h_{\mu\nu}\). Keeping
+only terms linear in \(h_{\mu\nu}\) (which is our new functional variable)
+we can rewrite Eq. \ref{eq:EFE} as:
+</p>
+<div class="latex" id="orgc6d4654">
+\begin{equation}\label{eq:GW_wave}
+\left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = -16\pi T_{\mu\nu} \ \ .
+\end{equation}
+
+</div>
+<p>
+which is a wave equation in three dimensions for \(h_{\mu\nu}\) with speed
+of propagation \(c\), source term \(T_{\mu\nu}\). In vacuum (\(T_{\mu\nu}=0\)),
+and consequently \(h_{\mu\nu}\) admits oscillating solutions \(h_{\mu\nu} =
+A_{\mu\nu}\exp(i k_{\alpha}x^{\alpha})\)! These are the "ripple in space-time"
+(i.e., in the metric tensor describing the properties of space-time in
+general relativity) as GWs are often described.
+</p>
+</div>
+
+<div id="outline-container-org37955b6" class="outline-3">
+<h3 id="org37955b6"><a href="#org37955b6">Sources of GWs</a></h3>
+<div class="outline-text-3" id="text-org37955b6">
+<p>
+Before narrowing down what could be (mathematically and
+astrophysically) the sources of GWs, let's consider when are General
+relativity effects most relevant? A typical quantity to look at the
+the so-called "compactness" \(M/R\) with \(M\) mass of a source and \(R\)
+its linear dimension. Note that in natural units (\(G=c=1\)), this is a
+dimensionless number.
+</p>
+
+<p>
+For low values of \(M/R\), General Relativity reduces to Newtonian
+gravity, and in Newtonian gravity the gravitational field is fixed and
+any change propagates instantly: there are no gravitational waves. For
+general relativity effects to matter, \(M/R\) needs to be large: either
+extremely large masses regardless of the scale (see the very first
+ideas of what today we call a black hole from Mitchell and Laplace),
+or for very dense matter. In the "stellar regime", we expect the
+densest stars, also known collectively as "compact objects" to be
+involved, namely white dwarfs (WD), neutron stars (NS), and black
+holes (BHs).
+</p>
+
+<ul class="org-ul">
+<li><b>Q</b>: what is the lowest order source term for electromagnetic
+radiation?</li>
+</ul>
+
+<p>
+In general, the source term of GWs is going to be related to the term
+describing the distribution in space-time of matter (the stress energy
+tensor \(T_{\mu\nu}\)).
+</p>
+
+<p>
+By analogy with electromagnetism (EM), let's consider the spatial
+momenta of \(T_{\mu\nu}\) assuming the mass distribution of the source to
+be finite in extent, that is multiply by (possibly more than one
+factor) \(x^{\alpha}\) and integrate over the spatial volume. Like in EM
+the zeroth order momentum of a charge distribution is just the total
+charge that is conserved, and that does not lead to EM radiation, the
+same goes for GWs. In EM, the next order give the charge dipole, which
+if it has a time-dependence creates EM radiation. For gravity, the
+first order momentum of a mass distribution, assuming the mass to be
+constant, has for time-derivative the total momentum of the source.
+That is also conserved: <b>there is no dipole radiation of GWs</b>.
+The next order is then the quadrupole of the mass distribution:
+gravitational waves are generated by the time-dependence of the
+quadrupole distribution of mass at leading order.
+</p>
+
+<p>
+One can obtain, at leading order, the so called quadrupole formula:
+</p>
+<div class="latex" id="org546d4bb">
+\begin{equation}\label{eq:quad}
+h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
+\end{equation}
+
+</div>
+<p>
+where \(r\) is the luminosity distance and
+</p>
+<div class="latex" id="orge6fb071">
+\begin{equation}
+Q_{\mu\nu} = \int d^{3} x \rho(\mathbf{x})\left(x_{\mu}x_{\nu}-\frac{1}{3}r^{2}\delta_{\mu\nu}\right) \ \ ,
+\end{equation}
+
+</div>
+<p>
+is the quadrupole of the mass distribution.
+</p>
+
+<p>
+From Eq. \ref{eq:quad} we can see several important facts:
+</p>
+<ol class="org-ol">
+<li>the amplitude of GWs scales with \(1/r\), as opposed to \(1/r^{2}\) for EM
+waves outside the radiation zone. This means that we can have GWs
+detectable from regions of the Universe that are too dim and far
+for EM observations.</li>
+<li>the source need to have a non-zero second-time derivative of the
+quadrupole term of the mass distribution (at least): spherical
+objects, or objects moving in a straight line don't produce GWs.</li>
+</ol>
+
+<p>
+In astrophysical context, what could be the sources? The most common
+ones considered and searched for are <b>non-spherical compact stars</b> (for
+example a spinning neutron star with a mountain not aligned to the
+rotation axis), <b>binary systems made of neutron stars and/or black
+holes</b>, and echoes of the Big Bang in GWs (this is a target for pulsar
+timing arrays and beyond the scope of this course).
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org5d53fb1" class="outline-3">
+<h3 id="org5d53fb1"><a href="#org5d53fb1">Indirect detection of GWs</a></h3>
+<div class="outline-text-3" id="text-org5d53fb1">
+<p>
+<a href="https://ui.adsabs.harvard.edu/abs/1975ApJ...195L..51H/abstract">Hulse &amp; Taylor 1975</a> discovered the first pulsar (radio source
+repeating with very high precision interpreted physically as a
+neutron star rotating fast) in a binary system, PSR B1913+16 (a.k.a.
+"Hulse-Taylor pulsar"). They showed a radial velocity curve (recall
+<a href="./notes-lecture-BIN.html">the lecture on binary orbital motion</a>) which demonstrated the orbit
+is eccentric and the companion is another compact object.
+</p>
+
+<p>
+Monitoring this system, and measuring the delay between periastron
+passage observed and the periastron passage predicted with a
+Keplerian orbit, one can see that the period is progressively
+speeding up, or, in other words, the orbit is shrinking in time.
+</p>
+
+
+<figure id="org5bb9d3b">
+<img src="./images/GW-decay.jpg" alt="GW-decay.jpg" width="100%">
+
+<figcaption><span class="figure-number">Figure 1: </span>Dots are the measured cumulative time shift in periastron passage w.r.t. a Keplerian orbit with constant period for PSR B1913+16. The solid line is the prediction assuming the period is changing due to GW emission as predicted by general relativity. Note that this is <b>not</b> a fit! From <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract">Weisberg &amp; Huang 2016</a></figcaption>
+</figure>
+
+<p>
+The measured agreement between the period decay of the Hulse-Taylor
+pulsar and general relativity prediction of the energy loss due to
+GW emission is considered the first <i>indirect</i> evidence for GW (and
+was awarded the Nobel prize in 1993).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8e18fc1" class="outline-2">
+<h2 id="org8e18fc1"><a href="#org8e18fc1">Direct detection through interferometry</a></h2>
+<div class="outline-text-2" id="text-org8e18fc1">
+<ul class="org-ul">
+<li>strain \(h \ll 10^{-15} cm\) &sim; size of nucleus</li>
+<li>GW150914</li>
+<li>increase rate of discovery</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0433e02" class="outline-2">
+<h2 id="org0433e02"><a href="#org0433e02">The future of GW astronomy</a></h2>
+<div class="outline-text-2" id="text-org0433e02">
+<ul class="org-ul">
+<li>LISA/TianQin</li>
+<li>PTA</li>
+<li>3<sup>rd</sup> Generation detectors (BBO/Einstein telescope)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org48cf5d6" class="outline-2">
+<h2 id="org48cf5d6"><a href="#org48cf5d6">The problem: how do compact objects get so close to each other?</a></h2>
+</div>
+
+
+<div id="outline-container-org249b4b8" class="outline-2">
+<h2 id="org249b4b8"><a href="#org249b4b8">Isolated binary evolution</a></h2>
+</div>
+
+<div id="outline-container-org3984b10" class="outline-2">
+<h2 id="org3984b10"><a href="#org3984b10">Dynamical channels</a></h2>
+<div class="outline-text-2" id="text-org3984b10">
+<ul class="org-ul">
+<li>cluster</li>
+<li>nuclear star cluster</li>
+<li>AGN disk</li>
+<li>connection to runaways?</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="footer">
+  <hr>
+  <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-SNe.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="projects.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
+  <br>
+  Last updated on 2 April 2025 <br>
+  Made with Emacs 28.1 - Org mode 9.5.2
+  <br>
+</div>
+</div>
+</body>
+</html>

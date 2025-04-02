@@ -5,7 +5,8 @@
 #+NEXT_PAGE: projects.org
 
 *Materials:* Chapter 15 in Tauris & Van den Heuvel 2023 book, [[https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract][Schutz
-1984]], Landau & Lifschitz vol. 2, [[https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209][LVK Collaboration 2017]].
+1984]], Landau & Lifschitz vol. 2, [[https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209][LVK Collaboration 2017]], [[https://astrobites.org/2023/11/08/guide-to-gravitational-waves/][Astrobites
+post on GW]] (and references therein!).
 
 
 * Photons, neutrinos, and gravitational-wave astronomy
@@ -37,6 +38,12 @@ metaphorically said that GWs allow us to "hear" the Universe. However,
 this metafore is bound to become obsolete as multi-wavelength GW
 observations become available (e.g., from "pulsar timing arrays" and
 space-based GW observatories).
+
+To give a complete overview of GW physics we would need to have a full
+course of general relativity (GR) first just as a start. I will not
+attempt to be complete or exhaustive here, but just to give some
+elements necessary to understand the astrophysical problem of the
+formation of GW sources for ground and space-based detectors.
 
 * GR and GW basics
 
