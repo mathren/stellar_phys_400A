@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-04-02 Wed 14:55 -->
+<!-- 2025-04-02 Wed 16:05 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - GW progenitors</title>
@@ -180,7 +180,7 @@ curvature of space time. In turn, that curvature determines the
 <p>
 This is formally described by Einstein's field equation:
 </p>
-<div class="latex" id="org28b6d46">
+<div class="latex" id="orge324cf1">
 \begin{equation}\label{eq:EFE}
 G_{\mu\nu} + \Lambda g_{\mu\nu} = T_{\mu\nu} \ \ ,
 \end{equation}
@@ -222,7 +222,7 @@ apply a small perturbation to it substituting \(g_{\mu\nu}\rightarrow
 g_{\mu\nu} + h_{\mu\nu}\). Keeping only terms linear in \(h_{\mu\nu}\) (which is
 our new functional variable) we can rewrite Eq. \ref{eq:EFE} as:
 </p>
-<div class="latex" id="org0236335">
+<div class="latex" id="org2f5ca88">
 \begin{equation}\label{eq:GW_wave}
 \left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = -16\pi T_{\mu\nu} \ \ .
 \end{equation}
@@ -306,7 +306,7 @@ mass at leading order.
 <p>
 One can obtain, at leading order, the so called quadrupole formula:
 </p>
-<div class="latex" id="orgbc58dc9">
+<div class="latex" id="orgd924200">
 \begin{equation}\label{eq:quad}
 h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 \end{equation}
@@ -315,7 +315,7 @@ h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 <p>
 where \(r\) is the luminosity distance and
 </p>
-<div class="latex" id="orge5823c8">
+<div class="latex" id="org5eee3a1">
 \begin{equation} \label{eq:quadrupole_def}
 Q_{\mu\nu} = \int d^{3} x T_{00}x_{\mu}x_{\nu} \ \ ,
 \end{equation}
@@ -374,7 +374,7 @@ orbit!
 </p>
 
 
-<figure id="orgc6dcd11">
+<figure id="org9ba4aa0">
 <img src="./images/GW-decay.jpg" alt="GW-decay.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Dots are the measured cumulative time shift in periastron passage w.r.t. a Keplerian orbit with constant period for PSR B1913+16. The solid line is the prediction assuming the period is changing due to GW emission as predicted by general relativity. Note that this is <b>not</b> a fit! From <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract">Weisberg &amp; Huang 2016</a></figcaption>
@@ -488,7 +488,7 @@ also in EM observations.
 </p>
 
 
-<figure id="orgabced44">
+<figure id="org22d3373">
 <img src="./images/GW150914.png" alt="GW150914.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Detection of the first GW signal from the inspiral and merger of two BHs from <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract">LVK collaboration 2016</a>. Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain \(h=\Delta L/L\), that is the relative change in size of the detector caused by the passage of the GW. Note the units! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to &sim;10 seconds for a BNS)</figcaption>
@@ -505,7 +505,7 @@ a change in position of mirrors bouncing laser light of \(\sim10^{-21}\) cm
 </p>
 
 
-<figure id="org5825891">
+<figure id="orgd50ca6f">
 <img src="./images/GWTC-3_stellar-graveyard.jpg" alt="GWTC-3_stellar-graveyard.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>"Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract">LVK collaboration 2023</a> and <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract">LVK Collaboration 2023b</a>. The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in \(M_{☉}\) units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).</figcaption>
@@ -513,27 +513,33 @@ a change in position of mirrors bouncing laser light of \(\sim10^{-21}\) cm
 
 
 <p>
-Today, we know of \(\sim100\) BBH mergers, still only one BNS merger, and
-we have a few BH-NS mergers (but unfortunately all too far for the
-detection of EM counterparts): we already know more stellar-mass BH
-from GWs than any other EM signature!
+Today, we know of \(\sim100\) BBH mergers, a couple of BNS merger, and we
+have a few BH-NS mergers (but unfortunately all BNS except GW170817
+and all BH-NS mergers have been too far for the detection of EM
+counterparts): we already know more stellar-mass BH from GWs than any
+other EM signature!
 </p>
+</div>
+</div>
 
+<div id="outline-container-org48cf5d6" class="outline-2">
+<h2 id="org48cf5d6"><a href="#org48cf5d6">The problem: how do compact objects get so close to each other?</a></h2>
+<div class="outline-text-2" id="text-org48cf5d6">
+</div>
+<div id="outline-container-org249b4b8" class="outline-3">
+<h3 id="org249b4b8"><a href="#org249b4b8">Isolated binary evolution</a></h3>
+</div>
 
-
-
-
-
-
-
-
-
-
+<div id="outline-container-org3984b10" class="outline-3">
+<h3 id="org3984b10"><a href="#org3984b10">Dynamical channels</a></h3>
+<div class="outline-text-3" id="text-org3984b10">
 <ul class="org-ul">
-<li>strain \(h \ll 10^{-15} cm\) &sim; size of nucleus</li>
-<li>GW150914</li>
-<li>increase rate of discovery</li>
+<li>cluster</li>
+<li>nuclear star cluster</li>
+<li>AGN disk</li>
+<li>connection to runaways?</li>
 </ul>
+</div>
 </div>
 </div>
 
@@ -544,27 +550,6 @@ from GWs than any other EM signature!
 <li>LISA/TianQin</li>
 <li>PTA</li>
 <li>3<sup>rd</sup> Generation detectors (BBO/Einstein telescope)</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org48cf5d6" class="outline-2">
-<h2 id="org48cf5d6"><a href="#org48cf5d6">The problem: how do compact objects get so close to each other?</a></h2>
-</div>
-
-
-<div id="outline-container-org249b4b8" class="outline-2">
-<h2 id="org249b4b8"><a href="#org249b4b8">Isolated binary evolution</a></h2>
-</div>
-
-<div id="outline-container-org3984b10" class="outline-2">
-<h2 id="org3984b10"><a href="#org3984b10">Dynamical channels</a></h2>
-<div class="outline-text-2" id="text-org3984b10">
-<ul class="org-ul">
-<li>cluster</li>
-<li>nuclear star cluster</li>
-<li>AGN disk</li>
-<li>connection to runaways?</li>
 </ul>
 </div>
 </div>

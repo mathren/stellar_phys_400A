@@ -301,38 +301,25 @@ a change in position of mirrors bouncing laser light of $\sim10^{-21}$ cm
 [[./images/GWTC-3_stellar-graveyard.jpg]]
 
 
-Today, we know of $\sim100$ BBH mergers, still only one BNS merger, and
-we have a few BH-NS mergers (but unfortunately all too far for the
-detection of EM counterparts): we already know more stellar-mass BH
-from GWs than any other EM signature!
+Today, we know of $\sim100$ BBH mergers, a couple of BNS merger, and we
+have a few BH-NS mergers (but unfortunately all BNS except GW170817
+and all BH-NS mergers have been too far for the detection of EM
+counterparts): we already know more stellar-mass BH from GWs than any
+other EM signature!
+
+* The problem: how do compact objects get so close to each other?
 
 
+** Isolated binary evolution
 
-
-
-
-
-
-
-
-
- - strain $h \ll 10^{-15} cm$ \sim size of nucleus
- - GW150914
- - increase rate of discovery
+** Dynamical channels
+ - cluster
+ - nuclear star cluster
+ - AGN disk
+ - connection to runaways?
 
 * The future of GW astronomy
 
  - LISA/TianQin
  - PTA
  - 3^{rd} Generation detectors (BBO/Einstein telescope)
-
-* The problem: how do compact objects get so close to each other?
-
-
-* Isolated binary evolution
-
-* Dynamical channels
- - cluster
- - nuclear star cluster
- - AGN disk
- - connection to runaways?
