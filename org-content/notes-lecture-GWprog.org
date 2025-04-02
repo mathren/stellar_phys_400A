@@ -298,7 +298,7 @@ a change in position of mirrors bouncing laser light of $\sim10^{-21}$ cm
 
 #+CAPTION: "Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see [[https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract][LVK collaboration 2023]] and [[https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract][LVK Collaboration 2023b]]. The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in $M_{\odot}$ units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).
 #+ATTR_HTML: :width 100%
-[[./images/GWTC-3_stellar_graveyard.jpg]]
+[[./images/GWTC-3_stellar-graveyard.jpg]]
 
 
 Today, we know of $\sim100$ BBH mergers, still only one BNS merger, and
