@@ -86,11 +86,11 @@ GWs, as any /wave/, are the solution of a linear perturbation on a
 state. In the GW case, the state is the flat space-time metric
 $g_{\mu\nu}$ describing space-time far away from any mass, and the
 perturbation is often indicated with $h_{\mu\nu}$. Say that we know a
-solution $g_{\mu\nu}$ (e.g., $g_{\mu\nu} = \eta_{\mu\nu} = \diag(-1, 1,1, 1)$  the Minkowskian
-metric describing a flat space-time), we can apply a small
-perturbation to it: $g_{\mu\nu}\rightarrow g_{\mu\nu} + h_{\mu\nu}$. Keeping
-only terms linear in $h_{\mu\nu}$ (which is our new functional variable)
-we can rewrite Eq. \ref{eq:EFE} as:
+solution $g_{\mu\nu}$ (e.g., $g_{\mu\nu} = \eta_{\mu\nu} = \mathrm{diag}(1, -1,
+-1, -1)$ Minkowski's metric describing a flat space-time), we can
+apply a small perturbation to it: $g_{\mu\nu}\rightarrow g_{\mu\nu} +
+h_{\mu\nu}$. Keeping only terms linear in $h_{\mu\nu}$ (which is our new
+functional variable) we can rewrite Eq. \ref{eq:EFE} as:
 #+begin_latex
 \begin{equation}\label{eq:GW_wave}
 \left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} = -16\pi T_{\mu\nu} \ \ .
