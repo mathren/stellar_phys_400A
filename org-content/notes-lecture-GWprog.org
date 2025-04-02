@@ -51,7 +51,7 @@ General relativity is a /geometric/ theory of gravity that treats
 space-time as /dynamical/ entity described by a tensor, the metric
 $g_{\mu\nu}$. The dynamics of this entity is dictated by the distribution
 of mass (or better energy density) within it, which determines the
-curvature of space time. In turn that curvature determines the
+curvature of space time. In turn, that curvature determines the
 /geodesics/ that the energy density will follow in absence of other
 (non-gravitational) forces.
 
@@ -65,7 +65,7 @@ where $g_{\mu\nu}$ is the metric (the unknown functional variable that
 describes the dynamical space-time), $T_{\mu\nu}$ is the stress-energy
 tensor that describes the distribution of matter/energy that shapes
 space-time (i.e., the source term which determines $g_{\mu\nu}$), and
-$G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\nu}$ is Einstein's tensor (R=R^{\mu}_{\mu} is the
+$G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\nu}$ is Einstein's tensor ($R=R^{\mu}_{\mu}$ is the
 trace of the Ricci tensor R_{\mu\nu} which describes how different from
 flat is the space-time described by g_{\mu\nu} and it is a function of
 g_{\mu\nu} itself). The indexes $\mu$ and $\nu=0,1,2,3$ span the
