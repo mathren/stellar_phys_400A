@@ -233,13 +233,20 @@ Approximating the orbit as Keplerian (which we know is a mistake,
 but the energy lost to GW in one orbit is fairly small and we are only
 after one order of magnitude), we obtain $a\simeq2.8R_{\odot}$, which
 corresponds to a periastron distance $a(1-e)\simeq 1.09R_{\odot}$ and apastron
-distance $a(1+e)\simeq4.5R_{\odot$.}
+distance $a(1+e)\simeq4.5R_{\odot}$.
 
 For BHs, which are more massive than NS, we can afford larger orbital
 separations, while less massive WDs require shorter separations/faster
 orbital periods.
 
+The take home point is that the compact objects (WD, NS or BH)
+have to have separations $\le\mathrm{few} \times 10R_{\odot}$ to generate
+significant amounts of GWs.
 
+:Question:
+- *Q*: How big do the stellar progenitors of these compact objects get
+  during their evolution?
+:end:
 
 
 * Direct detection through interferometry
