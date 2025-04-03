@@ -286,7 +286,7 @@ binary NS (BNS) merger was detected in GW first (GW170817), and
 through followup observations informed on the sky location by the GWs,
 also in EM observations.
 
-#+CAPTION: Detection of the first GW signal from the inspiral and merger of two BHs from [[https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract][LVK collaboration 2016]]. Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain $h=\Delta L/L$, that is the relative change in size of the detector caused by the passage of the GW. Note the scale! For LIGO $L\simeq4$km, corresponding to $\Delta L\sim 10^{-16}$ cm, smaller than a nucleus! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to \sim10 seconds for a BNS)
+#+CAPTION: Detection of the first GW signal from the inspiral and merger of two BHs from [[https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract][LVK collaboration 2016]]. Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain $h=\Delta L/L$, that is the relative change in size of the detector caused by the passage of the GW. Note the scale! For LIGO $L\simeq4$ km, corresponding to $\Delta L\sim 10^{-16}$ cm, smaller than a nucleus! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to \sim10 seconds for a BNS)
 #+ATTR_HTML: :width 100%
 [[./images/GW150914.png]]
 
@@ -294,20 +294,19 @@ also in EM observations.
 This was such a long process because this detection really pushed the
 limits of technological capabilities. Without entering in the details
 of the detection strategy, a successful detection requires to measure
-a change in position of mirrors bouncing laser light of $\sim10^{-21}$ cm
+a change in position of mirrors bouncing laser light of $\le10^{-16}$ cm
 (over $\ge4$ km size of the detectors), as shown in the figure above:
-*this is 1/1000 of the characteristic size of a nucleus*!
+*this is $\le1/10$ of the characteristic size of a nucleus*!
+
+Today, while observations continue, we know of $\sim100$ BBH mergers, a
+couple of BNS merger, and we have a few BH-NS mergers (but
+unfortunately all BNS except GW170817 and all BH-NS mergers have been
+too far for the detection of EM counterparts): we already know more
+stellar-mass BH from GWs than any other EM signature!
 
 #+CAPTION: "Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see [[https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract][LVK collaboration 2023]] and [[https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract][LVK Collaboration 2023b]]. The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in $M_{\odot}$ units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).
 #+ATTR_HTML: :width 100%
 [[./images/GWTC-3_stellar-graveyard.jpg]]
-
-
-Today, we know of $\sim100$ BBH mergers, a couple of BNS merger, and we
-have a few BH-NS mergers (but unfortunately all BNS except GW170817
-and all BH-NS mergers have been too far for the detection of EM
-counterparts): we already know more stellar-mass BH from GWs than any
-other EM signature!
 
 Thanks to the direct detections of GWs we now know several
 astrophysical facts that had been hypothesized before, but were
@@ -324,7 +323,7 @@ lacking empirical confirmation:
 of yet) of a stochastic background, unique constraints on GR in strong
 gravity (e.g., from the "ring-down" phase just after the merger, when
 the new formed BH "shakes away its hairs"), and nuclear physics
-(GW170817 confirmed that BNS mergers are one site for r-process
+(GW170817 confirmed that BNS mergers are one site for [[file:notes-lecture-nuclear-burning.org::*Reactions involving neutrons][r-process]]
 nucleosynthesis and formation of element heavier than Iron).
 Ultimately, GW astronomy is a completely new way to explore the
 Universe. The discussion here is far from complete and focused on the
@@ -350,6 +349,11 @@ aspects related to stellar physics only.
 
 ** Ground-based detectors
 
+#+CAPTION: LIGO, VIRGO, and KAGRA are three ground-based GW observatories. This figure shows the predicted uptime for each detector with the horizon out to which they are predicted to be able to detect a BNS merger. From [[https://observing.docs.ligo.org/plan/]].
+#+ATTR_HTML: :width 100%
+[[./images/GW_timeline.png]]
+
+
 The current rate of GW detection within the frequency range of LIGO,
 VIRGO, KAGRA is very high, and by the end-of-life of these
 most-precise machines ever built, we expect to have a sizeable
@@ -359,13 +363,11 @@ population of GW-driven mergers of compact objects.
 
 ** Space-based detectors
 
-Mention DWD here
+- Mention DWD here
 
 ** Galaxy-wide detectors: Pulsar Timing Arrays
 
 
-
-
-#+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]]
+#+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]]
 #+ATTR_HTML: :width 100%
 [[./images/GWdetectors.png]]
