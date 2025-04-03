@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-04-03 Thu 10:39 -->
+<!-- 2025-04-03 Thu 16:35 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - GW progenitors</title>
@@ -180,7 +180,7 @@ curvature of space time. In turn, that curvature determines the
 <p>
 This is formally described by Einstein's field equation:
 </p>
-<div class="latex" id="orgd95f6ed">
+<div class="latex" id="org1f89114">
 \begin{equation}\label{eq:EFE}
 G_{\mu\nu} + \Lambda g_{\mu\nu} = T_{\mu\nu} \ \ ,
 \end{equation}
@@ -222,7 +222,7 @@ apply a small perturbation to it substituting \(g_{\mu\nu}\rightarrow
 g_{\mu\nu} + h_{\mu\nu}\). Keeping only terms linear in \(h_{\mu\nu}\) (which is
 our new functional variable) we can rewrite Eq. \ref{eq:EFE} as:
 </p>
-<div class="latex" id="orgf43d2fd">
+<div class="latex" id="orgcdea768">
 \begin{equation}\label{eq:GW_wave}
 \left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} \propto T_{\mu\nu} \ \ .
 \end{equation}
@@ -306,7 +306,7 @@ mass at leading order.
 <p>
 One can obtain, at leading order, the so called quadrupole formula:
 </p>
-<div class="latex" id="orgcec0969">
+<div class="latex" id="orgec8ccbb">
 \begin{equation}\label{eq:quad}
 h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 \end{equation}
@@ -315,7 +315,7 @@ h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 <p>
 where \(r\) is the luminosity distance and
 </p>
-<div class="latex" id="org6d32c6e">
+<div class="latex" id="org72d79eb">
 \begin{equation} \label{eq:quadrupole_def}
 Q_{\mu\nu} = \int d^{3} x T_{00}x_{\mu}x_{\nu} \ \ ,
 \end{equation}
@@ -375,7 +375,7 @@ orbit!
 </p>
 
 
-<figure id="orgc5d8546">
+<figure id="org80a97a0">
 <img src="./images/GW-decay.jpg" alt="GW-decay.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Dots are the measured cumulative time shift in periastron passage w.r.t. a Keplerian orbit with constant period for PSR B1913+16. The solid line is the prediction assuming the period is changing due to GW emission as predicted by general relativity. Note that this is <b>not</b> a fit! From <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract">Weisberg &amp; Huang 2016</a></figcaption>
@@ -490,7 +490,7 @@ also in EM observations.
 </p>
 
 
-<figure id="orgbaf2273">
+<figure id="org2f1eea7">
 <img src="./images/GW150914.png" alt="GW150914.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Detection of the first GW signal from the inspiral and merger of two BHs from <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract">LVK collaboration 2016</a>. Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain \(h=\Delta L/L\), that is the relative change in size of the detector caused by the passage of the GW. Note the scale! For LIGO \(L\simeq4\) km, corresponding to \(\Delta L\sim 10^{-16}\) cm, smaller than a nucleus! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to &sim;10 seconds for a BNS)</figcaption>
@@ -515,7 +515,7 @@ stellar-mass BH from GWs than any other EM signature!
 </p>
 
 
-<figure id="orgad46e55">
+<figure id="orgab143ea">
 <img src="./images/GWTC-3_stellar-graveyard.jpg" alt="GWTC-3_stellar-graveyard.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>"Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract">LVK collaboration 2023</a> and <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract">LVK Collaboration 2023b</a>. The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in \(M_{☉}\) units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).</figcaption>
@@ -563,18 +563,91 @@ objects from a single star)</li>
 
 <div id="outline-container-org0683f76" class="outline-3">
 <h3 id="org0683f76"><a href="#org0683f76">Isolated evolution channels</a></h3>
+<div class="outline-text-3" id="text-org0683f76">
+
+<figure id="org2940670">
+<img src="./images/Tauris17.png" alt="Tauris17.png" width="100%">
+
+<figcaption><span class="figure-number">Figure 4: </span>Cartoon of the various steps in the evolution of a massive binary system evolving to be a GW-driven BNS merger, from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aa7e89">Tauris et al. 2017</a>. Many qualitative variations (e.g., NS &harr; BH, SN explosion &harr; failed explosion, RLOF &harr; Common envelope) have been proposed to explain BNS and BBH with various properties, see also review by <a href="https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract">Marchant &amp; Bodensteiner 2024</a>.</figcaption>
+</figure>
+</div>
 </div>
 
 
 <div id="outline-container-org3984b10" class="outline-3">
 <h3 id="org3984b10"><a href="#org3984b10">Dynamical channels</a></h3>
 <div class="outline-text-3" id="text-org3984b10">
+<p>
+Alternatively, another way to solve the issue of two compact objects
+needing to be closer than their parent stars are large to get
+GW-driven mergers within the age of the Universe is to leverage
+dynamical N-body interactions.
+</p>
+
+<p>
+The core of the idea is that stars could evolve in isolation (or in
+binaries that might interact, but not necessarily in the way leading
+to a GW progenitor), and be put together by their (Newtonian)
+gravitational interaction in a dense stellar system.
+</p>
+
+<p>
+<b>N.B.:</b> Binaries are still important! Since the cross section for N body
+interactions scales with some power of the stellar radius for single
+stars, and with the orbital separation for a binary ($&sigma; &prop; a<sup>2</sup> &Gt; R<sup>2</sup>)
+it is much more likely to have a significant gravitational interaction
+between a binary and a star (or between two binaries) than between two
+single stars.
+</p>
+
+
+<p>
+The video (from Prof. Carl Rodriguez) below shows a "zoom in" on one
+of the many N-body interactions that can happen. There is one incoming
+binary (in orange) that interacts (chaotically) through purely
+Newtonian gravity with a single star (in cyan). At the end of the
+interaction one of the initial binary members (statistically the least
+massive) finds itself alone and shot out at a high velocity, and the
+new binary has a shorter separation (the kinetic energy of the ejected
+star comes from the orbital energy of the original binary). This
+example thus shows that the simplest 3 body system results in the
+ejection of a "runaway star" and a tighter binary. Iterating this
+multiple times in a dense stellar system can lead to stellar or
+compact object binaries tight enough to emit significant amount of GWs
+and merge within the age of the Universe.
+</p>
+
+<video  controls width="600" height="400" src="./images/nopn_dvd.mp4" </video>
+
+<p>
+Multiple dense stellar environment have been proposed:
+</p>
 <ul class="org-ul">
-<li>cluster</li>
-<li>nuclear star cluster</li>
-<li>AGN disk</li>
-<li>connection to runaways?</li>
+<li>stellar clusters: if sufficiently dense they can produce large
+rates of BBH (while they don't work well for systems involving NS
+that get a kick at birth and whose progenitors are less massive and
+live in the cluster outskirts preventing them from entering the
+most dense part of the cluster where most interactions occur)</li>
+<li>nuclear star cluster: these are clusters around the supermassive BH
+at the center of a galaxy. This makes the escape velocity from
+these higher, and increases the chances of retaining the merger
+products and get multiple "generations" of mergers</li>
+<li>Active Galactic Nucleus disk: in the accretion disk of the
+supermassive BH in the center of a galaxy there can be stars and
+compact objects. They can interact dynamically (possibly with the
+gas of the disk playing an important role), and this has been
+proposed as a possible site for GW mergers.</li>
+<li>(Newtonian) Gravitational dynamics in triples and quadruple systems
+are in a sense a "transition" class between dynamical and isolated
+evolution channels.</li>
 </ul>
+
+
+<p>
+<b>N.B.:</b> This brief overview is far from complete: this is a relatively
+new and extremely active field, and by the time I finish writing any
+comprehensive summary there would be much more to summarize already!
+</p>
 </div>
 </div>
 </div>
@@ -587,10 +660,10 @@ objects from a single star)</li>
 <h3 id="org027fb9a"><a href="#org027fb9a">Ground-based detectors</a></h3>
 <div class="outline-text-3" id="text-org027fb9a">
 
-<figure id="org6a5ffa2">
+<figure id="org43ace29">
 <img src="./images/GW_timeline.png" alt="GW_timeline.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 4: </span>LIGO, VIRGO, and KAGRA are three ground-based GW observatories. This figure shows the predicted uptime for each detector with the horizon out to which they are predicted to be able to detect a BNS merger. From <a href="https://observing.docs.ligo.org/plan/">https://observing.docs.ligo.org/plan/</a>.</figcaption>
+<figcaption><span class="figure-number">Figure 5: </span>LIGO, VIRGO, and KAGRA are three ground-based GW observatories. This figure shows the predicted uptime for each detector with the horizon out to which they are predicted to be able to detect a BNS merger. From <a href="https://observing.docs.ligo.org/plan/">https://observing.docs.ligo.org/plan/</a>.</figcaption>
 </figure>
 
 
@@ -620,10 +693,10 @@ population of GW-driven mergers of compact objects.
 <h3 id="org0bbedf6"><a href="#org0bbedf6">Galaxy-wide detectors: Pulsar Timing Arrays</a></h3>
 <div class="outline-text-3" id="text-org0bbedf6">
 
-<figure id="orgc42fde2">
+<figure id="org88b7729">
 <img src="./images/GWdetectors.png" alt="GWdetectors.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 5: </span>Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From <a href="https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract">Moore et al. 2015</a></figcaption>
+<figcaption><span class="figure-number">Figure 6: </span>Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From <a href="https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract">Moore et al. 2015</a></figcaption>
 </figure>
 </div>
 </div>

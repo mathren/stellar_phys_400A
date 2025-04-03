@@ -338,12 +338,71 @@ aspects related to stellar physics only.
 
 ** Isolated evolution channels
 
+#+CAPTION: Cartoon of the various steps in the evolution of a massive binary system evolving to be a GW-driven BNS merger, from [[https://iopscience.iop.org/article/10.3847/1538-4357/aa7e89][Tauris et al. 2017]]. Many qualitative variations (e.g., NS \leftrightarrow BH, SN explosion \leftrightarrow failed explosion, RLOF \leftrightarrow Common envelope) have been proposed to explain BNS and BBH with various properties, see also review by [[https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract][Marchant & Bodensteiner 2024]].
+#+ATTR_HTML: :width 100%
+[[./images/Tauris17.png]]
+
 
 ** Dynamical channels
- - cluster
- - nuclear star cluster
- - AGN disk
- - connection to runaways?
+
+Alternatively, another way to solve the issue of two compact objects
+needing to be closer than their parent stars are large to get
+GW-driven mergers within the age of the Universe is to leverage
+dynamical N-body interactions.
+
+The core of the idea is that stars could evolve in isolation (or in
+binaries that might interact, but not necessarily in the way leading
+to a GW progenitor), and be put together by their (Newtonian)
+gravitational interaction in a dense stellar system.
+
+*N.B.:* Binaries are still important! Since the cross section for N body
+interactions scales with some power of the stellar radius for single
+stars, and with the orbital separation for a binary ($\sigma \propto a^{2} \gg R^{2})
+it is much more likely to have a significant gravitational interaction
+between a binary and a star (or between two binaries) than between two
+single stars.
+
+
+The video (from Prof. Carl Rodriguez) below shows a "zoom in" on one
+of the many N-body interactions that can happen. There is one incoming
+binary (in orange) that interacts (chaotically) through purely
+Newtonian gravity with a single star (in cyan). At the end of the
+interaction one of the initial binary members (statistically the least
+massive) finds itself alone and shot out at a high velocity, and the
+new binary has a shorter separation (the kinetic energy of the ejected
+star comes from the orbital energy of the original binary). This
+example thus shows that the simplest 3 body system results in the
+ejection of a "runaway star" and a tighter binary. Iterating this
+multiple times in a dense stellar system can lead to stellar or
+compact object binaries tight enough to emit significant amount of GWs
+and merge within the age of the Universe.
+
+#+HTML: <video  controls width="600" height="400" src="./images/nopn_dvd.mp4" </video>
+#  [[./images/nopn_dvd.mp4]]
+
+Multiple dense stellar environment have been proposed:
+ - stellar clusters: if sufficiently dense they can produce large
+   rates of BBH (while they don't work well for systems involving NS
+   that get a kick at birth and whose progenitors are less massive and
+   live in the cluster outskirts preventing them from entering the
+   most dense part of the cluster where most interactions occur)
+ - nuclear star cluster: these are clusters around the supermassive BH
+   at the center of a galaxy. This makes the escape velocity from
+   these higher, and increases the chances of retaining the merger
+   products and get multiple "generations" of mergers
+ - Active Galactic Nucleus disk: in the accretion disk of the
+   supermassive BH in the center of a galaxy there can be stars and
+   compact objects. They can interact dynamically (possibly with the
+   gas of the disk playing an important role), and this has been
+   proposed as a possible site for GW mergers.
+ - (Newtonian) Gravitational dynamics in triples and quadruple systems
+   are in a sense a "transition" class between dynamical and isolated
+   evolution channels.
+
+
+*N.B.:* This brief overview is far from complete: this is a relatively
+new and extremely active field, and by the time I finish writing any
+comprehensive summary there would be much more to summarize already!
 
 * The future of GW astronomy
 
