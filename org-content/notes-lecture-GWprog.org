@@ -264,12 +264,13 @@ within the age of the Universe.
   requirement we have derived above?
 :end:
 
-* Direct detection through interferometry
+* Direct detection
 
 Although impressive, the observations of the Hulse-Taylor pulsar (and
-other systems since then) only prove that the orbit of this binary NS
-loses energy at a rate that matches impressively well predictions
-based on assuming that the energy is lost to the emission of GWs.
+other systems since then, see for example Table 3 in [[https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract][Weisberg & Huang
+2016]]) only prove that the orbit of this binary NS loses energy at a
+rate that matches impressively well predictions based on assuming that
+the energy is lost to the emission of GWs.
 
 From before the discovery of this system and for decades after, the
 quest for a /direct/ detection continued -- with controversial claims
