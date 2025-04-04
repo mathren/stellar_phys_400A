@@ -170,7 +170,7 @@ core-collapse and the formation of compact objects
 
 [[./notes-lecture-SNe.org][Notes]]
 
-** TODO <2025-04-15 Tue> - Gravitational wave progenitors
+** <2025-04-15 Tue> - Gravitational wave progenitors
 *Aim*: introduce gravitational wave formation scenario (isolated binary
 and dynamical assembly), discuss some known uncertainties.
 
