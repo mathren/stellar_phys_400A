@@ -406,6 +406,10 @@ comprehensive summary there would be much more to summarize already!
 
 * The future of GW astronomy
 
+#+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]]
+#+ATTR_HTML: :width 100%
+[[./images/GWdetectors.png]]
+
 ** Ground-based detectors
 
 #+CAPTION: LIGO, VIRGO, and KAGRA are three ground-based GW observatories. This figure shows the predicted uptime for each detector with the horizon out to which they are predicted to be able to detect a BNS merger. From [[https://observing.docs.ligo.org/plan/]].
@@ -418,15 +422,17 @@ VIRGO, KAGRA is very high, and by the end-of-life of these
 most-precise machines ever built, we expect to have a sizeable
 population of GW-driven mergers of compact objects.
 
-- mention 3rd gen plans
+Future plans for so-called 3^{rd} generation GW detectors (the 2^{nd}
+generation are the space-based detectors discussed below) are being
+discussed. These will likely be interferometers with much longer arms
+($L\simeq 4$ km \rightarrow $L\simeq 40$ km) and buried underground to limit the
+high-frequency noise from micro-earthquakes. Multiple competing plans
+exist at this point (e.g., Cosmic Explorer in the US and Einstein
+Telescope in Europe), and are expected to be able to detect BBH merger
+up to redshift \sim20, much before the formation of the first stars!
 
 ** Space-based detectors
 
 - Mention DWD here
 
 ** Galaxy-wide detectors: Pulsar Timing Arrays
-
-
-#+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]]
-#+ATTR_HTML: :width 100%
-[[./images/GWdetectors.png]]
