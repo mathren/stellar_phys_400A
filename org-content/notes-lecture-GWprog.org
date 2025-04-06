@@ -8,7 +8,6 @@
 1984]], Landau & Lifschitz vol. 2, [[https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209][LVK Collaboration 2017]], [[https://www.sciencedirect.com/science/article/pii/S057790731630572X][Chen et al.
 2017]], [[https://astrobites.org/2023/11/08/guide-to-gravitational-waves/][Astrobites post on GW]] (and references therein!).
 
-
 * Photons, neutrinos, and gravitational-wave astronomy
 
 Astronomy since its inception lost in history is based on observations
@@ -40,10 +39,10 @@ observations become available (e.g., from "pulsar timing arrays" and
 space-based GW observatories).
 
 *Disclaimer:* to give a complete overview of GW physics we would need to
-have a full course of general relativity (GR) first just as a start. I
-will not attempt to be complete or exhaustive here, but just to give
+have a full course of general relativity (GR) first, just as a start. I
+will not attempt to be complete or exhaustive here, but just give
 some elements necessary to understand the astrophysical problem of the
-formation of GW sources for ground and space-based detectors.
+formation of (stellar-mass) GW sources for ground and space-based detectors.
 
 * GR and GW basics
 
@@ -69,13 +68,13 @@ $G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\nu}$ is Einstein's tensor ($R=R^{\mu}_{\mu}$
 the trace of the Ricci tensor $R_{\mu\nu}$ which describes how different
 from flat is the space-time described by $g_{\mu\nu}$ and it is a
 function of $g_{\mu\nu}$ itself). The indexes $\mu$ and $\nu=0,1,2,3$
-span the temporal and three spatial dimensions. Eq. \ref{eq:EFE} is
-the one that describes simultaneously how matter (represented by the
-stress-energy tensor $T_{\mu\nu}$) "bends" space-time (represented by the
-metric tensor $g_{\mu\nu}$) and viceversa how the structure of space-time
-shapes the motion of matter along the geodesics defined by the
-curvature of space-time (see any textbook on general relativity for
-more information).
+span the four space-time dimensions (but gravity can "mingle" these).
+Eq. \ref{eq:EFE} is the one that describes simultaneously how matter
+(represented by the stress-energy tensor $T_{\mu\nu}$) "bends" space-time
+(represented by the metric tensor $g_{\mu\nu}$) and viceversa how the
+structure of space-time shapes the motion of matter along the
+geodesics defined by the curvature of space-time (see any textbook on
+general relativity for more information).
 
 The fact that there is a finite speed $c$ for the propagation of
 interaction fields (including space-time itself) allows for the
@@ -113,22 +112,22 @@ dimension. Note that in natural units ($G=c=1$ typically used to
 simplify the formalism in GR), this is a dimensionless number.
 
 For low values of $M/R$, General Relativity reduces to Newtonian
-gravity -- as it should being an extension of this theory, and in
-Newtonian gravity the gravitational field is fixed and any change
-propagates instantly: there are no gravitational waves.
+gravity -- as expected -- and in Newtonian gravity the gravitational
+field is fixed and any change propagates instantly (at infinite
+velocity): there are no gravitational waves.
 
 *N.B.:* Just introducing the postulate that "gravity" has a finite speed
 of propagation in Newtonian physics, one can build a lot of intuition
 and quantitative results correct to order of magnitude for GW physics,
 see [[https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract][Schutz 1984]] and  [[https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209][LVK Collaboration 2017]].
 
-For general relativity effects to matter, $M/R$ needs to be "large":
-either extremely large masses regardless of the scale (see the very
-first ideas of what today we call a black hole from [[https://ui.adsabs.harvard.edu/abs/1784RSPT...74...35M/abstract][Michell 1784]] and
-[[https://ui.adsabs.harvard.edu/abs/1799AllGE...4....1L/abstract][Laplace 1799]]), or for very dense matter limited to a very small linear
-scale $R$. In the "stellar regime", we expect the densest stars, also
-known collectively as "compact objects" to be involved, namely white
-dwarfs (WD), neutron stars (NS), and black holes (BHs).
+For general relativity effects to be important, $M/R$ needs to be
+"large": either extremely large masses regardless of the scale (see
+the very first ideas of what today we call a black hole from [[https://ui.adsabs.harvard.edu/abs/1784RSPT...74...35M/abstract][Michell
+1784]] and [[https://ui.adsabs.harvard.edu/abs/1799AllGE...4....1L/abstract][Laplace 1799]]), or for very dense matter limited to a very
+small linear scale $R$. In the "stellar regime", we expect the densest
+stars, also known collectively as "compact objects" to be involved,
+namely white dwarfs (WD), neutron stars (NS), and black holes (BHs).
 
 In general, the source term of GWs is going to be related to the term
 describing the distribution in space-time of matter (the stress energy
@@ -145,15 +144,16 @@ be finite in extent, that is multiply by (possibly more than one
 factor) $x^{\alpha}$ and integrate over the spatial volume. Like in EM,
 the zeroth order momentum of a charge distribution is just the total
 charge that is conserved, and that does not lead to EM radiation, the
-same goes for GWs. In EM, the next order give the charge dipole, which
-if it has a time-dependence creates EM radiation (e.g., Thompson
+same goes for GWs: the monopole term of the matter/energy distribution
+does not generate GWs. In EM, the next order give the charge dipole,
+which if it has a time-dependence creates EM radiation (e.g., Thompson
 scattering). For gravity, the first order momentum of a mass
-distribution, assuming the mass to be constant, has for
-time-derivative the total momentum of the source. That is also
-conserved: *there is no dipole radiation of GWs*. The next order is then
-the quadrupole of the mass distribution: gravitational waves are
-generated by the time-dependence of the quadrupole distribution of
-mass at leading order.
+distribution (for intuition, think $\sim m \times r$) has for time-derivative
+the total momentum of the source ($\sim m \times v$). That is also conserved:
+*there is also no dipole radiation of GWs*. The next order is then the
+quadrupole of the mass distribution: gravitational waves are generated
+by the time-dependence of the quadrupole distribution of mass at
+leading order.
 
 One can obtain, at leading order, the so called quadrupole formula:
 #+begin_latex
@@ -167,8 +167,8 @@ where $r$ is the luminosity distance and
 Q_{\mu\nu} = \int d^{3} x T_{00}x_{\mu}x_{\nu} \ \ ,
 \end{equation}
 #+end_latex
-is the quadrupole of the mass distribution, with $T_{00}\equiv\rho$ the
-mass density.
+is the quadrupole of the mass distribution, and $T_{00}\equiv\rho$ is the
+mass density with an appropriate choice of reference frame.
 
 From Eq. \ref{eq:quad} we can see several important facts:
 1. the amplitude of GWs scales with $1/r$, as opposed to $1/r^{2}$ for EM
@@ -191,39 +191,48 @@ pulsar timing arrays and beyond the scope of this course).
 
 ** Indirect detection of GWs
 
-  [[https://ui.adsabs.harvard.edu/abs/1975ApJ...195L..51H/abstract][Hulse & Taylor 1975]] discovered the first pulsar (radio source
-  repeating with very high precision interpreted physically as a
-  neutron star rotating fast) in a binary system, PSR B1913+16 (a.k.a.
-  "Hulse-Taylor pulsar"). They showed a radial velocity curve (recall
-  [[./notes-lecture-BIN.org][the lecture on binary orbital motion]]) which demonstrated the orbit
-  is eccentric and the companion is another compact object.
+Pulsars are astrophysical radio sources repeating with very high
+precision interpreted physically as a neutron star rotating fast (down
+to milliseconds!).
 
-  Monitoring this system, and measuring the delay between periastron
-  passage observed and the periastron passage predicted with a
-  Keplerian orbit, one can see that the period is progressively
-  speeding up, or, in other words, the orbit is shrinking in time: the
-  next periastron passage is earlier than predicted by a Keplerian
-  orbit!
+[[https://ui.adsabs.harvard.edu/abs/1975ApJ...195L..51H/abstract][Hulse & Taylor 1975]] discovered the first pulsar in a binary system,
+PSR B1913+16 (a.k.a. "Hulse-Taylor pulsar"). They showed a radial
+velocity curve (recall [[./notes-lecture-BIN.org][the lecture on binary orbital motion]]) which
+demonstrated the orbit is eccentric and the companion must be another
+(unseen) compact object, of mass compatible with another neutron star.
+
+Monitoring this system, and measuring the delay between periastron
+passage observed and the periastron passage predicted with a
+Keplerian orbit, one can see that the period is progressively
+speeding up, or, in other words, the orbit is shrinking in time: the
+next periastron passage is earlier than predicted by a Keplerian
+orbit!
 
   #+CAPTION: Dots are the measured cumulative time shift in periastron passage w.r.t. a Keplerian orbit with constant period for PSR B1913+16. The solid line is the prediction assuming the period is changing due to GW emission as predicted by general relativity. Note that this is *not* a fit! From [[https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract][Weisberg & Huang 2016]]
   #+ATTR_HTML: :width 100%
   [[./images/GW-decay.jpg]]
 
-  The measured agreement between the period decay of the Hulse-Taylor
-  pulsar and general relativity prediction of the energy loss due to
-  GW emission is considered the first /indirect/ evidence for GW (and
-  [[https://www.nobelprize.org/prizes/physics/1993/summary/][was awarded the Nobel prize in physics in 1993]]).
+The measured agreement between the period decay of the Hulse-Taylor
+pulsar and general relativity prediction of the energy loss due to
+GW emission is considered the first /indirect/ evidence for GW (and
+[[https://www.nobelprize.org/prizes/physics/1993/summary/][was awarded the Nobel prize in physics in 1993]]).
+
+*N.B.:* This is possible because the timing of arrival of a pulse is
+extremely stable and thus predictable. A fast spinning neutron star in a binary
+system is used as a clock to demonstrate that the binary orbit is
+decaying in time because of the emission of GWs!
 
 ** Minimum orbital separation for significant GW emission
 
 Besides its historical importance, the "Hulse-Taylor pulsar" allows
-to introduce an other important thing which requires GR to
-demonstrate properly: what should the orbital separation of a binary
-be for it to emit detectable GWs?
+for the introduction of an other important thing which requires GR to
+demonstrate properly: what should be the orbital separation of a
+binary for it to emit detectable GWs?
 
-From Eq. \ref{eq:quad} and Eq. \ref{eq:quadrupole_def} one can see
-that the answer should be also dependent on the masses of the binary
-components.
+*N.B.:* The orbital separation $a$ is a linear scale. From the fact that
+GR matters for large $M/R \sim M/a$ we can also expect that the mass of a
+binary $M$ will play a role in this answer (cf. also Eq. \ref{eq:quad}
+and Eq. \ref{eq:quadrupole_def}).
 
 For the Hulse-Taylor pulsar, we have:
  - $M_{1} = 1.441M_{\odot}$ for the mass of the detectable radio-pulsar
@@ -232,8 +241,8 @@ For the Hulse-Taylor pulsar, we have:
  - $e = 0.61$ for the orbit (likely a product of the [[file:notes-lecture-SNe.org::*Neutron star kicks][natal kick]] of the
    second-born NS)
 
-Approximating the orbit as Keplerian (which we know is a mistake,
-but the energy lost to GW in one orbit is fairly small and we are only
+Approximating the orbit as Keplerian (which we know is a mistake, but
+the energy lost to GW in one orbit is fairly small and we are only
 after one order of magnitude), we obtain $a\simeq2.8R_{\odot}$, which
 corresponds to a periastron distance $a(1-e)\simeq 1.09R_{\odot}$ and apastron
 distance $a(1+e)\simeq4.5R_{\odot}$.
@@ -270,7 +279,7 @@ Although impressive, the observations of the Hulse-Taylor pulsar (and
 other systems since then, see for example Table 3 in [[https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract][Weisberg & Huang
 2016]]) only prove that the orbit of this binary NS loses energy at a
 rate that matches impressively well predictions based on assuming that
-the energy is lost to the emission of GWs.
+the energy is lost to GW emission.
 
 From before the discovery of this system and for decades after, the
 quest for a /direct/ detection continued -- with controversial claims
@@ -284,19 +293,28 @@ On September 14^{th} 2015, the first direct detection of a binary BH
 (BBH) merger, GW150914 occurred. And just two years later the first
 binary NS (BNS) merger was detected in GW first (GW170817), and
 through followup observations informed on the sky location by the GWs,
-also in EM observations.
+also in EM observations (first independently as a short \gamma ray burst
+GRB170817A 1.7s later than the GW signal, and even later as a lower
+energy multi-wavelength transient AT 2017gfo). Unfortunately no
+neutrinos have been detected from this event.
+
+*N.B.:* Because EM interactions are stronger than gravitational ones,
+light has to filter through the ejecta produced by the merger, which
+delays it (speed $c\rightarrow c/\tau$), while GWs are unimpeded, and thus arrive
+on Earth faster.
 
 #+CAPTION: Detection of the first GW signal from the inspiral and merger of two BHs from [[https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract][LVK collaboration 2016]]. Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain $h=\Delta L/L$, that is the relative change in size of the detector caused by the passage of the GW. Note the scale! For LIGO $L\simeq4$ km, corresponding to $\Delta L\sim 10^{-16}$ cm, smaller than a nucleus! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to \sim10 seconds for a BNS)
 #+ATTR_HTML: :width 100%
 [[./images/GW150914.png]]
 
 
-This was such a long process because this detection really pushed the
-limits of technological capabilities. Without entering in the details
-of the detection strategy, a successful detection requires to measure
-a change in position of mirrors bouncing laser light of $\le10^{-16}$ cm
-(over $\ge4$ km size of the detectors), as shown in the figure above:
-*this is $\le1/10$ of the characteristic size of a nucleus*!
+The quest for a direct detection of GWs was such a long process
+because it required pushing the limits of technological capabilities
+(on multiple fronts). Without entering in the details of the detection
+strategy, a successful detection requires to measure a change of $\Delta
+L\le10^{-16}$ cm in the travel path of laser beams bouncing between mirrors
+$L\sim4$ km apart. $\Delta L$ produced by the passage of the GW is is
+*$\le1/1000$ of the characteristic size of a nucleus*!
 
 Today, while observations continue, we know of $\sim100$ BBH mergers, a
 couple of BNS merger, and we have a few BH-NS mergers (but
