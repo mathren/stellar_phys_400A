@@ -318,9 +318,10 @@ $L\sim4$ km apart. $\Delta L$ produced by the passage of the GW is is
 
 Today, while observations continue, we know of $\sim100$ BBH mergers, a
 couple of BNS merger, and we have a few BH-NS mergers (but
-unfortunately all BNS except GW170817 and all BH-NS mergers have been
-too far for the detection of EM counterparts): we already know more
-stellar-mass BH from GWs than any other EM signature!
+unfortunately all BNS except GW170817 -- the first one -- and all
+BH-NS mergers have been too far for the detection of EM counterparts):
+we already know more stellar-mass BH from GWs than any other EM
+signature!
 
 #+CAPTION: "Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see [[https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract][LVK collaboration 2023]] and [[https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract][LVK Collaboration 2023b]]. The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in $M_{\odot}$ units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).
 #+ATTR_HTML: :width 100%
@@ -337,22 +338,51 @@ lacking empirical confirmation:
   the GW-driven inspiral point of view) separation sufficient to merge
   within the age of the Universe
 
-*N.B.:* GWs also offer cosmological facts, e.g., the non-detection (as
-of yet) of a stochastic background, unique constraints on GR in strong
-gravity (e.g., from the "ring-down" phase just after the merger, when
-the new formed BH "shakes away its hairs"), and nuclear physics
-(GW170817 confirmed that BNS mergers are one site for [[file:notes-lecture-nuclear-burning.org::*Reactions involving neutrons][r-process]]
-nucleosynthesis and formation of element heavier than Iron).
-Ultimately, GW astronomy is a completely new way to explore the
-Universe. The discussion here is far from complete and focused on the
-aspects related to stellar physics only.
+*N.B.:* GWs also offer cosmological facts, e.g., from a stochastic
+background, unique constraints on GR in strong gravity (e.g., from the
+"ring-down" phase just after the merger, when the new formed BH
+"shakes away its hairs"), and nuclear physics (GW170817 confirmed that
+BNS mergers are one site for [[file:notes-lecture-nuclear-burning.org::*Reactions involving neutrons][r-process]] nucleosynthesis and formation
+of element heavier than iron). Ultimately, GW astronomy is a
+completely new way to explore the Universe. The discussion here is far
+from complete and focused on the aspects related to stellar physics
+only.
 
 * The problem: how do compact objects get so close to each other?
 
-- two classes: isolated systems (binary/triples/quadruples) and
-  dynamical systems (globular clusters, nuclear star clusters) and
-  exotic channels (AGN gas-assisted inspirals, multiple compact
-  objects from a single star)
+With the indirect /and/ direct detection of /multiple/ GW, we now know
+that compact objects (WD, NS, BHs) exist in binaries with separations
+short enough to lose energy to the emission of GWs at a sufficient
+rate that they merge within the age of the Universe.
+
+From a stellar physics perspective, this leads to an apparent paradox:
+To merge, they need to have orbital separation of order of $\sim
+10R_{\odot$}$ or less. Their stellar progenitor however, evolve to be
+$\ge100-1000R_{\odot}$. How can we reconcile these two facts?
+
+*N.B.:* The same problem has already been considered based on classical
+novae and main-sequence + WD binary, where the orbital separation of
+the present-day binary is much smaller than the radii of the
+progenitor of the WD, which lead to the idea of "common envelope
+evolution" by Ostriker, Taam, Paczynski.
+
+The proposed solutions of this apparent paradox are many, and it is a
+very active research topic presently. They can broadly be subdivided
+in two main classes, described in more detail below:
+- *Isolated evolution*: the compact objects come from
+  stars in a binary (or triple, or quadruple) system, where mass
+  exchange processes allow for the compact objects to migrate towards
+  each other reaching short enough mutual orbital periods such that GW
+  emission occurs.
+- *Dynamical assembly*: the compact objects formed from stars that
+  evolve in isolation, but in a dynamical environment. Newtonian
+  gravitational interactions among many bodies (e.g., in a cluster,
+  nuclear star cluster, or active galactic nucleus) lead chaotically
+  to pairing two compact objects on an orbit tight enough for GW emission.
+Because the investigation of these two broad classes (and other hybrid
+or more exotic solutions) is actively being pursued, I will only
+briefly describe the main features of the simplest versions of each
+below.
 
 ** Isolated evolution channels
 
