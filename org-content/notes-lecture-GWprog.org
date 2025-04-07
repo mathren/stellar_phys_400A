@@ -455,8 +455,8 @@ The key steps are:
 
 
 As you can imagine, many variations on this theme have been suggested,
-I recommend the review by [[https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract][Marchant & Bodensteiner 2024]] for more
-details.
+I recommend the reviews by [[https://link.springer.com/referenceworkentry/10.1007/978-981-16-4306-4_16][Mapelli 2020]] and [[https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract][Marchant & Bodensteiner
+2024]] for more details.
 
 In case there are a third (or more) companions, their first impact on
 the story outlined above is to create gravitational perturbations on
@@ -532,26 +532,49 @@ probing different GW frequencies are being planned.
 
 ** Ground-based detectors
 
+Multiple ground-based detectors exist and all collaborate under the
+umbrella of the "LIGO Virgo KAGRA scientific collaboration". The
+figure below shows the short term future observing plan for the
+existing ground based detectors:
+
 #+CAPTION: LIGO, VIRGO, and KAGRA are three ground-based GW observatories. This figure shows the predicted uptime for each detector with the horizon out to which they are predicted to be able to detect a BNS merger. From [[https://observing.docs.ligo.org/plan/]].
 #+ATTR_HTML: :width 100%
 [[./images/GW_timeline.png]]
+
+Having multiple detectors is useful for verification of the results,
+but maybe even more importantly, to improve through triangulation the
+"sky localization" of GW events and target EM followup. *N.B.:* even
+detection in one detector and non-detection in another will help the
+sky localization.
+
+#+CAPTION: Visualization of the uncertainty regions for the localization on the plane of the sky for selected GW merger events. The size of these contours depends on the amplitude of the signal (and thus the masses involved), its polarization, and importantly how many detectors could catch the signal and the delay times.
+#+ATTR_HTML: :width 100%
+[[./images/Skymap.jpg]]
 
 
 The current rate of GW detection within the frequency range of LIGO,
 VIRGO, KAGRA is very high, and by the end-of-life of these
 most-precise machines ever built, we expect to have a sizeable
-population of GW-driven mergers of compact objects.
+population of GW-driven mergers of compact objects. You can find on
+[[https://gracedb.ligo.org/superevents/public/O4/][grace DB]] the announcement for every trigger in the ongoing O4
+observational campaign (these contain the information provided to EM
+observers to followup events with telescopes).
 
-Future plans for so-called 3^{rd} generation GW detectors (the 2^{nd}
-generation are the space-based detectors discussed below) are being
-discussed. These will likely be interferometers with much longer arms
-($L\simeq 4$ km \rightarrow $L\simeq 40$ km) and buried underground to limit the
-high-frequency noise from micro-earthquakes. Multiple competing plans
-exist at this point (e.g., Cosmic Explorer in the US and Einstein
-Telescope in Europe), and are expected to be able to detect BBH merger
-up to redshift \sim20, much before the formation of the first stars!
+On a slightly longer timescale, a "copy" of LIGO is being planned as
+LIGO-india (same technology), and in the future there are plans for
+so-called 3^{rd} generation GW detectors (the 2^{nd} generation are the
+space-based detectors discussed below). These will likely be
+interferometers with much longer arms ($L\simeq 4$ km \rightarrow $L\simeq 40$ km) and
+buried underground to limit the high-frequency noise from
+micro-earthquakes. Multiple competing plans exist at this point (e.g.,
+Cosmic Explorer in the US and Einstein Telescope in Europe), and are
+expected to be able to detect BBH merger up to redshift \sim20, much
+before the formation of the first stars!
 
 ** Space-based detectors
+
+
+
 
 - Mention DWD here
 
