@@ -524,11 +524,11 @@ Multiple dense stellar environment have been proposed:
 new and extremely active field, and by the time I finish writing any
 comprehensive summary there would be much more to summarize already!
 
-* The future of GW astronomy
+* The present and future of GW astronomy
 
-#+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]]
-#+ATTR_HTML: :width 100%
-[[./images/GWdetectors.png]]
+Despite the first direct detection having occurred 10 years ago, the
+field of GW astronomy is only in its infancy: many new detectors
+probing different GW frequencies are being planned.
 
 ** Ground-based detectors
 
@@ -556,3 +556,13 @@ up to redshift \sim20, much before the formation of the first stars!
 - Mention DWD here
 
 ** Galaxy-wide detectors: Pulsar Timing Arrays
+
+
+** The future is +bright+ loud
+
+The figure below sketches the sensitivity in terms of strain $h=\Delta L/L$
+as a function of the GW frequency ($h\equiv h(f)$).
+
+#+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]]
+#+ATTR_HTML: :width 100%
+[[./images/GWdetectors.png]]
