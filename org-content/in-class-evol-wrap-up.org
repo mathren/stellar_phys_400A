@@ -98,8 +98,8 @@ can be "dusty" and thus opaque, making the pre-main sequence evolution
 /embedded/ and hard to directly observe.
 
 The $\langle T \rangle$ is initially low (the gas that is collapsing is coming
-from the interstellar medium), and increasing. Since $\nabla = \partial ln(T)/\partial
-ln(P) \propto \kappa L$ and $\kappa$ generally increases at low $T$, initially the
+from the interstellar medium), and increasing. Since $\nabla = \partial \ln(T)/\partial
+\ln(P) \propto \kappa L$ and $\kappa$ generally increases at low $T$, initially the
 stars have steep temperature gradient and are /fully convective/! This
 homogenizes their composition (but deuterium burning during the pre-MS
 can change this), and also determines that $\nabla\simeq\nabla_\mathrm{ad}$ to very
@@ -606,16 +606,18 @@ observed and require binary interactions to form, see [[https://ui.adsabs.harvar
 
 ** Low mass stars: AGB thermal pulses and WD cooling
 
-After the end of He core burning, the /vast/ majority of stars (\sim 98% of
-all stars integrating over the birth-mass distribution for M_{ZAMS}\le
-7.5M_{\odot}) is left with a carbon/oxygen rich degenerate core which is
-not massive enough to ignite further nuclear burning, and electron
-degeneracy sustains it. These stars however still need to lose their
-H-rich extended envelope and He-rich shell (which remain temporarily
-sustained by nuclear burning in shells) before they can finally rest
-as white dwarfs entirely sustained by degeneracy pressure. This
-process is relatively fast and involves copious episodic stellar
-outflows which are still an active topic of research.
+After the end of He core burning, the /vast/ majority of stars ($\sim 98\%$
+of all stars integrating over the birth-mass distribution for
+$M_{ZAMS}\le 7.5M_{\odot}$) is left with a carbon/oxygen rich degenerate
+core which is not massive enough to ignite further nuclear burning,
+and electron degeneracy sustains it. Such core is surrounded by a
+He-rich layer, and further out a H-rich envelope. Thus, these stars
+still need to lose their H-rich extended envelope and He-rich shell
+(which remain temporarily sustained by nuclear burning in shells)
+before they can finally rest as white dwarfs entirely sustained by
+degeneracy pressure. This process is relatively fast and involves
+copious (and possibly episodic) stellar outflows which are still an
+active topic of research.
 
 A star in this phase is referred to as an "Asymptotic Giant Branch"
 (AGB) star: for most of its life the He layer is inert (no nuclear
@@ -658,15 +660,18 @@ shell) until it reaches the center, lifting the electron degeneracy by
 releasing nuclear energy, and allowing the star to evolve past C core
 burning.
 
+[[https://faculty.washington.edu/balick/PNIC/][Catalog of planetary nebulae]]
+
+
 After losing their envelopes to thermal pulses (possibly accompanied
 by a late enhancement of their stellar winds), low mass stars rapidly
-move from the top right (high L low T_\mathrm{eff}) corner of the HR diagram to
-the lower left (low L high T_\mathrm{eff}) corner becoming white dwarfs (WD):
-this process of contraction occurs on a thermal timescale. In WDs the
-gravothermal collapse stops because of the electron degeneracy
-pressure: the degeneracy decoupled their structure (which can be
-approximated assuming k_{B}T\ll \varepsilon_{Fermi} \Rightarrow T\simeq 0)
-and their radiative properties.
+move from the top right (high $L$ low $T_\mathrm{eff}$) corner of the
+HR diagram to the lower left (low $L$ high $T_\mathrm{eff}$) corner
+becoming white dwarfs (WD): this process of contraction occurs on a
+thermal timescale. In WDs the gravothermal collapse stops because of
+the electron degeneracy pressure: the degeneracy decoupled their
+structure (which can be approximated assuming $k_{B}T\ll \varepsilon_{Fermi}
+\Rightarrow T\simeq 0$) and their radiative properties.
 
 These sit in the bottom left corner of the HR diagram: they actually
 have /hotter/ surface temperatures compared to a main sequence star!
