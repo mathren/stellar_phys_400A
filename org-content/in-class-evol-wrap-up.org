@@ -653,9 +653,17 @@ massive stars!
 [[./images/Trho_TPAGB.png]]
 
 
+The result of this process of "thermal pulses" in AGB is that the
+H-rich envelope and He-rich shell are progressively ejected (though
+the exact rate and mass loss mechanism are still an active topic of
+research), leaving a hot carbon-oxygen WD in the center (the former
+core) shining into a low-density nebula made by the ejecta. This is a
+/planetary nebula/ (although it has little to do with anything related
+to planets).
 
-
-[[https://faculty.washington.edu/balick/PNIC/][Catalog of planetary nebulae]]
+#+CAPTION: Example of an /HST/ image of a planetary nebula: NGC6543 (aka Cat's eye nebula). A catalog of planetary nebulae images is available [[https://faculty.washington.edu/balick/PNIC/][here]].
+#+ATTR_HTML: :width 100%
+[[./images/catseye.jpg]]
 
 
 After losing their envelopes to thermal pulses (possibly accompanied
