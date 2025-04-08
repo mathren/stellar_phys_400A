@@ -366,7 +366,9 @@ $\ge100-1000R_{\odot}$. How can we reconcile these two facts?
 novae and main-sequence + WD binary, where the orbital separation of
 the present-day binary is much smaller than the radii of the
 progenitor of the WD, which lead to the idea of "common envelope
-evolution" by Ostriker, Taam, Paczynski.
+evolution" (see [[https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract][Paczynski 1976]] and [[https://ui.adsabs.harvard.edu/abs/1978ApJ...222..269T/abstract][Taam et al. 1978]] for the original
+ideas, and [[https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract][Ivanova et al. 2013]], [[https://ui.adsabs.harvard.edu/abs/2020cee..book.....I/abstract][2020]] and [[https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract][Ropke & de Marco 2023]] for
+more recent extensive resources).
 
 The proposed solutions of this apparent paradox are many, and it is a
 very active research topic presently. They can broadly be subdivided
@@ -682,6 +684,6 @@ correspond to present-day experiments, all the others are planner.
 The figure illustrates the wide range of frequencies of GW (note the
 scale of the x-axis) that one can attempt to detect.
 
-#+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]]
+#+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]].
 #+ATTR_HTML: :width 100%
 [[./images/GWdetectors.png]]
