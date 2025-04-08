@@ -296,18 +296,18 @@ The star we can observe best is the closest one, the Sun (\odot), so a
 lot of quantities are scaled to those of the Sun in stellar physics
 and in astronomy more generally.
 
-** Solar radius: R_{\odot} = 6.957\times10^{10} cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
+** Solar radius: $R_{\odot} = 6.957\times10^{10}$ cm \simeq 7\times10^{10} cm \simeq 10^{11} cm
 :Question:
 - *Q*: How many R_{\odot} are in 1 AU?
 :end:
 
-** Solar mass: M_{\odot} = 1.98\times10^{33} g \simeq 2\times10^{33} g
+** Solar mass: $M_{\odot} = 1.98\times10^{33}$ g \simeq 2\times10^{33} g
 
-** Solar luminosity: L_{\odot} = 3.82\times10^{33} erg s^{-1} \simeq 2\times M_{\odot} in cgs units!
+** Solar luminosity: $L_{\odot} = 3.82\times10^{33}$ erg s^{-1} \simeq 2\times $M_{\odot$} in cgs units!
 This may be one of the reasons why we still use =cgs= in astronomy,
 the other one being that the constants in electromagnetism are a
 bit simpler.
-** Solar effective temperature: T_{\odot} \simeq 5900K \simeq 6000K
+** Solar effective temperature: $T_{\odot}$ \simeq 5900K \simeq 6000K
 This is the "effective temperature" of the Sun, which we will discuss
 in the [[file:notes-lecture-CMD-HRD.org][next lecture]]. It is an approximation for the temperature of the
 surface below which the radiation field is isotropic - that is the
@@ -316,7 +316,7 @@ photons - that is the stellar atmosphere (but photons can still move
 around in any direction, it's just on average there are more moving in
 the positive r direction). Stars don't really have a well defined
 "surface" and their spectra form in the atmospheric layers.
-** Solar metallicity: Z_{\odot} = 0.0146 \simeq 0.02 (older but still widely used value)
+** Solar metallicity: $Z_{\odot}$ = 0.0146 \simeq 0.02 (older but still widely used value)
 The "metallicity" is the fraction by mass of gas that is /not/ hydrogen
 nor helium. This includes many elements (e.g., C, N, O, Si) that a
 chemist would not call "metals". See [[https://webelements.com/][here]] for an online periodic table
@@ -342,7 +342,7 @@ the metallicity (i.e., taking X=Fe).
 - *Q*: Any idea why Fe here?
 :end:
 
-** Lifetimes: ~3 Myr to \gg age of the Universe (\simeq 13.7 Gyr)
+** Lifetimes: ~3 Myr to $\gg$ age of the Universe (\simeq 13.7 Gyr)
 :Questions:
  - *Q*: How old is the Sun? How long will it live? How do we know?
 :end:
