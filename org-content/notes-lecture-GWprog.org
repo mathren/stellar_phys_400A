@@ -649,6 +649,7 @@ of sufficiently precise pulsars, one can envision a *Galactic scale GW
 detector*: this is what pulsar timing arrays (PTA) experiments are.
 
 #+CAPTION: Skematic representation of PTA: each pulsar (represented as a black dot with cones marking the magnetic field axis). As a GW passes through the space between Earth where the radio telescopes are and the pulsars it introduces delays (the light from the pulsar has to travel a longer/shorter space!). Correlating the signal from multiple pulsars one can thus infer if the delay is coherent across the galaxy and interpretable as a GW.
+#+ATTR_HTML: :width 100%
 [[./images/PTAs-1024x768.gif]]
 
 For PTA, the wavelength of GWs that can be detected is influenced by
