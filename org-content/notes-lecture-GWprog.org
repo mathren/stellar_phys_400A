@@ -628,6 +628,12 @@ al. 2024]]): these are called "verification binaries", since they will
 allow to test the functioning of LISA on GW emission known from EM
 observations.
 
+*N.B.*: DWD that are too far to be singled out by LISA will still
+produce a pure GW tone, the collection of all these signals from
+unresolved DWD produces a "galactic GW foreground" which limits LISA's
+sensitivity at $\sim$ milliHz frequency (see gray shaded area where the
+black dashed and green line diverge in the plot below).
+
 #+CAPTION: Predicted sensitivity curve for LISA from [[https://arxiv.org/abs/1702.00786][Amaro-Seoane et al. 2017]] with annotated expected sources. The black dashed line marks the sensitivity, while other colors mark the $f_\mathrm{GW}, \dot{f}_\mathrm{GW}$ evolution of various sources: inspiraling and merging super-massive BHs in red/black, EMRIs in red thin lines, stellar mass BBH inspiral (but the last phase of the inspiral and merger occur in the LIGO band), DWD which have no change in $\dot{f}_\mathrm{GW}$ and $f_\mathrm{GW} = 2 f_\mathrm{orb}$ as light blue dots.
 #+ATTR_HTML: :width 100%
 [[./images/lisa_sense.png]]
