@@ -731,8 +731,8 @@ evolve in a Supernova remnant, which typically will remain visible in
 the sky for 1000-10000 years.
 
 
-#+CAPTION: Light curve L(t) of the type IIP SN1999em (blue dots). The dash-dotted line shows the power from radioactive decay, the colored lines are modeled light curves with two different codes (SNEC and the code by [[https://ui.adsabs.harvard.edu/abs/2011ApJ...729...61B/abstract][Bersten et al. 2011]]). This is part of Fig. 14 in [[https://ui.adsabs.harvard.edu/abs/2015ApJ...814...63M/abstract][Morozova et al. 2015]].
-#+ATTR_HTML :width 100%
+#+CAPTION: Light curve $L(t)$ of the type IIP SN1999em (blue dots). The dash-dotted line shows the power from radioactive decay, the colored lines are modeled light curves with two different codes (SNEC and the code by [[https://ui.adsabs.harvard.edu/abs/2011ApJ...729...61B/abstract][Bersten et al. 2011]]). This is part of Fig. 14 in [[https://ui.adsabs.harvard.edu/abs/2015ApJ...814...63M/abstract][Morozova et al. 2015]].
+#+ATTR_HTML: :width 100%
 [[./images/LC.png]]
 
 * Alternative possible power sources

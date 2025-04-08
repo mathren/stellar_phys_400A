@@ -1,6 +1,8 @@
 #+Title: 400A - Qualitative evolution
 #+author: Mathieu Renzo
 #+email: mrenzo@arizona.edu
+#+PREVIOUS_PAGE: notes-in-class-evol.org
+#+NEXT_PAGE: notes-lecture-SNe.org
 
 *Materials*: Onno Pols' lecture notes Chapter 9, 10, 11, Kippenhahn's
 book Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2,
@@ -702,7 +704,7 @@ the /Gaia/ DR2 dataset for WDs within 100pc from Earth ([[https://ui.adsabs.harv
 2019]]):
 
 #+CAPTION: HR diagram for a complete volume-limited sample of WDs within 100pc from /Gaia/ DR2. The color of points indicates spectroscopically determined masses based on [[https://www.sdss.org/][SDSS]], red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from [[https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract][Tremblay et al. 2019]].
-#+ATTR_HTML: 100%
+#+ATTR_HTML: :width100%
 [[./images/Gaia_spur.png]]
 
 
