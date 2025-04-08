@@ -110,7 +110,6 @@ pressure, where s_{e} is the electrons specific entropy and the term
 dependent on it is a "thermal correction" to account for the fact that
 not the entire core is fully degenerate and with k_{B}T\ll\varepsilon_{Fermi}.
 
-
 * Physics of core collapse
 
 ** Core Bounce
@@ -575,7 +574,6 @@ The figure below shows a breakdown per SN type:
 #+CAPTION: [[https://academic.oup.com/mnras/article-lookup/doi/10.1111/j.1365-2966.2011.17229.x][Smith et al. 2011]] break down of CCSN by type in a  volume limited sample.
 #+ATTR_HTML: :width 50%
 [[./images/smith11.png]]
-
 
 * Light curves
 
