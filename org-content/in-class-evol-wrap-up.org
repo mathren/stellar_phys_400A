@@ -701,7 +701,7 @@ crystallization to occur, and this was tentatively observed thanks to
 the /Gaia/ DR2 dataset for WDs within 100pc from Earth ([[https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract][Tremblay et al.
 2019]]):
 
-#+CAPTION: HR diagram for a WD sample within 100pc from /Gaia/ DR2. The color of points indicates spectroscopically determined masses based on SDSS, red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from [[https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract][Tremblay et al. 2019]]
+#+CAPTION: HR diagram for a complete volume-limited sample of WDs within 100pc from /Gaia/ DR2. The color of points indicates spectroscopically determined masses based on [[https://www.sdss.org/][SDSS]], red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from [[https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract][Tremblay et al. 2019]].
 #+ATTR_HTML: 100%
 [[./images/Gaia_spur.png]]
 
@@ -712,17 +712,21 @@ diamond!
 Other physical phenomena that can influence the evolution of WDs is
 the gravitational sedimentation of the composition, with heavier
 elements sinking and lighter elements rising, and for sufficiently
-high L (young WDs) there can also be radiative levitation, where the
+high $L$ (young WDs) there can also be radiative levitation, where the
 most opaque elements (typically the primordial iron present) will be
 pushed upwards by radiation.
 
 :Question:
+ - *Q*: Based on the energy transport mechanism that can occur in stars,
+   what do you expect the $T(m)$ or $T(r)$ structure of the WD core to
+   be? (*hint*: think of what provides the pressure support of a WD)
  - *Q*: Consider the formation of Helium WDs. These are observed,
    however, to form from a single star not-massive-enough to ignite He
    burning, it would take longer than the current age of the Universe
-   (because low M \Rightarrow much lower L \Rightarrow L_\mathrm{nuc} = L drives a very slow
-   evolution). Therefore, apparently, the existence of He WDs is
-   paradoxical! Can you think of any solution to this apparent paradox?
+   (because low $M$ \Rightarrow much lower $L \Rightarrow L_\mathrm{nuc} = L$ drives a
+   very slow evolution). Therefore, apparently, the existence of He
+   WDs is paradoxical! Can you think of any solution to this apparent
+   paradox?
 :end:
 
 
