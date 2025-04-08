@@ -611,7 +611,7 @@ of all stars integrating over the birth-mass distribution for
 $M_{ZAMS}\le 7.5M_{\odot}$) is left with a carbon/oxygen rich degenerate
 core which is not massive enough to ignite further nuclear burning,
 and electron degeneracy sustains it. Such core is surrounded by a
-He-rich layer, and further out a H-rich envelope. Thus, these stars
+He-rich layer, and further out by a H-rich envelope. Thus, these stars
 still need to lose their H-rich extended envelope and He-rich shell
 (which remain temporarily sustained by nuclear burning in shells)
 before they can finally rest as white dwarfs entirely sustained by
@@ -626,19 +626,20 @@ of the ashes of the overlaying H-burning shell, which sustains the
 H-rich envelope above it.
 
 As the He layer grows in mass, it temporarily ignites: this energy
-release causes a /flash/ (similar to He ignition in low mass stars in
-the first place), and expands the He layer, pushing outward the inner
-boundary of the H-shell, often until its density becomes too low for
-H-burning. Thus, as a consequence of the He shell flash, matter is
-pushed out and cools (possibly forming dust and increasing \kappa and thus
-the mass loss from the star), the H shell shuts off, but the He shell
-too does. This is because the flash was not hydrostatic self-regulated
-burning! The outer layers then re-collapse on a thermal timescale and
-as they contract, the H-burning shell ignites first (it's easier to
-burn H than He!), returning to the initial situation, but with a
-little less mass. This process of "thermal AGB pulses" ultimately will
-lead to the loss of all the H and He, leaving a "bare" CO core
-exposed, with only a very thin H/He atmosphere.
+release causes a /flash/ (similar to He ignition in the core for low
+mass stars in the first place), and expands the He layer, pushing
+outward the inner boundary of the H-shell, often until its temperature
+becomes too low for H-burning. Thus, as a consequence of the He shell
+flash, matter is pushed out and cools (possibly forming dust and
+increasing \kappa and thus the mass loss from the star), the H shell shuts
+off, but the He shell too does. This is because the flash was not
+hydrostatic self-regulated burning! The outer layers then re-collapse
+on a thermal timescale and as they contract, the H-burning shell
+ignites first (it's easier to burn H than He!), returning to the
+initial situation, but with a little less mass. This process of
+"thermal AGB pulses" ultimately will lead to the loss of all the H and
+He, leaving a "bare" CO core exposed, with only a very thin H/He
+atmosphere.
 
 *N.B.:* ignition in a (partially) degenerate environment causes an
 abrupt increase in T and thus P from the ideal gas EOS, but the
@@ -651,14 +652,8 @@ massive stars!
 #+ATTR_HTML: :width 100%
 [[./images/Trho_TPAGB.png]]
 
-*N.B.:* because of \nu cooling, in AGB stars the center cools faster than
-the layers above it: this can lead to a "temperature inversion". At
-the boundary between this evolutionary end and the end of massive
-stars, the so-called "super-AGB" stars will ignite C off-center, but
-the ignition of carbon will then move inwards (in a \sim meter thin
-shell) until it reaches the center, lifting the electron degeneracy by
-releasing nuclear energy, and allowing the star to evolve past C core
-burning.
+
+
 
 [[https://faculty.washington.edu/balick/PNIC/][Catalog of planetary nebulae]]
 
@@ -747,13 +742,25 @@ final years and months of the star, a topic of great research interest
 presently (see for example the review by [[https://ui.adsabs.harvard.edu/abs/2024arXiv240504259D/abstract][Dessart 2024]]).
 
 *** super-AGB stars
-In the transition regime between intermediate mass stars (burning H
-convectively in their main sequence core but forming a WD at the end
-of their evolution) and massive stars we can define super-AGB stars:
-these burn partially carbon into a mixture of oxygen, neon, magnesium,
-after which they can experience thermal pulses (like lower mass AGB
-stars).
 
-Typically, as the ONeMg core cools and contracts, it reaches densities
-sufficient to start electron captures, which remove the electrons
-sustaining the core leading to a so-called "electron capture SN".
+Because of \nu cooling and its dependence on $\rho$, in AGB stars the
+denser center cools faster than the layers above it: this can lead to
+a "temperature inversion". At the boundary between white dwarf
+progenitors and massive stars, the so-called "super-AGB" stars will
+ignite C off-center, but the ignition of carbon will then move inwards
+(in a \sim meter thin shell) until it reaches the center, lifting the
+electron degeneracy by releasing nuclear energy, and allowing the star
+to evolve past C core burning.
+
+The lowest mass stars experiencing C core burning thus ignite it off
+center and burn it into a mixture of oxygen, neon, magnesium, after
+which they can experience thermal pulses (like lower mass AGB stars),
+leaving behind ONeMg WD.
+
+At the upper end of this regime, the most massive ONeMg cores
+(possibly still surrounded by He- and H-rich layers) will then become
+supported by degeneracy pressure again, but as they cool and
+contracts, they can reache densities sufficient to start electron
+captures, which remove the electrons sustaining the core leading to a
+so-called "electron capture SN" (which effectively is a core-collapse
+SN initiated by a degenerate ONeMg core rather than a Fe core).
