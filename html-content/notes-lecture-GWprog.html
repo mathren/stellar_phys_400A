@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-04-08 Tue 10:50 -->
+<!-- 2025-04-08 Tue 14:55 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - GW progenitors</title>
@@ -179,7 +179,7 @@ curvature of space time. In turn, that curvature determines the
 <p>
 This is formally described by Einstein's field equation:
 </p>
-<div class="latex" id="orgca4a713">
+<div class="latex" id="org08f834a">
 \begin{equation}\label{eq:EFE}
 G_{\mu\nu} + \Lambda g_{\mu\nu} = T_{\mu\nu} \ \ ,
 \end{equation}
@@ -221,7 +221,7 @@ apply a small perturbation to it substituting \(g_{\mu\nu}\rightarrow
 g_{\mu\nu} + h_{\mu\nu}\). Keeping only terms linear in \(h_{\mu\nu}\) (which is
 our new functional variable) we can rewrite Eq. \ref{eq:EFE} as:
 </p>
-<div class="latex" id="org802d8ef">
+<div class="latex" id="orgad4e901">
 \begin{equation}\label{eq:GW_wave}
 \left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} \propto T_{\mu\nu} \ \ .
 \end{equation}
@@ -306,7 +306,7 @@ leading order.
 <p>
 One can obtain, at leading order, the so called quadrupole formula:
 </p>
-<div class="latex" id="orge58a5ec">
+<div class="latex" id="org3ffe072">
 \begin{equation}\label{eq:quad}
 h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 \end{equation}
@@ -315,7 +315,7 @@ h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
 <p>
 where \(r\) is the luminosity distance and
 </p>
-<div class="latex" id="orge00d124">
+<div class="latex" id="org675d13e">
 \begin{equation} \label{eq:quadrupole_def}
 Q_{\mu\nu} = \int d^{3} x T_{00}x_{\mu}x_{\nu} \ \ ,
 \end{equation}
@@ -358,8 +358,10 @@ pulsar timing arrays and beyond the scope of this course).
 <div class="outline-text-3" id="text-org5d53fb1">
 <p>
 Pulsars are astrophysical radio sources repeating with very high
-precision interpreted physically as a neutron star rotating fast (down
-to milliseconds!).
+precision interpreted physically as a neutron star rotating fast with
+an off-axis magnetic field (down to milliseconds!). Each pulse is
+detected when the rotation brings the magnetic field along the line of
+sight (analogous to a light-house).
 </p>
 
 <p>
@@ -380,7 +382,7 @@ orbit!
 </p>
 
 
-<figure id="orgd56a088">
+<figure id="orgd9d65dc">
 <img src="./images/GW-decay.jpg" alt="GW-decay.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Dots are the measured cumulative time shift in periastron passage w.r.t. a Keplerian orbit with constant period for PSR B1913+16. The solid line is the prediction assuming the period is changing due to GW emission as predicted by general relativity. Note that this is <b>not</b> a fit! From <a href="https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract">Weisberg &amp; Huang 2016</a></figcaption>
@@ -513,7 +515,7 @@ on Earth faster.
 </p>
 
 
-<figure id="org3387a30">
+<figure id="orgb23c7da">
 <img src="./images/GW150914.png" alt="GW150914.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 2: </span>Detection of the first GW signal from the inspiral and merger of two BHs from <a href="https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract">LVK collaboration 2016</a>. Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain \(h=\Delta L/L\), that is the relative change in size of the detector caused by the passage of the GW. Note the scale! For LIGO \(L\simeq4\) km, corresponding to \(\Delta L\sim 10^{-16}\) cm, smaller than a nucleus! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to &sim;10 seconds for a BNS)</figcaption>
@@ -540,7 +542,7 @@ signature!
 </p>
 
 
-<figure id="org1490398">
+<figure id="orgd6d8a20">
 <img src="./images/GWTC-3_stellar-graveyard.jpg" alt="GWTC-3_stellar-graveyard.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 3: </span>"Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract">LVK collaboration 2023</a> and <a href="https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract">LVK Collaboration 2023b</a>. The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in \(M_{☉}\) units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).</figcaption>
@@ -656,7 +658,7 @@ have been proposes.
 </p>
 
 
-<figure id="orge42faa3">
+<figure id="org2434fa2">
 <img src="./images/Tauris17.png" alt="Tauris17.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Cartoon of the various steps in the evolution of a massive binary system evolving to be a GW-driven BNS merger, from <a href="https://iopscience.iop.org/article/10.3847/1538-4357/aa7e89">Tauris et al. 2017</a>. Many qualitative variations (e.g., NS &harr; BH, SN explosion &harr; failed explosion, RLOF &harr; Common envelope) have been proposed to explain BNS and BBH with various properties, see also review by <a href="https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract">Marchant &amp; Bodensteiner 2024</a>.</figcaption>
@@ -825,7 +827,7 @@ existing ground based detectors:
 </p>
 
 
-<figure id="orgef0e24e">
+<figure id="org5146e33">
 <img src="./images/GW_timeline.png" alt="GW_timeline.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>LIGO, VIRGO, and KAGRA are three ground-based GW observatories. This figure shows the predicted uptime for each detector with the horizon out to which they are predicted to be able to detect a BNS merger. From <a href="https://observing.docs.ligo.org/plan/">https://observing.docs.ligo.org/plan/</a>.</figcaption>
@@ -840,7 +842,7 @@ sky localization.
 </p>
 
 
-<figure id="org0fd6029">
+<figure id="orgee778b0">
 <img src="./images/Skymap.jpg" alt="Skymap.jpg" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Visualization of the uncertainty regions for the localization on the plane of the sky for selected GW merger events. The size of these contours depends on the amplitude of the signal (and thus the masses involved), its polarization, and importantly how many detectors could catch the signal and the delay times.</figcaption>
@@ -956,7 +958,7 @@ black dashed and green line diverge in the plot below).
 </p>
 
 
-<figure id="org6ceab7c">
+<figure id="org8198713">
 <img src="./images/lisa_sense.png" alt="lisa_sense.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>Predicted sensitivity curve for LISA from <a href="https://arxiv.org/abs/1702.00786">Amaro-Seoane et al. 2017</a> with annotated expected sources. The black dashed line marks the sensitivity, while other colors mark the \(f_\mathrm{GW}, \dot{f}_\mathrm{GW}\) evolution of various sources: inspiraling and merging super-massive BHs in red/black, EMRIs in red thin lines, stellar mass BBH inspiral (but the last phase of the inspiral and merger occur in the LIGO band), DWD which have no change in \(\dot{f}_\mathrm{GW}\) and \(f_\mathrm{GW} = 2 f_\mathrm{orb}\) as light blue dots.</figcaption>
@@ -967,6 +969,46 @@ black dashed and green line diverge in the plot below).
 
 <div id="outline-container-org0bbedf6" class="outline-3">
 <h3 id="org0bbedf6"><a href="#org0bbedf6">Galaxy-wide detectors: Pulsar Timing Arrays</a></h3>
+<div class="outline-text-3" id="text-org0bbedf6">
+<p>
+We have already mentioned <a href="#org5d53fb1">above</a> pulsars as very precisely repeating
+radio sources in the sky interpreted as neutron stars. By monitoring a <i>network</i>
+of sufficiently precise pulsars, one can envision a <b>Galactic scale GW
+detector</b>: this is what pulsar timing arrays (PTA) experiments are.
+</p>
+
+
+<figure id="orgc883b6d">
+<img src="./images/PTAs-1024x768.gif" alt="PTAs-1024x768.gif">
+
+<figcaption><span class="figure-number">Figure 8: </span>Skematic representation of PTA: each pulsar (represented as a black dot with cones marking the magnetic field axis). As a GW passes through the space between Earth where the radio telescopes are and the pulsars it introduces delays (the light from the pulsar has to travel a longer/shorter space!). Correlating the signal from multiple pulsars one can thus infer if the delay is coherent across the galaxy and interpretable as a GW.</figcaption>
+</figure>
+
+<p>
+For PTA, the wavelength of GWs that can be detected is influenced by
+the longest distance among two pulsars being monitored : radio
+telescope monitoring many different pulsars across the globe share
+data and analysis techniques to realize these observations.
+</p>
+
+<p>
+The typical sources are inspiraling (pre-merger) supermassive BH, and
+stochastic GW background from the early universe (so much larger
+scales than stellar physics): nonetheless, the key to this detection
+strategy are still stars, specifically fast-spinning NS which happen
+to have a B-field that can point towards Earth at a given rotation
+phase.
+</p>
+
+<p>
+Exciting results tentatively interpreted as the detection of a
+stochastic GW background have been announced, and since the PTA sensitivity
+improves with number of pulsars monitored and amount of time they are
+monitored, they should reach the \(5\sigma\) detection threshold very soon:
+this could open a lot of research in cosmology. For more information
+see for example <a href="https://link.springer.com/article/10.1007/s12036-020-9625-y">Dahal 2020</a>.
+</p>
+</div>
 </div>
 
 
@@ -975,14 +1017,21 @@ black dashed and green line diverge in the plot below).
 <div class="outline-text-3" id="text-org1ba3fd3">
 <p>
 The figure below sketches the sensitivity in terms of strain \(h=\Delta L/L\)
-as a function of the GW frequency (\(h\equiv h(f)\)).
+as a function of the GW frequency (\(h\equiv h(f_\mathrm{GW})\)). The
+rightmost curves for LIGO/VIRGO/KAGRA and the leftmost curves for IPTA
+correspond to present-day experiments, all the others are planner.
+</p>
+
+<p>
+The figure illustrates the wide range of frequencies of GW (note the
+scale of the x-axis) that one can attempt to detect.
 </p>
 
 
-<figure id="org806dac8">
+<figure id="org486d6c5">
 <img src="./images/GWdetectors.png" alt="GWdetectors.png" width="100%">
 
-<figcaption><span class="figure-number">Figure 8: </span>Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From <a href="https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract">Moore et al. 2015</a></figcaption>
+<figcaption><span class="figure-number">Figure 9: </span>Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From <a href="https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract">Moore et al. 2015</a></figcaption>
 </figure>
 </div>
 </div>

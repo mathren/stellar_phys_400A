@@ -192,8 +192,10 @@ pulsar timing arrays and beyond the scope of this course).
 ** Indirect detection of GWs
 
 Pulsars are astrophysical radio sources repeating with very high
-precision interpreted physically as a neutron star rotating fast (down
-to milliseconds!).
+precision interpreted physically as a neutron star rotating fast with
+an off-axis magnetic field (down to milliseconds!). Each pulse is
+detected when the rotation brings the magnetic field along the line of
+sight (analogous to a light-house).
 
 [[https://ui.adsabs.harvard.edu/abs/1975ApJ...195L..51H/abstract][Hulse & Taylor 1975]] discovered the first pulsar in a binary system,
 PSR B1913+16 (a.k.a. "Hulse-Taylor pulsar"). They showed a radial
@@ -641,11 +643,43 @@ black dashed and green line diverge in the plot below).
 
 ** Galaxy-wide detectors: Pulsar Timing Arrays
 
+We have already mentioned [[*Indirect detection of GWs][above]] pulsars as very precisely repeating
+radio sources in the sky interpreted as neutron stars. By monitoring a /network/
+of sufficiently precise pulsars, one can envision a *Galactic scale GW
+detector*: this is what pulsar timing arrays (PTA) experiments are.
+
+#+CAPTION: Skematic representation of PTA: each pulsar (represented as a black dot with cones marking the magnetic field axis). As a GW passes through the space between Earth where the radio telescopes are and the pulsars it introduces delays (the light from the pulsar has to travel a longer/shorter space!). Correlating the signal from multiple pulsars one can thus infer if the delay is coherent across the galaxy and interpretable as a GW.
+[[./images/PTAs-1024x768.gif]]
+
+For PTA, the wavelength of GWs that can be detected is influenced by
+the longest distance among two pulsars being monitored : radio
+telescope monitoring many different pulsars across the globe share
+data and analysis techniques to realize these observations.
+
+The typical sources are inspiraling (pre-merger) supermassive BH, and
+stochastic GW background from the early universe (so much larger
+scales than stellar physics): nonetheless, the key to this detection
+strategy are still stars, specifically fast-spinning NS which happen
+to have a B-field that can point towards Earth at a given rotation
+phase.
+
+Exciting results tentatively interpreted as the detection of a
+stochastic GW background have been announced, and since the PTA sensitivity
+improves with number of pulsars monitored and amount of time they are
+monitored, they should reach the $5\sigma$ detection threshold very soon:
+this could open a lot of research in cosmology. For more information
+see for example [[https://link.springer.com/article/10.1007/s12036-020-9625-y][Dahal 2020]].
+
 
 ** The future is +bright+ loud
 
 The figure below sketches the sensitivity in terms of strain $h=\Delta L/L$
-as a function of the GW frequency ($h\equiv h(f)$).
+as a function of the GW frequency ($h\equiv h(f_\mathrm{GW})$). The
+rightmost curves for LIGO/VIRGO/KAGRA and the leftmost curves for IPTA
+correspond to present-day experiments, all the others are planner.
+
+The figure illustrates the wide range of frequencies of GW (note the
+scale of the x-axis) that one can attempt to detect.
 
 #+CAPTION: Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From [[https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract][Moore et al. 2015]]
 #+ATTR_HTML: :width 100%
