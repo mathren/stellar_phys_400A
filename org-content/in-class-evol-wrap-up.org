@@ -659,9 +659,10 @@ the exact rate and mass loss mechanism are still an active topic of
 research), leaving a hot carbon-oxygen WD in the center (the former
 core) shining into a low-density nebula made by the ejecta. This is a
 /planetary nebula/ (although it has little to do with anything related
-to planets).
+to planets). A catalog of planetary nebulae images is available [[https://faculty.washington.edu/balick/PNIC/][here]],
+and the figure below shows an example.
 
-#+CAPTION: Example of an /HST/ image of a planetary nebula: NGC6543 (aka Cat's eye nebula). A catalog of planetary nebulae images is available [[https://faculty.washington.edu/balick/PNIC/][here]].
+#+CAPTION: Example of an /HST/ image of a planetary nebula: NGC6543 (aka Cat's eye nebula). In the center is a young WD star, and the shape of the nebula depends on the mass ejection process and the propagation of these ejecta (e.g., interacting with a planetary system around the star).
 #+ATTR_HTML: :width 100%
 [[./images/catseye.jpg]]
 
@@ -672,22 +673,23 @@ move from the top right (high $L$ low $T_\mathrm{eff}$) corner of the
 HR diagram to the lower left (low $L$ high $T_\mathrm{eff}$) corner
 becoming white dwarfs (WD): this process of contraction occurs on a
 thermal timescale. In WDs the gravothermal collapse stops because of
-the electron degeneracy pressure: the degeneracy decoupled their
+the electron degeneracy pressure: the degeneracy decouples their
 structure (which can be approximated assuming $k_{B}T\ll \varepsilon_{Fermi}
 \Rightarrow T\simeq 0$) and their radiative properties.
 
 These sit in the bottom left corner of the HR diagram: they actually
 have /hotter/ surface temperatures compared to a main sequence star!
 This high T means they do radiate and lose energy, but because of the
-small radius (R\simeq0.01R_{\odot}\simeq 1000km) they have a low luminosity
-L=4\pi R^{2} \sigma T_\mathrm{eff}: their radiative cooling is very slow (timescale
-of billions of years). The WD will just "slide down slowly" on a
-cooling track. The WD cooling sequence provides a /clock/ for stellar
-populations!
+small radius ($R\simeq0.01R_{\odot}\simeq 1000$ km) they have a low luminosity
+$L=4\pi R^{2} \sigma T_\mathrm{eff}$: their radiative cooling is very slow
+(timescale of billions of years). The WD will just "slide down slowly"
+on a cooling track. The WD cooling sequence provides a /clock/ for
+stellar populations!
 
-*N.B.:* Because of the M(R) relation for non-relativistic electron
+*N.B.:* Because of the $M(R)$ relation for non-relativistic electron
 degeneracy gas in hydrostatic equilibrium, the /lower mass WDs have
-larger R/, thus for a given T_\mathrm{eff}, they also have /higher L/.
+larger $R$/, thus for a given $T_\mathrm{eff}$, they also have /higher
+$L$/ (see [[./notes-lecture-EOS2.org][lecture on degenerate EOS]] and related homework).
 
 *** The /Gaia/ spur: observational evidence for crystallization
 
