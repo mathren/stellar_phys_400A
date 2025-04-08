@@ -734,26 +734,29 @@ pushed upwards by radiation.
 
 As we discussed in the [[./notes-lecture-nuclear-burning.org][nuclear burning]] and [[./notes-lecture-neutrinos.org][neutrino lectures]], for
 initially sufficiently massive stars ($M\geq7-8M_{\odot}$) the electron
-degeneracy pressure never suffice to stop the gravothermal collapse.
-As gravity drives their cores to higher and higher densities, $L_{\nu}
-\gg L_{\gamma}$ decoupling the neutrino-cooled core from the envelope: the
-nuclear timescale of the core becomes shorter than the thermal
-timescale of the envelope.
+degeneracy pressure never suffice to (completely) stop the
+gravothermal collapse. As gravity drives their cores to higher and
+higher densities, $L_{\nu} \gg L_{\gamma}$ decoupling the neutrino-cooled
+core from the envelope: the nuclear timescale of the core becomes
+shorter than the thermal timescale of the envelope.
 
 *N.B.:* partial electron degeneracy may play a role, depending on the
  mass, and at late burning phases "flashes" similar to the He flash in
  low mass stars can occur deep in the core.
 
-Thus these stars proceed through burning all the way to iron, and
-each new fuel ignites in a more centralized, hotter mass range,
-surrounded by an inert layer, and then a shell of the previous nuclear
-fuel above it, creating the "onion structure" we have already seen.
+Thus these stars proceed through burning all the way to iron, and each
+new fuel ignites in a more centralized, hotter mass range, surrounded
+by an inert layer, and then a shell of the previous nuclear fuel above
+it, creating the "onion structure" we have already seen. The interplay
+between these shells can lead to them migrating (in mass coordinate)
+and merging very close to the stellar death.
 
 While in theory the envelope should be completely "frozen" at this
 point, early observations of supernova explosions suggest that some
 /dynamical/ coupling between core and envelope must occur in the last
 final years and months of the star, a topic of great research interest
-presently (see for example the review by [[https://ui.adsabs.harvard.edu/abs/2024arXiv240504259D/abstract][Dessart 2024]]).
+presently (see for example the review by [[https://ui.adsabs.harvard.edu/abs/2024arXiv240504259D/abstract][Dessart 2024]]). This is not
+yet an understood phenomenon.
 
 *** super-AGB stars
 

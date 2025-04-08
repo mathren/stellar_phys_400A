@@ -573,10 +573,65 @@ before the formation of the first stars!
 
 ** Space-based detectors
 
+#+HTML: <iframe width="600" height="400" src="https://www.youtube.com/embed/QjeO64Wf3fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+# https://www.youtube.com/watch?v=QjeO64Wf3fU
 
+The next generation of GW detectors will be still based on
+interferometry, but /in space/! The Laser Interferometry Space Antenna
+([[https://lisa.nasa.gov/][LISA]]) is a planned mission to put a (small) constellation of three
+satellites orbiting on the plane of the Earth-Sun orbit trailing
+behind the Earth (at the L4 Lagrangian point).
 
+This will enable to increase the length of the arms from the $\sim4$ km
+now in LIGO to $\sim 2.5\times10^{6}$ km: this causes the GW frequency window of
+sensitivity to lower frequencies (from $\sim10-1000$ Hz in LIGO to \sim
+milliHz), and consequently the expected astrophysical source.
 
-- Mention DWD here
+The main target for LISA are:
+- Super massive BH merging during galaxy mergers: these have larger
+  masses than stellar mass BHs, thus larger event of horizon radii
+  ($r_{g} = 2GM/c^{2} \propto M$) and wider orbit at mergers corresponding
+  to lower frequencies
+- Extreme-mass ratio inspirals (EMRIs) caused by the merger of a
+  stellar mass BH with a supermassive BH
+- Galactic or Local Universe BBH long before the GW-driven merger
+- Galactic double WDs
+
+The third source is the same discussed above for LIGO, just observed
+when the binaries are wider (smaller amplitude of the GWs therefore
+closer horizon for observations): this opens up the possibility of
+multi-band GW detections allowing to probe not just the last few
+seconds of the GW-driven inspiral, but much longer (how much depends
+on masses and distances of the sources).
+
+Double WD (DWD) originate through multiple phases of mass transfer
+analogous to the ones discussed above, but there are some key
+differences:
+
+- low mass stars (initially $M\le 1.2-1.3M_{\odot}$) have convective
+  envelopes since the main-sequence, and may be more prone to unstable
+  mass transfer: both mass transfer phases may be common envelopes.
+- because of the lower mass of WD compared to NS and BHs, the energy
+  lost to GW per orbit is much smaller and inspiral and merger take
+  much longer. Since LISA is a planned space mission with a finite lifetime
+  ($\sim 5-10$ years), during this time most expected sources are going
+  to be effectively stationary: $\dot{f}_\mathrm{GW} \simeq 0$ and
+  $f_\mathrm{GW} = $ constant: DWD produce a pure GW "tone".
+
+For all binary sources of GWs, if the mass ratio is $q=1$ then the
+mass configuration returns the same every half-orbital-period:
+therefore the GW frequency is $f_\mathrm{GW}=2f_\mathrm{orb}$.
+
+*N.B.:* we already know of some nearby DWD with measured $P$ and
+$\dot{P}$ due to GW emission from EM observations (see e.g., [[https://ui.adsabs.harvard.edu/abs/2024ApJ...963..100K/abstract][Kupfer et
+al. 2024]]): these are called "verification binaries", since they will
+allow to test the functioning of LISA on GW emission known from EM
+observations.
+
+#+CAPTION: Predicted sensitivity curve for LISA from [[https://arxiv.org/abs/1702.00786][Amaro-Seoane et al. 2017]] with annotated expected sources. The black dashed line marks the sensitivity, while other colors mark the $f_\mathrm{GW}, \dot{f}_\mathrm{GW}$ evolution of various sources: inspiraling and merging super-massive BHs in red/black, EMRIs in red thin lines, stellar mass BBH inspiral (but the last phase of the inspiral and merger occur in the LIGO band), DWD which have no change in $\dot{f}_\mathrm{GW}$ and $f_\mathrm{GW} = 2 f_\mathrm{orb}$ as light blue dots.
+#+ATTR_HTML: :width 100%
+[[./images/lisa_sense.png]]
+
 
 ** Galaxy-wide detectors: Pulsar Timing Arrays
 
