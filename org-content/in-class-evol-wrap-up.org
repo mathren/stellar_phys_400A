@@ -674,7 +674,7 @@ HR diagram to the lower left (low $L$ high $T_\mathrm{eff}$) corner
 becoming white dwarfs (WD): this process of contraction occurs on a
 thermal timescale. In WDs the gravothermal collapse stops because of
 the electron degeneracy pressure: the degeneracy decouples their
-structure (which can be approximated assuming $k_{B}T\ll \varepsilon_{Fermi}
+structure (which can be approximated assuming $k_{B}T\ll \varepsilon_\mathrm{Fermi}
 \Rightarrow T\simeq 0$) and their radiative properties.
 
 These sit in the bottom left corner of the HR diagram: they actually
