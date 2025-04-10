@@ -189,18 +189,18 @@ two separate parts ([[http://adsabs.harvard.edu/abs/2002RvMP...74.1015W][Woosley
   can reach into the outer core.
 
 The collapse goes on until the central density is so high
-($\rho_{c}\sim10^{14}$ g cm^{-3} $\simeq \rho_{n} =2\times10^{14} \times A$ g cm^{-3}) that the
-repulsive core of the nuclear force becomes relevant. This repulsive
-contribution causes a sudden stiffening of the EOS, and triggers the
-so-called core bounce, which is conventionally defined by an arbitrary
-threshold on the specific entropy at the edge of the inner core: s=3
-(in units of the Boltzmann constant k_{B} times the Avogadro number N_{A}).
-The inner core overshoots the equilibrium density of the stiffened
-EOS, stops collapsing and reverses its radial velocity. This launches
-a shock wave at the edge of the inner core. It is thought that this
-shock wave at least in some cases, successfully disrupts the star,
-producing a SN. However, in most cases, the shock needs to be
-``revived'' by some mechanism (see below).
+($\rho_{c}\sim10^{14}$ g cm^{-3} $\simeq \rho_{n} =2\times10^{14} \times A$ g cm^{-3}) that
+the repulsive core of the nuclear force becomes relevant. This
+repulsive contribution causes a sudden stiffening of the EOS, and
+triggers the so-called core bounce, which is conventionally defined by
+an arbitrary threshold on the specific entropy at the edge of the
+inner core: $s=3$ (in units of the Boltzmann constant $k_{B}$ times the
+Avogadro number $N_{A}$). The inner core overshoots the equilibrium
+density of the stiffened EOS, stops collapsing and reverses its radial
+velocity. This launches a shock wave at the edge of the inner core. It
+is thought that this shock wave at least in some cases, successfully
+disrupts the star, producing a SN. However, in most cases, the shock
+needs to be ``revived'' by some mechanism (see below).
 
 *N.B.:* The collapse and bounce is analogous to a ball bouncing off a
 wall which momentarily compresses a bit and momentum changes sign in
