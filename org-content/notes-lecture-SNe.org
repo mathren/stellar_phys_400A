@@ -636,29 +636,30 @@ star, effectively "whipping the star" and injecting throughout energy.
 
 This shock propagation /starts/ within hundreds of millisecond after the
 initiation of the collapse, and lasts a timescale of the order of the
-dynamical timescale \tau_{free fall}_{}. As we know, this is a function of the
-average density \langle \rho \rangle, which depends on the extent of the envelope of
-the exploding star, from \tau_{free fall}\sim minutes-hours if the
-progenitor star has lost its envelope (e.g., because of binary
-interactions or strong stellar winds) to \sim10days for a very extended
-RSG. While the burst of neutrinos pushing the shock occurs within the
-first hundreds of millisecond from deep within the core, for a
-dynamical timescale no electromagnetic phenomena is detectable, since
-everything is occurring within the optically thick photosphere.
+dynamical timescale $\tau_\mathrm{free\ fall}$. As we know, this is a
+function of the average density $\langle \rho \rangle$, which depends on the extent
+of the envelope of the exploding star, from $\tau_\mathrm{free\ fall}\sim$
+minutes-hours if the progenitor star has lost its envelope (e.g.,
+because of binary interactions or strong stellar winds) to $\sim10$ days
+for a very extended RSG. While the burst of neutrinos pushing the
+shock occurs within the first hundreds of millisecond from deep within
+the core, for a dynamical timescale no electromagnetic phenomena is
+detectable, since everything is occurring within the optically thick
+photosphere.
 
 Once the shock approaches the surface of the star with low optical
 depth, photons from the heated material just behind the shock are less
 and less impeded by matter, and they can thus leak ahead of the shock!
-Specifically, if \tau\le c/v_{shock} the photons will be able to stream ahead
-of the shock and leak out, providing the first electromagnetic signal
-of a SN, the so called "shock breakout".
+Specifically, if $\tau\le c/v_\mathrm{shock}$ the photons will be able to
+stream ahead of the shock and leak out, providing the first
+electromagnetic signal of a SN, the so called "shock breakout".
 
 The duration of the shock breakout constrains:
-- the light-travel time across the stellar surface R_{photo}/c (thus the
-  radius of the progenitor star)
+- the light-travel time across the stellar surface
+  $R_\mathrm{photo}/c$ (thus the radius of the progenitor star)
 - the presence of surface inhomogeneities (e.g., because of
   convection) smears out the signal, with the less dense (\Rightarrow lower
-  optical depth \tau) parts of the stars allowing an earlier shock
+  optical depth $\tau$) parts of the stars allowing an earlier shock
   breakout compared to the denser and optically thicker parts (cf.
   [[https://ui.adsabs.harvard.edu/abs/2022ApJ...933..164G/abstract][Goldberg et al. 2021]]).
 
@@ -693,15 +694,15 @@ unstable nucleus that initiates the following decay cascade:
 ^{56}\mathrm{CO} \rightarrow e^{+} + \nu_{e} + ^{56}\mathrm{Fe} \ \ ,
 \end{equation}
 #+end_latex
-where the first \beta^{+} decay has a half-life of \sim6 days and the second
-\sim77days. The positrons released immediately will annihilate with an
-electron producing \gamma rays (E_{\gamma}\sim 2 \times m_{e}c^{2} \sim 1MeV). The
-stellar material in the process of being ejected is opaque to these \gamma
-rays, and thus they deposit their energy as thermal energy in the gas,
-providing a long-lasting energy source.
+where the first \beta^{+} decay has a half-life of \sim6 days and the second \sim77
+days. The positrons released immediately will annihilate with an
+electron producing \gamma rays ($E_{\gamma}\sim 2 \times m_{e}c^{2} \sim 1$ MeV).
+The stellar material in the process of being ejected is opaque to
+these \gamma rays, and thus they deposit their energy as thermal energy in
+the gas, providing a long-lasting energy source.
 
 For a typical CCSN, the amount of $^{56}\mathrm{Ni}$ synthesized is of
-the order of few \times 0.01M_{\odot}. This radioactive energy source is
+the order of few $\times 0.01M_{\odot}$. This radioactive energy source is
 crucial to explain the long term light curves of these explosions.
 
 The adiabatic expansion phase reaches a maximum when the energy
