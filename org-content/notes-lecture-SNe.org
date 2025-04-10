@@ -565,19 +565,34 @@ a "transitional class" of type IIb SNe which show H only very early
 on. Collectively type Ib/Ic/IIb are often referred to as "stripped
 envelope SNe".
 
-SNe showing hydrogen in their spectrum are called type II SNe.
-Type II SNe are more common than stripped envelope ones, and they are
-further classified base on the light curve:
+SNe showing hydrogen in their spectrum are called type II SNe. Type II
+SNe are more common than stripped envelope ones, and they are further
+classified base on the morphology of the light curve:
 
  - type IIP showing a plateau (when the photosphere is locked by H recombination)
  - type IIL showing a linear decay in log(L) vs. time
 
 Moreover, finer distinction and sub-classes exist, for example SNIIn,
 Ibn, Icn which are SN with the conditions mentioned above also showing
-narrow (\sim1000km s^{-1}) *emission* lines.
+narrow (\sim1000 km s^{-1}) *emission* lines.
 
 SNe are also said to be "super-luminous" if their absolute bolometric
-magnitude exceeds M=-21 at peak.
+magnitude exceeds M=-21 at peak. For these extremely high peak
+luminosity the driving mechanism is still unclear, three proposed
+models exist:
+
+ - Pair instability supernovae: these should have extremely high
+   ejecta masses and produce long-lasting light curves which are /not/
+   routinely observed. See also [[https://ui.adsabs.harvard.edu/abs/2024arXiv240716113R/abstract][Renzo & Smith 2024]].
+ - Circumstellar matter interactions: as the SN blast wave hits
+   surrounding material, some of its kinetic energy can be converted
+   to radiation, producing time-varying light curves. This however
+   should produce narrow emission lines which are /not/ always seen. See
+   also [[https://ui.adsabs.harvard.edu/abs/2024arXiv240504259D/abstract][Dessart et al. 2024]].
+ - Magnetar engine: if the NS formed by the collapsing inner core is
+   highly magnetized and fast spinning, the explosion can tap into
+   these energy sources and be over-powered. See for example [[https://ui.adsabs.harvard.edu/abs/2015MNRAS.454.3311M/abstract][Metzger
+   et al. 2015]].
 
 ** Supernova rates
 
