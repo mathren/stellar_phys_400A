@@ -555,14 +555,15 @@ theoretically associated to the thermonuclear obliteration of a white
 dwarf (see corresponding project for more information, the rest of
 this lecture focuses on massive stars explosions).
 
-All other SN types are associated instead to the death of massive
-stars: in absence of hydrogen lines and presence of helium lines we
-speak of type Ib (so the progenitor star had no more H-rich envelope
-at death), absence of both hydrogen and helium we have a type Ic
-(progenitor stripped of H and He -- though a small amount of He may be
-"hidden"). There is then a "transitional class" of type IIb SNe which
-show H only very early on. Collectively type Ib/Ic/IIb are often
-referred to as "stripped envelope SNe".
+All other SN types are associated to young stellar populations and are
+commonly interpreted as the death of massive stars: in absence of
+hydrogen lines and presence of helium lines we speak of type Ib (so
+the progenitor star had no more H-rich envelope at death), absence of
+both hydrogen and helium we have a type Ic (progenitor stripped of H
+and He -- though a small amount of He may be "hidden"). There is then
+a "transitional class" of type IIb SNe which show H only very early
+on. Collectively type Ib/Ic/IIb are often referred to as "stripped
+envelope SNe".
 
 SNe showing hydrogen in their spectrum are called type II SNe.
 Type II SNe are more common than stripped envelope ones, and they are
