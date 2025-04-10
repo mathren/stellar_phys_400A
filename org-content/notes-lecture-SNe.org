@@ -51,8 +51,8 @@ this triggers a shock-wave.
 
 *N.B.:* The collapse of the exhausted core takes a /dynamical/ timescale,
 which for the densities reached at the end of the nuclear life of the
-star ($\rho\ge10^{10$} g cm^{-3}) is extremely short, $\tau_\mathrm{free fall}$ is
-of order $\sim0.1 sec \leq$ blink of an eye! Therefore, while the inner core
+star ($\rho\ge10^{10}$ g cm^{-3}) is extremely short, $\tau_\mathrm{free fall}$ is
+of order $\sim0.1$ sec \leq blink of an eye! Therefore, while the inner core
 collapses, the outer layer barely notice that something is happening:
 the collapse, bounce and reversal of the velocity therefore has to
 trigger a shock (discontinuity in the velocity of the gas)!
@@ -68,7 +68,7 @@ The shock wave launched is thought to explode the star, unbinding the
 stellar envelope. However, historically until very recently
 (hydrodynamical) simulations have had limited success in producing
 explosions. In most cases, the shock just stops or reverts while still
-deep in the star. Therefore, a ``shock-revival'' mechanism (usually
+deep in the star. Therefore, a "shock-revival" mechanism (usually
 neutrino heating behind the shock aided by asymmetries in the flow) is
 needed to push it further and make it unbind the stellar envelope.
 
@@ -133,18 +133,18 @@ conventional definition for the onset of collapse is
   \mathrm{max}\{ |v| \} \geq 10^3 \ \mathrm{km \ s^{-1}} \ \ ,
 \end{equation}
 #+end_latex
-where v is the radial infall velocity. This is the very latest point
+where $v$ is the radial infall velocity. This is the very latest point
 to which a stellar evolution model can be computed with a stellar
 evolution code (e.g., =MESA= and/or =MESA-web=), but it is just an
 arbitrary threshold set by Eq. \ref{eq:onset_cc} is motivated by the
 fact that, at this point, the star is a few tenths of seconds (roughly
 a dynamical timescale) away from ``core bounce'' (see below). The
-central density is so high ($\rho \gtrsim 10^{10} \mathrm{ \ g \ cm^{-3}}$)
-that stellar evolution codes usually cannot properly simulate the
-physics needed (e.g., the high density regions require a different
-equation of state - EOS, hydrostatic equilibrium does not hold any
-longer, neutrinos start to be trapped because of the higher density
-and neutrino opacity). However, this is a purely technical threshold,
+central density is so high ($\rho \gtrsim 10^{10}$ g cm^{-3}) that stellar
+evolution codes usually cannot properly simulate the physics needed
+(e.g., the high density regions require a different equation of
+state - EOS, hydrostatic equilibrium does not hold any longer,
+neutrinos start to be trapped because of the higher density and
+neutrino opacity). However, this is a purely technical threshold,
 while in nature the evolution of such a star is continuous during
 collapse.
 
@@ -163,15 +163,17 @@ positron capture reactions, electron capture reactions form the
 so-called [[./notes-lecture-neutrinos.org::*Nuclear neutrinos][URCA process]], responsible for the lion's share of the
 cooling (provided by neutrinos) during the collapse phase.
 
-Moreover, matter becomes so hot that iron photodisintegration can
+Moreover, as the stellar core collapses and the density increases, the
+core still has a "negative heat capacity" and increases its
+temperature. Matter becomes so hot that iron photodisintegration can
 occur too, causing internal energy losses that also accelerate the
 collapse.
 
 As the infall velocity progressively increases, the core divides into
-two separate parts [[http://adsabs.harvard.edu/abs/2002RvMP...74.1015W][Woosley et al. 2002]]:
+two separate parts ([[http://adsabs.harvard.edu/abs/2002RvMP...74.1015W][Woosley et al. 2002]]):
 
 - *Inner Core*: in sonic contact and collapsing self-similarly (i.e.,
-  the infall velocity |v| \propto r). Its mass is given by:
+  the infall velocity $|v| \propto r$). Its mass is given by:
   #+begin_latex
    \begin{equation}
     \label{eq:InnerCoreMass} M_\mathrm{i.c.}=\int_{|v(r)|\leq c_s(r)}4\pi\rho(r) r^2 dr \ \ ,
