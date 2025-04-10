@@ -236,7 +236,8 @@ non-spherically-symmetric physical ingredients.
 
 #+CAPTION: Asymmetries are key to the explosion. The legend indicates the neutrino luminosity input in units of $10^{52}$ ergs assumed. 2D simulations (solid lines) always explode faster than 3D simulations (dashed lines). Higher resolution 2D explodes slower than low resolution 2D simulations (comparing blue and cyan). The 1D simulation has the higherst energy input and still barely explodes. This is Fig. 2 from [[https://iopscience.iop.org/article/10.1088/0004-637X/775/1/35#apj482201f2][Couch 2013]].
 #+ATTR_HTML: :width 100%
-[[./images/couch13.png]]
+[[./images/couch13.jpg]]
+
 
 
 #+CAPTION: Asymmetries matter even before the collapse and core bounce. This figure shows the evolution of the minimum, maximum (solid lines), and average shock radius (dashed lines) for 3D explosion simulations of an $18 M_{\odot}$ stellar model. Red curves are computed assuming a 1D progenitor, while black compute the last few minutes of the progenitor evolution in 3D letting seed asymmetries (e.g., because of convection in the Si shell) arise naturally: with a spherically symmetric progenitor the shock stalls (even in 3D) and its radius stays roughly constant. This is Fig. 5 of [[http://adsabs.harvard.edu/abs/2016PASA...33...48M][Mueller 2016]].
