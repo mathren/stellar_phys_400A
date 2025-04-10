@@ -349,6 +349,15 @@ asymmetries/ during the first millisecond after core-bounce are
 necessary for successful explosions, but also /the pre-collapse
 core-structure and in particular the Si/O interface is crucial/.
 
+
+Example of a 3D neutrino radiation hydrodynamics simulation (3D \nu-RHD)
+of a SASI-driven explosion:
+#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/4SPq9_-h0Bs?si=-Ljb_roZT__rprtf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Example of a 3D \nu-RHD simulation dominated by neutrino convection:
+#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/5fcsSA31rkE?si=BNgv4wtP0vdJs4lL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+*** Black hole formation: explosion or not?
 The most massive stellar cores, for which the Si/O interface is at a
 large Lagrangian mass coordinate, develop strong neutrino driven
 convection, which together with the contribution of the turbulent
@@ -376,26 +385,17 @@ explosion physics in the literature is itself very dynamic, with
 multiple groups working on this problem and disagreeing on the
 details.
 
-
-Example of a 3D neutrino radiation hydrodynamics simulation (3D \nu-RHD)
-of a SASI-driven explosion:
-#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/4SPq9_-h0Bs?si=-Ljb_roZT__rprtf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Example of a 3D \nu-RHD simulation dominated by neutrino convection:
-#+HTML: <iframe width="560" height="315" src="https://www.youtube.com/embed/5fcsSA31rkE?si=BNgv4wtP0vdJs4lL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
 ** Neutron star kicks
 
 The current understanding of core-collapse dynamics suggests that
 asymmetries are likely the key to the success of the explosion. This
 is further confirmed by the large velocities at which we observe some
 single NSs moving. The proper motion of radio pulsars can correspond
-to velocities in excess of \sim1000 km s^{-1}, which is much higher than the
-maximum velocity at which we observe O and B type stars moving through
-the galaxy (\le10km s^{-1} for the bulk of the population).
+to velocities in excess of $\sim1000$ km s^{-1}, which is much higher than
+the maximum velocity at which we observe O and B type stars moving
+through the galaxy ($\le10$ km s^{-1} for the bulk of the population).
 
-#+CAPTION: Guitar nebula formed by the bow shock of a NS travelling at \sim1000km s^{-1} \gg v_{OB} \sim 10 km s^{-1}. From [[https://ui.adsabs.harvard.edu/abs/2004ApJ...600L..51C/abstract][Chatterjee & Cordes 2003]].
+#+CAPTION: Guitar nebula formed by the bow shock of a NS travelling at $\sim1000$ km s^{-1} $\gg v_{OB} \sim 10$ km s^{-1}. From [[https://ui.adsabs.harvard.edu/abs/2004ApJ...600L..51C/abstract][Chatterjee & Cordes 2003]].
 #+ATTR_HTML: :width 100%
 [[./images/guitar_nebula.png]]
 
@@ -426,7 +426,7 @@ because of asymmetries in the flow (a situation routinely realized in
 gravitationally pull the newly born compact object in its direction
 and accelerate it.
 
-A key prediction of this ``tug-boat'' model is that the SN shock is
+A key prediction of this "tug-boat" model is that the SN shock is
 faster in the direction opposite to the one in which the compact
 object is accelerated. A faster shock is more efficient at
 photodisintegrating nuclei, producing light particles that can be
@@ -438,7 +438,6 @@ supernova remnant for which we can find the associated NS,
 recent simulations from [[https://ui.adsabs.harvard.edu/abs/2023arXiv231112109B][Burrows et al. 2023b]] disagree with this
 picture, and produce sizable natal kicks just through momentum
 conservation in asymmetric ejecta.
-
 
 If a SN occurs in a binary system (a situation which should /not/ be
 uncommon, given that [[./notes-lecture-BIN.org][massive star progenitors are preferentially born
@@ -467,8 +466,8 @@ star.
 
 *N.B.:* Do not confuse v_{2} with the orbital velocity $v_\mathrm{orb} =
 \sqrt{\frac{G(M_1+M_2)}{a}}$ which represents the velocity of the
-point of reduced mass M_{1}M_{2}/(M_{1}+M_{2}) orbiting around the center of mass
-of the binary, and not the velocity of a physical object!}
+point of reduced mass $M_{1}M_{2}/(M_{1}+M_{2})$ orbiting around the center of
+mass of the binary, and not the velocity of a physical object!
 #+begin_latex
 \begin{equation}
   \label{eq:2}
@@ -477,25 +476,25 @@ of the binary, and not the velocity of a physical object!}
 #+end_latex
 
 The companion star is thus shot out of the binary with its
-pre-explosion v_{2}, and if v_{2}>30 km s^{-1} it becomes a runaway star [[https://ui.adsabs.harvard.edu/abs/2019A&A...624A..66R][Renzo
-et al. 2019]]. This however tends to happen rarely, since mass transfer
-during the binary evolution tends to increase the separation a,
-decrease the mass M_{1}, and increase the mass M_{2}.
+pre-explosion $v_{2}$, and if $v_{2}>30$ km s^{-1} it becomes a runaway star
+([[https://ui.adsabs.harvard.edu/abs/2019A&A...624A..66R][Renzo et al. 2019]]). This however tends to happen rarely, since mass
+transfer during the binary evolution tends to increase the separation
+a, decrease the mass $M_{1}$, and increase the mass $M_{2}$.
 
-Note typically SN ejecta achieve velocities of \sim10^{4} km s^{-1} \gg v_{orb},
-thus we can neglect the orbital motion of the binary during the SN
-(although see also [[http://adsabs.harvard.edu/abs/2017ApJ...846L..15B][Batta et al. 2017]]): effectively this corresponds to
-an instantaneous loss of mass from the exploding star, which is not
-the center of mass of the binary. This off-center mass loss (from the
-point of view of the binary) is also referred to as or "Blaauw kick"
-and can modify the orbit, and in extreme case where
+Note typically SN ejecta achieve velocities of $\sim10^{4$} km s^{-1} $\gg
+v_\mathrm{orb}$, thus we can neglect the orbital motion of the binary
+during the SN (although see also [[http://adsabs.harvard.edu/abs/2017ApJ...846L..15B][Batta et al. 2017]]): effectively this
+corresponds to an instantaneous loss of mass from the exploding star,
+which is not the center of mass of the binary. This off-center mass
+loss (from the point of view of the binary) is also referred to as or
+"Blaauw kick" and can modify the orbit, and in extreme case where
 $M_\mathrm{ejecta}\geq (M_1+M_2)/2$ it can change it from an
 circle/ellipse to a parabola/hyperbole - so unbind the binary [[http://adsabs.harvard.edu/abs/1961BAN....15..265B][Blaauw
 1961]] (see also homework on virial theorem!). Typically in massive
 binary evolution, the exploding star loses its H-rich envelope to the
-companion long before its SN explosion, therefore M_{ej} is rarely
-sufficiently large to unbind the binary without a natal kick due to
-asymmetries.
+companion long before its SN explosion, therefore $M_\mathrm{ej}$ is
+rarely sufficiently large to unbind the binary without a natal kick
+due to asymmetries.
 
 From the observation of the pulsars proper motions we know that at
 least some NS receive such large kicks, however there is still debate
@@ -503,12 +502,13 @@ on whether SN resulting in the formation of a BH can also provide
 significant kicks, and consequently whether most BHs remain bound to
 their stellar companion, or whether their formation breaks the
 binaries in which they form. In at least a handful of cases, it can be
-shown that large mass BHs were formed with negligible natal kicks,
-[[https://ui.adsabs.harvard.edu/abs/2023arXiv231001509V][Vigna-gomez et al. 2024]], although observations of the kinematic
+shown that large mass BHs were formed with negligible natal kicks
+([[https://ui.adsabs.harvard.edu/abs/2023arXiv231001509V][Vigna-gomez et al. 2024]]) although observations of the kinematic
 properties of X-ray binaries hosting BHs accreting mass from a
 companion seem to require moderate kicks (see e.g., [[https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.3116A/abstract][Atri et al. 2019]]).
 
-The observation of double pulsars [[http://adsabs.harvard.edu/abs/1975ApJ...195L..51H][Hulse & Taylor 1975]] also raises the
+The observation of double pulsars ([[http://adsabs.harvard.edu/abs/1975ApJ...195L..51H][Hulse & Taylor 1975]], we will
+discuss this more extensively [[./notes-lecture-GWprog.org][in the next lecture]]) also raises the
 question of whether some successful SN explosion resulting in NS
 formation might also lead to systematically smaller kicks, allowing
 for a binary to survive two consequent explosions. The idea is that
@@ -522,7 +522,7 @@ consequently small kicks.
 
 * The supernova zoo
 
-#+CAPTION: Schematic representation of the SN taxonomy, based on spectral features and light curve shape. The dot-dashed line indicates the possible connection between SN events detected in late stages and classified as type Ib/Ic and SNe of type IIb. This figure is from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]] and inspired by  Fig.~2 in [[https://ui.adsabs.harvard.edu/abs/2001ASSL..264..199C/abstract][Cappellaro et al. 2001]].
+#+CAPTION: Schematic representation of the SN taxonomy, based on spectral features and light curve shape. The dot-dashed line indicates the possible connection between SN events detected in late stages and classified as type Ib/Ic and SNe of type IIb. This figure is from [[https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf][Renzo 2015]] and inspired by  Fig. 2 in [[https://ui.adsabs.harvard.edu/abs/2001ASSL..264..199C/abstract][Cappellaro et al. 2001]].
 #+ATTR_HTML: :width 100%
 [[./images/SN_taxonomy.png]]
 
