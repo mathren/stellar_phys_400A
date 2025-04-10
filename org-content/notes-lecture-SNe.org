@@ -179,27 +179,28 @@ two separate parts ([[http://adsabs.harvard.edu/abs/2002RvMP...74.1015W][Woosley
     \label{eq:InnerCoreMass} M_\mathrm{i.c.}=\int_{|v(r)|\leq c_s(r)}4\pi\rho(r) r^2 dr \ \ ,
   \end{equation}
   #+end_latex
-  where c_{s} \equiv c_{s}(r) is the local sound speed, and the integral can
-  be evaluated analytically assuming [[./notes-lecture-EOS2.org::*Ultra-relativistic electron gas][ultra-relativistic electron
+  where $c_{s} \equiv c_{s}(r)$ is the local sound speed, and the integral
+  can be evaluated analytically assuming [[./notes-lecture-EOS2.org::*Ultra-relativistic electron gas][ultra-relativistic electron
   degeneracy]] dominates the pressure. The value of $M_\mathrm{i.c.}$ at
   core bounce is almost independent of the stellar progenitor and it
-  is about $1\,M_\odot$, [[http://adsabs.harvard.edu/abs/1980ApJ...238..991G][Goldreich & Weber 1980]], [[http://adsabs.harvard.edu/abs/1982ASIC...90...53Y][Yahil & Lattimer 1982]].
+  is about $1M_\odot$, [[http://adsabs.harvard.edu/abs/1980ApJ...238..991G][Goldreich & Weber 1980]], [[http://adsabs.harvard.edu/abs/1982ASIC...90...53Y][Yahil & Lattimer 1982]].
 - *Outer Core*: in supersonic collapse, because at lower density the
-  sound speed c_{s} decreases, so no information about the inner core
+  sound speed $c_{s}$ decreases, so no information about the inner core
   can reach into the outer core.
 
-The collapse goes on until the central density is so high (\rho_{c}\sim10^{14}
-g cm^{-3}) that the repulsive core of the nuclear force becomes relevant.
-This repulsive contribution causes a sudden stiffening of the EOS, and
-triggers the so-called core bounce, which is conventionally defined by
-an arbitrary threshold on the specific entropy at the edge of the
-inner core: s=3 (in units of the Boltzmann constant k_{B} times the
-Avogadro number N_{A}). The inner core overshoots the equilibrium density
-of the stiffened EOS, stops collapsing and reverses its radial
-velocity. This launches a shock wave at the edge of the inner core. It
-is thought that this shock wave at least in some cases, successfully
-disrupts the star, producing a SN. However, in most cases, the shock
-needs to be ``revived'' by some mechanism (see below).
+The collapse goes on until the central density is so high
+($\rho_{c}\sim10^{14}$ g cm^{-3} $\simeq \rho_{n} =2\times10^{14} \times A$ g cm^{-3}) that the
+repulsive core of the nuclear force becomes relevant. This repulsive
+contribution causes a sudden stiffening of the EOS, and triggers the
+so-called core bounce, which is conventionally defined by an arbitrary
+threshold on the specific entropy at the edge of the inner core: s=3
+(in units of the Boltzmann constant k_{B} times the Avogadro number N_{A}).
+The inner core overshoots the equilibrium density of the stiffened
+EOS, stops collapsing and reverses its radial velocity. This launches
+a shock wave at the edge of the inner core. It is thought that this
+shock wave at least in some cases, successfully disrupts the star,
+producing a SN. However, in most cases, the shock needs to be
+``revived'' by some mechanism (see below).
 
 *N.B.:* The collapse and bounce is analogous to a ball bouncing off a
 wall which momentarily compresses a bit and momentum changes sign in
