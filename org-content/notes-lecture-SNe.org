@@ -20,49 +20,57 @@ collapsing either into a neutron star (NS) or a black hole (BH). This
 requires them to consume (at least partially) the oxygen-rich core,
 that is, for the widest range of initial masses, to build a
 silicon-rich core and subsequently iron-rich core that is too massive
-to be sustained by the electron degeneracy pressure (M_{Fe} \ge
-M_{Chandrasekhar}). This core is therefore doomed to collapse under the
-influence of its own self-gravity, and this can result in a successful
-supernova explosion. For single massive stars, this happens for
-initial mass M_{ZAMS} \ge 7-10M_{\odot}, depending on their metallicity and
-rotation rate ([[https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D][Doherty et al. 2017]]). The presence of companions, which
-is the rule rather than the exception ([[http://adsabs.harvard.edu/abs/2012Sci...337..444S][Sana et al. 2012]]), can also
-change this threshold ([[http://adsabs.harvard.edu/abs/2017A%26A...601A..29Z][Zapartas et al. 2017]], [[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]]).
+to be sustained by the electron degeneracy pressure ($M_\mathrm{Fe} \ge
+M_\mathrm{Chandrasekhar}$). This core is therefore doomed to collapse
+under the influence of its own self-gravity, and this can result in a
+successful supernova explosion. For single massive stars, this happens
+for initial mass $M_\mathrm{ZAMS} \ge 7-10M_{\odot}$, depending on their
+metallicity and rotation rate ([[https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D][Doherty et al. 2017]]). The presence of
+companions, which is the rule rather than the exception ([[http://adsabs.harvard.edu/abs/2012Sci...337..444S][Sana et al.
+2012]]), can also change this threshold ([[http://adsabs.harvard.edu/abs/2017A%26A...601A..29Z][Zapartas et al. 2017]],
+[[https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract][Poelarends et al. 2017]]).
 
 *N.B.:* At the lower mass end, super-AGB supernova progenitors may reach
-the onset of core collapse because of electron-captures in the oxygen,
+the onset of core collapse because of electron captures in the oxygen,
 neon, magnesium degenerate core producing a so-called "electron
-capture SN" (cf. [[file:in-class-evol-wrap-up.org::*super-AGB stars][sAGB evolution]]) instead of because electron-captures
+capture SN" (cf. [[file:in-class-evol-wrap-up.org::*super-AGB stars][sAGB evolution]]) instead of because electron captures
 in the iron core. In reality, al CCSNe /are/ electron-capture SNe
 because electron captures always play a role in accelerating the
 collapse (see below).
 
 *N.B.:* In other subfields, for example asteroseismology or exoplanets,
 "massive" may just mean "with a convective main sequence core",
-meaning a much lower threshold M_{ZAMS} \ge 1.2-1.3M_{\odot}.
+meaning a much lower threshold $M_\mathrm{ZAMS} \ge 1.2-1.3M_{\odot}$.
 
 At the very end of the evolution, the degenerate iron core is too
 massive to be sustained by the electron degeneracy pressure, and
 therefore it collapses under its own gravity, reaches (super--)nuclear
-density (\rho\geq10^{14} g cm^{-3}), bounces due to the repulsive core of the
+density ($\rho\geq10^{14}$ g cm^{-3}), bounces due to the repulsive core of the
 nuclear force (cf. [[./notes-lecture-nuclear-burning.org][lecture on microphysics of nuclear reactions]]) and
 this triggers a shock-wave.
 
 *N.B.:* The collapse of the exhausted core takes a /dynamical/ timescale,
 which for the densities reached at the end of the nuclear life of the
-star (\rho\ge10^{10} g cm^{-3}) is extremely short, \tau_{free fall}\sim0.1 sec \leq
-blink of an eye!. Therefore, while the inner core collapses, the outer
-layer barely notice that something is happening: the collapse, bounce
-and reversal of the velocity therefore has to trigger a shock
-(discontinuity in the velocity of the gas)!
+star ($\rho\ge10^{10$} g cm^{-3}) is extremely short, $\tau_\mathrm{free fall}$ is
+of order $\sim0.1 sec \leq$ blink of an eye! Therefore, while the inner core
+collapses, the outer layer barely notice that something is happening:
+the collapse, bounce and reversal of the velocity therefore has to
+trigger a shock (discontinuity in the velocity of the gas)!
+
+*N.B.:* Such discontinuity has to propagate faster than the local sound
+speed to not be washed out by sound waves in the gas: shocks are by
+definition discontinuity of the velocity field of a fluid propagating
+faster than the sound speed. Physically, there is never a true
+discontinuity but a thin layer over which there is a large and abrupt
+change in velocity.
 
 The shock wave launched is thought to explode the star, unbinding the
-stellar envelope. However, historically (hydrodynamical) simulations
-have had limited success in producing explosions. In most cases, the
-shock just stops or reverts while still deep in the star. Therefore, a
-``shock-revival'' mechanism (usually neutrino heating behind the shock
-aided by asymmetries in the flow) is needed to push it further and
-make it unbind the stellar envelope.
+stellar envelope. However, historically until very recently
+(hydrodynamical) simulations have had limited success in producing
+explosions. In most cases, the shock just stops or reverts while still
+deep in the star. Therefore, a ``shock-revival'' mechanism (usually
+neutrino heating behind the shock aided by asymmetries in the flow) is
+needed to push it further and make it unbind the stellar envelope.
 
 The dynamics of the collapse, and therefore the success or failure of
 the explosion, depend on the structure (temperature, density, etc.)
@@ -106,12 +114,12 @@ mass,
 #+end_latex
 
 that is the maximum mass that can be sustained by electron degeneracy
-pressure, where s_{e} is the electrons specific entropy and the term
+pressure, where $s_{e}$ is the electrons specific entropy and the term
 dependent on it is a "thermal correction" to account for the fact that
-not the entire core is fully degenerate and with k_{B}T\ll\varepsilon_{Fermi}.
+not the entire core is fully degenerate and with
+$k_{B}T\ll\varepsilon_\mathrm{Fermi}$.
 
 * Physics of core collapse
-
 ** Core Bounce
 Since the nuclei of the iron group are the most tightly bound (cf.
 [[./notes-lecture-nuclear-burning.org][lecture on microphysics of nuclear reactions]]), the fusion of two of
@@ -266,7 +274,6 @@ emission lines (i.e., very large ejecta velocities).
 #+CAPTION: Sketch of the key ingredients for a successful explosion in the neutrino driven paradigm, from [[https://ui.adsabs.harvard.edu/\#abs/2017IAUS..329...17M][Muller 2017]]
 #+ATTR_HTML: :width 100%
 [[./images/sketch_mechanism.png]]
-
 
 ** Shock revival mechanisms
 As mentioned above, historically, numerical simulations of
