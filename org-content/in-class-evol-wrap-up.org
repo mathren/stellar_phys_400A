@@ -149,7 +149,7 @@ the photosphere: effectively the outer boundary condition and
 atmospheric physics determines this.
 
 Stars to the left, hotter side of the Hayashi track instead must /not
-be /fully convective/ and have some radiative layers (recombination and
+be fully convective/ and have some radiative layers (recombination and
 light-elements burning changing $\kappa$ and $\mu$)!
 
 * Main sequence
