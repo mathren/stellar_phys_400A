@@ -481,8 +481,9 @@ gravitational interaction in a dense stellar system.
 
 *N.B.:* Binaries are still important! Since the cross section for N body
 interactions scales with some power of the stellar radius for single
-stars, and with the orbital separation for a binary ($\sigma \propto a^{2} \gg R^{2})
-it is much more likely to have a significant gravitational interaction
+stars, and with the orbital separation for a binary ($\sigma \propto a^{2} \gg R^{2}$
+neglecting the not-always-negligible gravitational focusing) it is
+much more likely to have a significant gravitational interaction
 between a binary and a star (or between two binaries) than between two
 single stars.
 
