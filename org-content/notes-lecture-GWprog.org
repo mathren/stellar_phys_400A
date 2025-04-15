@@ -107,7 +107,7 @@ space-time in general relativity) as GWs are often described.
 Before narrowing down what could be (mathematically and
 astrophysically) the sources of GWs, let's consider when are GR
 effects most relevant? A typical quantity to look at the so-called
-"compactness" $M/R$ with $M$ mass of a source and $R$ its linear
+"compactness" $GM/Rc^{2} \equiv M/R$ with $M$ mass of a source and $R$ its linear
 dimension. Note that in natural units ($G=c=1$ typically used to
 simplify the formalism in GR), this is a dimensionless number.
 
