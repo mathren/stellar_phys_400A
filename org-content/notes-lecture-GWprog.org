@@ -92,12 +92,12 @@ g_{\mu\nu} + h_{\mu\nu}$. Keeping only terms linear in $h_{\mu\nu}$ (which is
 our new functional variable) we can rewrite Eq. \ref{eq:EFE} as:
 #+begin_latex
 \begin{equation}\label{eq:GW_wave}
-\left( \nabla^{2} - \frac{\partial^{2}}{\partial t^{2}}\right) h_{\mu\nu} \propto T_{\mu\nu} \ \ .
+\left( \nabla^{2} - \frac{\partial^{2}}{c\partial t^{2}}\right) h_{\mu\nu} \propto T_{\mu\nu} \ \ .
 \end{equation}
 #+end_latex
 which is a wave equation in three dimensions for $h_{\mu\nu}$ with speed
 of propagation $c$, source term proportional to $T_{\mu\nu}$. In vacuum
-($T_{\mu\nu}=0$), and consequently $h_{\mu\nu}$ admits oscillating solutions
+$T_{\mu\nu}=0$, and consequently $h_{\mu\nu}$ admits oscillating solutions
 $h_{\mu\nu} = A_{\mu\nu}\exp(i k_{\alpha}x^{\alpha})$! These are the "ripple in
 space-time" (i.e., in the metric tensor describing the properties of
 space-time in general relativity) as GWs are often described.
