@@ -151,7 +151,7 @@ scattering). For gravity, the first order momentum of a mass
 distribution (for intuition, think $\sim m \times r$) has for time-derivative
 the total momentum of the source ($\sim m \times v$). That is also conserved:
 *there is also no dipole radiation of GWs*. The next order is then the
-quadrupole of the mass distribution: gravitational waves are generated
+quadrupole of the mass distribution: GWs are generated
 by the time-dependence of the quadrupole distribution of mass at
 leading order.
 
@@ -359,7 +359,7 @@ rate that they merge within the age of the Universe.
 
 From a stellar physics perspective, this leads to an apparent paradox:
 To merge, they need to have orbital separation of order of $\sim
-10R_{\odot$}$ or less. Their stellar progenitor however, evolve to be
+10R_{\odot}$ or less. Their stellar progenitor however, evolve to be
 $\ge100-1000R_{\odot}$. How can we reconcile these two facts?
 
 *N.B.:* The same problem has already been considered based on classical
