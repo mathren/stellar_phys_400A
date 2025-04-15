@@ -566,7 +566,7 @@ observational campaign (these contain the information provided to EM
 observers to followup events with telescopes).
 
 On a slightly longer timescale, a "copy" of LIGO is being planned as
-LIGO-india (same technology), and in the future there are plans for
+LIGO-India (same technology), and in the future there are plans for
 so-called 3^{rd} generation GW detectors (the 2^{nd} generation are the
 space-based detectors discussed below). These will likely be
 interferometers with much longer arms ($L\simeq 4$ km \rightarrow $L\simeq 40$ km) and
