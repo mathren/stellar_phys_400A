@@ -43,3 +43,7 @@ Fall2024_materials/*
 Spring2025_materials/*
 
 *homework_deadlines.org
+
+*.tar.xz
+*.tar.gz
+*.tar
