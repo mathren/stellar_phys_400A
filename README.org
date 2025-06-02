@@ -44,5 +44,6 @@ of emacs to build directly there).
 
 * Log
 
-Each semester's website is archived as a [[https://github.com/mathren/stellar_phys_400A/releases][release]]. The Fall 2024
-semester corresponds to release v1.0.
+Each semester's website is archived as a [[https://github.com/mathren/stellar_phys_400A/releases][release]]:
+- Fall 2024: [[https://github.com/mathren/stellar_phys_400A/releases/tag/v1.0][v1.0]]
+- Spring 2025: [[https://github.com/mathren/stellar_phys_400A/releases/tag/v2.0][v2.0]]
