@@ -1,0 +1,642 @@
+
+# Table of Contents
+
+1.  [The first two equations of stellar structure](#org3e487fc)
+    1.  [Lagrangian and Eulerian coordinates](#org0f2be91)
+        1.  [Eulerian description](#org04ede9f)
+        2.  [Lagrangian description](#orgcfda40c)
+    2.  [Spherical symmetry and one dimensional approximation](#orgdd0a750)
+    3.  [Mass conservation](#orga2a2697)
+    4.  [Momentum conservation and hydrostatic equilibrium](#orgf8be80d)
+        1.  [Gravity](#org118ae13)
+        2.  [Pressure gradient](#orga35fe62)
+        3.  [Combining the two](#orgdfe26b7)
+        4.  [Estimate for the central pressure](#orgef058f1)
+    5.  [Dynamical timescale estimates](#org077941e)
+        1.  [Explosion timescale](#org91f42bf)
+        2.  [Free fall timescale](#orgffbe2de)
+    6.  [Introduction to `MESA_web`](#org5f19d23)
+2.  [Homework](#org776e614)
+
+**Materials**: chapter 2 of Onno Pols' lecture notes, chapters 1 & 2 of
+Kippenhahn's book.
+
+
+<a id="org3e487fc"></a>
+
+# The first two equations of stellar structure
+
+So far we have mostly been discussing astronomical facts on stars
+(e.g., use of populations to understand phenomena too slow to observe,
+the CMD/HRD diagrams, various types of binaries and how to use
+observables to derive masses), albeit anticipating some physical
+modeling (e.g., some basics of black-body radiation to introduce
+T<sub>eff</sub>). In this lecture, we will move on to proper astro **physics** of
+stars: we want to derive a set of equations to model the parts of the
+stars that we cannot see, the interior structure of stars and how they
+evolve in time. This will take a few lectures to construct, and it
+will require several approximations - I will try to highlight these
+when we encounter them.
+
+These equations express the conservation of mass, momentum, and
+energy, plus equations that describe the changes in chemical
+composition, and an equation that relates thermodynamic quantities to
+each other. These are typically expressed in a specific form for
+stellar evolution applications, to make the problem of determining the
+*internal structure* of a star and how it evolves tractable.
+
+Note that deriving these equations will take us away from directly
+observable phenomena, and push us into theoretical modeling based on
+physical understanding that needs to be *indirectly* validated on
+observations.
+
+Before we get into arguments specific to stars, let's review briefly
+hydrodynamical coordinate systems that we will be using to describe
+the star.
+
+
+<a id="org0f2be91"></a>
+
+## Lagrangian and Eulerian coordinates
+
+In hydrodynamics one is typically interested in describing fields of
+variables that take one value for each point in the fluid (e.g.,
+density, velocity, pressure, temperature, etc..). Let's call a generic
+field &Psi; (=&rho;, v, P, T, etc&#x2026;) and discuss the two ways we can use to
+described it.
+
+
+<a id="org04ede9f"></a>
+
+### Eulerian description
+
+In a Eulerian description the fields are described as a function of
+position in space (and time): &Psi; &equiv; &Psi;(x, y, z, t) in Cartesian
+coordinates or &Psi;(r, &theta;, &varphi;, t) in spherical-polar coordinates (of
+course, one could use any other spatial coordinate system as well, the
+point is the field is expressed as a function of a fixed location in
+space-time).
+
+This is like looking at the flow from on top of a bridge at a fixed
+position, describing the variables at that specific position.
+
+![img](./images/Eulerian-bridge.jpg "Eulerian description is like putting many bridges over a fluid and describing the properties as a function of what goes on just below the bridge.")
+
+For a star assuming spherical symmetry (as we already did to relate
+the stellar flux with the luminosity and obtain L=4&pi; R<sup>2</sup>&sigma; T<sub>eff</sub><sup>4</sup>),
+we would have no dependence on the angular variables &part;<sub>&theta;</sub> &Psi;
+&equiv; &part;<sub>&varphi;</sub>&Psi; &equiv; 0 and we could express &Psi;&equiv;&Psi;(r, t).
+
+
+<a id="orgcfda40c"></a>
+
+### Lagrangian description
+
+In a Lagrangian description the fields are described as a function of
+the fluid element, following the fluid element itself: &Psi; &equiv;&Psi;(fluid
+element, t).
+
+This is like hopping on a boat that moves with the fluid, and
+describing the properties of the fluid as the boat moves with it.
+
+![img](./images/Lagrangian_kayak.jpg "Lagrangian description is like following the fluid on a boat and describe what goes on as a function of the fluid particle being followed.")
+
+In a Lagrangian system of coordinates, the total time derivative can
+be written using the "chain rule" as:
+
+<div class="latex" id="org7c0cbb3">
+\begin{equation}
+ \frac{d}{dt} = \frac{\partial}{\partial t} + \frac{\partial x}{\partial t}\frac{\partial}{\partial x} + \frac{\partial y}{\partial t}\frac{\partial}{\partial y} +\frac{\partial z}{\partial t}\frac{\partial}{\partial z} \equiv \frac{\partial}{\partial t} + v\cdot\nabla \ \,
+\end{equation}
+
+</div>
+
+where the second term on the r.h.s. is the "advective" term, due to
+the motion of the fluid element.
+
+Because of the extremely large range of spatial scales in stellar
+evolution (e.g., in the Sun from the center at r&cong;0 to the outer radius
+r&cong; 10<sup>11</sup> cm, and in its future as a red giant 100-1000&times; larger - even
+using R<sub>o</sub> as unit there are &sim;3-5 orders of magnitude of dynamic
+range without even considering neutron stars and black holes!),
+compared to the limited range in mass (in the appropriate units 0-1
+M<sub>o</sub> for the Sun!), typically a Lagrangian description is preferred.
+This means, for example we can chose as independent coordinate in the
+star not the radius r, but instead the amount of mass enclosed by a
+given radius m&equiv; m(r), thus express &Psi;(r,t) =&Psi;(r(m), t)&rarr; &Psi;(m(r), t).
+
+Derivatives can then be expressed with the chain rule:
+
+<div class="latex" id="org5c58bf4">
+\begin{equation}
+ \frac{\partial}{\partial m} = \frac{\partial r}{\partial m} \frac{\partial}{\partial r} \ \ .
+\end{equation}
+
+</div>
+
+This is what is typically done in stellar evolution, and it
+works because the m(r) function is invertible, and it is in fact
+monotonically increasing: as r increases, the amount of stellar mass
+enclosed can also only increase!
+
+**N.B.**: For some applications, Eulerian and Lagrangian descriptions can
+also be "combined", for example with "moving mesh" numerical
+approaches, see for example [AREPO hydrodynamics code](https://ui.adsabs.harvard.edu/abs/2020ApJS..248...32W/abstract), [DISCO code](https://ui.adsabs.harvard.edu/abs/2016ApJS..226....2D/abstract).
+
+
+<a id="orgdd0a750"></a>
+
+## Spherical symmetry and one dimensional approximation
+
+We have defined a star to be a *self-gravitating mass of gas that can
+produce energy through internal sources*. Thus, from the
+*self-gravitating* and the *gas* parts of this definition, at
+zeroth-order, the dynamical elements (i.e., the forces!) that
+determine the structure of a star are:
+
+-   Gravity: the weight of the gas forming the star itself
+-   Pressure: the thermal pressure of the gas, sometimes with
+    contribution from the radiation and degeneracy
+
+Gravity is a central force that depends only on the radius (&prop; r<sup>-2</sup>),
+and pressure is isotropic. Therefore at zeroth order, we expect stars
+to be well approximated as *spheres*. This mathematically means that we
+can express all the variables that characterize the structure of a
+star as a function of a single variable, for example the radius from
+the center of the star. This allows for the calculation of
+
+-   **Q**: can you think of cases where a star  may not be spherical?
+
+
+<a id="orga2a2697"></a>
+
+## Mass conservation
+
+Let's consider the amount of mass in a parcel of stellar gas. This will
+depend on the local gas density $\rho(r, t)$ (or equivalently in the
+Lagrangian formalism $\rho(m, t)$!) and the amount of volume in the shell
+
+<div class="latex" id="org8d02339">
+\begin{equation}
+dm = \rho dAdr
+\end{equation}
+
+</div>
+
+where dA is the element base area, and dr its radial thickness. We can
+integrate over the base to get the parcel to be a spherical shell
+
+<div class="latex" id="orgeccb32a">
+\begin{equation}
+\int dA = 4\pi r^{2}
+\end{equation}
+
+</div>
+
+where r is the radius of the shell, therefore
+
+<div class="latex" id="orge0391fb">
+\begin{equation}
+dm = 4\pi \rho r^{2} dr \ \ .
+\end{equation}
+
+</div>
+
+In principle gas could also flow in/out of the shell at a rate
+determined by the inflow/outflow velocity such that in a time interval
+dt an amount $-\rho v dA dt$ flows out (for $v>0$, the quantity is negative)
+or in ($v<0$). Again integrating over $dA$:
+
+<div class="latex" id="orgbef60e7">
+\begin{equation}
+\label{eq:mass_continuity}
+dm = 4\pi \rho r^{2} dr - 4\pi r^{2} \rho v dt \ \ .
+\end{equation}
+
+</div>
+
+This is the complete mass continuity equation in spherical symmetry.
+From this complete form we can take the partial derivatives w.r.t. $r$
+(at fixed $t$) and $t$ (at fixed $r$):
+
+<div class="latex" id="org7c783e5">
+\begin{equation}\label{eq:mass_continuity_rt}
+ \frac{\partial m}{\partial r} = 4\pi r^{2} \rho \ \ , \\
+ \frac{\partial m}{\partial t} = - 4\pi r^{2} \rho v \ \ .
+\end{equation}
+
+</div>
+
+We can also derive the first equation above w.r.t. $t$ and the second one
+w.r.t $r$, and demand the two forms are the same. Since $r$ and $t$ are the
+independent variables here (i.e., $\partial r/\partial t = 0$) we obtain:
+
+<div class="latex" id="org4379b83">
+\begin{equation}
+\frac{\partial \rho}{\partial t} = - \frac{1}{r^{2}}\frac{\partial (r^{2}\rho v)}{\partial r} \Leftrightarrow \frac{\partial \rho}{\partial t} + \nabla\cdot(\rho v) = 0 \ \ ,
+\end{equation}
+
+</div>
+
+with $\partial_{\theta }\equiv \partial_{\phi }\equiv 0$ for the last one, that is
+the typical form of the mass continuity equation in spherical
+symmetry.
+
+To turn these equations in the more typical form for stellar
+structure, just take the first equation in \ref{eq:mass_continuity_rt}
+and express it with $m$ as independent variable:
+
+<div class="latex" id="org076c64b">
+\begin{equation}\label{eq:mass_conservation}
+\frac{\partial r}{\partial m} = \frac{1}{4\pi r^{2} \rho} \ \ ,
+\end{equation}
+
+</div>
+
+where the partial derivatives become total derivatives in a static
+situation (where by definition $\partial_{t} = 0$, which is also why we don't
+typically focus on the second equation in
+\ref{eq:mass_continuity_rt} - by the end of this lecture we will be
+able to discuss whether this is an acceptable approximation). This is
+the first stellar structure equation that expresses mass conservation,
+and it depends on a yet unknown variable, the gas density $\rho$.
+
+
+<a id="orgf8be80d"></a>
+
+## Momentum conservation and hydrostatic equilibrium
+
+Consider the equation of motion of a parcel of stellar gas, $F = dp/dt
+= ma$ (for constant $m$), or often more conveniently in fluid dynamics,
+work per unit volume with $f = dF/dV$ and thus $f=\rho a$ with $\rho = dm/dV$ and
+$dV=dAdr \Rightarrow V=\int dAdr$ the volume. Let's start by writing down explicitly
+the forces that we think are important for an **isolated**, **non-rotating**,
+**non-magnetic** star.
+
+
+<a id="org118ae13"></a>
+
+### Gravity
+
+Since by definition a star is a self-gravitating body (**N.B.:** so is a
+planet, that's not the whole definition of a star!), we want to
+include the gravitational force on the l.h.s. of our f=&rho; a equation.
+This can be obtained as the gradient of the gravitational potential &Phi;
+which is a solution of the Poisson equation:
+
+<div class="latex" id="org453043c">
+\begin{equation}
+\nabla^{2} \Phi = 4\pi G\rho \Rightarrow \frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial \Phi}{\partial r} \right) = 4\pi G\rho \ \ ,
+\end{equation}
+
+</div>
+
+where the second form assumes already spherical symmetry. Note how
+this equation does not make the problem worse: we have a new variable
+$\Phi$ but the r.h.s. only depends on the density $\rho$ which is already
+appearing in Eq. \ref{eq:mass_conservation}.
+
+We can introduce the gravitational acceleration $g = - \nabla\Phi$, which in
+spherical symmetry only has a non-zero radial component &rArr; $g = - d\Phi/dr$
+which from Newton's theory of gravity we know to be
+
+<div class="latex" id="org51e7877">
+\begin{equation}
+- \nabla \Phi = g \equiv g(m(r))= \frac{Gm(r)}{r^{2}} \ \ ,
+\end{equation}
+
+</div>
+
+where $m\equiv m(r)$ is the mass enclosed within a certain radius $r$, which we
+already encountered. Thanks to the spherical symmetry assumption, we
+don't even need to really solve Poisson's equation to make a stellar
+model! The gravitational force acting on a spherical shell of mass $dm
+= 4\pi r^{2}\rho dr$ is thus just $-gdm = -Gmdm/r^{2}$, or per unit volume $f_\mathrm{grav}
+= -g\rho = -Gm\rho/r^{2}$, where the minus sign is to explicitly indicate that
+this force points towards the center of the star.
+
+
+<a id="orga35fe62"></a>
+
+### Pressure gradient
+
+The other contribution we need to include in our $f = \rho a$ equation is
+from the pressure. We could already use dimensional analysis to guess
+in what form pressure can enter the l.h.s. of the equation:
+
+<div class="latex" id="org3fe5d1c">
+\begin{equation}
+[P] = [\mathrm{force}]/[\mathrm{area}] \Rightarrow [P]/[\mathrm{length}] = [\mathrm{force}]/[\mathrm{volume}] \equiv [f]
+\end{equation}
+
+</div>
+
+This suggests that the pressure divided an appropriate length scale
+has the right dimension to enter the force per unit volume f. This in
+turn suggests that maybe what we need is the pressure *gradient*!
+
+![img](./images/HSE-sketch.png "Sketch of the force balance for an internal layer of a spherically symmetric star. Modified from Onno Pols' lecture notes Fig. 2.1")
+
+Let's now have a slightly more formal look. Because of
+spherical symmetry, the pressure in the horizontal direction (which in
+stellar context always means in the plane orthogonal to the radial
+direction) is perfectly balanced, and the pressure only depends on the
+radius $P\equiv P(r) (\equiv P(r(m)) \equiv P(m))$.
+
+The net force per unit area on each side of a spherical shell of gas
+of thickness dr is $P(r)$ at the inner boundary and $P(r+dr)$ at the outer
+boundary. Therefore, $dF_\mathrm{press} = P(r)dA - P(r+dr)dA \simeq dP/dr dA$ where we
+used $P(r+dr)\simeq P(r)+(dP/dr)dr$. Now using $dm = \rho drdA$ and dividing by $dV
+= drdA$ we finally obtain $f_\mathrm{press} = - dP/dr$.
+
+
+<a id="orgdfe26b7"></a>
+
+### Combining the two
+
+We have now an explicit form for the two most important forces in a
+(isolated, non-rotating, non-magnetic) star $f = f_{grav} + f_{pres} = -g\rho -
+dP/dr \equiv \rho a$.
+
+Since stars don't change that much on short timescales (we will see
+exceptions later, and define relevant timescales too), we can assume
+that overall the acceleration a of each parcel of gas is zero in most
+cases, that is $a=0$. *Stars are generally in hydrostatic equilibrium*. In
+this case the conservation of momentum becomes
+
+<div class="latex" id="orgd839dd2">
+\begin{equation}
+\frac{dP}{dr} = -g\rho = -\frac{Gm}{r^{2}}\rho \ \ ,
+\end{equation}
+
+</div>
+
+or changing to have $m$ has the independent variable, to have a
+Lagrangian treatment:
+
+<div class="latex" id="org43dc68a">
+\begin{equation}
+\frac{dP}{dr} = \frac{dP}{dm}\frac{dm}{dr} = \frac{dP}{dm}4\pi r^{2}\rho
+\end{equation}
+
+</div>
+
+and thus
+
+<div class="latex" id="org296b095">
+\begin{equation}\label{eq:HSE}
+\frac{dP}{dm} = -\frac{Gm}{4\pi r^{4}} \ \ ,
+\end{equation}
+
+</div>
+
+which is the second stellar structure equation that expresses the fact
+that the gravitational pull of the stellar gas is compensated by the
+pressure gradient inside the star. This also means that it is the
+gravity of the star that imposes the pressure stratification of the
+star and ultimately its structure: the pressure in each layer is just
+what is needed to support the weight of the layer(s) above. And finally,
+the fact that $dP/dm<0$, that is the pressure decreases as the enclose
+mass increases, or equivalently, the pressure increases towards the
+center (smaller radii, smaller amount of enclosed mass) makes sense,
+if the gradient has to compensate the gravitational pull.
+
+**All of stellar evolution can be though as gas re-arranging itself to
+fight against gravity, delaying gravitational collapse.**
+
+**N.B.:** The hydrostatic equilibrium equation can also be obtained
+starting from the Navier-Stokes equation assuming no viscosity (the
+microscopic viscosity is generally negligible in stars).
+
+**N.B.:** We have implicitly assumed that the star we model is
+sufficiently far away from anything else that there are no external
+forces. This may not hold in a binary system, for which in the
+Euler equation there will be other terms, such as the gravity of the
+binary companion, and tidal forces arising from its presence. While
+these are important, they often affect most directly only the outer
+layers of a star (that can be significantly tidally distorted), and
+can maybe be neglected further in the interior.
+
+**N.B.:** Similarly, we have neglected rotation, which also breaks the
+spherical symmetry by adding in the reference frame co-rotating with
+the star non-inertial forces (centrifugal, Euler, and Coriolis).
+However, the centrifugal foce depends on the distance from the
+rotation axis (r sin(&theta;)) and thus mostly impacts the outer layers of
+the stars and is less critical in the inner regions (though not at all
+always negligible!). The Euler force depends on d&omega;/dt with &omega; rotation
+rate, so it is typically negligible on evolutionary timescales for the
+star. The Coriolis force depends on &omega; &times; v, so it does not affect
+static gas (but it does have important effects if there are
+velocities, think for examples hurricanes in the Earth atmosphere).
+Moreover, rotation can interplay with many hydrodynamical and secular
+instabilities affecting the stellar gas in ways that are only roughly
+approximated in models. All these complications introduced by rotation
+and how to model them in stellar evolution are still active
+research topics (see for example [Maeder & Meynet 2000](https://ui.adsabs.harvard.edu/abs/2000ARA%26A..38..143M/abstract) and [Heger et al.
+2000](https://ui.adsabs.harvard.edu/abs/2000ApJ...528..368H/abstract)).
+
+**N.B.:** Finally, we have neglected also the impact of magnetic fields on
+the stellar gas. We know that stellar magnetism exists from
+observational phenomena such as stellar flares, seeing Zeeman
+splitting in stellar spectra, etc. We should also expect magnetic
+fields theoretically, because stars are giant balls of ionized gas.
+However, the global dynamical impact of magnetic field should be small
+in most cases, given the success of stellar evolution in explaining
+many observations neglecting them. Stellar magnetism (and it's
+important interplay with rotation) is also an active field of research
+both observationally and theoretically.
+
+Equations Eq. \ref{eq:mass_conservation} and \ref{eq:HSE} are two
+differential equations, that under the assumption of spherical
+symmetry are ordinary differential equations ($\partial_{r} \rightarrow d/dr$),
+for the function $m\equiv m(r)$ that depend on $P$, $\rho$. We thus have three
+variables $(m, P, \rho)$ and two equations: we cannot yet solve for the
+structure of a star. We will close the system of equations (meaning,
+obtain as many equations as variables, so we can solve for the stellar
+structure) later in the course.
+
+
+<a id="orgef058f1"></a>
+
+### Estimate for the central pressure
+
+A first estimate for the central pressure can be obtained substituting
+the local gradient with the difference from surface to the core across
+the entire mass of the star $dP/dm \rightarrow (P_{surface} - P_{center})/M \simeq
+-P_{center}/M$, where we also use $P$ increases inwards and thus it is
+legitimate to expect $P_{center}\gg P_{surface}$. Then, on the l.h.s. of Eq.
+\ref{eq:HSE}, we should take as estimates some fraction of the total
+mass M and radius R. For the sake of simplicity, let's take the
+fraction to be 1 and drop the 4&pi;:
+
+<div class="latex" id="org5c651f1">
+\begin{equation}
+P_\mathrm{center} = \frac{GM^{2}}{R^{4}}\ \ ,
+\end{equation}
+
+</div>
+
+Plugging in the numbers for the Sun this gives $P_{center}\simeq 10^{16}
+dyne cm^{-2}\simeq 10^{10}$ atmospheres. Although this a is very imprecise
+estimate, it already gives the idea that the pressure in the center of
+the Sun must be extremely high. See Onno Pols chapter 2 for more
+precise estimates and lower bounds.
+
+
+<a id="org077941e"></a>
+
+## Dynamical timescale estimates
+
+Let's say that the star was not in hydrostatic equilibrium, but still
+spherically symmetric. Returning to the general form for the momentum
+conservation $f = \rho a \equiv \rho \partial^{2}r/\partial t^{2}$ we have
+
+<div class="latex" id="orga73bb2e">
+\begin{equation}\label{eq:dyn}
+\rho \frac{\partial^{2} r}{\partial t^{2}} = -\frac{dP}{dr} -\frac{Gm}{r^{2}}\rho \ \ ,
+\end{equation}
+
+</div>
+
+where since P decreases outwards, $dP/dr<0$, so the first term on the
+l.h.s. pushes outwards (positive radial acceleration), while gravity
+pulls inward, as one would expect.
+
+Normally, for a star, we expect these two terms to balance each other,
+but what happens if we turn one off?
+
+
+<a id="org91f42bf"></a>
+
+### Explosion timescale
+
+Let's turn off gravity, setting $g = - Gm/r^{2 }\rightarrow 0$! To
+estimate how long it takes for the pressure gradient to push the gas
+out to a radius comparable to the radius of the star we can do the
+following rough substitution in the dynamical equation above:
+
+-   $\partial^{2} r \rightarrow R$ (outer radius of the star)
+-   $\partial t^{2} \rightarrow \tau_mathrm{expl}^{2}$ (what we want to estimate)
+-   $dP/dr\rightarrow P_\mathrm{avg}/R$ with $P_\mathrm{avg}$ some averaged pressure in the star
+-   $\rho \rightarrow \rho_\mathrm{avg}$ some averaged density of the star
+
+and we obtain:
+
+<div class="latex" id="orge0d1fd5">
+\begin{equation}
+\tau_\mathrm{expl} \simeq \frac{R}{\sqrt{\frac{P_{avg}}{\rho_{avg}}_{}}} \simeq \frac{R}{c_{s}}\ \ .
+\end{equation}
+
+</div>
+
+where, if we interpret $P$ and $\rho$ as some average values throughout the
+star the sound speed $c_{s}^{2} = P/\rho$ appears! The timescale for the
+internal pressure of the stellar gas to "blow up" the star is of the
+order of the sound-crossing time.
+
+
+<a id="orgffbe2de"></a>
+
+### Free fall timescale
+
+Almost by definition, this is how the star would collapse if there
+were no forces other than gravity, so let's turn off the pressure
+gradient $dP/dr\rightarrow0$. Then, as above:
+
+-   $\partial^{2} r \rightarrow R$ (outer radius of the star)
+-   $\partial t^{2} \rightarrow \tau_{ff}^{2}$ (what we want to estimate)
+-   $m \rightarrow M$ (total mass)
+
+we get:
+
+<div class="latex" id="org2625a69">
+\begin{equation}
+\tau_\mathrm{ff} \simeq \sqrt{\frac{R^{3}}{GM}} \simeq \sqrt{\frac{1}{G\rho_\mathrm{avg}}}\ \ ,
+\end{equation}
+
+</div>
+
+with $\rho_\mathrm{avg} = 3M/(4\pi R^{3})$ average density of the star. Note that here we
+have been very loose with the &pi; factors and averages.
+
+-   **Q**: you all have estimated the Sun's mean density, calculate the Sun
+    free fall time now. Does the Sun vary on this timescale? Do you
+    think this justifies our assumption of hydrostatic equilibrium?
+-   **Q**: are stars in hydrostatic equilibrium? How do we know
+    observationally?
+
+
+<a id="org5f19d23"></a>
+
+## Introduction to `MESA_web`
+
+We will discuss in detail stellar evolution codes, numerical
+strategies for solving the stellar structure equations, and what goes
+on in MESA/MESA-web. For now I just want to introduce this tool and
+show you how you can obtain numerical stellar models.
+
+-   [Description of Input](http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-input)
+-   [Submission website](http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit)
+-   Example output:
+    1.  Download the zip file from the email you receive when the
+        calculation is done
+    2.  Unzip the file, the content has a `*.mp4` video with the evolution
+        of some quantities (depending on the star you asked, it may be
+        very short), an `input.txt` file that reminds you of what you put
+        into `MESA-web`, the  `trimmed_history.data`  and a few
+        `profile*.data`, and a `profiles.index` that contains a map of which
+        `profile*.data` maps to which "model number" (i.e., timestep of the
+        code).
+    3.  You can inspect the `txt, list`, and `*.data` files using your text
+        editor.
+        
+        The `trimmed_history.data` contains in each column global variables
+        of the star (e.g., surface luminosity, outer radius, etc.) and
+        each row correspond to a specific timestep. This is what you can
+        use to plot, for example, an Herzsprung-Russell diagram using the
+        columns `log_L` and `log_Teff`.
+        
+        The `profile*.data` files contain each a snapshot of the internal
+        structure of the star you simulated at fixed time, so each column
+        corresponds to a quantity that takes different values at
+        different locations in the star (e.g., Lagrangian mass
+        coordinate, density, pressure, opacity). Each row corresponds to
+        a "mesh point", that is a discretized spatial coordinate (we will
+        see later what the full set of equations is and how codes like
+        MESA solve them).
+        
+        Refer to the [MESA-web output page](http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-output) for a full description of the
+        output.
+    4.  *If* you want you can use the python module [`mesa_web.py`](http://user.astro.wisc.edu/~townsend/resource/tools/mesa-web/mesa_web.py) provided by
+        `MESA-web` to read the output in the `*.data`, but remember these are
+        just plain text, so you can also write your own.
+
+
+<a id="org776e614"></a>
+
+# Homework
+
+-   Calculate the Keplerian period of a point mass orbiting at the
+    surface of a star of mass M and radius R and compare it to the free
+    fall timescale of the star.
+-   Calculate the free fall timescale for the Sun, for a Red Supergiant
+    with M=10M<sub>o</sub> and R=1000R<sub>o</sub> and a White Dwarf with M=1M<sub>o</sub>
+    and R=1000 km, and a Neutron star with M=1M<sub>o</sub> and radius R=10km.
+    Compare also their average densities.
+-   Skim [MESA-web paper by Fields et al. 2022](https://ui.adsabs.harvard.edu/abs/2023arXiv230915930F/abstract).
+-   Using [MESA-web](http://user.astro.wisc.edu/~townsend/static.php?ref=mesa-web-submit) make a 1 M<sub>o</sub> star until age 4.5&times;10<sup>9</sup> years (a
+    very rough model of the Sun as it is today!). **Hint:** look a the
+    `Custom Stopping condition` menu for possible definitions of "end of
+    the simulation". Plot m(r), make sure
+    to label your axes properly (including units!). Are there other
+    variables with a qualitatively similar behavior that one could use
+    as independent coordinate for the stellar structure? Try to make
+    other plots to find some, and explain what is the mathematical
+    property that allows to use m(r) and or any other variable you found
+    as a coordinate.
+-   With the model above, check the central pressure of the star (you
+    can also plot P(m) and P(r), or look at the final frame in the
+    movie made by `MESA-web` for you) and compare it with the estimate
+    above and the one provided in Onno Pols' lecture notes.
+-   Check also the outer luminosity: is it the value you expected?
+

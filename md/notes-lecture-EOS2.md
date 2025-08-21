@@ -1,0 +1,531 @@
+
+# Table of Contents
+
+1.  [Equation of state 2/2: Quantum-mechanical effects](#orgab2f2f8)
+    1.  [Fully degenerate electron gas](#org7c6fa16)
+        1.  [Non-relativistic electron gas](#orgef29211)
+        2.  [Ultra-relativistic electron gas](#orgde4e980)
+    2.  [Partial degeneracy](#org1463d94)
+    3.  [Radiation pressure](#orgb8a309a)
+    4.  [Partial ionization effects](#org07956ac)
+2.  [Total pressure in a generic star](#orge19d0ed)
+3.  [Homework](#org45c1794)
+
+**Materials**: Chapter 3 of Onno Pols' lecture notes, Chapter 14, 15, and
+16 of Kippenhahn's book.
+
+
+<a id="orgab2f2f8"></a>
+
+# Equation of state 2/2: Quantum-mechanical effects
+
+In the [previous lecture on EOS](./notes-lecture-EOS1.md), we have discussed polytropic EOS and
+classical, non-relativistic, ideal gas. The latter is an accurate
+description of the stellar gas in most, but importantly not *all* the
+astrophysical cases.
+
+Now, we will consider cases that don't verify the hypothesis we took
+previously and discuss briefly some stars for which we need to go
+beyond those.
+
+Let's start by relaxing the hypothesis that the gas behaves
+"classically". A star is "big", why do we need to care about quantum
+mechanics (QM)? Besides its central role in allowing for nuclear
+burning, [which we will see later](./notes-lecture-nuclear-burning.md), QM effects can matter also at
+extremely "low" temperatures and/or "high" densities, which can be
+encountered in stellar physics.
+
+From the wave-nature of the solutions of Schroedinger's equation, we
+know that there is a limit on the precision to which position and
+velocity of a particle can be known ("Heisenberg's uncertainty
+principle"): $\Delta x \Delta p \ge h$ with $h$ Planck's constant. This naturally
+translates in three spatial dimension to
+
+<div class="latex" id="orga4551b9">
+\begin{equation}
+\Delta x \Delta y \Delta z \Delta p_{x} \Delta p_{y} \Delta p_{z} \ge h^{3} \ \,
+\end{equation}
+
+</div>
+
+where $h^{3}$ is the volume of a quantized cell in phase-space! Thus the
+available number of quantized states with momentum between $p+dp$ within
+a volume $dV = dxdydz \equiv d^{3}x$ is
+
+<div class="latex" id="org6556656">
+\begin{equation}
+g(p)d^{3}pd^{3}x = g_{s} \frac{4\pi p^{2} dp dV}{h^{3}} \ \mathrm{with}\ p=\sqrt{p_{x}^{2} +p_{y}^{2} +p_{z}^{2}} .
+\end{equation}
+
+</div>
+
+In the equation above, the factor $g_{s}$ allows to account for "internal
+degrees of freedom" of particles, e.g., their spin, polarization, or
+isospin. The key point here is $g(p)\propto p^{2}$ to satisfy QM. **N.B.:** the $p^{2}$
+factor in $g(p)$ comes from the Jacobian from going from Cartesian to
+spherical polar coordinates in momentum space and assuming an
+isotropic momentum distribution ($dp_{x}dp_{y}dp_{z} \equiv d^{3}p = 4\pi p^{2} dp$).
+
+Let's start by considering a classical gas in non-extreme regime. Then
+the particles are distributed according to a Maxwell-Boltzmann
+distribution $n(p)$, but whenever $n(p)> g(p)$, we know this is going
+to violate QM!
+
+From the [previous lecture on EOS](notes-lecture-EOS1.md) we have already seen the
+Maxwell-Boltzmann distribution
+
+<div class="latex" id="orge1d145d">
+\begin{equation}
+n(p)\propto \frac{n}{(mT)^{3/2}} \exp\left(\frac{-p^{2}}{2mk_{B} T}\right)p^{2 }\ \ ,
+\end{equation}
+
+</div>
+
+where $n$ is the number density, $T$ the temperature, and $m$ the mass of
+the particles. Therefore:
+
+<div class="latex" id="org5d045d4">
+\begin{equation}\label{eq:momentum_ratios}
+\frac{n(p)}{g(p)}\propto n (mT)^{-3/2}\exp(\frac{-p^{2}}{2mk_{B}T}) \ \ .
+\end{equation}
+
+</div>
+
+We can see that:
+
+-   at fixed temperature $T$, for very high number densities $n$, this ratio
+    is going to be larger than one in violation of QM
+-   at fixed number density $n$, for very low temperatures $T$, this ratio
+    will be larger than 1 in violation of QM (because every term in the
+    Taylor expansion of the exponential is proportional to a negative
+    power of $T$).
+-   the smaller mass particle will violate QM earlier than the higher
+    mass particles
+
+Thus, we can expect that for "very cold" stars (we will define what is
+the relevant scale here) or "very dense" stars the ideal gas EOS will not
+be appropriate.
+
+To account for QM effects, we need to consider the nature of the
+particles making up the star, which can be either
+
+-   **Fermions** with semi-integer spin, such as electrons, protons,
+    neutrons (and protons and neutrons can be seen as two different
+    isospin states of a generic nucleon, this is useful for example to
+    discuss the interior composition of neutron stars). In this case,
+    the distribution function that determines the occupation of quantum
+    states of energy between $\varepsilon\equiv\varepsilon(p)$ and $\varepsilon+d\varepsilon$ is the Fermi-Dirac
+    distribution:
+    
+    <div class="latex" id="org1394153">
+    \begin{equation}\label{eq:Fermi-Dirac}
+     f_{FD}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T - \eta)}+1} \le 1 \ \,
+    \end{equation}
+    
+    </div>
+    
+    where $\eta=\mu/k_{B}T$ is the "degeneracy parameter" dependent on the
+    *chemical potential &mu;*, that is how much energy you need to "spend" to
+    create a new particle in an available energy level (**N.B.:** do not
+    confuse this with the mean molecular weight which has the same
+    symbol, the chemical potential has the dimension of an energy, while
+    the mean molecular weight is a dimensionless number!) and the
+    temperature. The fact that this is &le; 1 is an expression of Pauli's
+    exclusion principle, each quantized energy state can be occupied by
+    at most one fermion.
+
+-   **Bosons** with integer spin, such as photons, or &alpha; particles. In this
+    case the relevant distribution is the Bose-Einstein's distribution:
+    
+    <div class="latex" id="orgdd5f01c">
+    \begin{equation}\label{eq:Bose-Einstein}
+     f_{BE}(\varepsilon) = \frac{1}{e^{(\varepsilon/k_{B}T-\eta)}-1} \ \,
+    \end{equation}
+    
+    </div>
+    
+    which can be &ge; 1, meaning more than one boson can occupy the same
+    energy level (e.g., in the extreme case of a Bose-Einstein
+    condensate all particles occupy the level with lowest $\varepsilon$ - this may
+    be relevant in the interior structure of neutron stars for example).
+
+The total number of particles with momentum between $p$ and $p+dp$ is
+thus given by $f(\varepsilon(p))g(p)dp$ for an appropriate choice of $f$
+depending on the particle considered ($f=f_\mathrm{FD}$ or
+$f=f_\mathrm{BE}$). To determine the chemical potential &mu; one can
+impose the normalization following from:
+
+<div class="latex" id="orgb70c327">
+\begin{equation}
+n = \int_{0}^{+\infty} f(\varepsilon(p))g(p)dp \ \ ,
+\end{equation}
+
+</div>
+
+that is integrating the phase space distribution in momentum one
+should find the spatial density $n$ of particles.
+
+Let's now consider a gas of electrons. These are the particles in the
+ionized gas of the star that will first start feeling QM effects,
+since $m_{e} \ll m_{ion}$ (in fact $m_{e} \simeq m_\mathrm{proton}/1836.15 \simeq
+m_\mathrm{proton}/2000$), cf. Eq. \ref{eq:momentum_ratios}.
+
+**N.B.:** In practice, the pressure provided by the *ions* never becomes
+affected by QM directly: because of the $m^{-3/2}$ term in the
+Maxwell-Boltzmann distribution, this would require densities so high
+that the ions would not exist as ions anymore. Instead the high
+density would allow for electron captures onto the protons of the
+ions turning them in neutrons ($e^{-} + p \rightarrow n + \nu_{e}$). As we will see this
+is what happens at the very end of the evolution of massive stars
+that end their life exploding and leaving a neutron-star: those
+electron capture reactions are where the neutrons come from! The
+pressure provided by the neutrons does depend on QM effects and it
+is what sustains the structure of the neutron stars!
+
+Because the pressure term from electrons (which in the ideal gas EOS
+is accounted for thanks to our definition of the mean molecular
+weight) changes because of QM effects first, let's now consider a gas
+made of electrons only. These particles have spin 1/2, thus they are
+fermions, and obey Eq. \ref{eq:Fermi-Dirac} with $q_{s} = 2$ (each
+quantum cell of the phase space 4&pi; p<sup>2</sup>dp dV can be occupied by 2
+electrons, one with spin up and one with spin down).
+
+
+<a id="org7c6fa16"></a>
+
+## Fully degenerate electron gas
+
+By definition, a fully degenerate gas is one where all the particles
+are in the lowest possible energy state, corresponding to the limit
+$T\rightarrow0$. Of course, if $T\equiv0$ there would be no cooling through
+radiation, the object would not be a *star* anymore (it would be if
+one wants a "black dwarf", a theoretical idea the Universe is too
+young to have produced, e.g., [Caplan 2020](https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.4357C/abstract)). What we really mean by
+taking the $T\rightarrow0$ limit is that the thermal energy of the particles
+is very small compared to the Fermi energy, i.e. the maximum energy
+level that particles occupy (assuming to set the ground-level to
+$\varepsilon=0$): $k_{B}T \ll \varepsilon_{F}$. In this limit *the thermal and
+mechanical properties of the gas decouple from each other*, and we
+can assume $T \simeq 0$ to discuss the mechanical properties, and
+consider $T$ only for the radiative properties.
+
+For fermions (like the electrons we are focusing on), this means that
+the electrons occupy a sphere in momentum space with a radius p<sub>F</sub>
+called the "Fermi" momentum:
+
+<div class="latex" id="org4d63f66">
+  \begin{equation}
+  g_{e}(p)dp = q_{s}\frac{4\pi p^{2}}{h^{3}}dp \equiv \frac{8\pi p^{2}}{h^{3}}dp \ \  \mathrm{for} \ \
+p\leq p_{F}  \ \  \mathrm{otherwise} \ \ 0 \ \ ,
+  \end{equation}
+
+</div>
+
+and we used q<sub>s</sub>=2 for electrons. To find the value of p<sub>F</sub> we can use
+the normalization coming from the total number density of electrons
+
+<div class="latex" id="orgfda6c3b">
+\begin{equation}
+n_{e} = \int_{0}^{+\infty} g_{e}(p)dp = \frac{8\pi}{3h^{3}}p_{F}^{3} \Rightarrow p_{F} = h\left(\frac{3}{8\pi}n_{e}\right)^{1/3} \ \ .
+\end{equation}
+
+</div>
+
+Therefore, the *Fermi momentum depends only on the density of
+electrons for a fully degenerate electron gas*.
+
+We can now calculate the pressure exactly like we did for the
+classical ideal gas (cf. Eq. 12 in [the Ideal gas section](notes-lecture-EOS1.md)), we just
+need the appropriate p&equiv; p(&epsilon;) relaton
+
+
+<a id="orgef29211"></a>
+
+### Non-relativistic electron gas
+
+In this case $\varepsilon = p^{2}/2m$ is the energy of the electrons (still ideal
+gas) and $v=p/m$, thus from the previous lecture on EOS we have:
+
+<div class="latex" id="org7e2863b">
+\begin{equation}
+P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}\frac{p}{m_{e}} p  dp = \frac{8\pi}{15 h^{3} m_{e}}p_{F}^{5} \equiv \frac{h^2}{20m_{e}}\left(\frac{3}{\pi}\right)^{2/3} n_{e}^{5/3} \Rightarrow P_{e} \propto \rho^{5/3}\ \ .
+\end{equation}
+
+</div>
+
+Note the functional form $P_{e}\equiv P_{e}(n_{e})$: it's a powerlaw, like we
+arbitrarily assumed would be a decent guess when discussing
+polytropes. *A fully degenerate classical electron gas has a
+polytropic EOS with exponent* $\Gamma=5/3$.
+
+**N.B.:** $n_{e} \propto \rho$ with the definition of the electrons mean
+molecular weight such that $n_{e} \mu_{e} m_{u} = \rho$.
+
+
+<a id="orgde4e980"></a>
+
+### Ultra-relativistic electron gas
+
+As the number density of electrons increases, $p_{F}$ increases, and
+thus at some point the $v=p/m$ we used above will not hold anymore,
+because the electrons become relativistic. In the extremely
+relativistic limit, we can assume $v=c$ (i.e. neglect the rest
+energy of the electrons in the $p(\varepsilon)$ relation), and then we lose
+one power of $p$ in the integral above. Thus, in the *fully
+degenerate ultra-relativistic gas, the EOS will again be a polytrope
+with exponent now* $\Gamma=4/3$.
+
+Specifically the calculation yields:
+
+<div class="latex" id="orgc0ad097">
+\begin{equation}
+P_{e} = \frac{1}{3}\int_{0}^{p_{F}} \frac{8\pi}{h^{3}}p^{2}c p  dp = \frac{hc}{8}\left(\frac{3}{\pi}\right)^{1/3} n_{e}^{4/3} \Rightarrow P_{e} \propto \rho^{4/3} \ \ .
+\end{equation}
+
+</div>
+
+In general, we should expect a **smooth** transition between these two
+polytopes as $n_{e}$ increases. Since the density in a star increases
+towards the center, we can expect this transition to occur as we
+move inwards in a star where these effects matter. In this case, we
+need to use the relativistic formula $p^{2} = \varepsilon^{2}-m_{e}c^{2}$ to solve the
+integral and obtain the pressure.
+
+One can estimate the density at the transition with the
+condition $p_{F} \simeq m_{e} c$:
+
+<div class="latex" id="org399174e">
+\begin{equation}
+ \rho_{NR \rightarrow UR} \simeq \mu_{e} m_{u} \frac{8\pi}{3} \left(\frac{m_{e}c}{h}\right)^{3} \ \ .
+\end{equation}
+
+</div>
+
+**N.B.:** the density around which we expect a transition from
+non-relativistic to ultra-relativistic gas only depends on $\mu_{e}$ and
+fundamental constants!
+
+
+<a id="org1463d94"></a>
+
+## Partial degeneracy
+
+The equations derived above are valid in the strict limit of $T=0$,
+necessary for **full** degeneracy. In reality it is sufficient to have
+$k_{B}T \ll \varepsilon_{F} = p_{F}^{2}/2m$ (which defines what is "cold" enough
+to get QM effects on the pressure contribution for non-relativistic
+electrons). This is equivalent to asking $\eta\gg 1$ with $\eta$ electron
+degeneracy parameter (cf. Eq. \ref{eq:Fermi-Dirac}).
+
+The transition between ideal gas and fully degenerate gas goes
+through partially degenerate gas, and in that case the degeneracy
+pressure is harder to calculate analytically, and one needs to
+calculate $P = 1/3 \times \int n(p)pvdp$ using $n(p) = g(p)f(\varepsilon(p))dp$ with
+the Fermi-Dirac distribution for $f$ (in the case of electrons).
+
+For $\eta \ll 1$ the Fermi-Dirac distribution can be Taylor expanded and
+one recovers the ideal gas equation of state.
+
+So, in summary, because electrons are Fermions that need to obey
+Pauli's principle at very low $T$ (comparing their kinetic energy to
+the Fermi energy) and/or very high $\rho$, they can exert a much larger
+pressure than predicted by the classical ideal gas. Moreover, in
+those situation, the pressure is a polytrope, independent of
+temperature T! The decoupling between mechanical (hydrostatic
+structure) and radiative (energy transport) properties of the star
+afforded by degeneracy of the gas greatly simplifies the problem.
+This also means the stars do not need to heat up anymore in order to
+sustain themselves against their own gravity (breaking the
+conclusion we obtained from the Virial theorem). This is the
+situation of a "white dwarf" (WD), which are the remnants for the
+vast majority of stars, including the Sun.
+
+These compact objects contract and cool until they fully crystallize
+(releasing further latent heat), becoming "planet-sized diamond-like
+structures"! In the homework you will also see how there is a
+maximum mass for a WD - the so-called Chandrasekhar mass, after the
+Nobel-prize winning discovery by Subrahmanyan Chandrasekhar.
+
+
+<a id="orgb8a309a"></a>
+
+## Radiation pressure
+
+In some stars, the radiation field is so strong that is has a
+non-negligible contribution to the pressure. The particles providing
+that pressure are photons, which are **bosons** with 2 possible
+polarization states, so $g_{s}= 2$ (using an analogy with classical
+electromagnetic wave language, this is because for a fixed
+propagation direction of a wave the electric field can still be in
+two directions, the two defining the plane orthogonal to the
+propagation direction - this can be formally demonstrated using
+relativistic quantum field theory).
+
+Moreover, the number of photons does not need to be conserved,
+radiative processes will destroy/create photons as needed to achieve
+equilibrium: there is no chemical potential to overcome, thus $\eta=0$.
+
+Finally, noting that the photons are ultra-relativistic by
+definition, we have $\varepsilon = pc = h\nu$, and the Bose-Einstein distribution
+in Eq. \ref{eq:Bose-Einstein} becomes the Black body distribution!
+We can then calculate the internal energy density of the photon gas
+as $u_{int} = a T^{4}$ with a the radiation constant:
+
+<div class="latex" id="org59f324a">
+\begin{equation}
+a = \frac{8\pi^{5} k_{B}^4}{15h^{3}c^{3}} = 7.56\times10^{-15} \mathrm{erg} \ \mathrm{cm}^{-3} \ \mathrm{K}^{-4} \ \ ,
+\end{equation}
+
+</div>
+
+which is closely related to the Stefan-Boltzmann constant $\sigma$: $a=4\sigma/c$.
+
+Relying again on the ultra-relativistic nature of photons, we know
+that $P=u_{int}/3$ and therefore the radiation pressure is:
+
+<div class="latex" id="orgee3d9da">
+\begin{equation}
+P_\mathrm{rad} =\frac{1}{3}aT^{4} \ \ .
+\end{equation}
+
+</div>
+
+
+<a id="org07956ac"></a>
+
+## Partial ionization effects
+
+-   **Q**: So far we have assumed full ionization of the gas. What do you
+    think may change if we account for partial ionization? And where may
+    that be important?
+
+*Ionization is the process of removal of an electron from an ion*, which
+can be **collisional** (e.g., molecules/atoms bumping into each other in
+the atmosphere charging a cloud and preparing it for lightning
+discharge) or **radiative** (e.g., photoionization in the photoelectric
+effect that won Einstein the Nobel prize).
+
+For an element with $Z$ electrons there are $Z+1$ possible ions, from
+the neutral atom to the fully stripped nucleus with no electrons
+attached to it. For historical reasons, these are often indicated with
+the element symbol followed by a roman number from I - for the neutral
+atom to $Z+1$ in roman numbers for the fully ionized ion, e.g., HII for
+fully ionized hydrogen (cf. [digression on spectra in the CMD/HRD
+lecture](notes-lecture-CMD-HRD.md)).
+
+So far in our discussion of the EOS, we have considered always this
+last case of full ionization. Since the atomic binding energies are of
+order of &sim;1-10 eV (think of the Rydberg, $\chi=13.6$ eV to strip Hydrogen
+of its electron from the fundamental state), that is 1 eV/$k_{B}$ &sim;
+10<sup>4</sup> $K$, and most of the stellar material is hotter than this, this
+was probably not a bad approximation: the (thermal) kinetic energy of
+the particles flying around in the stellar gas are much larger than
+what is needed to separate electrons and ions, so probably this will
+happen a lot.
+
+However, in the layers where $T$ decreases, we can have partial
+ionization, which *will change the number of particles per unit atomic
+mass*, so you can expect this to *impact the mean molecular weight &mu;*,
+and thus the pressure from the EOS (and we will see [later](./notes-lecture-ETransport.md) also the
+temperature gradient).
+
+By definition the mean molecular weight $\mu$ is such that $\rho =
+m_{u}\mu(n+n_{e})$. This is what we used in the ideal gas equation to get
+$P=\rho k_{B}T/(\mu m_{u})$ combining the electrons and ions pressure. Similarly we
+can define $\mu_{0}$ as the mean molecular weight per nucleus, and $\mu_{e}$ as the
+mean molecular weight per electron, and thus
+
+<div class="latex" id="org4d70859">
+\begin{equation}
+\rho = (n+n_{e})\mu m_{u}\equiv n\mu_{o}m_{u} \equiv n_{e}\mu_{e} m_{u} \ \ .
+\end{equation}
+
+</div>
+
+We can also define the number of free electrons per ion/atom $E=n_{e}/n$
+(where $n_{e}$ is the number density of electrons and $n$ the number
+density of massive ions regarless of their ionization state), and thus
+rewrite the above as
+
+<div class="latex" id="org6a559bf">
+\begin{equation}
+\mu = \frac{\rho}{m_{u}n}\frac{1}{1+E} \equiv \frac{\mu_{0}}{1+E} \equiv \mu_{e}\frac{E}{1+E} \ \ .
+\end{equation}
+
+</div>
+
+which gives the relation between the mean molecular weight(s) and the
+number of free electrons. We will see in a [later lecture](./notes-lecture-radTrans.md) how to
+calculate $E$ as a function of $T$, and $\rho$.
+
+
+<a id="orge19d0ed"></a>
+
+# Total pressure in a generic star
+
+Putting all things together:
+
+<div class="latex" id="org1cc9701">
+\begin{equation}
+P_\mathrm{tot} = P_\mathrm{gas} + P_\mathrm{rad} = \frac{\rho}{\mu m_{u}}k_{B}T +
+P_\mathrm{QM} + \frac{1}{3}aT^{4}  \ \ ,
+\end{equation}
+
+</div>
+
+where we have decomposed the gas pressure into a degeneracy term due
+to quantum effects and a classical term. $P_\mathrm{QM}$ then depends
+on whether the electron gas is non-relativistic, mildly relativistic,
+or ultra-relativistic, while ions do not contribute to $P_\mathrm{QM}$
+
+Note that in practice, stellar evolution code often rely on *tabulated*
+EOS, which account for many non-ideal effects that we have only
+briefly discussed here. EOS are ultimately one of the points of
+contact between stellar physics and atomic physics and statistical
+mechanics:
+
+![img](./images/EOS_blend_paxton18.png "Blend of tabulated EOS on the T(&rho;) plane used in MESA (Fig. 50 in [Paxton et al. 2018](https://ui.adsabs.harvard.edu/abs/2018ApJS..234...34P/abstract)), see also [Jermyn et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstract) for updates relevant to large portions of this plane. The blue and purple tracks correspond to evolved stellar models of the mass labeled.")
+
+A typical issue is how to obtain numerically good derivatives from
+tabulated EOS, especially at the boundaries between tables coming from
+different studies. These can often be a severe limiting factor in the
+numerical accuracy of stellar models, and this was one of the
+motivation for the development of a new EOS covering large portions of
+the T(&rho;) plane ([Jermyn et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ApJ...913...72J/abstract)) now used by default in MESA.
+
+
+<a id="org45c1794"></a>
+
+# Homework
+
+-   Using the virial theorem, discuss which pressure term is more
+    important in the total pressure as a function of the mass (and
+    radius) of stars.
+-   Derive an upper limit for the temperature T as a function of the
+    density &rho; for a star supported by fully degenerate
+    (non-relativistic) electrons, and plot this relation on a T(&rho;)
+    diagram. To explicit the relation between n<sub>e</sub> and &rho;, assume a
+    composition made of pure carbon (X<sub>i</sub> = 1 if carbon, 0 otherwise, Z<sub>i</sub> =
+    6, A<sub>i</sub> = 12). Any T much lower than this limit can be considered T&cong;0
+    for the purpose of the pressure calculation, but that still leaves a
+    large range of non-zero T from the radiative point of view!
+-   Using the EOS for non-relativistic degenerate gas (and the other
+    stellar equations you know), determine a mass-radius relation for
+    stars entirely supported by (non-relativistic) electron degeneracy.
+    This is a good approximation for a white dwarf, the end point of the
+    vast majority (>98%) of stars!
+-   Clayton's problem 2-59: Let's now consider the case where electrons
+    are are ultra-relativistic, show that the central pressure scales as
+    P<sub>center</sub> &cong; 1.244 &times; 10<sup>15</sup> (&rho;/&mu;<sub>e</sub>)<sup>4/3</sup> dynes cm<sup>-2</sup>. Consider
+    the case where the electrons are ultra-relativistic *throughout* the
+    star, then P&cong; P<sub>center</sub> *throughout* the star as well. Using the mass
+    continuity equation and hydrostatic equilibrium, show that this
+    implies that the only mass that the ultra-relativistic electron gas
+    can sustain is M<sub>Chandrasekhar</sub> = 5.80 M<sub>o</sub> &times; &mu;<sub>e</sub><sup>-2</sup> &cong;
+    1.44 M<sub>o</sub> for &mu;<sub>e</sub> &cong; 2 (note the &mu;<sub>e</sub><sup>-2</sup> dependence!). What
+    does this specific value of the mass (for a given composition, i.e.,
+    &mu;<sub>e</sub>) mean for stars supported by ultra-relativistic electron
+    degeneracy pressure? What equation of stellar structure (of the ones
+    we have seen so far) *cannot* be satisfied for larger values of the
+    mass?
+

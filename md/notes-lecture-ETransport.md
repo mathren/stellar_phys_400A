@@ -1,0 +1,631 @@
+
+# Table of Contents
+
+1.  [Energy transport in stars](#org594a212)
+    1.  [Summary of where we are](#org3e73a27)
+        1.  [Mass conservation:](#org5d58b2e)
+        2.  [Hydrostatic equilibrium:](#orgd844628)
+        3.  [Equation of state:](#orge584c3d)
+    2.  [Energy flow in stars](#org1ec42c6)
+    3.  [Diffusion processes](#org01d6db6)
+        1.  [Energy transport by radiative diffusion](#org6e1fa92)
+        2.  [Energy transport by conduction](#orga497d64)
+    4.  [Local energy conservation](#org69ae47e)
+2.  [Homework](#org7668767)
+    1.  [Eddington Luminosity](#orgab6063d)
+    2.  [Exercise 5.3 in Onno Pols' lecture notes](#org682ef40)
+
+**Materials**: Chapters 3 and 5 of Onno Pols' lecture notes, chapter 5 of
+Kippenhan & Weigert's book.
+
+
+<a id="org594a212"></a>
+
+# Energy transport in stars
+
+
+<a id="org3e73a27"></a>
+
+## Summary of where we are
+
+
+<a id="org5d58b2e"></a>
+
+### Mass conservation:
+
+<div class="latex" id="orgc7d0005">
+\begin{equation}\label{eq:mass_cont}
+\frac{dm}{dr} = 4\pi \rho r^{2} \ \ .
+\end{equation}
+
+</div>
+
+
+<a id="orgd844628"></a>
+
+### Hydrostatic equilibrium:
+
+<div class="latex" id="org5e97d17">
+\begin{equation}\label{eq:HSE}
+\frac{dP}{dr} = -\frac{Gm}{r^{2}}\rho \ \Leftrightarrow \ \frac{dP}{dm} = - \frac{Gm}{4\pi r^{4}} \ \ ,
+\end{equation}
+
+</div>
+
+where we use Eq. \ref{eq:mass_cont} to use a Lagrangian mass
+coordinate as independent functional variable.
+
+**N.B.:** This is the particular form that momentum conservation takes
+since we can assume accelerations are &sim;0 because stars do not evolve
+on timescales comparable to the dynamical timescale
+
+
+<a id="orge584c3d"></a>
+
+### Equation of state:
+
+<div class="latex" id="org1fd8ebe">
+\begin{equation}\label{eq:EOS}
+P \equiv P(\rho, \mu, T) = P_\mathrm{rad} + P_\mathrm{gas} = \frac{1}{3}aT^{4} + \frac{\rho}{\mu m_{u}}k_{B}T + P_\mathrm{QM}\ \ .
+\end{equation}
+
+</div>
+
+These three equations have as variables m &equiv; m(r) (or equivalently r&equiv;
+r(m)), P, &rho;, and T. By adding an EOS to relate P and &rho; (and the
+composition of the star which enters in the mean molecular weight &mu;),
+in the general case, we have also added a new variable T, so the
+system is not close again, and we need to look for one more equation
+to be able to solve it! In today's lecture we will actually derive
+two: energy transport and energy conservation. However, today for the
+former we will not cover yet all possible physical situations in
+stars.
+
+
+<a id="org1ec42c6"></a>
+
+## Energy flow in stars
+
+To find another equation, we can consider how energy flows in a star.
+We have already seen that the "surface" temperature (e.g., of the Sun),
+and the average temperature (estimated using the [virial theorem](./notes-lecture-VirTheo.md)) are
+*not* the same, so we know that the star is *not* in global thermal
+equilibrium. We also know, from similar arguments, that the average
+temperature is higher than the surface temperature, so there should be
+an energy flow from the interior outwards.
+
+This energy flow can occur in three forms in a star:
+
+1.  **Diffusion**: thermal energy can be moved by the random motion of
+    particles. This is often the dominant energy transport mechanism in
+    a star &#x2013; unless for some reason it is insufficient. The diffusion
+    of energy can be:
+    -   **Radiative**, if the particles carrying the energy through their
+        random motion are photons
+    -   **Conductive**: if it is the thermal motion of gas particles
+        (typically electrons, unless you are in a neutron star) that
+        carries the energy
+2.  **Convection**: in this case thermal energy is transported by bulk
+    motion of matter. This occurs as an instability if the other
+    means of energy transport are insufficient to carry the energy flux
+    required by the local stellar structure, and it will be the topic
+    of a [future lecture](./notes-lecture-convection.md).
+3.  **Neutrino losses**: except for collapsing iron cores and neutron
+    stars, the stellar gas is transparent to neutrinos. As soon as one
+    is produced, it can free stream out of the star carrying away
+    energy effectively instantaneously (or more precisely on a
+    timescale &sim; R/v<sub>&nu;</sub> &cong; R/c comparable to the light crossing time
+    if neutrinos are non interacting and we neglect their mass, so they
+    are ultra-relativistic particles with v<sub>&nu;</sub>&cong; c).
+
+The next *two* stellar structure equations to add to our system will
+come from combining all of these together and applying conservation of
+energy.
+
+
+<a id="org01d6db6"></a>
+
+## Diffusion processes
+
+In general, the "diffusion approximation" is useful to describe the
+net flux of "something" when the average path of the carrier of said
+"something" is small compared to the lengthscale over which the
+"something" is transported, that is the mean free path $\ell$ is much smaller
+than the size $L$ of the region $\ell \ll L$.
+
+In this approximation, the net flux of this "something" is related to
+the density of "something" by Fick's law:
+
+<div class="latex" id="org4432417">
+\begin{equation}\label{eq:diff}
+\mathbf{J} = - D\nabla n \ \ ,
+\end{equation}
+
+</div>
+
+where $\mathbf{J}$ is the flux (which is in general a vector
+quantity), $D$ is the so called "diffusion coefficient", and $\nabla n$ is
+the gradient of the volumetric density of the "something" we are
+considering. The negative sign appears because the flux is opposite to
+the gradient ("something" flows from where there is a lot to where
+there is less!). By dimensional analysis, regardless of what
+"something" is (and what are its dimensions), you can see that:
+
+-   [$J$] = [something]/(L<sup>2</sup>t) with L length dimension and t time;
+-   [$\nabla$] &equiv; [$d/dx$] = 1/L;
+-   [$n$] = [something]/L<sup>3</sup>
+
+Therefore, the diffusion coefficient has the dimensions of [$D$] =
+L<sup>2</sup>/t &equiv; v &times; L, so we can expect $D$ to be proportional to the average
+velocity of the "something" that is diffusing times the length scale
+for the motion of this something (which by hypothesis is small
+compared to the length scale over which we want to study the motion of
+this "something"). In fact this is almost all there is to know!
+
+To get the correct pre-factor, let's say "something" are particles
+moving in 3 dimensions and focus on one direction, say $z$. If all
+these particles have a mean free path $\ell$ and an average velocity $v$,
+then the number that crosses a given coordinate $z$ with a positive $\delta
+z$ as a function of time is:
+
+<div class="latex" id="orgbdb5a83">
+\begin{equation}
+\frac{dN}{dt}(z) =\frac{1}{2} n \frac{1}{3}v \ \ ,
+\end{equation}
+
+</div>
+
+where the first 1/2 factor comes from the fact that their motion is
+random, so half the particles have negative $\delta z$ and half have a
+positive one, and we just want to count the latter, and the factor of
+1/3 in front of their average velocity comes from the fact that the
+motion is isotropic (see [derivation of the pressure](notes-lecture-EOS1.md)).
+
+If there is a gradient $\partial n /\partial z$ of particles along the $z$ direction,
+the particles moving with positive $\delta z$  come from $n(z-\ell)$
+while those moving with the negative $\delta z$  come from $n(z+\ell)$, so the net
+flux across $z$ is
+
+<div class="latex" id="org70e59ee">
+\begin{equation}
+J = \frac{dN}{dt}(z-\ell) -\frac{dN}{dt}(z+\ell) = \frac{1}{6}v\left(n(z-\ell)-n(z+\ell)\right)\simeq\frac{1}{6}v\left(-2\ell\frac{\partial n}{\partial z}\right) = -\frac{1}{3}v\ell\frac{\partial n}{\partial z} \ \ ,
+\end{equation}
+
+</div>
+
+where the only approximation we use is a first order Taylor expansion
+of the density $n(z)$ assuming that the mean free path &ell; is small
+compared to the scale of interest! Eq. \ref{eq:diff} is the
+generalization in 3 dimensions of the above, where $\nabla = (\partial_{x}, \partial_{y},
+\partial_{z})$ for Cartesian coordinates, and $D=v\ell/3$.
+
+
+<a id="org6e1fa92"></a>
+
+### Energy transport by radiative diffusion
+
+We have already calculated that [mean free path for photons](notes-lecture-EOS1.md)
+$\ell_{\gamma}$ and estimated that it is very small compared to the typical
+size of stars (and the typical size of a resolution element in a
+numerical simulation of a star!). Therefore, we can treat the energy
+transport by photons in the diffusion approximation.
+
+**N.B.**: if the star were a perfect black body, there would not be any
+transport of energy by photons, because by definition the radiation
+field would be isotropic, and the gradient of photon energy density
+would be zero! In reality, we have already seen that stars are *not*
+black bodies at the surface (in the atmospheric layers where $\ell_{\gamma}$
+is not small) and neither they are in the interior because there is a
+small deviation from LTE of the order of $\ell_{\gamma} dT/dr\sim10^{-4}$ K.
+While this is a small enough deviation that we can assume LTE to write
+down an EOS, it is also big enough to introduce a non-negligible flux
+of energy in the stars!
+
+If the "something" that we are considering in our diffusion equation
+is energy, then in Eq. \ref{eq:diff} $J\rightarrow F_\mathrm{rad}$ is a energy flux of
+radiative energy, and $n\rightarrow u$ is the energy density. Moreover, in the
+diffusion coefficient $D$ the mean velocity of photons is $v\rightarrow c$, and we
+have already written $\ell_{\gamma} = 1/\kappa_\mathrm{rad}\rho$ as a function of $\rho$.
+
+**N.B.:** today we will introduce different kinds of opacity $\kappa$, $\kappa_\mathrm{rad}$ is
+the one impeding the diffusion of photons.
+
+Thus, the radiative diffusion equation is
+
+<div class="latex" id="org16a8205">
+\begin{equation}
+F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \ \ ,
+\end{equation}
+
+</div>
+
+where we use the spherical symmetry of the problem to explicit the
+gradient and turn it into a total derivative. The radiation energy
+density is $u=aT^{4}$. We can then explicit these into our equation
+obtaining:
+
+<div class="latex" id="org166f927">
+\begin{equation}
+F_\mathrm{rad} = -\frac{4ac}{3\rho} \frac{T^{3}}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ ,
+\end{equation}
+
+</div>
+
+which can be turned into an equation for the temperature gradient.
+This is a *local* quantity and it is valid in a region of the star where
+the dominant energy transport is radiative diffusion only:
+
+<div class="latex" id="orga83cd00">
+\begin{equation}
+\frac{dT}{dr} = -\frac{3}{4ac}\frac{\rho}{T^{3}}\kappa_\mathrm{rad} F_\mathrm{rad} \propto \kappa_\mathrm{rad} F_\mathrm{rad}.\ \ .
+\end{equation}
+
+</div>
+
+**In a radiative region the temperature is proportional to the opacity
+$\kappa_\mathrm{rad}$ times the radiative energy flux!**
+
+We can further rewrite the flux $F_\mathrm{rad} = L_\mathrm{rad}/(4\pi r^{2})$. This introduces
+the *local* luminosity $L_\mathrm{rad}\equiv L_\mathrm{rad}(r)$ which is the rate (that is
+per unit time) at which radiation transports energy through a surface
+of radius $r$ within the star (or in other words, the "power" that is
+in the photon field at the location r):
+
+<div class="latex" id="org60b95f8">
+\begin{equation}
+\frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa_\mathrm{rad}}{r^{2}}\frac{L_\mathrm{rad}}{T^{3}} \ \ .
+\end{equation}
+
+</div>
+
+This is, for the case of radiative energy transport only, the extra
+differential equation relating T and &rho;, but unfortunately it also
+brings in a new variable, the local radiative luminosity $L_\mathrm{rad}$.
+
+**N.B.:** If radiative energy transport is the **only** energy transport
+mechanism at radius $r$ (that is no convection, no neutrino emission
+and no electron conduction), then $L_\mathrm{rad}(r)\equiv L(r)$ where
+$L(r)$ is the *total* luminosity at that location in the star. This is
+in general not true because of the contribution by neutrinos and
+convection: $L(r) = L_\mathrm{rad} (r)+ L_\mathrm{cond} (r) + L_{\nu}
+(r)+L_\mathrm{conv}(r)$.
+
+**N.B.:** Yes, we are introducing yet two other variables, $L_\mathrm{rad}$ and
+$\kappa_\mathrm{rad}$ here. We will have to write an equation for the former, but
+fortunately for us $\kappa_\mathrm{rad}$ is determined by atomic and particle
+physics, as [we will see in the next lecture](notes-lecture-kappa.md). While this is an active
+topic of research (including classified research for military
+purposes&#x2026;), for stellar physics application we have lookup tables
+for $\kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,\rho)$, and thus we will not count it as a
+new variable after discussing the physics it represents.
+
+Because of the assumption underpinning the diffusion approximation,
+this is *not* the right equation whenever $\ell_{\gamma}$ is not negligible
+compared to the scale over which one wants to consider the gradient:
+in the stellar atmosphere we need a more detailed approach requiring
+to treat the radiative transfer.
+
+Now, before looking at the equation for $L_\mathrm{rad}$, it is useful to consider
+next the case where energy is carried not by photons, but by the local
+motion of particles, that is **conduction**.
+
+
+<a id="orga497d64"></a>
+
+### Energy transport by conduction
+
+Energy transport by diffusion, and especially conduction that is
+diffusion of energy through particle motion, is not limited to stars.
+For example, in a piece of metal left half in the Sun and half in the
+shade, the thermal motion of particles (atoms, electrons, ions)
+carries energy from the hotter parts to the colder ones, and the
+transfer occurs through collisions between the loose electrons in the
+metallic energy bands.
+
+Conduction, although always present, is important only in certain kind
+of stars. To demonstrate this, we can consider the diffusion
+coefficient $D\simeq v\ell/3$ and compare it to the radiative diffusion
+coefficient $D_\mathrm{rad} = c\ell_{\gamma}/3 =c/(3\kappa\rho)$. In the diffusion
+coefficient $D$, the velocity that appears is the thermal velocity of
+the particles ($v^{2}\simeq 2k_{B}T/m$ for a non-relativistic gas): at a
+given temperature $T$, the least massive particles are faster, and
+will contribute more to the conduction of thermal energy. In a star,
+this means the electrons are going to dominate conduction whenever
+there is some.
+
+The other thing to consider is the mean free path &ell;, but since the
+collisional (Coulomb-scattering) $\sigma \leq 10^{-18}$ cm<sup>2</sup>, the mean free path
+$\ell = 1/(n_{e}\sigma) \ll \ell_{\gamma}$ . Thus, since $v\le c$ and
+$\ell\ll\ell_{\gamma}$ for most stars energy conduction by particle (electron)
+collisions is sub-dominant compared to radiative energy.
+
+Things are different though for degenerate electron gas (so inside
+white dwarfs and neutron stars, but also evolved stellar cores that
+are dense enough for degeneracy to occur). In the case of degeneracy,
+the thermal velocities increase (up to $v \simeq c$ for an degenerate gas
+of ultra-relativistic electrons!), and the mean-free path for
+electron-electron scattering also increases, because for such a
+scattering to be possible the final state must be available for an
+electron to populate it, but in the case of (partial) degeneracy
+(most) states in the "Fermi sea", with $\varepsilon\le \varepsilon_\mathrm{Fermi}$ are **not**
+available.
+
+In general though, in (partially) degenerate layers of the star we
+cannot neglect conduction, and it can dominate over radiative
+diffusion even! To consider it, we can follow the same reasoning as
+above and write an equation for the conductive flux
+
+<div class="latex" id="orgf30548f">
+\begin{equation}
+F_\mathrm{cond} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{cond}\rho}\frac{d T}{dr} \ \ ,
+\end{equation}
+
+</div>
+
+where we are implicitly defining a "conductive opacity"
+$\kappa_\mathrm{cond}$ and assuming that the energy density of the gas is
+proportional to the temperature $T$ (not a big assumption, since we
+know we are very close to LTE, so we can define a local $T$). With
+this implicit definition of $\kappa_\mathrm{cond}$ then we can just sum the
+contribution to the energy flux from radiative diffusion and
+conduction: $F = F_\mathrm{rad} + F_\mathrm{cond}$ and
+
+<div class="latex" id="orge48ff72">
+\begin{equation}
+F = - \frac{1}{3}\frac{c}{\kappa\rho}\frac{d T}{dr} \ \ ,
+\end{equation}
+
+</div>
+
+where now
+
+<div class="latex" id="org2c36ea0">
+\begin{equation}\label{eq:kappas}
+\frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
+\end{equation}
+
+</div>
+
+In the absence of convection (which we will treat [later](https://www.as.arizona.edu/~mrenzo/materials/Convection.pdf)) and neutrinos
+(which leave the star instantaneously without further interaction,
+unless it's a neutron star), this $F_\mathrm{rad} + F_\mathrm{conv}$
+is the total energy flux.
+
+From Eq. \ref{eq:kappas} we can infer an interpretation of these
+radiative and conductive opacities, which is corroborating the
+definition of $\kappa$: the equation corresponds to the combination of two
+resistances in parallel! $\kappa_{i}$ is the "resistance" to the flow of
+energy carried by radiation ($i=\mathrm{rad}$) or particle collisions
+($i=\mathrm{cond}$). The lowest resistance allows for the largest
+energy flux, and the star will use that mechanism as the dominant
+energy transport.
+
+Moreover, since we have *defined* $\kappa_\mathrm{cond}$ so that the
+conductive flux has the same form as the radiative flux, we can (using
+Eq. \ref{eq:kappas} and $L(r) = L_\mathrm{rad} + L_\mathrm{cond}$)
+continue the analogy and write down:
+
+<div class="latex" id="orga815b35">
+\begin{equation}
+\frac{dT}{dr} = -\frac{3}{16 \pi ac}\frac{\rho\kappa}{r^{2}}\frac{L}{T^{3}} \ \ ,
+\end{equation}
+
+</div>
+
+which is the radiative+conductive energy transport equation that
+related $T$, $\rho$, and the new variable $L\equiv L(r)\equiv L(m)$ we introduced and
+depends on the opacity (radiative and conductive combined in parallel)
+$\kappa$, which we treat as a parameter dependent on atomic and condensed
+matter physics ($\kappa\equiv\kappa(T,\rho)$).
+
+**N.B.:** For conduction, we have considered the motion of electrons as
+the ions are "frozen in place" since $v_{e} \gg v_\mathrm{ions}$.
+However, this will quickly lead to a *local* charge imbalance! In stars
+where conduction is important (typically at least partially
+degenerate) there will be a small but non-zero electric field created
+by this charge imbalance that slows down the electrons, until their
+motion is such that there is a net transfer of their thermal energy
+without any net motion of electrons!
+
+
+<a id="org69ae47e"></a>
+
+## Local energy conservation
+
+Let's finally write an equation for the *local* luminosity in a star $L$
+that we have introduced above. Since the luminosity is just the local
+"power", it makes sense to look into the *local* energy conservation to
+derive such equation. For a unit mass, the "first law of
+thermodynamics" states that the change $d u$ in internal energy (the
+specific internal energy) is equal to the heat added/extracted $d q$
+plus the work done on the unit mass $Pd v$ with $v=1/\rho$ the specific
+volume:
+
+<div class="latex" id="org1d8f56c">
+\begin{equation}
+d u = d q + Pd v \equiv d q - \frac{P}{\rho^{2}}d\rho \ \ ,
+\end{equation}
+
+</div>
+
+where we express things as a function of the density &rho; which already
+appears in the other equations.
+
+-   **Q**: if we compress the gas ($d\rho > 0$ because $\rho$ increases), without
+    adding/extracting heat ($d q = 0$) what happens to the internal
+    energy?
+
+The heat term in a star can only be due to:
+
+-   energy generation by an internal source (nuclear fusion!), which can
+    release per unit mass and time energy equal to $\varepsilon_\mathrm{nuc}$ ([$\varepsilon_\mathrm{nuc}$] =[E]/([t][M])).
+-   energy loss by some particle escaping, this can be for example
+    neutrinos &nu;. Neutrinos in a star can come from nuclear reactions and
+    they effectively just reduce $\varepsilon_\mathrm{nuc} \rightarrow \varepsilon_\mathrm{nuc} -
+      \varepsilon_{\nu, \mathrm{nuc}}$, or they can come from so-called **cooling
+    processes**, for example $e^{-} +\gamma \rightarrow e^{-} + \nu + \bar{\nu}$,
+    which really decrease the energy by extracting internal energy,
+    since as soon as they are produced neutrinos will leave the star
+    with no further interaction (with the exception of neutron stars).
+    The neutrino energy cooling rate per unit mass is indicated by $\varepsilon_{\nu}$
+    and it has always a **negative** contribution to the heat (it's a loss
+    term for the star)
+-   energy can flow in and out from the boundary of a thin shell of
+    matter. Above, we have defined: $L = 4\pi r^{2} F$ (where now both $L$
+    and $F$ include the contribution from conduction and radiation).
+    Therefore, the energy per unit time coming from below is $L\equiv L(m)$
+    and the energy per unit time leaking from above is $L(m+dm)$, to
+    obtain the specific energy per unit mass we just divide by $dm$.
+
+Putting all these together we have, at a given mass location m
+
+<div class="latex" id="org35fc0a8">
+\begin{equation}
+dq(m) = \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt+(L(m)-L(m+dm))dt/dm \simeq \varepsilon_\mathrm{nuc}(m) dt -\varepsilon_{\nu}(m)dt-\frac{dL}{dm}dt \ \ .
+\end{equation}
+
+</div>
+
+Thus, substituting in the local energy conservation we obtain:
+
+<div class="latex" id="orgd4901ca">
+\begin{equation}
+\frac{dL}{dm} = \varepsilon_\mathrm{nuc}(m) -\varepsilon_{\nu}(m) - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} \ \ .
+\end{equation}
+
+</div>
+
+Often the last two terms are combined together to define:
+
+<div class="latex" id="orgbd91a6c">
+\begin{equation}
+\varepsilon_\mathrm{grav} = - \frac{du}{dt} +\frac{P}{\rho^{2}}\frac{d\rho}{dt} = -T\frac{ds}{dt} \ \ .
+\end{equation}
+
+</div>
+
+which being a term dependent on $dt$ it is usually small for a star in
+a static ($\partial_{t} \simeq 0$) configuration. However, a star may
+occasionally be out of thermal equilibrium ($du/dt \neq 0$) and/or
+expanding or contracting ($d\rho/dt\neq0$). This will change the internal
+state of the gas, and that is why it is often convenient to write
+things in terms of the (specific) entropy $s$. Moreover, since most
+often this occurs because of contraction/expansion of a star,
+historically this has been called $\varepsilon$ "grav", although it really has
+more to do with the internal energy of the gas. With this definition,
+the next equation of stellar structure becomes
+
+<div class="latex" id="org9dbfdf3">
+\begin{equation}
+\frac{dL}{dm} = \varepsilon_\mathrm{nuc} -\varepsilon_{\nu} + \varepsilon_\mathrm{grav} \ \ .
+\end{equation}
+
+</div>
+
+**N.B.:** In regions where no energy is produced ($\varepsilon_\mathrm{nuc} = 0$), there are no
+neutrino losses ($\varepsilon_{\nu}=0$) and in thermal equilibrium ($\varepsilon_\mathrm{grav} =
+T\partial s/\partial t = 0$), the luminosity is constant as one moves inward or
+outward in mass coordinate: $dL/dm = 0 \Rightarrow L = constant$.
+
+-   **Q**: can you think of a region of the Sun with constant $L(m)$?
+
+**N.B.:** Once again, we found another equation but it comes with new
+unknowns. $\varepsilon_\mathrm{grav}$ is fortunately only dependent on the thermodynamics
+of the gas, so with the EOS we can calculate that (the specific
+entropy is also a function of $\rho$ and $T$). The other two terms
+instead are input physics for the star. We will [later](https://www.as.arizona.edu/~mrenzo/materials/nuclear_reaction_rates.pdf) unpack more
+$\varepsilon_\mathrm{nuc}$ by discussing nuclear energy generation &#x2013; but
+ultimately it will depend on cross sections for nuclear interactions
+which in stellar physics are taken as known input physics (again
+coming often from military research). Similarly, $\varepsilon_{\nu}$ depends on
+neutrino physics and contains many neutrino loss terms. We will
+discuss also these a bit more later on, but effectively in stellar
+physics $\varepsilon_{\nu}$ is also a quantity that we assume to know as a function
+of $T$ and $\rho$, borrowing the work of neutrino and particle physicists.
+
+So, in total at this point, we have $\kappa$, $\varepsilon_{\nu}$,
+$\varepsilon_\mathrm{nuc}$ assumed to be known input physics, and we have an
+equation for the local conservation of energy, and the energy
+transport in the case of diffusion (mediated by photons or particles,
+i.e. conduction).
+
+We still need an equation for the convective energy transport, and
+while unpacking $\varepsilon_\mathrm{nuc}$ we will write a set of equations for
+the chemical evolution due to nuclear burning, but we are getting
+close!
+
+
+<a id="org7668767"></a>
+
+# Homework
+
+
+<a id="orgab6063d"></a>
+
+## Eddington Luminosity
+
+Consider an optically thick, hot, and stratified gas: this could be
+(some layers of) a star, or a sufficiently dense accretion or
+decretion flow to/from a compact object. Because of the assumption of
+optical thickness, we can assume that the layer is in LTE and the
+radiation field is well approximated by a black body. If the gas is
+sufficiently hot, radiation pressure is the dominant term
+($P_\mathrm{rad} \gg P_\mathrm{gas}$).
+
+1.  Write $dP_\mathrm{rad}/dr$ as a function of $L$, $\kappa$, and $\rho$ and
+    $r$ expressing $dT/dr$ assuming energy is transported throughout
+    our layer of gas by radiative diffusion.
+2.  Impose hydrostatic equilibrium for this gas, and derive the
+    functional form for the luminosity (call it $L_\mathrm{Edd}$)
+    required for radiation pressure in an optically thick gas to
+    balance out gravity.
+
+The expression that you found was first derived by [Arthur Eddington](https://en.wikipedia.org/wiki/Arthur_Eddington),
+assuming that $\kappa \equiv \kappa_{es} = 0.2(1+X)$ g cm<sup>-2</sup>. In this derivation you did
+not need to assume anything for $\kappa$: the expression you derived is
+sometimes referred to as "modified Eddington Luminosity". Because of
+its dependence on $\kappa$, which we will see can vary throughout the star,
+it can occasionally occur that $L_\mathrm{Edd} <L$: in this case
+radiative energy transport and hydrostatic equilibrium cannot be
+simultaneously satisfied - and this occurs in the envelope of massive
+stars for example. For an (optically thick) accretion flow, this
+luminosity corresponds to the limit when the in-falling material
+liberates gravitational potential in the form of heat to the point
+that the photons produced balance out the gravitational pull that
+brings in the in-falling material in the first place.
+
+**N.B.:** the only central hypothesis necessary to derive the Eddington
+luminosity here is that the photons are a black body, that is an
+optically thick environment is necessary.
+
+
+<a id="org682ef40"></a>
+
+## Exercise 5.3 in Onno Pols' lecture notes
+
+Without solving the stellar structure equations, we can already derive
+useful scaling relations. In this question you will use the equation
+for radiative energy transport with the equation for hydrostatic
+equilibrium to derive a scaling relation between the mass and the
+luminosity of a star.
+
+1.  Derive how the central temperature, $T_\mathrm{center}$, scales
+    with the total mass $M$, outer radius $R$, and luminosity $L$, for
+    a star in which the energy transport is by radiation. To do this,
+    use the stellar structure equation for the temperature gradient in
+    radiative equilibrium (**hint:** use the $dT/dr$ form).
+2.  Assume that $r \sim R$ and that the temperature is proportional to
+    $T_\mathrm{center}$, $L(m) \sim L$ and estimating $dT/dr ∼
+       −T_\mathrm{center} /R$.
+3.  Derive how $T_\mathrm{center}$ scales with $M$ and $R$, using the hydrostatic
+    equilibrium equation, and assuming that the ideal gas EOS holds.
+4.  Combine the results obtained in 1. and 2., to derive how $L$ scales
+    with $M$ and $R$ for a star whose energy transport is radiative throughout.
+
+You have arrived at a mass-luminosity relation *without assuming
+anything about how the energy is produced*, only about how it is
+transported (by radiation). This shows that the luminosity of a star
+is not determined by the rate of energy production in the centre, but
+by how fast it can be transported to the surface: **stars don't shine
+because they burn, conversely they burn because they shine!**
+

@@ -1,0 +1,611 @@
+
+# Table of Contents
+
+1.  [How can we study things that evolve too slow for us to see?](#org69e15a6)
+    1.  [Population studies](#org160ea3e)
+    2.  [Observational color-magnitude diagram](#org6134430)
+    3.  [Digression: Spectral types and the letters OBAFGKM(LTY)](#org71202eb)
+        1.  [A modern view on spectra](#org109910b)
+        2.  [Relation with colors](#org743d227)
+    4.  [Theoretical Hertzsprung-Russel diagram](#org1fe79d9)
+    5.  [Putting the two together](#org608cfa1)
+        1.  [Example: cluster with isochrone](#org1a2a7d6)
+        2.  [Example: 30 Doradus region](#orgdade579)
+2.  [Homework](#org6476b55)
+    1.  [Make your own CMD](#org7824dd4)
+        1.  [Aim](#org0041ee6)
+        2.  [Deliverables](#orgdf55024)
+        3.  [Instructions](#org34ef6fa)
+    2.  [Suggested](#org8d9b9e0)
+
+**Materials**: chapter 1 of Onno Pols' lecture notes, Sec. 30.2 of
+Kippehahn book, Sec. 8.2 of Ostie & Carroll book, [Russell 1914](https://ui.adsabs.harvard.edu/abs/1914PA.....22..331R)
+
+
+<a id="org69e15a6"></a>
+
+# How can we study things that evolve too slow for us to see?
+
+
+<a id="org160ea3e"></a>
+
+## Population studies
+
+We can look at large samples and try to infer lifetimes from how many
+individual stars we find in each subset of the population.
+
+This is like studying the life of trees not by sitting there and
+waiting for the seed to grow, but instead by looking at how many trees
+are in each stage of life in a forest.
+
+Classically, we divide stars in populations based on their chemical
+composition and dynamical status (w.r.t. the Galactic potential)
+
+-   **Population I**: these are relatively high metallicity (&cong; Z<sub>o</sub>&cong;
+    0.0146) stars in the galactic disk. They are all dynamically cold
+    (meaning their orbital velocity follows closely the Keplerian
+    rotation curve around the Galactic center, with very small
+    deviations from this). These are forming from gas enriched in
+    metals by previous generations of stars.
+-   **Population II**: these are typically stars in the Galactic halo with
+    lower metallicity, but higher dynamical temperature, meaning their
+    orbit are not following the Galactic disk Keplerian motion. In
+    fact, they are not in the Galactic disk by definition, but rather
+    form a quasi-spherical halo in the Galaxy.
+
+The distinction between these two population dates to [Baade 1944](https://ui.adsabs.harvard.edu/abs/1944ApJ...100..137B/abstract), and
+while it captures some key features of Galactic stellar populations
+and the terminology is still in use, it is often possible to be more
+precise. Within the Galaxy, it is more common to distinguish stellar
+populations based on their dynamical status (which correlates with how
+long they have orbited the Galaxy, and thus age) and the abundance of
+&alpha; elements relative to their iron content (so a more specific
+criterion).
+
+One term that instead is still widely present in the literature is:
+
+-   **Population III**: these are *hypothetical* stars that have not yet been
+    observed, formed by metal-free primordial gas composed only of
+    hydrogen and helium (and maybe traces of Li and Be) synthesized
+    during the Big Bang. These stars should exist, but so far they are
+    out of reach for our telescopes. *JWST* may be able to see the
+    integrated light of populations of these primordial stars in some
+    very high redshift young galaxy, or maybe their explosions. Strong
+    gravitational lensing may also serendipitously reveal these, but
+    the [record holder](https://ui.adsabs.harvard.edu/abs/2022ApJ...940L...1W/abstract) in distance has redshift z&cong;6.2 (still not high
+    enough for Pop III), and it is debated whether the signal is from
+    individual stars or aggregated light from multiple sources in a
+    cluster. "Third generation" gravitational-wave detectors (planned
+    for after LIGO/Virgo and LISA) will be able to detect the signals
+    from mergers of the compact object remnants of these stars up to
+    redshift &sim;20, well beyond the formation of the first stars.
+    
+    Because of the quasi-complete lack of metals, Pop III stars are
+    expected to **possibly be more massive** on average (so called
+    top-heavy initial mass function). Although they have not been
+    observed, these are still receiving much theoretical attention
+    because of their **potential role during the epoch of reionization**,
+    as **parents of the super-massive black holes** in the center of
+    Galaxies, and as the **stars that kick started the production of
+    chemical elements**.
+
+
+<a id="org6134430"></a>
+
+## Observational color-magnitude diagram
+
+One of the main tools used in stellar physics to study a "population"
+of stars (e.g., I and II defined above, or a group of stars selected
+because of some criterion, such as location in the sky or others) is
+the observational color-magnitude diagram (CMD), which is interpreted
+through the lens of theoretical Hertzsprung-Russell diagram (HRD).
+
+These two diagrams plot different, but related, quantities on the
+axes, and they are so complementary that sometimes the name are used
+interchangeably.
+
+![img](./images/Gaia_DR2_HRD_Gaia.png "*Gaia* [DR2](https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract) (second data release) color magnitude diagram, containing about ~1.3 billion Galactic stars. Only ~4.2 millions are plotted here (because of data quality cuts).")
+
+This is an example of an observational color-magnitude diagram from
+the second *Gaia* data release, *Gaia* DR2 in 2018. The bottom and left
+axis are the observational quantities (the CMD),
+while the top and right axis show corresponding theoretical quantities
+(the HRD).
+
+**N.B.:** *Gaia* is an ESA space mission measuring with great accuracy and
+precision the parallax and proper motion of >1 billion stars in the
+Galaxy. This is a very "classical" astrophysics task, but the
+precision and size of the datasets from this mission are unprecedented
+and are revolutionizing this field (see for example [El Badry 2024
+review](https://ui.adsabs.harvard.edu/abs/2024NewAR..9801694E/abstract)).
+
+The left y-axis is the **absolute** magnitude in the `G` band of the telescope on
+board of the *Gaia* space-craft.
+
+The bottom x-axis is the "color index", obtained as the difference in flux
+between two filters of the *Gaia* telescope `Bp-Rp`. Other color indexes
+can be as difference between the flux in different bands (i.e.,
+different photometric filters, e.g. B-V): we'll discuss why in a
+second.
+
+Each dot in this plot is a different star, but there are so many (&sim;1.8
+billions in *Gaia* DR2), that in the most crowded region what is plotted
+is proportional to the square root of the relative density of stars
+per unit "pixel" on this plot. So what we are looking at is a *"group
+picture" of many different stars, varying in age, composition,
+position in the galaxy*, etc.
+
+-   **Q**: where are the cool stars?
+-   **Q**: where are the bright stars?
+-   **Q**: where would the Sun be on this diagram? (**N.B.:** *Gaia*
+    does *not* look at the Sun, so it is actually not in this plot!) A
+    full list of the Sun's absolute and apparent magnitude in many
+    filters is available [here](https://mips.as.arizona.edu/~cnaw/sun.html).
+-   **Q**: Focusing on where most stars are, can you spot any trend?
+
+Even for such an inhomogeneous sample, the colors show that the vast
+majority of stars is sitting along a "line" on this diagram. Since a
+line is one dimensional, there should probably be **one** parameter that
+determines the position of the star on this diagram. This parameter is
+the total mass of the star (though this took several decades to be
+established, because it is not something easy to empirically
+measure, as we will see in the [next lecture](./notes-lecture-BIN.md)).
+
+To see this even more clearly, it may be useful to consider the CMD of
+selected group of stars, that we know to be related. The figure below
+shows the same dataset from *Gaia* DR2, but only for stars in two
+"clusters". This means that these stars have presumably the same age
+(within a few &sim; Myr possibly), and they formed from the same molecular
+cloud, that is they also all have the same composition. In this case
+the apparence of a very tight relation between apparent magnitude and
+color index is even more clear.
+
+![img](./images/MS_hayades_praesepe.png "*Gaia* [DR2](https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract) zoom-in on the  color magnitude diagram of two clusters of similar ages Hyades and Praesepe. When selecting only "related" stars, It is much more evident than most are along one line on this diagram (the so-called "Main sequence"), and that this line agrees fairly well across different clusters of similar ages. The few points offset by up to 0.75 mag above the main sequence are unresolved binaries where the light of two stars adds up in the signal.")
+
+There are also other sub-groups, like the "Giant Branch" and "White
+Dwarfs". We will encounter and explain those later on in the course,
+but basically these correspond to more "evolved" stars.
+
+From the density of stars we can also infer where on this diagram
+stars spend most of their time! The "main sequence" is surely much
+longer lasting than anything else. In fact this corresponds to &sim;90% of
+the lifetime of stars, for reason that we will explain when we touch
+upon nuclear burning. The other phases are much shorter, but stars
+still spend some time on the Giant Branch visibly, and then as White
+Dwarfs which are in reality "compact remnants" left behind by >95% of
+all stars.
+
+
+<a id="org71202eb"></a>
+
+## Digression: Spectral types and the letters OBAFGKM(LTY)
+
+To explain the physical meaning of the x axes (bottom, and top), we
+need to do a detour and talk about stellar spectra and spectral types.
+The latter are one of the many astronomical nomenclature quirks that
+exist only for historical reason. Astronomy is a very ancient science
+(it's needed to follow the passage of time and decide when planting
+things and how to navigate), but it remained separated from physics
+(i.e., trying to understand the functioning of the natural world) for
+a very long time, with the Aristotelian idea that the "sub-lunar"
+world and the super-lunar world were fundamentally different. This
+idea was progressively eroded with the "scientific revolution" of the
+16<sup>th</sup>-17<sup>th</sup> century, and finally astronomy and physics converged into
+**astrophysics** with two major breakthroughs:
+
+1.  Newton's gravitational law which unified the motion of free falling
+    things on Earth with the motion of satellites (Moon around the
+    Earth) and Planets
+2.  The spectroscopic observations of the Sun (and later other stars)
+    by Kirchhoff, Bunsen, and Fraunhofer which demonstrated that stars
+    are made "of the same stuff" that we find on Earth
+
+Here I want to focus on 2. A spectrum is what one obtains by taking a
+source of light and decomposing it in its various frequencies (e.g.,
+with a prism, or grating &#x2013; think [Pink Floyd's Dark side of the moon
+cover](https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon#/media/File:Dark_Side_of_the_Moon.png)).
+
+This can be done in any wavelength range, for example, X-ray
+spectroscopy is an important tool to study binaries with compact
+objects such as neutron stars and black holes. However, for most
+stars, since we observe them from ground-based observatories, what is
+available is the "optical" spectrum, that is a spectrum in the
+wavelength rage that can penetrate the Earth's atmosphere, roughly
+between &lambda;&cong;300-900 nm.
+
+Kirchhof and Bunsen realized that filtering (white) light through a
+rarefied gas before taking its spectrum would produce "absorption
+lines", i.e. there would be regions of wavelength where light was
+missing, and these could be used to identify which gas was filtering
+the light.
+
+![img](./images/solar-spectrum.jpg "Spectrum of the Sun from the /Fourier Transform Spectrometer at McMath-Pierce Solar Facility at the National Solar Observatory on Kitt Peak")
+
+Fraunhofer had already taken spectra of the Sun, and it was also
+exhibiting "absorption lines". This is because the light filtering out
+of the stellar atmosphere is blocked by something (typically these are
+ionic/atomic quantum mechanical transition, but this was *not* known
+when they were first observed). This demonstrated that the Sun was
+made of the same elements that are visible on Earth.
+
+At this point, people started to classify stars based on the
+qualitative morphology of their spectra (which lines are present,
+which are more dominant, etc.), and defining qualitative classes A, B,
+C,&#x2026;based on features such as the prominence of Balmer lines of
+Hydrogen.
+
+However, it was not yet known why different stars had different
+spectra and belong to a certain class. As the number of observations
+increased, the classes were reordered and merged, leaving the current
+ones listed above after the work by [Annie Jump Cannon](https://en.wikipedia.org/wiki/Annie_Jump_Cannon) together with
+other "Harvard computers", a group of mostly women who analyzed and
+made sense of stellar spectra in the Early 20<sup>th</sup> century.
+
+With the construction of the color-magnitude diagram it was realized
+that these qualitative spectral classes were mostly determined by
+temperature - from O for the hottest stars to M for the coolest (L and
+T are classes introduced later for are classes introduced later for
+Brown Dwarves). This is because the temperature of the gas determine
+the electron populations in each ion/atom in the stellar atmosphere
+and thus how many and which lines can be seen. This is how this
+OBAFGKM(LTY) order came to be.
+
+
+<a id="org109910b"></a>
+
+### A modern view on spectra
+
+The image above of the solar spectrum is pretty, but that is not how
+most astrophysicists look at spectra nowadays.
+
+At zeroth-order *approximation*, a star is a black-body with the
+characteristic spectrum, that is flux F<sub>&lambda;</sub> as a function of the
+wavelength &lambda; (or equivalently F<sub>&nu;</sub>&equiv; F<sub>&nu;</sub>(&nu;) with &nu; =
+c/&lambda; frequency), given by Planck's function:
+
+<div class="latex" id="orgefd5a2e">
+\begin{equation}
+F_{\lambda} d\lambda = \frac{2\pi
+hc^{2}}{\lambda^{5}}\frac{d\lambda}{e^{hc/\lambda k_{B} T} -1} \ \ ,
+\end{equation}
+
+</div>
+
+where k<sub>B</sub> is the Boltzmann constant, h is Planck's constant, c the
+speed of light, and the flux only depends on the temperature T. One
+can also rewrite this in terms of frequency using &nu; = c/&lambda; (we will
+also use the form as a function of &nu; later in the course). Integrating
+it across all wavelengths one obtain the total flux F &equiv; &int; F<sub>&lambda;</sub>
+d&lambda; = &sigma; T<sup>4</sup>, which is the so called *Stefan-Boltzmann law*.
+
+The temperature appearing here is by definition the "effective
+temperature", that is the temperature of an ideal black body producing
+the same Flux as the star. The black body spectrum produces the
+"continuum" of an observed spectrum, and can be thought of the
+spectrum of light coming from the outermost layer of the stellar
+interior (where the photons are equally like to move in any direction,
+as opposed to the stellar atmosphere, see below). In reality, T<sub>eff</sub> is
+an idealization, as should be clear from the definition: the stellar
+surface actually does not have a sharp cutoff with a well defined
+radius R and temperature T<sub>eff</sub>. Instead, as one moves outward in the
+stellar atmosphere, progressively the gas becomes transparent to
+different wavelength &lambda; of light: in reality there is a different
+radius for each wavelength at which one can observe a star: R &equiv; R(&lambda;).
+This is the topic of the stellar atmosphere, which determines the
+outer-boundary conditions we need to study the interior. Throughout
+the atmosphere, there will be a location where T = T<sub>eff</sub>, but there is
+nothing physically special occurring there! However, from the interior
+point-of-view, it is useful to determine at this idealized location
+the outer boundary. We can then specify there the outer boundary
+condition to solve the stellar structure equations, which you don't
+know yet &#x2013; but we will derive and write down during this course.
+
+![img](./images/Blackbody.png "Example of black-body spectrum. Credits: Rich Townsend.")
+
+Before the continuum produced by the last fully opaque layer of the
+star (the outermost layer of the "interior") reaches the telescope, it
+has to filter through the stellar atmosphere, which is by definition
+the region of the star where there is a net radial flux of photons (as
+opposed to the optically thick interior where the distribution of
+photons direction is isotropic). It is in this region that absorption
+lines can form. Then, there is another filter that matters: the Earth
+atmosphere. This can also introduce absorption lines (or even "bands"
+when the absorbers are molecules that have many roto-vibration levels
+close to each other in energy/frequency/wavelength).
+
+![img](./images/sun-SED.jpg "Schematic representation of the Sun spectral energy distribution from [Wang et al. 2023](https://www.sciencedirect.com/science/article/pii/B9780443187865000020?via%3Dihub).")
+
+Typically, data reduction pipelines are used to remove the "black body
+slope" due to the underlying continuum and focus only on the
+absorption lines. This is usually referred to as "continuum
+normalization". An example of the final product for the Sun, with some
+of the ions responsible for the visible absorption lines annotated is
+
+![img](./images/sun-normalized.png "Example of reduced (portion of the) solar spectrum modified from [Vejar et al. 2021](https://ui.adsabs.harvard.edu/abs/2021ApJ...919..100V/abstract)")
+
+Note the wavelength ranges, they are varying widely from plot to plot.
+This is partly because different wavelength regions require different
+instruments and data reduction techniques (from &gamma; rays to radio even
+the typical units use vary depending on historic and/or engineering
+choices).
+
+**N.B.:** for an element `X` (e.g., H, He, Li, &#x2026;,C, N, Si, Fe, F, &#x2026;) the
+neutral ion is usually indicated with `XI` (so HI is hydrogen with one
+electron bound, HeI is a helium atom with its two electrons), the
+first ionization stage - meaning one electron is missing -  is
+indicated with `XII` (e.g., HII is hydrogen once ionized, that is a
+proton without an electron, HeII is a helium ion with two protons, two
+neutrons and one electron only, etc&#x2026;), and so forth. This is the
+convention used in the figure above, where SiI is neutral silicon, FeI
+is neutral iron, FeII is once ionized iron, etc.
+
+-   **Q**: Do the units in all these plots match?
+
+
+<a id="org743d227"></a>
+
+### Relation with colors
+
+On the *Gaia* color-magnitude diagram, the color index and both the spectral
+types and effective temperature are all on the x-axis (bottom and top,
+respectively). How are these related?
+
+Depending on T<sub>eff</sub>, the maximum flux of a black body (i.e., of the
+"continuum") shifts in wavelength, something known as "Wien's
+displacement law": &lambda;<sub>max</sub>&prop; 1/T, the higher the temperature the
+shorter the wavelength of the maximum flux. This in turn means that
+the change in T<sub>eff</sub> translates in a change in the "color" of the star,
+because the wavelengths around &lambda;<sub>max</sub> will dominate the perception of
+the star (originally for naked eye observations, but this can be
+generalized).
+
+This can further be formalized by defining a "color index" as the
+difference in flux between different photometric bands. Each band has
+a transmission function T(&lambda;) which is non-zero over a certain
+wavelength range, for example these are the bands from *Gaia*'s
+telescope used to make the diagram above:
+
+![img](./images/GaiaEDR3_ExtPhotSystem.png "The coloured lines in the figure show the transmission function T(&lambda;) of the G, G<sub>BP</sub> and G<sub>RP</sub> passbands (green: G; blue: G<sub>BP</sub>; red: G<sub>RP</sub>), defining the Gaia EDR3 photometric system. The thin, grey lines show the nominal, pre-launch passbands published in Jordi et al. 2010, used for Gaia DR1. Credits: ESA/Gaia/DPAC, P. Montegriffo, F. De Angeli, M. Bellazzini, E. Pancino, C. Cacciari, D. W. Evans, and CU5/PhotPipe team.")
+
+Thus, each band probes a different wavelength region, and the
+difference between two bands probes the slope of the continuum, which
+depends only on the effective temperature, since by definition the
+shape of the specific flux (per unit wavelength) F<sub>&lambda;</sub> is a black
+body distribution.
+
+
+<a id="org1fe79d9"></a>
+
+## Theoretical Hertzsprung-Russel diagram
+
+Let's now get back to the main topic of the lecture, CMD and HRD. The
+*Gaia* color-magnitude diagram on the top shows on the right y-axis and
+top x-axis the quantities that typically stellar modelers use,
+effective temperature (T<sub>eff</sub>) on the x-axis and luminosity L on the
+y-axis.
+
+The effective temperature is defined as the temperature of a
+black-body with the same energy flux as the surface of the star.
+
+By dimensional analysis the integrated flux F=&int; F<sub>&lambda;</sub> d&lambda; has
+units of energy per unit time and area: [E]/[t][A]. We also know that
+the stellar luminosity is the amount of energy lost (to photons) per
+unit time by the stellar surface. Assuming that the star is a sphere
+(a good approximation since these are self-gravitating objects and
+gravity is a central force), we can thus write F = L/(stellar surface)
+= L/(4&pi; R<sup>2</sup>) and putting this together with Stefan-Boltzmann's law we
+finally arrive at L=4&pi; R<sup>2</sup> &sigma; T<sub>eff</sub><sup>4</sup>, with R the radius of the star,
+&sigma;=2&pi;<sup>5</sup> k<sub>B</sub><sup>4</sup>/15c<sup>2</sup>h<sup>3</sup> Stefan-Boltzmann constant.
+
+We can then use these same axes to plot not a collection of different
+stars at a given point in time, like in the plot from *Gaia* above, but
+instead if we have a model of how a star evolves (which is what we
+want to develop in this course), then we can plot one star as a
+function of time! This is necessarily a "theoretical" plot: stellar
+timescales are typically so long, that one human life is not
+sufficient to observe a star moving through such a plot.
+
+The following is an example of HR diagram for a 15M<sub>o</sub> star from
+zero age main sequence (roughly when most of its luminosity is
+provided by Hydrogen burning in the core) to the onset of
+core-collapse and thus the point where it will go supernova.
+
+![img](./images/15Msun_thesis.png "Hertzsprung-Russell diagram of a 15M<sub>o</sub> stellar model from [Renzo 2015](https://www.as.arizona.edu/\simmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf). Note that this is the evolution of **one** star throughout time!")
+
+While all these wiggles may seem arbitrary, one of the objectives of
+this course is for you to be able to understand and interpret all of
+these, and possibly even produce your own models. Let's not worry too
+much about them now.
+
+-   **Q**: on this diagram, how does a line for stars at constant radius look like?
+
+
+<a id="org608cfa1"></a>
+
+## Putting the two together
+
+We have effectively introduced two types of related diagram:
+
+-   Color-magnitude diagram &sim; a "family picture" at a given time of
+    many different stars;
+-   Theoretical HR diagram &sim; a "movie" of the life of one star (or possibly
+    few) as it evolves across time.
+
+The important point here is that we can put together on the same (or
+tightly related) axes information for an observed population of stars
+(e.g., the *Gaia* CMD above) and for a theoretical model of individual
+stars (e.g., the Hertzsprung-Russel evolutionary diagram here). This
+mixes two ontologically different elements (observations and models),
+but provides a powerful tool to interpret the observations. By
+comparing theoretical tracks from computer-simulated stellar models
+and observed samples one can infer the physical properties of
+the observed stars and the processes determining them.
+
+
+<a id="org1a2a7d6"></a>
+
+### Example: cluster with isochrone
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/PsS80huL47c?si=YskiNYKgn5wS5NN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+This video shows how *HST* observations of the Globular cluster &Omega;
+Centauri can be sorted in color and magnitude to create&#x2026;a
+color-magnitude diagram, where all the stars end up along an
+isochrone (credits NASA/ESA, J. Anderson, R. van der Marel, G. Bacon, M.
+Estacion, STScI).
+
+An **isochrone** (from iso = "same" + chronos = "time") is the locus of
+points occupied by a population of different stars at a given time.
+Typically these are used in analyzing clusters, which are in first
+approximation co-eval population of stars with the same composition.
+Fitting theoretical isochrones (obtained combining many stellar
+models of individual stars) is one of the ways in which one can
+determine the age of a cluster.
+
+Note that in the first color-magnitude diagram shown above from *Gaia*
+DR2 there are no isochrones: that diagram represents all stars
+observed across the Galaxy in *Gaia* DR2, they have very different ages
+from each other, and that's why isochrones there would not be very
+informative.
+
+Typically isochrones are used on the color-magnitude diagram, but
+nothing forbids one to make isochrones on other planes.
+
+![img](./images/Wang_NGC1818.png "Example of isochrone fitting with different stellar models for *HST* observations of the cluster NGC1818 from [Wang et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...670A..43W/abstract)")
+
+
+<a id="orgdade579"></a>
+
+### Example: 30 Doradus region
+
+The 30 Doradus region (a.k.a. Tarantula Nebula) is a bright massive
+star forming region in the LMC that contains &sim;1000 massive stars. This
+makes it a unique "laboratory" for massive stellar evolution - many of
+those stars were not around when dinosaurs were roaming the Earth!
+
+![img](./images/JWST_30Dor_R136.jpg "*JWST* image of the cluster R136 in the core of 30 Doradus")
+
+![img](./images/tarantula2_hst_1280.jpg "Broader image of the whole 30Dor nebula. Note the different orientation from above, the multiple clusters of stars.")
+
+This below is an HR diagram of this region excluding the central
+cluster R136 (which is too crowded for doing clean observations from
+the ground, but can be dissected from space with, for example, *HST* see
+e.g., [Brands et al. 2022](https://ui.adsabs.harvard.edu/abs/2022A%26A...663A..36B/abstract) and references therein).
+
+![img](./images/30Dor_Schneider30_HRD.png "Color-magnitude diagram of the 30 Doradus region in the LMC overlayed with theoretical stellar tracks (solid black lines), and isochrones obtained sampling the theoretical tracks at fixed times (dashed black lines) from [Schneider et al. 2018](https://www.aanda.org/10.1051/0004-6361/201833433)")
+
+This is not a region where all the stars have the same age
+necessarily, hence the wider distribution of stars on the HRD.
+
+
+<a id="org6476b55"></a>
+
+# Homework
+
+
+<a id="org7824dd4"></a>
+
+## Make your own CMD
+
+
+<a id="org0041ee6"></a>
+
+### Aim
+
+Make your own color-magnitude diagram of a selected group of stars.
+This is mainly a data-visualization exercise, so try to make your
+diagram as informative and useful as possible. Think of a
+publication-quality plot (think of the plots shown in class, search in
+the literature!), you want it to be good looking for people to want to
+use it in their slides, dense in information, and the info should be
+layered (the most important things should be more evident, and
+secondary, tertiary, etc. information should be progressively less
+prominent). You will also need to write a brief paragraph of
+description of what is plotted, including the source of data, and the
+interpretation.
+
+You will be using real bleeding edge data from the *Gaia* mission and
+widely used stellar models from [MIST](https://waps.cfa.harvard.edu/MIST/). MIST stands for "MESA Isochrones
+and Stellar Tracks": those are models computed with the same code that
+is under the hood in `MESA-web` (although the configuration of the code
+is most likely not the same): once again, you are going to be using
+real tools used by researcher in the field! Challenges encountered in
+this exercise are the kind researchers face in their everyday life!
+
+**N.B.:** If you identify a problem (e.g., with the data, or the plotting)
+and cannot find a fix for it, it is ok to describe the problem in your
+text for the purpose of this exercise.
+
+
+<a id="orgdf55024"></a>
+
+### Deliverables
+
+-   Color-magnitude diagram/Hertzsprung-Russell diagram.
+-   One paragraph of description (i.e., I want you to *interpret* your
+    plot, not just make it!). Make sure to include the source of the
+    data, what one should see in the plot, and what it means. Take
+    care in distinguishing what is observational data what is
+    theoretical modeling.
+-   Script to reproduce the plot (I will not run the script, but you
+    should make it an habit to "show your code" - it's only science if
+    it is reproducible!). If your script has dependencies on other
+    files you wrote, Iwant those too, but mark *clearly* which file is
+    the main one producing the script.
+
+
+<a id="org34ef6fa"></a>
+
+### Instructions
+
+You will use the latest data release from ESA's *Gaia* mission, you will
+be using a bleeding-edge dataset! These are publicly available in the
+[Gaia archive](https://gea.esac.esa.int/archive/) or any of the [partner data centers](https://www.cosmos.esa.int/web/gaia/data-access#PartnerDataCentres).
+
+-   Skim the *Gaia* [DR2](https://ui.adsabs.harvard.edu/abs/2018A%26A...616A..10G/abstract) paper on Hertzsprung-Russel diagram: your aim is
+    not to understand every detail, but get an idea of how these
+    diagrams are constructed from the data and how they can be used as
+    tools for stellar physics.
+-   Go to <https://gea.esac.esa.int/archive/> and select the "Search tab"
+-   Select the *Gaia* query you want to make. Feel free to experiment,
+    but keep in mind that you will need to briefly explain what it is
+    you plot. **Hint 1**: if you are having troubles selecting stars to
+    plot based on some (astro)-physical criterion, you can rely on the
+    *Gaia* Catalog of Nearby Stars to plot all the stars within 100pc
+    from the Sun described in [this paper](https://www.aanda.org/articles/aa/full_html/2021/05/aa39498-20/aa39498-20.html). The catalog is available for
+    download from [here](https://cdsarc.cds.unistra.fr/ftp/J/A+A/649/A6/) (see the [ReadMe](https://cdsarc.cds.unistra.fr/ftp/J/A+A/649/A6/ReadMe) for the column headers, you
+    probably want to download and plot [table1c.csv](https://cdsarc.cds.unistra.fr/ftp/J/A+A/649/A6/table1c.csv)). **Hint 2**: you can
+    find in papers the queries of the *Gaia* database for specific
+    clusters! For example the cluster NGC6231 can be found using the
+    appendix A of [this paper](https://ui.adsabs.harvard.edu/abs/2021A%26A...655A..31V/abstract).
+-   Download and, if needed, clean the data (for example removing
+    stars that are not part of a cluster based on parallax cuts). Make
+    sure you start with a manageable amount &#x2013; the full catalog is
+    billions of stars, you most likely don't want that.
+-   Plot the color-magnitude diagram (suggestion: G-band magnitude on
+    the y-axis, BP-RP color on the x-axis, like the plot shown in
+    class). **Hint:** be careful whether you have the **absolute** or the
+    **relative** magnitude in the data you downloaded, and do the
+    appropriate conversion
+-   Skim [Choi et al. 2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...823..102C/abstract) describing the MIST project (it's ok if you
+    don't understand everything, you will have a much better
+    understanding by the end of the semester!).
+-   Use the [MIST web interpolator](https://waps.cfa.harvard.edu/MIST/) to over-plot isochrones on your
+    plot. Make sure you obtain and plot files with the correct
+    photometry for comparison with *Gaia data.* Note that the file you
+    can download has extension `*.iso`, but it is *not* and `iso` image
+    file, just plain text that you can load and plot.
+-   **Optional** Use the [MIST web interpolator](https://waps.cfa.harvard.edu/MIST/) to over-plot evolutionary
+    tracks.
+-   Make sure to describe what you learn from comparing the model
+    tracks with the observations plotted. Do they match? Do they not?
+    If so, can you speculate on why?
+
+
+<a id="org8d9b9e0"></a>
+
+## Suggested
+
+To follow the next lecture, it will be helpful for you to revise
+Kepler's laws, orbital, and celestial mechanics.
+

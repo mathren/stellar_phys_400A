@@ -1,0 +1,734 @@
+
+# Table of Contents
+
+1.  [Photons, neutrinos, and gravitational-wave astronomy](#orgf8fdd3a)
+2.  [GR and GW basics](#org4b933b8)
+    1.  [Sources of GWs](#orgc30dc53)
+    2.  [Indirect detection of GWs](#orga94409e)
+    3.  [Minimum orbital separation for significant GW emission](#orgc216156)
+3.  [Direct detection](#orgbd8af7e)
+4.  [The problem: how do compact objects get so close to each other?](#orgfc9de52)
+    1.  [Isolated evolution channels](#org3df8c4a)
+    2.  [Dynamical channels](#orgeded1c5)
+5.  [The present and future of GW astronomy](#org7e9c8ab)
+    1.  [Ground-based detectors](#org0497a9b)
+    2.  [Space-based detectors](#orgb4b5bc2)
+    3.  [Galaxy-wide detectors: Pulsar Timing Arrays](#org9442e87)
+    4.  [The future is <del>bright</del> loud](#org6c29da6)
+
+**Materials:** Chapter 15 in Tauris & Van den Heuvel 2023 book, [Schutz
+1984](https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract), Landau & Lifschitz vol. 2, [LVK Collaboration 2017](https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209), [Chen et al.
+2017](https://www.sciencedirect.com/science/article/pii/S057790731630572X), [Astrobites post on GW](https://astrobites.org/2023/11/08/guide-to-gravitational-waves/) (and references therein!).
+
+
+<a id="orgf8fdd3a"></a>
+
+# Photons, neutrinos, and gravitational-wave astronomy
+
+Astronomy since its inception lost in history is based on observations
+of (visible) light from sources in the Sky. As mentioned in [at the
+beginning](./notes-lecture-CMD-HRD.md), between the 17<sup>th</sup> and 19<sup>th</sup> century astronomy was unified
+with physics (universal law of gravitation and interpretation of
+spectra). In the 20<sup>th</sup> century, the wavelength range accessible to
+telescopes greatly increased (from high-energy &gamma;-rays to long radio
+wavelengths), making astronomy a *multi-wavelength* science.
+
+With the detection of neutrinos (first solar, then from SN1987A, and
+most recently very high-energy neutrinos), astronomy became
+"multi-messenger" (photons+neutrinos), a buzz word that is highly used
+presently.
+
+The addition of gravitational waves (GW) adds a completely new way to
+study astrophysical sources, probing optically thick and thus
+inaccessible regions, and regimes where gravity is *strong* (i.e., a
+full general relativistic treatment of the interaction of matter with
+space-time becomes necessary).
+
+Because the wavelength range for GWs (which are *not* EM waves nor sound
+waves!) accessible to presently available ground-base detectors such
+as LIGO/Virgo/Kagra is in the 10-1000Hz range &#x2013; corresponding roughly
+to the auditory range for typical human hears, it is often
+metaphorically said that GWs allow us to "hear" the Universe. However,
+this metafore is bound to become obsolete as multi-wavelength GW
+observations become available (e.g., from "pulsar timing arrays" and
+space-based GW observatories).
+
+**Disclaimer:** to give a complete overview of GW physics we would need to
+have a full course of general relativity (GR) first, just as a start. I
+will not attempt to be complete or exhaustive here, but just give
+some elements necessary to understand the astrophysical problem of the
+formation of (stellar-mass) GW sources for ground and space-based detectors.
+
+
+<a id="org4b933b8"></a>
+
+# GR and GW basics
+
+General relativity is a *geometric* theory of gravity that treats
+space-time as *dynamical* entity described by a tensor, the metric
+$g_{\mu\nu}$. The dynamics of this entity is dictated by the distribution
+of mass (or better energy density) within it, which determines the
+curvature of space time. In turn, that curvature determines the
+*geodesics* that the energy density will follow in absence of other
+(non-gravitational) forces.
+
+This is formally described by Einstein's field equation:
+
+<div class="latex" id="org33aef5b">
+\begin{equation}\label{eq:EFE}
+G_{\mu\nu} + \Lambda g_{\mu\nu} = T_{\mu\nu} \ \ ,
+\end{equation}
+
+</div>
+
+where $g_{\mu\nu}$ is the a priori unknown metric that acts as the
+functional variable of this equation, $T_{\mu\nu}$ is the stress-energy
+tensor that describes the distribution of matter/energy that shapes
+space-time (i.e., the source term which determines $g_{\mu\nu}$), and
+$G_{\mu\nu}=R_{\mu\nu} - 0.5Rg_{\mu\nu}$ is Einstein's tensor ($R=R^{\mu}_{\mu}$ is
+the trace of the Ricci tensor $R_{\mu\nu}$ which describes how different
+from flat is the space-time described by $g_{\mu\nu}$ and it is a
+function of $g_{\mu\nu}$ itself). The indexes $\mu$ and $\nu=0,1,2,3$
+span the four space-time dimensions (but gravity can "mingle" these).
+Eq. \ref{eq:EFE} is the one that describes simultaneously how matter
+(represented by the stress-energy tensor $T_{\mu\nu}$) "bends" space-time
+(represented by the metric tensor $g_{\mu\nu}$) and viceversa how the
+structure of space-time shapes the motion of matter along the
+geodesics defined by the curvature of space-time (see any textbook on
+general relativity for more information).
+
+The fact that there is a finite speed $c$ for the propagation of
+interaction fields (including space-time itself) allows for the
+existence of *gravitational* fields unbound from matter. An oscillating
+unbound gravitational field is by definition a gravitational wave.
+
+GWs, as any *wave*, are the solution of a linear perturbation on a
+state. In the GW case, the state is the flat space-time metric
+$g_{\mu\nu}$ describing space-time far away from any mass, and the
+perturbation is often indicated with $h_{\mu\nu}$. Say that we know a
+solution $g_{\mu\nu}$ (e.g., $g_{\mu\nu} = \eta_{\mu\nu} = \mathrm{diag}(1, -1,
+-1, -1)$ Minkowski's metric describing a flat space-time), we can
+apply a small perturbation to it substituting $g_{\mu\nu}\rightarrow
+g_{\mu\nu} + h_{\mu\nu}$. Keeping only terms linear in $h_{\mu\nu}$ (which is
+our new functional variable) we can rewrite Eq. \ref{eq:EFE} as:
+
+<div class="latex" id="orge849847">
+\begin{equation}\label{eq:GW_wave}
+\left( \nabla^{2} - \frac{\partial^{2}}{c\partial t^{2}}\right) h_{\mu\nu} \propto T_{\mu\nu} \ \ .
+\end{equation}
+
+</div>
+
+which is a wave equation in three dimensions for $h_{\mu\nu}$ with speed
+of propagation $c$, source term proportional to $T_{\mu\nu}$. In vacuum
+$T_{\mu\nu}=0$, and consequently $h_{\mu\nu}$ admits oscillating solutions
+$h_{\mu\nu} = A_{\mu\nu}\exp(i k_{\alpha}x^{\alpha})$! These are the "ripple in
+space-time" (i.e., in the metric tensor describing the properties of
+space-time in general relativity) as GWs are often described.
+
+
+<a id="orgc30dc53"></a>
+
+## Sources of GWs
+
+Before narrowing down what could be (mathematically and
+astrophysically) the sources of GWs, let's consider when are GR
+effects most relevant? A typical quantity to look at the so-called
+"compactness" $GM/Rc^{2} \equiv M/R$ with $M$ mass of a source and $R$ its linear
+dimension. Note that in natural units ($G=c=1$ typically used to
+simplify the formalism in GR), this is a dimensionless number.
+
+For low values of $M/R$, General Relativity reduces to Newtonian
+gravity &#x2013; as expected &#x2013; and in Newtonian gravity the gravitational
+field is fixed and any change propagates instantly (at infinite
+velocity): there are no gravitational waves.
+
+**N.B.:** Just introducing the postulate that "gravity" has a finite speed
+of propagation in Newtonian physics, one can build a lot of intuition
+and quantitative results correct to order of magnitude for GW physics,
+see [Schutz 1984](https://ui.adsabs.harvard.edu/abs/1984AmJPh..52..412S/abstract) and  [LVK Collaboration 2017](https://onlinelibrary.wiley.com/doi/full/10.1002/andp.201600209).
+
+For general relativity effects to be important, $M/R$ needs to be
+"large": either extremely large masses regardless of the scale (see
+the very first ideas of what today we call a black hole from [Michell
+1784](https://ui.adsabs.harvard.edu/abs/1784RSPT...74...35M/abstract) and [Laplace 1799](https://ui.adsabs.harvard.edu/abs/1799AllGE...4....1L/abstract)), or for very dense matter limited to a very
+small linear scale $R$. In the "stellar regime", we expect the densest
+stars, also known collectively as "compact objects" to be involved,
+namely white dwarfs (WD), neutron stars (NS), and black holes (BHs).
+
+In general, the source term of GWs is going to be related to the term
+describing the distribution in space-time of matter (the stress energy
+tensor $T_{\mu\nu}$).
+
+-   **Q**: what is the lowest order source term for electromagnetic
+    radiation?
+
+By analogy with electromagnetism (EM), let's consider the spatial
+momenta of $T_{\mu\nu}$ assuming the mass distribution of the source to
+be finite in extent, that is multiply by (possibly more than one
+factor) $x^{\alpha}$ and integrate over the spatial volume. Like in EM,
+the zeroth order momentum of a charge distribution is just the total
+charge that is conserved, and that does not lead to EM radiation, the
+same goes for GWs: the monopole term of the matter/energy distribution
+does not generate GWs. In EM, the next order give the charge dipole,
+which if it has a time-dependence creates EM radiation (e.g., Thompson
+scattering). For gravity, the first order momentum of a mass
+distribution (for intuition, think $\sim m \times r$) has for time-derivative
+the total momentum of the source ($\sim m \times v$). That is also conserved:
+**there is also no dipole radiation of GWs**. The next order is then the
+quadrupole of the mass distribution: GWs are generated
+by the time-dependence of the quadrupole distribution of mass at
+leading order.
+
+One can obtain, at leading order, the so called quadrupole formula:
+
+<div class="latex" id="org4e0c56c">
+\begin{equation}\label{eq:quad}
+h_{\mu\nu}(r) = \frac{2}{c^{4}}\frac{G}{r}\frac{d^{2} Q_{\mu\nu}}{d t^{2}} \ \ ,
+\end{equation}
+
+</div>
+
+where $r$ is the luminosity distance and
+
+<div class="latex" id="orgbbaaf9d">
+\begin{equation} \label{eq:quadrupole_def}
+Q_{\mu\nu} = \int d^{3} x T_{00}x_{\mu}x_{\nu} \ \ ,
+\end{equation}
+
+</div>
+
+is the quadrupole of the mass distribution, and $T_{00}\equiv\rho$ is the
+mass density with an appropriate choice of reference frame.
+
+From Eq. \ref{eq:quad} we can see several important facts:
+
+1.  the amplitude of GWs scales with $1/r$, as opposed to $1/r^{2}$ for EM
+    waves outside the near-field zone. This means that we can have
+    detectable GWs from regions of the Universe that are too dim and
+    far for EM observations.
+2.  the source need to have a non-zero second-time derivative of the
+    quadrupole term of the mass distribution (at least): spherical
+    objects, or objects moving in a straight line don't produce GWs.
+
+In astrophysical context, what could be the sources? The most common
+ones considered and searched for are **non-spherical rotating compact
+objects** (for example a spinning neutron star with a mountain not
+aligned to the rotation axis would produce a GW with constant
+frequency equal to the rotation frequency of the source), **binary
+systems made of compact objects** (which would lose energy to GWs and
+progressively shrink the orbit until a final merger of the two compact
+objects) and echoes of the Big Bang in GWs (this is a target for
+pulsar timing arrays and beyond the scope of this course).
+
+
+<a id="orga94409e"></a>
+
+## Indirect detection of GWs
+
+Pulsars are astrophysical radio sources repeating with very high
+precision interpreted physically as a neutron star rotating fast with
+an off-axis magnetic field (down to milliseconds!). Each pulse is
+detected when the rotation brings the magnetic field along the line of
+sight (analogous to a light-house).
+
+[Hulse & Taylor 1975](https://ui.adsabs.harvard.edu/abs/1975ApJ...195L..51H/abstract) discovered the first pulsar in a binary system,
+PSR B1913+16 (a.k.a. "Hulse-Taylor pulsar"). They showed a radial
+velocity curve (recall [the lecture on binary orbital motion](./notes-lecture-BIN.md)) which
+demonstrated the orbit is eccentric and the companion must be another
+(unseen) compact object, of mass compatible with another neutron star.
+
+Monitoring this system, and measuring the delay between periastron
+passage observed and the periastron passage predicted with a
+Keplerian orbit, one can see that the period is progressively
+speeding up, or, in other words, the orbit is shrinking in time: the
+next periastron passage is earlier than predicted by a Keplerian
+orbit!
+
+![img](./images/GW-decay.jpg "Dots are the measured cumulative time shift in periastron passage w.r.t. a Keplerian orbit with constant period for PSR B1913+16. The solid line is the prediction assuming the period is changing due to GW emission as predicted by general relativity. Note that this is **not** a fit! From [Weisberg & Huang 2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract)")
+
+The measured agreement between the period decay of the Hulse-Taylor
+pulsar and general relativity prediction of the energy loss due to
+GW emission is considered the first *indirect* evidence for GW (and
+[was awarded the Nobel prize in physics in 1993](https://www.nobelprize.org/prizes/physics/1993/summary/)).
+
+**N.B.:** This is possible because the timing of arrival of a pulse is
+extremely stable and thus predictable. A fast spinning neutron star in a binary
+system is used as a clock to demonstrate that the binary orbit is
+decaying in time because of the emission of GWs!
+
+
+<a id="orgc216156"></a>
+
+## Minimum orbital separation for significant GW emission
+
+Besides its historical importance, the "Hulse-Taylor pulsar" allows
+for the introduction of an other important thing which requires GR to
+demonstrate properly: what should be the orbital separation of a
+binary for it to emit detectable GWs?
+
+**N.B.:** The orbital separation $a$ is a linear scale. From the fact that
+GR matters for large $M/R \sim M/a$ we can also expect that the mass of a
+binary $M$ will play a role in this answer (cf. also Eq. \ref{eq:quad}
+and Eq. \ref{eq:quadrupole_def}).
+
+For the Hulse-Taylor pulsar, we have:
+
+-   $M_{1} = 1.441M_{\odot}$ for the mass of the detectable radio-pulsar
+-   $M_{2} = 1.387M_{\odot}$ for the mass of the unseen object
+-   $P=0.323$ days for the orbit
+-   $e = 0.61$ for the orbit (likely a product of the [natal kick](notes-lecture-SNe.md) of the
+    second-born NS)
+
+Approximating the orbit as Keplerian (which we know is a mistake, but
+the energy lost to GW in one orbit is fairly small and we are only
+after one order of magnitude), we obtain $a\simeq2.8R_{\odot}$, which
+corresponds to a periastron distance $a(1-e)\simeq 1.09R_{\odot}$ and apastron
+distance $a(1+e)\simeq4.5R_{\odot}$.
+
+For BHs, which are more massive than NS, we can afford larger orbital
+separations, while less massive WDs require shorter separations/faster
+orbital periods.
+
+The take home point is that the compact objects (WD, NS or BH)
+have to have separations $\le\mathrm{few} \times 10R_{\odot}$ to generate
+significant amounts of GWs.
+
+The amount of energy that goes in emitted GWs is a strong function of
+the orbital separation $a$, the orbital eccentricity $e$, and the
+masses of the systems in a binary: one can also ask what should the
+separation be such that the timescale to shrink the orbital separation
+to zero by GW emission (that is: how long it takes to obtain a
+GW-driven inspiral and merger) is shorter than the age of the
+Universe. Using the [Peters 1964](https://doi.org/10.1103/PhysRev.136.B1224) formulae (which assume the compact
+objects to be point-masses), one can again estimate that the
+separation at the formation of the second compact object in a binary
+needs to be below a few tens of $R_{\odot}$ to obtain GW-driven mergers
+within the age of the Universe.
+
+-   **Q**: How big do the stellar progenitors of these compact objects get
+    during their evolution? How does that compare to the loose
+    requirement we have derived above?
+
+
+<a id="orgbd8af7e"></a>
+
+# Direct detection
+
+Although impressive, the observations of the Hulse-Taylor pulsar (and
+other systems since then, see for example Table 3 in [Weisberg & Huang
+2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract)) only prove that the orbit of this binary NS loses energy at a
+rate that matches impressively well predictions based on assuming that
+the energy is lost to GW emission.
+
+From before the discovery of this system and for decades after, the
+quest for a *direct* detection continued &#x2013; with controversial claims
+and rebuttals (see for example [Chen et al. 2017](https://www.sciencedirect.com/science/article/pii/S057790731630572X) for an historical
+overview). Skipping ahead to the 21<sup>st</sup> century, the first direct
+detection came from ground-based interferometric observations
+performed by the *Laser Interferometry gravitational observatory* (LIGO)
+laboratory &#x2013; after $\sim50$ years of continued effort.
+
+On September 14<sup>th</sup> 2015, the first direct detection of a binary BH
+(BBH) merger, GW150914 occurred. And just two years later the first
+binary NS (BNS) merger was detected in GW first (GW170817), and
+through followup observations informed on the sky location by the GWs,
+also in EM observations (first independently as a short &gamma; ray burst
+GRB170817A 1.7s later than the GW signal, and even later as a lower
+energy multi-wavelength transient AT 2017gfo). Unfortunately no
+neutrinos have been detected from this event.
+
+**N.B.:** Because EM interactions are stronger than gravitational ones,
+light has to filter through the ejecta produced by the merger, which
+delays it (speed $c\rightarrow c/\tau$), while GWs are unimpeded, and thus arrive
+on Earth faster.
+
+![img](./images/GW150914.png "Detection of the first GW signal from the inspiral and merger of two BHs from [LVK collaboration 2016](https://ui.adsabs.harvard.edu/abs/2016PhRvL.116f1102A/abstract). Each column corresponds to a separate and independent detector (one in Washington and one in Louisiana): two are needed to make sure the signal is not a fluke, but appears in both at the same time modulo the light-travel time from one detector to the other. The top panels show the strain $h=\Delta L/L$, that is the relative change in size of the detector caused by the passage of the GW. Note the scale! For LIGO $L\simeq4$ km, corresponding to $\Delta L\sim 10^{-16}$ cm, smaller than a nucleus! The second row show the prediction from numerical relativity calculations (i.e., the solutions of Eq. \ref{eq:EFE} obtained on a computer), the third row shows the residuals between the observation and the models in the second row. The third panel shows how the frequency of the signal changes in time, showing the characteristic "chirping" behavior (as time passes, the signal increases in frequency and becomes louder). Note also that we observe the final half-second of the life ot the system (how long the signal is within the detector band depends also on the masses involved, it is up to &sim;10 seconds for a BNS)")
+
+The quest for a direct detection of GWs was such a long process
+because it required pushing the limits of technological capabilities
+(on multiple fronts). Without entering in the details of the detection
+strategy, a successful detection requires to measure a change of $\Delta
+L\le10^{-16}$ cm in the travel path of laser beams bouncing between mirrors
+$L\sim4$ km apart. $\Delta L$ produced by the passage of the GW is is
+**$\le1/1000$ of the characteristic size of a nucleus**!
+
+Today, while observations continue, we know of $\sim100$ BBH mergers, a
+couple of BNS merger, and we have a few BH-NS mergers (but
+unfortunately all BNS except GW170817 &#x2013; the first one &#x2013; and all
+BH-NS mergers have been too far for the detection of EM counterparts):
+we already know more stellar-mass BH from GWs than any other EM
+signature!
+
+![img](./images/GWTC-3_stellar-graveyard.jpg ""Stellar graveyard" as of the publication of the third Gravitational wave catalog (GWTC3), see [LVK collaboration 2023](https://ui.adsabs.harvard.edu/abs/2023PhRvX..13a1048A/abstract) and [LVK Collaboration 2023b](https://ui.adsabs.harvard.edu/abs/2023PhRvX..13d1039A/abstract). The spread in the horizontal direction is just for clarity but contains no information, while the vertical position indicates the mass in $M_{\odot}$ units. Red points are known BHs in X-ray binaries, yellow points are (an incomplete) census of NS known as pulsars or accretors in X-ray binaries, orange points are NS detected in GW-driven inspiral and mergers, and blue dots are BBH mergers (two dots for the pre-merger BHs in the binary and one dot for the resulting BH).")
+
+Thanks to the direct detections of GWs we now know several
+astrophysical facts that had been hypothesized before, but were
+lacking empirical confirmation:
+
+-   BBH exist!
+-   stellar mass BHs with masses $\gg 10M_{\odot}$ exist!
+-   BH-NS binary exist!
+-   we have some constrain on the rate at which these form with a
+    "final" (from the stellar evolution point of view)/"initial" (from
+    the GW-driven inspiral point of view) separation sufficient to merge
+    within the age of the Universe
+
+**N.B.:** GWs also offer cosmological facts, e.g., from a stochastic
+background, unique constraints on GR in strong gravity (e.g., from the
+"ring-down" phase just after the merger, when the new formed BH
+"shakes away its hairs"), and nuclear physics (GW170817 confirmed that
+BNS mergers are one site for [r-process](notes-lecture-nuclear-burning.md) nucleosynthesis and formation
+of element heavier than iron). Ultimately, GW astronomy is a
+completely new way to explore the Universe. The discussion here is far
+from complete and focused on the aspects related to stellar physics
+only.
+
+
+<a id="orgfc9de52"></a>
+
+# The problem: how do compact objects get so close to each other?
+
+With the indirect *and* direct detection of *multiple* GW, we now know
+that compact objects (WD, NS, BHs) exist in binaries with separations
+short enough to lose energy to the emission of GWs at a sufficient
+rate that they merge within the age of the Universe.
+
+From a stellar physics perspective, this leads to an apparent paradox:
+To merge, they need to have orbital separation of order of $\sim
+10R_{\odot}$ or less. Their stellar progenitor however, evolve to be
+$\ge100-1000R_{\odot}$. How can we reconcile these two facts?
+
+**N.B.:** The same problem has already been considered based on classical
+novae and main-sequence + WD binary, where the orbital separation of
+the present-day binary is much smaller than the radii of the
+progenitor of the WD, which lead to the idea of "common envelope
+evolution" (see [Paczynski 1976](https://ui.adsabs.harvard.edu/abs/1976IAUS...73...75P/abstract) and [Taam et al. 1978](https://ui.adsabs.harvard.edu/abs/1978ApJ...222..269T/abstract) for the original
+ideas, and [Ivanova et al. 2013](https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract), [2020](https://ui.adsabs.harvard.edu/abs/2020cee..book.....I/abstract) and [Ropke & de Marco 2023](https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract) for
+more recent extensive resources).
+
+The proposed solutions of this apparent paradox are many, and it is a
+very active research topic presently. They can broadly be subdivided
+in two main classes, described in more detail below:
+
+-   **Isolated evolution**: the compact objects come from
+    stars in a binary (or triple, or quadruple) system, where mass
+    exchange processes allow for the compact objects to migrate towards
+    each other reaching short enough mutual orbital periods such that GW
+    emission occurs.
+-   **Dynamical assembly**: the compact objects formed from stars that
+    evolve in isolation, but in a dynamical environment. Newtonian
+    gravitational interactions among many bodies (e.g., in a cluster,
+    nuclear star cluster, or active galactic nucleus) lead chaotically
+    to pairing two compact objects on an orbit tight enough for GW emission.
+
+Because the investigation of these two broad classes (and other hybrid
+or more exotic solutions) is actively being pursued, I will only
+briefly describe the main features of the simplest versions of each
+below.
+
+
+<a id="org3df8c4a"></a>
+
+## Isolated evolution channels
+
+For isolated evolution channels of GW progenitors, the idea is that
+binary interactions (possibly triggered, or enhanced by the presence
+of other stellar companions perturbing the binary orbit) will bring
+together the compact objects close enough.
+
+For this to work, there are many things that need to go "right" (from
+the perspective of making a GW progenitor): **GW mergers are an
+extremely rare outcome of binary** (and higher multiplicity) evolution.
+
+**N.B.:** GW progenitors are such a rare outcome that it is unlikely that
+we can use them to understand the general evolution of massive binary
+stars! We can instead use observations of binary systems in the Local
+Universe to better constrain the uncertainties intervening along the
+path to a GW merger.
+
+The cartoon below is an example of the key phases of binary evolution
+required to obtain a BNS merger. Many variations on this general theme
+have been proposed.
+
+![img](./images/Tauris17.png "Cartoon of the various steps in the evolution of a massive binary system evolving to be a GW-driven BNS merger, from [Tauris et al. 2017](https://iopscience.iop.org/article/10.3847/1538-4357/aa7e89). Many qualitative variations (e.g., NS &harr; BH, SN explosion &harr; failed explosion, RLOF &harr; Common envelope) have been proposed to explain BNS and BBH with various properties, see also review by [Marchant & Bodensteiner 2024](https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract).")
+
+The key steps are:
+
+1.  start with a binary system where both stars are sufficiently
+    massive to end their life forming a compact object (NS or BH in
+    this case)
+2.  As the most massive star (&rArr; more luminous &rArr; burning faster &rArr;
+    evolving faster) evolves and its radius increase a stable
+    mass-transfer phase occurs.
+3.  If the first mass-transfer phase does not lead to a stellar merger
+    (which occurs in $\sim20-40\%$ of cases, cf. [Sana et al. 2012](https://ui.adsabs.harvard.edu/abs/2012Sci...337..444S/abstract),
+    [Renzo et al 2019](https://ui.adsabs.harvard.edu/abs/2019A%26A...624A..66R/abstract)), we now have a star stripped away of its envelope
+    (the He-star) orbiting around the initially less massive stars.
+4.  The initially more massive star, now stripped of the envelope by
+    Roche lobe overflow at step 2. explodes (or collapses to a BH), but
+    the supernova should not break the binary system (when allowing for
+    SN kicks, $\sim60-80\%$ of binaries will break at the first
+    core-collapse event, cf. [Eldridge et al. 2011](https://ui.adsabs.harvard.edu/abs/2011MNRAS.414.3501E/abstract), [Renzo et al 2019](https://ui.adsabs.harvard.edu/abs/2019A%26A...624A..66R/abstract))
+5.  After a core-collapse that did not disrupt the binary, the compact
+    object may accrete some matter from the wind of the surviving
+    companion, powering emission of X-rays.
+6.  (next column) A second phase of mass transfer will occur. In this
+    cartoon it is a **Common envelope** (CE) event, a short (dynamical or
+    thermal): the compact object plunges into the envelope of the
+    companion, the core and compact object spiral towards each other
+    **shortening the orbital separation** (this is the key for GW
+    progenitor formation), pumping orbital energy and angular momentum
+    in the envelope and ultimately remove it. For BNS progenitors at
+    least one CE event is needed. For BBH, the CE phase may be avoided
+    and this could be a second stable mass transfer event (e.g.,
+    [Marchant et al. 2021](https://ui.adsabs.harvard.edu/abs/2021A%26A...650A.107M/abstract), [van Son et al. 2021](https://ui.adsabs.harvard.edu/abs/2022ApJ...940..184V/abstract)). Note that the common
+    envelope can again result into a stellar merger (but now between a
+    compact object and a star, which would make interesting objects
+    such as Thorne-Zytkow objects and quasi-stars, cf. e.g., [Thorne &
+    Zytkow 1975](https://ui.adsabs.harvard.edu/abs/1975ApJ...199L..19T/abstract), [O'Grady et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv241002896O/abstract))
+7.  If the CE succeeds, we have now a compact object orbiting around
+    the core of the initially less massive star, this can again briefly
+    be an X-ray source.
+8.  For (relatively) low mass cores, there will be a lot of radial
+    expansion and a third phase of mass transfer, while more massive
+    (BH progenitor) cores could avoid this phase.
+9.  We then have a second core-collapse event forming the second
+    compact object: we obtain thus our binary compact object and if
+    things have gone well until now, they have separations below the
+    threshold required for GW emission to lead to a merger.
+
+As you can imagine, many variations on this theme have been suggested,
+I recommend the reviews by [Mapelli 2020](https://link.springer.com/referenceworkentry/10.1007/978-981-16-4306-4_16) and [Marchant & Bodensteiner
+2024](https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract) for more details.
+
+In case there are a third (or more) companions, their first impact on
+the story outlined above is to create (Newtonian) gravitational perturbations on
+the orbit of the inner binary, enhancing the chances of mass transfer
+to occur (see for example [Kummer et al. 2023](https://ui.adsabs.harvard.edu/abs/2023A%26A...678A..60K/abstract)).
+
+
+<a id="orgeded1c5"></a>
+
+## Dynamical channels
+
+Alternatively, another way to solve the issue of two compact objects
+needing to be closer than their parent stars are large to get
+GW-driven mergers within the age of the Universe is to leverage
+dynamical N-body interactions.
+
+The core of the idea is that stars could evolve in isolation (or in
+binaries that might interact, but not necessarily in the way leading
+to a GW progenitor), and be put together by their (Newtonian)
+gravitational interaction in a dense stellar system.
+
+**N.B.:** Binaries are still important! Since the cross section for N body
+interactions scales with some power of the stellar radius for single
+stars, and with the orbital separation for a binary ($\sigma \propto a^{2} \gg R^{2}$
+neglecting the not-always-negligible gravitational focusing) it is
+much more likely to have a significant gravitational interaction
+between a binary and a star (or between two binaries) than between two
+single stars.
+
+The video (from Prof. Carl Rodriguez) below shows a "zoom in" on one
+of the many N-body interactions that can happen. There is one incoming
+binary (in orange) that interacts (chaotically) through purely
+Newtonian gravity with a single star (in cyan). At the end of the
+interaction one of the initial binary members (statistically the least
+massive) finds itself alone and shot out at a high velocity, and the
+new binary has a shorter separation (the kinetic energy of the ejected
+star comes from the orbital energy of the original binary). This
+example thus shows that the simplest 3 body system results in the
+ejection of a "runaway star" and a tighter binary. Iterating this
+multiple times in a dense stellar system can lead to stellar or
+compact object binaries tight enough to emit significant amount of GWs
+and merge within the age of the Universe.
+
+<video  controls width="600" height="400" src="./images/nopn_dvd.mp4" </video>
+
+Multiple dense stellar environment have been proposed:
+
+-   stellar clusters: if sufficiently dense they can produce large
+    rates of BBH (while they don't work well for systems involving NS
+    that get a kick at birth and whose progenitors are less massive and
+    live in the cluster outskirts preventing them from entering the
+    most dense part of the cluster where most interactions occur)
+-   nuclear star cluster: these are clusters around the supermassive BH
+    at the center of a galaxy. This makes the escape velocity from
+    these higher, and increases the chances of retaining the merger
+    products and get multiple "generations" of mergers
+-   Active Galactic Nucleus disk: in the accretion disk of the
+    supermassive BH in the center of a galaxy there can be stars and
+    compact objects. They can interact dynamically (possibly with the
+    gas of the disk playing an important role), and this has been
+    proposed as a possible site for GW mergers.
+-   (Newtonian) Gravitational dynamics in triples and quadruple systems
+    are in a sense a "transition" class between dynamical and isolated
+    evolution channels.
+
+**N.B.:** This brief overview is far from complete: this is a relatively
+new and extremely active field, and by the time I finish writing any
+comprehensive summary there would be much more to summarize already!
+
+
+<a id="org7e9c8ab"></a>
+
+# The present and future of GW astronomy
+
+Despite the first direct detection having occurred 10 years ago, the
+field of GW astronomy is only in its infancy: many new detectors
+probing different GW frequencies are being planned.
+
+
+<a id="org0497a9b"></a>
+
+## Ground-based detectors
+
+Multiple ground-based detectors exist and all collaborate under the
+umbrella of the "LIGO Virgo KAGRA scientific collaboration". The
+figure below shows the short term future observing plan for the
+existing ground based detectors:
+
+![img](./images/GW_timeline.png "LIGO, VIRGO, and KAGRA are three ground-based GW observatories. This figure shows the predicted uptime for each detector with the horizon out to which they are predicted to be able to detect a BNS merger. From <https://observing.docs.ligo.org/plan/>.")
+
+Having multiple detectors is useful for verification of the results,
+but maybe even more importantly, to improve through triangulation the
+"sky localization" of GW events and target EM followup. **N.B.:** even
+detection in one detector and non-detection in another will help the
+sky localization.
+
+![img](./images/Skymap.jpg "Visualization of the uncertainty regions for the localization on the plane of the sky for selected GW merger events. The size of these contours depends on the amplitude of the signal (and thus the masses involved), its polarization, and importantly how many detectors could catch the signal and the delay times.")
+
+The current rate of GW detection within the frequency range of LIGO,
+VIRGO, KAGRA is very high, and by the end-of-life of these
+most-precise machines ever built, we expect to have a sizeable
+population of GW-driven mergers of compact objects. You can find on
+[grace DB](https://gracedb.ligo.org/superevents/public/O4/) the announcement for every trigger in the ongoing O4
+observational campaign (these contain the information provided to EM
+observers to followup events with telescopes).
+
+On a slightly longer timescale, a "copy" of LIGO is being planned as
+LIGO-India (same technology), and in the future there are plans for
+so-called 3<sup>rd</sup> generation GW detectors (the 2<sup>nd</sup> generation are the
+space-based detectors discussed below). These will likely be
+interferometers with much longer arms ($L\simeq 4$ km &rarr; $L\simeq 40$ km) and
+buried underground to limit the high-frequency noise from
+micro-earthquakes. Multiple competing plans exist at this point (e.g.,
+Cosmic Explorer in the US and Einstein Telescope in Europe), and are
+expected to be able to detect BBH merger up to redshift &sim;20, much
+before the formation of the first stars!
+
+
+<a id="orgb4b5bc2"></a>
+
+## Space-based detectors
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/QjeO64Wf3fU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The next generation of GW detectors will be still based on
+interferometry, but *in space*! The Laser Interferometry Space Antenna
+([LISA](https://lisa.nasa.gov/)) is a planned mission to put a (small) constellation of three
+satellites orbiting on the plane of the Earth-Sun orbit trailing
+behind the Earth (at the L4 Lagrangian point).
+
+This will enable to increase the length of the arms from the $\sim4$ km
+now in LIGO to $\sim 2.5\times10^{6}$ km: this causes the GW frequency window of
+sensitivity to lower frequencies (from $\sim10-1000$ Hz in LIGO to &sim;
+milliHz), and consequently the expected astrophysical source.
+
+The main target for LISA are:
+
+-   Super massive BH merging during galaxy mergers: these have larger
+    masses than stellar mass BHs, thus larger event of horizon radii
+    ($r_{g} = 2GM/c^{2} \propto M$) and wider orbit at mergers corresponding
+    to lower frequencies
+-   Extreme-mass ratio inspirals (EMRIs) caused by the merger of a
+    stellar mass BH with a supermassive BH
+-   Galactic or Local Universe BBH long before the GW-driven merger
+-   Galactic double WDs
+
+The third source is the same discussed above for LIGO, just observed
+when the binaries are wider (smaller amplitude of the GWs therefore
+closer horizon for observations): this opens up the possibility of
+multi-band GW detections allowing to probe not just the last few
+seconds of the GW-driven inspiral, but much longer (how much depends
+on masses and distances of the sources).
+
+Double WD (DWD) originate through multiple phases of mass transfer
+analogous to the ones discussed above, but there are some key
+differences:
+
+-   low mass stars (initially $M\le 1.2-1.3M_{\odot}$) have convective
+    envelopes since the main-sequence, and may be more prone to unstable
+    mass transfer: both mass transfer phases may be common envelopes.
+-   because of the lower mass of WD compared to NS and BHs, the energy
+    lost to GW per orbit is much smaller and inspiral and merger take
+    much longer. Since LISA is a planned space mission with a finite lifetime
+    ($\sim 5-10$ years), during this time most expected sources are going
+    to be effectively stationary: $\dot{f}_\mathrm{GW} \simeq 0$ and
+    $f<sub>\mathrm</sub>{GW} = $ constant: DWD produce a pure GW "tone".
+
+For all binary sources of GWs, if the mass ratio is $q=1$ then the
+mass configuration returns the same every half-orbital-period:
+therefore the GW frequency is $f_\mathrm{GW}=2f_\mathrm{orb}$.
+
+**N.B.:** we already know of some nearby DWD with measured $P$ and
+$\dot{P}$ due to GW emission from EM observations (see e.g., [Kupfer et
+al. 2024](https://ui.adsabs.harvard.edu/abs/2024ApJ...963..100K/abstract)): these are called "verification binaries", since they will
+allow to test the functioning of LISA on GW emission known from EM
+observations.
+
+**N.B.**: DWD that are too far to be singled out by LISA will still
+produce a pure GW tone, the collection of all these signals from
+unresolved DWD produces a "galactic GW foreground" which limits LISA's
+sensitivity at $\sim$ milliHz frequency (see gray shaded area where the
+black dashed and green line diverge in the plot below).
+
+![img](./images/lisa_sense.png "Predicted sensitivity curve for LISA from [Amaro-Seoane et al. 2017](https://arxiv.org/abs/1702.00786) with annotated expected sources. The black dashed line marks the sensitivity, while other colors mark the $f_\mathrm{GW}, \dot{f}_\mathrm{GW}$ evolution of various sources: inspiraling and merging super-massive BHs in red/black, EMRIs in red thin lines, stellar mass BBH inspiral (but the last phase of the inspiral and merger occur in the LIGO band), DWD which have no change in $\dot{f}_\mathrm{GW}$ and $f_\mathrm{GW} = 2 f_\mathrm{orb}$ as light blue dots.")
+
+
+<a id="org9442e87"></a>
+
+## Galaxy-wide detectors: Pulsar Timing Arrays
+
+We have already mentioned [above](#orga94409e) pulsars as very precisely repeating
+radio sources in the sky interpreted as neutron stars. By monitoring a *network*
+of sufficiently precise pulsars, one can envision a **Galactic scale GW
+detector**: this is what pulsar timing arrays (PTA) experiments are.
+
+![img](./images/PTAs-1024x768.gif "Skematic representation of PTA: each pulsar (represented as a black dot with cones marking the magnetic field axis). As a GW passes through the space between Earth where the radio telescopes are and the pulsars it introduces delays (the light from the pulsar has to travel a longer/shorter space!). Correlating the signal from multiple pulsars one can thus infer if the delay is coherent across the galaxy and interpretable as a GW.")
+
+For PTA, the wavelength of GWs that can be detected is influenced by
+the longest distance among two pulsars being monitored : radio
+telescope monitoring many different pulsars across the globe share
+data and analysis techniques to realize these observations.
+
+The typical sources are inspiraling (pre-merger) supermassive BH, and
+stochastic GW background from the early universe (so much larger
+scales than stellar physics): nonetheless, the key to this detection
+strategy are still stars, specifically fast-spinning NS which happen
+to have a B-field that can point towards Earth at a given rotation
+phase.
+
+Exciting results tentatively interpreted as the detection of a
+stochastic GW background have been announced, and since the PTA sensitivity
+improves with number of pulsars monitored and amount of time they are
+monitored, they should reach the $5\sigma$ detection threshold very soon:
+this could open a lot of research in cosmology. For more information
+see for example [Dahal 2020](https://link.springer.com/article/10.1007/s12036-020-9625-y).
+
+
+<a id="org6c29da6"></a>
+
+## The future is <del>bright</del> loud
+
+The figure below sketches the sensitivity in terms of strain $h=\Delta L/L$
+as a function of the GW frequency ($h\equiv h(f_\mathrm{GW})$). The
+rightmost curves for LIGO/VIRGO/KAGRA and the leftmost curves for IPTA
+correspond to present-day experiments, all the others are planner.
+
+The figure illustrates the wide range of frequencies of GW (note the
+scale of the x-axis) that one can attempt to detect.
+
+![img](./images/GWdetectors.png "Sensitivity curves of present and planned GW detectors: Ground based detectors are on the right (highest frequencies), space-based in the middle, and galaxy-size pulsar-timing based on the left. Resonances in the detectors can make them "blind" to specific narrow frequencies: this can cause narrow "spikes" in the black curves at specific frequencies, which are removed here for clarity. From [Moore et al. 2015](https://ui.adsabs.harvard.edu/abs/2015CQGra..32a5014M/abstract).")
+

@@ -1,0 +1,844 @@
+
+# Table of Contents
+
+1.  [Pre-main sequence and Hayashi track](#orgb03ed25)
+    1.  [Pre-main sequence stellar structure](#org3f30b9b)
+2.  [Main sequence](#org0898f79)
+    1.  [Structure during the main sequence](#org72cda72)
+    2.  [Evolution during the main sequence](#org6c2617b)
+3.  [End of the main sequence](#org56105d1)
+        1.  ["Low" mass stars with radiative cores](#orgdb698df)
+        2.  ["High" mass stars with convective cores](#org7e1227c)
+4.  [H-shell and He burning](#org27bbd74)
+    1.  [Low mass star "flashes"](#orge33194e)
+        1.  [He flash](#org5aa9da2)
+        2.  [Red clump and Horizontal branch](#orgc76bff2)
+    2.  [High mass stars and "Hertzsprung gap"](#orgacdc36c)
+        1.  [Mass loss and single-star evolution path to Wolf-Rayet](#org95e50bb)
+5.  [Late evolution](#org9fe55dd)
+    1.  [Low mass stars: AGB thermal pulses and WD cooling](#org4b3cfb1)
+        1.  [The *Gaia* spur: observational evidence for crystallization](#org0257619)
+    2.  [High mass stars: &nu; speedup the evolution](#org1d078ad)
+        1.  [super-AGB stars](#orgbfac020)
+
+**Materials**: Onno Pols' lecture notes Chapter 9, 10, 11, Kippenhahn's
+book Chapters 22-24, 26-33, Hansen, Kawaler, Trimble book, Chapter 2,
+[Farrell et al. 2022](https://ui.adsabs.harvard.edu/abs/2022MNRAS.512.4116F/abstract).
+
+
+<a id="orgb03ed25"></a>
+
+# Pre-main sequence and Hayashi track
+
+We have developed a set of 4 non-linear, coupled ODEs to describe the
+*structure* and *evolution* of stars (with physical approximations
+built-in), with an EOS for closure conditions plus a set of equations
+that describe the changes in composition due to nuclear processing and
+mixing (see for example [this summary](./notes-lecture-neutrinos.md)).
+
+We have also worked out the ordering of timescales of the problem:
+
+<div class="latex" id="org14bb995">
+\begin{equation}
+\tau_\mathrm{nuc} \gg \tau_\mathrm{KH} \gg \tau_\mathrm{free\ fall} \ \ ,
+\end{equation}
+
+</div>
+
+which implies that for a star in hydrostatic equilibrium and LTE at
+every location throughout the star (i.e., global gravothermal
+equilibrium), the equations describing the (slow) *evolution* of the
+composition decouple from the 4 ODEs+EOS that describe the *structure* of
+the star.
+
+The `MESA-web` stellar models at start at the *top right* of the
+Herzsprung-Russell diagram (so high $L$ low $T_\mathrm{eff}$) as a
+uniform sphere of gas with set composition that is in hydrostatic but
+not *necessarily* thermal equilibrium *yet*.
+
+**N.B.:** there may also be short initial numerical transients lasting a
+few timesteps and irrelevantly short simulated physical time.
+
+**N.B.:** the expression *top right* above is relative, in its future
+evolution the mode may evolve at even higher $L$ later on (but not lower
+$T_\mathrm{eff}$!)
+
+These models thus evolve on a thermal timescale $\sim\tau_\mathrm{KH}$
+losing energy ($L$ goes down) and contracting &#x2013; picture lines of
+constant $R=(L/(4\pi\sigma T_\mathrm{eff}^{4)}))^{1/2}$! This *is* the gravothermal
+Kelvin-Helmholtz contraction which leads to the increase in average $\langle
+T \rangle$ by the virial theorem, and it goes on until either:
+
+1.  **degeneracy pressure stops this process by changing the EOS, tapping
+    into quantum mechanical effects to provide extra pressure**: this
+    should not happen to any of your models, but it is how you form a
+    **Brown Dwarfs** (BD) and a planets. The distinction between these is
+    whether some minor nuclear burning, energetically unimportant but
+    still affecting the composition happens before the object sets on
+    gravothermal equilibrium: BD experience deuterium burning, but
+    deuterium is a loosely bound nucleus and its burning doesn't release
+    a lot of energy.
+2.  **an energy source (namely nuclear burning) stops the collapse**. This
+    is what happens to your stars, where H burning (as the lightest and
+    most energy-releasing fuel) starts. The point where
+    $L=L_\mathrm{nuc}$ because of H core burning is referred to as **Zero
+    Age Main Sequence** (ZAMS), since the "main sequence" of the color
+    magnitude diagram containing most stars is made of stars during
+    their longest phase of evolution, hydrogen core burning.
+
+**N.B.:** An isochrone at $t=0$ containing the stellar structures at
+various masses when they reach the equilibrium condition
+$L=L_\mathrm{nuc}$ is also referred to as ZAMS isochrone. For an
+example, see the hottest, leftmost dashed isochrone on the HR diagram
+from [Schneider et al. 2018](https://www.aanda.org/10.1051/0004-6361/201833433) used [here](notes-lecture-CMD-HRD.md).
+
+From the ignition of H in the core onwards, for timescales $t \ll
+\tau_\mathrm{nuc}$, once the composition is decided (i.e., for fixed mass
+fractions ${X_{i}}$) the structure is determined by those 4 ODEs+EOS.
+This means that the *initial* structure of the star is *not* sensitive to
+the (complex, not-yet-fully understood) star formation process, and
+the ZAMS structure is fully determined by the composition! This is
+why, although the star formation process does not proceed starting
+with a ball of known composition $\{X_{i}\}$ and fixed total mass $M$, we
+can make stellar models starting from this idealized conditions, and
+let them relax to a thermal equilibrium status solving the structure
+equations.
+
+
+<a id="org3f30b9b"></a>
+
+## Pre-main sequence stellar structure
+
+If the gravothermal collapse of the mass of gas considered ends with
+the ignition of nuclear fuel (option 2. above), that is, if we make a
+star (recall $\langle T \rangle \propto \mu M/R$, so the mass determines whether we get
+here), then the phase from the beginning of the simulation until ZAMS
+is called *pre-main-sequence* (pre-MS).
+
+During this phase the models start from the top-right of the diagram
+at high $L$, large $R$ (&rArr; low $\langle T \rangle$), and progressively contract and heat
+up. This is an idealization: often as stars are doing that, they still
+accrete mass, in the most massive stars (which have shorter KH
+timescales and pre-MS phases), accretion may not be over until even
+after ZAMS! See for instance the recent review by [Offner et al. 2023](https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract).
+
+**N.B.:** this accretion drives "outflows" in young stellar objects, which
+can be "dusty" and thus opaque, making the pre-main sequence evolution
+*embedded* and hard to directly observe.
+
+The $\langle T \rangle$ is initially low (the gas that is collapsing is coming
+from the interstellar medium), and increasing. Since $\nabla = \partial \ln(T)/\partial
+\ln(P) \propto \kappa L$ and $\kappa$ generally increases at low $T$, initially the
+stars have steep temperature gradient and are *fully convective*! This
+homogenizes their composition (but deuterium burning during the pre-MS
+can change this), and also determines that $\nabla\simeq\nabla_\mathrm{ad}$ to very
+good approximation.
+
+Since almost arbitrarily high energy flux can be carried by
+(efficient) convection maintaining an adiabatic gradient, this means
+the luminosity of a fully convective star does not depend much on its
+structure (unlike a stably stratified *radiative* star where the
+temperature gradient of the *structure* is determined by the need of
+carrying the flux out).
+
+This leads to the evolution of these stars along an almost vertical
+initial path on the HR diagram, the so-called *Hayashi track* (see also
+Sec. 9.1.1. of Onno Pols' lecture notes for an analytic approximation)
+after [Chushiro Hayashi](https://en.wikipedia.org/wiki/Chushiro_Hayashi). The Hayashi track corresponds to solutions for
+fully [convective](./notes-lecture-convection.md) stars. Wiggles around this vertical line are due to
+recombination and partial ionization zones leading to deviations of
+the temperature gradient $\nabla$ from adiabatic and burning of light
+elements ($^{2}\mathrm{H}$, $^{7}\mathrm{Li}$) that releases some small
+amount of energy.
+
+**N.B.:** The energy release per nucleon of the burning of light elements
+is very low and does not manage to alt the thermal-timescale
+quasi-static collapse.
+
+**The Hayashi line effectively determines a right, low-$T_\mathrm{eff}$
+boundary on the HRD for stars in hydrostatic equilibrium**: if a star
+were to be colder, it would have a steeper-than-adiabatic gradient
+somewhere, which would imply a higher convective flux (cf. [convective
+energy flux](notes-lecture-convection.md))) and thus increase the luminosity of the star, moving the
+star upwards back onto the Hayashi track.
+
+**N.B.:** for these cool temperatures, we already know that the opacity is
+dominated by $\mathrm{H}^{-}$, molecules, and dust, and we have
+approximate powerlaw scalings with $T_\mathrm{eff}$ for analytic
+considerations, but `MESA-web` uses tabulated values (cf. [opacity
+lecture](./notes-lecture-kappa.md) and references therein).
+
+The location in $T_\mathrm{eff}$ of the Hayashi track is dependent on
+the mass $M$ of the star: more massive stars are hotter since the very
+beginning. This can be analytically derived imposing $\nabla=\nabla_\mathrm{ad}$
+and solving the remaining 3 ODEs assuming some form for $\kappa\equiv\kappa(T,\rho)$ at
+the photosphere: effectively the outer boundary condition and
+atmospheric physics determines this.
+
+Stars to the left, hotter side of the Hayashi track instead must *not
+be fully convective* and have some radiative layers (recombination and
+light-elements burning changing $\kappa$ and $\mu$)!
+
+
+<a id="org0898f79"></a>
+
+# Main sequence
+
+As the gravothermal collapse continues and $\langle T \rangle$ increases, at some
+point, if we are making a star, by *definition* nuclear burning turns on
+(option 2. above). This is when the central temperature (which at this
+stage is the highest temperature in the star), is sufficiently high to
+obtain enough tunneling through the Coulomb barriers.
+
+Because it is abundant, and its burning releases a lot of energy per
+nucleon (&sim; 6.5MeV/nucleon) because it produces the double-magic
+nucleus $^{4}\mathrm{He} \equiv \alpha$ (neutrons *and* protons fill their nuclear
+"shells", by analogy with electron shells in atomic physics), hydrogen
+is the first fuel to ignite, see also [nuclear burning lecture](./notes-lecture-nuclear-burning.md).
+
+
+<a id="org72cda72"></a>
+
+## Structure during the main sequence
+
+As we discussed in the [nuclear reaction cycles lecture](./notes-lecture-nuclear-cycles.md), hydrogen
+burning can occur in two different ways: pp-cycle and CN-NO bi-cycle.
+
+Looking at `MESA-web` models, we can see that the pp-cycle is sufficient
+to achieve the equilibrium condition $L_\mathrm{nuc}=\int dm
+\varepsilon_\mathrm{nuc} \equiv L$ in low mass stars (**N.B.:** $L\propto M^{x}$ with $x\geq1$). This
+is because the pp-cycle has lower Coulomb barriers (shallower relation
+between $\varepsilon_\mathrm{nuc}$ and $T$) but a higher normalization (cf. [pp
+&rarr; CNO transition](notes-lecture-nuclear-cycles.md)).
+
+-   **Very low M main sequence &rArr; fully convective**
+
+For the lowest-mass stars, $T_\mathrm{eff}$ remains cold and the
+opacity remains high: they burn through the pp cycle, but remain
+*convective* throughout the main sequence. In this case, *all* of the
+stellar material is available to burn, there is no core/envelope
+structure at all! These stars however have (relatively speaking) very
+low $L$, thus they evolve very slowly. All these stars in the Universe
+are still on the main-sequence! This is the case of the $0.3M_{\odot}$
+star you computed for a homework, which has an approximately
+polytropic EOS because it is fully convective, thus has
+$\nabla=\nabla_\mathrm{ad} \Rightarrow P\propto\rho^{\Gamma_{1}}$.
+
+-   **Low M main sequence &rArr; radiative core, convective envelope**
+
+Moving slightly higher in mass, meaning also to higher $T_\mathrm{eff}$, a
+radiative core appears. the burning is very concentrated in the
+innermost region, but they are cool enough to have high &kappa; at the
+surface, and thus retain a convective *envelope*:
+
+**N.B.:** we are seeing that the cooler $T_\mathrm{eff}$ is the deeper the
+convective envelope! Increasing $T_\mathrm{eff}$ the convective layer
+disappear in the deepest layers. This can be shown analytically (see
+Onno Pols' lecture notes sec. 7.2.3).
+
+-   **High M main sequence &rArr; convective core, radiative envelope**
+
+Increasing $M \Leftrightarrow T_\mathrm{eff}$ further, the equilibrium condition
+$L=L_\mathrm{nuc}$ cannot be satisfied anymore with the pp-chain, and
+the CN-NO bi-cycle kicks in. Because of its higher Coulomb barriers,
+it has a steeper temperature dependence: the energy release is even
+more concentrated, implying that $\nabla$ in the core is very steep (recall
+$\nabla\propto \kappa L \propto \kappa L_\mathrm{nuc}$), thus *the core becomes convective*. This
+means that convective mixing makes a larger mass of hydrogen available
+to the very central burning zone. At the same time, higher $M$ &rArr;
+higher $T_\mathrm{eff}$ and the envelope becomes radiative.
+
+![img](./images/conv_ZAMS.png "The "initial" gravothermal equilibrium structure of a star is determined only by mass $M$ and composition. The figure (Fig. 9.8 in Onno Pols' notes, modified from Kippenhahn & Weigert) shows in gray the region in mass coordinate $y=m/M$ that are convective as a function of the total mass $M=\int dm$ for $Z=0.02$ models. Red lines indicate where 50 and 90 % of the luminosity $L$ is generated (the "burning region") and the blue dashed lines show $r(m)=0.25M$ and $r(m)=0.5M$.")
+
+**N.B.:** The threshold initial masses dividing the three regimes above are
+somewhat uncertain and dependent on input physics and modeling
+assumptions.
+
+-   **Q**: for your `MESA-web` models, what is the highest mass with a
+    radiative main sequence core, and the lowest with convective main
+    sequence core?
+
+
+<a id="org6c2617b"></a>
+
+## Evolution during the main sequence
+
+During the main sequence $L$ steadily increases on $\tau\sim\tau_\mathrm{nuc}$.
+This is because the conversion of hydrogen into helium decreases $X$
+(and increases $Y$), which enter in two key quantities, mean molecular
+weight and electron scattering opacity:
+
+<div class="latex" id="orgf027c9c">
+\begin{equation}\label{eq:microphysics_XY}
+\mu \simeq \frac{1}{2X+\frac{3}{4}Y+\frac{Z}{2}} \ \ , \\
+\kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2}\ g^{-1}} \ \ \ .
+\end{equation}
+
+</div>
+
+Assuming a star to be in gravothermal equilibrium and assuming
+radiative energy transport (which we have just seen is not verified
+everywhere by `MESA-web` models!), we know that:
+
+<div class="latex" id="org33d2feb">
+\begin{equation}\label{eq:L_scaling}
+L\propto \frac{\mu^{4} M^{3}}{\kappa} \ \ ,
+\end{equation}
+
+</div>
+
+This scaling relation is approximate and does not exactly hold if a
+star is not fully radiative (which we have already seen is not
+accurate!), but it tells that:
+
+-   the higher $\kappa$, that is, the harder it is for photons to get out, the
+    lower the luminosity
+-   the higher the mass, the higher the luminosity (&rArr; the higher the
+    nuclear burning rate for a given fuel!), and since the mass exponent
+    is larger than 1, this implies that *more massive stars have shorter
+    lifetimes w.r.t. lower mass stars*. They do have more fuel available
+    ($\propto M$), but they burn through it at an even higher rate ($\propto M^{3}$)! In fact
+    single-star lifetimes of stars that burn all the way to iron is only
+    &sim;10-50Myr ($M_\mathrm{ZAMS}\ge7.5M_{\odot}$, with the exact lower limit
+    depending on $Z$, rotation, binary interactions, cf. for example
+    [Doherty et al. 2017](https://ui.adsabs.harvard.edu/abs/2017PASA...34...56D/abstract) and [Poelarends et al. 2017](https://ui.adsabs.harvard.edu/abs/2017ApJ...850..197P/abstract)), compared to &gt; 10<sup>9</sup>
+    years for $M_\mathrm{ZAMS}\le2M_{\odot}$.
+
+![img](./images/stellar_lifetimes.png "Stellar lifetime as a function of initial masses from [Zapartas et al. 2017](https://ui.adsabs.harvard.edu/abs/2017A%26A...601A..29Z/abstract). `MESA` and `GENEC` models are shown, focusing on masses that result in a final core-collapse event. The bottom panel shows the deviations between the analytic fit and the numerical models.")
+
+-   the higher the mean molecular weight $\mu$ (= number of particles per
+    baryonic mass), the higher the luminosity.
+
+Using Eq. \ref{eq:L_scaling} we can infer that the high power of &mu;
+drives the luminosity evolution of the stars during the main sequence:
+because hydrogen is converted into helium ($X \rightarrow Y$), the **mass-weighted
+average $\langle \mu \rangle = \int dm \mu(m)/\int dm$ increases and thus L increases**.
+
+**N.B.:** massive and low mass stars however have a very different
+morphology of the main sequence. For stars with radiative cores
+(burning through the pp-chain, $M\le1.2M_{\odot}$), $L$ increases, $R$
+varies little, thus since $L=4\pi R^{2}\sigma T_\mathrm{eff}^{4}$ in
+equilibrium, we also see a slight increase in temperature of the star
+during the main sequence. Conversely, massive stars with convective
+cores (burning through the CNO cycle, $M\geq1.2M_{\odot}$) increase in
+radius and actually become *cooler* as they evolve during the main
+sequence. One can derive (see Onno Pols' notes chapter 7) analytic
+$R(M)$ relations assuming a specific scaling for the energy generation
+to qualitatively explain this. In reality, the details of the core
+evolution (influenced by uncertain processes such as convective
+boundary mixing) and envelope (influenced by wind uncertainties)
+matter for the details.
+
+**N.B.:** The relative role of $\mu$ and $\kappa$ is slightly sensitive to
+metallicity too (because at lower $Z$ the approximation
+$\kappa\simeq\kappa-\mathrm{es}$ is progressively better since fewer bound-bound and
+bound-free transitions are available, see also [Xin et al. 2022](https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.5816X/abstract)). The
+opacity $\kappa$ is dominant in determining the $L$ and $R$ at ZAMS for
+$Z\simeq0.02$, but the change in $\mu$ is determining their *evolution* along
+the main sequence.
+
+-   **Q**: based on the scaling in Eq. \ref{eq:L_scaling}, how does the
+    luminosity of two identical stars differing only in $Z$ compare?
+    Which star has the highest $L$? (**Hint**: you can compute more `MESA-web`
+    models of your mass varying $Z$ to check your answer!)
+
+Looking at the Kippenhahn diagrams and composition diagrams from
+`MESA-web` we can also see what the model does in the core (something
+not *directly* accessible to observations - if not through neutrinos).
+For low mass stars with radiative cores and high $\rho_\mathrm{center}$
+(something you can derive from the virial theorem + hydrostatic
+equilibrium + EOS), partial degeneracy already plays a role in
+sustaining the structure during the main sequence, and as the central
+burning region converts hydrogen into helium, the helium core becomes
+hot and degenerate - thus sustaining itself against gravitational
+collapse with the quantum effects due to the Fermi-Dirac statistics of
+electrons.
+
+Conversely, high mass stars have a convective core: convective mixing
+connects the innermost burning region with a larger fuel reservoir.
+The progressive burning of hydrogen changes the center opacity (well
+approximated by electron scattering only in the hot, fully ionized
+interior) $\kappa\simeq\kappa_\mathrm{es}=0.2(1+X)$ cm<sup>2</sup> g<sup>-1</sup>. Specifically, as $X$
+decreases, so does $\kappa$, and since $\nabla = \partial ln(T)/\partial ln(\rho) \propto \kappa L$, the
+temperature gradient becomes "less steep", meaning there is less need
+for convection: *during the main sequence of massive stars, the
+convective core receeds in mass coordinate*.
+
+![img](./images/1Msun_X_M.png "Hydrogen mass fraction $X$ as a function of mass coordinate $m$ for a single, non-rotating, $1M_{\odot}$, $Z=0.02$ `MESA` model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS).")
+
+![img](./images/20Msun_H_profile.png "Hydrogen mass fraction $X$ as a function of mass coordinate $m$ for a single, non-rotating, $20M_{\odot}$, $Z=0.001$ `MESA` model across its main sequence evolution. The color go from dark (&sim; ZAMS) to light (&sim; TAMS), and as time passes the core recedes because of the change in $\kappa$.")
+
+
+<a id="org56105d1"></a>
+
+# End of the main sequence
+
+
+<a id="orgdb698df"></a>
+
+### "Low" mass stars with radiative cores
+
+Very low mass stars smoothly evolve off the main sequence: if you look
+at the $T(\rho)$ diagram in the movie produced by `MESA-web`, from the
+outlines of the track you can see where the nuclear burning moves.
+
+![img](./images/1Msun_TAMS.png "Screenshot of a `MESA-web` calculation of a $1M_{\odot}$ star shortly after the main sequence. The HRD (bottom left) shows a smooth end of the main sequence, and the Kippenhahn diagram and $T(\rho)$ tracks (middle) show that all the burning is in a shell surrounding the inert He core. The bottom right panel shows that the inner region as a flattening $T$ profile because of conduction efficiently transporting energy and erasing the $dT/dr$.")
+
+Since these are stars that were burning radiatively (the fully
+convective ones have not yet finished their main sequence even if they
+had been burning since the birth of the Universe!), they have fresh
+fuel available that has not been mixed in the burning region just
+outside the region hot enough for hydrogen burning. Therefore,
+**hydrogen ignites in a shell** around the now H-depleted, He-rich core.
+
+Because of the gap in $T$ to bridge the Coulomb barriers for
+hydrogen-burning and $3\alpha$, Helium core burning does *not* ignite
+immediately: the Helium core sits inert, contracts, degeneracy
+pressure starts to matter and conduction becomes important, leading to
+an almost *isothermal* He core sitting below the H shell.
+
+The morphology of the end of the main sequence for low mass stars with
+radiative cores is *smooth*: the core contracts, the shell above it
+contracts and it is immediately hot enough to burn. The temperature of
+the shell is determined by the *contraction* of the inert He core,
+rather than by the energy generation by nuclear physics. Therefore,
+the shell is typically becoming hot enough to burn through the CNO
+cycle even for a low mass star.
+
+
+<a id="org7e1227c"></a>
+
+### "High" mass stars with convective cores
+
+Increasing the mass above the threshold for activating the CN-NO
+bi-cycle (somewhere $\sim1.1-1.3M_{\odot}$ depending on assumptions), the
+morphology of the end of the main sequence changes.
+
+![img](./images/30Msun_TAMS.png "Screenshot of a `MESA-web` calculation of a $30M_{\odot}$ star shortly after the main sequence. The HRD (bottom left) shows the "Henyey hook" feature, the Kippenhahn diagram and $T(\rho)$ track shows that there is an off-center H-burning shell but the He in the core ignites promptly too. The core is not degenerate, but convective again, and maintains a nearly adiabatic temperature gradient.")
+
+In this case, during the main sequence the *burning* is even more
+centralized in mass and radius coordinate than for lower-mass
+pp-chain-sustained stars, but that drives *convection*. Therefore,
+convective mixing refuels the burning region from a larger reservoir,
+and when the fuel runs out, it means that there is a gap in the star
+between where $T$ is hot enough for nuclear reactions and where viable
+fuel is. This causes an "overall contraction phase", also known as
+"Henyey hook", where the star, out of energy sources resumes its
+gravothermal collapse and shrinks in radius.
+
+This process increases the temperature profile until the H-rich fuel
+left at the edge of the convective core ignites in a shell. However,
+the He core below, whose mass is set by the extent of convection
+(+convective boundary mixing) during the main sequence, is too big to
+be sustained by electron degeneracy pressure and too hot to be
+degenerate (recall that $\langle T \rangle \propto \mu M/R$): below the shell the
+contraction continues until He also promptly ignites through the 3&alpha;
+reaction, driving core convection!
+
+
+<a id="org27bbd74"></a>
+
+# H-shell and He burning
+
+"[The post main sequence acts as a] *sort of magnifying glass, also
+revealing relentlessly the faults of calculations of earlier phases*" -
+Kippenhahn.
+
+
+<a id="orge33194e"></a>
+
+## Low mass star "flashes"
+
+For low mass stars the He core is sufficiently small to be
+electron-degeneracy supported, and there is H-rich fuel available
+right outside the region that was burning during the main sequence:
+after exhausting H in their core, they smoothly transition to a
+H-shell burning/He core degenerate phase. During this phase the core
+contracts and the envelope expands dramatically: the star appears as a
+red giant (RG)!
+
+**N.B.:** during this phase the He core is degenerate and *conduction* by
+electrons efficiently transports energy making the whole core
+approximately isothermal. This leads to the Schonberg-Chandrasekhar
+maximum mass that it can have.
+
+The microphysical reason for this expansion is not perfectly
+understood (and roughly once per decade a new tentative partial
+explanation is put forward). Nevertheless, we are confident that this
+does occur as we can see it happening across stellar populations. One
+partial explanation often invoked is the so called "mirror principle":
+when there is a shell source of energy, as the inner region contracts
+the outer regions expand (and viceversa). This "mirror principle" can
+be understood in terms of the virial theorem in its most complete form
+(including the $\ddot{I}$ term dependent on the moment of inertia):
+since the core contracts (decreasing the moment of inertia), the
+envelope needs to expand to compensate (increasing the moment of
+inertia). Another way to justify this semi-empirical "mirror
+principle" is to keep the shell energy generation constant (see Onno
+Pols' lecture notes, chapter 10).
+
+The H-shell ignites wherever there is available fuel, its lower
+boundary temperature thus is determined by the structure of the
+contracting core, which typically exceeds the T threshold for the CNO
+cycle: even stars that burn through the pp-chain on the main sequence
+will do the CNO cycle later! The shell energy release also determines
+the structure of the envelope above: once the star is *not homogeneous*
+anymore, the simple gravothermal collapse due to the virial theorem
+complicates!
+
+This also implies that it is the core structure which determines the
+properties of the shell, which determines the envelope properties
+(namely the luminosity): in fact we observe tight correlations between
+the core mass and the luminosity of the star.
+
+As the evolution proceeds, the shell "climbs up in mass coordinate"
+(though its radius may stay constant or decrease even as the
+underlying inert He core contracts). The $T_\mathrm{eff}$ decreases
+and the convective envelope deepens ($T_\mathrm{eff}$ drops,
+$T_\mathrm{shell}$ is set by the core contraction and locked by
+nuclear reactions, thus $\nabla$ steepens), this can reach the inner most
+layers (partially enriched in He, especially $^{3}\mathrm{He}$, and
+possibly $^{14}\mathrm{N}$ if the star experienced some CN cycle),
+leading to the "first dredge up": material from the inner layers above
+the H-shell is mixed outwards by convection and becomes visible in the
+stellar atmosphere.
+
+As the shell moves upwards by consuming H fuel (and dumping He ashes
+onto the core), it will encounter a layer mixed by convection in the
+first dredge up. The outward mixing of nuclearly processed material
+also corresponds to inward mixing of H-rich envelope material: the
+shell thus reaches a region that is *more fuel rich* than before! This
+makes the shell briefly exceed the $L_\mathrm{nuc} = L$ condition, the
+overproduction of energy pushes the envelope to higher $L$, lower
+$T_\mathrm{eff}$, and lowers the &rho; in the shell, causing a decrease of
+$L_\mathrm{nuc}$. This process ultimately results in stars crossing a
+certain luminosity threshold 3 times: observationally this produces a
+cumulation of stars at a certain luminosity or in other words a "bump"
+in the luminosity distribution.
+
+**N.B.:** for massive stars, discussed below, the "first dredge up" may
+not occur as described here, but the H-shell will also move outwards
+towards more H-rich fuel causing a $3\times$ crossing of a certain
+luminosity.
+
+
+<a id="org5aa9da2"></a>
+
+### He flash
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2_Km4RTdkPw?si=ZkacE_zcP7g67kIN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Above is a `pgstar` movie of the He flash(es) in a $1M_{\odot}$ star computed
+with `MESA` by [M. Cantiello](https://www.stellarphysics.org/). Note the panels are *different* than in the
+`MESA-web` configuration, and the HRD does *not* show the pre-main
+sequence.
+
+As the H burning shell adds nuclear ashes to the underlying inert He
+core, until it reaches a mass that cannot be sustained by degeneracy
+pressure anymore, and He ignites. This typically occurs for
+$M_\mathrm{He}\simeq0.45M_{\odot}$.
+
+This ignition however happens in a degenerate environment where $P$
+does *not* depend on $T$! Therefore the energy released by the burning
+of He initially does not increase $dP/dr$ and does not cause an
+expansion of the core, instead it all remains as internal energy,
+raising the temperature and increasing the nuclear burning rate: this
+situation (which presents itself any time there is a nuclear ignition
+in a degenerate environment) is clearly unstable and leads to the so
+called "Helium flash". Burning rises $T$ until $P$ transitions from
+being mostly due to electron degeneracy to being ideal gas again: this
+causes an abrupt change in pressure and a temporarily *dynamical* phase
+of the evolution!
+
+Because this requires a specific He core mass, and the He core mass
+before the flashes is determining the total luminosity of the red
+giant, this means that pre-flash there is a "standardizable" maximum
+luminosity of red giants, the so called "tip of the red giant branch",
+which is nowadays used as an alternative method to measure distances
+for cosmological applications.
+
+The occurrence of neutrino cooling in the core can cause the burning
+during the He flash to be initially off-center. Moreover, the star can
+react to the flash by (finally) expanding the core and decreasing the
+burning rate, and on a span of a few thermal timescale, minor
+secondary flash can occur as the core re-collapses, until He core
+burning finally stabilizes, lifting degeneracy and causing core
+convection.
+
+
+<a id="orgc76bff2"></a>
+
+### Red clump and Horizontal branch
+
+During He core burning, low mass stars have a convective core burning
+thought the $3\alpha$ (and later $^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}$),
+surrounded by an inert He layer, and a H-burning shell wherever H
+becomes available. Above the H-burning shell, if there is a
+substantial H-rich envelope, it will be convective: these stars are
+close to the Hayashi track (by radius they are mostly convective), but
+on the hotter side (because of the existing radiative layers).
+
+Since the He flash occurs as soon as the He core mass reaches a
+sufficient mass, all these stars have similar luminosities, and form
+the so-called "red clump" on the HR diagram, a noticeable feature in
+cluster and galaxy populations that can also be used for distance and
+age estimates (see also for example [Girardi 2016](https://www.annualreviews.org/content/journals/10.1146/annurev-astro-081915-023354)). Since the mass of
+the He core at ignition for low mass stars is set by the He flash at
+$\sim0.45M_{\odot}$, the lower mass stars will have less envelope at this
+point (more has been processed into He to reach the threshold mass for
+the flash): from the red clump a there is a continuous almost
+horizontal line (they all have roughly the same luminosity set by the
+core mass) of stars in the HR diagram for low mass core-He burning
+stars whose coolest end is the red clump.
+
+(continuing reading about the evolution of low mass stars [here](#org4b3cfb1))
+
+
+<a id="orgacdc36c"></a>
+
+## High mass stars and "Hertzsprung gap"
+
+Stars with masses sufficiently high for the core to be convective
+during the hydrogen core burning main sequence ($M\geq1.2M_{\odot{}}$
+roughly, depending on assumptions) will *not* have a phase of evolution
+with an inert, isothermal He core: the core is too big for degeneracy
+pressure to sustain it and after the main sequence it continues
+contracting until the 3&alpha; reaction activates and He burns. The prompt
+post "Henyey hook" appearance of two nuclear energy sources (He core
+and H shell) drives the star towards the cool side of the HR diagram
+very quickly ($\sim \tau_\mathrm{KH}$), becoming red supergiants (RSG)
+
+Thus, in the HRD of a coeval stellar population, there will be many
+stars on the main sequence ($\tau\sim\tau_\mathrm{nuc,H}$) and close to the
+Hayashi track as RSG ($\tau\sim\tau_\mathrm{nuc,He}$), but very few in between:
+this is often referred to as the "Hertzsprung gap". **N.B.:** the scarcity
+of stars in the gap is only due to the timescales of evolution, it is
+not a forbidden region of the HRD.
+
+Some stars may experience "blue loops" as their H-shell climbs upward
+in mass coordinate and encounters layers with more H (see for example
+[Walmswell et al. 2015](https://ui.adsabs.harvard.edu/abs/2015MNRAS.447.2951W/abstract)). The occurrence of these is very sensitive to
+numerical approximations and make solid predictions hard, but their
+physical nature in some cases is supported by observations. Depending
+on metallicity, some stars may even spend most of their He core
+burning time in a blue loop appearing hotter than a typical RSG.
+
+
+<a id="org95e50bb"></a>
+
+### Mass loss and single-star evolution path to Wolf-Rayet
+
+As $M$ increases (and consequently even more so $L$), mass loss
+becomes a progressively more important ingredient for the evolution of
+stars.
+
+Stars can lose mass through:
+
+-   stellar winds (pressure driven for low mass stars, radiation driven
+    for high mass stars)
+-   eruptive events (e.g., "luminous blue variable eruptions")
+-   binary interactions
+
+All of these can directly or indirectly impact the internal structure
+of the star, and its appearance. Very massive stars may have such high
+mass loss rates that they lose their entire H-rich envelope already
+during the main sequence (becoming WNh stars). Moving to lower masses,
+they may evolve red-ward on the HR diagram (which increases the
+opacity &kappa; and thus presumably the wind mass-loss rate, although this
+is highly debated presently, see [Smith 2014](https://ui.adsabs.harvard.edu/abs/2014ARA%26A..52..487S/abstract), [Renzo et al. 2017](https://ui.adsabs.harvard.edu/abs/2017A%26A...603A.118R/abstract), [Beasor
+et al. 2020](https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5994B/abstract), [Decin et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...681A..17D/abstract)), and then shed their H-rich envelope.
+
+A star which has lost its envelope will "reveal" its He core, and if
+luminous enough, this will drive a thick wind that can enshroud the
+star and hide it below a "pseudo-photosphere". These winds can be so
+dense that collisional excitation produces emission lines, making the
+stars appear as WR (see e.g., [Shenar 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv241004436S/abstract)).
+
+**N.B.:** stripped low and intermediate mass stars not luminous enough to
+drive WR-like outflows that produce emission lines are predicted and
+observed and require binary interactions to form, see [Drout et al.
+2023](https://ui.adsabs.harvard.edu/abs/2023Sci...382.1287D/abstract).
+
+
+<a id="org9fe55dd"></a>
+
+# Late evolution
+
+
+<a id="org4b3cfb1"></a>
+
+## Low mass stars: AGB thermal pulses and WD cooling
+
+After the end of He core burning, the *vast* majority of stars ($\sim 98\%$
+of all stars integrating over the birth-mass distribution for
+$M_{ZAMS}\le 7.5M_{\odot}$) is left with a carbon/oxygen rich degenerate
+core which is not massive enough to ignite further nuclear burning,
+and electron degeneracy sustains it. Such core is surrounded by a
+He-rich layer, and further out by a H-rich envelope. Thus, these stars
+still need to lose their H-rich extended envelope and He-rich shell
+(which remain temporarily sustained by nuclear burning in shells)
+before they can finally rest as white dwarfs entirely sustained by
+degeneracy pressure. This process is relatively fast and involves
+copious (and possibly episodic) stellar outflows which are still an
+active topic of research.
+
+A star in this phase is referred to as an "Asymptotic Giant Branch"
+(AGB) star: for most of its life the He layer is inert (no nuclear
+burning) and (partially) degenerate too, and it grows in mass because
+of the ashes of the overlaying H-burning shell, which sustains the
+H-rich envelope above it.
+
+As the He layer grows in mass, it temporarily ignites: this energy
+release causes a *flash* (similar to He ignition in the core for low
+mass stars in the first place), and expands the He layer, pushing
+outward the inner boundary of the H-shell, often until its temperature
+becomes too low for H-burning. Thus, as a consequence of the He shell
+flash, matter is pushed out and cools (possibly forming dust and
+increasing &kappa; and thus the mass loss from the star), the H shell shuts
+off, but the He shell too does. This is because the flash was not
+hydrostatic self-regulated burning! The outer layers then re-collapse
+on a thermal timescale and as they contract, the H-burning shell
+ignites first (it's easier to burn H than He!), returning to the
+initial situation, but with a little less mass. This process of
+"thermal AGB pulses" ultimately will lead to the loss of all the H and
+He, leaving a "bare" CO core exposed, with only a very thin H/He
+atmosphere.
+
+**N.B.:** ignition in a (partially) degenerate environment causes an
+abrupt increase in T and thus P from the ideal gas EOS, but the
+environment was supported by a T-independent degeneracy pressure: this
+leads to a discontinuity in time of the pressure and thus a *dynamical*
+event, referred to as a Flash. This can also occur in the core of
+massive stars!
+
+![img](./images/Trho_TPAGB.png "T(&rho;) diagram of a 1M<sub>o</sub> `MESA-web` model during an AGB thermal pulse. Note the temperature inversion in the core, the presence of 2 burning shells in this snapshot (the He shell marked by the orange outline and the H shell marked by the yellow outline).")
+
+The result of this process of "thermal pulses" in AGB is that the
+H-rich envelope and He-rich shell are progressively ejected (though
+the exact rate and mass loss mechanism are still an active topic of
+research), leaving a hot carbon-oxygen WD in the center (the former
+core) shining into a low-density nebula made by the ejecta. This is a
+*planetary nebula* (although it has little to do with anything related
+to planets). A catalog of planetary nebulae images is available [here](https://faculty.washington.edu/balick/PNIC/),
+and the figure below shows an example.
+
+![img](./images/catseye.jpg "Example of an *HST* image of a planetary nebula: NGC6543 (aka Cat's eye nebula). In the center is a young WD star, and the shape of the nebula depends on the mass ejection process and the propagation of these ejecta (e.g., interacting with a planetary system around the star).")
+
+After losing their envelopes to thermal pulses (possibly accompanied
+by a late enhancement of their stellar winds), low mass stars rapidly
+move from the top right (high $L$ low $T_\mathrm{eff}$) corner of the
+HR diagram to the lower left (low $L$ high $T_\mathrm{eff}$) corner
+becoming white dwarfs (WD): this process of contraction occurs on a
+thermal timescale. In WDs the gravothermal collapse stops because of
+the electron degeneracy pressure: the degeneracy decouples their
+structure (which can be approximated assuming $k_{B}T\ll \varepsilon_\mathrm{Fermi}
+\Rightarrow T\simeq 0$) and their radiative properties.
+
+These sit in the bottom left corner of the HR diagram: they actually
+have *hotter* surface temperatures compared to a main sequence star!
+This high T means they do radiate and lose energy, but because of the
+small radius ($R\simeq0.01R_{\odot}\simeq 1000$ km) they have a low luminosity
+$L=4\pi R^{2} \sigma T_\mathrm{eff}$: their radiative cooling is very slow
+(timescale of billions of years). The WD will just "slide down slowly"
+on a cooling track. The WD cooling sequence provides a *clock* for
+stellar populations!
+
+**N.B.:** Because of the $M(R)$ relation for non-relativistic electron
+degeneracy gas in hydrostatic equilibrium, the *lower mass WDs have
+larger $R$*, thus for a given $T_\mathrm{eff}$, they also have *higher
+$L$* (see [lecture on degenerate EOS](./notes-lecture-EOS2.md) and related homework).
+
+
+<a id="org0257619"></a>
+
+### The *Gaia* spur: observational evidence for crystallization
+
+As the WD cools, its core density increases, and its degenerate plasma
+will at some point crystallize. This phase transition releases latent
+heat thus slows down the cooling: in isochrones of WD populations we
+should expect an overabundance of stars in the region where we expect
+crystallization to occur, and this was tentatively observed thanks to
+the *Gaia* DR2 dataset for WDs within 100pc from Earth ([Tremblay et al.
+2019](https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract)):
+
+![img](./images/Gaia_spur.png "HR diagram for a complete volume-limited sample of WDs within 100pc from *Gaia* DR2. The color of points indicates spectroscopically determined masses based on [SDSS](https://www.sdss.org/), red dots mark magnetized WD (again from their spectra), and dotted orange lines enclose the predicted region where crystallization of the WD covers between 20% (top) and 80% of the total mass, and contains an overabundance of stars as predicted by the release of latent heat. This is Fig. 2 from [Tremblay et al. 2019](https://ui.adsabs.harvard.edu/abs/2019Natur.565..202T/abstract).")
+
+**N.B.:** Crystallization of a C-rich WD makes a stellar-mass, Earth-size
+diamond!
+
+Other physical phenomena that can influence the evolution of WDs is
+the gravitational sedimentation of the composition, with heavier
+elements sinking and lighter elements rising, and for sufficiently
+high $L$ (young WDs) there can also be radiative levitation, where the
+most opaque elements (typically the primordial iron present) will be
+pushed upwards by radiation.
+
+-   **Q**: Based on the energy transport mechanism that can occur in stars,
+    what do you expect the $T(m)$ or $T(r)$ structure of the WD core to
+    be? (**hint**: think of what provides the pressure support of a WD)
+-   **Q**: Consider the formation of Helium WDs. These are observed,
+    however, to form from a single star not-massive-enough to ignite He
+    burning, it would take longer than the current age of the Universe
+    (because low $M$ &rArr; much lower $L \Rightarrow L_\mathrm{nuc} = L$ drives a
+    very slow evolution). Therefore, apparently, the existence of He
+    WDs is paradoxical! Can you think of any solution to this apparent
+    paradox?
+
+
+<a id="org1d078ad"></a>
+
+## High mass stars: &nu; speedup the evolution
+
+As we discussed in the [nuclear burning](./notes-lecture-nuclear-burning.md) and [neutrino lectures](./notes-lecture-neutrinos.md), for
+initially sufficiently massive stars ($M\geq7-8M_{\odot}$) the electron
+degeneracy pressure never suffice to (completely) stop the
+gravothermal collapse. As gravity drives their cores to higher and
+higher densities, $L_{\nu} \gg L_{\gamma}$ decoupling the neutrino-cooled
+core from the envelope: the nuclear timescale of the core becomes
+shorter than the thermal timescale of the envelope.
+
+**N.B.:** partial electron degeneracy may play a role, depending on the
+ mass, and at late burning phases "flashes" similar to the He flash in
+ low mass stars can occur deep in the core.
+
+Thus these stars proceed through burning all the way to iron, and each
+new fuel ignites in a more centralized, hotter mass range, surrounded
+by an inert layer, and then a shell of the previous nuclear fuel above
+it, creating the "onion structure" we have already seen. The interplay
+between these shells can lead to them migrating (in mass coordinate)
+and merging very close to the stellar death.
+
+While in theory the envelope should be completely "frozen" at this
+point, early observations of supernova explosions suggest that some
+*dynamical* coupling between core and envelope must occur in the last
+final years and months of the star, a topic of great research interest
+presently (see for example the review by [Dessart 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240504259D/abstract)). This is not
+yet an understood phenomenon.
+
+
+<a id="orgbfac020"></a>
+
+### super-AGB stars
+
+Because of &nu; cooling and its dependence on $\rho$, in AGB stars the
+denser center cools faster than the layers above it: this can lead to
+a "temperature inversion". At the boundary between white dwarf
+progenitors and massive stars, the so-called "super-AGB" stars will
+ignite C off-center, but the ignition of carbon will then move inwards
+(in a &sim; meter thin shell) until it reaches the center, lifting the
+electron degeneracy by releasing nuclear energy, and allowing the star
+to evolve past C core burning.
+
+The lowest mass stars experiencing C core burning thus ignite it off
+center and burn it into a mixture of oxygen, neon, magnesium, after
+which they can experience thermal pulses (like lower mass AGB stars),
+leaving behind ONeMg WD.
+
+At the upper end of this regime, the most massive ONeMg cores
+(possibly still surrounded by He- and H-rich layers) will then become
+supported by degeneracy pressure again, but as they cool and
+contracts, they can reache densities sufficient to start electron
+captures, which remove the electrons sustaining the core leading to a
+so-called "electron capture SN" (which effectively is a core-collapse
+SN initiated by a degenerate ONeMg core rather than a Fe core).
+

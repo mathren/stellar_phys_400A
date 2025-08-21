@@ -1,0 +1,749 @@
+
+# Table of Contents
+
+1.  [Stellar atmospheres](#orga3e4f9c)
+    1.  [Definition](#org8aa7799)
+2.  [Basics of radiative transfer](#org6fb4f72)
+    1.  [Simple solutions of the steady state radiative transfer equation](#org69bebb9)
+        1.  [Steady state without emission](#org1571c6a)
+        2.  [Steady state with emission and absorption canceling each other](#org3e99224)
+    2.  [Eddington atmosphere](#org28a1261)
+        1.  [Outer boundary conditions of the stellar problem: T<sub>eff</sub> and P](#org1f249b1)
+3.  [Saha equation](#orgc00d9cb)
+4.  [Spectral line formation](#org35d26e4)
+    1.  [Broadening mechanisms](#orgb496426)
+        1.  [Intrinsic width of lines](#orgca710a7)
+        2.  [Rotational broadening](#orga12fea9)
+        3.  [Pressure broadening](#org6917537)
+        4.  [P Cygni profiles](#org70c4a11)
+    2.  [Emission lines](#orgeb658c6)
+        1.  [Be stars](#orgbc4b0a3)
+        2.  [B[e] stars](#org291aa9e)
+        3.  [Wolf-Rayet stars](#org47c333f)
+
+**Materials:** Mihalas *Stellar atmospheres* book, Chapter 3. de Koter's
+[lecture notes on radiative transfer and stellar atmospheres](https://staff.fnwi.uva.nl/a.dekoter/ARTv1.103.00.pdf), Shore's
+*Astrophysical Hydrodynamics* book, Lamers & Cassinelli 1994 book.
+
+
+<a id="orga3e4f9c"></a>
+
+# Stellar atmospheres
+
+So far in this course we have mostly dealt with the *interior* of stars
+and derived equation to determine the stellar *structure* and what
+drives their *evolution* (which is typically "slow", $\tau_\mathrm{nuc} \gg \tau_\mathrm{KH}
+\gg \tau_\mathrm{ff}$).
+
+The picture we have derived is that gravity drives a contraction of
+the (hot) stellar gas, which, because it has a finite temperature,
+shines. This loss of internal energy translates into a loss of
+gravitational potential because of the virial theorem relating the
+two, and consequently the temperature in the center increases. This
+continues until nuclear burning ignites to compensate for the energy
+losses: *stars don't shine because they burn, stars burn <span class="underline">because</span> they
+shine*.
+
+The nuclear burning can be seen just as an attempt by the star to
+*delay* its gravitational collapse: as nuclear fuel is depleted the star
+is forced to evolve (until either gravity "wins" or the EOS deviates
+from the classical ideal gas, and quantum mechanical effects provide
+sufficient pressure that win over gravity).
+
+However, many of the assumptions we have made to derive these
+equations and the picture of stellar evolution described above *do not
+apply to the stellar atmosphere*, which is the layer that produces the
+*detectable* photons from stars! In this lecture we will consider in
+more details the physics of the stellar atmosphere which are crucial
+to obtain empirical evidence to test the picture of stellar evolution
+we now can build, and to provide the outer boundary conditions needed
+to calculate a stellar model.
+
+-   **Q**: which assumptions that hold in the stellar interior don't apply
+    to the atmosphere?
+
+
+<a id="org8aa7799"></a>
+
+## Definition
+
+The *stellar atmosphere* is by definition the layer where the radiation
+field is *not* isotropic, but the photon flux has a net *radial*
+component.
+
+**N.B.:** This does *not* mean that all the photons move radially! Just that
+on average there are more photons moving in the positive radial
+direction than the negative radial direction, but photons can still
+move in all direction!
+
+This means that *by definition* the stellar atmosphere is *not* a black
+body, and it is *partially* transparent to photons (resulting in a
+positive radial component of the photon flux). We *cannot* use the
+diffusion approximation to treat radiative transport here, since the
+mean free path of photons $\ell_{\gamma}$ are becoming comparable to the
+thickness of the atmosphere ($\rho$ decreases moving outward!).
+
+To make models of stellar *spectra* and determine the outer boundary
+conditions we need to consider how radiation from the bottom flows
+through the atmospheric layer and consequently how this layer
+stratifies, determining the outer boundary pressure and temperature.
+
+**N.B.:** real stars are even more complicated: in the photosphere
+radiative and (magneto)-hydrodynamical processes can launch stellar
+winds that remove mass from the star and connect smoothly the stellar
+material with the interstellar material!
+
+By definition, the bottom layer of the atmosphere is the *photosphere*,
+that is this fictional surface that has T<sub>eff</sub> such that a black body of
+this temperature would emits the same energy per unit time as the star
+does. This is from where the bulk of the stellar radiation comes from
+*by definition* (recall the [discussion on spectral types!](notes-lecture-CMD-HRD.md)).
+
+**N.B.:** $dL/dm = \varepsilon_\mathrm{nuc} - \varepsilon_{\nu} + \varepsilon_\mathrm{grav} \equiv 0$ in the outer
+layers of the star where $T$ is not high enough for nuclear burning, $\rho$
+is not high enough for neutrino emission, and we assume gravothermal
+equilibrium, so $\varepsilon_\mathrm{grav} \propto ds/dt = 0$, so $L$ is constant.
+
+
+<a id="org6fb4f72"></a>
+
+# Basics of radiative transfer
+
+The problem we need to consider in the stellar atmosphere is how
+radiation coming from the *photosphere* flows through the overlaying
+gas, and how this impact the observable radiation itself, and the
+structure of these gas layers (thus determining the pressure at the
+base of the atmosphere, which is the outer boundary condition for the
+interior!).
+
+**N.B.:** a useful thing for this problem is to "think like a photon", and
+imagine the physics it will encounter during its trip towards the
+detector!
+
+Since by definition the radiation coming out from the photosphere is a
+black body, it is isotropic, so if you think of the atmosphere as a
+slab of gas with a thickness $dr$, the radiation illuminating it from
+below may come at an angle $\theta$ w.r.t. the slab.
+
+We can define the specific intensity (per unit frequency or
+wavelength) $I_{\nu}$ as the amount of energy flowing through a surface
+element $dA$ in a time interval $dt$ and coming within a solid angle
+$d\Omega$ around the direction $\mathbf{n}$ with frequency in the range
+between $\nu$ and $\nu+d\nu$:
+
+<div class="latex" id="org524bdb6">
+\begin{equation}
+I_{\nu} \equiv I_{\nu}(\theta) = \frac{dI}{d\nu} = \frac{dE_{\nu}}{d\nu dt dA d\Omega} \mathbf{n} \ \ ,
+\end{equation}
+
+</div>
+
+which has the dimensions of [E]/([L<sup>2</sup>][t][&nu;][solid angle]). This would
+be constant as photons propagate along a path of length ds along the
+direction $\mathbf{n}$, however there can be processes that add
+photons:
+
+-   scattering from another direction onto the direction of interest;
+-   emission processes;
+
+and process that can remove photons:
+
+-   scattering from the direction of propagation onto another direction;
+-   absorption processes.
+
+Moreover, $I_{\nu}$ itself may in general be time dependent (although
+this is not the case for stellar atmosphere), so we can write down the
+equation of radiative transfer as
+
+<div class="latex" id="org2b40737">
+\begin{equation}\label{eq:radTrans}
+\frac{dI_{\nu}}{ds} = \frac{1}{c}\frac{\partial I_{\nu}}{\partial t} + \mathbf{n}\cdot\nabla I_{\nu} = -\kappa_{\nu}\rho I_{\nu} + j_{\nu}\rho \ \ ,
+\end{equation}
+
+</div>
+
+where the l.h.s. expresses the total change in specific intensity
+along the direction $\mathbf{n}$ due to the intrinsic time-dependence
+($\partial_{t}$) of $I_{\nu}$ and the spatial dependence along the direction we are
+considering ($\mathbf{n}\cdot\nabla$), and the r.h.s. expresses the loss of
+radiation intensity due to scattering *and* absorption processes, which
+depends on $\kappa_{\nu}$ (the specific opacity we have already encountered) and
+is proportional to $I_{\nu}$ itself (you can't lose photons you don't
+have!), and the addition of radiation intensity from emission
+processes and scattering along the line of sight which depends on the
+emission coefficient $j_{\nu}$.
+
+**N.B.:** dimensional analysis reveals that each side has the units of
+[$I_{\nu}$]/[L], this equation describes how the intensity changes along
+its path. The fact that photons propagate at the speed of light c make
+the leftmost factor of $1/c$ appear: $d/ds = c\partial_{t} + \mathbf{n}\cdot\nabla$. The
+density $\rho$ on the l.h.s. expresses that the more matter there is (per
+unit volume), the more likely there will be absorption and emission.
+
+The specific intensity at the bottom of the atmosphere is related to
+the photospheric emission by:
+
+<div class="latex" id="orge767577">
+\begin{equation}\label{eq:flux_BB}
+F \equiv \int_{0}^{+\infty} d\nu F_{\nu} \equiv \sigma T_\mathrm{eff}^{4} =  \int_{0}^{+\infty} d\nu \int d \Omega \cos(\theta) I_{\nu} \ \ ,
+\end{equation}
+
+</div>
+
+that is the black body flux $F$ is obtained by integrating the specific
+intensity over the solid angles. Note the factor $\cos(\theta)$ that arises
+because $I_{\nu}$ is a vector and we only want the component normal to the
+surface element $dA$.
+
+This last expression is going to be useful to connect the physics in
+the atmosphere with the interior, since we *define* the photosphere to
+have a flux $\sigma T_\mathrm{eff}^{4}$.
+
+**N.B.:** Because of Eq. \ref{eq:flux_BB} the photosphere flux acts as
+inner boundary condition for the problem of the radiative transfer
+through the atmosphere. We have already seen that it acts as outer
+boundary condition for the stellar interior.
+
+
+<a id="org69bebb9"></a>
+
+## Simple solutions of the steady state radiative transfer equation
+
+
+<a id="org1571c6a"></a>
+
+### Steady state without emission
+
+In absence of an explicit time dependence ($\partial_{t} I_{\nu} =0$) and emission
+processes ($j_{\nu}=0$), this equation is easily solved calling s the
+length element along the direction $\mathbf{n}$ so that $\mathbf{n}\cdot\nabla
+\equiv d/ds$, and the solution becomes:
+
+<div class="latex" id="orgac024f5">
+\begin{equation}
+I_{\nu} = I_{\nu,0} e^{-\kappa_{\nu}\rho s} =  I_{\nu,0} e^{-\tau_{\nu}} \ \ ,
+\end{equation}
+
+</div>
+
+where we introduce the definition of specific optical depth $d\tau_{\nu} =
+\kappa_{\nu}\rho ds$. This variable is useful because it gives the
+scale-length of the problem as depending on $\kappa_{\nu}\rho =
+1/\ell_{\gamma,\nu}$ with $\ell_{\gamma,\nu}$ the mean free path for a photon
+of frequency between $\nu$ and $\nu+d\nu$. Effectively, this allows us to
+use $\tau_{\nu}$ as the independent coordinate for the propagation of photons
+of frequency between $\nu$ and $\nu+d\nu$.
+
+
+<a id="org3e99224"></a>
+
+### Steady state with emission and absorption canceling each other
+
+With the definition of $d\tau_{\nu}$, we can re-write Eq. \ref{eq:radTrans}
+(still assuming no explicit time dependence, $\partial_{t}I_{\nu} = 0$) as:
+
+<div class="latex" id="org8024871">
+\begin{equation}\label{eq:rad_trans_tau}
+\frac{dI_{\nu}}{d\tau_{\nu}} = \frac{j_{\nu}}{\kappa_{\nu}} - I_{\nu} \equiv S_{\nu} - I_{\nu} \ \ ,
+\end{equation}
+
+</div>
+
+where in the last step we define the source function
+$S_{\nu}=j_{\nu}/\kappa_{\nu}$. In thermal equilibrium and at high optical
+depth, for instance in the interior region of a star,
+$dI_{\nu}/d\tau_{\nu}=0$ and $I_{\nu} = B(\nu,T)$ is the black body function
+for the intensity, and this equation states $S_{\nu} = I_{\nu} \equiv B(\nu,
+T)$.
+
+This effectively is a statement that at thermal equilibrium, the
+emission processes, the absorption processes, and scattering in and
+out of the direction of interest all cancel each other out.
+
+
+<a id="org28a1261"></a>
+
+## Eddington atmosphere
+
+The simplest stellar atmosphere model that allows to define
+non-trivial outer boundary conditions is the so called "Eddington gray
+atmosphere", which provides an analytic $T(\tau)$ relation in the
+atmosphere that can be smoothly attached to the stellar interior where
+$T \equiv T_\mathrm{eff}$ and used to calculate the pressure needed at such
+boundary to have hydrostatic equilibrium. In other words, the
+Eddington gray atmosphere allows one to define (non-trivial) outer
+boundary conditions for the stellar interior problem.
+
+Let's start with the assumption of a *plane parallel atmosphere*, that
+is we neglect the *curvature* of the stellar atmosphere, which is
+acceptable if its radius is much larger than the length scale of
+interest at any point in it. This assumption reduces the problem to a
+one-dimensional problem along the vertical direction, and $ds =
+-dz/cos(\theta)$ for the element of length along a generic photon path $ds$,
+and rewrite the steady state ($\partial_{t} = 0$) radiative transfer equation as:
+
+<div class="latex" id="org41bbc9a">
+\begin{equation}
+\cos(\theta)\frac{d I_{\nu}}{d\tau_{\nu}} = - (S_{\nu}-I_{\nu}) \ \ .
+\end{equation}
+
+</div>
+
+**N.B.:** we define ds and $dz$ to be antiparallel (introducing a minus
+sign), because we want $d\tau$ to be positive moving inwards toward
+negative $z$.
+
+The second approximation of the Eddington atmosphere is that we assume
+a "gray" radiative transfer, meaning the opacity is *independent of
+frequency* $\kappa_{\nu}\rightarrow\kappa$, thus $\tau_{\nu}\rightarrow\tau$.
+We also neglect the frequency dependence of the source term $S_{\nu}$.
+With these hypotheses we can now integrate this in $d\nu$ from 0 to +&infin;
+and obtain:
+
+<div class="latex" id="orgaa43055">
+\begin{equation}\label{eq:gray_eq}
+\cos(\theta) \frac{dI}{d\tau} = - (S-I) \ \ ,
+\end{equation}
+
+</div>
+
+which can be solved analytically (multiply by $e^{-\tau/cos(\theta)}$,
+rewrite the l.h.s. as a total derivative and integrate in $d\tau$)
+getting
+
+<div class="latex" id="org5162c56">
+\begin{equation}
+I(\tau,\theta) = \frac{\exp(\tau/\cos(\theta))}{\cos(\theta)} \int_{\tau}^{+\infty} S\exp(-\tau/\cos(\theta))d\tau \ \ ,
+\end{equation}
+
+</div>
+
+where the r.h.s. is integrated from a certain optical depth $\tau$
+outwards. We can recover the $\nu$ dependence of $S \rightarrow S(\tau)$ as an
+optical depth dependence in this integral.
+
+We can also define the radiation energy density $u$, the total flux
+$F$, and the radiation pressure as moments of the intensity $I(\tau,\theta)$
+w.r.t. $\cos(\theta)$ (since $\theta$ always appears in a cosine, it is usual to
+change variable to $\cos(\theta)=\mu$ in radiative transfer calculations):
+
+<div class="latex" id="orgdd525f4">
+\begin{equation}\label{eq:momenta_rad}
+u \equiv u(\tau) = \frac{2\pi}{c} \int_{-1}^{1} I(\tau, \theta)d\cos(\theta) \ \ ,\\
+F \equiv F(\tau) = 2\pi\int_{-1}^{1} I(\tau, \theta)\cos(\theta)d\cos(\theta) \ \ , \\
+P_\mathrm{rad} \equiv P_\mathrm{rad}(\tau) = \frac{2\pi}{c}\int_{-1}^{1} I(\tau, \theta)\cos^{2}(\theta)d\cos(\theta) \ \ .
+\end{equation}
+
+</div>
+
+We can also define the average specific intensity as $J(\tau) = (4\pi)^{-1}\int
+I(\tau)d\Omega \equiv 0.5\int_{-1}^{+1} I(\tau)dcos(\theta)$, so that $J=c u/4\pi$. and dividing Eq.
+\ref{eq:gray_eq} by two and integrating between -1 and 1 in $\cos(\theta)$ we
+have
+
+<div class="latex" id="orgc78568e">
+\begin{equation}\label{eq:J_S}
+\frac{1}{4\pi}\frac{d F}{d\tau} = J-S \ \ .
+\end{equation}
+
+</div>
+
+Now the total radiative gray flux in the atmosphere has to be
+constant, $dF/d\tau = 0$: there is radiative equilibrium and what goes in
+must come out! So this equations tells us $J=S$.
+
+We can also take Eq. \ref{eq:gray_eq} and multiply it by $\cos^{2}(\theta)$
+and integrate between -1 and 1 in $\cos(\theta)$ to obtain:
+
+<div class="latex" id="org56a1aac">
+\begin{equation}\label{eq:sol_S}
+\frac{dP_\mathrm{rad}}{d\tau} = \frac{F}{c} \ \ .
+\end{equation}
+
+</div>
+
+The r.h.s. is constant, so this can be integrated to give
+$P_\mathrm{rad} = F\tau/c + \mathrm{constant}$. One more hypothesis of
+the Eddington approximation is to *assume* that the gas is radiation
+pressure dominated $P_\mathrm{rad} \gg P_\mathrm{gas}$ (this was to
+allow him to proceed further): then we also know from thermodynamics
+that $P_\mathrm{rad}=u/3 \equiv 4\pi J/3c$ (using the definition of $J$ and
+its relation with the radiation energy density $u$). Putting all these
+findings together:
+
+<div class="latex" id="org3388d92">
+\begin{equation}
+S = J = \frac{3 P c}{4\pi} = \frac{3F}{4\pi}\left(\tau + \mathrm{constant}\right) \ \ ,
+\end{equation}
+
+</div>
+
+that is we have an expression for the source function!
+Substituting for S in the solution for I we get:
+
+<div class="latex" id="org907fe78">
+\begin{equation}
+I(\tau, \cos(\theta)) = \frac{3F}{4\pi}\frac{\exp(\tau/\cos(\theta))}{\cos(\theta)}\int_{\tau}^{+\infty} \left(\tau+\mathrm{constant}\right) \exp\left(-\frac{\tau}{\cos(\theta)}\right)d\tau \Rightarrow I(0,\cos(\theta)) = \frac{3F}{4\pi}(\cos(\theta)+\mathrm{constant}) \ \ .
+\end{equation}
+
+</div>
+
+To determine the constant of integration, we can use the second
+Eq. \ref{eq:momenta_rad} which defines F using the solution for
+I(&tau;=0,cos(&theta;)) in the integral:
+
+<div class="latex" id="orgf9b5009">
+\begin{equation}
+F = 2\pi\int_{-1}^{1}I\cos(\theta)d\cos(\theta) = \frac{3F}{2}\int_{-1}^{1}\left(\cos^{2}(\theta)+\mathrm{constant}\cos(\theta)\right)d\cos(\theta) = \frac{3F}{2}(\frac{1}{3}+\frac{\mathrm{constant}}{2})\\
+ \Rightarrow \mathrm{constant} = \frac{2}{3} \ \ .
+\end{equation}
+
+</div>
+
+We obtained this constant imposing the flux to come from &tau;=0 &rArr; &kappa; = 0,
+so from the layer after which there is nothing impeding the photons
+anymore (**N.B.:** the only other option is &rho;=0, so there is nothing, or
+ds=0, so the photons have not moved!). With this constant, we
+completely specified the source function S &equiv; S(&tau;) and we can obtain I&equiv;
+I(&tau;) and use it to calculate the pressure!
+
+
+<a id="org1f249b1"></a>
+
+### Outer boundary conditions of the stellar problem: T<sub>eff</sub> and P
+
+From Eq. \ref{eq:J_S} and \ref{eq:sol_S} we now have:
+
+<div class="latex" id="org3d70e22">
+\begin{equation}
+J = S =  \frac{3F}{4\pi}\left(\tau+\frac{2}{3}\right)  \ \ ,
+\end{equation}
+
+</div>
+
+but also, assuming that the atmosphere is also in LTE (including
+radiation!), $J=S=B(\nu,T)=\sigma T^{4}/\pi$, so using that $F=\sigma T_\mathrm{eff}^{4}$ we
+obtain:
+
+<div class="latex" id="org8c6bc76">
+\begin{equation}
+T^{4} = \frac{3}{4}T_\mathrm{eff}^{4}(\tau+\frac{2}{3}) \ \ ,
+\end{equation}
+
+</div>
+
+which is the Eddington $T(\tau)$ relation which connects the effective
+temperature of the black body to the outer temperature $T(\tau)$ under the
+approximations for the atmosphere:
+
+1.  plane parallel
+2.  gray (i.e., independent on frequency &nu;)
+3.  radiation dominated
+4.  Local thermal equilibrium.
+
+**N.B.:** In the stellar atmosphere, $T$ is a steep function of $\tau$ in this
+approximation!
+
+**N.B.:** in this approach the photosphere correspond to $\tau=2/3$, this
+factor comes from imposing $T=T\mathrm{eff}$ in the radiation
+dominated, gray, plane parallel atmosphere. This number is a direct
+consequence of these specific approximations, and it makes sense that
+it is of order &sim;1: the black body radiation from the stellar interior
+comes from the region where &tau; goes from $\tau\gg1$ (where $I_{\nu} = S_{\nu}$ and
+we have a black body distribution for radiation) to $\tau\le1$ (where the
+optical depth is low and we cannot assume black body) to . Once again,
+it is important to remember that the photosphere is an idealization,
+and nothing that special occurs at $\tau=2/3$, it's just a convenient
+location where we can stitch the Eddington gray atmospheric model to
+the interior model.
+
+Finally, to find the outer boundary pressure, we need to integrate
+downward from $\tau=0$ to $\tau(T=T_\mathrm{eff})\simeq2/3$ the hydrostatic
+equilibrium equation. We typically assume that the atmosphere is in
+hydrostatic equilibrium, however *can* be a big assumption, depending on
+the star and whether it loses mass and whether the interaction between
+radiation and the gas drives non-trivial dynamics. Furthermore, we
+usually assume that the gravity is constant, or in other words, we
+neglect the atmosphere's "self-gravity" since the bulk of the mass is
+inside its inner boundary. One can just assume that $\kappa$ is constant
+throughout the atmosphere, an oversimplification that allows for an
+analytic calculation which yields:
+
+<div class="latex" id="org6c07e63">
+\begin{equation}
+P(\tau) = \frac{GM}{R^{2}\kappa}\tau \Rightarrow P(\tau=2/3) = \frac{2}{3}\frac{GM}{R^{2}\kappa}\ \ ,
+\end{equation}
+
+</div>
+
+where $M$ is the total mass of the star, $R$ is the radius such that
+$L/(4\pi R^{2}) = \sigma T_\mathrm{eff}^{4}$, $\kappa$ is the opacity assumed constant
+in the atmosphere, and we *define* the bottom of the atmosphere at
+$\tau=2/3$ because of the Eddington $T(\tau)$ relation. Alternatively, one
+could use tabulated values of $\kappa$ and a $T(\tau)$ to perform the
+integral.
+
+Together with $T=T_\mathrm{eff}$, we now have specified the outer
+boundary conditions fixing $T$ and $P$ at $\tau=2/3$ and completely
+determined the mathematical problem of the structure and evolution of
+a single, non-rotating, non-magnetic star of known total (initial)
+mass $M$ and composition.
+
+**N.B.:** While Eddington atmosphere are the simplest non-trivial case, it
+is still on approximations which can (and sometimes are) relaxed in
+stellar evolution modeling: this can move the outer boundary in $\tau$
+location too by changing some of the assumptions of the Eddington gray
+atmosphere!
+
+**N.B.:** A "classic" generalization of this atmospheric model is the
+generic class of gray atmospheres where the constant of integration is
+*not* a constant, but a function of $\tau$ itself.
+
+
+<a id="orgc00d9cb"></a>
+
+# Saha equation
+
+Let's also assume that LTE holds in the stellar atmosphere, therefore,
+the rate at which atoms are ionized $I$ matches the rate at which there
+are recombinations $R$ (principle of detailed balance). Therefore:
+
+<div class="latex" id="orga27918b">
+\begin{equation}
+ n_{e} n_{+} R = n_{0} I \Rightarrow \frac{n_{e} n_{+}}{n_{0}} = \frac{I}{R}\ \ ,
+\end{equation}
+
+</div>
+
+where $n_{e}$, $n_{+}$, and $n_{0}$ are the number densities of electrons,
+positive ions, and neutral atoms respectively (so we are imposing a
+balance per unit volume). But that must also be equal to the ratio of
+available states to all these particles, which in the limit of ideal
+gas we can calculate using Maxwell-Boltzmann statistics! The momentum
+terms of the ions and neutral atoms cancel each other in the ratio
+(neglecting the small mass difference between these 2), and we are
+left with
+
+<div class="latex" id="org089db0c">
+\begin{equation}
+\frac{n_{e} n_{+}}{n_{0}} = 2\frac{(2\pi m_{e} k_{B}T)^{3/2}}{h^{3}} \exp\left(-\frac{\chi}{k_{B}T}\right) \ \ ,
+\end{equation}
+
+</div>
+
+where the first term comes from the momentum phase space of the
+electron (with 2 factor for its spin) and the exponential depends on
+the ionization potential $\chi$. This is the so called Saha equation named
+after [Megnhad Saha](https://en.wikipedia.org/wiki/Meghnad_Saha), which under the assumption of LTE (sometimes
+questionable in stellar atmospheres) allows to calculate the free
+electron and ion densities.
+
+**N.B.:** The exponential factor comes from the Maxwell-Boltzmann
+statistical distribution of $dn_{0}$, $dn_{e}$, and $dn_{+}$!
+
+For any ion/atom for which we can calculate (or empirically determine
+in a lab) the ionization potential $\chi$, or more in general the
+difference in their energy levels, we can write a similar equation!
+Thus once the temperature $T$ of a gas is specified this allows us to
+predict what the photons filtering through the atmosphere will
+encounter, and thus what we expect will be "removed" from the
+distribution of photons coming out of the photosphere and the
+resulting spectrum of the stars.
+
+**N.B.:** This equation also allows us to determine the number of free
+electrons and thus the chemical potential in the partial ionization
+zones of the stars!
+
+
+<a id="org35d26e4"></a>
+
+# Spectral line formation
+
+Lines form because the black body spectrum coming from the photosphere
+(by definition) filters through the overlaying *atmospheres* where atomic
+radiative processes (mainly bound-bound and bound-free transitions)
+can *remove* some photons from the spectrum.
+
+To predict the spectrum of a star, one needs to know the temperature,
+density, and velocity structure of the atmosphere (to be able to
+calculate the Doppler shifts!), whether it is in LTE (so electron
+populations are described by the Saha equation above) or non-LTE
+effects need to be accounted for (e.g., for maser lines), and solve
+the radiative transfer equation.
+
+In some cases, the velocity structure depends on the radiation itself
+making this process extremely complicated, or more precisely, in the
+momentum equation of the gas, a radiative acceleration term dependent
+on the velocity (because of the Doppler-dependence of &kappa;<sub>&nu;</sub>) appears,
+making the dynamics of the radiation+gas highly non-linear. This is,
+for example, the case of radiatively driven stellar winds from massive
+stars (see for instance the book by Lamers & Cassinelli 1994 or the
+review [Smith 2014](https://ui.adsabs.harvard.edu/abs/2014ARA%26A..52..487S/abstract)).
+
+
+<a id="orgb496426"></a>
+
+## Broadening mechanisms
+
+While treating in detail all these processes would require an entire
+course on its own (see for example [the notes by Prof. de Koter](https://staff.fnwi.uva.nl/a.dekoter/ARTv1.103.00.pdf)), we
+can give a brief qualitative description of some key effects here.
+
+While considering these remember that for virtually all stars (except
+the Sun), the projected disk on the sky is *unresolved* (the size of the
+point-spread function of the telescope is bigger than the size of the
+stellar disk projected on the sky): in an observed spectrum you see
+all the surface at the same time!
+
+
+<a id="orgca710a7"></a>
+
+### Intrinsic width of lines
+
+Because of the uncertainty principle, an electron in an ion allowing
+for a bound-bound or bound-free transition is not perfectly localized.
+A consequence of this is that the spectral lines formed by one
+particular ion in a particular energy state is not an infinitely sharp
+delta function $\delta(\nu_{0})$ centered at $\nu_{0}=\Delta E/h$, but instead it is a
+Lorentzian profile with an intrinsic width.
+
+
+<a id="orga12fea9"></a>
+
+### Rotational broadening
+
+If the star is rotating, some parts of the disk will be moving away
+from the observer (at a velocity $v_\mathrm{rot} \times sin(i)$ with $i$
+inclination angle to the line of sight), and some parts will be moving
+towards the observer (unless $i=0$, i.e. the star is seen rotation
+pole on, as seems to be the case for the North Star!).
+
+This will introduce a Doppler shift from each part of the disk: this
+*rotational broadening* is usually described by a Gaussian, that needs
+to be convolved in frequency space with the intrinsic Lorentzian
+distribution coming from the QM of the transition.
+
+The *convolution* of a Lorentzian and a Gaussian gives a Voigt profile
+after [Woldermar Voigt](https://en.wikipedia.org/wiki/Woldemar_Voigt).
+
+
+<a id="org6917537"></a>
+
+### Pressure broadening
+
+In a star, even in the relatively low $\rho$ atmosphere, ions/atoms
+interacting with radiation are *not* in isolation! The presence of
+external forces (due to other ions/atoms, or global magnetic field,
+etc.) can modify the energy levels of each atom's Hamiltonian, and
+thus the central frequency $\nu_{0}$ *and* the width of specific bound-bound
+transition. Collectively this is referred to as "pressure broadening".
+
+As a concrete example, Zeeman splitting of the degenerate (in absence
+of magnetic field) $\ell=1$, $m=0,\pm1$ triplet can result in small (non
+resolved) shift in frequency that are observed as a broadened line.
+
+
+<a id="org70c4a11"></a>
+
+### P Cygni profiles
+
+If the atmosphere is "moving", for example because there is a wind
+outflow, a particular shape of the spectral lines will form. This is
+called after the first star in which this was detected a "P Cygni"
+line.
+
+The wind moving toward the observer will absorb radiation like any
+atmosphere, but because of its motion the absorption will be moved to
+shorter wavelengths (blue-shifted). Viceversa, the wind moving in
+directions away from the observer will have electrons de-exciting and
+thus photon *emission* (if the de-excitation is radiative and not
+collisional), which will be redshifted to longer wavelengths, causing
+a specific shape of the line:
+
+![img](./images/P_Cygni.png)
+
+
+<a id="orgeb658c6"></a>
+
+## Emission lines
+
+Some stars not only show *absorption* lines (i.e., "lack" of photons at
+certain wavelengths compared to the underlying black body spectrum
+produced at the photosphere), but also *emission lines*.
+
+The P Cygni profiles mentioned above are in a sense an "intermediate"
+behavior between these two regimes.
+
+
+<a id="orgbc4b0a3"></a>
+
+### Be stars
+
+These are stars of spectral class B (recall the [lecture on CMD/HRD](./note-lecture-CMD-HRD.md)),
+so fairly hot and massive, which show *emission* lines, typically H&alpha;. A
+star is classified as Be if it is a B-type star that ever showed H&alpha; in
+emission, even though these can be intermittent and disappear: long
+term spectroscopic followup, including the crucial contribution of
+amateur observers is important to understand the spectral behavior and
+thus the nature of these objects (see [BeSS catalog](http://basebe.obspm.fr/basebe/) containing
+professionally taken and amateur spectra of many bright Be stars!).
+
+These stars are interpreted as being *fast rotating*
+($\omega\ge0.7\omega_\mathrm{crit}$) which shed a "decretion disk": the emission
+lines are not from the star directly, but from the disk of the star! A
+clear indication of the presence of the disk is the "double peaked"
+morphology of the H&alpha; emission:
+
+![img](./images/Alcyone_Halpha.png "Spectrum of Alcyone (&eta; Tau) on March 18<sup>th</sup> 2019 centered around H&alpha; (&lambda;&sim;6562 Angstrom) showing the typical double peaked emission suggesting the presence of a disk, obtained by the amateur astronomer [E. Bryssinck](https://www.astronomie.be/erik.bryssinck/aboutme.html).")
+
+-   **Q**: can you infer why the double peaked morphology suggests a disk?
+
+The formation path of these stars is still being actively
+investigated, but the fact that none are found with main sequence
+binary companions and many are found instead with a neutron star
+companion (periodically plunging through the disk producing X-rays
+making the system a Be-X-ray binary!) suggest that these may be
+accretor stars spun up by binary interactions (cf. [Pols & Marinus
+1994](https://ui.adsabs.harvard.edu/abs/1994A%26A...288..475P/abstract), [Bodensteiner et al. 2020](https://ui.adsabs.harvard.edu/abs/2020A%26A...641A..42B/abstract), [Vinciguerra et al. 2020](https://ui.adsabs.harvard.edu/abs/2020MNRAS.498.4705V/abstract)), although
+single star evolutionary pathways also exist (e.g., [Langer 1998](https://ui.adsabs.harvard.edu/abs/1998A%26A...329..551L/abstract)), see
+also the review by [Rivinus et al. 2013](https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...69R/abstract).
+
+
+<a id="org291aa9e"></a>
+
+### B[e] stars
+
+These are also B-type stars showing emission lines, but *forbidden*
+emission lines, that is radiative transitions where the angular
+momentum of the electron changes which are exponentially disfavored.
+These can only occur in low-density environments: if the density was
+high, the atoms/ions would much rather de-excite collisionally than
+with a radiative transition with $\Delta \ell >0$.
+
+Thus, the presence of a forbidden line (indicated by the squared
+brackets) suggests a very low density environment surrounding these
+stars. They tend to be brighter than Be stars (presumably, more
+massive!), and whether there is an evolutionary relation between the
+two classes is presently unclear.
+
+
+<a id="org47c333f"></a>
+
+### Wolf-Rayet stars
+
+Wolf-Rayet stars are a spectroscopic class *defined* by the presence of
+emission lines and the deficiency (but not necessarily total lack) of
+hydrogen (see also review by [Shenar 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv241004436S/abstract)).
+
+They are further subdivided in classes based on the dominant lines
+visible (WNh if there is still significant amount of hydrogen, WN is
+it's nitorgen, WC for carbon, WO for oxygen). These are massive stars
+which have somehow shed a large portion of their H-rich envelopes
+(either because of winds of binary interactions) and are bright enough
+to drive strong outflows that are so dense that they are optically
+thick (remember $\tau(r)=\int_{0}^{r }\kappa\rho dr'$). In these dense winds
+collisional excitation of atoms/ions is possible followed by radiative
+de-excitation producing an *excess* of photons at the specific frequency
+of the atom/ion and transition considered, resulting in the emission
+line.
+

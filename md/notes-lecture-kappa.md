@@ -1,0 +1,440 @@
+
+# Table of Contents
+
+1.  [Opacity](#org12071e0)
+2.  [Rosseland mean opacity](#org9742798)
+    1.  [Physical interpretation](#org9cb467b)
+3.  [Sources of radiative opacity](#org9807afc)
+    1.  [Bound-bound](#orgcd1f7ca)
+    2.  [Bound-free](#org5223b4a)
+    3.  [Free-free](#org40baa6a)
+    4.  [Scattering](#orga6e8660)
+    5.  [Molecules and dust](#org4f4d2f7)
+    6.  [H<sup>-</sup>](#orgd6dec49)
+    7.  [Conductive opacity](#org0c929e0)
+4.  [Combining all these sources together](#org5f45461)
+5.  [Homeworks](#orgaa85bf3)
+    1.  [The Eddington Luminosity again](#orgcd08de6)
+
+**Materials**: Chapter 5 of Onno Pols' lecture notes, Sec. 5.1.3 of
+Kippenhahn's book.
+
+
+<a id="org12071e0"></a>
+
+# Opacity
+
+We have seen in [the previous lecture](notes-lecture-ETransport.md) that in the equation for the
+energy transport by diffusion (either of photons or electrons, that is
+either radiative or conductive energy transport) there is a parameter
+&kappa; that determines the "resistance" of the stellar gas to the passage
+of energy by diffusion. This was the analogy that comes out from the
+combination of the radiative opacity and conductive opacity
+
+<div class="latex" id="orgfc3a1f9">
+\begin{equation}\label{eq:kappas}
+\frac{1}{\kappa} = \frac{1}{\kappa_\mathrm{rad}} + \frac{1}{\kappa_\mathrm{cond}} \ \ .
+\end{equation}
+
+</div>
+
+Since we also saw that $dT/dr \propto \kappa F$, it is clear that the opacity $\kappa$ is
+an extremely important parameter for the structure of the star.
+Effectively, what that proportionality means is that given an opacity
+profile $\kappa\equiv\kappa(r(m)$), the stellar structure will adjust in such a way
+that the temperature gradient $dT/dr$ is sufficient to carry out the
+flux $F$ that is necessary to maintain energy conservation
+layer-by-layer (accounting for the energy losses at the surface and
+throughout because of e.g., neutrinos)!
+
+**N.B.:** The structure of each layer of the star is determined by (i) the
+microscopic properties of matter (e.g., $\kappa_\mathrm{rad}$) and, more importantly,
+(ii) the energy losses by the outward flux $F$. The latter is the way
+the star compensates for the energy losses (its luminosity $L$).
+
+The purpose of this lecture is to focus on $\kappa_\mathrm{rad}$ and understand what
+physically determines it, and understand how $\kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,
+\rho, {X_{i}})$ can be expressed as a function of the thermodynamics and
+composition of the stellar gas.
+
+
+<a id="org9742798"></a>
+
+# Rosseland mean opacity
+
+But even before we discuss the microphysics, you know that the
+"resistance" of a material to the passage of light is dependent on the
+frequency of the radiation! Optical radiation clearly penetrates the
+Earth atmosphere, while X-rays don't; the small fraction of UV
+radiation that does penetrate the atmosphere and cause Sun burns does
+not penetrate the windshield of a car, but the optical wavelengths do,
+etc. So clearly in general $\kappa_\mathrm{rad} \equiv \kappa_\mathrm{rad}(\nu)$ is a function of
+the frequency of the light we are considering with $\nu = c/\lambda$. What
+happened to that dependence in our stellar structure equations?
+
+In the [previous lecture](./notes-lecture-ETransport.md) we have written for the radiative energy flux
+
+<div class="latex" id="org551756f">
+\begin{equation}\label{eq:f_rad}
+F_\mathrm{rad} = - \frac{1}{3}\frac{c}{\kappa_\mathrm{rad}\rho}\frac{du}{dr} \equiv -\frac{4ac}{3c\rho T^{3}}\frac{1}{\kappa_\mathrm{rad}}\frac{dT}{dr} \ \ .
+\end{equation}
+
+</div>
+
+Here $\kappa_\mathrm{rad}$ should be interpreted as an "appropriate mean value". In
+reality, we should have written an equation like this for the specific
+flux (i.e., the radiative flux $F_{\nu}$ carried by radiation with
+frequency between $\nu$ and $\nu+d\nu$) and integrate over frequencies to get
+the total radiative flux $F_\mathrm{rad} =\int_{0}^{+\infty} F_{\nu} d\nu$. For the
+specific flux, we also should put in the equation the specific opacity
+$\kappa_{\nu}$ and consider only the energy density of radiation $u_{\nu}$ between
+$\nu$ and $\nu+d\nu$:
+
+<div class="latex" id="orga42d331">
+\begin{equation}\label{eq:specific_flux}
+F_{\nu} = - \frac{1}{3}\frac{c}{\kappa_{\nu}\rho}\frac{du_{\nu}}{dr} \ \ .
+\end{equation}
+
+</div>
+
+Recall that $u_{\nu} = h\nu n(\nu)$, with $n(\nu)$ number density of photons
+ad a function of frequency determined by the condition of LTE (which
+is *approximately* correct in the stellar interior). The LTE
+approximation effectively means the photons are distributed according
+to a black body distribution for the intensity in the stellar
+interior:
+
+<div class="latex" id="org466b2f6">
+\begin{equation}
+u_{\nu} = \frac{4\pi}{c}B(\nu, T) = \frac{8\pi h}{c^{3}}\frac{\nu^{3}}{e^{h\nu/k_{B}T} -1} \ \ .
+\end{equation}
+
+</div>
+
+Thus $du_{\nu}/dr = 4\pi/c \times \partial B(\nu, T)/\partial T \times dT/dr$, and performing the integral over the frequencies:
+
+<div class="latex" id="org5e80215">
+\begin{equation}\label{eq:int_flux}
+F_\mathrm{rad} = \int_{0}^{+\infty} F_{\nu}d\nu = - \frac{1}{3}\frac{c}{\rho}\int_{0}^{+\infty} \frac{1}{\kappa_{\nu}}\frac{du_{\nu}}{dr} =
+-\frac{4\pi}{3\rho}  \frac{dT}{dr} \int_{0}^{+\infty}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} d\nu\ \ .
+\end{equation}
+
+</div>
+
+Comparing this with Eq. \ref{eq:f_rad} we obtain that the
+$\kappa_\mathrm{rad}$ appearing there must be:
+
+<div class="latex" id="org64bad98">
+\begin{equation}
+\frac{1}{\kappa_\mathrm{rad}} = \frac{\pi}{acT^{3}}\int_{0}^{+\infty} d\nu \frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} \ \ ,
+\end{equation}
+
+</div>
+
+which we can rewrite as
+
+<div class="latex" id="org8a891b7">
+\begin{equation}
+\frac{1}{\kappa_\mathrm{rad}} = \frac{\int_{0}^{+\infty} d\nu \frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T}}{\int_{0}^{+\infty} d\nu \frac{\partial B(\nu, T)}{\partial T}} \ \ ,
+\end{equation}
+
+</div>
+
+which is the *harmonic mean of specific opacities* $\kappa_{\nu}$ *weighted
+with the temperature derivative of the Black Body distribution*. This
+is usually referred to as the Rosseland mean opacity after [Svein
+Rosseland](https://en.wikipedia.org/wiki/Svein_Rosseland).
+
+
+<a id="org9cb467b"></a>
+
+## Physical interpretation
+
+This may seem like a bunch of math that did not advance us much: we
+still have &kappa;<sub>&nu;</sub> (which in practice comes from atomic physics
+experimental and theoretical work), and the physical interpretation of
+the Rosseland mean opacity may not be immediately apparent.
+
+However, consider that to a good approximation we can consider the
+stellar interior to be in LTE with a single temperature and a photon
+gas described by a black body. We can rewrite Eq.
+\ref{eq:specific_flux} (using Eq. \ref{eq:int_flux}) as:
+
+<div class="latex" id="orgba6e558">
+\begin{equation}
+F_{\nu} = - \frac{4\pi}{3\rho}\frac{dT}{dr}\frac{1}{\kappa_{\nu}}\frac{\partial B(\nu, T)}{\partial T} \Rightarrow F_{\nu} \propto \frac{\partial B(\nu, T)}{\partial T} \ \ ,
+\end{equation}
+
+</div>
+
+Therefore at a location in the star of given $\rho$ and $dT/dr$, the integral
+in the numerator of the Rosseland mean opacity is proportional to the
+flux $F_{\nu}$: the Rosseland mean opacity weights the specific opacity
+(per unit frequency $\nu$) with the available flux $F_{\nu}$ according to a
+black body distribution.
+
+The frequency $\nu$ at which most of the photon energy is found by solving
+$\partial u_{\nu} / \partial T = 0$, which yields a maximum at $h\nu = 4k_{B}T$. This
+means that the Rosseland mean tends to "upweight" where most of the
+radiation energy is, and "down weight" the very low and very high
+frequencies.
+
+In other words, $1/\kappa_\mathrm{rad}$ is smallest where most of the radiation energy
+can get through (which makes sense since we are developing an
+understanding for how energy is transported, and not for how energy is
+trapped!).
+
+An unfortunate consequence of the harmonic nature of the Rosseland
+mean opacity is that it is not trivial to combine opacity of different
+gasses, the specific $\kappa_{\nu}$ from each component of the gas have to be
+summed *before* taking the average over frequencies: first we need to
+calculate $\kappa_{\nu}^\mathrm{tot} = \sum_\mathrm{i} \kappa_{\nu,i}X_{i}$ as a sum
+weighted with the mass fraction $X_{i}$ of each species and then plug
+$\kappa_{\nu}^\mathrm{tot}$ into the Rosseland mean.
+
+
+<a id="org9807afc"></a>
+
+# Sources of radiative opacity
+
+Now, let's consider the radiation-matter interactions that can be
+source of opacity (i.e., determine the $\kappa_{\nu}$ that we put in the
+Rosseland mean opacity to obtain $\kappa_\mathrm{rad}$).
+
+
+<a id="orgcd1f7ca"></a>
+
+## Bound-bound
+
+Photons (orange wiggly line) can interact with the electrons in an
+atom/ion (especially if they have the "right" frequency close to
+$\nu\simeq\Delta E/h$ with $\Delta E$ the energy difference between the two levels for the
+electron). In this case the photon is absorbed by the ion and its
+energy goes into the energy level of the electron, which was bound to
+the nucleus before and after the interaction with the photon (hence
+the bound-bound name).
+
+Because every atom/ion has specific energy levels, this opacity source
+may have a very complex frequency (i.e., photon energy) dependency. The
+transition energies must be determined solving the Hamiltonian for the
+electrons in the potential for the specific atom/ion, which can be
+extremely complicated and/or computationally unfeasible: for this
+reason, laboratory experiments are often used to determine opacities.
+
+Note that ions of heavy elements with many electrons (e.g., iron) will
+tend to have *the most* lines (i.e., the largest number of possible
+bound-bound transitions), and dominate the opacity in the regime where
+they are not fully ionized.
+
+This opacity source matters only until there are bound electrons to
+their respective ions in the stellar gas, which at very high T becomes
+more and more rare (since collisions between atoms would strip away
+the electrons). However, this term starts playing a role for $T\le10^{6}$ K,
+so still quite deep in the stars.
+
+![img](./images/bound_bound.png "Cartoon of a bound-bound transition. The photon (orange wiggly line) is absorbed by the ion (nucleus in blue, electron in green) where an electron jumps to a higher energy level, represented by the dashed black line. Credits: R. Townsend. **N.B.:** the orbit of the electron is not a little circle like this, which would be unstable! It is instead an [orbital](https://en.wikipedia.org/wiki/Atomic_orbital#/media/File:Atomic-orbital-clouds_spdf_m0.png) which describes the spatial *probability distribution* of finding the electron there in accordance to quantum-mechanics.")
+
+
+<a id="org5223b4a"></a>
+
+## Bound-free
+
+An incoming photon may have sufficient energy to photoionize an
+atom/ion. That is the absorption of the photon makes an electron jump
+from a bound energy level to an unbound energy level.
+
+As for bound-bound transition, bound-free photoionization requires the
+existence of electrons bound to nuclei, so its contribution to the
+opacity decreases at very high temperatures, when bound electrons are
+absent.
+
+![img](./images/bound_free.png "Cartoon of a bound-free transition. Credits: R. Townsend.")
+
+
+<a id="org40baa6a"></a>
+
+## Free-free
+
+Even unbound electrons can absorb a photon transitioning between two
+unbound energy levels of the continuum. This is effectively the
+opposite of bremstrahlung radiation, where the acceleration of an
+unbound electron results in the production of photons (or neutrinos!).
+
+This process cannot occur if there are no free electrons, for example
+at very low temperatures.
+
+![img](./images/free_free.png "Cartoon of a free-free transition. Credits: R. Townsend.")
+
+Note that in the cartoon an ion/atom is still represented. The process
+of absorption of a photon by a single electron ($\gamma+e \rightarrow e$) would violate
+conservation of the four-momentum, and it is not possible, but it is
+possible for an electron in the electromagnetic field of an ion.
+
+
+<a id="orga6e8660"></a>
+
+## Scattering
+
+Another source of opacity is scattering, which unlike the processes
+above does not lead to the "disappearance" of a photon, but can still
+change its energy (and direction of propagation), thus affecting its
+ability to carry flux.
+
+![img](./images/scattering.png "Cartoon of the scattering of a photon on an electron. Credits: R. Townsend.")
+
+At very high temperatures, scattering off free electrons is the main
+source of opacity (no bound-bound and bound-free processes without
+bound electrons), which greatly simplifies the $\kappa_\mathrm{rad}(T,\rho)$ dependence.
+
+The scattering of a classical electromagnetic wave off-an electron can
+be described by the Thomson scattering cross section, which divided by
+the $\mu_{e}m_{u}$ gives the corresponding opacity. Therefore, for $T\geq10^{6}$ K, $\kappa_\mathrm{rad}
+\equiv \kappa_{es}$:
+
+<div class="latex" id="org5ce7cce">
+\begin{equation}
+\kappa_\mathrm{es} = 0.2(1+X) \ \ \mathrm{cm^{2} \ g} \ \ ,
+\end{equation}
+
+</div>
+
+which does *not* depend on $T$ or $\rho$, but only on the mass fraction of
+Hydrogen $X$ (recall that $\mu_{e} = 2/(1+X)$ for fully ionized gas). If
+the gas is not fully ionized the expression here does not old.
+
+Note that this opacity does *not* depend on the electromagnetic
+wave/photon frequency $\nu$, so in the Rosseland mean, it comes out of the
+integral!
+
+For very high energy, one needs to account also for the momentum
+exchange between radiation and the electron (Thomson &rarr; Compton
+scattering), which decreases the opacity. At even higher energies of
+the photons, one may need to use the Klein-Nishina formula.
+
+
+<a id="org4f4d2f7"></a>
+
+## Molecules and dust
+
+At $T\le4000$ K, atoms may bound together and form molecules, and even
+lower ($T\le1500$ K) dust grains may form. These are not the same dust
+you find on Earth (mostly small crystals, dead skin, etc.) but large
+agglomeration of molecules. These structures cause a very large
+increase in the opacity: the electrons in them can have many degrees
+of freedom that can be used to absorb and scatter photons (e.g.,
+roto-vibrational molecular bands).
+
+**N.B.:** molecular opacity is a field of research in *laboratory*
+astrophysics, when the relevant molecules can be synthesized and kept
+at the relevant $T$ and $\rho$ one can experimentally measure their
+$\kappa_\mathrm{rad}$ which is extremely complicated to calculate from
+first principles.
+
+
+<a id="orgd6dec49"></a>
+
+## H<sup>-</sup>
+
+At low temperature hydrogen may capture an extra electron forming an
+H<sup>-</sup> ion (i.e., a proton with 2 bound electrons). This is a fragile
+state, and in a pure hydrogen gas, it would not resist much, but if
+there are metals with one electron only (the first column of the
+periodic table, e.g., Na, K, Ca), they can provide extra electrons,
+allowing for the formation of this ion in stellar atmospheres.
+
+**N.B.:** This negative ion can then provide most of the opacity in the
+envelope of non-metal-free cool stars, e.g., red giants or the Sun
+itself! An approximate relation for its opacity is
+
+<div class="latex" id="orgd7efded">
+\begin{equation}
+\kappa_\mathrm{H^{-}} = 2.5\times10^{-31} \frac{Z}{Z_{\odot}} \rho^{1/2} T^{9} \ \mathrm{cm^{2} \ g^{-1}} \ \ .
+\end{equation}
+
+</div>
+
+-   **Q**: since H<sup>-</sup> is the dominant source of opacity in cool stars, such as
+    the Sun, red giants and supergiants, but for this ion to form metals
+    able to lose an electron are required ($\kappa_\mathrm{H^{-}}\propto Z$), do
+    we expect red giants and supergiants for pop III stars? (The
+    question is maybe less interesting for Sun-like stars since they are
+    less luminous and thus even harder to detect, but still holds
+    theoretically).
+
+
+<a id="org0c929e0"></a>
+
+## Conductive opacity
+
+For an ideal gas, $\kappa_\mathrm{cond} \gg \kappa_\mathrm{rad}$ making conduction
+irrelevant in the combined opacity. This is because the Coulomb
+scattering cross section among charged particles in a plasma is larger
+than the cross section for interactions with photons.
+
+Only for degenerate gas (at least partially), diffusion of energy
+through the thermal motion of particles (electrons, because of their
+lower mass) is important.
+
+At very high densities, the electron mean-free path are very long
+(since collisions are forbidden by not having any level available
+below the Fermi energy), making conduction very efficient and allowing
+high density degenerate cores to become effectively isothermal
+($T$ = constant, $dT/dr = 0$).
+
+
+<a id="org5f45461"></a>
+
+# Combining all these sources together
+
+**N.B.:** Ultimately in stellar evolution we use tabulated $\kappa_\mathrm{rad} \equiv
+\kappa_\mathrm{rad}(\rho, T)$ that (try to) account for all these effects without
+needing to calculate them on the fly while dealing with the star.
+
+![img](./images/kappa_farag24.png "$\kappa\equiv\kappa(T,\rho)$ combining all the sources of opacities we discussed (and more) from [Farag et al. 2024](https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract). This plot combines the atomic and molecular radiative opacities and the electron conduction opacities and is available in the `kap` module of the MESA code. See also [Paxton et al. 2011](https://ui.adsabs.harvard.edu/abs/2011ApJS..192....3P/abstract).")
+
+Ultimately, the composition {$X_{i}$} (or more approximately the
+metallicity $Z$ which accounts for the heaviest elements with most
+electrons and energy levels) can have a large impact on
+$\kappa_\mathrm{rad}$ and $\kappa$, together with the thermodynamic state of the
+gas $(T,\rho)$, which determines which process dominates the blocking of
+photons
+
+As you can see from the plot above, at fixed $Z$, there is more
+structure as a function of $T$ (because $T$ determines the ionization
+levels, and thus the bound-bound and bound-free). The solid black line
+represents the $T(\rho)$ profile of a stellar model.
+
+Opacity "bumps" in the stellar interior and surface can lead to a
+steepening of the radiative gradient (recall $dT/dr \prop \kappa \times F$), and
+cause the onset of other energy transport mechanisms and possibly
+stellar eruptions.
+
+By "projecting" the plot above on either axes, one can obtain the
+$\kappa(T)$ at fixed $\rho$ (or $\kappa(\rho)$ at fixed $T$) and find that there are
+regimes where powerlaw approximations may be sufficient (e.g., the
+"Kramers" opacity law which gives $\kappa\propto T^{-7/2}\rho$, or the formula above
+for H<sup>-</sup> opacity), but in practice to compute a stellar model one needs
+to use tabulated opacities from complex models and/or experiments
+carried out at LANL, Livermore, and other big, often military funded,
+laboratories.
+
+![img](./images/kappa_T_farag24.png "$\kappa_\mathrm{rad} \equiv \kappa_\mathrm{rad}(T)$ for various fixed densities &rho; (as indicated by the colorbar). This plot effectively shows various "slices" of the $\kappa_\mathrm{rad}\equiv\kappa_\mathrm{rad}(T,\rho)$ and allows one to see how powerlaw approximations can be used in certain regimes, but do not capture the full picture. Note the shaded background indicating ionization levels of important elements. Also from [Farag et al. 2024](https://ui.adsabs.harvard.edu/abs/2024ApJ...968...56F/abstract).")
+
+
+<a id="orgaa85bf3"></a>
+
+# Homeworks
+
+
+<a id="orgcd08de6"></a>
+
+## The Eddington Luminosity again
+
+Using `MESA-web`, compute a $\ge30 M_{\odot}$ star until the maximum central
+temperature reaches above $\ge 10^{8.5}$ K. Make sure to save multiple
+profile files. Plot a series of $\kappa(m)$ and/or $\kappa(T)$ for the outer
+layers, and identify peaks that occur (**Hint**: this may be more easily
+done looking at $\kappa(T)$). Plot also $L(m)$ and $L_\mathrm{Edd}(m, \kappa)$ and, using
+your model, try to identify what happens in layers where $L$ exceeds
+$L_\mathrm{Edd}$.
+

@@ -1,0 +1,463 @@
+
+# Table of Contents
+
+1.  [Introduction to the course](#org59a036b)
+2.  [Who am I?](#orgee54ac3)
+3.  [Aim of the course](#org70ebe82)
+4.  [Expectations](#org871f7f9)
+5.  [Discuss syllabus](#org4f1c7cc)
+6.  [Let's start finally talking about stars!](#orge42e4b2)
+    1.  [What is a star?](#org2aaef46)
+    2.  [What determines the properties of a (single) star?](#org9113431)
+    3.  [Observations](#org7f279e3)
+        1.  [Parallax](#orgb84c8db)
+        2.  [Proper motion and radial velocity](#orgb9a27d4)
+        3.  [Magnitudes](#orgc839e2d)
+7.  [Relevant physical scales](#org974079d)
+    1.  [Solar radius: $R_{\odot} = 6.957\times10^{10}$ cm &cong; 7&times;10<sup>10</sup> cm &cong; 10<sup>11</sup> cm](#org2d62fee)
+    2.  [Solar mass: $M_{\odot} = 1.98\times10^{33}$ g &cong; 2&times;10<sup>33</sup> g](#org05b99c2)
+    3.  [Solar luminosity: $L_{\odot} = 3.82\times10^{33}$ erg s<sup>-1</sup> &cong; 2&times; $M_{\odot$} in cgs units!](#org2a81bd2)
+    4.  [Solar effective temperature: $T_{\odot}$ &cong; 5900K &cong; 6000K](#org2040030)
+    5.  [Solar metallicity: $Z_{\odot}$ = 0.0146 &cong; 0.02 (older but still widely used value)](#org7c05dd1)
+    6.  [Lifetimes: ~3 Myr to $\gg$ age of the Universe (&cong; 13.7 Gyr)](#orgfd57e41)
+8.  [Discuss projects](#org0b0661f)
+9.  [Homework](#org6bec7a9)
+    1.  [General considerations](#org76c411f)
+    2.  [Specific assignments for today](#orgf879bb1)
+
+**Materials**: chapter 1 of Onno Pols' lecture notes.
+
+
+<a id="org59a036b"></a>
+
+# Introduction to the course
+
+![img](./images/word_cloud20250116.png "Word cloud of the students' expectations for what they are going to learn in this class (Spring 2025 semester).")
+
+
+<a id="orgee54ac3"></a>
+
+# Who am I?
+
+My name is Mathieu Renzo, I have been an assistant professor here at
+Steward since last year. Before, I was a postdoc in New York city (at
+the Flatiron institute and Columbia University), and before that I did
+my PhD at the University of Amsterdam in the Netherlands &#x2013; but I am
+originally from none of these places!
+
+The topic of this course is stellar evolution, which is my research
+field. More specifically, I work on the evolution of massive stars in
+binary systems. These are the stars that end their lives in *supernova
+explosions*, that can outshine briefly an entire galaxy. During these
+explosions some of the most exotic objects in the universe are formed,
+neutron stars or black holes (especially if the explosion fails!). The
+massive star progenitor of these objects are found most often in
+binary systems, meaning there are two stars orbiting each other, and
+they can, as they evolve, interact and exchange mass and sometimes
+merge. My research is strongly embedded in the topic of this course
+(stellar evolution) and touches on explosion physics, X-ray binaries,
+gravitational waves, etc. I will try to connect the course material to
+all these topics whenever possible!
+
+Also, my research field (and more broadly the scientific topic of this
+course) is *very computationally oriented*. Throughout the course, I
+will try to highlight what is the result of computer models based on
+necessary (but often grossly oversimplifying) approximations and what
+is more solidly grounded in observations. We will do this by having
+computational exercises, that's why I asked about your confidence in
+your ability to make plots in the survey. We will start the course by
+going over the physical foundations, but I will also ask you to use your
+own computer models too.
+
+
+<a id="org70ebe82"></a>
+
+# Aim of the course
+
+**To understand the structure and evolution of stars and their
+observational properties using known laws of physics.**
+
+
+<a id="org871f7f9"></a>
+
+# Expectations
+
+This is a core course during your 4<sup>th</sup> year, so you are approaching the
+academic threshold beyond which you will be **expected** to carry out
+independent work (either in your thesis, in the future as graduate
+students or highly skilled professionals).
+
+My idea for this course is to not only provide *content* regarding
+stellar physics and evolution, but also to help you develop skills as
+independent researchers for your future (whether in academia or
+elsewhere).
+
+For this reason also *I will not check your attendance*. However,
+during the lectures I will present things in a way that complements
+the textbook(s), and you will more likely have a better understanding
+if you attend. Also, as we'll discuss in a moment, in-class
+participation will count for up to 20% of your final grade, so if you
+want more than a B you should come **and actively participate**.
+
+An important thing to keep in mind as we go through the semester is to
+have a [growth mindset](https://en.wikipedia.org/wiki/Mindset#Fixed_and_growth_mindsets): we are all here to learn and improve ourselves!
+Grading will particularly reward improvement, so a failure at some
+point (of one homework) is just an opportunity for improvement &#x2013; not
+a career stopping tragedy.
+
+Similarly, I expect everyone in the class to treat each other with
+respect and kindness. We don't all come from the same background, we
+don't all need to be at the same exact level to learn from each other.
+Ultimately, you are here to learn some science and *science is a team
+effort*. It has been proven many times over that diverse teams achieve
+better results. Start practicing this now: if someone is struggling
+with some material that you think you have under control, help them.
+They are not slowing you down, but giving you an opportunity to verify
+and deepen your knowledge by engaging with them and the difficulties
+they may be experiencing. You may soon be the one in difficulty
+yourself and give them a chance to "repay". In the end we will
+all be better thanks to this dynamics.
+
+Stellar evolution is also a very vast topic, and there is too much to
+cover in only one semester, with many bleeding edge developments. So I
+will ask **you** to teach your peers some of the topics that don't fit
+within the main part of the course. You will also evaluate (and be
+evaluated) by your peers. This is because the ability of giving
+constructive and helpful feedback is important in science and beyond:
+you will work with others and need to help them improve, and you will
+receive feedback yourselves for the rest of your careers whatever they
+may be. We will do this through a project, that we will discuss later.
+
+
+<a id="org4f1c7cc"></a>
+
+# Discuss syllabus
+
+![img](./images/QR-syllabus.png "Link to [syllabus](./syllabus.md)")
+
+
+<a id="orge42e4b2"></a>
+
+# Let's start finally talking about stars!
+
+
+<a id="org2aaef46"></a>
+
+## What is a star?
+
+-   Historical definition: *flickering light source in the sky with no
+    intrinsic motion* (where flickering excludes planets, and no
+    intrinsic motion excludes planets *and* other solar system objects
+    such as comets and asteroids).
+-   More modern definition: *self-gravitating amount of gas that at some
+    point is sufficiently hot for nuclear fusion*.
+
+Note that the requirement of nuclear fusion is **extremely new**: only
+about 100 years old! A lot can be learned about stars without knowing
+anything about nuclear fusion, which we will treat, but much later in
+the course.
+
+**N.B.:** Definitions often try to "pidgeon-hole" nature into specific
+categories, but often nature is more elusive. In the case of the
+"modern" definition of star above, there is the boundary case of Brown
+Dwarfs, which are self-gravitating amount of gas that early in their
+life may do some deuterium burning. This burning does not release a
+lot of energy (the deuterium nucleus, a proton and a neutron bound
+together, has very low nuclear binding energy), thus these objects sit
+at the boundary between planets and stars.
+
+
+<a id="org9113431"></a>
+
+## What determines the properties of a (single) star?
+
+1.  **Mass**
+2.  Chemical composition
+3.  Presence of other stellar companion(s)
+4.  Rotation
+5.  Magnetic fields
+
+-   **Q**: what is a star made of? Can you think of a star made of something
+    else? Mention [Cecilia Payne-Gaposchkin](https://en.wikipedia.org/wiki/Cecilia_Payne-Gaposchkin).
+
+
+<a id="org7f279e3"></a>
+
+## Observations
+
+-   Photometry
+-   Spectroscopy
+-   Astrometry
+-   Asteroseismology (either through photometry or spectroscopy)
+-   Neutrinos
+
+
+<a id="orgb84c8db"></a>
+
+### Parallax
+
+In astrophysics (and in stellar physics in particular) we still use
+quantities and units that have mostly a historical justification (one
+could say for "backward compatibility" to borrow software development
+language).
+
+The yearly apparent motion on the sky of stars (w.r.t. to farther
+stars that are too far to exhibit this behavior) due to the orbit of
+the Earth around the Sun is called *parallax*. A commonly used unit of
+distance in astronomy is the *parsec* = distance of a star with a
+parallax of one arcsecond:
+
+1 pc &cong; 3&times;10<sup>18</sup>cm &cong; 2 &times; 10<sup>5</sup> AU &cong; 3 light years
+
+This is a measure of distance that can be used for stars
+with relatively small distances to the Solar system.
+
+
+<a id="orgb9a27d4"></a>
+
+### Proper motion and radial velocity
+
+We can also see how stars move in the sky, but we need two different
+techniques to measure the velocity *on the plane of the sky* (so called
+proper motion), and *towards* or *away* from us (so called "radial
+velocity", as in the radial direction in a sphere centered on the
+observer).
+
+But even before considering those, we need to remove all the apparent
+motions due to the Earth rotation:
+
+![img](./images/night_rotation.jpg "Long exposure picture showing circular tracks along the north direction. These are just the reflected motion due to the rotation of the Earth. Note the stars have different colors! Credits: G. Inchingolo.")
+
+We also have to remove the apparent motion due to the orbit of the
+Earth around the Sun, and the motion of the Sun and solar system
+across the Galaxy (which includes a component of "peculiar motion",
+that is a deviation from the galactic rotation curve).
+
+Once all that cleaning is done, we can see the intrinsic projected
+motion of a star on the sky, so called *proper motion* (sometimes
+indicated with &mu; or pm). All that requires is a long timeline (since &mu;
+&cong; arcsin((v<sub>&parallel;</sub> &times; &Delta; t)/d) with v<sub>&parallel;</sub> transverse
+velocity (i.e., on the plane of the sky), &Delta; t time baseline and d
+distance of the star, and a reference frame.
+
+**N.B.:** The proper motion is an *angle on the plane of the sky per unit
+time*. Converting proper motions to physical velocity requires knowing
+the distance d, which is usually hard! Moreover, d is very large
+typically (d &Gt; 1 pc), so measuring &mu; requires long time baselines and
+very accurate instruments.
+
+![img](./images/Proper_motion.JPG "Schematic representation of the proper motion")
+
+For the motion orthogonal to the plane of the sky, that is the motion
+away/towards the observer, that is the so called *radial velocity* (RV)
+through the Doppler shift of spectral lines (we will talk more about
+these later in the course). These sometimes can be periodic and thus
+caused by either pulsations of the stellar atmosphere or Keplerian
+orbital motion around a (possibly unseen) companion star, or they can
+be constant (on timescales much shorter than the period of the orbit
+of the star around the Galactic center) and thus reveal intrinsic
+motion. In general, one does not look at just one spectral line, but a
+"series" of lines (e.g., the series coming from all the transitions of
+electrons across energy levels of a specific ion).
+
+![img](./images/Halpha_shift.png "Schematic representation of radial velocity shifts. Credits: Y. Gotberg.")
+
+
+<a id="orgc839e2d"></a>
+
+### Magnitudes
+
+The magnitude scale is a logarithmic scale first introduces by
+[Hipparchus](https://en.wikipedia.org/wiki/Hipparchus), who clearly was only able to do naked-eye observations.
+This explains why a logarithmic scale: the sensory responses are often
+logarithmic (see [Weber-Fechner's law](https://en.m.wikipedia.org/wiki/Weber%E2%80%93Fechner_law)). The magnitude scale was
+formalized by [Pogson 1856](https://ui.adsabs.harvard.edu/abs/1856MNRAS..17...12P/abstract).
+
+The magnitudes measure the energy flux from a point-like source (like
+a distant star) and it is a differential measure relative to some
+standard source. Hipparchus was comparing the visual brightness of
+various stars visible in the sky. This is still the basis of (some)
+magnitude systems. In reality. typically magnitudes are provided
+integrating over a range of frequencies (photometry!) accounting for
+the response of a filter as a function of wavelength T(&lambda;):
+
+<div class="latex" id="org2f9acf0">
+\begin{equation}
+m = -2.5\log_{10}\left(\frac{\int T(\lambda)F_{\lambda}d\lambda}{\int T(\lambda) d\lambda}\right) + m_{0} \ \ ,
+\end{equation}
+
+</div>
+
+where m<sub>0</sub> is the reference magnitude, F<sub>&lambda;</sub> is the monochromatic
+flux of the source, and the factor of -2.5 is chosen so that the
+magnitudes measured this way roughly agree with Hipparchus'.
+*An increase of 5 magnitudes corresponds to an increase in flux
+of a factor of 100*.
+
+The *bolometric* magnitude is the magnitude across all wavelengths for
+an idealized perfect detector (T(&lambda;) = 1 &forall; &lambda;). If the distance of a
+source is known, we can then infer its intrinsic luminosity from this.
+
+The *apparent* magnitude m we just defined is a measure of the actual
+photon flux received from a source (e.g., a star) on Earth, but that
+of course depends on how far the source is from Earth (a candle in
+your hand has a higher apparent magnitude than Betelgeuse in the
+sky!). Therefore, astronomer also introduced the *absolute* magnitude as
+the apparent magnitude a star would have if it were at a distance of
+10pc from the Sun, thus the relation between apparent magnitude m and
+absolute magnitude M is
+
+<div class="latex" id="org751bd3e">
+\begin{equation}\label{eq:abs_magn}
+M - m = -2.5\log_{10}\left[\left(\frac{d}{10\mathrm{pc}}\right)^{2}\right] \ \,
+\end{equation}
+
+</div>
+
+where d is the distance, and it is assumed there is no absorption of
+light by the interstellar material.
+
+For the reference magnitude m<sub>0</sub> there are multiple choices (and there
+are many different magnitude systems because of the T(&lambda;) and m<sub>0</sub>
+choices!). For instance, typically the star Vega (&alpha; Lyrae) is used as
+a standard and by definition its magnitude in U, B, and V band in the
+Vega-based magnitude system is zero. So for magnitude M=0 we have a
+specific (i.e., per unit frequency) radiative energy flux of 3.5&times;10<sup>-20</sup>
+erg cm<sup>-2</sup> s<sup>-1</sup> Hz<sup>-1</sup> corresponding to a photon flux of N<sub>&lambda;</sub> &cong;
+10<sup>3</sup> photons cm<sup>-2</sup> s<sup>-1</sup> Å<sup>-1</sup> for the visual band.
+
+-   **Q**: why the square within the argument of the logarithm in Eq.
+    \ref{eq:abs_magn}?
+
+
+<a id="org974079d"></a>
+
+# Relevant physical scales
+
+The star we can observe best is the closest one, the Sun (o), so a
+lot of quantities are scaled to those of the Sun in stellar physics
+and in astronomy more generally.
+
+
+<a id="org2d62fee"></a>
+
+## Solar radius: $R_{\odot} = 6.957\times10^{10}$ cm &cong; 7&times;10<sup>10</sup> cm &cong; 10<sup>11</sup> cm
+
+-   **Q**: How many R<sub>o</sub> are in 1 AU?
+
+
+<a id="org05b99c2"></a>
+
+## Solar mass: $M_{\odot} = 1.98\times10^{33}$ g &cong; 2&times;10<sup>33</sup> g
+
+
+<a id="org2a81bd2"></a>
+
+## Solar luminosity: $L_{\odot} = 3.82\times10^{33}$ erg s<sup>-1</sup> &cong; 2&times; $M_{\odot$} in cgs units!
+
+This may be one of the reasons why we still use `cgs` in astronomy,
+the other one being that the constants in electromagnetism are a
+bit simpler.
+
+
+<a id="org2040030"></a>
+
+## Solar effective temperature: $T_{\odot}$ &cong; 5900K &cong; 6000K
+
+This is the "effective temperature" of the Sun, which we will discuss
+in the [next lecture](notes-lecture-CMD-HRD.md). It is an approximation for the temperature of the
+surface below which the radiation field is isotropic - that is the
+stellar interior - and above which there is a net radial flux of
+photons - that is the stellar atmosphere (but photons can still move
+around in any direction, it's just on average there are more moving in
+the positive r direction). Stars don't really have a well defined
+"surface" and their spectra form in the atmospheric layers.
+
+
+<a id="org7c05dd1"></a>
+
+## Solar metallicity: $Z_{\odot}$ = 0.0146 &cong; 0.02 (older but still widely used value)
+
+The "metallicity" is the fraction by mass of gas that is *not* hydrogen
+nor helium. This includes many elements (e.g., C, N, O, Si) that a
+chemist would not call "metals". See [here](https://webelements.com/) for an online periodic table
+of elements.
+
+Often, for lack of better knowledge available, we assume that the
+distribution of metals scales with the Solar distribution, sometimes
+allowing for enhancement of &alpha; particles (e.g., carbon, oxygen, neon,
+and all other elements that can approximately be thought of as N &alpha;
+particles bound together where &alpha; particle = nucleus of helium 4).
+
+![img](./images/solar_abundance_pattern.png "Solar abundance pattern from [Anders & Grevesse 1989](https://ui.adsabs.harvard.edu/abs/1989AIPC..183....1G/abstract). This shows the number of atoms normalized to 10<sup>6</sup> atoms of Silicon as a function of atomic number A. Often, for lack of better knowledge, this (or more recent updates to it) is the abundance pattern that is rescaled when changing the metallicity in a model.")
+
+A common notation is also [X/H] = log<sub>10</sub>[(n<sub>X</sub>/n<sub>H</sub>)/(n<sub>X</sub>/n<sub>H</sub>)<sub>o</sub>] where n<sub>X</sub>
+is the number of ions of species X and n<sub>H</sub> is the number of protons
+(i.e., hydrogen positive ions!). Often, [Fe/H] can be used as a proxy for
+the metallicity (i.e., taking X=Fe).
+
+-   **Q**: Any idea why Fe here?
+
+
+<a id="orgfd57e41"></a>
+
+## Lifetimes: ~3 Myr to $\gg$ age of the Universe (&cong; 13.7 Gyr)
+
+-   **Q**: How old is the Sun? How long will it live? How do we know?
+
+
+<a id="org0b0661f"></a>
+
+# Discuss projects
+
+-   Projects will cover topics that are important and or timely, but
+    hard to fit in the main body of the course
+-   Occasion for you to dig deeper and teach to your peers
+-   You should look over the [proposed project](projects.md), and give us a ranked list
+    of 5 projects you'd like to do (see [D2L](https://d2l.arizona.edu/d2l/home/1463376) for updated deadline).
+-   After receiving your preferences, we will assign to each a project
+    trying to maximize happiness (though it may not be possible to
+    accommodate everyone), and for each project we will assign two peer
+    referees.
+-   Look over also [how the grading of the project will work](projects.md): in short,
+    we will evaluate your written summary (together with 2 of your
+    classmates!), your oral presentation in class (again, with your
+    peers!), and how you give feedback to others.
+
+
+<a id="org6bec7a9"></a>
+
+# Homework
+
+
+<a id="org76c411f"></a>
+
+## General considerations
+
+-   As per the syllabus, homework should be your own production,
+    though you can discuss with your peers. Science is made of
+    collaborations, but you are expected to be able to do all the
+    homeworks yourself.
+-   Always consult [D2L](https://d2l.arizona.edu/d2l/home/1463376) for official deadlines. If you need an
+    extension, it should be agreed upon at least **one day before the
+    official deadline**.
+-   Throughout the course the typology of exercises and difficulty
+    will vary. This is normal also when doing research: not every task
+    is as easy/as hard as the next. If you encounter difficulties,
+    keep in mind that it's only an opportunity to grow and improve!
+
+
+<a id="orgf879bb1"></a>
+
+## Specific assignments for today
+
+-   Calculate the average density of the Sun and compare it with the
+    density of something familiar on Earth.
+-   Start looking over the [list of final projects](projects.md), you will need to
+    provide a ranked list of 5 preferences. Feel free to search
+    the web/literature to decide. Based on this list, I will try to
+    assign projects and peer-referees, but it may not be possible to
+    satisfy everyone. If you want, feel free to come up with different
+    subjects related to stellar physics as well to propose, but you need
+    to talk to me to get them approved before they can be on your list!
+

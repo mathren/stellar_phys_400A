@@ -1,0 +1,744 @@
+
+# Table of Contents
+
+1.  [Mass transfer in binary systems](#orgfbaea42)
+    1.  [Roche model](#orgeb988e7)
+        1.  [Spherical approximation](#org31b5305)
+2.  [Type of binary interactions](#org8f753a0)
+    1.  [Dynamically stable mass-transfer](#orgff7457c)
+    2.  [Dynamically unstable common envelope](#org2907a64)
+    3.  [Nomenclature: Case A, B, and C](#org5bf976c)
+3.  [Orbital evolution during mass transfer](#org74376e4)
+    1.  [Stellar wind mass loss](#orgb815e43)
+    2.  [Conservative mass transfer evolution](#org3966648)
+    3.  [General case](#org8b30c06)
+4.  [Modifications to the structure of stars because of mass transfer](#orgbf6a392)
+    1.  [Donor: loss of the envelope, revealing the core](#orge058811)
+    2.  [Accretor: Spin up, pollution, rejuvenation](#orgc9470c3)
+5.  [Mass transfer rate calculation](#org83c7fbe)
+6.  [Homework](#orgf742b89)
+
+**Materials**: Onno Pols' lecture notes Chapter 7,8, Tauris & van den
+Heuvel book chapter 4.
+
+
+<a id="orgfbaea42"></a>
+
+# Mass transfer in binary systems
+
+We have already seen in the [second lecture](./notes-lecture-BIN.md) that, in the Universe,
+binary systems composed of two stars orbiting each other are common,
+the higher the mass of the stars the more so (see for example [Offner
+et al. 2023](https://ui.adsabs.harvard.edu/abs/2023ASPC..534..275O/abstract)). Historically, this fact has been leveraged to design
+empirical *dynamical mass measurement* which rely only on Kepler's laws
+to obtain masses.
+
+However, often enough, stars in binaries are so close to each other
+than as they evolve, they will "touch" each other and exchange mass.
+In today's lecture we will discuss in more detail how being in a
+binary can lead to dramatic consequences for the evolution of *both*
+stars in the system, starting with the Roche model of the potential.
+
+-   **Q**: We will see this in more detail in the coming in class activity,
+    but you can already answer based on your 1M<sub>o</sub> stellar models:
+    what happens to the stellar radius as a typical star evolves?
+-   **Q**: Which stars evolve faster: higher or lower mass?
+
+
+<a id="orgeb988e7"></a>
+
+## Roche model
+
+To describe the gas of the stars in a binary system subject to the
+gravity of both stars is effectively a *three body problem*, hard to
+solve even before we fold in anything else but gravity.
+
+A useful approximation often used is the [Roche](https://en.wikipedia.org/wiki/%C3%89douard_Roche) model of the
+gravitational potential. This is based on the following key
+assumptions:
+
+1.  e=0: the mutual orbit of M<sub>1</sub> and M<sub>2</sub> is circular;
+2.  M<sub>1</sub> and M<sub>2</sub> are treated as point masses;
+3.  M<sub>1</sub> &ge; M<sub>2</sub> &Gt; m: the masses of the two stars are much larger than
+    the test mass m we consider to map the potential;
+
+These defined the *restricted circular three body problem*. Of these
+assumptions the most restrictive is perhaps the first: binaries can be
+eccentric, and updates to this model to account for that are actively
+being developed (e.g., [Sepinsky 2009](https://ui.adsabs.harvard.edu/abs/2009ApJ...702.1387S/abstract)). The second assumption is not
+critical, since the density increases steeply moving inwards in the
+star: *most of the mass is in the center*. The last assumption is
+typically easily verified as long as one considers small parcels of
+gas.
+
+With these three assumptions, one can put themselves in a **frame
+centered in the binary center of mass and co-rotating with the binary**
+at frequency n=2&pi;/P. Since it is a rotating frame, it is non-inertial,
+but the gravitational potential of the two stars can be written as:
+
+<div class="latex" id="org1022079">
+\begin{equation}
+\Phi(\mathbf{r}) = -\frac{GM_{1}}{\lvert \mathbf{r}-\mathbf{r}_{1}\rvert}-\frac{GM_{2}}{\lvert \mathbf{r}-\mathbf{r}_{2}\rvert}-\frac{1}{2}(\mathbf{n}\times\mathbf{r})^{2} \ \ ,
+\end{equation}
+
+</div>
+
+Where r<sub>i</sub> is the distance to M<sub>i</sub> (considered a point-mass), so the first
+two terms represent the gravity of each star, respectively, and the
+last term represents the centrifugal force.
+
+Taking the gradient, the gravitational force from the combined masses
+of the stars in the binary is F=-&nabla; &Phi;(\mathbf{r}). But because we are
+in non-inertial frame, there is also another term to add to the
+momentum equation which cannot be expressed as a potential, because it
+depends on the velocity of the test mass m: the Coriolis force &prop;
+2n&times; v. Per unit volume the momentum conservation is thus
+
+<div class="latex" id="org4aa21fd">
+\begin{equation}
+\partial_{t} v + (v\cdot\nabla )v = -\nabla \Phi-\frac{\nabla P}{\rho}-2\mathbf{n}\times \mathbf{v} \ \ .
+\end{equation}
+
+</div>
+
+Finally, one could also relax the hypothesis 2. above and include a
+tidal term due to the finite size of the stars in the potential (this
+again works because most of the mass of the star is in it's core,
+saving the Roche model, and the tides are a relatively small
+perturbation on top of this):
+
+![img](./images/RochePotential.jpeg "Visualization of the Roche potential (grid) and the equipotential surfaces intersecting the orbital plane for a binary with q=M<sub>2</sub>/M<sub>1</sub>=0.5. The three Lagrangian points L<sub>1</sub>, L<sub>2</sub>, and L<sub>3</sub> are marked. From [wikipedia](https://en.wikipedia.org/wiki/Roche_lobe#/media/File:RochePotential.jpg).")
+
+On the line connecting the two binaries, this potential has three
+zeros, meaning points where there is no net
+(gravitational+centrifugal) force. All three are *saddle points* and
+they are called Lagrangian points:
+
+-   L<sub>1</sub> sits in between the two stars, and it is the point where the
+    gravitational pull from each star cancel each other
+-   L<sub>2</sub> is the point behind star 2 (many telescopes, including for
+    example *JWST* or *Gaia* sit close to the L<sub>2</sub> point of the Earth-Sun
+    binary system)
+-   L<sub>3</sub> is the point behind star 1.
+
+**N.B.:** The position of the center of mass depends on the mass
+distribution (here the masses are assumed to be point like), while the
+position of the Lagrangian points depends on the dynamics (gravity and
+centrifugal forces)
+
+The equipotential shapes are close to spheres for r<sub>1</sub> and/or r<sub>2</sub> &Lt;
+r<sub>L<sub>1</sub></sub>, then they get progressively elongated along the axis connecting
+the stars, and flattened by the centrifugal potential.
+
+For short period binaries, P<10 days (though the exact value depends
+on many things, especially mass M<sub>1</sub>, mass ratio q=M<sub>2</sub>/M<sub>1</sub>, metallicity,
+etc.), we observe that the stars co-rotate with the orbit, that is
+there is complete *tidal synchronization*. In that case, in the
+co-rotating frame, the gas of both stars is still, $\mathbf{v}=0$, and
+the momentum conservation reduces to
+
+<div class="latex" id="org99cd488">
+\begin{equation}
+- \rho \nabla\Phi = \nabla P \ \ ,
+\end{equation}
+
+</div>
+
+that is equipotential surfaces are also isobaric surfaces (&nabla;&Phi; = 0 &hArr; &nabla;
+P=0), and since &rho; &sim; dP/d&Phi; has to remain finite, it is also constant on
+these surfaces!
+
+Therefore, for a tidally synchronized binary the stellar gas will be
+shaped like equipotential surfaces in the Roche potential, producing
+non-axisymmetric, tear-drop-shaped stars.
+
+For larger periods, tidal synchronization may not occur (tides are a
+steep function of R/a with R stellar radius and a orbital separation),
+and in that case the rotational bulge may lag behind the orbit, adding
+an extra deformation.
+
+On top of the necessary hypothesis (e=0, M<sub>1 </sub>&ge; M<sub>2</sub> &Gt; m, point masses
+and in co-rotation) to derive the Roche approximation, it is worth
+noting that for r&Gt; r<sub>L<sub>2</sub></sub> the Roche model becomes less and less
+physically meaningful. By construction, it is based on the assumption
+of co-rotation with the binary, but a parcel of gas significantly
+outside L<sub>2</sub> will not maintain this co-rotation, an it is more likely to
+only "see" the inner binary as a point mass with total mass M<sub>1</sub>+M<sub>2</sub>.
+
+![img](./images/potential_Roche.png "cross section of the potential on a plane perpendicular to the orbit and passing through the three Lagrangian points. The dotted line outside of L<sub>2</sub> mark where co-rotation is not achievable and the Roche approximations don't hold anymore. The dark gray binary with both stars within their Roche lobes is a *detached* binary, the intermediate gray one, where M<sub>1</sub> fills its Roche lobe is a *semidetached* binary, and the lightest gray where both stars fill their lobes is a contact binary. This is Figure 6.1 of Onno Pols' lecture notes.")
+
+
+<a id="org31b5305"></a>
+
+### Spherical approximation
+
+The Roche potential is *clearly* not spherically symmetric: how can we
+use this in stellar evolution simulations?! In reality, thanks to the
+fact that in depth, the potential is very closed to spherically
+symmetric, and most of the deformation is in a large by radius by
+extremely small in mass region of the star (nevertheless important for
+atmospheric effects and observable predictions!). So for the stellar
+*interior* calculation, the spherical symmetry is still acceptable for
+most of the mass domain and as long as the stars are detached (see
+below).
+
+Each Roche lobe can then be interpreted as the *sphere of gravitational
+influence* of each star.
+
+What we need to know then is the *volume* of each Roche lobe, and we can
+then *define* a sphere that has the same volume and compare the volume
+of the stellar gas to the volume of such sphere. There are multiple
+formulae to fit the Roche volume as a function of the binary
+parameters (e.g., [Paczsynki 1971](https://ui.adsabs.harvard.edu/abs/1971ARA%26A...9..183P/abstract)), but probably the most common one is
+[Eggleton 1983](https://ui.adsabs.harvard.edu/abs/1983ApJ...268..368E/abstract)'s formula, which provides a fit accurate to &sim;1% and
+continuous across a large range of mass ratios:
+
+<div class="latex" id="org95c9307">
+\begin{equation}
+R_{RL,i}= a \frac{0.49 q_{i}^{2/3}}{0.6q_{i}^{2/3}+\ln(1+q_{i}^{2/3})} \ \ ,
+\end{equation}
+
+</div>
+
+where a is the orbital separation, q<sub>i</sub> = M<sub>i</sub>/M<sub>j</sub>, and 4&pi; R<sub>RL,i</sub><sup>3</sup>/3 &sim; Roche
+volume of star i.
+
+
+<a id="org8f753a0"></a>
+
+# Type of binary interactions
+
+As we will see in the next in class activity, stars tend to grow
+bigger as the evolve: even a binary system that stars as detached may
+come into contact as the stars evolve, triggering the onset of mass
+transfer between the stars in the binary system. In fact, gas reaching
+L<sub>1</sub> will be equally bound to either stars, and it can easily be
+perturbed to fall into the other star (see also review by [Marchant &
+Bodensteiner 2024](https://ui.adsabs.harvard.edu/abs/2024ARA%26A..62...21M/abstract)).
+
+Depending on the stability of the *orbital response* to the
+transfer of mass, we distinguish two cases: *stable Roche lobe overflow*
+or *dynamically unstable common envelope*.
+
+
+<a id="orgff7457c"></a>
+
+## Dynamically stable mass-transfer
+
+If Roche lobe overflow does not hit a runaway response of the orbit
+(causing more and more overflow), then it is dynamically stable.
+
+This will occur in the majority (50-70%) of massive stars, and it
+can have important consequences for *both* stars that will be modified
+by this interaction (see below).
+
+
+<a id="org2907a64"></a>
+
+## Dynamically unstable common envelope
+
+Sometimes, the orbit and or the evolution of the stars respond to mass
+transfer increasing the amount of overflow, leading to an unstable
+situation: in this case the system enters in contact first, and then
+ultimately in a *common envelope event* (see reviews by [Ivanova et al.
+2013](https://ui.adsabs.harvard.edu/abs/2013A%26ARv..21...59I/abstract), [Ropke & de Marco 2023](https://ui.adsabs.harvard.edu/abs/2023LRCA....9....2R/abstract) and Ivanova et al. 2020s book)
+
+During a common envelope the gas of the envelope of both stars fills
+equipotentials beyond L<sub>2</sub>, cannot maintain co-rotation, and thus start
+exerting a friction on the orbit of the two cores (or core and star)
+inside this shared envelope.
+
+This results in an inspiral that can end either with:
+
+-   a stellar merger
+-   the successful ejection of the shared envelope (interrupting the
+    drag), and the formation of a tight period binary
+
+Common envelope evolution, since it's theorization in the 1970s by
+Paczynski, Webbink, Taam, and Ostriker, remains one of the biggest
+open questions in stellar physics that impacts the formation of all
+compact binaries (cataclysmic variables made of a main sequence plus a
+white dwarf, binary white dwarfs, gravitational wave mergers, etc.).
+
+
+<a id="org5bf976c"></a>
+
+## Nomenclature: Case A, B, and C
+
+Depending on when mass transfer starts, we can have three different
+categories (defined by [Kippenhahn et al. 1967](https://ui.adsabs.harvard.edu/abs/1967ZA.....66...58K/abstract) and [Lauterborn 1970](https://ui.adsabs.harvard.edu/abs/1970A%26A.....7..150L/abstract)):
+
+-   case A RLOF: donor is burning hydrogen in its core, thus it occurs
+    in the tightest (smaller separation a) binaries when the stars are
+    still relatively small in radius.
+-   case B RLOF: the donor has a helium core (possibly inert and
+    sustained by electron degeneracy or burning), typically this is a
+    faster mass, although this may also depend on the metallicity and
+    its impact on where on the HR diagram Helium ignites (see e.g.,
+    [Klencki et al. 2022](https://ui.adsabs.harvard.edu/abs/2022A%26A...662A..56K/abstract)). Since stars typically expand after they run
+    out of hydrogen-rich fuel in the core, this mode of mass transfer
+    is the most common overall.
+-   case C RLOF: for low mass stars, this is typically defined after
+    He ignition, for high mass stars, it is typically defined after
+    core He depletion.
+
+Because of the different L and &phi; factors for each nuclear burning
+phase ([see lecture on nuclear burning for notation](./notes-lecture-nuclear-burning.md)), the timescales
+for mass transfer and therefore responses of both stars and the orbit
+to mass transfer can be very different for these three, leading to
+divergent evolution of the binaries and the outcome: case A typically
+has a short thermal timescale phase, followed by a much longer nuclear
+timescale phase. Case B and C tend to be faster (thermal timescale or
+shorter), though this may also be metallicity dependent .
+
+
+<a id="org74376e4"></a>
+
+# Orbital evolution during mass transfer
+
+Because of the evolution of the stellar radius R(t), many stellar
+binaries will evolve from an initially *detached* state (i.e., the mass
+of each star is contained within their respective Roche lobes), to a
+*semi-detached* phase (when one star's material fills and even exceeds
+its Roche lobe, causing matter to be pulled away by the companion's
+gravity), and a fraction even into *over-contact* (**both** stars filling
+their Roche lobes).
+
+During a phase of mass transfer the structure of *both* stars changes,
+but also the orbit! The details of this are arguably the biggest
+uncertainty in binary stellar evolution:
+
+-   in most cases this process is *fast* (&prop; thermal timescale),
+    making direct observations rare (with the exception of case A RLOF
+    on nuclear timescales)
+-   where, how much, and how mass is transferred and lost from the
+    system determines the torques that the orbit feels and thus it's
+    angular momentum and energy evolution
+-   a variety of physical processes (from magnetic fields, jets, etc.)
+    can intervene in the mass transfer, and with different degrees of
+    importance on the process depending on the masses and mass-ratios
+    of the system, and the evolutionary stage: a general recipe valid
+    for *all* binaries is not known and may not even exist because of the
+    wide range of physical regimes in which mass transfer could occur!
+
+To study the evolution of the orbit, it is useful to consider the
+total orbital angular momentum of the binary:
+
+<div class="latex" id="org9695f62">
+\begin{equation}
+J_\mathrm{tot} = J_\mathrm{orb}+J_{1}+J_{2} \ \ ,
+\end{equation}
+
+</div>
+
+with J<sub>i</sub> = I<sub>i</sub> &omega;<sub>i</sub> spin angular momentum of the two stars, and J<sub>orb</sub>
+orbital angular momentum. A simple order of magnitude calculation can
+show that
+
+<div class="latex" id="org69a0a69">
+\begin{equation}\label{eq:J_ordering}
+J_{i} \simeq M_{i} R_{i}^{2} \omega_{i} \ll J_\mathrm{orb} \simeq \frac{M_{1}M_{2}}{M_{1}+M_{2}} a^{2} n \ \ ,
+\end{equation}
+
+</div>
+
+where a&Gt;{R<sub>1</sub>, R<sub>2</sub>} is the semimajor axis of the orbit, much larger than
+the radii of the stars, and &omega;<sub>i</sub> &le; n is the spin frequency of the
+rotation of the stars which is typically lower than the orbital
+frequency n = 2&pi;/P and at best equal when tides can synchronize
+rotation and revolution (e.g., in the Moon+Earth binary!). Note
+however that there are known exception to this (see for example
+[Britavski et al. 2024](https://ui.adsabs.harvard.edu/abs/2024A%26A...684A..35B/abstract)), but they don't invalidate the ordering of Eq.
+\ref{eq:J_ordering} because of the squared dependence on the lever arm
+length of the angular momentum:
+*the spin angular momentum of both stars in a binary is typically small
+compared to the orbital angular momentum*.
+
+For the orbital term, using Kepler's 3<sup>rd</sup> law and a<sub>1</sub>M<sub>1</sub>
+= a<sub>2</sub>M<sub>2</sub> = a M<sub>1</sub>M<sub>2</sub>/(M<sub>1</sub>+M<sub>2</sub>) we can write:
+
+<div class="latex" id="orgdb05408">
+\begin{equation}
+J_\mathrm{orb} = M_{1} a_{1}^{2} v_{1} + M_{2} a_{2}^{2} v_{2} = \sqrt{\frac{GM_{1}^{2}M_{2}^{2} a(1-e^{2})}{M_{1}+M_{2}}} \ \ .
+\end{equation}
+
+</div>
+
+and thus taking a logarithmic derivative obtain:
+
+<div class="latex" id="org29844f0">
+\begin{equation}\label{eq:am_balance}
+\frac{\dot{a}}{a} = 2 \frac{\dot{J_\mathrm{orb}}}{J_\mathrm{orb}}-2\frac{\dot{M_{1}}}{M_{1}}-2\frac{\dot{M_{2}}}{M_{2}}+\frac{\dot{M_{1}}+\dot{M_{2}}}{M_{1}+M_{2}} +2\frac{e\dot{e}}{1-e^{2}} \ \ ,
+\end{equation}
+
+</div>
+
+which allows us to calculate the change in orbital separation a if we
+know the mass change rates *and* the orbital angular momentum losses
+from the system *and* eccentricity changes. In other words, we need to
+know the forces and torques exerted by the gas being transferred/lost
+onto the binary.
+
+For the eccentricity, a common (but questionable and questioned)
+approach is to *assume* that tides pre-mass transfer will circularize
+the binary (e=0). While this seems plausible since pre-mass transfer
+the donor star is by definition almost as large as it can be, allowing
+for tides to torque it, in reality post-mass transfer eccentric
+systems are known (see e.g., [Eldridge 2009](https://ui.adsabs.harvard.edu/abs/2009MNRAS.400L..20E/abstract)): it is possible that the
+timescale for circularization $e/\dot{e}$ is comparable or longer than
+the thermal timescale of the donor star (e.g., for case B Roche lobe
+overflow), making it impossible for tides to circularize the system
+before/during mass transfer.
+
+The orbital angular momentum losses can occur do to a variety of
+phenomena:
+
+-   **magnetic braking**: if the stars are magnetic (e.g., because of the
+    presence of a convective envelope), expelled gas can remain magnetically
+    tethered to them, providing a long lever arm to that gas to extract
+    angular momentum
+-   **tidal LS coupling**: if the system is small enough that tides matter,
+    they can redistribute angular momentum between the spins and orbit.
+    In extreme mass ratio binaries with q=M<sub>2</sub>/M<sub>1</sub> &Lt; 1/3 this can result
+    in unstable situations where the orbit doesn't have enough angular
+    momentum to allow for tidal synchronization, leading to a runaway
+    extraction of angular momentum from the orbit and ultimately a
+    merger (this is called a Darwin instability, after the nephew of the
+    more famous Charles Darwin of the evolutionary theory)
+-   **gravitational wave emission**: this term is important for very long
+    lived and compact binaries, and can ultimately lead to mergers of
+    compact stellar remnants (white dwarfs, neutron stars, and black
+    holes)
+-   **mass loss**: where and how mass may be lost by the system (e.g., if
+    the accretor star does not accept all the mass) can also eat up
+    some orbital angular momentum, and the rate depends on poorly
+    understdood details.
+
+The last term is usually the dominant one, but a general solution
+would require to treat all of the effects above.
+
+Let's now consider some cases where we can solve the equation for the
+orbital evolution.
+
+
+<a id="orgb815e43"></a>
+
+## Stellar wind mass loss
+
+Consider for simplicity a circular binary (e=0) where the only mass
+lost is due to stellar winds (no mass exchange).
+
+The winds have velocity v<sub>wind,i </sub>&ge; v<sub>esc,i</sub> &sim;(2GM<sub>i</sub>/R<sub>i</sub>)<sup>1/2</sup> for each
+star, while the orbital velocity of the binary is set by Kepler's 3<sup>rd</sup>
+law, and each individual star has
+
+<div class="latex" id="org215e288">
+\begin{equation}
+v_{1} = \frac{M_{2}}{M_{1}+M_{2}}\sqrt{\frac{G(M_{1}+M_{2})}{a}} \ \ ,\\
+v_{2} = \frac{M_{1}}{M_{1}+M_{2}}\sqrt{\frac{G(M_{1}+M_{2})}{a}} \ \ ,\\
+\end{equation}
+
+</div>
+
+where the square root term is v<sub>orb</sub> (i.e., the velocity around the
+center of mass of the reduced-mass point-mass), and the prefactors
+come from momentum balance in the center of mass frame of the system.
+
+Thus, taking the ratio, we see that:
+
+<div class="latex" id="org96222bc">
+\begin{equation}
+\frac{v_\mathrm{wind, 1}}{v_\mathrm{orb,1}} \geq \frac{v_\mathrm{esc, 1}}{v_\mathrm{orb, 1}} = \sqrt{2\frac{M_{1}(M_{1}+M_{2})}{M_{2}^{2}}\frac{a}{R_{1}}} \gg 1 \ \ , \\
+\frac{v_\mathrm{wind, 2}}{v_\mathrm{orb,2}} \geq \frac{v_\mathrm{esc, 2}}{v_\mathrm{orb, 2}} = \sqrt{2\frac{M_{2}(M_{1}+M_{2})}{M_{1}^{2}}\frac{a}{R_{2}}} \gg 1 \ \ , \\
+\end{equation}
+
+</div>
+
+where the last comes from a &Gt; R<sub>i</sub>. This means that to a good
+approximation one can assume winds from the stars to leave the system
+instantaneously without exerting any torque on the binary.
+In this case, the material lost to winds will carry the specific
+angular momentum (per unit mass) of the wind-losing star moving on its
+orbit:
+
+<div class="latex" id="org35ea5e1">
+\begin{equation}
+dJ_\mathrm{orb} = \frac{J_\mathrm{orb, 1}}{M_{1}}dM_{1} + \frac{J_\mathrm{orb, 2}}{M_{2}}dM_{2} \equiv \frac{M_{1} J_\mathrm{orb}}{M_{2} (M_{1}+M_{2})}dM_{1} + \frac{M_{2} J_\mathrm{orb}}{M_{1}(M_{1}+M_{2})}dM_{2} \ \ ,
+\end{equation}
+
+</div>
+
+where in the last we used J<sub>orb, i</sub> M<sub>i</sub> = J<sub>orb</sub> M<sub>1</sub>M<sub>2</sub>/(M<sub>1</sub>+M<sub>2</sub>) (angular
+momentum conservation in the center of mass frame) and dM<sub>i</sub><0 in both
+cases. The Eq. \ref{eq:am_balance} reduces to
+
+<div class="latex" id="orgcf80344">
+\begin{equation}
+\frac{\dot{a}}{a} = - \frac{\dot{M_{1}}+\dot{M_{2}}}{M_{1}+M_{2}} \ \ ,
+\end{equation}
+
+</div>
+
+which since dM<sub>i</sub><0 means that in the approximation of *fast* stellar wind
+mass loss (w.r.t. to the orbital velocity) and assuming the wind to
+take the specific orbital angular momentum of the mass-losing star
+around its orbit and no accretion, then *the binary widens* and the
+relative rate at which is widens is equal to the relative rate at
+which the binary loses mass! Note that the orbital angular momentum is
+decreasing, and yet the binary widens. This is sometimes referred to
+as "Jeans mode".
+
+
+<a id="org3966648"></a>
+
+## Conservative mass transfer evolution
+
+Another case that allows for analytic consideration is the case of
+*conservative* mass transfer, that is
+
+<div class="latex" id="org0f32928">
+\begin{equation}
+\dot{M_{1}} = - \dot{M_{2}} \ \ \mathrm{and}\ \  \dot{J_\mathrm{orb}}=0 \ \,
+\end{equation}
+
+</div>
+
+that is all the mass lost by star 1 is accreted by star 2, no spills
+from the system occurs and thus no orbital angular momentum can be
+lost.
+
+In this case Eq. \ref{eq:am_balance} becomes:
+
+<div class="latex" id="org8c6b43f">
+\begin{equation}
+\frac{\dot{a}}{a} = 2\left(\frac{M_{1}}{M_{2}}-1\right)\frac{\dot{M_{1}}}{M_{1}} \ \ ,
+\end{equation}
+
+</div>
+
+which tells us that since dM<sub>1</sub><0 when star 1 is the one filling its
+Roche lobe and donating the mass, the orbit initially shrinks, until
+the condition M<sub>2</sub>=M<sub>1</sub> is reached because of mass transfer, after which
+further mass loss results in *widening* of the orbit.
+
+Effectively, what we have found is that conservation of angular
+momentum imposes that the orbit initially shrinks and then widens once
+the mass ratio flips from q=M<sub>2</sub>/M<sub>1</sub><1 to q>1.
+
+
+<a id="org8b30c06"></a>
+
+## General case
+
+In general, we can assume that a fraction &beta;<sub>RLOF</sub> of the mass lost by
+the donor star ends up on the accretor star (thus a fraction 1-&beta;<sub>RLOF</sub>
+is instead lost from the system), and that the non-accreted material
+takes away a specific angular momentum per unit mass &gamma;<sub>RLOF</sub>. With this
+parametrization of the uncertain mass transfer efficiency (represented
+by the poorly known parameter &beta;<sub>ROLF</sub>) and angular momentum losses
+(represented by &gamma;<sub>RLOF</sub>) we can re-write Eq. \ref{eq:am_balance} for a
+circular system (e=0) as:
+
+<div class="latex" id="org90018dd">
+\begin{equation}
+\frac{\dot{a}}{a} =-2\frac{\dot{M_{1}}}{M_{1}}\left[1-\beta_{RLOF}\frac{M_{1}}{M_{2}}-(1-\beta_{RLOF})\left(\gamma_{RLOF}+\frac{1}{2}\right)\frac{M_{1}}{M_{1}+M_{2}}\right] \ \ ,
+\end{equation}
+
+</div>
+
+where in general &beta;<sub>RLOF</sub> and &gamma;<sub>RLOF</sub> are going to be unknown functions of
+the masses and separation (or period), but they can be analytically
+specified for some physically relevant cases (alternative but
+equivalent parametrizations exist, see for example [Sobermann et al.
+1997](https://ui.adsabs.harvard.edu/abs/1997A%26A...327..620S/abstract)).
+
+These parameter may also depend on the formation of an accretion disk
+around the initially less massive star (as opposed to direct impact of
+the stream of matter with the star), and possibly of a circumbinary
+disk (see for example [Lubow & Shu 1975](https://ui.adsabs.harvard.edu/abs/1975ApJ...198..383L/abstract)).
+
+
+<a id="orgbf6a392"></a>
+
+# Modifications to the structure of stars because of mass transfer
+
+<iframe width="600" height="400" src="https://www.youtube.com/embed/Zn1E23saY-A?si=w0m_yOw7DRnEqX7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The artist impression in the video above shows a *conservative* (no
+spill over), dynamically stable mass transfer between a 20M<sub>o</sub> and a
+15M<sub>o</sub> star producing a direct impact of the L<sub>1</sub> stream with the
+accretor. Although this is an artist impression (as you can tell from
+the fact that the stars are resolved), it illustrates several
+important modifications that will occur in *both* stars as they go
+through mass transfer.
+
+
+<a id="orge058811"></a>
+
+## Donor: loss of the envelope, revealing the core
+
+The donor will lose (most of) its hydrogen rich envelope, becoming a
+low opacity, high temperature, small in radius, helium enriched star.
+This is something that only very massive stars may do if single (and
+how massive they need to be is a matter of debate because of wind
+uncertainties).
+
+This means that post-mass transfer, the donor star is the *exposed* core
+of the star, which allows a unique opportunity to directly see (with
+photons!) the interior of a star.
+
+
+<a id="orgc9470c3"></a>
+
+## Accretor: Spin up, pollution, rejuvenation
+
+The mass transferred comes with angular momentum and will easily spin
+up the accretor star, making it fast rotating up to the point where at
+the equator centrifugal force and radiation pressure balance the
+gravitational pull. This is what is invoked to explain Be stars in
+Be-X-ray binaries for example.
+
+Secondly, the matter from the donor may be chemically enriched by
+nuclear processes in *the donor's core*. For example, if the star
+transfers matter from the outermost layers of the core, it may be
+CNO-processed! This can change the chemical composition in the
+accretor structure, and thus its spectrum.
+
+Finally, for massive stars, there is a *rejuvenation* effect. Since they
+burn through the CN-NO cycle, &epsilon;<sub>CNO</sub>&prop; T<sup>16</sup> releases a lot of energy
+in a small hot-enough volume, leading to a steep temperature gradient
+and thus convection. As the mass of the accretor increases because of
+accretion itself, &lang; T &rang; &prop; M by the virial theorem means that the
+average (and central) temperature have to increase to sustain the
+increased mass. This leads to a steepening of the temperature gradient
+in the core, and drives further *convection*. This "extra" convection
+takes Hydrogen of the accretor that would *not* have burned had the star
+been single, and mixes it in the burning region itself, elongating the
+lifetime of the star.
+
+
+<a id="org83c7fbe"></a>
+
+# Mass transfer rate calculation
+
+Say we have a binary that is starting to transfer mass through the L<sub>1</sub>
+Lagrangian point: how can we decide the mass transfer *rate* per unit
+time? This is a crucial question, since the response of both stars to
+mass transfer will depend on the $dM_{i}/dt$ of both stars (or in other
+words on how the mass-change timescale $M_{i}/\dot{M_{i}}$ compares to the
+*local* timescales of the stellar surfaces), and thus whether it remains
+dynamically stable or devolves into a common envelope!
+
+The classic approach is to *postulate* that the mass transfer rate is a
+function of the amount of overflow in radius. If the donor is star 1:
+
+<div class="latex" id="org6f6c56d">
+\begin{equation}
+\dot{M_{1}} \equiv \dot{M_{1}}(\Delta R_{1}/R_{RL,1}) \equiv \dot{M_{1}}(\frac{R_{1}-R_{RL,1}}{R_{RL,1}}) \ \ .
+\end{equation}
+
+</div>
+
+By dimensional analysis we can infer that the mass loss rate by the
+donor is related to the gas density and velocity at L<sub>1</sub> (the point
+where it becomes gravitationally unbound) times the cross section of
+the nozzle of gas across the plane perpendicular to the axis
+connecting the two stars and going through L<sub>1</sub>
+
+<div class="latex" id="org295a474">
+\begin{equation}
+\dot{M_{1}} = \rho_{L_{1}} v_{L_{1}} A_{L_{1}} \ \ .
+\end{equation}
+
+</div>
+
+**N.B.:** this is reminiscent of the time-dependent mass-conservation term
+we obtained during the [lecture on hydrostatic equilibrium](./notes-lecture-HSE.md), not by
+accident!
+
+Each term needs to be estimate based on thermo- and hydro-dynamical
+considerations on the flow of the gas, but typically v<sub>L<sub>1</sub></sub>&ge;
+v<sub>esc,1</sub>&cong; c<sub>sound,1</sub> because the gas has to leave the gravitational
+potential well of star 1 and the last step is a consequence of the
+Virial theorem, &rho;<sub>L<sub>1</sub></sub> can be estimated using an EOS and mass
+continuity from the stellar surface to L<sub>1</sub>, and to estimate A<sub>L<sub>1</sub></sub> we
+consider that the Roche potential has a saddle point in L<sub>1</sub>, therefore
+we can do a Taylor approximation along the y-direction the plane of
+interest and get:
+
+<div class="latex" id="org84b0d7a">
+\begin{equation}
+\Delta \Phi \simeq \frac{\partial \Phi}{\partial y}\rvert_{L_{1}} y + \frac{1}{2}\frac{\partial^{2} \Phi}{\partial y^{2}}\rvert_{L_{1}}y^{2} \ \ ,
+\end{equation}
+
+</div>
+
+where &part;<sub>x</sub>&Phi;(L<sub>1</sub>)=&part;<sub>y</sub>&Phi;(L<sub>1</sub>)0, and using the Roche potential plus Kepler's 3<sup>rd</sup>
+law this gives:
+
+<div class="latex" id="orge1d2060">
+\begin{equation}
+\Delta \Phi \simeq \frac{1}{2}{n^{2}}y^{2} \ \ ,
+\end{equation}
+
+</div>
+
+with n= 2&pi;/P the orbital frequency. A<sub>L<sub>1</sub></sub>&cong; y<sup>2</sup> for y determined
+by how much outside of its Roche lobe the donor star is. This can be
+related by looking at a point far from L<sub>1</sub>'s direction where the
+gravity of the companion does not distort the equipotential surfaces
+too much, resulting in &Phi; &sim; GM<sub>1</sub>/(R<sub>1</sub>), and thus:
+
+<div class="latex" id="orgaac745d">
+\begin{equation}
+\Delta \Phi \simeq \frac{GM_{1}}{R_{1}}\frac{\Delta R}{R} \ \ ,
+\end{equation}
+
+</div>
+
+and putting things together:
+
+<div class="latex" id="org2ee7097">
+\begin{equation}
+A_{L_{1}} \simeq y^{2}(\Delta R) = \frac{2GM_{1}}{n^{2}R_{1}}\frac{\Delta R}{R_{1}} \ \ ,
+\end{equation}
+
+</div>
+
+More detailed calculations use the Bernoulli principle applied to the
+gas streaming from the outer layers of the donor star to the L<sub>1</sub> point,
+and differ in whether the inner point is in the stellar atmosphere
+(which is optically thin, likely non-isothermal) or inside the
+photosphere (optically thick), see for instance [Ritter 1988](https://ui.adsabs.harvard.edu/abs/1988A%26A...202...93R/abstract), [Kolb &
+Ritter 1990](https://ui.adsabs.harvard.edu/abs/1990A%26A...236..385K/abstract), [Marchant et al. 2021](https://ui.adsabs.harvard.edu/abs/2021A%26A...650A.107M/abstract), [Cehula & Pejcha 2023](https://ui.adsabs.harvard.edu/abs/2023MNRAS.524..471C/abstract), [Ivanova et
+al. 2024](https://ui.adsabs.harvard.edu/abs/2024ApJ...971...64I/abstract).
+
+Once the mass loss rate from the donor is determined, several
+processes occurring during the travel of the gas in between the stars
+(does it form a disk or not? does the gas have time to cool and change
+its entropy?) and when it reaches the accretor (what is the shear and
+entropy contrast with the accretor's outer layers? Is the composition
+the same?) will determine the mass accretion rate of the accretor, and
+enter in the parameters &beta;<sub>RLOF</sub>, and &gamma;<sub>RLOF</sub> we introduced above while
+determining the orbital evolution in the general case.
+
+Note that a lot of the physics at play here may happen while the stars
+are *not* in gravothermal equilibrium, something that is neglected in
+*rapid* binary population synthesis calculations based on pre-computed
+single star models (where the single stars were always in gravothermal
+equilibrium themselves), cf. [notes on codes](./notes-lecture-neutrinos.md).
+
+-   if there is matter flowing through L<sub>1</sub>, can it be convective at that
+    location (**Hint**: think of what force drives the instability)?
+
+
+<a id="orgf742b89"></a>
+
+# Homework
+
+-   Assuming that star 1 in a binary is filling its Roche lobe and
+    transferring mass, find a relation between it's average density and
+    the orbital parameters P and q=M<sub>2</sub>/M<sub>1</sub>. Since these are (in some
+    cases) observationally measurable, this relation gives a way to
+    measure the average density of stars during mass transfer!
+
