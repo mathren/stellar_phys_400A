@@ -592,7 +592,7 @@ the same time!
 
 *N.B.:* for a biased overview of the evolution of the field of
 computational stellar physics by one of the "founding fathers" of the
-field, see this [[https://www.aip.org/history-programs/niels-bohr-library/oral-histories/5091][1978 interview to R. Kippenhahn]].
+field, see this [[https://repository.aip.org/kippenhahn-rudolf-1978-june-18][1978 interview to R. Kippenhahn]].
 
 *** Evolution splitting
 One final peculiarity of the stellar structure and evolution problem
