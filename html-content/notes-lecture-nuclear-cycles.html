@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-02-27 Thu 10:26 -->
+<!-- 2026-01-09 Fri 14:10 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>400A - Nuclear cycles</title>
@@ -13,27 +13,38 @@
 			       stellar evolution, 400A, University of
 			       Arizona, Steward Observatory, stars,
 			       theoretical astrophysics">
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="preamble" class="status">
@@ -114,13 +125,13 @@ book Chapter 9 and 18, Cox &amp; Giuli vol. I, Chapter 17.7, Clayton,
 Chapter 5, <a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.55.434">Bethe 1939</a>
 </p>
 
-<div id="outline-container-org4ec6e29" class="outline-2">
-<h2 id="org4ec6e29"><a href="#org4ec6e29">Nuclear burning cycles</a></h2>
-<div class="outline-text-2" id="text-org4ec6e29">
+<div id="outline-container-org4464442" class="outline-2">
+<h2 id="org4464442"><a href="#org4464442">Nuclear burning cycles</a></h2>
+<div class="outline-text-2" id="text-org4464442">
 </div>
-<div id="outline-container-org9b5039a" class="outline-3">
-<h3 id="org9b5039a"><a href="#org9b5039a">Heuristic summary and \(S\) factor</a></h3>
-<div class="outline-text-3" id="text-org9b5039a">
+<div id="outline-container-org5424b4b" class="outline-3">
+<h3 id="org5424b4b"><a href="#org5424b4b">Heuristic summary and \(S\) factor</a></h3>
+<div class="outline-text-3" id="text-org5424b4b">
 <p>
 In the <a href="./notes-lecture-nuclear-burning.html">previous lecture</a> we have developed some idea of the physics
 involved in thermonuclear reactions. We can have a heuristic
@@ -128,7 +139,7 @@ derivation of the main results we obtained for a generic charged
 particle reaction \(X(a,b)Y\) by writing the cross section for the
 reaction as:
 </p>
-<div class="latex" id="org0d40d5f">
+<div class="latex" id="org4beaef7">
 \begin{equation}
 \sigma = \pi \lambda_{X}^{2} \times \{ \mathrm{Probability\ of\ Tunneling}\} \times \{\mathrm{Probability\ of\ C^{\star}\ decay\ in\ Y+b}\}\ \ ,
 \end{equation}
@@ -141,7 +152,7 @@ terms in curly brackets appears because of Bohr's approximation (so
 that the two probabilities are independent of each other). Since \(\lambda_{X} =
 h/p \propto h/E^{1/2}\) (for non-relativistic ions) \(\Rightarrow \lambda_{X}^{2 }\propto E^{-1}\) and thus:
 </p>
-<div class="latex" id="org060e730">
+<div class="latex" id="org89c673c">
 \begin{equation}\label{eq:heuristic_summary}
 \sigma \equiv \sigma(E)\propto \frac{1}{E}\exp\left(\frac{-b}{\sqrt{E}}\right)S(E) \ \ ,
 \end{equation}
@@ -180,7 +191,7 @@ such a high binding energy), and using conservation of charge and
 electron leptonic number we have already written the overall reaction
 as:
 </p>
-<div class="latex" id="org07ab859">
+<div class="latex" id="org304d76d">
 \begin{equation}\label{eq:overall_reaction}
 4^{1}\mathrm{H}\rightarrow^{4}\mathrm{He}+2e^{+} + 2\nu_{e} \ \ .
 \end{equation}
@@ -241,20 +252,20 @@ momentum).
 </div>
 </div>
 
-<div id="outline-container-org5d34575" class="outline-3">
-<h3 id="org5d34575"><a href="#org5d34575">Hydrogen burning</a></h3>
-<div class="outline-text-3" id="text-org5d34575">
+<div id="outline-container-orge09d492" class="outline-3">
+<h3 id="orge09d492"><a href="#orge09d492">Hydrogen burning</a></h3>
+<div class="outline-text-3" id="text-orge09d492">
 </div>
-<div id="outline-container-orgfa2e651" class="outline-4">
-<h4 id="orgfa2e651"><a href="#orgfa2e651">pp chain</a></h4>
-<div class="outline-text-4" id="text-orgfa2e651">
+<div id="outline-container-org7252b04" class="outline-4">
+<h4 id="org7252b04"><a href="#org7252b04">pp chain</a></h4>
+<div class="outline-text-4" id="text-org7252b04">
 <p>
 The "pp chain" is the dominant hydrogen burning mode in low mass
 stars, like the Sun:
 </p>
 
 
-<figure id="org5094b53">
+<figure id="orgd619aca">
 <img src="./images/pp_cycle.png" alt="pp_cycle.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 1: </span>Schematic representation of the pp chain. Blue boxes highlight the weak reactions producing \(\nu_{e}\). The right branch is the so called pp1, the rarer left branch is the so called pp2, which further has a rarer pp3 branch ending up with the formation and decay of a \(^{8}\mathrm{Be}\) nucleus.</figcaption>
@@ -306,9 +317,9 @@ be <i>very concentrated</i> inside the star in temperature coordinate.
 </div>
 </div>
 
-<div id="outline-container-org2b19fce" class="outline-4">
-<h4 id="org2b19fce"><a href="#org2b19fce">CN-NO bi-cycle</a></h4>
-<div class="outline-text-4" id="text-org2b19fce">
+<div id="outline-container-org4b66aea" class="outline-4">
+<h4 id="org4b66aea"><a href="#org4b66aea">CN-NO bi-cycle</a></h4>
+<div class="outline-text-4" id="text-org4b66aea">
 <p>
 When the luminosity of a star is high (recall for a fully radiative
 star \(L\propto M^{x}\mu^{4}\) with \(x \equiv x(M)\ge0\)), the bottleneck reaction
@@ -326,7 +337,7 @@ catalysts for the reactions.
 </p>
 
 
-<figure id="org5cc7196">
+<figure id="org6d33f46">
 <img src="./images/CN-NO.png" alt="CN-NO.png">
 
 <figcaption><span class="figure-number">Figure 2: </span>Schematic representation of the CN-NO bi cycle. The branches on the left of the figure are secondary channels less relevant for the energy release (smaller rates &rArr; smaller contribution to \(\varepsilon_\mathrm{nuc}\)).</figcaption>
@@ -385,14 +396,14 @@ barriers more easily.
 </p>
 
 <ul class="org-ul">
-<li><b>Q</b>: How did population III stars do this? See also <a href="./honors.html#org83c8125">honors project</a></li>
+<li><b>Q</b>: How did population III stars do this? See also <a href="./honors.html#org7820825">honors project</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgb97b34c" class="outline-4">
-<h4 id="orgb97b34c"><a href="#orgb97b34c">pp &rarr; CNO transition</a></h4>
-<div class="outline-text-4" id="text-orgb97b34c">
+<div id="outline-container-org0b6cc7b" class="outline-4">
+<h4 id="org0b6cc7b"><a href="#org0b6cc7b">pp &rarr; CNO transition</a></h4>
+<div class="outline-text-4" id="text-org0b6cc7b">
 <p>
 Because of the higher Coulomb barriers involved in the CNO cycle (i.e.
 the higher charge of \(^{12}\mathrm{C}\)), it has a more sensitive
@@ -411,7 +422,7 @@ the CNO cycle takes over as dominant energy production mechanism.
 </p>
 
 
-<figure id="orgd1082ed">
+<figure id="org01595a3">
 <img src="./images/pp_vs_CNO.png" alt="pp_vs_CNO.png" width="75%">
 
 <figcaption><span class="figure-number">Figure 3: </span>\(\varepsilon_\mathrm{nuc}/\rho\) as a function of temperature \(T\) all calculated in the center of stellar models (bottom axis) or initial mass \(M\) (top axis) for the pp chain (blue) and CNO cycle (orange) based on a grid of MESA models at the onset of hydrogen core burning once equilibrium (\(L\simeq L_\mathrm{nuc}\)) is established. Dashed lines are linear fits. Modified from a figure by R. Townsend.</figcaption>
@@ -446,9 +457,9 @@ context dependent.
 </div>
 </div>
 
-<div id="outline-container-orgd4e578b" class="outline-3">
-<h3 id="orgd4e578b"><a href="#orgd4e578b">Helium burning</a></h3>
-<div class="outline-text-3" id="text-orgd4e578b">
+<div id="outline-container-org6916a6d" class="outline-3">
+<h3 id="org6916a6d"><a href="#org6916a6d">Helium burning</a></h3>
+<div class="outline-text-3" id="text-org6916a6d">
 <p>
 Once hydrogen fuel runs out in the core of a star (i.e., anywhere with
 mass coordinate \(m \le f_\mathrm{burn} M_\mathrm{tot}\) where all the
@@ -476,9 +487,9 @@ to understand nuclear structure!
 </p>
 </div>
 
-<div id="outline-container-org26a438e" class="outline-4">
-<h4 id="org26a438e"><a href="#org26a438e">"Triple &alpha;" reaction</a></h4>
-<div class="outline-text-4" id="text-org26a438e">
+<div id="outline-container-org6e8a17a" class="outline-4">
+<h4 id="org6e8a17a"><a href="#org6e8a17a">"Triple &alpha;" reaction</a></h4>
+<div class="outline-text-4" id="text-org6e8a17a">
 <p>
 The easiest way to consume helium is through the so called "triple \(\alpha\)
 reaction", which is actually a <i>compound</i> reaction with a very short
@@ -487,7 +498,7 @@ to meet in the same place within their nuclear radii because of
 thermal motion is negligibly small). The \(3\alpha\rightarrow^{12}\mathrm{C}\) compound
 reaction is actually:
 </p>
-<div class="latex" id="orgbdea40d">
+<div class="latex" id="org7779c68">
 \begin{equation}
 \alpha+\alpha\leftrightarrow^{8}\mathrm{Be}+\gamma \\
 ^{8}\mathrm{Be}+\alpha\rightarrow^{12}\mathrm{C^{\star\star}}\rightarrow^{12}\mathrm{C}+\gamma
@@ -528,9 +539,9 @@ isotope of \(^{8}\mathrm{Be}\) saving computational time.
 </div>
 </div>
 
-<div id="outline-container-orgf490b37" class="outline-4">
-<h4 id="orgf490b37"><a href="#orgf490b37">The nuclear astrophysics "holy grail": \(^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}\)</a></h4>
-<div class="outline-text-4" id="text-orgf490b37">
+<div id="outline-container-org8772137" class="outline-4">
+<h4 id="org8772137"><a href="#org8772137">The nuclear astrophysics "holy grail": \(^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}\)</a></h4>
+<div class="outline-text-4" id="text-org8772137">
 <p>
 Once some carbon is produced, a new avenue for consuming \(\alpha\) particles
 opens up, the (in)famous \(^{12}\mathrm{C}(\alpha,\gamma)^{16}\mathrm{O}\) reaction.
@@ -563,9 +574,9 @@ the most recent lab measurements).
 </div>
 </div>
 
-<div id="outline-container-orgf72376a" class="outline-3">
-<h3 id="orgf72376a"><a href="#orgf72376a">Heavier burning</a></h3>
-<div class="outline-text-3" id="text-orgf72376a">
+<div id="outline-container-org5ca3b20" class="outline-3">
+<h3 id="org5ca3b20"><a href="#org5ca3b20">Heavier burning</a></h3>
+<div class="outline-text-3" id="text-org5ca3b20">
 <p>
 Once helium fuel is exhausted, helium core burning cannot provide the
 energy to compensate for the losses, and the core of the star
@@ -593,16 +604,16 @@ stars are on average cooler and will stop burning earlier.
 </p>
 </div>
 
-<div id="outline-container-orgb8501db" class="outline-4">
-<h4 id="orgb8501db"><a href="#orgb8501db">Carbon burning</a></h4>
-<div class="outline-text-4" id="text-orgb8501db">
+<div id="outline-container-org013f56b" class="outline-4">
+<h4 id="org013f56b"><a href="#org013f56b">Carbon burning</a></h4>
+<div class="outline-text-4" id="text-org013f56b">
 <p>
 The carbon+carbon reaction can have several branching ratios with
 positive \(Q\) values (thus exo-energetic and of interest for the star
 to sustain itself):
 </p>
 
-<div class="latex" id="org65f55bf">
+<div class="latex" id="orgb0a4842">
 <p>
 \(^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{24}\mathrm{Mg}+\gamma\) (Q&sim;13.93MeV)<br>
 \(^{12}\mathrm{C}+^{12}\mathrm{C} \rightarrow^{20}\mathrm{Ne}+\alpha\) (Q&sim;4.616MeV)<br>
@@ -629,9 +640,9 @@ together!) and Sodium.
 </div>
 </div>
 
-<div id="outline-container-org7da804f" class="outline-4">
-<h4 id="org7da804f"><a href="#org7da804f">Neon ignition and nuclear "magic numbers"</a></h4>
-<div class="outline-text-4" id="text-org7da804f">
+<div id="outline-container-org1c28fc7" class="outline-4">
+<h4 id="org1c28fc7"><a href="#org1c28fc7">Neon ignition and nuclear "magic numbers"</a></h4>
+<div class="outline-text-4" id="text-org1c28fc7">
 <p>
 Because of carbon burning, a significant amount of neon is produced.
 Although neon has \(A=20\) and \(Z=10\) so it is heavier and more charged
@@ -688,9 +699,9 @@ of stellar evolution only (but numerically challenging to simulate!).
 </div>
 </div>
 
-<div id="outline-container-org82778a4" class="outline-4">
-<h4 id="org82778a4"><a href="#org82778a4">Oxygen</a></h4>
-<div class="outline-text-4" id="text-org82778a4">
+<div id="outline-container-orgad71402" class="outline-4">
+<h4 id="orgad71402"><a href="#orgad71402">Oxygen</a></h4>
+<div class="outline-text-4" id="text-orgad71402">
 <p>
 As T further increases because of the gravothermal collapse the oxygen
 finally ignites. The dominant reaction has multiple branching ratios
@@ -698,7 +709,7 @@ with positive \(Q\) value that produce sulfur and silicon primarily (two
 other \(\alpha\) nuclei!):
 </p>
 
-<div class="latex" id="org025214e">
+<div class="latex" id="orgf6691d3">
 <p>
 \(^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{32}\mathrm{S}+\gamma\) (Q&sim;16.53MeV)<br>
 \(^{16}\mathrm{O}+^{16}\mathrm{O} \rightarrow^{28}\mathrm{Si}+\alpha\) (Q&sim;9.593MeV)<br>
@@ -715,9 +726,9 @@ present mixture at this temperature!
 </div>
 </div>
 
-<div id="outline-container-orgdd267bc" class="outline-4">
-<h4 id="orgdd267bc"><a href="#orgdd267bc">Silicon core burning</a></h4>
-<div class="outline-text-4" id="text-orgdd267bc">
+<div id="outline-container-org4476888" class="outline-4">
+<h4 id="org4476888"><a href="#org4476888">Silicon core burning</a></h4>
+<div class="outline-text-4" id="text-org4476888">
 <p>
 Finally, if a star has reached this point, gravity will compress its core
 until it burns all the way to the most bound nucleus (iron/nickel):
@@ -755,7 +766,7 @@ photodisintegrated and re-created at very high and nearly canceling
 rates:
 </p>
 
-<div class="latex" id="orgd09d822">
+<div class="latex" id="org7b7408d">
 \begin{equation}
 \gamma + ^{A}Z \rightarrow ^{A'}Z' +{p,n,\alpha}
 \end{equation}
@@ -769,7 +780,7 @@ elements to form heavier "iron group nuclei" (which are also
 photodisintegrated and recreated constantly):
 </p>
 
-<div class="latex" id="org161ee81">
+<div class="latex" id="org2e21418">
 \begin{equation}
 \{p, n,\alpha\} + \{ ^{A}Z,^{A'}Z' \} \rightarrow \{ \mathrm{Fe \ group \ nuclei} \} +
 \dots
@@ -788,7 +799,7 @@ quickly thermalize in the plasma see <a href="https://ui.adsabs.harvard.edu/abs/
 
 
 
-<figure id="orge4d89b2">
+<figure id="org632beab">
 <img src="./images/QSE.png" alt="QSE.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 4: </span>Schematic representation of quasi statistical equilibrium on the nuclear chart. The two filled circle represent the Si (red) and Fe (blue) groups. The abundance of nuclei within each group reach NSE. The links connecting specific isotopes within each group represent the few reactions out of equilibrium, which progressively result in the depletion of the number of isotopes in the Si group in favor of those in the Fe group.</figcaption>
@@ -845,11 +856,11 @@ lecture</a>.
 </div>
 </div>
 
-<div id="outline-container-orgbc735da" class="outline-2">
-<h2 id="orgbc735da"><a href="#orgbc735da">Summary of energy scaling</a></h2>
-<div class="outline-text-2" id="text-orgbc735da">
+<div id="outline-container-org9848d1a" class="outline-2">
+<h2 id="org9848d1a"><a href="#org9848d1a">Summary of energy scaling</a></h2>
+<div class="outline-text-2" id="text-org9848d1a">
 
-<figure id="orgd54b89d">
+<figure id="orgb2e5053">
 <img src="./images/Nuclear_energy_generation.png" alt="Nuclear_energy_generation.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 5: </span>\(\varepsilon_\mathrm{nuc} \equiv \varepsilon_\mathrm{nuc}(T)\) dependence on a log-log plot for the burning cycles that cover &ge;99% of the stellar lifetime (H and He core burning). From <a href="https://commons.wikimedia.org/wiki/File:Nuclear_energy_generation.svg">wikipedia</a>.</figcaption>
@@ -873,7 +884,7 @@ allowing for the so called "onion layer" structure of stars:
 </p>
 
 
-<figure id="org6702414">
+<figure id="org5d0d7d3">
 <img src="./images/onion.png" alt="onion.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 6: </span>Layer structure for an initially \(15M_{☉}\) star at the end of its nuclear burning lifetime in mass coordinate from <a href="https://www.as.arizona.edu/%5Csimmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf">Renzo 2015</a>. Note the final total mass is <i>not</i> 15M<sub>☉</sub> because stars this massive lose mass through radiatively driven winds.</figcaption>
@@ -916,9 +927,9 @@ hole, in ways that are still poorly understood (see for example
 </div>
 
 
-<div id="outline-container-orga58e618" class="outline-2">
-<h2 id="orga58e618"><a href="#orga58e618">Duration of each burning phase</a></h2>
-<div class="outline-text-2" id="text-orga58e618">
+<div id="outline-container-org17d09f2" class="outline-2">
+<h2 id="org17d09f2"><a href="#org17d09f2">Duration of each burning phase</a></h2>
+<div class="outline-text-2" id="text-org17d09f2">
 <p>
 As we have seen (cf. <a href="./notes-lecture-VirTheo.html">virial theorem lecture</a>) stars shine as anything
 with a finite temperature does. This consumes internal thermal energy,
@@ -941,7 +952,7 @@ burn, viceversa, they burn because they shine</i>.
 Therefore, thermonuclear burning in stars exists only to compensate
 the energy losses (to photons at the surface and to neutrinos
 throughout the volume that can emit neutrinos), and at equilibrium
-\(L_\mathrm{nuc} \equiv L (+L_{\nu})\) making the nuclear burning a <a href="./notes-lecture-nuclear-burning.html#org0f8a3c8">self-regulating
+\(L_\mathrm{nuc} \equiv L (+L_{\nu})\) making the nuclear burning a <a href="./notes-lecture-nuclear-burning.html#orga30f3ef">self-regulating
 process</a> where it is \(L (+L_{\nu})\) (the energy loss rate) that determines
 \(L_\mathrm{nuc}\) (the energy generation rate), and <i>not</i> the other way
 around.
@@ -953,7 +964,7 @@ consumption of a given fuel take in a star, that is the nuclear
 timescale for a given fuel:
 </p>
 
-<div class="latex" id="orgdc54b8e">
+<div class="latex" id="org5eee6e1">
 \begin{equation}
 \tau_\mathrm{nuc} = \varphi f_\mathrm{burn} \frac{Mc^{2}}{L_{}} \ \ .
 \end{equation}
@@ -961,7 +972,7 @@ timescale for a given fuel:
 </div>
 
 <p>
-As we saw in the <a href="./notes-lecture-nuclear-burning.html#orgda5a33e">the previous lecture</a>, \(f_\mathrm{burn}\) is a quantity
+As we saw in the <a href="./notes-lecture-nuclear-burning.html#orgb25523c">the previous lecture</a>, \(f_\mathrm{burn}\) is a quantity
 that requires computing full stellar evolution models (we now have all
 the equations to do so under typical assumptions, it's just a
 matter to tell a computer how to solve them!), but clearly \(0 <
@@ -1015,7 +1026,7 @@ massive stars, silicon &rarr; iron only lasts order of <i>days</i>.
 </p>
 
 
-<figure id="org70faee0">
+<figure id="orgc7d9cee">
 <img src="./images/durations.png" alt="durations.png" width="100%">
 
 <figcaption><span class="figure-number">Figure 7: </span>example of durations of burning phases for a few massive stars from <a href="https://www.as.arizona.edu/%5Csimmrenzo/materials/Thesis/Renzo_MSc_thesis.pdf">Renzo 2015</a>.</figcaption>
@@ -1023,9 +1034,9 @@ massive stars, silicon &rarr; iron only lasts order of <i>days</i>.
 </div>
 </div>
 
-<div id="outline-container-org4feda0d" class="outline-2">
-<h2 id="org4feda0d"><a href="#org4feda0d">Energetically unimportant but observationally puzzling Lithium</a></h2>
-<div class="outline-text-2" id="text-org4feda0d">
+<div id="outline-container-orgc8092e5" class="outline-2">
+<h2 id="orgc8092e5"><a href="#orgc8092e5">Energetically unimportant but observationally puzzling Lithium</a></h2>
+<div class="outline-text-2" id="text-orgc8092e5">
 <p>
 Lithium is a relatively rare element which has a low nuclear binding energy
 and is thus easily broken without releasing much energy. Therefore, lithium
@@ -1065,9 +1076,9 @@ Lithium-rich giants than this can explain.</li>
 </div>
 </div>
 
-<div id="outline-container-org144d3f4" class="outline-2">
-<h2 id="org144d3f4"><a href="#org144d3f4">Homework</a></h2>
-<div class="outline-text-2" id="text-org144d3f4">
+<div id="outline-container-org7141be1" class="outline-2">
+<h2 id="org7141be1"><a href="#org7141be1">Homework</a></h2>
+<div class="outline-text-2" id="text-org7141be1">
 <ul class="org-ul">
 <li>Calculate the Sun's mass loss rate due to the nuclear burning of 4
 protons into helium</li>
@@ -1151,8 +1162,8 @@ formulation of MLT)</li>
   <hr>
   <a href="#light-dark-toggle"><i id="light-dark-toggle"><i class="fa-solid fa-circle-half-stroke"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-nuclear-burning.html"><i class="fa-solid fa-arrow-left" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="#top"><i class="fa-solid fa-arrow-up" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="notes-lecture-neutrinos.html"><i class="fa-solid fa-arrow-right" style="font-size:16px"></i></a>&emsp;&emsp;&emsp;&emsp;<a href="https://github.com/mathren/stellar_phys_400A"><i class="fa-brands fa-github" style="font-size:16px"></i></a><hr>
   <br>
-  Last updated on 27 February 2025 <br>
-  Made with Emacs 28.1 - Org mode 9.5.2
+  Last updated on 9 January 2026 <br>
+  Made with Emacs 29.2 - Org mode 9.6.15
   <br>
 </div>
 </div>
