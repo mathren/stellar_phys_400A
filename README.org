@@ -4,7 +4,7 @@
 * Theoretical Astrophysics - Stellar Evolution
 
 
-[[https://www.as.arizona.edu/~mrenzo/courses/index.html][https://img.shields.io/website-up-down-green-red/http/shields.io.svg]]
+[[https://www.as.arizona.edu/~mrenzo/courses/400A/index.html][https://img.shields.io/website-up-down-green-red/http/shields.io.svg]]
 
 Material developed for the =AST400A= course (one semester) at the Department of
 Astronomy and Steward Observatory of the University of Arizona (Fall
@@ -17,7 +17,7 @@ semester 2024/Spring semester 2025).
 * Technical details
 
 The lecture notes are written as emacs =org= files available in
-[[./org-content]] and exported to =html= (available [[https://www.as.arizona.edu/~mrenzo/courses/index.html][online here]], the output
+[[./org-content]] and exported to =html= (available [[https://www.as.arizona.edu/~mrenzo/courses/400A/index.html][online here]], the output
 of the export also relies on the =css= and =html= templates in
 [[./html-content]]), and in =pdf= (compiled with =LaTeX=) for printing and
 annotating before I give a lecture.
